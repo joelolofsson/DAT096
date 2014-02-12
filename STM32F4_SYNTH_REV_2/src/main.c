@@ -107,19 +107,21 @@ static void AudioCallback(void *context, int buffer) {
     
 	int i;
 	for(i = 0; i < FRAMES_PER_BUFFER/2; i++){
-		if (globalCounter > 500) {
-            *samples++ = 500; // Left and right channels..
-            *samples++ = 500;
-        }
-        else{
-        
+		//if (globalCounter > 500) {
+        //    *tempOutPtr++ = 500; // Left and right channels..
+            //*tempOutPtr++ = 500;
+        //}
+        //else{
+        //
         *samples++ = *sineWaveTablePtr; // Left and right channels..
         *samples++ = *sineWaveTablePtr;
-        sineWaveTablePtr = sineWaveTablePtr + 20;
+        sineWaveTablePtr = sineWaveTablePtr + 10; // 1 för en wav... 
         if(sineWaveTablePtr >= (sineWaveTablePtrStart + WAVETABLESIZE)) sineWaveTablePtr = sineWaveTablePtr - WAVETABLESIZE; // Important -----> >= !!!!
-        }
+        //}
 	}
 	samples = samples - FRAMES_PER_BUFFER;
+    
+    // HÄR ANROPAS FILTER....
     
     //delay(tempOutPtr, samples, FRAMES_PER_BUFFER);
     

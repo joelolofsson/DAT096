@@ -22,7 +22,7 @@ endif
 
 ###################################################
 
-BINPATH=/Users/Philip/dev/gcc-arm-none-eabi-4_7-2013q3/bin
+BINPATH=~/dev/gcc-arm-none-eabi-4_7-2013q3/bin
 CC=$(BINPATH)/arm-none-eabi-gcc
 OBJCOPY=$(BINPATH)/arm-none-eabi-objcopy
 SIZE=$(BINPATH)/arm-none-eabi-size
