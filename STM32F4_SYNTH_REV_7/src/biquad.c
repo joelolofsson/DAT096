@@ -9,47 +9,31 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
 
 SAMPLE temp;
 SAMPLE x_n_1, x_n_2,y_n_1,y_n_2;
-
+//Temporary outputdelaration
+SAMPLE * output; 
 int16_t j;
 
-for(j=0;j<framesPerBuffer/2;j++){
-    temp = *audioBuffer;
-    cbRead(&self->Xs,&x_n_1,1);
-    cbRead(&self->Xs,&x_n_2,0);
-    cbRead(&self->Ys,&y_n_1,1);
-    cbRead(&self->Ys,&y_n_2,0);
+for(j=0;j<framesPerBuffer;j++){
+    temp = *output;
+    cbRead(&self->Xs,&x_n_1,0);
+    cbRead(&self->Xs,&x_n_2,1);
+    cbRead(&self->Ys,&y_n_1,0);
+    cbRead(&self->Ys,&y_n_2,1);
 
-    *audioBuffer++ = (SAMPLE)((self->b0)*temp + (self->b1)*x_n_1 - (self->a1)*y_n_1 - (self->a2)*y_n_2);
-    *audioBuffer++ = (SAMPLE)((self->b0)*temp + (self->b1)*x_n_1 - (self->a1)*y_n_1 - (self->a2)*y_n_2);
+    *audioBuffer++ = (self->b0) *temp + (self->b1)*x_n_1 +(self->a1)*y_n_1 + (self->a2)*y_n_2;
 
-    //cbWrite(&self->Ys, audioBuffer-1);
-    //cbWrite(&self->Xs, &temp);
+    cbWrite(&self->Ys, audioBuffer-1);
+    cbWrite(&self->Xs, &temp);
     }
 audioBuffer = audioBuffer - framesPerBuffer;
 
 }
-
-
-
 
 void filterCoefficients(biquad *self,double gain, double fs, double fc, double Q, filterType type){
 
 double V0 = pow(10, gain/10);
 double root2 = 1/Q;
 double K = tan((M_PI*fc)/fs);
-    
-    SAMPLE zero = 0;
-    
-    cbInit(&self->Xs, 2);
-    cbInit(&self->Ys, 2);
-    
-    unsigned int i;
-    for( i=0; i<3; i++ )
-    {
-        cbWrite(&self->Xs, &zero);
-        cbWrite(&self->Ys, &zero);
-    }
-    
 
 switch(self->type) {   
     case BASS:
