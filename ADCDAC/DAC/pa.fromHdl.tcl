@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name DAC -dir "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_1" -part xc7a100tcsg324-2L
+create_project -name DAC -dir "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_4" -part xc7a100tcsg324-2L
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "top.ucf" [current_fileset -constrset]

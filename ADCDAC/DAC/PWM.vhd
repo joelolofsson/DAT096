@@ -32,6 +32,7 @@ use IEEE.Numeric_std.all;
 
 entity PWM is
     Port ( PWMclk : in  STD_LOGIC;
+			  reset  : in STD_LOGIC;
 			  value  : in STD_LOGIC_VECTOR(10 downto 0);
            PWMout : out  STD_LOGIC);
 end PWM;
@@ -39,18 +40,23 @@ end PWM;
 architecture Behavioral of PWM is
 
 signal cnt : integer range 0 to 2**11-1;
+signal samplevalue : std_logic_vector(10 downto 0);
 constant dutycycle : integer range 0 to 2**11-1:= 2**10;
 
 
 begin
 
-process(PWMclk)
+process(PWMclk,reset)
 begin
-	if rising_edge(PWMclk) then
+	if reset = '1' then
+		cnt <= 2**11-1;
+		PWMout <= '0';
+	elsif rising_edge(PWMclk) then
 		if cnt = 2**11-1 then
 			PWMout <= '1';
-			cnt <= 1;
-		elsif cnt = to_integer(unsigned(value)) then
+			cnt <= 0;
+			samplevalue <= value;
+		elsif cnt = to_integer(unsigned(samplevalue)) then
 			PWMout <= '0';
 			cnt <= cnt +1;
 		else

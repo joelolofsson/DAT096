@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Feb 13 11:41:04 2014
+# Process ID: 972
+# Log file: C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_4/planAhead.log
+# Journal file: C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/pa.fromHdl.tcl
+# create_project -name DAC -dir "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_4" -part xc7a100tcsg324-2L
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "top.ucf" [current_fileset -constrset]
+Adding file 'C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ipcore_dir/DMC.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {PWM.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {top.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top top $srcset
+# add_files [list {top.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc7a100tcsg324-2L
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/PWM.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/ipcore_dir/DMC.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.vhd" into library work
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+Finished Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+Phase 0 | Netlist Checksum: aac9249f
+open_rtl_design: Time (s): elapsed = 00:00:29 . Memory (MB): peak = 659.613 ; gain = 290.727
+update_compile_order -fileset sim_1
+refresh_design
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/PWM.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/ipcore_dir/DMC.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.vhd" into library work
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+Finished Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+refresh_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 662.996 ; gain = 3.383
+set_property iostandard LVCMOS33 [get_ports [list PWMCLKout]]
+startgroup
+set_property package_pin T9 [get_ports PWMCLKout]
+endgroup
+startgroup
+set_property package_pin U11 [get_ports pwmout]
+endgroup
+save_constraints
+startgroup
+set_property package_pin T8 [get_ports PWMCLKout]
+endgroup
+save_constraints
+refresh_design
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/PWM.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/ipcore_dir/DMC.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.vhd" into library work
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+Finished Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+refresh_design: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 694.688 ; gain = 5.148
+refresh_design
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/PWM.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/ipcore_dir/DMC.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.vhd" into library work
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+Finished Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+refresh_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 708.305 ; gain = 13.617
+set_property iostandard LVCMOS33 [get_ports [list {valueout[10]} {valueout[9]} {valueout[8]} {valueout[7]} {valueout[6]} {valueout[5]} {valueout[4]} {valueout[3]} {valueout[2]} {valueout[1]} {valueout[0]}]]
+set_property package_pin "" [get_ports [list  {valueout[10]}]]
+startgroup
+set_property package_pin U1 [get_ports PWMCLKout]
+endgroup
+startgroup
+set_property package_pin T8 [get_ports {valueout[10]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {valueout[9]}]
+endgroup
+startgroup
+set_property package_pin R8 [get_ports {valueout[8]}]
+endgroup
+startgroup
+set_property package_pin T6 [get_ports {valueout[7]}]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {valueout[6]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {valueout[5]}]
+endgroup
+startgroup
+set_property package_pin U7 [get_ports {valueout[4]}]
+endgroup
+startgroup
+set_property package_pin U6 [get_ports {valueout[3]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {valueout[2]}]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports {valueout[1]}]
+endgroup
+startgroup
+set_property package_pin V1 [get_ports {valueout[0]}]
+endgroup
+save_constraints

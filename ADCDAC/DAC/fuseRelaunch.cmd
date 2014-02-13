@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/testbench_isim_beh.exe" -prj "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/testbench_beh.prj" "work.testbench" 

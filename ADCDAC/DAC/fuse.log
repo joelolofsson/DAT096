@@ -1,0 +1,37 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/testbench_isim_beh.exe -prj C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/testbench_beh.prj work.testbench 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/ipcore_dir/DMC.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/PWM.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.vhd" into library work
+Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 112496 KB
+Fuse CPU Usage: 530 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vcomponents
+Compiling package std_logic_signed
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture mmcme2_adv_v of entity MMCME2_ADV [\MMCME2_ADV:testbench:inst_top:d...]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture xilinx of entity DMC [\DMC:testbench:inst_top:dmcinst:...]
+Compiling architecture behavioral of entity PWM [pwm_default]
+Compiling architecture behavioral of entity top [\top:testbench:inst_top:\]
+Compiling architecture behavior of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 24 VHDL Units
+Built simulation executable C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/testbench_isim_beh.exe
+Fuse Memory Usage: 149728 KB
+Fuse CPU Usage: 1450 ms

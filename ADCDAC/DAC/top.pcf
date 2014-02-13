@@ -1,17 +1,49 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Feb 13 09:51:52 2014
+// Written by: Map P.20131013 on Thu Feb 13 12:21:45 2014
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "valueout<4>" LOCATE = SITE "U7" LEVEL 1;
+COMP "valueout<5>" LOCATE = SITE "T4" LEVEL 1;
+COMP "valueout<6>" LOCATE = SITE "T5" LEVEL 1;
+COMP "valueout<7>" LOCATE = SITE "T6" LEVEL 1;
+COMP "valueout<8>" LOCATE = SITE "R8" LEVEL 1;
+COMP "valueout<9>" LOCATE = SITE "V9" LEVEL 1;
 COMP "clk" LOCATE = SITE "E3" LEVEL 1;
-TIMEGRP DMCinst_clkout0 = BEL "Inst_PWM/cnt_1" BEL "Inst_PWM/cnt_2" BEL
-        "Inst_PWM/cnt_3" BEL "Inst_PWM/cnt_4" BEL "Inst_PWM/cnt_5" BEL
-        "Inst_PWM/cnt_6" BEL "Inst_PWM/cnt_7" BEL "Inst_PWM/cnt_8" BEL
-        "Inst_PWM/cnt_9" BEL "Inst_PWM/cnt_10" BEL "DMCinst/clkout1_buf" BEL
-        "Inst_PWM/PWMout" BEL "Inst_PWM/cnt_0";
+COMP "Value<0>" LOCATE = SITE "U2" LEVEL 1;
+COMP "Value<1>" LOCATE = SITE "V2" LEVEL 1;
+COMP "Value<2>" LOCATE = SITE "U4" LEVEL 1;
+COMP "Value<3>" LOCATE = SITE "V5" LEVEL 1;
+COMP "Value<4>" LOCATE = SITE "V6" LEVEL 1;
+COMP "valueout<10>" LOCATE = SITE "T8" LEVEL 1;
+COMP "Value<5>" LOCATE = SITE "V7" LEVEL 1;
+COMP "Value<6>" LOCATE = SITE "R5" LEVEL 1;
+COMP "Value<7>" LOCATE = SITE "R6" LEVEL 1;
+COMP "Value<8>" LOCATE = SITE "R7" LEVEL 1;
+COMP "Value<9>" LOCATE = SITE "U8" LEVEL 1;
+COMP "Value<10>" LOCATE = SITE "U9" LEVEL 1;
+COMP "reset" LOCATE = SITE "T3" LEVEL 1;
+COMP "pwmout" LOCATE = SITE "U11" LEVEL 1;
+COMP "locked" LOCATE = SITE "B13" LEVEL 1;
+COMP "PWMCLKout" LOCATE = SITE "U1" LEVEL 1;
+COMP "valueout<0>" LOCATE = SITE "V1" LEVEL 1;
+COMP "valueout<1>" LOCATE = SITE "U3" LEVEL 1;
+COMP "valueout<2>" LOCATE = SITE "V4" LEVEL 1;
+COMP "valueout<3>" LOCATE = SITE "U6" LEVEL 1;
 PIN DMCinst/mmcm_adv_inst_pins<2> = BEL "DMCinst/mmcm_adv_inst" PINNAME
         CLKIN1;
 TIMEGRP clk = PIN "DMCinst/mmcm_adv_inst_pins<2>";
+TIMEGRP DMCinst_clkout0 = BEL "Inst_PWM/cnt_10" BEL "Inst_PWM/cnt_9" BEL
+        "Inst_PWM/cnt_8" BEL "Inst_PWM/cnt_7" BEL "Inst_PWM/cnt_6" BEL
+        "Inst_PWM/cnt_5" BEL "Inst_PWM/cnt_4" BEL "Inst_PWM/cnt_3" BEL
+        "Inst_PWM/cnt_2" BEL "Inst_PWM/cnt_1" BEL "Inst_PWM/cnt_0" BEL
+        "Inst_PWM/samplevalue_10" BEL "Inst_PWM/samplevalue_9" BEL
+        "Inst_PWM/samplevalue_8" BEL "Inst_PWM/samplevalue_7" BEL
+        "Inst_PWM/samplevalue_6" BEL "Inst_PWM/samplevalue_5" BEL
+        "Inst_PWM/samplevalue_4" BEL "Inst_PWM/samplevalue_3" BEL
+        "Inst_PWM/samplevalue_2" BEL "Inst_PWM/samplevalue_1" BEL
+        "Inst_PWM/samplevalue_0" BEL "Inst_PWM/PWMout" BEL "PWMCLKout" BEL
+        "DMCinst/clkout1_buf";
 TS_fpga_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 TS_DMCinst_clkout0 = PERIOD TIMEGRP "DMCinst_clkout0" TS_fpga_clk /
         0.903157895 HIGH 50%;

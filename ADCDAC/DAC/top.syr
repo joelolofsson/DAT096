@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: top.prj
 
@@ -148,12 +148,14 @@ Synthesizing Unit <PWM>.
     Related source file is "C:\CHALMERS\DAT096\DAT096\ADCDAC\DAC\PWM.vhd".
     Found 11-bit register for signal <cnt>.
     Found 1-bit register for signal <PWMout>.
-    Found 11-bit adder for signal <cnt[10]_GND_40_o_add_3_OUT> created at line 57.
-    Found 11-bit comparator equal for signal <value[10]_cnt[10]_equal_2_o> created at line 53
+    Found 11-bit register for signal <samplevalue>.
+    Found 11-bit adder for signal <cnt[10]_GND_40_o_add_3_OUT> created at line 63.
+    Found 11-bit comparator not equal for signal <samplevalue[10]_cnt[10]_equal_2_o> created at line 59
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  12 D-type flip-flop(s).
+	inferred  23 D-type flip-flop(s).
 	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
 Unit <PWM> synthesized.
 
 =========================================================================
@@ -162,11 +164,13 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  11-bit adder                                          : 1
-# Registers                                            : 2
+# Registers                                            : 3
  1-bit register                                        : 1
- 11-bit register                                       : 1
+ 11-bit register                                       : 2
 # Comparators                                          : 1
- 11-bit comparator equal                               : 1
+ 11-bit comparator not equal                           : 1
+# Multiplexers                                         : 1
+ 11-bit 2-to-1 multiplexer                             : 1
 
 =========================================================================
 
@@ -185,10 +189,10 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  11-bit up counter                                     : 1
-# Registers                                            : 1
- Flip-Flops                                            : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
 # Comparators                                          : 1
- 11-bit comparator equal                               : 1
+ 11-bit comparator not equal                           : 1
 
 =========================================================================
 
@@ -197,6 +201,8 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <top> ...
+
+Optimizing unit <PWM> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -208,8 +214,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 12
- Flip-Flops                                            : 12
+# Registers                                            : 23
+ Flip-Flops                                            : 23
 
 =========================================================================
 
@@ -232,26 +238,25 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 42
+# BELS                             : 57
 #      GND                         : 1
 #      INV                         : 1
-#      LUT1                        : 10
-#      LUT2                        : 1
-#      LUT4                        : 1
-#      LUT6                        : 6
+#      LUT2                        : 3
+#      LUT3                        : 11
+#      LUT6                        : 19
 #      MUXCY                       : 10
 #      VCC                         : 1
 #      XORCY                       : 11
-# FlipFlops/Latches                : 12
-#      FD                          : 1
-#      FDR                         : 10
-#      FDS                         : 1
+# FlipFlops/Latches                : 23
+#      FDC                         : 1
+#      FDE                         : 11
+#      FDP                         : 11
 # Clock Buffers                    : 2
 #      BUFG                        : 2
-# IO Buffers                       : 15
+# IO Buffers                       : 27
 #      IBUF                        : 12
 #      IBUFG                       : 1
-#      OBUF                        : 2
+#      OBUF                        : 14
 # Others                           : 1
 #      MMCME2_ADV                  : 1
 
@@ -262,20 +267,20 @@ Selected Device : 7a100tcsg324-2l
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              12  out of  126800     0%  
- Number of Slice LUTs:                   19  out of  63400     0%  
-    Number used as Logic:                19  out of  63400     0%  
+ Number of Slice Registers:              23  out of  126800     0%  
+ Number of Slice LUTs:                   34  out of  63400     0%  
+    Number used as Logic:                34  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     19
-   Number with an unused Flip Flop:       7  out of     19    36%  
-   Number with an unused LUT:             0  out of     19     0%  
-   Number of fully used LUT-FF pairs:    12  out of     19    63%  
+ Number of LUT Flip Flop pairs used:     34
+   Number with an unused Flip Flop:      11  out of     34    32%  
+   Number with an unused LUT:             0  out of     34     0%  
+   Number of fully used LUT-FF pairs:    23  out of     34    67%  
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                          15
- Number of bonded IOBs:                  15  out of    210     7%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    210    12%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
@@ -301,7 +306,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-DMCinst/clkout0                    | BUFG                   | 12    |
+DMCinst/clkout0                    | BUFG                   | 23    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -312,10 +317,10 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 2.574ns (Maximum Frequency: 388.448MHz)
-   Minimum input arrival time before clock: 1.799ns
+   Minimum period: 2.887ns (Maximum Frequency: 346.356MHz)
+   Minimum input arrival time before clock: 1.306ns
    Maximum output required time after clock: 0.742ns
-   Maximum combinational path delay: 0.339ns
+   Maximum combinational path delay: 0.408ns
 
 Timing Details:
 ---------------
@@ -323,47 +328,58 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DMCinst/clkout0'
-  Clock period: 2.574ns (frequency: 388.448MHz)
-  Total number of paths / destination ports: 221 / 23
+  Clock period: 2.887ns (frequency: 346.356MHz)
+  Total number of paths / destination ports: 1068 / 34
 -------------------------------------------------------------------------
-Delay:               2.574ns (Levels of Logic = 2)
-  Source:            Inst_PWM/cnt_10 (FF)
-  Destination:       Inst_PWM/cnt_1 (FF)
+Delay:               2.887ns (Levels of Logic = 13)
+  Source:            Inst_PWM/cnt_5 (FF)
+  Destination:       Inst_PWM/cnt_10 (FF)
   Source Clock:      DMCinst/clkout0 rising
   Destination Clock: DMCinst/clkout0 rising
 
-  Data Path: Inst_PWM/cnt_10 to Inst_PWM/cnt_1
+  Data Path: Inst_PWM/cnt_5 to Inst_PWM/cnt_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.398   0.805  Inst_PWM/cnt_10 (Inst_PWM/cnt_10)
-     LUT6:I0->O            1   0.105   0.357  Inst_PWM/PWR_10_o_cnt[10]_equal_1_o<10>_SW0 (N01)
-     LUT6:I5->O           13   0.105   0.407  Inst_PWM/PWR_10_o_cnt[10]_equal_1_o<10> (Inst_PWM/PWR_10_o_cnt[10]_equal_1_o)
-     FDR:R                     0.397          Inst_PWM/cnt_1
+     FDP:C->Q              3   0.398   0.805  Inst_PWM/cnt_5 (Inst_PWM/cnt_5)
+     LUT6:I0->O           13   0.105   0.425  Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW0 (N2)
+     LUT6:I5->O            1   0.105   0.000  Inst_PWM/Mcount_cnt_lut<0> (Inst_PWM/Mcount_cnt_lut<0>)
+     MUXCY:S->O            1   0.392   0.000  Inst_PWM/Mcount_cnt_cy<0> (Inst_PWM/Mcount_cnt_cy<0>)
+     MUXCY:CI->O           1   0.025   0.000  Inst_PWM/Mcount_cnt_cy<1> (Inst_PWM/Mcount_cnt_cy<1>)
+     MUXCY:CI->O           1   0.025   0.000  Inst_PWM/Mcount_cnt_cy<2> (Inst_PWM/Mcount_cnt_cy<2>)
+     MUXCY:CI->O           1   0.025   0.000  Inst_PWM/Mcount_cnt_cy<3> (Inst_PWM/Mcount_cnt_cy<3>)
+     MUXCY:CI->O           1   0.025   0.000  Inst_PWM/Mcount_cnt_cy<4> (Inst_PWM/Mcount_cnt_cy<4>)
+     MUXCY:CI->O           1   0.025   0.000  Inst_PWM/Mcount_cnt_cy<5> (Inst_PWM/Mcount_cnt_cy<5>)
+     MUXCY:CI->O           1   0.025   0.000  Inst_PWM/Mcount_cnt_cy<6> (Inst_PWM/Mcount_cnt_cy<6>)
+     MUXCY:CI->O           1   0.025   0.000  Inst_PWM/Mcount_cnt_cy<7> (Inst_PWM/Mcount_cnt_cy<7>)
+     MUXCY:CI->O           1   0.025   0.000  Inst_PWM/Mcount_cnt_cy<8> (Inst_PWM/Mcount_cnt_cy<8>)
+     MUXCY:CI->O           0   0.025   0.000  Inst_PWM/Mcount_cnt_cy<9> (Inst_PWM/Mcount_cnt_cy<9>)
+     XORCY:CI->O           1   0.417   0.000  Inst_PWM/Mcount_cnt_xor<10> (Inst_PWM/Mcount_cnt10)
+     FDP:D                     0.015          Inst_PWM/cnt_10
     ----------------------------------------
-    Total                      2.574ns (1.005ns logic, 1.569ns route)
-                                       (39.0% logic, 61.0% route)
+    Total                      2.887ns (1.657ns logic, 1.230ns route)
+                                       (57.4% logic, 42.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'DMCinst/clkout0'
-  Total number of paths / destination ports: 11 / 1
+  Total number of paths / destination ports: 34 / 23
 -------------------------------------------------------------------------
-Offset:              1.799ns (Levels of Logic = 3)
-  Source:            Value<1> (PAD)
-  Destination:       Inst_PWM/PWMout (FF)
+Offset:              1.306ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       Inst_PWM/samplevalue_10 (FF)
   Destination Clock: DMCinst/clkout0 rising
 
-  Data Path: Value<1> to Inst_PWM/PWMout
+  Data Path: reset to Inst_PWM/samplevalue_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.793  Value_1_IBUF (Value_1_IBUF)
-     LUT6:I0->O            1   0.105   0.780  Inst_PWM/_n00174 (Inst_PWM/_n00174)
-     LUT6:I1->O            1   0.105   0.000  Inst_PWM/PWMout_glue_rst (Inst_PWM/PWMout_glue_rst)
-     FDS:D                     0.015          Inst_PWM/PWMout
+     IBUF:I->O            13   0.001   0.407  reset_IBUF (reset_IBUF)
+     INV:I->O             11   0.123   0.655  Inst_PWM/_n0029_inv1_rstpot_INV_0 (Inst_PWM/_n0029_inv1_rstpot)
+     LUT3:I0->O            1   0.105   0.000  Inst_PWM/samplevalue_0_dpot (Inst_PWM/samplevalue_0_dpot)
+     FDE:D                     0.015          Inst_PWM/samplevalue_0
     ----------------------------------------
-    Total                      1.799ns (0.226ns logic, 1.573ns route)
-                                       (12.6% logic, 87.4% route)
+    Total                      1.306ns (0.244ns logic, 1.062ns route)
+                                       (18.7% logic, 81.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DMCinst/clkout0'
@@ -378,7 +394,7 @@ Offset:              0.742ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              2   0.398   0.344  Inst_PWM/PWMout (Inst_PWM/PWMout)
+     FDC:C->Q              2   0.398   0.344  Inst_PWM/PWMout (Inst_PWM/PWMout)
      OBUF:I->O                 0.000          pwmout_OBUF (pwmout)
     ----------------------------------------
     Total                      0.742ns (0.398ns logic, 0.344ns route)
@@ -386,21 +402,21 @@ Offset:              0.742ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 14 / 14
 -------------------------------------------------------------------------
-Delay:               0.339ns (Levels of Logic = 1)
-  Source:            DMCinst/mmcm_adv_inst:LOCKED (PAD)
-  Destination:       locked (PAD)
+Delay:               0.408ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       DMCinst/mmcm_adv_inst:RST (PAD)
 
-  Data Path: DMCinst/mmcm_adv_inst:LOCKED to locked
+  Data Path: reset to DMCinst/mmcm_adv_inst:RST
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    MMCME2_ADV:LOCKED      1   0.000   0.339  DMCinst/mmcm_adv_inst (locked_OBUF)
-     OBUF:I->O                 0.000          locked_OBUF (locked)
+     IBUF:I->O            13   0.001   0.407  reset_IBUF (reset_IBUF)
+    MMCME2_ADV:RST             0.000          DMCinst/mmcm_adv_inst
     ----------------------------------------
-    Total                      0.339ns (0.000ns logic, 0.339ns route)
-                                       (0.0% logic, 100.0% route)
+    Total                      0.408ns (0.001ns logic, 0.407ns route)
+                                       (0.2% logic, 99.8% route)
 
 =========================================================================
 
@@ -412,18 +428,18 @@ Clock to Setup on destination clock DMCinst/clkout0
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DMCinst/clkout0|    2.574|         |         |         |
+DMCinst/clkout0|    2.887|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.89 secs
+Total CPU time to Xst completion: 10.49 secs
  
 --> 
 
-Total memory usage is 321684 kilobytes
+Total memory usage is 320596 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

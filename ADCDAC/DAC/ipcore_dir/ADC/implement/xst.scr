@@ -1,0 +1,9 @@
+run
+-ifmt MIXED
+-top ADC_exdes
+-p xc7a100t-csg324-2l
+-ifn xst.prj
+-ofn ADC_exdes
+-keep_hierarchy soft 
+-equivalent_register_removal no 
+-max_fanout 65535

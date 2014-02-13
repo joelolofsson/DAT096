@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Feb 13 11:41:04 2014
+# Process ID: 972
+# Log file: C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_4/planAhead.log
+# Journal file: C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+refresh_design
+set_property iostandard LVCMOS33 [get_ports [list PWMCLKout]]
+startgroup
+set_property package_pin T9 [get_ports PWMCLKout]
+endgroup
+startgroup
+set_property package_pin U11 [get_ports pwmout]
+endgroup
+save_constraints
+startgroup
+set_property package_pin T8 [get_ports PWMCLKout]
+endgroup
+save_constraints
+refresh_design
+refresh_design
+set_property iostandard LVCMOS33 [get_ports [list {valueout[10]} {valueout[9]} {valueout[8]} {valueout[7]} {valueout[6]} {valueout[5]} {valueout[4]} {valueout[3]} {valueout[2]} {valueout[1]} {valueout[0]}]]
+set_property package_pin "" [get_ports [list  {valueout[10]}]]
+startgroup
+set_property package_pin U1 [get_ports PWMCLKout]
+endgroup
+startgroup
+set_property package_pin T8 [get_ports {valueout[10]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {valueout[9]}]
+endgroup
+startgroup
+set_property package_pin R8 [get_ports {valueout[8]}]
+endgroup
+startgroup
+set_property package_pin T6 [get_ports {valueout[7]}]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {valueout[6]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {valueout[5]}]
+endgroup
+startgroup
+set_property package_pin U7 [get_ports {valueout[4]}]
+endgroup
+startgroup
+set_property package_pin U6 [get_ports {valueout[3]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {valueout[2]}]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports {valueout[1]}]
+endgroup
+startgroup
+set_property package_pin V1 [get_ports {valueout[0]}]
+endgroup
+save_constraints

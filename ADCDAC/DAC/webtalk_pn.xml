@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Feb 13 09:51:56 2014">
+<application name="pn" timeStamp="Thu Feb 13 12:21:49 2014">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="3C9606BD45C1483FB972B67D5E7463E3" type="project"/>
-<property name="ProjectIteration" value="3" type="project"/>
+<property name="ProjectIteration" value="9" type="project"/>
 <property name="ProjectFile" value="C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/DAC.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2014-02-13T09:02:43" type="project"/>
 </section>
@@ -17,6 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/testbench" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -24,10 +25,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2014-02-13T09:02:43" type="design"/>
 <property name="PROP_intWbtProjectID" value="3C9606BD45C1483FB972B67D5E7463E3" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="3" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="9" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.testbench" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Artix7" type="design"/>
 <property name="PROP_DevDevice" value="xc7a100t" type="design"/>
@@ -38,7 +40,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
 <property name="FILE_COREGEN" value="1" type="source"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VHDL" value="2" type="source"/>
+<property name="FILE_VHDL" value="3" type="source"/>
 </section>
 </application>
 </document>

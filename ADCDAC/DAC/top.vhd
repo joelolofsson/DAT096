@@ -34,6 +34,8 @@ entity top is
            pwmout : out  STD_LOGIC;
 			  locked : out STD_LOGIC;
 			  Value	: in STD_LOGIC_VECTOR(10 downto 0);
+			  valueout : out STD_LOGIC_VECTOR(10 downto 0);
+			  PWMCLKout : out STD_LOGIC;
            reset : in  STD_LOGIC);
 end top;
 
@@ -54,6 +56,7 @@ end component;
 	COMPONENT PWM
 	PORT(
 		PWMclk : IN std_logic;
+		reset : in std_logic;
 		value : in std_LOGIC_VECTOR(10 downto 0);
 		PWMout : out std_logic      
 		);
@@ -75,9 +78,13 @@ DMCinst : DMC
 	 
 	 	Inst_PWM: PWM PORT MAP(
 		PWMclk => pwmclock,
+		reset => reset,
 		value => value,
 		PWMout => pwmout
 	);
+	
+	pwmclkout <= pwmclock;
+	valueout <= value;
 
 end Behavioral;
 

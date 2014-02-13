@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="Value">
+			<Port Id="10" Dir="IN"/>
+			<Port Id="9" Dir="IN"/>
+			<Port Id="8" Dir="IN"/>
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Port Id="clk" Dir="IN"/>
+		<Port Id="pwmout" Dir="OUT"/>
+		<Port Id="locked" Dir="OUT"/>
+		<Port Id="reset" Dir="IN"/>
+	</Ifc>
+</Interface>
+

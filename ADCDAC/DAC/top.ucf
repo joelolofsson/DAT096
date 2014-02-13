@@ -1,12 +1,108 @@
 NET "clk" TNM_NET = "clk";
 TIMESPEC TS_fpga_clk = PERIOD "clk" 10 ns HIGH 50 %;
 
-# PlanAhead Generated physical constraints 
 
 NET "clk" LOC = E3;
 
-# PlanAhead Generated IO constraints 
 
-NET "clk" IOSTANDARD = LVTTL;
+NET "clk" IOSTANDARD = LVCMOS33;
 NET "clk" DRIVE = 12;
 NET "clk" SLEW = SLOW;
+
+
+NET "Value[10]" LOC = U9;
+NET "Value[9]" LOC = U8;
+NET "Value[8]" LOC = R7;
+NET "Value[7]" LOC = R6;
+NET "Value[6]" LOC = R5;
+NET "Value[5]" LOC = V7;
+NET "Value[4]" LOC = V6;
+NET "Value[3]" LOC = V5;
+NET "Value[1]" LOC = V2;
+NET "Value[0]" LOC = U2;
+NET "reset" LOC = T3;
+
+
+NET "Value[10]" IOSTANDARD = LVCMOS33;
+NET "Value[9]" IOSTANDARD = LVCMOS33;
+NET "Value[8]" IOSTANDARD = LVCMOS33;
+NET "Value[7]" IOSTANDARD = LVCMOS33;
+NET "Value[6]" IOSTANDARD = LVCMOS33;
+NET "Value[5]" IOSTANDARD = LVCMOS33;
+NET "Value[4]" IOSTANDARD = LVCMOS33;
+NET "Value[3]" IOSTANDARD = LVCMOS33;
+NET "Value[2]" IOSTANDARD = LVCMOS33;
+NET "Value[1]" IOSTANDARD = LVCMOS33;
+NET "Value[0]" IOSTANDARD = LVCMOS33;
+NET "Value[10]" DRIVE = 12;
+NET "Value[9]" DRIVE = 12;
+NET "Value[8]" DRIVE = 12;
+NET "Value[7]" DRIVE = 12;
+NET "Value[6]" DRIVE = 12;
+NET "Value[5]" DRIVE = 12;
+NET "Value[4]" DRIVE = 12;
+NET "Value[3]" DRIVE = 12;
+NET "Value[2]" DRIVE = 12;
+NET "Value[1]" DRIVE = 12;
+NET "Value[0]" DRIVE = 12;
+NET "Value[10]" SLEW = SLOW;
+NET "Value[9]" SLEW = SLOW;
+NET "Value[8]" SLEW = SLOW;
+NET "Value[7]" SLEW = SLOW;
+NET "Value[6]" SLEW = SLOW;
+NET "Value[5]" SLEW = SLOW;
+NET "Value[4]" SLEW = SLOW;
+NET "Value[3]" SLEW = SLOW;
+NET "Value[2]" SLEW = SLOW;
+NET "Value[1]" SLEW = SLOW;
+NET "Value[0]" SLEW = SLOW;
+NET "locked" IOSTANDARD = LVCMOS33;
+NET "pwmout" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "locked" DRIVE = 12;
+NET "pwmout" DRIVE = 12;
+NET "reset" DRIVE = 12;
+NET "locked" SLEW = SLOW;
+NET "pwmout" SLEW = SLOW;
+NET "reset" SLEW = SLOW;
+
+
+NET "Value[2]" LOC = U4;
+NET "pwmout" LOC = U11;
+
+
+NET "locked" LOC = B13;
+
+
+NET "PWMCLKout" IOSTANDARD = LVCMOS33;
+
+
+NET "PWMCLKout" LOC = U1;
+
+# PlanAhead Generated IO constraints 
+
+NET "valueout[10]" IOSTANDARD = LVCMOS33;
+NET "valueout[9]" IOSTANDARD = LVCMOS33;
+NET "valueout[8]" IOSTANDARD = LVCMOS33;
+NET "valueout[7]" IOSTANDARD = LVCMOS33;
+NET "valueout[6]" IOSTANDARD = LVCMOS33;
+NET "valueout[5]" IOSTANDARD = LVCMOS33;
+NET "valueout[4]" IOSTANDARD = LVCMOS33;
+NET "valueout[3]" IOSTANDARD = LVCMOS33;
+NET "valueout[2]" IOSTANDARD = LVCMOS33;
+NET "valueout[1]" IOSTANDARD = LVCMOS33;
+NET "valueout[0]" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "valueout[10]" LOC = T8;
+NET "valueout[9]" LOC = V9;
+NET "valueout[8]" LOC = R8;
+NET "valueout[7]" LOC = T6;
+NET "valueout[6]" LOC = T5;
+NET "valueout[5]" LOC = T4;
+NET "valueout[4]" LOC = U7;
+NET "valueout[3]" LOC = U6;
+NET "valueout[2]" LOC = V4;
+NET "valueout[1]" LOC = U3;
+NET "valueout[0]" LOC = V1;
