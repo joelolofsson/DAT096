@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Feb 13 09:42:53 2014
+# Process ID: 3192
+# Log file: C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_1/planAhead.log
+# Journal file: C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin E3 [get_ports clk]
+endgroup
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVTTL [get_ports [list clk]]
+set_property drive 12 [get_ports [list clk]]
+set_property slew SLOW [get_ports [list clk]]
+save_constraints

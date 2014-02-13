@@ -1,0 +1,3 @@
+vhdtdtfi -prj DAC -o C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/PWM.vhi -module PWM -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PWM.vhd 
+vhdtdtfi -lib work PWM.vhd -prj DAC -o PWM.spl -module PWM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 PWM.spl C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/PWM.sym 

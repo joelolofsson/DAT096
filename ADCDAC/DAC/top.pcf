@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Feb 13 09:51:52 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+TIMEGRP DMCinst_clkout0 = BEL "Inst_PWM/cnt_1" BEL "Inst_PWM/cnt_2" BEL
+        "Inst_PWM/cnt_3" BEL "Inst_PWM/cnt_4" BEL "Inst_PWM/cnt_5" BEL
+        "Inst_PWM/cnt_6" BEL "Inst_PWM/cnt_7" BEL "Inst_PWM/cnt_8" BEL
+        "Inst_PWM/cnt_9" BEL "Inst_PWM/cnt_10" BEL "DMCinst/clkout1_buf" BEL
+        "Inst_PWM/PWMout" BEL "Inst_PWM/cnt_0";
+PIN DMCinst/mmcm_adv_inst_pins<2> = BEL "DMCinst/mmcm_adv_inst" PINNAME
+        CLKIN1;
+TIMEGRP clk = PIN "DMCinst/mmcm_adv_inst_pins<2>";
+TS_fpga_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+TS_DMCinst_clkout0 = PERIOD TIMEGRP "DMCinst_clkout0" TS_fpga_clk /
+        0.903157895 HIGH 50%;
+SCHEMATIC END;
+

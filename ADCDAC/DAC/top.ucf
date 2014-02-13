@@ -1,0 +1,12 @@
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_fpga_clk = PERIOD "clk" 10 ns HIGH 50 %;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = E3;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVTTL;
+NET "clk" DRIVE = 12;
+NET "clk" SLEW = SLOW;
