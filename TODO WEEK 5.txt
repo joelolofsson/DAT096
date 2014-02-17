@@ -1,5 +1,5 @@
 /********************** TODO *******************************/
 
-Philip - Transpose the chorus and flanger to the stm32audiokernel. This includes designing a SMART implementation of the LFOs. Start researching/developing the distortion in Matlab. 
+Philip - Transpose the chorus and flanger to the stm32audiokernel. This includes designing a SMART implementation of the LFOs. Start researching/developing the distortion in Matlab. Start documenting delay. 
 
-Daniel - Debug/Verify the filter coefficients in eclipse/Matlab if something is wrong fix it. Start researching/developing the reverb in Matlab.
+Daniel - Debug/Verify the filter coefficients in eclipse/Matlab if something is wrong fix it. Start researching/developing the reverb in Matlab. Start documenting EQ.
