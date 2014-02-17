@@ -23,8 +23,6 @@ void delayInitialize(void){
     {
         cbWrite(&circBuffer, &zero);
     }
-    
-    
 }
 
 void delay(int16_t *audioBuffer, int framesPerBuffer){
