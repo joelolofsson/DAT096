@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Wed Feb 19 12:36:12 2014
+# Process ID: 3176
+# Log file: c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/project_1/DMC_example/vivado.log
+# Journal file: c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/project_1/DMC_example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/project_1/project_1.srcs/sources_1/ip/DMC/DMC_ex.tcl

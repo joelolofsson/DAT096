@@ -1,3 +1,4 @@
+ 
 -- file: ADC_tb.vhd
 -- (c) Copyright 2009 - 2011 Xilinx, Inc. All rights reserved.
 -- 
@@ -67,9 +68,9 @@ use work.all;
 entity ADC_tb is
 end ADC_tb;
 architecture test of ADC_tb is
-  constant PER1        : time := 10 ns;
-  -- Declare the input clock signals
-  signal DCLK_TB       : std_logic := '0';
+  constant PER1        : time := 20 ns; -- Inbuilt clock
+  constant PER3        : time := 10 ns;
+  signal CONVSTCLK_TB  : std_logic := '0';
   signal RESET_TB      : std_logic;
    signal FLOAT_VCCAUX_ALARM : std_logic;
    signal FLOAT_VCCINT_ALARM : std_logic;
@@ -78,7 +79,7 @@ architecture test of ADC_tb is
   signal MEASURE_DONE : std_logic;
 component ADC_exdes
     port (
-          DCLK_IN             : in  STD_LOGIC;
+          CONVSTCLK_IN        : in  STD_LOGIC;
           RESET_IN            : in  STD_LOGIC;
           ALARM_OUT          : out STD_LOGIC;                         -- OR'ed output of all the Alarms
           VP_IN               : in  STD_LOGIC;
@@ -88,9 +89,6 @@ end component;
 begin
   -- DCLK clock generation
   --------------------------------------
-  process begin
-    DCLK_TB <= not DCLK_TB; wait for (PER1/2);
-  end process;
 process
 begin
   report "Timing checks are not valid" severity note;
@@ -129,7 +127,7 @@ end process;
   -----------------------------------------------------------
   dut : ADC_exdes
   port map (
-      DCLK_IN                 => DCLK_TB,
+      CONVSTCLK_IN            => CONVSTCLK_TB,
       RESET_IN                => RESET_TB,
       ALARM_OUT               => ALARM_OUT_TB,
       VP_IN                   => '0',   -- Stimulus applied from SIM_MONITOR_FILE

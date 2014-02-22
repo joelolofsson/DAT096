@@ -22,6 +22,7 @@ ADC\implement\planAhead_ise.tcl
 ADC\implement\planAhead_rdn.bat
 ADC\implement\planAhead_rdn.sh
 ADC\implement\planAhead_rdn.tcl
+ADC\implement\synplify.prj
 ADC\implement\xst.prj
 ADC\implement\xst.scr
 ADC\simulation\ADC_tb.vhd
@@ -33,6 +34,9 @@ ADC\simulation\functional\simulate_mti.bat
 ADC\simulation\functional\simulate_mti.do
 ADC\simulation\functional\simulate_mti.sh
 ADC\simulation\functional\simulate_ncsim.sh
+ADC\simulation\functional\simulate_vcs.sh
+ADC\simulation\functional\ucli_commands.key
+ADC\simulation\functional\vcs_session.tcl
 ADC\simulation\functional\wave.do
 ADC\simulation\timing\ADC_tb.vhd
 ADC\simulation\timing\design.txt

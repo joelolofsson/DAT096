@@ -1,4 +1,0 @@
-vhdl work "ipcore_dir/DMC.vhd"
-vhdl work "PWM.vhd"
-vhdl work "top.vhd"
-vhdl work "TB.vhd"

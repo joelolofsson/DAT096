@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.modules.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -31,6 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity top is
     Port ( clk : in  STD_LOGIC;
+			  VP_IN	: IN STD_LOGIC;
            pwmout : out  STD_LOGIC;
 			  locked : out STD_LOGIC;
 			  Value	: in STD_LOGIC_VECTOR(10 downto 0);
@@ -41,28 +43,9 @@ end top;
 
 architecture Behavioral of top is
 
-component DMC
-port
- (-- Clock in ports
-  CLK_IN1           : in     std_logic;
-  -- Clock out ports
-  CLK_OUT1          : out    std_logic;
-  -- Status and control signals
-  RESET             : in     std_logic;
-  LOCKED            : out    std_logic
- );
-end component;
 
-	COMPONENT PWM
-	PORT(
-		PWMclk : IN std_logic;
-		reset : in std_logic;
-		value : in std_LOGIC_VECTOR(10 downto 0);
-		PWMout : out std_logic      
-		);
-	END COMPONENT;
 
-signal PWMclock : std_logic;
+signal PWMclock,sampleclk : std_logic;
 
 begin
 
@@ -80,11 +63,22 @@ DMCinst : DMC
 		PWMclk => pwmclock,
 		reset => reset,
 		value => value,
+		outclk => sampleclk,
 		PWMout => pwmout
 	);
 	
 	pwmclkout <= pwmclock;
 	valueout <= value;
+	
+	
+	ADC_inst : ADC
+  port map ( 
+          CONVSTCLK_IN        => sampleclk, 
+          RESET_IN            => RESET, 
+      ALARM_OUT          => open,                         -- OR'ed output of all the Alarms
+          VP_IN               => VP_IN, 
+          VN_IN               => '0'
+         );
 
 end Behavioral;
 

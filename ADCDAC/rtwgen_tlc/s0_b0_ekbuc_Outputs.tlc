@@ -1,0 +1,258 @@
+%implements s0_b0_ekbuc_Outputs "C"
+
+%function OutputsForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign localVarDecl = ""
+%openfile localVarDecl
+int32_T firstIteration;
+int32_T i;
+real_T accumulator;
+int32_T j;
+uint32_T bpIdx;
+%closefile localVarDecl
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_Downsample
+%<SLibCGIRAccessLocalVar(1, 0)> %% rtb_Chirp
+
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 0, 2)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 2)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2, 0, 2)
+%assign tlcOutputsFcnOfS0B4 = OpaqueTLCBlockFcn("Outputs", 0, 4, 0, 2)
+%<tlcOutputsFcnOfS0B0>\
+%<tlcOutputsFcnOfS0B1>\
+/* Lookup_n-D: '<Root>/1-D Lookup Table' */
+bpIdx = plook_u32d_bincka(rtb_Chirp, samplingcircuit_P.quantBreak, 8191U);
+samplingcircuit_B.DLookupTable = samplingcircuit_P.quantData[bpIdx];
+%<tlcOutputsFcnOfS0B2>\
+/* DiscreteFir: '<Root>/Filter' */
+firstIteration = 1;
+/* Consume delay line and beginning of input samples */
+for (i = 1; i - 1 < 1; i++) {
+    accumulator = 0.0;
+    for (j = 0; j < i; j++) {
+        accumulator += samplingcircuit_B.DLookupTable * samplingcircuit_P.Filter_Coefficients[j];
+    }
+    for (j = 0; j < 11 - i; j++) {
+        accumulator += samplingcircuit_P.Filter_Coefficients[i + j] * samplingcircuit_DW.Filter_states[j];
+    }
+    samplingcircuit_B.Filter = accumulator;
+}
+/* Update delay line for next frame */
+for (i = 8; i >= 0; i--) {
+    samplingcircuit_DW.Filter_states[1 + i] = samplingcircuit_DW.Filter_states[i];
+}
+for (i = 1; i - 1 < 1; i++) {
+    samplingcircuit_DW.Filter_states[1 - i] = samplingcircuit_B.DLookupTable;
+}
+/* End of DiscreteFir: '<Root>/Filter' */
+
+/* DiscreteFir: '<Root>/Discrete FIR Filter' */
+samplingcircuit_B.DiscreteFIRFilter = samplingcircuit_B.Filter * samplingcircuit_P.DiscreteFIRFilter_Coefficients[0] + samplingcircuit_DW.DiscreteFIRFilter_states * samplingcircuit_P.DiscreteFIRFilter_Coefficients[1];
+/* ZeroOrderHold: '<Root>/Zero-Order Hold1' */
+if (%<(LibIsSpecialSampleHit(2, 1))>) {
+    samplingcircuit_B.ZeroOrderHold1 = samplingcircuit_B.DiscreteFIRFilter;
+}
+/* End of ZeroOrderHold: '<Root>/Zero-Order Hold1' */
+
+/* DiscreteFir: '<S3>/Digital Filter' */
+/* Consume delay line and beginning of input samples */
+for (i = 1; i - 1 < 1; i++) {
+    accumulator = 0.0;
+    for (j = 0; j < i; j++) {
+        accumulator += samplingcircuit_B.DLookupTable * samplingcircuit_P.DigitalFilter_Coefficients[j];
+    }
+    for (j = 0; j < 11 - i; j++) {
+        accumulator += samplingcircuit_P.DigitalFilter_Coefficients[i + j] * samplingcircuit_DW.DigitalFilter_states[j];
+    }
+    samplingcircuit_B.DigitalFilter = accumulator;
+}
+/* Update delay line for next frame */
+for (i = 8; i >= 0; i--) {
+    samplingcircuit_DW.DigitalFilter_states[1 + i] = samplingcircuit_DW.DigitalFilter_states[i];
+}
+for (i = 1; i - 1 < 1; i++) {
+    samplingcircuit_DW.DigitalFilter_states[1 - i] = samplingcircuit_B.DLookupTable;
+}
+/* End of DiscreteFir: '<S3>/Digital Filter' */
+
+/* DiscreteFir: '<Root>/Discrete FIR Filter4' */
+accumulator = samplingcircuit_B.DigitalFilter * samplingcircuit_P.DiscreteFIRFilter4_Coefficients[0];
+for (j = samplingcircuit_DW.DiscreteFIRFilter4_circBuf; j < 15; j++) {
+    accumulator += samplingcircuit_DW.DiscreteFIRFilter4_states[j] * samplingcircuit_P.DiscreteFIRFilter4_Coefficients[firstIteration];
+    firstIteration++;
+}
+for (j = 0; j < samplingcircuit_DW.DiscreteFIRFilter4_circBuf; j++) {
+    accumulator += samplingcircuit_DW.DiscreteFIRFilter4_states[j] * samplingcircuit_P.DiscreteFIRFilter4_Coefficients[firstIteration];
+    firstIteration++;
+}
+samplingcircuit_B.DiscreteFIRFilter4 = accumulator;
+/* End of DiscreteFir: '<Root>/Discrete FIR Filter4' */
+
+/* S-Function (sdspdsamp2): '<Root>/Downsample' */
+if (samplingcircuit_DW.Downsample_Count == 0) {
+    rtb_Downsample = samplingcircuit_B.DiscreteFIRFilter4;
+} else {
+    rtb_Downsample = samplingcircuit_DW.Downsample_Buffer;
+}
+/* End of S-Function (sdspdsamp2): '<Root>/Downsample' */
+%<tlcOutputsFcnOfS0B4>\
+%<SLibInsertSolverResetCode()>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutput0LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign localVarDecl = ""
+%openfile localVarDecl
+real_T accumulator;
+int32_T i;
+int32_T j;
+%closefile localVarDecl
+/* DiscreteFir: '<Root>/Filter1' */
+/* Consume delay line and beginning of input samples */
+for (i = 1; i - 1 < 1; i++) {
+    accumulator = 0.0;
+    for (j = 0; j < i; j++) {
+        accumulator += samplingcircuit_B.ZeroOrderHold1 * samplingcircuit_P.Filter1_Coefficients[j];
+    }
+    for (j = 0; j < 11 - i; j++) {
+        accumulator += samplingcircuit_P.Filter1_Coefficients[i + j] * samplingcircuit_DW.Filter1_states[j];
+    }
+    samplingcircuit_B.Filter1 = accumulator;
+}
+/* Update delay line for next frame */
+for (i = 8; i >= 0; i--) {
+    samplingcircuit_DW.Filter1_states[1 + i] = samplingcircuit_DW.Filter1_states[i];
+}
+for (i = 1; i - 1 < 1; i++) {
+    samplingcircuit_DW.Filter1_states[1 - i] = samplingcircuit_B.ZeroOrderHold1;
+}
+/* End of DiscreteFir: '<Root>/Filter1' */
+
+/* DiscreteFir: '<Root>/Discrete FIR Filter1' */
+samplingcircuit_B.DiscreteFIRFilter1 = samplingcircuit_B.Filter1 * samplingcircuit_P.DiscreteFIRFilter1_Coefficients[0] + samplingcircuit_DW.DiscreteFIRFilter1_states * samplingcircuit_P.DiscreteFIRFilter1_Coefficients[1];
+/* ZeroOrderHold: '<Root>/Zero-Order Hold2' */
+if (%<(LibIsSpecialSampleHit(3, 2))>) {
+    samplingcircuit_B.ZeroOrderHold2 = samplingcircuit_B.DiscreteFIRFilter1;
+}
+/* End of ZeroOrderHold: '<Root>/Zero-Order Hold2' */
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutput2LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 3
+%assign ::GlobalCurrentTID = 3
+%assign localVarDecl = ""
+%openfile localVarDecl
+real_T accumulator;
+int32_T i;
+int32_T j;
+%closefile localVarDecl
+/* DiscreteFir: '<Root>/Filter2' */
+/* Consume delay line and beginning of input samples */
+for (i = 1; i - 1 < 1; i++) {
+    accumulator = 0.0;
+    for (j = 0; j < i; j++) {
+        accumulator += samplingcircuit_B.ZeroOrderHold2 * samplingcircuit_P.Filter2_Coefficients[j];
+    }
+    for (j = 0; j < 11 - i; j++) {
+        accumulator += samplingcircuit_P.Filter2_Coefficients[i + j] * samplingcircuit_DW.Filter2_states[j];
+    }
+    samplingcircuit_B.Filter2 = accumulator;
+}
+/* Update delay line for next frame */
+for (i = 8; i >= 0; i--) {
+    samplingcircuit_DW.Filter2_states[1 + i] = samplingcircuit_DW.Filter2_states[i];
+}
+for (i = 1; i - 1 < 1; i++) {
+    samplingcircuit_DW.Filter2_states[1 - i] = samplingcircuit_B.ZeroOrderHold2;
+}
+/* End of DiscreteFir: '<Root>/Filter2' */
+
+/* DiscreteFir: '<Root>/Discrete FIR Filter2' */
+samplingcircuit_B.DiscreteFIRFilter2 = samplingcircuit_B.Filter2 * samplingcircuit_P.DiscreteFIRFilter2_Coefficients[0] + samplingcircuit_DW.DiscreteFIRFilter2_states * samplingcircuit_P.DiscreteFIRFilter2_Coefficients[1];
+/* ZeroOrderHold: '<Root>/Zero-Order Hold3' */
+if (%<(LibIsSpecialSampleHit(4, 3))>) {
+    samplingcircuit_B.ZeroOrderHold3 = samplingcircuit_B.DiscreteFIRFilter2;
+}
+/* End of ZeroOrderHold: '<Root>/Zero-Order Hold3' */
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutput3LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 4
+%assign ::GlobalCurrentTID = 4
+%assign localVarDecl = ""
+%openfile localVarDecl
+real_T accumulator;
+int32_T i;
+int32_T j;
+%closefile localVarDecl
+/* DiscreteFir: '<Root>/Filter3' */
+/* Consume delay line and beginning of input samples */
+for (i = 1; i - 1 < 1; i++) {
+    accumulator = 0.0;
+    for (j = 0; j < i; j++) {
+        accumulator += samplingcircuit_B.ZeroOrderHold3 * samplingcircuit_P.Filter3_Coefficients[j];
+    }
+    for (j = 0; j < 11 - i; j++) {
+        accumulator += samplingcircuit_P.Filter3_Coefficients[i + j] * samplingcircuit_DW.Filter3_states[j];
+    }
+    samplingcircuit_B.Filter3 = accumulator;
+}
+/* Update delay line for next frame */
+for (i = 8; i >= 0; i--) {
+    samplingcircuit_DW.Filter3_states[1 + i] = samplingcircuit_DW.Filter3_states[i];
+}
+for (i = 1; i - 1 < 1; i++) {
+    samplingcircuit_DW.Filter3_states[1 - i] = samplingcircuit_B.ZeroOrderHold3;
+}
+/* End of DiscreteFir: '<Root>/Filter3' */
+
+/* DiscreteFir: '<Root>/Discrete FIR Filter3' */
+samplingcircuit_B.DiscreteFIRFilter3 = samplingcircuit_B.Filter3 * samplingcircuit_P.DiscreteFIRFilter3_Coefficients[0] + samplingcircuit_DW.DiscreteFIRFilter3_states * samplingcircuit_P.DiscreteFIRFilter3_Coefficients[1];
+/* ZeroOrderHold: '<Root>/Zero-Order Hold4' */
+if (%<(LibIsSpecialSampleHit(5, 4))>) {
+    samplingcircuit_B.ZeroOrderHold4 = samplingcircuit_B.DiscreteFIRFilter3;
+}
+/* End of ZeroOrderHold: '<Root>/Zero-Order Hold4' */
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 5, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutput4LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 5
+%assign ::GlobalCurrentTID = 5
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS0B3 = OpaqueTLCBlockFcn("Outputs", 0, 3, 0, 6)
+%<tlcOutputsFcnOfS0B3>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 6, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutput5LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

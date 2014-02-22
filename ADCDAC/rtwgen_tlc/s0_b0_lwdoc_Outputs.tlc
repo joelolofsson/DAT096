@@ -1,0 +1,37 @@
+%implements s0_b0_lwdoc_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign localVarDecl = ""
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_DiscreteFIRFilter
+
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 0, 2)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 2)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2, 0, 2)
+/* Sin: '<Root>/Sine Wave' */
+rtb_DiscreteFIRFilter = sin(((real_T)samplingcircuit_DW.counter + samplingcircuit_P.SineWave_Offset) * 2.0 * 3.1415926535897931 / samplingcircuit_P.SineWave_NumSamp) * samplingcircuit_P.SineWave_Amp + samplingcircuit_P.SineWave_Bias;
+/* Lookup_n-D: '<Root>/1-D Lookup Table' */
+samplingcircuit_B.DLookupTable = look1_binlxpw(rtb_DiscreteFIRFilter, samplingcircuit_P.quantBreak, samplingcircuit_P.quantData, 8191U);
+%<tlcOutputsFcnOfS0B0>\
+%<tlcOutputsFcnOfS0B1>\
+/* DiscreteFir: '<Root>/Discrete FIR Filter' */
+rtb_DiscreteFIRFilter = samplingcircuit_B.DLookupTable * samplingcircuit_P.DiscreteFIRFilter_Coefficients[0] + samplingcircuit_DW.DiscreteFIRFilter_states * samplingcircuit_P.DiscreteFIRFilter_Coefficients[1];
+%<tlcOutputsFcnOfS0B2>\
+/* Update for Sin: '<Root>/Sine Wave' */
+samplingcircuit_DW.counter++;
+if (samplingcircuit_DW.counter == samplingcircuit_P.SineWave_NumSamp) {
+    samplingcircuit_DW.counter = 0;
+}
+/* End of Update for Sin: '<Root>/Sine Wave' */
+
+/* Update for DiscreteFir: '<Root>/Discrete FIR Filter' */
+/* Update states */
+samplingcircuit_DW.DiscreteFIRFilter_states = samplingcircuit_B.DLookupTable;
+%<SLibInsertSolverResetCode()>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction

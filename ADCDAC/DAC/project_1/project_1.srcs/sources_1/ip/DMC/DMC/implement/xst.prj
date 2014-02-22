@@ -1,0 +1,2 @@
+vhdl work ../../DMC.vhd
+vhdl work ../example_design/DMC_exdes.vhd

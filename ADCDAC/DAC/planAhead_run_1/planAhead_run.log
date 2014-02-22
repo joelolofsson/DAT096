@@ -9,32 +9,37 @@ INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_
 Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 start_gui
-source C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/pa.fromHdl.tcl
+source C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/pa.fromNetlist.tcl
 # create_project -name DAC -dir "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/planAhead_run_1" -part xc7a100tcsg324-2L
-create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 363.793 ; gain = 28.629
-# set_param project.pinAheadLayout yes
-# set srcset [get_property srcset [current_run -impl]]
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 362.852 ; gain = 33.328
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC} {ipcore_dir} }
+# set_param project.pinAheadLayout  yes
 # set_property target_constrs_file "top.ucf" [current_fileset -constrset]
 Adding file 'C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf' to fileset 'constrs_1'
-# set hdlfile [add_files [list {ipcore_dir/DMC.vhd}]]
-# set_property file_type VHDL $hdlfile
-# set_property library work $hdlfile
-# set hdlfile [add_files [list {PWM.vhd}]]
-# set_property file_type VHDL $hdlfile
-# set_property library work $hdlfile
-# set hdlfile [add_files [list {top.vhd}]]
-# set_property file_type VHDL $hdlfile
-# set_property library work $hdlfile
-# set_property top top $srcset
 # add_files [list {top.ucf}] -fileset [get_property constrset [current_run]]
-# open_rtl_design -part xc7a100tcsg324-2L
-Using Verific elaboration
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
-Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/PWM.vhd" into library work
-Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/ipcore_dir/DMC.vhd" into library work
-Parsing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.vhd" into library work
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7a100tcsg324-2L
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 56772 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/DAC.data/cache/top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/DAC.data/cache/top_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
 Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
@@ -45,23 +50,23 @@ Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/ar
 Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
 Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
 Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'VP_IN' at site A13, Illegal to place instance ADC_inst/XADC_INST on site ILOGIC_X0Y132. The location site type doe not match the instance type. Instance ADC_inst/XADC_INST belongs to a shape with reference instance VP_IN_IBUF. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf:110]
 Finished Parsing UCF File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/top.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
+  A total of 24 instances were transformed.
+  FDE => FDCE: 11 instances
+  FDP => FDPE: 11 instances
+  FDR => FDRE: 1 instances
   IBUFG => IBUF: 1 instances
 
-Phase 0 | Netlist Checksum: 890cd290
-open_rtl_design: Time (s): elapsed = 00:00:29 . Memory (MB): peak = 659.121 ; gain = 292.152
-update_compile_order -fileset sim_1
+Phase 0 | Netlist Checksum: 36fc8d41
+link_design: Time (s): elapsed = 00:00:43 . Memory (MB): peak = 658.688 ; gain = 293.059
 startgroup
-set_property package_pin E3 [get_ports clk]
+set_property package_pin J10 [get_ports VP_IN]
 endgroup
-set_property iostandard LVCMOS18 [get_ports [list clk]]
-set_property iostandard LVTTL [get_ports [list clk]]
-set_property drive 12 [get_ports [list clk]]
-set_property slew SLOW [get_ports [list clk]]
 save_constraints
 exit
 ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
-INFO: [Common 17-206] Exiting PlanAhead at Thu Feb 13 09:45:19 2014...
+INFO: [Common 17-206] Exiting PlanAhead at Sat Feb 15 14:32:56 2014...
 INFO: [Common 17-83] Releasing license: PlanAhead

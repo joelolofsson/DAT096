@@ -79,7 +79,6 @@ NET "PWMCLKout" IOSTANDARD = LVCMOS33;
 
 NET "PWMCLKout" LOC = U1;
 
-# PlanAhead Generated IO constraints 
 
 NET "valueout[10]" IOSTANDARD = LVCMOS33;
 NET "valueout[9]" IOSTANDARD = LVCMOS33;
@@ -93,7 +92,6 @@ NET "valueout[2]" IOSTANDARD = LVCMOS33;
 NET "valueout[1]" IOSTANDARD = LVCMOS33;
 NET "valueout[0]" IOSTANDARD = LVCMOS33;
 
-# PlanAhead Generated physical constraints 
 
 NET "valueout[10]" LOC = T8;
 NET "valueout[9]" LOC = V9;
@@ -106,3 +104,10 @@ NET "valueout[3]" LOC = U6;
 NET "valueout[2]" LOC = V4;
 NET "valueout[1]" LOC = U3;
 NET "valueout[0]" LOC = V1;
+
+
+NET "VP_IN" LOC = A13;
+
+# PlanAhead Generated physical constraints 
+
+NET "VP_IN" LOC = J10;

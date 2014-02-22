@@ -1,3 +1,4 @@
+ 
 -- file: ADC.vhd
 -- (c) Copyright 2009 - 2011 Xilinx, Inc. All rights reserved.
 -- 
@@ -53,7 +54,7 @@ use UNISIM.VCOMPONENTS.ALL;
 
 entity ADC is
     port (
-          DCLK_IN             : in  STD_LOGIC;                         -- Clock input for the dynamic reconfiguration port
+          CONVSTCLK_IN        : in  STD_LOGIC;                         -- Convert Start Input Clock
           RESET_IN            : in  STD_LOGIC;                         -- Reset signal for the System Monitor control logic
           ALARM_OUT          : out STD_LOGIC;                         -- OR'ed output of all the Alarms
           VP_IN               : in  STD_LOGIC;                         -- Dedicated Analog Input Pair
@@ -64,7 +65,7 @@ end ADC;
 architecture xilinx of ADC is
 
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of xilinx : architecture is "ADC,xadc_wiz_v2_1,{component_name=ADC,dclk_frequency=100,enable_busy=false,enable_convst=false,enable_convstclk=false,enable_dclk=true,enable_drp=false,enable_eoc=false,enable_eos=false,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_vccpaux_alaram=false,enable_Vccint_Alaram=false,enable_Vccaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=false,user_temp_alaram=false,timing_mode=continuous,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
+  attribute CORE_GENERATION_INFO of xilinx : architecture is "ADC,xadc_wiz_v2_1,{component_name=ADC,dclk_frequency=100,enable_busy=false,enable_convst=false,enable_convstclk=true,enable_dclk=false,enable_drp=false,enable_eoc=false,enable_eos=false,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_vccpaux_alaram=false,enable_Vccint_Alaram=false,enable_Vccaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=false,user_temp_alaram=false,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
 
   signal FLOAT_VCCAUX_ALARM : std_logic;
   signal FLOAT_VCCINT_ALARM : std_logic;
@@ -128,7 +129,7 @@ begin
 
  XADC_INST : XADC
      generic map(
-        INIT_40 => X"0000", -- config reg 0
+        INIT_40 => X"0200", -- config reg 0
         INIT_41 => X"3f0f", -- config reg 1
         INIT_42 => X"0400", -- config reg 2
         INIT_48 => X"0100", -- Sequencer channel selection
@@ -155,9 +156,9 @@ begin
 
 port map (
         CONVST              => '0',
-        CONVSTCLK           => '0',
+        CONVSTCLK           => CONVSTCLK_IN,
         DADDR(6 downto 0)   => "0000000",
-        DCLK                => DCLK_IN,
+        DCLK                => '0',
         DEN                 => '0',
         DI(15 downto 0)     => "0000000000000000",
         DWE                 => '0',

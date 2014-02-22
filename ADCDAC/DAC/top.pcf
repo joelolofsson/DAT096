@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Feb 13 12:21:45 2014
+// Written by: Map P.20131013 on Sat Feb 15 13:48:51 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -27,6 +27,7 @@ COMP "pwmout" LOCATE = SITE "U11" LEVEL 1;
 COMP "locked" LOCATE = SITE "B13" LEVEL 1;
 COMP "PWMCLKout" LOCATE = SITE "U1" LEVEL 1;
 COMP "valueout<0>" LOCATE = SITE "V1" LEVEL 1;
+COMP "VP_IN" LOCATE = SITE "J10" LEVEL 1;
 COMP "valueout<1>" LOCATE = SITE "U3" LEVEL 1;
 COMP "valueout<2>" LOCATE = SITE "V4" LEVEL 1;
 COMP "valueout<3>" LOCATE = SITE "U6" LEVEL 1;
@@ -42,8 +43,8 @@ TIMEGRP DMCinst_clkout0 = BEL "Inst_PWM/cnt_10" BEL "Inst_PWM/cnt_9" BEL
         "Inst_PWM/samplevalue_6" BEL "Inst_PWM/samplevalue_5" BEL
         "Inst_PWM/samplevalue_4" BEL "Inst_PWM/samplevalue_3" BEL
         "Inst_PWM/samplevalue_2" BEL "Inst_PWM/samplevalue_1" BEL
-        "Inst_PWM/samplevalue_0" BEL "Inst_PWM/PWMout" BEL "PWMCLKout" BEL
-        "DMCinst/clkout1_buf";
+        "Inst_PWM/samplevalue_0" BEL "Inst_PWM/PWMout" BEL "Inst_PWM/outclk"
+        BEL "PWMCLKout" BEL "DMCinst/clkout1_buf";
 TS_fpga_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 TS_DMCinst_clkout0 = PERIOD TIMEGRP "DMCinst_clkout0" TS_fpga_clk /
         0.903157895 HIGH 50%;

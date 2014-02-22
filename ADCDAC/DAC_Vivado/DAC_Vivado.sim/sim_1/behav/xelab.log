@@ -1,0 +1,17 @@
+Vivado Simulator 2013.4
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2013.4/bin/unwrapped/win32.o/xelab.exe --debug typical --relax -L work -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav --prj C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.sim/sim_1/behav/testbench.prj work.testbench work.glbl 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2013.4/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/ip/DMC/DMC_clk_wiz.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/ip/DMC/DMC.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/imports/DAC/PWM.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/imports/DAC/modules.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/imports/DAC/top.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/imports/DAC/TB.vhd" into library work
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <VP_IN> does not exist in entity <top>.  Please compare the definition of block <top> to its component declaration and its instantion to detect the mismatch. [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/imports/DAC/TB.vhd:16]
+ERROR: [VRFC 10-718] formal port <VN_IN> does not exist in entity <top>.  Please compare the definition of block <top> to its component declaration and its instantion to detect the mismatch. [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/imports/DAC/TB.vhd:17]
+ERROR: [VRFC 10-718] formal port <locked> does not exist in entity <top>.  Please compare the definition of block <top> to its component declaration and its instantion to detect the mismatch. [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/imports/DAC/TB.vhd:21]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

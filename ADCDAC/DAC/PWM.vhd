@@ -31,17 +31,19 @@ use IEEE.Numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity PWM is
+	 Generic(
+			  Resolution : INTEGER :=11);
     Port ( PWMclk : in  STD_LOGIC;
 			  reset  : in STD_LOGIC;
-			  value  : in STD_LOGIC_VECTOR(10 downto 0);
+			  value  : in STD_LOGIC_VECTOR(Resolution -1 downto 0);
+			  outclk : out STD_LOGIC;
            PWMout : out  STD_LOGIC);
 end PWM;
 
 architecture Behavioral of PWM is
 
-signal cnt : integer range 0 to 2**11-1;
-signal samplevalue : std_logic_vector(10 downto 0);
-constant dutycycle : integer range 0 to 2**11-1:= 2**10;
+signal cnt : integer range 0 to 2**Resolution-1;
+signal samplevalue : std_logic_vector(Resolution-1 downto 0);
 
 
 begin
@@ -52,15 +54,19 @@ begin
 		cnt <= 2**11-1;
 		PWMout <= '0';
 	elsif rising_edge(PWMclk) then
-		if cnt = 2**11-1 then
+		if cnt = 2**Resolution-1 then
 			PWMout <= '1';
 			cnt <= 0;
 			samplevalue <= value;
+			outclk <= '1';
 		elsif cnt = to_integer(unsigned(samplevalue)) then
 			PWMout <= '0';
 			cnt <= cnt +1;
 		else
 			cnt <= cnt +1;
+		end if;
+		if cnt = 2**Resolution /2 then
+			outclk <= '0';
 		end if;
 	end if;
 end process;

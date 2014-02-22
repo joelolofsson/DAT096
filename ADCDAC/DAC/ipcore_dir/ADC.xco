@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Thu Feb 13 11:39:13 2014
+# Date: Sat Feb 15 10:45:03 2014
 #
 ##############################################################
 #
@@ -135,8 +135,8 @@ CSET enable_busy=false
 CSET enable_calibration_averaging=true
 CSET enable_channel=false
 CSET enable_convst=false
-CSET enable_convstclk=false
-CSET enable_dclk=true
+CSET enable_convstclk=true
+CSET enable_dclk=false
 CSET enable_drp=false
 CSET enable_eoc=false
 CSET enable_eos=false
@@ -164,7 +164,7 @@ CSET temperature_alarm_ot_reset=70.0
 CSET temperature_alarm_ot_trigger=125.0
 CSET temperature_alarm_reset=60.0
 CSET temperature_alarm_trigger=85.0
-CSET timing_mode=Continuous
+CSET timing_mode=Event
 CSET user_temp_alarm=false
 CSET vbram_alarm_lower=0.95
 CSET vbram_alarm_upper=1.05
@@ -187,4 +187,4 @@ CSET xadc_starup_selection=single_channel
 MISC pkg_timestamp=2012-03-26T12:22:38Z
 # END Extra information
 GENERATE
-# CRC: 4af74819
+# CRC: b591cca1

@@ -1,3 +1,6 @@
 vhdl work "ipcore_dir/DMC.vhd"
+vhdl work "ipcore_dir/ADC.vhd"
+vhdl work "ipcore_dir/ADC/example_design/ADC_exdes.vhd"
 vhdl work "PWM.vhd"
+vhdl work "modules.vhd"
 vhdl work "top.vhd"

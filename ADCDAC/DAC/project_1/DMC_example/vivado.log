@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Wed Feb 19 12:36:12 2014
+# Process ID: 3176
+# Log file: c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/project_1/DMC_example/vivado.log
+# Journal file: c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/project_1/DMC_example\vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/project_1/project_1.srcs/sources_1/ip/DMC/DMC_ex.tcl
+# set srcIpDir "c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/project_1/project_1.srcs/sources_1/ip/DMC"
+# create_project -name DMC_example -force
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 604.750 ; gain = 23.613
+# set_property part xc7a100tcsg324-2L [current_project]
+# set_property target_language vhdl [current_project]
+# set_property simulator_language MIXED [current_project]
+# import_ip -files [list [file join $srcIpDir DMC.xci]] -name DMC
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2013.4/data/ip'.
+import_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 648.348 ; gain = 13.543
+# reset_target {example} [get_ips DMC]
+# proc _filter_supported_targets {targets ip} {
+#   set res {}
+#   set all [get_property SUPPORTED_TARGETS $ip]
+#   foreach target $targets {
+#     lappend res {*}[lsearch -all -inline -nocase $all $target]
+#   }
+#   return $res
+# }
+# generate_target [_filter_supported_targets {instantiation_template synthesis simulation} [get_ips DMC]] [get_ips DMC]
+INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'DMC'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'DMC'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'DMC'. Target already exists and is up to date.
+# add_files -scan_for_includes -fileset [current_fileset] \
+#   [list [file join $srcIpDir DMC/example_design/DMC_exdes.vhd]]
+# add_files -fileset [current_fileset -constrset] \
+#   [list [file join $srcIpDir DMC/example_design/DMC_exdes.xdc]]
+INFO: [Designutils 20-336] INTERNAL UCF: Changing the constrs_type of fileset 'constrs_1' to 'XDC'.
+# if { [catch {current_fileset -simset} exc] } { create_fileset -simset sim_1 }
+# add_files -scan_for_includes -fileset [current_fileset -simset] \
+#   [list [file join $srcIpDir DMC/simulation/DMC_tb.vhd]]
+# import_files
+# set_property TOP [lindex [find_top] 0] [current_fileset]
+# update_compile_order -fileset [current_fileset]
+# update_compile_order -fileset [current_fileset -simset]
+# set dfile c:/CHALMERS/DAT096/DAT096/ADCDAC/DAC/project_1/project_1.srcs/sources_1/ip/DMC/oepdone.txt
+# set doneFile [open $dfile w]
+# puts $doneFile "Open Example Project DONE"
+# close $doneFile
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 12:38:18 2014...

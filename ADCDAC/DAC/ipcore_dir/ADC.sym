@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="ADC">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-2-13T11:39:20</timestamp>
-    <pin polarity="Input" x="0" y="208" name="dclk_in" />
+    <timestamp>2014-2-15T10:45:10</timestamp>
     <pin polarity="Input" x="0" y="272" name="reset_in" />
+    <pin polarity="Input" x="0" y="336" name="convstclk_in" />
     <pin polarity="Input" x="0" y="400" name="vp_in" />
     <pin polarity="Input" x="0" y="432" name="vn_in" />
     <pin polarity="Output" x="672" y="304" name="vccpint_alarm" />
@@ -13,10 +13,10 @@
     <graph>
         <text style="fontsize:40;fontname:Arial" x="32" y="32">ADC</text>
         <rect width="608" x="32" y="32" height="1472" />
-        <line x2="32" y1="208" y2="208" x1="0" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="208" type="pin dclk_in" />
         <line x2="32" y1="272" y2="272" x1="0" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="272" type="pin reset_in" />
+        <line x2="32" y1="336" y2="336" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="336" type="pin convstclk_in" />
         <line x2="32" y1="400" y2="400" x1="0" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="400" type="pin vp_in" />
         <line x2="32" y1="432" y2="432" x1="0" />

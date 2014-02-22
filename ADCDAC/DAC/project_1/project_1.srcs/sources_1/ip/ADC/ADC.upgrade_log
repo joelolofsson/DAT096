@@ -1,0 +1,350 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
+| Date         : Wed Feb 19 12:31:06 2014
+| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2L
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ADC'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of ADC from xilinx.com:ip:xadc_wiz:2.1 to xilinx.com:ip:xadc_wiz:3.0 (Rev. 2)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Upgrade messages
+-------------------
+
+Added parameter ENABLE_AXI4STREAM with value false
+Added parameter FIFO_DEPTH with value 7
+Added parameter Enable_Temp_Bus with value false
+Added parameter Interface_Selection with value None
+Added parameter ADDR_WIDTH with value 11
+Added parameter DATA_WIDTH with value 32
+Added parameter Enable_JTAG_Arbiter with value false
+WARNING: upgrade cannot rename parameter Interface_Selection to INTERFACE_SELECTION : a parameter called INTERFACE_SELECTION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Sim_File_Name to SIM_FILE_NAME : a parameter called SIM_FILE_NAME already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Timing_Mode to TIMING_MODE : a parameter called TIMING_MODE already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Startup_Channel_Selection to STARTUP_CHANNEL_SELECTION : a parameter called STARTUP_CHANNEL_SELECTION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter xadc_starup_selection to XADC_STARUP_SELECTION : a parameter called XADC_STARUP_SELECTION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_DCLK to ENABLE_DCLK : a parameter called ENABLE_DCLK already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Increase_acquisition_time to INCREASE_ACQUISITION_TIME : a parameter called INCREASE_ACQUISITION_TIME already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter DCLK_Frequency to DCLK_FREQUENCY : a parameter called DCLK_FREQUENCY already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter ADC_conversion_rate to ADC_CONVERSION_RATE : a parameter called ADC_CONVERSION_RATE already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Sequencer_Mode to SEQUENCER_MODE : a parameter called SEQUENCER_MODE already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_Calibration_Averaging to ENABLE_CALIBRATION_AVERAGING : a parameter called ENABLE_CALIBRATION_AVERAGING already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_DRP to ENABLE_DRP : a parameter called ENABLE_DRP already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_RESET to ENABLE_RESET : a parameter called ENABLE_RESET already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_CONVST to ENABLE_CONVST : a parameter called ENABLE_CONVST already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_CONVSTCLK to ENABLE_CONVSTCLK : a parameter called ENABLE_CONVSTCLK already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_CHANNEL to ENABLE_CHANNEL : a parameter called ENABLE_CHANNEL already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_EOC to ENABLE_EOC : a parameter called ENABLE_EOC already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_EOS to ENABLE_EOS : a parameter called ENABLE_EOS already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_BUSY to ENABLE_BUSY : a parameter called ENABLE_BUSY already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_JTAGLOCKED to ENABLE_JTAGLOCKED : a parameter called ENABLE_JTAGLOCKED already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_JTAGMODIFIED to ENABLE_JTAGMODIFIED : a parameter called ENABLE_JTAGMODIFIED already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_JTAGBUSY to ENABLE_JTAGBUSY : a parameter called ENABLE_JTAGBUSY already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter OT_Alarm to OT_ALARM : a parameter called OT_ALARM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter User_Temp_Alarm to USER_TEMP_ALARM : a parameter called USER_TEMP_ALARM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Vccint_Alarm to VCCINT_ALARM : a parameter called VCCINT_ALARM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Vccaux_Alarm to VCCAUX_ALARM : a parameter called VCCAUX_ALARM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_Vbram_Alarm to ENABLE_VBRAM_ALARM : a parameter called ENABLE_VBRAM_ALARM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Temperature_Alarm_Trigger to TEMPERATURE_ALARM_TRIGGER : a parameter called TEMPERATURE_ALARM_TRIGGER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Temperature_Alarm_Reset to TEMPERATURE_ALARM_RESET : a parameter called TEMPERATURE_ALARM_RESET already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Temperature_Alarm_OT_Trigger to TEMPERATURE_ALARM_OT_TRIGGER : a parameter called TEMPERATURE_ALARM_OT_TRIGGER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Temperature_Alarm_OT_Reset to TEMPERATURE_ALARM_OT_RESET : a parameter called TEMPERATURE_ALARM_OT_RESET already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Vccint_Alarm_Lower to VCCINT_ALARM_LOWER : a parameter called VCCINT_ALARM_LOWER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Vccint_Alarm_Upper to VCCINT_ALARM_UPPER : a parameter called VCCINT_ALARM_UPPER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Vccaux_Alarm_Lower to VCCAUX_ALARM_LOWER : a parameter called VCCAUX_ALARM_LOWER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Vccaux_Alarm_Upper to VCCAUX_ALARM_UPPER : a parameter called VCCAUX_ALARM_UPPER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Vbram_Alarm_Lower to VBRAM_ALARM_LOWER : a parameter called VBRAM_ALARM_LOWER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Vbram_Alarm_Upper to VBRAM_ALARM_UPPER : a parameter called VBRAM_ALARM_UPPER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_VCCPint_Alarm to ENABLE_VCCPINT_ALARM : a parameter called ENABLE_VCCPINT_ALARM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_VCCPaux_Alarm to ENABLE_VCCPAUX_ALARM : a parameter called ENABLE_VCCPAUX_ALARM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_VCCDdro_Alarm to ENABLE_VCCDDRO_ALARM : a parameter called ENABLE_VCCDDRO_ALARM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter VCCDdro_volt to VCCDDRO_VOLT : a parameter called VCCDDRO_VOLT already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter VCCPint_Alarm_Lower to VCCPINT_ALARM_LOWER : a parameter called VCCPINT_ALARM_LOWER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter VCCPint_Alarm_Upper to VCCPINT_ALARM_UPPER : a parameter called VCCPINT_ALARM_UPPER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter VCCPaux_Alarm_Lower to VCCPAUX_ALARM_LOWER : a parameter called VCCPAUX_ALARM_LOWER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter VCCPaux_Alarm_Upper to VCCPAUX_ALARM_UPPER : a parameter called VCCPAUX_ALARM_UPPER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter VCCDdro_Alarm_Lower to VCCDDRO_ALARM_LOWER : a parameter called VCCDDRO_ALARM_LOWER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter VCCDdro_Alarm_Upper to VCCDDRO_ALARM_UPPER : a parameter called VCCDDRO_ALARM_UPPER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Single_Channel_Selection to SINGLE_CHANNEL_SELECTION : a parameter called SINGLE_CHANNEL_SELECTION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Single_Channel_Enable_Calibration to SINGLE_CHANNEL_ENABLE_CALIBRATION : a parameter called SINGLE_CHANNEL_ENABLE_CALIBRATION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_operation to BIPOLAR_OPERATION : a parameter called BIPOLAR_OPERATION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Single_Channel_Acquisition_time to SINGLE_CHANNEL_ACQUISITION_TIME : a parameter called SINGLE_CHANNEL_ACQUISITION_TIME already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Averaging to CHANNEL_AVERAGING : a parameter called CHANNEL_AVERAGING already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter ADC_Offset_Calibration to ADC_OFFSET_CALIBRATION : a parameter called ADC_OFFSET_CALIBRATION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter ADC_Offset_and_Gain_Calibration to ADC_OFFSET_AND_GAIN_CALIBRATION : a parameter called ADC_OFFSET_AND_GAIN_CALIBRATION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Sensor_Offset_Calibration to SENSOR_OFFSET_CALIBRATION : a parameter called SENSOR_OFFSET_CALIBRATION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Sensor_Offset_and_Gain_Calibration to SENSOR_OFFSET_AND_GAIN_CALIBRATION : a parameter called SENSOR_OFFSET_AND_GAIN_CALIBRATION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_External_Mux to ENABLE_EXTERNAL_MUX : a parameter called ENABLE_EXTERNAL_MUX already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter External_Mux_Channel to EXTERNAL_MUX_CHANNEL : a parameter called EXTERNAL_MUX_CHANNEL already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Calibration to CHANNEL_ENABLE_CALIBRATION : a parameter called CHANNEL_ENABLE_CALIBRATION already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Temperature to CHANNEL_ENABLE_TEMPERATURE : a parameter called CHANNEL_ENABLE_TEMPERATURE already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vccint to CHANNEL_ENABLE_VCCINT : a parameter called CHANNEL_ENABLE_VCCINT already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vccaux to CHANNEL_ENABLE_VCCAUX : a parameter called CHANNEL_ENABLE_VCCAUX already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_VP_VN to CHANNEL_ENABLE_VP_VN : a parameter called CHANNEL_ENABLE_VP_VN already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vrefp to CHANNEL_ENABLE_VREFP : a parameter called CHANNEL_ENABLE_VREFP already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vrefn to CHANNEL_ENABLE_VREFN : a parameter called CHANNEL_ENABLE_VREFN already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vbram to CHANNEL_ENABLE_VBRAM : a parameter called CHANNEL_ENABLE_VBRAM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vbram to AVERAGE_ENABLE_VBRAM : a parameter called AVERAGE_ENABLE_VBRAM already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vccpint to CHANNEL_ENABLE_VCCPINT : a parameter called CHANNEL_ENABLE_VCCPINT already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vccpint to AVERAGE_ENABLE_VCCPINT : a parameter called AVERAGE_ENABLE_VCCPINT already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vccpaux to CHANNEL_ENABLE_VCCPAUX : a parameter called CHANNEL_ENABLE_VCCPAUX already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vccpaux to AVERAGE_ENABLE_VCCPAUX : a parameter called AVERAGE_ENABLE_VCCPAUX already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vccddro to CHANNEL_ENABLE_VCCDDRO : a parameter called CHANNEL_ENABLE_VCCDDRO already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vccddro to AVERAGE_ENABLE_VCCDDRO : a parameter called AVERAGE_ENABLE_VCCDDRO already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp0_Vauxn0 to CHANNEL_ENABLE_VAUXP0_VAUXN0 : a parameter called CHANNEL_ENABLE_VAUXP0_VAUXN0 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp1_Vauxn1 to CHANNEL_ENABLE_VAUXP1_VAUXN1 : a parameter called CHANNEL_ENABLE_VAUXP1_VAUXN1 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp2_Vauxn2 to CHANNEL_ENABLE_VAUXP2_VAUXN2 : a parameter called CHANNEL_ENABLE_VAUXP2_VAUXN2 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp3_Vauxn3 to CHANNEL_ENABLE_VAUXP3_VAUXN3 : a parameter called CHANNEL_ENABLE_VAUXP3_VAUXN3 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp4_Vauxn4 to CHANNEL_ENABLE_VAUXP4_VAUXN4 : a parameter called CHANNEL_ENABLE_VAUXP4_VAUXN4 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp5_Vauxn5 to CHANNEL_ENABLE_VAUXP5_VAUXN5 : a parameter called CHANNEL_ENABLE_VAUXP5_VAUXN5 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp6_Vauxn6 to CHANNEL_ENABLE_VAUXP6_VAUXN6 : a parameter called CHANNEL_ENABLE_VAUXP6_VAUXN6 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp7_Vauxn7 to CHANNEL_ENABLE_VAUXP7_VAUXN7 : a parameter called CHANNEL_ENABLE_VAUXP7_VAUXN7 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp8_Vauxn8 to CHANNEL_ENABLE_VAUXP8_VAUXN8 : a parameter called CHANNEL_ENABLE_VAUXP8_VAUXN8 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp9_Vauxn9 to CHANNEL_ENABLE_VAUXP9_VAUXN9 : a parameter called CHANNEL_ENABLE_VAUXP9_VAUXN9 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp10_Vauxn10 to CHANNEL_ENABLE_VAUXP10_VAUXN10 : a parameter called CHANNEL_ENABLE_VAUXP10_VAUXN10 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp11_Vauxn11 to CHANNEL_ENABLE_VAUXP11_VAUXN11 : a parameter called CHANNEL_ENABLE_VAUXP11_VAUXN11 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp12_Vauxn12 to CHANNEL_ENABLE_VAUXP12_VAUXN12 : a parameter called CHANNEL_ENABLE_VAUXP12_VAUXN12 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp13_Vauxn13 to CHANNEL_ENABLE_VAUXP13_VAUXN13 : a parameter called CHANNEL_ENABLE_VAUXP13_VAUXN13 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp14_Vauxn14 to CHANNEL_ENABLE_VAUXP14_VAUXN14 : a parameter called CHANNEL_ENABLE_VAUXP14_VAUXN14 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Channel_Enable_Vauxp15_Vauxn15 to CHANNEL_ENABLE_VAUXP15_VAUXN15 : a parameter called CHANNEL_ENABLE_VAUXP15_VAUXN15 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_VP_VN to AVERAGE_ENABLE_VP_VN : a parameter called AVERAGE_ENABLE_VP_VN already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp0_Vauxn0 to AVERAGE_ENABLE_VAUXP0_VAUXN0 : a parameter called AVERAGE_ENABLE_VAUXP0_VAUXN0 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp1_Vauxn1 to AVERAGE_ENABLE_VAUXP1_VAUXN1 : a parameter called AVERAGE_ENABLE_VAUXP1_VAUXN1 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp2_Vauxn2 to AVERAGE_ENABLE_VAUXP2_VAUXN2 : a parameter called AVERAGE_ENABLE_VAUXP2_VAUXN2 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp3_Vauxn3 to AVERAGE_ENABLE_VAUXP3_VAUXN3 : a parameter called AVERAGE_ENABLE_VAUXP3_VAUXN3 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp4_Vauxn4 to AVERAGE_ENABLE_VAUXP4_VAUXN4 : a parameter called AVERAGE_ENABLE_VAUXP4_VAUXN4 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp5_Vauxn5 to AVERAGE_ENABLE_VAUXP5_VAUXN5 : a parameter called AVERAGE_ENABLE_VAUXP5_VAUXN5 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp6_Vauxn6 to AVERAGE_ENABLE_VAUXP6_VAUXN6 : a parameter called AVERAGE_ENABLE_VAUXP6_VAUXN6 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp7_Vauxn7 to AVERAGE_ENABLE_VAUXP7_VAUXN7 : a parameter called AVERAGE_ENABLE_VAUXP7_VAUXN7 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp8_Vauxn8 to AVERAGE_ENABLE_VAUXP8_VAUXN8 : a parameter called AVERAGE_ENABLE_VAUXP8_VAUXN8 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp9_Vauxn9 to AVERAGE_ENABLE_VAUXP9_VAUXN9 : a parameter called AVERAGE_ENABLE_VAUXP9_VAUXN9 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp10_Vauxn10 to AVERAGE_ENABLE_VAUXP10_VAUXN10 : a parameter called AVERAGE_ENABLE_VAUXP10_VAUXN10 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp11_Vauxn11 to AVERAGE_ENABLE_VAUXP11_VAUXN11 : a parameter called AVERAGE_ENABLE_VAUXP11_VAUXN11 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp12_Vauxn12 to AVERAGE_ENABLE_VAUXP12_VAUXN12 : a parameter called AVERAGE_ENABLE_VAUXP12_VAUXN12 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp13_Vauxn13 to AVERAGE_ENABLE_VAUXP13_VAUXN13 : a parameter called AVERAGE_ENABLE_VAUXP13_VAUXN13 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp14_Vauxn14 to AVERAGE_ENABLE_VAUXP14_VAUXN14 : a parameter called AVERAGE_ENABLE_VAUXP14_VAUXN14 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vauxp15_Vauxn15 to AVERAGE_ENABLE_VAUXP15_VAUXN15 : a parameter called AVERAGE_ENABLE_VAUXP15_VAUXN15 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Temperature to AVERAGE_ENABLE_TEMPERATURE : a parameter called AVERAGE_ENABLE_TEMPERATURE already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vccint to AVERAGE_ENABLE_VCCINT : a parameter called AVERAGE_ENABLE_VCCINT already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Average_Enable_Vccaux to AVERAGE_ENABLE_VCCAUX : a parameter called AVERAGE_ENABLE_VCCAUX already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_VP_VN to BIPOLAR_VP_VN : a parameter called BIPOLAR_VP_VN already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp0_Vauxn0 to BIPOLAR_VAUXP0_VAUXN0 : a parameter called BIPOLAR_VAUXP0_VAUXN0 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp1_Vauxn1 to BIPOLAR_VAUXP1_VAUXN1 : a parameter called BIPOLAR_VAUXP1_VAUXN1 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp2_Vauxn2 to BIPOLAR_VAUXP2_VAUXN2 : a parameter called BIPOLAR_VAUXP2_VAUXN2 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp3_Vauxn3 to BIPOLAR_VAUXP3_VAUXN3 : a parameter called BIPOLAR_VAUXP3_VAUXN3 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp4_Vauxn4 to BIPOLAR_VAUXP4_VAUXN4 : a parameter called BIPOLAR_VAUXP4_VAUXN4 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp5_Vauxn5 to BIPOLAR_VAUXP5_VAUXN5 : a parameter called BIPOLAR_VAUXP5_VAUXN5 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp6_Vauxn6 to BIPOLAR_VAUXP6_VAUXN6 : a parameter called BIPOLAR_VAUXP6_VAUXN6 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp7_Vauxn7 to BIPOLAR_VAUXP7_VAUXN7 : a parameter called BIPOLAR_VAUXP7_VAUXN7 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp8_Vauxn8 to BIPOLAR_VAUXP8_VAUXN8 : a parameter called BIPOLAR_VAUXP8_VAUXN8 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp9_Vauxn9 to BIPOLAR_VAUXP9_VAUXN9 : a parameter called BIPOLAR_VAUXP9_VAUXN9 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp10_Vauxn10 to BIPOLAR_VAUXP10_VAUXN10 : a parameter called BIPOLAR_VAUXP10_VAUXN10 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp11_Vauxn11 to BIPOLAR_VAUXP11_VAUXN11 : a parameter called BIPOLAR_VAUXP11_VAUXN11 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp12_Vauxn12 to BIPOLAR_VAUXP12_VAUXN12 : a parameter called BIPOLAR_VAUXP12_VAUXN12 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp13_Vauxn13 to BIPOLAR_VAUXP13_VAUXN13 : a parameter called BIPOLAR_VAUXP13_VAUXN13 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp14_Vauxn14 to BIPOLAR_VAUXP14_VAUXN14 : a parameter called BIPOLAR_VAUXP14_VAUXN14 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Bipolar_Vauxp15_Vauxn15 to BIPOLAR_VAUXP15_VAUXN15 : a parameter called BIPOLAR_VAUXP15_VAUXN15 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_VP_VN to ACQUISITION_TIME_VP_VN : a parameter called ACQUISITION_TIME_VP_VN already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp0_Vauxn0 to ACQUISITION_TIME_VAUXP0_VAUXN0 : a parameter called ACQUISITION_TIME_VAUXP0_VAUXN0 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp1_Vauxn1 to ACQUISITION_TIME_VAUXP1_VAUXN1 : a parameter called ACQUISITION_TIME_VAUXP1_VAUXN1 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp2_Vauxn2 to ACQUISITION_TIME_VAUXP2_VAUXN2 : a parameter called ACQUISITION_TIME_VAUXP2_VAUXN2 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp3_Vauxn3 to ACQUISITION_TIME_VAUXP3_VAUXN3 : a parameter called ACQUISITION_TIME_VAUXP3_VAUXN3 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp4_Vauxn4 to ACQUISITION_TIME_VAUXP4_VAUXN4 : a parameter called ACQUISITION_TIME_VAUXP4_VAUXN4 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp5_Vauxn5 to ACQUISITION_TIME_VAUXP5_VAUXN5 : a parameter called ACQUISITION_TIME_VAUXP5_VAUXN5 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp6_Vauxn6 to ACQUISITION_TIME_VAUXP6_VAUXN6 : a parameter called ACQUISITION_TIME_VAUXP6_VAUXN6 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp7_Vauxn7 to ACQUISITION_TIME_VAUXP7_VAUXN7 : a parameter called ACQUISITION_TIME_VAUXP7_VAUXN7 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp8_Vauxn8 to ACQUISITION_TIME_VAUXP8_VAUXN8 : a parameter called ACQUISITION_TIME_VAUXP8_VAUXN8 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp9_Vauxn9 to ACQUISITION_TIME_VAUXP9_VAUXN9 : a parameter called ACQUISITION_TIME_VAUXP9_VAUXN9 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp10_Vauxn10 to ACQUISITION_TIME_VAUXP10_VAUXN10 : a parameter called ACQUISITION_TIME_VAUXP10_VAUXN10 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp11_Vauxn11 to ACQUISITION_TIME_VAUXP11_VAUXN11 : a parameter called ACQUISITION_TIME_VAUXP11_VAUXN11 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp12_Vauxn12 to ACQUISITION_TIME_VAUXP12_VAUXN12 : a parameter called ACQUISITION_TIME_VAUXP12_VAUXN12 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp13_Vauxn13 to ACQUISITION_TIME_VAUXP13_VAUXN13 : a parameter called ACQUISITION_TIME_VAUXP13_VAUXN13 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp14_Vauxn14 to ACQUISITION_TIME_VAUXP14_VAUXN14 : a parameter called ACQUISITION_TIME_VAUXP14_VAUXN14 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time_Vauxp15_Vauxn15 to ACQUISITION_TIME_VAUXP15_VAUXN15 : a parameter called ACQUISITION_TIME_VAUXP15_VAUXN15 already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Enable_JTAG_Arbiter to ENABLE_JTAG_ARBITER : a parameter called ENABLE_JTAG_ARBITER already exists in xadc_wiz_v3_0
+WARNING: upgrade cannot rename parameter Acquisition_Time to ACQUISITION_TIME : there is no parameter called Acquisition_Time in xadc_wiz_v2_1
+WARNING: upgrade cannot rename parameter Enable_Temp_Bus to ENABLE_TEMP_BUS : a parameter called ENABLE_TEMP_BUS already exists in xadc_wiz_v3_0
+Added parameter POWER_DOWN_ADCA with value false
+Added parameter POWER_DOWN_ADCB with value false
+
+3. Customization warnings
+-------------------------
+
+WARNING: Attempt to set value 'false' on disabled parameter 'ENABLE_DCLK' is ignored for 'ADC'
+
+WARNING: Attempt to set value '1.2' on disabled parameter 'VCCDDRO_ALARM_LOWER' is ignored for 'ADC'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:xadc_wiz:3.0 -user_name ADC
+set_property -dict "\
+  CONFIG.BIPOLAR_VAUXP4_VAUXN4 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP13_VAUXN13 false \
+  CONFIG.ACQUISITION_TIME_VAUXP9_VAUXN9 false \
+  CONFIG.ACQUISITION_TIME_VAUXP10_VAUXN10 false \
+  CONFIG.VCCINT_ALARM_UPPER 0.91 \
+  CONFIG.VCCAUX_ALARM false \
+  CONFIG.AVERAGE_ENABLE_TEMPERATURE false \
+  CONFIG.TEMPERATURE_ALARM_OT_TRIGGER 125.0 \
+  CONFIG.ENABLE_JTAGBUSY false \
+  CONFIG.DCLK_FREQUENCY 100.0 \
+  CONFIG.CHANNEL_ENABLE_VP_VN false \
+  CONFIG.CHANNEL_ENABLE_VAUXP2_VAUXN2 false \
+  CONFIG.BIPOLAR_VAUXP10_VAUXN10 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP14_VAUXN14 false \
+  CONFIG.ACQUISITION_TIME_VAUXP11_VAUXN11 false \
+  CONFIG.USER_TEMP_ALARM false \
+  CONFIG.VCCPAUX_ALARM_UPPER 1.8 \
+  CONFIG.ENABLE_CALIBRATION_AVERAGING true \
+  CONFIG.ENABLE_BUSY false \
+  CONFIG.BIPOLAR_VAUXP11_VAUXN11 false \
+  CONFIG.AVERAGE_ENABLE_VP_VN false \
+  CONFIG.AVERAGE_ENABLE_VAUXP2_VAUXN2 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP15_VAUXN15 false \
+  CONFIG.ACQUISITION_TIME_VAUXP12_VAUXN12 false \
+  CONFIG.ADDR_WIDTH 11 \
+  CONFIG.BIPOLAR_VAUXP3_VAUXN3 false \
+  CONFIG.BIPOLAR_VAUXP12_VAUXN12 false \
+  CONFIG.ACQUISITION_TIME_VAUXP8_VAUXN8 false \
+  CONFIG.ACQUISITION_TIME_VAUXP13_VAUXN13 false \
+  CONFIG.VCCDDRO_ALARM_UPPER 1.25 \
+  CONFIG.CHANNEL_ENABLE_VAUXP1_VAUXN1 false \
+  CONFIG.BIPOLAR_VAUXP13_VAUXN13 false \
+  CONFIG.ADC_OFFSET_AND_GAIN_CALIBRATION false \
+  CONFIG.ACQUISITION_TIME_VAUXP14_VAUXN14 false \
+  CONFIG.CHANNEL_ENABLE_VREFN false \
+  CONFIG.BIPOLAR_VAUXP14_VAUXN14 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP1_VAUXN1 false \
+  CONFIG.ACQUISITION_TIME_VAUXP15_VAUXN15 false \
+  CONFIG.FIFO_DEPTH 7 \
+  CONFIG.INCREASE_ACQUISITION_TIME false \
+  CONFIG.CHANNEL_ENABLE_VREFP false \
+  CONFIG.BIPOLAR_VP_VN false \
+  CONFIG.BIPOLAR_VAUXP2_VAUXN2 false \
+  CONFIG.BIPOLAR_VAUXP15_VAUXN15 false \
+  CONFIG.ACQUISITION_TIME_VAUXP7_VAUXN7 false \
+  CONFIG.CHANNEL_ENABLE_VAUXP0_VAUXN0 false \
+  CONFIG.VBRAM_ALARM_LOWER 0.95 \
+  CONFIG.ENABLE_CONVSTCLK true \
+  CONFIG.AVERAGE_ENABLE_VAUXP0_VAUXN0 false \
+  CONFIG.VCCAUX_ALARM_LOWER 1.75 \
+  CONFIG.OT_ALARM false \
+  CONFIG.ENABLE_VCCDDRO_ALARM false \
+  CONFIG.BIPOLAR_VAUXP1_VAUXN1 false \
+  CONFIG.ACQUISITION_TIME_VAUXP6_VAUXN6 false \
+  CONFIG.STARTUP_CHANNEL_SELECTION single_channel \
+  CONFIG.ENABLE_VCCPINT_ALARM false \
+  CONFIG.AVERAGE_ENABLE_VCCPAUX false \
+  CONFIG.XADC_STARUP_SELECTION single_channel \
+  CONFIG.CHANNEL_ENABLE_VCCDDRO false \
+  CONFIG.ENABLE_JTAG_ARBITER false \
+  CONFIG.CHANNEL_ENABLE_VAUXP9_VAUXN9 false \
+  CONFIG.CHANNEL_ENABLE_VAUXP10_VAUXN10 false \
+  CONFIG.BIPOLAR_VAUXP0_VAUXN0 false \
+  CONFIG.ADC_OFFSET_CALIBRATION false \
+  CONFIG.ACQUISITION_TIME_VAUXP5_VAUXN5 false \
+  CONFIG.CHANNEL_ENABLE_CALIBRATION false \
+  CONFIG.VBRAM_ALARM_UPPER 1.05 \
+  CONFIG.SEQUENCER_MODE Off \
+  CONFIG.CHANNEL_ENABLE_VAUXP11_VAUXN11 false \
+  CONFIG.AVERAGE_ENABLE_VCCPINT false \
+  CONFIG.AVERAGE_ENABLE_VAUXP9_VAUXN9 false \
+  CONFIG.ENABLE_AXI4STREAM false \
+  CONFIG.CHANNEL_ENABLE_VCCAUX false \
+  CONFIG.VCCDDRO_VOLT 1_2 \
+  CONFIG.VCCAUX_ALARM_UPPER 1.89 \
+  CONFIG.CHANNEL_ENABLE_VAUXP12_VAUXN12 false \
+  CONFIG.VCCPINT_ALARM_LOWER 0.95 \
+  CONFIG.CHANNEL_ENABLE_VAUXP8_VAUXN8 false \
+  CONFIG.CHANNEL_ENABLE_VAUXP13_VAUXN13 false \
+  CONFIG.ACQUISITION_TIME_VAUXP4_VAUXN4 false \
+  CONFIG.ENABLE_VCCPAUX_ALARM false \
+  CONFIG.CHANNEL_ENABLE_TEMPERATURE false \
+  CONFIG.TEMPERATURE_ALARM_TRIGGER 85.0 \
+  CONFIG.ENABLE_EOC false \
+  CONFIG.CHANNEL_ENABLE_VCCINT false \
+  CONFIG.CHANNEL_ENABLE_VAUXP14_VAUXN14 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP8_VAUXN8 false \
+  CONFIG.INTERFACE_SELECTION None \
+  CONFIG.SENSOR_OFFSET_CALIBRATION false \
+  CONFIG.SENSOR_OFFSET_AND_GAIN_CALIBRATION false \
+  CONFIG.ENABLE_CHANNEL false \
+  CONFIG.CHANNEL_ENABLE_VAUXP15_VAUXN15 false \
+  CONFIG.BIPOLAR_VAUXP9_VAUXN9 false \
+  CONFIG.SINGLE_CHANNEL_ACQUISITION_TIME false \
+  CONFIG.ENABLE_RESET true \
+  CONFIG.CHANNEL_ENABLE_VAUXP7_VAUXN7 false \
+  CONFIG.ACQUISITION_TIME_VAUXP3_VAUXN3 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP7_VAUXN7 false \
+  CONFIG.BIPOLAR_VAUXP8_VAUXN8 false \
+  CONFIG.VCCPINT_ALARM_UPPER 1.00 \
+  CONFIG.ENABLE_JTAGLOCKED false \
+  CONFIG.CHANNEL_ENABLE_VBRAM false \
+  CONFIG.SINGLE_CHANNEL_SELECTION Temperature \
+  CONFIG.CHANNEL_ENABLE_VAUXP6_VAUXN6 false \
+  CONFIG.ACQUISITION_TIME_VP_VN false \
+  CONFIG.ACQUISITION_TIME_VAUXP2_VAUXN2 false \
+  CONFIG.SIM_FILE_NAME design \
+  CONFIG.AVERAGE_ENABLE_VBRAM false \
+  CONFIG.ADC_CONVERSION_RATE 1000 \
+  CONFIG.DATA_WIDTH 32 \
+  CONFIG.AVERAGE_ENABLE_VAUXP6_VAUXN6 false \
+  CONFIG.AVERAGE_ENABLE_VCCAUX false \
+  CONFIG.Component_Name ADC \
+  CONFIG.BIPOLAR_VAUXP7_VAUXN7 false \
+  CONFIG.TEMPERATURE_ALARM_RESET 60.0 \
+  CONFIG.CHANNEL_AVERAGING None \
+  CONFIG.ENABLE_TEMP_BUS false \
+  CONFIG.ENABLE_EOS false \
+  CONFIG.CHANNEL_ENABLE_VAUXP5_VAUXN5 false \
+  CONFIG.ACQUISITION_TIME_VAUXP1_VAUXN1 false \
+  CONFIG.TEMPERATURE_ALARM_OT_RESET 70.0 \
+  CONFIG.AVERAGE_ENABLE_VCCINT false \
+  CONFIG.AVERAGE_ENABLE_VAUXP5_VAUXN5 false \
+  CONFIG.CHANNEL_ENABLE_VCCPAUX false \
+  CONFIG.BIPOLAR_VAUXP6_VAUXN6 false \
+  CONFIG.ENABLE_VBRAM_ALARM false \
+  CONFIG.ENABLE_EXTERNAL_MUX false \
+  CONFIG.VCCINT_ALARM_LOWER 0.88 \
+  CONFIG.VCCINT_ALARM false \
+  CONFIG.ENABLE_CONVST false \
+  CONFIG.CHANNEL_ENABLE_VAUXP4_VAUXN4 false \
+  CONFIG.ACQUISITION_TIME_VAUXP0_VAUXN0 false \
+  CONFIG.POWER_DOWN_ADCA false \
+  CONFIG.TIMING_MODE Event \
+  CONFIG.EXTERNAL_MUX_CHANNEL VP_VN \
+  CONFIG.ENABLE_DRP false \
+  CONFIG.ENABLE_DCLK false \
+  CONFIG.POWER_DOWN_ADCB false \
+  CONFIG.ENABLE_JTAGMODIFIED false \
+  CONFIG.CHANNEL_ENABLE_VCCPINT false \
+  CONFIG.AVERAGE_ENABLE_VCCDDRO false \
+  CONFIG.AVERAGE_ENABLE_VAUXP4_VAUXN4 false \
+  CONFIG.VCCPAUX_ALARM_LOWER 1.71 \
+  CONFIG.SINGLE_CHANNEL_ENABLE_CALIBRATION true \
+  CONFIG.BIPOLAR_VAUXP5_VAUXN5 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP10_VAUXN10 false \
+  CONFIG.VCCDDRO_ALARM_LOWER 1.2 \
+  CONFIG.CHANNEL_ENABLE_VAUXP3_VAUXN3 false \
+  CONFIG.BIPOLAR_OPERATION false \
+  CONFIG.AVERAGE_ENABLE_VAUXP11_VAUXN11 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP3_VAUXN3 false \
+  CONFIG.AVERAGE_ENABLE_VAUXP12_VAUXN12 false " [get_ips ADC]
+
+

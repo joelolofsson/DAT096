@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Thu Feb 13 12:22:16 2014
+#Sat Feb 15 13:50:08 2014
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -172,7 +172,7 @@ J6,,,GND,,,,,,,,,,,,
 J7,,,VCCINT,,,,,,,,1.0,,,,
 J8,,,GND,,,,,,,,,,,,
 J9,,,VREFN_0,,,,,,,,,,,,
-J10,,IPAD,VP_0,UNUSED,,0,,,,,,,,,
+J10,VP_IN,IPAD,VP_0,,,0,,,,,,LOCATED,NO,,
 J11,,,VCCINT,,,,,,,,1.0,,,,
 J12,,,GND,,,,,,,,,,,,
 J13,,IOB33S,IO_L17N_T2_A25_15,UNUSED,,15,,,,,,,,,

@@ -10,8 +10,7 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbench/Inst_top/ADC_inst/XADC_INST/ : Warning: *** Warning: The analog data file for XADC was not found. Use the SIM_MONITOR_FILE generic to specify the input analog data file name or use default name: design.txt. 
 Finished circuit initialization process.
-# restart
+at 0 ps, Instance /testbench/Inst_top/ADC_inst/XADC_INST/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # run 100 us
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.

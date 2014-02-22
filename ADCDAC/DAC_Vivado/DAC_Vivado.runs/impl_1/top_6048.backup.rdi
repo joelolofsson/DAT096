@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Feb 20 15:42:27 2014
+# Process ID: 5400
+# Log file: C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/top.rdi
+# Journal file: C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source top.tcl -notrace
+INFO: [Project 1-11] Changing the constrs_type of fileset 'constrs_1' to 'XDC'.
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/DMC_synth_1/DMC.dcp' for cell 'inst_DMC'
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.4
+Loading clock regions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2013.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/.Xil/Vivado-5400-/dcp_2/DMC_board.xdc] for cell 'inst_DMC'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/.Xil/Vivado-5400-/dcp_2/DMC_board.xdc] for cell 'inst_DMC'
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/.Xil/Vivado-5400-/dcp_2/DMC_early.xdc] for cell 'inst_DMC'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/ip/DMC/DMC.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/sources_1/ip/DMC/DMC.xdc:56]
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/.Xil/Vivado-5400-/dcp_2/DMC_early.xdc] for cell 'inst_DMC'
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/constrs_1/imports/DAC_Vivado/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.srcs/constrs_1/imports/DAC_Vivado/Nexys4_Master.xdc]
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/.Xil/Vivado-5400-/dcp/top.xdc]
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/.Xil/Vivado-5400-/dcp/top.xdc]
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/.Xil/Vivado-5400-/dcp_2/DMC.xdc] for cell 'inst_DMC'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/DAC_Vivado/DAC_Vivado.runs/impl_1/.Xil/Vivado-5400-/dcp_2/DMC.xdc] for cell 'inst_DMC'
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 708.055 ; gain = 406.113
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step opt_design"
+    (file "top.tcl" line 68)
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 20 15:43:31 2014...

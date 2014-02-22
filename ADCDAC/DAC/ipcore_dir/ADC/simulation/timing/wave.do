@@ -1,3 +1,4 @@
+ 
 # file: wave.do
 ## (c) Copyright 2009 - 2011 Xilinx, Inc. All rights reserved.
 ## 
@@ -48,7 +49,7 @@
 
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate -format Logic /ADC_tb/DCLK_TB
+add wave -noupdate -format Logic /ADC_tb/CONVSTCLK_TB
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {21550100 ps} 0} {{Cursor 2} {21630100 ps} 0}
 configure wave -namecolwidth 150

@@ -1,3 +1,4 @@
+ 
 -- (c) Copyright 2009 - 2011 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
@@ -48,7 +49,7 @@
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 component ADC
     port (
-          DCLK_IN             : in  STD_LOGIC;                         -- Clock input for the dynamic reconfiguration port
+          CONVSTCLK_IN        : in  STD_LOGIC;                         -- Convert Start Input Clock
           RESET_IN            : in  STD_LOGIC;                         -- Reset signal for the System Monitor control logic
           ALARM_OUT          : out STD_LOGIC;                         -- OR'ed output of all the Alarms
           VP_IN               : in  STD_LOGIC;                         -- Dedicated Analog Input Pair
@@ -62,7 +63,7 @@ end component;
 ------------- Begin Cut here for INSTANTIATION Template ----- INST_TAG
 your_instance_name : ADC
   port map ( 
-          DCLK_IN             => DCLK_IN, 
+          CONVSTCLK_IN        => CONVSTCLK_IN, 
           RESET_IN            => RESET_IN, 
       ALARM_OUT          => ALARM_OUT,                         -- OR'ed output of all the Alarms
           VP_IN               => VP_IN, 

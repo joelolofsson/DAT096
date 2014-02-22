@@ -1,3 +1,4 @@
+ 
 # file: ADC.xdc
 # (c) Copyright 2009 - 2011 Xilinx, Inc. All rights reserved.
 # 
@@ -48,7 +49,5 @@
 # Input clock periods. These duplicate the values entered for the
 #  input clocks. You can use these to time your system
 #----------------------------------------------------------------
-create_clock -name DCLK_IN -period 10 [get_ports DCLK_IN]
-set_propagated_clock DCLK_IN
 # FALSE PATH constraints 
 set_false_path -from [get_ports "RESET_IN"]

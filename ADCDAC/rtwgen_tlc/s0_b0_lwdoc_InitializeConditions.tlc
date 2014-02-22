@@ -1,0 +1,15 @@
+%implements s0_b0_lwdoc_InitializeConditions "C"
+
+%function InitializeConditions(block, system) Output
+%assign localVarDecl = ""
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+/* InitializeConditions for DiscreteFir: '<Root>/Discrete FIR Filter' */
+samplingcircuit_DW.DiscreteFIRFilter_states = samplingcircuit_P.DiscreteFIRFilter_InitialStates;
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void InitializeConditions(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

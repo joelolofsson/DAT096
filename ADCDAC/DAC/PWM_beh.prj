@@ -1,0 +1,2 @@
+vhdl work "PWM.vhd"
+vhdl work "ipcore_dir/ADC/example_design/ADC_exdes.vhd"

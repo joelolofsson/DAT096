@@ -1,3 +1,4 @@
+ 
 -- file: ADC_exdes.vhd
 -- (c) Copyright 2009 - 2011 Xilinx, Inc. All rights reserved.
 -- 
@@ -61,7 +62,7 @@ use UNISIM.VCOMPONENTS.ALL;
 
 entity ADC_exdes is
     port (
-          DCLK_IN             : in  STD_LOGIC;
+          CONVSTCLK_IN        : in  STD_LOGIC;
           RESET_IN            : in  STD_LOGIC;
           ALARM_OUT          : out STD_LOGIC;                         -- OR'ed output of all the Alarms
           VP_IN               : in  STD_LOGIC;
@@ -73,7 +74,7 @@ architecture xilinx of ADC_exdes is
 
 component ADC
     port (
-          DCLK_IN             : in  STD_LOGIC;                         -- Clock input for the dynamic reconfiguration port
+          CONVSTCLK_IN        : in  STD_LOGIC;                         -- Convert Start Input Clock
           RESET_IN            : in  STD_LOGIC;                         -- Reset signal for the System Monitor control logic
           ALARM_OUT          : out STD_LOGIC;                         -- OR'ed output of all the Alarms
           VP_IN               : in  STD_LOGIC;                         -- Dedicated Analog Input Pair
@@ -85,7 +86,7 @@ begin
 
  xadc_wiz_inst : ADC
 port map (
-      DCLK_IN                 => DCLK_IN,
+      CONVSTCLK_IN            => CONVSTCLK_IN,
       RESET_IN                => RESET_IN,
       ALARM_OUT          => ALARM_OUT,                         -- OR'ed output of all the Alarms
       VP_IN                   => VP_IN,

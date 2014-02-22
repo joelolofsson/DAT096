@@ -1,0 +1,83 @@
+%implements s0_b0_ekbuc_Update "C"
+
+%function UpdateForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign localVarDecl = ""
+/* Update for DiscreteFir: '<Root>/Discrete FIR Filter' */
+/* Update states */
+samplingcircuit_DW.DiscreteFIRFilter_states = samplingcircuit_B.Filter;
+/* Update for DiscreteFir: '<Root>/Discrete FIR Filter4' */
+/* Update circular buffer index */
+samplingcircuit_DW.DiscreteFIRFilter4_circBuf--;
+if (samplingcircuit_DW.DiscreteFIRFilter4_circBuf < 0) {
+    samplingcircuit_DW.DiscreteFIRFilter4_circBuf = 14;
+}
+/* Update circular buffer */
+samplingcircuit_DW.DiscreteFIRFilter4_states[samplingcircuit_DW.DiscreteFIRFilter4_circBuf] = samplingcircuit_B.DigitalFilter;
+/* End of Update for DiscreteFir: '<Root>/Discrete FIR Filter4' */
+
+/* Update for S-Function (sdspdsamp2): '<Root>/Downsample' */
+if (samplingcircuit_DW.Downsample_Count == 0) {
+    samplingcircuit_DW.Downsample_Buffer = samplingcircuit_B.DiscreteFIRFilter4;
+}
+samplingcircuit_DW.Downsample_Count++;
+if (samplingcircuit_DW.Downsample_Count == 16) {
+    samplingcircuit_DW.Downsample_Count = 0;
+}
+/* End of Update for S-Function (sdspdsamp2): '<Root>/Downsample' */
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 7, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 2
+%assign ::GlobalCurrentTID = 2
+%assign localVarDecl = ""
+/* Update for DiscreteFir: '<Root>/Discrete FIR Filter1' */
+/* Update states */
+samplingcircuit_DW.DiscreteFIRFilter1_states = samplingcircuit_B.Filter1;
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 8, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 3
+%assign ::GlobalCurrentTID = 3
+%assign localVarDecl = ""
+/* Update for DiscreteFir: '<Root>/Discrete FIR Filter2' */
+/* Update states */
+samplingcircuit_DW.DiscreteFIRFilter2_states = samplingcircuit_B.Filter2;
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 9, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 4
+%assign ::GlobalCurrentTID = 4
+%assign localVarDecl = ""
+/* Update for DiscreteFir: '<Root>/Discrete FIR Filter3' */
+/* Update states */
+samplingcircuit_DW.DiscreteFIRFilter3_states = samplingcircuit_B.Filter3;
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 10, fcnProtoType)>
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 5
+%assign ::GlobalCurrentTID = 5
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

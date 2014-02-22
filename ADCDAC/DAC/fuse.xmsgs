@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="1135" delta="unknown" >Cannot open vhdl file <arg fmt="%s" index="1">C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC.vhd</arg>
+</msg>
+
 </messages>
 

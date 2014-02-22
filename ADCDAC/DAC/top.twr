@@ -67,19 +67,19 @@ Timing constraint: TS_DMCinst_clkout0 = PERIOD TIMEGRP "DMCinst_clkout0"
 TS_fpga_clk /         0.903157895 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 1068 paths analyzed, 175 endpoints analyzed, 0 failing endpoints
+ 1101 paths analyzed, 179 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   3.411ns.
+ Minimum period is   3.603ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_PWM/cnt_9 (SLICE_X82Y69.CIN), 105 paths
+Paths for end point Inst_PWM/cnt_9 (SLICE_X74Y74.CIN), 105 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     7.661ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_PWM/cnt_6 (FF)
+Slack (setup path):     7.469ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_PWM/cnt_10 (FF)
   Destination:          Inst_PWM/cnt_9 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.268ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.026ns (0.118 - 0.144)
+  Data Path Delay:      3.486ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -89,40 +89,40 @@ Slack (setup path):     7.661ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.222ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_6 to Inst_PWM/cnt_9
+  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_10 to Inst_PWM/cnt_9
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y68.CQ      Tcko                  0.379   Inst_PWM/cnt<7>
-                                                       Inst_PWM/cnt_6
-    SLICE_X83Y68.A3      net (fanout=9)        0.567   Inst_PWM/cnt<6>
-    SLICE_X83Y68.A       Tilo                  0.105   N4
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW1
-    SLICE_X83Y67.C2      net (fanout=6)        0.695   N4
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y74.CQ      Tcko                  0.433   Inst_PWM/cnt<10>
+                                                       Inst_PWM/cnt_10
+    SLICE_X75Y72.B1      net (fanout=10)       0.716   Inst_PWM/cnt<10>
+    SLICE_X75Y72.B       Tilo                  0.105   N4
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW1
+    SLICE_X76Y72.C2      net (fanout=6)        0.673   N4
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.COUT    Tbyp                  0.100   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.206   Inst_PWM/cnt<10>
+    SLICE_X74Y74.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
+    SLICE_X74Y74.CLK     Tcinck                0.156   Inst_PWM/cnt<10>
                                                        Inst_PWM/Mcount_cnt_xor<10>
                                                        Inst_PWM/cnt_9
     -------------------------------------------------  ---------------------------
-    Total                                      3.268ns (1.438ns logic, 1.830ns route)
-                                                       (44.0% logic, 56.0% route)
+    Total                                      3.486ns (1.427ns logic, 2.059ns route)
+                                                       (40.9% logic, 59.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.731ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     7.848ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_PWM/cnt_2 (FF)
   Destination:          Inst_PWM/cnt_9 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.197ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.027ns (0.118 - 0.145)
+  Data Path Delay:      3.080ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.027ns (0.112 - 0.139)
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -136,36 +136,36 @@ Slack (setup path):     7.731ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y67.CQ      Tcko                  0.379   Inst_PWM/cnt<3>
+    SLICE_X74Y72.CQ      Tcko                  0.433   Inst_PWM/cnt<3>
                                                        Inst_PWM/cnt_2
-    SLICE_X85Y67.D1      net (fanout=3)        0.686   Inst_PWM/cnt<2>
-    SLICE_X85Y67.D       Tilo                  0.105   N2
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW0
-    SLICE_X83Y67.C4      net (fanout=13)       0.505   N2
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X76Y72.D3      net (fanout=4)        0.721   Inst_PWM/cnt<2>
+    SLICE_X76Y72.D       Tilo                  0.105   N2
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW0
+    SLICE_X76Y72.C5      net (fanout=13)       0.262   N2
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.COUT    Tbyp                  0.100   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.206   Inst_PWM/cnt<10>
+    SLICE_X74Y74.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
+    SLICE_X74Y74.CLK     Tcinck                0.156   Inst_PWM/cnt<10>
                                                        Inst_PWM/Mcount_cnt_xor<10>
                                                        Inst_PWM/cnt_9
     -------------------------------------------------  ---------------------------
-    Total                                      3.197ns (1.438ns logic, 1.759ns route)
-                                                       (45.0% logic, 55.0% route)
+    Total                                      3.080ns (1.427ns logic, 1.653ns route)
+                                                       (46.3% logic, 53.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.740ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_PWM/cnt_3 (FF)
+Slack (setup path):     7.859ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_PWM/cnt_1 (FF)
   Destination:          Inst_PWM/cnt_9 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.188ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.027ns (0.118 - 0.145)
+  Data Path Delay:      3.069ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.027ns (0.112 - 0.139)
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -175,43 +175,43 @@ Slack (setup path):     7.740ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.222ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_3 to Inst_PWM/cnt_9
+  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_1 to Inst_PWM/cnt_9
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y67.DQ      Tcko                  0.379   Inst_PWM/cnt<3>
-                                                       Inst_PWM/cnt_3
-    SLICE_X85Y67.D2      net (fanout=3)        0.677   Inst_PWM/cnt<3>
-    SLICE_X85Y67.D       Tilo                  0.105   N2
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW0
-    SLICE_X83Y67.C4      net (fanout=13)       0.505   N2
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.BQ      Tcko                  0.433   Inst_PWM/cnt<3>
+                                                       Inst_PWM/cnt_1
+    SLICE_X76Y72.D1      net (fanout=4)        0.710   Inst_PWM/cnt<1>
+    SLICE_X76Y72.D       Tilo                  0.105   N2
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW0
+    SLICE_X76Y72.C5      net (fanout=13)       0.262   N2
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.COUT    Tbyp                  0.100   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.206   Inst_PWM/cnt<10>
+    SLICE_X74Y74.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
+    SLICE_X74Y74.CLK     Tcinck                0.156   Inst_PWM/cnt<10>
                                                        Inst_PWM/Mcount_cnt_xor<10>
                                                        Inst_PWM/cnt_9
     -------------------------------------------------  ---------------------------
-    Total                                      3.188ns (1.438ns logic, 1.750ns route)
-                                                       (45.1% logic, 54.9% route)
+    Total                                      3.069ns (1.427ns logic, 1.642ns route)
+                                                       (46.5% logic, 53.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_PWM/cnt_10 (SLICE_X82Y69.CIN), 105 paths
+Paths for end point Inst_PWM/cnt_10 (SLICE_X74Y74.CIN), 105 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     7.727ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_PWM/cnt_6 (FF)
+Slack (setup path):     7.527ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_PWM/cnt_10 (FF)
   Destination:          Inst_PWM/cnt_10 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.202ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.026ns (0.118 - 0.144)
+  Data Path Delay:      3.428ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -221,40 +221,40 @@ Slack (setup path):     7.727ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.222ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_6 to Inst_PWM/cnt_10
+  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_10 to Inst_PWM/cnt_10
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y68.CQ      Tcko                  0.379   Inst_PWM/cnt<7>
-                                                       Inst_PWM/cnt_6
-    SLICE_X83Y68.A3      net (fanout=9)        0.567   Inst_PWM/cnt<6>
-    SLICE_X83Y68.A       Tilo                  0.105   N4
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW1
-    SLICE_X83Y67.C2      net (fanout=6)        0.695   N4
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y74.CQ      Tcko                  0.433   Inst_PWM/cnt<10>
+                                                       Inst_PWM/cnt_10
+    SLICE_X75Y72.B1      net (fanout=10)       0.716   Inst_PWM/cnt<10>
+    SLICE_X75Y72.B       Tilo                  0.105   N4
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW1
+    SLICE_X76Y72.C2      net (fanout=6)        0.673   N4
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.COUT    Tbyp                  0.100   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.140   Inst_PWM/cnt<10>
+    SLICE_X74Y74.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
+    SLICE_X74Y74.CLK     Tcinck                0.098   Inst_PWM/cnt<10>
                                                        Inst_PWM/Mcount_cnt_xor<10>
                                                        Inst_PWM/cnt_10
     -------------------------------------------------  ---------------------------
-    Total                                      3.202ns (1.372ns logic, 1.830ns route)
-                                                       (42.8% logic, 57.2% route)
+    Total                                      3.428ns (1.369ns logic, 2.059ns route)
+                                                       (39.9% logic, 60.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.797ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     7.906ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_PWM/cnt_2 (FF)
   Destination:          Inst_PWM/cnt_10 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.131ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.027ns (0.118 - 0.145)
+  Data Path Delay:      3.022ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.027ns (0.112 - 0.139)
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -268,36 +268,36 @@ Slack (setup path):     7.797ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y67.CQ      Tcko                  0.379   Inst_PWM/cnt<3>
+    SLICE_X74Y72.CQ      Tcko                  0.433   Inst_PWM/cnt<3>
                                                        Inst_PWM/cnt_2
-    SLICE_X85Y67.D1      net (fanout=3)        0.686   Inst_PWM/cnt<2>
-    SLICE_X85Y67.D       Tilo                  0.105   N2
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW0
-    SLICE_X83Y67.C4      net (fanout=13)       0.505   N2
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X76Y72.D3      net (fanout=4)        0.721   Inst_PWM/cnt<2>
+    SLICE_X76Y72.D       Tilo                  0.105   N2
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW0
+    SLICE_X76Y72.C5      net (fanout=13)       0.262   N2
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.COUT    Tbyp                  0.100   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.140   Inst_PWM/cnt<10>
+    SLICE_X74Y74.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
+    SLICE_X74Y74.CLK     Tcinck                0.098   Inst_PWM/cnt<10>
                                                        Inst_PWM/Mcount_cnt_xor<10>
                                                        Inst_PWM/cnt_10
     -------------------------------------------------  ---------------------------
-    Total                                      3.131ns (1.372ns logic, 1.759ns route)
-                                                       (43.8% logic, 56.2% route)
+    Total                                      3.022ns (1.369ns logic, 1.653ns route)
+                                                       (45.3% logic, 54.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.806ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_PWM/cnt_3 (FF)
+Slack (setup path):     7.917ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_PWM/cnt_1 (FF)
   Destination:          Inst_PWM/cnt_10 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.122ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.027ns (0.118 - 0.145)
+  Data Path Delay:      3.011ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.027ns (0.112 - 0.139)
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -307,43 +307,43 @@ Slack (setup path):     7.806ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.222ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_3 to Inst_PWM/cnt_10
+  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_1 to Inst_PWM/cnt_10
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y67.DQ      Tcko                  0.379   Inst_PWM/cnt<3>
-                                                       Inst_PWM/cnt_3
-    SLICE_X85Y67.D2      net (fanout=3)        0.677   Inst_PWM/cnt<3>
-    SLICE_X85Y67.D       Tilo                  0.105   N2
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW0
-    SLICE_X83Y67.C4      net (fanout=13)       0.505   N2
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.BQ      Tcko                  0.433   Inst_PWM/cnt<3>
+                                                       Inst_PWM/cnt_1
+    SLICE_X76Y72.D1      net (fanout=4)        0.710   Inst_PWM/cnt<1>
+    SLICE_X76Y72.D       Tilo                  0.105   N2
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW0
+    SLICE_X76Y72.C5      net (fanout=13)       0.262   N2
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.COUT    Tbyp                  0.100   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.140   Inst_PWM/cnt<10>
+    SLICE_X74Y74.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
+    SLICE_X74Y74.CLK     Tcinck                0.098   Inst_PWM/cnt<10>
                                                        Inst_PWM/Mcount_cnt_xor<10>
                                                        Inst_PWM/cnt_10
     -------------------------------------------------  ---------------------------
-    Total                                      3.122ns (1.372ns logic, 1.750ns route)
-                                                       (43.9% logic, 56.1% route)
+    Total                                      3.011ns (1.369ns logic, 1.642ns route)
+                                                       (45.5% logic, 54.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_PWM/cnt_8 (SLICE_X82Y69.CIN), 105 paths
+Paths for end point Inst_PWM/cnt_7 (SLICE_X74Y73.CIN), 59 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     7.745ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_PWM/cnt_6 (FF)
-  Destination:          Inst_PWM/cnt_8 (FF)
+Slack (setup path):     7.542ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_PWM/cnt_10 (FF)
+  Destination:          Inst_PWM/cnt_7 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.184ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.026ns (0.118 - 0.144)
+  Data Path Delay:      3.390ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.023ns (0.113 - 0.136)
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -353,40 +353,37 @@ Slack (setup path):     7.745ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.222ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_6 to Inst_PWM/cnt_8
+  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_10 to Inst_PWM/cnt_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y68.CQ      Tcko                  0.379   Inst_PWM/cnt<7>
-                                                       Inst_PWM/cnt_6
-    SLICE_X83Y68.A3      net (fanout=9)        0.567   Inst_PWM/cnt<6>
-    SLICE_X83Y68.A       Tilo                  0.105   N4
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW1
-    SLICE_X83Y67.C2      net (fanout=6)        0.695   N4
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y74.CQ      Tcko                  0.433   Inst_PWM/cnt<10>
+                                                       Inst_PWM/cnt_10
+    SLICE_X75Y72.B1      net (fanout=10)       0.716   Inst_PWM/cnt<10>
+    SLICE_X75Y72.B       Tilo                  0.105   N4
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW1
+    SLICE_X76Y72.C2      net (fanout=6)        0.673   N4
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.CLK     Tcinck                0.160   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.122   Inst_PWM/cnt<10>
-                                                       Inst_PWM/Mcount_cnt_xor<10>
-                                                       Inst_PWM/cnt_8
+                                                       Inst_PWM/cnt_7
     -------------------------------------------------  ---------------------------
-    Total                                      3.184ns (1.354ns logic, 1.830ns route)
-                                                       (42.5% logic, 57.5% route)
+    Total                                      3.390ns (1.331ns logic, 2.059ns route)
+                                                       (39.3% logic, 60.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.815ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     7.945ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_PWM/cnt_2 (FF)
-  Destination:          Inst_PWM/cnt_8 (FF)
+  Destination:          Inst_PWM/cnt_7 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.113ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.027ns (0.118 - 0.145)
+  Data Path Delay:      2.984ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.026ns (0.113 - 0.139)
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -396,40 +393,37 @@ Slack (setup path):     7.815ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.222ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_2 to Inst_PWM/cnt_8
+  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_2 to Inst_PWM/cnt_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y67.CQ      Tcko                  0.379   Inst_PWM/cnt<3>
+    SLICE_X74Y72.CQ      Tcko                  0.433   Inst_PWM/cnt<3>
                                                        Inst_PWM/cnt_2
-    SLICE_X85Y67.D1      net (fanout=3)        0.686   Inst_PWM/cnt<2>
-    SLICE_X85Y67.D       Tilo                  0.105   N2
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW0
-    SLICE_X83Y67.C4      net (fanout=13)       0.505   N2
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X76Y72.D3      net (fanout=4)        0.721   Inst_PWM/cnt<2>
+    SLICE_X76Y72.D       Tilo                  0.105   N2
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW0
+    SLICE_X76Y72.C5      net (fanout=13)       0.262   N2
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.CLK     Tcinck                0.160   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.122   Inst_PWM/cnt<10>
-                                                       Inst_PWM/Mcount_cnt_xor<10>
-                                                       Inst_PWM/cnt_8
+                                                       Inst_PWM/cnt_7
     -------------------------------------------------  ---------------------------
-    Total                                      3.113ns (1.354ns logic, 1.759ns route)
-                                                       (43.5% logic, 56.5% route)
+    Total                                      2.984ns (1.331ns logic, 1.653ns route)
+                                                       (44.6% logic, 55.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     7.824ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_PWM/cnt_3 (FF)
-  Destination:          Inst_PWM/cnt_8 (FF)
+Slack (setup path):     7.956ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_PWM/cnt_1 (FF)
+  Destination:          Inst_PWM/cnt_7 (FF)
   Requirement:          11.072ns
-  Data Path Delay:      3.104ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.027ns (0.118 - 0.145)
+  Data Path Delay:      2.973ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.026ns (0.113 - 0.139)
   Source Clock:         PWMCLKout_OBUF rising at 0.000ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.117ns
@@ -439,32 +433,29 @@ Slack (setup path):     7.824ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.222ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_3 to Inst_PWM/cnt_8
+  Maximum Data Path at Slow Process Corner: Inst_PWM/cnt_1 to Inst_PWM/cnt_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y67.DQ      Tcko                  0.379   Inst_PWM/cnt<3>
-                                                       Inst_PWM/cnt_3
-    SLICE_X85Y67.D2      net (fanout=3)        0.677   Inst_PWM/cnt<3>
-    SLICE_X85Y67.D       Tilo                  0.105   N2
-                                                       Inst_PWM/PWMout_PWR_10_o_MUX_2_o<10>_SW0
-    SLICE_X83Y67.C4      net (fanout=13)       0.505   N2
-    SLICE_X83Y67.C       Tilo                  0.105   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.BQ      Tcko                  0.433   Inst_PWM/cnt<3>
+                                                       Inst_PWM/cnt_1
+    SLICE_X76Y72.D1      net (fanout=4)        0.710   Inst_PWM/cnt<1>
+    SLICE_X76Y72.D       Tilo                  0.105   N2
+                                                       Inst_PWM/PWMout_PWR_11_o_MUX_2_o<10>_SW0
+    SLICE_X76Y72.C5      net (fanout=13)       0.262   N2
+    SLICE_X76Y72.C       Tilo                  0.105   N2
                                                        Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.A3      net (fanout=1)        0.568   Inst_PWM/Mcount_cnt_lut<0>
-    SLICE_X82Y67.COUT    Topcya                0.545   Inst_PWM/cnt<3>
+    SLICE_X74Y72.A1      net (fanout=1)        0.670   Inst_PWM/Mcount_cnt_lut<0>
+    SLICE_X74Y72.COUT    Topcya                0.528   Inst_PWM/cnt<3>
                                                        Inst_PWM/Mcount_cnt_lut<0>_rt
                                                        Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
-    SLICE_X82Y68.COUT    Tbyp                  0.098   Inst_PWM/cnt<7>
+    SLICE_X74Y73.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<3>
+    SLICE_X74Y73.CLK     Tcinck                0.160   Inst_PWM/cnt<7>
                                                        Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CIN     net (fanout=1)        0.000   Inst_PWM/Mcount_cnt_cy<7>
-    SLICE_X82Y69.CLK     Tcinck                0.122   Inst_PWM/cnt<10>
-                                                       Inst_PWM/Mcount_cnt_xor<10>
-                                                       Inst_PWM/cnt_8
+                                                       Inst_PWM/cnt_7
     -------------------------------------------------  ---------------------------
-    Total                                      3.104ns (1.354ns logic, 1.750ns route)
-                                                       (43.6% logic, 56.4% route)
+    Total                                      2.973ns (1.331ns logic, 1.642ns route)
+                                                       (44.8% logic, 55.2% route)
 
 --------------------------------------------------------------------------------
 
@@ -472,146 +463,88 @@ Hold Paths: TS_DMCinst_clkout0 = PERIOD TIMEGRP "DMCinst_clkout0" TS_fpga_clk /
         0.903157895 HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_PWM/PWMout (SLICE_X84Y67.C6), 6 paths
+Paths for end point Inst_PWM/samplevalue_0 (SLICE_X81Y72.A3), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.277ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_PWM/cnt_0 (FF)
-  Destination:          Inst_PWM/PWMout (FF)
+Slack (hold path):      0.262ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_PWM/samplevalue_0 (FF)
+  Destination:          Inst_PWM/samplevalue_0 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.291ns (Levels of Logic = 2)
-  Clock Path Skew:      0.014ns (0.079 - 0.065)
+  Data Path Delay:      0.262ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
   Source Clock:         PWMCLKout_OBUF rising at 11.072ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_PWM/cnt_0 to Inst_PWM/PWMout
+  Minimum Data Path at Fast Process Corner: Inst_PWM/samplevalue_0 to Inst_PWM/samplevalue_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y67.AQ      Tcko                  0.141   Inst_PWM/cnt<3>
-                                                       Inst_PWM/cnt_0
-    SLICE_X84Y67.B6      net (fanout=4)        0.128   Inst_PWM/cnt<0>
-    SLICE_X84Y67.B       Tilo                  0.045   Inst_PWM/PWMout
-                                                       Inst_PWM/_n0025_inv5
-    SLICE_X84Y67.C6      net (fanout=1)        0.053   Inst_PWM/_n0025_inv5
-    SLICE_X84Y67.CLK     Tah         (-Th)     0.076   Inst_PWM/PWMout
-                                                       Inst_PWM/PWMout_rstpot
-                                                       Inst_PWM/PWMout
+    SLICE_X81Y72.AQ      Tcko                  0.141   Inst_PWM/samplevalue<5>
+                                                       Inst_PWM/samplevalue_0
+    SLICE_X81Y72.A3      net (fanout=3)        0.167   Inst_PWM/samplevalue<0>
+    SLICE_X81Y72.CLK     Tah         (-Th)     0.046   Inst_PWM/samplevalue<5>
+                                                       Inst_PWM/samplevalue_0_dpot
+                                                       Inst_PWM/samplevalue_0
     -------------------------------------------------  ---------------------------
-    Total                                      0.291ns (0.110ns logic, 0.181ns route)
-                                                       (37.8% logic, 62.2% route)
+    Total                                      0.262ns (0.095ns logic, 0.167ns route)
+                                                       (36.3% logic, 63.7% route)
 
 --------------------------------------------------------------------------------
-Slack (hold path):      0.353ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_PWM/cnt_3 (FF)
-  Destination:          Inst_PWM/PWMout (FF)
+
+Paths for end point Inst_PWM/outclk (SLICE_X74Y77.A3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.263ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_PWM/outclk (FF)
+  Destination:          Inst_PWM/outclk (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.367ns (Levels of Logic = 2)
-  Clock Path Skew:      0.014ns (0.079 - 0.065)
+  Data Path Delay:      0.263ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
   Source Clock:         PWMCLKout_OBUF rising at 11.072ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_PWM/cnt_3 to Inst_PWM/PWMout
+  Minimum Data Path at Fast Process Corner: Inst_PWM/outclk to Inst_PWM/outclk
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X82Y67.DQ      Tcko                  0.141   Inst_PWM/cnt<3>
-                                                       Inst_PWM/cnt_3
-    SLICE_X84Y67.B4      net (fanout=3)        0.204   Inst_PWM/cnt<3>
-    SLICE_X84Y67.B       Tilo                  0.045   Inst_PWM/PWMout
-                                                       Inst_PWM/_n0025_inv5
-    SLICE_X84Y67.C6      net (fanout=1)        0.053   Inst_PWM/_n0025_inv5
-    SLICE_X84Y67.CLK     Tah         (-Th)     0.076   Inst_PWM/PWMout
-                                                       Inst_PWM/PWMout_rstpot
-                                                       Inst_PWM/PWMout
+    SLICE_X74Y77.AQ      Tcko                  0.164   Inst_PWM/outclk
+                                                       Inst_PWM/outclk
+    SLICE_X74Y77.A3      net (fanout=2)        0.174   Inst_PWM/outclk
+    SLICE_X74Y77.CLK     Tah         (-Th)     0.075   Inst_PWM/outclk
+                                                       Inst_PWM/outclk_glue_set
+                                                       Inst_PWM/outclk
     -------------------------------------------------  ---------------------------
-    Total                                      0.367ns (0.110ns logic, 0.257ns route)
-                                                       (30.0% logic, 70.0% route)
-
---------------------------------------------------------------------------------
-Slack (hold path):      0.380ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_PWM/cnt_4 (FF)
-  Destination:          Inst_PWM/PWMout (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.395ns (Levels of Logic = 2)
-  Clock Path Skew:      0.015ns (0.079 - 0.064)
-  Source Clock:         PWMCLKout_OBUF rising at 11.072ns
-  Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_PWM/cnt_4 to Inst_PWM/PWMout
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X82Y68.AQ      Tcko                  0.141   Inst_PWM/cnt<7>
-                                                       Inst_PWM/cnt_4
-    SLICE_X84Y67.B3      net (fanout=4)        0.232   Inst_PWM/cnt<4>
-    SLICE_X84Y67.B       Tilo                  0.045   Inst_PWM/PWMout
-                                                       Inst_PWM/_n0025_inv5
-    SLICE_X84Y67.C6      net (fanout=1)        0.053   Inst_PWM/_n0025_inv5
-    SLICE_X84Y67.CLK     Tah         (-Th)     0.076   Inst_PWM/PWMout
-                                                       Inst_PWM/PWMout_rstpot
-                                                       Inst_PWM/PWMout
-    -------------------------------------------------  ---------------------------
-    Total                                      0.395ns (0.110ns logic, 0.285ns route)
-                                                       (27.8% logic, 72.2% route)
+    Total                                      0.263ns (0.089ns logic, 0.174ns route)
+                                                       (33.8% logic, 66.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_PWM/samplevalue_1 (SLICE_X87Y67.B2), 1 path
+Paths for end point Inst_PWM/cnt_9 (SLICE_X74Y74.B6), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.298ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_PWM/samplevalue_1 (FF)
-  Destination:          Inst_PWM/samplevalue_1 (FF)
+  Source:               Inst_PWM/cnt_6 (FF)
+  Destination:          Inst_PWM/cnt_9 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.298ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.310ns (Levels of Logic = 1)
+  Clock Path Skew:      0.012ns (0.071 - 0.059)
   Source Clock:         PWMCLKout_OBUF rising at 11.072ns
   Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_PWM/samplevalue_1 to Inst_PWM/samplevalue_1
+  Minimum Data Path at Fast Process Corner: Inst_PWM/cnt_6 to Inst_PWM/cnt_9
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X87Y67.BQ      Tcko                  0.141   Inst_PWM/samplevalue<5>
-                                                       Inst_PWM/samplevalue_1
-    SLICE_X87Y67.B2      net (fanout=1)        0.218   Inst_PWM/samplevalue<1>
-    SLICE_X87Y67.CLK     Tah         (-Th)     0.061   Inst_PWM/samplevalue<5>
-                                                       Inst_PWM/samplevalue_1_dpot
-                                                       Inst_PWM/samplevalue_1
+    SLICE_X74Y73.CQ      Tcko                  0.164   Inst_PWM/cnt<7>
+                                                       Inst_PWM/cnt_6
+    SLICE_X74Y74.B6      net (fanout=10)       0.169   Inst_PWM/cnt<6>
+    SLICE_X74Y74.CLK     Tah         (-Th)     0.023   Inst_PWM/cnt<10>
+                                                       Inst_PWM/Mcount_cnt_lut<9>
+                                                       Inst_PWM/Mcount_cnt_xor<10>
+                                                       Inst_PWM/cnt_9
     -------------------------------------------------  ---------------------------
-    Total                                      0.298ns (0.080ns logic, 0.218ns route)
-                                                       (26.8% logic, 73.2% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_PWM/samplevalue_7 (SLICE_X87Y66.A4), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.300ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_PWM/samplevalue_7 (FF)
-  Destination:          Inst_PWM/samplevalue_7 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.300ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         PWMCLKout_OBUF rising at 11.072ns
-  Destination Clock:    PWMCLKout_OBUF rising at 11.072ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: Inst_PWM/samplevalue_7 to Inst_PWM/samplevalue_7
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X87Y66.AQ      Tcko                  0.141   Inst_PWM/samplevalue<9>
-                                                       Inst_PWM/samplevalue_7
-    SLICE_X87Y66.A4      net (fanout=2)        0.205   Inst_PWM/samplevalue<7>
-    SLICE_X87Y66.CLK     Tah         (-Th)     0.046   Inst_PWM/samplevalue<9>
-                                                       Inst_PWM/samplevalue_7_dpot
-                                                       Inst_PWM/samplevalue_7
-    -------------------------------------------------  ---------------------------
-    Total                                      0.300ns (0.095ns logic, 0.205ns route)
-                                                       (31.7% logic, 68.3% route)
+    Total                                      0.310ns (0.141ns logic, 0.169ns route)
+                                                       (45.5% logic, 54.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -632,7 +565,7 @@ Slack: 10.072ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 0.500ns (Tcl)
   Physical resource: Inst_PWM/cnt<3>/CLK
   Logical resource: Inst_PWM/cnt_0/CK
-  Location pin: SLICE_X82Y67.CLK
+  Location pin: SLICE_X74Y72.CLK
   Clock network: PWMCLKout_OBUF
 --------------------------------------------------------------------------------
 Slack: 10.072ns (period - (min high pulse limit / (high pulse / period)))
@@ -641,7 +574,7 @@ Slack: 10.072ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.500ns (Tch)
   Physical resource: Inst_PWM/cnt<3>/CLK
   Logical resource: Inst_PWM/cnt_0/CK
-  Location pin: SLICE_X82Y67.CLK
+  Location pin: SLICE_X74Y72.CLK
   Clock network: PWMCLKout_OBUF
 --------------------------------------------------------------------------------
 
@@ -653,8 +586,8 @@ Derived Constraints for TS_fpga_clk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_fpga_clk                    |     10.000ns|      4.000ns|      3.081ns|            0|            0|            0|         1068|
-| TS_DMCinst_clkout0            |     11.072ns|      3.411ns|          N/A|            0|            0|         1068|            0|
+|TS_fpga_clk                    |     10.000ns|      4.000ns|      3.254ns|            0|            0|            0|         1101|
+| TS_DMCinst_clkout0            |     11.072ns|      3.603ns|          N/A|            0|            0|         1101|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -669,7 +602,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.411|         |         |         |
+clk            |    3.603|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -678,7 +611,7 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 1068 paths, 0 nets, and 146 connections
+Constraints cover 1101 paths, 0 nets, and 162 connections
 
 Design statistics:
    Minimum period:   4.000ns{1}   (Maximum frequency: 250.000MHz)
@@ -687,7 +620,7 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Thu Feb 13 12:22:37 2014 
+Analysis completed Sat Feb 15 13:50:44 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

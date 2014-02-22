@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\CHALMERS\DAT096\DAT096\ADCDAC\DAC\top.vhd</arg>&quot; line <arg fmt="%s" index="2">74</arg>: Output port &lt;<arg fmt="%s" index="3">ALARM_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ADC_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
 </messages>
 

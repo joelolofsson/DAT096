@@ -1,0 +1,194 @@
+%implements s0_b0_ibhoc_TLCInterface "C"
+
+%function getInputAddr_0_0_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_B.SineWave"
+%endfunction
+
+%function getInput_0_0_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_B.SineWave"
+%endfunction
+
+%function getDWorkAddr_0_0_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_0_0_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getInputAddr_0_1_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0)> %% rtb_DataTypeConversion
+
+%return "&rtb_DataTypeConversion"
+%endfunction
+
+%function getInput_0_1_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0)> %% rtb_DataTypeConversion
+
+%return "rtb_DataTypeConversion"
+%endfunction
+
+%function getDWorkAddr_0_1_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getDWork_0_1_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getInputAddr_0_2_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_DiscreteFIRFilter3
+
+%return "&rtb_DiscreteFIRFilter3"
+%endfunction
+
+%function getInput_0_2_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_DiscreteFIRFilter3
+
+%return "rtb_DiscreteFIRFilter3"
+%endfunction
+
+%function getDWorkAddr_0_2_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getDWork_0_2_0_0_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getInputAddr_0_0_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_B.SineWave"
+%endfunction
+
+%function getInput_0_0_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_B.SineWave"
+%endfunction
+
+%function getDWorkAddr_0_0_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_0_0_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getInputAddr_0_1_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0)> %% rtb_DataTypeConversion
+
+%return "&rtb_DataTypeConversion"
+%endfunction
+
+%function getInput_0_1_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0)> %% rtb_DataTypeConversion
+
+%return "rtb_DataTypeConversion"
+%endfunction
+
+%function getDWorkAddr_0_1_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getDWork_0_1_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getInputAddr_0_2_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_DiscreteFIRFilter3
+
+%return "&rtb_DiscreteFIRFilter3"
+%endfunction
+
+%function getInput_0_2_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_DiscreteFIRFilter3
+
+%return "rtb_DiscreteFIRFilter3"
+%endfunction
+
+%function getDWorkAddr_0_2_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getDWork_0_2_0_2_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getInputAddr_0_0_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_B.SineWave"
+%endfunction
+
+%function getInput_0_0_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_B.SineWave"
+%endfunction
+
+%function getDWorkAddr_0_0_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getDWork_0_0_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace_PWORK"
+%endfunction
+
+%function getInputAddr_0_1_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0)> %% rtb_DataTypeConversion
+
+%return "&rtb_DataTypeConversion"
+%endfunction
+
+%function getInput_0_1_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0)> %% rtb_DataTypeConversion
+
+%return "rtb_DataTypeConversion"
+%endfunction
+
+%function getDWorkAddr_0_1_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getDWork_0_1_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace1_PWORK"
+%endfunction
+
+%function getInputAddr_0_2_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_DiscreteFIRFilter3
+
+%return "&rtb_DiscreteFIRFilter3"
+%endfunction
+
+%function getInput_0_2_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(0, 0)> %% rtb_DiscreteFIRFilter3
+
+%return "rtb_DiscreteFIRFilter3"
+%endfunction
+
+%function getDWorkAddr_0_2_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "&samplingcircuit_DW.ToWorkspace2_PWORK"
+%endfunction
+
+%function getDWork_0_2_0_4_0_0(block, lcv, ucv, sigIdx, reim) void
+
+%return "samplingcircuit_DW.ToWorkspace2_PWORK"
+%endfunction
+
