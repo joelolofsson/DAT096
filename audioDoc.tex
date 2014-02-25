@@ -1,0 +1,255 @@
+LINK:  https://www.writelatex.com/774608xvxdbp
+
+
+\documentclass[12p]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{natbib}
+\usepackage{fancyhdr}
+\usepackage[ampersand]{easylist}
+\usepackage[margin=1.4in]{geometry}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+%HEADERS-FOOTERS FOR TITLE PAGE
+%-------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhead[L]{}
+\fancyhead[C]{The SoundBox}
+\fancyhead[R]{\today}
+\fancyfoot[C]{ \thepage}
+\fancyfoot[L]{Embedded System Design Project \newline }
+\fancyfoot[R]{Team 1 }
+
+%DOCUMENT BEGIN
+%------------------------------------------------------------
+\begin{document}
+
+
+%------------------------------------------------------------
+%TITLE PAGE
+%------------------------------------------------------------
+\title{Project Planning}
+\author{Project Team: 1}
+\date{Version 0.2}
+
+
+\maketitle 
+
+
+\vspace*{\fill}
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Status} & \textbf{Reviewer} & \textbf{Date} \\ \hline
+Reviewed        &                   &               \\ \hline
+Approved        &                   &               \\ \hline
+\end{tabular}
+\end{table}
+
+%------------------------------------------------------------
+%HEADERS-FOOTERS FOR REST OF DOCUMENT
+%------------------------------------------------------------
+\thispagestyle{fancy}
+\fancyhead[L]{}
+\fancyhead[C]{The SoundBox}
+\fancyhead[R]{\today}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\pagenumbering{roman}
+\fancyfoot[L]{Embedded System Design Project \newline }
+\fancyfoot[R]{Team 1 }
+\pagebreak
+
+
+\vspace*{\fill}
+\centering
+\section*{Project identity}
+\centering
+Project group 1, 2013-2014 Spring semester\\
+Chalmers Univercity of Technology
+
+%------------------------------------------------------------
+%PROJECT GROUP INFORMATION
+%------------------------------------------------------------
+\begin{table}[h]
+\large
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Name}                                                    & \textbf{Role}                                                     & \textbf{Phone} & \textbf{Email}              \\ \hline
+\begin{tabular}[c]{@{}c@{}}Mohammed \\ Elghoz\end{tabular}       & \begin{tabular}[c]{@{}c@{}}Administrative,\\ Quality\end{tabular} & 0737062592     & elghoz.m@gmail.com          \\ \hline
+\begin{tabular}[c]{@{}c@{}}Stavros\\ Giannakopoulos\end{tabular} & Documentation                                                     & 0767651852     & syannako@gmail.com          \\ \hline
+Philip Karlsson                                                  & Sound expert                                                      & 0723868160     & philipkarlsson@me.com       \\ \hline
+Daniel Moreau                                                    & PM                                                                & 0707280870     & nd.moreau@gmail.com         \\ \hline
+Joel Olofsson                                                    & Coding                                                            & 0702714989     & Joel.olofsson@gmail.com     \\ \hline
+Jacob Rosén                                                      & Testing                                                           & 0762502835     & jacobro@student.chalmers.se \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+%------------------------------------------------------------
+%TOC
+%------------------------------------------------------------
+\tableofcontents 
+\newpage
+
+
+%------------------------------------------------------------
+%DOCUMENT VERSIONS AND CHANGELOG
+%------------------------------------------------------------
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Version} & \textbf{Date} & \textbf{Changes} & \textbf{Signed} & \textbf{Reviewed} \\ \hline
+0.1              &               & First draft      &                 &                   \\ \hline
+0.2                 & 102/14/2014              &   Minor Changes               &                 &                   \\ \hline
+                 &               &                  &                 &                   \\ \hline
+\end{tabular}
+\end{table}
+\newpage
+
+%-------------------------------------------------------------------
+%START OF CHAPTERS
+%-------------------------------------------------------------------
+
+\pagenumbering{arabic}
+\section{Introduction}
+%Small introduction on what you were tasked to do and what you will discuss.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{Problem}
+\label{Problem}
+% In this chapter you elaborate on the task you had, and the technical problem you were called to solve.The chapter takes a form of a scientific problem which is phrased as a scientific question.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Theory}
+\label{Theory}
+
+
+\subsection{System overview}
+\label{Theory:SystemOverview}
+%In this chapter we pose the main system directive and design we are asked to do. As well as all the backing theory.
+
+\subsection{Audio}
+\label{Theory:Audio}
+%In this chapter we discuss what part of the system will be taken care from the team Audio. Include the Effects design and the Sound processing.
+
+\subsubsection{Equalizer}
+\begin{itemize}
+\item Introduction, What is an EQ?
+\item General on filters
+\item IRR and FIR
+\item direct forms 1 and 2
+\item Shelving filters
+\item Peak filters
+\item Putting it together (conclusion)
+\end{itemize}
+
+\subsubsection{Delay}
+\begin{itemize}
+\item Your stuff goes here Philip
+\end{itemize}
+
+\subsection{Interface}
+\label{Theory:Interface}
+%In this chapter we discuss what part of the system will be taken care from team Interface. Include GUI, communication, UART and C code for handling the data on the softcore.
+
+\subsection{Softcore}
+\label{Theory:Softcore}
+%In this chapter we discuss what part of the system will be taken care from the team Softcore. Include setting up the softcore, Coding and testing on the core, IP cores that will be used and the performance-power consumption management.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{Design}
+\label{Design}
+% In this Chapter you discuss your proposed method or design you will follow to solve the above % problem (Question). You are also called to elaborate on the design decisions and back them % up with arguments. Finally any final results or deliverables are to be presented here.
+\subsection{System overview}
+\label{Design:SystemOverview}
+%In this chapter we discuss the specific design methods, choises and iterrations done during the project.
+
+\subsection{Audio}
+\label{Design:Audio}
+%In this chapter we discuss all the choices and actions taken during the construction of the Effects and the Sound processing kernel. All must derive from the above theory and backed up by schematics and theory.
+\subsubsection{Equalizer}
+
+
+\begin{itemize}
+\item Fixed point for calculations.
+\item Direct from 1 due to fixed
+\item Relying on software FP for coefficient calculations
+\item Interpolation to reach a comprimize between load and precision
+\item 3-band but flexible
+\item Internal precision 32 bits, crushed while maintaining sign
+\end{itemize}
+\subsubsection{Delay}
+
+\subsection{Interface}
+\label{Design:Interface}
+%In this chapter we discuss the decisions and work flow in designing the GUI, the communication protocols and architecture and finally the UART and C code for handling the data on the softcore is to be explained.
+
+\subsection{Softcore}
+\label{Design:Softcore}
+%In this chapter we discuss the method of setting up the softcore, how the C Coding and testing on the core is performed, what IP cores will be used and the performance-power consumption tradeoffs that are done in our design. Schematics from Leon3 regarding the Core architecture are a must!
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{Evaluation - Reflection}
+\label{Evaluation-Reflection}
+% In this Chapter you present your testing of the above design, including any itterations you did while debugging, again backed up with arguments. The last part is the evaluation and reflection on the above results and in the Task in total.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+\label{Conclusion}
+
+
+
+
+%-------------------------------------------------------------------
+%END OF CHAPTERS
+%-------------------------------------------------------------------
+
+
+%--------------------------------------------------------
+%REFERENCES
+%--------------------------------------------------------
+
+\newpage
+\section*{References}
+
+\end{document}
+
+
+
+%--------------------------------------------------------
+%REFERENCES
+%--------------------------------------------------------
+
+\newpage
+\section*{References}
+
+%--------------------------------------------------------
+%APPENDIX
+%--------------------------------------------------------
+%\newpage
+%\section*{APPENDIX}
+
+
+\end{document}
+
