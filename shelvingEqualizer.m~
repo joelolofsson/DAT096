@@ -1,0 +1,19 @@
+%% Low shelf
+[num,den] = shelving(12, 400, 44100, 0.7, 'Base_Shelf');
+Low_shelf = dfilt.df2t(num,den);
+%hfvt = fvtool(Low_shelf,'FrequencyScale','log');
+
+%% High shelf
+[numt,dent] = shelving(0, 5000, 44100, 0.7, 'Treble_Shelf');
+Treble_shelf = dfilt.df2t(numt,dent);
+%hfvt = fvtool(High_shelf,'FrequencyScale','log');
+
+%% Peak
+[nump,denp] = peaking(0, 2500, 0.4, 44100);
+middle = dfilt.df2t(nump,denp);
+%hfvt = fvtool(High_shelf,'FrequencyScale','log');
+
+threeBand = dfilt.cascade(Low_shelf,Treble_shelf, middle);
+
+
+hfvt = fvtool(threeBand,'FrequencyScale','log');
