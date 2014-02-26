@@ -44,11 +44,56 @@ void filterCoefficients(biquad *self,float gain, float fc, float Q, filterType t
     self->y_n_1 = 0;
     self->y_n_2 = 0;
     
-    float V0 = gainTable[ (int)(floor( 64.00f + gain * (64.00f / 24.00f)))];  //powf(10, gain/10);
+    //Linear interpolation for V0///////////////
+    float xf = (64.00f + gain * (64.00f / 24.00f));
+    
+    float x = floor(xf);
+    
+    float y0;
+    
+    float V0;
+    
+    if(x < 127){ //less than 127 means that allows for interpolation
+        y0 = gainTable[(int)x];
+        
+        V0 = y0 +(y0-gainTable[(int)x+1])*(xf-x);
+    }
+    else{ //if we're already at the end of the array we can't interpolate.
+        
+    	V0 = gainTable[(int)x];
+    }
+    
+    
+	//float V0 = gainTable[ (int)(floor( 64.00f + gain * (64.00f / 24.00f)))];  //powf(10, gain/10);
+    //float K = kTable[ (int) floor( fc / 64.00f ) ]; // tan((M_PI*fc)/fs);
+    
+    
+    
+    /////Linear interpolation for K/////
+    
+    xf = ( fc / 64.00f );
+    
+    x  = floor(xf);
+    
+    float K;
+    
+    if(x < 127){
+        y0 = kTable[(int)x];
+        
+        K = y0 + (y0-kTable[(int)(x+1)])*(xf-x);
+        
+    }
+    else{ //Cannot do linear interpolation due to maxed out array
+        
+    	K = kTable[(int)x];
+    }
+    
+    
+    //float V0 = gainTable[ (int)(floor( 64.00f + gain * (64.00f / 24.00f)))];  //powf(10, gain/10);
 
     float root2 = 1/Q;
 
-    float K = kTable[ (int) floor( fc / 64.00f ) ]; // tan((M_PI*fc)/fs);
+    //float K = kTable[ (int) floor( fc / 64.00f ) ]; // tan((M_PI*fc)/fs);
     
     float K2 = K * K;
     
