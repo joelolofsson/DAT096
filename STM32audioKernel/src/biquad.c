@@ -4,8 +4,6 @@
 #include "circularBuffer.h"
 #define _USE_MATH_DEFINES
 
-int16_t x_n_1, x_n_2 = 0;
-int32_t y_n_1, y_n_2 = 0;
 
 int j;
 
@@ -18,13 +16,13 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
         
         temp = *audioBuffer;
         
-        tempRes = (int32_t)FMUL(self->b0,temp,15) + (int32_t)FMUL(self->b1,x_n_1,15) + (int32_t)FMUL((self->b2),x_n_2,15) - (int32_t)FMUL(self->a1, y_n_1,15) - (int32_t)FMUL(self->a2,y_n_2,15);
+        tempRes = (int32_t)FMUL(self->b0,temp,15) + (int32_t)FMUL(self->b1,self->x_n_1,15) + (int32_t)FMUL((self->b2),self->x_n_2,15) - (int32_t)FMUL(self->a1, self->y_n_1,15) - (int32_t)FMUL(self->a2,self->y_n_2,15);
         
-        x_n_2 = x_n_1;
-        x_n_1 = temp;
+        self->x_n_2 = self->x_n_1;
+        self->x_n_1 = temp;
         
-        y_n_2 = y_n_1;
-        y_n_1 = tempRes;
+        self->y_n_2 = self->y_n_1;
+        self->y_n_1 = tempRes;
         
         //Twice because of stereo
         *audioBuffer++ = (int16_t)tempRes;
@@ -37,63 +35,20 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
 
 
 
-void filterCoefficients(biquad *self,float gain, float fs, float fc, float Q, filterType type){
+void filterCoefficients(biquad *self,float gain, float fc, float Q, filterType type){
     
     self->type = type;
 
+    self->x_n_1 = 0;
+    self->x_n_2 = 0;
+    self->y_n_1 = 0;
+    self->y_n_2 = 0;
     
-    //Linear interpolation for V0///////////////
-    float xf = (64.00f + gain * (64.00f / 24.00f));
-    
-    float x = floor(xf);
-    
-    float y0;
-    
-    float V0;
-    
-    if(x < 127){ //less than 127 means that allows for interpolation
-        y0 = gainTable[(int)x];
-        
-        V0 = y0 +(y0-gainTable[(int)x+1])*(xf-x);
-    }
-    else{ //if we're already at the end of the array we can't interpolate.
-        
-    	V0 = gainTable[(int)x];
-    }
-    
-    
-	//float V0 = gainTable[ (int)(floor( 64.00f + gain * (64.00f / 24.00f)))];  //powf(10, gain/10);
-    //float K = kTable[ (int) floor( fc / 64.00f ) ]; // tan((M_PI*fc)/fs);
-    
-    
-    
-    /////Linear interpolation for K/////
-    
-    xf = ( fc / 64.00f );
-    
-    x  = floor(xf);
-    
-    float K;
-    
-    if(x < 127){
-        y0 = kTable[(int)x];
-        
-        K = y0 + (y0-kTable[(int)(x+1)])*(xf-x);
-        
-    }
-    else{ //Cannot do linear interpolation due to maxed out array
-        
-    	K = kTable[(int)x];
-    }
-    
-    
-    
-    
-    //float V0 = gainTable[ (int)(floor( 64.00f + gain * (64.00f / 24.00f)))];  //powf(10, gain/10);
+    float V0 = gainTable[ (int)(floor( 64.00f + gain * (64.00f / 24.00f)))];  //powf(10, gain/10);
 
     float root2 = 1/Q;
 
-    //float K = kTable[ (int) floor( fc / 64.00f ) ]; // tan((M_PI*fc)/fs);
+    float K = kTable[ (int) floor( fc / 64.00f ) ]; // tan((M_PI*fc)/fs);
     
     float K2 = K * K;
     
@@ -191,19 +146,37 @@ switch(self->type) {
     case PEAK:
     //////////////////////////BOOST////////////////////////////////
         if(gain >= 0.00){
-            self->b0 = (1 + ((V0/Q)*K) + powf(K,2)) / (1 + ((1/Q)*K) + powf(K,2));
-            self->b1 =        (2 * (powf(K,2) - 1)) / (1 + ((1/Q)*K) + powf(K,2));
-            self->b2 = (1 - ((V0/Q)*K) + powf(K,2)) / (1 + ((1/Q)*K) + powf(K,2));
+            temp = (1 + V0*root2K + K2) / (1 + root2K + K2);
+            self->b0 = (int32_t) (temp * 32768.00);
+            
+            temp = (2 * (K2 - 1)) / (1 + root2K + K2);
+            self->b1 = (int32_t) (temp * 32768.00);
+            
+            temp = (1 - V0*root2K + K2) / (1 + root2K + K2);
+            self->b2 = (int32_t) (temp * 32768.00);
+            
             self->a1 = self->b1;
-            self->a2 =  (1 - ((1/Q)*K) + powf(K,2)) / (1 + ((1/Q)*K) + powf(K,2));
+            
+            temp = (1 - root2K + K2) / (1 + root2K + K2);
+            self->a2 = (int32_t) (temp * 32768.00);
+
+            
         }
     //////////////////////////CUT/////////////////////////////////////
         else{
-            self->b0 = (1 + ((V0/Q)*K) + powf(K,2)) / (1 + ((1/Q)*K) + powf(K,2));
-            self->b1 =        (2 * (powf(K,2) - 1)) / (1 + ((1/Q)*K) + powf(K,2));
-            self->b2 = (1 - ((V0/Q)*K) + powf(K,2)) / (1 + ((1/Q)*K) + powf(K,2));
+            temp = (1 + V0*root2K + K2) / (1 + V0*root2K + K2);
+            self->b0 = (int32_t) (temp * 32768.00);
+            
+            temp = (2 * (K2 - 1) ) / (1 + V0*root2K + K2);
+            self->b1 = (int32_t) (temp * 32768.00);
+            
+            temp = (1-V0*root2K + K2) / (1 + V0*root2K + K2);
+            self->b2 = (int32_t) (temp * 32768.00);
+            
             self->a1 = self->b1;
-            self->a2  =  (1 - ((1/Q)*K) + powf(K,2)) / (1 + ((1/Q)*K) + powf(K,2));
+            
+            temp = (1 - root2K + K2) / (1+ V0*root2K + K2);
+            self->a2 = (int32_t) (temp * 32768.00);
         }
     break;
     }

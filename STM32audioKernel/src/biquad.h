@@ -18,11 +18,11 @@ typedef enum{BASS, TREBLE, PEAK} filterType;
 typedef struct{
     filterType type;
     int32_t a1,a2,b0,b1,b2;
-    CircularBuffer Xs;
-    CircularBuffer Ys;
+    int16_t x_n_1, x_n_2;
+    int32_t y_n_1, y_n_2;
 } biquad;
 
-void filterCoefficients(biquad *self,float gain, float fs, float fc, float q, filterType type);
+void filterCoefficients(biquad *self,float gain, float fc, float q, filterType type);
 void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer);
 
 

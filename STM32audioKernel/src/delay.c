@@ -25,7 +25,7 @@ void delayInitialize(void){
     }
 }
 
-void delay(int16_t *audioBuffer, int framesPerBuffer){
+void delay(int16_t *audioBuffer, int framesPerBuffer, int16_t feedback, int16_t time, int16_t level){
     unsigned int i;
     
     int16_t temp;

@@ -24,7 +24,10 @@ void init();
 
 oscilator saw;  // For the remaing chord...
 oscilator sine; // For deep bass...
+
 biquad lowShelf;
+biquad highShelf;
+biquad midPeak;
 
 
 
@@ -42,17 +45,13 @@ int main(void) {
     /******* Initialize the synths *******/
     initOscilator(&saw, SAW);
     initOscilator(&sine, SINE);
+    
     delayInitialize();
     
     
-    //lowShelf.b0 = 31748;
-    //lowShelf.b1 = -60915;
-    //lowShelf.b2 = 29266;
-    
-    //lowShelf.a1 = -18557;
-    //lowShelf.a2 = 8653;
-    
-    filterCoefficients(&lowShelf, 10.00, 44100, 800, 0.7, TREBLE);
+    filterCoefficients(&lowShelf, 10.00, 220.00, 0.72, BASS);
+    filterCoefficients(&midPeak, -5.00, 2000.00, 1.98, PEAK);
+    filterCoefficients(&highShelf, 10.00, 5000.00, 0.72, TREBLE);
     
     float Note = 220.00f; // Standard A tone...
     
@@ -135,6 +134,10 @@ static void AudioCallback(void *context, int buffer) {
     
     /************** Apply signal processing ********************/
     filter(&lowShelf, samples, FRAMES_PER_BUFFER);
+    filter(&midPeak, samples, FRAMES_PER_BUFFER);
+    filter(&highShelf, samples, FRAMES_PER_BUFFER);
+    
+    
     //delay(samples, FRAMES_PER_BUFFER);
     
     /**************************************************/

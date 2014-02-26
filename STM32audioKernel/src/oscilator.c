@@ -29,7 +29,7 @@ void playOscilator(oscilator *self, int16_t *output, double gain, int framesPerB
                 
                 if((self->stepSum[j] >> 15) >= 2048) self->stepSum[j] = self->stepSum[j] - 67108864;
                 
-                Y0 = (8192 * Y0) >> 15; // Deamplification...
+                Y0 = (4096 * Y0) >> 15; // Deamplification...
                 
                 *output++ += Y0;
                 *output++ += Y0;
