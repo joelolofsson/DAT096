@@ -12,6 +12,8 @@
 // Private variables
 volatile uint32_t time_var1, time_var2;
 
+const float baseFreq = (44100.00f) / 2048.00f;
+
 int j = 0;
 
 // Private function prototypes
@@ -41,13 +43,26 @@ int main(void) {
     initOscilator(&saw, SAW);
     initOscilator(&sine, SINE);
     delayInitialize();
-    filterCoefficients(&lowShelf, 1.00, 44100, 400, 0.7, BASS);
     
-    double Note = 440.00; // Standard A tone...
+    
+    //lowShelf.b0 = 31748;
+    //lowShelf.b1 = -60915;
+    //lowShelf.b2 = 29266;
+    
+    //lowShelf.a1 = -18557;
+    //lowShelf.a2 = 8653;
+    
+    filterCoefficients(&lowShelf, 10.00, 44100, 800, 0.7, TREBLE);
+    
+    float Note = 220.00f; // Standard A tone...
     
 	InitializeAudio(Audio44100HzSettings);
-	SetAudioVolume(0xCA); // Set the audio volume hex numbers change HERE to adjust to your phones!
+	SetAudioVolume(0x7A); // Set the audio volume hex numbers change HERE to adjust to your phones!
 	PlayAudioWithCallback(AudioCallback, 0);
+    
+    int32_t stepSize = (int32_t) ((Note/baseFreq) * 32768.00);
+    
+    int j;
     
 	for(;;) {
 		/*
@@ -57,27 +72,20 @@ int main(void) {
 			// Debounce
 			Delay(10);
 			if (BUTTON) {
-                if(!saw.activeVoices[0]){ // Generate synth tones if they are not already active
-                    generateVoices(&saw, 0, Note/2); // Base
-                    generateVoices(&saw, 1, Note/2 * 1.5); // 5th
-                    generateVoices(&saw, 2, Note * 1.5); // Octave up
-                    generateVoices(&saw, 3, Note/4); // Sub bass
-                    saw.activeVoices[0] = 1;
-                    saw.activeVoices[1] = 1;
-                    saw.activeVoices[2] = 1;
-                    saw.activeVoices[3] = 1;
-                    generateVoices(&sine, 0, Note/4); // Bass note..
-                    sine.activeVoices[0] =  1;
+                if(!saw.active[0]){ // Generate synth tones if they are not already acti
+                    for (j=0; j<200; j++) {
+                        saw.active[j] = 1;
+                        saw.stepSize[j] = stepSize;
+                        saw.stepSum[j] = 0;
+                    }
                     GPIO_SetBits(GPIOD, GPIO_Pin_15); // Turn on the led
                 }
 			}
             else{
                 GPIO_ResetBits(GPIOD, GPIO_Pin_15); // Turn off led and remove notes if the button is released
-                saw.activeVoices[0] = 0;
-                saw.activeVoices[1] = 0;
-                saw.activeVoices[2] = 0;
-                saw.activeVoices[3] = 0;
-                sine.activeVoices[0] =  0;
+                for (j=0; j<200; j++) {
+                    saw.active[j] = 0;
+                }
             }
 		}
 	}
@@ -122,7 +130,7 @@ static void AudioCallback(void *context, int buffer) {
     
     /************** Play the synths ********************/
     playOscilator(&saw, samples, 0.00, FRAMES_PER_BUFFER);
-    playOscilator(&sine, samples, 0.00, FRAMES_PER_BUFFER);
+    //playOscilator(&sine, samples, 0.00, FRAMES_PER_BUFFER);
     
     
     /************** Apply signal processing ********************/

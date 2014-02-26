@@ -11,7 +11,7 @@
 #include "circularBuffer.h"
 #include <stdint.h>
 
-float lastOutput = 0.00f;
+int16_t lastOutput = 0;
 
 void delayInitialize(void){
     int16_t zero = 0;
@@ -27,20 +27,32 @@ void delayInitialize(void){
 
 void delay(int16_t *audioBuffer, int framesPerBuffer){
     unsigned int i;
+    
     int16_t temp;
     int16_t tempOut;
     
+    int counter = 1;
+    
     for( i=0; i<framesPerBuffer/2; i++ )
     {
-        temp = *audioBuffer + (lastOutput * 0.5);
-        cbWrite(&circBuffer, &temp);
-        cbRead(&circBuffer, &temp, 0);
-        cbIncrement(&circBuffer, 0);
-        tempOut = (int16_t)(*audioBuffer + 0.50*temp);
+        temp = *audioBuffer + ((lastOutput * 16384) >> 15);
+        
+        if(counter > 0){
+            cbWrite(&circBuffer, &temp);
+            cbIncrement(&circBuffer, 0);
+            cbRead(&circBuffer, &temp, 0);
+            counter = 1;
+        }
+        
+        else{
+            cbRead(&circBuffer, &temp, 0);
+            counter += 1;
+        }
+        
+        tempOut = *audioBuffer + ((16384*temp) >> 15);
         *audioBuffer++ = tempOut;
         *audioBuffer++ = tempOut;
         lastOutput = tempOut;
     }
     audioBuffer = audioBuffer - framesPerBuffer; // Decrease the pointers
 }
-

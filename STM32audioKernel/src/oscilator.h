@@ -26,17 +26,16 @@ extern const int16_t squareWaveTable[];
 //static const int16_t *sineWaveTablePtr = sineWaveTable; //Wave table pointer..
 
 typedef struct {
-    const int16_t *WaveTablePtr;
-    CircularBuffer voices[10];
-    int            activeVoices[10];
+    const int16_t   *WaveTablePtr;
+    int32_t         stepSum[200];
+    int             active[200];
+    int32_t         stepSize[200];
 } oscilator;
 
 
 void playOscilator(oscilator *self, int16_t *output, double gain, int framesPerBuffer);
 
 void initOscilator(oscilator *self, waveTable wt);
-
-void generateVoices(oscilator *self, int voice, double freq);
 
 
 #endif

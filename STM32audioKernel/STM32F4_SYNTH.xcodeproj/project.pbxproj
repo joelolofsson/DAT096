@@ -118,6 +118,8 @@
 		9DA3A77018A7FE1D00F653E0 /* circularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DA3A76F18A7FE1D00F653E0 /* circularBuffer.c */; };
 		9DA3A77418A7FE4A00F653E0 /* delay.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DA3A77218A7FE4A00F653E0 /* delay.c */; };
 		9DC15A9E18B124CE002A8F85 /* biquad.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC15A9C18B124CE002A8F85 /* biquad.c */; };
+		D43A061C18BA4F2000AB0215 /* kTable.c in Sources */ = {isa = PBXBuildFile; fileRef = D43A061B18BA4F2000AB0215 /* kTable.c */; };
+		D43A061E18BA502200AB0215 /* gainTable.c in Sources */ = {isa = PBXBuildFile; fileRef = D43A061D18BA502200AB0215 /* gainTable.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -308,6 +310,8 @@
 		9DA3A77318A7FE4A00F653E0 /* delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delay.h; path = ../src/delay.h; sourceTree = "<group>"; };
 		9DC15A9C18B124CE002A8F85 /* biquad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = biquad.c; sourceTree = "<group>"; };
 		9DC15A9D18B124CE002A8F85 /* biquad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = biquad.h; path = ../src/biquad.h; sourceTree = "<group>"; };
+		D43A061B18BA4F2000AB0215 /* kTable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kTable.c; sourceTree = "<group>"; };
+		D43A061D18BA502200AB0215 /* gainTable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gainTable.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -638,8 +642,10 @@
 			isa = PBXGroup;
 			children = (
 				9D2951BA18A7B32E00D468BD /* Audio.c */,
+				D43A061B18BA4F2000AB0215 /* kTable.c */,
 				9D21AF5218AA3868006C60C6 /* sawWaveTable.c */,
 				9DC15A9C18B124CE002A8F85 /* biquad.c */,
+				D43A061D18BA502200AB0215 /* gainTable.c */,
 				9D21AF5418AA3895006C60C6 /* squareWaveTable.c */,
 				9D7C983218A9508A00A4201D /* oscilator.c */,
 				9DA3A76F18A7FE1D00F653E0 /* circularBuffer.c */,
@@ -710,6 +716,7 @@
 				9DA3A77018A7FE1D00F653E0 /* circularBuffer.c in Sources */,
 				9D21AF5318AA3868006C60C6 /* sawWaveTable.c in Sources */,
 				9D2951D918A7B32F00D468BD /* polyphase.c in Sources */,
+				D43A061E18BA502200AB0215 /* gainTable.c in Sources */,
 				9D2951E718A7B32F00D468BD /* stm32f4xx_can.c in Sources */,
 				9D2951E618A7B32F00D468BD /* stm32f4xx_adc.c in Sources */,
 				9D2951CE18A7B32F00D468BD /* mp3tabs.c in Sources */,
@@ -749,6 +756,7 @@
 				9D2951F318A7B32F00D468BD /* stm32f4xx_fsmc.c in Sources */,
 				9D2951F718A7B32F00D468BD /* stm32f4xx_hash_sha1.c in Sources */,
 				9D2951FC18A7B32F00D468BD /* stm32f4xx_rng.c in Sources */,
+				D43A061C18BA4F2000AB0215 /* kTable.c in Sources */,
 				9D2951D418A7B32F00D468BD /* dequant.c in Sources */,
 				9D29522A18A7B32F00D468BD /* utils.c in Sources */,
 				9D2951CC18A7B32F00D468BD /* mp3dec.c in Sources */,

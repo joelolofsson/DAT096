@@ -1,6 +1,6 @@
 # Project sources
 SRCS = main.c stm32f4xx_it.c system_stm32f4xx.c syscalls.c utils.c
-SRCS += Audio.c sineWaveTable.c sawWaveTable.c squareWaveTable.c circularBuffer.c delay.c oscilator.c note.c biquad.c
+SRCS += Audio.c sineWaveTable.c sawWaveTable.c squareWaveTable.c circularBuffer.c delay.c oscilator.c note.c biquad.c kTable.c gainTable.c
 
 # all the files will be generated with this name (main.elf, main.bin, main.hex, etc)
 

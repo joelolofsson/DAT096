@@ -10,60 +10,32 @@
 #include "oscilator.h"
 #include <math.h>
 
-const double baseFreq = (44100.00) / 2048.00;
-
 void playOscilator(oscilator *self, int16_t *output, double gain, int framesPerBuffer){
     int j;
     int i;
-    int16_t temp;
+    int16_t X0,  Y0;
     
-    for (j=0; j<10; j++) {
-        if(self->activeVoices[j])
+    
+    for (j=0; j<1; j++) {
+        if(self->active[j])
         {
             for (i=0; i<framesPerBuffer/2; i++) {
-                cbRead(&self->voices[j], &temp, 0);
                 
-                cbIncrement(&self->voices[j], 0);
+                X0 = self->stepSum[j] >> 15;
                 
-                *output++ += 0.2 * temp;
-                *output++ += 0.2 * temp;
+                Y0 = *(self->WaveTablePtr + X0);
+                
+                self->stepSum[j] += self->stepSize[j];
+                
+                if((self->stepSum[j] >> 15) >= 2048) self->stepSum[j] = self->stepSum[j] - 67108864;
+                
+                Y0 = (8192 * Y0) >> 15; // Deamplification...
+                
+                *output++ += Y0;
+                *output++ += Y0;
             }
             output -= framesPerBuffer;
         }
-    }
-}
-
-
-void generateVoices(oscilator *self, int voice, double freq){
-    double stepSize = freq/baseFreq;
-    int size = (int)44100/freq;
-    
-    cbInit(&self->voices[voice], size);
-    
-    int i = 0;
-    int16_t temp;
-    int16_t Y0,Y1;
-    int16_t X0, X1;
-    double stepSum = 0.00;
-    double fraction = stepSize - floor(stepSize);
-    
-    for (i=0; i<size; i++) {
-        X0 = (int16_t) floor(stepSum);
-        
-        if(X0 + 1 >= 2048){
-            X1 = X0 + 1 - 2048;
-        }
-        else{
-            X1 = X0 + 1;
-        }
-        
-        Y0 = *(self->WaveTablePtr + X0);
-        Y1 = *(self->WaveTablePtr + X1);
-        
-        temp = (int16_t) Y0 + ((Y1 - Y0) * fraction);
-        
-        cbWrite(&self->voices[voice], &temp);
-        stepSum += stepSize;
     }
 }
 

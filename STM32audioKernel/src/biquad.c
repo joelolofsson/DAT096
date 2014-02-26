@@ -4,81 +4,148 @@
 #include "circularBuffer.h"
 #define _USE_MATH_DEFINES
 
-SAMPLE x_n_1, x_n_2,y_n_1,y_n_2 = 0;
+int16_t x_n_1, x_n_2 = 0;
+int32_t y_n_1, y_n_2 = 0;
+
+int j;
 
 void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
-
-SAMPLE temp;
-
-int16_t j;
-int16_t tempRes;
-
-for(j=0;j<framesPerBuffer/2;j++){
     
-    temp = *audioBuffer;
+    int16_t temp;
+    int32_t tempRes;
     
-    tempRes = (SAMPLE)((self->b0)*temp + (self->b1)*x_n_1 + (self->b2) * x_n_2 - (self->a1)*y_n_1 - (self->a2)*y_n_2);
-    
-    x_n_2 = x_n_1;
-    x_n_1 = temp;
-    
-    y_n_2 = y_n_1;
-    y_n_1 = tempRes;
-    
-    if(tempRes > 32000){
-        tempRes = 32000;
+    for(j=0;j<framesPerBuffer/2;j++){
+        
+        temp = *audioBuffer;
+        
+        tempRes = (int32_t)FMUL(self->b0,temp,15) + (int32_t)FMUL(self->b1,x_n_1,15) + (int32_t)FMUL((self->b2),x_n_2,15) - (int32_t)FMUL(self->a1, y_n_1,15) - (int32_t)FMUL(self->a2,y_n_2,15);
+        
+        x_n_2 = x_n_1;
+        x_n_1 = temp;
+        
+        y_n_2 = y_n_1;
+        y_n_1 = tempRes;
+        
+        //Twice because of stereo
+        *audioBuffer++ = (int16_t)tempRes;
+        *audioBuffer++ = (int16_t)tempRes;
     }
-    else if (tempRes < -32000){
-        tempRes = -32000;
-    }
+    audioBuffer = audioBuffer - framesPerBuffer;
     
-    *audioBuffer++ = tempRes;
-    *audioBuffer++ = tempRes;
-
-    }
-audioBuffer = audioBuffer - framesPerBuffer;
-
 }
 
 
 
 
 void filterCoefficients(biquad *self,float gain, float fs, float fc, float Q, filterType type){
+    
+    self->type = type;
 
-float V0 = powf(10, gain/10);
-float root2 = 1/Q;
-float K = tan((M_PI*fc)/fs);
     
-    SAMPLE zero = 0;
+    //Linear interpolation for V0///////////////
+    float xf = (64.00f + gain * (64.00f / 24.00f));
     
-    cbInit(&self->Xs, 2);
-    cbInit(&self->Ys, 2);
+    float x = floor(xf);
     
-    unsigned int i;
-    for( i=0; i<4; i++ )
-    {
-        cbWrite(&self->Xs, &zero);
-        cbWrite(&self->Ys, &zero);
+    float y0;
+    
+    float V0;
+    
+    if(x < 127){ //less than 127 means that allows for interpolation
+        y0 = gainTable[(int)x];
+        
+        V0 = y0 +(y0-gainTable[(int)x+1])*(xf-x);
     }
+    else{ //if we're already at the end of the array we can't interpolate.
+        
+    	V0 = gainTable[(int)x];
+    }
+    
+    
+	//float V0 = gainTable[ (int)(floor( 64.00f + gain * (64.00f / 24.00f)))];  //powf(10, gain/10);
+    //float K = kTable[ (int) floor( fc / 64.00f ) ]; // tan((M_PI*fc)/fs);
+    
+    
+    
+    /////Linear interpolation for K/////
+    
+    xf = ( fc / 64.00f );
+    
+    x  = floor(xf);
+    
+    float K;
+    
+    if(x < 127){
+        y0 = kTable[(int)x];
+        
+        K = y0 + (y0-kTable[(int)(x+1)])*(xf-x);
+        
+    }
+    else{ //Cannot do linear interpolation due to maxed out array
+        
+    	K = kTable[(int)x];
+    }
+    
+    
+    
+    
+    //float V0 = gainTable[ (int)(floor( 64.00f + gain * (64.00f / 24.00f)))];  //powf(10, gain/10);
+
+    float root2 = 1/Q;
+
+    //float K = kTable[ (int) floor( fc / 64.00f ) ]; // tan((M_PI*fc)/fs);
+    
+    float K2 = K * K;
+    
+    float root2K = K * root2;
+    
+    float sqrtV0_root2_K = sqrtf(V0) * root2K;
+    
+    float root2div = root2/(sqrtf(V0))*K;
+    
+    float temp;
+    
+    if(V0 < 1){
+        V0 = 1 / V0;
+    }
+    
     
 
 switch(self->type) {   
     case BASS:
     //////////////////////////BOOST////////////////////////////////
         if(gain >= 0.00){
-            self->a1 = (2 * (powf(K,2) - 1) ) / (1 + root2*K + powf(K,2));
-            self->a2 = (1 - root2*K + powf(K,2)) / (1 + root2*K + powf(K,2));
-            self->b0 = (1+sqrtf(V0)*root2*K)/(1 + root2*K + powf(K,2));
-            self->b1 = (2 * (V0*powf(K,2)-1)) / (1 + root2*K + powf(K,2));
-            self->b2 = (1 - sqrtf(V0)*root2*K + V0*powf(K,2)) / (1 + root2*K + powf(K,2));
+            temp  = (2 * (K2-1)) / (1+ root2K + K2);
+            self->a1 = (int32_t) (temp * 32768.00);
+            
+            temp = (1-root2K + K2) / (1 + root2K + K2);
+            self->a2 = (int32_t) (temp * 32768.00);
+            
+            temp = (1 + sqrtV0_root2_K + V0*K2)/(1+ root2K + K2);
+            self->b0 = (int32_t) (temp * 32768.00);
+            
+            temp = (2 * (V0*K2 -1)) / (1 + root2K + K2);
+            self->b1 = (int32_t) (temp * 32768.00);
+            
+            temp = (1 - sqrtV0_root2_K + V0 * K2) / (1 + root2K + K2);
+            self->b2 = (int32_t) (temp * 32768.00);
         }
         ////////////////////////////CUT//////////////////////////////////
         else{
-            self->b0 = (1 + root2*K + powf(K,2)) / (1 + root2*sqrtf(V0)*K + V0*powf(K,2));
-            self->b1 = (2 * (powf(K,2) - 1) ) / (1 + root2*sqrtf(V0)*K + V0*powf(K,2));
-            self->b2 = (1 - root2*K + powf(K,2)) / (1 + root2*sqrtf(V0)*K + V0*powf(K,2));
-            self->a1 = (2 * (V0*powf(K,2) - 1) ) / (1 + root2*sqrtf(V0)*K + V0*powf(K,2));
-            self->a2 = (1 - root2*sqrtf(V0)*K + V0*powf(K,2)) / (1 + root2*sqrtf(V0)*K + V0*powf(K,2));
+            temp = (1 + root2K + K2) / (1 + sqrtV0_root2_K + V0*K2);
+            self->b0 = (int32_t) (temp * 32768.00);
+            
+            temp = (2 * (K2-1)) / (1 + sqrtV0_root2_K + V0*K2);
+            self->b1 = (int32_t) (temp * 32768.00);
+            
+            temp = (1 - root2K + K2) / (1 + sqrtV0_root2_K + V0*K2);
+            self->b2 = (int32_t) (temp * 32768.00);
+            
+            temp = (2*(V0*K2 - 1)) / (1 + sqrtV0_root2_K + V0*K2);
+            self->a1 = (int32_t) (temp * 32768.00);
+            
+            temp = (1 - sqrtV0_root2_K + V0*K2) / (1 + sqrtV0_root2_K + V0*K2);
+            self->a2 = (int32_t) (temp * 32768.00);
         }
 
     break;
@@ -86,19 +153,38 @@ switch(self->type) {
     case TREBLE:
     //////////////////////////BOOST////////////////////////////////
        if(gain >= 0.00){
-            self->b0  = (V0 + root2*sqrtf(V0)*K + powf(K,2)) / (1 + root2*K + powf(K,2));
-            self->b1  =             (2 * powf(K,2) - V0) / (1 + root2*K + powf(K,2));
-            self->b2  = (V0 - root2*sqrtf(V0)*K + powf(K,2)) / (1 + root2*K + powf(K,2));
-            self->a1  =              (2 * (powf(K,2) - 1) ) / (1 + root2*K + powf(K,2));
-            self->a2  =           (1 - root2*K + powf(K,2)) / (1 + root2*K + powf(K,2));
+            temp = (V0 + sqrtV0_root2_K + K2) / (1+ root2K + K2);
+            self->b0 = (int32_t) (temp * 32768.00);
+           
+            temp = (2 * K2 - V0) / ( 1 + root2K + K2);
+            self->b1 = (int32_t) (temp * 32768.00);
+           
+            temp = (V0 - sqrtV0_root2_K + K2) / ( 1 + root2K + K2);
+            self->b2 = (int32_t) (temp * 32768.00);
+           
+            temp = (2 * K2 - 1) / (1 + root2K + K2);
+            self->a1 = (int32_t) (temp * 32768.00);
+           
+            temp = (1 - root2K + K2) / ( 1 + root2K + K2);
+            self->a2 = (int32_t) (temp * 32768.00);
+
         }
     //////////////////////////CUT/////////////////////////////////////
         else{
-            self->b0 =               (1 + root2*K + powf(K,2)) / (V0 + root2*sqrtf(V0)*K + powf(K,2));
-            self->b1  =                  (2 * (powf(K,2) - 1) ) / (V0 + root2*sqrtf(V0)*K + powf(K,2));
-            self->b2  =               (1 - root2*K + powf(K,2)) / (V0 + root2*sqrtf(V0)*K + powf(K,2));
-            self->a1 =             (2 * (powf(K,2)/V0 - 1) ) / (1 + root2/sqrtf(V0)*K + powf(K,2)/V0);
-            self->a2 = (1 - root2/sqrtf(V0)*K + (powf(K,2))/V0) / (1 + root2/sqrtf(V0)*K + powf(K,2)/V0);
+            temp = (1 + root2K + K2) / (V0 + sqrtV0_root2_K + K2);
+            self->b0 = (int32_t) (temp * 32768.00);
+            
+            temp = (2 * (K2 -1)) / (V0 + sqrtV0_root2_K + K2);
+            self->b1 = (int32_t) (temp * 32768.00);
+            
+            temp = ( 1 - root2K + K2) / (V0 + sqrtV0_root2_K + K2);
+            self->b2 = (int32_t) (temp * 32768.00);
+            
+            temp = (2 * (K2/V0 - 1)) / (1 + root2div + K2/V0);
+            self->a1 = (int32_t) (temp * 32768.00);
+            
+            temp = (1-root2div + K2/V0) / (1 + root2div + K2/V0);
+            self->a2 = (int32_t) (temp * 32768.00);
         }
 
     break;
