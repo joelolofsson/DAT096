@@ -19,4 +19,5 @@ def GuiArd(inp):
 	#print "the port is: ", port
 	time.sleep(1)
 	ArduSer.ardusend(port, inp+'\n')
-	time.sleep(5)
+	#time.sleep(1)
+	ArduSer.ardustop(port)
