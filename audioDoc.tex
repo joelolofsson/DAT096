@@ -144,11 +144,33 @@ Jacob Rosén                                                      & Testing     
 %In this chapter we discuss what part of the system will be taken care from the team Audio. Include the Effects design and the Sound processing.
 
 \subsubsection{Equalizer}
+
+\subsubsubsection{Filters}
+In general, the task of filters are to remove or separate components within an object. In signal processing applications filters are used to atenuate, retain or enhance frequency components within a target signal \ref{uno}. The selection of which components and what change e.g in amplitude and phase is done according to frequency. Filters can be built to target different frequencies and in different ways. A myriad of different filters can be be constructed, each changing the amplitude or phase of selected frequency components. The most common filters are:
+
 \begin{itemize}
-\item Introduction, What is an EQ?
+\item Lowpass: Retains frequencies up to a set cut-off frequency \emph{fc} and attenuates components above.
+\item Highpass: Attenuates frequencies up a set \emph{fc} and retains components above.
+\item Bandpass: Retains components between the low cut-off \emph{fcl} and high cut-off frequency \emph{fch}, attenuates other components.
+\item Bandreject: Attenuates frequencies between \emph{fcl} and \emph{fch} and retains the rest.
+\item Allpass: Retains the amplitude of all components but changes the phase of the signal.
+\end{itemize}
+
+Filters is said to be continous or discreet in time. The former are use in analog applications where time is continous e.g a RC-cicuit that is arranged as a lowpass filter. The latter are used in digital filters implemented on digital processesors where time is measured in discrete time units determined by the cristal oscilator that constitues the system clock. As the Soundbox is based on a microprocessor the focus of this report will be discrete filters.
+
+\emph{\bold{Discrete filters}
+blabalblablablablalalbal
+
+
+
+
+
+
+\begin{itemize}
 \item General on filters
 \item IRR and FIR
 \item direct forms 1 and 2
+\item Introduction, What is an EQ?
 \item Shelving filters
 \item Peak filters
 \item Putting it together (conclusion)
