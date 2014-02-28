@@ -1,0 +1,9 @@
+#
+# PlanAhead(TM)
+# htr.txt: a PlanAhead-generated description of how-to-repeat the
+#          the basic steps of a run.  Note that runme.bat/sh needs
+#          to be invoked for PlanAhead to track run status.
+# Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+#
+
+bitgen "leon3mp_routed.ncd" "leon3mp.bit" "leon3mp.pcf" -w -intstyle pa

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NetListWriters" num="298" delta="old" >No output is written to <arg fmt="%s" index="1">leon3mp.xncf</arg>, ignored.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">ahbsi_hsel</arg><arg fmt="%s" index="2">[7 : 2]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst</arg><arg fmt="%s" index="2">[31 : 5]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/dco_data</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">io0/apb_comb.v_B</arg><arg fmt="%s" index="2">[27 : 3]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">ahb0/r_hrdatas</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">ahb0/r_hrdatam</arg><arg fmt="%s" index="2">[24 : 5]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT</arg><arg fmt="%s" index="2">[24 : 5]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress</arg><arg fmt="%s" index="2">[11 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT</arg><arg fmt="%s" index="2">[15 : 2]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt</arg><arg fmt="%s" index="2">[5 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT</arg><arg fmt="%s" index="2">[19 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst</arg><arg fmt="%s" index="2">[31 : 19]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">leon3gen.dsugen.dsu0/x0/tr_haddr</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">gpt.timer0/Msub_comb.scaler_cy</arg><arg fmt="%s" index="2">[7 : 4]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">gpt.timer0/r_tsel[1]_X_100_o_wide_mux_15_OUT</arg><arg fmt="%s" index="2">[31 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_372_o_add_634_OUT_cy</arg><arg fmt="%s" index="2">[5 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_372_o_add_63_OUT_cy</arg><arg fmt="%s" index="2">[8 : 4]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eth0.e1/m100.u0/ethc0/Msub_GND_372_o_GND_372_o_sub_179_OUT&lt;7:0&gt;_cy</arg><arg fmt="%s" index="2">[5 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eth0.e1/m100.u0/ethc0/r_regaddr</arg><arg fmt="%s" index="2">[2 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_372_o_add_555_OUT_cy</arg><arg fmt="%s" index="2">[7 : 4]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut</arg><arg fmt="%s" index="2">[2 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A</arg><arg fmt="%s" index="2">[10 : 1]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">eth0.e1/m100.u0/ethc0/r_ctrl_edcldis</arg><arg fmt="%s" index="2">[11 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">adderahb_if/SKadder_comp/G</arg><arg fmt="%s" index="2">[24 : 0]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">adderahb_if/SKadder_comp/P</arg><arg fmt="%s" index="2">[20 : 8]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="old" >Signal bus <arg fmt="%s" index="1">adderahb_if/SKadder_comp/G</arg><arg fmt="%s" index="2">[27 : 11]</arg> on block <arg fmt="%s" index="3">leon3mp</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+</messages>
+

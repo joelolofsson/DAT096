@@ -47,6 +47,7 @@ use unisim.PLLE2_ADV;
 library esa;
 use esa.memoryctrl.all;
 use work.config.all;
+use work.adder_pkg.all;
 
 entity leon3mp is
   generic (
@@ -283,7 +284,7 @@ begin
   vcc <= '1';
   gnd <= '0';
   
-  led(15 downto 4) <= (others =>'0'); -- unused leds off
+  --led(15 downto 4) <= (others =>'0'); -- unused leds off
   
   btnCpuReset<= not btnCpuResetn;
   cgi.pllctrl <= "00";
@@ -548,6 +549,25 @@ begin
   nam1 : for i in (CFG_NCPU+CFG_AHB_UART+CFG_AHB_JTAG+CFG_GRETH+1) to NAHBMST-1 generate
     ahbmo(i) <= ahbm_none;
   end generate;
+
+----------------------------------------------------------------------
+----------  Sklansky Adder on APB ------------------------------------
+----------------------------------------------------------------------
+--adderapb_if : adderapb
+  --  generic map (pindex => 8, paddr => 8, pmask => 16#FFF#) 
+   -- port map (rstn => rstn, clk => clkm, apbi => apbi, apbo => apbo(8), sw=>sw);
+
+----------------------------------------------------------------------
+----------  Sklansky Adder on AHB ------------------------------------
+----------------------------------------------------------------------
+adderahb_if : adderahb
+    generic map (hindex => 7, haddr => 16#500#, hmask => 16#FFF#) 
+    port map (rstn => rstn, clk => clkm, ahbsi => ahbsi, ahbso => ahbso(7));
+
+-----------------------------------------------------------------------
+io0 : dummyapb
+     generic map (pindex => 8, paddr => 8, pmask => 16#FFF#)
+     port map (rstn, clkm, apbi, apbo(8), sw(15 downto 0), led(15 downto 4));
 
 -----------------------------------------------------------------------
 ---  Boot message  ----------------------------------------------------
