@@ -4,15 +4,15 @@
 \contentsline {subsection}{\numberline {3.1}System overview}{2}
 \contentsline {subsection}{\numberline {3.2}Audio}{2}
 \contentsline {subsubsection}{\numberline {3.2.1}Equalizer}{2}
-\contentsline {subsubsection}{\numberline {3.2.2}Delay}{2}
-\contentsline {subsection}{\numberline {3.3}Interface}{2}
-\contentsline {subsection}{\numberline {3.4}Softcore}{2}
-\contentsline {section}{\numberline {4}Design}{3}
-\contentsline {subsection}{\numberline {4.1}System overview}{3}
-\contentsline {subsection}{\numberline {4.2}Audio}{3}
-\contentsline {subsubsection}{\numberline {4.2.1}Equalizer}{3}
-\contentsline {subsubsection}{\numberline {4.2.2}Delay}{3}
-\contentsline {subsection}{\numberline {4.3}Interface}{3}
-\contentsline {subsection}{\numberline {4.4}Softcore}{3}
-\contentsline {section}{\numberline {5}Evaluation - Reflection}{4}
-\contentsline {section}{\numberline {6}Conclusion}{4}
+\contentsline {subsubsection}{\numberline {3.2.2}Delay}{3}
+\contentsline {subsection}{\numberline {3.3}Interface}{3}
+\contentsline {subsection}{\numberline {3.4}Softcore}{3}
+\contentsline {section}{\numberline {4}Design}{4}
+\contentsline {subsection}{\numberline {4.1}System overview}{4}
+\contentsline {subsection}{\numberline {4.2}Audio}{4}
+\contentsline {subsubsection}{\numberline {4.2.1}Equalizer}{4}
+\contentsline {subsubsection}{\numberline {4.2.2}Delay}{4}
+\contentsline {subsection}{\numberline {4.3}Interface}{4}
+\contentsline {subsection}{\numberline {4.4}Softcore}{4}
+\contentsline {section}{\numberline {5}Evaluation - Reflection}{5}
+\contentsline {section}{\numberline {6}Conclusion}{5}

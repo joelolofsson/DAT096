@@ -1,6 +1,3 @@
-LINK:  https://www.writelatex.com/774608xvxdbp
-
-
 \documentclass[12p]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{cite}
@@ -145,8 +142,12 @@ Jacob Rosén                                                      & Testing     
 
 \subsubsection{Equalizer}
 
+\subsubsubsection{Digital signal processing}
+The digital signal differ from its analogue counter part in two fundamental ways. Firstly, as mentioned above, in digital applications the time is measured in descrete units with the maximum resolution set by the system clock. As such, in digital aplications a signal is represented as a discrete stream of values called samples. The rate, the distance in time, between two samples are called the sampling period \emph{T} that can be no smaller than the maximum resolution of time offered by the system. The reciprocal of the sampling period is called the sampling frequency \emph{fs}. In accordance with the sampling theorem, the sampling frequency should be chosen to be twice of the signal bandwidth component of the sampled signal\emph{fs = fmax}.
+Secondly, the amplitude of the signal is quantizized to a descrete value with the resolution set by the number of avilable bits ref{uno}. Take for instance a system using twos-complement representation and a w-bits it is possible to represent values between -2^w to 2^w-1. Consequentially, a digital signal is discrete in both time and amplitude.
+
 \subsubsubsection{Filters}
-In general, the task of filters are to remove or separate components within an object. In signal processing applications filters are used to atenuate, retain or enhance frequency components within a target signal \ref{uno}. The selection of which components and what change e.g in amplitude and phase is done according to frequency. Filters can be built to target different frequencies and in different ways. A myriad of different filters can be be constructed, each changing the amplitude or phase of selected frequency components. The most common filters are:
+In general, the task of filters are to remove or separate components within an object. In signal processing applications filters are used to atenuate, retain or enhance frequency components within a target signal ref{uno}. The selection of which components and what change e.g in amplitude and phase is done according to frequency. Filters can be built to target different frequencies and in different ways. A myriad of different filters can be be constructed, each changing the amplitude or phase of selected frequency components.
 
 \begin{itemize}
 \item Lowpass: Retains frequencies up to a set cut-off frequency \emph{fc} and attenuates components above.
@@ -156,10 +157,20 @@ In general, the task of filters are to remove or separate components within an o
 \item Allpass: Retains the amplitude of all components but changes the phase of the signal.
 \end{itemize}
 
-Filters is said to be continous or discreet in time. The former are use in analog applications where time is continous e.g a RC-cicuit that is arranged as a lowpass filter. The latter are used in digital filters implemented on digital processesors where time is measured in discrete time units determined by the cristal oscilator that constitues the system clock. As the Soundbox is based on a microprocessor the focus of this report will be discrete filters.
+General filter forms and transfere function
 
-\emph{\bold{Discrete filters}
-blabalblablablablalalbal
+
+
+Filters is said to be continous or discreet in time. The former are use in analog applications where the signal is continous in time. An example is a RC-cicuit that is arranged as a lowpass filter. The latter are used in digital applications where the signal is discrete. As the Soundbox is based on a microprocessor, the focus of this report will be discrete filters which will be covered in more detail in the following sections.
+
+\emph{\bold{Discrete filters}}
+How to start?
+
+
+
+
+
+
 
 
 
@@ -167,6 +178,7 @@ blabalblablablablalalbal
 
 
 \begin{itemize}
+\item Digital signa processing (short)
 \item General on filters
 \item IRR and FIR
 \item direct forms 1 and 2
