@@ -182,7 +182,30 @@ Många tunga beräkningar....
 
 
 \paragraph{IIR filters}
-IIR filters is an acronym for infinite impuls respons. The name comes from the fact that IIR filters include a feedback network. Consequeltially, if an impuls is applied at the input the respons will never end \cite{sven}. Because of this feedback network, higher order IIR filters easily become instabil due to rounding errors in the system. In practice, higer order IIR filters are insted realized by connecting several lower order filters (first or second) together to form a series. The second order links in the seires are called biquad links. The term biquad referes to a general second order filter. IIR offers tight cotrol of the magnitude respons at the expense of phase. Thus, IIR filters are used when high requirements are posed on the magnitude and phase matters less \cite{storn}.
+IIR filters is an acronym for infinite impuls respons. The name comes from the fact that IIR filters include a feedback network. Consequeltially, if an impuls is applied at the input the respons will never end \cite{sven}. Because of this feedback network, higher order IIR filters easily become instabil due to rounding errors in the system. In practice, higer order IIR filters are insted realized by connecting several lower order filters (first or second) together to form a series. The second order links in the seires are called biquad links. The term biquad referes to a general second order filter. IIR filters offers tight cotrol of the magnitude respons at the expense of phase. Thus, IIR filters are used when high requirements are posed on the magnitude and phase matters less \cite{storn}. Like the FIR filters, all the afore mentioned filters can be realized as IIR filters by using appropriate filter coefficients. The general equation for a first and second order IIR filter is shown bellow: \\
+\null
+
+\begin{equation}
+H[z] = \frac{b_0 + b_1*z^{-1}}{1+a_1*z^{-1}}
+\end{equation}
+
+\begin{equation}
+H[z] = \frac{b_0 + b_1*z^{-1}+b_2*z^{-2}}{1+a_1*z^{-1}+a_2*z^{-2}}
+\end{equation}
+
+This form is called canonical or direct form 1. It is suitable for fixed-point systems due to know delay states.
+
+There exist another form, called direct form 2 shown below.
+
+\begin{equation}
+ y[n]=b_{0}w[n]+b_{1}w[n-1]+b_{2}w[n-2]
+\end{equation}
+where
+\begin{equation}
+ w[n]=x[n]-a_{1}w[n-1]-a_{2}w[n-2]
+\end{equation}  
+
+This form is called direct form 2 and is suitable for floating point based systems.
 
 Make transition to the other text by uno where higher order filters are used due to their superior frequency control...
 

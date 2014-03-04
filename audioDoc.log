@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.2.9)  4 MAR 2014 16:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.2.9)  4 MAR 2014 17:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,7 +378,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.53 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 ? 
 )
@@ -523,23 +523,19 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 Package natbib Warning: Citation `sven' on page 3 undefined on input line 185.
 
-
-Package natbib Warning: Citation `storn' on page 3 undefined on input line 185.
-
-
 [3] [4] [5] [6] (./audioDoc.bbl)
 
 Package natbib Warning: There were undefined citations.
 
 [7] (./audioDoc.aux) ) 
 Here is how much of TeX's memory you used:
- 3235 strings out of 493307
- 42320 string characters out of 6139906
- 118174 words of memory out of 5000000
- 6644 multiletter control sequences out of 15000+600000
+ 3237 strings out of 493307
+ 42352 string characters out of 6139906
+ 118189 words of memory out of 5000000
+ 6646 multiletter control sequences out of 15000+600000
  8601 words of font info for 30 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,13n,43p,1047b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,13n,43p,1047b,253s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
@@ -547,12 +543,14 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on audioDoc.pdf (10 pages, 134385 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb>
+Output written on audioDoc.pdf (10 pages, 153903 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

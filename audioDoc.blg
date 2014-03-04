@@ -8,50 +8,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: audioDoc.bib.bib
+Warning--I didn't find a database entry for "sven"
 -- IEEEtranS.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for normal IEEE work.
 
 Done.
-You've used 2 entries,
+You've used 3 entries,
             4498 wiz_defined-function locations,
-            901 strings with 8231 characters,
-and the built_in function-call counts, 1669 in all, are:
-= -- 130
-> -- 42
-< -- 10
-+ -- 21
-- -- 10
-* -- 95
-:= -- 260
-add.period$ -- 5
-call.type$ -- 2
-change.case$ -- 10
-chr.to.int$ -- 24
-cite$ -- 2
-duplicate$ -- 100
-empty$ -- 139
-format.name$ -- 12
-if$ -- 360
+            908 strings with 8391 characters,
+and the built_in function-call counts, 2601 in all, are:
+= -- 211
+> -- 57
+< -- 19
++ -- 30
+- -- 12
+* -- 136
+:= -- 392
+add.period$ -- 8
+call.type$ -- 3
+change.case$ -- 14
+chr.to.int$ -- 48
+cite$ -- 3
+duplicate$ -- 160
+empty$ -- 221
+format.name$ -- 14
+if$ -- 579
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 17
-newline$ -- 29
-num.names$ -- 4
-pop$ -- 50
+int.to.str$ -- 3
+missing$ -- 25
+newline$ -- 32
+num.names$ -- 6
+pop$ -- 70
 preamble$ -- 1
-purify$ -- 9
+purify$ -- 12
 quote$ -- 2
-skip$ -- 119
+skip$ -- 192
 stack$ -- 0
-substring$ -- 67
-swap$ -- 73
-text.length$ -- 2
+substring$ -- 129
+swap$ -- 120
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 16
+type$ -- 27
 warning$ -- 0
-while$ -- 8
-width$ -- 3
-write$ -- 39
+while$ -- 14
+width$ -- 4
+write$ -- 48
+(There was 1 warning)
