@@ -3,16 +3,24 @@
 \contentsline {section}{\numberline {3}Theory}{2}
 \contentsline {subsection}{\numberline {3.1}System overview}{2}
 \contentsline {subsection}{\numberline {3.2}Audio}{2}
-\contentsline {subsubsection}{\numberline {3.2.1}Equalizer}{2}
-\contentsline {subsubsection}{\numberline {3.2.2}Delay}{3}
-\contentsline {subsection}{\numberline {3.3}Interface}{3}
-\contentsline {subsection}{\numberline {3.4}Softcore}{3}
-\contentsline {section}{\numberline {4}Design}{4}
-\contentsline {subsection}{\numberline {4.1}System overview}{4}
-\contentsline {subsection}{\numberline {4.2}Audio}{4}
-\contentsline {subsubsection}{\numberline {4.2.1}Equalizer}{4}
-\contentsline {subsubsection}{\numberline {4.2.2}Delay}{4}
-\contentsline {subsection}{\numberline {4.3}Interface}{4}
-\contentsline {subsection}{\numberline {4.4}Softcore}{4}
-\contentsline {section}{\numberline {5}Evaluation - Reflection}{5}
-\contentsline {section}{\numberline {6}Conclusion}{5}
+\contentsline {subsection}{\numberline {3.3}Digital signal processing}{2}
+\contentsline {subsubsection}{\numberline {3.3.1}Filters}{2}
+\contentsline {subparagraph}{I}{2}
+\contentsline {subparagraph}{F}{3}
+\contentsline {subparagraph}{B}{3}
+\contentsline {subparagraph}{I}{3}
+\contentsline {paragraph}{FIR filters}{3}
+\contentsline {paragraph}{IIR filters}{3}
+\contentsline {paragraph}{Discrete structures}{4}
+\contentsline {subsubsection}{\numberline {3.3.2}Delay}{4}
+\contentsline {subsection}{\numberline {3.4}Interface}{4}
+\contentsline {subsection}{\numberline {3.5}Softcore}{4}
+\contentsline {section}{\numberline {4}Design}{5}
+\contentsline {subsection}{\numberline {4.1}System overview}{5}
+\contentsline {subsection}{\numberline {4.2}Audio}{5}
+\contentsline {subsubsection}{\numberline {4.2.1}Equalizer}{5}
+\contentsline {subsubsection}{\numberline {4.2.2}Delay}{5}
+\contentsline {subsection}{\numberline {4.3}Interface}{5}
+\contentsline {subsection}{\numberline {4.4}Softcore}{5}
+\contentsline {section}{\numberline {5}Evaluation - Reflection}{6}
+\contentsline {section}{\numberline {6}Conclusion}{6}

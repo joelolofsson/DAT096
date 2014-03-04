@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: audioDoc.aux
+The style file: IEEEtranS.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: audioDoc.bib.bib
+-- IEEEtranS.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Sorting version - not for normal IEEE work.
+
+Done.
+You've used 2 entries,
+            4498 wiz_defined-function locations,
+            901 strings with 8231 characters,
+and the built_in function-call counts, 1669 in all, are:
+= -- 130
+> -- 42
+< -- 10
++ -- 21
+- -- 10
+* -- 95
+:= -- 260
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 10
+chr.to.int$ -- 24
+cite$ -- 2
+duplicate$ -- 100
+empty$ -- 139
+format.name$ -- 12
+if$ -- 360
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 17
+newline$ -- 29
+num.names$ -- 4
+pop$ -- 50
+preamble$ -- 1
+purify$ -- 9
+quote$ -- 2
+skip$ -- 119
+stack$ -- 0
+substring$ -- 67
+swap$ -- 73
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 6
+type$ -- 16
+warning$ -- 0
+while$ -- 8
+width$ -- 3
+write$ -- 39
