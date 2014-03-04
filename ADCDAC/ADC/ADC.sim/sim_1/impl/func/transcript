@@ -1,0 +1,93 @@
+# do {C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.sim/sim_1/impl/func/Throughput_top.do} 
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:50:34 on Feb 24,2014
+# vcom -reportprogress 300 -work work C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.sim/sim_1/impl/func/Throughput_top_func_impl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADC
+# -- Compiling architecture STRUCTURE of ADC
+# -- Compiling entity DMCDMC_clk_wiz
+# -- Compiling architecture STRUCTURE of DMCDMC_clk_wiz
+# -- Compiling entity Decimator
+# -- Compiling architecture STRUCTURE of Decimator
+# -- Compiling entity \PWM__parameterized0\
+# -- Compiling architecture STRUCTURE of \PWM__parameterized0\
+# -- Compiling entity ADC_TOP
+# -- Compiling architecture STRUCTURE of ADC_TOP
+# -- Loading entity ADC
+# -- Loading entity Decimator
+# -- Compiling entity DMC
+# -- Compiling architecture STRUCTURE of DMC
+# -- Loading entity DMCDMC_clk_wiz
+# -- Compiling entity DAC_top
+# -- Compiling architecture STRUCTURE of DAC_top
+# -- Loading entity \PWM__parameterized0\
+# -- Loading entity DMC
+# -- Compiling entity Throughput_top
+# -- Compiling architecture STRUCTURE of Throughput_top
+# -- Loading entity ADC_TOP
+# -- Loading entity DAC_top
+# End time: 12:50:35 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.3 Jan  6 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -L secureip -lib work -voptargs=""+acc"" -t 1ps Throughput_top 
+# Start time: 12:50:35 on Feb 24,2014
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.throughput_top(structure)
+# Loading unisim.bufg(bufg_v)
+# Loading unisim.obuf(obuf_v)
+# Loading unisim.ibuf(ibuf_v)
+# Loading unisim.vcc(vcc_v)
+# Loading work.adc_top(structure)
+# Loading unisim.gnd(gnd_v)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.fdre(fdre_v)
+# Loading work.adc(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.numeric_std(body)
+# Loading unisim.xadc(xadc_v)
+# Loading work.decimator(structure)
+# Loading unisim.lut5(lut5_v)
+# Loading unisim.lut2(lut2_v)
+# Loading unisim.lut6(lut6_v)
+# Loading unisim.lut4(lut4_v)
+# Loading unisim.lut3(lut3_v)
+# Loading unisim.lut1(lut1_v)
+# Loading unisim.fdce(fdce_v)
+# Loading unisim.carry4(carry4_v)
+# Loading unisim.muxf7(muxf7_v)
+# Loading work.dac_top(structure)
+# Loading work.\PWM__parameterized0\(structure)
+# Loading unisim.fdpe(fdpe_v)
+# Loading work.dmc(structure)
+# Loading work.dmcdmc_clk_wiz(structure)
+# Loading unisim.mmcme2_adv(mmcme2_adv_v)
+# ** Fatal: Attempting to load -nodebug design unit.
+#  Nodebug designs are not supported.
+# 
+#    Time: 0 ps  Iteration: 0  Instance: /throughput_top File: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.sim/sim_1/impl/func/Throughput_top_func_impl.vhd Line: UNKNOWN
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC\ADC.sim\sim_1\impl\func\Throughput_top.do PAUSED at line 37
+# End time: 12:53:48 on Feb 24,2014
+# Errors: 0, Warnings: 0

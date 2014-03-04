@@ -3,3 +3,4 @@
 
 set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==ADC || ORIG_REF_NAME==ADC}]]
 set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==DMC || ORIG_REF_NAME==DMC}]]
+set_property BUFFER_TYPE NONE -quiet [get_ports -quiet -of [get_cells -hier -filter {REF_NAME==fir_compiler_0 || ORIG_REF_NAME==fir_compiler_0}]]

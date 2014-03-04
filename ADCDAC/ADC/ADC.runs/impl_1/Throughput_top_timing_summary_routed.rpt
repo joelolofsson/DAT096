@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Fri Feb 21 17:26:40 2014
+| Date         : Fri Feb 28 15:59:20 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_timing_summary -file Throughput_top_timing_summary_routed.rpt -pb Throughput_top_timing_summary_routed.pb
 | Design       : Throughput_top
@@ -37,18 +37,19 @@ Timing Summary Report
 
 
 Checking 'no_clock'.
- There are 2 register/latch pins with no clock driven by: CLK_BUFG_inst/O and possible clock pin by: CLK 
+ There are 517 register/latch pins with no clock driven by: sampleclkout_BUFG_inst/O and possible clock pin by: inst_top/Inst_PWM/sampleEna705Khz_reg/Q 
+ There are 267 register/latch pins with no clock driven by: xlnx_opt_BUFG/O and possible clock pin by: CLK 
  There are 0 register/latch pins with constant_clock.
 
 Checking 'unconstrained_internal_endpoints'.
- There are 29 pins that are not constrained for maximum delay.
+ There are 1921 pins that are not constrained for maximum delay.
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 Checking 'no_input_delay'.
- There are 2 input ports with no input delay specified.
+ There are 4 input ports with no input delay specified.
 
 Checking 'no_output_delay'.
- There are 17 ports with no output delay specified.
+ There are 18 ports with no output delay specified.
 
 Checking 'multiple_clock'.
  There are 0 register/latch pins with related clocks.
@@ -80,7 +81,7 @@ Checking 'latch_loops'.
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      7.599        0.000                      0                   23        0.224        0.000                      0                   23        3.000        0.000                       0                    29  
+      7.349        0.000                      0                   31        0.263        0.000                      0                   31        3.000        0.000                       0                    37  
 
 
 All user specified timing constraints are met.
@@ -107,7 +108,7 @@ Clock                          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS 
 -----                          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 inst_top/inst_DMC/clk_in1                                                                                                                                                    3.000        0.000                       0                     3  
   CLKFBOUT_1                                                                                                                                                                47.845        0.000                       0                     3  
-  CLKOUT0_1                      7.599        0.000                      0                   23        0.224        0.000                      0                   23        5.036        0.000                       0                    25  
+  CLKOUT0_1                      7.349        0.000                      0                   31        0.263        0.000                      0                   31        5.036        0.000                       0                    33  
 
 
 ------------------------------------------------------------------------------------------------
@@ -152,10 +153,10 @@ Period:             10.000
 Sources:            { inst_top/inst_DMC/clk_in1 }
 
 Check Type        Corner  Lib Pin              Reference Pin  Required  Actual  Slack   Location         Pin
-Min Period        n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249     10.000  8.751   MMCME2_ADV_X0Y0  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKFBOUT
-Max Period        n/a     MMCME2_ADV/CLKIN1    n/a            100.000   10.000  90.000  MMCME2_ADV_X0Y0  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKIN1
-Low Pulse Width   Slow    MMCME2_ADV/CLKIN1    n/a            2.000     5.000   3.000   MMCME2_ADV_X0Y0  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKIN1
-High Pulse Width  Fast    MMCME2_ADV/CLKIN1    n/a            2.000     5.000   3.000   MMCME2_ADV_X0Y0  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKIN1
+Min Period        n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249     10.000  8.751   MMCME2_ADV_X1Y2  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKFBOUT
+Max Period        n/a     MMCME2_ADV/CLKIN1    n/a            100.000   10.000  90.000  MMCME2_ADV_X1Y2  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1    n/a            2.000     5.000   3.000   MMCME2_ADV_X1Y2  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1    n/a            2.000     5.000   3.000   MMCME2_ADV_X1Y2  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKIN1
 
 
 
@@ -177,8 +178,8 @@ Period:             50.000
 Sources:            { inst_top/inst_DMC/U0/mmcm_adv_inst/CLKFBOUT }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required  Actual  Slack   Location         Pin
-Min Period  n/a     BUFG/I              n/a            2.155     50.000  47.845  BUFGCTRL_X0Y1    inst_top/inst_DMC/U0/clkf_buf/I
-Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000   50.000  50.000  MMCME2_ADV_X0Y0  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKFBIN
+Min Period  n/a     BUFG/I              n/a            2.155     50.000  47.845  BUFGCTRL_X0Y18   inst_top/inst_DMC/U0/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000   50.000  50.000  MMCME2_ADV_X1Y2  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKFBIN
 
 
 
@@ -186,28 +187,28 @@ Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000   50.000  50.000 
 From Clock:  CLKOUT0_1
   To Clock:  CLKOUT0_1
 
-Setup :            0  Failing Endpoints,  Worst Slack        7.599ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.224ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        7.349ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.263ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        5.036ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             7.599ns  (required time - arrival time)
-  Source:                 inst_top/Inst_PWM/cnt_reg[3]/C
+Slack (MET) :             7.349ns  (required time - arrival time)
+  Source:                 inst_top/Inst_PWM/cnt_reg[8]/C
                             (rising edge-triggered cell FDPE clocked by CLKOUT0_1  {rise@0.000ns fall@5.536ns period=11.072ns})
-  Destination:            inst_top/Inst_PWM/PWMout_reg/D
-                            (rising edge-triggered cell FDCE clocked by CLKOUT0_1  {rise@0.000ns fall@5.536ns period=11.072ns})
+  Destination:            inst_top/Inst_PWM/samplevalue_reg[4]/CE
+                            (rising edge-triggered cell FDRE clocked by CLKOUT0_1  {rise@0.000ns fall@5.536ns period=11.072ns})
   Path Group:             CLKOUT0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            11.072ns  (CLKOUT0_1 rise@11.072ns - CLKOUT0_1 rise@0.000ns)
-  Data Path Delay:        3.359ns  (logic 1.694ns (50.434%)  route 1.665ns (49.566%))
-  Logic Levels:           3  (CARRY4=1 LUT4=1 LUT6=1)
-  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    1.510ns = ( 12.582 - 11.072 ) 
-    Source Clock Delay      (SCD):    1.629ns
-    Clock Pessimism Removal (CPR):    0.094ns
+  Data Path Delay:        3.442ns  (logic 0.964ns (28.004%)  route 2.478ns (71.996%))
+  Logic Levels:           3  (LUT2=1 LUT6=2)
+  Clock Path Skew:        0.043ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -2.842ns = ( 8.230 - 11.072 ) 
+    Source Clock Delay      (SCD):    -2.396ns
+    Clock Pessimism Removal (CPR):    0.489ns
   Clock Uncertainty:      0.119ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.227ns
@@ -217,45 +218,44 @@ Slack (MET) :             7.599ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock CLKOUT0_1 rise edge)
                                                       0.000     0.000 r  
-    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK_BUFG_inst/O
-                         net (fo=3, routed)           1.809     1.809    inst_top/inst_DMC/U0/clk_in1
-    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.922    -2.112 r  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           2.018    -0.094    inst_top/inst_DMC/U0/CLKOUT0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     0.002 r  inst_top/inst_DMC/U0/clkout1_buf/O
-                         net (fo=24, routed)          1.627     1.629    inst_top/Inst_PWM/I1
-    SLICE_X37Y102                                                     r  inst_top/Inst_PWM/cnt_reg[3]/C
+    E3                   IBUF                         0.000     0.000 r  IBUF/O
+                         net (fo=2, routed)           1.233     1.233    inst_top/inst_DMC/U0/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.826    -5.593 r  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.475    -4.118    inst_top/inst_DMC/U0/CLKOUT0
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.096    -4.022 r  inst_top/inst_DMC/U0/clkout1_buf/O
+                         net (fo=31, routed)          1.625    -2.396    inst_top/Inst_PWM/CLK
+    SLICE_X67Y83                                                      r  inst_top/Inst_PWM/cnt_reg[8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X37Y102        FDPE (Prop_fdpe_C_Q)         0.419     2.048 r  inst_top/Inst_PWM/cnt_reg[3]/Q
-                         net (fo=6, routed)           0.864     2.912    inst_top/Inst_PWM/n_0_cnt_reg[3]
-    SLICE_X37Y101        LUT6 (Prop_lut6_I4_O)        0.296     3.208 r  inst_top/Inst_PWM/PWMout_i_6/O
-                         net (fo=1, routed)           0.000     3.208    inst_top/Inst_PWM/n_0_PWMout_i_6
-    SLICE_X37Y101        CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     3.758 f  inst_top/Inst_PWM/PWMout_reg_i_2/CO[3]
-                         net (fo=1, routed)           0.801     4.559    inst_top/Inst_PWM/n_0_PWMout_reg_i_2
-    SLICE_X36Y100        LUT4 (Prop_lut4_I0_O)        0.429     4.988 r  inst_top/Inst_PWM/PWMout_i_1/O
-                         net (fo=1, routed)           0.000     4.988    inst_top/Inst_PWM/n_0_PWMout_i_1
-    SLICE_X36Y100        FDCE                                         r  inst_top/Inst_PWM/PWMout_reg/D
+    SLICE_X67Y83         FDPE (Prop_fdpe_C_Q)         0.419    -1.977 r  inst_top/Inst_PWM/cnt_reg[8]/Q
+                         net (fo=6, routed)           0.779    -1.198    inst_top/Inst_PWM/n_0_cnt_reg[8]
+    SLICE_X67Y82         LUT6 (Prop_lut6_I0_O)        0.297    -0.901 r  inst_top/Inst_PWM/samplevalue[10]_i_4/O
+                         net (fo=1, routed)           0.427    -0.475    inst_top/Inst_PWM/n_0_samplevalue[10]_i_4
+    SLICE_X68Y82         LUT6 (Prop_lut6_I5_O)        0.124    -0.351 r  inst_top/Inst_PWM/samplevalue[10]_i_3/O
+                         net (fo=2, routed)           0.548     0.197    inst_top/Inst_PWM/n_0_samplevalue[10]_i_3
+    SLICE_X71Y83         LUT2 (Prop_lut2_I1_O)        0.124     0.321 r  inst_top/Inst_PWM/samplevalue[10]_i_1/O
+                         net (fo=11, routed)          0.725     1.046    inst_top/Inst_PWM/samplevalue0
+    SLICE_X72Y84         FDRE                                         r  inst_top/Inst_PWM/samplevalue_reg[4]/CE
   -------------------------------------------------------------------    -------------------
 
                          (clock CLKOUT0_1 rise edge)
                                                      11.072    11.072 r  
-    BUFGCTRL_X0Y16       BUFG                         0.000    11.072 r  CLK_BUFG_inst/O
-                         net (fo=3, routed)           1.683    12.755    inst_top/inst_DMC/U0/clk_in1
-    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.694     9.061 r  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           1.923    10.984    inst_top/inst_DMC/U0/CLKOUT0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.075 r  inst_top/inst_DMC/U0/clkout1_buf/O
-                         net (fo=24, routed)          1.507    12.582    inst_top/Inst_PWM/I1
-    SLICE_X36Y100                                                     r  inst_top/Inst_PWM/PWMout_reg/C
-                         clock pessimism              0.094    12.676    
-                         clock uncertainty           -0.119    12.558    
-    SLICE_X36Y100        FDCE (Setup_fdce_C_D)        0.029    12.587    inst_top/Inst_PWM/PWMout_reg
+    E3                   IBUF                         0.000    11.072 r  IBUF/O
+                         net (fo=2, routed)           1.162    12.234    inst_top/inst_DMC/U0/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.087     5.147 r  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.402     6.549    inst_top/inst_DMC/U0/CLKOUT0
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     6.640 r  inst_top/inst_DMC/U0/clkout1_buf/O
+                         net (fo=31, routed)          1.589     8.230    inst_top/Inst_PWM/CLK
+    SLICE_X72Y84                                                      r  inst_top/Inst_PWM/samplevalue_reg[4]/C
+                         clock pessimism              0.489     8.719    
+                         clock uncertainty           -0.119     8.600    
+    SLICE_X72Y84         FDRE (Setup_fdre_C_CE)      -0.205     8.395    inst_top/Inst_PWM/samplevalue_reg[4]
   -------------------------------------------------------------------
-                         required time                         12.587    
-                         arrival time                          -4.988    
+                         required time                          8.395    
+                         arrival time                          -1.046    
   -------------------------------------------------------------------
-                         slack                                  7.599    
+                         slack                                  7.349    
 
 
 
@@ -263,58 +263,58 @@ Slack (MET) :             7.599ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.224ns  (arrival time - required time)
-  Source:                 inst_top/Inst_PWM/cnt_reg[0]/C
+Slack (MET) :             0.263ns  (arrival time - required time)
+  Source:                 inst_top/Inst_PWM/cnt_reg[7]/C
                             (rising edge-triggered cell FDPE clocked by CLKOUT0_1  {rise@0.000ns fall@5.536ns period=11.072ns})
-  Destination:            inst_top/Inst_PWM/cnt_reg[4]/D
+  Destination:            inst_top/Inst_PWM/cnt_reg[8]/D
                             (rising edge-triggered cell FDPE clocked by CLKOUT0_1  {rise@0.000ns fall@5.536ns period=11.072ns})
   Path Group:             CLKOUT0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (CLKOUT0_1 rise@0.000ns - CLKOUT0_1 rise@0.000ns)
-  Data Path Delay:        0.328ns  (logic 0.186ns (56.689%)  route 0.142ns (43.311%))
+  Data Path Delay:        0.370ns  (logic 0.192ns (51.918%)  route 0.178ns (48.082%))
   Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    0.840ns
-    Source Clock Delay      (SCD):    0.569ns
-    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -1.278ns
+    Source Clock Delay      (SCD):    -0.851ns
+    Clock Pessimism Removal (CPR):    -0.427ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock CLKOUT0_1 rise edge)
                                                       0.000     0.000 r  
-    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK_BUFG_inst/O
-                         net (fo=3, routed)           0.624     0.624    inst_top/inst_DMC/U0/clk_in1
-    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -1.296    -0.672 r  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.648    -0.024    inst_top/inst_DMC/U0/CLKOUT0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  inst_top/inst_DMC/U0/clkout1_buf/O
-                         net (fo=24, routed)          0.567     0.569    inst_top/Inst_PWM/I1
-    SLICE_X37Y102                                                     r  inst_top/Inst_PWM/cnt_reg[0]/C
+    E3                   IBUF                         0.000     0.000 r  IBUF/O
+                         net (fo=2, routed)           0.440     0.440    inst_top/inst_DMC/U0/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.293    -1.852 r  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.413    -1.439    inst_top/inst_DMC/U0/CLKOUT0
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    -1.413 r  inst_top/inst_DMC/U0/clkout1_buf/O
+                         net (fo=31, routed)          0.563    -0.851    inst_top/Inst_PWM/CLK
+    SLICE_X67Y83                                                      r  inst_top/Inst_PWM/cnt_reg[7]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X37Y102        FDPE (Prop_fdpe_C_Q)         0.141     0.710 r  inst_top/Inst_PWM/cnt_reg[0]/Q
-                         net (fo=9, routed)           0.142     0.852    inst_top/Inst_PWM/n_0_cnt_reg[0]
-    SLICE_X36Y102        LUT5 (Prop_lut5_I3_O)        0.045     0.897 r  inst_top/Inst_PWM/cnt[4]_i_1/O
-                         net (fo=1, routed)           0.000     0.897    inst_top/Inst_PWM/p_1_in[4]
-    SLICE_X36Y102        FDPE                                         r  inst_top/Inst_PWM/cnt_reg[4]/D
+    SLICE_X67Y83         FDPE (Prop_fdpe_C_Q)         0.141    -0.710 r  inst_top/Inst_PWM/cnt_reg[7]/Q
+                         net (fo=7, routed)           0.178    -0.532    inst_top/Inst_PWM/n_0_cnt_reg[7]
+    SLICE_X67Y83         LUT5 (Prop_lut5_I1_O)        0.051    -0.481 r  inst_top/Inst_PWM/cnt[8]_i_1/O
+                         net (fo=1, routed)           0.000    -0.481    inst_top/Inst_PWM/p_1_in[8]
+    SLICE_X67Y83         FDPE                                         r  inst_top/Inst_PWM/cnt_reg[8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock CLKOUT0_1 rise edge)
                                                       0.000     0.000 r  
-    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  CLK_BUFG_inst/O
-                         net (fo=3, routed)           0.898     0.898    inst_top/inst_DMC/U0/clk_in1
-    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -1.625    -0.727 r  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.700    -0.027    inst_top/inst_DMC/U0/CLKOUT0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  inst_top/inst_DMC/U0/clkout1_buf/O
-                         net (fo=24, routed)          0.838     0.840    inst_top/Inst_PWM/I1
-    SLICE_X36Y102                                                     r  inst_top/Inst_PWM/cnt_reg[4]/C
-                         clock pessimism             -0.258     0.582    
-    SLICE_X36Y102        FDPE (Hold_fdpe_C_D)         0.091     0.673    inst_top/Inst_PWM/cnt_reg[4]
+    E3                   IBUF                         0.000     0.000 r  IBUF/O
+                         net (fo=2, routed)           0.480     0.480    inst_top/inst_DMC/U0/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.067    -2.587 r  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.448    -2.139    inst_top/inst_DMC/U0/CLKOUT0
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.029    -2.110 r  inst_top/inst_DMC/U0/clkout1_buf/O
+                         net (fo=31, routed)          0.833    -1.278    inst_top/Inst_PWM/CLK
+    SLICE_X67Y83                                                      r  inst_top/Inst_PWM/cnt_reg[8]/C
+                         clock pessimism              0.427    -0.851    
+    SLICE_X67Y83         FDPE (Hold_fdpe_C_D)         0.107    -0.744    inst_top/Inst_PWM/cnt_reg[8]
   -------------------------------------------------------------------
-                         required time                         -0.673    
-                         arrival time                           0.897    
+                         required time                          0.744    
+                         arrival time                          -0.481    
   -------------------------------------------------------------------
-                         slack                                  0.224    
+                         slack                                  0.263    
 
 
 
@@ -328,10 +328,10 @@ Period:             11.072
 Sources:            { inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0 }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required  Actual  Slack    Location         Pin
-Min Period        n/a     BUFG/I              n/a            2.155     11.072  8.917    BUFGCTRL_X0Y0    inst_top/inst_DMC/U0/clkout1_buf/I
-Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360   11.072  202.288  MMCME2_ADV_X0Y0  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
-Low Pulse Width   Fast    FDRE/C              n/a            0.500     5.536   5.036    SLICE_X38Y101    inst_top/Inst_PWM/samplevalue_reg[0]/C
-High Pulse Width  Fast    FDCE/C              n/a            0.500     5.536   5.036    SLICE_X36Y100    inst_top/Inst_PWM/PWMout_reg/C
+Min Period        n/a     BUFG/I              n/a            2.155     11.072  8.917    BUFGCTRL_X0Y17   inst_top/inst_DMC/U0/clkout1_buf/I
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360   11.072  202.288  MMCME2_ADV_X1Y2  inst_top/inst_DMC/U0/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDCE/C              n/a            0.500     5.536   5.036    SLICE_X68Y83     inst_top/Inst_PWM/PWMout_reg/C
+High Pulse Width  Slow    FDPE/C              n/a            0.500     5.536   5.036    SLICE_X66Y82     inst_top/Inst_PWM/cnt_reg[0]/C
 
 
 

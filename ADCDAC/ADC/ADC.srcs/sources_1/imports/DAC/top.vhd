@@ -32,9 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity DAC_top is
     Port ( clk : in  STD_LOGIC;
            pwmout : out  STD_LOGIC;
-			  Value	: in STD_LOGIC_VECTOR(15 downto 0);
-			  valueout : out STD_LOGIC_VECTOR(15 downto 0);
-			  PWMCLKout : out STD_LOGIC;
+			  Value	: in STD_LOGIC_VECTOR(31 downto 0);
+			  sampleEna705kHz : out STD_logic;
            reset : in  STD_LOGIC);
 end DAC_top;
 
@@ -57,7 +56,7 @@ component PWM
     Port ( PWMclk : in  STD_LOGIC;
 			  reset  : in STD_LOGIC;
 			  value  : in STD_LOGIC_VECTOR(Resolution -1 downto 0);
-			  outclk : out STD_LOGIC;
+			  sampleEna705kHz : out STD_LOGIC;
            PWMout : out  STD_LOGIC);
 end component;
 
@@ -67,7 +66,7 @@ ATTRIBUTE SYN_BLACK_BOX OF DMC : COMPONENT IS TRUE;
 
 ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
 ATTRIBUTE BLACK_BOX_PAD_PIN OF DMC : COMPONENT IS "clk_in1,clk_out1,resetn";
-signal PWMclock,sampleclk : std_logic;
+signal PWMclock : std_logic;
 
 signal values_pwm : STD_LOGIC_VECTOR(10 downto 0);
 
@@ -88,14 +87,13 @@ inst_DMC : DMC
 		PWMclk => pwmclock,
 		reset => reset,
 		value => values_pwm,
-		outclk => sampleclk,
+		sampleEna705kHz => sampleEna705kHz,
 		PWMout => pwmout
 	);
 	
-	pwmclkout <= pwmclock;
-	valueout <= value;
-	values_pwm <= value(15 downto 5);
 	
+	
+	values_pwm(10 downto 0) <= value(31 downto 21);
 
 end Behavioral;
 

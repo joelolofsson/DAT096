@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.3/examples
+Edecimator
+Z0 w1393520269
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC
+Z5 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd
+Z6 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd
+l0
+L35
+V>`PRB;kVjbR8;kN_bS?jE1
+!s100 iZdKR63=KLlL@3RWY:GJR0
+Z7 OP;C;10.3;59
+32
+Z8 !s110 1393589452
+!i10b 1
+Z9 !s108 1393589452.020000
+Z10 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd|
+Z11 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abehavioral
+R1
+R2
+R3
+Z14 DEx4 work 9 decimator 0 22 >`PRB;kVjbR8;kN_bS?jE1
+l53
+L46
+V445T5J=n5N0l7]:?2UjHc2
+!s100 7jR<d^`Pz?_1SN1OGAEa@3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Epwm
+Z15 w1393514923
+R1
+R2
+R3
+R4
+Z16 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd
+Z17 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd
+l0
+L33
+Vf;`aF5XGN;6aCB0iT8AY51
+!s100 lda?OoMGiZ^G]c@@SK2>T2
+R7
+32
+Z18 !s110 1393514928
+!i10b 1
+Z19 !s108 1393514928.003000
+Z20 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd|
+Z21 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd|
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 3 pwm 0 22 f;`aF5XGN;6aCB0iT8AY51
+l49
+L43
+V1_SPdh75Z2>;gaW=IWdeX3
+!s100 Ue`SO;QG`2Qzbh9Y0NTZZ3
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+R12
+R13

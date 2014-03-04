@@ -6,22 +6,26 @@
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config -id {Labtools 27-147} -limit 4294967295
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
+add_files c:/CHALMERS/DAT096/DAT096/ADCDAC/filtercoeff.coe
 add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/ADC_synth_1/ADC.dcp
 set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/ADC_synth_1/ADC.dcp]
 set_property use_blackbox_stub false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/ADC_synth_1/ADC.dcp]
 add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/DMC_synth_1/DMC.dcp
 set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/DMC_synth_1/DMC.dcp]
 set_property use_blackbox_stub false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/DMC_synth_1/DMC.dcp]
+add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp
+set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
+set_property use_blackbox_stub false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
 read_verilog {
   c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_stub.v
   c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_stub.v
+  c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_stub.v
 }
 read_vhdl {
+  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd
   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd
   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd
   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd

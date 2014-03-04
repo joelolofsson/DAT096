@@ -1,10 +1,10 @@
 -- Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
--- Date        : Fri Feb 21 14:07:10 2014
+-- Date        : Fri Feb 28 13:00:14 2014
 -- Host        : running 32-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl
+--               C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl
 -- Design      : ADC
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,6 +22,7 @@ entity ADC is
     drdy_out : out STD_LOGIC;
     dclk_in : in STD_LOGIC;
     reset_in : in STD_LOGIC;
+    convst_in : in STD_LOGIC;
     vauxp3 : in STD_LOGIC;
     vauxn3 : in STD_LOGIC;
     busy_out : out STD_LOGIC;
@@ -39,7 +40,7 @@ entity ADC is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of ADC : entity is true;
   attribute core_generation_info : string;
-  attribute core_generation_info of ADC : entity is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=false,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=continuous,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
+  attribute core_generation_info of ADC : entity is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=true,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
 end ADC;
 
 architecture STRUCTURE of ADC is
@@ -58,9 +59,9 @@ GND: unisim.vcomponents.GND
     );
 U0: unisim.vcomponents.XADC
     generic map(
-      INIT_40 => X"0013",
+      INIT_40 => X"0613",
       INIT_41 => X"3100",
-      INIT_42 => X"0400",
+      INIT_42 => X"0600",
       INIT_43 => X"0000",
       INIT_44 => X"0000",
       INIT_45 => X"0000",
@@ -103,7 +104,7 @@ U0: unisim.vcomponents.XADC
       ALM(0) => user_temp_alarm_out,
       BUSY => busy_out,
       CHANNEL(4 downto 0) => channel_out(4 downto 0),
-      CONVST => \<const0>\,
+      CONVST => convst_in,
       CONVSTCLK => \<const0>\,
       DADDR(6 downto 0) => daddr_in(6 downto 0),
       DCLK => dclk_in,

@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date             : Fri Feb 21 17:26:40 2014
+| Date             : Fri Feb 28 15:59:20 2014
 | Host             : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command          : report_power -file Throughput_top_power_routed.rpt -pb Throughput_top_power_summary_routed.pb
 | Design           : Throughput_top
@@ -30,9 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.239 |
-| Dynamic (W)              | 0.142 |
+| Total On-Chip Power (W)  | 0.236 |
+| Dynamic (W)              | 0.138 |
 | Device Static (W)        | 0.098 |
+| Total Off-Chip Power (W) | 0.000 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 83.9  |
 | Junction Temperature (C) | 26.1  |
@@ -46,23 +47,27 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        4 |       --- |             --- |
-| Slice Logic    |    <0.001 |       56 |       --- |             --- |
-|   BUFG         |    <0.001 |        1 |        32 |            3.12 |
-|   LUT as Logic |    <0.001 |       18 |     63400 |            0.02 |
-|   Register     |    <0.001 |       24 |    126800 |            0.01 |
-|   CARRY4       |    <0.001 |        1 |     15850 |           <0.01 |
-|   Others       |     0.000 |        7 |       --- |             --- |
-| Signals        |    <0.001 |       53 |       --- |             --- |
-| MMCM           |     0.126 |        1 |         6 |           16.66 |
-| I/O            |     0.012 |       21 |       210 |           10.00 |
-| XADC           |     0.002 |        1 |       --- |             --- |
-| Static Power   |     0.098 |          |           |                 |
-| Total          |     0.239 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |    <0.001 |        4 |       --- |             --- |
+| Slice Logic             |    <0.001 |     1362 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      383 |     63400 |            0.60 |
+|   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
+|   Register              |    <0.001 |      783 |    126800 |            0.61 |
+|   LUT as Shift Register |    <0.001 |       15 |     19000 |            0.07 |
+|   CARRY4                |    <0.001 |       21 |     15850 |            0.13 |
+|   F7/F8 Muxes           |    <0.001 |       75 |     63400 |            0.11 |
+|   Others                |     0.000 |       17 |       --- |             --- |
+| Signals                 |     0.001 |     1167 |       --- |             --- |
+| Block RAM               |     0.002 |        0 |       135 |            0.00 |
+| MMCM                    |     0.126 |        1 |         6 |           16.66 |
+| DSPs                    |    <0.001 |        3 |       240 |            1.25 |
+| I/O                     |     0.004 |       27 |       210 |           12.85 |
+| XADC                    |     0.002 |        1 |       --- |             --- |
+| Static Power            |     0.098 |          |           |                 |
+| Total                   |     0.236 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -71,9 +76,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
-| Vccaux    |       1.800 |     0.089 |       0.071 |      0.018 |
-| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
+| Vccint    |       1.000 |     0.022 |       0.006 |      0.015 |
+| Vccaux    |       1.800 |     0.088 |       0.070 |      0.018 |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,16 +145,25 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------+-----------+
-| Name           | Power (W) |
-+----------------+-----------+
-| Throughput_top |     0.142 |
-|   inst_ADC_TOP |     0.002 |
-|     inst_ADC   |     0.002 |
-|   inst_top     |     0.127 |
-|     Inst_PWM   |    <0.001 |
-|     inst_DMC   |     0.127 |
-|       U0       |     0.127 |
-+----------------+-----------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                                                                            | Power (W) |
++-------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| Throughput_top                                                                                                                                  |     0.138 |
+|   inst_ADC_TOP                                                                                                                                  |     0.006 |
+|     inst_ADC                                                                                                                                    |     0.002 |
+|     inst_Decimator                                                                                                                              |    <0.001 |
+|     inst_fir                                                                                                                                    |     0.004 |
+|       U0                                                                                                                                        |     0.004 |
+|         i_synth                                                                                                                                 |     0.004 |
+|           g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0                                                               |    <0.001 |
+|           g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr |     0.000 |
+|           g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem                  |     0.002 |
+|           g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a                             |    <0.001 |
+|           g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a                             |    <0.001 |
+|   inst_top                                                                                                                                      |     0.127 |
+|     Inst_PWM                                                                                                                                    |    <0.001 |
+|     inst_DMC                                                                                                                                    |     0.127 |
+|       U0                                                                                                                                        |     0.127 |
++-------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 
 

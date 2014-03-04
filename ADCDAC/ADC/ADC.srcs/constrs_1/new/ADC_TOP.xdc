@@ -44,5 +44,35 @@ set_property IOSTANDARD LVTTL [get_ports {DIODES[0]}]
 set_property IOSTANDARD LVTTL [get_ports vauxn3]
 set_property IOSTANDARD LVTTL [get_ports vauxp3]
 
-set_property PACKAGE_PIN G14 [get_ports pwmout]
+set_property PACKAGE_PIN A11 [get_ports pwmout]
 set_property IOSTANDARD LVTTL [get_ports pwmout]
+
+
+set_property IOSTANDARD LVTTL [get_ports opena]
+set_property PACKAGE_PIN D12 [get_ports opena]
+
+set_property IOSTANDARD LVTTL [get_ports diodeswitch]
+set_property SLEW FAST [get_ports pwmout]
+set_property PACKAGE_PIN U8 [get_ports diodeswitch]
+
+
+
+
+
+
+set_property PACKAGE_PIN P15 [get_ports sampleclk2out]
+set_property PACKAGE_PIN R16 [get_ports sampleclkout]
+set_property IOSTANDARD LVTTL [get_ports sampleclk2out]
+set_property IOSTANDARD LVTTL [get_ports sampleclkout]
+
+
+set_property SLEW FAST [get_ports sampleclkout]
+set_property SLEW FAST [get_ports sampleclk2out]
+
+
+set_property IOSTANDARD LVTTL [get_ports samplerswitch]
+set_property PACKAGE_PIN R7 [get_ports samplerswitch]
+
+set_property PACKAGE_PIN R6 [get_ports samplerswitch2]
+set_property IOSTANDARD LVTTL [get_ports samplerswitch2]
+

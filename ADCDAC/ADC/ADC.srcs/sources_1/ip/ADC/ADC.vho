@@ -62,6 +62,7 @@ COMPONENT ADC
     do_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     dclk_in : IN STD_LOGIC;
     reset_in : IN STD_LOGIC;
+    convst_in : IN STD_LOGIC;
     vp_in : IN STD_LOGIC;
     vn_in : IN STD_LOGIC;
     vauxp3 : IN STD_LOGIC;
@@ -80,7 +81,7 @@ END COMPONENT;
 ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
 ATTRIBUTE SYN_BLACK_BOX OF ADC : COMPONENT IS TRUE;
 ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
+ATTRIBUTE BLACK_BOX_PAD_PIN OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,convst_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
 
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
 
@@ -98,6 +99,7 @@ your_instance_name : ADC
     do_out => do_out,
     dclk_in => dclk_in,
     reset_in => reset_in,
+    convst_in => convst_in,
     vp_in => vp_in,
     vn_in => vn_in,
     vauxp3 => vauxp3,

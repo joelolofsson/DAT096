@@ -36,18 +36,23 @@ entity Throughput_top is
            RST : in STD_LOGIC;
            vauxp3 : in STD_LOGIC;
            vauxn3 : in STD_LOGIC;
+           diodeswitch : in STD_LOGIC;
+           samplerswitch : in STD_LOGIC;
+           samplerswitch2 : in STD_LOGIC;
            pwmout : out STD_LOGIC;
+           opena : out STD_LOGIC;
+           sampleclkout : out STD_LOGIC;
+           sampleclk2out : out STD_LOGIC;
            DIODES : out STD_LOGIC_vector(15 downto 0));
 end Throughput_top;
 
-architecture Behavioral of Throughput_top is
+    architecture Behavioral of Throughput_top is
 
 component DAC_top
     Port ( clk : in  STD_LOGIC;
            pwmout : out  STD_LOGIC;
-			  Value	: in STD_LOGIC_VECTOR(15 downto 0);
-			  valueout : out STD_LOGIC_VECTOR(15 downto 0);
-			  PWMCLKout : out STD_LOGIC;
+			  Value	: in STD_LOGIC_VECTOR(31 downto 0);
+			  sampleEna705kHz : out STD_logic;
            reset : in  STD_LOGIC);
 end component;
 
@@ -55,24 +60,31 @@ component ADC_TOP
     Port ( CLK : in STD_LOGIC;
            RST : in STD_LOGIC;
            sampleclk : in STD_LOGIC;
+           samplerswitch : in STD_LOGIC;
+           samplerswitch2 : in STD_LOGIC;
            vauxp3 : in STD_LOGIC;
            vauxn3 : IN STD_LOGIC;
-           DIODES : out STD_LOGIC_VECTOR (15 downto 0));
+           sampleout : out STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
 signal sampleclk : STD_LOGIC;
-signal Value : STD_LOGIC_VECTOR(15 downto 0);
+signal Value : STD_LOGIC_VECTOR(31 downto 0);
+signal cssig : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
+
+opena <= '1';
 
 inst_ADC_TOP : ADC_TOP 
 port map (
     clk => clk,
     rst => rst,
     sampleclk => sampleclk,
+    samplerswitch => samplerswitch,
+    samplerswitch2 => samplerswitch2,
     vauxp3 => vauxp3,
     vauxn3 => vauxn3,
-    Diodes => Value
+    sampleout => Value
         );
 
 inst_top : DAC_top
@@ -81,8 +93,13 @@ port map (
     reset => rst,
     pwmout => pwmout,
     Value => Value,
-    ValueOut => diodes,
-    pwmclkout => sampleclk
+    sampleEna705kHz => sampleclk
     );
+    
+with diodeswitch select
+diodes <= value(31 downto 16) when '1',
+          value(15 downto 0) when others;
+
+sampleclkout <= sampleclk;
 
 end Behavioral;

@@ -1,10 +1,10 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-// Date        : Fri Feb 21 14:07:10 2014
+// Date        : Fri Feb 28 13:00:14 2014
 // Host        : running 32-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim
-//               c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_funcsim.v
+//               C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_funcsim.v
 // Design      : ADC
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* core_generation_info = "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=false,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=continuous,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}" *) 
+(* core_generation_info = "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=true,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}" *) 
 (* NotValidForBitStream *)
 module ADC
    (daddr_in,
@@ -23,6 +23,7 @@ module ADC
     drdy_out,
     dclk_in,
     reset_in,
+    convst_in,
     vauxp3,
     vauxn3,
     busy_out,
@@ -44,6 +45,7 @@ module ADC
   output drdy_out;
   input dclk_in;
   input reset_in;
+  input convst_in;
   input vauxp3;
   input vauxn3;
   output busy_out;
@@ -62,6 +64,7 @@ module ADC
   wire alarm_out;
   wire busy_out;
   wire [4:0]channel_out;
+  wire convst_in;
   wire [6:0]daddr_in;
   wire dclk_in;
   wire den_in;
@@ -90,9 +93,9 @@ GND GND
        (.G(\<const0> ));
 (* box_type = "PRIMITIVE" *) 
    XADC #(
-    .INIT_40(16'h0013),
+    .INIT_40(16'h0613),
     .INIT_41(16'h3100),
-    .INIT_42(16'h0400),
+    .INIT_42(16'h0600),
     .INIT_43(16'h0000),
     .INIT_44(16'h0000),
     .INIT_45(16'h0000),
@@ -130,7 +133,7 @@ GND GND
        (.ALM({alarm_out,NLW_U0_ALM_UNCONNECTED[6:3],vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out}),
         .BUSY(busy_out),
         .CHANNEL(channel_out),
-        .CONVST(\<const0> ),
+        .CONVST(convst_in),
         .CONVSTCLK(\<const0> ),
         .DADDR(daddr_in),
         .DCLK(dclk_in),

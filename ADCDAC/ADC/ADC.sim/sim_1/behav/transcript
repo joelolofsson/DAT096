@@ -1,0 +1,181 @@
+# do {C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.sim/sim_1/behav/Throughput_top.do} 
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:48 on Feb 24,2014
+# vcom -reportprogress 300 -work work -93 c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ADC
+# -- Compiling architecture xilinx of ADC
+# End time: 12:07:49 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:49 on Feb 24,2014
+# vcom -reportprogress 300 -work work -93 c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_clk_wiz.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DMC_clk_wiz
+# -- Compiling architecture xilinx of DMC_clk_wiz
+# End time: 12:07:50 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:50 on Feb 24,2014
+# vcom -reportprogress 300 -work work -93 c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DMC
+# -- Compiling architecture xilinx of DMC
+# End time: 12:07:51 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:51 on Feb 24,2014
+# vcom -reportprogress 300 -work work -93 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Decimator
+# -- Compiling architecture Behavioral of Decimator
+# End time: 12:07:52 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:52 on Feb 24,2014
+# vcom -reportprogress 300 -work work -93 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PWM
+# -- Compiling architecture Behavioral of PWM
+# End time: 12:07:52 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:52 on Feb 24,2014
+# vcom -reportprogress 300 -work work -93 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADC_TOP
+# -- Compiling architecture Behavioral of ADC_TOP
+# End time: 12:07:53 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:53 on Feb 24,2014
+# vcom -reportprogress 300 -work work -93 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DAC_top
+# -- Compiling architecture Behavioral of DAC_top
+# End time: 12:07:53 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:53 on Feb 24,2014
+# vcom -reportprogress 300 -work work -93 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Throughput_top
+# -- Compiling architecture Behavioral of Throughput_top
+# End time: 12:07:54 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.3 Compiler 2014.01 Jan  6 2014
+# Start time: 12:07:54 on Feb 24,2014
+# vlog -reportprogress 300 -work work C:/Xilinx/Vivado/2013.4/data/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 12:07:54 on Feb 24,2014
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.3 Jan  6 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=""+acc"" -t 1ps Throughput_top glbl 
+# Start time: 12:07:54 on Feb 24,2014
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.throughput_top(behavioral)
+# PE Student Edition supports only a single HDL
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC\ADC.sim\sim_1\behav\Throughput_top.do PAUSED at line 47
+vsim work.adc
+# vsim work.adc 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc(xilinx)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.xadc(xadc_v)
+# ** Fatal: Attempting to load -nodebug design unit.
+#  Nodebug designs are not supported.
+# 
+#    Time: 0 ps  Iteration: 0  Instance: /adc File: c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC.vhd Line: UNKNOWN
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC\ADC.sim\sim_1\behav\Throughput_top.do PAUSED at line 47
+vsim work.decimator
+# vsim work.decimator 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.decimator(behavioral)
+vsim work.dmc
+# vsim work.dmc 
+# Start time: 12:09:00 on Feb 24,2014
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dmc(xilinx)
+# Loading work.dmc_clk_wiz(xilinx)
+# Loading unisim.ibuf(ibuf_v)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.mmcme2_adv(mmcme2_adv_v)
+# Loading unisim.bufg(bufg_v)
+# ** Fatal: Attempting to load -nodebug design unit.
+#  Nodebug designs are not supported.
+# 
+#    Time: 0 ps  Iteration: 0  Instance: /dmc File: c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.vhd Line: UNKNOWN
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC\ADC.sim\sim_1\behav\Throughput_top.do PAUSED at line 47
+# End time: 12:16:23 on Feb 24,2014
+# Errors: 0, Warnings: 0

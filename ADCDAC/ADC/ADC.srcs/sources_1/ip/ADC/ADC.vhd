@@ -1,3 +1,4 @@
+ 
 
 -- file: ADC.vhd
 -- (c) Copyright 2009 - 2013 Xilinx, Inc. All rights reserved.
@@ -63,6 +64,7 @@ entity ADC is
     drdy_out        : out  STD_LOGIC;                        -- Data ready signal for the dynamic reconfiguration port
     dclk_in         : in  STD_LOGIC;                         -- Clock input for the dynamic reconfiguration port
     reset_in        : in  STD_LOGIC;                         -- Reset signal for the System Monitor control logic
+    convst_in       : in  STD_LOGIC;                         -- Convert Start Input
     vauxp3          : in  STD_LOGIC;                         -- Auxiliary Channel 3
     vauxn3          : in  STD_LOGIC;
     busy_out        : out  STD_LOGIC;                        -- ADC Busy signal
@@ -82,7 +84,7 @@ end ADC;
 architecture xilinx of ADC is
 
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of xilinx : architecture is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=false,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=continuous,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
+  attribute CORE_GENERATION_INFO of xilinx : architecture is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=true,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
 
 
   signal FLOAT_VBRAM_ALARM : std_logic;
@@ -148,9 +150,9 @@ begin
 
  U0 : XADC
      generic map(
-        INIT_40 => X"0013", -- config reg 0
+        INIT_40 => X"0613", -- config reg 0
         INIT_41 => X"3100", -- config reg 1
-        INIT_42 => X"0400", -- config reg 2
+        INIT_42 => X"0600", -- config reg 2
         INIT_48 => X"0100", -- Sequencer channel selection
         INIT_49 => X"0000", -- Sequencer channel selection
         INIT_4A => X"0000", -- Sequencer Average selection
@@ -174,7 +176,7 @@ begin
         )
 
 port map (
-        CONVST              => '0',
+        CONVST              => convst_in,
         CONVSTCLK           => '0',
         DADDR(6 downto 0)   => daddr_in(6 downto 0),
         DCLK                => dclk_in,
