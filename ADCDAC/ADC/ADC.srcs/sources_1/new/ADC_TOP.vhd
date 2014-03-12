@@ -32,9 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ADC_TOP is
     Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 100 MHz.
            RST : in STD_LOGIC;									-- ! Global reset active low.
-           sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.
-           samplerswitch : in STD_LOGIC;						-- ! To be removed.
-           samplerswitch2 : in STD_LOGIC;						-- ! To be removed.
+           sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.						-- ! To be removed.
            vauxp3 : in STD_LOGIC;								-- ! Positive analogue signal.
            vauxn3 : IN STD_LOGIC;								-- ! Negative analogue signal.
            sampleout : out STD_LOGIC_VECTOR (31 downto 0));		-- ! Sampled value after decimation.
@@ -122,8 +120,21 @@ signal cssig,cssig2 : STD_LOGIC_VECTOR(31 downto 0);	-- ! to be removed
 signal sampleFLT : STD_LOGIC_VECTOR(31 downto 0);		-- ! Filtered signal to be decimated
 signal busy : STD_LOGIC;								-- ! Busy signal from XADC
 signal dataready : STD_LOGIC;							-- ! Signalling the FIR filter is done to load new value to FIR filter
-
+signal FIRready : STD_LOGIC;                            -- ! Signalling the firfilter is done with calculation
 begin
+
+process(clk,rst)
+begin
+    if rst = '0' then
+        dataready <= '1';
+    elsif rising_edge(clk) then 
+        if sampleclk = '1' then
+            dataready <= '1';
+        elsif FIRready = '0' then
+            dataready <= '0';
+        end if;
+    end if;
+end process;
 
 den_in <= not busy; 					-- ! Enable is set to one when the signal XADC is not busy
 inv_rst <= not rst;						-- ! Reset is inverted to create a active high reset for XADC
@@ -144,7 +155,7 @@ inst_fir : fir_compiler_0
     aresetn => rst,
     aclk => clk,
     s_axis_data_tvalid => dataready,
-    s_axis_data_tready => dataready,
+    s_axis_data_tready => FIRready,
     s_axis_data_tdata => sampledvalue,
     m_axis_data_tvalid => open,
     m_axis_data_tdata => sampleflt
@@ -156,14 +167,14 @@ di_in <= (others =>'0');				-- ! Input vector is set to 0 since it unused
 
 
 -- ! to be removed
-inst_Decimator : decimator
-port map (
-    clk => clk,
-    rst => rst,
-    samplein => cssig,
-    sampleout => cssig2,
-    sampleclk => sampleclk
-    );
+--inst_Decimator : decimator
+--port map (
+--    clk => clk,
+--    rst => rst,
+--    samplein => cssig,
+--    sampleout => cssig2,
+--    sampleclk => sampleclk
+--    );
 
 -- ! Instantiation of the XADC
 inst_ADC : ADC
@@ -202,15 +213,7 @@ inst_ADC : ADC
 --  cssig2 <= sampledvalue;
   
   
-  -- ! to be removed
-  with samplerswitch select
-  cssig <= sampledvalue & x"0000" when '1',
-           sampleflt when others;
-           
-  -- ! to be removed
-  with samplerswitch2 select
-  sampleout <= cssig2 when '1',
-               not(sampleflt(31)) & sampleflt(30 downto 0) when others;
+  sampleout <= (sampleflt(31)) & sampleflt(30 downto 0);
   
 --  sampleout <= cssig;
 

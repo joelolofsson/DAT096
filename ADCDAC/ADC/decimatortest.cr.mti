@@ -1,13 +1,4 @@
-C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd
-Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity PWM
--- Compiling architecture Behavioral of PWM
-
-} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/decimator_TB.vhd {0 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/decimator_TB.vhd
+C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/decimator_TB.vhd {0 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/decimator_TB.vhd
 Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
 -- Loading package STANDARD
 ** Error: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/decimator_TB.vhd(2): (vcom-1491) Empty source files.

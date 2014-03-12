@@ -37,12 +37,9 @@ entity Throughput_top is
            vauxp3 : in STD_LOGIC;
            vauxn3 : in STD_LOGIC;
            diodeswitch : in STD_LOGIC;
-           samplerswitch : in STD_LOGIC;
-           samplerswitch2 : in STD_LOGIC;
            pwmout : out STD_LOGIC;
            opena : out STD_LOGIC;
            sampleclkout : out STD_LOGIC;
-           sampleclk2out : out STD_LOGIC;
            DIODES : out STD_LOGIC_vector(15 downto 0));
 end Throughput_top;
 
@@ -60,8 +57,6 @@ component ADC_TOP
     Port ( CLK : in STD_LOGIC;
            RST : in STD_LOGIC;
            sampleclk : in STD_LOGIC;
-           samplerswitch : in STD_LOGIC;
-           samplerswitch2 : in STD_LOGIC;
            vauxp3 : in STD_LOGIC;
            vauxn3 : IN STD_LOGIC;
            sampleout : out STD_LOGIC_VECTOR (31 downto 0));
@@ -80,8 +75,6 @@ port map (
     clk => clk,
     rst => rst,
     sampleclk => sampleclk,
-    samplerswitch => samplerswitch,
-    samplerswitch2 => samplerswitch2,
     vauxp3 => vauxp3,
     vauxn3 => vauxn3,
     sampleout => Value

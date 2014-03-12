@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Fri Feb 28 15:56:57 2014
+| Date         : Tue Mar 11 12:11:47 2014
 | Host         :  running 32-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file Throughput_top_utilization_synth.rpt -pb Throughput_top_utilization_synth.pb
 | Design       : Throughput_top
@@ -29,14 +29,14 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Loced | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  276 |     0 |     63400 |  0.43 |
-|   LUT as Logic          |  276 |     0 |     63400 |  0.43 |
+| Slice LUTs*             |   34 |     0 |     63400 |  0.05 |
+|   LUT as Logic          |   34 |     0 |     63400 |  0.05 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  548 |     0 |    126800 |  0.43 |
-|   Register as Flip Flop |  548 |     0 |    126800 |  0.43 |
+| Slice Registers         |   32 |     0 |    126800 |  0.02 |
+|   Register as Flip Flop |   32 |     0 |    126800 |  0.02 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |   56 |     0 |     31700 |  0.17 |
-| F8 Muxes                |    4 |     0 |     15850 |  0.02 |
+| F7 Muxes                |    0 |     0 |     31700 |  0.00 |
+| F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Loced | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   22 |     0 |       210 | 10.47 |
+| Bonded IOB                  |   19 |     0 |       210 |  9.04 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | IBUFGDS                     |    0 |     0 |       202 |  0.00 |
 | IDELAYCTRL                  |    0 |     0 |         6 |  0.00 |
@@ -128,21 +128,18 @@ Table of Contents
 +----------+------+
 | Ref Name | Used |
 +----------+------+
-| FDCE     |  519 |
-| LUT6     |  173 |
-| MUXF7    |   56 |
-| LUT2     |   45 |
-| LUT3     |   40 |
-| LUT5     |   30 |
-| CARRY4   |   19 |
+| LUT3     |   24 |
 | OBUF     |   18 |
 | FDRE     |   18 |
-| FDPE     |   11 |
-| LUT1     |    9 |
-| MUXF8    |    4 |
-| LUT4     |    4 |
-| IBUF     |    3 |
-| OBUFT    |    1 |
+| FDPE     |   12 |
+| LUT6     |    8 |
+| LUT1     |    5 |
+| LUT5     |    4 |
+| LUT4     |    3 |
+| CARRY4   |    3 |
+| LUT2     |    2 |
+| FDCE     |    2 |
+| IBUF     |    1 |
 | BUFG     |    1 |
 +----------+------+
 

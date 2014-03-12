@@ -70,9 +70,5 @@ set_property SLEW FAST [get_ports sampleclkout]
 set_property SLEW FAST [get_ports sampleclk2out]
 
 
-set_property IOSTANDARD LVTTL [get_ports samplerswitch]
-set_property PACKAGE_PIN R7 [get_ports samplerswitch]
 
-set_property PACKAGE_PIN R6 [get_ports samplerswitch2]
-set_property IOSTANDARD LVTTL [get_ports samplerswitch2]
 
