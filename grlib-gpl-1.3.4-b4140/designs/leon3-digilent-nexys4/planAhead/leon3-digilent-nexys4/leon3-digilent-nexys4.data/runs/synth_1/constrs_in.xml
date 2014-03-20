@@ -9,6 +9,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../../leon3mp.ucf"/>
       <Option Name="ConstrsType" Val="UCF"/>
     </Config>
   </FileSet>

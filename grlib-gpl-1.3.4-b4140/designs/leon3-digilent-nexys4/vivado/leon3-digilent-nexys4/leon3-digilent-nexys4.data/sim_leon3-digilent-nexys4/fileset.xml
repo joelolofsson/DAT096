@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DARoots Version="1" Minor="30">
   <FileSet Name="sim_leon3-digilent-nexys4" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_leon3-digilent-nexys4">
+    <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../../../lib/grlib/stdlib/stdio.vhd">
       <FileInfo>
         <Attr Name="Library" Val="grlib"/>

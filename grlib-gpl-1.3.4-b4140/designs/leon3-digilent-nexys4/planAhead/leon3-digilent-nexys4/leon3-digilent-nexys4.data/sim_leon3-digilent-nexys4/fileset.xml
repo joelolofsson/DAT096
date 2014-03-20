@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DARoots Version="1" Minor="26">
   <FileSet Name="sim_leon3-digilent-nexys4" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_leon3-digilent-nexys4">
+    <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../../../lib/tech/unisim/ise/unisim_VITAL.vhd">
       <FileInfo>
         <Attr Name="Library" Val="unisim"/>

@@ -61,7 +61,7 @@ entity leon3mp is
     );
   port (
     clk             : in    std_ulogic;
-
+   
     -- onBoard Cellular RAM, Numonyx StrataFlash and Numonyx Quad Flash
     RamOE           : out   std_ulogic;
     RamWE           : out   std_ulogic;
@@ -132,7 +132,13 @@ entity leon3mp is
     --~ PS2MouseClk     : inout std_logic;
 
     --~ PicGpio         : out   std_logic_vector(1 downto 0);
-
+    
+    --  PWM Audio Amplifier
+    ampPWM          : out std_logic;
+    ampSD           : out std_logic;
+    --dunno how this work
+    vauxp3          : in std_logic;
+    vauxn3          : in std_logic;
     -- USB-RS232 interface
     RsRx            : in    std_logic;
     RsTx            : out   std_logic
@@ -140,6 +146,22 @@ entity leon3mp is
 end;
 
 architecture rtl of leon3mp is
+  component dummyapb
+    generic (
+    pindex : integer := 0;
+    paddr : integer := 0; 
+    pmask : integer := 16#fff#);
+  port (
+    rstn : in std_ulogic;
+    clk : in std_ulogic;
+    vauxp3 : in STD_LOGIC;
+    vauxn3 : IN STD_LOGIC;
+    apbi : in apb_slv_in_type;
+    apbo : out apb_slv_out_type;
+    pwmout : out std_logic;
+    led : out std_logic_vector (15 downto 4) 
+    );
+end component dummyapb;
   component PLLE2_ADV
   generic (
      BANDWIDTH : string := "OPTIMIZED";
@@ -256,6 +278,7 @@ architecture rtl of leon3mp is
   signal rstraw             : std_logic;
   signal btnCpuReset       : std_logic;
   signal lock               : std_logic;
+
 
   -- RS232 APB Uart
   signal rxd1 : std_logic;
@@ -459,10 +482,13 @@ begin
     u1i.ctsn   <= '0';
     u1i.extclk <= '0';
     txd1       <= u1o.txd;
+    
+    dsurx_pad : inpad generic map (tech  => padtech) port map (RsRx, rxd1);
+    dsutx_pad : outpad generic map (tech => padtech) port map (RSTx, txd1);
 --    serrx_pad : inpad generic map (tech  => padtech) port map (dsurx, rxd1);
 --    sertx_pad : outpad generic map (tech => padtech) port map (dsutx, txd1);
---    led(0) <= not rxd1;
---    led(1) <= not txd1;
+    led(0) <= not rxd1;
+    led(1) <= not txd1;
   end generate;
   noua0 : if CFG_UART1_ENABLE = 0 generate apbo(1) <= apb_none; end generate;
 
@@ -567,8 +593,8 @@ adderahb_if : adderahb
 -----------------------------------------------------------------------
 io0 : dummyapb
      generic map (pindex => 8, paddr => 8, pmask => 16#FFF#)
-     port map (rstn, clkm, apbi, apbo(8), sw(15 downto 0), led(15 downto 4));
-
+     port map (rstn, clkm,vauxp3,vauxn3, apbi, apbo(8), ampPWM, led(15 downto 4));
+ampSD <='1';
 -----------------------------------------------------------------------
 ---  Boot message  ----------------------------------------------------
 -----------------------------------------------------------------------

@@ -208,7 +208,7 @@
 /*
  * Debug Link           
  */
-#define CONFIG_DSU_UART 1
+#undef  CONFIG_DSU_UART
 #define CONFIG_DSU_JTAG 1
 #define CONFIG_DSU_ETH 1
 #undef  CONFIG_DSU_ETHSZ1

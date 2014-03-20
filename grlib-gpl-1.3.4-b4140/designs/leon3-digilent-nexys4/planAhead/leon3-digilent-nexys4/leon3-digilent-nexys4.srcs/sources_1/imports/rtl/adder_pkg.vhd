@@ -35,20 +35,20 @@ package adder_pkg is
       sw     : in std_logic_vector(15 downto 0)
     );
   end component adderapb;
-  component dummyapb is
-    generic (
-      pindex : integer := 0;
-      paddr : integer := 0; 
-      pmask : integer := 16#fff#);
-    port (
-      rstn : in std_ulogic;
-      clk : in std_ulogic;
-      apbi : in apb_slv_in_type;
-      apbo : out apb_slv_out_type;
-      sw: in std_logic_vector(15 downto 0);
-      led : out std_logic_vector (15 downto 4) 
-      );
-    end component dummyapb;
+--  component dummyapb is
+--    generic (
+--      pindex : integer := 0;
+--      paddr : integer := 0; 
+--      pmask : integer := 16#fff#);
+--    port (
+--      rstn : in std_ulogic;
+--      clk : in std_ulogic;
+--      apbi : in apb_slv_in_type;
+--      apbo : out apb_slv_out_type;
+--      sw: in std_logic_vector(15 downto 0);
+--      led : out std_logic_vector (15 downto 4) 
+--      );
+--    end component dummyapb;
 
   component SKadder is
   generic ( size : natural := 32) ;                          -- size: Number of bits

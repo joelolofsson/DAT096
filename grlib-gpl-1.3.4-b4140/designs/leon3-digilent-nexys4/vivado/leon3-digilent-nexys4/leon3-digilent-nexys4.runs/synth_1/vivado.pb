@@ -31,6 +31,17 @@ C/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:d
 *Finished parsing RTL primitives file [%s]
 11*netlist2W
 C/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-11
+5
+Refreshing IP repositories
+234*coregenZ19-234
+§
+ Loaded user IP repository '%s'.
+1135*coregen2f
+R/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP2default:defaultZ19-1700
+u
+"Loaded Vivado IP repository '%s'.
+1332*coregen25
+!/opt/Xilinx/Vivado/2013.4/data/ip2default:defaultZ19-2313
 Ç
 3Changing the constrs_type of fileset '%s' to '%s'.
 11*project2
@@ -39,12 +50,17 @@ C/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:d
 l
 Command: %s
 53*	vivadotcl2D
-0synth_design -top leon3mp -part xc7a100tcsg324-22default:defaultZ4-113
+0synth_design -top leon3mp -part xc7a100tcsg324-12default:defaultZ4-113
 /
 
 Starting synthesis...
 
 3*	vivadotclZ4-3
+¥
+%IP '%s' is locked. Locked reason: %s
+1260*coregen2"
+fir_compiler_02default:default2M
+9Property 'IS_LOCKED' is set to true by the system or user2default:defaultZ19-2162
 ñ
 @Attempting to get a license for feature '%s' and/or device '%s'
 308*common2
@@ -57,13 +73,13 @@ Starting synthesis...
 xc7a100t2default:defaultZ17-349
 ú
 %s*synth2å
-xStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 779.035 ; gain = 146.391
+xStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 791.043 ; gain = 152.391
 2default:default
 ﬁ
 synthesizing module '%s'638*oasys2
 leon3mp2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-1412default:default8@Z8-638
+1482default:default8@Z8-638
 T
 %s*synth2E
 1	Parameter fabtech bound to: 50 - type: integer 
@@ -116,7 +132,7 @@ M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/rstgen.vhd2
 rst02default:default2
 rstgen2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-2922default:default8@Z8-3491
+3162default:default8@Z8-3491
 ﬁ
 synthesizing module '%s'638*oasys2*
 rstgen__parameterized02default:default2c
@@ -209,7 +225,7 @@ M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2
 clkgen02default:default2
 clkgen2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-2972default:default8@Z8-3491
+3212default:default8@Z8-3491
 ﬁ
 synthesizing module '%s'638*oasys2*
 clkgen__parameterized02default:default2c
@@ -701,7 +717,7 @@ V
 2default:default
 Q
 %s*synth2B
-.	Parameter nahbm bound to: 4 - type: integer 
+.	Parameter nahbm bound to: 3 - type: integer 
 2default:default
 Q
 %s*synth2B
@@ -799,7 +815,7 @@ L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2d
 ahb02default:default2
 ahbctrl2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3052default:default8@Z8-3491
+3292default:default8@Z8-3491
 ﬁ
 synthesizing module '%s'638*oasys2+
 ahbctrl__parameterized02default:default2b
@@ -839,7 +855,7 @@ V
 2default:default
 Q
 %s*synth2B
-.	Parameter nahbm bound to: 4 - type: integer 
+.	Parameter nahbm bound to: 3 - type: integer 
 2default:default
 Q
 %s*synth2B
@@ -1132,7 +1148,7 @@ P/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vh
 u02default:default2
 leon3s2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3192default:default8@Z8-3491
+3432default:default8@Z8-3491
 ‚
 synthesizing module '%s'638*oasys2*
 leon3s__parameterized02default:default2f
@@ -6396,7 +6412,7 @@ N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2
 dsu02default:default2
 dsu32default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3352default:default8@Z8-3491
+3592default:default8@Z8-3491
 ›
 synthesizing module '%s'638*oasys2(
 dsu3__parameterized02default:default2d
@@ -6567,524 +6583,13 @@ O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
 622default:default8@Z8-256
-R
-%s*synth2C
-/	Parameter hindex bound to: 1 - type: integer 
-2default:default
-R
-%s*synth2C
-/	Parameter pindex bound to: 4 - type: integer 
-2default:default
 Q
 %s*synth2B
-.	Parameter paddr bound to: 7 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter pmask bound to: 4095 - type: integer 
-2default:default
-ƒ
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-ahbuart2default:default2b
-N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/ahbuart.vhd2default:default2
-372default:default2
-dcom02default:default2
-ahbuart2default:default2q
-[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3522default:default8@Z8-3491
-‡
-synthesizing module '%s'638*oasys2+
-ahbuart__parameterized02default:default2d
-N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/ahbuart.vhd2default:default2
-552default:default8@Z8-638
-R
-%s*synth2C
-/	Parameter hindex bound to: 1 - type: integer 
-2default:default
-R
-%s*synth2C
-/	Parameter pindex bound to: 4 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter paddr bound to: 7 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter pmask bound to: 4095 - type: integer 
+.	Parameter tech bound to: 50 - type: integer 
 2default:default
 R
 %s*synth2C
 /	Parameter hindex bound to: 1 - type: integer 
-2default:default
-P
-%s*synth2A
--	Parameter hirq bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter venid bound to: 1 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter devid bound to: 7 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter version bound to: 0 - type: integer 
-2default:default
-R
-%s*synth2C
-/	Parameter chprot bound to: 3 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter incaddr bound to: 0 - type: integer 
-2default:default
-≥
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-ahbmst2default:default2_
-K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbmst.vhd2default:default2
-352default:default2
-ahbmst02default:default2
-ahbmst2default:default2d
-N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/ahbuart.vhd2default:default2
-662default:default8@Z8-3491
-‹
-synthesizing module '%s'638*oasys2*
-ahbmst__parameterized02default:default2a
-K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbmst.vhd2default:default2
-542default:default8@Z8-638
-R
-%s*synth2C
-/	Parameter hindex bound to: 1 - type: integer 
-2default:default
-P
-%s*synth2A
--	Parameter hirq bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter venid bound to: 1 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter devid bound to: 7 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter version bound to: 0 - type: integer 
-2default:default
-R
-%s*synth2C
-/	Parameter chprot bound to: 3 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter incaddr bound to: 0 - type: integer 
-2default:default
-ò
-%done synthesizing module '%s' (%s#%s)256*oasys2*
-ahbmst__parameterized02default:default2
-362default:default2
-12default:default2a
-K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbmst.vhd2default:default2
-542default:default8@Z8-256
-R
-%s*synth2C
-/	Parameter pindex bound to: 4 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter paddr bound to: 7 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter pmask bound to: 4095 - type: integer 
-2default:default
-¡
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	dcom_uart2default:default2d
-P/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom_uart.vhd2default:default2
-412default:default2
-
-dcom_uart02default:default2
-	dcom_uart2default:default2d
-N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/ahbuart.vhd2default:default2
-702default:default8@Z8-3491
-‰
-synthesizing module '%s'638*oasys2-
-dcom_uart__parameterized02default:default2f
-P/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom_uart.vhd2default:default2
-592default:default8@Z8-638
-R
-%s*synth2C
-/	Parameter pindex bound to: 4 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter paddr bound to: 7 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter pmask bound to: 4095 - type: integer 
-2default:default
-†
-%done synthesizing module '%s' (%s#%s)256*oasys2-
-dcom_uart__parameterized02default:default2
-372default:default2
-12default:default2f
-P/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom_uart.vhd2default:default2
-592default:default8@Z8-256
-≠
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-dcom2default:default2_
-K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom.vhd2default:default2
-372default:default2
-dcom02default:default2
-dcom2default:default2d
-N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/ahbuart.vhd2default:default2
-732default:default8@Z8-3491
- 
-synthesizing module '%s'638*oasys2
-dcom2default:default2a
-K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom.vhd2default:default2
-492default:default8@Z8-638
-Ü
-%done synthesizing module '%s' (%s#%s)256*oasys2
-dcom2default:default2
-382default:default2
-12default:default2a
-K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom.vhd2default:default2
-492default:default8@Z8-256
-ú
-%done synthesizing module '%s' (%s#%s)256*oasys2+
-ahbuart__parameterized02default:default2
-392default:default2
-12default:default2d
-N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/ahbuart.vhd2default:default2
-552default:default8@Z8-256
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter level bound to: 0 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter voltage bound to: 3 - type: integer 
-2default:default
-R
-%s*synth2C
-/	Parameter filter bound to: 0 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter strength bound to: 0 - type: integer 
-2default:default
-¬
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-inpad2default:default2`
-L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
-322default:default2
-	dsurx_pad2default:default2
-inpad2default:default2q
-[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3552default:default8@Z8-3491
-‹
-synthesizing module '%s'638*oasys2)
-inpad__parameterized02default:default2b
-L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
-392default:default8@Z8-638
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter level bound to: 0 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter voltage bound to: 3 - type: integer 
-2default:default
-R
-%s*synth2C
-/	Parameter filter bound to: 0 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter strength bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter level bound to: 0 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter voltage bound to: 3 - type: integer 
-2default:default
-¡
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2 
-unisim_inpad2default:default2h
-T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
-352default:default2
-x02default:default2 
-unisim_inpad2default:default2b
-L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
-492default:default8@Z8-3491
-Î
-synthesizing module '%s'638*oasys20
-unisim_inpad__parameterized02default:default2j
-T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
-392default:default8@Z8-638
-Q
-%s*synth2B
-.	Parameter level bound to: 0 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter voltage bound to: 3 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-2default:default
-Y
-%s*synth2J
-6	Parameter IOSTANDARD bound to: LVTTL - type: string 
-2default:default
-ü
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-IBUF2default:default2K
-7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
-105802default:default2
-ip2default:default2
-IBUF2default:default2j
-T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
-572default:default8@Z8-3491
-π
-synthesizing module '%s'638*oasys2
-IBUF2default:default2M
-7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
-105802default:default8@Z8-638
-^
-%s*synth2O
-;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-2default:default
-[
-%s*synth2L
-8	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
-2default:default
-Z
-%s*synth2K
-7	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
-2default:default
-]
-%s*synth2N
-:	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
-2default:default
-Y
-%s*synth2J
-6	Parameter IOSTANDARD bound to: LVTTL - type: string 
-2default:default
-ı
-%done synthesizing module '%s' (%s#%s)256*oasys2
-IBUF2default:default2
-402default:default2
-12default:default2M
-7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
-105802default:default8@Z8-256
-ß
-%done synthesizing module '%s' (%s#%s)256*oasys20
-unisim_inpad__parameterized02default:default2
-412default:default2
-12default:default2j
-T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
-392default:default8@Z8-256
-ò
-%done synthesizing module '%s' (%s#%s)256*oasys2)
-inpad__parameterized02default:default2
-422default:default2
-12default:default2b
-L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
-392default:default8@Z8-256
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter level bound to: 0 - type: integer 
-2default:default
-P
-%s*synth2A
--	Parameter slew bound to: 0 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter voltage bound to: 3 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter strength bound to: 12 - type: integer 
-2default:default
-≈
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2a
-M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
-322default:default2
-	dsutx_pad2default:default2
-outpad2default:default2q
-[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3562default:default8@Z8-3491
-ﬁ
-synthesizing module '%s'638*oasys2*
-outpad__parameterized02default:default2c
-M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
-392default:default8@Z8-638
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter level bound to: 0 - type: integer 
-2default:default
-P
-%s*synth2A
--	Parameter slew bound to: 0 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter voltage bound to: 3 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter strength bound to: 12 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter level bound to: 0 - type: integer 
-2default:default
-P
-%s*synth2A
--	Parameter slew bound to: 0 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter voltage bound to: 3 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter strength bound to: 12 - type: integer 
-2default:default
-≈
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2!
-unisim_outpad2default:default2h
-T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
-2022default:default2
-x02default:default2!
-unisim_outpad2default:default2c
-M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
-512default:default8@Z8-3491
-Ì
-synthesizing module '%s'638*oasys21
-unisim_outpad__parameterized02default:default2j
-T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
-2072default:default8@Z8-638
-Q
-%s*synth2B
-.	Parameter level bound to: 0 - type: integer 
-2default:default
-P
-%s*synth2A
--	Parameter slew bound to: 0 - type: integer 
-2default:default
-S
-%s*synth2D
-0	Parameter voltage bound to: 3 - type: integer 
-2default:default
-U
-%s*synth2F
-2	Parameter strength bound to: 12 - type: integer 
-2default:default
-^
-%s*synth2O
-;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-2default:default
-R
-%s*synth2C
-/	Parameter DRIVE bound to: 12 - type: integer 
-2default:default
-Y
-%s*synth2J
-6	Parameter IOSTANDARD bound to: LVTTL - type: string 
-2default:default
-R
-%s*synth2C
-/	Parameter SLEW bound to: SLOW - type: string 
-2default:default
-†
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-OBUF2default:default2K
-7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
-175922default:default2
-op2default:default2
-OBUF2default:default2j
-T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
-2292default:default8@Z8-3491
-…
-synthesizing module '%s'638*oasys2(
-OBUF__parameterized02default:default2M
-7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
-175922default:default8@Z8-638
-^
-%s*synth2O
-;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-2default:default
-Y
-%s*synth2J
-6	Parameter IOSTANDARD bound to: LVTTL - type: string 
-2default:default
-R
-%s*synth2C
-/	Parameter SLEW bound to: SLOW - type: string 
-2default:default
-R
-%s*synth2C
-/	Parameter DRIVE bound to: 12 - type: integer 
-2default:default
-Ö
-%done synthesizing module '%s' (%s#%s)256*oasys2(
-OBUF__parameterized02default:default2
-432default:default2
-12default:default2M
-7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
-175922default:default8@Z8-256
-©
-%done synthesizing module '%s' (%s#%s)256*oasys21
-unisim_outpad__parameterized02default:default2
-442default:default2
-12default:default2j
-T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
-2072default:default8@Z8-256
-ö
-%done synthesizing module '%s' (%s#%s)256*oasys2*
-outpad__parameterized02default:default2
-452default:default2
-12default:default2c
-M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
-392default:default8@Z8-256
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-R
-%s*synth2C
-/	Parameter hindex bound to: 2 - type: integer 
 2default:default
 Q
 %s*synth2B
@@ -7138,7 +6643,7 @@ N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/ahbjtag.vhd2
 ahbjtag02default:default2
 ahbjtag2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3632default:default8@Z8-3491
+3872default:default8@Z8-3491
 ‡
 synthesizing module '%s'638*oasys2+
 ahbjtag__parameterized02default:default2d
@@ -7150,7 +6655,7 @@ Q
 2default:default
 R
 %s*synth2C
-/	Parameter hindex bound to: 2 - type: integer 
+/	Parameter hindex bound to: 1 - type: integer 
 2default:default
 Q
 %s*synth2B
@@ -7198,7 +6703,7 @@ R
 2default:default
 R
 %s*synth2C
-/	Parameter hindex bound to: 2 - type: integer 
+/	Parameter hindex bound to: 1 - type: integer 
 2default:default
 P
 %s*synth2A
@@ -7235,12 +6740,12 @@ N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/ahbjtag.vhd
 1052default:default8@Z8-3491
 ‹
 synthesizing module '%s'638*oasys2*
-ahbmst__parameterized22default:default2a
+ahbmst__parameterized02default:default2a
 K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbmst.vhd2default:default2
 542default:default8@Z8-638
 R
 %s*synth2C
-/	Parameter hindex bound to: 2 - type: integer 
+/	Parameter hindex bound to: 1 - type: integer 
 2default:default
 P
 %s*synth2A
@@ -7268,8 +6773,8 @@ S
 2default:default
 ò
 %done synthesizing module '%s' (%s#%s)256*oasys2*
-ahbmst__parameterized22default:default2
-452default:default2
+ahbmst__parameterized02default:default2
+362default:default2
 12default:default2a
 K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbmst.vhd2default:default2
 542default:default8@Z8-256
@@ -7417,7 +6922,7 @@ V
 ˆ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 BSCANE22default:default2
-462default:default2
+372default:default2
 12default:default2M
 7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 4272default:default8@Z8-256
@@ -7454,7 +6959,7 @@ V
 Ü
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 BSCANE2__parameterized02default:default2
-462default:default2
+372default:default2
 12default:default2M
 7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 4272default:default8@Z8-256
@@ -7462,14 +6967,14 @@ V
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 artix7_tap2default:default2
-472default:default2
+382default:default2
 12default:default2i
 S/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/tap_unisim.vhd2default:default2
 7572default:default8@Z8-256
 î
 %done synthesizing module '%s' (%s#%s)256*oasys2'
 tap__parameterized02default:default2
-482default:default2
+392default:default2
 12default:default2`
 J/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/tap.vhd2default:default2
 772default:default8@Z8-256
@@ -7537,14 +7042,14 @@ V/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/buffer_uni
 ™
 %done synthesizing module '%s' (%s#%s)256*oasys21
 clkbuf_xilinx__parameterized02default:default2
-492default:default2
+402default:default2
 12default:default2l
 V/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/buffer_unisim.vhd2default:default2
 422default:default8@Z8-256
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 techbuf__parameterized02default:default2
-502default:default2
+412default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techbuf.vhd2default:default2
 382default:default8@Z8-256
@@ -7581,7 +7086,7 @@ O
 õ
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 grdff__parameterized02default:default2
-512default:default2
+422default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
 1042default:default8@Z8-256
@@ -7664,7 +7169,7 @@ O
 ù
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 grnand2__parameterized02default:default2
-522default:default2
+432default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
 2432default:default8@Z8-256
@@ -8042,91 +7547,181 @@ N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2
 grnand22default:default2e
 O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
 1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∑
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+rdq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1092default:default8@Z8-3491
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+O
+%s*synth2@
+,	Parameter imp bound to: 0 - type: integer 
+2default:default
+∂
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+grnand22default:default2b
+N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd2default:default2
+2312default:default2
+dq2default:default2
+grnand22default:default2e
+O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
+1122default:default8@Z8-3491
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
 Synth 8-34912default:default2
 1002default:defaultZ17-14
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
-Q
-%s*synth2B
-.	Parameter tech bound to: 50 - type: integer 
-2default:default
-O
-%s*synth2@
-,	Parameter imp bound to: 0 - type: integer 
-2default:default
 Q
 %s*synth2B
 .	Parameter tech bound to: 50 - type: integer 
@@ -8664,14 +8259,14 @@ O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd
 û
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 jtagcom2__parameterized02default:default2
-532default:default2
+442default:default2
 12default:default2e
 O/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd2default:default2
 602default:default8@Z8-256
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 ahbjtag__parameterized02default:default2
-542default:default2
+452default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/ahbjtag.vhd2default:default2
 802default:default8@Z8-256
@@ -8921,7 +8516,7 @@ N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 mctrl__parameterized02default:default2
-552default:default2
+462default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 792default:default8@Z8-256
@@ -8998,6 +8593,126 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
+ﬁ
+synthesizing module '%s'638*oasys2*
+outpad__parameterized02default:default2c
+M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+392default:default8@Z8-638
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter level bound to: 0 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter slew bound to: 0 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter voltage bound to: 3 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter strength bound to: 12 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter level bound to: 0 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter slew bound to: 0 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter voltage bound to: 3 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter strength bound to: 12 - type: integer 
+2default:default
+Ì
+synthesizing module '%s'638*oasys21
+unisim_outpad__parameterized02default:default2j
+T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+2072default:default8@Z8-638
+Q
+%s*synth2B
+.	Parameter level bound to: 0 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter slew bound to: 0 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter voltage bound to: 3 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter strength bound to: 12 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+2default:default
+R
+%s*synth2C
+/	Parameter DRIVE bound to: 12 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter IOSTANDARD bound to: LVTTL - type: string 
+2default:default
+R
+%s*synth2C
+/	Parameter SLEW bound to: SLOW - type: string 
+2default:default
+…
+synthesizing module '%s'638*oasys2(
+OBUF__parameterized02default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+175922default:default8@Z8-638
+^
+%s*synth2O
+;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter IOSTANDARD bound to: LVTTL - type: string 
+2default:default
+R
+%s*synth2C
+/	Parameter SLEW bound to: SLOW - type: string 
+2default:default
+R
+%s*synth2C
+/	Parameter DRIVE bound to: 12 - type: integer 
+2default:default
+Ö
+%done synthesizing module '%s' (%s#%s)256*oasys2(
+OBUF__parameterized02default:default2
+472default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+175922default:default8@Z8-256
+©
+%done synthesizing module '%s' (%s#%s)256*oasys21
+unisim_outpad__parameterized02default:default2
+482default:default2
+12default:default2j
+T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+2072default:default8@Z8-256
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2*
+outpad__parameterized02default:default2
+492default:default2
+12default:default2c
+M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+392default:default8@Z8-256
 Q
 %s*synth2B
 .	Parameter tech bound to: 50 - type: integer 
@@ -9441,7 +9156,7 @@ U
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 outpadv__parameterized02default:default2
-562default:default2
+502default:default2
 12default:default2c
 M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1352default:default8@Z8-256
@@ -9748,21 +9463,21 @@ R
 Ü
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 IOBUF__parameterized02default:default2
-572default:default2
+512default:default2
 12default:default2M
 7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 132412default:default8@Z8-256
 ß
 %done synthesizing module '%s' (%s#%s)256*oasys20
 unisim_iopad__parameterized02default:default2
-582default:default2
+522default:default2
 12default:default2j
 T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 992default:default8@Z8-256
 ò
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 iopad__parameterized02default:default2
-592default:default2
+532default:default2
 12default:default2b
 L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 402default:default8@Z8-256
@@ -9965,7 +9680,7 @@ R
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 iopadv__parameterized02default:default2
-602default:default2
+542default:default2
 12default:default2b
 L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1682default:default8@Z8-256
@@ -10105,7 +9820,7 @@ R
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 apbctrl__parameterized02default:default2
-612default:default2
+552default:default2
 12default:default2b
 L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/apbctrl.vhd2default:default2
 632default:default8@Z8-256
@@ -10161,7 +9876,7 @@ M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd
 ô
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 irqmp__parameterized02default:default2
-622default:default2
+562default:default2
 12default:default2c
 M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd2default:default2
 562default:default8@Z8-256
@@ -10253,7 +9968,7 @@ S
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 gptimer__parameterized02default:default2
-632default:default2
+572default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/gptimer.vhd2default:default2
 652default:default8@Z8-256
@@ -10345,13 +10060,153 @@ R
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 apbuart__parameterized02default:default2
-642default:default2
+582default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/apbuart.vhd2default:default2
 632default:default8@Z8-256
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter level bound to: 0 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter voltage bound to: 3 - type: integer 
+2default:default
 R
 %s*synth2C
-/	Parameter hindex bound to: 3 - type: integer 
+/	Parameter filter bound to: 0 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter strength bound to: 0 - type: integer 
+2default:default
+‹
+synthesizing module '%s'638*oasys2)
+inpad__parameterized02default:default2b
+L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
+392default:default8@Z8-638
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter level bound to: 0 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter voltage bound to: 3 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter filter bound to: 0 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter strength bound to: 0 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter level bound to: 0 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter voltage bound to: 3 - type: integer 
+2default:default
+Î
+synthesizing module '%s'638*oasys20
+unisim_inpad__parameterized02default:default2j
+T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+392default:default8@Z8-638
+Q
+%s*synth2B
+.	Parameter level bound to: 0 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter voltage bound to: 3 - type: integer 
+2default:default
+^
+%s*synth2O
+;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter IOSTANDARD bound to: LVTTL - type: string 
+2default:default
+π
+synthesizing module '%s'638*oasys2
+IBUF2default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+105802default:default8@Z8-638
+^
+%s*synth2O
+;	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+2default:default
+[
+%s*synth2L
+8	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+2default:default
+Z
+%s*synth2K
+7	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+2default:default
+]
+%s*synth2N
+:	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+2default:default
+Y
+%s*synth2J
+6	Parameter IOSTANDARD bound to: LVTTL - type: string 
+2default:default
+ı
+%done synthesizing module '%s' (%s#%s)256*oasys2
+IBUF2default:default2
+592default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+105802default:default8@Z8-256
+ß
+%done synthesizing module '%s' (%s#%s)256*oasys20
+unisim_inpad__parameterized02default:default2
+602default:default2
+12default:default2j
+T/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+392default:default8@Z8-256
+ò
+%done synthesizing module '%s' (%s#%s)256*oasys2)
+inpad__parameterized02default:default2
+612default:default2
+12default:default2b
+L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
+392default:default8@Z8-256
+Q
+%s*synth2B
+.	Parameter tech bound to: 50 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter level bound to: 0 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter slew bound to: 0 - type: integer 
+2default:default
+S
+%s*synth2D
+0	Parameter voltage bound to: 3 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter strength bound to: 12 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter hindex bound to: 2 - type: integer 
 2default:default
 S
 %s*synth2D
@@ -10421,17 +10276,17 @@ Y
 %s*synth2J
 6	Parameter macaddrh bound to: 131072 - type: integer 
 2default:default
+U
+%s*synth2F
+2	Parameter macaddrl bound to: 16 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter ipaddrh bound to: 2602 - type: integer 
+2default:default
 T
 %s*synth2E
-1	Parameter macaddrl bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter ipaddrh bound to: 49320 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter ipaddrl bound to: 51 - type: integer 
+1	Parameter ipaddrl bound to: 88 - type: integer 
 2default:default
 U
 %s*synth2F
@@ -10492,7 +10347,7 @@ N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/grethm.vhd
 852default:default8@Z8-638
 R
 %s*synth2C
-/	Parameter hindex bound to: 3 - type: integer 
+/	Parameter hindex bound to: 2 - type: integer 
 2default:default
 S
 %s*synth2D
@@ -10562,17 +10417,17 @@ Y
 %s*synth2J
 6	Parameter macaddrh bound to: 131072 - type: integer 
 2default:default
+U
+%s*synth2F
+2	Parameter macaddrl bound to: 16 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter ipaddrh bound to: 2602 - type: integer 
+2default:default
 T
 %s*synth2E
-1	Parameter macaddrl bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter ipaddrh bound to: 49320 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter ipaddrl bound to: 51 - type: integer 
+1	Parameter ipaddrl bound to: 88 - type: integer 
 2default:default
 U
 %s*synth2F
@@ -10632,7 +10487,7 @@ V
 2default:default
 R
 %s*synth2C
-/	Parameter hindex bound to: 3 - type: integer 
+/	Parameter hindex bound to: 2 - type: integer 
 2default:default
 S
 %s*synth2D
@@ -10698,17 +10553,17 @@ Y
 %s*synth2J
 6	Parameter macaddrh bound to: 131072 - type: integer 
 2default:default
+U
+%s*synth2F
+2	Parameter macaddrl bound to: 16 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter ipaddrh bound to: 2602 - type: integer 
+2default:default
 T
 %s*synth2E
-1	Parameter macaddrl bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter ipaddrh bound to: 49320 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter ipaddrl bound to: 51 - type: integer 
+1	Parameter ipaddrl bound to: 88 - type: integer 
 2default:default
 U
 %s*synth2F
@@ -10765,7 +10620,7 @@ M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/greth.vhd
 862default:default8@Z8-638
 R
 %s*synth2C
-/	Parameter hindex bound to: 3 - type: integer 
+/	Parameter hindex bound to: 2 - type: integer 
 2default:default
 S
 %s*synth2D
@@ -10831,17 +10686,17 @@ Y
 %s*synth2J
 6	Parameter macaddrh bound to: 131072 - type: integer 
 2default:default
+U
+%s*synth2F
+2	Parameter macaddrl bound to: 16 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter ipaddrh bound to: 2602 - type: integer 
+2default:default
 T
 %s*synth2E
-1	Parameter macaddrl bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter ipaddrh bound to: 49320 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter ipaddrl bound to: 51 - type: integer 
+1	Parameter ipaddrl bound to: 88 - type: integer 
 2default:default
 U
 %s*synth2F
@@ -10931,17 +10786,17 @@ Y
 %s*synth2J
 6	Parameter macaddrh bound to: 131072 - type: integer 
 2default:default
+U
+%s*synth2F
+2	Parameter macaddrl bound to: 16 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter ipaddrh bound to: 2602 - type: integer 
+2default:default
 T
 %s*synth2E
-1	Parameter macaddrl bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter ipaddrh bound to: 49320 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter ipaddrl bound to: 51 - type: integer 
+1	Parameter ipaddrl bound to: 88 - type: integer 
 2default:default
 U
 %s*synth2F
@@ -11032,17 +10887,17 @@ Y
 %s*synth2J
 6	Parameter macaddrh bound to: 131072 - type: integer 
 2default:default
+U
+%s*synth2F
+2	Parameter macaddrl bound to: 16 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter ipaddrh bound to: 2602 - type: integer 
+2default:default
 T
 %s*synth2E
-1	Parameter macaddrl bound to: 0 - type: integer 
-2default:default
-W
-%s*synth2H
-4	Parameter ipaddrh bound to: 49320 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter ipaddrl bound to: 51 - type: integer 
+1	Parameter ipaddrl bound to: 88 - type: integer 
 2default:default
 U
 %s*synth2F
@@ -11153,7 +11008,7 @@ S
 û
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 eth_rstgen__parameterized02default:default2
-652default:default2
+622default:default2
 12default:default2c
 M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_rstgen.vhd2default:default2
 402default:default8@Z8-256
@@ -11164,7 +11019,7 @@ K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 greth_tx__parameterized02default:default2
-662default:default2
+632default:default2
 12default:default2a
 K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
 482default:default8@Z8-256
@@ -11227,7 +11082,7 @@ K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 greth_rx__parameterized02default:default2
-672default:default2
+642default:default2
 12default:default2a
 K/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
 492default:default8@Z8-256
@@ -11247,7 +11102,7 @@ N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd
 ê
 %done synthesizing module '%s' (%s#%s)256*oasys2
 eth_ahb_mst2default:default2
-682default:default2
+652default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
 462default:default8@Z8-256
@@ -11325,7 +11180,7 @@ I/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2de
 ó
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 grethc__parameterized02default:default2
-692default:default2
+662default:default2
 12default:default2_
 I/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 1582default:default8@Z8-256
@@ -11459,21 +11314,21 @@ R
 Ø
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_dp__parameterized22default:default2
-692default:default2
+662default:default2
 12default:default2l
 V/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2952default:default8@Z8-256
 Ø
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_2p__parameterized22default:default2
-692default:default2
+662default:default2
 12default:default2l
 V/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-256
 ¢
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 syncram_2p__parameterized22default:default2
-692default:default2
+662default:default2
 12default:default2g
 Q/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-256
@@ -11615,21 +11470,21 @@ R
 ¥
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "generic_syncram_2p__parameterized02default:default2
-702default:default2
+672default:default2
 12default:default2p
 Z/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/memory_inferred.vhd2default:default2
 1302default:default8@Z8-256
 Ø
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_2p__parameterized42default:default2
-702default:default2
+672default:default2
 12default:default2l
 V/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-256
 ¢
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 syncram_2p__parameterized42default:default2
-702default:default2
+672default:default2
 12default:default2g
 Q/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-256
@@ -11763,21 +11618,21 @@ R
 Ø
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_dp__parameterized42default:default2
-702default:default2
+672default:default2
 12default:default2l
 V/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2952default:default8@Z8-256
 Ø
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_2p__parameterized62default:default2
-702default:default2
+672default:default2
 12default:default2l
 V/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-256
 ¢
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 syncram_2p__parameterized62default:default2
-702default:default2
+672default:default2
 12default:default2g
 Q/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-256
@@ -11816,14 +11671,14 @@ V
 ô
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 greth__parameterized02default:default2
-712default:default2
+682default:default2
 12default:default2c
 M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/greth.vhd2default:default2
 862default:default8@Z8-256
 õ
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 grethm__parameterized02default:default2
-722default:default2
+692default:default2
 12default:default2d
 N/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/grethm.vhd2default:default2
 852default:default8@Z8-256
@@ -11971,7 +11826,7 @@ T
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 inpadv__parameterized02default:default2
-732default:default2
+702default:default2
 12default:default2b
 L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
 1262default:default8@Z8-256
@@ -12111,7 +11966,7 @@ U
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 outpadv__parameterized22default:default2
-732default:default2
+702default:default2
 12default:default2c
 M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1352default:default8@Z8-256
@@ -12187,10 +12042,335 @@ R
 ó
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ahbrom2default:default2
-742default:default2
+712default:default2
 12default:default2p
 Z/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/ahbrom.vhd2default:default2
 342default:default8@Z8-256
+R
+%s*synth2C
+/	Parameter hindex bound to: 7 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter haddr bound to: 1280 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter hmask bound to: 4095 - type: integer 
+2default:default
+ø
+synthesizing module '%s'638*oasys2,
+adderahb__parameterized02default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
+282default:default8@Z8-638
+R
+%s*synth2C
+/	Parameter hindex bound to: 7 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter haddr bound to: 1280 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter hmask bound to: 4095 - type: integer 
+2default:default
+Ÿ
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+rstn2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
+1342default:default8@Z8-614
+Q
+%s*synth2B
+.	Parameter size bound to: 32 - type: integer 
+2default:default
+Ω
+synthesizing module '%s'638*oasys2+
+SKadder__parameterized02default:default2¿
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd2default:default2
+202default:default8@Z8-638
+Q
+%s*synth2B
+.	Parameter size bound to: 32 - type: integer 
+2default:default
+˘
+%done synthesizing module '%s' (%s#%s)256*oasys2+
+SKadder__parameterized02default:default2
+722default:default2
+12default:default2¿
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd2default:default2
+202default:default8@Z8-256
+˚
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+adderahb__parameterized02default:default2
+732default:default2
+12default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
+282default:default8@Z8-256
+R
+%s*synth2C
+/	Parameter pindex bound to: 8 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter paddr bound to: 8 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter pmask bound to: 4095 - type: integer 
+2default:default
+ø
+synthesizing module '%s'638*oasys2,
+dummyapb__parameterized02default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
+262default:default8@Z8-638
+R
+%s*synth2C
+/	Parameter pindex bound to: 8 - type: integer 
+2default:default
+Q
+%s*synth2B
+.	Parameter paddr bound to: 8 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter pmask bound to: 4095 - type: integer 
+2default:default
+≠
+synthesizing module '%s'638*oasys2
+DAC_top2default:default2¿
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+402default:default8@Z8-638
+‰
+5synthesizing blackbox instance '%s' of component '%s'637*oasys2
+inst_DMC2default:default2
+DMC2default:default2¿
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+752default:default8@Z8-637
+W
+%s*synth2H
+4	Parameter Resolution bound to: 11 - type: integer 
+2default:default
+µ
+synthesizing module '%s'638*oasys2'
+PWM__parameterized02default:default2º
+•/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd2default:default2
+452default:default8@Z8-638
+W
+%s*synth2H
+4	Parameter Resolution bound to: 11 - type: integer 
+2default:default
+Ò
+%done synthesizing module '%s' (%s#%s)256*oasys2'
+PWM__parameterized02default:default2
+742default:default2
+12default:default2º
+•/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd2default:default2
+452default:default8@Z8-256
+È
+%done synthesizing module '%s' (%s#%s)256*oasys2
+DAC_top2default:default2
+752default:default2
+12default:default2¿
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+402default:default8@Z8-256
+≠
+synthesizing module '%s'638*oasys2
+ADC_TOP2default:default2¿
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+432default:default8@Z8-638
+
+5synthesizing blackbox instance '%s' of component '%s'637*oasys2
+inst_fir2default:default2"
+fir_compiler_02default:default2¿
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+1402default:default8@Z8-637
+≠
+synthesizing module '%s'638*oasys2
+default_ADC2default:default2º
+•/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd2default:default2
+842default:default8@Z8-638
+V
+%s*synth2G
+3	Parameter INIT_40 bound to: 16'b0000011000010011 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_41 bound to: 16'b0011000100000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_42 bound to: 16'b0000011000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_43 bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_44 bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_45 bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_46 bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_47 bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_48 bound to: 16'b0000000100000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_49 bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_4A bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_4B bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_4C bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_4D bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_4E bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_4F bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_50 bound to: 16'b1011010111101101 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_51 bound to: 16'b0101011111100100 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_52 bound to: 16'b1010000101000111 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_53 bound to: 16'b1100101000110011 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_54 bound to: 16'b1010100100111010 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_55 bound to: 16'b0101001011000110 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_56 bound to: 16'b1001010101010101 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_57 bound to: 16'b1010111001001110 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_58 bound to: 16'b0101100110011001 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_59 bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_5A bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_5B bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_5C bound to: 16'b0101000100010001 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_5D bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_5E bound to: 16'b0000000000000000 
+2default:default
+V
+%s*synth2G
+3	Parameter INIT_5F bound to: 16'b0000000000000000 
+2default:default
+T
+%s*synth2E
+1	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+2default:default
+O
+%s*synth2@
+,	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+2default:default
+[
+%s*synth2L
+8	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+2default:default
+ø
+%s*synth2Ø
+ö	Parameter SIM_MONITOR_FILE bound to: c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt - type: string 
+2default:default
+”
+,binding component instance '%s' to cell '%s'113*oasys2
+U02default:default2
+XADC2default:default2º
+•/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd2default:default2
+1512default:default8@Z8-113
+È
+%done synthesizing module '%s' (%s#%s)256*oasys2
+default_ADC2default:default2
+762default:default2
+12default:default2º
+•/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd2default:default2
+842default:default8@Z8-256
+È
+%done synthesizing module '%s' (%s#%s)256*oasys2
+ADC_TOP2default:default2
+772default:default2
+12default:default2¿
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+432default:default8@Z8-256
+‡
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2 
+sampledvalue2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
+782default:default8@Z8-614
+Ÿ
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+rstn2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
+1002default:default8@Z8-614
+˚
+%done synthesizing module '%s' (%s#%s)256*oasys2,
+dummyapb__parameterized02default:default2
+782default:default2
+12default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
+262default:default8@Z8-256
 \
 %s*synth2M
 9	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
@@ -12435,17 +12615,17 @@ c
 ä
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 PLLE2_ADV__parameterized22default:default2
-742default:default2
+782default:default2
 12default:default2M
 7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 263382default:default8@Z8-256
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2
 leon3mp2default:default2
-752default:default2
+792default:default2
 12default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-1412default:default8@Z8-256
+1482default:default8@Z8-256
 î
 +design %s has port %s driven by constant %s3447*oasys2
 leon3mp2default:default2
@@ -12461,66 +12641,11 @@ c
 leon3mp2default:default2
 RamCRE2default:default2
 02default:defaultZ8-3917
-ï
+ì
 +design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[15]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[14]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[13]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[12]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[11]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[10]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[9]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[8]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[7]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[6]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[5]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[4]2default:default2
-02default:defaultZ8-3917
+leon3mp2default:default2
+ampSD2default:default2
+12default:defaultZ8-3917
 s
 !design %s has unconnected port %s3331*oasys2
 leon3mp2default:default2
@@ -12607,7 +12732,7 @@ s
 btn[0]2default:defaultZ8-3331
 ù
 %s*synth2ç
-yFinished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1036.996 ; gain = 404.352
+yFinished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1052.004 ; gain = 413.352
 2default:default
 ;
 %s*synth2,
@@ -12640,700 +12765,700 @@ I+------+------------------+-------+---------+-------+------------------+
 clkgen02default:default2!
 \cgi[pllref] 2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-2972default:default8@Z8-3295
+3212default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 clkgen02default:default2$
 \cgi[clksel] [1]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-2972default:default8@Z8-3295
+3212default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 clkgen02default:default2$
 \cgi[clksel] [0]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-2972default:default8@Z8-3295
-ö
-'tying undriven pin %s:%s to constant 0
-3295*oasys2#
-\dcomgen.dcom0 2default:default2!
-\uarti[ctsn] 2default:default2q
-[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3522default:default8@Z8-3295
-ú
-'tying undriven pin %s:%s to constant 0
-3295*oasys2#
-\dcomgen.dcom0 2default:default2#
-\uarti[extclk] 2default:default2q
-[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3522default:default8@Z8-3295
+3212default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2*
 \ahbjtaggen0.ahbjtag0 2default:default2
 tck2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3632default:default8@Z8-3295
+3872default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2*
 \ahbjtaggen0.ahbjtag0 2default:default2
 tms2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3632default:default8@Z8-3295
+3872default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2*
 \ahbjtaggen0.ahbjtag0 2default:default2
 tdi2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3632default:default8@Z8-3295
+3872default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [15]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [14]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [13]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [12]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [11]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ó
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [10]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [9]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [8]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [7]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [6]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [5]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [4]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [3]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [2]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [1]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [0]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [63]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [62]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [61]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [60]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [59]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [58]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [57]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [56]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [55]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [54]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [53]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [52]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [51]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [50]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [49]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [48]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [47]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [46]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [45]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [44]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [43]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [42]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [41]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [40]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [39]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [38]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [37]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [36]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [35]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [34]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [33]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [32]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [31]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [30]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [29]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [28]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [27]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [26]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [25]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [24]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [23]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [22]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [21]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [20]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [19]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [18]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [17]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [16]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [15]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [14]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [13]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [12]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [11]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[sd] [10]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [9]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [8]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [7]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [6]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [5]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [4]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [3]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [2]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [1]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[sd] [0]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[cb] [15]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[cb] [14]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[cb] [13]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[cb] [12]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[cb] [11]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 ï
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
 \memi[cb] [10]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[cb] [9]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[cb] [8]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[cb] [7]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[cb] [6]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[cb] [5]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
 î
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
 \memi[cb] [4]2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3732default:default8@Z8-3295
+3972default:default8@Z8-3295
+î
+'tying undriven pin %s:%s to constant 0
+3295*oasys2
+	\mg2.sr1 2default:default2!
+\memi[cb] [3]2default:default2q
+[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+3972default:default8@Z8-3295
+î
+'tying undriven pin %s:%s to constant 0
+3295*oasys2
+	\mg2.sr1 2default:default2!
+\memi[cb] [2]2default:default2q
+[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+3972default:default8@Z8-3295
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
@@ -13342,7 +13467,7 @@ I+------+------------------+-------+---------+-------+------------------+
 ]
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-492default:defaultZ29-17
+502default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -13527,7 +13652,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4052default:default8@Z18-548
+4292default:default8@Z18-548
 ê
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -13680,7 +13805,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4082default:default8@Z18-548
+4322default:default8@Z18-548
 ë
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -13698,25 +13823,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4902default:default8@Z18-548
-ë
-jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
-526*constraints2
-slew2default:default24
- invalid SLEW value '0' specified2default:default2
-slew2default:default2
-Vivado2default:default2c
-M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
-512default:default8@Z18-548
-†
-jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
-526*constraints2
-slew2default:default24
- invalid SLEW value '0' specified2default:default2
-slew2default:default2
-Vivado2default:default2q
-[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3562default:default8@Z18-548
+5172default:default8@Z18-548
 ë
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -14139,7 +14246,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3912default:default8@Z18-548
+4152default:default8@Z18-548
 ë
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -14157,7 +14264,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3932default:default8@Z18-548
+4172default:default8@Z18-548
 ë
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -14175,7 +14282,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3952default:default8@Z18-548
+4192default:default8@Z18-548
 ë
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -14193,7 +14300,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3972default:default8@Z18-548
+4212default:default8@Z18-548
 ë
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -14211,7 +14318,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3992default:default8@Z18-548
+4232default:default8@Z18-548
 ë
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -14229,7 +14336,25 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z18-548
+4252default:default8@Z18-548
+ë
+jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
+526*constraints2
+slew2default:default24
+ invalid SLEW value '0' specified2default:default2
+slew2default:default2
+Vivado2default:default2c
+M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+512default:default8@Z18-548
+†
+jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
+526*constraints2
+slew2default:default24
+ invalid SLEW value '0' specified2default:default2
+slew2default:default2
+Vivado2default:default2q
+[/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+4872default:default8@Z18-548
 ê
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -14247,7 +14372,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2q
 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4932default:default8@Z18-548
+5202default:default8@Z18-548
 ë
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -14284,14 +14409,44 @@ M/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd
 
 Processing XDC Constraints
 244*projectZ1-262
-ê
+Ù
 Parsing XDC File [%s]
-179*designutils2Ÿ
-ƒ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/digilent-nexys4-xc7a100t/Nexys4_Master.xdc2default:defaultZ20-179
-ô
+179*designutils2Ω
+®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:defaultZ20-179
+˝
 Finished Parsing XDC File [%s]
-178*designutils2Ÿ
-ƒ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/digilent-nexys4-xc7a100t/Nexys4_Master.xdc2default:defaultZ20-178
+178*designutils2Ω
+®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:defaultZ20-178
+/
+Deriving generated clocks
+2*timingZ38-2
+Ù
+ŸImplementation specific constraints were found while reading constraint file [%s]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [%s].
+233*project2Ω
+®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:default2æ
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/.Xil/leon3mp_propImpl.xdc2default:defaultZ1-236
+Í
+Parsing XDC File [%s]
+179*designutils2≥
+û/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_touch.xdc2default:defaultZ20-179
+Û
+Finished Parsing XDC File [%s]
+178*designutils2≥
+û/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_touch.xdc2default:defaultZ20-178
+Î
+Parsing XDC File [%s]
+179*designutils2¥
+ü/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_buffer.xdc2default:defaultZ20-179
+‹
+No cells matched '%s'.
+180*	planAhead2Q
+=get_cells -hier -filter {REF_NAME==ADC || ORIG_REF_NAME==ADC}2default:default2∂
+ü/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_buffer.xdc2default:default2
+52default:default8@Z12-180
+Ù
+Finished Parsing XDC File [%s]
+178*designutils2¥
+ü/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_buffer.xdc2default:defaultZ20-178
 ?
 &Completed Processing XDC Constraints
 
@@ -14311,11 +14466,11 @@ MSuccessfully populated the BRAM INIT strings from the following elf files: %s
 2default:defaultZ1-111
 ∂
 %s*synth2¶
-ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1283.125 ; gain = 650.480
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1324.930 ; gain = 686.277
 2default:default
 û
 %s*synth2é
-zFinished RTL Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1283.125 ; gain = 650.480
+zFinished RTL Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1324.930 ; gain = 686.277
 2default:default
 ø
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2 
@@ -14324,15 +14479,13 @@ RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bi
 92default:default2b
 L/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
 6982default:default8@Z8-3936
-∏
-}HDL ADVISOR - The operator resource <%s> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator3413*oasys2
-adder2default:default2f
-P/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom_uart.vhd2default:default2
-1272default:default8@Z8-3537
-Ü
-3inferred FSM for state register '%s' in module '%s'802*oasys2 
-r_reg[state]2default:default2
-dcom2default:defaultZ8-802
+ò
+RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2
+lastcnt_reg2default:default2
+112default:default2
+92default:default2º
+•/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd2default:default2
+702default:default8@Z8-3936
 ∆
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 r_reg[readdata]2default:default2
@@ -14472,11 +14625,17 @@ W/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_infe
 3inferred FSM for state register '%s' in module '%s'802*oasys2 
 r_reg[state]2default:default2
 div322default:defaultZ8-802
-π
-Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353*oasys2 
-r_reg[state]2default:default2
-one-hot2default:default2
-dcom2default:defaultZ8-3354
+ª
+!inferring latch for variable '%s'327*oasys2
+
+hrdata_reg2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
+1072default:default8@Z8-327
+∏
+!inferring latch for variable '%s'327*oasys2
+sLED_reg2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
+632default:default8@Z8-327
 Œ
 Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353*oasys2"
 r_reg[rxstate]2default:default2
@@ -14563,11 +14722,11 @@ a
 2default:default
 a
 %s*synth2R
->|4     |leon3mp__GCB0               |           1|     27541|
+>|4     |leon3mp__GCB0               |           1|     25362|
 2default:default
 a
 %s*synth2R
->|5     |leon3mp__GCB1               |           1|     19469|
+>|5     |leon3mp__GCB1               |           1|     20937|
 2default:default
 a
 %s*synth2R
@@ -14581,7 +14740,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
 ≤
 %s*synth2¢
-çFinished Loading Part and Timing Information : Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 1283.125 ; gain = 650.480
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:01:31 ; elapsed = 00:01:53 . Memory (MB): peak = 1332.938 ; gain = 694.285
 2default:default
 B
 %s*synth23
@@ -14609,11 +14768,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     30 Bit       Adders := 5     
+.	   2 Input     30 Bit       Adders := 4     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     18 Bit       Adders := 2     
+.	   2 Input     18 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -14629,7 +14788,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     11 Bit       Adders := 9     
+.	   2 Input     11 Bit       Adders := 10    
 2default:default
 Q
 %s*synth2B
@@ -14657,7 +14816,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit       Adders := 2     
+.	   2 Input      6 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -14669,11 +14828,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit       Adders := 20    
+.	   2 Input      3 Bit       Adders := 18    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit       Adders := 15    
+.	   2 Input      2 Bit       Adders := 13    
 2default:default
 /
 %s*synth2 
@@ -14693,7 +14852,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit         XORs := 107   
+.	   2 Input      1 Bit         XORs := 170   
 2default:default
 4
 %s*synth2%
@@ -14717,7 +14876,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 56    
+.	               32 Bit    Registers := 57    
 2default:default
 Q
 %s*synth2B
@@ -14737,7 +14896,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               18 Bit    Registers := 3     
+.	               18 Bit    Registers := 1     
 2default:default
 Q
 %s*synth2B
@@ -14753,7 +14912,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               11 Bit    Registers := 9     
+.	               11 Bit    Registers := 10    
 2default:default
 Q
 %s*synth2B
@@ -14761,11 +14920,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                9 Bit    Registers := 4     
+.	                9 Bit    Registers := 5     
 2default:default
 Q
 %s*synth2B
-.	                8 Bit    Registers := 31    
+.	                8 Bit    Registers := 28    
 2default:default
 Q
 %s*synth2B
@@ -14773,11 +14932,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                6 Bit    Registers := 7     
+.	                6 Bit    Registers := 6     
 2default:default
 Q
 %s*synth2B
-.	                5 Bit    Registers := 16    
+.	                5 Bit    Registers := 15    
 2default:default
 Q
 %s*synth2B
@@ -14785,15 +14944,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 23    
+.	                3 Bit    Registers := 21    
 2default:default
 Q
 %s*synth2B
-.	                2 Bit    Registers := 69    
+.	                2 Bit    Registers := 65    
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 1193  
+.	                1 Bit    Registers := 1181  
 2default:default
 /
 %s*synth2 
@@ -14809,11 +14968,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     65 Bit        Muxes := 1     
+.	   2 Input     65 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     65 Bit        Muxes := 3     
+.	   6 Input     65 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14821,11 +14980,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input     48 Bit        Muxes := 2     
+.	   2 Input     48 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     48 Bit        Muxes := 3     
+.	  13 Input     48 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -14849,27 +15008,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  11 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  15 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  18 Input     32 Bit        Muxes := 1     
+.	  11 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   4 Input     32 Bit        Muxes := 21    
+.	   4 Input     32 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
-.	   7 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   9 Input     32 Bit        Muxes := 3     
+.	 142 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14877,15 +15028,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   8 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 129   
 2default:default
 Q
 %s*synth2B
@@ -14901,15 +15044,31 @@ Q
 2default:default
 Q
 %s*synth2B
-.	 142 Input     32 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 134   
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 10    
+.	   3 Input     32 Bit        Muxes := 11    
 2default:default
 Q
 %s*synth2B
-.	  12 Input     30 Bit        Muxes := 1     
+.	  13 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  18 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   7 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   9 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     30 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -14917,15 +15076,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     30 Bit        Muxes := 21    
+2default:default
+Q
+%s*synth2B
+.	  12 Input     30 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   7 Input     30 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     30 Bit        Muxes := 23    
-2default:default
-Q
-%s*synth2B
-.	   4 Input     30 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -14953,14 +15112,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     18 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     18 Bit        Muxes := 12    
-2default:default
-Q
-%s*synth2B
 .	  15 Input     18 Bit        Muxes := 1     
 2default:default
 Q
@@ -14969,11 +15120,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  13 Input     16 Bit        Muxes := 2     
+.	   6 Input     16 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -14981,11 +15128,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     16 Bit        Muxes := 4     
+.	  13 Input     16 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  14 Input     15 Bit        Muxes := 1     
+.	  15 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input     15 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14997,7 +15148,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input     15 Bit        Muxes := 1     
+.	  14 Input     15 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15005,11 +15156,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     13 Bit        Muxes := 6     
+.	  12 Input     13 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  12 Input     13 Bit        Muxes := 1     
+.	   2 Input     13 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -15021,7 +15172,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input     11 Bit        Muxes := 1     
+.	  19 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15029,23 +15180,31 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  19 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     11 Bit        Muxes := 11    
-2default:default
-Q
-%s*synth2B
 .	  16 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   4 Input     11 Bit        Muxes := 2     
+.	   2 Input     11 Bit        Muxes := 12    
+2default:default
+Q
+%s*synth2B
+.	   7 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   9 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  14 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   9 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15057,23 +15216,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  14 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      9 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      8 Bit        Muxes := 3     
+.	   4 Input      8 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	 142 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15085,19 +15236,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	 142 Input      8 Bit        Muxes := 1     
+.	   8 Input      8 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      8 Bit        Muxes := 53    
-2default:default
-Q
-%s*synth2B
-.	   4 Input      8 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15109,7 +15252,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      7 Bit        Muxes := 26    
+.	   2 Input      7 Bit        Muxes := 23    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15125,11 +15276,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      7 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   9 Input      6 Bit        Muxes := 1     
+.	   5 Input      6 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -15137,15 +15284,11 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   9 Input      6 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   6 Input      6 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      6 Bit        Muxes := 33    
-2default:default
-Q
-%s*synth2B
-.	   5 Input      6 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -15153,7 +15296,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input      5 Bit        Muxes := 1     
+.	   2 Input      6 Bit        Muxes := 33    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      5 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -15161,7 +15308,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit        Muxes := 30    
+.	  19 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15173,39 +15320,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      5 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      4 Bit        Muxes := 132   
-2default:default
-Q
-%s*synth2B
-.	  15 Input      4 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      4 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   9 Input      4 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      4 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      4 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      4 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      4 Bit        Muxes := 1     
+.	   2 Input      5 Bit        Muxes := 30    
 2default:default
 Q
 %s*synth2B
@@ -15213,7 +15328,51 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  15 Input      4 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      4 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   7 Input      4 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   9 Input      4 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
 .	  13 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      4 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      4 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 132   
+2default:default
+Q
+%s*synth2B
+.	   6 Input      3 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  19 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   9 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15221,7 +15380,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      3 Bit        Muxes := 5     
+.	   2 Input      3 Bit        Muxes := 49    
 2default:default
 Q
 %s*synth2B
@@ -15229,11 +15388,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   7 Input      3 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
 .	   3 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  19 Input      3 Bit        Muxes := 1     
+.	  16 Input      3 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -15245,23 +15408,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit        Muxes := 49    
+.	  19 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   6 Input      3 Bit        Muxes := 2     
+.	   3 Input      2 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   5 Input      3 Bit        Muxes := 2     
+.	   6 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   9 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      3 Bit        Muxes := 2     
+.	  11 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15273,31 +15432,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  11 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      2 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 142   
-2default:default
-Q
-%s*synth2B
-.	   4 Input      2 Bit        Muxes := 14    
-2default:default
-Q
-%s*synth2B
-.	   6 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   5 Input      2 Bit        Muxes := 2     
+.	   4 Input      2 Bit        Muxes := 11    
 2default:default
 Q
 %s*synth2B
@@ -15305,31 +15440,31 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input      2 Bit        Muxes := 1     
+.	  10 Input      2 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      2 Bit        Muxes := 5     
+.	   5 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  14 Input      1 Bit        Muxes := 29    
+.	   2 Input      2 Bit        Muxes := 132   
 2default:default
 Q
 %s*synth2B
-.	   5 Input      1 Bit        Muxes := 11    
+.	  16 Input      1 Bit        Muxes := 39    
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 209   
+.	  15 Input      1 Bit        Muxes := 19    
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 107   
+.	   2 Input      1 Bit        Muxes := 2014  
 2default:default
 Q
 %s*synth2B
-.	   9 Input      1 Bit        Muxes := 17    
+.	  19 Input      1 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
@@ -15341,23 +15476,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      1 Bit        Muxes := 19    
+.	   3 Input      1 Bit        Muxes := 111   
 2default:default
 Q
 %s*synth2B
-.	   7 Input      1 Bit        Muxes := 34    
+.	   9 Input      1 Bit        Muxes := 17    
 2default:default
 Q
 %s*synth2B
-.	  16 Input      1 Bit        Muxes := 39    
+.	   7 Input      1 Bit        Muxes := 26    
 2default:default
 Q
 %s*synth2B
-.	  19 Input      1 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      1 Bit        Muxes := 105   
+.	   4 Input      1 Bit        Muxes := 183   
 2default:default
 Q
 %s*synth2B
@@ -15365,11 +15496,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 2054  
+.	   5 Input      1 Bit        Muxes := 11    
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 113   
+.	   6 Input      1 Bit        Muxes := 107   
+2default:default
+Q
+%s*synth2B
+.	  14 Input      1 Bit        Muxes := 29    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 105   
 2default:default
 F
 %s*synth27
@@ -15423,6 +15562,14 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+C
+%s*synth24
+ Module outpadv__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
 H
 %s*synth29
 %Module unisim_inpad__parameterized0 
@@ -15434,14 +15581,6 @@ B
 A
 %s*synth22
 Module inpad__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-C
-%s*synth24
- Module outpadv__parameterized0 
 2default:default
 B
 %s*synth23
@@ -15613,15 +15752,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	  10 Input     32 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
 .	   4 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -15641,11 +15780,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     10 Bit        Muxes := 1     
+.	   2 Input     10 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 9     
+.	   6 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15669,15 +15808,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit        Muxes := 55    
-2default:default
-Q
-%s*synth2B
 .	  14 Input      1 Bit        Muxes := 29    
 2default:default
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 524   
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 55    
 2default:default
 Q
 %s*synth2B
@@ -15745,11 +15884,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 7     
+.	   2 Input      1 Bit        Muxes := 143   
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 143   
+.	   3 Input      1 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
@@ -15877,11 +16016,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input     32 Bit        Muxes := 2     
+.	   3 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   6 Input     32 Bit        Muxes := 2     
+.	  19 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -15893,11 +16032,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 2     
+.	   6 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   4 Input     30 Bit        Muxes := 1     
+.	   3 Input     30 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -15905,7 +16044,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     30 Bit        Muxes := 2     
+.	   4 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15917,15 +16056,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
 .	   4 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 19    
+.	   2 Input     10 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
@@ -15933,11 +16068,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   8 Input      8 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   3 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      8 Bit        Muxes := 1     
+.	   2 Input      8 Bit        Muxes := 19    
 2default:default
 Q
 %s*synth2B
@@ -15945,11 +16084,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      6 Bit        Muxes := 1     
+.	   2 Input      6 Bit        Muxes := 20    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 20    
+.	   4 Input      6 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15957,7 +16096,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      5 Bit        Muxes := 3     
+.	  19 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15965,7 +16104,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input      5 Bit        Muxes := 1     
+.	   4 Input      5 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -15981,15 +16120,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit        Muxes := 20    
-2default:default
-Q
-%s*synth2B
 .	   3 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15997,19 +16128,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   4 Input      3 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 16    
+.	  10 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   5 Input      2 Bit        Muxes := 2     
+.	   2 Input      3 Bit        Muxes := 20    
+2default:default
+Q
+%s*synth2B
+.	   8 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16021,7 +16152,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      2 Bit        Muxes := 2     
+.	   2 Input      2 Bit        Muxes := 16    
+2default:default
+Q
+%s*synth2B
+.	   5 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16029,11 +16164,31 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 113   
+.	   3 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
 .	   8 Input      1 Bit        Muxes := 39    
+2default:default
+Q
+%s*synth2B
+.	   7 Input      1 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 182   
+2default:default
+Q
+%s*synth2B
+.	  19 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  11 Input      1 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16045,11 +16200,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  11 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      1 Bit        Muxes := 1     
+.	   4 Input      1 Bit        Muxes := 113   
 2default:default
 Q
 %s*synth2B
@@ -16057,19 +16208,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 182   
-2default:default
-Q
-%s*synth2B
-.	   7 Input      1 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
 .	  13 Input      1 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	  19 Input      1 Bit        Muxes := 9     
 2default:default
 I
 %s*synth2:
@@ -16689,19 +16828,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   4 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 51    
+.	   2 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   6 Input      1 Bit        Muxes := 25    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 51    
 2default:default
 Q
 %s*synth2B
@@ -16753,11 +16892,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 6     
+.	   3 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16777,11 +16916,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      4 Bit        Muxes := 1     
+.	   2 Input      4 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 3     
+.	   3 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16793,19 +16932,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   4 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 9     
+.	   8 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   5 Input      1 Bit        Muxes := 1     
+.	   2 Input      2 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
@@ -16814,6 +16949,10 @@ Q
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 136   
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16874,6 +17013,158 @@ Q
 Q
 %s*synth2B
 .	   3 Input      1 Bit        Muxes := 5     
+2default:default
+C
+%s*synth24
+ Module SKadder__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 63    
+2default:default
+D
+%s*synth25
+!Module adderahb__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 6     
+2default:default
+?
+%s*synth20
+Module PWM__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     11 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               11 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                9 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+3
+%s*synth2$
+Module DAC_top 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+7
+%s*synth2(
+Module default_ADC 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+3
+%s*synth2$
+Module ADC_TOP 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+D
+%s*synth25
+!Module dummyapb__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
 2default:default
 2
 %s*synth2#
@@ -16977,19 +17268,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     12 Bit        Muxes := 2     
+.	   6 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   6 Input     12 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     12 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -17134,222 +17425,6 @@ Q
 B
 %s*synth23
 Module ahbmst__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 4     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 3     
-2default:default
-E
-%s*synth26
-"Module dcom_uart__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     18 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      3 Bit       Adders := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               18 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	               11 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                8 Bit    Registers := 3     
-2default:default
-Q
-%s*synth2B
-.	                5 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                3 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 4     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 12    
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   3 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     18 Bit        Muxes := 12    
-2default:default
-Q
-%s*synth2B
-.	   4 Input     18 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     11 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   5 Input      3 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      2 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 48    
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 27    
-2default:default
-0
-%s*synth2!
-Module dcom 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     30 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      6 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               32 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	                6 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   7 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     30 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      7 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      1 Bit        Muxes := 8     
-2default:default
-C
-%s*synth24
- Module ahbuart__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-B
-%s*synth23
-Module ahbmst__parameterized2 
 2default:default
 B
 %s*synth23
@@ -18361,11 +18436,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 27    
+.	   8 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   8 Input     32 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 27    
 2default:default
 Q
 %s*synth2B
@@ -18381,6 +18456,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   4 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   3 Input      4 Bit        Muxes := 4     
 2default:default
 Q
@@ -18389,15 +18468,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      4 Bit        Muxes := 1     
+.	   2 Input      3 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
 .	   8 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      3 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
@@ -18409,11 +18484,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 2     
+.	   2 Input      1 Bit        Muxes := 48    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 48    
+.	   3 Input      1 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -18661,6 +18736,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      4 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
 .	  16 Input      4 Bit        Muxes := 1     
 2default:default
 Q
@@ -18669,15 +18748,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
 .	   7 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -18685,7 +18756,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      2 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      1 Bit        Muxes := 30    
+2default:default
+Q
+%s*synth2B
+.	  16 Input      1 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
@@ -18694,10 +18773,6 @@ Q
 Q
 %s*synth2B
 .	   6 Input      1 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      1 Bit        Muxes := 22    
 2default:default
 I
 %s*synth2:
@@ -18801,15 +18876,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     11 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   9 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   9 Input     10 Bit        Muxes := 1     
+.	   2 Input     11 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -18817,15 +18888,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   9 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   9 Input      4 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 3     
+.	  10 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  10 Input      4 Bit        Muxes := 1     
+.	   2 Input      4 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -18877,15 +18952,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   4 Input      8 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
 .	   3 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      8 Bit       Adders := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -18985,11 +19060,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  13 Input     48 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
 .	   2 Input     48 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  13 Input     48 Bit        Muxes := 2     
+.	   9 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19001,23 +19084,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  15 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  18 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19025,11 +19092,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 4     
+.	   7 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     30 Bit        Muxes := 1     
+.	  15 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -19037,7 +19108,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input     18 Bit        Muxes := 1     
+.	   2 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19045,7 +19116,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit        Muxes := 17    
+.	  15 Input     18 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19053,15 +19124,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     16 Bit        Muxes := 17    
+2default:default
+Q
+%s*synth2B
 .	  13 Input     16 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  14 Input     15 Bit        Muxes := 1     
+.	   2 Input     15 Bit        Muxes := 12    
 2default:default
 Q
 %s*synth2B
-.	   2 Input     15 Bit        Muxes := 12    
+.	  14 Input     15 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19081,11 +19156,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input     11 Bit        Muxes := 1     
+.	   8 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     11 Bit        Muxes := 9     
+.	  16 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19097,7 +19172,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input     11 Bit        Muxes := 1     
+.	   2 Input     11 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
@@ -19117,15 +19192,11 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  15 Input      7 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	  10 Input      7 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19133,11 +19204,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      7 Bit        Muxes := 1     
+.	   8 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      7 Bit        Muxes := 12    
+2default:default
+Q
+%s*synth2B
+.	  16 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -19153,14 +19228,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      5 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   8 Input      5 Bit        Muxes := 1     
 2default:default
 Q
@@ -19169,7 +19236,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 10    
+.	   6 Input      5 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  13 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  15 Input      4 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -19181,19 +19260,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      4 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	  13 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      3 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      3 Bit        Muxes := 17    
+.	   2 Input      4 Bit        Muxes := 10    
 2default:default
 Q
 %s*synth2B
@@ -19201,11 +19268,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      3 Bit        Muxes := 1     
+.	   8 Input      3 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   7 Input      3 Bit        Muxes := 1     
+.	  15 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19217,11 +19284,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      2 Bit        Muxes := 1     
+.	   7 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  10 Input      2 Bit        Muxes := 1     
+.	   2 Input      3 Bit        Muxes := 17    
 2default:default
 Q
 %s*synth2B
@@ -19237,7 +19304,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      1 Bit        Muxes := 19    
+.	  10 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -19245,15 +19316,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   6 Input      1 Bit        Muxes := 30    
+2default:default
+Q
+%s*synth2B
 .	   5 Input      1 Bit        Muxes := 10    
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit        Muxes := 36    
-2default:default
-Q
-%s*synth2B
-.	   7 Input      1 Bit        Muxes := 5     
+.	   2 Input      1 Bit        Muxes := 153   
 2default:default
 Q
 %s*synth2B
@@ -19261,7 +19332,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   7 Input      1 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
 .	  16 Input      1 Bit        Muxes := 15    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 36    
 2default:default
 Q
 %s*synth2B
@@ -19269,11 +19348,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 30    
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 153   
+.	  15 Input      1 Bit        Muxes := 19    
 2default:default
 M
 %s*synth2>
@@ -19813,6 +19888,57 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
 \r_reg[slv][haddr][0] 2default:default2)
 dsu3x__parameterized02default:defaultZ8-3332
+ƒ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys26
+"\inst_top/Inst_PWM/lastcnt_reg[8] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+ƒ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys26
+"\inst_top/Inst_PWM/lastcnt_reg[7] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+∞
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2"
+\sLED_reg[20] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+∞
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2"
+\sLED_reg[19] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+∞
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2"
+\sLED_reg[18] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+∞
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2"
+\sLED_reg[17] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+∞
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2"
+\sLED_reg[16] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+Ø
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2!
+\sLED_reg[3] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+Ø
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2!
+\sLED_reg[2] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+Ø
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2!
+\sLED_reg[1] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+Ø
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2!
+\sLED_reg[0] 2default:default2,
+dummyapb__parameterized02default:defaultZ8-3332
+©
+RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys21
+inst_top/Inst_PWM/lastcnt_reg2default:default2
+92default:default2
+72default:default2º
+•/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd2default:default2
+702default:default8@Z8-3936
 ±
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
 \r_reg[rcnt][1] 2default:default2+
@@ -19820,10 +19946,6 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 Æ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2!
 \r_reg[rtsn] 2default:default2+
-apbuart__parameterized02default:defaultZ8-3332
-≠
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2 
-\r_reg[txd] 2default:default2+
 apbuart__parameterized02default:defaultZ8-3332
 ±
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
@@ -19837,10 +19959,6 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2!
 \r_reg[wdog] 2default:default2+
 gptimer__parameterized02default:defaultZ8-3332
-∑
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
-\ahbmst0/r_reg[start] 2default:default2+
-ahbuart__parameterized02default:defaultZ8-3332
 ∑
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
 \ahbmst0/r_reg[start] 2default:default2+
@@ -19877,42 +19995,6 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2#
 \r_reg[wrn][2] 2default:default2)
 mctrl__parameterized02default:defaultZ8-3332
-≥
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[address][31] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
-≥
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[address][30] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
-≥
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[address][29] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
-≥
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[address][28] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
-≥
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[address][27] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
-≥
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[address][26] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
-≥
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[address][25] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
-≥
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[address][24] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
-µ
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
-\r_reg[writedata][15] 2default:default2)
-mctrl__parameterized02default:defaultZ8-3332
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
@@ -19933,66 +20015,11 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 leon3mp2default:default2
 RamCRE2default:default2
 02default:defaultZ8-3917
-ï
+ì
 +design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[15]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[14]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[13]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[12]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[11]2default:default2
-02default:defaultZ8-3917
-ï
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[10]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[9]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[8]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[7]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[6]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[5]2default:default2
-02default:defaultZ8-3917
-î
-+design %s has port %s driven by constant %s3447*oasys2
-leon3mp2default:default2
-Led[4]2default:default2
-02default:defaultZ8-3917
+leon3mp2default:default2
+ampSD2default:default2
+12default:defaultZ8-3917
 s
 !design %s has unconnected port %s3331*oasys2
 leon3mp2default:default2
@@ -20079,7 +20106,7 @@ s
 btn[0]2default:defaultZ8-3331
 ™
 %s*synth2ö
-ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:01:53 . Memory (MB): peak = 1283.125 ; gain = 650.480
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:02:12 . Memory (MB): peak = 1332.938 ; gain = 694.285
 2default:default
 ¢
 %s*synth2í
@@ -20191,10 +20218,6 @@ K\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\FSM_onehot_r_reg[dstate][7] 2de
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2D
 0i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] 2default:defaultZ8-3333
-≤
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6i_3/\dcomgen.dcom0 /\dcom0/FSM_onehot_r_reg[state][6] 2default:defaultZ8-3333
 ö
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default22
@@ -20223,18 +20246,14 @@ K\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\FSM_onehot_r_reg[dstate][7] 2de
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2C
 /i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] 2default:defaultZ8-3333
-õ
+ú
 6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default23
-i_3/\ua1.uart1 /\r_reg[rxf][1] 2default:defaultZ8-3333
+02default:default24
+ i_3/\ua1.uart1 /\r_reg[ctsn][0] 2default:defaultZ8-3333
 ¨
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2D
 0i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] 2default:defaultZ8-3333
-õ
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default23
-i_3/\ua1.uart1 /\r_reg[rxf][2] 2default:defaultZ8-3333
 ¨
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2D
@@ -20243,14 +20262,6 @@ K\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\FSM_onehot_r_reg[dstate][7] 2de
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2C
 /i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] 2default:defaultZ8-3333
-õ
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default23
-i_3/\ua1.uart1 /\r_reg[rxf][3] 2default:defaultZ8-3333
-õ
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default23
-i_3/\ua1.uart1 /\r_reg[rxf][4] 2default:defaultZ8-3333
 ®
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2@
@@ -20283,3 +20294,1262 @@ Mi_4/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[main_state][15] 2
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2O
 ;i_4/\eth0.e1/m100.u0/ethc0 /\rx_rmii1.rx0 /\r_reg[rxen][0] 2default:defaultZ8-3333
+∫
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2R
+>\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\r_reg[flushl2] 2default:defaultZ8-3333
+≥
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2K
+7\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /\a0/r_reg[retry] 2default:defaultZ8-3333
+∞
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2H
+4i_3/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hsize][2] 2default:defaultZ8-3333
+ú
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default24
+ i_3/\mg2.sr1 /\r_reg[hburst][2] 2default:defaultZ8-3333
+®
+6propagating constant %s across sequential element (%s)3333*oasys2
+12default:default2@
+,i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[en][0] 2default:defaultZ8-3333
+´
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2C
+/i_4/\eth0.e1/m100.u0/ethc0 /ahb0/\r_reg[retry] 2default:defaultZ8-3333
+†
+%s*synth2ê
+|Finished Area Optimization : Time (s): cpu = 00:06:01 ; elapsed = 00:06:38 . Memory (MB): peak = 1722.160 ; gain = 1083.508
+2default:default
+Ø
+%s*synth2ü
+äFinished Applying XDC Timing Constraints : Time (s): cpu = 00:06:05 ; elapsed = 00:06:44 . Memory (MB): peak = 1722.160 ; gain = 1083.508
+2default:default
+¢
+%s*synth2í
+~Finished Timing Optimization : Time (s): cpu = 00:06:10 ; elapsed = 00:06:49 . Memory (MB): peak = 1722.160 ; gain = 1083.508
+2default:default
+°
+%s*synth2ë
+}Finished Technology Mapping : Time (s): cpu = 00:07:23 ; elapsed = 00:08:16 . Memory (MB): peak = 1812.301 ; gain = 1173.648
+2default:default
+D
+%s*synth25
+!Gated Clock Conversion mode: off
+2default:default
+õ
+%s*synth2ã
+wFinished IO Insertion : Time (s): cpu = 00:07:24 ; elapsed = 00:08:18 . Memory (MB): peak = 1816.941 ; gain = 1178.289
+2default:default
+;
+%s*synth2,
+
+Report Check Netlist: 
+2default:default
+l
+%s*synth2]
+I+------+------------------+-------+---------+-------+------------------+
+2default:default
+l
+%s*synth2]
+I|      |Item              |Errors |Warnings |Status |Description       |
+2default:default
+l
+%s*synth2]
+I+------+------------------+-------+---------+-------+------------------+
+2default:default
+l
+%s*synth2]
+I|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+2default:default
+l
+%s*synth2]
+I+------+------------------+-------+---------+-------+------------------+
+2default:default
+¨
+%s*synth2ú
+áFinished Renaming Generated Instances : Time (s): cpu = 00:07:25 ; elapsed = 00:08:19 . Memory (MB): peak = 1816.941 ; gain = 1178.289
+2default:default
+©
+%s*synth2ô
+ÑFinished Rebuilding User Hierarchy : Time (s): cpu = 00:07:27 ; elapsed = 00:08:22 . Memory (MB): peak = 1816.941 ; gain = 1178.289
+2default:default
+¢
+%s*synth2í
+~---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+2default:default
+u
+%s*synth2f
+R---------------------------------------------------------------------------------
+2default:default
+;
+%s*synth2,
+
+Static Shift Register:
+2default:default
+Ã
+%s*synth2º
+ß+------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+2default:default
+Õ
+%s*synth2Ω
+®|Module Name | RTL Name                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
+2default:default
+Ã
+%s*synth2º
+ß+------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+2default:default
+Õ
+%s*synth2Ω
+®|leon3mp     | leon3gen.cpu[0].u0/leon3x0/p0/iu/r_reg[x][ctrl][inst][16] | 4      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+2default:default
+Õ
+%s*synth2Ω
+®|leon3mp     | leon3gen.cpu[0].u0/leon3x0/p0/iu/r_reg[x][ctrl][inst][13] | 3      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+2default:default
+Õ
+%s*synth2Ω
+®+------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+2default:default
+¶
+%s*synth2ñ
+Å---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+2default:default
+u
+%s*synth2f
+R---------------------------------------------------------------------------------
+2default:default
+8
+%s*synth2)
+
+Report BlackBoxes: 
+2default:default
+G
+%s*synth28
+$+------+---------------+----------+
+2default:default
+G
+%s*synth28
+$|      |BlackBox name  |Instances |
+2default:default
+G
+%s*synth28
+$+------+---------------+----------+
+2default:default
+G
+%s*synth28
+$|1     |DMC            |         1|
+2default:default
+G
+%s*synth28
+$|2     |fir_compiler_0 |         1|
+2default:default
+G
+%s*synth28
+$+------+---------------+----------+
+2default:default
+8
+%s*synth2)
+
+Report Cell Usage: 
+2default:default
+H
+%s*synth29
+%+------+--------------------+------+
+2default:default
+H
+%s*synth29
+%|      |Cell                |Count |
+2default:default
+H
+%s*synth29
+%+------+--------------------+------+
+2default:default
+H
+%s*synth29
+%|1     |DMC_bbox            |     1|
+2default:default
+H
+%s*synth29
+%|2     |fir_compiler_0_bbox |     1|
+2default:default
+H
+%s*synth29
+%|3     |BSCANE2             |     2|
+2default:default
+H
+%s*synth29
+%|4     |BUFG                |     7|
+2default:default
+H
+%s*synth29
+%|5     |CARRY4              |   202|
+2default:default
+H
+%s*synth29
+%|6     |DSP48E1_1           |     2|
+2default:default
+H
+%s*synth29
+%|7     |DSP48E1_2           |     2|
+2default:default
+H
+%s*synth29
+%|8     |INV                 |     1|
+2default:default
+H
+%s*synth29
+%|9     |LUT1                |   232|
+2default:default
+H
+%s*synth29
+%|10    |LUT2                |   611|
+2default:default
+H
+%s*synth29
+%|11    |LUT3                |  1052|
+2default:default
+H
+%s*synth29
+%|12    |LUT4                |  1383|
+2default:default
+H
+%s*synth29
+%|13    |LUT5                |  2758|
+2default:default
+H
+%s*synth29
+%|14    |LUT6                |  5343|
+2default:default
+H
+%s*synth29
+%|15    |MUXF7               |   286|
+2default:default
+H
+%s*synth29
+%|16    |MUXF8               |    50|
+2default:default
+H
+%s*synth29
+%|17    |PLLE2_ADV_1         |     1|
+2default:default
+H
+%s*synth29
+%|18    |PLLE2_ADV_2         |     1|
+2default:default
+H
+%s*synth29
+%|19    |RAM32M              |     6|
+2default:default
+H
+%s*synth29
+%|20    |RAMB16_S18          |     4|
+2default:default
+H
+%s*synth29
+%|21    |RAMB16_S36          |     2|
+2default:default
+H
+%s*synth29
+%|22    |RAMB16_S36_S36      |    11|
+2default:default
+H
+%s*synth29
+%|23    |RAMB16_S9           |     8|
+2default:default
+H
+%s*synth29
+%|24    |SRL16E              |    11|
+2default:default
+H
+%s*synth29
+%|25    |XADC                |     1|
+2default:default
+H
+%s*synth29
+%|26    |FDCE                |   116|
+2default:default
+H
+%s*synth29
+%|27    |FDPE                |    16|
+2default:default
+H
+%s*synth29
+%|28    |FDRE                |  4444|
+2default:default
+H
+%s*synth29
+%|29    |FDSE                |   115|
+2default:default
+H
+%s*synth29
+%|30    |LD                  |    55|
+2default:default
+H
+%s*synth29
+%|31    |IBUF                |     8|
+2default:default
+H
+%s*synth29
+%|32    |IOBUF               |    17|
+2default:default
+H
+%s*synth29
+%|33    |OBUF                |    55|
+2default:default
+H
+%s*synth29
+%+------+--------------------+------+
+2default:default
+<
+%s*synth2-
+
+Report Instance Areas: 
+2default:default
+}
+%s*synth2n
+Z+------+-----------------------------------+-------------------------------------+------+
+2default:default
+}
+%s*synth2n
+Z|      |Instance                           |Module                               |Cells |
+2default:default
+}
+%s*synth2n
+Z+------+-----------------------------------+-------------------------------------+------+
+2default:default
+}
+%s*synth2n
+Z|1     |top                                |                                     | 16837|
+2default:default
+}
+%s*synth2n
+Z|2     |  io0                              |dummyapb__parameterized0             |   121|
+2default:default
+}
+%s*synth2n
+Z|3     |    inst_top                       |DAC_top                              |    62|
+2default:default
+}
+%s*synth2n
+Z|4     |      Inst_PWM                     |PWM__parameterized0                  |    61|
+2default:default
+}
+%s*synth2n
+Z|5     |    inst_ADC_TOP                   |ADC_TOP                              |    36|
+2default:default
+}
+%s*synth2n
+Z|6     |      inst_ADC                     |default_ADC                          |     2|
+2default:default
+}
+%s*synth2n
+Z|7     |  \ethpads.emdio_pad               |iopad__parameterized0                |     1|
+2default:default
+}
+%s*synth2n
+Z|8     |    \xcv.x0                        |unisim_iopad__parameterized0_125     |     1|
+2default:default
+}
+%s*synth2n
+Z|9     |  clkgen0                          |clkgen__parameterized0               |     4|
+2default:default
+}
+%s*synth2n
+Z|10    |    \xc7l.v                        |clkgen_virtex7__parameterized0       |     4|
+2default:default
+}
+%s*synth2n
+Z|11    |  \ethpads.erxd_pad                |inpadv__parameterized0               |     2|
+2default:default
+}
+%s*synth2n
+Z|12    |    \v[1].x0                       |inpad__parameterized0_121            |     1|
+2default:default
+}
+%s*synth2n
+Z|13    |      \xcv.x0                      |unisim_inpad__parameterized0_124     |     1|
+2default:default
+}
+%s*synth2n
+Z|14    |    \v[0].x0                       |inpad__parameterized0_122            |     1|
+2default:default
+}
+%s*synth2n
+Z|15    |      \xcv.x0                      |unisim_inpad__parameterized0_123     |     1|
+2default:default
+}
+%s*synth2n
+Z|16    |  \mgpads.oen_pad                  |outpad__parameterized0               |     1|
+2default:default
+}
+%s*synth2n
+Z|17    |    \xcv.x0                        |unisim_outpad__parameterized0_120    |     1|
+2default:default
+}
+%s*synth2n
+Z|18    |  rst0                             |rstgen__parameterized0               |    25|
+2default:default
+}
+%s*synth2n
+Z|19    |  apb0                             |apbctrl__parameterized0              |   525|
+2default:default
+}
+%s*synth2n
+Z|20    |  bdr                              |iopadv__parameterized0               |     8|
+2default:default
+}
+%s*synth2n
+Z|21    |    \v[1].x0                       |iopad__parameterized0_104            |     1|
+2default:default
+}
+%s*synth2n
+Z|22    |      \xcv.x0                      |unisim_iopad__parameterized0_119     |     1|
+2default:default
+}
+%s*synth2n
+Z|23    |    \v[5].x0                       |iopad__parameterized0_105            |     1|
+2default:default
+}
+%s*synth2n
+Z|24    |      \xcv.x0                      |unisim_iopad__parameterized0_118     |     1|
+2default:default
+}
+%s*synth2n
+Z|25    |    \v[3].x0                       |iopad__parameterized0_106            |     1|
+2default:default
+}
+%s*synth2n
+Z|26    |      \xcv.x0                      |unisim_iopad__parameterized0_117     |     1|
+2default:default
+}
+%s*synth2n
+Z|27    |    \v[7].x0                       |iopad__parameterized0_107            |     1|
+2default:default
+}
+%s*synth2n
+Z|28    |      \xcv.x0                      |unisim_iopad__parameterized0_116     |     1|
+2default:default
+}
+%s*synth2n
+Z|29    |    \v[2].x0                       |iopad__parameterized0_108            |     1|
+2default:default
+}
+%s*synth2n
+Z|30    |      \xcv.x0                      |unisim_iopad__parameterized0_115     |     1|
+2default:default
+}
+%s*synth2n
+Z|31    |    \v[0].x0                       |iopad__parameterized0_109            |     1|
+2default:default
+}
+%s*synth2n
+Z|32    |      \xcv.x0                      |unisim_iopad__parameterized0_114     |     1|
+2default:default
+}
+%s*synth2n
+Z|33    |    \v[6].x0                       |iopad__parameterized0_110            |     1|
+2default:default
+}
+%s*synth2n
+Z|34    |      \xcv.x0                      |unisim_iopad__parameterized0_113     |     1|
+2default:default
+}
+%s*synth2n
+Z|35    |    \v[4].x0                       |iopad__parameterized0_111            |     1|
+2default:default
+}
+%s*synth2n
+Z|36    |      \xcv.x0                      |unisim_iopad__parameterized0_112     |     1|
+2default:default
+}
+%s*synth2n
+Z|37    |  \mgpads.addr_pad                 |outpadv__parameterized0              |    23|
+2default:default
+}
+%s*synth2n
+Z|38    |    \v[11].x0                      |outpad__parameterized0_58            |     1|
+2default:default
+}
+%s*synth2n
+Z|39    |      \xcv.x0                      |unisim_outpad__parameterized0_103    |     1|
+2default:default
+}
+%s*synth2n
+Z|40    |    \v[16].x0                      |outpad__parameterized0_59            |     1|
+2default:default
+}
+%s*synth2n
+Z|41    |      \xcv.x0                      |unisim_outpad__parameterized0_102    |     1|
+2default:default
+}
+%s*synth2n
+Z|42    |    \v[13].x0                      |outpad__parameterized0_60            |     1|
+2default:default
+}
+%s*synth2n
+Z|43    |      \xcv.x0                      |unisim_outpad__parameterized0_101    |     1|
+2default:default
+}
+%s*synth2n
+Z|44    |    \v[18].x0                      |outpad__parameterized0_61            |     1|
+2default:default
+}
+%s*synth2n
+Z|45    |      \xcv.x0                      |unisim_outpad__parameterized0_100    |     1|
+2default:default
+}
+%s*synth2n
+Z|46    |    \v[5].x0                       |outpad__parameterized0_62            |     1|
+2default:default
+}
+%s*synth2n
+Z|47    |      \xcv.x0                      |unisim_outpad__parameterized0_99     |     1|
+2default:default
+}
+%s*synth2n
+Z|48    |    \v[0].x0                       |outpad__parameterized0_63            |     1|
+2default:default
+}
+%s*synth2n
+Z|49    |      \xcv.x0                      |unisim_outpad__parameterized0_98     |     1|
+2default:default
+}
+%s*synth2n
+Z|50    |    \v[20].x0                      |outpad__parameterized0_64            |     1|
+2default:default
+}
+%s*synth2n
+Z|51    |      \xcv.x0                      |unisim_outpad__parameterized0_97     |     1|
+2default:default
+}
+%s*synth2n
+Z|52    |    \v[7].x0                       |outpad__parameterized0_65            |     1|
+2default:default
+}
+%s*synth2n
+Z|53    |      \xcv.x0                      |unisim_outpad__parameterized0_96     |     1|
+2default:default
+}
+%s*synth2n
+Z|54    |    \v[12].x0                      |outpad__parameterized0_66            |     1|
+2default:default
+}
+%s*synth2n
+Z|55    |      \xcv.x0                      |unisim_outpad__parameterized0_95     |     1|
+2default:default
+}
+%s*synth2n
+Z|56    |    \v[19].x0                      |outpad__parameterized0_67            |     1|
+2default:default
+}
+%s*synth2n
+Z|57    |      \xcv.x0                      |unisim_outpad__parameterized0_94     |     1|
+2default:default
+}
+%s*synth2n
+Z|58    |    \v[14].x0                      |outpad__parameterized0_68            |     1|
+2default:default
+}
+%s*synth2n
+Z|59    |      \xcv.x0                      |unisim_outpad__parameterized0_93     |     1|
+2default:default
+}
+%s*synth2n
+Z|60    |    \v[6].x0                       |outpad__parameterized0_69            |     1|
+2default:default
+}
+%s*synth2n
+Z|61    |      \xcv.x0                      |unisim_outpad__parameterized0_92     |     1|
+2default:default
+}
+%s*synth2n
+Z|62    |    \v[1].x0                       |outpad__parameterized0_70            |     1|
+2default:default
+}
+%s*synth2n
+Z|63    |      \xcv.x0                      |unisim_outpad__parameterized0_91     |     1|
+2default:default
+}
+%s*synth2n
+Z|64    |    \v[21].x0                      |outpad__parameterized0_71            |     1|
+2default:default
+}
+%s*synth2n
+Z|65    |      \xcv.x0                      |unisim_outpad__parameterized0_90     |     1|
+2default:default
+}
+%s*synth2n
+Z|66    |    \v[8].x0                       |outpad__parameterized0_72            |     1|
+2default:default
+}
+%s*synth2n
+Z|67    |      \xcv.x0                      |unisim_outpad__parameterized0_89     |     1|
+2default:default
+}
+%s*synth2n
+Z|68    |    \v[3].x0                       |outpad__parameterized0_73            |     1|
+2default:default
+}
+%s*synth2n
+Z|69    |      \xcv.x0                      |unisim_outpad__parameterized0_88     |     1|
+2default:default
+}
+%s*synth2n
+Z|70    |    \v[15].x0                      |outpad__parameterized0_74            |     1|
+2default:default
+}
+%s*synth2n
+Z|71    |      \xcv.x0                      |unisim_outpad__parameterized0_87     |     1|
+2default:default
+}
+%s*synth2n
+Z|72    |    \v[10].x0                      |outpad__parameterized0_75            |     1|
+2default:default
+}
+%s*synth2n
+Z|73    |      \xcv.x0                      |unisim_outpad__parameterized0_86     |     1|
+2default:default
+}
+%s*synth2n
+Z|74    |    \v[17].x0                      |outpad__parameterized0_76            |     1|
+2default:default
+}
+%s*synth2n
+Z|75    |      \xcv.x0                      |unisim_outpad__parameterized0_85     |     1|
+2default:default
+}
+%s*synth2n
+Z|76    |    \v[2].x0                       |outpad__parameterized0_77            |     1|
+2default:default
+}
+%s*synth2n
+Z|77    |      \xcv.x0                      |unisim_outpad__parameterized0_84     |     1|
+2default:default
+}
+%s*synth2n
+Z|78    |    \v[22].x0                      |outpad__parameterized0_78            |     1|
+2default:default
+}
+%s*synth2n
+Z|79    |      \xcv.x0                      |unisim_outpad__parameterized0_83     |     1|
+2default:default
+}
+%s*synth2n
+Z|80    |    \v[9].x0                       |outpad__parameterized0_79            |     1|
+2default:default
+}
+%s*synth2n
+Z|81    |      \xcv.x0                      |unisim_outpad__parameterized0_82     |     1|
+2default:default
+}
+%s*synth2n
+Z|82    |    \v[4].x0                       |outpad__parameterized0_80            |     1|
+2default:default
+}
+%s*synth2n
+Z|83    |      \xcv.x0                      |unisim_outpad__parameterized0_81     |     1|
+2default:default
+}
+%s*synth2n
+Z|84    |  \ethpads.emdc_pad                |outpad__parameterized0_0             |     1|
+2default:default
+}
+%s*synth2n
+Z|85    |    \xcv.x0                        |unisim_outpad__parameterized0_57     |     1|
+2default:default
+}
+%s*synth2n
+Z|86    |  etxc_pad                         |outpad__parameterized0_1             |     1|
+2default:default
+}
+%s*synth2n
+Z|87    |    \xcv.x0                        |unisim_outpad__parameterized0_56     |     1|
+2default:default
+}
+%s*synth2n
+Z|88    |  \ethpads.etxen_pad               |outpad__parameterized0_2             |     1|
+2default:default
+}
+%s*synth2n
+Z|89    |    \xcv.x0                        |unisim_outpad__parameterized0_55     |     1|
+2default:default
+}
+%s*synth2n
+Z|90    |  \mgpads.ub_pad                   |outpad__parameterized0_3             |     1|
+2default:default
+}
+%s*synth2n
+Z|91    |    \xcv.x0                        |unisim_outpad__parameterized0_54     |     1|
+2default:default
+}
+%s*synth2n
+Z|92    |  \mg2.sr1                         |mctrl__parameterized0                |   365|
+2default:default
+}
+%s*synth2n
+Z|93    |  \leon3gen.cpu[0].u0              |leon3s__parameterized0               |  8778|
+2default:default
+}
+%s*synth2n
+Z|94    |    leon3x0                        |leon3x__parameterized0               |  8778|
+2default:default
+}
+%s*synth2n
+Z|95    |      rf0                          |regfile_3p_l3__parameterized0        |   166|
+2default:default
+}
+%s*synth2n
+Z|96    |        \s1.rhu                    |regfile_3p__parameterized0           |   166|
+2default:default
+}
+%s*synth2n
+Z|97    |          \s1.dp.x1                |syncram_2p__parameterized0           |    61|
+2default:default
+}
+%s*synth2n
+Z|98    |            \xc2v.x0               |unisim_syncram_2p__parameterized0_52 |    49|
+2default:default
+}
+%s*synth2n
+Z|99    |              \a6.x0               |unisim_syncram_dp__parameterized0_53 |    49|
+2default:default
+}
+%s*synth2n
+Z|100   |          \s1.dp.x0                |syncram_2p__parameterized0_51        |   105|
+2default:default
+}
+%s*synth2n
+Z|101   |            \xc2v.x0               |unisim_syncram_2p__parameterized0    |    50|
+2default:default
+}
+%s*synth2n
+Z|102   |              \a6.x0               |unisim_syncram_dp__parameterized0    |    50|
+2default:default
+}
+%s*synth2n
+Z|103   |      cmem0                        |cachemem__parameterized0             |    85|
+2default:default
+}
+%s*synth2n
+Z|104   |        \dme.dd0[1].ddata0         |syncram__parameterized6              |     7|
+2default:default
+}
+%s*synth2n
+Z|105   |          \xc2v.x0                 |unisim_syncram__parameterized6_50    |     7|
+2default:default
+}
+%s*synth2n
+Z|106   |        \dme.dtags0.dt0[0].dtags0  |syncram__parameterized4              |    10|
+2default:default
+}
+%s*synth2n
+Z|107   |          \xc2v.x0                 |unisim_syncram__parameterized4_49    |    10|
+2default:default
+}
+%s*synth2n
+Z|108   |        \dme.dd0[0].ddata0         |syncram__parameterized6_43           |     3|
+2default:default
+}
+%s*synth2n
+Z|109   |          \xc2v.x0                 |unisim_syncram__parameterized6       |     3|
+2default:default
+}
+%s*synth2n
+Z|110   |        \dme.dtags0.dt0[1].dtags0  |syncram__parameterized4_44           |     8|
+2default:default
+}
+%s*synth2n
+Z|111   |          \xc2v.x0                 |unisim_syncram__parameterized4       |     8|
+2default:default
+}
+%s*synth2n
+Z|112   |        \ime.im0[1].idata0         |syncram__parameterized2              |    27|
+2default:default
+}
+%s*synth2n
+Z|113   |          \xc2v.x0                 |unisim_syncram__parameterized2_48    |    27|
+2default:default
+}
+%s*synth2n
+Z|114   |        \ime.im0[1].itags0         |syncram__parameterized0              |    11|
+2default:default
+}
+%s*synth2n
+Z|115   |          \xc2v.x0                 |unisim_syncram__parameterized0_47    |    11|
+2default:default
+}
+%s*synth2n
+Z|116   |        \ime.im0[0].idata0         |syncram__parameterized2_45           |     4|
+2default:default
+}
+%s*synth2n
+Z|117   |          \xc2v.x0                 |unisim_syncram__parameterized2       |     4|
+2default:default
+}
+%s*synth2n
+Z|118   |        \ime.im0[0].itags0         |syncram__parameterized0_46           |    11|
+2default:default
+}
+%s*synth2n
+Z|119   |          \xc2v.x0                 |unisim_syncram__parameterized0       |    11|
+2default:default
+}
+%s*synth2n
+Z|120   |      \tbmem_gen.tbmem0            |tbufmem__parameterized0_38           |    34|
+2default:default
+}
+%s*synth2n
+Z|121   |        \mem0[0].ram0              |syncram64__parameterized0_39         |    33|
+2default:default
+}
+%s*synth2n
+Z|122   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_42  |    33|
+2default:default
+}
+%s*synth2n
+Z|123   |        \mem0[1].ram0              |syncram64__parameterized0_40         |     1|
+2default:default
+}
+%s*synth2n
+Z|124   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_41  |     1|
+2default:default
+}
+%s*synth2n
+Z|125   |      p0                           |proc3__parameterized0                |  8492|
+2default:default
+}
+%s*synth2n
+Z|126   |        c0mmu                      |mmu_cache__parameterized0            |  2958|
+2default:default
+}
+%s*synth2n
+Z|127   |          icache0                  |mmu_icache__parameterized0           |  1122|
+2default:default
+}
+%s*synth2n
+Z|128   |          dcache0                  |mmu_dcache__parameterized0           |   884|
+2default:default
+}
+%s*synth2n
+Z|129   |          a0                       |mmu_acache__parameterized0           |   171|
+2default:default
+}
+%s*synth2n
+Z|130   |        \mgen.mul0                 |mul32__parameterized0                |    96|
+2default:default
+}
+%s*synth2n
+Z|131   |          \xm3232.m3232            |techmult__parameterized0             |    96|
+2default:default
+}
+%s*synth2n
+Z|132   |            \pipe2.arch0.dwm       |gen_mult_pipe__parameterized0        |    96|
+2default:default
+}
+%s*synth2n
+Z|133   |        iu                         |iu3__parameterized0                  |  5050|
+2default:default
+}
+%s*synth2n
+Z|134   |        \mgen.div0                 |div32                                |   368|
+2default:default
+}
+%s*synth2n
+Z|135   |  \gpt.timer0                      |gptimer__parameterized0              |   372|
+2default:default
+}
+%s*synth2n
+Z|136   |  \eth0.e1                         |grethm__parameterized0               |  3802|
+2default:default
+}
+%s*synth2n
+Z|137   |    \m100.u0                       |greth__parameterized0                |  3802|
+2default:default
+}
+%s*synth2n
+Z|138   |      ethc0                        |grethc__parameterized0               |  3702|
+2default:default
+}
+%s*synth2n
+Z|139   |        ahb0                       |eth_ahb_mst                          |   178|
+2default:default
+}
+%s*synth2n
+Z|140   |        \tx_rmii1.tx0              |greth_tx__parameterized0             |   505|
+2default:default
+}
+%s*synth2n
+Z|141   |          tx_rst                   |eth_rstgen__parameterized0           |    19|
+2default:default
+}
+%s*synth2n
+Z|142   |        \rx_rmii1.rx0              |greth_rx__parameterized0             |   763|
+2default:default
+}
+%s*synth2n
+Z|143   |      \nft.tx_fifo0                |syncram_2p__parameterized2           |     1|
+2default:default
+}
+%s*synth2n
+Z|144   |        \xc2v.x0                   |unisim_syncram_2p__parameterized2    |     1|
+2default:default
+}
+%s*synth2n
+Z|145   |          \a6.x0                   |unisim_syncram_dp__parameterized2    |     1|
+2default:default
+}
+%s*synth2n
+Z|146   |      \edclramnft.r0               |syncram_2p__parameterized6           |    20|
+2default:default
+}
+%s*synth2n
+Z|147   |        \xc2v.x0                   |unisim_syncram_2p__parameterized6_36 |    20|
+2default:default
+}
+%s*synth2n
+Z|148   |          \a6.x0                   |unisim_syncram_dp__parameterized4_37 |    20|
+2default:default
+}
+%s*synth2n
+Z|149   |      \edclramnft.r1               |syncram_2p__parameterized6_35        |    16|
+2default:default
+}
+%s*synth2n
+Z|150   |        \xc2v.x0                   |unisim_syncram_2p__parameterized6    |    16|
+2default:default
+}
+%s*synth2n
+Z|151   |          \a6.x0                   |unisim_syncram_dp__parameterized4    |    16|
+2default:default
+}
+%s*synth2n
+Z|152   |      \nft.rx_fifo0                |syncram_2p__parameterized4           |    38|
+2default:default
+}
+%s*synth2n
+Z|153   |        \xc2v.x0                   |unisim_syncram_2p__parameterized4    |    38|
+2default:default
+}
+%s*synth2n
+Z|154   |          \a0.x0                   |generic_syncram_2p__parameterized0   |    38|
+2default:default
+}
+%s*synth2n
+Z|155   |  \mgpads.cs_pad                   |outpad__parameterized0_4             |     1|
+2default:default
+}
+%s*synth2n
+Z|156   |    \xcv.x0                        |unisim_outpad__parameterized0_34     |     1|
+2default:default
+}
+%s*synth2n
+Z|157   |  \ethpads.erxcr_pad               |inpad__parameterized0                |     1|
+2default:default
+}
+%s*synth2n
+Z|158   |    \xcv.x0                        |unisim_inpad__parameterized0_33      |     1|
+2default:default
+}
+%s*synth2n
+Z|159   |  ahb0                             |ahbctrl__parameterized0              |   260|
+2default:default
+}
+%s*synth2n
+Z|160   |  \leon3gen.dsugen.dsu0            |dsu3__parameterized0                 |  1170|
+2default:default
+}
+%s*synth2n
+Z|161   |    x0                             |dsu3x__parameterized0                |  1161|
+2default:default
+}
+%s*synth2n
+Z|162   |      \tb0.mem0                    |tbufmem__parameterized0              |   241|
+2default:default
+}
+%s*synth2n
+Z|163   |        \mem0[0].ram0              |syncram64__parameterized0            |   141|
+2default:default
+}
+%s*synth2n
+Z|164   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_32  |   141|
+2default:default
+}
+%s*synth2n
+Z|165   |        \mem0[1].ram0              |syncram64__parameterized0_31         |   100|
+2default:default
+}
+%s*synth2n
+Z|166   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0     |   100|
+2default:default
+}
+%s*synth2n
+Z|167   |  \bpromgen.brom                   |ahbrom                               |   188|
+2default:default
+}
+%s*synth2n
+Z|168   |  \ua1.dsutx_pad                   |outpad__parameterized0_5             |     1|
+2default:default
+}
+%s*synth2n
+Z|169   |    \xcv.x0                        |unisim_outpad__parameterized0_30     |     1|
+2default:default
+}
+%s*synth2n
+Z|170   |  adderahb_if                      |adderahb__parameterized0             |   381|
+2default:default
+}
+%s*synth2n
+Z|171   |  \mgpads.wri_pad                  |outpad__parameterized0_6             |     1|
+2default:default
+}
+%s*synth2n
+Z|172   |    \xcv.x0                        |unisim_outpad__parameterized0_29     |     1|
+2default:default
+}
+%s*synth2n
+Z|173   |  \ethpads.etxd_pad                |outpadv__parameterized2              |     2|
+2default:default
+}
+%s*synth2n
+Z|174   |    \v[1].x0                       |outpad__parameterized0_25            |     1|
+2default:default
+}
+%s*synth2n
+Z|175   |      \xcv.x0                      |unisim_outpad__parameterized0_28     |     1|
+2default:default
+}
+%s*synth2n
+Z|176   |    \v[0].x0                       |outpad__parameterized0_26            |     1|
+2default:default
+}
+%s*synth2n
+Z|177   |      \xcv.x0                      |unisim_outpad__parameterized0_27     |     1|
+2default:default
+}
+%s*synth2n
+Z|178   |  \ua1.uart1                       |apbuart__parameterized0              |   243|
+2default:default
+}
+%s*synth2n
+Z|179   |  \ahbjtaggen0.ahbjtag0            |ahbjtag__parameterized0              |   376|
+2default:default
+}
+%s*synth2n
+Z|180   |    \newcom.jtagcom0               |jtagcom2__parameterized0             |   350|
+2default:default
+}
+%s*synth2n
+Z|181   |    ahbmst0                        |ahbmst__parameterized0               |    10|
+2default:default
+}
+%s*synth2n
+Z|182   |    \gupdff.updff                  |grdff__parameterized0                |     1|
+2default:default
+}
+%s*synth2n
+Z|183   |    \gtckbuf.tckbuf                |techbuf__parameterized0              |     1|
+2default:default
+}
+%s*synth2n
+Z|184   |      \xil.xil0                    |clkbuf_xilinx__parameterized0        |     1|
+2default:default
+}
+%s*synth2n
+Z|185   |    tap0                           |tap__parameterized0                  |    14|
+2default:default
+}
+%s*synth2n
+Z|186   |      \ac7v.u0                     |artix7_tap                           |    14|
+2default:default
+}
+%s*synth2n
+Z|187   |  bdr2                             |iopadv__parameterized0_7             |     8|
+2default:default
+}
+%s*synth2n
+Z|188   |    \v[1].x0                       |iopad__parameterized0_10             |     1|
+2default:default
+}
+%s*synth2n
+Z|189   |      \xcv.x0                      |unisim_iopad__parameterized0_24      |     1|
+2default:default
+}
+%s*synth2n
+Z|190   |    \v[5].x0                       |iopad__parameterized0_11             |     1|
+2default:default
+}
+%s*synth2n
+Z|191   |      \xcv.x0                      |unisim_iopad__parameterized0_23      |     1|
+2default:default
+}
+%s*synth2n
+Z|192   |    \v[3].x0                       |iopad__parameterized0_12             |     1|
+2default:default
+}
+%s*synth2n
+Z|193   |      \xcv.x0                      |unisim_iopad__parameterized0_22      |     1|
+2default:default
+}
+%s*synth2n
+Z|194   |    \v[7].x0                       |iopad__parameterized0_13             |     1|
+2default:default
+}
+%s*synth2n
+Z|195   |      \xcv.x0                      |unisim_iopad__parameterized0_21      |     1|
+2default:default
+}
+%s*synth2n
+Z|196   |    \v[2].x0                       |iopad__parameterized0_14             |     1|
+2default:default
+}
+%s*synth2n
+Z|197   |      \xcv.x0                      |unisim_iopad__parameterized0_20      |     1|
+2default:default
+}
+%s*synth2n
+Z|198   |    \v[0].x0                       |iopad__parameterized0_15             |     1|
+2default:default
+}
+%s*synth2n
+Z|199   |      \xcv.x0                      |unisim_iopad__parameterized0_19      |     1|
+2default:default
+}
+%s*synth2n
+Z|200   |    \v[6].x0                       |iopad__parameterized0_16             |     1|
+2default:default
+}
+%s*synth2n
+Z|201   |      \xcv.x0                      |unisim_iopad__parameterized0_18      |     1|
+2default:default
+}
+%s*synth2n
+Z|202   |    \v[4].x0                       |iopad__parameterized0_17             |     1|
+2default:default
+}
+%s*synth2n
+Z|203   |      \xcv.x0                      |unisim_iopad__parameterized0         |     1|
+2default:default
+}
+%s*synth2n
+Z|204   |  \mgpads.lb_pad                   |outpad__parameterized0_8             |     1|
+2default:default
+}
+%s*synth2n
+Z|205   |    \xcv.x0                        |unisim_outpad__parameterized0        |     1|
+2default:default
+}
+%s*synth2n
+Z|206   |  \ua1.dsurx_pad                   |inpad__parameterized0_9              |     2|
+2default:default
+}
+%s*synth2n
+Z|207   |    \xcv.x0                        |unisim_inpad__parameterized0         |     2|
+2default:default
+}
+%s*synth2n
+Z|208   |  \irqctrl.irqctrl0                |irqmp__parameterized0                |   131|
+2default:default
+}
+%s*synth2n
+Z+------+-----------------------------------+-------------------------------------+------+
+2default:default
+®
+%s*synth2ò
+ÉFinished Writing Synthesis Report : Time (s): cpu = 00:07:28 ; elapsed = 00:08:23 . Memory (MB): peak = 1816.941 ; gain = 1178.289
+2default:default
+k
+%s*synth2\
+HSynthesis finished with 0 errors, 0 critical warnings and 569 warnings.
+2default:default
+¶
+%s*synth2ñ
+ÅSynthesis Optimization Complete : Time (s): cpu = 00:07:28 ; elapsed = 00:08:24 . Memory (MB): peak = 1816.941 ; gain = 1178.289
+2default:default
+^
+-Analyzing %s Unisim elements for replacement
+17*netlist2
+1182default:defaultZ29-17
+a
+2Unisim Transformation completed in %s CPU seconds
+28*netlist2
+02default:defaultZ29-28
+^
+1Inserted %s IBUFs to IO ports without IO buffers.100*opt2
+02default:defaultZ31-140
+^
+1Inserted %s OBUFs to IO ports without IO buffers.101*opt2
+02default:defaultZ31-141
+D
+Pushed %s inverter(s).
+98*opt2
+442default:defaultZ31-138
+|
+MSuccessfully populated the BRAM INIT strings from the following elf files: %s96*memdata2
+ 2default:defaultZ28-144
+ƒ
+!Unisim Transformation Summary:
+%s111*project2á
+Ú  A total of 103 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  LD => LDCE: 55 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAMB16_S18 => RAMB18E1: 4 instances
+  RAMB16_S36 => RAMB36E1: 2 instances
+  RAMB16_S36_S36 => RAMB36E1: 11 instances
+  RAMB16_S9 => RAMB18E1: 8 instances
+2default:defaultZ1-111
+L
+Releasing license: %s
+83*common2
+	Synthesis2default:defaultZ17-83
+¿
+G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
+28*	vivadotcl2
+3992default:default2
+4622default:default2
+02default:default2
+02default:defaultZ4-41
+U
+%s completed successfully
+29*	vivadotcl2 
+synth_design2default:defaultZ4-42
+˛
+I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
+268*common2"
+synth_design: 2default:default2
+00:07:462default:default2
+00:08:522default:default2
+1921.9412default:default2
+1177.8952default:defaultZ17-268
+<
+%Done setting XDC timing constraints.
+35*timingZ38-35
+ˇ
+I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
+268*common2&
+write_checkpoint: 2default:default2
+00:00:032default:default2
+00:00:052default:default2
+1928.1022default:default2
+6.1602default:defaultZ17-268
+
+sreport_utilization: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:07 . Memory (MB): peak = 1930.113 ; gain = 2.012
+*common
+Ñ
+I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
+268*common2(
+report_utilization: 2default:default2
+00:00:00.212default:default2
+00:00:072default:default2
+1930.1132default:default2
+2.0122default:defaultZ17-268
+w
+Exiting %s at %s...
+206*common2
+Vivado2default:default2,
+Thu Mar 20 12:28:14 20142default:defaultZ17-206

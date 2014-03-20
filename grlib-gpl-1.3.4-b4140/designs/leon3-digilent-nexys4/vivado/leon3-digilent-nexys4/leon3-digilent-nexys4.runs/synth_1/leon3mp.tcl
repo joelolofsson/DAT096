@@ -5,9 +5,28 @@
   set_param gui.test TreeTableDev
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-create_project -in_memory -part xc7a100tcsg324-2
+set_msg_config -id {Labtools 27-147} -limit 4294967295
+create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language Verilog [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
+set_property ip_repo_paths /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP [current_fileset]
+add_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe
+add_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp]
+set_property use_blackbox_stub false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp]
+add_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/DMC_synth_1/DMC.dcp
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/DMC_synth_1/DMC.dcp]
+set_property use_blackbox_stub false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/DMC_synth_1/DMC.dcp]
+
+read_ip /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.dcp]
+set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+set_property is_locked true [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+
+read_verilog {
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/DMC/DMC_stub.v
+}
 read_vhdl -library grlib {
   /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/stdlib/version.vhd
   /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/stdlib/config_types.vhd
@@ -126,21 +145,34 @@ read_vhdl -library eth {
   /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd
   /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/comp/ethcomp.vhd
 }
-read_vhdl -library esa {
-  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/memoryctrl.vhd
-  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd
-}
 read_vhdl {
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DMC.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adder_pkg.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd
   /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/config.vhd
   /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/ahbrom.vhd
   /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd
 }
-read_xdc /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/digilent-nexys4-xc7a100t/Nexys4_Master.xdc
-set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/digilent-nexys4-xc7a100t/Nexys4_Master.xdc]
+read_vhdl -library esa {
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/memoryctrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd
+}
+read_xdc /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
+read_xdc dont_buffer.xdc
+set_property used_in_implementation false [get_files dont_buffer.xdc]
 set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.data/wt [current_project]
 set_property parent.project_dir /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4 [current_project]
-synth_design -top leon3mp -part xc7a100tcsg324-2
+synth_design -top leon3mp -part xc7a100tcsg324-1
 write_checkpoint leon3mp.dcp
 report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb

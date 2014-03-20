@@ -1,3 +1,4 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -6,8 +7,6 @@ use grlib.amba.all;
 use grlib.stdlib.all;
 use grlib.devices.all;
 
-library work;
-use work.adder_pkg.all;
 entity dummyapb is
   generic (
     pindex : integer := 0;
@@ -16,28 +15,38 @@ entity dummyapb is
   port (
     rstn : in std_ulogic;
     clk : in std_ulogic;
+	vauxp3 : in STD_LOGIC;
+    vauxn3 : IN STD_LOGIC;
     apbi : in apb_slv_in_type;
     apbo : out apb_slv_out_type;
-    sw: in std_logic_vector(15 downto 0);
+    pwmout : out std_logic;
     led : out std_logic_vector (15 downto 4) 
     );
 end entity dummyapb;
 architecture rtl of dummyapb is
+
+component ADC_TOP
+    Port ( CLK : in STD_LOGIC;
+           RST : in STD_LOGIC;
+           sampleclk : in STD_LOGIC;
+           vauxp3 : in STD_LOGIC;
+           vauxn3 : IN STD_LOGIC;
+           sampleout : out STD_LOGIC_VECTOR (31 downto 0));
+           
+end component;
+
+component DAC_top
+    Port ( clk : in  STD_LOGIC;
+           pwmout : out  STD_LOGIC;
+	   Value	: in STD_LOGIC_VECTOR(31 downto 0);
+			  sampleEna705kHz : out STD_logic;
+           reset : in  STD_LOGIC);
+end component;
+
 -- APB related signals
-type adder_registers is record
-  A       : std_logic_vector(31 downto 0);
-  B       : std_logic_vector(31 downto 0);
-  sum     : std_logic_vector(31 downto 0);
-end record;
-
-signal apb_reg    : adder_registers;
-signal apb_reg_in : adder_registers;
-
-signal A       : std_logic_vector(31 downto 0);
-signal B       : std_logic_vector(31 downto 0);
-signal sum     : std_logic_vector(31 downto 0);
 signal sLED    : std_logic_vector(31 downto 0);
-
+signal sampledvalue : STD_LOGIC_VECTOR(31 downto 0);
+signal sampleclk : std_logic;
 
 --constant REVISION       : amba_version_type := 0; 
 constant pconfig        : apb_config_type := (
@@ -46,55 +55,54 @@ constant pconfig        : apb_config_type := (
 
 begin
 
+inst_top : DAC_top
+port map ( 
+    clk => clk,
+    reset => rstn,
+    pwmout => pwmout,
+    Value => sLED,
+    sampleEna705kHz => sampleclk
+    );
+
+inst_ADC_TOP : ADC_TOP 
+port map (
+    clk => clk,
+    rst => rstn,
+    sampleclk => sampleclk,
+    vauxp3 => vauxp3,
+    vauxn3 => vauxn3,
+    sampleout => sampledvalue
+        );
+
 -- combinatorial process
-apb_comb : process(rstn, apb_reg, apbi)
-    variable v : adder_registers;
+apb_comb : process(rstn, apbi)
     begin
-        v := apb_reg;
 
     -- Read registers
         apbo.prdata <= (others => '0');
         case apbi.paddr(4 downto 2) is         
             when "000" =>
-                apbo.prdata(15 downto 0) <= sw;
-                apbo.prdata(31 downto 16) <= (others => '0');
-            when "001" =>
-                apbo.prdata <= apb_reg.B;
+                apbo.prdata(31 downto 0) <= sampledvalue; --Read value, should be from ADC
             when others =>
         end case;
 
     -- Write registers
         if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
         case apbi.paddr(4 downto 2) is
-            when "000" =>
-                v.B := apbi.pwdata;
             when "001" =>
-                sLED <= apbi.pwdata;
+                sLED <= apbi.pwdata; -- write value should be to DAC
             when others =>
         end case;
         end if;
-
-         -- Reset registers
-        if rstn = '0' then
-            v.A         := (others => '0');
-            v.B         := (others => '0');
-        end if;
-
-        apb_reg_in <= v;
-  
-        A <= apb_reg.A;
-        B <= apb_reg.B;
-        apb_reg_in.sum <= sum;
     end process;
 
 -- Sequential process
     regs: process (clk)
     begin
         if rstn = '0' then
-            apb_reg.A <= (others => '0');
-            apb_reg.B <= (others => '0');
+            --sLED <= (others => '0');
         elsif rising_edge(clk) then
-            apb_reg <= apb_reg_in;
+            --do something
         end if;
     end process;
     led <= sLED (15 downto 4);

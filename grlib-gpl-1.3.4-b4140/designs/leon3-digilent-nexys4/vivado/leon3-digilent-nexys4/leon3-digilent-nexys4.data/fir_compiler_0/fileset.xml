@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="fir_compiler_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_compiler_0">
+    <Config>
+      <Option Name="TopModule" Val="fir_compiler_0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../IP"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+</DARoots>
