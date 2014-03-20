@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Fri Feb 28 14:38:17 2014
+| Date         : Tue Mar 18 14:15:36 2014
 | Host         :  running 32-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file fir_compiler_0_utilization_synth.rpt -pb fir_compiler_0_utilization_synth.pb
 | Design       : fir_compiler_0
@@ -29,15 +29,15 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Loced | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  138 |     0 |     63400 |  0.21 |
-|   LUT as Logic             |  112 |     0 |     63400 |  0.17 |
-|   LUT as Memory            |   26 |     0 |     19000 |  0.13 |
-|     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |   26 |     0 |           |       |
-| Slice Registers            |  236 |     0 |    126800 |  0.18 |
-|   Register as Flip Flop    |  236 |     0 |    126800 |  0.18 |
+| Slice LUTs*                |  216 |     0 |     63400 |  0.34 |
+|   LUT as Logic             |  157 |     0 |     63400 |  0.24 |
+|   LUT as Memory            |   59 |     0 |     19000 |  0.31 |
+|     LUT as Distributed RAM |   32 |     0 |           |       |
+|     LUT as Shift Register  |   27 |     0 |           |       |
+| Slice Registers            |  324 |     0 |    126800 |  0.25 |
+|   Register as Flip Flop    |  324 |     0 |    126800 |  0.25 |
 |   Register as Latch        |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                   |   15 |     0 |     31700 |  0.04 |
+| F7 Muxes                   |   29 |     0 |     31700 |  0.09 |
 | F8 Muxes                   |    0 |     0 |     15850 |  0.00 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
@@ -132,18 +132,19 @@ Table of Contents
 +----------+------+
 | Ref Name | Used |
 +----------+------+
-| FDRE     |  222 |
-| LUT6     |   56 |
-| LUT2     |   52 |
-| SRL16E   |   26 |
-| MUXF7    |   15 |
-| FDSE     |   14 |
-| LUT3     |   13 |
-| LUT5     |    8 |
-| LUT4     |    8 |
-| LUT1     |    7 |
+| FDRE     |  301 |
+| LUT6     |   76 |
+| LUT2     |   47 |
+| RAMD64E  |   32 |
+| MUXF7    |   29 |
+| SRL16E   |   27 |
+| FDSE     |   23 |
+| LUT3     |   21 |
+| LUT5     |   17 |
+| LUT4     |   15 |
+| LUT1     |   12 |
+| CARRY4   |    6 |
 | DSP48E1  |    3 |
-| CARRY4   |    2 |
 | RAMB18E1 |    1 |
 +----------+------+
 

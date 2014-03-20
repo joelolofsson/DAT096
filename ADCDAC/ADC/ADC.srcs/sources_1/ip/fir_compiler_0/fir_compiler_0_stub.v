@@ -1,10 +1,10 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-// Date        : Fri Feb 28 14:38:17 2014
+// Date        : Tue Mar 18 14:15:36 2014
 // Host        : running 32-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_stub.v
+//               C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_stub.v
 // Design      : fir_compiler_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

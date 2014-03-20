@@ -1,0 +1,22 @@
+%implements s0_b0_ja6yd_InitializeConditions "C"
+
+%function InitializeConditions(block, system) Output
+%assign localVarDecl = ""
+%openfile localVarDecl
+int_T is;
+%closefile localVarDecl
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+/* InitializeConditions for StateSpace: '<Root>/Analog Filter Design' */
+for (is = 0; is < 8; is++) {
+    oversamplingtest_X.AnalogFilterDesign_CSTATE[is] = oversamplingtest_P.AnalogFilterDesign_X0;
+}
+/* End of InitializeConditions for StateSpace: '<Root>/Analog Filter Design' */
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void InitializeConditions(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%<LibSetSystemField(system, "CachedInitializeLocalVars", localVarDecl)>
+%endfunction

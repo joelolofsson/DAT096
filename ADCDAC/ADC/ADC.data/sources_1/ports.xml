@@ -19,15 +19,12 @@
 			<Port Id="1" Dir="OUT"/>
 			<Port Id="0" Dir="OUT"/>
 		</Bus>
+		<Port Id="opena" Dir="OUT"/>
 		<Port Id="sampleclkout" Dir="OUT"/>
-		<Port Id="sampleclk2out" Dir="OUT"/>
 		<Port Id="vauxp3" Dir="IN"/>
 		<Port Id="vauxn3" Dir="IN"/>
 		<Port Id="diodeswitch" Dir="IN"/>
-		<Port Id="samplerswitch" Dir="IN"/>
-		<Port Id="samplerswitch2" Dir="IN"/>
 		<Port Id="pwmout" Dir="OUT"/>
-		<Port Id="opena" Dir="OUT"/>
 		<Port Id="CLK" Dir="IN"/>
 		<Port Id="RST" Dir="IN"/>
 	</Ifc>

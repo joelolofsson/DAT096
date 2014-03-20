@@ -1,0 +1,36 @@
+%implements s0_b0_ja6yd_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign localVarDecl = ""
+%openfile localVarDecl
+int_T is;
+int_T ci;
+static const int8_T ir[9] = { 0, 2, 3, 6, 7, 10, 11, 14, 15 };
+static const int8_T ir_0[9] = { 0, 1, 1, 1, 1, 1, 1, 1, 1 };
+static const int8_T jc[15] = { 0, 1, 0, 1, 2, 3, 2, 3, 4, 5, 4, 5, 6, 7, 6 };
+XDot_oversamplingtest_T *_rtXdot;
+%closefile localVarDecl
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+/* Derivatives for StateSpace: '<Root>/Analog Filter Design' */
+memset(&_rtXdot->AnalogFilterDesign_CSTATE[0], 0, sizeof(real_T) << 3U);
+for (is = 0; is < 8; is++) {
+    for (ci = ir[is]; ci < ir[is + 1]; ci++) {
+        _rtXdot->AnalogFilterDesign_CSTATE[is] += oversamplingtest_P.AnalogFilterDesign_A[ci] * oversamplingtest_X.AnalogFilterDesign_CSTATE[jc[ci]];
+    }
+}
+for (is = 0; is < 8; is++) {
+    ci = ir_0[is];
+    while (ci < 1) {
+        _rtXdot->AnalogFilterDesign_CSTATE[is] += oversamplingtest_P.AnalogFilterDesign_B * oversamplingtest_B.Quantizer;
+        ci = 1;
+    }
+}
+/* End of Derivatives for StateSpace: '<Root>/Analog Filter Design' */
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Derivatives(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%<LibSetSystemField(system, "CachedDerivativeLocalVars", localVarDecl)>
+%endfunction

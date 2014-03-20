@@ -60,14 +60,14 @@ set_property PACKAGE_PIN U8 [get_ports diodeswitch]
 
 
 
-set_property PACKAGE_PIN P15 [get_ports sampleclk2out]
 set_property PACKAGE_PIN R16 [get_ports sampleclkout]
-set_property IOSTANDARD LVTTL [get_ports sampleclk2out]
 set_property IOSTANDARD LVTTL [get_ports sampleclkout]
 
 
 set_property SLEW FAST [get_ports sampleclkout]
-set_property SLEW FAST [get_ports sampleclk2out]
+
+
+
 
 
 

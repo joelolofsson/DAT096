@@ -1,0 +1,17 @@
+%implements s0_b0_ja6yd_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign localVarDecl = ""
+/* Quantizer: '<Root>/Quantizer' incorporates:
+ *  Sin: '<Root>/Sine Wave'
+ */
+oversamplingtest_B.Quantizer = %<(SLibCGCallSubFcn("rt_roundd_snf", ["(sin(oversamplingtest_P.SineWave_Freq * %<(SLibCG_SE(LibGetTaskTime(0)))> + oversamplingtest_P.SineWave_Phase) * oversamplingtest_P.SineWave_Amp + oversamplingtest_P.SineWave_Bias) / oversamplingtest_P.Quantizer_Interval"], 0, 2, 0))> * oversamplingtest_P.Quantizer_Interval;
+%<SLibInsertSolverResetCode()>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
