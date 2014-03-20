@@ -20,6 +20,7 @@ entity dummyapb is
     apbi : in apb_slv_in_type;
     apbo : out apb_slv_out_type;
     pwmout : out std_logic;
+    sw : in std_logic;
     led : out std_logic_vector (15 downto 4) 
     );
 end entity dummyapb;
@@ -115,5 +116,5 @@ apb_comb : process(rstn, apbi)
     bootmsg : report_version 
     generic map ("apbvgreport_versiona" & tost(pindex) & ": LED Control rev 0");
  -- pragma translate_on
-
+    apbo.pirq<="00000000000000000000000000001010"
 end rtl;

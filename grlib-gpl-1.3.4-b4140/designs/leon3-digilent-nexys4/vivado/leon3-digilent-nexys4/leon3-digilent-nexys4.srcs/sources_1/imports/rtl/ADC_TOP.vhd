@@ -120,8 +120,27 @@ signal cssig,cssig2 : STD_LOGIC_VECTOR(31 downto 0);	-- ! to be removed
 signal sampleFLT : STD_LOGIC_VECTOR(31 downto 0);		-- ! Filtered signal to be decimated
 signal busy : STD_LOGIC;								-- ! Busy signal from XADC
 signal dataready : STD_LOGIC;							-- ! Signalling the FIR filter is done to load new value to FIR filter
+signal FIRready : STD_LOGIC;                            -- ! Signalling the firfilter is done with calculation
+signal cnt : integer range 0 to 3;                      -- ! 
+signal FIRvalid : std_logic;
 
 begin
+
+process(clk,rst)
+begin
+    if rst = '0' then
+        dataready <= '1';
+    elsif rising_edge(clk) then 
+        if sampleclk = '1' then
+            dataready <= '1';
+            cnt <= 3;
+        elsif cnt = 0 then
+            dataready <= '0';
+        else
+            cnt <= cnt -1;
+        end if;
+    end if;
+end process;
 
 den_in <= not busy; 					-- ! Enable is set to one when the signal XADC is not busy
 inv_rst <= not rst;						-- ! Reset is inverted to create a active high reset for XADC
@@ -142,9 +161,9 @@ inst_fir : fir_compiler_0
     aresetn => rst,
     aclk => clk,
     s_axis_data_tvalid => dataready,
-    s_axis_data_tready => dataready,
+    s_axis_data_tready => FIRready,
     s_axis_data_tdata => sampledvalue,
-    m_axis_data_tvalid => open,
+    m_axis_data_tvalid => FIRvalid,
     m_axis_data_tdata => sampleflt
   );
 
@@ -199,9 +218,15 @@ inst_ADC : ADC
 --  cssig <= sampledvalue & x"0000";
 --  cssig2 <= sampledvalue;
   
-  
---  sampleout <= (sampleflt(31)) & sampleflt(30 downto 0);
-  sampleout<= not(sampledvalue(15))&sampledvalue(14 downto 0) & x"0000";
+ process(clk)
+ begin
+    if rising_edge(clk) then
+        if  FIRvalid = '1' then
+            sampleout <= not(sampleflt(31)) & sampleflt(30 downto 0);
+        end if;
+    end if;
+ end process;
+--  sampleout <= not(sampledvalue(15)) & sampledvalue(14 downto 0) & x"0000";
 --  sampleout <= cssig;
 
 end Behavioral;
