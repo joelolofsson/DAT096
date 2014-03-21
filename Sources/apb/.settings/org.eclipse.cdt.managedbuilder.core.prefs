@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/buildEnvironmentInclude/cdt.managedbuild.config.bcc.exe.debug.1265073199/CPATH/delimiter=\:
+environment/buildEnvironmentInclude/cdt.managedbuild.config.bcc.exe.debug.1265073199/CPATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.bcc.exe.debug.1265073199/C_INCLUDE_PATH/delimiter=\:
+environment/buildEnvironmentInclude/cdt.managedbuild.config.bcc.exe.debug.1265073199/C_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.bcc.exe.debug.1265073199/append=true
+environment/buildEnvironmentInclude/cdt.managedbuild.config.bcc.exe.debug.1265073199/appendContributed=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.bcc.exe.debug.1265073199/LIBRARY_PATH/delimiter=\:
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.bcc.exe.debug.1265073199/LIBRARY_PATH/operation=remove
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.bcc.exe.debug.1265073199/append=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.bcc.exe.debug.1265073199/appendContributed=true
