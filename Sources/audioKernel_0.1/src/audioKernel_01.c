@@ -8,8 +8,8 @@
 
 int main(void){
 
-catch_interrupt(adcHandler, 1); //attach interrupt
-enable_irq(1); //enable interrupt
+catch_interrupt(adcHandler, 10); //attach interrupt
+enable_irq(10); //enable interrupt
 
 return 0; //we shoudln't need a while here anymore, interrupt is attached.
 

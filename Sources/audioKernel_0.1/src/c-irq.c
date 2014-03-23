@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include "c-irq.h"
 
-int *lreg = (int *) 0x80000000;
+int *lreg = (int *) 0x80000000; //seems to be close to
 int input;
 
 #ifdef LEON3
@@ -32,6 +32,7 @@ void force_irq (int irq){
 	lreg[IFORCE/4] = (1 << irq);
 }
 
+//This is just an example method Gaisler provided, do not use print functions in IRQs.
 void irqhandler(int irq){
 	printf("this is irq %d\n", irq);
 }
