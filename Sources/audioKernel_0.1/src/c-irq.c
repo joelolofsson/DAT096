@@ -3,21 +3,23 @@
 /* Jiri Gaisler, Gaisler Research, 2001          */
 #include <stdint.h>
 #include "c-irq.h"
-
+#include <stdio.h>
 int *lreg = (int *) 0x80000000; //seems to be close to
 int input;
 
-#ifdef LEON3
+//#ifdef LEON3
+#define ILR 0x200
 #define ICLEAR 0x20c
 #define IMASK  0x240
 #define IFORCE 0x208
-#else
+/*#else
 #define ICLEAR 0x9c
 #define IMASK  0x90
 #define IFORCE 0x98
 #endif
-
+*/
 void enable_irq (int irq){
+	lreg[ILR/4] = 0x0;
 	lreg[ICLEAR/4] = (1 << irq);	// clear any pending irq
 	lreg[IMASK/4] |= (1 << irq);	// unmaks irq
 }
@@ -41,6 +43,7 @@ void irqhandler(int irq){
 void adcHandler(){
 	input = *(volatile int*)(0x80000800);
 	input = *(volatile int*)(0x80000800);
+
 	*(volatile int*)(0x80000804) = input;
 }
 

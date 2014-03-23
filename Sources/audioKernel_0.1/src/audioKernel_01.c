@@ -11,6 +11,10 @@ int main(void){
 catch_interrupt(adcHandler, 10); //attach interrupt
 enable_irq(10); //enable interrupt
 
+
+while(1);
+	//force_irq(2);
+
 return 0; //we shoudln't need a while here anymore, interrupt is attached.
 
 }
