@@ -15,7 +15,7 @@ entity dummyapb is
   port (
     rstn : in std_ulogic;
     clk : in std_ulogic;
-	vauxp3 : in STD_LOGIC;
+    vauxp3 : in STD_LOGIC;
     vauxn3 : IN STD_LOGIC;
     apbi : in apb_slv_in_type;
     apbo : out apb_slv_out_type;
@@ -108,12 +108,12 @@ apb_comb : process(rstn, apbi)
     led <= sLED (15 downto 4);
 -- Set APB bus signals
     apbo.pirq    <= (others => '0'); -- No IRQ
+    apbo.pirq(10)    <= sampleclk;    --  Hopefully enabled IRQ1...
     apbo.pindex  <= pindex;          -- VHDL Generic
     apbo.pconfig <= PCONFIG;         -- VHDL Constant
     
  -- pragma translate_off   
     bootmsg : report_version 
     generic map ("apbvgreport_versiona" & tost(pindex) & ": LED Control rev 0");
- -- pragma translate_on
 
 end rtl;
