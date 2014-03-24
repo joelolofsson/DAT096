@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<DARoots Version="1" Minor="30">
-  <FileSet Name="xadc_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xadc_wiz_0">
-    <Config>
-      <Option Name="TopModule" Val="xadc_wiz_0"/>
-      <Option Name="UseBlackboxStub" Val="1"/>
-    </Config>
-  </FileSet>
-</DARoots>
