@@ -176,7 +176,7 @@ package config is
 
 -- GPIO port
   constant CFG_GRGPIO_ENABLE : integer := 1;
-  constant CFG_GRGPIO_IMASK : integer := 16#0000#;
+  constant CFG_GRGPIO_IMASK : integer := 16#00fe#;
   constant CFG_GRGPIO_WIDTH : integer := (8);
 
 -- SPI memory controller
