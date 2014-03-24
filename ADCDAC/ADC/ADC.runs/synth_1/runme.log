@@ -21,7 +21,6 @@ source Throughput_top.tcl
 # set_param gui.test TreeTableDev
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
-# set_msg_config -id {Labtools 27-147} -limit 4294967295
 # create_project -in_memory -part xc7a100tcsg324-1
 # set_property target_language VHDL [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
@@ -45,6 +44,9 @@ source Throughput_top.tcl
 #   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd
 #   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd
 #   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/buffercontrol.vhd
 # }
 # read_xdc C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/constrs_1/new/ADC_TOP.xdc
 INFO: [Project 1-11] Changing the constrs_type of fileset 'constrs_1' to 'XDC'.
@@ -62,28 +64,38 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 334.590 ; gain = 79.891
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 334.016 ; gain = 77.367
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Throughput_top' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd:46]
-INFO: [Synth 8-3491] module 'ADC_TOP' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:32' bound to instance 'inst_ADC_TOP' of component 'ADC_TOP' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'ADC_TOP' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:43]
-INFO: [Synth 8-637] synthesizing blackbox instance 'inst_fir' of component 'fir_compiler_0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:159]
-INFO: [Synth 8-3491] module 'ADC' declared at 'c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_stub.v:16' bound to instance 'inst_ADC' of component 'ADC' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:186]
+INFO: [Synth 8-3491] module 'ADC_TOP' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:32' bound to instance 'inst_ADC_TOP' of component 'ADC_TOP' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ADC_TOP' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:49]
+INFO: [Synth 8-637] synthesizing blackbox instance 'inst_fir' of component 'fir_compiler_0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:162]
+INFO: [Synth 8-3491] module 'ADC' declared at 'c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_stub.v:16' bound to instance 'inst_ADC' of component 'ADC' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:189]
 INFO: [Synth 8-638] synthesizing module 'ADC' [c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_stub.v:16]
-INFO: [Synth 8-256] done synthesizing module 'ADC_TOP' (1#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:43]
-INFO: [Synth 8-3491] module 'DAC_top' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:32' bound to instance 'inst_top' of component 'DAC_top' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'DAC_top' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:40]
-INFO: [Synth 8-637] synthesizing blackbox instance 'inst_DMC' of component 'DMC' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:75]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'ADC_buffer' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd:34' bound to instance 'inst_Buffer' of component 'ADC_buffer' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'ADC_buffer__parameterized0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd:48]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ADC_buffer__parameterized0' (1#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'ADC_TOP' (2#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd:49]
+INFO: [Synth 8-3491] module 'DAC_top' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:32' bound to instance 'inst_top' of component 'DAC_top' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'DAC_top' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:44]
+INFO: [Synth 8-637] synthesizing blackbox instance 'inst_DMC' of component 'DMC' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:106]
 	Parameter Resolution bound to: 11 - type: integer 
-INFO: [Synth 8-3491] module 'PWM' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:34' bound to instance 'Inst_PWM' of component 'PWM' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'PWM__parameterized0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:45]
+INFO: [Synth 8-3491] module 'PWM' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:34' bound to instance 'Inst_PWM' of component 'PWM' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'PWM__parameterized0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:46]
 	Parameter Resolution bound to: 11 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'PWM__parameterized0' (2#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'DAC_top' (3#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Throughput_top' (4#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'PWM__parameterized0' (3#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:46]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'DAC_buffer' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd:34' bound to instance 'inst_DAC_buffer' of component 'DAC_buffer' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'DAC_buffer__parameterized0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd:47]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DAC_buffer__parameterized0' (4#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'DAC_top' (5#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Throughput_top' (6#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd:46]
 WARNING: [Synth 8-3917] design Throughput_top has port opena driven by constant 1
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 357.793 ; gain = 103.094
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 361.070 ; gain = 104.422
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -105,8 +117,6 @@ Loading io standards from C:/Xilinx/Vivado/2013.4/data\./parts/xilinx/artix7/IOS
 Loading device configuration modes from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/ConfigModes.xml
 
 Processing XDC Constraints
-Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/synth_1/.Xil/Vivado-3804-/dcp_2/DMC_in_context.xdc] for cell 'inst_top/inst_DMC'
-Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/synth_1/.Xil/Vivado-3804-/dcp_2/DMC_in_context.xdc] for cell 'inst_top/inst_DMC'
 Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/constrs_1/new/ADC_TOP.xdc]
 Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/constrs_1/new/ADC_TOP.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/constrs_1/new/ADC_TOP.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/synth_1/.Xil/Throughput_top_propImpl.xdc].
@@ -133,14 +143,14 @@ Applied set_property BUFFER_TYPE = NONE. (constraint file  C:/CHALMERS/DAT096/DA
 Applied set_property BUFFER_TYPE = NONE. (constraint file  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/synth_1/dont_buffer.xdc, line 6).
 Applied set_property BUFFER_TYPE = NONE. (constraint file  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/synth_1/dont_buffer.xdc, line 6).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 479.922 ; gain = 225.223
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 502.996 ; gain = 246.348
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 479.922 ; gain = 225.223
+Finished RTL Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 502.996 ; gain = 246.348
 ---------------------------------------------------------------------------------
 
-WARNING: [Synth 8-3936] Found unconnected internal register 'lastcnt_reg' and it is trimmed from '11' to '9' bits. [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:70]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lastcnt_reg' and it is trimmed from '11' to '9' bits. [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:73]
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -156,7 +166,7 @@ Part Resources:
 DSPs: 240 (col length:80)
 BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 522.816 ; gain = 268.117
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 533.930 ; gain = 277.281
 ---------------------------------------------------------------------------------
 
 
@@ -166,17 +176,22 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	  22 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 1     
+	               32 Bit    Registers := 258   
 	               11 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 271   
 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -188,8 +203,22 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module Throughput_top 
 Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module ADC_buffer__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 128   
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 132   
 Module ADC_TOP 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -207,12 +236,27 @@ Detailed RTL Component Info :
 +---Registers : 
 	               11 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
+Module DAC_buffer__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 129   
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 130   
 Module DAC_top 
 Detailed RTL Component Info : 
++---XORs : 
+	  22 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 4     
 
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -223,10 +267,10 @@ Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (\inst_top/Inst_PWM/lastcnt_reg[8] ) is unused and will be removed from module Throughput_top.
 WARNING: [Synth 8-3332] Sequential element (\inst_top/Inst_PWM/lastcnt_reg[7] ) is unused and will be removed from module Throughput_top.
-WARNING: [Synth 8-3936] Found unconnected internal register 'inst_top/Inst_PWM/lastcnt_reg' and it is trimmed from '9' to '7' bits. [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:70]
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_top/Inst_PWM/lastcnt_reg' and it is trimmed from '9' to '7' bits. [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd:73]
 WARNING: [Synth 8-3917] design Throughput_top has port opena driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 522.863 ; gain = 268.164
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 540.492 ; gain = 283.844
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -240,7 +284,7 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 540.699 ; gain = 286.000
+Finished Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 602.676 ; gain = 346.027
 ---------------------------------------------------------------------------------
 
 
@@ -251,13 +295,12 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 540.699 ; gain = 286.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 602.676 ; gain = 346.027
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 540.699 ; gain = 286.000
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 602.676 ; gain = 346.027
 ---------------------------------------------------------------------------------
 
 
@@ -265,7 +308,7 @@ Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . M
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 540.699 ; gain = 286.000
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 602.676 ; gain = 346.027
 ---------------------------------------------------------------------------------
 
 
@@ -290,7 +333,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Gated Clock Conversion mode: off
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 602.676 ; gain = 346.027
 ---------------------------------------------------------------------------------
 
 
@@ -305,7 +348,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 602.676 ; gain = 346.027
 ---------------------------------------------------------------------------------
 
 
@@ -313,7 +356,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 602.676 ; gain = 346.027
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -344,35 +387,39 @@ Report Cell Usage:
 |2     |DMC_bbox            |     1|
 |3     |fir_compiler_0_bbox |     1|
 |4     |BUFG                |     1|
-|5     |CARRY4              |     3|
+|5     |CARRY4              |    11|
 |6     |LUT1                |     6|
-|7     |LUT2                |     2|
-|8     |LUT3                |    23|
-|9     |LUT4                |     6|
-|10    |LUT5                |     4|
-|11    |LUT6                |     8|
-|12    |FDCE                |     2|
-|13    |FDPE                |    12|
-|14    |FDRE                |    52|
-|15    |IBUF                |     1|
-|16    |OBUF                |    18|
+|7     |LUT2                |    31|
+|8     |LUT3                |    69|
+|9     |LUT4                |    19|
+|10    |LUT5                |   164|
+|11    |LUT6                |  2323|
+|12    |MUXF7               |  1088|
+|13    |MUXF8               |   512|
+|14    |FDCE                |  8280|
+|15    |FDPE                |    12|
+|16    |FDRE                |    61|
+|17    |IBUF                |     1|
+|18    |OBUF                |    18|
 +------+--------------------+------+
 
 Report Instance Areas: 
-+------+---------------+--------------------+------+
-|      |Instance       |Module              |Cells |
-+------+---------------+--------------------+------+
-|1     |top            |                    |   203|
-|2     |  inst_ADC_TOP |ADC_TOP             |   120|
-|3     |  inst_top     |DAC_top             |    63|
-|4     |    Inst_PWM   |PWM__parameterized0 |    62|
-+------+---------------+--------------------+------+
++------+--------------------+---------------------------+------+
+|      |Instance            |Module                     |Cells |
++------+--------------------+---------------------------+------+
+|1     |top                 |                           | 12661|
+|2     |  inst_ADC_TOP      |ADC_TOP                    |  6309|
+|3     |    inst_Buffer     |ADC_buffer__parameterized0 |  6201|
+|4     |  inst_top          |DAC_top                    |  6285|
+|5     |    Inst_PWM        |PWM__parameterized0        |   156|
+|6     |    inst_DAC_buffer |DAC_buffer__parameterized0 |  6123|
++------+--------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 602.676 ; gain = 346.027
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 602.676 ; gain = 346.027
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
@@ -383,11 +430,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-27 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+33 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 763.449 ; gain = 462.063
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 793.383 ; gain = 491.652
 # write_checkpoint Throughput_top.dcp
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 # report_utilization -file Throughput_top_utilization_synth.rpt -pb Throughput_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 763.449 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 19 12:53:41 2014...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.183 . Memory (MB): peak = 796.496 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 12:50:51 2014...

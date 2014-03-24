@@ -35,9 +35,10 @@ entity PWM is
 	 Generic(
 			  Resolution : INTEGER :=11);							-- ! A generic to decide the resolution
     Port ( PWMclk : in  STD_LOGIC;									-- ! A clock running at 44100 * 2^resolution
-			  reset  : in STD_LOGIC;								-- ! Global reset active low
+			  rst  : in STD_LOGIC;								-- ! Global reset active low
 			  value  : in STD_LOGIC_VECTOR(Resolution -1 downto 0);	-- ! Value to be outputted
-			  sampleEna705Khz : out STD_LOGIC;						-- ! Generated 705.6 KHz enable for the ADC
+			  sampleEna705KHz : out STD_LOGIC;					-- ! Generated 705.6 KHz enable for the ADC	
+			  sampleEna44KHz : out STD_LOGIC;
            PWMout : out  STD_LOGIC);								-- ! PWM out of the value
 end PWM;
 -- ! @brief Architecture of the PWM-
@@ -50,17 +51,19 @@ signal samplevalue : std_logic_vector(Resolution-1 downto 0);		-- ! Sampled inpu
 
 begin
 
-process(PWMclk,reset)												-- ! Process for creating the PWMout and sampleEna705KHz
+process(PWMclk,rst)												-- ! Process for creating the PWMout and sampleEna705KHz
 begin
-	if reset = '0' then												-- ! Asynchronous reset
+	if rst = '0' then												-- ! Asynchronous reset
 		cnt <= 2**11-1;												-- ! cnt set to maximum value to make it read a new sample as first thing after the reset
 		PWMout <= '0';
 		sampleEna705Khz <= '0';
 	elsif rising_edge(pwmclk) then									-- ! The synchronous part of the process is triggered by the pwm clk
+		sampleEna44KHz <= '0';
 		if cnt = 2**Resolution-1 then								-- ! When the counter reaches the maximum value:
 			PWMout <= '1';											-- ! PWMout is set to '1' until cnt reaches the samplevalue
 			cnt <= 0;												-- ! cnt is reseted
 			samplevalue <= value;									-- ! A new samplevalue is given
+		    SampleEna44KHz <= '1';
 		elsif cnt = to_integer(unsigned(samplevalue)) then			-- ! When the counter reaches the value of the samplevalue:
 			PWMout <= '0';											-- ! PWMout is set to one
 			cnt <= cnt +1;											-- ! cnt is increased

@@ -18,6 +18,7 @@
 		<Option Name="SimulatorLanguage" Val="VHDL"/>
 		<Option Name="TargetSimulator" Val="ModelSim"/>
 		<Option Name="Board" Val=""/>
+		<Option Name="SourceMgmtMode" Val="DisplayOnly"/>
 		<Option Name="ActiveSimSet" Val="sim_1"/>
 	</Config>
 	<MsgRule>

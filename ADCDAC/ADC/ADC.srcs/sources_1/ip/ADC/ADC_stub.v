@@ -1,7 +1,7 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-// Date        : Fri Feb 28 13:00:14 2014
+// Date        : Thu Mar 20 15:31:35 2014
 // Host        : running 32-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
 //               C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_stub.v

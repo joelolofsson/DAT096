@@ -1,0 +1,71 @@
+C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ADC_TOP
+-- Compiling architecture Behavioral of ADC_TOP
+
+} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DAC_top
+-- Compiling architecture Behavioral of DAC_top
+
+} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity PWM
+-- Compiling architecture Behavioral of PWM
+
+} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/buffercontrol.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/buffercontrol.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity buffercontrol
+-- Compiling architecture Behavioral of buffercontrol
+
+} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Decimator
+-- Compiling architecture Behavioral of Decimator
+
+} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Throughput_top
+-- Compiling architecture Behavioral of Throughput_top
+
+} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ADC_buffer
+-- Compiling architecture Behavioral of ADC_buffer
+
+} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DAC_buffer
+-- Compiling architecture Behavioral of DAC_buffer
+
+} {} {}}

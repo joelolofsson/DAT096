@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Wed Mar 19 12:53:41 2014
+| Date         : Mon Mar 24 12:50:51 2014
 | Host         :  running 32-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file Throughput_top_utilization_synth.rpt -pb Throughput_top_utilization_synth.pb
 | Design       : Throughput_top
@@ -29,14 +29,14 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Loced | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   36 |     0 |     63400 |  0.05 |
-|   LUT as Logic          |   36 |     0 |     63400 |  0.05 |
+| Slice LUTs*             | 2564 |     0 |     63400 |  4.04 |
+|   LUT as Logic          | 2564 |     0 |     63400 |  4.04 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |   66 |     0 |    126800 |  0.05 |
-|   Register as Flip Flop |   66 |     0 |    126800 |  0.05 |
+| Slice Registers         | 8353 |     0 |    126800 |  6.58 |
+|   Register as Flip Flop | 8353 |     0 |    126800 |  6.58 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |    0 |     0 |     31700 |  0.00 |
-| F8 Muxes                |    0 |     0 |     15850 |  0.00 |
+| F7 Muxes                | 1088 |     0 |     31700 |  3.43 |
+| F8 Muxes                |  512 |     0 |     15850 |  3.23 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
 
@@ -128,17 +128,19 @@ Table of Contents
 +----------+------+
 | Ref Name | Used |
 +----------+------+
-| FDRE     |   52 |
-| LUT3     |   23 |
+| FDCE     | 8280 |
+| LUT6     | 2323 |
+| MUXF7    | 1088 |
+| MUXF8    |  512 |
+| LUT5     |  164 |
+| LUT3     |   69 |
+| FDRE     |   61 |
+| LUT2     |   31 |
+| LUT4     |   19 |
 | OBUF     |   18 |
 | FDPE     |   12 |
-| LUT6     |    8 |
-| LUT4     |    6 |
+| CARRY4   |   11 |
 | LUT1     |    6 |
-| LUT5     |    4 |
-| CARRY4   |    3 |
-| LUT2     |    2 |
-| FDCE     |    2 |
 | IBUF     |    1 |
 | BUFG     |    1 |
 +----------+------+

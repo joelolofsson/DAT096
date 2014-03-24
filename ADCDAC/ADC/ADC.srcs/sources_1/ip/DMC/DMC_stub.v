@@ -1,10 +1,10 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-// Date        : Fri Feb 21 16:19:16 2014
+// Date        : Thu Mar 20 15:32:43 2014
 // Host        : running 32-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_stub.v
+//               C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_stub.v
 // Design      : DMC
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date             : Wed Mar 19 12:55:32 2014
+| Date             : Mon Mar 24 12:54:37 2014
 | Host             : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command          : report_power -file Throughput_top_power_routed.rpt -pb Throughput_top_power_summary_routed.pb
 | Design           : Throughput_top
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.233 |
-| Dynamic (W)              | 0.136 |
+| Total On-Chip Power (W)  | 0.246 |
+| Dynamic (W)              | 0.148 |
 | Device Static (W)        | 0.098 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 83.9  |
@@ -49,24 +49,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |    <0.001 |        4 |       --- |             --- |
-| Slice Logic              |    <0.001 |      778 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      192 |     63400 |            0.30 |
+| Clocks                   |     0.001 |        4 |       --- |             --- |
+| Slice Logic              |     0.002 |    13243 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     2720 |     63400 |            4.29 |
+|   Register               |    <0.001 |     8677 |    126800 |            6.84 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
-|   Register               |    <0.001 |      390 |    126800 |            0.30 |
+|   F7/F8 Muxes            |    <0.001 |     1629 |     63400 |            2.56 |
+|   CARRY4                 |    <0.001 |       17 |     15850 |            0.10 |
 |   LUT as Distributed RAM |    <0.001 |       32 |     19000 |            0.16 |
-|   CARRY4                 |    <0.001 |        9 |     15850 |            0.05 |
 |   LUT as Shift Register  |    <0.001 |       16 |     19000 |            0.08 |
-|   F7/F8 Muxes            |    <0.001 |       29 |     63400 |            0.04 |
-|   Others                 |     0.000 |       54 |       --- |             --- |
-| Signals                  |     0.001 |      609 |       --- |             --- |
+|   Others                 |     0.000 |       61 |       --- |             --- |
+| Signals                  |     0.012 |     9779 |       --- |             --- |
 | Block RAM                |     0.002 |        0 |       135 |            0.00 |
 | MMCM                     |     0.126 |        1 |         6 |           16.66 |
 | DSPs                     |    <0.001 |        3 |       240 |            1.25 |
-| I/O                      |     0.002 |       24 |       210 |           11.42 |
+| I/O                      |     0.003 |       24 |       210 |           11.42 |
 | XADC                     |     0.002 |        1 |       --- |             --- |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.233 |          |           |                 |
+| Total                    |     0.246 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.021 |       0.006 |      0.015 |
+| Vccint    |       1.000 |     0.033 |       0.018 |      0.015 |
 | Vccaux    |       1.800 |     0.088 |       0.070 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,9 +148,10 @@ Table of Contents
 +-----------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                | Power (W) |
 +-----------------------------------------------------------------------------------------------------+-----------+
-| Throughput_top                                                                                      |     0.136 |
-|   inst_ADC_TOP                                                                                      |     0.005 |
+| Throughput_top                                                                                      |     0.148 |
+|   inst_ADC_TOP                                                                                      |     0.009 |
 |     inst_ADC                                                                                        |     0.002 |
+|     inst_Buffer                                                                                     |     0.002 |
 |     inst_fir                                                                                        |     0.003 |
 |       U0                                                                                            |     0.003 |
 |         i_synth                                                                                     |     0.003 |
@@ -202,8 +203,9 @@ Table of Contents
 |             g_semi_parallel_and_smac.i_first_phase_dly                                              |    <0.001 |
 |             g_semi_parallel_and_smac.i_latch_op                                                     |    <0.001 |
 |             g_semi_parallel_and_smac.i_load                                                         |    <0.001 |
-|   inst_top                                                                                          |     0.127 |
-|     Inst_PWM                                                                                        |    <0.001 |
+|   inst_top                                                                                          |     0.129 |
+|     Inst_PWM                                                                                        |     0.001 |
+|     inst_DAC_buffer                                                                                 |     0.001 |
 |     inst_DMC                                                                                        |     0.127 |
 |       U0                                                                                            |     0.127 |
 +-----------------------------------------------------------------------------------------------------+-----------+

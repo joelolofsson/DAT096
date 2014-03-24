@@ -5,7 +5,6 @@
   set_param gui.test TreeTableDev
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Labtools 27-147} -limit 4294967295
 create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
@@ -29,6 +28,9 @@ read_vhdl {
   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd
   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd
   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd
+  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd
+  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd
+  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/buffercontrol.vhd
 }
 read_xdc C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/constrs_1/new/ADC_TOP.xdc
 set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/constrs_1/new/ADC_TOP.xdc]

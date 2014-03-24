@@ -67,7 +67,7 @@ Starting synthesis...
 xc7a100t2default:defaultZ17-349
 ñ
 %s*synth2Ü
-rStarting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 337.305 ; gain = 82.859
+rStarting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 337.488 ; gain = 82.859
 2default:default
 Î
 synthesizing module '%s'638*oasys2"
@@ -984,11 +984,11 @@ bc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/synth
 712default:default8@Z8-256
 ó
 %s*synth2á
-sFinished Synthesize : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 377.426 ; gain = 122.980
+sFinished Synthesize : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 377.750 ; gain = 123.121
 2default:default
 ù
 %s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 377.426 ; gain = 122.980
+yFinished RTL Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 377.750 ; gain = 123.121
 2default:default
 å
 %s*synth2}
@@ -1134,7 +1134,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
 ±
 %s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 522.641 ; gain = 268.195
+åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 522.707 ; gain = 268.078
 2default:default
 º
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2=
@@ -1478,7 +1478,7 @@ i\g_polyphase_decimation.i_polyphase_decimation/g_semi_parallel_and_smac.i_cntrl
 %fir_compiler_v7_1_viv__parameterized02default:defaultZ8-3332
 ©
 %s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 534.980 ; gain = 280.535
+ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 535.063 ; gain = 280.434
 2default:default
 È
 6propagating constant %s across sequential element (%s)3333*oasys2
@@ -1556,15 +1556,15 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 1002default:defaultZ17-14
 û
 %s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 541.879 ; gain = 287.434
+zFinished Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 541.813 ; gain = 287.184
 2default:default
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 541.879 ; gain = 287.434
+|Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 541.813 ; gain = 287.184
 2default:default
 ü
 %s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 541.879 ; gain = 287.434
+{Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 541.813 ; gain = 287.184
 2default:default
 D
 %s*synth25
@@ -1602,7 +1602,7 @@ y
 CE2default:defaultZ8-3295
 ô
 %s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 541.879 ; gain = 287.434
+uFinished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 541.813 ; gain = 287.184
 2default:default
 ;
 %s*synth2,
@@ -1631,11 +1631,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ™
 %s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 541.879 ; gain = 287.434
+ÖFinished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 541.813 ; gain = 287.184
 2default:default
 ß
 %s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 541.879 ; gain = 287.434
+ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 541.813 ; gain = 287.184
 2default:default
 8
 %s*synth2)
@@ -1737,7 +1737,7 @@ Report Cell Usage:
 2default:default
 ¶
 %s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 541.879 ; gain = 287.434
+ÅFinished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 541.813 ; gain = 287.184
 2default:default
 j
 %s*synth2[
@@ -1745,7 +1745,7 @@ GSynthesis finished with 0 errors, 0 critical warnings and 10 warnings.
 2default:default
 £
 %s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 541.879 ; gain = 287.434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 541.813 ; gain = 287.184
 2default:default
 ]
 -Analyzing %s Unisim elements for replacement
@@ -1801,10 +1801,10 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:01:052default:default2
-00:01:142default:default2
-771.1802default:default2
-459.8242default:defaultZ17-268
+00:01:032default:default2
+00:01:082default:default2
+771.2972default:default2
+459.9222default:defaultZ17-268
 H
 Renamed %s cell refs.
 330*coretcl2
@@ -1816,10 +1816,10 @@ H
 #Done inferring timing constraints.
 33*timingZ38-33
 
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 774.652 ; gain = 0.000
+sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 774.227 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Tue Mar 18 14:15:37 20142default:defaultZ17-206
+Thu Mar 20 15:34:02 20142default:defaultZ17-206

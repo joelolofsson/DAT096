@@ -1,0 +1,13 @@
+Storage Target: SPI Flash Single FPGA
+128M
+FF
+festhelahelgen
+C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC
+
+MCS
+No
+096/ADCDAC/ADC
+
+MCS
+x16
+No

@@ -41,19 +41,6 @@ s
 "Loaded Vivado IP repository '%s'.
 1332*coregen23
 C:/Xilinx/Vivado/2013.4/data/ip2default:defaultZ19-2313
-ˆ
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2
-	read_ip: 2default:default2
-00:00:012default:default2
-00:00:052default:default2
-310.6022default:default2
-10.5082default:defaultZ17-268
-Ç
-3Changing the constrs_type of fileset '%s' to '%s'.
-11*project2
-	constrs_12default:default2
-XDC2default:defaultZ1-11
 }
 Command: %s
 53*	vivadotcl2U
@@ -78,9 +65,9 @@ Starting synthesis...
 310*common2
 	Synthesis2default:default2
 xc7a100t2default:defaultZ17-349
-õ
-%s*synth2ã
-wStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 337.566 ; gain = 80.531
+ñ
+%s*synth2Ü
+rStarting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 337.512 ; gain = 83.438
 2default:default
 ƒ
 synthesizing module '%s'638*oasys2
@@ -352,43 +339,35 @@ Nc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_clk_wiz.vhd
 12default:default2\
 Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.vhd2default:default2
 852default:default8@Z8-256
-ú
-%s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 361.516 ; gain = 104.480
+ó
+%s*synth2á
+sFinished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 361.531 ; gain = 107.457
 2default:default
-;
-%s*synth2,
-
-Report Check Netlist: 
+ù
+%s*synth2ç
+yFinished RTL Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 361.531 ; gain = 107.457
 2default:default
-l
-%s*synth2]
-I+------+------------------+-------+---------+-------+------------------+
+<
+%s*synth2-
+
+Report RTL Partitions: 
 2default:default
-l
-%s*synth2]
-I|      |Item              |Errors |Warnings |Status |Description       |
+N
+%s*synth2?
+++-+--------------+------------+----------+
 2default:default
-l
-%s*synth2]
-I+------+------------------+-------+---------+-------+------------------+
+N
+%s*synth2?
++| |RTL Partition |Replication |Instances |
 2default:default
-l
-%s*synth2]
-I|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+N
+%s*synth2?
+++-+--------------+------------+----------+
 2default:default
-l
-%s*synth2]
-I+------+------------------+-------+---------+-------+------------------+
+N
+%s*synth2?
+++-+--------------+------------+----------+
 2default:default
-\
--Analyzing %s Unisim elements for replacement
-17*netlist2
-22default:defaultZ29-17
-a
-2Unisim Transformation completed in %s CPU seconds
-28*netlist2
-02default:defaultZ29-28
 õ
 Loading clock regions from %s
 13*device2d
@@ -417,94 +396,6 @@ BC:/Xilinx/Vivado/2013.4/data\./parts/xilinx/artix7/IOStandards.xml2default:de
 +Loading device configuration modes from %s
 14*device2T
 @C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
-5
-
-Processing XDC Constraints
-244*projectZ1-262
-∫
-$Parsing XDC File [%s] for cell '%s'
-848*designutils2^
-Jc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_OOC.xdc2default:default2
-U02default:defaultZ20-848
-√
--Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2^
-Jc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_OOC.xdc2default:default2
-U02default:defaultZ20-847
-∂
-$Parsing XDC File [%s] for cell '%s'
-848*designutils2Z
-Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
-U02default:defaultZ20-848
-ø
--Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2Z
-Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
-U02default:defaultZ20-847
-/
-Deriving generated clocks
-2*timingZ38-2
-¥
-ŸImplementation specific constraints were found while reading constraint file [%s]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [%s].
-233*project2Z
-Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2c
-OC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/DMC_synth_1/.Xil/DMC_propImpl.xdc2default:defaultZ1-236
-º
-$Parsing XDC File [%s] for cell '%s'
-848*designutils2`
-Lc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_board.xdc2default:default2
-U02default:defaultZ20-848
-≈
--Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2`
-Lc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_board.xdc2default:default2
-U02default:defaultZ20-847
-í
-Parsing XDC File [%s]
-179*designutils2\
-HC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/DMC_synth_1/dont_touch.xdc2default:defaultZ20-179
-õ
-Finished Parsing XDC File [%s]
-178*designutils2\
-HC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/DMC_synth_1/dont_touch.xdc2default:defaultZ20-178
-?
-&Completed Processing XDC Constraints
-
-245*projectZ1-263
-u
-!Unisim Transformation Summary:
-%s111*project29
-%No Unisim elements were transformed.
-2default:defaultZ1-111
-µ
-%s*synth2•
-êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 483.793 ; gain = 226.758
-2default:default
-ù
-%s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 483.793 ; gain = 226.758
-2default:default
-<
-%s*synth2-
-
-Report RTL Partitions: 
-2default:default
-N
-%s*synth2?
-++-+--------------+------------+----------+
-2default:default
-N
-%s*synth2?
-+| |RTL Partition |Replication |Instances |
-2default:default
-N
-%s*synth2?
-++-+--------------+------------+----------+
-2default:default
-N
-%s*synth2?
-++-+--------------+------------+----------+
-2default:default
 z
 %s*synth2k
 WPart Resources:
@@ -513,7 +404,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
 ±
 %s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 525.773 ; gain = 268.738
+åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 520.039 ; gain = 265.965
 2default:default
 B
 %s*synth23
@@ -541,7 +432,7 @@ B
 2default:default
 ©
 %s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 525.781 ; gain = 268.746
+ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 520.039 ; gain = 265.965
 2default:default
 ¢
 %s*synth2í
@@ -563,19 +454,15 @@ R-------------------------------------------------------------------------------
 2default:default
 û
 %s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 537.930 ; gain = 280.895
-2default:default
-≠
-%s*synth2ù
-àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 537.930 ; gain = 280.895
+zFinished Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 532.113 ; gain = 278.039
 2default:default
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 537.930 ; gain = 280.895
+|Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 532.113 ; gain = 278.039
 2default:default
 ü
 %s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 539.086 ; gain = 282.051
+{Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 532.113 ; gain = 278.039
 2default:default
 D
 %s*synth25
@@ -583,7 +470,7 @@ D
 2default:default
 ô
 %s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 539.086 ; gain = 282.051
+uFinished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 532.113 ; gain = 278.039
 2default:default
 ;
 %s*synth2,
@@ -612,11 +499,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ™
 %s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 539.086 ; gain = 282.051
+ÖFinished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 532.113 ; gain = 278.039
 2default:default
 ß
 %s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 539.086 ; gain = 282.051
+ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 532.113 ; gain = 278.039
 2default:default
 ¢
 %s*synth2í
@@ -725,7 +612,7 @@ J
 2default:default
 ¶
 %s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 539.086 ; gain = 282.051
+ÅFinished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 532.113 ; gain = 278.039
 2default:default
 i
 %s*synth2Z
@@ -733,7 +620,7 @@ FSynthesis finished with 0 errors, 0 critical warnings and 0 warnings.
 2default:default
 £
 %s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 539.086 ; gain = 282.051
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 532.113 ; gain = 278.039
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -758,16 +645,41 @@ $Parsing XDC File [%s] for cell '%s'
 848*designutils2Z
 Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
 U02default:defaultZ20-848
-∏
-%Done setting XDC timing constraints.
-35*timing2\
+˛
+3Changing the constrs_type of fileset '%s' to '%s'.
+11*project2
+	constrs_12default:default2
+XDC2default:default2\
 Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
-562default:default8@Z38-35
-´
-Deriving generated clocks
-2*timing2\
+552default:default8@Z1-11
+∂
+#Going to infer timing constraints.
+45*timing2\
 Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
-562default:default8@Z38-2
+562default:default8@Z38-45
+∂
+#Done inferring timing constraints.
+33*timing2\
+Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
+562default:default8@Z38-33
+¸
+"No clocks found for command '%s'.
+1008*	planAhead2>
+*get_clocks -of_objects [get_ports clk_in1]2default:default2\
+Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
+562default:default8@Z12-1008
+˘
+aNo clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks.
+626*	planAhead2\
+Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
+562default:default8@Z12-626
+∆
+=No valid object(s) found for %s constraint with option '%s'.
+1387*	planAhead2$
+set_input_jitter2default:default2G
+3-clock [get_clocks -of_objects [get_ports clk_in1]]2default:default2\
+Fc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC.xdc2default:default2
+562default:default8@Z12-1387
 ø
 -Finished Parsing XDC File [%s] for cell '%s'
 847*designutils2Z
@@ -799,9 +711,9 @@ L
 Ω
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-232default:default2
-02default:default2
-02default:default2
+202default:default2
+12default:default2
+12default:default2
 02default:defaultZ4-41
 U
 %s completed successfully
@@ -811,15 +723,15 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:00:572default:default2
-00:01:042default:default2
-770.8552default:default2
-460.2542default:defaultZ17-268
+00:00:482default:default2
+00:00:532default:default2
+777.0902default:default2
+465.7072default:defaultZ17-268
 
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 770.855 ; gain = 0.000
+sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 777.090 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Fri Feb 21 16:19:16 20142default:defaultZ17-206
+Thu Mar 20 15:32:44 20142default:defaultZ17-206

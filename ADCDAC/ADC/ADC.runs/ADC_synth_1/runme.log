@@ -21,7 +21,6 @@ source ADC.tcl
 # set_param gui.test TreeTableDev
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
-# set_msg_config -id {Labtools 27-147} -limit 4294967295
 # create_project -in_memory -part xc7a100tcsg324-1
 # set_property target_language VHDL [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
@@ -30,7 +29,6 @@ source ADC.tcl
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2013.4/data/ip'.
-read_ip: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 310.816 ; gain = 10.543
 # set_property used_in_implementation false [get_files c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC.dcp]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 # set_property is_locked true [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC.xci]
@@ -45,7 +43,7 @@ INFO: [IP_Flow 19-2162] IP 'ADC' is locked. Locked reason: Property 'IS_LOCKED' 
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 337.672 ; gain = 83.461
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 337.652 ; gain = 83.328
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ADC' [c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC.vhd:84]
 	Parameter INIT_40 bound to: 16'b0000011000010011 
@@ -87,14 +85,14 @@ INFO: [Synth 8-638] synthesizing module 'ADC' [c:/CHALMERS/DAT096/DAT096/ADCDAC/
 INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC.vhd:151]
 INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC.vhd:84]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 361.727 ; gain = 107.516
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 360.887 ; gain = 106.563
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
 Start RTL Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 361.727 ; gain = 107.516
+Finished RTL Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 360.887 ; gain = 106.563
 ---------------------------------------------------------------------------------
 
 
@@ -119,7 +117,7 @@ Part Resources:
 DSPs: 240 (col length:80)
 BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 514.809 ; gain = 260.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 514.363 ; gain = 260.039
 ---------------------------------------------------------------------------------
 
 No constraint files found.
@@ -148,7 +146,7 @@ Finished RTL Hierarchical Component Statistics
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 514.809 ; gain = 260.598
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 514.371 ; gain = 260.047
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -163,7 +161,7 @@ Start Area Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 515.836 ; gain = 261.625
+Finished Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 515.395 ; gain = 261.070
 ---------------------------------------------------------------------------------
 
 
@@ -172,7 +170,7 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 515.836 ; gain = 261.625
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 515.395 ; gain = 261.070
 ---------------------------------------------------------------------------------
 
 
@@ -180,7 +178,7 @@ Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . M
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 521.418 ; gain = 267.207
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 521.035 ; gain = 266.711
 ---------------------------------------------------------------------------------
 
 
@@ -205,7 +203,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Gated Clock Conversion mode: off
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 521.418 ; gain = 267.207
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 521.035 ; gain = 266.711
 ---------------------------------------------------------------------------------
 
 
@@ -220,7 +218,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 521.418 ; gain = 267.207
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 521.035 ; gain = 266.711
 ---------------------------------------------------------------------------------
 
 
@@ -228,7 +226,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 521.418 ; gain = 267.207
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 521.035 ; gain = 266.711
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -262,11 +260,11 @@ Report Instance Areas:
 |1     |top      |       |     1|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 521.418 ; gain = 267.207
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 521.035 ; gain = 266.711
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 521.418 ; gain = 267.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 521.035 ; gain = 266.711
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 Parsing XDC File [c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_OOC.xdc] for cell 'U0'
@@ -280,13 +278,13 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 751.273 ; gain = 440.457
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 750.797 ; gain = 440.004
 # rename_ref -prefix_all ADC
 # write_checkpoint -noxdef ADC.dcp
 INFO: [Timing 38-45] Going to infer timing constraints.
 INFO: [Timing 38-33] Done inferring timing constraints.
 # report_utilization -file ADC_utilization_synth.rpt -pb ADC_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 758.785 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 759.168 ; gain = 0.000
 # if { [catch {
 #   file copy -force C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/ADC_synth_1/ADC.dcp C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC.dcp
 #   write_verilog -force -mode synth_stub C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_stub.v
@@ -295,4 +293,4 @@ report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (
 # } _RESULT ] } { 
 #   puts "Critical Warning: Unable to successfully create or copy supporting IP files."
 # }
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 28 13:00:14 2014...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 20 15:31:36 2014...

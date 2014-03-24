@@ -57,7 +57,7 @@ Starting synthesis...
 xc7a100t2default:defaultZ17-349
 õ
 %s*synth2ã
-wStarting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 334.590 ; gain = 79.891
+wStarting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 334.016 ; gain = 77.367
 2default:default
 ◊
 synthesizing module '%s'638*oasys2"
@@ -72,18 +72,18 @@ GC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd2defaul
 inst_ADC_TOP2default:default2
 ADC_TOP2default:default2d
 NC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd2default:default2
-732default:default8@Z8-3491
+962default:default8@Z8-3491
 …
 synthesizing module '%s'638*oasys2
 ADC_TOP2default:default2]
 GC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd2default:default2
-432default:default8@Z8-638
+492default:default8@Z8-638
 å
 5synthesizing blackbox instance '%s' of component '%s'637*oasys2
 inst_fir2default:default2"
 fir_compiler_02default:default2]
 GC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd2default:default2
-1592default:default8@Z8-637
+1622default:default8@Z8-637
 ¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 ADC2default:default2]
@@ -92,57 +92,88 @@ Ic:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_stub.v2defa
 inst_ADC2default:default2
 ADC2default:default2]
 GC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd2default:default2
-1862default:default8@Z8-3491
+1892default:default8@Z8-3491
 «
 synthesizing module '%s'638*oasys2
 ADC2default:default2_
 Ic:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC_stub.v2default:default2
 162default:default8@Z8-638
+W
+%s*synth2H
+4	Parameter bufferwidth bound to: 7 - type: integer 
+2default:default
+∏
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+
+ADC_buffer2default:default2^
+JC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd2default:default2
+342default:default2
+inst_Buffer2default:default2
+
+ADC_buffer2default:default2]
+GC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd2default:default2
+2352default:default8@Z8-3491
+ﬂ
+synthesizing module '%s'638*oasys2.
+ADC_buffer__parameterized02default:default2`
+JC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd2default:default2
+482default:default8@Z8-638
+W
+%s*synth2H
+4	Parameter bufferwidth bound to: 7 - type: integer 
+2default:default
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+ADC_buffer__parameterized02default:default2
+12default:default2
+12default:default2`
+JC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd2default:default2
+482default:default8@Z8-256
 Ñ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ADC_TOP2default:default2
-12default:default2
+22default:default2
 12default:default2]
 GC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd2default:default2
-432default:default8@Z8-256
-∂
+492default:default8@Z8-256
+∑
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 DAC_top2default:default2_
 KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd2default:default2
 322default:default2
 inst_top2default:default2
 DAC_top2default:default2d
-NC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd2default:default2
-832default:default8@Z8-3491
+NC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd2default:default2
+1102default:default8@Z8-3491
 Õ
 synthesizing module '%s'638*oasys2
 DAC_top2default:default2a
 KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd2default:default2
-402default:default8@Z8-638
-Ñ
+442default:default8@Z8-638
+Ö
 5synthesizing blackbox instance '%s' of component '%s'637*oasys2
 inst_DMC2default:default2
 DMC2default:default2a
-KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd2default:default2
-752default:default8@Z8-637
+KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd2default:default2
+1062default:default8@Z8-637
 W
 %s*synth2H
 4	Parameter Resolution bound to: 11 - type: integer 
 2default:default
-´
+¨
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 PWM2default:default2_
 KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd2default:default2
 342default:default2
 Inst_PWM2default:default2
 PWM2default:default2a
-KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd2default:default2
-862default:default8@Z8-3491
+KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd2default:default2
+1172default:default8@Z8-3491
 Ÿ
 synthesizing module '%s'638*oasys2'
 PWM__parameterized02default:default2a
 KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd2default:default2
-452default:default8@Z8-638
+462default:default8@Z8-638
 W
 %s*synth2H
 4	Parameter Resolution bound to: 11 - type: integer 
@@ -150,21 +181,52 @@ W
 î
 %done synthesizing module '%s' (%s#%s)256*oasys2'
 PWM__parameterized02default:default2
-22default:default2
+32default:default2
 12default:default2a
 KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd2default:default2
-452default:default8@Z8-256
+462default:default8@Z8-256
+W
+%s*synth2H
+4	Parameter bufferwidth bound to: 7 - type: integer 
+2default:default
+¿
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+
+DAC_buffer2default:default2^
+JC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd2default:default2
+342default:default2#
+inst_DAC_buffer2default:default2
+
+DAC_buffer2default:default2a
+KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd2default:default2
+1262default:default8@Z8-3491
+ﬂ
+synthesizing module '%s'638*oasys2.
+DAC_buffer__parameterized02default:default2`
+JC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd2default:default2
+472default:default8@Z8-638
+W
+%s*synth2H
+4	Parameter bufferwidth bound to: 7 - type: integer 
+2default:default
+ö
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+DAC_buffer__parameterized02default:default2
+42default:default2
+12default:default2`
+JC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd2default:default2
+472default:default8@Z8-256
 à
 %done synthesizing module '%s' (%s#%s)256*oasys2
 DAC_top2default:default2
-32default:default2
+52default:default2
 12default:default2a
 KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd2default:default2
-402default:default8@Z8-256
+442default:default8@Z8-256
 í
 %done synthesizing module '%s' (%s#%s)256*oasys2"
 Throughput_top2default:default2
-42default:default2
+62default:default2
 12default:default2d
 NC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd2default:default2
 462default:default8@Z8-256
@@ -175,7 +237,7 @@ NC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd
 12default:defaultZ8-3917
 ú
 %s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 357.793 ; gain = 103.094
+xFinished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 361.070 ; gain = 104.422
 2default:default
 ;
 %s*synth2,
@@ -234,16 +296,6 @@ BC:/Xilinx/Vivado/2013.4/data\./parts/xilinx/artix7/IOStandards.xml2default:de
 
 Processing XDC Constraints
 244*projectZ1-262
-ﬂ
-$Parsing XDC File [%s] for cell '%s'
-848*designutils2t
-`C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/synth_1/.Xil/Vivado-3804-/dcp_2/DMC_in_context.xdc2default:default2%
-inst_top/inst_DMC2default:defaultZ20-848
-Ë
--Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2t
-`C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.runs/synth_1/.Xil/Vivado-3804-/dcp_2/DMC_in_context.xdc2default:default2%
-inst_top/inst_DMC2default:defaultZ20-847
 ë
 Parsing XDC File [%s]
 179*designutils2[
@@ -279,11 +331,11 @@ u
 2default:defaultZ1-111
 µ
 %s*synth2•
-êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 479.922 ; gain = 225.223
+êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 502.996 ; gain = 246.348
 2default:default
 ù
 %s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 479.922 ; gain = 225.223
+yFinished RTL Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 502.996 ; gain = 246.348
 2default:default
 º
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2
@@ -291,7 +343,7 @@ RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bi
 112default:default2
 92default:default2a
 KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd2default:default2
-702default:default8@Z8-3936
+732default:default8@Z8-3936
 <
 %s*synth2-
 
@@ -321,7 +373,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
 ±
 %s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 522.816 ; gain = 268.117
+åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 533.930 ; gain = 277.281
 2default:default
 B
 %s*synth23
@@ -337,7 +389,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      7 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      2 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	  22 Input      1 Bit         XORs := 1     
 2default:default
 4
 %s*synth2%
@@ -345,7 +409,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 1     
+.	               32 Bit    Registers := 258   
 2default:default
 Q
 %s*synth2B
@@ -357,11 +421,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	                7 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
 .	                2 Bit    Registers := 1     
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 3     
+.	                1 Bit    Registers := 13    
 2default:default
 0
 %s*synth2!
@@ -377,7 +445,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 6     
+.	   2 Input      7 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 271   
 2default:default
 F
 %s*synth27
@@ -391,6 +463,18 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
 0
 %s*synth2!
 +---Muxes : 
@@ -398,6 +482,50 @@ B
 Q
 %s*synth2B
 .	   2 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+F
+%s*synth27
+#Module ADC_buffer__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 128   
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 132   
 2default:default
 3
 %s*synth2$
@@ -469,7 +597,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 2     
+.	                1 Bit    Registers := 3     
 2default:default
 0
 %s*synth2!
@@ -483,6 +611,50 @@ Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 3     
 2default:default
+F
+%s*synth27
+#Module DAC_buffer__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 129   
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 130   
+2default:default
 3
 %s*synth2$
 Module DAC_top 
@@ -490,6 +662,22 @@ Q
 B
 %s*synth23
 Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	  22 Input      1 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 4     
 2default:default
 ∫
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys26
@@ -505,7 +693,7 @@ RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bi
 92default:default2
 72default:default2a
 KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd2default:default2
-702default:default8@Z8-3936
+732default:default8@Z8-3936
 ö
 +design %s has port %s driven by constant %s3447*oasys2"
 Throughput_top2default:default2
@@ -513,7 +701,7 @@ KC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd2
 12default:defaultZ8-3917
 ©
 %s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 522.863 ; gain = 268.164
+ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 540.492 ; gain = 283.844
 2default:default
 ¢
 %s*synth2í
@@ -535,23 +723,19 @@ R-------------------------------------------------------------------------------
 2default:default
 û
 %s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 540.699 ; gain = 286.000
-2default:default
-{
-%s*synth2l
-XINFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+zFinished Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 ≠
 %s*synth2ù
-àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 540.699 ; gain = 286.000
+àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 540.699 ; gain = 286.000
+|Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 ü
 %s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 540.699 ; gain = 286.000
+{Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 D
 %s*synth25
@@ -559,7 +743,7 @@ D
 2default:default
 ô
 %s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+uFinished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 ;
 %s*synth2,
@@ -588,11 +772,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ™
 %s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+ÖFinished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 ß
 %s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 ¢
 %s*synth2í
@@ -680,7 +864,7 @@ H
 2default:default
 H
 %s*synth29
-%|5     |CARRY4              |     3|
+%|5     |CARRY4              |    11|
 2default:default
 H
 %s*synth29
@@ -688,43 +872,51 @@ H
 2default:default
 H
 %s*synth29
-%|7     |LUT2                |     2|
+%|7     |LUT2                |    31|
 2default:default
 H
 %s*synth29
-%|8     |LUT3                |    23|
+%|8     |LUT3                |    69|
 2default:default
 H
 %s*synth29
-%|9     |LUT4                |     6|
+%|9     |LUT4                |    19|
 2default:default
 H
 %s*synth29
-%|10    |LUT5                |     4|
+%|10    |LUT5                |   164|
 2default:default
 H
 %s*synth29
-%|11    |LUT6                |     8|
+%|11    |LUT6                |  2323|
 2default:default
 H
 %s*synth29
-%|12    |FDCE                |     2|
+%|12    |MUXF7               |  1088|
 2default:default
 H
 %s*synth29
-%|13    |FDPE                |    12|
+%|13    |MUXF8               |   512|
 2default:default
 H
 %s*synth29
-%|14    |FDRE                |    52|
+%|14    |FDCE                |  8280|
 2default:default
 H
 %s*synth29
-%|15    |IBUF                |     1|
+%|15    |FDPE                |    12|
 2default:default
 H
 %s*synth29
-%|16    |OBUF                |    18|
+%|16    |FDRE                |    61|
+2default:default
+H
+%s*synth29
+%|17    |IBUF                |     1|
+2default:default
+H
+%s*synth29
+%|18    |OBUF                |    18|
 2default:default
 H
 %s*synth29
@@ -735,41 +927,49 @@ H
 
 Report Instance Areas: 
 2default:default
-X
-%s*synth2I
-5+------+---------------+--------------------+------+
+d
+%s*synth2U
+A+------+--------------------+---------------------------+------+
 2default:default
-X
-%s*synth2I
-5|      |Instance       |Module              |Cells |
+d
+%s*synth2U
+A|      |Instance            |Module                     |Cells |
 2default:default
-X
-%s*synth2I
-5+------+---------------+--------------------+------+
+d
+%s*synth2U
+A+------+--------------------+---------------------------+------+
 2default:default
-X
-%s*synth2I
-5|1     |top            |                    |   203|
+d
+%s*synth2U
+A|1     |top                 |                           | 12661|
 2default:default
-X
-%s*synth2I
-5|2     |  inst_ADC_TOP |ADC_TOP             |   120|
+d
+%s*synth2U
+A|2     |  inst_ADC_TOP      |ADC_TOP                    |  6309|
 2default:default
-X
-%s*synth2I
-5|3     |  inst_top     |DAC_top             |    63|
+d
+%s*synth2U
+A|3     |    inst_Buffer     |ADC_buffer__parameterized0 |  6201|
 2default:default
-X
-%s*synth2I
-5|4     |    Inst_PWM   |PWM__parameterized0 |    62|
+d
+%s*synth2U
+A|4     |  inst_top          |DAC_top                    |  6285|
 2default:default
-X
-%s*synth2I
-5+------+---------------+--------------------+------+
+d
+%s*synth2U
+A|5     |    Inst_PWM        |PWM__parameterized0        |   156|
+2default:default
+d
+%s*synth2U
+A|6     |    inst_DAC_buffer |DAC_buffer__parameterized0 |  6123|
+2default:default
+d
+%s*synth2U
+A+------+--------------------+---------------------------+------+
 2default:default
 ¶
 %s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+ÅFinished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 i
 %s*synth2Z
@@ -777,7 +977,7 @@ FSynthesis finished with 0 errors, 0 critical warnings and 5 warnings.
 2default:default
 £
 %s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 540.699 ; gain = 286.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 602.676 ; gain = 346.027
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -812,7 +1012,7 @@ L
 Ω
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-272default:default2
+332default:default2
 62default:default2
 02default:default2
 02default:defaultZ4-41
@@ -824,18 +1024,18 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:00:572default:default2
-00:01:042default:default2
-763.4492default:default2
-462.0632default:defaultZ17-268
+00:01:252default:default2
+00:01:282default:default2
+793.3832default:default2
+491.6522default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 763.449 ; gain = 0.000
+sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.183 . Memory (MB): peak = 796.496 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Wed Mar 19 12:53:41 20142default:defaultZ17-206
+Mon Mar 24 12:50:51 20142default:defaultZ17-206

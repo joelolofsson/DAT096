@@ -1,10 +1,10 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-// Date        : Fri Feb 21 16:19:16 2014
+// Date        : Thu Mar 20 15:32:43 2014
 // Host        : running 32-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim
-//               c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_funcsim.v
+//               C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_funcsim.v
 // Design      : DMC
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -33,11 +33,11 @@ DMCDMC_clk_wiz U0
 endmodule
 
 module DMCDMC_clk_wiz
-   (clk_in1,
-    clk_out1,
+   (clk_out1,
+    clk_in1,
     resetn);
-  input clk_in1;
   output clk_out1;
+  input clk_in1;
   input resetn;
 
   wire \<const0> ;

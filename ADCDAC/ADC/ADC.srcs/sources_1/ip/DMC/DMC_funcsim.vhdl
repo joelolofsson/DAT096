@@ -1,10 +1,10 @@
 -- Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
--- Date        : Fri Feb 21 16:19:16 2014
+-- Date        : Thu Mar 20 15:32:43 2014
 -- Host        : running 32-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_funcsim.vhdl
+--               C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/DMC/DMC_funcsim.vhdl
 -- Design      : DMC
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,8 +14,8 @@ library IEEE; use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
 entity DMCDMC_clk_wiz is
   port (
-    clk_in1 : in STD_LOGIC;
     clk_out1 : out STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
     resetn : in STD_LOGIC
   );
 end DMCDMC_clk_wiz;
