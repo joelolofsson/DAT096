@@ -15,11 +15,12 @@ entity dummyapb is
   port (
     rstn : in std_ulogic;
     clk : in std_ulogic;
-    vauxp3 : in STD_LOGIC;
+	vauxp3 : in STD_LOGIC;
     vauxn3 : IN STD_LOGIC;
     apbi : in apb_slv_in_type;
     apbo : out apb_slv_out_type;
     pwmout : out std_logic;
+    sw : in std_logic;
     led : out std_logic_vector (15 downto 4) 
     );
 end entity dummyapb;
@@ -47,7 +48,7 @@ end component;
 signal sLED    : std_logic_vector(31 downto 0);
 signal sampledvalue : STD_LOGIC_VECTOR(31 downto 0);
 signal sampleclk : std_logic;
-
+signal irq : std_logic;
 --constant REVISION       : amba_version_type := 0; 
 constant pconfig        : apb_config_type := (
                       0 => ahb_device_reg ( VENDOR_OPENCORES, GAISLER_GPREG, 0, 0, 0),
@@ -102,18 +103,25 @@ apb_comb : process(rstn, apbi)
         if rstn = '0' then
             --sLED <= (others => '0');
         elsif rising_edge(clk) then
+            if sampleclk = '1' and irq = '0' then
+                apbo.pirq(10)<='1';
+                irq<='1';
+             else
+                apbo.pirq <= (others => '0'); -- No IRQ
+                irq <= '0';
+             end if;
             --do something
         end if;
     end process;
     led <= sLED (15 downto 4);
 -- Set APB bus signals
-    apbo.pirq    <= (others => '0'); -- No IRQ
-    apbo.pirq(10)    <= sampleclk;    --  Hopefully enabled IRQ1...
+
+
     apbo.pindex  <= pindex;          -- VHDL Generic
     apbo.pconfig <= PCONFIG;         -- VHDL Constant
     
  -- pragma translate_off   
     bootmsg : report_version 
     generic map ("apbvgreport_versiona" & tost(pindex) & ": LED Control rev 0");
-
+ -- pragma translate_on
 end rtl;

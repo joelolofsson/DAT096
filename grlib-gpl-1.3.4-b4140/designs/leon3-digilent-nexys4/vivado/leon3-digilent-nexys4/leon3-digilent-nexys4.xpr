@@ -7,6 +7,7 @@
 	<FileSet Dir="sim_leon3-digilent-nexys4" File="fileset.xml"/>
 	<FileSet Dir="ADC" File="fileset.xml"/>
 	<FileSet Dir="DMC" File="fileset.xml"/>
+	<FileSet Dir="fir_compiler_0" File="fileset.xml"/>
 	<HWSession Dir="hw" File="hwsession_1.xml"/>
 	<RunSet Dir="runs" File="runs.xml"/>
 	<DefaultLaunch Dir="$PRUNDIR"/>

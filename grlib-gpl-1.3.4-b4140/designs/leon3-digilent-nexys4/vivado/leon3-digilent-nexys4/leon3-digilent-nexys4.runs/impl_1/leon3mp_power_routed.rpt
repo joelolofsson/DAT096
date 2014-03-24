@@ -1,8 +1,8 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date             : Thu Mar 20 13:28:16 2014
-| Host             : joel-MacBookPro running 64-bit Ubuntu 12.04.4 LTS
+| Date             : Sun Mar 23 17:34:14 2014
+| Host             : joel-MacBookPro running 64-bit unknown
 | Command          : report_power -file leon3mp_power_routed.rpt -pb leon3mp_power_summary_routed.pb
 | Design           : leon3mp
 | Device           : xc7a100tcsg324-1
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+-------+
 | Total On-Chip Power (W)  | 0.484 |
-| Dynamic (W)              | 0.385 |
+| Dynamic (W)              | 0.386 |
 | Device Static (W)        | 0.099 |
 | Total Off-Chip Power (W) | 0.000 |
 | Effective TJA (C/W)      | 4.6   |
@@ -50,18 +50,18 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.016 |       14 |       --- |             --- |
-| Slice Logic              |     0.014 |    17353 |       --- |             --- |
-|   LUT as Logic           |     0.013 |    10107 |     63400 |           15.94 |
-|   Register               |    <0.001 |     5013 |    126800 |            3.95 |
+| Clocks                   |     0.017 |       14 |       --- |             --- |
+| Slice Logic              |     0.014 |    17366 |       --- |             --- |
+|   LUT as Logic           |     0.013 |    10114 |     63400 |           15.95 |
+|   Register               |    <0.001 |     5019 |    126800 |            3.95 |
 |   CARRY4                 |    <0.001 |      204 |     15850 |            1.28 |
-|   F7/F8 Muxes            |    <0.001 |      330 |     63400 |            0.52 |
+|   F7/F8 Muxes            |    <0.001 |      345 |     63400 |            0.54 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register  |    <0.001 |       25 |     19000 |            0.13 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
-|   Others                 |     0.000 |      188 |       --- |             --- |
-| Signals                  |     0.021 |    14221 |       --- |             --- |
-| Block RAM                |     0.016 |       19 |       135 |           14.07 |
+|   Others                 |     0.000 |      162 |       --- |             --- |
+| Signals                  |     0.021 |    14228 |       --- |             --- |
+| Block RAM                |     0.015 |       19 |       135 |           14.07 |
 | MMCM                     |     0.000 |        1 |         6 |           16.66 |
 | PLL                      |     0.196 |        2 |         6 |           33.33 |
 | DSPs                     |     0.003 |        7 |       240 |            2.91 |
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.099 |       0.083 |      0.016 |
+| Vccint    |       1.000 |     0.100 |       0.084 |      0.016 |
 | Vccaux    |       1.800 |     0.170 |       0.152 |      0.018 |
 | Vcco33    |       3.300 |     0.012 |       0.008 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -157,274 +157,250 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------------------------------------------------------------------------------------------------+-----------+
-| Name                                                                                                  | Power (W) |
-+-------------------------------------------------------------------------------------------------------+-----------+
-| leon3mp                                                                                               |     0.385 |
-|   adderahb_if                                                                                         |     0.002 |
-|   ahb0                                                                                                |     0.002 |
-|   ahbjtaggen0.ahbjtag0                                                                                |    <0.001 |
-|     ahbmst0                                                                                           |    <0.001 |
-|     gtckbuf.tckbuf                                                                                    |    <0.001 |
-|       xil.xil0                                                                                        |    <0.001 |
-|     gupdff.updff                                                                                      |    <0.001 |
-|     newcom.jtagcom0                                                                                   |    <0.001 |
-|     tap0                                                                                              |    <0.001 |
-|       ac7v.u0                                                                                         |    <0.001 |
-|   apb0                                                                                                |     0.001 |
-|   bdr                                                                                                 |     0.001 |
-|     v[0].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[1].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[2].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[3].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[4].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[5].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[6].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[7].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|   bdr2                                                                                                |     0.001 |
-|     v[0].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[1].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[2].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[3].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[4].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[5].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[6].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|     v[7].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|         ttl0.slow0.op                                                                                 |    <0.001 |
-|   bpromgen.brom                                                                                       |    <0.001 |
-|   clkgen0                                                                                             |     0.102 |
-|     xc7l.v                                                                                            |     0.102 |
-|   eth0.e1                                                                                             |     0.011 |
-|     m100.u0                                                                                           |     0.011 |
-|       edclramnft.r0                                                                                   |    <0.001 |
-|         xc2v.x0                                                                                       |    <0.001 |
-|           a6.x0                                                                                       |    <0.001 |
-|       edclramnft.r1                                                                                   |    <0.001 |
-|         xc2v.x0                                                                                       |    <0.001 |
-|           a6.x0                                                                                       |    <0.001 |
-|       ethc0                                                                                           |     0.008 |
-|         ahb0                                                                                          |    <0.001 |
-|         rx_rmii1.rx0                                                                                  |     0.001 |
-|         tx_rmii1.tx0                                                                                  |     0.001 |
-|           tx_rst                                                                                      |    <0.001 |
-|       nft.rx_fifo0                                                                                    |    <0.001 |
-|         xc2v.x0                                                                                       |    <0.001 |
-|           a0.x0                                                                                       |    <0.001 |
-|             rfd_reg_0_3_0_5                                                                           |    <0.001 |
-|             rfd_reg_0_3_12_17                                                                         |    <0.001 |
-|             rfd_reg_0_3_18_23                                                                         |    <0.001 |
-|             rfd_reg_0_3_24_29                                                                         |    <0.001 |
-|             rfd_reg_0_3_30_31                                                                         |    <0.001 |
-|             rfd_reg_0_3_6_11                                                                          |    <0.001 |
-|       nft.tx_fifo0                                                                                    |    <0.001 |
-|         xc2v.x0                                                                                       |    <0.001 |
-|           a6.x0                                                                                       |    <0.001 |
-|   ethpads.emdc_pad                                                                                    |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   ethpads.emdio_pad                                                                                   |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|       ttl0.slow0.op                                                                                   |    <0.001 |
-|   ethpads.erxcr_pad                                                                                   |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   ethpads.erxd_pad                                                                                    |    <0.001 |
-|     v[0].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[1].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|   ethpads.etxd_pad                                                                                    |    <0.001 |
-|     v[0].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[1].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|   ethpads.etxen_pad                                                                                   |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   etxc_pad                                                                                            |     0.006 |
-|     xcv.x0                                                                                            |     0.006 |
-|   gpt.timer0                                                                                          |    <0.001 |
-|   io0                                                                                                 |     0.095 |
-|     inst_ADC_TOP                                                                                      |     0.005 |
-|       inst_ADC                                                                                        |    <0.001 |
-|       inst_fir                                                                                        |     0.004 |
-|         U0                                                                                            |     0.004 |
-|           i_synth                                                                                     |     0.004 |
-|             g_single_rate.i_single_rate                                                               |     0.004 |
-|               g_op_paths[0].g_combine.i_ext_mult                                                      |    <0.001 |
-|                 g_two_col_comb.i_gen_upper_bits                                                       |    <0.001 |
-|                   i_add_accum                                                                         |    <0.001 |
-|               g_s_data_chan_fifo.i_s_data_chan_fifo                                                   |    <0.001 |
-|                 fifo0                                                                                 |    <0.001 |
-|               g_semi_parallel_and_smac.g_cntrl_data_sym_addr.i_cntrl_data_sym_addr                    |    <0.001 |
-|               g_semi_parallel_and_smac.g_cntrl_signals[0].i_delay                                     |    <0.001 |
-|               g_semi_parallel_and_smac.g_cntrl_signals[3].i_delay                                     |    <0.001 |
-|               g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay                                     |    <0.001 |
-|               g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay                                     |    <0.001 |
-|               g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff |    <0.001 |
-|                 g_buff.i_buff                                                                         |    <0.001 |
-|               g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem                                |     0.001 |
-|                 g_packed.g_true_dual_port.i_mem                                                       |     0.001 |
-|               g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem                                |    <0.001 |
-|                 g_individual.i_mem_a                                                                  |    <0.001 |
-|               g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum                                     |    <0.001 |
-|                 i_addsub_mult_accum                                                                   |    <0.001 |
-|               g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem                                |    <0.001 |
-|                 g_individual.i_mem_a                                                                  |    <0.001 |
-|               g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum                                     |    <0.001 |
-|                 i_addsub_mult_accum                                                                   |    <0.001 |
-|               g_semi_parallel_and_smac.i_accumulate                                                   |    <0.001 |
-|               g_semi_parallel_and_smac.i_cntrl_coef_addr                                              |    <0.001 |
-|               g_semi_parallel_and_smac.i_cntrl_data_addr                                              |    <0.001 |
-|               g_semi_parallel_and_smac.i_data_in                                                      |    <0.001 |
-|               g_semi_parallel_and_smac.i_latch_op                                                     |    <0.001 |
-|               g_semi_parallel_and_smac.i_load                                                         |    <0.001 |
-|     inst_top                                                                                          |     0.090 |
-|       Inst_PWM                                                                                        |    <0.001 |
-|       inst_DMC                                                                                        |     0.090 |
-|         inst                                                                                          |     0.090 |
-|   irqctrl.irqctrl0                                                                                    |    <0.001 |
-|   leon3gen.cpu[0].u0                                                                                  |     0.040 |
-|     leon3x0                                                                                           |     0.040 |
-|       cmem0                                                                                           |     0.013 |
-|         dme.dd0[0].ddata0                                                                             |     0.001 |
-|           xc2v.x0                                                                                     |     0.001 |
-|         dme.dd0[1].ddata0                                                                             |     0.001 |
-|           xc2v.x0                                                                                     |     0.001 |
-|         dme.dtags0.dt0[0].dtags0                                                                      |     0.002 |
-|           xc2v.x0                                                                                     |     0.002 |
-|         dme.dtags0.dt0[1].dtags0                                                                      |     0.002 |
-|           xc2v.x0                                                                                     |     0.002 |
-|         ime.im0[0].idata0                                                                             |     0.002 |
-|           xc2v.x0                                                                                     |     0.002 |
-|         ime.im0[0].itags0                                                                             |     0.001 |
-|           xc2v.x0                                                                                     |     0.001 |
-|         ime.im0[1].idata0                                                                             |     0.002 |
-|           xc2v.x0                                                                                     |     0.002 |
-|         ime.im0[1].itags0                                                                             |     0.001 |
-|           xc2v.x0                                                                                     |     0.001 |
-|       p0                                                                                              |     0.026 |
-|         c0mmu                                                                                         |     0.008 |
-|           a0                                                                                          |    <0.001 |
-|           dcache0                                                                                     |     0.004 |
-|           icache0                                                                                     |     0.003 |
-|         iu                                                                                            |     0.016 |
-|         mgen.div0                                                                                     |     0.001 |
-|         mgen.mul0                                                                                     |    <0.001 |
-|           xm3232.m3232                                                                                |    <0.001 |
-|             pipe2.arch0.dwm                                                                           |    <0.001 |
-|       rf0                                                                                             |    <0.001 |
-|         s1.rhu                                                                                        |    <0.001 |
-|           s1.dp.x0                                                                                    |    <0.001 |
-|             xc2v.x0                                                                                   |    <0.001 |
-|               a6.x0                                                                                   |    <0.001 |
-|           s1.dp.x1                                                                                    |    <0.001 |
-|             xc2v.x0                                                                                   |    <0.001 |
-|               a6.x0                                                                                   |    <0.001 |
-|       tbmem_gen.tbmem0                                                                                |    <0.001 |
-|         mem0[0].ram0                                                                                  |    <0.001 |
-|           nopar.s64.xc2v.x0                                                                           |    <0.001 |
-|         mem0[1].ram0                                                                                  |    <0.001 |
-|           nopar.s64.xc2v.x0                                                                           |    <0.001 |
-|   leon3gen.dsugen.dsu0                                                                                |     0.003 |
-|     x0                                                                                                |     0.003 |
-|       tb0.mem0                                                                                        |     0.001 |
-|         mem0[0].ram0                                                                                  |    <0.001 |
-|           nopar.s64.xc2v.x0                                                                           |    <0.001 |
-|         mem0[1].ram0                                                                                  |    <0.001 |
-|           nopar.s64.xc2v.x0                                                                           |    <0.001 |
-|   mg2.sr1                                                                                             |     0.001 |
-|   mgpads.addr_pad                                                                                     |     0.013 |
-|     v[0].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[10].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[11].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[12].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[13].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[14].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[15].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[16].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[17].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[18].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[19].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[1].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[20].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[21].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[22].x0                                                                                          |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[2].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[3].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[4].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[5].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[6].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[7].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[8].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|     v[9].x0                                                                                           |    <0.001 |
-|       xcv.x0                                                                                          |    <0.001 |
-|   mgpads.cs_pad                                                                                       |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   mgpads.lb_pad                                                                                       |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   mgpads.oen_pad                                                                                      |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   mgpads.ub_pad                                                                                       |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   mgpads.wri_pad                                                                                      |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   rst0                                                                                                |    <0.001 |
-|   ua1.dsurx_pad                                                                                       |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   ua1.dsutx_pad                                                                                       |    <0.001 |
-|     xcv.x0                                                                                            |    <0.001 |
-|   ua1.uart1                                                                                           |    <0.001 |
-+-------------------------------------------------------------------------------------------------------+-----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                                                                              | Power (W) |
++---------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| leon3mp                                                                                                                                           |     0.386 |
+|   adderahb_if                                                                                                                                     |     0.002 |
+|   ahb0                                                                                                                                            |     0.002 |
+|   ahbjtaggen0.ahbjtag0                                                                                                                            |    <0.001 |
+|     ahbmst0                                                                                                                                       |    <0.001 |
+|     gtckbuf.tckbuf                                                                                                                                |    <0.001 |
+|       xil.xil0                                                                                                                                    |    <0.001 |
+|     gupdff.updff                                                                                                                                  |    <0.001 |
+|     newcom.jtagcom0                                                                                                                               |    <0.001 |
+|     tap0                                                                                                                                          |    <0.001 |
+|       ac7v.u0                                                                                                                                     |    <0.001 |
+|   apb0                                                                                                                                            |     0.001 |
+|   bdr                                                                                                                                             |     0.001 |
+|     v[0].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[1].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[2].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[3].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[4].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[5].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[6].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[7].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|   bdr2                                                                                                                                            |     0.001 |
+|     v[0].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[1].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[2].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[3].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[4].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[5].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[6].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|     v[7].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|         ttl0.slow0.op                                                                                                                             |    <0.001 |
+|   bpromgen.brom                                                                                                                                   |    <0.001 |
+|   clkgen0                                                                                                                                         |     0.102 |
+|     xc7l.v                                                                                                                                        |     0.102 |
+|   eth0.e1                                                                                                                                         |     0.010 |
+|     m100.u0                                                                                                                                       |     0.010 |
+|       edclramnft.r0                                                                                                                               |    <0.001 |
+|         xc2v.x0                                                                                                                                   |    <0.001 |
+|           a6.x0                                                                                                                                   |    <0.001 |
+|       edclramnft.r1                                                                                                                               |    <0.001 |
+|         xc2v.x0                                                                                                                                   |    <0.001 |
+|           a6.x0                                                                                                                                   |    <0.001 |
+|       ethc0                                                                                                                                       |     0.008 |
+|         ahb0                                                                                                                                      |    <0.001 |
+|         rx_rmii1.rx0                                                                                                                              |     0.001 |
+|         tx_rmii1.tx0                                                                                                                              |    <0.001 |
+|           tx_rst                                                                                                                                  |    <0.001 |
+|       nft.rx_fifo0                                                                                                                                |    <0.001 |
+|         xc2v.x0                                                                                                                                   |    <0.001 |
+|           a0.x0                                                                                                                                   |    <0.001 |
+|             rfd_reg_0_3_0_5                                                                                                                       |    <0.001 |
+|             rfd_reg_0_3_12_17                                                                                                                     |    <0.001 |
+|             rfd_reg_0_3_18_23                                                                                                                     |    <0.001 |
+|             rfd_reg_0_3_24_29                                                                                                                     |    <0.001 |
+|             rfd_reg_0_3_30_31                                                                                                                     |    <0.001 |
+|             rfd_reg_0_3_6_11                                                                                                                      |    <0.001 |
+|       nft.tx_fifo0                                                                                                                                |    <0.001 |
+|         xc2v.x0                                                                                                                                   |    <0.001 |
+|           a6.x0                                                                                                                                   |    <0.001 |
+|   ethpads.emdc_pad                                                                                                                                |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   ethpads.emdio_pad                                                                                                                               |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|       ttl0.slow0.op                                                                                                                               |    <0.001 |
+|   ethpads.erxcr_pad                                                                                                                               |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   ethpads.erxd_pad                                                                                                                                |    <0.001 |
+|     v[0].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[1].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|   ethpads.etxd_pad                                                                                                                                |    <0.001 |
+|     v[0].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[1].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|   ethpads.etxen_pad                                                                                                                               |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   etxc_pad                                                                                                                                        |     0.006 |
+|     xcv.x0                                                                                                                                        |     0.006 |
+|   gpt.timer0                                                                                                                                      |    <0.001 |
+|   io0                                                                                                                                             |     0.095 |
+|     inst_ADC_TOP                                                                                                                                  |     0.005 |
+|       inst_ADC                                                                                                                                    |    <0.001 |
+|       inst_fir                                                                                                                                    |     0.004 |
+|         U0                                                                                                                                        |     0.004 |
+|           i_synth                                                                                                                                 |     0.004 |
+|             g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0                                                               |    <0.001 |
+|             g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr |     0.000 |
+|             g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem                  |     0.001 |
+|             g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a                             |    <0.001 |
+|             g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a                             |    <0.001 |
+|     inst_top                                                                                                                                      |     0.090 |
+|       Inst_PWM                                                                                                                                    |    <0.001 |
+|       inst_DMC                                                                                                                                    |     0.090 |
+|         inst                                                                                                                                      |     0.090 |
+|   irqctrl.irqctrl0                                                                                                                                |    <0.001 |
+|   leon3gen.cpu[0].u0                                                                                                                              |     0.041 |
+|     leon3x0                                                                                                                                       |     0.041 |
+|       cmem0                                                                                                                                       |     0.013 |
+|         dme.dd0[0].ddata0                                                                                                                         |     0.001 |
+|           xc2v.x0                                                                                                                                 |     0.001 |
+|         dme.dd0[1].ddata0                                                                                                                         |     0.001 |
+|           xc2v.x0                                                                                                                                 |     0.001 |
+|         dme.dtags0.dt0[0].dtags0                                                                                                                  |     0.002 |
+|           xc2v.x0                                                                                                                                 |     0.002 |
+|         dme.dtags0.dt0[1].dtags0                                                                                                                  |     0.002 |
+|           xc2v.x0                                                                                                                                 |     0.002 |
+|         ime.im0[0].idata0                                                                                                                         |     0.002 |
+|           xc2v.x0                                                                                                                                 |     0.002 |
+|         ime.im0[0].itags0                                                                                                                         |     0.001 |
+|           xc2v.x0                                                                                                                                 |     0.001 |
+|         ime.im0[1].idata0                                                                                                                         |     0.002 |
+|           xc2v.x0                                                                                                                                 |     0.002 |
+|         ime.im0[1].itags0                                                                                                                         |     0.001 |
+|           xc2v.x0                                                                                                                                 |     0.001 |
+|       p0                                                                                                                                          |     0.027 |
+|         c0mmu                                                                                                                                     |     0.009 |
+|           a0                                                                                                                                      |    <0.001 |
+|           dcache0                                                                                                                                 |     0.004 |
+|           icache0                                                                                                                                 |     0.004 |
+|         iu                                                                                                                                        |     0.016 |
+|         mgen.div0                                                                                                                                 |     0.001 |
+|         mgen.mul0                                                                                                                                 |    <0.001 |
+|           xm3232.m3232                                                                                                                            |    <0.001 |
+|             pipe2.arch0.dwm                                                                                                                       |    <0.001 |
+|       rf0                                                                                                                                         |    <0.001 |
+|         s1.rhu                                                                                                                                    |    <0.001 |
+|           s1.dp.x0                                                                                                                                |    <0.001 |
+|             xc2v.x0                                                                                                                               |    <0.001 |
+|               a6.x0                                                                                                                               |    <0.001 |
+|           s1.dp.x1                                                                                                                                |    <0.001 |
+|             xc2v.x0                                                                                                                               |    <0.001 |
+|               a6.x0                                                                                                                               |    <0.001 |
+|       tbmem_gen.tbmem0                                                                                                                            |    <0.001 |
+|         mem0[0].ram0                                                                                                                              |    <0.001 |
+|           nopar.s64.xc2v.x0                                                                                                                       |    <0.001 |
+|         mem0[1].ram0                                                                                                                              |    <0.001 |
+|           nopar.s64.xc2v.x0                                                                                                                       |    <0.001 |
+|   leon3gen.dsugen.dsu0                                                                                                                            |     0.003 |
+|     x0                                                                                                                                            |     0.003 |
+|       tb0.mem0                                                                                                                                    |     0.001 |
+|         mem0[0].ram0                                                                                                                              |    <0.001 |
+|           nopar.s64.xc2v.x0                                                                                                                       |    <0.001 |
+|         mem0[1].ram0                                                                                                                              |    <0.001 |
+|           nopar.s64.xc2v.x0                                                                                                                       |    <0.001 |
+|   mg2.sr1                                                                                                                                         |     0.001 |
+|   mgpads.addr_pad                                                                                                                                 |     0.014 |
+|     v[0].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[10].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[11].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[12].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[13].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[14].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[15].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[16].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[17].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[18].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[19].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[1].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[20].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[21].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[22].x0                                                                                                                                      |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[2].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[3].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[4].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[5].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[6].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[7].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[8].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|     v[9].x0                                                                                                                                       |    <0.001 |
+|       xcv.x0                                                                                                                                      |    <0.001 |
+|   mgpads.cs_pad                                                                                                                                   |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   mgpads.lb_pad                                                                                                                                   |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   mgpads.oen_pad                                                                                                                                  |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   mgpads.ub_pad                                                                                                                                   |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   mgpads.wri_pad                                                                                                                                  |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   rst0                                                                                                                                            |    <0.001 |
+|   ua1.dsurx_pad                                                                                                                                   |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   ua1.dsutx_pad                                                                                                                                   |    <0.001 |
+|     xcv.x0                                                                                                                                        |    <0.001 |
+|   ua1.uart1                                                                                                                                       |    <0.001 |
++---------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 
 
