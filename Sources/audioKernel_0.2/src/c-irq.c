@@ -4,7 +4,14 @@
 #include <stdint.h>
 #include "c-irq.h"
 #include <stdio.h>
-int *lreg = (int *) 0x80000000; //seems to be close to
+
+//Growing or decreasing addresses?
+#define ADC_adr 0x80000800
+#define DAC_adr 0x80000880
+#define IRQ_reg 0x80000000
+
+int *lreg = (int *) IRQ_reg; //seems to be close to
+
 int16_t input;
 
 //#ifdef LEON3
@@ -12,12 +19,7 @@ int16_t input;
 #define ICLEAR 0x20c
 #define IMASK  0x240
 #define IFORCE 0x208
-/*#else
-#define ICLEAR 0x9c
-#define IMASK  0x90
-#define IFORCE 0x98
-#endif
-*/
+
 void enable_irq (int irq){
 	lreg[ILR/4] = 0x0;
 	lreg[ICLEAR/4] = (1 << irq);	// clear any pending irq
@@ -45,16 +47,20 @@ void adcHandler(){
 	//input loop
 	int i = 0;
 	while(i <  buffSize){
-		input = *(volatile int*)(0x80000800);
-		input = *(volatile int*)(0x80000800);
+		input = *(volatile int*)(ADC_adr + i);
+		input = *(volatile int*)(ADC_adr + i);
 		ioBuffer[i] = input;
 		i++;
 	}
 
+
+	//process
+
 	//output loop
 	i = 0;
 	while(i < buffSize){
-		*(volatile int*)(0x80000804) = ioBuffer[i];
+		*(volatile int*)(DAC_adr + i) = ioBuffer[i];
+		i++;
 	}
 
 }
