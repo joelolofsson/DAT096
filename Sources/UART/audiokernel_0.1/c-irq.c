@@ -1,0 +1,75 @@
+
+/* test program to demonstrate use of interrupts */
+/* Jiri Gaisler, Gaisler Research, 2001          */
+#include <stdint.h>
+#include "c-irq.h"
+#include <stdio.h>
+#include "uart.h"
+int *lreg = (int *) 0x80000000; //seems to be close to
+int input;
+int x=0;
+//#ifdef LEON3
+#define ILR 0x200
+#define ICLEAR 0x20c
+#define IMASK  0x240
+#define IFORCE 0x208
+/*#else
+#define ICLEAR 0x9c
+#define IMASK  0x90
+#define IFORCE 0x98
+#endif
+*/
+void enable_irq (int irq){
+	lreg[ILR/4] = 0x0;
+	lreg[ICLEAR/4] = (1 << irq);	// clear any pending irq
+	lreg[IMASK/4] |= (1 << irq);	// unmaks irq
+}
+void enable_irqUart(int irq){
+	*(volatile int*)(0x80000108)|=0x4;
+	enable_irq(irq);
+}
+// mask irq
+void disable_irq (int irq){
+	lreg[IMASK/4] &= ~(1 << irq);
+}
+
+// force irq
+void force_irq (int irq){
+	lreg[IFORCE/4] = (1 << irq);
+}
+
+//This is just an example method Gaisler provided, do not use print functions in IRQs.
+void irqhandler(int irq){
+	printf("this is irq %d\n", irq);
+}
+
+//This function is called whenever an interrupt is triggered by the ADC
+void adcHandler(){
+	input = *(volatile int*)(0x80000800);
+	input = *(volatile int*)(0x80000800);
+
+	*(volatile int*)(0x80000804) = input;
+}
+void uartHandler(){
+	if(x==0){
+	disable_irq(10);
+	x=1;}
+	else{
+		enable_irq(10);
+		x=0;
+	}
+	char str[30];
+
+	uint32_t uartData;
+	uartData=*(volatile int*)(0x80000100);
+	uartData&=0xFF;
+	itoh(&str,(int)uartData);
+	putStr(&str);
+
+	//scanf("%s",str);
+	printf("Uart Interrupt \r\n");
+
+}
+
+
+
