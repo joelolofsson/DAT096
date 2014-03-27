@@ -11,12 +11,9 @@
 
 #ifndef C_IRQ_H_
 #define C_IRQ_H_
-#define buffSize 128 //the generic for the audio buffer.
+#define buffSize 32 //the generic for the audio buffer.
 
 extern void *catch_interrupt(void func(), int irq);
-
-int16_t ioBuffer[buffSize];
-
 
 void enable_irq (int irq);
 void disable_irq (int irq);
