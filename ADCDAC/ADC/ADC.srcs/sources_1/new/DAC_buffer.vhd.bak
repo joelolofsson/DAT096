@@ -38,9 +38,9 @@ entity DAC_buffer is
 		clk 				: in STD_LOGIC;
 		rst 				: in STD_LOGIC;
 		buff_read			: in STD_LOGIC;
-		buff_write			: in STD_LOGIC;
-		Buffin 				: in STD_LOGIC_VECTOR (31 downto 0);
-		Buffout 			: out STD_LOGIC_VECTOR (31 downto 0);
+		index_reset			: in STD_LOGIC;
+		Buffin 				: in STD_LOGIC_VECTOR (10 downto 0);
+		Buffout 			: out STD_LOGIC_VECTOR (10 downto 0);
 		Addr 				: in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 end DAC_buffer;
 
@@ -51,7 +51,7 @@ type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(31 d
 
 signal Memory_array : Memory_array_type;
 
-signal lastwrite,lastread : STD_LOGIC;
+signal lastread : STD_LOGIC;
 
 signal read_index : integer range 0 to 2**bufferwidth-1;
 begin
@@ -62,7 +62,8 @@ begin
 		read_index <= 0;
 		Memory_array <= (others => (others => '0'));
 	elsif rising_edge(clk) then
-		if buff_read = '1' then
+	  lastread <= buff_read;
+		if (buff_read = '1') and (lastread = '0' )then
 			buffout <= Memory_array(read_index);
 
 			if read_index = 2**bufferwidth -1 then
@@ -70,12 +71,11 @@ begin
 			else
 				read_index <= read_index + 1 ;
 			end if;
-
-		elsif buff_write = '1' then
-			Memory_array(to_integer(unsigned(addr))) <= buffin;
-			read_index <= 0;
-			
 		end if;
+		if index_reset = '1' then
+			read_index <= 0;
+		end if;
+		Memory_array(to_integer(unsigned(addr))) <= buffin;			
 	end if;
 end process;
 

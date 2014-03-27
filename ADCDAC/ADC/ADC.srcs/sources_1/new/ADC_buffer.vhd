@@ -37,7 +37,6 @@ entity ADC_buffer is
     Port ( 
 		clk 				: in STD_LOGIC;
 		rst 				: in STD_LOGIC;
-		buff_read			: in STD_LOGIC;
 		buff_write			: in STD_LOGIC;
 		Buffin 				: in STD_LOGIC_VECTOR (31 downto 0);
 		Buffout 			: out STD_LOGIC_VECTOR (31 downto 0);
@@ -51,7 +50,7 @@ type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(31 d
 
 signal Memory_array : Memory_array_type;
 
-signal lastwrite,lastread : STD_LOGIC;
+signal lastwrite : STD_LOGIC;
 
 signal Write_index : integer range 0 to 2**bufferwidth-1;
 
@@ -67,11 +66,8 @@ begin
 		Bufferfull <= '0';
 	elsif rising_edge(clk) then
 	    lastwrite <= buff_write;
-	    lastread <= buff_read;
-		if (buff_read = '1') and (lastread = '0') then
-			write_index <= 0;
-			bufferfull <= '0';
-		elsif (buff_write = '1') and (lastwrite = '0') then
+		--if (buff_read = '1') and (lastread = '0') then
+		if (buff_write = '1') and (lastwrite = '0') then
 			Memory_array(write_index) <= buffin;
 			if write_index = 2**bufferwidth -1 then
 				write_index <= 0;
@@ -80,6 +76,8 @@ begin
 				Write_index <= write_index + 1 ;
 				bufferfull <= '0';
 			end if;
+		else 
+				bufferfull <= '0';
 		end if;
 	end if;
 

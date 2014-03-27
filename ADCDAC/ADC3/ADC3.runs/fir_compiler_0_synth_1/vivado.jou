@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Mon Mar 24 15:27:29 2014
+# Process ID: 5104
+# Log file: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/fir_compiler_0_synth_1/fir_compiler_0.rds
+# Journal file: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/fir_compiler_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fir_compiler_0.tcl

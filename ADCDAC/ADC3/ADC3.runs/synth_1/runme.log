@@ -1,0 +1,654 @@
+
+*** Running vivado
+    with args -log Throughput_top.rds -m32 -mode batch -messageDb vivado.pb -source Throughput_top.tcl
+
+
+****** Vivado v2013.4
+  **** SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+  **** IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source Throughput_top.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/filtercoeff.coe
+# add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp
+# set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
+# set_property use_blackbox_stub false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
+# read_ip C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/ip/DMC/DMC.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2013.4/data/ip'.
+# set_property used_in_implementation false [get_files c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/ip/DMC/DMC.dcp]
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/ip/DMC/DMC.xci]
+# read_ip C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/ip/ADC/ADC.xci
+# set_property used_in_implementation false [get_files c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/ip/ADC/ADC.dcp]
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/ip/ADC/ADC.xci]
+# read_verilog c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_stub.v
+# read_vhdl {
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd
+# }
+# read_xdc C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/constrs_1/imports/new/ADC_TOP.xdc
+INFO: [Project 1-11] Changing the constrs_type of fileset 'constrs_1' to 'XDC'.
+# set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/constrs_1/imports/new/ADC_TOP.xdc]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# read_xdc dont_buffer.xdc
+# set_property used_in_implementation false [get_files dont_buffer.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.data/wt [current_project]
+# set_property parent.project_dir C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3 [current_project]
+# synth_design -top Throughput_top -part xc7a100tcsg324-1
+Command: synth_design -top Throughput_top -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+INFO: [IP_Flow 19-2162] IP 'DMC' is locked. Locked reason: Property 'IS_LOCKED' is set to true by the system or user
+INFO: [IP_Flow 19-2162] IP 'ADC' is locked. Locked reason: Property 'IS_LOCKED' is set to true by the system or user
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 339.086 ; gain = 82.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Throughput_top' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd:46]
+INFO: [Synth 8-3491] module 'ADC_TOP' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd:32' bound to instance 'inst_ADC_TOP' of component 'ADC_TOP' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'ADC_TOP' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd:48]
+INFO: [Synth 8-637] synthesizing blackbox instance 'inst_fir' of component 'fir_compiler_0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd:160]
+INFO: [Synth 8-3491] module 'ADC' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/.Xil/Vivado-4672-/realtime/ADC_stub.v:6' bound to instance 'inst_ADC' of component 'ADC' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'ADC' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/.Xil/Vivado-4672-/realtime/ADC_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/.Xil/Vivado-4672-/realtime/ADC_stub.v:6]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'ADC_buffer' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd:34' bound to instance 'inst_Buffer' of component 'ADC_buffer' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'ADC_buffer__parameterized0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd:48]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ADC_buffer__parameterized0' (2#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'ADC_TOP' (3#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd:48]
+INFO: [Synth 8-3491] module 'DAC_top' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd:32' bound to instance 'inst_top' of component 'DAC_top' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'DAC_top' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd:45]
+INFO: [Synth 8-637] synthesizing blackbox instance 'inst_DMC' of component 'DMC' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd:110]
+	Parameter Resolution bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'PWM' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd:34' bound to instance 'Inst_PWM' of component 'PWM' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'PWM__parameterized0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd:46]
+	Parameter Resolution bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PWM__parameterized0' (4#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd:46]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'DAC_buffer' declared at 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd:34' bound to instance 'inst_DAC_buffer' of component 'DAC_buffer' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'DAC_buffer__parameterized0' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd:48]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DAC_buffer__parameterized0' (5#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'DAC_top' (6#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Throughput_top' (7#1) [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd:46]
+WARNING: [Synth 8-3917] design Throughput_top has port opena driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 364.000 ; gain = 107.348
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2013.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/constrs_1/imports/new/ADC_TOP.xdc]
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/constrs_1/imports/new/ADC_TOP.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/constrs_1/imports/new/ADC_TOP.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/.Xil/Throughput_top_propImpl.xdc].
+Resolution: To avoid this message, exclude constraints listed in [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/.Xil/Throughput_top_propImpl.xdc] from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_buffer.xdc]
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_buffer.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true. (constraint file  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property BUFFER_TYPE = NONE. (constraint file  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_buffer.xdc, line 5).
+Applied set_property BUFFER_TYPE = NONE. (constraint file  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_buffer.xdc, line 5).
+Applied set_property BUFFER_TYPE = NONE. (constraint file  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_buffer.xdc, line 5).
+Applied set_property BUFFER_TYPE = NONE. (constraint file  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_buffer.xdc, line 6).
+Applied set_property BUFFER_TYPE = NONE. (constraint file  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.runs/synth_1/dont_buffer.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 507.832 ; gain = 251.180
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 507.832 ; gain = 251.180
+---------------------------------------------------------------------------------
+
+WARNING: [Synth 8-3936] Found unconnected internal register 'lastcnt_reg' and it is trimmed from '11' to '9' bits. [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd:73]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 539.895 ; gain = 283.242
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	  22 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 258   
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 268   
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Throughput_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ADC_buffer__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 128   
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 130   
+Module ADC_TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module PWM__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module DAC_buffer__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 129   
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 130   
+Module DAC_top 
+Detailed RTL Component Info : 
++---XORs : 
+	  22 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 4     
+
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\inst_top/Inst_PWM/lastcnt_reg[8] ) is unused and will be removed from module Throughput_top.
+WARNING: [Synth 8-3332] Sequential element (\inst_top/Inst_PWM/lastcnt_reg[7] ) is unused and will be removed from module Throughput_top.
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_top/Inst_PWM/lastcnt_reg' and it is trimmed from '9' to '7' bits. [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd:73]
+WARNING: [Synth 8-3917] design Throughput_top has port opena driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 546.563 ; gain = 289.910
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[127][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[126][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[125][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[124][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[123][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[122][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[121][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[120][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[119][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[118][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[117][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[116][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[115][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[114][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[113][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[112][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[111][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[110][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[109][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[108][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[107][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[106][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[105][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[104][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[103][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[102][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[101][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[100][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[99][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[98][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[97][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[96][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[95][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[94][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[93][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[92][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[91][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[90][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[89][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[88][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[87][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[86][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[85][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[84][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[83][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[82][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[81][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[80][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[79][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[78][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[77][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[76][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[75][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[74][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[73][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[72][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[71][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[70][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[69][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[68][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[67][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[66][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[65][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[64][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[63][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[62][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[61][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[60][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[59][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[58][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[57][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[56][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[55][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[54][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[53][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[52][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[51][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[50][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[49][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[48][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[47][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[46][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[45][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[44][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[43][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[42][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[41][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[40][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[39][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[38][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[37][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[36][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[35][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[34][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[33][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[32][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[31][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[30][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[29][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[28][15] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][15] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][14] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][13] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][12] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][11] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][10] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][9] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][8] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][7] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][6] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][5] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][4] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][3] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][2] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][1] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[0][0] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][15] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][14] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][13] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][12] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][11] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][10] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][9] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][8] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][7] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][6] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][5] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][4] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][3] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][2] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][1] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[1][0] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][15] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][14] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][13] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][12] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][11] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][10] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][9] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][8] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][7] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][6] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][5] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][4] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][3] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][2] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][1] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[2][0] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][15] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][14] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][13] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][12] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][11] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][10] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][9] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][8] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][7] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][6] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][5] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][4] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][3] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][2] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][1] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[3][0] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][15] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][14] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][13] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][12] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][11] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][10] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][9] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][8] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][7] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][6] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][5] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][4] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][3] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][2] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][1] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[4][0] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][15] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][14] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][13] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][12] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][11] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][10] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][9] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][8] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][7] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][6] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][5] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][4] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][3] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][2] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][1] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[5][0] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[6][15] ) is unused and will be removed from module ADC_buffer__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\Memory_array_reg[6][14] ) is unused and will be removed from module ADC_buffer__parameterized0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 579.520 ; gain = 322.867
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 579.520 ; gain = 322.867
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 579.520 ; gain = 322.867
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 579.520 ; gain = 322.867
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+Gated Clock Conversion mode: off
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 579.520 ; gain = 322.867
+---------------------------------------------------------------------------------
+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 579.520 ; gain = 322.867
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 579.520 ; gain = 322.867
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |fir_compiler_0 |         1|
+|2     |ADC            |         1|
+|3     |DMC            |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |ADC                 |     1|
+|2     |DMC_bbox            |     1|
+|3     |fir_compiler_0_bbox |     1|
+|4     |BUFG                |     1|
+|5     |CARRY4              |    11|
+|6     |LUT1                |    38|
+|7     |LUT2                |    56|
+|8     |LUT3                |    24|
+|9     |LUT4                |    22|
+|10    |LUT5                |   134|
+|11    |LUT6                |  1238|
+|12    |MUXF7               |   544|
+|13    |MUXF8               |   256|
+|14    |FDCE                |  4168|
+|15    |FDPE                |    12|
+|16    |FDRE                |    26|
+|17    |IBUF                |     1|
+|18    |OBUF                |    18|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------------+------+
+|      |Instance            |Module                     |Cells |
++------+--------------------+---------------------------+------+
+|1     |top                 |                           |  6614|
+|2     |  inst_ADC_TOP      |ADC_TOP                    |  3268|
+|3     |    inst_Buffer     |ADC_buffer__parameterized0 |  3197|
+|4     |  inst_top          |DAC_top                    |  3241|
+|5     |    Inst_PWM        |PWM__parameterized0        |    67|
+|6     |    inst_DAC_buffer |DAC_buffer__parameterized0 |  3169|
++------+--------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 579.520 ; gain = 322.867
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 4117 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 579.520 ; gain = 322.867
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+136 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 785.719 ; gain = 474.586
+# write_checkpoint Throughput_top.dcp
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+# report_utilization -file Throughput_top_utilization_synth.rpt -pb Throughput_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 785.719 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 27 11:14:15 2014...

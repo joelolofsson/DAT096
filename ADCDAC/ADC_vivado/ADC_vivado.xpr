@@ -4,17 +4,19 @@
 	<FileSet Dir="sources_1" File="fileset.xml"/>
 	<FileSet Dir="constrs_1" File="fileset.xml"/>
 	<FileSet Dir="sim_1" File="fileset.xml"/>
-	<FileSet Dir="ADC" File="fileset.xml"/>
+	<FileSet Dir="fir_compiler_0" File="fileset.xml"/>
 	<HWSession Dir="hw" File="hwsession_1.xml"/>
 	<RunSet Dir="runs" File="runs.xml"/>
 	<DefaultLaunch Dir="$PRUNDIR"/>
 	<Config>
-		<Option Name="Id" Val="aedb44061846474ca0b7dad547ffe3f3"/>
+		<Option Name="Id" Val="a20cb65867974e409b87868c0a338573"/>
 		<Option Name="Part" Val="xc7a100tcsg324-1"/>
 		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
 		<Option Name="TargetLanguage" Val="VHDL"/>
 		<Option Name="SimulatorLanguage" Val="VHDL"/>
+		<Option Name="TargetSimulator" Val="ModelSim"/>
 		<Option Name="Board" Val=""/>
+		<Option Name="SourceMgmtMode" Val="DisplayOnly"/>
 		<Option Name="ActiveSimSet" Val="sim_1"/>
 	</Config>
 </Project>

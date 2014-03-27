@@ -9,35 +9,35 @@ z2
 cModel Technology
 dC:/Modeltech_pe_edu_10.3/examples
 Eadc_buffer
-Z0 w1395655536
+Z0 w1395913516
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z4 dC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC
-Z5 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd
-Z6 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd
+Z5 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd
+Z6 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd
 l0
 L34
-VDUjZ10fYf4@55><P@k]RU0
-!s100 D`8Fzm@NjM=]k:3ChoWK20
+VCz:o;RD361Ve;[@??aM3<1
+!s100 e6anedm6LF89IYHMjf1Ue3
 Z7 OP;C;10.3;59
 32
-Z8 !s110 1395663490
+Z8 !s110 1395914337
 !i10b 1
-Z9 !s108 1395663490.793000
-Z10 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd|
-Z11 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_buffer.vhd|
+Z9 !s108 1395914337.166000
+Z10 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd|
+Z11 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd|
 Z12 o-work work -2002 -explicit -O0
 Z13 tExplicit 1
 Abehavioral
 R1
 R2
 R3
-DEx4 work 10 adc_buffer 0 22 DUjZ10fYf4@55><P@k]RU0
+DEx4 work 10 adc_buffer 0 22 Cz:o;RD361Ve;[@??aM3<1
 l58
 L48
-VbP]oYoBX9_3Q2Oo_QE4TS3
-!s100 @fS0GkoYgWgV0>:FC9U?40
+V@UFBH[f;2K6fP9E514lOn3
+!s100 EW[UBhHPkSz0EaO17Wh5z0
 R7
 32
 R8
@@ -48,33 +48,33 @@ R11
 R12
 R13
 Eadc_top
-Z14 w1395658481
+Z14 w1395846103
 R2
 R3
 R4
-Z15 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd
-Z16 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd
+Z15 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd
+Z16 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd
 l0
 L32
-V7ZffFTI]T9:7gN5AfFd<G2
-!s100 zXYUNIb[U2I?A;UF0mO3;0
+VQ_J_X5egoWnkjHX<fiFe:0
+!s100 ondEF9aZizme6d:U<]CK32
 R7
 32
-Z17 !s110 1395663494
+Z17 !s110 1395849074
 !i10b 1
-Z18 !s108 1395663494.558000
-Z19 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd|
-Z20 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/ADC_TOP.vhd|
+Z18 !s108 1395849074.253000
+Z19 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd|
+Z20 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd|
 R12
 R13
 Abehavioral
 R2
 R3
-Z21 DEx4 work 7 adc_top 0 22 7ZffFTI]T9:7gN5AfFd<G2
-l130
-L49
-Z22 VBHV4N=@bzOzCDF86J7YC^3
-Z23 !s100 3:B8QKLZfSd8KCChGm:HB1
+DEx4 work 7 adc_top 0 22 Q_J_X5egoWnkjHX<fiFe:0
+l128
+L48
+VR6Xc1@DbaJingF45cm4QX2
+!s100 PmE99Vjk6dz1HWz2[V]Ce2
 R7
 32
 R17
@@ -85,24 +85,24 @@ R20
 R12
 R13
 Ebuffercontrol
-Z24 w1395656145
+Z21 w1395666159
 R1
 R2
 R3
 R4
-Z25 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/buffercontrol.vhd
-Z26 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/buffercontrol.vhd
+Z22 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/buffercontrol.vhd
+Z23 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/buffercontrol.vhd
 l0
 L34
 V6P;h8BZ8NOLReCIQSbkGi3
 !s100 UXKTfKQHUc?YHmFmGK1=k3
 R7
 32
-Z27 !s110 1395663491
+R17
 !i10b 1
-Z28 !s108 1395663491.905000
-Z29 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/buffercontrol.vhd|
-Z30 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/buffercontrol.vhd|
+Z24 !s108 1395849074.893000
+Z25 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/buffercontrol.vhd|
+Z26 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/buffercontrol.vhd|
 R12
 R13
 Abehavioral
@@ -116,108 +116,108 @@ VUj90[2WF?HEYof]]]@obU1
 !s100 GQKa4H[4kZdHO;RIEnono1
 R7
 32
-R27
+R17
 !i10b 1
-R28
-R29
-R30
+R24
+R25
+R26
 R12
 R13
 Edac_buffer
-Z31 w1395590650
+Z27 w1395914878
 R1
 R2
 R3
 R4
-Z32 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd
-Z33 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd
+Z28 8C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\new\DAC_buffer.vhd
+Z29 FC:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\new\DAC_buffer.vhd
 l0
 L34
-VHc0oU9z]zm]R^8NbE^af_2
-!s100 NG[M?0cNPBRz[VG]Nf59l2
+V>Q9aDm:RSA95ZVe10kTW02
+!s100 NgC9>RVLa3R:Pk68CS8<12
 R7
 32
-R27
+Z30 !s110 1395914959
 !i10b 1
-Z34 !s108 1395663491.348000
-Z35 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd|
-Z36 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/DAC_buffer.vhd|
+Z31 !s108 1395914959.160000
+Z32 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\new\DAC_buffer.vhd|
+Z33 !s107 C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\new\DAC_buffer.vhd|
 R12
 R13
 Abehavioral
 R1
 R2
 R3
-DEx4 work 10 dac_buffer 0 22 Hc0oU9z]zm]R^8NbE^af_2
-l57
-L47
-V1;dYoN;@h1B2kRIRi3`kF2
-!s100 C__M>]T>?K0Rool^7nIDl1
+DEx4 work 10 dac_buffer 0 22 >Q9aDm:RSA95ZVe10kTW02
+l58
+L48
+VnfYSkbPT_Uc>hh?oVO[>l3
+!s100 KRd^O1j@Ie^bdU4Z5:d^;2
 R7
 32
-R27
+R30
 !i10b 1
-R34
-R35
-R36
+R31
+R32
+R33
 R12
 R13
 Edac_top
-Z37 w1395659175
+Z34 w1395914818
 R2
 R3
 R4
-Z38 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd
-Z39 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd
+Z35 8C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\imports\DAC\top.vhd
+Z36 FC:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\imports\DAC\top.vhd
 l0
 L32
-VMO0GN3o^I7h1AYR[FTB@T0
-!s100 9W`84lJggeU=znoO125_=0
+VIh^A15:YZ90Lg]i>e=?YA1
+!s100 VN@0OM0@SCOemfYZANg2:2
 R7
 32
-Z40 !s110 1395663492
+R30
 !i10b 1
-Z41 !s108 1395663492.962000
-Z42 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd|
-Z43 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/top.vhd|
+Z37 !s108 1395914959.728000
+Z38 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\imports\DAC\top.vhd|
+!s107 C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\imports\DAC\top.vhd|
 R12
 R13
 Abehavioral
 R2
 R3
-DEx4 work 7 dac_top 0 22 MO0GN3o^I7h1AYR[FTB@T0
-l104
-L44
-VnODWFD@kB?Ki7@=_;]J4i3
-!s100 eVCA=[>MIcFNjX3;;lN3@0
+DEx4 work 7 dac_top 0 22 Ih^A15:YZ90Lg]i>e=?YA1
+l108
+L45
+V]AMC`5;lI[=jC18fme0f]1
+!s100 Yfd:@bVeTScQnWHcMOf5?0
 R7
 32
-R40
+R30
 !i10b 1
-R41
-R42
-R43
+R37
+R38
+Z39 !s107 C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\imports\DAC\top.vhd|
 R12
 R13
 Edecimator
-Z44 w1395323887
+R21
 R1
 R2
 R3
 R4
-Z45 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd
-Z46 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd
+Z40 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Decimator.vhd
+Z41 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Decimator.vhd
 l0
 L35
 VW=f]4l<bl?zh9mUkYa0Dm3
 !s100 NAXRZVkmD:nbnYgbDmWaj0
 R7
 32
-R17
+Z42 !s110 1395849076
 !i10b 1
-Z47 !s108 1395663494.006000
-Z48 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd|
-Z49 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Decimator.vhd|
+Z43 !s108 1395849075.994000
+Z44 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Decimator.vhd|
+Z45 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/new/Decimator.vhd|
 R12
 R13
 Abehavioral
@@ -231,32 +231,32 @@ VISFN]]?QC=VH1^Oa49VAN0
 !s100 [dNDB6jSRHSZZ5A6]3e<P2
 R7
 32
-R17
+R42
 !i10b 1
-R47
-R48
-R49
+R43
+R44
+R45
 R12
 R13
 Epwm
-Z50 w1395655051
+Z46 w1395666158
 R1
 R2
 R3
 R4
-Z51 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd
-Z52 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd
+Z47 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd
+Z48 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd
 l0
 L34
 V6?NZ8?8CebN7NKcaFZ3Ao1
 !s100 >oUL0T3FkZP9_dz;_UZgk0
 R7
 32
-Z53 !s110 1395663493
+Z49 !s110 1395849077
 !i10b 1
-Z54 !s108 1395663493.474000
-Z55 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd|
-Z56 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/imports/DAC/PWM.vhd|
+Z50 !s108 1395849077.102000
+Z51 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd|
+Z52 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC3/ADC3.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd|
 R12
 R13
 Abehavioral
@@ -270,32 +270,32 @@ VKLaTf7FFXj0FNe<[Chikf3
 !s100 VN^4z44CfLbJP0:O?d[CG0
 R7
 32
-R53
+R49
 !i10b 1
-R54
-R55
-R56
+R50
+R51
+R52
 R12
 R13
 Ethroughput_top
-Z57 w1395658808
+Z53 w1395914950
 R1
 R2
 R3
 R4
-Z58 8C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd
-Z59 FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd
+Z54 8C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\new\Throughput_top.vhd
+Z55 FC:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\new\Throughput_top.vhd
 l0
 L34
 V?87i[BDi2BDURYh8E4L;o0
 !s100 5dNn7^PjWgJWkYCKn?0OS0
 R7
 32
-R40
+Z56 !s110 1395914958
 !i10b 1
-Z60 !s108 1395663492.432000
-Z61 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd|
-Z62 !s107 C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/new/Throughput_top.vhd|
+Z57 !s108 1395914958.502000
+Z58 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\new\Throughput_top.vhd|
+Z59 !s107 C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC3\ADC3.srcs\sources_1\imports\sources_1\new\Throughput_top.vhd|
 R12
 R13
 Abehavioral
@@ -303,16 +303,16 @@ R1
 R2
 R3
 DEx4 work 14 throughput_top 0 22 ?87i[BDi2BDURYh8E4L;o0
-l92
+l93
 L46
-VS[odU@T1MMNJaAf9>?jU[0
-!s100 eK5jImTeS0SoAEI<<j`9:2
+VJ^S?EZPQR3KIado;mebR21
+!s100 H_oBf2GkEnZ06AEoRF`RF0
 R7
 32
-R40
+R56
 !i10b 1
-R60
-R61
-R62
+R57
+R58
+R59
 R12
 R13

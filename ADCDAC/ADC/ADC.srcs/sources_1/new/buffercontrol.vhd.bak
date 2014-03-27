@@ -44,7 +44,7 @@ component DAC_buffer
 		clk 				: in STD_LOGIC;
 		rst 				: in STD_LOGIC;
 		buff_read			: in STD_LOGIC;
-		buff_write			: in STD_LOGIC;
+		index_reset			: in STD_LOGIC;
 		Buffin 				: in STD_LOGIC_VECTOR (31 downto 0);
 		Buffout 			: out STD_LOGIC_VECTOR (31 downto 0);
 		Addr 				: in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
@@ -56,7 +56,7 @@ component ADC_buffer
     Port ( 
 		clk 				: in STD_LOGIC;
 		rst 				: in STD_LOGIC;
-		buff_read			: in STD_LOGIC;
+--		buff_read			: in STD_LOGIC;
 		buff_write			: in STD_LOGIC;
 		Buffin 				: in STD_LOGIC_VECTOR (31 downto 0);
 		Buffout 			: out STD_LOGIC_VECTOR (31 downto 0);
@@ -75,9 +75,9 @@ signal sampleclk : std_logic;
 
 begin
 inst_dac : DAC_buffer
-	port map (clk,rst,DACREAD,DACWRITE,transfervalue,OutValue,ADDR);
+	port map (clk,rst,ADCfull,DACWRITE,transfervalue,OutValue,ADDR);
 inst_adc : ADC_buffer
-	port map (clk,rst,ADCREAD,ADCWRITE,sample,transfervalue,ADCfull,ADDR);
+	port map (clk,rst,ADCWRITE,sample,transfervalue,ADCfull,ADDR);
 
 DACwrite <= ADCread;
 
@@ -132,7 +132,7 @@ begin
 			cnt <= cnt + 1;
 
 		end if;
-		sample <= STD_LOGIC_vector(to_unsigned(cnt,32));
+		sample <= STD_LOGIC_vector(to_unsigned(cnt+1,32));
 	elsif rising_edge(clk) then
 	end if;
 end process;

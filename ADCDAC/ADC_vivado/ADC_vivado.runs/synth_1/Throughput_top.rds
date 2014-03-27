@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Mon Mar 24 15:16:05 2014
+# Process ID: 6032
+# Log file: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.runs/synth_1/Throughput_top.rds
+# Journal file: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source Throughput_top.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_property target_language VHDL [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property constrs_type UCF [current_fileset -constrset]
+# add_files c:/CHALMERS/DAT096/DAT096/ADCDAC/filtercoeff.coe
+# add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp
+# set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
+# set_property use_blackbox_stub false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
+# read_ip c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/ip/ADC/ADC.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2013.4/data/ip'.
+# set_property used_in_implementation false [get_files c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/ip/ADC/ADC.dcp]
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/ip/ADC/ADC.xci]
+# read_ip c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/ip/DMC/DMC.xci
+# set_property used_in_implementation false [get_files c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/ip/DMC/DMC.dcp]
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property is_locked true [get_files c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/ip/DMC/DMC.xci]
+# read_verilog c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_stub.v
+# read_vhdl {
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_gen_v8_1_synth_comp.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_gen_v8_1_pkg.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_gen_v8_1_defaults.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_gen_getinit_pkg.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/xbip_utils_v3_0/hdl/xcc_utils_v3_0.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/xbip_utils_v3_0/hdl/xbip_utils_v3_0_pkg.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/global_pkg.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/fir_compiler_v7_1_viv_comp.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/fir_compiler_v7_1_comp.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/components.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/axi_utils_v2_0/hdl/global_util_pkg.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/axi_utils_v2_0/hdl/axi_utils_v2_0_pkg.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/fir_compiler_0/axi_utils_v2_0/hdl/axi_utils_comps.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/new/Throughput_top.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/new/DAC_buffer.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/new/buffercontrol.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/new/ADC_TOP.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/new/ADC_buffer.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/DAC/top.vhd
+#   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/DAC/PWM.vhd
+# }
+# set_property webtalk.parent_dir C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.data/wt [current_project]
+# set_property parent.project_dir C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado [current_project]
+# synth_design -top Throughput_top -part xc7a100tcsg324-1
+Command: synth_design -top Throughput_top -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+INFO: [IP_Flow 19-2162] IP 'ADC' is locked. Locked reason: Property 'IS_LOCKED' is set to true by the system or user
+INFO: [IP_Flow 19-2162] IP 'DMC' is locked. Locked reason: Property 'IS_LOCKED' is set to true by the system or user
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 339.180 ; gain = 81.656
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-4169] error in use clause: package 'blk_mem_gen_v8_1_defaults' not found in library 'blk_mem_gen_v8_1' [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:130]
+INFO: [Synth 8-2810] unit blk_mem_min_area_pkg ignored due to previous errors [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:132]
+ERROR: [Synth 8-2491] package declaration blk_mem_min_area_pkg is not yet compiled [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:203]
+ERROR: [Synth 8-1031] bit_vector is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:208]
+ERROR: [Synth 8-1031] integer is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:209]
+ERROR: [Synth 8-1031] line is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:210]
+ERROR: [Synth 8-1031] bv is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:212]
+ERROR: [Synth 8-2556] prefix of LENGTH attribute should be an array or array (sub)type [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:212]
+ERROR: [Synth 8-2398] near string "bit_vector is too large for INTEGER:" ; 0 visible types match here [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:213]
+ERROR: [Synth 8-1031] failure is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:214]
+ERROR: [Synth 8-1031] result is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:215]
+ERROR: [Synth 8-1031] bv is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:216]
+ERROR: [Synth 8-2383] near range ; prefix should denote a scalar or array type [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:216]
+ERROR: [Synth 8-1031] result is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:217]
+ERROR: [Synth 8-1031] result is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:219]
+ERROR: [Synth 8-1031] bv is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:218]
+ERROR: [Synth 8-1031] result is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:227]
+ERROR: [Synth 8-1031] bit_vector is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:234]
+ERROR: [Synth 8-1031] integer is not declared [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/ADC_vivado.srcs/sources_1/imports/ADC/ADC.srcs/sources_1/ip/ila_0/blk_mem_gen_v8_1/blk_mem_min_area_pkg.vhd:235]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 362.219 ; gain = 104.695
+---------------------------------------------------------------------------------
+synthesize failed
+    while executing
+"rt::run_synthesis -module $rt::top"
+    invoked from within
+"if {$rt::useElabCache == false} {
+      rt::run_synthesis -module $rt::top
+    }"
+    ("uplevel" body line 58)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+INFO: [Common 17-83] Releasing license: Synthesis
+5 Infos, 0 Warnings, 0 Critical Warnings and 18 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+
+    while executing
+"source -notrace {./.Xil/Vivado-6032-/realtime\Throughput_top.tcl}"
+    invoked from within
+"synth_design -top Throughput_top -part xc7a100tcsg324-1"
+    (file "Throughput_top.tcl" line 53)
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 15:16:15 2014...

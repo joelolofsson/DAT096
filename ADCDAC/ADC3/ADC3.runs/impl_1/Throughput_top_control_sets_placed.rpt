@@ -1,0 +1,318 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
+| Date         : Thu Mar 27 11:15:27 2014
+| Host         :  running 32-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Throughput_top_control_sets_placed.rpt
+| Design       : Throughput_top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   265 |
+| Minimum Number of register sites lost to control set restrictions |    21 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            4 |
+| No           | No                    | Yes                    |              53 |           17 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              18 |            4 |
+| Yes          | No                    | Yes                    |            4126 |         1609 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-----------------------------------------------------------+--------------------------------+------------------+----------------+
+|          Clock Signal          |                       Enable Signal                       |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++--------------------------------+-----------------------------------------------------------+--------------------------------+------------------+----------------+
+|  inst_top/inst_DMC/U0/clk_out1 |                                                           |                                |                1 |              1 |
+|  CLK_BUFG                      |                                                           |                                |                3 |              5 |
+|  inst_top/inst_DMC/U0/clk_out1 | xlnx_opt__1                                               |                                |                2 |              7 |
+|  CLK_BUFG                      | inst_top/sampleEna44kHzout                                | inst_top/inst_DAC_buffer/AS[0] |                2 |              7 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/E[0]                             | inst_top/inst_DAC_buffer/AS[0] |                2 |              7 |
+|  inst_top/inst_DMC/U0/clk_out1 | inst_top/Inst_PWM/n_0_samplevalue[10]_i_1                 |                                |                2 |             11 |
+|  inst_top/inst_DMC/U0/clk_out1 |                                                           | inst_top/inst_DAC_buffer/AS[0] |                4 |             13 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[49][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[48][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[47][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[46][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[45][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[44][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[43][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[42][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[41][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[40][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[39][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[38][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[37][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[36][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[35][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[50][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[51][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[52][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[53][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[54][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[55][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[56][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[57][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[58][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[59][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[60][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[61][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[62][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[63][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[64][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[65][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[3][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[4][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[5][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[6][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[7][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[8][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[9][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[10][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[11][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[12][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |               10 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[13][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[14][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[15][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[16][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |               12 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[17][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[18][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[19][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |               10 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[20][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[21][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[22][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[23][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[24][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[25][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[26][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[27][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[28][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[29][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[30][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[31][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[32][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[33][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[34][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |               10 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[98][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[99][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[100][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[101][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[102][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[103][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[104][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[105][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[106][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[107][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[108][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[109][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[110][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[111][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[112][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[113][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[114][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[115][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[116][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[117][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[118][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[119][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[120][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[121][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[122][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[123][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[124][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[125][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[126][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[127][31]_i_1__0 | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[22][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[23][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[66][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[67][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[68][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[69][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[70][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[71][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[72][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[73][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[74][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[75][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[76][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[77][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[78][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[79][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[80][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[81][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[82][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[83][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[84][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[85][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[86][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[87][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[88][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[89][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[90][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[91][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[92][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[93][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[94][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[95][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[96][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[97][31]_i_1__0  | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[98][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[97][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[93][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[79][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[95][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[96][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[94][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[91][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[92][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[90][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[88][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[89][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[87][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[85][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[86][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[82][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[83][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[80][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[81][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[84][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[75][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[35][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[78][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[77][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[74][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[65][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[72][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[73][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[25][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[27][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[26][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[28][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[21][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[20][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[71][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[113][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[127][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[99][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[126][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[125][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[124][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[123][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[122][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[121][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[119][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[120][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[118][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[116][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[76][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[101][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[100][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[102][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[103][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[105][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[104][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[107][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[108][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[109][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[110][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[106][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[112][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |               10 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[111][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |               10 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[114][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[117][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[115][31]_i_1    | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[62][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[66][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[59][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[67][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[68][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[69][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[70][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[14][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[19][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[15][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[0][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[1][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[2][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[4][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[5][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[6][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[8][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[7][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[9][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[3][31]_i_1      | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[10][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[11][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[12][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[18][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[17][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[16][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[13][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[24][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_top/Inst_PWM/E[0]                                    | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[0][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[1][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                9 |             16 |
+|  CLK_BUFG                      | inst_top/inst_DAC_buffer/n_0_Memory_array[2][31]_i_1__0   | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[29][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[30][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[31][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[32][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[33][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[34][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[36][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[37][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[38][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[39][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[40][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[42][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[43][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[44][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[45][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[46][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                4 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[63][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[64][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[58][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[60][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[61][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                8 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[57][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[56][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[54][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[55][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[53][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[52][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[51][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[50][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[41][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                5 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[49][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[48][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                7 |             16 |
+|  CLK_BUFG                      | inst_ADC_TOP/inst_Buffer/n_0_Memory_array[47][31]_i_1     | inst_top/inst_DAC_buffer/AS[0] |                6 |             16 |
+|  CLK_BUFG                      |                                                           | inst_top/inst_DAC_buffer/AS[0] |               13 |             40 |
++--------------------------------+-----------------------------------------------------------+--------------------------------+------------------+----------------+
+
+
