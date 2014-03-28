@@ -1,8 +1,8 @@
 # Vivado/PlanAhead
 *.xpr
-*.ppr
-*.cache/
+#*.ppr
+#*.cache/
 *.runs/
-*.sdk/
-*.jou
-*.log
+#*.sdk/
+#*.jou
+#*.log
