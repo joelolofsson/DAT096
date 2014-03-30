@@ -1,8 +1,12 @@
 Storage Target: SPI Flash Single FPGA
 128M
 FF
-festhelahelgen
-C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC
+Untitled
+C:\CHALMERS\DAT096\DAT096\ADCDAC\DAC\
+
+MCS
+No
+
 
 MCS
 No

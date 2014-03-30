@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sun Mar 30 14:02:37 2014
+# Process ID: 6568
+# Log file: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/Throughput_top.rdi
+# Journal file: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source Throughput_top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/DMC/DMC.dcp' for cell 'inst_top/inst_DMC'
+INFO: [Project 1-454] Reading design checkpoint 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp' for cell 'inst_ADC_TOP/inst_fir'
+INFO: [Project 1-454] Reading design checkpoint 'C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/ADC_synth_1/ADC.dcp' for cell 'inst_ADC_TOP/inst_ADC'
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.4
+Loading clock regions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2013.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/ConfigModes.xml
+WARNING: [Opt 31-35] Removing redundant IBUF, inst_top/inst_DMC/U0/clkin1_ibufg, from the path connected to top-level port: CLK 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'inst_top/inst_DMC/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_2/DMC.edf:300]
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_2/DMC_board.xdc] for cell 'inst_top/inst_DMC'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_2/DMC_board.xdc] for cell 'inst_top/inst_DMC'
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_2/DMC_early.xdc] for cell 'inst_top/inst_DMC'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_2/DMC_early.xdc] for cell 'inst_top/inst_DMC'
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_3/fir_compiler_0_early.xdc] for cell 'inst_ADC_TOP/inst_fir'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_3/fir_compiler_0_early.xdc] for cell 'inst_ADC_TOP/inst_fir'
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_4/ADC_early.xdc] for cell 'inst_ADC_TOP/inst_ADC'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_4/ADC_early.xdc] for cell 'inst_ADC_TOP/inst_ADC'
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/constrs_1/imports/new/ADC_TOP.xdc]
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/constrs_1/imports/new/ADC_TOP.xdc]
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp/Throughput_top.xdc]
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp/Throughput_top.xdc]
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_2/DMC.xdc] for cell 'inst_top/inst_DMC'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_2/DMC.xdc] for cell 'inst_top/inst_DMC'
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_3/fir_compiler_0.xdc] for cell 'inst_ADC_TOP/inst_fir'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_3/fir_compiler_0.xdc] for cell 'inst_ADC_TOP/inst_fir'
+Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_4/ADC.xdc] for cell 'inst_ADC_TOP/inst_ADC'
+Finished Parsing XDC File [C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/impl_1/.Xil/Vivado-6568-MININT-VV401LP/dcp_4/ADC.xdc] for cell 'inst_ADC_TOP/inst_ADC'
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 6 instances
+
+link_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 711.895 ; gain = 410.969
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step opt_design"
+    (file "Throughput_top.tcl" line 70)
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 30 14:03:22 2014...

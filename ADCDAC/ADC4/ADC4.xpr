@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--Product Version: Vivado v2013.4-->
+<Project Version="6" Minor="14" Path="C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.xpr">
+	<FileSet Dir="sources_1" File="fileset.xml"/>
+	<FileSet Dir="constrs_1" File="fileset.xml"/>
+	<FileSet Dir="sim_1" File="fileset.xml"/>
+	<FileSet Dir="fir_compiler_0" File="fileset.xml"/>
+	<FileSet Dir="ADC" File="fileset.xml"/>
+	<HWSession Dir="hw" File="hwsession_1.xml"/>
+	<RunSet Dir="runs" File="runs.xml"/>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<Config>
+		<Option Name="Id" Val="8e4c68c15561472bbc62ab93bfaa0781"/>
+		<Option Name="Part" Val="xc7a100tcsg324-1"/>
+		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+		<Option Name="TargetLanguage" Val="VHDL"/>
+		<Option Name="SimulatorLanguage" Val="VHDL"/>
+		<Option Name="Board" Val=""/>
+		<Option Name="ActiveSimSet" Val="sim_1"/>
+	</Config>
+	<MsgRule>
+		<MsgAttr Name="RuleType" Val="0"/>
+		<MsgAttr Name="Limit" Val="-1"/>
+		<MsgAttr Name="NewSeverity" Val="ANY"/>
+		<MsgAttr Name="Id" Val="Synth 8-3917"/>
+		<MsgAttr Name="Severity" Val="ANY"/>
+		<MsgAttr Name="ShowRule" Val="1"/>
+		<MsgAttr Name="RuleSource" Val="8"/>
+		<MsgAttr Name="StringsToMatch" Val="WARNING: [Synth 8-3917] design Throughput_top has port opena driven by constant 1"/>
+	</MsgRule>
+	<MsgRule>
+		<MsgAttr Name="RuleType" Val="0"/>
+		<MsgAttr Name="Limit" Val="-1"/>
+		<MsgAttr Name="NewSeverity" Val="ANY"/>
+		<MsgAttr Name="Id" Val="Synth 8-3332"/>
+		<MsgAttr Name="Severity" Val="ANY"/>
+		<MsgAttr Name="ShowRule" Val="1"/>
+		<MsgAttr Name="RuleSource" Val="16"/>
+	</MsgRule>
+</Project>
+
