@@ -1,9 +1,4 @@
 
-‚
-3Changing the constrs_type of fileset '%s' to '%s'.
-11*project2
-	constrs_12default:default2
-XDC2default:defaultZ1-11
 ^
 #Design is defaulting to srcset: %s
 437*	planAhead2
@@ -29,7 +24,7 @@ a
 ]
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-692default:defaultZ29-17
+682default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -66,13 +61,14 @@ D/opt/Xilinx/Vivado/2013.4/data/./parts/xilinx/artix7/IOStandards.xml2default:
 +Loading device configuration modes from %s
 14*device2V
 B/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
-Ÿ
-NRemoving redundant IBUF since it is not being driven by a top-level port. %s 
-32*opt2;
-'io0/inst_top/inst_DMC/inst/clkin1_ibufg2default:defaultZ31-32
+¶
+LRemoving redundant IBUF, %s, from the path connected to top-level port: %s 
+35*opt2;
+'io0/inst_top/inst_DMC/inst/clkin1_ibufg2default:default2
+clk2default:defaultZ31-35
 ^
 1Inserted %s IBUFs to IO ports without IO buffers.100*opt2
-02default:defaultZ31-140
+12default:defaultZ31-140
 ^
 1Inserted %s OBUFs to IO ports without IO buffers.101*opt2
 12default:defaultZ31-141
@@ -83,37 +79,37 @@ NRemoving redundant IBUF since it is not being driven by a top-level port. %s
 io0/inst_top/inst_DMC/clk_in12default:default2 
 IBUF_LOW_PWR2default:default2
 Vivado2default:default2Õ
-¾/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_3/DMC.edf2default:default2
+¾/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_3/DMC.edf2default:default2
 3002default:default8@Z18-550
 É
 $Parsing XDC File [%s] for cell '%s'
 848*designutils2Ù
-Ä/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_3/DMC_board.xdc2default:default2)
+Ä/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_3/DMC_board.xdc2default:default2)
 io0/inst_top/inst_DMC2default:defaultZ20-848
 Ò
 -Finished Parsing XDC File [%s] for cell '%s'
 847*designutils2Ù
-Ä/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_3/DMC_board.xdc2default:default2)
+Ä/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_3/DMC_board.xdc2default:default2)
 io0/inst_top/inst_DMC2default:defaultZ20-847
 É
 $Parsing XDC File [%s] for cell '%s'
 848*designutils2Ù
-Ä/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_3/DMC_early.xdc2default:default2)
+Ä/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_3/DMC_early.xdc2default:default2)
 io0/inst_top/inst_DMC2default:defaultZ20-848
 Ò
 -Finished Parsing XDC File [%s] for cell '%s'
 847*designutils2Ù
-Ä/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_3/DMC_early.xdc2default:default2)
+Ä/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_3/DMC_early.xdc2default:default2)
 io0/inst_top/inst_DMC2default:defaultZ20-847
 Ø
 $Parsing XDC File [%s] for cell '%s'
 848*designutils2ä
-Ï/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_4/fir_compiler_0_early.xdc2default:default2-
+Ï/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_4/fir_compiler_0_early.xdc2default:default2-
 io0/inst_ADC_TOP/inst_fir2default:defaultZ20-848
 á
 -Finished Parsing XDC File [%s] for cell '%s'
 847*designutils2ä
-Ï/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_4/fir_compiler_0_early.xdc2default:default2-
+Ï/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_4/fir_compiler_0_early.xdc2default:default2-
 io0/inst_ADC_TOP/inst_fir2default:defaultZ20-847
 ô
 Parsing XDC File [%s]
@@ -126,30 +122,30 @@ $Parsing XDC File [%s] for cell '%s'
 Œ
 Parsing XDC File [%s]
 179*designutils2Õ
-À/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp/leon3mp.xdc2default:defaultZ20-179
+À/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp/leon3mp.xdc2default:defaultZ20-179
 •
 Finished Parsing XDC File [%s]
 178*designutils2Õ
-À/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp/leon3mp.xdc2default:defaultZ20-178
+À/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp/leon3mp.xdc2default:defaultZ20-178
 Ã
 $Parsing XDC File [%s] for cell '%s'
 848*designutils2Ó
-¾/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_3/DMC.xdc2default:default2)
+¾/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_3/DMC.xdc2default:default2)
 io0/inst_top/inst_DMC2default:defaultZ20-848
 Ì
 -Finished Parsing XDC File [%s] for cell '%s'
 847*designutils2Ó
-¾/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_3/DMC.xdc2default:default2)
+¾/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_3/DMC.xdc2default:default2)
 io0/inst_top/inst_DMC2default:defaultZ20-847
 Ò
 $Parsing XDC File [%s] for cell '%s'
 848*designutils2Þ
-É/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_4/fir_compiler_0.xdc2default:default2-
+É/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_4/fir_compiler_0.xdc2default:default2-
 io0/inst_ADC_TOP/inst_fir2default:defaultZ20-848
 Û
 -Finished Parsing XDC File [%s] for cell '%s'
 847*designutils2Þ
-É/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10459-joel-MacBookPro/dcp_4/fir_compiler_0.xdc2default:default2-
+É/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10786-joel-MacBookPro/dcp_4/fir_compiler_0.xdc2default:default2-
 io0/inst_ADC_TOP/inst_fir2default:defaultZ20-847
 C
 Pushed %s inverter(s).
@@ -169,10 +165,10 @@ MSuccessfully populated the BRAM INIT strings from the following elf files: %s
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2!
 link_design: 2default:default2
-00:00:262default:default2
+00:00:282default:default2
 00:00:322default:default2
-1409.7152default:default2
-676.6682default:defaultZ17-268
+1420.7192default:default2
+688.6682default:defaultZ17-268
 
 
 End Record

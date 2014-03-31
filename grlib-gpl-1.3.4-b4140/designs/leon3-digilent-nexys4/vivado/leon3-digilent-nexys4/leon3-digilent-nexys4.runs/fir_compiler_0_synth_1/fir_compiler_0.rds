@@ -2,8 +2,8 @@
 # Vivado v2013.4 (64-bit)
 # SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
 # IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
-# Start of session at: Sun Mar 23 15:33:22 2014
-# Process ID: 6570
+# Start of session at: Fri Mar 28 09:13:01 2014
+# Process ID: 4312
 # Log file: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/fir_compiler_0.rds
 # Journal file: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -24,6 +24,7 @@ source fir_compiler_0.tcl
 # set_property target_language Verilog [current_project]
 # set_param project.compositeFile.enableAutoGeneration 0
 # set_property ip_repo_paths /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP [current_fileset]
+# set_property constrs_type UCF [current_fileset -constrset]
 # read_ip /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP'.
@@ -31,10 +32,6 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2013.4/d
 # set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.dcp]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 # set_property is_locked true [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
-# read_xdc dont_touch.xdc
-INFO: [Project 1-11] Changing the constrs_type of fileset 'constrs_1' to 'XDC'.
-# set_property used_in_implementation false [get_files dont_touch.xdc]
-# set_param synth.vivado.isSynthRun true
 # set_property webtalk.parent_dir /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.data/wt [current_project]
 # set_property parent.project_dir /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4 [current_project]
 # synth_design -top fir_compiler_0 -part xc7a100tcsg324-1 -mode out_of_context
@@ -46,7 +43,7 @@ INFO: [IP_Flow 19-2162] IP 'fir_compiler_0' is locked. Locked reason: Property '
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 791.047 ; gain = 152.395
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 791.047 ; gain = 152.395
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/synth/fir_compiler_0.vhd:71]
 INFO: [Synth 8-3491] module 'fir_compiler_v7_1' declared at '/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/fir_compiler_v7_1.vhd:109' bound to instance 'U0' of component 'fir_compiler_v7_1' [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/synth/fir_compiler_0.vhd:193]
@@ -169,155 +166,14 @@ INFO: [Synth 8-256] done synthesizing module 'fir_compiler_v7_1_viv__parameteriz
 INFO: [Synth 8-256] done synthesizing module 'fir_compiler_v7_1__parameterized0' (15#1) [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/fir_compiler_v7_1.vhd:233]
 INFO: [Synth 8-256] done synthesizing module 'fir_compiler_0' (16#1) [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/synth/fir_compiler_0.vhd:71]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 979.715 ; gain = 341.062
+Finished Synthesize : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 979.715 ; gain = 341.062
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
 Start RTL Optimization
 ---------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [47] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [46] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [45] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [44] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [43] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [42] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [41] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [40] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [39] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [38] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [37] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [36] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [35] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [34] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [33] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [32] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [31] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [30] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [29] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [28] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [27] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [26] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [25] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [24] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [23] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [22] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [21] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [20] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [19] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [18] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [17] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [16] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [15] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [14] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [13] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [12] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [11] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [10] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [9] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [8] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [7] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [6] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [5] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [4] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [3] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [2] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [1] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[fab] [0] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [52] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [51] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [50] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [49] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [48] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [47] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [46] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [45] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [44] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [43] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [42] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [41] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [40] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [39] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [38] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [37] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [36] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [35] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [34] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [33] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [32] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [31] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [30] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [29] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [28] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [27] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [26] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [25] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [24] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [23] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [22] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [21] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [20] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [19] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [18] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [17] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [16] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [15] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [14] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [13] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [12] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [11] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [10] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [9] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [8] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [7] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [6] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [5] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [4] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [3] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [2] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Synth 8-3295] tying undriven pin \g_two_col_comb.i_gen_upper_bits :\PIN[casc] [1] to constant 0 [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:158]
-INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-Loading clock regions from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
-Loading clock buffers from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
-Loading clock placement rules from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
-Loading package pin functions from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/PinFunctions.xml...
-Loading package from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
-Loading io standards from /opt/Xilinx/Vivado/2013.4/data/./parts/xilinx/artix7/IOStandards.xml
-Loading device configuration modes from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ConfigModes.xml
-
-Processing XDC Constraints
-Parsing XDC File [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/dont_touch.xdc]
-Completed Processing XDC Constraints
-
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-
 ---------------------------------------------------------------------------------
-Start RTL Optimization
----------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true. (constraint file  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/dont_touch.xdc, line 9).
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1059.727 ; gain = 421.074
----------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1059.727 ; gain = 421.074
+Finished RTL Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 979.715 ; gain = 341.062
 ---------------------------------------------------------------------------------
 
 Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic.
@@ -332,6 +188,8 @@ INFO: [Synth 8-3936] Found unconnected internal register 'g_semi_parallel_and_sm
 WARNING: [Synth 8-3848] Net pin_open[fab] in module/entity ext_mult does not have driver. [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:153]
 WARNING: [Synth 8-3848] Net pin_open[casc] in module/entity ext_mult does not have driver. [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_v7_1/hdl/ext_mult.vhd:153]
 INFO: [Synth 8-3971] The signal gen_bram.gen_write_first.gen_double_reg.ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\g_single_rate.i_single_rate /\g_semi_parallel_and_smac.g_cntrl_signals[0].i_delay ' (delay__parameterized5) to 'U0/i_synth/\g_single_rate.i_single_rate /\g_semi_parallel_and_smac.g_cntrl_signals[1].i_delay '
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\g_single_rate.i_single_rate /\g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay ' (delay__parameterized6) to 'U0/i_synth/\g_single_rate.i_single_rate /\g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay '
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -343,13 +201,21 @@ Report RTL Partitions:
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
+Loading clock regions from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/PinFunctions.xml...
+Loading package from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from /opt/Xilinx/Vivado/2013.4/data/./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ConfigModes.xml
 Part Resources:
 DSPs: 240 (col length:80)
 BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1128.750 ; gain = 490.098
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1102.023 ; gain = 463.371
 ---------------------------------------------------------------------------------
 
+No constraint files found.
 
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -370,38 +236,19 @@ Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (\gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0] ) is unused and will be removed from module delay__parameterized4.
-INFO: [Synth 8-3332] Sequential element (\gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0] ) is unused and will be removed from module delay__parameterized4.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.g_cntrl_signals[1].i_delay/gen_reg.d_reg_reg[0] ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\gen_dly.gen_regs.delay_bus_reg[0][0] ) is unused and will be removed from module delay__parameterized8.
-INFO: [Synth 8-3332] Sequential element (\gen_dly.gen_regs.delay_bus_reg[1][0] ) is unused and will be removed from module delay__parameterized8.
-INFO: [Synth 8-3332] Sequential element (\gen_dly.gen_regs.delay_bus_reg[2][0] ) is unused and will be removed from module delay__parameterized8.
-INFO: [Synth 8-3332] Sequential element (\gen_dly.gen_regs.delay_bus_reg[3][0] ) is unused and will be removed from module delay__parameterized8.
-INFO: [Synth 8-3332] Sequential element (\gen_dly.gen_regs.delay_bus_reg[4][0] ) is unused and will be removed from module delay__parameterized8.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.we_gen_algn_reg[0] ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.we_gen_algn_reg[-1] ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.base_max_algn_reg[0] ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.base_max_algn_reg[-1] ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.flush_datax2_reg ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.flush_datax2_sub1_reg ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.base_en_algn_reg[1] ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_semi_parallel_and_smac.base_en_algn_reg[0] ) is unused and will be removed from module single_rate__parameterized0.
-INFO: [Synth 8-3332] Sequential element (rd_avail_2_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
-INFO: [Synth 8-3332] Sequential element (rd_valid_2_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
-INFO: [Synth 8-3332] Sequential element (full_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
-INFO: [Synth 8-3332] Sequential element (not_full_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
-INFO: [Synth 8-3332] Sequential element (afull_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
-INFO: [Synth 8-3332] Sequential element (aempty_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
-INFO: [Synth 8-3332] Sequential element (not_aempty_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_cntrl_mem_we/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_cntrl_mem_we/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[2].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[2].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[2].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[4].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[4].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[4].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
-INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[6].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[6].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[6].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[6].i_delay/gen_dly.gen_regs.delay_bus_reg[3][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[6].i_delay/gen_dly.gen_regs.delay_bus_reg[4][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_delay_lower_bits/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][14] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_delay_lower_bits/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][13] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_delay_lower_bits/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][12] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
@@ -434,48 +281,62 @@ INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_op_paths
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_delay_lower_bits/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_delay_lower_pat_det/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_delay_lower_pat_det/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.we_gen_algn_reg[0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.we_gen_algn_reg[-1] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_max_algn_reg[0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_max_algn_reg[-1] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_datax2_reg ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_datax2_sub1_reg ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_algn_reg[1] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_algn_reg[0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1147.777 ; gain = 509.125
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1121.051 ; gain = 482.398
 ---------------------------------------------------------------------------------
 
 
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1159.809 ; gain = 521.156
----------------------------------------------------------------------------------
-
-
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1174.801 ; gain = 536.148
----------------------------------------------------------------------------------
-
-INFO: [Synth 8-3971] The signal gen_bram.gen_write_first.gen_double_reg.ram_reg was recognized as a true dual port RAM template.
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1174.801 ; gain = 536.148
----------------------------------------------------------------------------------
-
-
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/i_synth /\g_single_rate.i_single_rate/g_semi_parallel_and_smac.sclr_cntrl_algn_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/i_synth /\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[2] )
+INFO: [Synth 8-3332] Sequential element (rd_avail_2_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
+INFO: [Synth 8-3332] Sequential element (rd_valid_2_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
+INFO: [Synth 8-3332] Sequential element (full_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
+INFO: [Synth 8-3332] Sequential element (not_full_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
+INFO: [Synth 8-3332] Sequential element (afull_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
+INFO: [Synth 8-3332] Sequential element (aempty_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
+INFO: [Synth 8-3332] Sequential element (not_aempty_1_reg) is unused and will be removed from module glb_srl_fifo__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tlast_int_reg ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.chan_max_early_reg ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.sclr_cntrl_algn_reg[0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[9] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[7] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[6] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[3] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[2] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[1] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
 INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+INFO: [Synth 8-3332] Sequential element (\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[5].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0] ) is unused and will be removed from module fir_compiler_v7_1_viv__parameterized0.
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1137.074 ; gain = 498.422
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1137.074 ; gain = 498.422
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
 INFO: [Synth 8-3332] Sequential element (\gen_bram.gen_write_first.gen_double_reg.doA_reg_reg[15] ) is unused and will be removed from module dpt_mem.
 INFO: [Synth 8-3332] Sequential element (\gen_bram.gen_write_first.gen_double_reg.doA_reg_reg[14] ) is unused and will be removed from module dpt_mem.
 INFO: [Synth 8-3332] Sequential element (\gen_bram.gen_write_first.gen_double_reg.doA_reg_reg[13] ) is unused and will be removed from module dpt_mem.
@@ -505,7 +366,7 @@ INFO: [Synth 8-3332] Sequential element (\gen_bram.gen_write_first.gen_double_re
 INFO: [Synth 8-3332] Sequential element (\gen_bram.gen_write_first.gen_double_reg.doB_reg_reg[5] ) is unused and will be removed from module dpt_mem.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 1185.816 ; gain = 547.164
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1137.074 ; gain = 498.422
 ---------------------------------------------------------------------------------
 
 
@@ -529,8 +390,11 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Gated Clock Conversion mode: off
+WARNING: [Synth 8-3295] tying undriven pin \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem :CE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a :CE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a :CE to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1185.816 ; gain = 547.164
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1137.074 ; gain = 498.422
 ---------------------------------------------------------------------------------
 
 
@@ -545,7 +409,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1185.816 ; gain = 547.164
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1137.074 ; gain = 498.422
 ---------------------------------------------------------------------------------
 
 
@@ -553,7 +417,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1185.816 ; gain = 547.164
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1137.074 ; gain = 498.422
 ---------------------------------------------------------------------------------
 
 
@@ -572,44 +436,44 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |CARRY4     |     2|
-|2     |DSP48E1_1  |     1|
-|3     |DSP48E1_2  |     2|
-|4     |LUT1       |     7|
-|5     |LUT2       |    52|
-|6     |LUT3       |    13|
-|7     |LUT4       |     8|
-|8     |LUT5       |     8|
-|9     |LUT6       |    56|
-|10    |MUXF7      |    15|
-|11    |RAMB18E1_3 |     1|
-|12    |SRL16E     |    26|
-|13    |FDRE       |   222|
-|14    |FDSE       |    14|
+|2     |DSP48E1    |     3|
+|3     |LUT1       |     6|
+|4     |LUT2       |    32|
+|5     |LUT3       |    25|
+|6     |LUT4       |     9|
+|7     |LUT5       |    11|
+|8     |LUT6       |    43|
+|9     |RAMB18E1_1 |     1|
+|10    |SRL16E     |    26|
+|11    |FDRE       |   218|
+|12    |FDSE       |    14|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 1185.816 ; gain = 547.164
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1137.074 ; gain = 498.422
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1185.816 ; gain = 547.164
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1137.074 ; gain = 498.422
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 Parsing XDC File [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc] for cell 'U0'
+INFO: [Project 1-11] Changing the constrs_type of fileset 'constrs_1' to 'XDC'. [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc:6]
 Finished Parsing XDC File [/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc] for cell 'U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-337 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+238 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:12 . Memory (MB): peak = 1537.246 ; gain = 793.199
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 1504.496 ; gain = 760.449
 # rename_ref -prefix_all fir_compiler_0
-INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Coretcl 2-1174] Renamed 31 cell refs.
 # write_checkpoint -noxdef fir_compiler_0.dcp
-INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-45] Going to infer timing constraints.
+INFO: [Timing 38-33] Done inferring timing constraints.
 # report_utilization -file fir_compiler_0_utilization_synth.rpt -pb fir_compiler_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1539.262 ; gain = 2.012
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1508.520 ; gain = 2.012
 # if { [catch {
 #   file copy -force /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.dcp
 #   write_verilog -force -mode synth_stub /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_stub.v
@@ -618,4 +482,4 @@ report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory
 # } _RESULT ] } { 
 #   puts "Critical Warning: Unable to successfully create or copy supporting IP files."
 # }
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 23 15:34:48 2014...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 28 09:14:19 2014...

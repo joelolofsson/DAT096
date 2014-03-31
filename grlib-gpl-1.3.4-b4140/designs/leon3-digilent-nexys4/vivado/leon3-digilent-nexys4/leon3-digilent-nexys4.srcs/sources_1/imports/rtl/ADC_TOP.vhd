@@ -35,20 +35,17 @@ entity ADC_TOP is
            sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.						-- ! To be removed.
            vauxp3 : in STD_LOGIC;								-- ! Positive analogue signal.
            vauxn3 : IN STD_LOGIC;								-- ! Negative analogue signal.
-           sampleout : out STD_LOGIC_VECTOR (31 downto 0));		-- ! Sampled value after decimation.
+           
+           addr : in STD_LOGIC_vector(6 downto 0);
+           buff_full : out STD_LOGIC;
+           ADC_buff_write : in STD_LOGIC;
+           
+           ADC_buff_out : out STD_LOGIC_VECTOR (31 downto 0));		-- ! Sampled value after decimation.
 end ADC_TOP;
 
 -- ! @brief Architecture of the ADC_TOP
 -- ! @details The architecture containing the main body of the component.
 architecture Behavioral of ADC_TOP is
--- ! To be removed
-COMPONENT ila_0	
-  PORT (
-    clk : IN STD_LOGIC;
-    probe0 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    probe1 : IN STD_LOGIC_VECTOR(15 DOWNTO 0)
-  );
-END COMPONENT;
 
 -- ! FIR filter IP component.
 COMPONENT fir_compiler_0
@@ -99,17 +96,20 @@ END COMPONENT;
 --ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
 --ATTRIBUTE BLACK_BOX_PAD_PIN OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,convst_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
 
--- ! to be removed
-
-component Decimator
-    Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC;
-           samplein : in STD_LOGIC_VECTOR (31 downto 0);
-           sampleout : out STD_LOGIC_VECTOR (31 downto 0);
-           sampleclk : in STD_LOGIC);
+component ADC_buffer
+	generic (
+		bufferwidth: integer:=7);
+    Port ( 
+		clk 				: in STD_LOGIC;
+		rst 				: in STD_LOGIC;
+		buff_write			: in STD_LOGIC;
+		Buffin 				: in STD_LOGIC_VECTOR (31 downto 0);
+		Buffout 			: out STD_LOGIC_VECTOR (31 downto 0);
+		Bufferfull 		: out STD_LOGIC;
+		Addr 				: in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 end component;
 
-Signal sampleclkcnt : integer;							-- ! To be removed
+--Signal sampleclkcnt : integer;							-- ! To be removed
 signal den_in : STD_LOGIC;								-- ! Signal for den_in in the XADC
 signal dwe_in : std_logic;								-- ! Signal for the write enable in for the XADC
 signal di_in : STD_LOGIC_VECTOR(15 downto 0);			-- ! Signal for the input vector for the XADC
@@ -123,6 +123,7 @@ signal dataready : STD_LOGIC;							-- ! Signalling the FIR filter is done to lo
 signal FIRready : STD_LOGIC;                            -- ! Signalling the firfilter is done with calculation
 signal cnt : integer range 0 to 3;                      -- ! 
 signal FIRvalid : std_logic;
+signal Buffer_in : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
@@ -218,14 +219,27 @@ inst_ADC : ADC
 --  cssig <= sampledvalue & x"0000";
 --  cssig2 <= sampledvalue;
   
- process(clk)
- begin
-    if rising_edge(clk) then
-        if  FIRvalid = '1' then
-            sampleout <= not(sampleflt(31)) & sampleflt(30 downto 0);
-        end if;
-    end if;
- end process;
+ --process(clk)
+ --begin
+ --   if rising_edge(clk) then
+      --  if  FIRvalid = '1' then
+           -- sampleout <= not(sampleflt(31)) & sampleflt(30 downto 0);
+ --          buffer_in <= not(sampleflt(31)) & sampleflt(30 downto 0);
+      --  end if;
+ --   end if;
+ --end process;
+ 
+ buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) & x"0000";
+ 
+ inst_Buffer:ADC_buffer
+     Port map ( 
+ 		clk                 => clk,
+ 		rst                 => rst,
+ 		buff_write			=> ADC_buff_write,
+ 		Buffin 				=> buffer_in,
+ 		Buffout 			=> ADC_buff_out,
+ 		Bufferfull 		    => Buff_full,
+ 		Addr 				=> addr);
 --  sampleout <= not(sampledvalue(15)) & sampledvalue(14 downto 0) & x"0000";
 --  sampleout <= cssig;
 

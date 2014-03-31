@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date         : Sun Mar 23 17:28:03 2014
+| Date         : Mon Mar 31 17:08:38 2014
 | Host         : joel-MacBookPro running 64-bit unknown
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
@@ -29,16 +29,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 10223 |     0 |     63400 | 16.12 |
-|   LUT as Logic             | 10188 |     0 |     63400 | 16.06 |
+| Slice LUTs*                | 12064 |     0 |     63400 | 19.02 |
+|   LUT as Logic             | 12029 |     0 |     63400 | 18.97 |
 |   LUT as Memory            |    35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    24 |     0 |           |       |
 |     LUT as Shift Register  |    11 |     0 |           |       |
-| Slice Registers            |  4783 |     0 |    126800 |  3.77 |
-|   Register as Flip Flop    |  4728 |     0 |    126800 |  3.72 |
-|   Register as Latch        |    55 |     0 |    126800 |  0.04 |
-| F7 Muxes                   |   277 |     0 |     31700 |  0.87 |
-| F8 Muxes                   |    53 |     0 |     15850 |  0.33 |
+| Slice Registers            | 10913 |     0 |    126800 |  8.60 |
+|   Register as Flip Flop    | 10832 |     0 |    126800 |  8.54 |
+|   Register as Latch        |    81 |     0 |    126800 |  0.06 |
+| F7 Muxes                   |  1126 |     0 |     31700 |  3.55 |
+| F8 Muxes                   |   438 |     0 |     15850 |  2.76 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Loced | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   80 |     0 |       210 | 38.09 |
+| Bonded IOB                  |   79 |     0 |       210 | 37.61 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | IBUFGDS                     |    0 |     0 |       202 |  0.00 |
 | IDELAYCTRL                  |    0 |     0 |         6 |  0.00 |
@@ -99,7 +99,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Loced | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    7 |     0 |        32 | 21.87 |
+| BUFGCTRL   |    8 |     0 |        32 | 25.00 |
 | BUFIO      |    0 |     0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         6 |  0.00 |
 | PLLE2_ADV  |    2 |     0 |         6 | 33.33 |
@@ -115,7 +115,7 @@ Table of Contents
 +-------------+------+-------+-----------+--------+
 |  Site Type  | Used | Loced | Available |  Util% |
 +-------------+------+-------+-----------+--------+
-| BSCANE2     |    2 |     0 |         4 |  50.00 |
+| BSCANE2     |    0 |     0 |         4 |   0.00 |
 | CAPTUREE2   |    0 |     0 |         1 |   0.00 |
 | DNA_PORT    |    0 |     0 |         1 |   0.00 |
 | EFUSE_USR   |    0 |     0 |         1 |   0.00 |
@@ -133,32 +133,31 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
-| LUT6      | 5340 |
-| FDRE      | 4480 |
-| LUT5      | 2854 |
-| LUT4      | 1428 |
-| LUT3      | 1101 |
-| LUT2      |  638 |
-| MUXF7     |  277 |
-| LUT1      |  232 |
+| LUT6      | 7121 |
+| FDRE      | 4273 |
+| FDCE      | 4258 |
+| LUT5      | 2980 |
+| FDPE      | 2192 |
+| LUT4      | 1344 |
+| MUXF7     | 1126 |
+| LUT3      | 1102 |
+| LUT2      |  579 |
+| MUXF8     |  438 |
+| LUT1      |  213 |
 | CARRY4    |  202 |
-| FDCE      |  116 |
-| FDSE      |  115 |
+| FDSE      |  109 |
+| LDCE      |   81 |
 | OBUF      |   55 |
-| LDCE      |   55 |
-| MUXF8     |   53 |
 | RAMD32    |   36 |
-| IBUF      |   25 |
+| IBUF      |   24 |
 | OBUFT     |   17 |
-| FDPE      |   17 |
 | RAMB36E1  |   13 |
 | RAMS32    |   12 |
 | RAMB18E1  |   12 |
 | SRL16E    |   11 |
-| BUFG      |    7 |
+| BUFG      |    8 |
 | DSP48E1   |    4 |
 | PLLE2_ADV |    2 |
-| BSCANE2   |    2 |
 | XADC      |    1 |
 +-----------+------+
 

@@ -94,7 +94,7 @@ package config is
 -- DSU UART
   constant CFG_AHB_UART : integer := 0;
 -- JTAG based DSU interface
-  constant CFG_AHB_JTAG : integer := 1;
+  constant CFG_AHB_JTAG : integer := 0;
 -- Ethernet DSU
   constant CFG_DSU_ETH : integer := 1 + 0 + 0;
   constant CFG_ETH_BUF : integer := 2;

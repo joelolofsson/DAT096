@@ -150,10 +150,11 @@ architecture rtl of leon3mp is
     generic (
     pindex : integer := 0;
     paddr : integer := 0; 
-    pmask : integer := 16#fff#);
+    pmask : integer := 16#ffc#);
   port (
     rstn : in std_ulogic;
     clk : in std_ulogic;
+    clk100 : in std_ulogic;
     vauxp3 : in STD_LOGIC;
     vauxn3 : IN STD_LOGIC;
     apbi : in apb_slv_in_type;
@@ -592,8 +593,8 @@ adderahb_if : adderahb
 
 -----------------------------------------------------------------------
 io0 : dummyapb
-     generic map (pindex => 8, paddr => 8, pmask => 16#FFF#)
-     port map (rstn, clkm,vauxp3,vauxn3, apbi, apbo(8), ampPWM, led(15 downto 4));
+     generic map (pindex => 8, paddr => 8, pmask => 16#FFC#)
+     port map (rstn, clkm,clk,vauxp3,vauxn3, apbi, apbo(8), ampPWM, led(15 downto 4));
 ampSD <='1';
 -----------------------------------------------------------------------
 ---  Boot message  ----------------------------------------------------
