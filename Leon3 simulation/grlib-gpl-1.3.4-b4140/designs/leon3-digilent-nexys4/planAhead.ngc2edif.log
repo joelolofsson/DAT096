@@ -1,0 +1,994 @@
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 1] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 1] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_99_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_371_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_371_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_371_o_GND_371_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_371_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 138988 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ahbsi_hsel[7 : 2] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 0] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_100_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_372_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_372_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_372_o_GND_372_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_372_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[24 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/P[20 : 8] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[27 : 11] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 139692 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ahbsi_hsel[7 : 2] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 0] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_100_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_372_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_372_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_372_o_GND_372_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_372_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[24 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/P[20 : 8] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[27 : 11] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 139764 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ahbsi_hsel[7 : 2] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 0] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_100_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_372_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_372_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_372_o_GND_372_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_372_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/comb.v_edclip[27 :
+   3] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[24 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/P[20 : 8] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[27 : 11] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 139992 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 1] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 1] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_99_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_371_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_371_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_371_o_GND_371_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_371_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 138984 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ahbsi_hsel[7 : 2] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 0] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_100_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_372_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_372_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_372_o_GND_372_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_372_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[24 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/P[20 : 8] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[27 : 11] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 139712 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ahbsi_hsel[7 : 2] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 0] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_100_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_372_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_372_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_372_o_GND_372_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_372_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/comb.v_edclip[27 :
+   3] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[24 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/P[20 : 8] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[27 : 11] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 140048 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ahbsi_hsel[7 : 2] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 0] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_100_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_372_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_372_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_372_o_GND_372_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_372_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[24 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/P[20 : 8] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[27 : 11] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 139764 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design leon3mp.ngc ...
+WARNING:NetListWriters:298 - No output is written to leon3mp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ahbsi_hsel[7 : 2] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_dcramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/cramo_icramo_tag[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_ctrl_inst[31 : 5] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/dco_data[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus io0/apb_comb.v_B[27 : 3] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[4]_r_haddr[7]_wide_mux_686_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatas[31 : 0] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ahb0/r_hrdatam[24 : 5] on block leon3mp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   ahb0/r_haddr[6]_msto[3]_hconfig[0][31]_wide_mux_660_OUT[24 : 5] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.v_xaddress[31 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/c0mmu/dcache0/dctrl.maddress[11 : 0] on block
+   leon3mp is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_e_op1[31]_r_x_result[31]_mux_522_OUT[15 :
+   2] on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/comb.v_e_ctrl_tt[5 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_x_rstate[1]_r_w_s_tba[19]_wide_mux_347_OUT
+   [19 : 0] on block leon3mp is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_m_ctrl_inst[31 : 19] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_imm[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   leon3gen.cpu[0].u0/leon3x0/p0/iu/r_a_ctrl_inst[31 : 0] on block leon3mp is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus leon3gen.dsugen.dsu0/x0/tr_haddr[31 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus gpt.timer0/Msub_comb.scaler_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   gpt.timer0/r_tsel[1]_X_100_o_wide_mux_15_OUT[31 : 0] on block leon3mp is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txdstate[3]_GND_372_o_add_634_OUT_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_txcnt[10]_GND_372_o_add_63_OUT_cy[8 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Msub_GND_372_o_GND_372_o_sub_179_OUT<7:0>_cy[5 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_regaddr[2 : 0]
+   on block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Madd_r_applength[15]_GND_372_o_add_555_OUT_cy[7 : 4] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_lut[
+   2 : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   eth0.e1/m100.u0/ethc0/Mmux_r_rxdstate[2]_r_rxcnt[10]_wide_mux_323_OUT_rs_A[10
+   : 1] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus eth0.e1/m100.u0/ethc0/r_ctrl_edcldis[11
+   : 0] on block leon3mp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[24 : 0] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/P[20 : 8] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus adderahb_if/SKadder_comp/G[27 : 11] on
+   block leon3mp is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file leon3mp.edif ...
+ngc2edif: Total memory usage is 139984 kilobytes
+

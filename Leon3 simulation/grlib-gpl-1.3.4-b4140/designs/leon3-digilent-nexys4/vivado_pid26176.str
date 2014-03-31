@@ -1,0 +1,852 @@
+/*
+
+Vivado v2013.4 (64-bit)
+SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+Process ID: 26176
+
+Current time: 	3/5/14 6:20:09 PM
+Time zone: 	Central European Time (Europe/Stockholm)
+
+OS: NAME="Ubuntu"
+Version: 3.11.0-17-generic
+Architecture: amd64
+Available processors (cores): 2
+
+DISPLAY: :0
+Screen size: 1280x800
+Screen resolution (DPI): 95
+Available screens: 1
+
+Java version: 	1.7.0_40 64-bit
+Java home: 	/opt/Xilinx/Vivado/2013.4/tps/lnx64/jre
+
+User name: 	joel
+User directory: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+GUI Allocated memory:	122 mb
+GUI Max memory:		3,066 mb
+Engine Allocated memory: 3973 mb
+
+*/
+
+// TclEventType: START_GUI
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 3/5/14 6:20:10 PM
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // ae:JMenu (JPopupMenu:JComponent, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, bT:JFrame)
+// [GUI Memory]: 58 mb (+58128kb) [00:00:25]
+// [Engine Memory]: 4,071 mb (+4117215kb) [00:00:25]
+// Elapsed time: 12 seconds
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectButton (PAResourceAtoH.GettingStartedView_MANAGE_IP, (String) null); // j:JideButton (JPanel:JComponent, bT:JFrame)
+selectMenuItem (PAResourceAtoH.GettingStartedView_START_USING_VIVADO_WITH_IP_CATALOG, "New IP Location..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// ac:a (bT:JFrame): New IP Location: addNotify
+selectButton ((HResource) null, "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ac:a)
+// [GUI Memory]: 71 mb (+14134kb) [00:00:50]
+selectButton (PAResourceItoP.NewIPProjectWizard_IP_LOCATION, (String) null); // o:a (aH:JPanel, ac:a)
+setFolderChooser ("/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP/fir_compiler_0");
+// cb:I (bT:JFrame):  Create IP Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project managed_ip_project /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP/fir_compiler_0/managed_ip_project -part xc7k70tfbg676-1 -ip 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 mb (+32926kb) [00:01:06]
+// [Engine Memory]: 4,075 mb (+4136kb) [00:01:06]
+// [Engine Memory]: 4,086 mb (+11943kb) [00:01:09]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 107 mb (+4371kb) [00:01:11]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2013.4/data/ip'. 
+// cb:I (bT:JFrame):  Opening IP Catalog : addNotify
+// Tcl Message: create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4808.984 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-1839] IP Catalog is up to date. 
+// TclEventType: PROJECT_CHANGE
+selectButton ((HResource) null, "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, ac:a)
+// 't' command handler elapsed time: 28 seconds
+dismissDialog ("Opening IP Catalog"); // cb:I (bT:JFrame)
+// Tcl Message: set_property target_language VHDL [current_project] 
+// Tcl Message: set_property target_simulator XSim [current_project] 
+dismissDialog ("Create IP Project"); // cb:I (bT:JFrame)
+setText ("PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "fir"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 256); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "Filters ;  ;  ;  ; ", 253); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 256); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, null, -1, false, false, false, true, false); // F:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, null, -1, false, false, false, true, false); // F:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, null, -1, false, false, false, true, false); // F:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, null, -1, false, false, false, true, false); // F:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+// HMemoryUtils.trashcanNow. Current time: 3/6/14 10:54:00 AM
+// Elapsed time: 59570 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae:JMenu (JPopupMenu:JComponent, bT:JFrame)
+selectMenuItem (PAResourceItoP.MainMenuMgr_OPEN_RECENT_PROJECT, "/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.xpr"); // ah:JMenuItem (JPopupMenu:JComponent, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_FILE, "File"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Current time: 3/6/14 10:54:23 AM
+// cb:I (bT:JFrame):  Open Project : addNotify
+selectButton ((HResource) null, "Yes"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 4,102 mb (+16777kb) [16:34:34]
+// [GUI Memory]: 108 mb (+1215kb) [16:34:47]
+// [GUI Memory]: 110 mb (+1871kb) [16:34:47]
+// [GUI Memory]: 113 mb (+3743kb) [16:34:47]
+// [GUI Memory]: 115 mb (+1871kb) [16:34:47]
+// [GUI Memory]: 117 mb (+1650kb) [16:34:47]
+// Tcl Message: open_project /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 4808.984 ; gain = 0.000 
+// Elapsed time: 17 seconds
+dismissDialog ("Open Project"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 119 mb (+2257kb) [16:34:58]
+// [Engine Memory]: 4,109 mb (+7512kb) [16:34:58]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 4,116 mb (+7340kb) [16:35:07]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,118 mb (+2097kb) [16:35:11]
+// [GUI Memory]: 122 mb (+2844kb) [16:35:11]
+// [GUI Memory]: 122 mb (+650kb) [16:35:13]
+// Tcl Message: update_compile_order -fileset sim_leon3-digilent-nexys4 
+// HMemoryUtils.trashcanNow. Current time: 3/6/14 10:55:05 AM
+// [Engine Memory]: 4,122 mb (+3768kb) [16:35:34]
+// Elapsed time: 940 seconds
+selectButton (PAResourceQtoZ.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "2 critical warnings"); // h:j (JPanel:JComponent, bT:JFrame)
+selectButton (PAResourceQtoZ.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "2 critical warnings"); // h:j (JPanel:JComponent)
+selectButton (PAResourceQtoZ.RunGadget_SHOW_ERROR, "33 errors"); // h:j (JPanel:JComponent, bT:JFrame)
+selectButton (PAResourceQtoZ.RunGadget_SHOW_ERROR, "33 errors"); // h:j (JPanel:JComponent)
+// [Engine Memory]: 4,125 mb (+3145kb) [16:51:03]
+// Elapsed time: 26 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_WINDOW, "Window"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// [Engine Memory]: 4,154 mb (+30785kb) [16:51:22]
+// HMemoryUtils.trashcanNow. Current time: 3/6/14 11:11:13 AM
+selectMenuItem (PAResourceCommand.PACommandNames_CORE_GEN, "IP Catalog"); // ah:JMenuItem (JPopupMenu:JComponent, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_WINDOW, "Window"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// cb:I (bT:JFrame):  IP Catalog : addNotify
+dismissDialog ("IP Catalog"); // cb:I (bT:JFrame)
+setText ("PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "fir"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, bT:JFrame)
+applyEnter (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231); // F:aj (JViewport:JComponent, bT:JFrame)
+// Elapsed time: 10 seconds
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231, false, false, false, true, false); // F:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g:JideTabbedPane (y:aC, bT:JFrame)
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (y:aC, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spi2ahb - rtl (spi2ahb.vhd)]", 58, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sdctrl - rtl (sdctrl.vhd)]", 79, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sdctrl - rtl (sdctrl.vhd)]", 79, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpddr2phy_wrap_cbd_wo_pads - rtl (ddrphy_wrap.vhd)]", 51, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lpddr2phy_wrap_cbd_wo_pads - rtl (ddrphy_wrap.vhd)]", 51, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, syncram156bw - rtl (syncram156bw.vhd)]", 17, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "Filters ;  ;  ;  ; ", 228); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231); // F:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "FIR Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:fir_compiler:7.1", 231, false, false, false, true, false); // F:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_CUSTOMIZE_CORE, "Customize IP..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// cb:I (bT:JFrame):  Customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: PARAM_UPDATED
+// [Engine Memory]: 4,154 mb (+28kb) [16:52:26]
+// q:I (bT:JFrame): Customize IP: addNotify
+dismissDialog ("Customize IP"); // cb:I (bT:JFrame)
+// Elapsed time: 26 seconds
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Channel Specification", 1); // bW:g (t:JPanel, q:I)
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Filter Options", 0); // bW:g (t:JPanel, q:I)
+selectButton (PAResourceAtoH.CustomizeCoreDialog_SWITCH_TO_DEFAULTS, "Switch to Defaults"); // u:JideButton (CommandBar:DockableBar, q:I)
+selectButton (PAResourceAtoH.CustomizeCoreDialog_SWITCH_TO_DEFAULTS, "Switch to Defaults"); // u:JideButton (CommandBar:DockableBar, q:I)
+selectButton ((HResource) null, "No"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, q:I)
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, q:I)
+// [Engine Memory]: 4,161 mb (+7397kb) [16:53:22]
+// Elapsed time: 64 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mul_61x61 - rtl (mul_61x61.vhd)]", 11, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, greth_gen - rtl (greth_gen.vhd)]", 5, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, greth_gen - rtl (greth_gen.vhd)]", 5, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g:JideTabbedPane (y:aC, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, grlib]", 2); // o:f (u:JPanel, bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, techmap]", 3); // o:f (u:JPanel, bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, gaisler]", 4); // o:f (u:JPanel, bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, eth]", 5); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, fir_compiler_0.vhd]", 8); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, fir_compiler_0.vhd]", 8); // o:f (u:JPanel, bT:JFrame)
+// [GUI Memory]: 123 mb (+528kb) [16:54:33]
+// [GUI Memory]: 124 mb (+879kb) [16:54:33]
+// [GUI Memory]: 124 mb (+807kb) [16:54:33]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, fir_compiler_0.vhd]", 8, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// [GUI Memory]: 128 mb (+4099kb) [16:54:33]
+// [GUI Memory]: 130 mb (+2239kb) [16:54:33]
+selectCodeEditor ("fir_compiler_0.vhd", 362, 105, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 151, 206, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+// Elapsed time: 62 seconds
+selectMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_REPORT, "Report"); // ae:JMenu (JPopupMenu:JComponent, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_REPORT, "Report"); // ae:JMenu (JPopupMenu:JComponent, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_WINDOW, "Window"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_WINDOW, "Window"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_REPORT, "Report"); // ae:JMenu (JPopupMenu:JComponent, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_TOOLS, "Tools"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_EDIT, "Edit"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_EDIT, "Edit"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+selectMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+dismissMenu (PAResourceItoP.MainMenuMgr_FLOW, "Flow"); // ab:JideMenu (CommandMenuBar:CommandBar, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 3/6/14 11:24:03 AM
+// Elapsed time: 1531 seconds
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectButton (PAResourceQtoZ.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "2 critical warnings"); // h:j (JPanel:JComponent, bT:JFrame)
+selectButton (PAResourceQtoZ.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "2 critical warnings"); // h:j (JPanel:JComponent)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+setText ("PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "dmc"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, bT:JFrame)
+applyEnter (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // F:aj (JViewport:JComponent, bT:JFrame)
+setText ("PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "DMC"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, bT:JFrame)
+applyEnter (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // F:aj (JViewport:JComponent, bT:JFrame)
+setText ("PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, bT:JFrame)
+selectTable (PAResourceAtoH.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:5.1", 6); // F:aj (JViewport:JComponent, bT:JFrame)
+// Elapsed time: 10 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, ahbrom.vhd]", 18, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, DAC_TOP.vhd]", 12, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// b:aG (bT:JFrame): Add Sources: addNotify
+selectRadioButton (PAResourceAtoH.AddSrcWizard_SPECIFY_EXISTING_CONFIGURABLE_IP, "Add Existing IP"); // a:JRadioButton (JPanel:JComponent, b:aG)
+selectButton ((HResource) null, "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:aG)
+selectButton (PAResourceQtoZ.SrcChooserPanel_ADD_CONFIGURABLE_IP_FILES, "Add Files..."); // a:JButton (JPanel:JComponent, b:aG)
+selectButton (PAResourceQtoZ.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories..."); // a:JButton (JPanel:JComponent, b:aG)
+// Elapsed time: 11 seconds
+setFolderChooser ("/home/joel/Downloads/sources_1/ip");
+selectButton (PAResourceQtoZ.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories..."); // a:JButton (JPanel:JComponent, b:aG)
+// cb:I (bT:JFrame):  Add Existing IP : addNotify
+// Tcl Message: import_ip  {/home/joel/Downloads/sources_1/ip/fir_compiler_0/fir_compiler_0.xci /home/joel/Downloads/sources_1/ip/DMC/DMC.xci /home/joel/Downloads/sources_1/ip/ila_0/ila_0.xci /home/joel/Downloads/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci /home/joel/Downloads/sources_1/ip/ADC/ADC.xci} 
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-3387] Updating parameter PARAM_VALUE.Coefficient_File of imported instance fir_compiler_0 to /home/filtercoeff.coe 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,161 mb (+4kb) [17:22:46]
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,167 mb (+5279kb) [17:22:49]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Current time: 3/6/14 11:42:42 AM
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,222 mb (+58425kb) [17:22:54]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,229 mb (+7430kb) [17:22:56]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_ip: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 4930.914 ; gain = 67.844 
+// a:a (bT:JFrame): Critical Messages: addNotify
+// Elapsed time: 19 seconds
+selectButton ((HResource) null, "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:aG)
+// 'd' command handler elapsed time: 41 seconds
+dismissDialog ("Add Existing IP"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 4,230 mb (+1048kb) [17:22:58]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,239 mb (+8691kb) [17:23:06]
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, a:a)
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, a:a)
+// Elapsed time: 41 seconds
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP]", 26); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 28); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced]", 27); // o:f (u:JPanel, bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced]", 27); // o:f (u:JPanel, bT:JFrame)
+// Elapsed time: 55 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP]", 26); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced]", 27); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, DMC]", 29); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, fir_compiler_0]", 28); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, fir_compiler_0]", 28, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenu (PAResourceQtoZ.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu (PAResourceQtoZ.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, fir_compiler_0]", 28); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, fir_compiler_0]", 28); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, fir_compiler_0]", 28); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, fir_compiler_0]", 28, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficient File    (Coefficient_File)' for Invalid COE File- Unable to open the file /home/filtercoeff.coe  . IP 'fir_compiler_0' ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Number of Coefficient Sets(Coefficient_Sets)' for The minimum number of coefficients per set is 2. . IP 'fir_compiler_0' 
+// Tcl Message: INFO: [IP_Flow 19-3438] Customization errors found on 'fir_compiler_0'. Restoring to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficient File    (Coefficient_File)' for Invalid COE File- Unable to open the file /home/filtercoeff.coe  . IP 'fir_compiler_0' ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Number of Coefficient Sets(Coefficient_Sets)' for The minimum number of coefficients per set is 2. . IP 'fir_compiler_0' 
+// Tcl Message: INFO: [IP_Flow 19-3447] Customization errors found during restoring IP 'fir_compiler_0' to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3439] Failed to restore IP 'fir_compiler_0' customization to its previous valid configuration. 
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+selectButton (PAResourceQtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, q:I)
+// TclEventType: FILE_SET_CHANGE
+dismissFileChooser ();
+selectButton (PAResourceQtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, q:I)
+// Elapsed time: 23 seconds
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, q:I)
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, q:I)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, fir_compiler_0]", 28); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, gaisler]", 4, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, gaisler]", 4, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 4,248 mb (+9437kb) [17:25:39]
+// Tcl Message: [Thu Mar  6 11:45:30 2014] Launched synth_1... Run output will be captured here: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// 'q' command handler elapsed time: 3 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 18 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// [GUI Memory]: 132 mb (+1646kb) [17:25:58]
+dismissDialog ("Synthesis Failed"); // O:af (bT:JFrame)
+// Elapsed time: 29 seconds
+selectTree (PAResourceItoP.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_compile_order -fileset sources_1. , [IP_Flow 19-3460] Validation failed on parameter 'Number of Coefficient Sets(Coefficient_Sets)' for The minimum number of coefficients per set is 2.. . IP 'fir_compiler_0'. ]", 5, false, false, false, true, false); // O:f (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+// Elapsed time: 18 seconds
+selectTree (PAResourceItoP.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_compile_order -fileset sources_1. ]", 3, false, false, false, true, false); // O:f (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceItoP.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_compile_order -fileset sources_1. ]", 3); // O:f (JViewport:JComponent, bT:JFrame)
+// Elapsed time: 34 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, PWM.vhd]", 7, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, dummyapb.vhd]", 15, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, fir_compiler_0.vhd]", 8); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, fir_compiler_0.vhd]", 8); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, fir_compiler_0.vhd]", 8, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectCodeEditor ("fir_compiler_0.vhd", 225, 183, false, false, false, true, false); // aR:G (JPanel:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, work, fir_compiler_0.vhd]", 8, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aA:I (bT:JFrame): Remove Sources: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aA:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aA:I)
+closeView (PAResourceItoP.PAViews_CODE, "Code"); // I:b
+dismissDialog ("Remove Sources"); // aA:I (bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// aA:I (bT:JFrame): Remove Sources: addNotify
+// cb:I (aA:I):  Remove Sources : addNotify
+// Tcl Message: remove_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/fir_compiler_0.vhd 
+dismissDialog ("Remove Sources"); // cb:I (aA:I)
+// [GUI Memory]: 132 mb (+1kb) [17:28:08]
+// [Engine Memory]: 4,271 mb (+24051kb) [17:28:08]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, Unreferenced, fir_compiler_0]", 27, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_leon3-digilent-nexys4]", 39, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_leon3-digilent-nexys4, Verilog, gaisler]", 41, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+// HMemoryUtils.trashcanNow. Current time: 3/6/14 11:48:02 AM
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, fir_compiler_0]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP, fir_compiler_0]", 3, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficient File    (Coefficient_File)' for Invalid COE File- Unable to open the file /home/filtercoeff.coe  . IP 'fir_compiler_0' ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Number of Coefficient Sets(Coefficient_Sets)' for The minimum number of coefficients per set is 2. . IP 'fir_compiler_0' 
+// Tcl Message: INFO: [IP_Flow 19-3438] Customization errors found on 'fir_compiler_0'. Restoring to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficient File    (Coefficient_File)' for Invalid COE File- Unable to open the file /home/filtercoeff.coe  . IP 'fir_compiler_0' ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Number of Coefficient Sets(Coefficient_Sets)' for The minimum number of coefficients per set is 2. . IP 'fir_compiler_0' 
+// Tcl Message: INFO: [IP_Flow 19-3447] Customization errors found during restoring IP 'fir_compiler_0' to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3439] Failed to restore IP 'fir_compiler_0' customization to its previous valid configuration. 
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+selectButton (PAResourceQtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, q:I)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,281 mb (+10874kb) [17:28:27]
+setFileChooser ("/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe");
+selectButton (PAResourceQtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, q:I)
+dismissFileChooser ();
+selectButton (PAResourceQtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, q:I)
+selectButton ((HResource) null, "more info"); // h:j (JPanel:JComponent, q:I)
+selectButton ((HResource) null, "more info"); // h:j (JPanel:JComponent, q:I)
+// Elapsed time: 43 seconds
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, q:I)
+// [GUI Memory]: 134 mb (+2468kb) [17:29:28]
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, q:I)
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (y:aC, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+// Elapsed time: 17 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1); // w:Q (v:u, bT:JFrame)
+// Project Settings: addNotify
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1, false, false, false, false, true); // w:Q (v:u, bT:JFrame) - DOUBLE CLICK
+selectButton (PAResourceItoP.ProjectSettingsGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // o:a (a:Y, j:bg)
+// c:I (j:bg): Select Device: addNotify
+selectTable (PAResourceItoP.PartChooser_PARTS, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 240 ; 0 ; 0 ; 1 ; 6 ; 0 ; 85 ; 85 ; 0.95 ; 0.95 ; 1.05 ; C ; 0", 90); // N:u (JViewport:JComponent, c:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, c:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, c:I)
+selectButton (PAResourceItoP.ProjectSettingsGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // o:a (a:Y, j:bg)
+dismissDialog ("Select Device"); // c:I (j:bg)
+selectButton ((HResource) null, "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, j:bg)
+// TclEventType: RUN_MODIFY
+// TclEventType: PART_MODIFIED
+// [GUI Memory]: 135 mb (+444kb) [17:30:03]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 138 mb (+3531kb) [17:30:04]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property part xc7a100tcsg324-1 [current_project] 
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog ("Select Device"); // c:I (j:bg)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (y:aC, bT:JFrame)
+// [GUI Memory]: 140 mb (+2068kb) [17:30:12]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fir_compiler_0]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fir_compiler_0, Instantiation Template]", 2, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficient File    (Coefficient_File)' for Invalid COE File- Unable to open the file /home/filtercoeff.coe  . IP 'fir_compiler_0' ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Number of Coefficient Sets(Coefficient_Sets)' for The minimum number of coefficients per set is 2. . IP 'fir_compiler_0' 
+// Tcl Message: INFO: [IP_Flow 19-3438] Customization errors found on 'fir_compiler_0'. Restoring to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficient File    (Coefficient_File)' for Invalid COE File- Unable to open the file /home/filtercoeff.coe  . IP 'fir_compiler_0' ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Number of Coefficient Sets(Coefficient_Sets)' for The minimum number of coefficients per set is 2. . IP 'fir_compiler_0' 
+// Tcl Message: INFO: [IP_Flow 19-3447] Customization errors found during restoring IP 'fir_compiler_0' to previous valid configuration. 
+// Tcl Message: ERROR: [IP_Flow 19-3439] Failed to restore IP 'fir_compiler_0' customization to its previous valid configuration. 
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectButton (PAResourceQtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, q:I)
+// Elapsed time: 25 seconds
+setFileChooser ("/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe");
+selectButton (PAResourceQtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a:JButton (JPanel:JComponent, q:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+// cb:I (q:I):  Re-customize IP : addNotify
+// Tcl Message: set_property -dict [list CONFIG.Coefficient_File {/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe}] [get_ips fir_compiler_0] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of File '/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe' provided. It will be converted relative to IP Instance files '../filtercoeff.coe' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 144 mb (+4200kb) [17:31:04]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir_compiler_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir_compiler_0'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 145 mb (+764kb) [17:31:13]
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir_compiler_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir_compiler_0'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir_compiler_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir_compiler_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:fir_compiler:7.1-1] fir_compiler_0: Coefficient Reload not selected, no files generated INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir_compiler_0'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 4985.250 ; gain = 0.000 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// [GUI Memory]: 148 mb (+3445kb) [17:31:19]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_ADD
+// [GUI Memory]: 154 mb (+6249kb) [17:31:19]
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_run -jobs 2 fir_compiler_0_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar  6 11:51:11 2014] Launched fir_compiler_0_synth_1... Run output will be captured here: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/runme.log 
+// Elapsed time: 12 seconds
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+dismissDialog ("Managing Output Products"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, null, -1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+// TclEventType: FILE_SET_CHANGE
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar  6 11:51:25 2014] Launched fir_compiler_0_synth_1... Run output will be captured here: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar  6 11:51:26 2014] Launched synth_1... Run output will be captured here: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// 'q' command handler elapsed time: 6 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// [GUI Memory]: 154 mb (+365kb) [17:31:56]
+// Elapsed time: 19 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 4); // o:f (u:JPanel, bT:JFrame)
+selectButton (PAResourceQtoZ.StateMonitor_CANCEL, "Cancel"); // a:JButton (v:JPanel, bT:JFrame)
+selectButton (PAResourceQtoZ.StateMonitor_CANCEL, "Cancel"); // a:JButton (v:JPanel, bT:JFrame)
+selectButton ((HResource) null, "Cancel"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 4); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Change Log]", 8, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+// 'B' command handler elapsed time: 3 seconds
+// [GUI Memory]: 157 mb (+2297kb) [17:32:05]
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: generate_target all [get_files  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ADC'... 
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ADC'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ADC'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ADC'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 4985.250 ; gain = 0.000 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_run -jobs 2 ADC_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar  6 11:52:16 2014] Launched ADC_synth_1... Run output will be captured here: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/runme.log 
+// Elapsed time: 11 seconds
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+dismissDialog ("Managing Output Products"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, DMC]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, DMC, Instantiation Template]", 2, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+// 'B' command handler elapsed time: 3 seconds
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+// [GUI Memory]: 159 mb (+2336kb) [17:32:45]
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: generate_target all [get_files  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/DMC/DMC.xci] 
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'DMC'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 164 mb (+5761kb) [17:32:49]
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'DMC'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'DMC'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 166 mb (+2148kb) [17:32:58]
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'DMC'... 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 4985.250 ; gain = 0.000 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/DMC/DMC.xci] 
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 169 mb (+2847kb) [17:33:00]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 170 mb (+890kb) [17:33:02]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 176 mb (+5908kb) [17:33:02]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 177 mb (+1981kb) [17:33:03]
+// [GUI Memory]: 184 mb (+6889kb) [17:33:03]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_run -jobs 2 DMC_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar  6 11:52:55 2014] Launched DMC_synth_1... Run output will be captured here: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/DMC_synth_1/runme.log 
+// Elapsed time: 18 seconds
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+dismissDialog ("Managing Output Products"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 187 mb (+3278kb) [17:33:06]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 193 mb (+5787kb) [17:33:28]
+                                                               

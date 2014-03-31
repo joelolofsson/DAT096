@@ -1,0 +1,281 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Fri Feb 28 10:59:26 2014
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project:/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs//auto_project.ipfcreated.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys4", SN:210274504873
+INFO:iMPACT - Digilent Plugin: User Name: Nexys4
+INFO:iMPACT - Digilent Plugin: Product Name: Digilent Nexys4
+INFO:iMPACT - Digilent Plugin: Serial Number: 210274504873
+INFO:iMPACT - Digilent Plugin: Product ID: 01200151
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0109
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 10000000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2/28/14 10:59 AM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx XC7A100T, Version : 1
+INFO:iMPACT:1777 - 
+   Reading /opt/Xilinx/14.7/ISE_DS/ISE/artix7/data/xc7a100t.bsd...
+INFO:iMPACT - Using CseAdapterBSDevice
+INFO:iMPACT:501 - '1': Added Device XC7A100T successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file"/home/joel/Desktop/leon3mpmaybeworking.bit"
+'1': Loading file '/home/joel/Desktop/leon3mpmaybeworking.bit' ...
+done.
+INFO:iMPACT - Using CseAdapterBSDevice
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = .
+INFO:iMPACT:501 - '1': Added Device xc7a100t successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2/28/14 10:59 AM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   36.59 C, Min. Reading:   32.16 C, Max.Reading:   36.59 C
+1: VCCINT Supply: Current Reading:   1.005 V, Min. Reading:   1.005 V, Max.Reading:   1.008 V
+1: VCCAUX Supply: Current Reading:   1.790 V, Min. Reading:   1.790 V, Max.Reading:   1.793 V
+INFO:iMPACT - Creating XC7A100T device.
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1011 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2/28/14 11:14 AM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   36.10 C, Min. Reading:   34.13 C, Max.Reading:   36.59 C
+1: VCCINT Supply: Current Reading:   1.005 V, Min. Reading:   1.005 V, Max.Reading:   1.008 V
+1: VCCAUX Supply: Current Reading:   1.790 V, Min. Reading:   1.790 V, Max.Reading:   1.793 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1011 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+// *** BATCH CMD : assignFile -p 1 -file "/home/joel/Desktop/leon3mp.bit"
+'1': Loading file '/home/joel/Desktop/leon3mp.bit' ...
+done.
+INFO:iMPACT - Using CseAdapterBSDevice
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = .
+INFO:iMPACT:501 - '1': Added Device xc7a100t successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2/28/14 11:23 AM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   40.04 C, Min. Reading:   36.10 C, Max.Reading:   40.53 C
+1: VCCINT Supply: Current Reading:   1.005 V, Min. Reading:   1.002 V, Max.Reading:   1.008 V
+1: VCCAUX Supply: Current Reading:   1.787 V, Min. Reading:   1.784 V, Max.Reading:   1.793 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1011 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+// *** BATCH CMD : assignFile -p 1 -file "/home/joel/leon3mp.bit"
+'1': Loading file '/home/joel/leon3mp.bit' ...
+done.
+INFO:iMPACT - Using CseAdapterBSDevice
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = .
+INFO:iMPACT:501 - '1': Added Device xc7a100t successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2/28/14 11:23 AM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   40.04 C, Min. Reading:   39.05 C, Max.Reading:   40.53 C
+1: VCCINT Supply: Current Reading:   1.005 V, Min. Reading:   1.002 V, Max.Reading:   1.008 V
+1: VCCAUX Supply: Current Reading:   1.787 V, Min. Reading:   1.784 V, Max.Reading:   1.793 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1011 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2/28/14 11:26 AM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   38.56 C, Min. Reading:   36.59 C, Max.Reading:   39.05 C
+1: VCCINT Supply: Current Reading:   1.005 V, Min. Reading:   1.005 V, Max.Reading:   1.008 V
+1: VCCAUX Supply: Current Reading:   1.793 V, Min. Reading:   1.790 V, Max.Reading:   1.793 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1011 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2/28/14 11:28 AM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   36.59 C, Min. Reading:   33.15 C, Max.Reading:   36.59 C
+1: VCCINT Supply: Current Reading:   1.005 V, Min. Reading:   1.005 V, Max.Reading:   1.008 V
+1: VCCAUX Supply: Current Reading:   1.793 V, Min. Reading:   1.790 V, Max.Reading:   1.793 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1011 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+INFO:iMPACT - Current time: 2/28/14 11:41 AM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   36.59 C, Min. Reading:   34.62 C, Max.Reading:   37.09 C
+1: VCCINT Supply: Current Reading:   1.005 V, Min. Reading:   1.005 V, Max.Reading:   1.008 V
+1: VCCAUX Supply: Current Reading:   1.790 V, Min. Reading:   1.790 V, Max.Reading:   1.793 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1011 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+Project:'/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs//auto_project.ipf'created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file"/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs//auto_project.ipf"
+INFO:iMPACT - User_EnvOsname: 'Ubuntu'
+INFO:iMPACT - User_EnvOsrelease: 'Ubuntu 12.04.4 LTS'
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/webtalk.log for   details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
