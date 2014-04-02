@@ -1,0 +1,17 @@
+C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dacTop
+-- Compiling architecture behavioral of dacTop
+
+} {} {}} C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DAC_SPI
+-- Compiling architecture behavioral of DAC_SPI
+
+} {} {}}

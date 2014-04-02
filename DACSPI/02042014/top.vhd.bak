@@ -61,7 +61,7 @@ begin
 		clk		=> clk,
 		rst		=> rstn,
 		buffRead	=> readBuffer,
-		indexReset	=> '0',
+		indexReset	=> rstn,
 		buffWrite	=> write,
 		buffIn		=> data,
 		buffOut 	=> sBuffOut,
