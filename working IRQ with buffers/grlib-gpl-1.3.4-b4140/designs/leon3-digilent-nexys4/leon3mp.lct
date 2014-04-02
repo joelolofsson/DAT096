@@ -1,0 +1,8 @@
+[Device]
+Family = ;
+PartNumber = XC7A100T-2csg324;
+Package = ;
+PartType = XC7A100T;
+Speed = -2;
+Operating_condition = COM;
+Status = Production;

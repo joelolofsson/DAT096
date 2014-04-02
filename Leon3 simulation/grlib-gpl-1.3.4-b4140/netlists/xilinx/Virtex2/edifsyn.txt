@@ -1,0 +1,6 @@
+leon3ft_grfpul_unisim.edf
+leon3ft_grfpu_unisim.edf
+grfpw_0_unisim.edf
+grfpw4_0_unisim.edf
+grlfpw_0_unisim.edf
+grlfpw4_0_unisim.edf

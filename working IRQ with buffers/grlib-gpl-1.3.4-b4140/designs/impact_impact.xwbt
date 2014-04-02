@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/impact.xsl
+OUTFILE=/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs
+LICENSE=iMPACT
+USER_INFO=iMPACT

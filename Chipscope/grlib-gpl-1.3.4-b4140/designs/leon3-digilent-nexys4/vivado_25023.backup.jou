@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Wed Mar  5 17:41:46 2014
+# Process ID: 24278
+# Log file: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado.log
+# Journal file: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source ./vivado/leon3mp_vivado.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_leon3-digilent-nexys4
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_runs synth_1
+wait_on_run synth_1
+import_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/rtl
+update_compile_order -fileset sources_1
