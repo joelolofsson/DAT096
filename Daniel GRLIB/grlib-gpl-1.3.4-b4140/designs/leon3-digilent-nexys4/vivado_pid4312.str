@@ -1,0 +1,308 @@
+/*
+
+Vivado v2013.4 (64-bit)
+SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+Process ID: 4312
+
+Current time: 	2/20/14 1:36:19 PM
+Time zone: 	Central European Time (Europe/Stockholm)
+
+OS: NAME="Ubuntu"
+Version: 3.11.0-17-generic
+Architecture: amd64
+Available processors (cores): 2
+
+DISPLAY: :0
+Screen size: 1280x800
+Screen resolution (DPI): 95
+Available screens: 1
+
+Java version: 	1.7.0_40 64-bit
+Java home: 	/opt/Xilinx/Vivado/2013.4/tps/lnx64/jre
+
+User name: 	joel
+User directory: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+GUI Allocated memory:	142 mb
+GUI Max memory:		3,066 mb
+Engine Allocated memory: 4105 mb
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// cb:I (bT:JFrame):  Sourcing Tcl script './vivado/leon3mp_vivado.tcl' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: source ./vivado/leon3mp_vivado.tcl 
+// Tcl Message: # create_project leon3-digilent-nexys4 ./vivado/leon3-digilent-nexys4 -part XC7A100T-csg324-2 -force 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Current time: 2/20/14 1:36:21 PM
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 71 mb (+72490kb) [00:00:15]
+// [Engine Memory]: 4,073 mb (+4119628kb) [00:00:15]
+// [GUI Memory]: 77 mb (+5638kb) [00:00:17]
+// [GUI Memory]: 91 mb (+14868kb) [00:00:19]
+// [GUI Memory]: 95 mb (+3914kb) [00:00:19]
+// [Engine Memory]: 4,074 mb (+1048kb) [00:00:19]
+// [GUI Memory]: 95 mb (+539kb) [00:00:20]
+// [GUI Memory]: 100 mb (+4684kb) [00:00:20]
+// [Engine Memory]: 4,075 mb (+1089kb) [00:00:20]
+// [GUI Memory]: 103 mb (+3303kb) [00:00:20]
+// [GUI Memory]: 107 mb (+4623kb) [00:00:20]
+// Tcl Message: create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 4800.738 ; gain = 153.188 
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: # create_fileset -simset sim_leon3-digilent-nexys4 # set_property top testbench [get_filesets sim_leon3-digilent-nexys4] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,080 mb (+4882kb) [00:00:24]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,082 mb (+2539kb) [00:00:24]
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 111 mb (+3709kb) [00:00:24]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,085 mb (+2629kb) [00:00:29]
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,088 mb (+3317kb) [00:00:30]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ## add_files -fileset sim_leon3-digilent-nexys4 -norecurse ../../lib/micron/ddr_sdram/ddr2.v ## set_property library micron [get_files ../../lib/micron/ddr_sdram/ddr2.v] 
+// Tcl Message: ## add_files -fileset sim_leon3-digilent-nexys4 -norecurse ../../lib/micron/ddr_sdram/mobile_ddr.v ## set_property library micron [get_files ../../lib/micron/ddr_sdram/mobile_ddr.v] 
+// Tcl Message: ## add_files -fileset sim_leon3-digilent-nexys4 -norecurse ../../lib/micron/ddr_sdram/ddr3.v ## set_property library micron [get_files ../../lib/micron/ddr_sdram/ddr3.v] 
+// Tcl Message: ## add_files -fileset sim_leon3-digilent-nexys4 -norecurse ../../lib/micron/ddr_sdram/mobile_ddr_fe.v ## set_property library micron [get_files ../../lib/micron/ddr_sdram/mobile_ddr_fe.v] 
+// Tcl Message: ## add_files -fileset sim_leon3-digilent-nexys4 -norecurse ../../lib/micron/ddr_sdram/ddr3_model.v ## set_property library micron [get_files ../../lib/micron/ddr_sdram/ddr3_model.v] 
+// Tcl Message: ## add_files -fileset sim_leon3-digilent-nexys4 -norecurse ../../lib/micron/ddr_sdram/mobile_ddr2_fe.v ## set_property library micron [get_files ../../lib/micron/ddr_sdram/mobile_ddr2_fe.v] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: # read_vhdl -library work leon3mp.vhd # import_files leon3mp.ucf # set_property used_in_synthesis true [get_files leon3mp.ucf] 
+// Tcl Message: ERROR: [Common 17-54] The object 'file' does not have a property 'used_in_synthesis'. 
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message:      while executing "rdi::set_property used_in_synthesis true /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/..."     invoked from within "set_property used_in_synthesis true [get_files leon3mp.ucf]"     (file "./vivado/leon3mp_vivado.tcl" line 14) 
+dismissDialog ("Sourcing Tcl script './vivado/leon3mp_vivado.tcl'"); // cb:I (bT:JFrame)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Current time: 2/20/14 1:37:02 PM
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 4,101 mb (+13393kb) [00:00:55]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 113 mb (+1924kb) [00:01:00]
+// [Engine Memory]: 4,107 mb (+6119kb) [00:01:00]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_leon3-digilent-nexys4 update_compile_order -fileset sources_1 update_compile_order -fileset sim_1 
+// [Engine Memory]: 4,109 mb (+2097kb) [00:01:02]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,110 mb (+1048kb) [00:01:03]
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 114 mb (+1657kb) [00:01:09]
+// [Engine Memory]: 4,111 mb (+1048kb) [00:01:09]
+// Elapsed time: 28 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, grgpio - rtl (grgpio.vhd)]", 74); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, grgpio - rtl (grgpio.vhd)]", 74); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, grgpio - rtl (grgpio.vhd)]", 74, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// [Engine Memory]: 4,113 mb (+2097kb) [00:01:27]
+// Elapsed time: 15 seconds
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Unknown]", 82); // o:f (u:JPanel, bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Unknown]", 82); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Unknown]", 82); // o:f (u:JPanel, bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Unknown]", 82); // o:f (u:JPanel, bT:JFrame)
+// Elapsed time: 16 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rgmii - rtl (rgmii.vhd)]", 6); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sdram_phy - rtl (sdram_phy.vhd)]", 7); // o:f (u:JPanel, bT:JFrame)
+// Elapsed time: 129 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd)]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), rst0 - rstgen - rtl (rstgen.vhd)]", 2, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// [GUI Memory]: 115 mb (+933kb) [00:05:41]
+// HMemoryUtils.trashcanNow. Current time: 2/20/14 1:42:37 PM
+// [Engine Memory]: 4,120 mb (+8175kb) [00:06:45]
+// Elapsed time: 372 seconds
+selectCodeEditor ("leon3mp.vhd", 68, 322); // aR:G (JPanel:JComponent, bT:JFrame)
+// Elapsed time: 82 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), apb0 - apbctrl - rtl (apbctrl.vhd)]", 20); // o:f (u:JPanel, bT:JFrame)

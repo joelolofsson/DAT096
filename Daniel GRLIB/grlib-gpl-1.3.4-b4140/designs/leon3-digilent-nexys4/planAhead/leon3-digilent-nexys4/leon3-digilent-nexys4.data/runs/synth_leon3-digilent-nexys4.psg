@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Strategy Version="1" Minor="2">
+	<StratHandle Name="XST Defaults" Flow="XST14">
+		<Desc>XST Defaults (no hierarchy)</Desc>
+	</StratHandle>
+	<Step Id="xst">
+		<Option Id="NetHierEnum">0</Option>
+	</Step>
+</Strategy>
+
