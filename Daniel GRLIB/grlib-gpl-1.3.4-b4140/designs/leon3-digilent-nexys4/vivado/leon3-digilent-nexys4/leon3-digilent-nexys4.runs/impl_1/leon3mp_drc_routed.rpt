@@ -1,8 +1,8 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date         : Mon Mar 31 13:54:10 2014
-| Host         : xploited-W740SU running 64-bit Ubuntu 13.10
+| Date         : Thu Apr  3 17:20:54 2014
+| Host         : joel-MacBookPro running 64-bit unknown
 | Command      : report_drc
 -----------------------------------------------------------------------------------
 
@@ -119,18 +119,18 @@ REPORT SUMMARY
                      Hold option missing in multicycle path constraint
                      Delay constraint missing on IO port
            Max violations: <unlimited>
-         Violations found: 71
+         Violations found: 73
 
 2. REPORT DETAILS
 -----------------
 REQP-1578#1 Error
 Required Pin  
-Unsupported must be driven by a clock capable IO. connectivity. The signal io0/inst_top/inst_DMC/inst/clk_in1 on the io0/inst_top/inst_DMC/inst/mmcm_adv_inst/CLKIN1 pin of io0/inst_top/inst_DMC/inst/mmcm_adv_inst with COMPENSATION mode MMCME2_ADV ZHOLD
+Unsupported must be driven by a clock capable IO. connectivity. The signal io0/inst_top/inst_DMC/U0/clk_in1 on the io0/inst_top/inst_DMC/U0/mmcm_adv_inst/CLKIN1 pin of io0/inst_top/inst_DMC/U0/mmcm_adv_inst with COMPENSATION mode MMCME2_ADV ZHOLD
 Related violations: <none>
 
 AVAL-39#1 Warning
 V7_MMCM_SET_COMPENSATION4  
-Cell io0/inst_top/inst_DMC/inst/mmcm_adv_inst of type 'MMCME2_ADV' has been detected to have a configuration that requires the COMPENSATION setting to be different than ZHOLD. The application, in most cases, can automatically set the COMPENSATION attribute provided that the original COMPENSATION attribute is left with its default value by the designer. If the COMPENSATION remains as default it means that the application could not set the COMPENSATION but the design still has errors.
+Cell io0/inst_top/inst_DMC/U0/mmcm_adv_inst of type 'MMCME2_ADV' has been detected to have a configuration that requires the COMPENSATION setting to be different than ZHOLD. The application, in most cases, can automatically set the COMPENSATION attribute provided that the original COMPENSATION attribute is left with its default value by the designer. If the COMPENSATION remains as default it means that the application could not set the COMPENSATION but the design still has errors.
 Related violations: <none>
 
 BUFC-1#1 Warning
@@ -298,7 +298,7 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Physical design rule  
-Net adderahb_if/n_1_n_0_8399_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_8399_BUFG_inst_i_1/O, cell adderahb_if/n_0_8399_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net adderahb_if/n_1_n_0_9085_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_9085_BUFG_inst_i_1/O, cell adderahb_if/n_0_9085_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
@@ -308,23 +308,23 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT adderahb_if/n_0_8399_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
+A LUT adderahb_if/n_0_9085_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
+    adderahb_if/hrdata_reg[0] {LDCE}
+    adderahb_if/hrdata_reg[31] {LDCE}
     adderahb_if/hrdata_reg[1] {LDCE}
     adderahb_if/hrdata_reg[2] {LDCE}
     adderahb_if/hrdata_reg[3] {LDCE}
-    adderahb_if/hrdata_reg[4] {LDCE}
-    adderahb_if/hrdata_reg[5] {LDCE}
 
 Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT apb0/sLED_reg[31]_i_1 is driving clock pin of 23 cells. This could lead to large hold time violations. First few involved cells are:
+    io0/sLED_reg[4] {LDCE}
+    io0/sLED_reg[31] {LDCE}
     io0/sLED_reg[5] {LDCE}
     io0/sLED_reg[6] {LDCE}
     io0/sLED_reg[7] {LDCE}
-    io0/sLED_reg[8] {LDCE}
-    io0/sLED_reg[9] {LDCE}
 
 Related violations: <none>
 
@@ -491,6 +491,16 @@ Related violations: <none>
 AVAL-4#4 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
 p_1_out__0: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-6#1 Advisory
+enum_USE_MULT_NONE_enum_MREG_1  
+io0/inst_ADC_TOP/inst_fir/U0/i_synth/g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: If the DSP48E1 USE_MULT attribute is set to NONE, then Please set MREG to 0 to save power.
+Related violations: <none>
+
+REQP-28#1 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+io0/inst_ADC_TOP/inst_fir/U0/i_synth/g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied GND to save power.
 Related violations: <none>
 
 RTSTAT-10#1 Advisory

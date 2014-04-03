@@ -1,10 +1,10 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-// Date        : Sun Mar 23 15:32:04 2014
+// Date        : Thu Apr  3 16:37:18 2014
 // Host        : joel-MacBookPro running 64-bit Ubuntu 12.04.4 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/DMC/DMC_funcsim.v
+// Command     : write_verilog -force -mode funcsim {/home/joel/Documents/DAT096/Daniel
+//               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/DMC/DMC_funcsim.v}
 // Design      : DMC
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "DMC,clk_wiz_v5_1,{component_name=DMC,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=1,clkin1_period=10.0,clkin2_period=10.0,use_power_down=false,use_reset=true,use_locked=false,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *) 
+(* core_generation_info = "DMC,clk_wiz_v5_1,{component_name=DMC,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=1,clkin1_period=10.0,clkin2_period=10.0,use_power_down=false,use_reset=true,use_locked=false,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *) 
 (* NotValidForBitStream *)
 module DMC
    (clk_in1,
@@ -26,29 +26,29 @@ module DMC
   wire clk_out1;
   wire resetn;
 
-DMCDMC_clk_wiz inst
+DMCDMC_clk_wiz U0
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
         .resetn(resetn));
 endmodule
 
 module DMCDMC_clk_wiz
-   (clk_out1,
-    clk_in1,
+   (clk_in1,
+    clk_out1,
     resetn);
-  output clk_out1;
   input clk_in1;
+  output clk_out1;
   input resetn;
 
   wire \<const0> ;
   wire \<const1> ;
+  wire CLKFBOUT;
+  wire CLKIN1;
+  wire CLKOUT0;
+  wire O;
+  wire RST;
 (* IBUF_LOW_PWR *)   wire clk_in1;
-  wire clk_in1_DMC;
   wire clk_out1;
-  wire clk_out1_DMC;
-  wire clkfbout_DMC;
-  wire clkfbout_buf_DMC;
-  wire reset_high;
   wire resetn;
   wire NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED;
@@ -72,24 +72,24 @@ GND GND
        (.G(\<const0> ));
 VCC VCC
        (.P(\<const1> ));
-(* BOX_TYPE = "PRIMITIVE" *) 
+(* box_type = "PRIMITIVE" *) 
    BUFG clkf_buf
-       (.I(clkfbout_DMC),
-        .O(clkfbout_buf_DMC));
-(* BOX_TYPE = "PRIMITIVE" *) 
-   (* CAPACITANCE = "DONT_CARE" *) 
+       (.I(CLKFBOUT),
+        .O(O));
+(* CAPACITANCE = "DONT_CARE" *) 
    (* IBUF_DELAY_VALUE = "0" *) 
    (* IFD_DELAY_VALUE = "AUTO" *) 
+   (* box_type = "PRIMITIVE" *) 
    IBUF #(
     .IOSTANDARD("DEFAULT")) 
      clkin1_ibufg
        (.I(clk_in1),
-        .O(clk_in1_DMC));
-(* BOX_TYPE = "PRIMITIVE" *) 
+        .O(CLKIN1));
+(* box_type = "PRIMITIVE" *) 
    BUFG clkout1_buf
-       (.I(clk_out1_DMC),
+       (.I(CLKOUT0),
         .O(clk_out1));
-(* BOX_TYPE = "PRIMITIVE" *) 
+(* box_type = "PRIMITIVE" *) 
    MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
     .CLKFBOUT_MULT_F(53.625000),
@@ -134,21 +134,21 @@ VCC VCC
     .IS_PWRDWN_INVERTED(1'b0),
     .IS_RST_INVERTED(1'b0),
     .REF_JITTER1(0.010000),
-    .REF_JITTER2(0.010000),
+    .REF_JITTER2(0.000000),
     .SS_EN("FALSE"),
     .SS_MODE("CENTER_HIGH"),
     .SS_MOD_PERIOD(10000),
     .STARTUP_WAIT("FALSE")) 
      mmcm_adv_inst
-       (.CLKFBIN(clkfbout_buf_DMC),
-        .CLKFBOUT(clkfbout_DMC),
+       (.CLKFBIN(O),
+        .CLKFBOUT(CLKFBOUT),
         .CLKFBOUTB(NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED),
         .CLKFBSTOPPED(NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED),
-        .CLKIN1(clk_in1_DMC),
+        .CLKIN1(CLKIN1),
         .CLKIN2(\<const0> ),
         .CLKINSEL(\<const1> ),
         .CLKINSTOPPED(NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED),
-        .CLKOUT0(clk_out1_DMC),
+        .CLKOUT0(CLKOUT0),
         .CLKOUT0B(NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED),
         .CLKOUT1(NLW_mmcm_adv_inst_CLKOUT1_UNCONNECTED),
         .CLKOUT1B(NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED),
@@ -172,12 +172,12 @@ VCC VCC
         .PSEN(\<const0> ),
         .PSINCDEC(\<const0> ),
         .PWRDWN(\<const0> ),
-        .RST(reset_high));
+        .RST(RST));
 LUT1 #(
     .INIT(2'h1)) 
      mmcm_adv_inst_i_1
        (.I0(resetn),
-        .O(reset_high));
+        .O(RST));
 endmodule
 `ifndef GLBL
 `define GLBL

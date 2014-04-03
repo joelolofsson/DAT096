@@ -1,10 +1,10 @@
 -- Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
--- Date        : Sun Mar 23 15:32:04 2014
+-- Date        : Thu Apr  3 16:37:19 2014
 -- Host        : joel-MacBookPro running 64-bit Ubuntu 12.04.4 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/DMC/DMC_funcsim.vhdl
+-- Command     : write_vhdl -force -mode funcsim {/home/joel/Documents/DAT096/Daniel
+--               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/DMC/DMC_funcsim.vhdl}
 -- Design      : DMC
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,8 +14,8 @@ library IEEE; use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
 entity DMCDMC_clk_wiz is
   port (
-    clk_out1 : out STD_LOGIC;
     clk_in1 : in STD_LOGIC;
+    clk_out1 : out STD_LOGIC;
     resetn : in STD_LOGIC
   );
 end DMCDMC_clk_wiz;
@@ -23,11 +23,11 @@ end DMCDMC_clk_wiz;
 architecture STRUCTURE of DMCDMC_clk_wiz is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
-  signal clk_in1_DMC : STD_LOGIC;
-  signal clk_out1_DMC : STD_LOGIC;
-  signal clkfbout_DMC : STD_LOGIC;
-  signal clkfbout_buf_DMC : STD_LOGIC;
-  signal reset_high : STD_LOGIC;
+  signal CLKFBOUT : STD_LOGIC;
+  signal CLKIN1 : STD_LOGIC;
+  signal CLKOUT0 : STD_LOGIC;
+  signal O : STD_LOGIC;
+  signal RST : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED : STD_LOGIC;
@@ -45,17 +45,17 @@ architecture STRUCTURE of DMCDMC_clk_wiz is
   signal NLW_mmcm_adv_inst_LOCKED_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_PSDONE_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_DO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  attribute BOX_TYPE : string;
-  attribute BOX_TYPE of clkf_buf : label is "PRIMITIVE";
-  attribute BOX_TYPE of clkin1_ibufg : label is "PRIMITIVE";
+  attribute box_type : string;
+  attribute box_type of clkf_buf : label is "PRIMITIVE";
   attribute CAPACITANCE : string;
   attribute CAPACITANCE of clkin1_ibufg : label is "DONT_CARE";
   attribute IBUF_DELAY_VALUE : string;
   attribute IBUF_DELAY_VALUE of clkin1_ibufg : label is "0";
   attribute IFD_DELAY_VALUE : string;
   attribute IFD_DELAY_VALUE of clkin1_ibufg : label is "AUTO";
-  attribute BOX_TYPE of clkout1_buf : label is "PRIMITIVE";
-  attribute BOX_TYPE of mmcm_adv_inst : label is "PRIMITIVE";
+  attribute box_type of clkin1_ibufg : label is "PRIMITIVE";
+  attribute box_type of clkout1_buf : label is "PRIMITIVE";
+  attribute box_type of mmcm_adv_inst : label is "PRIMITIVE";
 begin
 GND: unisim.vcomponents.GND
     port map (
@@ -67,8 +67,8 @@ VCC: unisim.vcomponents.VCC
     );
 clkf_buf: unisim.vcomponents.BUFG
     port map (
-      I => clkfbout_DMC,
-      O => clkfbout_buf_DMC
+      I => CLKFBOUT,
+      O => O
     );
 clkin1_ibufg: unisim.vcomponents.IBUF
     generic map(
@@ -76,11 +76,11 @@ clkin1_ibufg: unisim.vcomponents.IBUF
     )
     port map (
       I => clk_in1,
-      O => clk_in1_DMC
+      O => CLKIN1
     );
 clkout1_buf: unisim.vcomponents.BUFG
     port map (
-      I => clk_out1_DMC,
+      I => CLKOUT0,
       O => clk_out1
     );
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
@@ -128,22 +128,22 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       IS_PWRDWN_INVERTED => '0',
       IS_RST_INVERTED => '0',
       REF_JITTER1 => 0.010000,
-      REF_JITTER2 => 0.010000,
+      REF_JITTER2 => 0.000000,
       SS_EN => "FALSE",
       SS_MODE => "CENTER_HIGH",
       SS_MOD_PERIOD => 10000,
       STARTUP_WAIT => false
     )
     port map (
-      CLKFBIN => clkfbout_buf_DMC,
-      CLKFBOUT => clkfbout_DMC,
+      CLKFBIN => O,
+      CLKFBOUT => CLKFBOUT,
       CLKFBOUTB => NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED,
       CLKFBSTOPPED => NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED,
-      CLKIN1 => clk_in1_DMC,
+      CLKIN1 => CLKIN1,
       CLKIN2 => \<const0>\,
       CLKINSEL => \<const1>\,
       CLKINSTOPPED => NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED,
-      CLKOUT0 => clk_out1_DMC,
+      CLKOUT0 => CLKOUT0,
       CLKOUT0B => NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED,
       CLKOUT1 => NLW_mmcm_adv_inst_CLKOUT1_UNCONNECTED,
       CLKOUT1B => NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED,
@@ -188,7 +188,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       PSEN => \<const0>\,
       PSINCDEC => \<const0>\,
       PWRDWN => \<const0>\,
-      RST => reset_high
+      RST => RST
     );
 mmcm_adv_inst_i_1: unisim.vcomponents.LUT1
     generic map(
@@ -196,7 +196,7 @@ mmcm_adv_inst_i_1: unisim.vcomponents.LUT1
     )
     port map (
       I0 => resetn,
-      O => reset_high
+      O => RST
     );
 end STRUCTURE;
 library IEEE; use IEEE.STD_LOGIC_1164.ALL;
@@ -209,13 +209,13 @@ entity DMC is
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of DMC : entity is true;
-  attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of DMC : entity is "DMC,clk_wiz_v5_1,{component_name=DMC,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=1,clkin1_period=10.0,clkin2_period=10.0,use_power_down=false,use_reset=true,use_locked=false,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}";
+  attribute core_generation_info : string;
+  attribute core_generation_info of DMC : entity is "DMC,clk_wiz_v5_1,{component_name=DMC,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=1,clkin1_period=10.0,clkin2_period=10.0,use_power_down=false,use_reset=true,use_locked=false,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}";
 end DMC;
 
 architecture STRUCTURE of DMC is
 begin
-inst: entity work.DMCDMC_clk_wiz
+U0: entity work.DMCDMC_clk_wiz
     port map (
       clk_in1 => clk_in1,
       clk_out1 => clk_out1,

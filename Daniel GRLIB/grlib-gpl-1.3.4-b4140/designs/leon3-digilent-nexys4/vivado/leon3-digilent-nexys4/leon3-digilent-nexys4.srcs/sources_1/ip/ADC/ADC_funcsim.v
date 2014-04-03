@@ -1,10 +1,10 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-// Date        : Sun Mar 23 15:31:05 2014
+// Date        : Thu Apr  3 15:47:34 2014
 // Host        : joel-MacBookPro running 64-bit Ubuntu 12.04.4 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.v
+// Command     : write_verilog -force -mode funcsim {/home/joel/Documents/DAT096/Daniel
+//               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.v}
 // Design      : ADC
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,22 +12,22 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=true,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=true,enable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}" *) 
+(* core_generation_info = "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=true,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}" *) 
 (* NotValidForBitStream *)
 module ADC
-   (convst_in,
-    daddr_in,
-    dclk_in,
+   (daddr_in,
     den_in,
     di_in,
     dwe_in,
+    do_out,
+    drdy_out,
+    dclk_in,
     reset_in,
+    convst_in,
     vauxp3,
     vauxn3,
     busy_out,
     channel_out,
-    do_out,
-    drdy_out,
     eoc_out,
     eos_out,
     ot_out,
@@ -37,19 +37,19 @@ module ADC
     alarm_out,
     vp_in,
     vn_in);
-  input convst_in;
   input [6:0]daddr_in;
-  input dclk_in;
   input den_in;
   input [15:0]di_in;
   input dwe_in;
+  output [15:0]do_out;
+  output drdy_out;
+  input dclk_in;
   input reset_in;
+  input convst_in;
   input vauxp3;
   input vauxn3;
   output busy_out;
   output [4:0]channel_out;
-  output [15:0]do_out;
-  output drdy_out;
   output eoc_out;
   output eos_out;
   output ot_out;
@@ -83,15 +83,15 @@ module ADC
   wire vccint_alarm_out;
   wire vn_in;
   wire vp_in;
-  wire NLW_inst_JTAGBUSY_UNCONNECTED;
-  wire NLW_inst_JTAGLOCKED_UNCONNECTED;
-  wire NLW_inst_JTAGMODIFIED_UNCONNECTED;
-  wire [6:3]NLW_inst_ALM_UNCONNECTED;
-  wire [4:0]NLW_inst_MUXADDR_UNCONNECTED;
+  wire NLW_U0_JTAGBUSY_UNCONNECTED;
+  wire NLW_U0_JTAGLOCKED_UNCONNECTED;
+  wire NLW_U0_JTAGMODIFIED_UNCONNECTED;
+  wire [6:3]NLW_U0_ALM_UNCONNECTED;
+  wire [4:0]NLW_U0_MUXADDR_UNCONNECTED;
 
 GND GND
        (.G(\<const0> ));
-(* BOX_TYPE = "PRIMITIVE" *) 
+(* box_type = "PRIMITIVE" *) 
    XADC #(
     .INIT_40(16'h0613),
     .INIT_41(16'h3100),
@@ -128,9 +128,9 @@ GND GND
     .IS_CONVSTCLK_INVERTED(1'b0),
     .IS_DCLK_INVERTED(1'b0),
     .SIM_DEVICE("7SERIES"),
-    .SIM_MONITOR_FILE("/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt")) 
-     inst
-       (.ALM({alarm_out,NLW_inst_ALM_UNCONNECTED[6:3],vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out}),
+    .SIM_MONITOR_FILE("/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt")) 
+     U0
+       (.ALM({alarm_out,NLW_U0_ALM_UNCONNECTED[6:3],vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out}),
         .BUSY(busy_out),
         .CHANNEL(channel_out),
         .CONVST(convst_in),
@@ -144,10 +144,10 @@ GND GND
         .DWE(dwe_in),
         .EOC(eoc_out),
         .EOS(eos_out),
-        .JTAGBUSY(NLW_inst_JTAGBUSY_UNCONNECTED),
-        .JTAGLOCKED(NLW_inst_JTAGLOCKED_UNCONNECTED),
-        .JTAGMODIFIED(NLW_inst_JTAGMODIFIED_UNCONNECTED),
-        .MUXADDR(NLW_inst_MUXADDR_UNCONNECTED[4:0]),
+        .JTAGBUSY(NLW_U0_JTAGBUSY_UNCONNECTED),
+        .JTAGLOCKED(NLW_U0_JTAGLOCKED_UNCONNECTED),
+        .JTAGMODIFIED(NLW_U0_JTAGMODIFIED_UNCONNECTED),
+        .MUXADDR(NLW_U0_MUXADDR_UNCONNECTED[4:0]),
         .OT(ot_out),
         .RESET(reset_in),
         .VAUXN({\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,vauxn3,\<const0> ,\<const0> ,\<const0> }),

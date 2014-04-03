@@ -1,10 +1,10 @@
 -- Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
--- Date        : Sun Mar 23 15:34:47 2014
+-- Date        : Thu Apr  3 16:59:40 2014
 -- Host        : joel-MacBookPro running 64-bit Ubuntu 12.04.4 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_funcsim.vhdl
+-- Command     : write_vhdl -force -mode funcsim {/home/joel/Documents/DAT096/Daniel
+--               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_funcsim.vhdl}
 -- Design      : fir_compiler_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,9 +14,9 @@ library IEEE; use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
 entity fir_compiler_0cntrl_delay is
   port (
-    ADDR_IN : in STD_LOGIC_VECTOR ( 22 downto 0 );
+    ADDR_IN : in STD_LOGIC_VECTOR ( 17 downto 0 );
     CNTRL_IN : in STD_LOGIC_VECTOR ( 0 to 9 );
-    ADDR_OUT : out STD_LOGIC_VECTOR ( 22 downto 0 );
+    ADDR_OUT : out STD_LOGIC_VECTOR ( 17 downto 0 );
     CNTRL_OUT : out STD_LOGIC_VECTOR ( 0 to 9 );
     CE : in STD_LOGIC;
     SCLR : in STD_LOGIC;
@@ -34,11 +34,10 @@ end fir_compiler_0cntrl_delay;
 
 architecture STRUCTURE of fir_compiler_0cntrl_delay is
   signal \<const0>\ : STD_LOGIC;
-  signal \^addr_in\ : STD_LOGIC_VECTOR ( 22 downto 0 );
+  signal \^addr_in\ : STD_LOGIC_VECTOR ( 17 downto 0 );
   signal \^cntrl_in\ : STD_LOGIC_VECTOR ( 0 to 9 );
 begin
-  ADDR_OUT(22 downto 7) <= \^addr_in\(22 downto 7);
-  ADDR_OUT(6) <= \<const0>\;
+  ADDR_OUT(17 downto 6) <= \^addr_in\(17 downto 6);
   ADDR_OUT(5) <= \<const0>\;
   ADDR_OUT(4) <= \<const0>\;
   ADDR_OUT(3) <= \<const0>\;
@@ -48,200 +47,17 @@ begin
   CNTRL_OUT(0) <= \^cntrl_in\(0);
   CNTRL_OUT(1) <= \<const0>\;
   CNTRL_OUT(2) <= \<const0>\;
-  CNTRL_OUT(3) <= \^cntrl_in\(3);
+  CNTRL_OUT(3) <= \<const0>\;
   CNTRL_OUT(4) <= \<const0>\;
   CNTRL_OUT(5) <= \<const0>\;
   CNTRL_OUT(6) <= \<const0>\;
   CNTRL_OUT(7 to 8) <= \^cntrl_in\(7 to 8);
   CNTRL_OUT(9) <= \<const0>\;
-  \^addr_in\(22 downto 0) <= ADDR_IN(22 downto 0);
+  \^addr_in\(17 downto 0) <= ADDR_IN(17 downto 0);
   \^cntrl_in\(0 to 9) <= CNTRL_IN(0 to 9);
 GND: unisim.vcomponents.GND
     port map (
       G => \<const0>\
-    );
-end STRUCTURE;
-library IEEE; use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
-entity fir_compiler_0dpt_mem is
-  port (
-    ADDRA : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    DA_IN : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    WEA : in STD_LOGIC;
-    ADDRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    DB_IN : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    WEB : in STD_LOGIC;
-    DA_OUT : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    DB_OUT : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    CE : in STD_LOGIC;
-    SCLR_A : in STD_LOGIC;
-    SCLR_B : in STD_LOGIC;
-    CLK : in STD_LOGIC
-  );
-  attribute C_XDEVICEFAMILY : string;
-  attribute C_XDEVICEFAMILY of fir_compiler_0dpt_mem : entity is "artix7";
-  attribute C_PARAM : string;
-  attribute C_PARAM of fir_compiler_0dpt_mem : entity is "162'b000000000000000000000000000000010000000000000000000000000000000101000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000010";
-  attribute C_INIT : string;
-  attribute C_INIT of fir_compiler_0dpt_mem : entity is "1'b1";
-  attribute C_HAS_SCLR : string;
-  attribute C_HAS_SCLR of fir_compiler_0dpt_mem : entity is "FALSE";
-  attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of fir_compiler_0dpt_mem : entity is "yes";
-end fir_compiler_0dpt_mem;
-
-architecture STRUCTURE of fir_compiler_0dpt_mem is
-  signal \<const0>\ : STD_LOGIC;
-  signal \NLW_gen_bram.gen_write_first.gen_double_reg.ram_reg_DOPADOP_UNCONNECTED\ : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal \NLW_gen_bram.gen_write_first.gen_double_reg.ram_reg_DOPBDOP_UNCONNECTED\ : STD_LOGIC_VECTOR ( 1 downto 0 );
-  attribute METHODOLOGY_DRC_VIOS : string;
-  attribute METHODOLOGY_DRC_VIOS of \gen_bram.gen_write_first.gen_double_reg.ram_reg\ : label is "";
-  attribute bram_addr_begin : integer;
-  attribute bram_addr_begin of \gen_bram.gen_write_first.gen_double_reg.ram_reg\ : label is 0;
-  attribute bram_addr_end : integer;
-  attribute bram_addr_end of \gen_bram.gen_write_first.gen_double_reg.ram_reg\ : label is 1023;
-  attribute bram_slice_begin : integer;
-  attribute bram_slice_begin of \gen_bram.gen_write_first.gen_double_reg.ram_reg\ : label is 0;
-  attribute bram_slice_end : integer;
-  attribute bram_slice_end of \gen_bram.gen_write_first.gen_double_reg.ram_reg\ : label is 17;
-begin
-GND: unisim.vcomponents.GND
-    port map (
-      G => \<const0>\
-    );
-\gen_bram.gen_write_first.gen_double_reg.ram_reg\: unisim.vcomponents.RAMB18E1
-    generic map(
-      DOA_REG => 1,
-      DOB_REG => 1,
-      INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INITP_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_04 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_05 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_06 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_07 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_08 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_09 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_10 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_11 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_12 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_13 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_14 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_15 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_16 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_17 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_18 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_19 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_1F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_20 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_21 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_22 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_23 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_24 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_25 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_26 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_27 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_28 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_29 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_2F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_30 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_31 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_32 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_33 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_34 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_35 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_36 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_37 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_38 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_39 => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3A => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3B => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3C => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3D => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3E => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_3F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_A => X"00000",
-      INIT_B => X"00000",
-      RAM_MODE => "TDP",
-      READ_WIDTH_A => 18,
-      READ_WIDTH_B => 18,
-      RSTREG_PRIORITY_A => "RSTREG",
-      RSTREG_PRIORITY_B => "RSTREG",
-      SIM_COLLISION_CHECK => "ALL",
-      SIM_DEVICE => "7SERIES",
-      SRVAL_A => X"00000",
-      SRVAL_B => X"00000",
-      WRITE_MODE_A => "WRITE_FIRST",
-      WRITE_MODE_B => "WRITE_FIRST",
-      WRITE_WIDTH_A => 18,
-      WRITE_WIDTH_B => 18
-    )
-    port map (
-      ADDRARDADDR(13) => \<const0>\,
-      ADDRARDADDR(12) => \<const0>\,
-      ADDRARDADDR(11 downto 4) => ADDRA(7 downto 0),
-      ADDRARDADDR(3) => \<const0>\,
-      ADDRARDADDR(2) => \<const0>\,
-      ADDRARDADDR(1) => \<const0>\,
-      ADDRARDADDR(0) => \<const0>\,
-      ADDRBWRADDR(13) => \<const0>\,
-      ADDRBWRADDR(12) => \<const0>\,
-      ADDRBWRADDR(11 downto 4) => ADDRB(7 downto 0),
-      ADDRBWRADDR(3) => \<const0>\,
-      ADDRBWRADDR(2) => \<const0>\,
-      ADDRBWRADDR(1) => \<const0>\,
-      ADDRBWRADDR(0) => \<const0>\,
-      CLKARDCLK => CLK,
-      CLKBWRCLK => CLK,
-      DIADI(15 downto 0) => DA_IN(15 downto 0),
-      DIBDI(15 downto 0) => DB_IN(15 downto 0),
-      DIPADIP(1) => \<const0>\,
-      DIPADIP(0) => \<const0>\,
-      DIPBDIP(1) => \<const0>\,
-      DIPBDIP(0) => \<const0>\,
-      DOADO(15 downto 0) => DA_OUT(15 downto 0),
-      DOBDO(15 downto 0) => DB_OUT(15 downto 0),
-      DOPADOP(1 downto 0) => \NLW_gen_bram.gen_write_first.gen_double_reg.ram_reg_DOPADOP_UNCONNECTED\(1 downto 0),
-      DOPBDOP(1 downto 0) => \NLW_gen_bram.gen_write_first.gen_double_reg.ram_reg_DOPBDOP_UNCONNECTED\(1 downto 0),
-      ENARDEN => CE,
-      ENBWREN => CE,
-      REGCEAREGCE => CE,
-      REGCEB => CE,
-      RSTRAMARSTRAM => \<const0>\,
-      RSTRAMB => \<const0>\,
-      RSTREGARSTREG => \<const0>\,
-      RSTREGB => \<const0>\,
-      WEA(1) => WEA,
-      WEA(0) => WEA,
-      WEBWE(3) => \<const0>\,
-      WEBWE(2) => \<const0>\,
-      WEBWE(1) => WEB,
-      WEBWE(0) => WEB
     );
 end STRUCTURE;
 library IEEE; use IEEE.STD_LOGIC_1164.ALL;
@@ -296,18 +112,17 @@ architecture STRUCTURE of \fir_compiler_0glb_srl_fifo__parameterized0\ is
   signal \n_0_add_1[0]_i_1\ : STD_LOGIC;
   signal \n_0_add_1[1]_i_1\ : STD_LOGIC;
   signal \n_0_add_1[2]_i_1\ : STD_LOGIC;
-  signal \n_0_add_1[3]_i_1\ : STD_LOGIC;
   signal \n_0_add_1[3]_i_2\ : STD_LOGIC;
-  signal \n_0_add_1[4]_i_1\ : STD_LOGIC;
+  signal \n_0_add_1[3]_i_3\ : STD_LOGIC;
   signal \n_0_add_1[4]_i_2\ : STD_LOGIC;
   signal \n_0_add_1[4]_i_3\ : STD_LOGIC;
-  signal \n_0_add_1[4]_i_4\ : STD_LOGIC;
-  signal \n_0_add_1[4]_i_5\ : STD_LOGIC;
   signal \n_0_add_1_reg[0]\ : STD_LOGIC;
   signal \n_0_add_1_reg[1]\ : STD_LOGIC;
   signal \n_0_add_1_reg[2]\ : STD_LOGIC;
   signal \n_0_add_1_reg[3]\ : STD_LOGIC;
+  signal \n_0_add_1_reg[3]_i_1\ : STD_LOGIC;
   signal \n_0_add_1_reg[4]\ : STD_LOGIC;
+  signal \n_0_add_1_reg[4]_i_1\ : STD_LOGIC;
   signal \n_0_fifo_1_reg[15][0]_srl16\ : STD_LOGIC;
   signal \n_0_fifo_1_reg[15][10]_srl16\ : STD_LOGIC;
   signal \n_0_fifo_1_reg[15][11]_srl16\ : STD_LOGIC;
@@ -326,17 +141,15 @@ architecture STRUCTURE of \fir_compiler_0glb_srl_fifo__parameterized0\ is
   signal \n_0_fifo_1_reg[15][9]_srl16\ : STD_LOGIC;
   signal n_0_not_afull_1_i_1 : STD_LOGIC;
   signal n_0_not_afull_1_i_2 : STD_LOGIC;
+  signal n_0_not_afull_1_i_3 : STD_LOGIC;
+  signal n_0_not_afull_1_i_4 : STD_LOGIC;
   signal n_0_not_empty_1_i_1 : STD_LOGIC;
   signal n_0_not_empty_1_i_2 : STD_LOGIC;
   signal \^not_afull\ : STD_LOGIC;
   signal \^not_empty\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \add_1[0]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \add_1[0]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \add_1[1]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \add_1[3]_i_2\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \add_1[4]_i_2\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \add_1[4]_i_4\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \add_1[4]_i_5\ : label is "soft_lutpair3";
   attribute register_duplication : string;
   attribute register_duplication of \add_1_reg[0]\ : label is "no";
   attribute use_carry_chain : string;
@@ -395,11 +208,9 @@ architecture STRUCTURE of \fir_compiler_0glb_srl_fifo__parameterized0\ is
   attribute srl_name of \fifo_1_reg[15][8]_srl16\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0 /\fifo_1_reg[15][8]_srl16 ";
   attribute srl_bus_name of \fifo_1_reg[15][9]_srl16\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0 /\fifo_1_reg[15] ";
   attribute srl_name of \fifo_1_reg[15][9]_srl16\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0 /\fifo_1_reg[15][9]_srl16 ";
-  attribute SOFT_HLUTNM of not_afull_1_i_2 : label is "soft_lutpair1";
   attribute register_duplication of not_afull_1_reg : label is "no";
   attribute use_clock_enable of not_afull_1_reg : label is "no";
   attribute use_sync_reset of not_afull_1_reg : label is "no";
-  attribute SOFT_HLUTNM of not_empty_1_i_2 : label is "soft_lutpair1";
   attribute register_duplication of not_empty_1_reg : label is "no";
   attribute use_clock_enable of not_empty_1_reg : label is "no";
   attribute use_sync_set : string;
@@ -430,115 +241,91 @@ VCC: unisim.vcomponents.VCC
     );
 \add_1[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"659A"
+      INIT => X"6696"
     )
     port map (
       I0 => \n_0_add_1_reg[0]\,
-      I1 => \n_0_add_1_reg[4]\,
+      I1 => wr_enable,
       I2 => rd_enable,
-      I3 => wr_enable,
+      I3 => \n_0_add_1_reg[4]\,
       O => \n_0_add_1[0]_i_1\
     );
 \add_1[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"4FFBB004"
+      INIT => X"6A66A9AA"
     )
     port map (
-      I0 => \n_0_add_1_reg[4]\,
-      I1 => rd_enable,
-      I2 => wr_enable,
-      I3 => \n_0_add_1_reg[0]\,
-      I4 => \n_0_add_1_reg[1]\,
+      I0 => \n_0_add_1_reg[1]\,
+      I1 => \n_0_add_1_reg[0]\,
+      I2 => \n_0_add_1_reg[4]\,
+      I3 => rd_enable,
+      I4 => wr_enable,
       O => \n_0_add_1[1]_i_1\
     );
 \add_1[2]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"7F77FEFF80880100"
+      INIT => X"6A6AAAAAAA6AA9AA"
     )
     port map (
-      I0 => wr_enable,
-      I1 => \n_0_add_1_reg[0]\,
-      I2 => \n_0_add_1_reg[4]\,
+      I0 => \n_0_add_1_reg[2]\,
+      I1 => \n_0_add_1_reg[1]\,
+      I2 => wr_enable,
       I3 => rd_enable,
-      I4 => \n_0_add_1_reg[1]\,
-      I5 => \n_0_add_1_reg[2]\,
+      I4 => \n_0_add_1_reg[0]\,
+      I5 => \n_0_add_1_reg[4]\,
       O => \n_0_add_1[2]_i_1\
     );
-\add_1[3]_i_1\: unisim.vcomponents.LUT6
+\add_1[3]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"7FFFFFFE80000001"
+      INIT => X"80A0000000000100"
     )
     port map (
-      I0 => \n_0_add_1[3]_i_2\,
-      I1 => \n_0_add_1_reg[0]\,
-      I2 => wr_enable,
-      I3 => \n_0_add_1_reg[1]\,
-      I4 => \n_0_add_1_reg[2]\,
-      I5 => \n_0_add_1_reg[3]\,
-      O => \n_0_add_1[3]_i_1\
-    );
-\add_1[3]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"B"
-    )
-    port map (
-      I0 => \n_0_add_1_reg[4]\,
-      I1 => rd_enable,
+      I0 => \n_0_add_1_reg[2]\,
+      I1 => \n_0_add_1_reg[4]\,
+      I2 => \n_0_add_1_reg[0]\,
+      I3 => rd_enable,
+      I4 => wr_enable,
+      I5 => \n_0_add_1_reg[1]\,
       O => \n_0_add_1[3]_i_2\
     );
-\add_1[4]_i_1\: unisim.vcomponents.LUT6
+\add_1[3]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"3313CCDCCCDCCCDC"
+      INIT => X"77FFF7FFFFFFFFEF"
     )
     port map (
-      I0 => \n_0_add_1[4]_i_2\,
-      I1 => \n_0_add_1_reg[4]\,
+      I0 => \n_0_add_1_reg[2]\,
+      I1 => \n_0_add_1_reg[0]\,
       I2 => rd_enable,
-      I3 => \n_0_add_1[4]_i_3\,
-      I4 => \n_0_add_1[4]_i_4\,
-      I5 => \n_0_add_1[4]_i_5\,
-      O => \n_0_add_1[4]_i_1\
+      I3 => wr_enable,
+      I4 => \n_0_add_1_reg[4]\,
+      I5 => \n_0_add_1_reg[1]\,
+      O => \n_0_add_1[3]_i_3\
     );
-\add_1[4]_i_2\: unisim.vcomponents.LUT3
+\add_1[4]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FE"
+      INIT => X"F0F0F0F0F0F1F0F0"
     )
     port map (
-      I0 => \n_0_add_1_reg[3]\,
-      I1 => \n_0_add_1_reg[2]\,
-      I2 => \n_0_add_1_reg[1]\,
+      I0 => \n_0_add_1_reg[2]\,
+      I1 => \n_0_add_1_reg[1]\,
+      I2 => \n_0_add_1_reg[4]\,
+      I3 => \n_0_add_1_reg[0]\,
+      I4 => rd_enable,
+      I5 => wr_enable,
       O => \n_0_add_1[4]_i_2\
     );
-\add_1[4]_i_3\: unisim.vcomponents.LUT2
+\add_1[4]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"E"
+      INIT => X"77FFFFFF08000000"
     )
     port map (
       I0 => wr_enable,
       I1 => \n_0_add_1_reg[0]\,
+      I2 => rd_enable,
+      I3 => \n_0_add_1_reg[1]\,
+      I4 => \n_0_add_1_reg[2]\,
+      I5 => \n_0_add_1_reg[4]\,
       O => \n_0_add_1[4]_i_3\
-    );
-\add_1[4]_i_4\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"8088FFFF"
-    )
-    port map (
-      I0 => wr_enable,
-      I1 => \n_0_add_1_reg[0]\,
-      I2 => \n_0_add_1_reg[4]\,
-      I3 => rd_enable,
-      I4 => \n_0_add_1_reg[1]\,
-      O => \n_0_add_1[4]_i_4\
-    );
-\add_1[4]_i_5\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"80"
-    )
-    port map (
-      I0 => \n_0_add_1_reg[3]\,
-      I1 => \n_0_add_1_reg[2]\,
-      I2 => \n_0_add_1_reg[1]\,
-      O => \n_0_add_1[4]_i_5\
     );
 \add_1_reg[0]\: unisim.vcomponents.FDSE
     generic map(
@@ -580,9 +367,16 @@ VCC: unisim.vcomponents.VCC
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_add_1[3]_i_1\,
+      D => \n_0_add_1_reg[3]_i_1\,
       Q => \n_0_add_1_reg[3]\,
       S => areset
+    );
+\add_1_reg[3]_i_1\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_add_1[3]_i_2\,
+      I1 => \n_0_add_1[3]_i_3\,
+      O => \n_0_add_1_reg[3]_i_1\,
+      S => \n_0_add_1_reg[3]\
     );
 \add_1_reg[4]\: unisim.vcomponents.FDSE
     generic map(
@@ -591,9 +385,16 @@ VCC: unisim.vcomponents.VCC
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_add_1[4]_i_1\,
+      D => \n_0_add_1_reg[4]_i_1\,
       Q => \n_0_add_1_reg[4]\,
       S => areset
+    );
+\add_1_reg[4]_i_1\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_add_1[4]_i_2\,
+      I1 => \n_0_add_1[4]_i_3\,
+      O => \n_0_add_1_reg[4]_i_1\,
+      S => \n_0_add_1_reg[3]\
     );
 \fifo_1_reg[15][0]_srl16\: unisim.vcomponents.SRL16E
     generic map(
@@ -997,28 +798,53 @@ VCC: unisim.vcomponents.VCC
     );
 not_afull_1_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFBAFF0000AABA"
+      INIT => X"FFFFFFFFF0CAAACA"
     )
     port map (
-      I0 => areset,
-      I1 => \n_0_add_1_reg[4]\,
-      I2 => rd_enable,
+      I0 => \^not_afull\,
+      I1 => n_0_not_afull_1_i_2,
+      I2 => n_0_not_afull_1_i_3,
       I3 => wr_enable,
-      I4 => n_0_not_afull_1_i_2,
-      I5 => \^not_afull\,
+      I4 => n_0_not_afull_1_i_4,
+      I5 => areset,
       O => n_0_not_afull_1_i_1
     );
-not_afull_1_i_2: unisim.vcomponents.LUT5
+not_afull_1_i_2: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"54555555"
+      INIT => X"0040"
     )
     port map (
-      I0 => areset,
-      I1 => \n_0_add_1_reg[1]\,
-      I2 => \n_0_add_1_reg[0]\,
-      I3 => \n_0_add_1_reg[2]\,
-      I4 => \n_0_add_1_reg[3]\,
+      I0 => \n_0_add_1_reg[0]\,
+      I1 => \n_0_add_1_reg[3]\,
+      I2 => \n_0_add_1_reg[2]\,
+      I3 => \n_0_add_1_reg[1]\,
       O => n_0_not_afull_1_i_2
+    );
+not_afull_1_i_3: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000200000"
+    )
+    port map (
+      I0 => rd_enable,
+      I1 => \n_0_add_1_reg[4]\,
+      I2 => \n_0_add_1_reg[3]\,
+      I3 => \n_0_add_1_reg[0]\,
+      I4 => \n_0_add_1_reg[2]\,
+      I5 => \n_0_add_1_reg[1]\,
+      O => n_0_not_afull_1_i_3
+    );
+not_afull_1_i_4: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000B00000"
+    )
+    port map (
+      I0 => \n_0_add_1_reg[4]\,
+      I1 => rd_enable,
+      I2 => \n_0_add_1_reg[3]\,
+      I3 => \n_0_add_1_reg[0]\,
+      I4 => \n_0_add_1_reg[2]\,
+      I5 => \n_0_add_1_reg[1]\,
+      O => n_0_not_afull_1_i_4
     );
 not_afull_1_reg: unisim.vcomponents.FDRE
     generic map(
@@ -1033,7 +859,7 @@ not_afull_1_reg: unisim.vcomponents.FDRE
     );
 not_empty_1_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000FFEF0000CC0C"
+      INIT => X"0000DDDD0000CC0C"
     )
     port map (
       I0 => n_0_not_empty_1_i_2,
@@ -1044,15 +870,17 @@ not_empty_1_i_1: unisim.vcomponents.LUT6
       I5 => \^not_empty\,
       O => n_0_not_empty_1_i_1
     );
-not_empty_1_i_2: unisim.vcomponents.LUT4
+not_empty_1_i_2: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFE"
+      INIT => X"0000000000000002"
     )
     port map (
-      I0 => \n_0_add_1_reg[1]\,
-      I1 => \n_0_add_1_reg[2]\,
-      I2 => \n_0_add_1_reg[3]\,
-      I3 => \n_0_add_1_reg[0]\,
+      I0 => rd_enable,
+      I1 => \n_0_add_1_reg[4]\,
+      I2 => \n_0_add_1_reg[0]\,
+      I3 => \n_0_add_1_reg[3]\,
+      I4 => \n_0_add_1_reg[2]\,
+      I5 => \n_0_add_1_reg[1]\,
       O => n_0_not_empty_1_i_2
     );
 not_empty_1_reg: unisim.vcomponents.FDRE
@@ -1071,10 +899,10 @@ library IEEE; use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
 entity fir_compiler_0sp_mem is
   port (
-    ADDR : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    DATA_IN : in STD_LOGIC_VECTOR ( 14 downto 0 );
+    ADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    DATA_IN : in STD_LOGIC_VECTOR ( 15 downto 0 );
     WE : in STD_LOGIC;
-    DATA_OUT : out STD_LOGIC_VECTOR ( 14 downto 0 );
+    DATA_OUT : out STD_LOGIC_VECTOR ( 15 downto 0 );
     CE : in STD_LOGIC;
     SCLR : in STD_LOGIC;
     CLK : in STD_LOGIC
@@ -1082,9 +910,9 @@ entity fir_compiler_0sp_mem is
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of fir_compiler_0sp_mem : entity is "artix7";
   attribute C_PARAM : string;
-  attribute C_PARAM of fir_compiler_0sp_mem : entity is "162'b000000000000000000000000000000100000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000010001000000000000000000000000010000011";
+  attribute C_PARAM of fir_compiler_0sp_mem : entity is "162'b000000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000010";
   attribute C_INIT : string;
-  attribute C_INIT of fir_compiler_0sp_mem : entity is "1105'b0000110001100111000011111000101000000100111000001110010010100000101100100100100100111000010111000010000011100010101001100011110101111100000111110010011010010101001000011000000011101000111000110000111000000000000110010111100011101110101110000111001010010000010100000000111000000101110101011000110111001110100010110111110101100111110100100001001110110001101110010111100100100000011010111111010000011010001100010000001111101000100110101100100111001111000100011000010100101111011000001110110001001000011001001100000001100111000101100011010100100101000110111011011000001101010001011100110011100011001000111000010010000011101101011010100001100100001110001001011001110110000100000101100100010011100011000001101101010100010011001000011101000001101010100101001111111001110100000011011101010000101001111000101001000001111110010000111100110111000110111001100101001000001110111000011101100011000100111010001111100000101100101001110011101000011110100111111010011111000111100100000110011100101001100100011011100011001000001010110111010010101100100011000000111100101110000111110000011000001011001110100000011000111110101";
+  attribute C_INIT of fir_compiler_0sp_mem : entity is "1'b0";
   attribute C_USE_SCLR : string;
   attribute C_USE_SCLR of fir_compiler_0sp_mem : entity is "FALSE";
   attribute downgradeipidentifiedwarnings : string;
@@ -1092,6 +920,1740 @@ entity fir_compiler_0sp_mem is
 end fir_compiler_0sp_mem;
 
 architecture STRUCTURE of fir_compiler_0sp_mem is
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][0]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][10]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][11]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][12]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][13]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][14]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][15]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][1]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][2]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][3]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][4]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][5]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][6]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][7]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][8]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][9]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][0]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][10]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][11]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][12]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][13]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][14]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][15]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][1]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][2]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][3]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][4]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][5]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][6]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][7]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][8]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][9]_srl32\ : STD_LOGIC;
+  signal p_0_out : STD_LOGIC;
+  signal p_1_out : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  attribute srl_bus_name : string;
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][0]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name : string;
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][0]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][0]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][0]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][10]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][10]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][10]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][10]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][11]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][11]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][11]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][11]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][12]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][12]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][12]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][12]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][13]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][13]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][13]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][13]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][14]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][14]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][14]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][14]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][15]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][15]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][15]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][15]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][1]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][1]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][1]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][1]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][2]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][2]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][2]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][2]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][3]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][3]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][3]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][3]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][4]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][4]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][4]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][4]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][5]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][5]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][5]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][5]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][6]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][6]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][6]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][6]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][7]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][7]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][7]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][7]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][8]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][8]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][8]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][8]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][9]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][9]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][9]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b /\gen_srl16.gen_mem.mem_reg[63][9]_srl32__0 ";
+begin
+\gen_srl16.gen_mem.d_out[15]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+    port map (
+      I0 => SCLR,
+      I1 => CE,
+      O => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_mux\,
+      Q => DATA_OUT(0),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[10]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_mux\,
+      Q => DATA_OUT(10),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[11]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_mux\,
+      Q => DATA_OUT(11),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[12]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_mux\,
+      Q => DATA_OUT(12),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[13]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_mux\,
+      Q => DATA_OUT(13),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[14]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_mux\,
+      Q => DATA_OUT(14),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[15]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_mux\,
+      Q => DATA_OUT(15),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_mux\,
+      Q => DATA_OUT(1),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[2]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_mux\,
+      Q => DATA_OUT(2),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[3]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_mux\,
+      Q => DATA_OUT(3),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[4]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_mux\,
+      Q => DATA_OUT(4),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[5]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_mux\,
+      Q => DATA_OUT(5),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[6]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_mux\,
+      Q => DATA_OUT(6),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[7]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_mux\,
+      Q => DATA_OUT(7),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[8]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_mux\,
+      Q => DATA_OUT(8),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[9]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_mux\,
+      Q => DATA_OUT(9),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.mem_reg[63][0]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][0]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(0),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][0]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][0]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][0]_srl32_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+    port map (
+      I0 => WE,
+      I1 => CE,
+      O => p_1_out
+    );
+\gen_srl16.gen_mem.mem_reg[63][10]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][10]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(10),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][10]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][10]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][11]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][11]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(11),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][11]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][11]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][12]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][12]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(12),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][12]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][12]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][13]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][13]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(13),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][13]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][13]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][14]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][14]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(14),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][14]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][14]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][15]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][15]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(15),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][15]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][15]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][1]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][1]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(1),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][1]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][1]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][2]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][2]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(2),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][2]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][2]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][3]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][3]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(3),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][3]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][3]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][4]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][4]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(4),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][4]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][4]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][5]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][5]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(5),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][5]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][5]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][6]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][6]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(6),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][6]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][6]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][7]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][7]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(7),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][7]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][7]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][8]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][8]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(8),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][8]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][8]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][9]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][9]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(9),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][9]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][9]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0_Q31_UNCONNECTED\
+    );
+end STRUCTURE;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
+entity \fir_compiler_0sp_mem__1\ is
+  port (
+    ADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    DATA_IN : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    WE : in STD_LOGIC;
+    DATA_OUT : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    CE : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    CLK : in STD_LOGIC
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of \fir_compiler_0sp_mem__1\ : entity is "sp_mem";
+  attribute C_XDEVICEFAMILY : string;
+  attribute C_XDEVICEFAMILY of \fir_compiler_0sp_mem__1\ : entity is "artix7";
+  attribute C_PARAM : string;
+  attribute C_PARAM of \fir_compiler_0sp_mem__1\ : entity is "162'b000000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000010";
+  attribute C_INIT : string;
+  attribute C_INIT of \fir_compiler_0sp_mem__1\ : entity is "1'b0";
+  attribute C_USE_SCLR : string;
+  attribute C_USE_SCLR of \fir_compiler_0sp_mem__1\ : entity is "FALSE";
+  attribute downgradeipidentifiedwarnings : string;
+  attribute downgradeipidentifiedwarnings of \fir_compiler_0sp_mem__1\ : entity is "yes";
+end \fir_compiler_0sp_mem__1\;
+
+architecture STRUCTURE of \fir_compiler_0sp_mem__1\ is
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][0]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][10]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][11]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][12]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][13]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][14]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][15]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][1]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][2]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][3]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][4]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][5]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][6]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][7]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][8]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][9]_mux\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32\ : STD_LOGIC;
+  signal \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][0]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][10]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][11]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][12]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][13]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][14]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][15]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][1]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][2]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][3]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][4]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][5]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][6]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][7]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][8]_srl32\ : STD_LOGIC;
+  signal \n_1_gen_srl16.gen_mem.mem_reg[63][9]_srl32\ : STD_LOGIC;
+  signal p_0_out : STD_LOGIC;
+  signal p_1_out : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  signal \NLW_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0_Q31_UNCONNECTED\ : STD_LOGIC;
+  attribute srl_bus_name : string;
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][0]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name : string;
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][0]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][0]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][0]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][10]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][10]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][10]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][10]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][11]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][11]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][11]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][11]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][12]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][12]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][12]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][12]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][13]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][13]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][13]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][13]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][14]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][14]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][14]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][14]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][15]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][15]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][15]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][15]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][1]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][1]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][1]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][1]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][2]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][2]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][2]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][2]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][3]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][3]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][3]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][3]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][4]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][4]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][4]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][4]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][5]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][5]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][5]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][5]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][6]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][6]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][6]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][6]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][7]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][7]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][7]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][7]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][8]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][8]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][8]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][8]_srl32__0 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][9]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][9]_srl32\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][9]_srl32 ";
+  attribute srl_bus_name of \gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63] ";
+  attribute srl_name of \gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a /\gen_srl16.gen_mem.mem_reg[63][9]_srl32__0 ";
+begin
+\gen_srl16.gen_mem.d_out[15]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+    port map (
+      I0 => SCLR,
+      I1 => CE,
+      O => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_mux\,
+      Q => DATA_OUT(0),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[10]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_mux\,
+      Q => DATA_OUT(10),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[11]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_mux\,
+      Q => DATA_OUT(11),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[12]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_mux\,
+      Q => DATA_OUT(12),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[13]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_mux\,
+      Q => DATA_OUT(13),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[14]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_mux\,
+      Q => DATA_OUT(14),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[15]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_mux\,
+      Q => DATA_OUT(15),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_mux\,
+      Q => DATA_OUT(1),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[2]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_mux\,
+      Q => DATA_OUT(2),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[3]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_mux\,
+      Q => DATA_OUT(3),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[4]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_mux\,
+      Q => DATA_OUT(4),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[5]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_mux\,
+      Q => DATA_OUT(5),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[6]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_mux\,
+      Q => DATA_OUT(6),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[7]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_mux\,
+      Q => DATA_OUT(7),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[8]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_mux\,
+      Q => DATA_OUT(8),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.d_out_reg[9]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => CLK,
+      CE => CE,
+      D => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_mux\,
+      Q => DATA_OUT(9),
+      R => p_0_out
+    );
+\gen_srl16.gen_mem.mem_reg[63][0]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][0]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(0),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][0]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][0]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][0]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][0]_srl32_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+    port map (
+      I0 => WE,
+      I1 => CE,
+      O => p_1_out
+    );
+\gen_srl16.gen_mem.mem_reg[63][10]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][10]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(10),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][10]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][10]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][10]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][11]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][11]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(11),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][11]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][11]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][11]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][12]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][12]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(12),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][12]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][12]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][12]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][13]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][13]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(13),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][13]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][13]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][13]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][14]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][14]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(14),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][14]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][14]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][14]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][15]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][15]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(15),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][15]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][15]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][15]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][1]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][1]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(1),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][1]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][1]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][1]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][2]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][2]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(2),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][2]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][2]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][2]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][3]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][3]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(3),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][3]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][3]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][3]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][4]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][4]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(4),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][4]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][4]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][4]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][5]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][5]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(5),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][5]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][5]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][5]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][6]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][6]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(6),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][6]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][6]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][6]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][7]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][7]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(7),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][7]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][7]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][7]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][8]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][8]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(8),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][8]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][8]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][8]_srl32__0_Q31_UNCONNECTED\
+    );
+\gen_srl16.gen_mem.mem_reg[63][9]_mux\: unisim.vcomponents.MUXF7
+    port map (
+      I0 => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32\,
+      I1 => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\,
+      O => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_mux\,
+      S => ADDR(5)
+    );
+\gen_srl16.gen_mem.mem_reg[63][9]_srl32\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => DATA_IN(9),
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32\,
+      Q31 => \n_1_gen_srl16.gen_mem.mem_reg[63][9]_srl32\
+    );
+\gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\: unisim.vcomponents.SRLC32E
+    generic map(
+      INIT => X"00000000"
+    )
+    port map (
+      A(4 downto 0) => ADDR(4 downto 0),
+      CE => p_1_out,
+      CLK => CLK,
+      D => \n_1_gen_srl16.gen_mem.mem_reg[63][9]_srl32\,
+      Q => \n_0_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0\,
+      Q31 => \NLW_gen_srl16.gen_mem.mem_reg[63][9]_srl32__0_Q31_UNCONNECTED\
+    );
+end STRUCTURE;
+library IEEE; use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
+entity \fir_compiler_0sp_mem__parameterized0\ is
+  port (
+    ADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    DATA_IN : in STD_LOGIC_VECTOR ( 14 downto 0 );
+    WE : in STD_LOGIC;
+    DATA_OUT : out STD_LOGIC_VECTOR ( 14 downto 0 );
+    CE : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    CLK : in STD_LOGIC
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of \fir_compiler_0sp_mem__parameterized0\ : entity is "sp_mem";
+  attribute C_XDEVICEFAMILY : string;
+  attribute C_XDEVICEFAMILY of \fir_compiler_0sp_mem__parameterized0\ : entity is "artix7";
+  attribute C_PARAM : string;
+  attribute C_PARAM of \fir_compiler_0sp_mem__parameterized0\ : entity is "162'b000000000000000000000000000000100000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000010001000000000000000000000000001000111";
+  attribute C_INIT : string;
+  attribute C_INIT of \fir_compiler_0sp_mem__parameterized0\ : entity is "595'b0001011000111001000010101101000011000100011001001000011000001110010100000011101111110000100011010001000011010001000000100100100111001001000100111100100100001101011000001000000111000101000001010111010001010010010010111100000000111001100001000011001001011110000001100000011000001010011001110000100101000111110001100100001100000100111010101000001000100000111000011100010010011000010101101011110001101011111110000010001111001000000010111110101010001011000001000010011110101101010000000000100100000001010111010001000011101100001110100110100101101100001101110010001010000110000001011000011110100101110";
+  attribute C_USE_SCLR : string;
+  attribute C_USE_SCLR of \fir_compiler_0sp_mem__parameterized0\ : entity is "FALSE";
+  attribute downgradeipidentifiedwarnings : string;
+  attribute downgradeipidentifiedwarnings of \fir_compiler_0sp_mem__parameterized0\ : entity is "yes";
+end \fir_compiler_0sp_mem__parameterized0\;
+
+architecture STRUCTURE of \fir_compiler_0sp_mem__parameterized0\ is
   signal \<const0>\ : STD_LOGIC;
   signal n_0_g0_b0 : STD_LOGIC;
   signal n_0_g0_b1 : STD_LOGIC;
@@ -1108,37 +2670,6 @@ architecture STRUCTURE of fir_compiler_0sp_mem is
   signal n_0_g0_b7 : STD_LOGIC;
   signal n_0_g0_b8 : STD_LOGIC;
   signal n_0_g0_b9 : STD_LOGIC;
-  signal n_0_g1_b1 : STD_LOGIC;
-  signal n_0_g1_b11 : STD_LOGIC;
-  signal n_0_g1_b12 : STD_LOGIC;
-  signal n_0_g1_b2 : STD_LOGIC;
-  signal n_0_g1_b3 : STD_LOGIC;
-  signal n_0_g1_b6 : STD_LOGIC;
-  signal n_0_g1_b7 : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[0]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[10]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[13]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[14]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[4]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[5]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[8]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[9]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[11]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[12]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[1]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[2]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[3]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[6]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[7]_i_1\ : STD_LOGIC;
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[0]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[10]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[13]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[14]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[4]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[5]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[8]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[9]_i_1\ : label is "soft_lutpair6";
 begin
 GND: unisim.vcomponents.GND
     port map (
@@ -1146,7 +2677,7 @@ GND: unisim.vcomponents.GND
     );
 g0_b0: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"75517396D6A6AFE1"
+      INIT => X"0000000298B20114"
     )
     port map (
       I0 => ADDR(0),
@@ -1159,7 +2690,7 @@ g0_b0: unisim.vcomponents.LUT6
     );
 g0_b1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"74DBD4A48C510B18"
+      INIT => X"00000006461E3203"
     )
     port map (
       I0 => ADDR(0),
@@ -1172,7 +2703,7 @@ g0_b1: unisim.vcomponents.LUT6
     );
 g0_b10: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"CBC0BD13D1D9BF5E"
+      INIT => X"0000000447AEC635"
     )
     port map (
       I0 => ADDR(0),
@@ -1185,7 +2716,7 @@ g0_b10: unisim.vcomponents.LUT6
     );
 g0_b11: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"B30D6AD82CB98B2E"
+      INIT => X"0000000619709B8F"
     )
     port map (
       I0 => ADDR(0),
@@ -1198,7 +2729,7 @@ g0_b11: unisim.vcomponents.LUT6
     );
 g0_b12: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"8FAEFE7FBA3537D5"
+      INIT => X"00000000029521B3"
     )
     port map (
       I0 => ADDR(0),
@@ -1211,7 +2742,7 @@ g0_b12: unisim.vcomponents.LUT6
     );
 g0_b13: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"C72CB4C7F1D0BFC7"
+      INIT => X"00000007B6033A9D"
     )
     port map (
       I0 => ADDR(0),
@@ -1224,7 +2755,7 @@ g0_b13: unisim.vcomponents.LUT6
     );
 g0_b14: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"348278E054D6F690"
+      INIT => X"0000000098C0EDBC"
     )
     port map (
       I0 => ADDR(0),
@@ -1237,7 +2768,7 @@ g0_b14: unisim.vcomponents.LUT6
     );
 g0_b2: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"53DA10E3982DDE3D"
+      INIT => X"00000001E09E70BF"
     )
     port map (
       I0 => ADDR(0),
@@ -1250,7 +2781,7 @@ g0_b2: unisim.vcomponents.LUT6
     );
 g0_b3: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AB1FCC556F5356EE"
+      INIT => X"000000004957DA19"
     )
     port map (
       I0 => ADDR(0),
@@ -1263,7 +2794,7 @@ g0_b3: unisim.vcomponents.LUT6
     );
 g0_b4: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"06009728D7DA76E1"
+      INIT => X"0000000444435C92"
     )
     port map (
       I0 => ADDR(0),
@@ -1276,7 +2807,7 @@ g0_b4: unisim.vcomponents.LUT6
     );
 g0_b5: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"9239F6AB1473BC0B"
+      INIT => X"00000005C170AB49"
     )
     port map (
       I0 => ADDR(0),
@@ -1289,7 +2820,7 @@ g0_b5: unisim.vcomponents.LUT6
     );
 g0_b6: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"07644D21228FD033"
+      INIT => X"00000006E8E418AC"
     )
     port map (
       I0 => ADDR(0),
@@ -1302,7 +2833,7 @@ g0_b6: unisim.vcomponents.LUT6
     );
 g0_b7: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00A94574102E4BA3"
+      INIT => X"000000009E048E80"
     )
     port map (
       I0 => ADDR(0),
@@ -1315,7 +2846,7 @@ g0_b7: unisim.vcomponents.LUT6
     );
 g0_b8: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"5E5DE59FCD9E4049"
+      INIT => X"000000036ED23E69"
     )
     port map (
       I0 => ADDR(0),
@@ -1328,7 +2859,7 @@ g0_b8: unisim.vcomponents.LUT6
     );
 g0_b9: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"E959DBA55535A2FC"
+      INIT => X"0000000365A99EB4"
     )
     port map (
       I0 => ADDR(0),
@@ -1339,169 +2870,6 @@ g0_b9: unisim.vcomponents.LUT6
       I5 => ADDR(5),
       O => n_0_g0_b9
     );
-g1_b1: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b1
-    );
-g1_b11: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b11
-    );
-g1_b12: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b12
-    );
-g1_b2: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b2
-    );
-g1_b3: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b3
-    );
-g1_b6: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b6
-    );
-g1_b7: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b7
-    );
-\gen_dram.gen_rom.d_out[0]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b0,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[0]_i_1\
-    );
-\gen_dram.gen_rom.d_out[10]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b10,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[10]_i_1\
-    );
-\gen_dram.gen_rom.d_out[13]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b13,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[13]_i_1\
-    );
-\gen_dram.gen_rom.d_out[14]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b14,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[14]_i_1\
-    );
-\gen_dram.gen_rom.d_out[4]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b4,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[4]_i_1\
-    );
-\gen_dram.gen_rom.d_out[5]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b5,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[5]_i_1\
-    );
-\gen_dram.gen_rom.d_out[8]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b8,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[8]_i_1\
-    );
-\gen_dram.gen_rom.d_out[9]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b9,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[9]_i_1\
-    );
 \gen_dram.gen_rom.d_out_reg[0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -1509,7 +2877,7 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[0]_i_1\,
+      D => n_0_g0_b0,
       Q => DATA_OUT(0),
       R => \<const0>\
     );
@@ -1520,7 +2888,7 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[10]_i_1\,
+      D => n_0_g0_b10,
       Q => DATA_OUT(10),
       R => \<const0>\
     );
@@ -1531,16 +2899,9 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[11]_i_1\,
+      D => n_0_g0_b11,
       Q => DATA_OUT(11),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[11]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b11,
-      I1 => n_0_g1_b11,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[11]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -1549,16 +2910,9 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[12]_i_1\,
+      D => n_0_g0_b12,
       Q => DATA_OUT(12),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[12]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b12,
-      I1 => n_0_g1_b12,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[12]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[13]\: unisim.vcomponents.FDRE
     generic map(
@@ -1567,7 +2921,7 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[13]_i_1\,
+      D => n_0_g0_b13,
       Q => DATA_OUT(13),
       R => \<const0>\
     );
@@ -1578,7 +2932,7 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[14]_i_1\,
+      D => n_0_g0_b14,
       Q => DATA_OUT(14),
       R => \<const0>\
     );
@@ -1589,16 +2943,9 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[1]_i_1\,
+      D => n_0_g0_b1,
       Q => DATA_OUT(1),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[1]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b1,
-      I1 => n_0_g1_b1,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[1]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -1607,16 +2954,9 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[2]_i_1\,
+      D => n_0_g0_b2,
       Q => DATA_OUT(2),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[2]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b2,
-      I1 => n_0_g1_b2,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[2]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -1625,16 +2965,9 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[3]_i_1\,
+      D => n_0_g0_b3,
       Q => DATA_OUT(3),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[3]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b3,
-      I1 => n_0_g1_b3,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[3]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -1643,7 +2976,7 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[4]_i_1\,
+      D => n_0_g0_b4,
       Q => DATA_OUT(4),
       R => \<const0>\
     );
@@ -1654,7 +2987,7 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[5]_i_1\,
+      D => n_0_g0_b5,
       Q => DATA_OUT(5),
       R => \<const0>\
     );
@@ -1665,16 +2998,9 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[6]_i_1\,
+      D => n_0_g0_b6,
       Q => DATA_OUT(6),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[6]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b6,
-      I1 => n_0_g1_b6,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[6]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[7]\: unisim.vcomponents.FDRE
     generic map(
@@ -1683,16 +3009,9 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[7]_i_1\,
+      D => n_0_g0_b7,
       Q => DATA_OUT(7),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[7]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b7,
-      I1 => n_0_g1_b7,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[7]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[8]\: unisim.vcomponents.FDRE
     generic map(
@@ -1701,7 +3020,7 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[8]_i_1\,
+      D => n_0_g0_b8,
       Q => DATA_OUT(8),
       R => \<const0>\
     );
@@ -1712,16 +3031,16 @@ g1_b7: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[9]_i_1\,
+      D => n_0_g0_b9,
       Q => DATA_OUT(9),
       R => \<const0>\
     );
 end STRUCTURE;
 library IEEE; use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM; use UNISIM.VCOMPONENTS.ALL; 
-entity \fir_compiler_0sp_mem__parameterized0\ is
+entity \fir_compiler_0sp_mem__parameterized1\ is
   port (
-    ADDR : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    ADDR : in STD_LOGIC_VECTOR ( 5 downto 0 );
     DATA_IN : in STD_LOGIC_VECTOR ( 16 downto 0 );
     WE : in STD_LOGIC;
     DATA_OUT : out STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -1730,20 +3049,20 @@ entity \fir_compiler_0sp_mem__parameterized0\ is
     CLK : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \fir_compiler_0sp_mem__parameterized0\ : entity is "sp_mem";
+  attribute ORIG_REF_NAME of \fir_compiler_0sp_mem__parameterized1\ : entity is "sp_mem";
   attribute C_XDEVICEFAMILY : string;
-  attribute C_XDEVICEFAMILY of \fir_compiler_0sp_mem__parameterized0\ : entity is "artix7";
+  attribute C_XDEVICEFAMILY of \fir_compiler_0sp_mem__parameterized1\ : entity is "artix7";
   attribute C_PARAM : string;
-  attribute C_PARAM of \fir_compiler_0sp_mem__parameterized0\ : entity is "162'b000000000000000000000000000000100000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000010001000000000000000000000000010000011";
+  attribute C_PARAM of \fir_compiler_0sp_mem__parameterized1\ : entity is "162'b000000000000000000000000000000100000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000010001000000000000000000000000001000111";
   attribute C_INIT : string;
-  attribute C_INIT of \fir_compiler_0sp_mem__parameterized0\ : entity is "1105'b0110110110010010001101100111111100011010110100010110110100001110001001100100100011111010111111011010100101100111111001101010011011110110010011000101100100100010010110110100111100101110001001101001000001110010110000111101100100100000010100000111000000110000001010001100011000001101001011000000001100111111100000000001110001011111011000100100111101100110110111111001010001010011101111011010011111011010000100111110101101100011111101010011011010111010100001100111110101001011001011101011000110011111011000100011111110110111001111011101111100111000111100011001101011111001110110111111110101111000010111110000000011111111101000011100011111100000100111111111011110001101111111110000100000000000111100001000000100010010110000001100100010100000011111010000000001000111011110000010011010110000000101000001101000001010000111110000010011110110100000100110000010000001000111011000000010000011010100000011101101001000000110100100100000001011011011100000010011100001000000100000101100000000110101100100000001010101111000000010000110010000000011001011100000000100101011000000000110100100000000001000110000000000010000011";
+  attribute C_INIT of \fir_compiler_0sp_mem__parameterized1\ : entity is "595'b0100111111010101001001110111100000010011000100101100100100000000101001000010010011111001110110110101010011001110100010100101011010011000001000101011111000001101001001011000010010010000111000010101110100110000010001110011111111111000010011111110101100000101111011110100000111110101100111100111101001010010001111010010010001011110101001110111111101100111011001111100000010001111111001111000011111110111011110011111110110000000111111111000100101000000000101111110000000101011110000000010000010111000000100110101100000001010000110000000010011010011000000100010001110000000111000100000000010110100100";
   attribute C_USE_SCLR : string;
-  attribute C_USE_SCLR of \fir_compiler_0sp_mem__parameterized0\ : entity is "FALSE";
+  attribute C_USE_SCLR of \fir_compiler_0sp_mem__parameterized1\ : entity is "FALSE";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of \fir_compiler_0sp_mem__parameterized0\ : entity is "yes";
-end \fir_compiler_0sp_mem__parameterized0\;
+  attribute downgradeipidentifiedwarnings of \fir_compiler_0sp_mem__parameterized1\ : entity is "yes";
+end \fir_compiler_0sp_mem__parameterized1\;
 
-architecture STRUCTURE of \fir_compiler_0sp_mem__parameterized0\ is
+architecture STRUCTURE of \fir_compiler_0sp_mem__parameterized1\ is
   signal \<const0>\ : STD_LOGIC;
   signal n_0_g0_b0 : STD_LOGIC;
   signal n_0_g0_b1 : STD_LOGIC;
@@ -1762,40 +3081,6 @@ architecture STRUCTURE of \fir_compiler_0sp_mem__parameterized0\ is
   signal n_0_g0_b7 : STD_LOGIC;
   signal n_0_g0_b8 : STD_LOGIC;
   signal n_0_g0_b9 : STD_LOGIC;
-  signal n_0_g1_b11 : STD_LOGIC;
-  signal n_0_g1_b12 : STD_LOGIC;
-  signal n_0_g1_b14 : STD_LOGIC;
-  signal n_0_g1_b15 : STD_LOGIC;
-  signal n_0_g1_b2 : STD_LOGIC;
-  signal n_0_g1_b5 : STD_LOGIC;
-  signal n_0_g1_b8 : STD_LOGIC;
-  signal n_0_g1_b9 : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[0]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[10]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[13]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[16]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[1]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[3]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[4]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[6]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out[7]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[11]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[12]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[14]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[15]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[2]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[5]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[8]_i_1\ : STD_LOGIC;
-  signal \n_0_gen_dram.gen_rom.d_out_reg[9]_i_1\ : STD_LOGIC;
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[0]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[10]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[13]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[1]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[3]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[4]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[6]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \gen_dram.gen_rom.d_out[7]_i_1\ : label is "soft_lutpair10";
 begin
 GND: unisim.vcomponents.GND
     port map (
@@ -1803,7 +3088,7 @@ GND: unisim.vcomponents.GND
     );
 g0_b0: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"54F01759A9D736F9"
+      INIT => X"0000000071E8BF4C"
     )
     port map (
       I0 => ADDR(0),
@@ -1816,7 +3101,7 @@ g0_b0: unisim.vcomponents.LUT6
     );
 g0_b1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"7F32D7FCEC928D5D"
+      INIT => X"00000005C3F1B16C"
     )
     port map (
       I0 => ADDR(0),
@@ -1829,7 +3114,7 @@ g0_b1: unisim.vcomponents.LUT6
     );
 g0_b10: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"4A00BDF292E01F00"
+      INIT => X"000000067FB84A7D"
     )
     port map (
       I0 => ADDR(0),
@@ -1842,7 +3127,7 @@ g0_b10: unisim.vcomponents.LUT6
     );
 g0_b11: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"99FF960E4E1FE000"
+      INIT => X"00000007006FC600"
     )
     port map (
       I0 => ADDR(0),
@@ -1855,7 +3140,7 @@ g0_b11: unisim.vcomponents.LUT6
     );
 g0_b12: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"ED5527FE3E000000"
+      INIT => X"00000007AAB03E00"
     )
     port map (
       I0 => ADDR(0),
@@ -1868,7 +3153,7 @@ g0_b12: unisim.vcomponents.LUT6
     );
 g0_b13: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0E663801FE000000"
+      INIT => X"00000000333FFE00"
     )
     port map (
       I0 => ADDR(0),
@@ -1881,7 +3166,7 @@ g0_b13: unisim.vcomponents.LUT6
     );
 g0_b14: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"F0783FFFFE000000"
+      INIT => X"000000003C3FFE00"
     )
     port map (
       I0 => ADDR(0),
@@ -1894,7 +3179,7 @@ g0_b14: unisim.vcomponents.LUT6
     );
 g0_b15: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FF803FFFFE000000"
+      INIT => X"00000007C03FFE00"
     )
     port map (
       I0 => ADDR(0),
@@ -1907,7 +3192,7 @@ g0_b15: unisim.vcomponents.LUT6
     );
 g0_b16: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00003FFFFE000000"
+      INIT => X"00000000003FFE00"
     )
     port map (
       I0 => ADDR(0),
@@ -1920,7 +3205,7 @@ g0_b16: unisim.vcomponents.LUT6
     );
 g0_b2: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"92AAA90DAC5F6552"
+      INIT => X"000000017744C3F5"
     )
     port map (
       I0 => ADDR(0),
@@ -1933,7 +3218,7 @@ g0_b2: unisim.vcomponents.LUT6
     );
 g0_b3: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"D895908EB29F50EA"
+      INIT => X"00000004CC064992"
     )
     port map (
       I0 => ADDR(0),
@@ -1946,7 +3231,7 @@ g0_b3: unisim.vcomponents.LUT6
     );
 g0_b4: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"975D9EF710222DB4"
+      INIT => X"000000016EA489E8"
     )
     port map (
       I0 => ADDR(0),
@@ -1959,7 +3244,7 @@ g0_b4: unisim.vcomponents.LUT6
     );
 g0_b5: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AFD0E07399197648"
+      INIT => X"000000060445EB81"
     )
     port map (
       I0 => ADDR(0),
@@ -1972,7 +3257,7 @@ g0_b5: unisim.vcomponents.LUT6
     );
 g0_b6: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AED3D580C5F15284"
+      INIT => X"0000000234CAD82C"
     )
     port map (
       I0 => ADDR(0),
@@ -1985,7 +3270,7 @@ g0_b6: unisim.vcomponents.LUT6
     );
 g0_b7: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"E702D5AC4539CE57"
+      INIT => X"000000076BD051AB"
     )
     port map (
       I0 => ADDR(0),
@@ -1998,7 +3283,7 @@ g0_b7: unisim.vcomponents.LUT6
     );
 g0_b8: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"9CE00807C7299498"
+      INIT => X"00000006149F1C13"
     )
     port map (
       I0 => ADDR(0),
@@ -2011,7 +3296,7 @@ g0_b8: unisim.vcomponents.LUT6
     );
 g0_b9: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"4E012717C66618E0"
+      INIT => X"00000004382C9E82"
     )
     port map (
       I0 => ADDR(0),
@@ -2022,191 +3307,6 @@ g0_b9: unisim.vcomponents.LUT6
       I5 => ADDR(5),
       O => n_0_g0_b9
     );
-g1_b11: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b11
-    );
-g1_b12: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b12
-    );
-g1_b14: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b14
-    );
-g1_b15: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b15
-    );
-g1_b2: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b2
-    );
-g1_b5: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b5
-    );
-g1_b8: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b8
-    );
-g1_b9: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-    port map (
-      I0 => ADDR(0),
-      I1 => ADDR(1),
-      I2 => ADDR(2),
-      I3 => ADDR(3),
-      I4 => ADDR(4),
-      I5 => ADDR(5),
-      O => n_0_g1_b9
-    );
-\gen_dram.gen_rom.d_out[0]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b0,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[0]_i_1\
-    );
-\gen_dram.gen_rom.d_out[10]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b10,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[10]_i_1\
-    );
-\gen_dram.gen_rom.d_out[13]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b13,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[13]_i_1\
-    );
-\gen_dram.gen_rom.d_out[16]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b16,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[16]_i_1\
-    );
-\gen_dram.gen_rom.d_out[1]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b1,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[1]_i_1\
-    );
-\gen_dram.gen_rom.d_out[3]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b3,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[3]_i_1\
-    );
-\gen_dram.gen_rom.d_out[4]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b4,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[4]_i_1\
-    );
-\gen_dram.gen_rom.d_out[6]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b6,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[6]_i_1\
-    );
-\gen_dram.gen_rom.d_out[7]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => n_0_g0_b7,
-      I1 => ADDR(6),
-      O => \n_0_gen_dram.gen_rom.d_out[7]_i_1\
-    );
 \gen_dram.gen_rom.d_out_reg[0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -2214,7 +3314,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[0]_i_1\,
+      D => n_0_g0_b0,
       Q => DATA_OUT(0),
       R => \<const0>\
     );
@@ -2225,7 +3325,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[10]_i_1\,
+      D => n_0_g0_b10,
       Q => DATA_OUT(10),
       R => \<const0>\
     );
@@ -2236,16 +3336,9 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[11]_i_1\,
+      D => n_0_g0_b11,
       Q => DATA_OUT(11),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[11]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b11,
-      I1 => n_0_g1_b11,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[11]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -2254,16 +3347,9 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[12]_i_1\,
+      D => n_0_g0_b12,
       Q => DATA_OUT(12),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[12]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b12,
-      I1 => n_0_g1_b12,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[12]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[13]\: unisim.vcomponents.FDRE
     generic map(
@@ -2272,7 +3358,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[13]_i_1\,
+      D => n_0_g0_b13,
       Q => DATA_OUT(13),
       R => \<const0>\
     );
@@ -2283,16 +3369,9 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[14]_i_1\,
+      D => n_0_g0_b14,
       Q => DATA_OUT(14),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[14]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b14,
-      I1 => n_0_g1_b14,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[14]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[15]\: unisim.vcomponents.FDRE
     generic map(
@@ -2301,16 +3380,9 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[15]_i_1\,
+      D => n_0_g0_b15,
       Q => DATA_OUT(15),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[15]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b15,
-      I1 => n_0_g1_b15,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[15]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[16]\: unisim.vcomponents.FDRE
     generic map(
@@ -2319,7 +3391,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[16]_i_1\,
+      D => n_0_g0_b16,
       Q => DATA_OUT(16),
       R => \<const0>\
     );
@@ -2330,7 +3402,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[1]_i_1\,
+      D => n_0_g0_b1,
       Q => DATA_OUT(1),
       R => \<const0>\
     );
@@ -2341,16 +3413,9 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[2]_i_1\,
+      D => n_0_g0_b2,
       Q => DATA_OUT(2),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[2]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b2,
-      I1 => n_0_g1_b2,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[2]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -2359,7 +3424,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[3]_i_1\,
+      D => n_0_g0_b3,
       Q => DATA_OUT(3),
       R => \<const0>\
     );
@@ -2370,7 +3435,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[4]_i_1\,
+      D => n_0_g0_b4,
       Q => DATA_OUT(4),
       R => \<const0>\
     );
@@ -2381,16 +3446,9 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[5]_i_1\,
+      D => n_0_g0_b5,
       Q => DATA_OUT(5),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[5]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b5,
-      I1 => n_0_g1_b5,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[5]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -2399,7 +3457,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[6]_i_1\,
+      D => n_0_g0_b6,
       Q => DATA_OUT(6),
       R => \<const0>\
     );
@@ -2410,7 +3468,7 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out[7]_i_1\,
+      D => n_0_g0_b7,
       Q => DATA_OUT(7),
       R => \<const0>\
     );
@@ -2421,16 +3479,9 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[8]_i_1\,
+      D => n_0_g0_b8,
       Q => DATA_OUT(8),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[8]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b8,
-      I1 => n_0_g1_b8,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[8]_i_1\,
-      S => ADDR(6)
     );
 \gen_dram.gen_rom.d_out_reg[9]\: unisim.vcomponents.FDRE
     generic map(
@@ -2439,16 +3490,9 @@ g1_b9: unisim.vcomponents.LUT6
     port map (
       C => CLK,
       CE => CE,
-      D => \n_0_gen_dram.gen_rom.d_out_reg[9]_i_1\,
+      D => n_0_g0_b9,
       Q => DATA_OUT(9),
       R => \<const0>\
-    );
-\gen_dram.gen_rom.d_out_reg[9]_i_1\: unisim.vcomponents.MUXF7
-    port map (
-      I0 => n_0_g0_b9,
-      I1 => n_0_g1_b9,
-      O => \n_0_gen_dram.gen_rom.d_out_reg[9]_i_1\,
-      S => ADDR(6)
     );
 end STRUCTURE;
 library IEEE; use IEEE.STD_LOGIC_1164.ALL;
@@ -2495,7 +3539,7 @@ entity \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ is
   attribute C_COEF_FILE : string;
   attribute C_COEF_FILE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "fir_compiler_0.mif";
   attribute C_COEF_FILE_LINES : integer;
-  attribute C_COEF_FILE_LINES of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 130;
+  attribute C_COEF_FILE_LINES of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 70;
   attribute C_FILTER_TYPE : integer;
   attribute C_FILTER_TYPE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 0;
   attribute C_INTERP_RATE : integer;
@@ -2509,7 +3553,7 @@ entity \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ is
   attribute C_NUM_FILTS : integer;
   attribute C_NUM_FILTS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 1;
   attribute C_NUM_TAPS : integer;
-  attribute C_NUM_TAPS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 129;
+  attribute C_NUM_TAPS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 69;
   attribute C_NUM_CHANNELS : integer;
   attribute C_NUM_CHANNELS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 1;
   attribute C_CHANNEL_PATTERN : string;
@@ -2549,13 +3593,13 @@ entity \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ is
   attribute C_COEF_PATH_SIGN : string;
   attribute C_COEF_PATH_SIGN of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "1,0";
   attribute C_ACCUM_PATH_WIDTHS : string;
-  attribute C_ACCUM_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "38,37";
+  attribute C_ACCUM_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "37,36";
   attribute C_OUTPUT_WIDTH : integer;
   attribute C_OUTPUT_WIDTH of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 32;
   attribute C_OUTPUT_PATH_WIDTHS : string;
   attribute C_OUTPUT_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "32";
   attribute C_ACCUM_OP_PATH_WIDTHS : string;
-  attribute C_ACCUM_OP_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "52";
+  attribute C_ACCUM_OP_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "51";
   attribute C_EXT_MULT_CNFG : string;
   attribute C_EXT_MULT_CNFG of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "0,1,0,15";
   attribute C_DATA_PATH_PSAMP_SRC : string;
@@ -2567,13 +3611,13 @@ entity \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ is
   attribute C_OPT_MADDS : string;
   attribute C_OPT_MADDS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "none;none";
   attribute C_OVERSAMPLING_RATE : integer;
-  attribute C_OVERSAMPLING_RATE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 65;
+  attribute C_OVERSAMPLING_RATE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 35;
   attribute C_INPUT_RATE : integer;
-  attribute C_INPUT_RATE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 141;
+  attribute C_INPUT_RATE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 70;
   attribute C_OUTPUT_RATE : integer;
-  attribute C_OUTPUT_RATE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 141;
+  attribute C_OUTPUT_RATE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 70;
   attribute C_DATA_MEMTYPE : integer;
-  attribute C_DATA_MEMTYPE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 1;
+  attribute C_DATA_MEMTYPE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 0;
   attribute C_COEF_MEMTYPE : integer;
   attribute C_COEF_MEMTYPE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 2;
   attribute C_IPBUFF_MEMTYPE : integer;
@@ -2585,13 +3629,13 @@ entity \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ is
   attribute C_MEM_ARRANGEMENT : integer;
   attribute C_MEM_ARRANGEMENT of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 1;
   attribute C_DATA_MEM_PACKING : integer;
-  attribute C_DATA_MEM_PACKING of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 1;
+  attribute C_DATA_MEM_PACKING of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 0;
   attribute C_COEF_MEM_PACKING : integer;
   attribute C_COEF_MEM_PACKING of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 0;
   attribute C_FILTS_PACKED : integer;
   attribute C_FILTS_PACKED of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 0;
   attribute C_LATENCY : integer;
-  attribute C_LATENCY of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 76;
+  attribute C_LATENCY of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 45;
   attribute C_HAS_ARESETn : integer;
   attribute C_HAS_ARESETn of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 1;
   attribute C_HAS_ACLKEN : integer;
@@ -2632,16 +3676,18 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
   signal P_CIN : STD_LOGIC;
+  signal accumulate : STD_LOGIC;
   signal base_max_cntrl : STD_LOGIC;
   signal base_max_flush : STD_LOGIC;
-  signal data_in_mux : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal fn_muxcy_set : STD_LOGIC;
+  signal \g_single_rate.i_single_rate/P_COND17_out\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/accum_opcode\ : STD_LOGIC_VECTOR ( 8 downto 3 );
   signal \g_single_rate.i_single_rate/accum_pat_det\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/address[0]\ : STD_LOGIC_VECTOR ( 14 downto 0 );
-  signal \g_single_rate.i_single_rate/base_max\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/clear\ : STD_LOGIC;
+  signal \g_single_rate.i_single_rate/address[0]\ : STD_LOGIC_VECTOR ( 11 downto 0 );
+  signal \g_single_rate.i_single_rate/blanking_cnt_halt\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/cntrl[0]\ : STD_LOGIC_VECTOR ( 8 to 9 );
+  signal \g_single_rate.i_single_rate/cntrl_blank_mem\ : STD_LOGIC;
+  signal \g_single_rate.i_single_rate/cntrl_mem_we\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/data_casc[0]\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \g_single_rate.i_single_rate/data_sym_casc[0]\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \g_single_rate.i_single_rate/din_in\ : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -2650,39 +3696,47 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/not_afull\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_data\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_enable\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_enable0\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\ : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].mem_if_we_reg[1,0]\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\ : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\ : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal \g_single_rate.i_single_rate/mem_if_addr[0,0]\ : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\ : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal \g_single_rate.i_single_rate/mem_if_addr[0,0]\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \g_single_rate.i_single_rate/mem_if_dataout[0,0]\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \g_single_rate.i_single_rate/mem_if_dataout[1,0]\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \g_single_rate.i_single_rate/mem_if_we[0,0]\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/p_0_in\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/p_0_out\ : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal \g_single_rate.i_single_rate/p_12_in\ : STD_LOGIC;
+  signal \g_single_rate.i_single_rate/p_0_out\ : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal \g_single_rate.i_single_rate/p_10_out\ : STD_LOGIC;
+  signal \g_single_rate.i_single_rate/p_13_out\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/p_14_out\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/p_1_in2_in\ : STD_LOGIC;
+  signal \g_single_rate.i_single_rate/p_1_in3_in\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/p_3_out\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/p_9_out\ : STD_LOGIC;
+  signal \g_single_rate.i_single_rate/p_9_in\ : STD_LOGIC;
+  signal \g_single_rate.i_single_rate/p_accum[casc]\ : STD_LOGIC_VECTOR ( 47 downto 0 );
   signal \g_single_rate.i_single_rate/p_accum[fab]\ : STD_LOGIC_VECTOR ( 47 downto 0 );
   signal \g_single_rate.i_single_rate/rfd_int\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/sclr_int\ : STD_LOGIC;
   signal \g_single_rate.i_single_rate/sclr_pipe\ : STD_LOGIC;
-  signal \g_single_rate.i_single_rate/we_gen_algn\ : STD_LOGIC;
   signal \gen_dly.gen_regs.delay_bus_reg[0]\ : STD_LOGIC;
-  signal \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4]\ : STD_LOGIC;
-  signal \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[8]\ : STD_LOGIC;
-  signal \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\ : STD_LOGIC;
+  signal \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7]\ : STD_LOGIC;
+  signal latch_op : STD_LOGIC;
+  signal load : STD_LOGIC;
+  signal n_0_fifo_wr_enable_1_i_1 : STD_LOGIC;
   signal \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\ : STD_LOGIC;
   signal \n_0_g_m_data_chan_no_fifo.m_axis_data_tvalid_int_i_1\ : STD_LOGIC;
   signal \n_0_g_sclr.sclr_int_i_1\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.base_en_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.base_max_cntrl_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.base_max_flush_i_1\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.base_max_i_2\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.blanking_cnt[2]_i_2\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.blanking_cnt[3]_i_2\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.blanking_cnt[4]_i_2\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.blanking_cnt[5]_i_2\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.blanking_cnt[7]_i_3\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.blanking_cnt[7]_i_4\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.blanking_cnt_halt_i_1\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.blanking_cnt_halt_i_2\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.data_in_mux[0]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.data_in_mux[10]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.data_in_mux[11]_i_1\ : STD_LOGIC;
@@ -2699,59 +3753,83 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_0_g_semi_parallel_and_smac.data_in_mux[7]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.data_in_mux[8]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.data_in_mux[9]_i_1\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_2\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_4\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_5\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_6\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_7\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_2\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_3\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_4\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_5\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.flush_datax2_i_1\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.gen_data_addr[5]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[0]_i_1\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[1]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[2]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[3]_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_1\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[6]_i_1\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_1\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_2\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.we_flush_i_1\ : STD_LOGIC;
-  signal \n_0_g_semi_parallel_and_smac.we_gen_i_1\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_2\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_3\ : STD_LOGIC;
+  signal \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_2\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[0]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[1]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[2]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[3]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[4]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[5]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[6]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[7]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[4]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[5]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[6]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[7]\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_data_i_1\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][10]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][11]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][12]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][13]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][14]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][15]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][1]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][2]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][3]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][4]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][5]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][6]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][7]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][8]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][9]\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[3]_i_1\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[4]_i_1\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[5]_i_1\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[8]_i_1\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][1]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][2]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][3]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][4]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][5]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][6]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]_srl8\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr[1]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_1\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[3]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[4]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[5]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]_srl2\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]_srl2\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]_srl2\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]_srl2\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]_srl2\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]_srl7\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\ : STD_LOGIC;
   signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[3]\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : STD_LOGIC;
-  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : STD_LOGIC;
+  signal \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\ : STD_LOGIC;
+  signal \n_0_gen_reg.d_reg[0]_i_1\ : STD_LOGIC;
+  signal \n_0_gen_reg.d_reg[0]_i_1__0\ : STD_LOGIC;
+  signal \n_0_gen_reg.d_reg[0]_i_1__1\ : STD_LOGIC;
   signal \n_100_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_100_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_101_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
@@ -2765,163 +3843,115 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_105_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_105_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_106_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_106_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_106_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_107_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_107_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_107_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_108_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_108_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_108_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_109_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_109_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_109_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_10_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_10_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_10_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_110_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_110_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_110_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_111_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_111_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_111_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_112_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_112_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_112_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_113_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_113_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_113_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_114_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_114_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_114_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_115_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_115_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_115_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_116_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_116_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_116_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_117_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_117_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_117_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_118_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_118_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_118_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_119_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_119_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_119_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_11_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_11_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_11_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_120_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_120_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_120_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_121_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_121_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_121_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_122_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_122_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_122_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_123_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_123_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_123_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_124_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_124_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_124_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_125_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_125_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_125_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_126_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_126_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_126_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_127_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_127_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_127_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_128_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_128_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_128_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_129_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_129_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_129_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_12_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_12_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_12_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_130_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_130_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_130_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_131_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_131_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_131_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_132_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_132_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_132_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_133_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_133_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_133_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_134_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_134_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_134_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_135_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_135_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_135_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_136_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_136_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_136_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_137_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_137_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_137_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_138_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_138_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_138_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_139_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_139_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_139_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_13_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_13_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_13_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_140_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_140_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_140_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_141_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_141_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_141_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_142_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_142_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_142_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_143_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_143_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_143_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_144_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_144_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_144_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_145_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_145_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_145_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_146_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_146_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_146_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_147_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_147_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_147_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_148_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_148_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_148_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_149_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_149_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_149_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_14_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_14_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_14_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_150_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_150_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_150_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_151_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_151_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_151_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_152_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_152_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_152_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_153_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_153_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_153_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_15_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_15_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
@@ -2929,18 +3959,11 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_16_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_17_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_18_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
-  signal \n_18_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_19_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
-  signal \n_19_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
-  signal \n_1_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\ : STD_LOGIC;
-  signal \n_1_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\ : STD_LOGIC;
   signal \n_1_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
   signal \n_1_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_1_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_20_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
-  signal \n_20_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
-  signal \n_21_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
-  signal \n_22_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_24_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
   signal \n_24_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_24_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
@@ -2948,6 +3971,7 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_25_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_25_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_26_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
+  signal \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_27_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
@@ -2959,14 +3983,11 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_29_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
   signal \n_29_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_29_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_2_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\ : STD_LOGIC;
-  signal \n_2_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\ : STD_LOGIC;
   signal \n_2_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_2_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_30_g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : STD_LOGIC;
   signal \n_30_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_30_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_32_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
@@ -3028,8 +4049,6 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_399_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_39_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_39_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_3_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\ : STD_LOGIC;
-  signal \n_3_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\ : STD_LOGIC;
   signal \n_3_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_3_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_3_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
@@ -3060,8 +4079,6 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_48_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_49_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_49_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_4_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\ : STD_LOGIC;
-  signal \n_4_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\ : STD_LOGIC;
   signal \n_4_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_4_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_4_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
@@ -3077,8 +4094,6 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_58_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_59_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_59_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_5_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\ : STD_LOGIC;
-  signal \n_5_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\ : STD_LOGIC;
   signal \n_5_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_5_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_60_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
@@ -3101,8 +4116,7 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_68_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_69_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_69_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_6_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\ : STD_LOGIC;
-  signal \n_6_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\ : STD_LOGIC;
+  signal \n_6_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_6_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_6_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_70_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
@@ -3125,8 +4139,7 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_78_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_79_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
   signal \n_79_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
-  signal \n_7_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\ : STD_LOGIC;
-  signal \n_7_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\ : STD_LOGIC;
+  signal \n_7_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_7_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_7_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_80_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : STD_LOGIC;
@@ -3175,11 +4188,10 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \n_9_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : STD_LOGIC;
   signal \n_9_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
   signal \n_9_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : STD_LOGIC;
+  signal p_0_in : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal plusOp : STD_LOGIC_VECTOR ( 4 downto 0 );
-  signal \plusOp__0\ : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal \plusOp__0\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \^s_axis_data_tready\ : STD_LOGIC;
-  signal we_flush : STD_LOGIC;
-  signal \NLW_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1_CARRYCASCOUT_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1_MULTSIGNOUT_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1_OVERFLOW_UNCONNECTED\ : STD_LOGIC;
@@ -3202,35 +4214,44 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal \NLW_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1_BCOUT_UNCONNECTED\ : STD_LOGIC_VECTOR ( 17 downto 0 );
   signal \NLW_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1_CARRYOUT_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of fifo_wr_enable_1_i_1 : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \g_m_data_chan_no_fifo.m_axis_data_tvalid_int_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_cnt[1]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_cnt[2]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_cnt[3]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_cnt[4]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_max_cntrl_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[0]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[10]_i_1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[11]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[12]_i_1\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[13]_i_1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[14]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[15]_i_1\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[1]_i_1\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[2]_i_1\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[3]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[4]_i_1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[5]_i_1\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[6]_i_1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[7]_i_1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[8]_i_1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[9]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \g_m_data_chan_no_fifo.m_axis_data_tvalid_int_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_cnt[1]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_cnt[2]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_cnt[3]_i_1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_cnt[4]_i_1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_max_cntrl_i_1\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.base_max_flush_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.blanking_cnt[2]_i_2\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.blanking_cnt[3]_i_2\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.blanking_cnt[7]_i_4\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[0]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[10]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[11]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[12]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[13]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[14]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[15]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[1]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[2]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[3]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[4]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[5]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[6]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[7]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[8]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.data_in_mux[9]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.flush_datax2_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_addr[1]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_addr[2]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_addr[3]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_addr[4]_i_1\ : label is "soft_lutpair4";
   attribute RETAIN_INVERTER : boolean;
   attribute RETAIN_INVERTER of \g_semi_parallel_and_smac.gen_data_sym_addr[0]_i_1\ : label is true;
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_sym_addr[0]_i_1\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_sym_addr[2]_i_1\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_sym_addr[3]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_sym_addr[0]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_sym_addr[2]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_sym_addr[3]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_3\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \g_semi_parallel_and_smac.rfd_int_i_1\ : label is "soft_lutpair10";
   attribute use_sync_reset : string;
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[0]\ : label is "no";
   attribute use_sync_set : string;
@@ -3321,13 +4342,12 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   attribute WIDTH of \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : label is 16;
   attribute downgradeipidentifiedwarnings of \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/fifo0\ : label is "yes";
   attribute counter : integer;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[0]\ : label is 8;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[1]\ : label is 8;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[2]\ : label is 8;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[3]\ : label is 8;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[4]\ : label is 8;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[5]\ : label is 8;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[6]\ : label is 8;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[0]\ : label is 4;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[1]\ : label is 4;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[2]\ : label is 4;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[3]\ : label is 4;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[4]\ : label is 4;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[5]\ : label is 4;
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[0]\ : label is "no";
   attribute use_sync_set of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[0]\ : label is "no";
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[10]\ : label is "no";
@@ -3360,19 +4380,13 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   attribute use_sync_set of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[8]\ : label is "no";
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[9]\ : label is "no";
   attribute use_sync_set of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[9]\ : label is "no";
-  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_data_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_data_i_1\ : label is "soft_lutpair7";
   attribute SHREG_EXTRACT : string;
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[3].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\ : label is "no";
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[3].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\ : label is "no";
   attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\ : label is "no";
   attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\ : label is "no";
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\ : label is "no";
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\ : label is "no";
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0]\ : label is "no";
   attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\ : label is "no";
   attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\ : label is "no";
   attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0]\ : label is "no";
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[3][0]\ : label is "no";
   attribute C_DELAY_LEN : integer;
   attribute C_DELAY_LEN of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : label is 0;
   attribute C_KEEP_HIER : string;
@@ -3380,82 +4394,109 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   attribute C_MEM_TYPE : integer;
   attribute C_MEM_TYPE of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : label is 3;
   attribute downgradeipidentifiedwarnings of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\ : label is "yes";
-  attribute C_HAS_SCLR : string;
-  attribute C_HAS_SCLR of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem\ : label is "FALSE";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][10]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][11]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][12]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][13]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][14]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][15]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][1]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][2]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][3]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][4]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][5]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][6]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][7]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][8]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][9]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][10]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][11]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][12]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][13]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][14]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][15]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][6]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][7]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][8]\ : label is "yes";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][9]\ : label is "yes";
   attribute C_INIT : string;
-  attribute C_INIT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem\ : label is "1'b1";
+  attribute C_INIT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b\ : label is "1'b0";
   attribute C_PARAM : string;
-  attribute C_PARAM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem\ : label is "162'b000000000000000000000000000000010000000000000000000000000000000101000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000010";
-  attribute C_XDEVICEFAMILY of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem\ : label is "artix7";
-  attribute downgradeipidentifiedwarnings of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem\ : label is "yes";
-  attribute C_INIT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : label is "1105'b0000110001100111000011111000101000000100111000001110010010100000101100100100100100111000010111000010000011100010101001100011110101111100000111110010011010010101001000011000000011101000111000110000111000000000000110010111100011101110101110000111001010010000010100000000111000000101110101011000110111001110100010110111110101100111110100100001001110110001101110010111100100100000011010111111010000011010001100010000001111101000100110101100100111001111000100011000010100101111011000001110110001001000011001001100000001100111000101100011010100100101000110111011011000001101010001011100110011100011001000111000010010000011101101011010100001100100001110001001011001110110000100000101100100010011100011000001101101010100010011001000011101000001101010100101001111111001110100000011011101010000101001111000101001000001111110010000111100110111000110111001100101001000001110111000011101100011000100111010001111100000101100101001110011101000011110100111111010011111000111100100000110011100101001100100011011100011001000001010110111010010101100100011000000111100101110000111110000011000001011001110100000011000111110101";
-  attribute C_PARAM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : label is "162'b000000000000000000000000000000100000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000010001000000000000000000000000010000011";
+  attribute C_PARAM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b\ : label is "162'b000000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000010";
   attribute C_USE_SCLR : string;
+  attribute C_USE_SCLR of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b\ : label is "FALSE";
+  attribute C_XDEVICEFAMILY of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b\ : label is "artix7";
+  attribute downgradeipidentifiedwarnings of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b\ : label is "yes";
+  attribute C_INIT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "1'b0";
+  attribute C_PARAM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "162'b000000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000010";
+  attribute C_USE_SCLR of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "FALSE";
+  attribute C_XDEVICEFAMILY of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "artix7";
+  attribute downgradeipidentifiedwarnings of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "yes";
+  attribute C_INIT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : label is "595'b0001011000111001000010101101000011000100011001001000011000001110010100000011101111110000100011010001000011010001000000100100100111001001000100111100100100001101011000001000000111000101000001010111010001010010010010111100000000111001100001000011001001011110000001100000011000001010011001110000100101000111110001100100001100000100111010101000001000100000111000011100010010011000010101101011110001101011111110000010001111001000000010111110101010001011000001000010011110101101010000000000100100000001010111010001000011101100001110100110100101101100001101110010001010000110000001011000011110100101110";
+  attribute C_PARAM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : label is "162'b000000000000000000000000000000100000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000010001000000000000000000000000001000111";
   attribute C_USE_SCLR of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : label is "FALSE";
   attribute C_XDEVICEFAMILY of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : label is "artix7";
   attribute downgradeipidentifiedwarnings of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\ : label is "yes";
   attribute box_type of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : label is "PRIMITIVE";
-  attribute C_INIT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "1105'b0110110110010010001101100111111100011010110100010110110100001110001001100100100011111010111111011010100101100111111001101010011011110110010011000101100100100010010110110100111100101110001001101001000001110010110000111101100100100000010100000111000000110000001010001100011000001101001011000000001100111111100000000001110001011111011000100100111101100110110111111001010001010011101111011010011111011010000100111110101101100011111101010011011010111010100001100111110101001011001011101011000110011111011000100011111110110111001111011101111100111000111100011001101011111001110110111111110101111000010111110000000011111111101000011100011111100000100111111111011110001101111111110000100000000000111100001000000100010010110000001100100010100000011111010000000001000111011110000010011010110000000101000001101000001010000111110000010011110110100000100110000010000001000111011000000010000011010100000011101101001000000110100100100000001011011011100000010011100001000000100000101100000000110101100100000001010101111000000010000110010000000011001011100000000100101011000000000110100100000000001000110000000000010000011";
-  attribute C_PARAM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "162'b000000000000000000000000000000100000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000010001000000000000000000000000010000011";
+  attribute C_INIT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "595'b0100111111010101001001110111100000010011000100101100100100000000101001000010010011111001110110110101010011001110100010100101011010011000001000101011111000001101001001011000010010010000111000010101110100110000010001110011111111111000010011111110101100000101111011110100000111110101100111100111101001010010001111010010010001011110101001110111111101100111011001111100000010001111111001111000011111110111011110011111110110000000111111111000100101000000000101111110000000101011110000000010000010111000000100110101100000001010000110000000010011010011000000100010001110000000111000100000000010110100100";
+  attribute C_PARAM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "162'b000000000000000000000000000000100000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000010001000000000000000000000000001000111";
   attribute C_USE_SCLR of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "FALSE";
   attribute C_XDEVICEFAMILY of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "artix7";
   attribute downgradeipidentifiedwarnings of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\ : label is "yes";
   attribute box_type of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\ : label is "PRIMITIVE";
-  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[3]_i_1\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[4]_i_1\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[5]_i_1\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[8]_i_1\ : label is "soft_lutpair21";
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[0]\ : label is 9;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[1]\ : label is 9;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[2]\ : label is 9;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[3]\ : label is 9;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[4]\ : label is 9;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[5]\ : label is 9;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[6]\ : label is 9;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[7]\ : label is 9;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\ : label is 10;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\ : label is 10;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\ : label is 10;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[3]\ : label is 10;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[4]\ : label is 10;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[5]\ : label is 10;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[6]\ : label is 10;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[7]\ : label is 10;
+  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[3]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[4]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[5]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[8]_i_1\ : label is "soft_lutpair24";
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[0]\ : label is 5;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[1]\ : label is 5;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[2]\ : label is 5;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[3]\ : label is 5;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[4]\ : label is 5;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[5]\ : label is 5;
   attribute srl_bus_name : string;
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1] ";
   attribute srl_name : string;
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3 ";
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\ : label is "yes";
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3 ";
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][1]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][1]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][1]_srl3 ";
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][2]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][2]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][2]_srl3 ";
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][3]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][3]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][3]_srl3 ";
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][4]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][4]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][4]_srl3 ";
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][5]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][5]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][5]_srl3 ";
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][6]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][6]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][6]_srl3 ";
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]_srl8\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]_srl8\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]_srl8 ";
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9][0]\ : label is "yes";
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\ : label is 7;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\ : label is 7;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\ : label is 7;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[3]\ : label is 7;
-  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[4]\ : label is 7;
-  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2] ";
-  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3 ";
-  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\ : label is "yes";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2 ";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\ : label is "yes";
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1] ";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2 ";
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1] ";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]_srl2 ";
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1] ";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]_srl2 ";
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1] ";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]_srl2 ";
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1] ";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]_srl2 ";
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1] ";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]_srl2 ";
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]_srl7\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6] ";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]_srl7\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]_srl7 ";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[8][0]\ : label is "yes";
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\ : label is 3;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\ : label is 3;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\ : label is 3;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[3]\ : label is 3;
+  attribute counter of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[4]\ : label is 3;
+  attribute srl_bus_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1] ";
+  attribute srl_name of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\ : label is "U0/i_synth/\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2 ";
+  attribute SHREG_EXTRACT of \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\ : label is "yes";
   attribute RETAIN_INVERTER of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[0]_i_1\ : label is true;
-  attribute SOFT_HLUTNM of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[0]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[2]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[3]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[4]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[0]_i_1\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[1]_i_1\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[2]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[4]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \gen_reg.d_reg[0]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \gen_reg.d_reg[0]_i_1__0\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \gen_reg.d_reg[0]_i_1__1\ : label is "soft_lutpair22";
 begin
   event_s_config_tlast_missing <= \<const0>\;
   event_s_config_tlast_unexpected <= \<const0>\;
@@ -3525,23 +4566,22 @@ VCC: unisim.vcomponents.VCC
     port map (
       P => \<const1>\
     );
-fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
+fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"40"
+      INIT => X"8"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/sclr_int\,
+      I0 => \^s_axis_data_tready\,
       I1 => s_axis_data_tvalid,
-      I2 => \^s_axis_data_tready\,
-      O => \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_enable0\
+      O => n_0_fifo_wr_enable_1_i_1
     );
 \g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/sclr_pipe\,
-      I1 => \g_single_rate.i_single_rate/sclr_int\,
+      I0 => \g_single_rate.i_single_rate/sclr_int\,
+      I1 => \g_single_rate.i_single_rate/sclr_pipe\,
       O => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
 \g_m_data_chan_no_fifo.m_axis_data_tvalid_int_i_1\: unisim.vcomponents.LUT3
@@ -3549,9 +4589,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       INIT => X"02"
     )
     port map (
-      I0 => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      I1 => \g_single_rate.i_single_rate/sclr_int\,
-      I2 => \g_single_rate.i_single_rate/sclr_pipe\,
+      I0 => latch_op,
+      I1 => \g_single_rate.i_single_rate/sclr_pipe\,
+      I2 => \g_single_rate.i_single_rate/sclr_int\,
       O => \n_0_g_m_data_chan_no_fifo.m_axis_data_tvalid_int_i_1\
     );
 \g_sclr.sclr_int_i_1\: unisim.vcomponents.LUT1
@@ -3581,23 +4621,23 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     );
 \g_semi_parallel_and_smac.base_cnt[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"78"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
-      O => \plusOp__0\(2)
-    );
-\g_semi_parallel_and_smac.base_cnt[3]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"7F80"
+      INIT => X"6A"
     )
     port map (
       I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
       I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
       I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
-      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
+      O => \plusOp__0\(2)
+    );
+\g_semi_parallel_and_smac.base_cnt[3]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"6AAA"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
+      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
+      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
+      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
       O => \plusOp__0\(3)
     );
 \g_semi_parallel_and_smac.base_cnt[4]_i_1\: unisim.vcomponents.LUT5
@@ -3605,99 +4645,185 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       INIT => X"7FFF8000"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
-      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
+      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
+      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
+      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
+      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
       I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(4),
       O => \plusOp__0\(4)
     );
-\g_semi_parallel_and_smac.base_cnt[5]_i_1\: unisim.vcomponents.LUT6
+\g_semi_parallel_and_smac.base_cnt[5]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"7FFFFFFF80000000"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(4),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
-      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
-      I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
-      I5 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(5),
-      O => \plusOp__0\(5)
-    );
-\g_semi_parallel_and_smac.base_cnt[6]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"F8"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/base_max\,
-      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      I2 => \g_single_rate.i_single_rate/sclr_int\,
-      O => \g_single_rate.i_single_rate/clear\
-    );
-\g_semi_parallel_and_smac.base_cnt[6]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"9"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(6),
-      I1 => \n_0_g_semi_parallel_and_smac.base_max_i_2\,
-      O => \plusOp__0\(6)
-    );
-\g_semi_parallel_and_smac.base_en_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"51115000"
+      INIT => X"EA"
     )
     port map (
       I0 => \g_single_rate.i_single_rate/sclr_int\,
-      I1 => \g_single_rate.i_single_rate/base_max\,
-      I2 => \g_single_rate.i_single_rate/rfd_int\,
-      I3 => \g_single_rate.i_single_rate/p_0_in\,
-      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      O => \n_0_g_semi_parallel_and_smac.base_en_i_1\
+      I1 => \g_single_rate.i_single_rate/p_9_in\,
+      I2 => \g_single_rate.i_single_rate/p_1_in3_in\,
+      O => \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\
     );
-\g_semi_parallel_and_smac.base_max_cntrl_i_1\: unisim.vcomponents.LUT3
+\g_semi_parallel_and_smac.base_cnt[5]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"01"
+      INIT => X"6AAAAAAAAAAAAAAA"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(6),
-      I1 => \n_0_g_semi_parallel_and_smac.base_max_i_2\,
-      I2 => \g_single_rate.i_single_rate/sclr_int\,
-      O => \n_0_g_semi_parallel_and_smac.base_max_cntrl_i_1\
-    );
-\g_semi_parallel_and_smac.base_max_flush_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"222F"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/p_12_in\,
-      I1 => \g_single_rate.i_single_rate/base_max\,
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(6),
-      I3 => \n_0_g_semi_parallel_and_smac.base_max_i_2\,
-      O => \n_0_g_semi_parallel_and_smac.base_max_flush_i_1\
-    );
-\g_semi_parallel_and_smac.base_max_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-    port map (
-      I0 => \n_0_g_semi_parallel_and_smac.base_max_i_2\,
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(6),
-      O => P_CIN
-    );
-\g_semi_parallel_and_smac.base_max_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"7FFFFFFFFFFFFFFF"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(4),
+      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(5),
       I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
       I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
       I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
       I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
+      I5 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(4),
+      O => \plusOp__0\(5)
+    );
+\g_semi_parallel_and_smac.base_en_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"008F0088"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/p_0_in\,
+      I1 => \g_single_rate.i_single_rate/rfd_int\,
+      I2 => \g_single_rate.i_single_rate/p_1_in3_in\,
+      I3 => \g_single_rate.i_single_rate/sclr_int\,
+      I4 => \g_single_rate.i_single_rate/p_9_in\,
+      O => \n_0_g_semi_parallel_and_smac.base_en_i_1\
+    );
+\g_semi_parallel_and_smac.base_max_cntrl_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+    port map (
+      I0 => P_CIN,
+      I1 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_semi_parallel_and_smac.base_max_cntrl_i_1\
+    );
+\g_semi_parallel_and_smac.base_max_flush_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"BA"
+    )
+    port map (
+      I0 => P_CIN,
+      I1 => \g_single_rate.i_single_rate/p_1_in3_in\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      O => \n_0_g_semi_parallel_and_smac.base_max_flush_i_1\
+    );
+\g_semi_parallel_and_smac.base_max_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000400000000"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
+      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
+      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
+      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
+      I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(4),
       I5 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(5),
-      O => \n_0_g_semi_parallel_and_smac.base_max_i_2\
+      O => P_CIN
+    );
+\g_semi_parallel_and_smac.blanking_cnt[2]_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\,
+      O => \n_0_g_semi_parallel_and_smac.blanking_cnt[2]_i_2\
+    );
+\g_semi_parallel_and_smac.blanking_cnt[3]_i_2\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"AA956AAA"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\,
+      I4 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      O => \n_0_g_semi_parallel_and_smac.blanking_cnt[3]_i_2\
+    );
+\g_semi_parallel_and_smac.blanking_cnt[4]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAAA9996AAAAAAA"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[4]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\,
+      I5 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      O => \n_0_g_semi_parallel_and_smac.blanking_cnt[4]_i_2\
+    );
+\g_semi_parallel_and_smac.blanking_cnt[5]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"000001117FFFFFFF"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[4]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\,
+      I5 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      O => \n_0_g_semi_parallel_and_smac.blanking_cnt[5]_i_2\
+    );
+\g_semi_parallel_and_smac.blanking_cnt[7]_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/p_9_in\,
+      I1 => \g_single_rate.i_single_rate/blanking_cnt_halt\,
+      O => \g_single_rate.i_single_rate/p_10_out\
+    );
+\g_semi_parallel_and_smac.blanking_cnt[7]_i_3\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"40000002AAAAAAAA"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\,
+      I2 => \n_0_g_semi_parallel_and_smac.blanking_cnt[2]_i_2\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[4]\,
+      I5 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[5]\,
+      O => \n_0_g_semi_parallel_and_smac.blanking_cnt[7]_i_3\
+    );
+\g_semi_parallel_and_smac.blanking_cnt[7]_i_4\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"AAAAEAAA"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/sclr_int\,
+      I1 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      I3 => \g_single_rate.i_single_rate/p_9_in\,
+      I4 => \g_single_rate.i_single_rate/blanking_cnt_halt\,
+      O => \n_0_g_semi_parallel_and_smac.blanking_cnt[7]_i_4\
+    );
+\g_semi_parallel_and_smac.blanking_cnt_halt_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"BAAAAAAA"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/blanking_cnt_halt\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[7]\,
+      I2 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[6]\,
+      I4 => \n_0_g_semi_parallel_and_smac.blanking_cnt_halt_i_2\,
+      O => \n_0_g_semi_parallel_and_smac.blanking_cnt_halt_i_1\
+    );
+\g_semi_parallel_and_smac.blanking_cnt_halt_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"8000000000000000"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[5]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[4]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\,
+      I5 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\,
+      O => \n_0_g_semi_parallel_and_smac.blanking_cnt_halt_i_2\
     );
 \g_semi_parallel_and_smac.data_in_mux[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -3843,160 +4969,107 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       I1 => \g_single_rate.i_single_rate/din_in\(9),
       O => \n_0_g_semi_parallel_and_smac.data_in_mux[9]_i_1\
     );
-\g_semi_parallel_and_smac.gen_data_addr[3]_i_2\: unisim.vcomponents.LUT1
+\g_semi_parallel_and_smac.flush_datax2_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"1"
+      INIT => X"FFE2"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/p_1_in2_in\,
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_2\
+      I0 => \g_single_rate.i_single_rate/p_14_out\,
+      I1 => \g_single_rate.i_single_rate/p_1_in3_in\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      I3 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_semi_parallel_and_smac.flush_datax2_i_1\
     );
-\g_semi_parallel_and_smac.gen_data_addr[3]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/p_1_in2_in\,
-      O => \g_single_rate.i_single_rate/we_gen_algn\
-    );
-\g_semi_parallel_and_smac.gen_data_addr[3]_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"9"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(3),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_4\
-    );
-\g_semi_parallel_and_smac.gen_data_addr[3]_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/p_1_in2_in\,
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_5\
-    );
-\g_semi_parallel_and_smac.gen_data_addr[3]_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/p_1_in2_in\,
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(1),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_6\
-    );
-\g_semi_parallel_and_smac.gen_data_addr[3]_i_7\: unisim.vcomponents.LUT1
+\g_semi_parallel_and_smac.gen_data_addr[0]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
     port map (
       I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_7\
+      O => p_0_in(0)
     );
-\g_semi_parallel_and_smac.gen_data_addr[7]_i_2\: unisim.vcomponents.LUT3
+\g_semi_parallel_and_smac.gen_data_addr[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"2D"
+      INIT => X"6"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(6),
-      I1 => \g_single_rate.i_single_rate/p_1_in2_in\,
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(7),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_2\
+      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
+      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(1),
+      O => p_0_in(1)
     );
-\g_semi_parallel_and_smac.gen_data_addr[7]_i_3\: unisim.vcomponents.LUT3
+\g_semi_parallel_and_smac.gen_data_addr[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"69"
+      INIT => X"6A"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(5),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(6),
-      I2 => \g_single_rate.i_single_rate/p_1_in2_in\,
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_3\
+      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
+      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
+      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(1),
+      O => p_0_in(2)
     );
-\g_semi_parallel_and_smac.gen_data_addr[7]_i_4\: unisim.vcomponents.LUT2
+\g_semi_parallel_and_smac.gen_data_addr[3]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"9"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(4),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(5),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_4\
-    );
-\g_semi_parallel_and_smac.gen_data_addr[7]_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"9"
+      INIT => X"6AAA"
     )
     port map (
       I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(3),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(4),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_5\
+      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(1),
+      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
+      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
+      O => p_0_in(3)
     );
-\g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\: unisim.vcomponents.CARRY4
+\g_semi_parallel_and_smac.gen_data_addr[4]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"7FFF8000"
+    )
     port map (
-      CI => \<const0>\,
-      CO(3) => \n_0_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      CO(2) => \n_1_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      CO(1) => \n_2_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      CO(0) => \n_3_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      CYINIT => \<const0>\,
-      DI(3) => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
-      DI(2) => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_2\,
-      DI(1) => \g_single_rate.i_single_rate/we_gen_algn\,
-      DI(0) => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
-      O(3) => \n_4_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      O(2) => \n_5_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      O(1) => \n_6_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      O(0) => \n_7_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      S(3) => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_4\,
-      S(2) => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_5\,
-      S(1) => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_6\,
-      S(0) => \n_0_g_semi_parallel_and_smac.gen_data_addr[3]_i_7\
+      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
+      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
+      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(1),
+      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(3),
+      I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(4),
+      O => p_0_in(4)
     );
-\g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\: unisim.vcomponents.CARRY4
+\g_semi_parallel_and_smac.gen_data_addr[5]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFA8"
+    )
     port map (
-      CI => \n_0_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
-      CO(3) => \NLW_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1_CO_UNCONNECTED\(3),
-      CO(2) => \n_1_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      CO(1) => \n_2_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      CO(0) => \n_3_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      CYINIT => \<const0>\,
-      DI(3) => \<const0>\,
-      DI(2 downto 0) => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(5 downto 3),
-      O(3) => \n_4_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      O(2) => \n_5_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      O(1) => \n_6_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      O(0) => \n_7_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      S(3) => \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_2\,
-      S(2) => \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_3\,
-      S(1) => \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_4\,
-      S(0) => \n_0_g_semi_parallel_and_smac.gen_data_addr[7]_i_5\
+      I0 => \g_single_rate.i_single_rate/p_9_in\,
+      I1 => \g_single_rate.i_single_rate/p_13_out\,
+      I2 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I3 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_semi_parallel_and_smac.gen_data_addr[5]_i_1\
+    );
+\g_semi_parallel_and_smac.gen_data_addr[5]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6AAAAAAAAAAAAAAA"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(5),
+      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
+      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
+      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(1),
+      I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(3),
+      I5 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(4),
+      O => p_0_in(5)
     );
 \g_semi_parallel_and_smac.gen_data_sym_addr[0]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\,
       O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[0]_i_1\
-    );
-\g_semi_parallel_and_smac.gen_data_sym_addr[1]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"9"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(1),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[1]_i_1\
     );
 \g_semi_parallel_and_smac.gen_data_sym_addr[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"A9"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(2),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(1),
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\,
       O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[2]_i_1\
     );
 \g_semi_parallel_and_smac.gen_data_sym_addr[3]_i_1\: unisim.vcomponents.LUT4
@@ -4004,102 +5077,75 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       INIT => X"AAA9"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(3),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(1),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
-      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(2),
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[3]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\,
       O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[3]_i_1\
     );
-\g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\: unisim.vcomponents.LUT5
+\g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFA8"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/p_9_in\,
+      I1 => \g_single_rate.i_single_rate/p_13_out\,
+      I2 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I3 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\
+    );
+\g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/sclr_int\,
+      I1 => \g_single_rate.i_single_rate/p_9_in\,
+      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_2\
+    );
+\g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_3\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"AAAAAAA9"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(4),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(2),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
-      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(1),
-      I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(3),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[4]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[3]\,
+      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_3\
     );
-\g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_1\: unisim.vcomponents.LUT6
+\g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_2\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AAAAAAAAAAAAAAA9"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(5),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(3),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(1),
-      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
-      I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(2),
-      I5 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(4),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_1\
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[5]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[4]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[3]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\,
+      I5 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\,
+      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_2\
     );
-\g_semi_parallel_and_smac.gen_data_sym_addr[6]_i_1\: unisim.vcomponents.LUT3
+\g_semi_parallel_and_smac.rfd_int_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"69"
+      INIT => X"3A"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/p_1_in2_in\,
-      I1 => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_2\,
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(6),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[6]_i_1\
-    );
-\g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"78E1"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/p_1_in2_in\,
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(6),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(7),
-      I3 => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_2\,
-      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_1\
-    );
-\g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(4),
-      I1 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(2),
-      I2 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
-      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(1),
-      I4 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(3),
-      I5 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(5),
-      O => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_2\
-    );
-\g_semi_parallel_and_smac.rfd_int_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4447"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/p_0_in\,
-      I1 => \g_single_rate.i_single_rate/rfd_int\,
-      I2 => \n_0_g_semi_parallel_and_smac.base_max_i_2\,
-      I3 => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(6),
-      O => fn_muxcy_set
-    );
-\g_semi_parallel_and_smac.we_flush_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"32223000"
-    )
-    port map (
-      I0 => \g_single_rate.i_single_rate/p_12_in\,
-      I1 => \g_single_rate.i_single_rate/sclr_int\,
+      I0 => P_CIN,
+      I1 => \g_single_rate.i_single_rate/p_0_in\,
       I2 => \g_single_rate.i_single_rate/rfd_int\,
-      I3 => \g_single_rate.i_single_rate/p_0_in\,
-      I4 => we_flush,
-      O => \n_0_g_semi_parallel_and_smac.we_flush_i_1\
+      O => fn_muxcy_set
     );
 \g_semi_parallel_and_smac.we_gen_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"8"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/p_0_in\,
-      I1 => \g_single_rate.i_single_rate/rfd_int\,
-      O => \n_0_g_semi_parallel_and_smac.we_gen_i_1\
+      I0 => \g_single_rate.i_single_rate/rfd_int\,
+      I1 => \g_single_rate.i_single_rate/p_0_in\,
+      O => \g_single_rate.i_single_rate/P_COND17_out\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -4107,8 +5153,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_100_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_101_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(0),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4118,8 +5164,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_90_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_91_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(10),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4129,8 +5175,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_89_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_90_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(11),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4140,8 +5186,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_88_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_89_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(12),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4151,8 +5197,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_87_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_88_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(13),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4162,8 +5208,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_86_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_87_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(14),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4173,8 +5219,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_85_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_86_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(15),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4184,8 +5230,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_84_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_85_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(16),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4195,8 +5241,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_83_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_84_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(17),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4206,8 +5252,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_82_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_83_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(18),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4217,8 +5263,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_81_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_82_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(19),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4228,8 +5274,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_99_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_100_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(1),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4239,8 +5285,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_80_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_81_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(20),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4250,8 +5296,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_79_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_80_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(21),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4261,8 +5307,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_78_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_79_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(22),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4272,8 +5318,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_77_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_78_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(23),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4283,8 +5329,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_76_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_77_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(24),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4294,8 +5340,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_75_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_76_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(25),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4305,8 +5351,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_74_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_75_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(26),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4316,8 +5362,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_73_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_74_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(27),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4327,8 +5373,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_72_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_73_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(28),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4338,8 +5384,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_71_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_72_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(29),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4349,8 +5395,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_98_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_99_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(2),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4360,8 +5406,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_70_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_71_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(30),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4371,8 +5417,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_69_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_70_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(31),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4382,8 +5428,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_97_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_98_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(3),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4393,8 +5439,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_96_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_97_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(4),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4404,8 +5450,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_95_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_96_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(5),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4415,8 +5461,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_94_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_95_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(6),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4426,8 +5472,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_93_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_94_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(7),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4437,8 +5483,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_92_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_93_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(8),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -4448,8 +5494,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
-      D => \n_91_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      CE => latch_op,
+      D => \n_92_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(9),
       R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
     );
@@ -5043,9 +6089,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_enable0\,
+      D => n_0_fifo_wr_enable_1_i_1,
       Q => \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_enable\,
-      R => \<const0>\
+      R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_s_data_chan_fifo.i_s_data_chan_fifo/ifx_ready_1_reg\: unisim.vcomponents.FDRE
     generic map(
@@ -5075,10 +6121,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
       D => \plusOp__0\(0),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
-      R => \g_single_rate.i_single_rate/clear\
+      R => \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -5086,10 +6132,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
       D => \plusOp__0\(1),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
-      R => \g_single_rate.i_single_rate/clear\
+      R => \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -5097,10 +6143,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
       D => \plusOp__0\(2),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
-      R => \g_single_rate.i_single_rate/clear\
+      R => \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -5108,10 +6154,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
       D => \plusOp__0\(3),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
-      R => \g_single_rate.i_single_rate/clear\
+      R => \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -5119,10 +6165,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
       D => \plusOp__0\(4),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(4),
-      R => \g_single_rate.i_single_rate/clear\
+      R => \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -5130,21 +6176,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
       D => \plusOp__0\(5),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(5),
-      R => \g_single_rate.i_single_rate/clear\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \plusOp__0\(6),
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(6),
-      R => \g_single_rate.i_single_rate/clear\
+      R => \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\: unisim.vcomponents.FDRE
     generic map(
@@ -5154,7 +6189,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.base_en_i_1\,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      Q => \g_single_rate.i_single_rate/p_9_in\,
       R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_max_cntrl_reg\: unisim.vcomponents.FDRE
@@ -5187,8 +6222,211 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => P_CIN,
-      Q => \g_single_rate.i_single_rate/base_max\,
+      Q => \g_single_rate.i_single_rate/p_1_in3_in\,
       R => \g_single_rate.i_single_rate/sclr_int\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[0]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000BA9A9A9A"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\,
+      I1 => \g_single_rate.i_single_rate/blanking_cnt_halt\,
+      I2 => \g_single_rate.i_single_rate/p_9_in\,
+      I3 => \g_single_rate.i_single_rate/p_13_out\,
+      I4 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I5 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[0]_i_1\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[1]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000E666EAAA"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\,
+      I1 => \g_single_rate.i_single_rate/p_10_out\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      I3 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\,
+      I5 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[1]_i_1\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[2]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000EA66E6AA"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\,
+      I1 => \g_single_rate.i_single_rate/p_10_out\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      I3 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I4 => \n_0_g_semi_parallel_and_smac.blanking_cnt[2]_i_2\,
+      I5 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[2]_i_1\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[3]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000EEEEE222"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\,
+      I1 => \g_single_rate.i_single_rate/p_10_out\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      I3 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I4 => \n_0_g_semi_parallel_and_smac.blanking_cnt[3]_i_2\,
+      I5 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[3]_i_1\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[4]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000EEEEE222"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[4]\,
+      I1 => \g_single_rate.i_single_rate/p_10_out\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      I3 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I4 => \n_0_g_semi_parallel_and_smac.blanking_cnt[4]_i_2\,
+      I5 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[4]_i_1\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[5]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000EAAAE666"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[5]\,
+      I1 => \g_single_rate.i_single_rate/p_10_out\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      I3 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I4 => \n_0_g_semi_parallel_and_smac.blanking_cnt[5]_i_2\,
+      I5 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[5]_i_1\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[6]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000E666EAAA"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[6]\,
+      I1 => \g_single_rate.i_single_rate/p_10_out\,
+      I2 => \g_single_rate.i_single_rate/p_13_out\,
+      I3 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I4 => \n_0_g_semi_parallel_and_smac.blanking_cnt[7]_i_3\,
+      I5 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[6]_i_1\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[7]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"00000000AA6A6AAA"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[7]\,
+      I1 => \g_single_rate.i_single_rate/p_10_out\,
+      I2 => \n_0_g_semi_parallel_and_smac.blanking_cnt[7]_i_3\,
+      I3 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[6]\,
+      I5 => \n_0_g_semi_parallel_and_smac.blanking_cnt[7]_i_4\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[7]_i_1\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_halt_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_semi_parallel_and_smac.blanking_cnt_halt_i_1\,
+      Q => \g_single_rate.i_single_rate/blanking_cnt_halt\,
+      R => \g_single_rate.i_single_rate/sclr_int\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[0]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[0]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[1]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[1]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[2]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[2]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[3]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[3]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[4]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[4]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[4]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[5]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[5]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[5]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[6]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[6]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[6]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[7]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt[7]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[7]\,
+      R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -5198,7 +6436,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[0]_i_1\,
-      Q => data_in_mux(0),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(0),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[10]\: unisim.vcomponents.FDRE
@@ -5209,7 +6447,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[10]_i_1\,
-      Q => data_in_mux(10),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(10),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[11]\: unisim.vcomponents.FDRE
@@ -5220,7 +6458,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[11]_i_1\,
-      Q => data_in_mux(11),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(11),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[12]\: unisim.vcomponents.FDRE
@@ -5231,7 +6469,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[12]_i_1\,
-      Q => data_in_mux(12),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(12),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[13]\: unisim.vcomponents.FDRE
@@ -5242,7 +6480,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[13]_i_1\,
-      Q => data_in_mux(13),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(13),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[14]\: unisim.vcomponents.FDRE
@@ -5253,7 +6491,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[14]_i_1\,
-      Q => data_in_mux(14),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(14),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[15]\: unisim.vcomponents.FDRE
@@ -5264,7 +6502,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[15]_i_1\,
-      Q => data_in_mux(15),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(15),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[1]\: unisim.vcomponents.FDRE
@@ -5275,7 +6513,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[1]_i_1\,
-      Q => data_in_mux(1),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(1),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[2]\: unisim.vcomponents.FDRE
@@ -5286,7 +6524,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[2]_i_1\,
-      Q => data_in_mux(2),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(2),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[3]\: unisim.vcomponents.FDRE
@@ -5297,7 +6535,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[3]_i_1\,
-      Q => data_in_mux(3),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(3),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[4]\: unisim.vcomponents.FDRE
@@ -5308,7 +6546,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[4]_i_1\,
-      Q => data_in_mux(4),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(4),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[5]\: unisim.vcomponents.FDRE
@@ -5319,7 +6557,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[5]_i_1\,
-      Q => data_in_mux(5),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(5),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[6]\: unisim.vcomponents.FDRE
@@ -5330,7 +6568,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[6]_i_1\,
-      Q => data_in_mux(6),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(6),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[7]\: unisim.vcomponents.FDRE
@@ -5341,7 +6579,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[7]_i_1\,
-      Q => data_in_mux(7),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(7),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[8]\: unisim.vcomponents.FDRE
@@ -5352,7 +6590,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[8]_i_1\,
-      Q => data_in_mux(8),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(8),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.data_in_mux_reg[9]\: unisim.vcomponents.FDRE
@@ -5363,16 +6601,16 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_semi_parallel_and_smac.data_in_mux[9]_i_1\,
-      Q => data_in_mux(9),
+      Q => \g_single_rate.i_single_rate/data_casc[0]\(9),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_data_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"F2"
+      INIT => X"F4"
     )
     port map (
-      I0 => \g_single_rate.i_single_rate/p_12_in\,
-      I1 => \g_single_rate.i_single_rate/base_max\,
+      I0 => \g_single_rate.i_single_rate/p_1_in3_in\,
+      I1 => \g_single_rate.i_single_rate/p_13_out\,
       I2 => \g_single_rate.i_single_rate/sclr_int\,
       O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_data_i_1\
     );
@@ -5384,7 +6622,18 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_data_i_1\,
-      Q => \g_single_rate.i_single_rate/p_12_in\,
+      Q => \g_single_rate.i_single_rate/p_13_out\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.flush_datax2_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '1'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_semi_parallel_and_smac.flush_datax2_i_1\,
+      Q => \g_single_rate.i_single_rate/p_14_out\,
       R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_data_sym_addr.i_cntrl_data_sym_addr/gen_reg.d_reg_reg[0]\: unisim.vcomponents.FDRE
@@ -5394,7 +6643,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\,
       Q => \g_single_rate.i_single_rate/p_0_out\(0),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
@@ -5405,7 +6654,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(1),
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\,
       Q => \g_single_rate.i_single_rate/p_0_out\(1),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
@@ -5416,7 +6665,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(2),
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\,
       Q => \g_single_rate.i_single_rate/p_0_out\(2),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
@@ -5427,7 +6676,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(3),
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[3]\,
       Q => \g_single_rate.i_single_rate/p_0_out\(3),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
@@ -5438,7 +6687,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(4),
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[4]\,
       Q => \g_single_rate.i_single_rate/p_0_out\(4),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
@@ -5449,63 +6698,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(5),
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[5]\,
       Q => \g_single_rate.i_single_rate/p_0_out\(5),
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_data_sym_addr.i_cntrl_data_sym_addr/gen_reg.d_reg_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(6),
-      Q => \g_single_rate.i_single_rate/p_0_out\(6),
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_data_sym_addr.i_cntrl_data_sym_addr/gen_reg.d_reg_reg[7]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(7),
-      Q => \g_single_rate.i_single_rate/p_0_out\(7),
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[0].i_delay/gen_reg.d_reg_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/p_12_in\,
-      Q => \g_single_rate.i_single_rate/p_14_out\,
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[3].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => we_flush,
-      Q => \gen_dly.gen_regs.delay_bus_reg[0]\,
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[3].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \gen_dly.gen_regs.delay_bus_reg[0]\,
-      Q => \g_single_rate.i_single_rate/p_9_out\,
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\: unisim.vcomponents.FDRE
@@ -5516,7 +6710,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => base_max_flush,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\,
+      Q => \gen_dly.gen_regs.delay_bus_reg[0]\,
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\: unisim.vcomponents.FDRE
@@ -5526,42 +6720,20 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[7].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\,
+      D => \gen_dly.gen_regs.delay_bus_reg[0]\,
       Q => \g_single_rate.i_single_rate/p_3_out\,
       R => \g_single_rate.i_single_rate/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_reg.d_reg_reg[0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => base_max_cntrl,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\,
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\,
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[8].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\,
+      D => \n_0_gen_reg.d_reg[0]_i_1__1\,
       Q => \g_single_rate.i_single_rate/cntrl[0]\(8),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[0][0]\: unisim.vcomponents.FDRE
     generic map(
@@ -5593,261 +6765,435 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[1][0]\,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0]\,
+      Q => \g_single_rate.i_single_rate/cntrl[0]\(9),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[3][0]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_srl_clear.i_cntrl_blank_mem/gen_reg.d_reg_reg[0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_cntrl_signals[9].i_delay/gen_dly.gen_regs.delay_bus_reg[2][0]\,
-      Q => \g_single_rate.i_single_rate/cntrl[0]\(9),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      D => \n_0_gen_reg.d_reg[0]_i_1__0\,
+      Q => \g_single_rate.i_single_rate/cntrl_blank_mem\,
+      R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\: entity work.fir_compiler_0cntrl_delay
     port map (
-      ADDR_IN(22 downto 15) => \g_single_rate.i_single_rate/p_0_out\(7 downto 0),
-      ADDR_IN(14 downto 0) => \g_single_rate.i_single_rate/address[0]\(14 downto 0),
-      ADDR_OUT(22 downto 15) => \g_single_rate.i_single_rate/mem_if_addr[0,0]\(7 downto 0),
-      ADDR_OUT(14) => \n_8_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(13) => \n_9_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(12) => \n_10_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(11) => \n_11_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(10) => \n_12_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(9) => \n_13_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(8) => \n_14_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(7) => \n_15_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(6) => \n_16_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(5) => \n_17_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(4) => \n_18_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(3) => \n_19_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(2) => \n_20_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(1) => \n_21_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDR_OUT(0) => \n_22_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_IN(17 downto 12) => \g_single_rate.i_single_rate/p_0_out\(5 downto 0),
+      ADDR_IN(11 downto 0) => \g_single_rate.i_single_rate/address[0]\(11 downto 0),
+      ADDR_OUT(17 downto 12) => \g_single_rate.i_single_rate/mem_if_addr[0,0]\(5 downto 0),
+      ADDR_OUT(11) => \n_6_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(10) => \n_7_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(9) => \n_8_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(8) => \n_9_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(7) => \n_10_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(6) => \n_11_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(5) => \n_12_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(4) => \n_13_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(3) => \n_14_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(2) => \n_15_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(1) => \n_16_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR_OUT(0) => \n_17_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
       CE => \<const1>\,
       CLK => aclk,
       CNTRL_IN(0) => \g_single_rate.i_single_rate/p_14_out\,
-      CNTRL_IN(1) => \<const0>\,
+      CNTRL_IN(1) => \g_single_rate.i_single_rate/p_13_out\,
       CNTRL_IN(2) => \<const0>\,
-      CNTRL_IN(3) => \g_single_rate.i_single_rate/p_9_out\,
+      CNTRL_IN(3) => \<const0>\,
       CNTRL_IN(4) => \<const0>\,
       CNTRL_IN(5) => \<const0>\,
       CNTRL_IN(6) => \<const0>\,
       CNTRL_IN(7) => \g_single_rate.i_single_rate/p_3_out\,
       CNTRL_IN(8 to 9) => \g_single_rate.i_single_rate/cntrl[0]\(8 to 9),
       CNTRL_OUT(0) => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\,
-      CNTRL_OUT(1 to 2) => \NLW_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr_CNTRL_OUT_UNCONNECTED\(1 to 2),
-      CNTRL_OUT(3) => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].mem_if_we_reg[1,0]\,
-      CNTRL_OUT(4 to 6) => \NLW_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr_CNTRL_OUT_UNCONNECTED\(4 to 6),
+      CNTRL_OUT(1 to 6) => \NLW_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr_CNTRL_OUT_UNCONNECTED\(1 to 6),
       CNTRL_OUT(7) => \g_single_rate.i_single_rate/mem_if_we[0,0]\,
-      CNTRL_OUT(8) => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      CNTRL_OUT(8) => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
       CNTRL_OUT(9) => \NLW_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr_CNTRL_OUT_UNCONNECTED\(9),
       SCLR => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[0]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
       D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(0),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][10]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(10),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][10]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][11]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(11),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][11]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][12]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(12),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][12]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][13]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(13),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][13]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][14]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(14),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][14]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][15]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(15),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][15]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(1),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][1]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][2]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(2),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][2]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][3]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(3),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][3]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][4]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(4),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][4]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][5]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(5),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][5]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][6]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(6),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][6]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][7]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(7),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][7]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][8]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(8),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][8]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][9]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(9),
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][9]\,
+      R => \<const0>\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(0),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[10]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][10]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(10),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][10]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(10),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[11]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][11]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(11),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][11]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(11),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[12]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][12]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(12),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][12]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(12),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[13]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][13]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(13),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][13]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(13),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[14]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][14]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(14),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][14]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(14),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[15]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][15]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(15),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][15]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(15),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[1]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(1),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][1]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(1),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[2]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(2),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][2]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(2),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[3]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(3),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][3]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(3),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[4]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(4),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][4]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(4),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[5]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(5),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][5]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(5),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[6]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][6]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(6),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][6]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(6),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[7]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][7]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(7),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][7]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(7),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[8]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][8]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(8),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][8]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(8),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_reg.d_reg_reg[9]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][9]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_31_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      D => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(9),
+      CE => \n_26_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][9]\,
       Q => \g_single_rate.i_single_rate/data_sym_casc[0]\(9),
       R => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem\: entity work.fir_compiler_0dpt_mem
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.g_mem_b.i_mem_b\: entity work.fir_compiler_0sp_mem
     port map (
-      ADDRA(7) => \n_8_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDRA(6) => \n_9_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDRA(5) => \n_10_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDRA(4) => \n_11_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDRA(3) => \n_12_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDRA(2) => \n_13_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDRA(1) => \n_14_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDRA(0) => \n_15_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
-      ADDRB(7 downto 0) => \g_single_rate.i_single_rate/mem_if_addr[0,0]\(7 downto 0),
+      ADDR(5 downto 0) => \g_single_rate.i_single_rate/mem_if_addr[0,0]\(5 downto 0),
       CE => \<const1>\,
       CLK => aclk,
-      DA_IN(15 downto 0) => \g_single_rate.i_single_rate/data_casc[0]\(15 downto 0),
-      DA_OUT(15 downto 0) => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(15 downto 0),
-      DB_IN(15 downto 0) => \g_single_rate.i_single_rate/data_sym_casc[0]\(15 downto 0),
-      DB_OUT(15 downto 0) => \g_single_rate.i_single_rate/mem_if_dataout[0,0]\(15 downto 0),
-      SCLR_A => \<const0>\,
-      SCLR_B => \<const0>\,
-      WEA => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].mem_if_we_reg[1,0]\,
-      WEB => \g_single_rate.i_single_rate/mem_if_we[0,0]\
+      DATA_IN(15 downto 0) => \g_single_rate.i_single_rate/data_sym_casc[0]\(15 downto 0),
+      DATA_OUT(15 downto 0) => \g_single_rate.i_single_rate/mem_if_dataout[0,0]\(15 downto 0),
+      SCLR => \<const0>\,
+      WE => \g_single_rate.i_single_rate/mem_if_we[0,0]\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\: entity work.fir_compiler_0sp_mem
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_individual.i_mem_a\: entity work.\fir_compiler_0sp_mem__1\
     port map (
-      ADDR(6 downto 0) => \g_single_rate.i_single_rate/address[0]\(6 downto 0),
+      ADDR(5) => \n_6_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR(4) => \n_7_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR(3) => \n_8_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR(2) => \n_9_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR(1) => \n_10_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      ADDR(0) => \n_11_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_coln_cntrl_and_addr[0].i_coln_cntrl_and_addr\,
+      CE => \<const1>\,
+      CLK => aclk,
+      DATA_IN(15 downto 0) => \g_single_rate.i_single_rate/data_casc[0]\(15 downto 0),
+      DATA_OUT(15 downto 0) => \g_single_rate.i_single_rate/mem_if_dataout[1,0]\(15 downto 0),
+      SCLR => \g_single_rate.i_single_rate/cntrl_blank_mem\,
+      WE => \g_single_rate.i_single_rate/cntrl_mem_we\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a\: entity work.\fir_compiler_0sp_mem__parameterized0\
+    port map (
+      ADDR(5 downto 0) => \g_single_rate.i_single_rate/address[0]\(5 downto 0),
       CE => \<const1>\,
       CLK => aclk,
       DATA_IN(14) => \<const0>\,
@@ -6176,54 +7522,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       PCIN(2) => \<const0>\,
       PCIN(1) => \<const0>\,
       PCIN(0) => \<const0>\,
-      PCOUT(47) => \n_106_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(46) => \n_107_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(45) => \n_108_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(44) => \n_109_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(43) => \n_110_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(42) => \n_111_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(41) => \n_112_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(40) => \n_113_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(39) => \n_114_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(38) => \n_115_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(37) => \n_116_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(36) => \n_117_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(35) => \n_118_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(34) => \n_119_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(33) => \n_120_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(32) => \n_121_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(31) => \n_122_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(30) => \n_123_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(29) => \n_124_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(28) => \n_125_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(27) => \n_126_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(26) => \n_127_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(25) => \n_128_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(24) => \n_129_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(23) => \n_130_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(22) => \n_131_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(21) => \n_132_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(20) => \n_133_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(19) => \n_134_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(18) => \n_135_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(17) => \n_136_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(16) => \n_137_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(15) => \n_138_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(14) => \n_139_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(13) => \n_140_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(12) => \n_141_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(11) => \n_142_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(10) => \n_143_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(9) => \n_144_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(8) => \n_145_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(7) => \n_146_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(6) => \n_147_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(5) => \n_148_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(4) => \n_149_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(3) => \n_150_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(2) => \n_151_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(1) => \n_152_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      PCOUT(0) => \n_153_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      PCOUT(47 downto 0) => \g_single_rate.i_single_rate/p_accum[casc]\(47 downto 0),
       RSTA => \<const0>\,
       RSTALLCARRYIN => \<const0>\,
       RSTALUMODE => \<const0>\,
@@ -6236,9 +7535,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       RSTP => \g_single_rate.i_single_rate/sclr_int\,
       UNDERFLOW => \NLW_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[0].g_smac.i_maccum/i_addsub_mult_accum/g_dsp48.g_dsp48e1.i_dsp48e1_UNDERFLOW_UNCONNECTED\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\: entity work.\fir_compiler_0sp_mem__parameterized0\
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_paths[1].g_mem_array[0].i_mem/g_individual.i_mem_a\: entity work.\fir_compiler_0sp_mem__parameterized1\
     port map (
-      ADDR(6 downto 0) => \g_single_rate.i_single_rate/address[0]\(6 downto 0),
+      ADDR(5 downto 0) => \g_single_rate.i_single_rate/address[0]\(5 downto 0),
       CE => \<const1>\,
       CLK => aclk,
       DATA_IN(16) => \<const0>\,
@@ -6683,8 +7982,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       INIT => X"E"
     )
     port map (
-      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\,
-      I1 => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4]\,
+      I0 => accumulate,
+      I1 => load,
       O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[3]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[4]_i_1\: unisim.vcomponents.LUT2
@@ -6692,8 +7991,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       INIT => X"1"
     )
     port map (
-      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\,
-      I1 => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4]\,
+      I0 => accumulate,
+      I1 => load,
       O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[4]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[5]_i_1\: unisim.vcomponents.LUT2
@@ -6701,8 +8000,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       INIT => X"E"
     )
     port map (
-      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\,
-      I1 => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4]\,
+      I0 => accumulate,
+      I1 => load,
       O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[8]_i_1\: unisim.vcomponents.LUT2
@@ -6710,8 +8009,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       INIT => X"2"
     )
     port map (
-      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\,
-      I1 => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4]\,
+      I0 => accumulate,
+      I1 => load,
       O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode[8]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.g_smac_cntrl.accum_opcode_reg[3]\: unisim.vcomponents.FDRE
@@ -6758,16 +8057,16 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       Q => \g_single_rate.i_single_rate/accum_opcode\(8),
       R => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[0]\: unisim.vcomponents.FDSE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[0]\: unisim.vcomponents.FDRE
     generic map(
-      INIT => '1'
+      INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_7_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
+      D => p_0_in(0),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
-      S => \g_single_rate.i_single_rate/sclr_int\
+      R => \n_0_g_semi_parallel_and_smac.gen_data_addr[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -6775,10 +8074,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_6_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
+      D => p_0_in(1),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(1),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      R => \n_0_g_semi_parallel_and_smac.gen_data_addr[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -6786,10 +8085,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_5_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
+      D => p_0_in(2),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      R => \n_0_g_semi_parallel_and_smac.gen_data_addr[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -6797,10 +8096,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_4_g_semi_parallel_and_smac.gen_data_addr_reg[3]_i_1\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
+      D => p_0_in(3),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(3),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      R => \n_0_g_semi_parallel_and_smac.gen_data_addr[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -6808,10 +8107,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_7_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
+      D => p_0_in(4),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(4),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      R => \n_0_g_semi_parallel_and_smac.gen_data_addr[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -6819,32 +8118,36 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_6_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
+      CE => \g_single_rate.i_single_rate/p_9_in\,
+      D => p_0_in(5),
       Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(5),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      R => \n_0_g_semi_parallel_and_smac.gen_data_addr[5]_i_1\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[6]\: unisim.vcomponents.FDSE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => '1'
+      INIT => X"FF54FFFFFF51FF00"
     )
     port map (
-      C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_5_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(6),
-      S => \g_single_rate.i_single_rate/sclr_int\
+      I0 => \g_single_rate.i_single_rate/p_13_out\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\,
+      I2 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I3 => \g_single_rate.i_single_rate/sclr_int\,
+      I4 => \g_single_rate.i_single_rate/p_9_in\,
+      I5 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr[1]_i_1\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg[7]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => '0'
+      INIT => X"FFFF00FCFFFFAAAA"
     )
     port map (
-      C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_4_g_semi_parallel_and_smac.gen_data_addr_reg[7]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(7),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[5]\,
+      I1 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I2 => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_2\,
+      I3 => \g_single_rate.i_single_rate/p_13_out\,
+      I4 => \g_single_rate.i_single_rate/sclr_int\,
+      I5 => \g_single_rate.i_single_rate/p_9_in\,
+      O => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -6852,21 +8155,21 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_2\,
       D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[0]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(0),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[0]\,
+      R => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\: unisim.vcomponents.FDSE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '1'
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[1]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(1),
-      S => \g_single_rate.i_single_rate/sclr_int\
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr[1]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[1]\,
+      R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -6874,10 +8177,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_2\,
       D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[2]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(2),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[2]\,
+      R => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -6885,10 +8188,10 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
+      CE => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_2\,
       D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[3]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(3),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[3]\,
+      R => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -6896,57 +8199,46 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(4),
-      R => \g_single_rate.i_single_rate/sclr_int\
+      CE => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_2\,
+      D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_3\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[4]\,
+      R => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[4]_i_1\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(5),
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[6]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '1'
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[6]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(6),
-      S => \g_single_rate.i_single_rate/sclr_int\
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr[5]_i_1\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[5]\,
+      R => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg[7]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\: unisim.vcomponents.SRL16E
+    generic map(
+      INIT => X"0000"
+    )
+    port map (
+      A0 => \<const1>\,
+      A1 => \<const0>\,
+      A2 => \<const0>\,
+      A3 => \<const0>\,
+      CE => \<const1>\,
+      CLK => aclk,
+      D => \g_single_rate.i_single_rate/p_9_in\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
-      CE => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      D => \n_0_g_semi_parallel_and_smac.gen_data_sym_addr[7]_i_1\,
-      Q => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_sym_addr_reg__0\(7),
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\: unisim.vcomponents.SRL16E
-    generic map(
-      INIT => X"0000"
-    )
-    port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
-      A2 => \<const0>\,
-      A3 => \<const0>\,
       CE => \<const1>\,
-      CLK => aclk,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_en_reg\,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\,
+      R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\: unisim.vcomponents.FDRE
     generic map(
@@ -6955,194 +8247,169 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\,
-      R => \<const0>\
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\,
+      Q => accumulate,
+      R => \g_single_rate.i_single_rate/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_cntrl_mem_we/gen_reg.d_reg_reg[0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_accumulate/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\,
-      R => \g_single_rate.i_single_rate/sclr_int\
+      D => \n_0_gen_reg.d_reg[0]_i_1\,
+      Q => \g_single_rate.i_single_rate/cntrl_mem_we\,
+      R => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\: unisim.vcomponents.SRL16E
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\: unisim.vcomponents.SRL16E
     generic map(
       INIT => X"0000"
     )
     port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
+      A0 => \<const1>\,
+      A1 => \<const0>\,
       A2 => \<const0>\,
       A3 => \<const0>\,
       CE => \<const1>\,
       CLK => aclk,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(0),
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][1]_srl3\: unisim.vcomponents.SRL16E
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]_srl2\: unisim.vcomponents.SRL16E
     generic map(
       INIT => X"0000"
     )
     port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
+      A0 => \<const1>\,
+      A1 => \<const0>\,
       A2 => \<const0>\,
       A3 => \<const0>\,
       CE => \<const1>\,
       CLK => aclk,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(1),
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][1]_srl3\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]_srl2\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][2]_srl3\: unisim.vcomponents.SRL16E
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]_srl2\: unisim.vcomponents.SRL16E
     generic map(
       INIT => X"0000"
     )
     port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
+      A0 => \<const1>\,
+      A1 => \<const0>\,
       A2 => \<const0>\,
       A3 => \<const0>\,
       CE => \<const1>\,
       CLK => aclk,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(2),
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][2]_srl3\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]_srl2\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][3]_srl3\: unisim.vcomponents.SRL16E
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]_srl2\: unisim.vcomponents.SRL16E
     generic map(
       INIT => X"0000"
     )
     port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
+      A0 => \<const1>\,
+      A1 => \<const0>\,
       A2 => \<const0>\,
       A3 => \<const0>\,
       CE => \<const1>\,
       CLK => aclk,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(3),
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][3]_srl3\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]_srl2\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][4]_srl3\: unisim.vcomponents.SRL16E
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]_srl2\: unisim.vcomponents.SRL16E
     generic map(
       INIT => X"0000"
     )
     port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
+      A0 => \<const1>\,
+      A1 => \<const0>\,
       A2 => \<const0>\,
       A3 => \<const0>\,
       CE => \<const1>\,
       CLK => aclk,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(4),
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][4]_srl3\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]_srl2\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][5]_srl3\: unisim.vcomponents.SRL16E
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]_srl2\: unisim.vcomponents.SRL16E
     generic map(
       INIT => X"0000"
     )
     port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
+      A0 => \<const1>\,
+      A1 => \<const0>\,
       A2 => \<const0>\,
       A3 => \<const0>\,
       CE => \<const1>\,
       CLK => aclk,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(5),
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][5]_srl3\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]_srl2\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][6]_srl3\: unisim.vcomponents.SRL16E
-    generic map(
-      INIT => X"0000"
-    )
-    port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
-      A2 => \<const0>\,
-      A3 => \<const0>\,
-      CE => \<const1>\,
-      CLK => aclk,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.base_cnt_reg__0\(6),
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][6]_srl3\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\,
       Q => \g_single_rate.i_single_rate/address[0]\(0),
       R => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][1]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][1]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][1]_srl3\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][1]_srl2\,
       Q => \g_single_rate.i_single_rate/address[0]\(1),
       R => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][2]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][2]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][2]_srl3\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][2]_srl2\,
       Q => \g_single_rate.i_single_rate/address[0]\(2),
       R => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][3]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][3]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][3]_srl3\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][3]_srl2\,
       Q => \g_single_rate.i_single_rate/address[0]\(3),
       R => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][4]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][4]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][4]_srl3\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][4]_srl2\,
       Q => \g_single_rate.i_single_rate/address[0]\(4),
       R => \<const0>\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][5]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][5]\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][5]_srl3\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][5]_srl2\,
       Q => \g_single_rate.i_single_rate/address[0]\(5),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_coef_addr/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][6]_srl3\,
-      Q => \g_single_rate.i_single_rate/address[0]\(6),
       R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_data_addr/gen_reg.d_reg_reg[0]\: unisim.vcomponents.FDRE
@@ -7153,7 +8420,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(0),
-      Q => \g_single_rate.i_single_rate/address[0]\(7),
+      Q => \g_single_rate.i_single_rate/address[0]\(6),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_data_addr/gen_reg.d_reg_reg[1]\: unisim.vcomponents.FDRE
@@ -7164,7 +8431,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(1),
-      Q => \g_single_rate.i_single_rate/address[0]\(8),
+      Q => \g_single_rate.i_single_rate/address[0]\(7),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_data_addr/gen_reg.d_reg_reg[2]\: unisim.vcomponents.FDRE
@@ -7175,7 +8442,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(2),
-      Q => \g_single_rate.i_single_rate/address[0]\(9),
+      Q => \g_single_rate.i_single_rate/address[0]\(8),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_data_addr/gen_reg.d_reg_reg[3]\: unisim.vcomponents.FDRE
@@ -7186,7 +8453,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(3),
-      Q => \g_single_rate.i_single_rate/address[0]\(10),
+      Q => \g_single_rate.i_single_rate/address[0]\(9),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_data_addr/gen_reg.d_reg_reg[4]\: unisim.vcomponents.FDRE
@@ -7197,7 +8464,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(4),
-      Q => \g_single_rate.i_single_rate/address[0]\(11),
+      Q => \g_single_rate.i_single_rate/address[0]\(10),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_data_addr/gen_reg.d_reg_reg[5]\: unisim.vcomponents.FDRE
@@ -7208,220 +8475,33 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       C => aclk,
       CE => \<const1>\,
       D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(5),
-      Q => \g_single_rate.i_single_rate/address[0]\(12),
+      Q => \g_single_rate.i_single_rate/address[0]\(11),
       R => \g_single_rate.i_single_rate/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_data_addr/gen_reg.d_reg_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(6),
-      Q => \g_single_rate.i_single_rate/address[0]\(13),
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_cntrl_data_addr/gen_reg.d_reg_reg[7]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \g_single_rate.i_single_rate/g_semi_parallel_and_smac.gen_data_addr_reg__0\(7),
-      Q => \g_single_rate.i_single_rate/address[0]\(14),
-      R => \g_single_rate.i_single_rate/sclr_int\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(0),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(0),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[10]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(10),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(10),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[11]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(11),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(11),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[12]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(12),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(12),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[13]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(13),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(13),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[14]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(14),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(14),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[15]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(15),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(15),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[1]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(1),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(1),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[2]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(2),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(2),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[3]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(3),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(3),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[4]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(4),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(4),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[5]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(5),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(5),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[6]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(6),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(6),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[7]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(7),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(7),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[8]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(8),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(8),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_data_in/gen_reg.d_reg_reg[9]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => data_in_mux(9),
-      Q => \g_single_rate.i_single_rate/data_casc[0]\(9),
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]_srl8\: unisim.vcomponents.SRL16E
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]_srl7\: unisim.vcomponents.SRL16E
     generic map(
       INIT => X"0000"
     )
     port map (
-      A0 => \<const1>\,
+      A0 => \<const0>\,
       A1 => \<const1>\,
       A2 => \<const1>\,
       A3 => \<const0>\,
       CE => \<const1>\,
       CLK => aclk,
       D => base_max_cntrl,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]_srl8\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]_srl7\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[6][0]_srl7\,
+      Q => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7]\,
+      R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[8][0]\: unisim.vcomponents.FDRE
     generic map(
@@ -7430,31 +8510,20 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7][0]_srl8\,
-      Q => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[8]\,
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9][0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[8]\,
-      Q => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[9]\,
+      D => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7]\,
+      Q => latch_op,
       R => \g_single_rate.i_single_rate/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\: unisim.vcomponents.FDRE
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\: unisim.vcomponents.FDSE
     generic map(
-      INIT => '0'
+      INIT => '1'
     )
     port map (
       C => aclk,
       CE => \g_single_rate.i_single_rate/sclr_pipe\,
       D => plusOp(0),
       Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\,
-      R => \g_single_rate.i_single_rate/sclr_int\
+      S => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\: unisim.vcomponents.FDSE
     generic map(
@@ -7500,19 +8569,30 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       Q => \g_single_rate.i_single_rate/sclr_pipe\,
       S => \g_single_rate.i_single_rate/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\: unisim.vcomponents.SRL16E
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\: unisim.vcomponents.SRL16E
     generic map(
       INIT => X"0000"
     )
     port map (
-      A0 => \<const0>\,
-      A1 => \<const1>\,
+      A0 => \<const1>\,
+      A1 => \<const0>\,
       A2 => \<const0>\,
       A3 => \<const0>\,
       CE => \<const1>\,
       CLK => aclk,
       D => \g_single_rate.i_single_rate/p_1_in2_in\,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\
+    );
+\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+    port map (
+      C => aclk,
+      CE => \<const1>\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]_srl2\,
+      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\,
+      R => \<const0>\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\: unisim.vcomponents.FDRE
     generic map(
@@ -7521,19 +8601,8 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]_srl3\,
-      Q => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\,
-      R => \<const0>\
-    );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]\,
-      Q => \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4]\,
+      D => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_load/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]\,
+      Q => load,
       R => \g_single_rate.i_single_rate/sclr_int\
     );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.rfd_int_reg\: unisim.vcomponents.FDSE
@@ -7547,17 +8616,6 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
       Q => \g_single_rate.i_single_rate/rfd_int\,
       S => \g_single_rate.i_single_rate/sclr_int\
     );
-\g_single_rate.i_single_rate/g_semi_parallel_and_smac.we_flush_reg\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => \<const1>\,
-      D => \n_0_g_semi_parallel_and_smac.we_flush_i_1\,
-      Q => we_flush,
-      R => \<const0>\
-    );
 \g_single_rate.i_single_rate/g_semi_parallel_and_smac.we_gen_reg\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -7565,7 +8623,7 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     port map (
       C => aclk,
       CE => \<const1>\,
-      D => \n_0_g_semi_parallel_and_smac.we_gen_i_1\,
+      D => \g_single_rate.i_single_rate/P_COND17_out\,
       Q => \g_single_rate.i_single_rate/p_1_in2_in\,
       R => \g_single_rate.i_single_rate/sclr_int\
     );
@@ -7588,36 +8646,63 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT3
     );
 \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"78"
+      INIT => X"6A"
     )
     port map (
-      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\,
-      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\,
-      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\,
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\,
       O => plusOp(2)
     );
 \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[3]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"7F80"
+      INIT => X"6AAA"
     )
     port map (
-      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\,
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[3]\,
       I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\,
       I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\,
-      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[3]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\,
       O => plusOp(3)
     );
 \gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"7FFF8000"
+      INIT => X"6AAAAAAA"
     )
     port map (
-      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[3]\,
-      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\,
-      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\,
-      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\,
-      I4 => \g_single_rate.i_single_rate/sclr_pipe\,
+      I0 => \g_single_rate.i_single_rate/sclr_pipe\,
+      I1 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[2]\,
+      I2 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[1]\,
+      I3 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[0]\,
+      I4 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.i_latch_op/gen_dly.gen_shiftreg.gen_sclr_pipe.sclr_count_reg[3]\,
       O => plusOp(4)
+    );
+\gen_reg.d_reg[0]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+    port map (
+      I0 => \g_single_rate.i_single_rate/p_1_in2_in\,
+      I1 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_gen_reg.d_reg[0]_i_1\
+    );
+\gen_reg.d_reg[0]_i_1__0\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+    port map (
+      I0 => \n_0_g_single_rate.i_single_rate/g_semi_parallel_and_smac.blanking_cnt_reg[7]\,
+      I1 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_gen_reg.d_reg[0]_i_1__0\
+    );
+\gen_reg.d_reg[0]_i_1__1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+    port map (
+      I0 => base_max_cntrl,
+      I1 => \g_single_rate.i_single_rate/sclr_int\,
+      O => \n_0_gen_reg.d_reg[0]_i_1__1\
     );
 ifx_ready_1_i_1: unisim.vcomponents.LUT2
     generic map(
@@ -7673,7 +8758,7 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_COEF_FILE : string;
   attribute C_COEF_FILE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "fir_compiler_0.mif";
   attribute C_COEF_FILE_LINES : integer;
-  attribute C_COEF_FILE_LINES of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 130;
+  attribute C_COEF_FILE_LINES of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 70;
   attribute C_FILTER_TYPE : integer;
   attribute C_FILTER_TYPE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 0;
   attribute C_INTERP_RATE : integer;
@@ -7687,7 +8772,7 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_NUM_FILTS : integer;
   attribute C_NUM_FILTS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 1;
   attribute C_NUM_TAPS : integer;
-  attribute C_NUM_TAPS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 129;
+  attribute C_NUM_TAPS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 69;
   attribute C_NUM_CHANNELS : integer;
   attribute C_NUM_CHANNELS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 1;
   attribute C_CHANNEL_PATTERN : string;
@@ -7727,13 +8812,13 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_COEF_PATH_SIGN : string;
   attribute C_COEF_PATH_SIGN of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "1,0";
   attribute C_ACCUM_PATH_WIDTHS : string;
-  attribute C_ACCUM_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "38,37";
+  attribute C_ACCUM_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "37,36";
   attribute C_OUTPUT_WIDTH : integer;
   attribute C_OUTPUT_WIDTH of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 32;
   attribute C_OUTPUT_PATH_WIDTHS : string;
   attribute C_OUTPUT_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "32";
   attribute C_ACCUM_OP_PATH_WIDTHS : string;
-  attribute C_ACCUM_OP_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "52";
+  attribute C_ACCUM_OP_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "51";
   attribute C_EXT_MULT_CNFG : string;
   attribute C_EXT_MULT_CNFG of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "0,1,0,15";
   attribute C_DATA_PATH_PSAMP_SRC : string;
@@ -7745,13 +8830,13 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_OPT_MADDS : string;
   attribute C_OPT_MADDS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "none;none";
   attribute C_OVERSAMPLING_RATE : integer;
-  attribute C_OVERSAMPLING_RATE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 65;
+  attribute C_OVERSAMPLING_RATE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 35;
   attribute C_INPUT_RATE : integer;
-  attribute C_INPUT_RATE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 141;
+  attribute C_INPUT_RATE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 70;
   attribute C_OUTPUT_RATE : integer;
-  attribute C_OUTPUT_RATE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 141;
+  attribute C_OUTPUT_RATE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 70;
   attribute C_DATA_MEMTYPE : integer;
-  attribute C_DATA_MEMTYPE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 1;
+  attribute C_DATA_MEMTYPE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 0;
   attribute C_COEF_MEMTYPE : integer;
   attribute C_COEF_MEMTYPE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 2;
   attribute C_IPBUFF_MEMTYPE : integer;
@@ -7763,13 +8848,13 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_MEM_ARRANGEMENT : integer;
   attribute C_MEM_ARRANGEMENT of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 1;
   attribute C_DATA_MEM_PACKING : integer;
-  attribute C_DATA_MEM_PACKING of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 1;
+  attribute C_DATA_MEM_PACKING of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 0;
   attribute C_COEF_MEM_PACKING : integer;
   attribute C_COEF_MEM_PACKING of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 0;
   attribute C_FILTS_PACKED : integer;
   attribute C_FILTS_PACKED of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 0;
   attribute C_LATENCY : integer;
-  attribute C_LATENCY of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 76;
+  attribute C_LATENCY of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 45;
   attribute C_HAS_ARESETn : integer;
   attribute C_HAS_ARESETn of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 1;
   attribute C_HAS_ACLKEN : integer;
@@ -7807,11 +8892,11 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
 end \fir_compiler_0fir_compiler_v7_1__parameterized0\;
 
 architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
-  attribute C_ACCUM_OP_PATH_WIDTHS of i_synth : label is "52";
-  attribute C_ACCUM_PATH_WIDTHS of i_synth : label is "38,37";
+  attribute C_ACCUM_OP_PATH_WIDTHS of i_synth : label is "51";
+  attribute C_ACCUM_PATH_WIDTHS of i_synth : label is "37,36";
   attribute C_CHANNEL_PATTERN of i_synth : label is "fixed";
   attribute C_COEF_FILE of i_synth : label is "fir_compiler_0.mif";
-  attribute C_COEF_FILE_LINES of i_synth : label is 130;
+  attribute C_COEF_FILE_LINES of i_synth : label is 70;
   attribute C_COEF_MEMTYPE of i_synth : label is 2;
   attribute C_COEF_MEM_PACKING of i_synth : label is 0;
   attribute C_COEF_PATH_SIGN of i_synth : label is "1,0";
@@ -7829,8 +8914,8 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_DATAPATH_MEMTYPE of i_synth : label is 0;
   attribute C_DATA_HAS_TLAST of i_synth : label is 0;
   attribute C_DATA_IP_PATH_WIDTHS of i_synth : label is "16";
-  attribute C_DATA_MEMTYPE of i_synth : label is 1;
-  attribute C_DATA_MEM_PACKING of i_synth : label is 1;
+  attribute C_DATA_MEMTYPE of i_synth : label is 0;
+  attribute C_DATA_MEM_PACKING of i_synth : label is 0;
   attribute C_DATA_PATH_PSAMP_SRC of i_synth : label is "0";
   attribute C_DATA_PATH_SIGN of i_synth : label is "0,0";
   attribute C_DATA_PATH_SRC of i_synth : label is "0,0";
@@ -7845,10 +8930,10 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_HAS_ACLKEN of i_synth : label is 0;
   attribute C_HAS_ARESETn of i_synth : label is 1;
   attribute C_HAS_CONFIG_CHANNEL of i_synth : label is 0;
-  attribute C_INPUT_RATE of i_synth : label is 141;
+  attribute C_INPUT_RATE of i_synth : label is 70;
   attribute C_INTERP_RATE of i_synth : label is 1;
   attribute C_IPBUFF_MEMTYPE of i_synth : label is 0;
-  attribute C_LATENCY of i_synth : label is 76;
+  attribute C_LATENCY of i_synth : label is 45;
   attribute C_MEM_ARRANGEMENT of i_synth : label is 1;
   attribute C_M_DATA_HAS_TREADY of i_synth : label is 0;
   attribute C_M_DATA_HAS_TUSER of i_synth : label is 0;
@@ -7858,15 +8943,15 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_NUM_FILTS of i_synth : label is 1;
   attribute C_NUM_MADDS of i_synth : label is 1;
   attribute C_NUM_RELOAD_SLOTS of i_synth : label is 1;
-  attribute C_NUM_TAPS of i_synth : label is 129;
+  attribute C_NUM_TAPS of i_synth : label is 69;
   attribute C_OPBUFF_MEMTYPE of i_synth : label is 0;
   attribute C_OPTIMIZATION of i_synth : label is 0;
   attribute C_OPT_MADDS of i_synth : label is "none;none";
   attribute C_OP_PATH_PSAMP_SRC of i_synth : label is "0";
   attribute C_OUTPUT_PATH_WIDTHS of i_synth : label is "32";
-  attribute C_OUTPUT_RATE of i_synth : label is 141;
+  attribute C_OUTPUT_RATE of i_synth : label is 70;
   attribute C_OUTPUT_WIDTH of i_synth : label is 32;
-  attribute C_OVERSAMPLING_RATE of i_synth : label is 65;
+  attribute C_OVERSAMPLING_RATE of i_synth : label is 35;
   attribute C_RELOAD_TDATA_WIDTH of i_synth : label is 1;
   attribute C_ROUND_MODE of i_synth : label is 1;
   attribute C_SYMMETRY of i_synth : label is 1;
@@ -7931,7 +9016,7 @@ entity fir_compiler_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of fir_compiler_0 : entity is "fir_compiler_0,fir_compiler_v7_1,{}";
   attribute core_generation_info : string;
-  attribute core_generation_info of fir_compiler_0 : entity is "fir_compiler_0,fir_compiler_v7_1,{x_ipProduct=Vivado 2013.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=fir_compiler,x_ipVersion=7.1,x_ipCoreRevision=2,x_ipLanguage=VERILOG,C_XDEVICEFAMILY=artix7,C_ELABORATION_DIR=./,C_COMPONENT_NAME=fir_compiler_0,C_COEF_FILE=fir_compiler_0.mif,C_COEF_FILE_LINES=130,C_FILTER_TYPE=0,C_INTERP_RATE=1,C_DECIM_RATE=1,C_ZERO_PACKING_FACTOR=1,C_SYMMETRY=1,C_NUM_FILTS=1,C_NUM_TAPS=129,C_NUM_CHANNELS=1,C_CHANNEL_PATTERN=fixed,C_ROUND_MODE=1,C_COEF_RELOAD=0,C_NUM_RELOAD_SLOTS=1,C_COL_MODE=1,C_COL_PIPE_LEN=4,C_COL_CONFIG=1,C_OPTIMIZATION=0,C_DATA_PATH_WIDTHS=16_16,C_DATA_IP_PATH_WIDTHS=16,C_DATA_PX_PATH_WIDTHS=16,C_DATA_WIDTH=16,C_COEF_PATH_WIDTHS=15_17,C_COEF_WIDTH=32,C_DATA_PATH_SRC=0_0,C_COEF_PATH_SRC=0_1,C_DATA_PATH_SIGN=0_0,C_COEF_PATH_SIGN=1_0,C_ACCUM_PATH_WIDTHS=38_37,C_OUTPUT_WIDTH=32,C_OUTPUT_PATH_WIDTHS=32,C_ACCUM_OP_PATH_WIDTHS=52,C_EXT_MULT_CNFG=0_1_0_15,C_DATA_PATH_PSAMP_SRC=0,C_OP_PATH_PSAMP_SRC=0,C_NUM_MADDS=1,C_OPT_MADDS=none;none,C_OVERSAMPLING_RATE=65,C_INPUT_RATE=141,C_OUTPUT_RATE=141,C_DATA_MEMTYPE=1,C_COEF_MEMTYPE=2,C_IPBUFF_MEMTYPE=0,C_OPBUFF_MEMTYPE=0,C_DATAPATH_MEMTYPE=0,C_MEM_ARRANGEMENT=1,C_DATA_MEM_PACKING=1,C_COEF_MEM_PACKING=0,C_FILTS_PACKED=0,C_LATENCY=76,C_HAS_ARESETn=1,C_HAS_ACLKEN=0,C_DATA_HAS_TLAST=0,C_S_DATA_HAS_FIFO=1,C_S_DATA_HAS_TUSER=0,C_S_DATA_TDATA_WIDTH=16,C_S_DATA_TUSER_WIDTH=1,C_M_DATA_HAS_TREADY=0,C_M_DATA_HAS_TUSER=0,C_M_DATA_TDATA_WIDTH=32,C_M_DATA_TUSER_WIDTH=1,C_HAS_CONFIG_CHANNEL=0,C_CONFIG_SYNC_MODE=0,C_CONFIG_PACKET_SIZE=0,C_CONFIG_TDATA_WIDTH=1,C_RELOAD_TDATA_WIDTH=1}";
+  attribute core_generation_info of fir_compiler_0 : entity is "fir_compiler_0,fir_compiler_v7_1,{x_ipProduct=Vivado 2013.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=fir_compiler,x_ipVersion=7.1,x_ipCoreRevision=2,x_ipLanguage=VHDL,C_XDEVICEFAMILY=artix7,C_ELABORATION_DIR=./,C_COMPONENT_NAME=fir_compiler_0,C_COEF_FILE=fir_compiler_0.mif,C_COEF_FILE_LINES=70,C_FILTER_TYPE=0,C_INTERP_RATE=1,C_DECIM_RATE=1,C_ZERO_PACKING_FACTOR=1,C_SYMMETRY=1,C_NUM_FILTS=1,C_NUM_TAPS=69,C_NUM_CHANNELS=1,C_CHANNEL_PATTERN=fixed,C_ROUND_MODE=1,C_COEF_RELOAD=0,C_NUM_RELOAD_SLOTS=1,C_COL_MODE=1,C_COL_PIPE_LEN=4,C_COL_CONFIG=1,C_OPTIMIZATION=0,C_DATA_PATH_WIDTHS=16_16,C_DATA_IP_PATH_WIDTHS=16,C_DATA_PX_PATH_WIDTHS=16,C_DATA_WIDTH=16,C_COEF_PATH_WIDTHS=15_17,C_COEF_WIDTH=32,C_DATA_PATH_SRC=0_0,C_COEF_PATH_SRC=0_1,C_DATA_PATH_SIGN=0_0,C_COEF_PATH_SIGN=1_0,C_ACCUM_PATH_WIDTHS=37_36,C_OUTPUT_WIDTH=32,C_OUTPUT_PATH_WIDTHS=32,C_ACCUM_OP_PATH_WIDTHS=51,C_EXT_MULT_CNFG=0_1_0_15,C_DATA_PATH_PSAMP_SRC=0,C_OP_PATH_PSAMP_SRC=0,C_NUM_MADDS=1,C_OPT_MADDS=none;none,C_OVERSAMPLING_RATE=35,C_INPUT_RATE=70,C_OUTPUT_RATE=70,C_DATA_MEMTYPE=0,C_COEF_MEMTYPE=2,C_IPBUFF_MEMTYPE=0,C_OPBUFF_MEMTYPE=0,C_DATAPATH_MEMTYPE=0,C_MEM_ARRANGEMENT=1,C_DATA_MEM_PACKING=0,C_COEF_MEM_PACKING=0,C_FILTS_PACKED=0,C_LATENCY=45,C_HAS_ARESETn=1,C_HAS_ACLKEN=0,C_DATA_HAS_TLAST=0,C_S_DATA_HAS_FIFO=1,C_S_DATA_HAS_TUSER=0,C_S_DATA_TDATA_WIDTH=16,C_S_DATA_TUSER_WIDTH=1,C_M_DATA_HAS_TREADY=0,C_M_DATA_HAS_TUSER=0,C_M_DATA_TDATA_WIDTH=32,C_M_DATA_TUSER_WIDTH=1,C_HAS_CONFIG_CHANNEL=0,C_CONFIG_SYNC_MODE=0,C_CONFIG_PACKET_SIZE=0,C_CONFIG_TDATA_WIDTH=1,C_RELOAD_TDATA_WIDTH=1}";
 end fir_compiler_0;
 
 architecture STRUCTURE of fir_compiler_0 is
@@ -7949,15 +9034,15 @@ architecture STRUCTURE of fir_compiler_0 is
   signal NLW_U0_s_axis_reload_tready_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_m_axis_data_tuser_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute C_ACCUM_OP_PATH_WIDTHS : string;
-  attribute C_ACCUM_OP_PATH_WIDTHS of U0 : label is "52";
+  attribute C_ACCUM_OP_PATH_WIDTHS of U0 : label is "51";
   attribute C_ACCUM_PATH_WIDTHS : string;
-  attribute C_ACCUM_PATH_WIDTHS of U0 : label is "38,37";
+  attribute C_ACCUM_PATH_WIDTHS of U0 : label is "37,36";
   attribute C_CHANNEL_PATTERN : string;
   attribute C_CHANNEL_PATTERN of U0 : label is "fixed";
   attribute C_COEF_FILE : string;
   attribute C_COEF_FILE of U0 : label is "fir_compiler_0.mif";
   attribute C_COEF_FILE_LINES : integer;
-  attribute C_COEF_FILE_LINES of U0 : label is 130;
+  attribute C_COEF_FILE_LINES of U0 : label is 70;
   attribute C_COEF_MEMTYPE : integer;
   attribute C_COEF_MEMTYPE of U0 : label is 2;
   attribute C_COEF_MEM_PACKING : integer;
@@ -7993,9 +9078,9 @@ architecture STRUCTURE of fir_compiler_0 is
   attribute C_DATA_IP_PATH_WIDTHS : string;
   attribute C_DATA_IP_PATH_WIDTHS of U0 : label is "16";
   attribute C_DATA_MEMTYPE : integer;
-  attribute C_DATA_MEMTYPE of U0 : label is 1;
+  attribute C_DATA_MEMTYPE of U0 : label is 0;
   attribute C_DATA_MEM_PACKING : integer;
-  attribute C_DATA_MEM_PACKING of U0 : label is 1;
+  attribute C_DATA_MEM_PACKING of U0 : label is 0;
   attribute C_DATA_PATH_PSAMP_SRC : string;
   attribute C_DATA_PATH_PSAMP_SRC of U0 : label is "0";
   attribute C_DATA_PATH_SIGN : string;
@@ -8025,13 +9110,13 @@ architecture STRUCTURE of fir_compiler_0 is
   attribute C_HAS_CONFIG_CHANNEL : integer;
   attribute C_HAS_CONFIG_CHANNEL of U0 : label is 0;
   attribute C_INPUT_RATE : integer;
-  attribute C_INPUT_RATE of U0 : label is 141;
+  attribute C_INPUT_RATE of U0 : label is 70;
   attribute C_INTERP_RATE : integer;
   attribute C_INTERP_RATE of U0 : label is 1;
   attribute C_IPBUFF_MEMTYPE : integer;
   attribute C_IPBUFF_MEMTYPE of U0 : label is 0;
   attribute C_LATENCY : integer;
-  attribute C_LATENCY of U0 : label is 76;
+  attribute C_LATENCY of U0 : label is 45;
   attribute C_MEM_ARRANGEMENT : integer;
   attribute C_MEM_ARRANGEMENT of U0 : label is 1;
   attribute C_M_DATA_HAS_TREADY : integer;
@@ -8051,7 +9136,7 @@ architecture STRUCTURE of fir_compiler_0 is
   attribute C_NUM_RELOAD_SLOTS : integer;
   attribute C_NUM_RELOAD_SLOTS of U0 : label is 1;
   attribute C_NUM_TAPS : integer;
-  attribute C_NUM_TAPS of U0 : label is 129;
+  attribute C_NUM_TAPS of U0 : label is 69;
   attribute C_OPBUFF_MEMTYPE : integer;
   attribute C_OPBUFF_MEMTYPE of U0 : label is 0;
   attribute C_OPTIMIZATION : integer;
@@ -8063,11 +9148,11 @@ architecture STRUCTURE of fir_compiler_0 is
   attribute C_OUTPUT_PATH_WIDTHS : string;
   attribute C_OUTPUT_PATH_WIDTHS of U0 : label is "32";
   attribute C_OUTPUT_RATE : integer;
-  attribute C_OUTPUT_RATE of U0 : label is 141;
+  attribute C_OUTPUT_RATE of U0 : label is 70;
   attribute C_OUTPUT_WIDTH : integer;
   attribute C_OUTPUT_WIDTH of U0 : label is 32;
   attribute C_OVERSAMPLING_RATE : integer;
-  attribute C_OVERSAMPLING_RATE of U0 : label is 65;
+  attribute C_OVERSAMPLING_RATE of U0 : label is 35;
   attribute C_RELOAD_TDATA_WIDTH : integer;
   attribute C_RELOAD_TDATA_WIDTH of U0 : label is 1;
   attribute C_ROUND_MODE : integer;
