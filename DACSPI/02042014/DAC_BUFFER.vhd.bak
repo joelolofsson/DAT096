@@ -63,8 +63,7 @@ begin
         read_index <= 0;
         Memory_array <= (others => (others => '0'));
     elsif rising_edge(clk) then
-				lastread <= buffread;
-        if (buffRead = '1') and (lastread = '0') then
+        if (buffRead = '1')then
             buffout <= Memory_array(read_index);
 
             if read_index = 2**bufferwidth -1 then
