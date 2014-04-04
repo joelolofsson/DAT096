@@ -20,6 +20,7 @@ architecture behavioral of dacTop is
 			rstn	:	in STD_LOGIC;	 	
 			clk	:	in STD_LOGIC;
 			data	:	in STD_LOGIC_VECTOR(31 downto 0);
+			sampleclk : in STD_LOGIC;
 			sclk	:	out STD_LOGIC;
 			din	:	out std_logic;
 		 	nSync	:	out STD_LOGIC;
@@ -50,10 +51,11 @@ begin
 		rstn		=> rstn,
 		clk		=> clk,
 		data		=> sBuffOut,
+		sampleclk => readbuffer,
 		sclk		=> sclk,
 		din		=> din,
 		nSync		=> nSync,
-		ready		=> readBuffer
+		ready		=> open
 		);
 	
 	inst_DAC_BUFFER : DAC_BUFFER

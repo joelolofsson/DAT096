@@ -1,0 +1,123 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4
+Edac_buffer
+Z0 w1396472151
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/CHALMERS/DAT096/softcore/DACSPI
+Z5 8C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_BUFFER.vhd
+Z6 FC:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_BUFFER.vhd
+l0
+L34
+VSmIG@=AfeSTFiUaF<H?Z01
+!s100 k[I`f7:2Zk8;5^o1AC_VP0
+Z7 OP;C;10.3;59
+32
+Z8 !s110 1396473747
+!i10b 1
+Z9 !s108 1396473747.812000
+Z10 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_BUFFER.vhd|
+Z11 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_BUFFER.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abehavioral
+R1
+R2
+R3
+DEx4 work 10 dac_buffer 0 22 SmIG@=AfeSTFiUaF<H?Z01
+l58
+L48
+V8BzW2dBK`kUfmY6Jcz3Tk2
+!s100 Koc4EN<>BgOiPo?UhKWN50
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Edac_spi
+R0
+R2
+R3
+R4
+Z14 8C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd
+Z15 FC:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd
+l0
+L4
+ViLAMFL7ke7KOAfjHWhoX00
+!s100 b@?j>W6@Fm3EhAkiGg2Ul2
+R7
+32
+Z16 !s110 1396473748
+!i10b 1
+Z17 !s108 1396473748.481000
+Z18 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd|
+!s107 C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd|
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 7 dac_spi 0 22 iLAMFL7ke7KOAfjHWhoX00
+l24
+L16
+VUK?;[`e1T7aDGLg44C9zO3
+!s100 CaGKQ6`aI?[MNRdok^V5N1
+R7
+32
+R16
+!i10b 1
+R17
+R18
+Z19 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd|
+R12
+R13
+Edactop
+R0
+R2
+R3
+R4
+Z20 8C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd
+Z21 FC:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd
+l0
+L4
+Vzn_bP[?X0h9KOSA@]8j1>1
+!s100 Kk>NGzD0YY;N3ig1kU:NQ1
+R7
+32
+R8
+!i10b 1
+Z22 !s108 1396473747.151000
+Z23 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd|
+Z24 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd|
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 6 dactop 0 22 zn_bP[?X0h9KOSA@]8j1>1
+l47
+L17
+VTcaYAaL4Q=FWU9RLoh>UL3
+!s100 U3iYM@O`G=YYlc?]d6fn22
+R7
+32
+R8
+!i10b 1
+R22
+R23
+R24
+R12
+R13

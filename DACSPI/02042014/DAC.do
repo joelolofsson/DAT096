@@ -3,8 +3,9 @@ restart -f
 #view signals wave
 #add wave -radix unsigned clk rstn sclk nsync din data write addr sbuffout readBuffer sim:/dactop/inst_DAC_BUFFER/Memory_array
 
-force clk 0 0, 1 50ns -repeat 100ns
+force clk 0 0, 1 5ns -repeat 10ns
 
+force readbuffer 0 0, 1 22635ns -repeat 22675ns
 
 force rstn '0'
 run 100 ns

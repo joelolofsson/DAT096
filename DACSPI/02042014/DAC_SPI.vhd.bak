@@ -46,7 +46,8 @@ begin
 		  nsync <='1'; -- comunication not yet ready		  
 		elsif rising_edge(slowClk) then
 		  nSync <='0'; --setting to zero to indicate start of send
-		  ready <='0';	--data recived, stop asking for more			
+		  ready <='0';	--data recived, stop asking for more
+			
 			if dataCounter < 8 then
 				din <= configBits (dataCounter);
 				dataCounter <= dataCounter + 1;  

@@ -20,7 +20,7 @@ architecture behavioral of DAC_SPI is
 	SIGNAL configBits: STD_LOGIC_VECTOR(7 DOWNTO 0):="00000000";
 begin
 	frequencyDivider: process (rstn, clk) begin
-		if (rstn = '0') then
+		if (rstn = '1') then
 			slowClk <= '0';
 			counter <= 0;
 		elsif rising_edge(clk) then
