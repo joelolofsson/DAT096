@@ -29,8 +29,45 @@ def guiparse(guinput):
 		#print datalist
 	print "\ndatalist: ",datalist
 	print "Edited_componentlist: ", edited_componentlist
+	return datalist
 	
-
+def parsed2values(parsed_data):
+	print "Parsed Data as input: \n", parsed_data
+	Outbound_data=[]
+	for comp_data in parsed_data:
+		print 'comp_data: ',comp_data
+		inter_data=[]
+		for data in comp_data:
+			inter_data.append(numerizer(data))
+		Outbound_data.append(inter_data)
+	print "Outbound Data: ", Outbound_data
+	#SUMATION=sum(Outbound_data)
+	#print "sum is: ",SUMATION
+	return Outbound_data
 	
-zomginput= "3.5,-6.2,8.2,#,0.1,0.2,0.3,0.4,0.5,0.6,#,1.0,2.0,3.0"
-guiparse(zomginput)
+def hexizer(numbered_data):
+	print "numbered_data: ",numbered_data
+	hexed_half_data=[]
+	hexed_data=[]
+	for component_data in numbered_data:
+		hexed_half_data=[]
+		for data in component_data:
+			print "type is: ",type(data), data
+			try:
+				hexed_half_data.append(data.hex())
+			except AttributeError:
+				hexed_half_data.append(hex(data))
+		hexed_data.append(hexed_half_data)
+			
+	print "hexed_data: ", hexed_data
+	
+def numerizer (instring):
+    try:
+        return int(instring)
+    except ValueError:
+        return float(instring)
+	
+zomginput= "3.5,-6.2,8.2,#,0.1,0.2,0.3,0.4,0.5,0.6,#,10,20,30"
+String_list=guiparse(zomginput)
+Number_list=parsed2values(String_list)
+hexizer(Number_list)
