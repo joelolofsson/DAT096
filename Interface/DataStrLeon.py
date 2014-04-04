@@ -45,7 +45,7 @@ def parsed2values(parsed_data):
 	#print "sum is: ",SUMATION
 	return Outbound_data
 	
-def hexizer(numbered_data):
+def hexizer(numbered_data): # Function to convert mixed Float and integer data list into Hex numbers
 	print "numbered_data: ",numbered_data
 	hexed_half_data=[]
 	hexed_data=[]
@@ -60,14 +60,43 @@ def hexizer(numbered_data):
 		hexed_data.append(hexed_half_data)
 			
 	print "hexed_data: ", hexed_data
+
+def data4intformator(FloatInt_list):
+	print "data4intformator/FloatInt_list: ", FloatInt_list
+	Multipliers=[[10,1,10],[100,1,1]] # Multipliers[0] = Treble, bass, Peak
+										  # Multipliers[1] = Delay
+	Adders= [[120,0,0],[0,0,0]]
+	Grouped_data=[]
+		
+	print "data4intformator/Float_List: ", FloatInt_list
+	for component_data in FloatInt_list:
+		print "\n data4intformator/Component Data: " , component_data
+		formated_data=[]
+		for data in component_data:
+			i=component_data.index(data)
+			print i, data,Multipliers[0][i],Adders[0][i]
+			print i, float(data), float(Multipliers[0][i]),float(Adders[0][i])
+			Calculation=(float(data)*float(Multipliers[0][i]))+float(Adders[0][i]) 
+			formated_data.append(Calculation)
+			print "data4intformator/formated_data: " , formated_data
+		Grouped_data.append([int(z) for z in formated_data])
+	print "data4intformator/Grouped_data: " , Grouped_data
+	return Grouped_data	
+		
+def hexconcatenator(Inhexed_list):
+	print "hexconcatenator/Inhexed_list: ", Inhexed_list
 	
+	
+		
 def numerizer (instring):
     try:
         return int(instring)
     except ValueError:
         return float(instring)
 	
-zomginput= "3.5,-6.2,8.2,#,0.1,0.2,0.3,0.4,0.5,0.6,#,10,20,30"
+zomginput= "-4.2,13000,4.2,#,11.0,10000,2.5,#,0.0,1000,12.0,#,10,20,30"
 String_list=guiparse(zomginput)
 Number_list=parsed2values(String_list)
-hexizer(Number_list)
+Formated_list=data4intformator(Number_list)
+hexed_list=hexizer(Formated_list)
+#hexconcatenator(hexed_list)
