@@ -17,8 +17,13 @@ def leonstart():
 	# @see time
 	import serial  #used for serial communication
 	import time		#used for waiting functions
-	
-	serport = serial.Serial(port='COM5', baudrate=38343, timeout=2) # ,timeout=2 initializing and opening the port
+	import platform	
+	oscheck=platform.system()
+	if oscheck=="Windows":
+		portname='COM5'
+	else:
+		portname='/dev/ttyUSB1'
+	serport = serial.Serial(port=portname, baudrate=38343, timeout=2) # ,timeout=2 initializing and opening the port
 	print 'Opened port...\n'
 	i=0
 	while i<10:		#USED IN ORDER FOR THE LEON TO SYNCHRONIZE ON OUR BAUDRATE

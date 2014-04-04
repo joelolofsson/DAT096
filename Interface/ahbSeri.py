@@ -1,6 +1,7 @@
 import SeriL
 from struct import *
 
+
 def ahbread(addrr):
 	leng='0000'
 	id='1000'
@@ -20,15 +21,29 @@ def ahbread(addrr):
 	#print "\n The converted message is:" 
 	#print	x 
 	packed = pack('Bcccc', idleng,converted_addr[0],converted_addr[1],converted_addr[2],converted_addr[3])
-	#print packed
+	print packed
 	indata=SeriL.SeriLeon(packed)
 	print "the length is: ",  len(indata)
 	unpacked=unpack('I', indata)
-	#print "Indata: ", indata, "\n"
+	print "Unpacked: ", unpacked, "\n"
+	
 	data=hex(unpacked[0])
-	Reverse_data=data[0:2]+data[8:10]+data[6:8]+data[4:6]+data[2:4]
-	print "The Data are: " + data
-	print "The Reversed Data are: " + Reverse_data
+	Reverse_data='0x'
+	#print "The length is: " , len(data)
+	print "len(data)", len(data)
+	if len(data)>10:
+		data=data[:len(data)-1]
+	for i in range(len(data),2,-2):
+		Reverse_data=Reverse_data+data[i-2:i]
+
+	Reverse_data=Reverse_data+(10-len(data))*'0'
+	# reverse= '0x'+ data[length:length-2
+	#Reverse_data='0x'+data[:1:-2]+(10-len(data))*'0'
+	print "The Data are: " + data + "\n Length: [" +data[8:10] + "]"
+	print len(data)
+	print "The Reversed Data are: " + ''.join(str(x) for x in Reverse_data) + "\n  Length: " 
+	print len(Reverse_data)
+
 
 
 	
