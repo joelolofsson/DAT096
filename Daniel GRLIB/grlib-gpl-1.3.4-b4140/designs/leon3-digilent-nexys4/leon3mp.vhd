@@ -106,7 +106,7 @@ entity leon3mp is
 
     -- 12 pin connectors
     --ja              : inout std_logic_vector(7 downto 0);
-    --jb              : inout std_logic_vector(7 downto 0);
+    jb              : inout std_logic_vector(7 downto 0);
     --jc              : inout std_logic_vector(7 downto 0);
     --jd              : inout std_logic_vector(7 downto 0);
 
@@ -160,7 +160,10 @@ architecture rtl of leon3mp is
     apbi : in apb_slv_in_type;
     apbo : out apb_slv_out_type;
     pwmout : out std_logic;
-    led : out std_logic_vector (15 downto 4) 
+    led : out std_logic_vector (15 downto 4);
+    spiSclk :   out std_logic;
+    spiDin  :   out std_logic;
+    spiNsync    :   out std_logic
     );
 end component dummyapb;
   component PLLE2_ADV
@@ -594,7 +597,8 @@ adderahb_if : adderahb
 -----------------------------------------------------------------------
 io0 : dummyapb
      generic map (pindex => 8, paddr => 8, pmask => 16#FFC#)
-     port map (rstn,clkm,clk,vauxp3,vauxn3, apbi, apbo(8), ampPWM, led(15 downto 4)); --added another clk
+     port map (rstn,clkm,clk,vauxp3,vauxn3, apbi, apbo(8), ampPWM, led(15 downto 4),jb(1),
+                jb(2),jb(0)); --added another clk
 ampSD <='1';
 -----------------------------------------------------------------------
 ---  Boot message  ----------------------------------------------------

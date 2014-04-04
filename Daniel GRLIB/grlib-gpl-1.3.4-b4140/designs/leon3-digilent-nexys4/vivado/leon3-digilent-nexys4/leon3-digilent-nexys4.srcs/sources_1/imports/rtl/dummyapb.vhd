@@ -22,7 +22,10 @@ entity dummyapb is
     apbo : out apb_slv_out_type;
     pwmout : out std_logic;
     Debugvector : out STD_LOGIC_VECTOR(7 downto 0);
-    led : out std_logic_vector (15 downto 4) 
+    led : out std_logic_vector (15 downto 4);
+    spiSclk :   out std_logic;
+    spiDin  :   out std_logic;
+    spiNsync    :   out std_logic    
     );
 end entity dummyapb;
 architecture rtl of dummyapb is
@@ -42,19 +45,18 @@ component ADC_TOP
            
 end component;
 
-component DAC_top
-    Port ( clk : in  STD_LOGIC;
-           clk100 : in STD_LOGIC;
-           pwmout : out  STD_LOGIC;
---			  Value	: in STD_LOGIC_VECTOR(31 downto 0);
-			  sampleEna705kHzout : out STD_logic;
-			  sampleEna44kHzout : out STD_LOGIC;
-			  DAC_buff_in : in STD_LOGIC_vector(31 downto 0);
-			  DAC_buff_write : in STD_LOGIC;
-			  ADDR : in STD_LOGIC_VECTOR(6 downto 0);
-           rst : in  STD_LOGIC);
+component DacTop
+	port(
+		rstn	:	in STD_LOGIC;	 	
+		clk	:	in STD_LOGIC;
+		data	:	in STD_LOGIC_VECTOR(31 downto 0);
+		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
+		write	:	in STD_LOGIC;
+		sclk	:	out STD_LOGIC;
+		din	:	out std_logic;
+	 	nSync	:	out STD_LOGIC
+	);
 end component;
-
 -- APB related signals
 signal sLED    : std_logic_vector(31 downto 0);
 signal sampledvalue : STD_LOGIC_VECTOR(31 downto 0);
@@ -72,18 +74,16 @@ constant pconfig        : apb_config_type := (
 
 begin
 
-inst_top : DAC_top
+inst_top : DACtop
 port map ( 
-    clk => clk,
-    clk100 => clk100,
-    rst => rstn,
-    pwmout => pwmout,
---    Value => sLED,
-    sampleEna705kHzout => sampleclk,
-    sampleEna44kHzout => sampleEna44kHz,
-    DAC_buff_write => dac_buff_write,
-    DAC_buff_in => sLED(31 downto 0),
-    ADDR => ADDR
+   rstn     => rstn,
+   clk      => clk100,
+   data     => sLED,
+   addr     => Addr,
+   write    => dac_buff_write,
+   sclk     => spiSclk,
+   din      => spiDin,
+   nSync    => spiNSync
     );
 
 inst_ADC_TOP : ADC_TOP 

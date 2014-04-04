@@ -695,17 +695,23 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/rtl/PWM.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/rtl/DAC_SPI.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/PWM.vhd"/>
-        <Attr Name="ImportTime" Val="1393857548"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/rtl/DAC_buffer.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/rtl/DAC_BUFFER.vhd">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/CLK_divide.vhd">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
@@ -896,8 +902,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/rtl/DAC_TOP.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/DAC_TOP.vhd"/>
-        <Attr Name="ImportTime" Val="1393518186"/>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
