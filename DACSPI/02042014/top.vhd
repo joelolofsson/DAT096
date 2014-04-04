@@ -15,13 +15,29 @@ entity dacTop is
 end entity dacTop;
 
 architecture behavioral of dacTop is 
+
+component clk_divide
+	generic(
+				systemclock : integer:=100000000;
+				sampleclock : integer:=44100;
+				OSR : integer:=16);
+	port(
+		rst	:	in STD_LOGIC;	 	
+		clk	:	in STD_LOGIC;
+		clk50MHz : out STD_LOGIC;
+		clk25MHz : out STD_LOGIC;
+		clk705kHz : out STD_LOGIC;
+		clk44kHz		: out STD_LOGIC
+	);
+end component;
+
+
 	component DAC_SPI
 		port(
 			rstn	:	in STD_LOGIC;	 	
 			clk	:	in STD_LOGIC;
 			data	:	in STD_LOGIC_VECTOR(31 downto 0);
 			sampleclk : in STD_LOGIC;
-			sclk	:	out STD_LOGIC;
 			din	:	out std_logic;
 		 	nSync	:	out STD_LOGIC;
 			ready	:	out std_logic  
@@ -44,15 +60,26 @@ architecture behavioral of dacTop is
 	
 	signal sBuffOut : std_logic_vector(31 downto 0);
 	signal readBuffer : std_logic;
+	signal clk50MHz : STD_LOGIC;
 
 begin
+
+	inst_clk_divider : clk_divide
+	port map(
+		rst => rstn,
+		clk	=> clk,
+		clk50MHz	=> clk50MHz,
+		clk25MHz 	=> Sclk,
+		clk44kHz => readbuffer,
+		clk705kHz => open);
+
+
 	inst_DAC_SPI : DAC_SPi
 	port map(
 		rstn		=> rstn,
 		clk		=> clk,
 		data		=> sBuffOut,
 		sampleclk => readbuffer,
-		sclk		=> sclk,
 		din		=> din,
 		nSync		=> nSync,
 		ready		=> open
@@ -70,8 +97,6 @@ begin
 		addr		=> addr
 		);  
 		    
-		    
-		
 		
 		
 end architecture behavioral;

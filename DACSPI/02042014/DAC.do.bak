@@ -5,7 +5,7 @@ restart -f
 
 force clk 0 0, 1 5ns -repeat 10ns
 
-force readbuffer 0 0, 1 22665ns -repeat 22675ns
+#force readbuffer 0 0, 1 22635ns -repeat 22675ns
 
 force rstn '0'
 run 100 ns

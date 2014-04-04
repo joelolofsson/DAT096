@@ -5,7 +5,7 @@ restart -f
 
 force clk 0 0, 1 5ns -repeat 10ns
 
-force readbuffer 0 0, 1 22635ns -repeat 22675ns
+#force readbuffer 0 0, 1 22635ns -repeat 22675ns
 
 force rstn '0'
 run 100 ns
@@ -21,12 +21,12 @@ force data 16#0000FFFF
 run 100 ns
 
 force write '1'
-force addr "0000010"
+force addr 2#0000010
 force data 16#0000AAAA
 run 100 ns
 
 force write '1'
-force addr "0000011"
+force addr 2#0000011
 force data 16#0000FFFF
 run 100 ns
 run 180000 ns
