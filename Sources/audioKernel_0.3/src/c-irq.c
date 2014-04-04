@@ -5,16 +5,10 @@
 #include "c-irq.h"
 #include <stdio.h>
 
-//Growing or decreasing addresses?
-#define ADC_adr 0x80000800
-#define DAC_adr 0x80000A00
 #define IRQ_reg 0x80000000
 
 
-int *lreg = (int *) IRQ_reg; //seems to be close to
-uint32_t thirtyTwoOnes = 0xFFFFFFFF;
-uint32_t input;
-uint32_t ioBuffer[buffSize];
+int *lreg = (int *) IRQ_reg;
 
 #define ILR 0x200
 #define ICLEAR 0x20c
@@ -43,29 +37,6 @@ void irqhandler(int irq){
 }
 
 
-//This function is called whenever an interrupt is triggered by the ADC, in this version it fills a buffer of size buffSize
-void adcHandler(){
-
-	printf("IRQ ok");
-
-
-	//input loop
-	int i = 0;
-	while(i < buffSize){
-		input = *(volatile int*)(ADC_adr+(i*4));
-		ioBuffer[i] = input;
-		i++;
-	}
-
-	//output loop
-	i = 0;
-	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4)) = (ioBuffer[i]);
-		i++;
-	}
-
-
-}
 
 
 

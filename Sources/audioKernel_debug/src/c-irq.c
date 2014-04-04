@@ -14,7 +14,7 @@
 int *lreg = (int *) IRQ_reg; //seems to be close to
 uint32_t thirtyTwoOnes = 0xFFFFFFFF;
 uint32_t input;
-uint32_t ioBuffer[buffSize];
+
 
 #define ILR 0x200
 #define ICLEAR 0x20c
@@ -46,24 +46,7 @@ void irqhandler(int irq){
 //This function is called whenever an interrupt is triggered by the ADC, in this version it fills a buffer of size buffSize
 void adcHandler(){
 
-	printf("IRQ ok");
-
-
-	//input loop
-	int i = 0;
-	while(i < buffSize){
-		input = *(volatile int*)(ADC_adr+(i*4));
-		ioBuffer[i] = input;
-		i++;
-	}
-
-	//output loop
-	i = 0;
-	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4)) = (ioBuffer[i]);
-		i++;
-	}
-
+	//NEVERMIND THIS IRQ is tested with audiokernel_0.2
 
 }
 

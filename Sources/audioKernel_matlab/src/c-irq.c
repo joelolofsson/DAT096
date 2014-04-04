@@ -10,17 +10,18 @@
 #define DAC_adr 0x80000A00
 #define IRQ_reg 0x80000000
 
-
 int *lreg = (int *) IRQ_reg; //seems to be close to
 uint32_t thirtyTwoOnes = 0xFFFFFFFF;
 uint32_t input;
-uint32_t ioBuffer[buffSize];
+uint16_t ioBuffer[3*buffSize];
+uint16_t inputConv;
+int derp;
 
 #define ILR 0x200
 #define ICLEAR 0x20c
 #define IMASK  0x240
 #define IFORCE 0x208
-
+int j=0;
 void enable_irq (int irq){
 	lreg[ILR/4] = 0x0;
 	lreg[ICLEAR/4] = (1 << irq);	// clear any pending irq
@@ -42,27 +43,39 @@ void irqhandler(int irq){
 	printf("this is irq %d\n", irq);
 }
 
+//Every fourht adress is ok. We dont get anything through, Joacob, fix the buffers!
 
 //This function is called whenever an interrupt is triggered by the ADC, in this version it fills a buffer of size buffSize
 void adcHandler(){
-
-	printf("IRQ ok");
-
-
 	//input loop
+
 	int i = 0;
-	while(i < buffSize){
+	while(i <  buffSize){
 		input = *(volatile int*)(ADC_adr+(i*4));
-		ioBuffer[i] = input;
+		inputConv = input>>20;
+		ioBuffer[i+(iter*128)] = inputConv;
 		i++;
 	}
 
-	//output loop
+	iter++;
+	if(iter == 3){
+
+		disable_irq(10);
+
+		int d;
+		for(d = 0; d < 3*128; d++)
+			printf(" %d,", ioBuffer[d]);
+		exit = 0;
+	}
+
 	i = 0;
 	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4)) = (ioBuffer[i]);
+		*(volatile int*)(DAC_adr+(i*4)) = (int)(ioBuffer[i+(iter*128)]<<20);
 		i++;
 	}
+
+
+
 
 
 }
