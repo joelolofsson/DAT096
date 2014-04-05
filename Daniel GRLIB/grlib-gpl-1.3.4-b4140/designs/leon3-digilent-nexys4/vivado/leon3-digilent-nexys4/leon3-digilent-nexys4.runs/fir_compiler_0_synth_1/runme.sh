@@ -6,17 +6,21 @@
 # Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/Vivado/2013.4/ids_lite/EDK/bin/lin64:/opt/Xilinx/Vivado/2013.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2013.4/bin
+  PATH=C:/Xilinx/Vivado/2013.4/ids_lite/EDK/bin/nt;C:/Xilinx/Vivado/2013.4/ids_lite/EDK/lib/nt;C:/Xilinx/Vivado/2013.4/ids_lite/ISE/bin/nt;C:/Xilinx/Vivado/2013.4/ids_lite/ISE/lib/nt:C:/Xilinx/Vivado/2013.4/bin
 else
-  PATH=/opt/Xilinx/Vivado/2013.4/ids_lite/EDK/bin/lin64:/opt/Xilinx/Vivado/2013.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2013.4/bin:$PATH
+  PATH=C:/Xilinx/Vivado/2013.4/ids_lite/EDK/bin/nt;C:/Xilinx/Vivado/2013.4/ids_lite/EDK/lib/nt;C:/Xilinx/Vivado/2013.4/ids_lite/ISE/bin/nt;C:/Xilinx/Vivado/2013.4/ids_lite/ISE/lib/nt:C:/Xilinx/Vivado/2013.4/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2013.4/ids_lite/EDK/lib/lin64:/opt/Xilinx/Vivado/2013.4/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=
 else
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2013.4/ids_lite/EDK/lib/lin64:/opt/Xilinx/Vivado/2013.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
@@ -36,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log fir_compiler_0.rds -m64 -mode batch -messageDb vivado.pb -source fir_compiler_0.tcl
+EAStep vivado -log fir_compiler_0.rds -m32 -mode batch -messageDb vivado.pb -source fir_compiler_0.tcl

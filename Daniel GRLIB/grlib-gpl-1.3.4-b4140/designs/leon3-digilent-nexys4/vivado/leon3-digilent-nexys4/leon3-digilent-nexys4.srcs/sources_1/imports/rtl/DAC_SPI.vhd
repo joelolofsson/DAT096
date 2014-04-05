@@ -7,7 +7,7 @@ entity DAC_SPI is
 		clk	:	in STD_LOGIC;
 		data	:	in STD_LOGIC_VECTOR(31 downto 0);
 		sampleclk : in STD_LOGIC;
-		din	:	out std_logic;
+		din	      :	out std_logic;
 	 	nSync	:	out STD_LOGIC;
 		ready	:	out std_logic -- this may only be high for one system clock!!! TODO: Fix this
 	);

@@ -51,6 +51,8 @@ component DacTop
 		clk	:	in STD_LOGIC;
 		data	:	in STD_LOGIC_VECTOR(31 downto 0);
 		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
+		sampleclk : out STD_LOGIC;
+		sampleclk44kHz : out STD_LOGIC;
 		write	:	in STD_LOGIC;
 		sclk	:	out STD_LOGIC;
 		din	:	out std_logic;
@@ -81,6 +83,8 @@ port map (
    data     => sLED,
    addr     => Addr,
    write    => dac_buff_write,
+   sampleclk => sampleclk,
+   sampleclk44kHz => sampleEna44kHz, 
    sclk     => spiSclk,
    din      => spiDin,
    nSync    => spiNSync
@@ -129,7 +133,7 @@ apb_comb : process(rstn, apbi)
     end process;
 
 -- Sequential process
-    regs: process (clk)
+    regs: process (clk,rstn)
     begin
         if rstn = '0' then
             irq<='0';
