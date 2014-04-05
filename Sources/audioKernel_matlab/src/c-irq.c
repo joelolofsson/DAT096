@@ -52,7 +52,7 @@ void adcHandler(){
 	int i = 0;
 	while(i <  buffSize){
 		input = *(volatile int*)(ADC_adr+(i*4));
-		inputConv = input>>20;
+		inputConv = input>>16;
 		ioBuffer[i+(iter*128)] = inputConv;
 		i++;
 	}
@@ -70,7 +70,7 @@ void adcHandler(){
 
 	i = 0;
 	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4)) = (int)(ioBuffer[i+(iter*128)]<<20);
+		*(volatile int*)(DAC_adr+(i*4)) = (int)(ioBuffer[i+(iter*128)]);
 		i++;
 	}
 
