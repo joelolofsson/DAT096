@@ -25,13 +25,11 @@ void dacTest(){
 	 * both has 3*128 values avilable, but only 128 is being outputted
 	 */
 
-
 	i = 0;
 	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4)) = square[i];
+		*(volatile int*)(DAC_adr+(i*4)) = 0xffffffff ;
 		i++;
 	}
-
 }
 
 int main(void){
