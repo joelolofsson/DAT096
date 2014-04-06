@@ -8,6 +8,8 @@ entity dacTop is
 		data	:	in STD_LOGIC_VECTOR(31 downto 0);
 		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
 		write	:	in STD_LOGIC;
+		sampleclk : out STD_LOGIC;
+		sampleclk44khz : out STD_LOGIC;
 		sclk	:	out STD_LOGIC;
 		din	:	out std_logic;
 	 	nSync	:	out STD_LOGIC
@@ -30,6 +32,7 @@ component clk_divide
 		clk44kHz		: out STD_LOGIC
 	);
 end component;
+
 
 
 	component DAC_SPI
@@ -61,23 +64,27 @@ end component;
 	signal sBuffOut : std_logic_vector(31 downto 0);
 	signal readBuffer : std_logic;
 	signal clk50MHz : STD_LOGIC;
+	signal clk25MHz : STD_LOGIC;
 
 begin
+
+sampleclk44kHz <= readbuffer;
+sclk <= clk25MHz;
 
 	inst_clk_divider : clk_divide
 	port map(
 		rst => rstn,
 		clk	=> clk,
 		clk50MHz	=> clk50MHz,
-		clk25MHz 	=> Sclk,
+		clk25MHz 	=> clk25MHz,
 		clk44kHz => readbuffer,
-		clk705kHz => open);
+		clk705kHz => sampleclk);
 
 
 	inst_DAC_SPI : DAC_SPi
 	port map(
 		rstn		=> rstn,
-		clk		=> clk,
+		clk		=> clk25MHz,
 		data		=> sBuffOut,
 		sampleclk => readbuffer,
 		din		=> din,

@@ -66,10 +66,10 @@ begin
 		Memory_array <= (others => (others => '0'));
 		Bufferfull <= '0';
 	elsif rising_edge(clk) then
---	    lastread <= buff_read;
+	    lastwrite <= buff_write;
 --		if (buff_read = '1') and (lastread = '0') then
         bufferfull <= '0';
-		if (buff_write = '1') then
+		if (buff_write = '1') and (lastwrite = '0') then
 			Memory_array(write_index) <= buffin;
 			if write_index = 2**bufferwidth -1 then
 				write_index <= 0;
