@@ -51,7 +51,7 @@ void adcHandler(){
 	//input loop
 	int i = 0;
 	while(i < buffSize){
-		input = *(volatile int*)((ADC_adr+(i*4))>>16);
+		input = *(volatile int*)((ADC_adr+(i*4)));
 		ioBuffer[i] = input;
 		i++;
 	}
