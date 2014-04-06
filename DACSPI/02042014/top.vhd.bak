@@ -61,6 +61,7 @@ end component;
 	signal sBuffOut : std_logic_vector(31 downto 0);
 	signal readBuffer : std_logic;
 	signal clk50MHz : STD_LOGIC;
+	signal clk25MHz : STD_LOGIC;
 
 begin
 
@@ -69,7 +70,7 @@ begin
 		rst => rstn,
 		clk	=> clk,
 		clk50MHz	=> clk50MHz,
-		clk25MHz 	=> Sclk,
+		clk25MHz 	=> clk25MHz,
 		clk44kHz => readbuffer,
 		clk705kHz => open);
 
@@ -87,7 +88,7 @@ begin
 	
 	inst_DAC_BUFFER : DAC_BUFFER
 		port map(
-		clk		=> clk,
+		clk		=> clk25MHz,
 		rst		=> rstn,
 		buffRead	=> readBuffer,
 		indexReset	=> '0',
@@ -97,8 +98,6 @@ begin
 		addr		=> addr
 		);  
 		    
-		    
-Sclk <= clk25MHz;		
 		
-		
+	sclk <= clk25MHz	
 end architecture behavioral;

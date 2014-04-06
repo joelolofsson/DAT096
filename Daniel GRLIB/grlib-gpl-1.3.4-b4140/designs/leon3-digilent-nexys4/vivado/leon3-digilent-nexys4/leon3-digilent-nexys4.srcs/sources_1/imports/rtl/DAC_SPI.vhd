@@ -5,7 +5,7 @@ entity DAC_SPI is
 	port(
 		rstn	:	in STD_LOGIC;	 	
 		clk	:	in STD_LOGIC;
-		data	:	in STD_LOGIC_VECTOR(31 downto 0);
+		data	:	in STD_LOGIC_VECTOR(15 downto 0);
 		sampleclk : in STD_LOGIC;
 		din	      :	out std_logic;
 	 	nSync	:	out STD_LOGIC;

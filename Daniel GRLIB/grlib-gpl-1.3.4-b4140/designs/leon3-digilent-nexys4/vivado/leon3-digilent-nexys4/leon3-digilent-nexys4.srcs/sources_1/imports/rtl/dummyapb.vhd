@@ -41,7 +41,7 @@ component ADC_TOP
            buff_full : out STD_LOGIC;
            ADC_buff_write : in STD_LOGIC;
            
-           ADC_buff_out : out STD_LOGIC_VECTOR (31 downto 0));		-- ! Sampled value after decimation.
+           ADC_buff_out : out STD_LOGIC_VECTOR (15 downto 0));		-- ! Sampled value after decimation.
            
 end component;
 
@@ -49,7 +49,7 @@ component DacTop
 	port(
 		rstn	:	in STD_LOGIC;	 	
 		clk	:	in STD_LOGIC;
-		data	:	in STD_LOGIC_VECTOR(31 downto 0);
+		data	:	in STD_LOGIC_VECTOR(15 downto 0);
 		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
 		sampleclk : out STD_LOGIC;
 		sampleclk44kHz : out STD_LOGIC;
@@ -61,7 +61,7 @@ component DacTop
 end component;
 -- APB related signals
 signal sLED    : std_logic_vector(31 downto 0);
-signal sampledvalue : STD_LOGIC_VECTOR(31 downto 0);
+signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);
 signal sampleclk : std_logic;
 Signal ADDR : STD_LOGIC_VECTOR(6 downto 0);
 signal buffer_interupt : STD_LOGIC;
@@ -80,7 +80,7 @@ inst_top : DACtop
 port map ( 
    rstn     => rstn,
    clk      => clk100,
-   data     => sLED,
+   data     => sLED(15 downto 0),
    addr     => Addr,
    write    => dac_buff_write,
    sampleclk => sampleclk,
@@ -141,7 +141,7 @@ apb_comb : process(rstn, apbi)
         elsif rising_edge(clk) then
             Addr <= apbi.paddr(8 downto 2);
             --do something
-             apbo.prdata(31 downto 0) <= sampledvalue; --Read value, should be from ADC
+             apbo.prdata(31 downto 0) <= x"0000" &sampledvalue; --Read value, should be from ADC
              if irq='0' and buffer_interupt='1' then
                 irq <= '1';
              else

@@ -39,15 +39,15 @@ entity ADC_buffer is
 		rst 				: in STD_LOGIC;
 --		buff_read			: in STD_LOGIC;
 		buff_write			: in STD_LOGIC;
-		Buffin 				: in STD_LOGIC_VECTOR (31 downto 0);
-		Buffout 			: out STD_LOGIC_VECTOR (31 downto 0);
+		Buffin 				: in STD_LOGIC_VECTOR (15 downto 0);
+		Buffout 			: out STD_LOGIC_VECTOR (15 downto 0);
 		Bufferfull 		: out STD_LOGIC;
 		Addr 				: in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 end ADC_buffer;
 
 architecture Behavioral of ADC_buffer is
 
-type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(31 downto 0);
+type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(15 downto 0);
 
 signal Memory_array : Memory_array_type;
 

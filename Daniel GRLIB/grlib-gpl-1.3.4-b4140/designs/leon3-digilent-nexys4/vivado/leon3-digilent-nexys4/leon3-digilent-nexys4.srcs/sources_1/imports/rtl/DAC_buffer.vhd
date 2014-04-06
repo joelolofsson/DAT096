@@ -40,15 +40,15 @@ entity DAC_buffer is
         buffRead	:	in STD_LOGIC;
         indexReset	:	in STD_LOGIC;
 	      buffWrite	:	in STD_LOGIC;
-       	buffIn		:	in STD_LOGIC_VECTOR (31 downto 0);
-        buffOut		:	out STD_LOGIC_VECTOR (31 downto 0);
+       	buffIn		:	in STD_LOGIC_VECTOR (15 downto 0);
+        buffOut		:	out STD_LOGIC_VECTOR (15 downto 0);
         addr		:	in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 end DAC_buffer;
 
 architecture Behavioral of DAC_buffer is
 
 
-type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(31 downto 0);
+type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(15 downto 0);
 
 signal Memory_array : Memory_array_type;
 

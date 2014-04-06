@@ -42,7 +42,7 @@ entity ADC_TOP is
            
 --           sampleout : out STD_LOGIC_VECTOR(15 downto 0);
            
-           ADC_buff_out : out STD_LOGIC_VECTOR (31 downto 0));		-- ! Sampled value after decimation.
+           ADC_buff_out : out STD_LOGIC_VECTOR (15 downto 0));		-- ! Sampled value after decimation.
 end ADC_TOP;
 
 -- ! @brief Architecture of the ADC_TOP
@@ -58,7 +58,7 @@ COMPONENT fir_compiler_0
     s_axis_data_tready : OUT STD_LOGIC;						-- ! Signalling the FIR component is ready for a new value
     s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);	-- ! The input data coming from the ADC 
     m_axis_data_tvalid : OUT STD_LOGIC;						-- ! Signalling the output is valid
-    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)	-- ! The output from the FIR-filter.
+    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)	-- ! The output from the FIR-filter.
   );
 END COMPONENT;
 ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
@@ -105,8 +105,8 @@ component ADC_buffer
 		clk 				: in STD_LOGIC;
 		rst 				: in STD_LOGIC;
 		buff_write			: in STD_LOGIC;
-		Buffin 				: in STD_LOGIC_VECTOR (31 downto 0);
-		Buffout 			: out STD_LOGIC_VECTOR (31 downto 0);
+		Buffin 				: in STD_LOGIC_VECTOR (15 downto 0);
+		Buffout 			: out STD_LOGIC_VECTOR (15 downto 0);
 		Bufferfull 		: out STD_LOGIC;
 		Addr 				: in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 end component;
@@ -118,30 +118,14 @@ signal di_in : STD_LOGIC_VECTOR(15 downto 0);			-- ! Signal for the input vector
 signal daddr_in : std_LOGIC_vector(6 downto 0);			-- ! Address in registers
 signal inv_rst : std_logic;								-- ! Inversed reset for XADC
 signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);	-- ! Sampled value from XADC
-signal sampleFLT : STD_LOGIC_VECTOR(31 downto 0);		-- ! Filtered signal to be decimated
+signal sampleFLT : STD_LOGIC_VECTOR(15 downto 0);		-- ! Filtered signal to be decimated
 signal busy : STD_LOGIC;								-- ! Busy signal from XADC
 signal dataready : STD_LOGIC;							-- ! Signalling the FIR filter is done to load new value to FIR filter
 signal FIRready : STD_LOGIC;                            -- ! Signalling the firfilter is done with calculation
 signal cnt : integer range 0 to 3;                      -- ! 
 signal FIRvalid : std_logic;
-signal Buffer_in : STD_LOGIC_VECTOR(31 downto 0);
+signal Buffer_in : STD_LOGIC_VECTOR(15 downto 0);
 
-alias samp0 : std_logic is sampledvalue(0);
-alias samp1 : std_logic is sampledvalue(1);
-alias samp2 : std_logic is sampledvalue(2);
-alias samp3 : std_logic is sampledvalue(3);
-alias samp4 : std_logic is sampledvalue(4);
-alias samp5 : std_logic is sampledvalue(5);
-alias samp6 : std_logic is sampledvalue(6);
-alias samp7 : std_logic is sampledvalue(7);
-alias samp8 : std_logic is sampledvalue(8);
-alias samp9 : std_logic is sampledvalue(9);
-alias samp10: std_logic is sampledvalue(10);
-alias samp11: std_logic is sampledvalue(11);
-alias samp12: std_logic is sampledvalue(12);
-alias samp13: std_logic is sampledvalue(13);
-alias samp14: std_logic is sampledvalue(14);
-alias samp15: std_logic is sampledvalue(15);
 
 
 begin
@@ -240,8 +224,8 @@ inst_ADC : ADC
       --  end if;
  --   end if;
  --end process;
-buffer_in <= not(sampleflt(31)) & sampleflt(30 downto 0);
- --buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) & x"0000";
+--buffer_in <= not(sampleflt(15)) & sampleflt(14 downto 0);
+ buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) ;--& x"0000";
  --sampleout <= sampledvalue;
  
  inst_Buffer:ADC_buffer

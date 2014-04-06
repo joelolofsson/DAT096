@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Sat Apr 05 20:42:42 2014
+| Date         : Sun Apr 06 13:22:17 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ REPORT SUMMARY
                      Hold option missing in multicycle path constraint
                      Delay constraint missing on IO port
            Max violations: <unlimited>
-         Violations found: 76
+         Violations found: 74
 
 2. REPORT DETAILS
 -----------------
@@ -248,57 +248,57 @@ Related violations: <none>
 
 DPIP-1#1 Warning
 DSP input pipelining  
-DSP leon3gen.cpu[0].u0/leon3x0/p0/mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0 input A B  is not pipelined. Pipelining DSP48 input will improve performance. Each input of DSP48 has 2 levels of pipelining.
+DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1] input A B  is not pipelined. Pipelining DSP48 input will improve performance. Each input of DSP48 has 2 levels of pipelining.
 Related violations: <none>
 
 DPIP-1#2 Warning
 DSP input pipelining  
-DSP leon3gen.cpu[0].u0/leon3x0/p0/mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0__0 input A B  is not pipelined. Pipelining DSP48 input will improve performance. Each input of DSP48 has 2 levels of pipelining.
+DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0 input A B  is not pipelined. Pipelining DSP48 input will improve performance. Each input of DSP48 has 2 levels of pipelining.
 Related violations: <none>
 
 DPIP-1#3 Warning
 DSP input pipelining  
-DSP leon3gen.cpu[0].u0/leon3x0/p0/p_1_out input A B  is not pipelined. Pipelining DSP48 input will improve performance. Each input of DSP48 has 2 levels of pipelining.
+DSP p_1_out input A B  is not pipelined. Pipelining DSP48 input will improve performance. Each input of DSP48 has 2 levels of pipelining.
 Related violations: <none>
 
 DPIP-1#4 Warning
 DSP input pipelining  
-DSP leon3gen.cpu[0].u0/leon3x0/p0/p_1_out__0 input A B  is not pipelined. Pipelining DSP48 input will improve performance. Each input of DSP48 has 2 levels of pipelining.
+DSP p_1_out__0 input A B  is not pipelined. Pipelining DSP48 input will improve performance. Each input of DSP48 has 2 levels of pipelining.
 Related violations: <none>
 
 DPOP-1#1 Warning
 DSP output pipelining  
-DSP leon3gen.cpu[0].u0/leon3x0/p0/mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1] output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#2 Warning
 DSP output pipelining  
-DSP leon3gen.cpu[0].u0/leon3x0/p0/mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0__0 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#3 Warning
 DSP output pipelining  
-DSP leon3gen.cpu[0].u0/leon3x0/p0/p_1_out output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP p_1_out output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 DPOP-1#4 Warning
 DSP output pipelining  
-DSP leon3gen.cpu[0].u0/leon3x0/p0/p_1_out__0 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
+DSP p_1_out__0 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
 PDRC-153#1 Warning
 Physical design rule  
-Net adderahb_if/n_1_n_0_14833_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_14833_BUFG_inst_i_1/O, cell adderahb_if/n_0_14833_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net adderahb_if/n_1_n_0_11429_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_11429_BUFG_inst_i_1/O, cell adderahb_if/n_0_11429_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Physical design rule  
-Net apb0/O121[0] is a gated clock net sourced by a combinational pin apb0/sLED_reg[15]_i_1/O, cell apb0/sLED_reg[15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net apb0/O104[0] is a gated clock net sourced by a combinational pin apb0/sLED_reg[15]_i_1/O, cell apb0/sLED_reg[15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT adderahb_if/n_0_14833_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
+A LUT adderahb_if/n_0_11429_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
     adderahb_if/hrdata_reg[30] {LDCE}
     adderahb_if/hrdata_reg[29] {LDCE}
     adderahb_if/hrdata_reg[28] {LDCE}
@@ -490,32 +490,22 @@ Related violations: <none>
 
 AVAL-4#1 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-leon3gen.cpu[0].u0/leon3x0/p0/mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#2 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-leon3gen.cpu[0].u0/leon3x0/p0/mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0__0: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1]__0: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#3 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-leon3gen.cpu[0].u0/leon3x0/p0/p_1_out: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+p_1_out: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 AVAL-4#4 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
-leon3gen.cpu[0].u0/leon3x0/p0/p_1_out__0: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
-Related violations: <none>
-
-AVAL-6#1 Advisory
-enum_USE_MULT_NONE_enum_MREG_1  
-io0/inst_ADC_TOP/inst_fir/U0/i_synth/g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: If the DSP48E1 USE_MULT attribute is set to NONE, then Please set MREG to 0 to save power.
-Related violations: <none>
-
-REQP-28#1 Advisory
-enum_USE_MULT_NONE_connects_CEM_GND  
-io0/inst_ADC_TOP/inst_fir/U0/i_synth/g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied GND to save power.
+p_1_out__0: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
 Related violations: <none>
 
 RTSTAT-10#1 Advisory
