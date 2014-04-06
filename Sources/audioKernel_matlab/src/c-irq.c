@@ -11,10 +11,8 @@
 #define IRQ_reg 0x80000000
 
 int *lreg = (int *) IRQ_reg; //seems to be close to
-uint32_t thirtyTwoOnes = 0xFFFFFFFF;
-uint32_t input;
+uint16_t input;
 uint16_t ioBuffer[3*buffSize];
-uint16_t inputConv;
 int derp;
 
 #define ILR 0x200
@@ -52,8 +50,7 @@ void adcHandler(){
 	int i = 0;
 	while(i <  buffSize){
 		input = *(volatile int*)(ADC_adr+(i*4));
-		inputConv = input>>16;
-		ioBuffer[i+(iter*128)] = inputConv;
+		ioBuffer[i+(iter*128)] = input;
 		i++;
 	}
 
