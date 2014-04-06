@@ -9,10 +9,11 @@
 #define ADC_adr 0x80000800
 #define DAC_adr 0x80000A00
 #define IRQ_reg 0x80000000
+#define buffers 4096
 
 int *lreg = (int *) IRQ_reg; //seems to be close to
 uint16_t input;
-uint16_t ioBuffer[3*buffSize];
+uint16_t ioBuffer[buffers*buffSize];
 int derp;
 
 #define ILR 0x200
@@ -55,12 +56,12 @@ void adcHandler(){
 	}
 
 	iter++;
-	if(iter == 3){
+	if(iter == buffers){
 
 		disable_irq(10);
 
 		int d;
-		for(d = 0; d < 3*128; d++)
+		for(d = 0; d < buffers*128; d++)
 			printf(" %d,", ioBuffer[d]);
 		exit = 0;
 	}
