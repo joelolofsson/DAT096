@@ -27,7 +27,7 @@ void dacTest(){
 
 	i = 0;
 	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4)) = 0xffffffff ;
+		*(volatile int*)(DAC_adr+(i*4)) = square[i];
 		i++;
 	}
 }
