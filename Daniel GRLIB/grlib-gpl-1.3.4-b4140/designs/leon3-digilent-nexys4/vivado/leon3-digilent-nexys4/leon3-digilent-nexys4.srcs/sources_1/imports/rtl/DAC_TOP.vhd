@@ -5,7 +5,7 @@ entity dacTop is
 	port(
 		rstn	:	in STD_LOGIC;	 	
 		clk	:	in STD_LOGIC;
-		data	:	in STD_LOGIC_VECTOR(31 downto 0);
+		data	:	in STD_LOGIC_VECTOR(15 downto 0);
 		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
 		write	:	in STD_LOGIC;
 		sampleclk : out STD_LOGIC;
@@ -39,7 +39,7 @@ end component;
 		port(
 			rstn	:	in STD_LOGIC;	 	
 			clk	:	in STD_LOGIC;
-			data	:	in STD_LOGIC_VECTOR(31 downto 0);
+			data	:	in STD_LOGIC_VECTOR(15 downto 0);
 			sampleclk : in STD_LOGIC;
 			din	:	out std_logic;
 		 	nSync	:	out STD_LOGIC;
@@ -56,12 +56,12 @@ end component;
 			buffRead	:	in STD_LOGIC;
 			indexReset	:	in STD_LOGIC;
 			buffWrite	:	in STD_LOGIC;
-			buffIn		:	in STD_LOGIC_VECTOR (31 downto 0);
-			buffOut		:	out STD_LOGIC_VECTOR (31 downto 0);
+			buffIn		:	in STD_LOGIC_VECTOR (15 downto 0);
+			buffOut		:	out STD_LOGIC_VECTOR (15 downto 0);
 			addr		:	in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 	end component DAC_buffer;
 	
-	signal sBuffOut : std_logic_vector(31 downto 0);
+	signal sBuffOut : std_logic_vector(15 downto 0);
 	signal readBuffer : std_logic;
 	signal clk50MHz : STD_LOGIC;
 	signal clk25MHz : STD_LOGIC;

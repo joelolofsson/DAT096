@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Sat Apr 05 20:35:47 2014
+| Date         : Sun Apr 06 13:15:08 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
@@ -29,16 +29,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 12424 |     0 |     63400 | 19.59 |
-|   LUT as Logic             | 12389 |     0 |     63400 | 19.54 |
+| Slice LUTs*                | 11266 |     0 |     63400 | 17.76 |
+|   LUT as Logic             | 11231 |     0 |     63400 | 17.71 |
 |   LUT as Memory            |    35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    24 |     0 |           |       |
 |     LUT as Shift Register  |    11 |     0 |           |       |
-| Slice Registers            | 10760 |     0 |    126800 |  8.48 |
-|   Register as Flip Flop    | 10712 |     0 |    126800 |  8.44 |
+| Slice Registers            |  8696 |     0 |    126800 |  6.85 |
+|   Register as Flip Flop    |  8648 |     0 |    126800 |  6.82 |
 |   Register as Latch        |    48 |     0 |    126800 |  0.03 |
-| F7 Muxes                   |  1087 |     0 |     31700 |  3.42 |
-| F8 Muxes                   |   420 |     0 |     15850 |  2.64 |
+| F7 Muxes                   |   847 |     0 |     31700 |  2.67 |
+| F8 Muxes                   |   313 |     0 |     15850 |  1.97 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
 
@@ -133,18 +133,18 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
-| LUT6      | 7462 |
-| FDCE      | 6310 |
-| FDRE      | 4287 |
-| LUT5      | 3015 |
-| LUT3      | 1211 |
-| LUT4      | 1176 |
-| MUXF7     | 1087 |
-| LUT2      |  650 |
-| MUXF8     |  420 |
-| LUT1      |  232 |
+| LUT6      | 6315 |
+| FDRE      | 4265 |
+| FDCE      | 4262 |
+| LUT5      | 2925 |
+| LUT4      | 1420 |
+| LUT3      | 1027 |
+| MUXF7     |  847 |
+| LUT2      |  614 |
+| MUXF8     |  313 |
+| LUT1      |  234 |
 | CARRY4    |  221 |
-| FDSE      |  109 |
+| FDSE      |  115 |
 | OBUF      |   58 |
 | LDCE      |   48 |
 | RAMD32    |   36 |

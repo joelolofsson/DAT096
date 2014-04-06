@@ -40,7 +40,7 @@ Starting synthesis...
 xc7a100t2default:defaultZ17-349
 õ
 %s*synth2ã
-wStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 335.289 ; gain = 77.199
+wStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 335.469 ; gain = 77.430
 2default:default
 Î
 synthesizing module '%s'638*oasys2
@@ -10907,7 +10907,7 @@ W
 inst_fir2default:default2"
 fir_compiler_02default:default2Õ
 ∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
-1832default:default8@Z8-637
+1672default:default8@Z8-637
 ∫
 synthesizing module '%s'638*oasys2
 default_ADC2default:default2…
@@ -11485,7 +11485,7 @@ s
 btn[0]2default:defaultZ8-3331
 ú
 %s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 486.027 ; gain = 227.938
+xFinished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 485.469 ; gain = 227.430
 2default:default
 ;
 %s*synth2,
@@ -13211,11 +13211,11 @@ MSuccessfully populated the BRAM INIT strings from the following elf files: %s
 2default:defaultZ1-111
 µ
 %s*synth2•
-êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 678.785 ; gain = 420.695
+êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 666.395 ; gain = 408.355
 2default:default
 ù
 %s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 678.785 ; gain = 420.695
+yFinished RTL Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 666.395 ; gain = 408.355
 2default:default
 Ã
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2 
@@ -13230,6 +13230,13 @@ YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/grlib/amba/a
 	nSync_reg2default:default2Õ
 ∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
 352default:default8@Z8-4471
+®
+RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2
+sLED_reg2default:default2
+322default:default2
+162default:default2Œ
+∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
+832default:default8@Z8-3936
 ”
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 r_reg[readdata]2default:default2
@@ -13474,7 +13481,7 @@ a
 2default:default
 a
 %s*synth2R
->|6     |leon3mp__GCB2               |           1|     20578|
+>|6     |leon3mp__GCB2               |           1|     12402|
 2default:default
 a
 %s*synth2R
@@ -13488,7 +13495,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
 ±
 %s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 678.785 ; gain = 420.695
+åFinished Loading Part and Timing Information : Time (s): cpu = 00:01:55 ; elapsed = 00:02:05 . Memory (MB): peak = 666.395 ; gain = 408.355
 2default:default
 B
 %s*synth23
@@ -13504,11 +13511,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     33 Bit       Adders := 1     
+.	   2 Input     33 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     33 Bit       Adders := 1     
+.	   3 Input     33 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -13548,7 +13555,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      8 Bit       Adders := 1     
+.	   2 Input      8 Bit       Adders := 4     
 2default:default
 Q
 %s*synth2B
@@ -13556,7 +13563,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit       Adders := 4     
+.	   3 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -13616,7 +13623,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 314   
+.	               32 Bit    Registers := 56    
 2default:default
 Q
 %s*synth2B
@@ -13640,7 +13647,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               16 Bit    Registers := 6     
+.	               16 Bit    Registers := 264   
 2default:default
 Q
 %s*synth2B
@@ -13720,11 +13727,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input     48 Bit        Muxes := 2     
+.	   2 Input     48 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     48 Bit        Muxes := 3     
+.	  13 Input     48 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -13744,55 +13751,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 132   
-2default:default
-Q
-%s*synth2B
 .	  16 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	 142 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input     32 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   8 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  18 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   9 Input     32 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   3 Input     32 Bit        Muxes := 11    
-2default:default
-Q
-%s*synth2B
-.	   6 Input     32 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
 .	   7 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  11 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  13 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  15 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13804,6 +13767,54 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  10 Input     32 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   9 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 11    
+2default:default
+Q
+%s*synth2B
+.	  13 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  18 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  15 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  11 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	 142 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 132   
+2default:default
+Q
+%s*synth2B
+.	   7 Input     30 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   3 Input     30 Bit        Muxes := 2     
 2default:default
 Q
@@ -13812,15 +13823,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input     30 Bit        Muxes := 1     
+.	   4 Input     30 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
 .	  12 Input     30 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     30 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -13844,11 +13851,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input     18 Bit        Muxes := 1     
+.	  10 Input     18 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  10 Input     18 Bit        Muxes := 2     
+.	  15 Input     18 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13856,7 +13863,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input     16 Bit        Muxes := 2     
+.	   2 Input     16 Bit        Muxes := 34    
 2default:default
 Q
 %s*synth2B
@@ -13864,19 +13871,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit        Muxes := 34    
-2default:default
-Q
-%s*synth2B
 .	   6 Input     16 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     15 Bit        Muxes := 17    
+.	  13 Input     16 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   4 Input     15 Bit        Muxes := 2     
+.	   2 Input     15 Bit        Muxes := 17    
 2default:default
 Q
 %s*synth2B
@@ -13888,11 +13891,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     14 Bit        Muxes := 1     
+.	   4 Input     15 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     13 Bit        Muxes := 6     
+.	   2 Input     14 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13900,7 +13903,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     12 Bit        Muxes := 1     
+.	   2 Input     13 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -13908,7 +13911,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   6 Input     12 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   8 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   7 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  16 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   9 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13920,31 +13939,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   9 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  14 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   9 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13952,15 +13947,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   6 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  14 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      9 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      8 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      8 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -13968,7 +13967,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 50    
+.	   3 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13976,7 +13975,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      8 Bit        Muxes := 50    
+2default:default
+Q
+%s*synth2B
 .	   4 Input      8 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      8 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -13988,11 +13999,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      7 Bit        Muxes := 26    
-2default:default
-Q
-%s*synth2B
-.	  16 Input      7 Bit        Muxes := 2     
+.	  15 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14000,27 +14007,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      7 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      7 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  12 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   9 Input      6 Bit        Muxes := 1     
+.	   2 Input      7 Bit        Muxes := 26    
 2default:default
 Q
 %s*synth2B
-.	   8 Input      6 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      6 Bit        Muxes := 1     
+.	   8 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14032,27 +14027,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   9 Input      6 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   5 Input      6 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
+.	   6 Input      6 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      6 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      5 Bit        Muxes := 32    
-2default:default
-Q
-%s*synth2B
-.	   8 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      5 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      5 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14064,7 +14055,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 136   
+.	   8 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      5 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      5 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -14072,19 +14075,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   9 Input      4 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      4 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      4 Bit        Muxes := 6     
+.	  13 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14092,11 +14083,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      4 Bit        Muxes := 2     
+.	   3 Input      4 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -14104,19 +14091,39 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      4 Bit        Muxes := 136   
+2default:default
+Q
+%s*synth2B
+.	   7 Input      4 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      4 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   9 Input      4 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      3 Bit        Muxes := 52    
 2default:default
 Q
 %s*synth2B
-.	   4 Input      3 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      3 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
 .	   8 Input      3 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	  19 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   9 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14128,11 +14135,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input      3 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	  19 Input      3 Bit        Muxes := 1     
+.	   7 Input      3 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -14144,39 +14147,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input      3 Bit        Muxes := 1     
+.	   4 Input      3 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	  19 Input      2 Bit        Muxes := 1     
+.	  16 Input      3 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   9 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  11 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      2 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      2 Bit        Muxes := 10    
-2default:default
-Q
-%s*synth2B
-.	  16 Input      2 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   5 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      2 Bit        Muxes := 2     
+.	   2 Input      2 Bit        Muxes := 125   
 2default:default
 Q
 %s*synth2B
@@ -14184,19 +14163,47 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   3 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	  11 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  19 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   8 Input      2 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 124   
+.	   9 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 109   
+.	  16 Input      1 Bit        Muxes := 39    
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 180   
+.	  14 Input      1 Bit        Muxes := 29    
 2default:default
 Q
 %s*synth2B
@@ -14208,35 +14215,11 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   4 Input      1 Bit        Muxes := 180   
+2default:default
+Q
+%s*synth2B
 .	   9 Input      1 Bit        Muxes := 17    
-2default:default
-Q
-%s*synth2B
-.	   7 Input      1 Bit        Muxes := 26    
-2default:default
-Q
-%s*synth2B
-.	  19 Input      1 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      1 Bit        Muxes := 39    
-2default:default
-Q
-%s*synth2B
-.	   6 Input      1 Bit        Muxes := 107   
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 2267  
-2default:default
-Q
-%s*synth2B
-.	  15 Input      1 Bit        Muxes := 19    
-2default:default
-Q
-%s*synth2B
-.	  14 Input      1 Bit        Muxes := 29    
 2default:default
 Q
 %s*synth2B
@@ -14244,11 +14227,35 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   5 Input      1 Bit        Muxes := 11    
+.	   2 Input      1 Bit        Muxes := 2267  
+2default:default
+Q
+%s*synth2B
+.	  19 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.	   7 Input      1 Bit        Muxes := 26    
 2default:default
 Q
 %s*synth2B
 .	  10 Input      1 Bit        Muxes := 105   
+2default:default
+Q
+%s*synth2B
+.	  15 Input      1 Bit        Muxes := 19    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 109   
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 107   
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit        Muxes := 11    
 2default:default
 F
 %s*synth27
@@ -14424,11 +14431,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 531   
+.	   4 Input      1 Bit        Muxes := 15    
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 15    
+.	   2 Input      1 Bit        Muxes := 531   
 2default:default
 F
 %s*synth27
@@ -14488,11 +14495,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 3     
+.	   3 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -14500,11 +14503,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 22    
+.	   4 Input     32 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 2     
+.	   9 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
@@ -14520,11 +14527,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 9     
+.	  14 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  14 Input     10 Bit        Muxes := 1     
+.	   2 Input     10 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
@@ -14540,11 +14547,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 8     
+.	  10 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  10 Input      2 Bit        Muxes := 2     
+.	   2 Input      2 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
@@ -14552,7 +14559,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit        Muxes := 55    
+.	   7 Input      1 Bit        Muxes := 13    
 2default:default
 Q
 %s*synth2B
@@ -14560,7 +14567,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      1 Bit        Muxes := 13    
+.	  10 Input      1 Bit        Muxes := 55    
 2default:default
 F
 %s*synth27
@@ -14596,11 +14603,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 1     
+.	   4 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   4 Input     32 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14624,15 +14631,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 143   
-2default:default
-Q
-%s*synth2B
 .	   4 Input      1 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
 .	   3 Input      1 Bit        Muxes := 7     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 143   
 2default:default
 E
 %s*synth26
@@ -14756,7 +14763,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     32 Bit        Muxes := 6     
+.	   2 Input     32 Bit        Muxes := 39    
 2default:default
 Q
 %s*synth2B
@@ -14764,7 +14771,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 39    
+.	  19 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -14772,19 +14783,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   3 Input     30 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   4 Input     30 Bit        Muxes := 1     
+.	   2 Input     30 Bit        Muxes := 12    
 2default:default
 Q
 %s*synth2B
-.	   2 Input     30 Bit        Muxes := 12    
+.	   4 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14796,19 +14803,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     10 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 19    
+.	   4 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      8 Bit        Muxes := 1     
+.	   3 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14816,7 +14819,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      8 Bit        Muxes := 1     
+.	   8 Input      8 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit        Muxes := 19    
 2default:default
 Q
 %s*synth2B
@@ -14836,6 +14843,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  19 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   4 Input      5 Bit        Muxes := 3     
 2default:default
 Q
@@ -14844,11 +14855,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      4 Bit        Muxes := 1     
+.	   4 Input      4 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -14856,15 +14863,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      4 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      3 Bit        Muxes := 1     
+.	   6 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14872,7 +14871,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   8 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      3 Bit        Muxes := 20    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14884,19 +14891,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   5 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  19 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14904,19 +14899,27 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  19 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
 .	   4 Input      2 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
+.	  16 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  19 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
 .	   4 Input      1 Bit        Muxes := 113   
-2default:default
-Q
-%s*synth2B
-.	  13 Input      1 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 182   
 2default:default
 Q
 %s*synth2B
@@ -14928,7 +14931,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit        Muxes := 14    
+.	   8 Input      1 Bit        Muxes := 39    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 182   
 2default:default
 Q
 %s*synth2B
@@ -14940,15 +14947,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  10 Input      1 Bit        Muxes := 14    
+2default:default
+Q
+%s*synth2B
 .	  11 Input      1 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      1 Bit        Muxes := 39    
-2default:default
-Q
-%s*synth2B
-.	  19 Input      1 Bit        Muxes := 9     
+.	  13 Input      1 Bit        Muxes := 4     
 2default:default
 I
 %s*synth2:
@@ -15568,11 +15575,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     12 Bit        Muxes := 2     
+.	   6 Input     12 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   6 Input     12 Bit        Muxes := 1     
+.	   2 Input     12 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -15592,11 +15599,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      3 Bit        Muxes := 1     
+.	   6 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   6 Input      3 Bit        Muxes := 1     
+.	   7 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15612,15 +15619,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   6 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 64    
+.	   2 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 31    
 2default:default
 Q
 %s*synth2B
@@ -15628,7 +15635,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 31    
+.	   2 Input      1 Bit        Muxes := 64    
 2default:default
 7
 %s*synth2(
@@ -15808,15 +15815,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      7 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
 .	   6 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  16 Input      4 Bit        Muxes := 1     
+.	   2 Input      7 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -15828,7 +15831,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  16 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   7 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      2 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -15836,7 +15847,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input      2 Bit        Muxes := 4     
+.	  16 Input      1 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
@@ -15845,10 +15856,6 @@ Q
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 30    
-2default:default
-Q
-%s*synth2B
-.	  16 Input      1 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
@@ -15964,11 +15971,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     10 Bit        Muxes := 7     
+2default:default
+Q
+%s*synth2B
 .	   9 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 7     
+.	  10 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15977,10 +15988,6 @@ Q
 Q
 %s*synth2B
 .	   2 Input      4 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16036,11 +16043,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      8 Bit       Adders := 1     
+.	   3 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      8 Bit       Adders := 1     
+.	   4 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -16156,22 +16163,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   9 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  16 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  18 Input     32 Bit        Muxes := 1     
 2default:default
 Q
@@ -16180,7 +16171,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  16 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   7 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   9 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  13 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16192,15 +16199,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input     18 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	  15 Input     18 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  13 Input     16 Bit        Muxes := 2     
+.	  10 Input     18 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16212,6 +16215,14 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  13 Input     16 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     15 Bit        Muxes := 12    
+2default:default
+Q
+%s*synth2B
 .	  10 Input     15 Bit        Muxes := 1     
 2default:default
 Q
@@ -16220,11 +16231,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     15 Bit        Muxes := 12    
+.	   2 Input     14 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     14 Bit        Muxes := 1     
+.	  12 Input     13 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16232,7 +16243,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  12 Input     13 Bit        Muxes := 1     
+.	   2 Input     11 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.	  16 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16244,19 +16259,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     11 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
 .	  19 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16268,7 +16279,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      8 Bit        Muxes := 1     
+.	  10 Input      7 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -16276,7 +16287,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      7 Bit        Muxes := 6     
+.	  16 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16288,15 +16299,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      7 Bit        Muxes := 12    
-2default:default
-Q
-%s*synth2B
-.	   2 Input      6 Bit        Muxes := 10    
 2default:default
 Q
 %s*synth2B
@@ -16304,19 +16307,11 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      6 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
 .	   5 Input      6 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  13 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16324,11 +16319,27 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      4 Bit        Muxes := 3     
+.	   2 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  13 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	  13 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      4 Bit        Muxes := 7     
+2default:default
+Q
+%s*synth2B
+.	  15 Input      4 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -16340,27 +16351,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      4 Bit        Muxes := 7     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  15 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   9 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      3 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16368,19 +16359,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  15 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      3 Bit        Muxes := 17    
 2default:default
 Q
 %s*synth2B
-.	   9 Input      2 Bit        Muxes := 1     
+.	   8 Input      3 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 22    
+.	   6 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  11 Input      2 Bit        Muxes := 1     
+.	  10 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16388,19 +16383,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   9 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	  10 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  16 Input      1 Bit        Muxes := 15    
+.	  11 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   5 Input      1 Bit        Muxes := 10    
+.	   2 Input      2 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
-.	   7 Input      1 Bit        Muxes := 5     
+.	  13 Input      1 Bit        Muxes := 29    
 2default:default
 Q
 %s*synth2B
@@ -16412,11 +16411,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 30    
+.	   7 Input      1 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 8     
+.	  16 Input      1 Bit        Muxes := 15    
 2default:default
 Q
 %s*synth2B
@@ -16424,11 +16423,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      1 Bit        Muxes := 29    
+.	   6 Input      1 Bit        Muxes := 30    
 2default:default
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 153   
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit        Muxes := 10    
 2default:default
 M
 %s*synth2>
@@ -16648,11 +16655,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 8     
+.	   3 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
@@ -16680,11 +16687,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      4 Bit        Muxes := 1     
+.	   2 Input      4 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 7     
+.	   3 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16696,19 +16703,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
 .	   8 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 154   
+.	   2 Input      2 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
 .	   3 Input      1 Bit        Muxes := 63    
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16720,7 +16727,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   5 Input      1 Bit        Muxes := 1     
+.	   2 Input      1 Bit        Muxes := 154   
 2default:default
 2
 %s*synth2#
@@ -16948,7 +16955,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  11 Input     32 Bit        Muxes := 1     
+.	   4 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16956,7 +16963,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     32 Bit        Muxes := 1     
+.	  11 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16964,11 +16971,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  12 Input      7 Bit        Muxes := 2     
+.	   2 Input      7 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      7 Bit        Muxes := 3     
+.	  12 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16984,11 +16991,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  11 Input      1 Bit        Muxes := 21    
+.	   6 Input      1 Bit        Muxes := 25    
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 25    
+.	  11 Input      1 Bit        Muxes := 21    
 2default:default
 @
 %s*synth21
@@ -17052,11 +17059,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 27    
+.	   4 Input     32 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   4 Input     32 Bit        Muxes := 3     
+.	   2 Input     32 Bit        Muxes := 27    
 2default:default
 Q
 %s*synth2B
@@ -17076,10 +17083,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      4 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
 .	   4 Input      4 Bit        Muxes := 1     
 2default:default
 Q
@@ -17088,7 +17091,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      3 Bit        Muxes := 1     
+.	   3 Input      4 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -17096,11 +17099,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 22    
+.	   8 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   8 Input      2 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 22    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -17109,10 +17120,6 @@ Q
 Q
 %s*synth2B
 .	   8 Input      1 Bit        Muxes := 13    
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit        Muxes := 2     
 2default:default
 F
 %s*synth27
@@ -17220,7 +17227,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 129   
+.	               16 Bit    Registers := 129   
 2default:default
 Q
 %s*synth2B
@@ -17280,7 +17287,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 128   
+.	               16 Bit    Registers := 128   
 2default:default
 Q
 %s*synth2B
@@ -17332,6 +17339,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      1 Bit        Muxes := 3     
 2default:default
 D
@@ -17348,7 +17359,7 @@ B
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 1     
+.	               16 Bit    Registers := 1     
 2default:default
 Q
 %s*synth2B
@@ -18063,7 +18074,7 @@ s
 btn[0]2default:defaultZ8-3331
 ©
 %s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:04 . Memory (MB): peak = 678.785 ; gain = 420.695
+ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:02:23 . Memory (MB): peak = 666.395 ; gain = 408.355
 2default:default
 ¢
 %s*synth2í
@@ -18281,15 +18292,15 @@ Mi_3/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[main_state][15] 2
 7\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /\a0/r_reg[retry] 2default:defaultZ8-3333
 û
 %s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:06:15 ; elapsed = 00:06:26 . Memory (MB): peak = 879.980 ; gain = 621.891
+zFinished Area Optimization : Time (s): cpu = 00:06:37 ; elapsed = 00:06:54 . Memory (MB): peak = 872.645 ; gain = 614.605
 2default:default
 ≠
 %s*synth2ù
-àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:06:21 ; elapsed = 00:06:33 . Memory (MB): peak = 879.980 ; gain = 621.891
+àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:06:44 ; elapsed = 00:07:02 . Memory (MB): peak = 872.645 ; gain = 614.605
 2default:default
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:06:28 ; elapsed = 00:06:39 . Memory (MB): peak = 879.980 ; gain = 621.891
+|Finished Timing Optimization : Time (s): cpu = 00:06:51 ; elapsed = 00:07:08 . Memory (MB): peak = 872.645 ; gain = 614.605
 2default:default
 ï
 6propagating constant %s across sequential element (%s)3333*oasys2
@@ -18297,7 +18308,7 @@ zFinished Area Optimization : Time (s): cpu = 00:06:15 ; elapsed = 00:06:26 . Me
 \ahb0/r_reg[hrdatas][25] 2default:defaultZ8-3333
 ü
 %s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:07:30 ; elapsed = 00:07:43 . Memory (MB): peak = 920.527 ; gain = 662.438
+{Finished Technology Mapping : Time (s): cpu = 00:08:25 ; elapsed = 00:08:47 . Memory (MB): peak = 963.922 ; gain = 705.883
 2default:default
 D
 %s*synth25
@@ -18305,7 +18316,7 @@ D
 2default:default
 ô
 %s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:07:32 ; elapsed = 00:07:45 . Memory (MB): peak = 920.527 ; gain = 662.438
+uFinished IO Insertion : Time (s): cpu = 00:08:27 ; elapsed = 00:08:50 . Memory (MB): peak = 963.922 ; gain = 705.883
 2default:default
 ;
 %s*synth2,
@@ -18334,11 +18345,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ™
 %s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:07:32 ; elapsed = 00:07:46 . Memory (MB): peak = 920.527 ; gain = 662.438
+ÖFinished Renaming Generated Instances : Time (s): cpu = 00:08:28 ; elapsed = 00:08:50 . Memory (MB): peak = 963.922 ; gain = 705.883
 2default:default
 ß
 %s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:07:37 ; elapsed = 00:07:51 . Memory (MB): peak = 920.527 ; gain = 662.438
+ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:08:32 ; elapsed = 00:08:55 . Memory (MB): peak = 963.922 ; gain = 705.883
 2default:default
 ¢
 %s*synth2í
@@ -18452,35 +18463,35 @@ H
 2default:default
 H
 %s*synth29
-%|6     |LUT1                |   232|
+%|6     |LUT1                |   234|
 2default:default
 H
 %s*synth29
-%|7     |LUT2                |   650|
+%|7     |LUT2                |   614|
 2default:default
 H
 %s*synth29
-%|8     |LUT3                |  1211|
+%|8     |LUT3                |  1027|
 2default:default
 H
 %s*synth29
-%|9     |LUT4                |  1176|
+%|9     |LUT4                |  1420|
 2default:default
 H
 %s*synth29
-%|10    |LUT5                |  3015|
+%|10    |LUT5                |  2925|
 2default:default
 H
 %s*synth29
-%|11    |LUT6                |  7462|
+%|11    |LUT6                |  6315|
 2default:default
 H
 %s*synth29
-%|12    |MUXF7               |  1087|
+%|12    |MUXF7               |   847|
 2default:default
 H
 %s*synth29
-%|13    |MUXF8               |   420|
+%|13    |MUXF8               |   313|
 2default:default
 H
 %s*synth29
@@ -18520,7 +18531,7 @@ H
 2default:default
 H
 %s*synth29
-%|23    |FDCE                |  6310|
+%|23    |FDCE                |  4262|
 2default:default
 H
 %s*synth29
@@ -18528,11 +18539,11 @@ H
 2default:default
 H
 %s*synth29
-%|25    |FDRE                |  4287|
+%|25    |FDRE                |  4265|
 2default:default
 H
 %s*synth29
-%|26    |FDSE                |   109|
+%|26    |FDSE                |   115|
 2default:default
 H
 %s*synth29
@@ -18573,7 +18584,7 @@ Z+------+-----------------------------------+-----------------------------------
 2default:default
 }
 %s*synth2n
-Z|1     |top                                |                                     | 26407|
+Z|1     |top                                |                                     | 22769|
 2default:default
 }
 %s*synth2n
@@ -18581,31 +18592,31 @@ Z|2     |  \ethpads.emdio_pad               |iopad__parameterized0              
 2default:default
 }
 %s*synth2n
-Z|3     |    \xcv.x0                        |unisim_iopad__parameterized0_126     |     1|
+Z|3     |    \xcv.x0                        |unisim_iopad__parameterized0_125     |     1|
 2default:default
 }
 %s*synth2n
-Z|4     |  io0                              |dummyapb__parameterized0             |  9562|
+Z|4     |  io0                              |dummyapb__parameterized0             |  6536|
 2default:default
 }
 %s*synth2n
-Z|5     |    inst_ADC_TOP                   |ADC_TOP                              |  6183|
+Z|5     |    inst_ADC_TOP                   |ADC_TOP                              |  3174|
 2default:default
 }
 %s*synth2n
-Z|6     |      inst_Buffer                  |ADC_buffer__parameterized0           |  6140|
+Z|6     |      inst_Buffer                  |ADC_buffer__parameterized0           |  3146|
 2default:default
 }
 %s*synth2n
-Z|7     |      inst_ADC                     |default_ADC                          |     1|
+Z|7     |      inst_ADC                     |default_ADC                          |     2|
 2default:default
 }
 %s*synth2n
-Z|8     |    inst_top                       |dacTop                               |  3323|
+Z|8     |    inst_top                       |dacTop                               |  3322|
 2default:default
 }
 %s*synth2n
-Z|9     |      inst_clk_divider             |clk_divide__parameterized0           |   139|
+Z|9     |      inst_clk_divider             |clk_divide__parameterized0           |   138|
 2default:default
 }
 %s*synth2n
@@ -18629,19 +18640,19 @@ Z|14    |  \ethpads.erxd_pad                |inpadv__parameterized0             
 2default:default
 }
 %s*synth2n
-Z|15    |    \v[1].x0                       |inpad__parameterized0_122            |     1|
+Z|15    |    \v[1].x0                       |inpad__parameterized0_121            |     1|
 2default:default
 }
 %s*synth2n
-Z|16    |      \xcv.x0                      |unisim_inpad__parameterized0_125     |     1|
+Z|16    |      \xcv.x0                      |unisim_inpad__parameterized0_124     |     1|
 2default:default
 }
 %s*synth2n
-Z|17    |    \v[0].x0                       |inpad__parameterized0_123            |     1|
+Z|17    |    \v[0].x0                       |inpad__parameterized0_122            |     1|
 2default:default
 }
 %s*synth2n
-Z|18    |      \xcv.x0                      |unisim_inpad__parameterized0_124     |     1|
+Z|18    |      \xcv.x0                      |unisim_inpad__parameterized0_123     |     1|
 2default:default
 }
 %s*synth2n
@@ -18649,15 +18660,15 @@ Z|19    |  \mgpads.oen_pad                  |outpad__parameterized0             
 2default:default
 }
 %s*synth2n
-Z|20    |    \xcv.x0                        |unisim_outpad__parameterized0_121    |     1|
+Z|20    |    \xcv.x0                        |unisim_outpad__parameterized0_120    |     1|
 2default:default
 }
 %s*synth2n
-Z|21    |  rst0                             |rstgen__parameterized0               |    13|
+Z|21    |  rst0                             |rstgen__parameterized0               |    26|
 2default:default
 }
 %s*synth2n
-Z|22    |  apb0                             |apbctrl__parameterized0              |   606|
+Z|22    |  apb0                             |apbctrl__parameterized0              |   530|
 2default:default
 }
 %s*synth2n
@@ -18665,67 +18676,67 @@ Z|23    |  bdr                              |iopadv__parameterized0             
 2default:default
 }
 %s*synth2n
-Z|24    |    \v[1].x0                       |iopad__parameterized0_105            |     1|
+Z|24    |    \v[1].x0                       |iopad__parameterized0_104            |     1|
 2default:default
 }
 %s*synth2n
-Z|25    |      \xcv.x0                      |unisim_iopad__parameterized0_120     |     1|
+Z|25    |      \xcv.x0                      |unisim_iopad__parameterized0_119     |     1|
 2default:default
 }
 %s*synth2n
-Z|26    |    \v[5].x0                       |iopad__parameterized0_106            |     1|
+Z|26    |    \v[5].x0                       |iopad__parameterized0_105            |     1|
 2default:default
 }
 %s*synth2n
-Z|27    |      \xcv.x0                      |unisim_iopad__parameterized0_119     |     1|
+Z|27    |      \xcv.x0                      |unisim_iopad__parameterized0_118     |     1|
 2default:default
 }
 %s*synth2n
-Z|28    |    \v[3].x0                       |iopad__parameterized0_107            |     1|
+Z|28    |    \v[3].x0                       |iopad__parameterized0_106            |     1|
 2default:default
 }
 %s*synth2n
-Z|29    |      \xcv.x0                      |unisim_iopad__parameterized0_118     |     1|
+Z|29    |      \xcv.x0                      |unisim_iopad__parameterized0_117     |     1|
 2default:default
 }
 %s*synth2n
-Z|30    |    \v[7].x0                       |iopad__parameterized0_108            |     1|
+Z|30    |    \v[7].x0                       |iopad__parameterized0_107            |     1|
 2default:default
 }
 %s*synth2n
-Z|31    |      \xcv.x0                      |unisim_iopad__parameterized0_117     |     1|
+Z|31    |      \xcv.x0                      |unisim_iopad__parameterized0_116     |     1|
 2default:default
 }
 %s*synth2n
-Z|32    |    \v[2].x0                       |iopad__parameterized0_109            |     1|
+Z|32    |    \v[2].x0                       |iopad__parameterized0_108            |     1|
 2default:default
 }
 %s*synth2n
-Z|33    |      \xcv.x0                      |unisim_iopad__parameterized0_116     |     1|
+Z|33    |      \xcv.x0                      |unisim_iopad__parameterized0_115     |     1|
 2default:default
 }
 %s*synth2n
-Z|34    |    \v[0].x0                       |iopad__parameterized0_110            |     1|
+Z|34    |    \v[0].x0                       |iopad__parameterized0_109            |     1|
 2default:default
 }
 %s*synth2n
-Z|35    |      \xcv.x0                      |unisim_iopad__parameterized0_115     |     1|
+Z|35    |      \xcv.x0                      |unisim_iopad__parameterized0_114     |     1|
 2default:default
 }
 %s*synth2n
-Z|36    |    \v[6].x0                       |iopad__parameterized0_111            |     1|
+Z|36    |    \v[6].x0                       |iopad__parameterized0_110            |     1|
 2default:default
 }
 %s*synth2n
-Z|37    |      \xcv.x0                      |unisim_iopad__parameterized0_114     |     1|
+Z|37    |      \xcv.x0                      |unisim_iopad__parameterized0_113     |     1|
 2default:default
 }
 %s*synth2n
-Z|38    |    \v[4].x0                       |iopad__parameterized0_112            |     1|
+Z|38    |    \v[4].x0                       |iopad__parameterized0_111            |     1|
 2default:default
 }
 %s*synth2n
-Z|39    |      \xcv.x0                      |unisim_iopad__parameterized0_113     |     1|
+Z|39    |      \xcv.x0                      |unisim_iopad__parameterized0_112     |     1|
 2default:default
 }
 %s*synth2n
@@ -18733,187 +18744,187 @@ Z|40    |  \mgpads.addr_pad                 |outpadv__parameterized0            
 2default:default
 }
 %s*synth2n
-Z|41    |    \v[11].x0                      |outpad__parameterized0_59            |     1|
+Z|41    |    \v[11].x0                      |outpad__parameterized0_58            |     1|
 2default:default
 }
 %s*synth2n
-Z|42    |      \xcv.x0                      |unisim_outpad__parameterized0_104    |     1|
+Z|42    |      \xcv.x0                      |unisim_outpad__parameterized0_103    |     1|
 2default:default
 }
 %s*synth2n
-Z|43    |    \v[16].x0                      |outpad__parameterized0_60            |     1|
+Z|43    |    \v[16].x0                      |outpad__parameterized0_59            |     1|
 2default:default
 }
 %s*synth2n
-Z|44    |      \xcv.x0                      |unisim_outpad__parameterized0_103    |     1|
+Z|44    |      \xcv.x0                      |unisim_outpad__parameterized0_102    |     1|
 2default:default
 }
 %s*synth2n
-Z|45    |    \v[13].x0                      |outpad__parameterized0_61            |     1|
+Z|45    |    \v[13].x0                      |outpad__parameterized0_60            |     1|
 2default:default
 }
 %s*synth2n
-Z|46    |      \xcv.x0                      |unisim_outpad__parameterized0_102    |     1|
+Z|46    |      \xcv.x0                      |unisim_outpad__parameterized0_101    |     1|
 2default:default
 }
 %s*synth2n
-Z|47    |    \v[18].x0                      |outpad__parameterized0_62            |     1|
+Z|47    |    \v[18].x0                      |outpad__parameterized0_61            |     1|
 2default:default
 }
 %s*synth2n
-Z|48    |      \xcv.x0                      |unisim_outpad__parameterized0_101    |     1|
+Z|48    |      \xcv.x0                      |unisim_outpad__parameterized0_100    |     1|
 2default:default
 }
 %s*synth2n
-Z|49    |    \v[5].x0                       |outpad__parameterized0_63            |     1|
+Z|49    |    \v[5].x0                       |outpad__parameterized0_62            |     1|
 2default:default
 }
 %s*synth2n
-Z|50    |      \xcv.x0                      |unisim_outpad__parameterized0_100    |     1|
+Z|50    |      \xcv.x0                      |unisim_outpad__parameterized0_99     |     1|
 2default:default
 }
 %s*synth2n
-Z|51    |    \v[0].x0                       |outpad__parameterized0_64            |     1|
+Z|51    |    \v[0].x0                       |outpad__parameterized0_63            |     1|
 2default:default
 }
 %s*synth2n
-Z|52    |      \xcv.x0                      |unisim_outpad__parameterized0_99     |     1|
+Z|52    |      \xcv.x0                      |unisim_outpad__parameterized0_98     |     1|
 2default:default
 }
 %s*synth2n
-Z|53    |    \v[20].x0                      |outpad__parameterized0_65            |     1|
+Z|53    |    \v[20].x0                      |outpad__parameterized0_64            |     1|
 2default:default
 }
 %s*synth2n
-Z|54    |      \xcv.x0                      |unisim_outpad__parameterized0_98     |     1|
+Z|54    |      \xcv.x0                      |unisim_outpad__parameterized0_97     |     1|
 2default:default
 }
 %s*synth2n
-Z|55    |    \v[7].x0                       |outpad__parameterized0_66            |     1|
+Z|55    |    \v[7].x0                       |outpad__parameterized0_65            |     1|
 2default:default
 }
 %s*synth2n
-Z|56    |      \xcv.x0                      |unisim_outpad__parameterized0_97     |     1|
+Z|56    |      \xcv.x0                      |unisim_outpad__parameterized0_96     |     1|
 2default:default
 }
 %s*synth2n
-Z|57    |    \v[12].x0                      |outpad__parameterized0_67            |     1|
+Z|57    |    \v[12].x0                      |outpad__parameterized0_66            |     1|
 2default:default
 }
 %s*synth2n
-Z|58    |      \xcv.x0                      |unisim_outpad__parameterized0_96     |     1|
+Z|58    |      \xcv.x0                      |unisim_outpad__parameterized0_95     |     1|
 2default:default
 }
 %s*synth2n
-Z|59    |    \v[19].x0                      |outpad__parameterized0_68            |     1|
+Z|59    |    \v[19].x0                      |outpad__parameterized0_67            |     1|
 2default:default
 }
 %s*synth2n
-Z|60    |      \xcv.x0                      |unisim_outpad__parameterized0_95     |     1|
+Z|60    |      \xcv.x0                      |unisim_outpad__parameterized0_94     |     1|
 2default:default
 }
 %s*synth2n
-Z|61    |    \v[14].x0                      |outpad__parameterized0_69            |     1|
+Z|61    |    \v[14].x0                      |outpad__parameterized0_68            |     1|
 2default:default
 }
 %s*synth2n
-Z|62    |      \xcv.x0                      |unisim_outpad__parameterized0_94     |     1|
+Z|62    |      \xcv.x0                      |unisim_outpad__parameterized0_93     |     1|
 2default:default
 }
 %s*synth2n
-Z|63    |    \v[6].x0                       |outpad__parameterized0_70            |     1|
+Z|63    |    \v[6].x0                       |outpad__parameterized0_69            |     1|
 2default:default
 }
 %s*synth2n
-Z|64    |      \xcv.x0                      |unisim_outpad__parameterized0_93     |     1|
+Z|64    |      \xcv.x0                      |unisim_outpad__parameterized0_92     |     1|
 2default:default
 }
 %s*synth2n
-Z|65    |    \v[1].x0                       |outpad__parameterized0_71            |     1|
+Z|65    |    \v[1].x0                       |outpad__parameterized0_70            |     1|
 2default:default
 }
 %s*synth2n
-Z|66    |      \xcv.x0                      |unisim_outpad__parameterized0_92     |     1|
+Z|66    |      \xcv.x0                      |unisim_outpad__parameterized0_91     |     1|
 2default:default
 }
 %s*synth2n
-Z|67    |    \v[21].x0                      |outpad__parameterized0_72            |     1|
+Z|67    |    \v[21].x0                      |outpad__parameterized0_71            |     1|
 2default:default
 }
 %s*synth2n
-Z|68    |      \xcv.x0                      |unisim_outpad__parameterized0_91     |     1|
+Z|68    |      \xcv.x0                      |unisim_outpad__parameterized0_90     |     1|
 2default:default
 }
 %s*synth2n
-Z|69    |    \v[8].x0                       |outpad__parameterized0_73            |     1|
+Z|69    |    \v[8].x0                       |outpad__parameterized0_72            |     1|
 2default:default
 }
 %s*synth2n
-Z|70    |      \xcv.x0                      |unisim_outpad__parameterized0_90     |     1|
+Z|70    |      \xcv.x0                      |unisim_outpad__parameterized0_89     |     1|
 2default:default
 }
 %s*synth2n
-Z|71    |    \v[3].x0                       |outpad__parameterized0_74            |     1|
+Z|71    |    \v[3].x0                       |outpad__parameterized0_73            |     1|
 2default:default
 }
 %s*synth2n
-Z|72    |      \xcv.x0                      |unisim_outpad__parameterized0_89     |     1|
+Z|72    |      \xcv.x0                      |unisim_outpad__parameterized0_88     |     1|
 2default:default
 }
 %s*synth2n
-Z|73    |    \v[15].x0                      |outpad__parameterized0_75            |     1|
+Z|73    |    \v[15].x0                      |outpad__parameterized0_74            |     1|
 2default:default
 }
 %s*synth2n
-Z|74    |      \xcv.x0                      |unisim_outpad__parameterized0_88     |     1|
+Z|74    |      \xcv.x0                      |unisim_outpad__parameterized0_87     |     1|
 2default:default
 }
 %s*synth2n
-Z|75    |    \v[10].x0                      |outpad__parameterized0_76            |     1|
+Z|75    |    \v[10].x0                      |outpad__parameterized0_75            |     1|
 2default:default
 }
 %s*synth2n
-Z|76    |      \xcv.x0                      |unisim_outpad__parameterized0_87     |     1|
+Z|76    |      \xcv.x0                      |unisim_outpad__parameterized0_86     |     1|
 2default:default
 }
 %s*synth2n
-Z|77    |    \v[17].x0                      |outpad__parameterized0_77            |     1|
+Z|77    |    \v[17].x0                      |outpad__parameterized0_76            |     1|
 2default:default
 }
 %s*synth2n
-Z|78    |      \xcv.x0                      |unisim_outpad__parameterized0_86     |     1|
+Z|78    |      \xcv.x0                      |unisim_outpad__parameterized0_85     |     1|
 2default:default
 }
 %s*synth2n
-Z|79    |    \v[2].x0                       |outpad__parameterized0_78            |     1|
+Z|79    |    \v[2].x0                       |outpad__parameterized0_77            |     1|
 2default:default
 }
 %s*synth2n
-Z|80    |      \xcv.x0                      |unisim_outpad__parameterized0_85     |     1|
+Z|80    |      \xcv.x0                      |unisim_outpad__parameterized0_84     |     1|
 2default:default
 }
 %s*synth2n
-Z|81    |    \v[22].x0                      |outpad__parameterized0_79            |     1|
+Z|81    |    \v[22].x0                      |outpad__parameterized0_78            |     1|
 2default:default
 }
 %s*synth2n
-Z|82    |      \xcv.x0                      |unisim_outpad__parameterized0_84     |     1|
+Z|82    |      \xcv.x0                      |unisim_outpad__parameterized0_83     |     1|
 2default:default
 }
 %s*synth2n
-Z|83    |    \v[9].x0                       |outpad__parameterized0_80            |     1|
+Z|83    |    \v[9].x0                       |outpad__parameterized0_79            |     1|
 2default:default
 }
 %s*synth2n
-Z|84    |      \xcv.x0                      |unisim_outpad__parameterized0_83     |     1|
+Z|84    |      \xcv.x0                      |unisim_outpad__parameterized0_82     |     1|
 2default:default
 }
 %s*synth2n
-Z|85    |    \v[4].x0                       |outpad__parameterized0_81            |     1|
+Z|85    |    \v[4].x0                       |outpad__parameterized0_80            |     1|
 2default:default
 }
 %s*synth2n
-Z|86    |      \xcv.x0                      |unisim_outpad__parameterized0_82     |     1|
+Z|86    |      \xcv.x0                      |unisim_outpad__parameterized0_81     |     1|
 2default:default
 }
 %s*synth2n
@@ -18921,7 +18932,7 @@ Z|87    |  \ethpads.emdc_pad                |outpad__parameterized0_0           
 2default:default
 }
 %s*synth2n
-Z|88    |    \xcv.x0                        |unisim_outpad__parameterized0_58     |     1|
+Z|88    |    \xcv.x0                        |unisim_outpad__parameterized0_57     |     1|
 2default:default
 }
 %s*synth2n
@@ -18929,7 +18940,7 @@ Z|89    |  etxc_pad                         |outpad__parameterized0_1           
 2default:default
 }
 %s*synth2n
-Z|90    |    \xcv.x0                        |unisim_outpad__parameterized0_57     |     1|
+Z|90    |    \xcv.x0                        |unisim_outpad__parameterized0_56     |     1|
 2default:default
 }
 %s*synth2n
@@ -18937,7 +18948,7 @@ Z|91    |  \ethpads.etxen_pad               |outpad__parameterized0_2           
 2default:default
 }
 %s*synth2n
-Z|92    |    \xcv.x0                        |unisim_outpad__parameterized0_56     |     1|
+Z|92    |    \xcv.x0                        |unisim_outpad__parameterized0_55     |     1|
 2default:default
 }
 %s*synth2n
@@ -18945,75 +18956,75 @@ Z|93    |  \mgpads.ub_pad                   |outpad__parameterized0_3           
 2default:default
 }
 %s*synth2n
-Z|94    |    \xcv.x0                        |unisim_outpad__parameterized0_55     |     1|
+Z|94    |    \xcv.x0                        |unisim_outpad__parameterized0_54     |     1|
 2default:default
 }
 %s*synth2n
-Z|95    |  \mg2.sr1                         |mctrl__parameterized0                |   357|
+Z|95    |  \mg2.sr1                         |mctrl__parameterized0                |   342|
 2default:default
 }
 %s*synth2n
-Z|96    |  \leon3gen.cpu[0].u0              |leon3s__parameterized0               |  9073|
+Z|96    |  \leon3gen.cpu[0].u0              |leon3s__parameterized0               |  8686|
 2default:default
 }
 %s*synth2n
-Z|97    |    leon3x0                        |leon3x__parameterized0               |  9073|
+Z|97    |    leon3x0                        |leon3x__parameterized0               |  8686|
 2default:default
 }
 %s*synth2n
-Z|98    |      rf0                          |regfile_3p_l3__parameterized0        |   133|
+Z|98    |      rf0                          |regfile_3p_l3__parameterized0        |   168|
 2default:default
 }
 %s*synth2n
-Z|99    |        \s1.rhu                    |regfile_3p__parameterized0           |   133|
+Z|99    |        \s1.rhu                    |regfile_3p__parameterized0           |   168|
 2default:default
 }
 %s*synth2n
-Z|100   |          \s1.dp.x1                |syncram_2p__parameterized0           |    12|
+Z|100   |          \s1.dp.x1                |syncram_2p__parameterized0           |    60|
 2default:default
 }
 %s*synth2n
-Z|101   |            \xc2v.x0               |unisim_syncram_2p__parameterized0_53 |     1|
+Z|101   |            \xc2v.x0               |unisim_syncram_2p__parameterized0_52 |    48|
 2default:default
 }
 %s*synth2n
-Z|102   |              \a6.x0               |unisim_syncram_dp__parameterized0_54 |     1|
+Z|102   |              \a6.x0               |unisim_syncram_dp__parameterized0_53 |    48|
 2default:default
 }
 %s*synth2n
-Z|103   |          \s1.dp.x0                |syncram_2p__parameterized0_52        |   121|
+Z|103   |          \s1.dp.x0                |syncram_2p__parameterized0_51        |   108|
 2default:default
 }
 %s*synth2n
-Z|104   |            \xc2v.x0               |unisim_syncram_2p__parameterized0    |    33|
+Z|104   |            \xc2v.x0               |unisim_syncram_2p__parameterized0    |    53|
 2default:default
 }
 %s*synth2n
-Z|105   |              \a6.x0               |unisim_syncram_dp__parameterized0    |    33|
+Z|105   |              \a6.x0               |unisim_syncram_dp__parameterized0    |    53|
 2default:default
 }
 %s*synth2n
-Z|106   |      cmem0                        |cachemem__parameterized0             |    91|
+Z|106   |      cmem0                        |cachemem__parameterized0             |   104|
 2default:default
 }
 %s*synth2n
-Z|107   |        \dme.dd0[1].ddata0         |syncram__parameterized6              |     2|
+Z|107   |        \dme.dd0[1].ddata0         |syncram__parameterized6              |     6|
 2default:default
 }
 %s*synth2n
-Z|108   |          \xc2v.x0                 |unisim_syncram__parameterized6_51    |     2|
+Z|108   |          \xc2v.x0                 |unisim_syncram__parameterized6_50    |     6|
 2default:default
 }
 %s*synth2n
-Z|109   |        \dme.dtags0.dt0[0].dtags0  |syncram__parameterized4              |    11|
+Z|109   |        \dme.dtags0.dt0[0].dtags0  |syncram__parameterized4              |     9|
 2default:default
 }
 %s*synth2n
-Z|110   |          \xc2v.x0                 |unisim_syncram__parameterized4_50    |    11|
+Z|110   |          \xc2v.x0                 |unisim_syncram__parameterized4_49    |     9|
 2default:default
 }
 %s*synth2n
-Z|111   |        \dme.dd0[0].ddata0         |syncram__parameterized6_44           |     2|
+Z|111   |        \dme.dd0[0].ddata0         |syncram__parameterized6_43           |     2|
 2default:default
 }
 %s*synth2n
@@ -19021,39 +19032,39 @@ Z|112   |          \xc2v.x0                 |unisim_syncram__parameterized6     
 2default:default
 }
 %s*synth2n
-Z|113   |        \dme.dtags0.dt0[1].dtags0  |syncram__parameterized4_45           |    12|
+Z|113   |        \dme.dtags0.dt0[1].dtags0  |syncram__parameterized4_44           |    15|
 2default:default
 }
 %s*synth2n
-Z|114   |          \xc2v.x0                 |unisim_syncram__parameterized4       |    12|
+Z|114   |          \xc2v.x0                 |unisim_syncram__parameterized4       |    15|
 2default:default
 }
 %s*synth2n
-Z|115   |        \ime.im0[1].idata0         |syncram__parameterized2              |     4|
+Z|115   |        \ime.im0[1].idata0         |syncram__parameterized2              |    27|
 2default:default
 }
 %s*synth2n
-Z|116   |          \xc2v.x0                 |unisim_syncram__parameterized2_49    |     4|
+Z|116   |          \xc2v.x0                 |unisim_syncram__parameterized2_48    |    27|
 2default:default
 }
 %s*synth2n
-Z|117   |        \ime.im0[1].itags0         |syncram__parameterized0              |    33|
+Z|117   |        \ime.im0[1].itags0         |syncram__parameterized0              |    10|
 2default:default
 }
 %s*synth2n
-Z|118   |          \xc2v.x0                 |unisim_syncram__parameterized0_48    |    33|
+Z|118   |          \xc2v.x0                 |unisim_syncram__parameterized0_47    |    10|
 2default:default
 }
 %s*synth2n
-Z|119   |        \ime.im0[0].idata0         |syncram__parameterized2_46           |    12|
+Z|119   |        \ime.im0[0].idata0         |syncram__parameterized2_45           |     8|
 2default:default
 }
 %s*synth2n
-Z|120   |          \xc2v.x0                 |unisim_syncram__parameterized2       |    12|
+Z|120   |          \xc2v.x0                 |unisim_syncram__parameterized2       |     8|
 2default:default
 }
 %s*synth2n
-Z|121   |        \ime.im0[0].itags0         |syncram__parameterized0_47           |    11|
+Z|121   |        \ime.im0[0].itags0         |syncram__parameterized0_46           |    11|
 2default:default
 }
 %s*synth2n
@@ -19061,331 +19072,327 @@ Z|122   |          \xc2v.x0                 |unisim_syncram__parameterized0     
 2default:default
 }
 %s*synth2n
-Z|123   |      \tbmem_gen.tbmem0            |tbufmem__parameterized0_39           |    34|
+Z|123   |      \tbmem_gen.tbmem0            |tbufmem__parameterized0_38           |    34|
 2default:default
 }
 %s*synth2n
-Z|124   |        \mem0[0].ram0              |syncram64__parameterized0_40         |    33|
+Z|124   |        \mem0[0].ram0              |syncram64__parameterized0_39         |    33|
 2default:default
 }
 %s*synth2n
-Z|125   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_43  |    33|
+Z|125   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_42  |    33|
 2default:default
 }
 %s*synth2n
-Z|126   |        \mem0[1].ram0              |syncram64__parameterized0_41         |     1|
+Z|126   |        \mem0[1].ram0              |syncram64__parameterized0_40         |     1|
 2default:default
 }
 %s*synth2n
-Z|127   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_42  |     1|
+Z|127   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_41  |     1|
 2default:default
 }
 %s*synth2n
-Z|128   |      p0                           |proc3__parameterized0                |  8814|
+Z|128   |      p0                           |proc3__parameterized0                |  8379|
 2default:default
 }
 %s*synth2n
-Z|129   |        c0mmu                      |mmu_cache__parameterized0            |  3129|
+Z|129   |        c0mmu                      |mmu_cache__parameterized0            |  2987|
 2default:default
 }
 %s*synth2n
-Z|130   |          icache0                  |mmu_icache__parameterized0           |  1628|
+Z|130   |          icache0                  |mmu_icache__parameterized0           |  1124|
 2default:default
 }
 %s*synth2n
-Z|131   |          dcache0                  |mmu_dcache__parameterized0           |  1328|
+Z|131   |          dcache0                  |mmu_dcache__parameterized0           |   937|
 2default:default
 }
 %s*synth2n
-Z|132   |          a0                       |mmu_acache__parameterized0           |   173|
+Z|132   |          a0                       |mmu_acache__parameterized0           |   144|
 2default:default
 }
 %s*synth2n
-Z|133   |        \mgen.mul0                 |mul32__parameterized0                |   103|
+Z|133   |        \mgen.mul0                 |mul32__parameterized0                |    96|
 2default:default
 }
 %s*synth2n
-Z|134   |          \xm3232.m3232            |techmult__parameterized0             |   103|
+Z|134   |          \xm3232.m3232            |techmult__parameterized0             |    96|
 2default:default
 }
 %s*synth2n
-Z|135   |            \pipe2.arch0.dwm       |gen_mult_pipe__parameterized0        |   103|
+Z|135   |            \pipe2.arch0.dwm       |gen_mult_pipe__parameterized0        |    96|
 2default:default
 }
 %s*synth2n
-Z|136   |        iu                         |iu3__parameterized0                  |  5214|
+Z|136   |        iu                         |iu3__parameterized0                  |  4908|
 2default:default
 }
 %s*synth2n
-Z|137   |        \mgen.div0                 |div32                                |   366|
+Z|137   |        \mgen.div0                 |div32                                |   367|
 2default:default
 }
 %s*synth2n
-Z|138   |  \gpt.timer0                      |gptimer__parameterized0              |   369|
+Z|138   |  \gpt.timer0                      |gptimer__parameterized0              |   372|
 2default:default
 }
 %s*synth2n
-Z|139   |  \eth0.e1                         |grethm__parameterized0               |  4103|
+Z|139   |  \eth0.e1                         |grethm__parameterized0               |  3889|
 2default:default
 }
 %s*synth2n
-Z|140   |    \m100.u0                       |greth__parameterized0                |  4103|
+Z|140   |    \m100.u0                       |greth__parameterized0                |  3889|
 2default:default
 }
 %s*synth2n
-Z|141   |      ethc0                        |grethc__parameterized0               |  3998|
+Z|141   |      ethc0                        |grethc__parameterized0               |  3788|
 2default:default
 }
 %s*synth2n
-Z|142   |        ahb0                       |eth_ahb_mst                          |   362|
+Z|142   |        ahb0                       |eth_ahb_mst                          |   266|
 2default:default
 }
 %s*synth2n
-Z|143   |        \tx_rmii1.tx0              |greth_tx__parameterized0             |   506|
+Z|143   |        \tx_rmii1.tx0              |greth_tx__parameterized0             |   505|
 2default:default
 }
 %s*synth2n
-Z|144   |          tx_rst                   |eth_rstgen__parameterized0_38        |    17|
+Z|144   |          tx_rst                   |eth_rstgen__parameterized0           |    19|
 2default:default
 }
 %s*synth2n
-Z|145   |        \rx_rmii1.rx0              |greth_rx__parameterized0             |   804|
+Z|145   |        \rx_rmii1.rx0              |greth_rx__parameterized0             |   770|
 2default:default
 }
 %s*synth2n
-Z|146   |          rx_rst                   |eth_rstgen__parameterized0           |     2|
+Z|146   |      \nft.tx_fifo0                |syncram_2p__parameterized2           |     1|
 2default:default
 }
 %s*synth2n
-Z|147   |      \nft.tx_fifo0                |syncram_2p__parameterized2           |     1|
+Z|147   |        \xc2v.x0                   |unisim_syncram_2p__parameterized2    |     1|
 2default:default
 }
 %s*synth2n
-Z|148   |        \xc2v.x0                   |unisim_syncram_2p__parameterized2    |     1|
+Z|148   |          \a6.x0                   |unisim_syncram_dp__parameterized2    |     1|
 2default:default
 }
 %s*synth2n
-Z|149   |          \a6.x0                   |unisim_syncram_dp__parameterized2    |     1|
+Z|149   |      \edclramnft.r0               |syncram_2p__parameterized6           |    20|
 2default:default
 }
 %s*synth2n
-Z|150   |      \edclramnft.r0               |syncram_2p__parameterized6           |    25|
+Z|150   |        \xc2v.x0                   |unisim_syncram_2p__parameterized6_36 |    20|
 2default:default
 }
 %s*synth2n
-Z|151   |        \xc2v.x0                   |unisim_syncram_2p__parameterized6_36 |    25|
+Z|151   |          \a6.x0                   |unisim_syncram_dp__parameterized4_37 |    20|
 2default:default
 }
 %s*synth2n
-Z|152   |          \a6.x0                   |unisim_syncram_dp__parameterized4_37 |    25|
+Z|152   |      \edclramnft.r1               |syncram_2p__parameterized6_35        |    16|
 2default:default
 }
 %s*synth2n
-Z|153   |      \edclramnft.r1               |syncram_2p__parameterized6_35        |    16|
+Z|153   |        \xc2v.x0                   |unisim_syncram_2p__parameterized6    |    16|
 2default:default
 }
 %s*synth2n
-Z|154   |        \xc2v.x0                   |unisim_syncram_2p__parameterized6    |    16|
+Z|154   |          \a6.x0                   |unisim_syncram_dp__parameterized4    |    16|
 2default:default
 }
 %s*synth2n
-Z|155   |          \a6.x0                   |unisim_syncram_dp__parameterized4    |    16|
+Z|155   |      \nft.rx_fifo0                |syncram_2p__parameterized4           |    38|
 2default:default
 }
 %s*synth2n
-Z|156   |      \nft.rx_fifo0                |syncram_2p__parameterized4           |    38|
+Z|156   |        \xc2v.x0                   |unisim_syncram_2p__parameterized4    |    38|
 2default:default
 }
 %s*synth2n
-Z|157   |        \xc2v.x0                   |unisim_syncram_2p__parameterized4    |    38|
+Z|157   |          \a0.x0                   |generic_syncram_2p__parameterized0   |    38|
 2default:default
 }
 %s*synth2n
-Z|158   |          \a0.x0                   |generic_syncram_2p__parameterized0   |    38|
+Z|158   |  \mgpads.cs_pad                   |outpad__parameterized0_4             |     1|
 2default:default
 }
 %s*synth2n
-Z|159   |  \mgpads.cs_pad                   |outpad__parameterized0_4             |     1|
+Z|159   |    \xcv.x0                        |unisim_outpad__parameterized0_34     |     1|
 2default:default
 }
 %s*synth2n
-Z|160   |    \xcv.x0                        |unisim_outpad__parameterized0_34     |     1|
+Z|160   |  \ethpads.erxcr_pad               |inpad__parameterized0                |     1|
 2default:default
 }
 %s*synth2n
-Z|161   |  \ethpads.erxcr_pad               |inpad__parameterized0                |     1|
+Z|161   |    \xcv.x0                        |unisim_inpad__parameterized0_33      |     1|
 2default:default
 }
 %s*synth2n
-Z|162   |    \xcv.x0                        |unisim_inpad__parameterized0_33      |     1|
+Z|162   |  ahb0                             |ahbctrl__parameterized0              |   171|
 2default:default
 }
 %s*synth2n
-Z|163   |  ahb0                             |ahbctrl__parameterized0              |   185|
+Z|163   |  \leon3gen.dsugen.dsu0            |dsu3__parameterized0                 |  1186|
 2default:default
 }
 %s*synth2n
-Z|164   |  \leon3gen.dsugen.dsu0            |dsu3__parameterized0                 |  1157|
+Z|164   |    x0                             |dsu3x__parameterized0                |  1173|
 2default:default
 }
 %s*synth2n
-Z|165   |    x0                             |dsu3x__parameterized0                |  1145|
+Z|165   |      \tb0.mem0                    |tbufmem__parameterized0              |   247|
 2default:default
 }
 %s*synth2n
-Z|166   |      \tb0.mem0                    |tbufmem__parameterized0              |   216|
+Z|166   |        \mem0[0].ram0              |syncram64__parameterized0            |   144|
 2default:default
 }
 %s*synth2n
-Z|167   |        \mem0[0].ram0              |syncram64__parameterized0            |   113|
+Z|167   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_32  |   144|
 2default:default
 }
 %s*synth2n
-Z|168   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_32  |   113|
+Z|168   |        \mem0[1].ram0              |syncram64__parameterized0_31         |   103|
 2default:default
 }
 %s*synth2n
-Z|169   |        \mem0[1].ram0              |syncram64__parameterized0_31         |   103|
+Z|169   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0     |   103|
 2default:default
 }
 %s*synth2n
-Z|170   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0     |   103|
+Z|170   |  \bpromgen.brom                   |ahbrom                               |   191|
 2default:default
 }
 %s*synth2n
-Z|171   |  \bpromgen.brom                   |ahbrom                               |   191|
+Z|171   |  \ua1.dsutx_pad                   |outpad__parameterized0_5             |     1|
 2default:default
 }
 %s*synth2n
-Z|172   |  \ua1.dsutx_pad                   |outpad__parameterized0_5             |     1|
+Z|172   |    \xcv.x0                        |unisim_outpad__parameterized0_30     |     1|
 2default:default
 }
 %s*synth2n
-Z|173   |    \xcv.x0                        |unisim_outpad__parameterized0_30     |     1|
+Z|173   |  \mgpads.wri_pad                  |outpad__parameterized0_6             |     1|
 2default:default
 }
 %s*synth2n
-Z|174   |  \mgpads.wri_pad                  |outpad__parameterized0_6             |     1|
+Z|174   |    \xcv.x0                        |unisim_outpad__parameterized0_29     |     1|
 2default:default
 }
 %s*synth2n
-Z|175   |    \xcv.x0                        |unisim_outpad__parameterized0_29     |     1|
+Z|175   |  adderahb_if                      |adderahb__parameterized0             |   358|
 2default:default
 }
 %s*synth2n
-Z|176   |  adderahb_if                      |adderahb__parameterized0             |   309|
+Z|176   |  \ethpads.etxd_pad                |outpadv__parameterized2              |     2|
 2default:default
 }
 %s*synth2n
-Z|177   |  \ethpads.etxd_pad                |outpadv__parameterized2              |     2|
+Z|177   |    \v[1].x0                       |outpad__parameterized0_25            |     1|
 2default:default
 }
 %s*synth2n
-Z|178   |    \v[1].x0                       |outpad__parameterized0_25            |     1|
+Z|178   |      \xcv.x0                      |unisim_outpad__parameterized0_28     |     1|
 2default:default
 }
 %s*synth2n
-Z|179   |      \xcv.x0                      |unisim_outpad__parameterized0_28     |     1|
+Z|179   |    \v[0].x0                       |outpad__parameterized0_26            |     1|
 2default:default
 }
 %s*synth2n
-Z|180   |    \v[0].x0                       |outpad__parameterized0_26            |     1|
+Z|180   |      \xcv.x0                      |unisim_outpad__parameterized0_27     |     1|
 2default:default
 }
 %s*synth2n
-Z|181   |      \xcv.x0                      |unisim_outpad__parameterized0_27     |     1|
+Z|181   |  \ua1.uart1                       |apbuart__parameterized0              |   231|
 2default:default
 }
 %s*synth2n
-Z|182   |  \ua1.uart1                       |apbuart__parameterized0              |   230|
+Z|182   |  bdr2                             |iopadv__parameterized0_7             |     8|
 2default:default
 }
 %s*synth2n
-Z|183   |  bdr2                             |iopadv__parameterized0_7             |     8|
+Z|183   |    \v[1].x0                       |iopad__parameterized0_10             |     1|
 2default:default
 }
 %s*synth2n
-Z|184   |    \v[1].x0                       |iopad__parameterized0_10             |     1|
+Z|184   |      \xcv.x0                      |unisim_iopad__parameterized0_24      |     1|
 2default:default
 }
 %s*synth2n
-Z|185   |      \xcv.x0                      |unisim_iopad__parameterized0_24      |     1|
+Z|185   |    \v[5].x0                       |iopad__parameterized0_11             |     1|
 2default:default
 }
 %s*synth2n
-Z|186   |    \v[5].x0                       |iopad__parameterized0_11             |     1|
+Z|186   |      \xcv.x0                      |unisim_iopad__parameterized0_23      |     1|
 2default:default
 }
 %s*synth2n
-Z|187   |      \xcv.x0                      |unisim_iopad__parameterized0_23      |     1|
+Z|187   |    \v[3].x0                       |iopad__parameterized0_12             |     1|
 2default:default
 }
 %s*synth2n
-Z|188   |    \v[3].x0                       |iopad__parameterized0_12             |     1|
+Z|188   |      \xcv.x0                      |unisim_iopad__parameterized0_22      |     1|
 2default:default
 }
 %s*synth2n
-Z|189   |      \xcv.x0                      |unisim_iopad__parameterized0_22      |     1|
+Z|189   |    \v[7].x0                       |iopad__parameterized0_13             |     1|
 2default:default
 }
 %s*synth2n
-Z|190   |    \v[7].x0                       |iopad__parameterized0_13             |     1|
+Z|190   |      \xcv.x0                      |unisim_iopad__parameterized0_21      |     1|
 2default:default
 }
 %s*synth2n
-Z|191   |      \xcv.x0                      |unisim_iopad__parameterized0_21      |     1|
+Z|191   |    \v[2].x0                       |iopad__parameterized0_14             |     1|
 2default:default
 }
 %s*synth2n
-Z|192   |    \v[2].x0                       |iopad__parameterized0_14             |     1|
+Z|192   |      \xcv.x0                      |unisim_iopad__parameterized0_20      |     1|
 2default:default
 }
 %s*synth2n
-Z|193   |      \xcv.x0                      |unisim_iopad__parameterized0_20      |     1|
+Z|193   |    \v[0].x0                       |iopad__parameterized0_15             |     1|
 2default:default
 }
 %s*synth2n
-Z|194   |    \v[0].x0                       |iopad__parameterized0_15             |     1|
+Z|194   |      \xcv.x0                      |unisim_iopad__parameterized0_19      |     1|
 2default:default
 }
 %s*synth2n
-Z|195   |      \xcv.x0                      |unisim_iopad__parameterized0_19      |     1|
+Z|195   |    \v[6].x0                       |iopad__parameterized0_16             |     1|
 2default:default
 }
 %s*synth2n
-Z|196   |    \v[6].x0                       |iopad__parameterized0_16             |     1|
+Z|196   |      \xcv.x0                      |unisim_iopad__parameterized0_18      |     1|
 2default:default
 }
 %s*synth2n
-Z|197   |      \xcv.x0                      |unisim_iopad__parameterized0_18      |     1|
+Z|197   |    \v[4].x0                       |iopad__parameterized0_17             |     1|
 2default:default
 }
 %s*synth2n
-Z|198   |    \v[4].x0                       |iopad__parameterized0_17             |     1|
+Z|198   |      \xcv.x0                      |unisim_iopad__parameterized0         |     1|
 2default:default
 }
 %s*synth2n
-Z|199   |      \xcv.x0                      |unisim_iopad__parameterized0         |     1|
+Z|199   |  \mgpads.lb_pad                   |outpad__parameterized0_8             |     1|
 2default:default
 }
 %s*synth2n
-Z|200   |  \mgpads.lb_pad                   |outpad__parameterized0_8             |     1|
+Z|200   |    \xcv.x0                        |unisim_outpad__parameterized0        |     1|
 2default:default
 }
 %s*synth2n
-Z|201   |    \xcv.x0                        |unisim_outpad__parameterized0        |     1|
+Z|201   |  \ua1.dsurx_pad                   |inpad__parameterized0_9              |     2|
 2default:default
 }
 %s*synth2n
-Z|202   |  \ua1.dsurx_pad                   |inpad__parameterized0_9              |     2|
+Z|202   |    \xcv.x0                        |unisim_inpad__parameterized0         |     2|
 2default:default
 }
 %s*synth2n
-Z|203   |    \xcv.x0                        |unisim_inpad__parameterized0         |     2|
-2default:default
-}
-%s*synth2n
-Z|204   |  \irqctrl.irqctrl0                |irqmp__parameterized0                |   140|
+Z|203   |  \irqctrl.irqctrl0                |irqmp__parameterized0                |   130|
 2default:default
 }
 %s*synth2n
@@ -19393,15 +19400,15 @@ Z+------+-----------------------------------+-----------------------------------
 2default:default
 ¶
 %s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:07:39 ; elapsed = 00:07:53 . Memory (MB): peak = 920.527 ; gain = 662.438
+ÅFinished Writing Synthesis Report : Time (s): cpu = 00:08:34 ; elapsed = 00:08:56 . Memory (MB): peak = 963.922 ; gain = 705.883
 2default:default
-l
-%s*synth2]
-ISynthesis finished with 0 errors, 0 critical warnings and 2621 warnings.
+k
+%s*synth2\
+HSynthesis finished with 0 errors, 0 critical warnings and 559 warnings.
 2default:default
 £
 %s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:07:39 ; elapsed = 00:07:53 . Memory (MB): peak = 920.527 ; gain = 662.438
+Synthesis Optimization Complete : Time (s): cpu = 00:08:34 ; elapsed = 00:08:56 . Memory (MB): peak = 963.922 ; gain = 705.883
 2default:default
 ^
 -Analyzing %s Unisim elements for replacement
@@ -19444,7 +19451,7 @@ L
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
 3832default:default2
-4682default:default2
+4692default:default2
 02default:default2
 02default:defaultZ4-41
 U
@@ -19455,18 +19462,26 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:08:062default:default2
-00:08:202default:default2
-940.6252default:default2
-639.6172default:defaultZ17-268
+00:09:032default:default2
+00:09:292default:default2
+983.2932default:default2
+682.1802default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
+˛
+I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
+268*common2&
+write_checkpoint: 2default:default2
+00:00:042default:default2
+00:00:052default:default2
+987.7582default:default2
+4.4652default:defaultZ17-268
 
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.376 . Memory (MB): peak = 940.625 ; gain = 0.000
+sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.488 . Memory (MB): peak = 987.758 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Sat Apr 05 20:35:48 20142default:defaultZ17-206
+Sun Apr 06 13:15:08 20142default:defaultZ17-206

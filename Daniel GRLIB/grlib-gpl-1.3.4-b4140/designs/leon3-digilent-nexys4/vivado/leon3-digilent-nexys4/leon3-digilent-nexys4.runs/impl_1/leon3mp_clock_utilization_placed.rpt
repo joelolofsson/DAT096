@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Sat Apr 05 20:40:08 2014
+| Date         : Sun Apr 06 13:19:34 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_clock_utilization -file leon3mp_clock_utilization_placed.rpt
 | Design       : leon3mp
@@ -25,6 +25,7 @@ Table of Contents
 11. Net wise resources used in clock region X1Y1
 12. Net wise resources used in clock region X0Y2
 13. Net wise resources used in clock region X1Y2
+14. Net wise resources used in clock region X0Y3
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -50,10 +51,10 @@ Table of Contents
 | Index | BUFG Cell               | Net Name          | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
 +-------+-------------------------+-------------------+------+-------+--------+---------------+-----------+
 |     1 | bufgclk0                | O                 |    1 |     1 |     no |         2.859 |     0.143 |
-|     2 | n_0_14833_BUFG_inst     | n_0_14833_BUFG    |   32 |    19 |     no |         1.791 |     0.157 |
-|     3 | bufgclk45               | n_2_bufgclk45     |  343 |   130 |     no |         1.881 |     0.238 |
-|     4 | clk_IBUF_BUFG_inst      | clk_IBUF_BUFG     | 2093 |   911 |     no |         1.967 |     0.331 |
-|     5 | clkgen0/xc7l.v/bufgclk0 | clkgen0/xc7l.v/O1 | 8711 |  3343 |     no |         2.056 |     0.530 |
+|     2 | n_0_11429_BUFG_inst     | n_0_11429_BUFG    |   32 |    14 |     no |         1.776 |     0.149 |
+|     3 | bufgclk45               | n_2_bufgclk45     |  343 |   123 |     no |         2.055 |     0.415 |
+|     4 | clk_IBUF_BUFG_inst      | clk_IBUF_BUFG     | 2093 |  1036 |     no |         1.976 |     0.345 |
+|     5 | clkgen0/xc7l.v/bufgclk0 | clkgen0/xc7l.v/O1 | 6290 |  2682 |     no |         2.049 |     0.523 |
 +-------+-------------------------+-------------------+------+-------+--------+---------------+-----------+
 
 
@@ -74,8 +75,8 @@ Table of Contents
 +-------+--------------------------------------------+----------------------------------+------+-------+--------+---------------+-----------+
 | Index | Local Clk Src                              | Net Name                         | BELs | Sites | Locked | MaxDelay (ns) | Skew (ns) |
 +-------+--------------------------------------------+----------------------------------+------+-------+--------+---------------+-----------+
-|     1 | io0/inst_top/inst_clk_divider/clk25MHz_reg | io0/inst_top/inst_clk_divider/O1 |    9 |     4 |     no |         3.535 |     2.839 |
-|     2 | apb0/sLED_reg[15]_i_1                      | apb0/O121[0]                     |   16 |    12 |     no |         1.457 |     0.408 |
+|     1 | io0/inst_top/inst_clk_divider/clk25MHz_reg | io0/inst_top/inst_clk_divider/O1 |    9 |     5 |     no |         2.589 |     1.155 |
+|     2 | apb0/sLED_reg[15]_i_1                      | apb0/O104[0]                     |   16 |     5 |     no |         1.267 |     0.354 |
 +-------+--------------------------------------------+----------------------------------+------+-------+--------+---------------+-----------+
 
 
@@ -87,13 +88,13 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 5054 | 20800 |   49 |  2400 |    0 |    40 |    0 |    10 |    1 |    20 |
-| X1Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 | 1394 | 12000 |    0 |  2200 |    2 |    80 |    0 |    20 |    0 |    40 |
-| X0Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2930 | 16000 |   88 |  2400 |    0 |    40 |    3 |    10 |    2 |    20 |
-| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1590 | 15200 |   11 |  2600 |   10 |   120 |   10 |    30 |    4 |    40 |
-| X0Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   54 | 16000 |    0 |  2400 |    0 |    40 |    0 |    10 |    0 |    20 |
-| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 15200 |    0 |  2600 |    0 |   120 |    0 |    30 |    0 |    40 |
-| X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    40 |    0 |    10 |    0 |    20 |
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1206 | 20800 |    0 |  2400 |    0 |    40 |    0 |    10 |    0 |    20 |
+| X1Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |  533 | 12000 |    0 |  2200 |    0 |    80 |    0 |    20 |    0 |    40 |
+| X0Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3542 | 16000 |   48 |  2400 |    0 |    40 |    3 |    10 |    0 |    20 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2352 | 15200 |   11 |  2600 |   12 |   120 |   10 |    30 |    4 |    40 |
+| X0Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  346 | 16000 |    0 |  2400 |    0 |    40 |    0 |    10 |    0 |    20 |
+| X1Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  711 | 15200 |    0 |  2600 |    0 |   120 |    0 |    30 |    0 |    40 |
+| X0Y3              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    3 | 20800 |    0 |  2400 |    0 |    40 |    0 |    10 |    0 |    20 |
 | X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 | 10800 |    0 |  2000 |    0 |    60 |    0 |    15 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites
@@ -102,12 +103,12 @@ Table of Contents
 8. Net wise resources used in clock region X0Y0
 -----------------------------------------------
 
-+-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
-| Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s | PLLs |    Clock Net Name |
-+-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
-| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 | 1522 |     0 |        0 |    1 | clk_IBUF_BUFG     |
-| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 | 3524 |    49 |        1 |    0 | clkgen0/xc7l.v/O1 |
-+-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
++-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+----------------+
+| Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s | PLLs | Clock Net Name |
++-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+----------------+
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |   84 |     0 |        0 |    0 | n_2_bufgclk45  |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 | 1114 |     0 |        0 |    1 | clk_IBUF_BUFG  |
++-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+----------------+
 
 
 9. Net wise resources used in clock region X1Y0
@@ -116,8 +117,8 @@ Table of Contents
 +-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
 | Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs |    Clock Net Name |
 +-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
-| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 | 553 |     0 |        0 |    0 | clk_IBUF_BUFG     |
-| BUFG        |   no   |         0 |       0 |         2 |       0 |       0 | 841 |     0 |        0 |    0 | clkgen0/xc7l.v/O1 |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 | 160 |     0 |        0 |    0 | clkgen0/xc7l.v/O1 |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 | 373 |     0 |        0 |    0 | clk_IBUF_BUFG     |
 +-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
 
 
@@ -127,9 +128,9 @@ Table of Contents
 +-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
 | Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s | PLLs |    Clock Net Name |
 +-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
-| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 |    1 | clk_IBUF_BUFG     |
-| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |  340 |     0 |        0 |    0 | n_2_bufgclk45     |
-| BUFG        |   no   |         0 |       0 |         6 |       0 |       0 | 2543 |    88 |        2 |    0 | clkgen0/xc7l.v/O1 |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |  256 |     0 |        0 |    0 | n_2_bufgclk45     |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |  468 |     0 |        0 |    1 | clk_IBUF_BUFG     |
+| BUFG        |   no   |         0 |       0 |         6 |       0 |       0 | 2770 |    48 |        0 |    0 | clkgen0/xc7l.v/O1 |
 +-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
 
 
@@ -139,7 +140,8 @@ Table of Contents
 +-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
 | Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s | PLLs |    Clock Net Name |
 +-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
-| BUFG        |   no   |         0 |       0 |        28 |       0 |       0 | 1589 |    11 |        2 |    0 | clkgen0/xc7l.v/O1 |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |  134 |     0 |        0 |    0 | clk_IBUF_BUFG     |
+| BUFG        |   no   |         0 |       0 |        30 |       0 |       0 | 2218 |    11 |        2 |    0 | clkgen0/xc7l.v/O1 |
 +-------------+--------+-----------+---------+-----------+---------+---------+------+-------+----------+------+-------------------+
 
 
@@ -149,24 +151,37 @@ Table of Contents
 +-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
 | Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs |    Clock Net Name |
 +-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
-| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |   3 |     0 |        0 |    0 | n_2_bufgclk45     |
-| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |  16 |     0 |        0 |    0 | clk_IBUF_BUFG     |
-| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |  35 |     0 |        0 |    0 | clkgen0/xc7l.v/O1 |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 |    0 | n_2_bufgclk45     |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |   2 |     0 |        0 |    0 | clk_IBUF_BUFG     |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 | 343 |     0 |        0 |    0 | clkgen0/xc7l.v/O1 |
 +-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
 
 
 13. Net wise resources used in clock region X1Y2
 ------------------------------------------------
 
-+-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+----------------+
-| Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs | Clock Net Name |
-+-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+----------------+
++-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
+| Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs |    Clock Net Name |
++-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 | 711 |     0 |        0 |    0 | clkgen0/xc7l.v/O1 |
++-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
+
+
+14. Net wise resources used in clock region X0Y3
+------------------------------------------------
+
++-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
+| Source Type | Locked | MMCM Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | PLLs |    Clock Net Name |
++-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 |    0 | clkgen0/xc7l.v/O1 |
+| BUFG        |   no   |         0 |       0 |         0 |       0 |       0 |   2 |     0 |        0 |    0 | n_2_bufgclk45     |
++-------------+--------+-----------+---------+-----------+---------+---------+-----+-------+----------+------+-------------------+
 
 
 
 # Location of BUFG Primitives 
 set_property LOC BUFGCTRL_X0Y1 [get_cells bufgclk0]
-set_property LOC BUFGCTRL_X0Y3 [get_cells n_0_14833_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y3 [get_cells n_0_11429_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y2 [get_cells bufgclk45]
 set_property LOC BUFGCTRL_X0Y16 [get_cells clk_IBUF_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y0 [get_cells clkgen0/xc7l.v/bufgclk0]
@@ -213,11 +228,11 @@ add_cells_to_pblock [get_pblocks  CLKAG_clkgen0/xc7l.v/O1] [get_cells  -filter {
 resize_pblock [get_pblocks CLKAG_clkgen0/xc7l.v/O1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
-# Clock net "n_0_14833_BUFG" driven by instance "n_0_14833_BUFG_inst" located at site "BUFGCTRL_X0Y3"
+# Clock net "n_0_11429_BUFG" driven by instance "n_0_11429_BUFG_inst" located at site "BUFGCTRL_X0Y3"
 #startgroup
-create_pblock CLKAG_n_0_14833_BUFG
-add_cells_to_pblock [get_pblocks  CLKAG_n_0_14833_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="n_0_14833_BUFG"}]]]
-resize_pblock [get_pblocks CLKAG_n_0_14833_BUFG] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+create_pblock CLKAG_n_0_11429_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_n_0_11429_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="n_0_11429_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_n_0_11429_BUFG] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
 # Clock net "CLKFBOUT" driven by instance "PLLE2_ADV_inst" located at site "PLLE2_ADV_X0Y1"
@@ -241,16 +256,16 @@ add_cells_to_pblock [get_pblocks  CLKAG_clkgen0/xc7l.v/cgo[clklock]] [get_cells 
 resize_pblock [get_pblocks CLKAG_clkgen0/xc7l.v/cgo[clklock]] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
-# Clock net "io0/inst_top/inst_clk_divider/O1" driven by instance "io0/inst_top/inst_clk_divider/clk25MHz_reg" located at site "SLICE_X11Y22"
+# Clock net "apb0/O104[0]" driven by instance "apb0/sLED_reg[15]_i_1" located at site "SLICE_X42Y62"
+#startgroup
+create_pblock CLKAG_apb0/O104[0]
+add_cells_to_pblock [get_pblocks  CLKAG_apb0/O104[0]] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="apb0/O104[0]"}]]]
+resize_pblock [get_pblocks CLKAG_apb0/O104[0]] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+#endgroup
+
+# Clock net "io0/inst_top/inst_clk_divider/O1" driven by instance "io0/inst_top/inst_clk_divider/clk25MHz_reg" located at site "SLICE_X12Y57"
 #startgroup
 create_pblock CLKAG_io0/inst_top/inst_clk_divider/O1
 add_cells_to_pblock [get_pblocks  CLKAG_io0/inst_top/inst_clk_divider/O1] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=jb_OBUF[1]_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="io0/inst_top/inst_clk_divider/O1"}]]]
 resize_pblock [get_pblocks CLKAG_io0/inst_top/inst_clk_divider/O1] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
-#endgroup
-
-# Clock net "apb0/O121[0]" driven by instance "apb0/sLED_reg[15]_i_1" located at site "SLICE_X41Y82"
-#startgroup
-create_pblock CLKAG_apb0/O121[0]
-add_cells_to_pblock [get_pblocks  CLKAG_apb0/O121[0]] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="apb0/O121[0]"}]]]
-resize_pblock [get_pblocks CLKAG_apb0/O121[0]] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
