@@ -31,33 +31,37 @@ biquad highs;
 
 void adcHandler(){
 
-	printf("IRQ OK");
+	//making sure that
+	disable_irq(10);
 
-	int i;
-	i = 0;
-	while(i <  buffSize){
-		input = *(volatile int*)(ADC_adr+(i*4))>>20;
+	//printf("IRQ OK");
+
+	//input loop
+	int i = 0;
+	while(i < buffSize){
+		input = *(volatile int*)((ADC_adr+(i*4)));
 		audioBuffer[i] = input;
 		i++;
 	}
 
+	//delay processing
+	delay(&audioBuffer, (int32_t) buffSize, (uint8_t) 50, (uint8_t) 127, (uint8_t) 50);
 
-	/*delay processing
-	//delay(samples, buffSize, 127, 127, 127);
-	*/
 
-	/*EQ processing
-	filter(&lows, samples,buffSize);
-	filter(&mids, samples,buffSize);
-	filter(&highs,samples,buffSize);
-	*/
+	//EQ processing
+	//filter(&lows, samples,buffSize);
+	//filter(&mids, samples,buffSize);
+	//filter(&highs,samples,buffSize);
 
-	//output loop, how many shift?
+
+	//output loop
 	i = 0;
 	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4))<<20;
+		*(volatile int*)(DAC_adr+(i*4)) = (audioBuffer[i]);
 		i++;
 	}
+
+	enable_irq(10);
 }
 
 
@@ -65,18 +69,15 @@ int main(void){
 
 printf("Initializing \n");
 
-//installing the audio effects
-samples = audioBuffer;
-
 //delay
 delayArrayPtr = delayArray;
-delayInitialize(40000, delayArrayPtr);
+delayInitialize(40001, delayArrayPtr);
 
-/*EQ
-filterCoefficients(&lows, -3.00f, 44100, 300, 0.7f, BASS);
-filterCoefficients(&mids, 3.00f, 44100, 8000, 0.7f, TREBLE);
-filterCoefficients(&highs, 5.00f, 44100, 1000, 4.00f , PEAK);
-*/
+//EQ
+//filterCoefficients(&lows, -1.0f, 44100, 300, 0.7f, BASS);
+//filterCoefficients(&mids, 1.00f, 44100, 8000, 0.7f, TREBLE);
+//filterCoefficients(&highs, 1.00f, 44100, 1000, 0.7f , PEAK);
+
 
 
 //Installing interrupt
