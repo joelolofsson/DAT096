@@ -60,13 +60,13 @@ COMPONENT fir_compiler_0
     s_axis_data_tready : OUT STD_LOGIC;
     s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     m_axis_data_tvalid : OUT STD_LOGIC;
-    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END COMPONENT;
 ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
 ATTRIBUTE SYN_BLACK_BOX OF fir_compiler_0 : COMPONENT IS TRUE;
 ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF fir_compiler_0 : COMPONENT IS "aresetn,aclk,s_axis_data_tvalid,s_axis_data_tready,s_axis_data_tdata[15:0],m_axis_data_tvalid,m_axis_data_tdata[31:0]";
+ATTRIBUTE BLACK_BOX_PAD_PIN OF fir_compiler_0 : COMPONENT IS "aresetn,aclk,s_axis_data_tvalid,s_axis_data_tready,s_axis_data_tdata[15:0],m_axis_data_tvalid,m_axis_data_tdata[15:0]";
 
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
 

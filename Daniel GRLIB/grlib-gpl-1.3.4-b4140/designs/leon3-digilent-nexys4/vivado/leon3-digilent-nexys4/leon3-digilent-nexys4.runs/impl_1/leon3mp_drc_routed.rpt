@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Sun Apr 06 13:22:17 2014
+| Date         : Sun Apr 06 20:02:20 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ REPORT SUMMARY
                      Hold option missing in multicycle path constraint
                      Delay constraint missing on IO port
            Max violations: <unlimited>
-         Violations found: 74
+         Violations found: 76
 
 2. REPORT DETAILS
 -----------------
@@ -506,6 +506,16 @@ Related violations: <none>
 AVAL-4#4 Advisory
 enum_USE_DPORT_FALSE_enum_DREG_1_enum_ADREG_1  
 p_1_out__0: If the DSP48E1 USE_DPORT attribute is set to FALSE, then Please set DREG and ADREG to 0 to save power.
+Related violations: <none>
+
+AVAL-6#1 Advisory
+enum_USE_MULT_NONE_enum_MREG_1  
+io0/inst_ADC_TOP/inst_fir/U0/i_synth/g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: If the DSP48E1 USE_MULT attribute is set to NONE, then Please set MREG to 0 to save power.
+Related violations: <none>
+
+REQP-28#1 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+io0/inst_ADC_TOP/inst_fir/U0/i_synth/g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied GND to save power.
 Related violations: <none>
 
 RTSTAT-10#1 Advisory

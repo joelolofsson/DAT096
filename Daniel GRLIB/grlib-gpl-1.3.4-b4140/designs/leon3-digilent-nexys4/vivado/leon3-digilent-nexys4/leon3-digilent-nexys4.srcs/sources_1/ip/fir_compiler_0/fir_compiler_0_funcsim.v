@@ -1,7 +1,7 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-// Date        : Sat Apr 05 22:10:45 2014
+// Date        : Sun Apr 06 19:38:02 2014
 // Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim {C:/CHALMERS/DAT096/softcore/Daniel
 //               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_funcsim.v}
@@ -13,7 +13,7 @@
 `timescale 1 ps / 1 ps
 
 (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "fir_compiler_v7_1,Vivado 2013.4" *) (* CHECK_LICENSE_TYPE = "fir_compiler_0,fir_compiler_v7_1,{}" *) 
-(* core_generation_info = "fir_compiler_0,fir_compiler_v7_1,{x_ipProduct=Vivado 2013.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=fir_compiler,x_ipVersion=7.1,x_ipCoreRevision=2,x_ipLanguage=VHDL,C_XDEVICEFAMILY=artix7,C_ELABORATION_DIR=./,C_COMPONENT_NAME=fir_compiler_0,C_COEF_FILE=fir_compiler_0.mif,C_COEF_FILE_LINES=70,C_FILTER_TYPE=0,C_INTERP_RATE=1,C_DECIM_RATE=1,C_ZERO_PACKING_FACTOR=1,C_SYMMETRY=1,C_NUM_FILTS=1,C_NUM_TAPS=69,C_NUM_CHANNELS=1,C_CHANNEL_PATTERN=fixed,C_ROUND_MODE=1,C_COEF_RELOAD=0,C_NUM_RELOAD_SLOTS=1,C_COL_MODE=1,C_COL_PIPE_LEN=4,C_COL_CONFIG=1,C_OPTIMIZATION=0,C_DATA_PATH_WIDTHS=16_16,C_DATA_IP_PATH_WIDTHS=16,C_DATA_PX_PATH_WIDTHS=16,C_DATA_WIDTH=16,C_COEF_PATH_WIDTHS=15_17,C_COEF_WIDTH=32,C_DATA_PATH_SRC=0_0,C_COEF_PATH_SRC=0_1,C_DATA_PATH_SIGN=0_0,C_COEF_PATH_SIGN=1_0,C_ACCUM_PATH_WIDTHS=37_36,C_OUTPUT_WIDTH=32,C_OUTPUT_PATH_WIDTHS=32,C_ACCUM_OP_PATH_WIDTHS=51,C_EXT_MULT_CNFG=0_1_0_15,C_DATA_PATH_PSAMP_SRC=0,C_OP_PATH_PSAMP_SRC=0,C_NUM_MADDS=1,C_OPT_MADDS=none;none,C_OVERSAMPLING_RATE=35,C_INPUT_RATE=70,C_OUTPUT_RATE=70,C_DATA_MEMTYPE=0,C_COEF_MEMTYPE=2,C_IPBUFF_MEMTYPE=0,C_OPBUFF_MEMTYPE=0,C_DATAPATH_MEMTYPE=0,C_MEM_ARRANGEMENT=1,C_DATA_MEM_PACKING=0,C_COEF_MEM_PACKING=0,C_FILTS_PACKED=0,C_LATENCY=45,C_HAS_ARESETn=1,C_HAS_ACLKEN=0,C_DATA_HAS_TLAST=0,C_S_DATA_HAS_FIFO=1,C_S_DATA_HAS_TUSER=0,C_S_DATA_TDATA_WIDTH=16,C_S_DATA_TUSER_WIDTH=1,C_M_DATA_HAS_TREADY=0,C_M_DATA_HAS_TUSER=0,C_M_DATA_TDATA_WIDTH=32,C_M_DATA_TUSER_WIDTH=1,C_HAS_CONFIG_CHANNEL=0,C_CONFIG_SYNC_MODE=0,C_CONFIG_PACKET_SIZE=0,C_CONFIG_TDATA_WIDTH=1,C_RELOAD_TDATA_WIDTH=1}" *) 
+(* core_generation_info = "fir_compiler_0,fir_compiler_v7_1,{x_ipProduct=Vivado 2013.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=fir_compiler,x_ipVersion=7.1,x_ipCoreRevision=2,x_ipLanguage=VHDL,C_XDEVICEFAMILY=artix7,C_ELABORATION_DIR=./,C_COMPONENT_NAME=fir_compiler_0,C_COEF_FILE=fir_compiler_0.mif,C_COEF_FILE_LINES=70,C_FILTER_TYPE=0,C_INTERP_RATE=1,C_DECIM_RATE=1,C_ZERO_PACKING_FACTOR=1,C_SYMMETRY=1,C_NUM_FILTS=1,C_NUM_TAPS=69,C_NUM_CHANNELS=1,C_CHANNEL_PATTERN=fixed,C_ROUND_MODE=1,C_COEF_RELOAD=0,C_NUM_RELOAD_SLOTS=1,C_COL_MODE=1,C_COL_PIPE_LEN=4,C_COL_CONFIG=1,C_OPTIMIZATION=0,C_DATA_PATH_WIDTHS=16_16,C_DATA_IP_PATH_WIDTHS=16,C_DATA_PX_PATH_WIDTHS=16,C_DATA_WIDTH=16,C_COEF_PATH_WIDTHS=15_17,C_COEF_WIDTH=32,C_DATA_PATH_SRC=0_0,C_COEF_PATH_SRC=0_1,C_DATA_PATH_SIGN=0_0,C_COEF_PATH_SIGN=1_0,C_ACCUM_PATH_WIDTHS=37_36,C_OUTPUT_WIDTH=16,C_OUTPUT_PATH_WIDTHS=16,C_ACCUM_OP_PATH_WIDTHS=51,C_EXT_MULT_CNFG=0_1_0_15,C_DATA_PATH_PSAMP_SRC=0,C_OP_PATH_PSAMP_SRC=0,C_NUM_MADDS=1,C_OPT_MADDS=none;none,C_OVERSAMPLING_RATE=35,C_INPUT_RATE=70,C_OUTPUT_RATE=70,C_DATA_MEMTYPE=0,C_COEF_MEMTYPE=2,C_IPBUFF_MEMTYPE=0,C_OPBUFF_MEMTYPE=0,C_DATAPATH_MEMTYPE=0,C_MEM_ARRANGEMENT=1,C_DATA_MEM_PACKING=0,C_COEF_MEM_PACKING=0,C_FILTS_PACKED=0,C_LATENCY=45,C_HAS_ARESETn=1,C_HAS_ACLKEN=0,C_DATA_HAS_TLAST=0,C_S_DATA_HAS_FIFO=1,C_S_DATA_HAS_TUSER=0,C_S_DATA_TDATA_WIDTH=16,C_S_DATA_TUSER_WIDTH=1,C_M_DATA_HAS_TREADY=0,C_M_DATA_HAS_TUSER=0,C_M_DATA_TDATA_WIDTH=16,C_M_DATA_TUSER_WIDTH=1,C_HAS_CONFIG_CHANNEL=0,C_CONFIG_SYNC_MODE=0,C_CONFIG_PACKET_SIZE=0,C_CONFIG_TDATA_WIDTH=1,C_RELOAD_TDATA_WIDTH=1}" *) 
 (* NotValidForBitStream *)
 module fir_compiler_0
    (aresetn,
@@ -29,13 +29,13 @@ module fir_compiler_0
   output s_axis_data_tready;
   input [15:0]s_axis_data_tdata;
   output m_axis_data_tvalid;
-  output [31:0]m_axis_data_tdata;
+  output [15:0]m_axis_data_tdata;
 
   wire \<const0> ;
   wire \<const1> ;
   wire aclk;
   wire aresetn;
-  wire [31:0]m_axis_data_tdata;
+  wire [15:0]m_axis_data_tdata;
   wire m_axis_data_tvalid;
   wire [15:0]s_axis_data_tdata;
   wire s_axis_data_tready;
@@ -99,7 +99,7 @@ GND GND
    (* C_MEM_ARRANGEMENT = "1" *) 
    (* C_M_DATA_HAS_TREADY = "0" *) 
    (* C_M_DATA_HAS_TUSER = "0" *) 
-   (* C_M_DATA_TDATA_WIDTH = "32" *) 
+   (* C_M_DATA_TDATA_WIDTH = "16" *) 
    (* C_M_DATA_TUSER_WIDTH = "1" *) 
    (* C_NUM_CHANNELS = "1" *) 
    (* C_NUM_FILTS = "1" *) 
@@ -110,9 +110,9 @@ GND GND
    (* C_OPTIMIZATION = "0" *) 
    (* C_OPT_MADDS = "none;none" *) 
    (* C_OP_PATH_PSAMP_SRC = "0" *) 
-   (* C_OUTPUT_PATH_WIDTHS = "32" *) 
+   (* C_OUTPUT_PATH_WIDTHS = "16" *) 
    (* C_OUTPUT_RATE = "70" *) 
-   (* C_OUTPUT_WIDTH = "32" *) 
+   (* C_OUTPUT_WIDTH = "16" *) 
    (* C_OVERSAMPLING_RATE = "35" *) 
    (* C_RELOAD_TDATA_WIDTH = "1" *) 
    (* C_ROUND_MODE = "1" *) 
@@ -211,7 +211,7 @@ endmodule
 (* C_DATA_PX_PATH_WIDTHS = "16" *) (* C_DATA_WIDTH = "16" *) (* C_COEF_PATH_WIDTHS = "15,17" *) 
 (* C_COEF_WIDTH = "32" *) (* C_DATA_PATH_SRC = "0,0" *) (* C_COEF_PATH_SRC = "0,1" *) 
 (* C_DATA_PATH_SIGN = "0,0" *) (* C_COEF_PATH_SIGN = "1,0" *) (* C_ACCUM_PATH_WIDTHS = "37,36" *) 
-(* C_OUTPUT_WIDTH = "32" *) (* C_OUTPUT_PATH_WIDTHS = "32" *) (* C_ACCUM_OP_PATH_WIDTHS = "51" *) 
+(* C_OUTPUT_WIDTH = "16" *) (* C_OUTPUT_PATH_WIDTHS = "16" *) (* C_ACCUM_OP_PATH_WIDTHS = "51" *) 
 (* C_EXT_MULT_CNFG = "0,1,0,15" *) (* C_DATA_PATH_PSAMP_SRC = "0" *) (* C_OP_PATH_PSAMP_SRC = "0" *) 
 (* C_NUM_MADDS = "1" *) (* C_OPT_MADDS = "none;none" *) (* C_OVERSAMPLING_RATE = "35" *) 
 (* C_INPUT_RATE = "70" *) (* C_OUTPUT_RATE = "70" *) (* C_DATA_MEMTYPE = "0" *) 
@@ -221,7 +221,7 @@ endmodule
 (* C_HAS_ARESETn = "1" *) (* C_HAS_ACLKEN = "0" *) (* C_DATA_HAS_TLAST = "0" *) 
 (* C_S_DATA_HAS_FIFO = "1" *) (* C_S_DATA_HAS_TUSER = "0" *) (* C_S_DATA_TDATA_WIDTH = "16" *) 
 (* C_S_DATA_TUSER_WIDTH = "1" *) (* C_M_DATA_HAS_TREADY = "0" *) (* C_M_DATA_HAS_TUSER = "0" *) 
-(* C_M_DATA_TDATA_WIDTH = "32" *) (* C_M_DATA_TUSER_WIDTH = "1" *) (* C_HAS_CONFIG_CHANNEL = "0" *) 
+(* C_M_DATA_TDATA_WIDTH = "16" *) (* C_M_DATA_TUSER_WIDTH = "1" *) (* C_HAS_CONFIG_CHANNEL = "0" *) 
 (* C_CONFIG_SYNC_MODE = "0" *) (* C_CONFIG_PACKET_SIZE = "0" *) (* C_CONFIG_TDATA_WIDTH = "1" *) 
 (* C_RELOAD_TDATA_WIDTH = "1" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module fir_compiler_0fir_compiler_v7_1__parameterized0
@@ -273,7 +273,7 @@ module fir_compiler_0fir_compiler_v7_1__parameterized0
   input m_axis_data_tready;
   output m_axis_data_tlast;
   output [0:0]m_axis_data_tuser;
-  output [31:0]m_axis_data_tdata;
+  output [15:0]m_axis_data_tdata;
   output event_s_data_tlast_missing;
   output event_s_data_tlast_unexpected;
   output event_s_data_chanid_incorrect;
@@ -292,7 +292,7 @@ module fir_compiler_0fir_compiler_v7_1__parameterized0
   wire event_s_data_tlast_unexpected;
   wire event_s_reload_tlast_missing;
   wire event_s_reload_tlast_unexpected;
-  wire [31:0]m_axis_data_tdata;
+  wire [15:0]m_axis_data_tdata;
   wire m_axis_data_tlast;
   wire m_axis_data_tready;
   wire [0:0]m_axis_data_tuser;
@@ -356,7 +356,7 @@ module fir_compiler_0fir_compiler_v7_1__parameterized0
    (* C_MEM_ARRANGEMENT = "1" *) 
    (* C_M_DATA_HAS_TREADY = "0" *) 
    (* C_M_DATA_HAS_TUSER = "0" *) 
-   (* C_M_DATA_TDATA_WIDTH = "32" *) 
+   (* C_M_DATA_TDATA_WIDTH = "16" *) 
    (* C_M_DATA_TUSER_WIDTH = "1" *) 
    (* C_NUM_CHANNELS = "1" *) 
    (* C_NUM_FILTS = "1" *) 
@@ -367,9 +367,9 @@ module fir_compiler_0fir_compiler_v7_1__parameterized0
    (* C_OPTIMIZATION = "0" *) 
    (* C_OPT_MADDS = "none;none" *) 
    (* C_OP_PATH_PSAMP_SRC = "0" *) 
-   (* C_OUTPUT_PATH_WIDTHS = "32" *) 
+   (* C_OUTPUT_PATH_WIDTHS = "16" *) 
    (* C_OUTPUT_RATE = "70" *) 
-   (* C_OUTPUT_WIDTH = "32" *) 
+   (* C_OUTPUT_WIDTH = "16" *) 
    (* C_OVERSAMPLING_RATE = "35" *) 
    (* C_RELOAD_TDATA_WIDTH = "1" *) 
    (* C_ROUND_MODE = "1" *) 
@@ -423,7 +423,7 @@ endmodule
 (* C_DATA_PX_PATH_WIDTHS = "16" *) (* C_DATA_WIDTH = "16" *) (* C_COEF_PATH_WIDTHS = "15,17" *) 
 (* C_COEF_WIDTH = "32" *) (* C_DATA_PATH_SRC = "0,0" *) (* C_COEF_PATH_SRC = "0,1" *) 
 (* C_DATA_PATH_SIGN = "0,0" *) (* C_COEF_PATH_SIGN = "1,0" *) (* C_ACCUM_PATH_WIDTHS = "37,36" *) 
-(* C_OUTPUT_WIDTH = "32" *) (* C_OUTPUT_PATH_WIDTHS = "32" *) (* C_ACCUM_OP_PATH_WIDTHS = "51" *) 
+(* C_OUTPUT_WIDTH = "16" *) (* C_OUTPUT_PATH_WIDTHS = "16" *) (* C_ACCUM_OP_PATH_WIDTHS = "51" *) 
 (* C_EXT_MULT_CNFG = "0,1,0,15" *) (* C_DATA_PATH_PSAMP_SRC = "0" *) (* C_OP_PATH_PSAMP_SRC = "0" *) 
 (* C_NUM_MADDS = "1" *) (* C_OPT_MADDS = "none;none" *) (* C_OVERSAMPLING_RATE = "35" *) 
 (* C_INPUT_RATE = "70" *) (* C_OUTPUT_RATE = "70" *) (* C_DATA_MEMTYPE = "0" *) 
@@ -433,7 +433,7 @@ endmodule
 (* C_HAS_ARESETn = "1" *) (* C_HAS_ACLKEN = "0" *) (* C_DATA_HAS_TLAST = "0" *) 
 (* C_S_DATA_HAS_FIFO = "1" *) (* C_S_DATA_HAS_TUSER = "0" *) (* C_S_DATA_TDATA_WIDTH = "16" *) 
 (* C_S_DATA_TUSER_WIDTH = "1" *) (* C_M_DATA_HAS_TREADY = "0" *) (* C_M_DATA_HAS_TUSER = "0" *) 
-(* C_M_DATA_TDATA_WIDTH = "32" *) (* C_M_DATA_TUSER_WIDTH = "1" *) (* C_HAS_CONFIG_CHANNEL = "0" *) 
+(* C_M_DATA_TDATA_WIDTH = "16" *) (* C_M_DATA_TUSER_WIDTH = "1" *) (* C_HAS_CONFIG_CHANNEL = "0" *) 
 (* C_CONFIG_SYNC_MODE = "0" *) (* C_CONFIG_PACKET_SIZE = "0" *) (* C_CONFIG_TDATA_WIDTH = "1" *) 
 (* C_RELOAD_TDATA_WIDTH = "1" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module fir_compiler_0fir_compiler_v7_1_viv__parameterized0
@@ -485,7 +485,7 @@ module fir_compiler_0fir_compiler_v7_1_viv__parameterized0
   input m_axis_data_tready;
   output m_axis_data_tlast;
   output [0:0]m_axis_data_tuser;
-  output [31:0]m_axis_data_tdata;
+  output [15:0]m_axis_data_tdata;
   output event_s_data_tlast_missing;
   output event_s_data_tlast_unexpected;
   output event_s_data_chanid_incorrect;
@@ -545,11 +545,11 @@ module fir_compiler_0fir_compiler_v7_1_viv__parameterized0
   wire \gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[7] ;
   wire latch_op;
   wire load;
-  wire [31:0]m_axis_data_tdata;
+  wire [15:0]m_axis_data_tdata;
   wire m_axis_data_tready;
   wire m_axis_data_tvalid;
   wire n_0_fifo_wr_enable_1_i_1;
-  wire \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ;
+  wire \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ;
   wire \n_0_g_m_data_chan_no_fifo.m_axis_data_tvalid_int_i_1 ;
   wire \n_0_g_sclr.sclr_int_i_1 ;
   wire \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1 ;
@@ -1074,10 +1074,10 @@ LUT2 #(
         .O(n_0_fifo_wr_enable_1_i_1));
 LUT2 #(
     .INIT(4'hE)) 
-     \g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 
+     \g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 
        (.I0(\g_single_rate.i_single_rate/sclr_int ),
         .I1(\g_single_rate.i_single_rate/sclr_pipe ),
-        .O(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .O(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* SOFT_HLUTNM = "soft_lutpair12" *) 
    LUT3 #(
     .INIT(8'h02)) 
@@ -1520,9 +1520,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[0] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_101_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_85_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[0]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1530,9 +1530,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[10] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_91_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_75_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[10]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1540,9 +1540,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[11] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_90_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_74_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[11]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1550,9 +1550,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[12] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_89_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_73_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[12]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1560,9 +1560,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[13] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_88_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_72_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[13]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1570,9 +1570,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[14] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_87_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_71_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[14]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1580,49 +1580,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[15] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_86_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_70_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[15]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[16] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_85_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[16]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[17] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_84_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[17]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[18] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_83_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[18]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[19] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_82_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[19]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1630,109 +1590,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[1] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_100_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_84_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[1]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[20] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_81_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[20]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[21] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_80_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[21]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[22] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_79_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[22]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[23] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_78_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[23]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[24] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_77_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[24]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[25] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_76_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[25]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[26] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_75_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[26]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[27] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_74_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[27]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[28] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_73_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[28]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[29] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_72_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[29]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1740,29 +1600,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[2] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_99_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_83_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[2]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[30] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_71_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[30]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
-(* use_sync_reset = "no" *) 
-   (* use_sync_set = "no" *) 
-   FDRE #(
-    .INIT(1'b0)) 
-     \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[31] 
-       (.C(aclk),
-        .CE(latch_op),
-        .D(\n_70_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
-        .Q(m_axis_data_tdata[31]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1770,9 +1610,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[3] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_98_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_82_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[3]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1780,9 +1620,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[4] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_97_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_81_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[4]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1790,9 +1630,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[5] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_96_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_80_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[5]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1800,9 +1640,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[6] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_95_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_79_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[6]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1810,9 +1650,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[7] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_94_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_78_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[7]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1820,9 +1660,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[8] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_93_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_77_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[8]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(
@@ -1830,9 +1670,9 @@ LUT2 #(
      \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[9] 
        (.C(aclk),
         .CE(latch_op),
-        .D(\n_92_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
+        .D(\n_76_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1 ),
         .Q(m_axis_data_tdata[9]),
-        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1 ));
+        .R(\n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1 ));
 (* use_sync_reset = "no" *) 
    (* use_sync_set = "no" *) 
    FDRE #(

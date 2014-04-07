@@ -1,7 +1,7 @@
 -- Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
--- Date        : Sat Apr 05 22:10:46 2014
+-- Date        : Sun Apr 06 19:38:02 2014
 -- Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode funcsim {C:/CHALMERS/DAT096/softcore/Daniel
 --               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_funcsim.vhdl}
@@ -3519,7 +3519,7 @@ entity \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ is
     m_axis_data_tready : in STD_LOGIC;
     m_axis_data_tlast : out STD_LOGIC;
     m_axis_data_tuser : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_data_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axis_data_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
     event_s_data_tlast_missing : out STD_LOGIC;
     event_s_data_tlast_unexpected : out STD_LOGIC;
     event_s_data_chanid_incorrect : out STD_LOGIC;
@@ -3595,9 +3595,9 @@ entity \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ is
   attribute C_ACCUM_PATH_WIDTHS : string;
   attribute C_ACCUM_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "37,36";
   attribute C_OUTPUT_WIDTH : integer;
-  attribute C_OUTPUT_WIDTH of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 32;
+  attribute C_OUTPUT_WIDTH of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 16;
   attribute C_OUTPUT_PATH_WIDTHS : string;
-  attribute C_OUTPUT_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "32";
+  attribute C_OUTPUT_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "16";
   attribute C_ACCUM_OP_PATH_WIDTHS : string;
   attribute C_ACCUM_OP_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is "51";
   attribute C_EXT_MULT_CNFG : string;
@@ -3655,7 +3655,7 @@ entity \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ is
   attribute C_M_DATA_HAS_TUSER : integer;
   attribute C_M_DATA_HAS_TUSER of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 0;
   attribute C_M_DATA_TDATA_WIDTH : integer;
-  attribute C_M_DATA_TDATA_WIDTH of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 32;
+  attribute C_M_DATA_TDATA_WIDTH of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 16;
   attribute C_M_DATA_TUSER_WIDTH : integer;
   attribute C_M_DATA_TUSER_WIDTH of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ : entity is 1;
   attribute C_HAS_CONFIG_CHANNEL : integer;
@@ -3722,7 +3722,7 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   signal latch_op : STD_LOGIC;
   signal load : STD_LOGIC;
   signal n_0_fifo_wr_enable_1_i_1 : STD_LOGIC;
-  signal \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\ : STD_LOGIC;
+  signal \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\ : STD_LOGIC;
   signal \n_0_g_m_data_chan_no_fifo.m_axis_data_tvalid_int_i_1\ : STD_LOGIC;
   signal \n_0_g_sclr.sclr_int_i_1\ : STD_LOGIC;
   signal \n_0_g_semi_parallel_and_smac.base_cnt[5]_i_1\ : STD_LOGIC;
@@ -4268,42 +4268,10 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1_viv__parameterized0\ 
   attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[14]\ : label is "no";
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[15]\ : label is "no";
   attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[15]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[16]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[16]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[17]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[17]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[18]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[18]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[19]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[19]\ : label is "no";
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[1]\ : label is "no";
   attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[1]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[20]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[20]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[21]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[21]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[22]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[22]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[23]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[23]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[24]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[24]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[25]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[25]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[26]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[26]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[27]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[27]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[28]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[28]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[29]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[29]\ : label is "no";
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[2]\ : label is "no";
   attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[2]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[30]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[30]\ : label is "no";
-  attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[31]\ : label is "no";
-  attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[31]\ : label is "no";
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[3]\ : label is "no";
   attribute use_sync_set of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[3]\ : label is "no";
   attribute use_sync_reset of \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[4]\ : label is "no";
@@ -4575,14 +4543,14 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
       I1 => s_axis_data_tvalid,
       O => n_0_fifo_wr_enable_1_i_1
     );
-\g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\: unisim.vcomponents.LUT2
+\g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
     port map (
       I0 => \g_single_rate.i_single_rate/sclr_int\,
       I1 => \g_single_rate.i_single_rate/sclr_pipe\,
-      O => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      O => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_m_data_chan_no_fifo.m_axis_data_tvalid_int_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -5154,9 +5122,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_101_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_85_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(0),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[10]\: unisim.vcomponents.FDRE
     generic map(
@@ -5165,9 +5133,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_91_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_75_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(10),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[11]\: unisim.vcomponents.FDRE
     generic map(
@@ -5176,9 +5144,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_90_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_74_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(11),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -5187,9 +5155,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_89_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_73_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(12),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[13]\: unisim.vcomponents.FDRE
     generic map(
@@ -5198,9 +5166,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_88_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_72_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(13),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[14]\: unisim.vcomponents.FDRE
     generic map(
@@ -5209,9 +5177,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_87_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_71_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(14),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[15]\: unisim.vcomponents.FDRE
     generic map(
@@ -5220,53 +5188,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_86_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_70_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(15),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[16]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_85_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(16),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[17]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_84_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(17),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[18]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_83_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(18),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[19]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_82_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(19),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -5275,119 +5199,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_100_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_84_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(1),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[20]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_81_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(20),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[21]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_80_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(21),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[22]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_79_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(22),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[23]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_78_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(23),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[24]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_77_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(24),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[25]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_76_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(25),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[26]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_75_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(26),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[27]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_74_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(27),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[28]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_73_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(28),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[29]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_72_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(29),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -5396,31 +5210,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_99_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_83_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(2),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[30]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_71_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(30),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
-    );
-\g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[31]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-    port map (
-      C => aclk,
-      CE => latch_op,
-      D => \n_70_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
-      Q => m_axis_data_tdata(31),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -5429,9 +5221,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_98_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_82_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(3),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -5440,9 +5232,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_97_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_81_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(4),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -5451,9 +5243,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_96_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_80_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(5),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -5462,9 +5254,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_95_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_79_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(6),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[7]\: unisim.vcomponents.FDRE
     generic map(
@@ -5473,9 +5265,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_94_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_78_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(7),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[8]\: unisim.vcomponents.FDRE
     generic map(
@@ -5484,9 +5276,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_93_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_77_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(8),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tdata_int_reg[9]\: unisim.vcomponents.FDRE
     generic map(
@@ -5495,9 +5287,9 @@ fifo_wr_enable_1_i_1: unisim.vcomponents.LUT2
     port map (
       C => aclk,
       CE => latch_op,
-      D => \n_92_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
+      D => \n_76_g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1\,
       Q => m_axis_data_tdata(9),
-      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[31]_i_1\
+      R => \n_0_g_m_data_chan_no_fifo.m_axis_data_tdata_int[15]_i_1\
     );
 \g_single_rate.i_single_rate/g_m_data_chan_no_fifo.m_axis_data_tvalid_int_reg\: unisim.vcomponents.FDRE
     generic map(
@@ -8738,7 +8530,7 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
     m_axis_data_tready : in STD_LOGIC;
     m_axis_data_tlast : out STD_LOGIC;
     m_axis_data_tuser : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_data_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axis_data_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
     event_s_data_tlast_missing : out STD_LOGIC;
     event_s_data_tlast_unexpected : out STD_LOGIC;
     event_s_data_chanid_incorrect : out STD_LOGIC;
@@ -8814,9 +8606,9 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_ACCUM_PATH_WIDTHS : string;
   attribute C_ACCUM_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "37,36";
   attribute C_OUTPUT_WIDTH : integer;
-  attribute C_OUTPUT_WIDTH of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 32;
+  attribute C_OUTPUT_WIDTH of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 16;
   attribute C_OUTPUT_PATH_WIDTHS : string;
-  attribute C_OUTPUT_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "32";
+  attribute C_OUTPUT_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "16";
   attribute C_ACCUM_OP_PATH_WIDTHS : string;
   attribute C_ACCUM_OP_PATH_WIDTHS of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is "51";
   attribute C_EXT_MULT_CNFG : string;
@@ -8874,7 +8666,7 @@ entity \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_M_DATA_HAS_TUSER : integer;
   attribute C_M_DATA_HAS_TUSER of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 0;
   attribute C_M_DATA_TDATA_WIDTH : integer;
-  attribute C_M_DATA_TDATA_WIDTH of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 32;
+  attribute C_M_DATA_TDATA_WIDTH of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 16;
   attribute C_M_DATA_TUSER_WIDTH : integer;
   attribute C_M_DATA_TUSER_WIDTH of \fir_compiler_0fir_compiler_v7_1__parameterized0\ : entity is 1;
   attribute C_HAS_CONFIG_CHANNEL : integer;
@@ -8937,7 +8729,7 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_MEM_ARRANGEMENT of i_synth : label is 1;
   attribute C_M_DATA_HAS_TREADY of i_synth : label is 0;
   attribute C_M_DATA_HAS_TUSER of i_synth : label is 0;
-  attribute C_M_DATA_TDATA_WIDTH of i_synth : label is 32;
+  attribute C_M_DATA_TDATA_WIDTH of i_synth : label is 16;
   attribute C_M_DATA_TUSER_WIDTH of i_synth : label is 1;
   attribute C_NUM_CHANNELS of i_synth : label is 1;
   attribute C_NUM_FILTS of i_synth : label is 1;
@@ -8948,9 +8740,9 @@ architecture STRUCTURE of \fir_compiler_0fir_compiler_v7_1__parameterized0\ is
   attribute C_OPTIMIZATION of i_synth : label is 0;
   attribute C_OPT_MADDS of i_synth : label is "none;none";
   attribute C_OP_PATH_PSAMP_SRC of i_synth : label is "0";
-  attribute C_OUTPUT_PATH_WIDTHS of i_synth : label is "32";
+  attribute C_OUTPUT_PATH_WIDTHS of i_synth : label is "16";
   attribute C_OUTPUT_RATE of i_synth : label is 70;
-  attribute C_OUTPUT_WIDTH of i_synth : label is 32;
+  attribute C_OUTPUT_WIDTH of i_synth : label is 16;
   attribute C_OVERSAMPLING_RATE of i_synth : label is 35;
   attribute C_RELOAD_TDATA_WIDTH of i_synth : label is 1;
   attribute C_ROUND_MODE of i_synth : label is 1;
@@ -8975,7 +8767,7 @@ i_synth: entity work.\fir_compiler_0fir_compiler_v7_1_viv__parameterized0\
       event_s_data_tlast_unexpected => event_s_data_tlast_unexpected,
       event_s_reload_tlast_missing => event_s_reload_tlast_missing,
       event_s_reload_tlast_unexpected => event_s_reload_tlast_unexpected,
-      m_axis_data_tdata(31 downto 0) => m_axis_data_tdata(31 downto 0),
+      m_axis_data_tdata(15 downto 0) => m_axis_data_tdata(15 downto 0),
       m_axis_data_tlast => m_axis_data_tlast,
       m_axis_data_tready => m_axis_data_tready,
       m_axis_data_tuser(0) => m_axis_data_tuser(0),
@@ -9005,7 +8797,7 @@ entity fir_compiler_0 is
     s_axis_data_tready : out STD_LOGIC;
     s_axis_data_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
     m_axis_data_tvalid : out STD_LOGIC;
-    m_axis_data_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 )
+    m_axis_data_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of fir_compiler_0 : entity is true;
@@ -9016,7 +8808,7 @@ entity fir_compiler_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of fir_compiler_0 : entity is "fir_compiler_0,fir_compiler_v7_1,{}";
   attribute core_generation_info : string;
-  attribute core_generation_info of fir_compiler_0 : entity is "fir_compiler_0,fir_compiler_v7_1,{x_ipProduct=Vivado 2013.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=fir_compiler,x_ipVersion=7.1,x_ipCoreRevision=2,x_ipLanguage=VHDL,C_XDEVICEFAMILY=artix7,C_ELABORATION_DIR=./,C_COMPONENT_NAME=fir_compiler_0,C_COEF_FILE=fir_compiler_0.mif,C_COEF_FILE_LINES=70,C_FILTER_TYPE=0,C_INTERP_RATE=1,C_DECIM_RATE=1,C_ZERO_PACKING_FACTOR=1,C_SYMMETRY=1,C_NUM_FILTS=1,C_NUM_TAPS=69,C_NUM_CHANNELS=1,C_CHANNEL_PATTERN=fixed,C_ROUND_MODE=1,C_COEF_RELOAD=0,C_NUM_RELOAD_SLOTS=1,C_COL_MODE=1,C_COL_PIPE_LEN=4,C_COL_CONFIG=1,C_OPTIMIZATION=0,C_DATA_PATH_WIDTHS=16_16,C_DATA_IP_PATH_WIDTHS=16,C_DATA_PX_PATH_WIDTHS=16,C_DATA_WIDTH=16,C_COEF_PATH_WIDTHS=15_17,C_COEF_WIDTH=32,C_DATA_PATH_SRC=0_0,C_COEF_PATH_SRC=0_1,C_DATA_PATH_SIGN=0_0,C_COEF_PATH_SIGN=1_0,C_ACCUM_PATH_WIDTHS=37_36,C_OUTPUT_WIDTH=32,C_OUTPUT_PATH_WIDTHS=32,C_ACCUM_OP_PATH_WIDTHS=51,C_EXT_MULT_CNFG=0_1_0_15,C_DATA_PATH_PSAMP_SRC=0,C_OP_PATH_PSAMP_SRC=0,C_NUM_MADDS=1,C_OPT_MADDS=none;none,C_OVERSAMPLING_RATE=35,C_INPUT_RATE=70,C_OUTPUT_RATE=70,C_DATA_MEMTYPE=0,C_COEF_MEMTYPE=2,C_IPBUFF_MEMTYPE=0,C_OPBUFF_MEMTYPE=0,C_DATAPATH_MEMTYPE=0,C_MEM_ARRANGEMENT=1,C_DATA_MEM_PACKING=0,C_COEF_MEM_PACKING=0,C_FILTS_PACKED=0,C_LATENCY=45,C_HAS_ARESETn=1,C_HAS_ACLKEN=0,C_DATA_HAS_TLAST=0,C_S_DATA_HAS_FIFO=1,C_S_DATA_HAS_TUSER=0,C_S_DATA_TDATA_WIDTH=16,C_S_DATA_TUSER_WIDTH=1,C_M_DATA_HAS_TREADY=0,C_M_DATA_HAS_TUSER=0,C_M_DATA_TDATA_WIDTH=32,C_M_DATA_TUSER_WIDTH=1,C_HAS_CONFIG_CHANNEL=0,C_CONFIG_SYNC_MODE=0,C_CONFIG_PACKET_SIZE=0,C_CONFIG_TDATA_WIDTH=1,C_RELOAD_TDATA_WIDTH=1}";
+  attribute core_generation_info of fir_compiler_0 : entity is "fir_compiler_0,fir_compiler_v7_1,{x_ipProduct=Vivado 2013.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=fir_compiler,x_ipVersion=7.1,x_ipCoreRevision=2,x_ipLanguage=VHDL,C_XDEVICEFAMILY=artix7,C_ELABORATION_DIR=./,C_COMPONENT_NAME=fir_compiler_0,C_COEF_FILE=fir_compiler_0.mif,C_COEF_FILE_LINES=70,C_FILTER_TYPE=0,C_INTERP_RATE=1,C_DECIM_RATE=1,C_ZERO_PACKING_FACTOR=1,C_SYMMETRY=1,C_NUM_FILTS=1,C_NUM_TAPS=69,C_NUM_CHANNELS=1,C_CHANNEL_PATTERN=fixed,C_ROUND_MODE=1,C_COEF_RELOAD=0,C_NUM_RELOAD_SLOTS=1,C_COL_MODE=1,C_COL_PIPE_LEN=4,C_COL_CONFIG=1,C_OPTIMIZATION=0,C_DATA_PATH_WIDTHS=16_16,C_DATA_IP_PATH_WIDTHS=16,C_DATA_PX_PATH_WIDTHS=16,C_DATA_WIDTH=16,C_COEF_PATH_WIDTHS=15_17,C_COEF_WIDTH=32,C_DATA_PATH_SRC=0_0,C_COEF_PATH_SRC=0_1,C_DATA_PATH_SIGN=0_0,C_COEF_PATH_SIGN=1_0,C_ACCUM_PATH_WIDTHS=37_36,C_OUTPUT_WIDTH=16,C_OUTPUT_PATH_WIDTHS=16,C_ACCUM_OP_PATH_WIDTHS=51,C_EXT_MULT_CNFG=0_1_0_15,C_DATA_PATH_PSAMP_SRC=0,C_OP_PATH_PSAMP_SRC=0,C_NUM_MADDS=1,C_OPT_MADDS=none;none,C_OVERSAMPLING_RATE=35,C_INPUT_RATE=70,C_OUTPUT_RATE=70,C_DATA_MEMTYPE=0,C_COEF_MEMTYPE=2,C_IPBUFF_MEMTYPE=0,C_OPBUFF_MEMTYPE=0,C_DATAPATH_MEMTYPE=0,C_MEM_ARRANGEMENT=1,C_DATA_MEM_PACKING=0,C_COEF_MEM_PACKING=0,C_FILTS_PACKED=0,C_LATENCY=45,C_HAS_ARESETn=1,C_HAS_ACLKEN=0,C_DATA_HAS_TLAST=0,C_S_DATA_HAS_FIFO=1,C_S_DATA_HAS_TUSER=0,C_S_DATA_TDATA_WIDTH=16,C_S_DATA_TUSER_WIDTH=1,C_M_DATA_HAS_TREADY=0,C_M_DATA_HAS_TUSER=0,C_M_DATA_TDATA_WIDTH=16,C_M_DATA_TUSER_WIDTH=1,C_HAS_CONFIG_CHANNEL=0,C_CONFIG_SYNC_MODE=0,C_CONFIG_PACKET_SIZE=0,C_CONFIG_TDATA_WIDTH=1,C_RELOAD_TDATA_WIDTH=1}";
 end fir_compiler_0;
 
 architecture STRUCTURE of fir_compiler_0 is
@@ -9124,7 +8916,7 @@ architecture STRUCTURE of fir_compiler_0 is
   attribute C_M_DATA_HAS_TUSER : integer;
   attribute C_M_DATA_HAS_TUSER of U0 : label is 0;
   attribute C_M_DATA_TDATA_WIDTH : integer;
-  attribute C_M_DATA_TDATA_WIDTH of U0 : label is 32;
+  attribute C_M_DATA_TDATA_WIDTH of U0 : label is 16;
   attribute C_M_DATA_TUSER_WIDTH : integer;
   attribute C_M_DATA_TUSER_WIDTH of U0 : label is 1;
   attribute C_NUM_CHANNELS : integer;
@@ -9146,11 +8938,11 @@ architecture STRUCTURE of fir_compiler_0 is
   attribute C_OP_PATH_PSAMP_SRC : string;
   attribute C_OP_PATH_PSAMP_SRC of U0 : label is "0";
   attribute C_OUTPUT_PATH_WIDTHS : string;
-  attribute C_OUTPUT_PATH_WIDTHS of U0 : label is "32";
+  attribute C_OUTPUT_PATH_WIDTHS of U0 : label is "16";
   attribute C_OUTPUT_RATE : integer;
   attribute C_OUTPUT_RATE of U0 : label is 70;
   attribute C_OUTPUT_WIDTH : integer;
-  attribute C_OUTPUT_WIDTH of U0 : label is 32;
+  attribute C_OUTPUT_WIDTH of U0 : label is 16;
   attribute C_OVERSAMPLING_RATE : integer;
   attribute C_OVERSAMPLING_RATE of U0 : label is 35;
   attribute C_RELOAD_TDATA_WIDTH : integer;
@@ -9191,7 +8983,7 @@ U0: entity work.\fir_compiler_0fir_compiler_v7_1__parameterized0\
       event_s_data_tlast_unexpected => NLW_U0_event_s_data_tlast_unexpected_UNCONNECTED,
       event_s_reload_tlast_missing => NLW_U0_event_s_reload_tlast_missing_UNCONNECTED,
       event_s_reload_tlast_unexpected => NLW_U0_event_s_reload_tlast_unexpected_UNCONNECTED,
-      m_axis_data_tdata(31 downto 0) => m_axis_data_tdata(31 downto 0),
+      m_axis_data_tdata(15 downto 0) => m_axis_data_tdata(15 downto 0),
       m_axis_data_tlast => NLW_U0_m_axis_data_tlast_UNCONNECTED,
       m_axis_data_tready => \<const1>\,
       m_axis_data_tuser(0) => NLW_U0_m_axis_data_tuser_UNCONNECTED(0),

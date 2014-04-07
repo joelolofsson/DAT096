@@ -2,7 +2,7 @@
 <BODY TEXT='#000000' BGCOLOR='#FFFFFF' LINK='#0000EE' VLINK='#551A8B' ALINK='#FF0000'><H3>Device Usage Page (usage_statistics_webtalk.html)</H3>This HTML page displays the device usage statistics that will be sent to Xilinx.<BR>To see the actual file transmitted to Xilinx, please click <A HREF="./usage_statistics_webtalk.xml">here</A>.<BR><BR><HR>
  <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
   <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='4'><B>software_version_and_target_device</B></TD></TR>
-<TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>date_generated</B></TD><TD>Sun Apr 06 13:26:10 2014</TD>
+<TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>date_generated</B></TD><TD>Sun Apr 06 20:08:43 2014</TD>
   <TD BGCOLOR='#DBE5F1'><B>product_version</B></TD><TD>Vivado v2013.4</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>build_version</B></TD><TD>353583</TD>
   <TD BGCOLOR='#DBE5F1'><B>os_platform</B></TD><TD>WIN32</TD>
@@ -15,7 +15,7 @@
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>target_package</B></TD><TD>csg324</TD>
   <TD BGCOLOR='#DBE5F1'><B>target_speed</B></TD><TD>-1</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>random_id</B></TD><TD>53f14a18e7505b4ba862a68d0c0b8cb7</TD>
-  <TD BGCOLOR='#DBE5F1'><B>project_id</B></TD><TD>5c6a6030dad54ff5a5f01ed58e10fba0</TD>
+  <TD BGCOLOR='#DBE5F1'><B>project_id</B></TD><TD>fed7ba1b55264f9e949eb3ea391e69ae</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>project_iteration</B></TD><TD>1</TD>
 </TR> </TABLE><BR>
  <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
@@ -57,7 +57,7 @@
     <TD>dsp48e1=7</TD>
     <TD>fdce=4262</TD>
 </TR><TR ALIGN='LEFT'>    <TD>fdpe=6</TD>
-    <TD>fdre=4517</TD>
+    <TD>fdre=4501</TD>
     <TD>fdse=126</TD>
     <TD>gnd=75</TD>
 </TR><TR ALIGN='LEFT'>    <TD>ibuf=8</TD>
@@ -90,7 +90,7 @@
     <TD>dsp48e1=7</TD>
     <TD>fdce=4262</TD>
 </TR><TR ALIGN='LEFT'>    <TD>fdpe=6</TD>
-    <TD>fdre=4517</TD>
+    <TD>fdre=4501</TD>
     <TD>fdse=126</TD>
     <TD>gnd=75</TD>
 </TR><TR ALIGN='LEFT'>    <TD>ibuf=25</TD>
@@ -122,24 +122,24 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>lut=11092</TD>
-    <TD>ff=8693</TD>
+<TR ALIGN='LEFT'>    <TD>lut=11284</TD>
+    <TD>ff=8942</TD>
     <TD>bram36=13</TD>
-    <TD>dsp=4</TD>
+    <TD>dsp=7</TD>
 </TR><TR ALIGN='LEFT'>    <TD>iob=84</TD>
     <TD>bufg=0</TD>
     <TD>global_clocks=5</TD>
     <TD>pll=2</TD>
 </TR><TR ALIGN='LEFT'>    <TD>bufr=0</TD>
-    <TD>nets=24164</TD>
-    <TD>movable_instances=22780</TD>
-    <TD>pins=134243</TD>
+    <TD>nets=24777</TD>
+    <TD>movable_instances=23291</TD>
+    <TD>pins=138401</TD>
 </TR><TR ALIGN='LEFT'>    <TD>bogomips=0</TD>
     <TD>effort=2</TD>
     <TD>threads=2</TD>
     <TD>placer_timing_driven=1</TD>
 </TR><TR ALIGN='LEFT'>    <TD>timing_constraints_exist=1</TD>
-    <TD>placer_runtime=166.968000</TD>
+    <TD>placer_runtime=242.657000</TD>
 </TR>   </TABLE>
    </TD></TR>
   </TABLE><BR>
@@ -150,10 +150,10 @@
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
 <TR ALIGN='LEFT'>    <TD>slice_registers_augmented=0</TD>
     <TD>slice_registers_newly_gated=0</TD>
-    <TD>slice_registers_total=8645</TD>
+    <TD>slice_registers_total=8894</TD>
     <TD>srls_augmented=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>srls_newly_gated=0</TD>
-    <TD>srls_total=11</TD>
+    <TD>srls_total=100</TD>
     <TD>bram_ports_augmented=0</TD>
     <TD>bram_ports_newly_gated=2</TD>
 </TR><TR ALIGN='LEFT'>    <TD>bram_ports_total=50</TD>
@@ -215,8 +215,8 @@
     <TD>c_data_path_sign=0_0</TD>
     <TD>c_coef_path_sign=1_0</TD>
     <TD>c_accum_path_widths=37_36</TD>
-</TR><TR ALIGN='LEFT'>    <TD>c_output_width=32</TD>
-    <TD>c_output_path_widths=32</TD>
+</TR><TR ALIGN='LEFT'>    <TD>c_output_width=16</TD>
+    <TD>c_output_path_widths=16</TD>
     <TD>c_accum_op_path_widths=51</TD>
     <TD>c_ext_mult_cnfg=0_1_0_15</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_data_path_psamp_src=0</TD>
@@ -245,7 +245,7 @@
     <TD>c_s_data_tuser_width=1</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_m_data_has_tready=0</TD>
     <TD>c_m_data_has_tuser=0</TD>
-    <TD>c_m_data_tdata_width=32</TD>
+    <TD>c_m_data_tdata_width=16</TD>
     <TD>c_m_data_tuser_width=1</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_has_config_channel=0</TD>
     <TD>c_config_sync_mode=0</TD>
@@ -314,25 +314,25 @@
     <TD>dsp_output_toggle=12.500000</TD>
 </TR><TR ALIGN='LEFT'>    <TD>set/reset_probability=0.000000</TD>
     <TD>enable_probability=0.990000</TD>
-    <TD>on-chip_power=0.399615</TD>
-    <TD>dynamic=0.301198</TD>
+    <TD>on-chip_power=0.401208</TD>
+    <TD>dynamic=0.302786</TD>
 </TR><TR ALIGN='LEFT'>    <TD>effective_thetaja=4.6</TD>
     <TD>thetasa=4.6 (C/W)</TD>
     <TD>thetajb=5.7 (C/W)</TD>
     <TD>off-chip_power=0.000000</TD>
-</TR><TR ALIGN='LEFT'>    <TD>clocks=0.022552</TD>
-    <TD>logic=0.014523</TD>
-    <TD>signals=0.021100</TD>
+</TR><TR ALIGN='LEFT'>    <TD>clocks=0.022514</TD>
+    <TD>logic=0.014688</TD>
+    <TD>signals=0.021532</TD>
     <TD>bram=0.013838</TD>
 </TR><TR ALIGN='LEFT'>    <TD>pll=0.195923</TD>
-    <TD>dsp=0.001632</TD>
+    <TD>dsp=0.002661</TD>
     <TD>i/o=0.030660</TD>
     <TD>xadc=0.000970</TD>
-</TR><TR ALIGN='LEFT'>    <TD>devstatic=0.098417</TD>
+</TR><TR ALIGN='LEFT'>    <TD>devstatic=0.098422</TD>
     <TD>vccint_voltage=1.000000</TD>
-    <TD>vccint_total_current=0.103400</TD>
-    <TD>vccint_dynamic_current=0.087386</TD>
-</TR><TR ALIGN='LEFT'>    <TD>vccint_static_current=0.016014</TD>
+    <TD>vccint_total_current=0.104993</TD>
+    <TD>vccint_dynamic_current=0.088974</TD>
+</TR><TR ALIGN='LEFT'>    <TD>vccint_static_current=0.016019</TD>
     <TD>vccaux_voltage=1.800000</TD>
     <TD>vccaux_total_current=0.120270</TD>
     <TD>vccaux_dynamic_current=0.102062</TD>
@@ -395,60 +395,60 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>slice_logic</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>slice_luts_used=11076</TD>
+<TR ALIGN='LEFT'>    <TD>slice_luts_used=11259</TD>
     <TD>slice_luts_loced=0</TD>
     <TD>slice_luts_available=63400</TD>
-    <TD>slice_luts_util_percentage=17.47</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_used=11042</TD>
+    <TD>slice_luts_util_percentage=17.75</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_used=11146</TD>
     <TD>lut_as_logic_loced=0</TD>
     <TD>lut_as_logic_available=63400</TD>
-    <TD>lut_as_logic_util_percentage=17.41</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut_as_memory_used=34</TD>
+    <TD>lut_as_logic_util_percentage=17.58</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut_as_memory_used=113</TD>
     <TD>lut_as_memory_loced=0</TD>
     <TD>lut_as_memory_available=19000</TD>
-    <TD>lut_as_memory_util_percentage=0.17</TD>
+    <TD>lut_as_memory_util_percentage=0.59</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_distributed_ram_used=24</TD>
     <TD>lut_as_distributed_ram_loced=0</TD>
-    <TD>lut_as_shift_register_used=10</TD>
+    <TD>lut_as_shift_register_used=89</TD>
     <TD>lut_as_shift_register_loced=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>slice_registers_used=8693</TD>
+</TR><TR ALIGN='LEFT'>    <TD>slice_registers_used=8942</TD>
     <TD>slice_registers_loced=0</TD>
     <TD>slice_registers_available=126800</TD>
-    <TD>slice_registers_util_percentage=6.85</TD>
-</TR><TR ALIGN='LEFT'>    <TD>register_as_flip_flop_used=8645</TD>
+    <TD>slice_registers_util_percentage=7.05</TD>
+</TR><TR ALIGN='LEFT'>    <TD>register_as_flip_flop_used=8894</TD>
     <TD>register_as_flip_flop_loced=0</TD>
     <TD>register_as_flip_flop_available=126800</TD>
-    <TD>register_as_flip_flop_util_percentage=6.81</TD>
+    <TD>register_as_flip_flop_util_percentage=7.01</TD>
 </TR><TR ALIGN='LEFT'>    <TD>register_as_latch_used=48</TD>
     <TD>register_as_latch_loced=0</TD>
     <TD>register_as_latch_available=126800</TD>
     <TD>register_as_latch_util_percentage=0.03</TD>
-</TR><TR ALIGN='LEFT'>    <TD>f7_muxes_used=847</TD>
+</TR><TR ALIGN='LEFT'>    <TD>f7_muxes_used=881</TD>
     <TD>f7_muxes_loced=0</TD>
     <TD>f7_muxes_available=31700</TD>
-    <TD>f7_muxes_util_percentage=2.67</TD>
+    <TD>f7_muxes_util_percentage=2.77</TD>
 </TR><TR ALIGN='LEFT'>    <TD>f8_muxes_used=313</TD>
     <TD>f8_muxes_loced=0</TD>
     <TD>f8_muxes_available=15850</TD>
     <TD>f8_muxes_util_percentage=1.97</TD>
-</TR><TR ALIGN='LEFT'>    <TD>slice_used=4577</TD>
+</TR><TR ALIGN='LEFT'>    <TD>slice_used=4632</TD>
     <TD>slice_loced=0</TD>
     <TD>slice_available=15850</TD>
-    <TD>slice_util_percentage=28.87</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_used=11042</TD>
+    <TD>slice_util_percentage=29.22</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_used=11146</TD>
     <TD>lut_as_logic_loced=0</TD>
     <TD>lut_as_logic_available=63400</TD>
-    <TD>lut_as_logic_util_percentage=17.41</TD>
+    <TD>lut_as_logic_util_percentage=17.58</TD>
 </TR><TR ALIGN='LEFT'>    <TD>using_o5_output_only_used=0</TD>
     <TD>using_o5_output_only_loced=</TD>
-    <TD>using_o6_output_only_used=9729</TD>
+    <TD>using_o6_output_only_used=9809</TD>
     <TD>using_o6_output_only_loced=</TD>
-</TR><TR ALIGN='LEFT'>    <TD>using_o5_and_o6_used=1313</TD>
+</TR><TR ALIGN='LEFT'>    <TD>using_o5_and_o6_used=1337</TD>
     <TD>using_o5_and_o6_loced=</TD>
-    <TD>lut_as_memory_used=34</TD>
+    <TD>lut_as_memory_used=113</TD>
     <TD>lut_as_memory_loced=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_memory_available=19000</TD>
-    <TD>lut_as_memory_util_percentage=0.17</TD>
+    <TD>lut_as_memory_util_percentage=0.59</TD>
     <TD>lut_as_distributed_ram_used=24</TD>
     <TD>lut_as_distributed_ram_loced=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>using_o5_output_only_used=0</TD>
@@ -457,26 +457,26 @@
     <TD>using_o6_output_only_loced=</TD>
 </TR><TR ALIGN='LEFT'>    <TD>using_o5_and_o6_used=24</TD>
     <TD>using_o5_and_o6_loced=</TD>
-    <TD>lut_as_shift_register_used=10</TD>
+    <TD>lut_as_shift_register_used=89</TD>
     <TD>lut_as_shift_register_loced=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>using_o5_output_only_used=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>using_o5_output_only_used=2</TD>
     <TD>using_o5_output_only_loced=</TD>
-    <TD>using_o6_output_only_used=9</TD>
+    <TD>using_o6_output_only_used=76</TD>
     <TD>using_o6_output_only_loced=</TD>
-</TR><TR ALIGN='LEFT'>    <TD>using_o5_and_o6_used=1</TD>
+</TR><TR ALIGN='LEFT'>    <TD>using_o5_and_o6_used=11</TD>
     <TD>using_o5_and_o6_loced=</TD>
-    <TD>lut_flip_flop_pairs_used=14537</TD>
+    <TD>lut_flip_flop_pairs_used=14710</TD>
     <TD>lut_flip_flop_pairs_loced=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_flip_flop_pairs_available=63400</TD>
-    <TD>lut_flip_flop_pairs_util_percentage=22.92</TD>
-    <TD>fully_used_lut_ff_pairs_used=4596</TD>
+    <TD>lut_flip_flop_pairs_util_percentage=23.20</TD>
+    <TD>fully_used_lut_ff_pairs_used=4695</TD>
     <TD>fully_used_lut_ff_pairs_loced=</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut_ff_pairs_with_unused_lut_used=3461</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut_ff_pairs_with_unused_lut_used=3453</TD>
     <TD>lut_ff_pairs_with_unused_lut_loced=</TD>
-    <TD>lut_ff_pairs_with_unused_flip_flop_used=6480</TD>
+    <TD>lut_ff_pairs_with_unused_flip_flop_used=6562</TD>
     <TD>lut_ff_pairs_with_unused_flip_flop_loced=</TD>
-</TR><TR ALIGN='LEFT'>    <TD>unique_control_sets_used=397</TD>
-    <TD>minimum_number_of_registers_lost_to_control_set_restriction_used=307(Lost)</TD>
+</TR><TR ALIGN='LEFT'>    <TD>unique_control_sets_used=410</TD>
+    <TD>minimum_number_of_registers_lost_to_control_set_restriction_used=322(Lost)</TD>
 </TR>   </TABLE>
    </TD></TR>
    <TR><TD>
@@ -501,11 +501,11 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>dsp</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>dsps_used=4</TD>
+<TR ALIGN='LEFT'>    <TD>dsps_used=7</TD>
     <TD>dsps_loced=0</TD>
     <TD>dsps_available=240</TD>
-    <TD>dsps_util_percentage=1.66</TD>
-</TR><TR ALIGN='LEFT'>    <TD>dsp48e1_only_used=4</TD>
+    <TD>dsps_util_percentage=2.91</TD>
+</TR><TR ALIGN='LEFT'>    <TD>dsp48e1_only_used=7</TD>
 </TR>   </TABLE>
    </TD></TR>
    <TR><TD>
@@ -654,74 +654,75 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>primitives</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>lut6_used=6311</TD>
-    <TD>fdre_used=4263</TD>
+<TR ALIGN='LEFT'>    <TD>lut6_used=6371</TD>
+    <TD>fdre_used=4500</TD>
     <TD>fdce_used=4262</TD>
-    <TD>lut5_used=2929</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut4_used=1417</TD>
-    <TD>lut3_used=1027</TD>
-    <TD>muxf7_used=847</TD>
-    <TD>lut2_used=613</TD>
+    <TD>lut5_used=2938</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut4_used=1429</TD>
+    <TD>lut3_used=1035</TD>
+    <TD>muxf7_used=881</TD>
+    <TD>lut2_used=647</TD>
 </TR><TR ALIGN='LEFT'>    <TD>muxf8_used=313</TD>
     <TD>carry4_used=221</TD>
-    <TD>fdse_used=115</TD>
+    <TD>fdse_used=126</TD>
+    <TD>srlc32e_used=64</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut1_used=63</TD>
     <TD>obuf_used=59</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut1_used=58</TD>
     <TD>ldce_used=48</TD>
     <TD>ibuf_used=47</TD>
+</TR><TR ALIGN='LEFT'>    <TD>srl16e_used=36</TD>
     <TD>ramd32_used=36</TD>
-</TR><TR ALIGN='LEFT'>    <TD>obuft_used=17</TD>
+    <TD>obuft_used=17</TD>
     <TD>ramb36e1_used=13</TD>
-    <TD>rams32_used=12</TD>
+</TR><TR ALIGN='LEFT'>    <TD>rams32_used=12</TD>
     <TD>ramb18e1_used=12</TD>
-</TR><TR ALIGN='LEFT'>    <TD>srl16e_used=11</TD>
-    <TD>fdpe_used=5</TD>
-    <TD>bufg_used=5</TD>
-    <TD>dsp48e1_used=4</TD>
-</TR><TR ALIGN='LEFT'>    <TD>plle2_adv_used=2</TD>
+    <TD>dsp48e1_used=7</TD>
+    <TD>fdpe_used=6</TD>
+</TR><TR ALIGN='LEFT'>    <TD>bufg_used=5</TD>
+    <TD>plle2_adv_used=2</TD>
     <TD>xadc_used=1</TD>
 </TR>   </TABLE>
    </TD></TR>
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>io_standard</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>diff_hsul_12=0</TD>
-    <TD>lvcmos25=0</TD>
+<TR ALIGN='LEFT'>    <TD>diff_hstl_i_18=0</TD>
+    <TD>diff_sstl18_ii=0</TD>
+    <TD>diff_sstl135=0</TD>
+    <TD>diff_hsul_12=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lvcmos25=0</TD>
     <TD>lvcmos12=0</TD>
     <TD>hstl_i=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>mobile_ddr=0</TD>
-    <TD>hstl_ii_18=0</TD>
+    <TD>mobile_ddr=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>hstl_ii_18=0</TD>
     <TD>lvds_25=0</TD>
     <TD>mini_lvds_25=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>sstl18_ii=0</TD>
-    <TD>sstl135=0</TD>
+    <TD>sstl18_ii=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>sstl135=0</TD>
     <TD>diff_hstl_i=0</TD>
     <TD>diff_hstl_ii_18=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>diff_sstl15=0</TD>
-    <TD>diff_sstl135_r=0</TD>
+    <TD>diff_sstl15=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>diff_sstl135_r=0</TD>
     <TD>lvttl=0</TD>
     <TD>lvcmos18=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>hsul_12=0</TD>
-    <TD>hstl_ii=0</TD>
+    <TD>hsul_12=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>hstl_ii=0</TD>
     <TD>diff_mobile_ddr=0</TD>
     <TD>rsds_25=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>ppds_25=0</TD>
-    <TD>sstl15=0</TD>
+    <TD>ppds_25=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>sstl15=0</TD>
     <TD>sstl135_r=0</TD>
     <TD>diff_hstl_ii=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>diff_sstl18_i=0</TD>
-    <TD>diff_sstl15_r=0</TD>
+    <TD>diff_sstl18_i=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>diff_sstl15_r=0</TD>
     <TD>lvcmos33=1</TD>
     <TD>lvcmos15=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>pci33_3=0</TD>
-    <TD>hstl_i_18=0</TD>
+    <TD>pci33_3=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>hstl_i_18=0</TD>
     <TD>blvds_25=0</TD>
     <TD>tmds_33=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>sstl18_i=0</TD>
-    <TD>sstl15_r=0</TD>
-    <TD>diff_hstl_i_18=0</TD>
-    <TD>diff_sstl18_ii=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>diff_sstl135=0</TD>
+    <TD>sstl18_i=0</TD>
+</TR><TR ALIGN='LEFT'>    <TD>sstl15_r=0</TD>
 </TR>   </TABLE>
    </TD></TR>
   </TABLE><BR>
@@ -730,26 +731,26 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>lut=11913</TD>
-    <TD>ff=8693</TD>
+<TR ALIGN='LEFT'>    <TD>lut=12106</TD>
+    <TD>ff=8942</TD>
     <TD>bram36=13</TD>
-    <TD>dsp=4</TD>
+    <TD>dsp=7</TD>
 </TR><TR ALIGN='LEFT'>    <TD>iob=106</TD>
     <TD>bufg=0</TD>
     <TD>global_clocks=5</TD>
     <TD>pll=2</TD>
 </TR><TR ALIGN='LEFT'>    <TD>bufr=0</TD>
-    <TD>nets=24204</TD>
-    <TD>movable_instances=22798</TD>
-    <TD>pins=134283</TD>
+    <TD>nets=24817</TD>
+    <TD>movable_instances=23309</TD>
+    <TD>pins=138441</TD>
 </TR><TR ALIGN='LEFT'>    <TD>bogomips=0</TD>
-    <TD>high_fanout_nets=15</TD>
+    <TD>high_fanout_nets=16</TD>
     <TD>effort=2</TD>
     <TD>threads=2</TD>
 </TR><TR ALIGN='LEFT'>    <TD>router_timing_driven=1</TD>
     <TD>timing_constraints_exist=1</TD>
     <TD>congestion_level=0</TD>
-    <TD>router_runtime=144.070000</TD>
+    <TD>router_runtime=226.979000</TD>
 </TR>   </TABLE>
    </TD></TR>
   </TABLE><BR>

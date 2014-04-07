@@ -224,8 +224,8 @@ inst_ADC : ADC
       --  end if;
  --   end if;
  --end process;
---buffer_in <= not(sampleflt(15)) & sampleflt(14 downto 0);
- buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) ;--& x"0000";
+buffer_in <= not(sampleflt(15)) & sampleflt(14 downto 0);
+ --buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) ;--& x"0000";
  --sampleout <= sampledvalue;
  
  inst_Buffer:ADC_buffer
