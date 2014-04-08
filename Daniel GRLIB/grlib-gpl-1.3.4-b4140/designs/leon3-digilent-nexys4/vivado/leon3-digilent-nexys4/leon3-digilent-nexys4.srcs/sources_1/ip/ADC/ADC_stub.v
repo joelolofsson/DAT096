@@ -1,9 +1,9 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-// Date        : Fri Apr  4 14:46:43 2014
-// Host        : joel-MacBookPro running 64-bit unknown
-// Command     : write_verilog -force -mode synth_stub {/home/joel/Documents/DAT096/Daniel
+// Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
+// Date        : Tue Apr 08 15:59:42 2014
+// Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+// Command     : write_verilog -force -mode synth_stub {C:/CHALMERS/DAT096/softcore/Daniel
 //               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v}
 // Design      : ADC
 // Purpose     : Stub declaration of top-level module interface
@@ -13,8 +13,8 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-module ADC(daddr_in, den_in, di_in, dwe_in, do_out, drdy_out, dclk_in, reset_in, convst_in, vauxp3, vauxn3, busy_out, channel_out, eoc_out, eos_out, ot_out, vccaux_alarm_out, vccint_alarm_out, user_temp_alarm_out, alarm_out, vp_in, vn_in)
-/* synthesis syn_black_box black_box_pad_pin="daddr_in[6:0],den_in,di_in[15:0],dwe_in,do_out[15:0],drdy_out,dclk_in,reset_in,convst_in,vauxp3,vauxn3,busy_out,channel_out[4:0],eoc_out,eos_out,ot_out,vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out,alarm_out,vp_in,vn_in" */;
+module ADC(daddr_in, den_in, di_in, dwe_in, do_out, drdy_out, dclk_in, reset_in, convstclk_in, vauxp3, vauxn3, busy_out, channel_out, eoc_out, eos_out, ot_out, vccaux_alarm_out, vccint_alarm_out, user_temp_alarm_out, alarm_out, vp_in, vn_in)
+/* synthesis syn_black_box black_box_pad_pin="daddr_in[6:0],den_in,di_in[15:0],dwe_in,do_out[15:0],drdy_out,dclk_in,reset_in,convstclk_in,vauxp3,vauxn3,busy_out,channel_out[4:0],eoc_out,eos_out,ot_out,vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out,alarm_out,vp_in,vn_in" */;
   input [6:0]daddr_in;
   input den_in;
   input [15:0]di_in;
@@ -23,7 +23,7 @@ module ADC(daddr_in, den_in, di_in, dwe_in, do_out, drdy_out, dclk_in, reset_in,
   output drdy_out;
   input dclk_in;
   input reset_in;
-  input convst_in;
+  input convstclk_in;
   input vauxp3;
   input vauxn3;
   output busy_out;

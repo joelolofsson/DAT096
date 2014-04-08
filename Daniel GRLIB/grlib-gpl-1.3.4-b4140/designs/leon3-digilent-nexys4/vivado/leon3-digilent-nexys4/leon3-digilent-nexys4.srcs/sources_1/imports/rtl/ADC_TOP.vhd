@@ -77,7 +77,7 @@ COMPONENT ADC
     do_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);		-- ! Output from the registers
     dclk_in : IN STD_LOGIC;							-- ! Clocking for the registers
     reset_in : IN STD_LOGIC;						-- ! Reset, active high
-    convst_in : IN STD_LOGIC;						-- ! Signal to determine if the sample should be read or not
+    convstclk_in : IN STD_LOGIC;						-- ! Signal to determine if the sample should be read or not
     vp_in : IN STD_LOGIC;							-- ! Unused analogue input
     vn_in : IN STD_LOGIC;							-- ! Unused analogue input
     vauxp3 : IN STD_LOGIC;							-- ! Positive analogue signal
@@ -190,7 +190,7 @@ inst_ADC : ADC
     do_out => sampledvalue,
     dclk_in => clk,
     reset_in => inv_rst,
-    convst_in => sampleclk,
+    convstclk_in => sampleclk,
     vp_in => '0',
     vn_in => '0',
     vauxp3 => vauxp3,
@@ -224,7 +224,7 @@ inst_ADC : ADC
       --  end if;
  --   end if;
  --end process;
-buffer_in <= not(sampleflt(15)) & sampleflt(14 downto 0);
+--buffer_in <= not(sampleflt(15)) & sampleflt(14 downto 0);
  --buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) ;--& x"0000";
  --sampleout <= sampledvalue;
  
@@ -233,7 +233,7 @@ buffer_in <= not(sampleflt(15)) & sampleflt(14 downto 0);
  		clk                 => clk,
  		rst                 => rst,
  		buff_write			=> ADC_buff_write,
- 		Buffin 				=> buffer_in,
+ 		Buffin 				=> sampleFLT,
  		Buffout 			=> ADC_buff_out,
  		Bufferfull 		    => Buff_full,
  		Addr 				=> addr);

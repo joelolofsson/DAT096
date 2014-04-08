@@ -64,7 +64,7 @@ entity ADC is
     drdy_out        : out  STD_LOGIC;                        -- Data ready signal for the dynamic reconfiguration port
     dclk_in         : in  STD_LOGIC;                         -- Clock input for the dynamic reconfiguration port
     reset_in        : in  STD_LOGIC;                         -- Reset signal for the System Monitor control logic
-    convst_in       : in  STD_LOGIC;                         -- Convert Start Input
+    convstclk_in    : in  STD_LOGIC;                         -- Convert Start Input Clock
     vauxp3          : in  STD_LOGIC;                         -- Auxiliary Channel 3
     vauxn3          : in  STD_LOGIC;
     busy_out        : out  STD_LOGIC;                        -- ADC Busy signal
@@ -84,7 +84,7 @@ end ADC;
 architecture xilinx of ADC is
 
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of xilinx : architecture is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=true,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
+  attribute CORE_GENERATION_INFO of xilinx : architecture is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=false,enable_convstclk=true,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
 
 
   signal FLOAT_VBRAM_ALARM : std_logic;
@@ -172,12 +172,12 @@ begin
         INIT_58 => X"5999",  -- Vbram upper alarm limit
         INIT_5C => X"5111",  -- Vbram lower alarm limit
         SIM_DEVICE => "7SERIES",
-        SIM_MONITOR_FILE => "/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt"
+        SIM_MONITOR_FILE => "c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt"
         )
 
 port map (
-        CONVST              => convst_in,
-        CONVSTCLK           => '0',
+        CONVST              => '0',
+        CONVSTCLK           => convstclk_in,
         DADDR(6 downto 0)   => daddr_in(6 downto 0),
         DCLK                => dclk_in,
         DEN                 => den_in,

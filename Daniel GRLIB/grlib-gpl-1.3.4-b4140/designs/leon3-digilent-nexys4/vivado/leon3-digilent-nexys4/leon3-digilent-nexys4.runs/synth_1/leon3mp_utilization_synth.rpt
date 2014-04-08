@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Sun Apr 06 19:50:50 2014
+| Date         : Tue Apr 08 16:03:34 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
@@ -29,8 +29,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 11266 |     0 |     63400 | 17.76 |
-|   LUT as Logic             | 11231 |     0 |     63400 | 17.71 |
+| Slice LUTs*                | 11265 |     0 |     63400 | 17.76 |
+|   LUT as Logic             | 11230 |     0 |     63400 | 17.71 |
 |   LUT as Memory            |    35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    24 |     0 |           |       |
 |     LUT as Shift Register  |    11 |     0 |           |       |
@@ -142,7 +142,7 @@ Table of Contents
 | MUXF7     |  847 |
 | LUT2      |  614 |
 | MUXF8     |  313 |
-| LUT1      |  234 |
+| LUT1      |  233 |
 | CARRY4    |  221 |
 | FDSE      |  115 |
 | OBUF      |   58 |

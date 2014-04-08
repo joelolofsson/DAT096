@@ -61,6 +61,7 @@ end component;
 			addr		:	in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 	end component DAC_buffer;
 	
+	signal DACin : std_logic_vector(15 downto 0);
 	signal sBuffOut : std_logic_vector(15 downto 0);
 	signal readBuffer : std_logic;
 	signal clk50MHz : STD_LOGIC;
@@ -70,6 +71,7 @@ begin
 
 sampleclk44kHz <= readbuffer;
 sclk <= clk25MHz;
+DACin <= not(sBuffOut(15)) & sBuffOut(14 downto 0);
 
 	inst_clk_divider : clk_divide
 	port map(
@@ -85,7 +87,7 @@ sclk <= clk25MHz;
 	port map(
 		rstn		=> rstn,
 		clk		=> clk25MHz,
-		data		=> sBuffOut,
+		data		=> DACin,
 		sampleclk => readbuffer,
 		din		=> din,
 		nSync		=> nSync,

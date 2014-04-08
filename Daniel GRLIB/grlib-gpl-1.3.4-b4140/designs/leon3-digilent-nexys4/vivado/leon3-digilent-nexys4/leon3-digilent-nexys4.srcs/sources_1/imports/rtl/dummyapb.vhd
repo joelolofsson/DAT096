@@ -141,7 +141,8 @@ apb_comb : process(rstn, apbi)
         elsif rising_edge(clk) then
             Addr <= apbi.paddr(8 downto 2);
             --do something
-             apbo.prdata(31 downto 0) <= x"0000" &sampledvalue; --Read value, should be from ADC
+             apbo.prdata(15 downto 0) <= sampledvalue; --Read value, should be from ADC
+             apbo.prdata(31 downto 16) <= (others => (sampledvalue(15)))
              if irq='0' and buffer_interupt='1' then
                 irq <= '1';
              else

@@ -1,9 +1,9 @@
 -- Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
--- Date        : Fri Apr  4 14:46:44 2014
--- Host        : joel-MacBookPro running 64-bit unknown
--- Command     : write_vhdl -force -mode funcsim {/home/joel/Documents/DAT096/Daniel
+-- Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
+-- Date        : Tue Apr 08 15:59:42 2014
+-- Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+-- Command     : write_vhdl -force -mode funcsim {C:/CHALMERS/DAT096/softcore/Daniel
 --               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl}
 -- Design      : ADC
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
@@ -22,7 +22,7 @@ entity ADC is
     drdy_out : out STD_LOGIC;
     dclk_in : in STD_LOGIC;
     reset_in : in STD_LOGIC;
-    convst_in : in STD_LOGIC;
+    convstclk_in : in STD_LOGIC;
     vauxp3 : in STD_LOGIC;
     vauxn3 : in STD_LOGIC;
     busy_out : out STD_LOGIC;
@@ -40,7 +40,7 @@ entity ADC is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of ADC : entity is true;
   attribute core_generation_info : string;
-  attribute core_generation_info of ADC : entity is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=true,enable_convstclk=false,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
+  attribute core_generation_info of ADC : entity is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=false,enable_convstclk=true,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
 end ADC;
 
 architecture STRUCTURE of ADC is
@@ -94,7 +94,7 @@ U0: unisim.vcomponents.XADC
       IS_CONVSTCLK_INVERTED => '0',
       IS_DCLK_INVERTED => '0',
       SIM_DEVICE => "7SERIES",
-      SIM_MONITOR_FILE => "/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt"
+      SIM_MONITOR_FILE => "c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt"
     )
     port map (
       ALM(7) => alarm_out,
@@ -104,8 +104,8 @@ U0: unisim.vcomponents.XADC
       ALM(0) => user_temp_alarm_out,
       BUSY => busy_out,
       CHANNEL(4 downto 0) => channel_out(4 downto 0),
-      CONVST => convst_in,
-      CONVSTCLK => \<const0>\,
+      CONVST => \<const0>\,
+      CONVSTCLK => convstclk_in,
       DADDR(6 downto 0) => daddr_in(6 downto 0),
       DCLK => dclk_in,
       DEN => den_in,
