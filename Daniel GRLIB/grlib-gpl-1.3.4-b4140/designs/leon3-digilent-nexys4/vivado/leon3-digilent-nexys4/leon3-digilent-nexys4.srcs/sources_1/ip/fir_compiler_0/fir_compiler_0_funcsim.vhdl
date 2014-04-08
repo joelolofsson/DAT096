@@ -1,9 +1,9 @@
 -- Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
--- Date        : Sun Apr 06 19:38:02 2014
--- Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim {C:/CHALMERS/DAT096/softcore/Daniel
+-- Tool Version: Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+-- Date        : Tue Apr  8 22:57:02 2014
+-- Host        : joel-MacBookPro running 64-bit Ubuntu 12.04.4 LTS
+-- Command     : write_vhdl -force -mode funcsim {/home/joel/Documents/DAT096/Daniel
 --               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_funcsim.vhdl}
 -- Design      : fir_compiler_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
