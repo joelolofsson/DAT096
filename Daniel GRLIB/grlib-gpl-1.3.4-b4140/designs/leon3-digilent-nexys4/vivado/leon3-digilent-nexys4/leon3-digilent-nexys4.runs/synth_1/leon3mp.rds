@@ -2,8 +2,8 @@
 # Vivado v2013.4 (64-bit)
 # SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
 # IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
-# Start of session at: Tue Apr  8 22:58:07 2014
-# Process ID: 2952
+# Start of session at: Tue Apr  8 23:15:47 2014
+# Process ID: 3503
 # Log file: /home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/leon3mp.rds
 # Journal file: /home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -151,9 +151,13 @@ source leon3mp.tcl
 #   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/comp/ethcomp.vhd}
 # }
 # read_vhdl {
+#   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd}
+#   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd}
+#   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd}
 #   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd}
 #   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd}
 #   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd}
+#   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd}
 #   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adder_pkg.vhd}
 #   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd}
 #   {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd}
@@ -181,7 +185,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 785.043 ; gain = 146.391
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 785.043 ; gain = 146.391
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'leon3mp' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd:148]
 	Parameter fabtech bound to: 50 - type: integer 
@@ -2608,7 +2612,22 @@ INFO: [Synth 8-638] synthesizing module 'dummyapb__parameterized0' [/home/joel/D
 	Parameter pindex bound to: 8 - type: integer 
 	Parameter paddr bound to: 8 - type: integer 
 	Parameter pmask bound to: 4092 - type: integer 
-INFO: [Synth 8-637] synthesizing blackbox instance 'inst_top' of component 'DacTop' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'dacTop' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd:19]
+	Parameter systemclock bound to: 100000000 - type: integer 
+	Parameter sampleclock bound to: 44100 - type: integer 
+	Parameter OSR bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_divide__parameterized0' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd:21]
+	Parameter systemclock bound to: 100000000 - type: integer 
+	Parameter sampleclock bound to: 44100 - type: integer 
+	Parameter OSR bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divide__parameterized0' (64#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'DAC_SPI' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'DAC_SPI' (65#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd:16]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DAC_buffer__parameterized0' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd:48]
+	Parameter bufferwidth bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DAC_buffer__parameterized0' (66#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'dacTop' (67#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd:19]
 INFO: [Synth 8-638] synthesizing module 'ADC_TOP' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd:50]
 INFO: [Synth 8-637] synthesizing blackbox instance 'inst_fir' of component 'fir_compiler_0' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd:167]
 INFO: [Synth 8-638] synthesizing module 'default_ADC' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd:84]
@@ -2649,13 +2668,13 @@ INFO: [Synth 8-638] synthesizing module 'default_ADC' [/home/joel/Documents/DAT0
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter SIM_MONITOR_FILE bound to: c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC/ADC.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt - type: string 
 INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd:151]
-INFO: [Synth 8-256] done synthesizing module 'default_ADC' (64#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'default_ADC' (68#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC.vhd:84]
 	Parameter bufferwidth bound to: 7 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'ADC_buffer__parameterized0' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd:48]
 	Parameter bufferwidth bound to: 7 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ADC_buffer__parameterized0' (65#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'ADC_TOP' (66#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'dummyapb__parameterized0' (67#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'ADC_buffer__parameterized0' (69#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'ADC_TOP' (70#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'dummyapb__parameterized0' (71#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd:31]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
@@ -2716,8 +2735,8 @@ INFO: [Synth 8-638] synthesizing module 'PLLE2_ADV__parameterized2' [/opt/Xilinx
 	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
 	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
 	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
-INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV__parameterized2' (67#1) [/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v:26338]
-INFO: [Synth 8-256] done synthesizing module 'leon3mp' (68#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV__parameterized2' (71#1) [/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v:26338]
+INFO: [Synth 8-256] done synthesizing module 'leon3mp' (72#1) [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd:148]
 WARNING: [Synth 8-3917] design leon3mp has port RamAdv driven by constant 0
 WARNING: [Synth 8-3917] design leon3mp has port RamClk driven by constant 0
 WARNING: [Synth 8-3917] design leon3mp has port RamCRE driven by constant 0
@@ -2749,7 +2768,7 @@ WARNING: [Synth 8-3331] design leon3mp has unconnected port btn[2]
 WARNING: [Synth 8-3331] design leon3mp has unconnected port btn[1]
 WARNING: [Synth 8-3331] design leon3mp has unconnected port btn[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1048.004 ; gain = 409.352
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1053.004 ; gain = 414.352
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -3004,14 +3023,15 @@ Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property BUFFER_TYPE = NONE. (constraint file  {/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_buffer.xdc}, line 5).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1326.008 ; gain = 687.355
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 1339.383 ; gain = 700.730
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1326.008 ; gain = 687.355
+Finished RTL Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:10 . Memory (MB): peak = 1339.383 ; gain = 700.730
 ---------------------------------------------------------------------------------
 
 WARNING: [Synth 8-3936] Found unconnected internal register 'r_reg[haddr]' and it is trimmed from '14' to '9' bits. [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd:698]
+INFO: [Synth 8-4471] merging register 'ready_reg' into 'nSync_reg' [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd:35]
 WARNING: [Synth 8-3936] Found unconnected internal register 'sLED_reg' and it is trimmed from '32' to '16' bits. [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd:83]
 WARNING: [Synth 8-3936] Found unconnected internal register 'r_reg[readdata]' and it is trimmed from '32' to '16' bits. [/home/joel/Documents/DAT096/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd:1003]
 INFO: [Synth 8-802] inferred FSM for state register 'r_reg[rxstate]' in module 'apbuart__parameterized0'
@@ -3061,8 +3081,9 @@ Report RTL Partitions:
 |1     |mmu_cache__parameterized0   |           1|     27599|
 |2     |proc3__parameterized0__GB1  |           1|     20007|
 |3     |leon3x__parameterized0__GC0 |           1|       317|
-|4     |leon3mp__GCB0               |           1|     36997|
-|5     |leon3mp__GCB1               |           1|     13000|
+|4     |leon3mp__GCB0               |           1|     25400|
+|5     |leon3mp__GCB1               |           1|     18432|
+|6     |leon3mp__GCB2               |           1|     12338|
 +------+----------------------------+------------+----------+
 
 ---------------------------------------------------------------------------------
@@ -3073,7 +3094,7 @@ Part Resources:
 DSPs: 240 (col length:80)
 BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:32 ; elapsed = 00:01:42 . Memory (MB): peak = 1326.008 ; gain = 687.355
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:35 ; elapsed = 00:01:58 . Memory (MB): peak = 1339.383 ; gain = 700.730
 ---------------------------------------------------------------------------------
 
 
@@ -3083,23 +3104,23 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     66 Bit       Adders := 1     
-	   3 Input     33 Bit       Adders := 1     
 	   2 Input     33 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 8     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 9     
 	   2 Input     30 Bit       Adders := 4     
 	   2 Input     18 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 3     
-	   2 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
 	   2 Input     11 Bit       Adders := 9     
 	   2 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 4     
 	   2 Input      8 Bit       Adders := 4     
 	   3 Input      8 Bit       Adders := 1     
 	   4 Input      8 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 25    
+	   2 Input      7 Bit       Adders := 26    
 	   2 Input      6 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 5     
 	   2 Input      4 Bit       Adders := 5     
 	   2 Input      3 Bit       Adders := 18    
 	   2 Input      2 Bit       Adders := 14    
@@ -3117,52 +3138,52 @@ Detailed RTL Component Info :
 	               22 Bit    Registers := 2     
 	               20 Bit    Registers := 2     
 	               18 Bit    Registers := 1     
-	               16 Bit    Registers := 135   
+	               16 Bit    Registers := 264   
 	               15 Bit    Registers := 4     
-	               12 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
 	               11 Bit    Registers := 8     
 	               10 Bit    Registers := 3     
 	                9 Bit    Registers := 4     
 	                8 Bit    Registers := 27    
-	                7 Bit    Registers := 12    
+	                7 Bit    Registers := 13    
 	                6 Bit    Registers := 6     
-	                5 Bit    Registers := 15    
+	                5 Bit    Registers := 16    
 	                4 Bit    Registers := 26    
 	                3 Bit    Registers := 21    
 	                2 Bit    Registers := 63    
-	                1 Bit    Registers := 1170  
+	                1 Bit    Registers := 1182  
 +---RAMs : 
 	              128 Bit         RAMs := 1     
 +---Muxes : 
-	   6 Input     65 Bit        Muxes := 1     
 	   2 Input     65 Bit        Muxes := 3     
+	   6 Input     65 Bit        Muxes := 1     
 	   2 Input     64 Bit        Muxes := 1     
-	   2 Input     48 Bit        Muxes := 3     
 	  13 Input     48 Bit        Muxes := 2     
+	   2 Input     48 Bit        Muxes := 3     
 	   2 Input     40 Bit        Muxes := 1     
 	   2 Input     36 Bit        Muxes := 1     
 	   2 Input     34 Bit        Muxes := 3     
 	   2 Input     33 Bit        Muxes := 3     
-	   4 Input     32 Bit        Muxes := 22    
-	  16 Input     32 Bit        Muxes := 1     
-	  13 Input     32 Bit        Muxes := 1     
-	  18 Input     32 Bit        Muxes := 1     
-	   3 Input     32 Bit        Muxes := 11    
-	   7 Input     32 Bit        Muxes := 1     
-	   6 Input     32 Bit        Muxes := 3     
-	   2 Input     32 Bit        Muxes := 132   
-	  10 Input     32 Bit        Muxes := 5     
 	   8 Input     32 Bit        Muxes := 2     
-	  11 Input     32 Bit        Muxes := 1     
-	  19 Input     32 Bit        Muxes := 2     
-	  15 Input     32 Bit        Muxes := 1     
-	   9 Input     32 Bit        Muxes := 3     
 	 142 Input     32 Bit        Muxes := 1     
-	   2 Input     30 Bit        Muxes := 21    
+	  18 Input     32 Bit        Muxes := 1     
+	  15 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 132   
+	   6 Input     32 Bit        Muxes := 3     
+	  13 Input     32 Bit        Muxes := 1     
+	  11 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 3     
+	   7 Input     32 Bit        Muxes := 1     
+	  19 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 11    
+	  16 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 22    
 	   3 Input     30 Bit        Muxes := 2     
-	   7 Input     30 Bit        Muxes := 1     
 	   4 Input     30 Bit        Muxes := 3     
 	  12 Input     30 Bit        Muxes := 1     
+	   7 Input     30 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 21    
 	   2 Input     28 Bit        Muxes := 1     
 	   2 Input     24 Bit        Muxes := 6     
 	   2 Input     23 Bit        Muxes := 2     
@@ -3171,104 +3192,105 @@ Detailed RTL Component Info :
 	  10 Input     18 Bit        Muxes := 2     
 	  15 Input     18 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 2     
-	   6 Input     16 Bit        Muxes := 4     
 	   2 Input     16 Bit        Muxes := 34    
+	   6 Input     16 Bit        Muxes := 4     
 	  15 Input     16 Bit        Muxes := 1     
 	  13 Input     16 Bit        Muxes := 2     
-	  10 Input     15 Bit        Muxes := 1     
+	  14 Input     15 Bit        Muxes := 1     
 	   2 Input     15 Bit        Muxes := 17    
 	   4 Input     15 Bit        Muxes := 2     
-	  14 Input     15 Bit        Muxes := 1     
+	  10 Input     15 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 1     
-	   2 Input     13 Bit        Muxes := 6     
 	  12 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 6     
 	   6 Input     12 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 3     
-	  16 Input     11 Bit        Muxes := 1     
-	   7 Input     11 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   8 Input     11 Bit        Muxes := 1     
 	  19 Input     11 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 11    
 	   9 Input     11 Bit        Muxes := 1     
-	   8 Input     11 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 25    
+	  16 Input     11 Bit        Muxes := 1     
+	   7 Input     11 Bit        Muxes := 1     
 	  14 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 25    
+	   4 Input     10 Bit        Muxes := 1     
 	   9 Input     10 Bit        Muxes := 1     
 	   6 Input     10 Bit        Muxes := 1     
-	   4 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 3     
 	  10 Input      8 Bit        Muxes := 1     
-	 142 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 50    
+	 142 Input      8 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 2     
-	   8 Input      8 Bit        Muxes := 3     
-	   2 Input      7 Bit        Muxes := 24    
-	  16 Input      7 Bit        Muxes := 2     
 	  15 Input      7 Bit        Muxes := 1     
-	  12 Input      7 Bit        Muxes := 2     
-	  10 Input      7 Bit        Muxes := 6     
-	   7 Input      7 Bit        Muxes := 2     
-	   8 Input      7 Bit        Muxes := 1     
 	   6 Input      7 Bit        Muxes := 2     
-	   8 Input      6 Bit        Muxes := 2     
-	   6 Input      6 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 2     
+	  10 Input      7 Bit        Muxes := 6     
+	  12 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 26    
+	  16 Input      7 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 1     
 	   4 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 34    
 	   9 Input      6 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 2     
 	   5 Input      6 Bit        Muxes := 3     
-	  13 Input      5 Bit        Muxes := 1     
-	   6 Input      5 Bit        Muxes := 4     
-	   2 Input      5 Bit        Muxes := 32    
+	   6 Input      6 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 3     
 	  19 Input      5 Bit        Muxes := 1     
 	   8 Input      5 Bit        Muxes := 1     
-	   4 Input      5 Bit        Muxes := 3     
-	   4 Input      4 Bit        Muxes := 4     
-	   3 Input      4 Bit        Muxes := 6     
-	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 32    
+	   6 Input      5 Bit        Muxes := 4     
+	   3 Input      5 Bit        Muxes := 1     
+	  13 Input      5 Bit        Muxes := 1     
 	  13 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 136   
 	  16 Input      4 Bit        Muxes := 2     
-	   7 Input      4 Bit        Muxes := 5     
-	  15 Input      4 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 2     
 	  10 Input      4 Bit        Muxes := 8     
-	   2 Input      4 Bit        Muxes := 136   
-	  16 Input      3 Bit        Muxes := 5     
+	  15 Input      4 Bit        Muxes := 3     
+	   7 Input      4 Bit        Muxes := 5     
 	  10 Input      3 Bit        Muxes := 2     
-	   9 Input      3 Bit        Muxes := 1     
-	  15 Input      3 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 4     
-	   6 Input      3 Bit        Muxes := 2     
-	   3 Input      3 Bit        Muxes := 1     
-	  19 Input      3 Bit        Muxes := 1     
-	   4 Input      3 Bit        Muxes := 5     
-	   2 Input      3 Bit        Muxes := 52    
 	   8 Input      3 Bit        Muxes := 4     
-	   5 Input      2 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 10    
-	  10 Input      2 Bit        Muxes := 3     
-	   2 Input      2 Bit        Muxes := 124   
+	   4 Input      3 Bit        Muxes := 5     
+	   7 Input      3 Bit        Muxes := 4     
+	   9 Input      3 Bit        Muxes := 1     
+	  19 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 52    
+	  15 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 5     
 	  16 Input      2 Bit        Muxes := 5     
+	  10 Input      2 Bit        Muxes := 3     
 	  19 Input      2 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 2     
 	   8 Input      2 Bit        Muxes := 5     
-	   6 Input      2 Bit        Muxes := 2     
 	  11 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 124   
 	   9 Input      2 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 107   
+	   6 Input      2 Bit        Muxes := 2     
 	   9 Input      1 Bit        Muxes := 17    
-	  16 Input      1 Bit        Muxes := 39    
-	  11 Input      1 Bit        Muxes := 22    
-	  19 Input      1 Bit        Muxes := 9     
-	   2 Input      1 Bit        Muxes := 2130  
-	  14 Input      1 Bit        Muxes := 29    
-	   4 Input      1 Bit        Muxes := 180   
-	   8 Input      1 Bit        Muxes := 89    
-	   3 Input      1 Bit        Muxes := 109   
-	   5 Input      1 Bit        Muxes := 11    
 	  15 Input      1 Bit        Muxes := 19    
-	  10 Input      1 Bit        Muxes := 105   
-	  13 Input      1 Bit        Muxes := 33    
+	   3 Input      1 Bit        Muxes := 109   
+	  14 Input      1 Bit        Muxes := 29    
 	   7 Input      1 Bit        Muxes := 26    
+	  13 Input      1 Bit        Muxes := 33    
+	   4 Input      1 Bit        Muxes := 180   
+	  16 Input      1 Bit        Muxes := 39    
+	  10 Input      1 Bit        Muxes := 105   
+	   5 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 89    
+	   2 Input      1 Bit        Muxes := 2267  
+	  11 Input      1 Bit        Muxes := 22    
+	   6 Input      1 Bit        Muxes := 107   
+	  19 Input      1 Bit        Muxes := 9     
 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -3318,8 +3340,8 @@ Detailed RTL Component Info :
 	   2 Input     20 Bit        Muxes := 1     
 	   2 Input     19 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 15    
-	   4 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 15    
 	   2 Input      1 Bit        Muxes := 531   
 Module mmu_dcache__parameterized0 
@@ -3336,24 +3358,24 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 6     
 	                1 Bit    Registers := 290   
 +---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	  10 Input     32 Bit        Muxes := 3     
 	   9 Input     32 Bit        Muxes := 2     
 	   4 Input     32 Bit        Muxes := 3     
-	  10 Input     32 Bit        Muxes := 3     
-	   2 Input     32 Bit        Muxes := 22    
 	   3 Input     32 Bit        Muxes := 2     
 	   2 Input     20 Bit        Muxes := 6     
 	   2 Input     13 Bit        Muxes := 3     
 	   2 Input     10 Bit        Muxes := 9     
-	   6 Input     10 Bit        Muxes := 1     
 	  14 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
 	   7 Input      4 Bit        Muxes := 5     
 	   2 Input      4 Bit        Muxes := 19    
-	  10 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 8     
+	  10 Input      2 Bit        Muxes := 2     
 	  14 Input      1 Bit        Muxes := 29    
-	   7 Input      1 Bit        Muxes := 13    
 	   2 Input      1 Bit        Muxes := 524   
+	   7 Input      1 Bit        Muxes := 13    
 	  10 Input      1 Bit        Muxes := 55    
 Module mmu_acache__parameterized0 
 Detailed RTL Component Info : 
@@ -3367,9 +3389,9 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 35    
 	   3 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 35    
 	   4 Input      1 Bit        Muxes := 8     
 	   3 Input      1 Bit        Muxes := 7     
 	   2 Input      1 Bit        Muxes := 143   
@@ -3403,55 +3425,55 @@ Detailed RTL Component Info :
 	   2 Input     40 Bit        Muxes := 1     
 	   2 Input     36 Bit        Muxes := 1     
 	   2 Input     34 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 39    
-	   4 Input     32 Bit        Muxes := 6     
-	  19 Input     32 Bit        Muxes := 2     
 	   3 Input     32 Bit        Muxes := 2     
 	   6 Input     32 Bit        Muxes := 2     
-	   3 Input     30 Bit        Muxes := 2     
+	  19 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 39    
 	   2 Input     30 Bit        Muxes := 12    
 	   4 Input     30 Bit        Muxes := 1     
+	   3 Input     30 Bit        Muxes := 2     
 	   2 Input     24 Bit        Muxes := 4     
 	   2 Input     17 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 8     
 	   4 Input     10 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
-	   8 Input      8 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 19    
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 4     
+	   8 Input      6 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 20    
 	   4 Input      6 Bit        Muxes := 1     
-	   8 Input      6 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 6     
 	  19 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 15    
-	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
 	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 20    
-	   4 Input      3 Bit        Muxes := 4     
-	  10 Input      3 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 15    
+	   3 Input      3 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 1     
 	  19 Input      3 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 20    
+	   4 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 16    
 	   5 Input      2 Bit        Muxes := 2     
 	   3 Input      2 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 16    
-	   4 Input      2 Bit        Muxes := 6     
 	  16 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 6     
 	  19 Input      2 Bit        Muxes := 1     
-	  11 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 14    
-	  16 Input      1 Bit        Muxes := 2     
-	   7 Input      1 Bit        Muxes := 8     
-	   6 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 182   
-	  13 Input      1 Bit        Muxes := 4     
-	  19 Input      1 Bit        Muxes := 9     
 	   8 Input      1 Bit        Muxes := 39    
-	   3 Input      1 Bit        Muxes := 22    
 	   4 Input      1 Bit        Muxes := 113   
+	   7 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 182   
+	   3 Input      1 Bit        Muxes := 22    
+	  11 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 9     
+	  10 Input      1 Bit        Muxes := 14    
 Module gen_mult_pipe__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -3572,82 +3594,56 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 Module leon3s__parameterized0 
 Detailed RTL Component Info : 
-Module unisim_syncram64__parameterized0__3 
+Module irqmp__parameterized0 
 Detailed RTL Component Info : 
-Module syncram64__parameterized0__3 
-Detailed RTL Component Info : 
-Module unisim_syncram64__parameterized0 
-Detailed RTL Component Info : 
-Module syncram64__parameterized0 
-Detailed RTL Component Info : 
-Module tbufmem__parameterized0 
-Detailed RTL Component Info : 
-Module dsu3x__parameterized0 
++---Registers : 
+	               15 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 5     
+	   4 Input     15 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 30    
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 33    
+Module apbuart__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     30 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 4     
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
 +---XORs : 
-	   2 Input     30 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               32 Bit    Registers := 3     
-	               30 Bit    Registers := 4     
-	               25 Bit    Registers := 1     
-	                7 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 5     
-	                2 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
 	                1 Bit    Registers := 30    
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
-	  11 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 1     
-	  12 Input     30 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 3     
-	  12 Input      7 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 25    
-	  11 Input      1 Bit        Muxes := 21    
-	   2 Input      1 Bit        Muxes := 51    
-Module dsu3__parameterized0 
-Detailed RTL Component Info : 
-Module ahbrom 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---Muxes : 
-	 142 Input     32 Bit        Muxes := 1     
-	 142 Input      8 Bit        Muxes := 1     
-Module ahbctrl__parameterized0 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 2     
-	                9 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 9     
-+---Muxes : 
-	   3 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 8     
-	   2 Input     16 Bit        Muxes := 1     
-	   2 Input     13 Bit        Muxes := 2     
-	   2 Input     12 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 5     
+	   9 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 7     
-	   3 Input      4 Bit        Muxes := 1     
-	  16 Input      3 Bit        Muxes := 5     
-	   2 Input      3 Bit        Muxes := 3     
-	   2 Input      2 Bit        Muxes := 4     
-	   8 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 154   
-	   5 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 63    
-	   4 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 64    
+	   6 Input      1 Bit        Muxes := 31    
 Module eth_ahb_mst 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -3692,18 +3688,18 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 13    
 	   2 Input      9 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 3     
-	   6 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 3     
+	   6 Input      7 Bit        Muxes := 1     
 	   3 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 6     
 	  16 Input      4 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
-	  16 Input      2 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 6     
+	  16 Input      2 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 30    
-	  16 Input      1 Bit        Muxes := 22    
-	   6 Input      1 Bit        Muxes := 4     
 	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 22    
 Module eth_rstgen__parameterized0__1 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -3729,17 +3725,17 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 	   2 Input     28 Bit        Muxes := 1     
-	   9 Input     11 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 2     
+	   9 Input     11 Bit        Muxes := 1     
 	   9 Input     10 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 3     
 	  10 Input      4 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 2     
-	   9 Input      1 Bit        Muxes := 17    
 	   2 Input      1 Bit        Muxes := 15    
+	   9 Input      1 Bit        Muxes := 17    
 Module grethc__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -3748,9 +3744,9 @@ Detailed RTL Component Info :
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 2     
 	   2 Input     11 Bit       Adders := 6     
-	   3 Input      8 Bit       Adders := 1     
-	   4 Input      8 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 18    
 	   2 Input      5 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 1     
@@ -3775,79 +3771,79 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 10    
 	                1 Bit    Registers := 75    
 +---Muxes : 
-	  13 Input     48 Bit        Muxes := 2     
 	   2 Input     48 Bit        Muxes := 2     
-	  10 Input     32 Bit        Muxes := 2     
-	  13 Input     32 Bit        Muxes := 1     
-	  18 Input     32 Bit        Muxes := 1     
-	   9 Input     32 Bit        Muxes := 1     
+	  13 Input     48 Bit        Muxes := 2     
 	   8 Input     32 Bit        Muxes := 1     
 	  15 Input     32 Bit        Muxes := 1     
-	  16 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 4     
+	   9 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 2     
+	  13 Input     32 Bit        Muxes := 1     
+	  16 Input     32 Bit        Muxes := 1     
 	   7 Input     32 Bit        Muxes := 1     
-	   2 Input     30 Bit        Muxes := 1     
+	  18 Input     32 Bit        Muxes := 1     
 	   7 Input     30 Bit        Muxes := 1     
-	  15 Input     18 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
 	  10 Input     18 Bit        Muxes := 2     
+	  15 Input     18 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 17    
-	  13 Input     16 Bit        Muxes := 2     
 	   6 Input     16 Bit        Muxes := 4     
+	  13 Input     16 Bit        Muxes := 2     
+	  10 Input     15 Bit        Muxes := 1     
 	   2 Input     15 Bit        Muxes := 12    
 	  14 Input     15 Bit        Muxes := 1     
-	  10 Input     15 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 1     
 	  12 Input     13 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	  19 Input     11 Bit        Muxes := 1     
+	   7 Input     11 Bit        Muxes := 1     
 	  16 Input     11 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 9     
-	   8 Input     11 Bit        Muxes := 1     
-	   7 Input     11 Bit        Muxes := 1     
-	  19 Input     11 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 15    
-	  10 Input      8 Bit        Muxes := 1     
-	  10 Input      7 Bit        Muxes := 6     
-	  16 Input      7 Bit        Muxes := 2     
-	   7 Input      7 Bit        Muxes := 2     
 	  15 Input      7 Bit        Muxes := 1     
 	   8 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 12    
+	  10 Input      7 Bit        Muxes := 6     
+	  16 Input      7 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 10    
 	   6 Input      6 Bit        Muxes := 1     
-	   5 Input      6 Bit        Muxes := 2     
-	   6 Input      5 Bit        Muxes := 4     
-	  13 Input      5 Bit        Muxes := 1     
-	   8 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
-	  15 Input      4 Bit        Muxes := 3     
-	  16 Input      4 Bit        Muxes := 1     
+	  13 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 4     
+	   8 Input      5 Bit        Muxes := 1     
 	  10 Input      4 Bit        Muxes := 7     
-	  13 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 10    
+	  13 Input      4 Bit        Muxes := 1     
 	  10 Input      3 Bit        Muxes := 1     
-	   6 Input      3 Bit        Muxes := 1     
 	  15 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 2     
-	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 17    
+	   7 Input      3 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
-	   8 Input      2 Bit        Muxes := 1     
-	   9 Input      2 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
 	  11 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
 	  10 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 22    
-	   3 Input      1 Bit        Muxes := 8     
-	  13 Input      1 Bit        Muxes := 29    
-	  16 Input      1 Bit        Muxes := 15    
-	   7 Input      1 Bit        Muxes := 5     
-	   6 Input      1 Bit        Muxes := 30    
-	  10 Input      1 Bit        Muxes := 36    
 	  15 Input      1 Bit        Muxes := 19    
-	   2 Input      1 Bit        Muxes := 153   
 	   5 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 153   
+	  13 Input      1 Bit        Muxes := 29    
+	   7 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 8     
+	  16 Input      1 Bit        Muxes := 15    
+	  10 Input      1 Bit        Muxes := 36    
 	   8 Input      1 Bit        Muxes := 35    
+	   6 Input      1 Bit        Muxes := 30    
 Module unisim_syncram_dp__parameterized2 
 Detailed RTL Component Info : 
 Module unisim_syncram_2p__parameterized2 
@@ -3880,22 +3876,116 @@ Module greth__parameterized0
 Detailed RTL Component Info : 
 Module grethm__parameterized0 
 Detailed RTL Component Info : 
-Module SKadder__parameterized0 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      1 Bit         XORs := 63    
-Module adderahb__parameterized0 
+Module apbctrl__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 5     
+Module ahbctrl__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   8 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 154   
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 63    
+Module ahbrom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	 142 Input     32 Bit        Muxes := 1     
+	 142 Input      8 Bit        Muxes := 1     
+Module gptimer__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 7     
+	   3 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 40    
+	   4 Input      1 Bit        Muxes := 28    
+Module unisim_syncram64__parameterized0__3 
+Detailed RTL Component Info : 
+Module syncram64__parameterized0__3 
+Detailed RTL Component Info : 
+Module unisim_syncram64__parameterized0 
+Detailed RTL Component Info : 
+Module syncram64__parameterized0 
+Detailed RTL Component Info : 
+Module tbufmem__parameterized0 
+Detailed RTL Component Info : 
+Module dsu3x__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     30 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               30 Bit    Registers := 4     
+	               25 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 30    
 +---Muxes : 
 	   4 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 4     
-	   3 Input     32 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
+	  11 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  12 Input     30 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	  12 Input      7 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 25    
+	  11 Input      1 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 51    
+Module dsu3__parameterized0 
+Detailed RTL Component Info : 
 Module mctrl__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -3915,9 +4005,9 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 4     
 	   2 Input      5 Bit        Muxes := 22    
-	   3 Input      4 Bit        Muxes := 4     
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 29    
+	   3 Input      4 Bit        Muxes := 4     
 	   8 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 7     
 	   8 Input      2 Bit        Muxes := 3     
@@ -3925,6 +4015,40 @@ Detailed RTL Component Info :
 	   8 Input      1 Bit        Muxes := 13    
 	   3 Input      1 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 48    
+Module clk_divide__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module DAC_SPI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module DAC_buffer__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 129   
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 130   
+Module dacTop 
+Detailed RTL Component Info : 
 Module default_ADC 
 Detailed RTL Component Info : 
 Module ADC_buffer__parameterized0 
@@ -3952,90 +4076,22 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 1     
 	                7 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
-Module irqmp__parameterized0 
+Module SKadder__parameterized0 
 Detailed RTL Component Info : 
-+---Registers : 
-	               15 Bit    Registers := 4     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
-	   2 Input     15 Bit        Muxes := 5     
-	   4 Input     15 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 30    
-	   6 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 33    
-Module gptimer__parameterized0 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input      9 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	               32 Bit    Registers := 4     
-	                8 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 18    
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 6     
-	   4 Input     32 Bit        Muxes := 7     
-	   3 Input     32 Bit        Muxes := 4     
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 40    
-	   4 Input      1 Bit        Muxes := 28    
-Module apbuart__parameterized0 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     12 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 2     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 2     
-+---Registers : 
-	               12 Bit    Registers := 2     
-	               11 Bit    Registers := 1     
-	                8 Bit    Registers := 3     
-	                6 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 5     
-	                1 Bit    Registers := 30    
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
-	   6 Input     32 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 2     
-	   6 Input     12 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 5     
-	   5 Input      6 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 2     
-	   9 Input      6 Bit        Muxes := 1     
-	   6 Input      3 Bit        Muxes := 1     
-	   4 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	   6 Input      2 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 64    
-	   6 Input      1 Bit        Muxes := 31    
-	   4 Input      1 Bit        Muxes := 9     
-Module apbctrl__parameterized0 
+	   2 Input      1 Bit         XORs := 63    
+Module adderahb__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 2     
-	               20 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
-	   2 Input     20 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
 Module clkgen_virtex7__parameterized0 
 Detailed RTL Component Info : 
 Module clkgen__parameterized0 
@@ -4140,16 +4196,19 @@ DSP Report: Generating DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1],
 DSP Report: register mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1] is absorbed into DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1].
 DSP Report: operator p_1_out is absorbed into DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1].
 DSP Report: operator p_0_out is absorbed into DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1].
-WARNING: [Synth 8-3332] Sequential element (\r_reg[slv][haddr][1] ) is unused and will be removed from module dsu3x__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\r_reg[slv][haddr][0] ) is unused and will be removed from module dsu3x__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\r_reg[pwd][0] ) is unused and will be removed from module dsu3x__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\r_reg[slv][haddr][1] ) is unused and will be removed from module dsu3x__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\r_reg[slv][haddr][0] ) is unused and will be removed from module dsu3x__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\r_reg[rcnt][1] ) is unused and will be removed from module apbuart__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\r_reg[rtsn] ) is unused and will be removed from module apbuart__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\r_reg[rcnt][1] ) is unused and will be removed from module apbuart__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[done_ack][1] ) is unused and will be removed from module greth_rx__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[done_ack][1] ) is unused and will be removed from module greth_rx__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[capbil][0] ) is unused and will be removed from module grethc__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[rxrenable] ) is unused and will be removed from module grethc__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[capbil][0] ) is unused and will be removed from module grethc__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\r_reg[slv][haddr][1] ) is unused and will be removed from module dsu3x__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\r_reg[slv][haddr][0] ) is unused and will be removed from module dsu3x__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\r_reg[pwd][0] ) is unused and will be removed from module dsu3x__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\r_reg[slv][haddr][1] ) is unused and will be removed from module dsu3x__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (\r_reg[slv][haddr][0] ) is unused and will be removed from module dsu3x__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[bdrive][3] ) is unused and will be removed from module mctrl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[bdrive][2] ) is unused and will be removed from module mctrl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[ramsn][4] ) is unused and will be removed from module mctrl__parameterized0.
@@ -4167,9 +4226,6 @@ WARNING: [Synth 8-3332] Sequential element (\r_reg[address][26] ) is unused and 
 WARNING: [Synth 8-3332] Sequential element (\r_reg[address][25] ) is unused and will be removed from module mctrl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[address][24] ) is unused and will be removed from module mctrl__parameterized0.
 WARNING: [Synth 8-3332] Sequential element (\r_reg[writedata][15] ) is unused and will be removed from module mctrl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\r_reg[writedata][14] ) is unused and will be removed from module mctrl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\r_reg[writedata][13] ) is unused and will be removed from module mctrl__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (\r_reg[writedata][12] ) is unused and will be removed from module mctrl__parameterized0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3917] design leon3mp has port RamAdv driven by constant 0
 WARNING: [Synth 8-3917] design leon3mp has port RamClk driven by constant 0
@@ -4202,7 +4258,7 @@ WARNING: [Synth 8-3331] design leon3mp has unconnected port btn[2]
 WARNING: [Synth 8-3331] design leon3mp has unconnected port btn[1]
 WARNING: [Synth 8-3331] design leon3mp has unconnected port btn[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:02:01 . Memory (MB): peak = 1326.008 ; gain = 687.355
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:02:18 . Memory (MB): peak = 1339.383 ; gain = 700.730
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -4236,32 +4292,414 @@ Start Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\FSM_onehot_r_reg[dstate][7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\r_reg[reqst] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hmaster][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\mg2.sr1 /\r_reg[data][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/ahb0/\r_reg[hrdatam][31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_4/\mg2.sr1 /\r_reg[bexcn] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/ahb0/\r_reg[ldefmst] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\mg2.sr1 /\r_reg[hresp][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p0i_1/\mgen.div0/FSM_onehot_r_reg[state][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (p0i_1/iu/\r_reg[w][s][ec] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\eth0.e1/m100.u0/ethc0 /\rx_rmii1.rx0 /\r_reg[rxen][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[def_state][6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\eth0.e1/m100.u0/ethc0 /\r_reg[applength][15] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[main_state][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ua1.uart1 /\FSM_onehot_r_reg[rxstate][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ua1.uart1 /\r_reg[ctsn][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\eth0.e1/m100.u0/ethc0 /\FSM_onehot_r_reg[mdio_state][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hsize][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\mg2.sr1 /\r_reg[hburst][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\mg2.sr1 /\r_reg[data][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/ahb0/\r_reg[hrdatam][31] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\mg2.sr1 /\r_reg[bexcn] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/ahb0/\r_reg[ldefmst] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\mg2.sr1 /\r_reg[hresp][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[main_state][15] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\eth0.e1/m100.u0/ethc0 /\rx_rmii1.rx0 /\r_reg[rxen][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (p0i_1/\mgen.div0/FSM_onehot_r_reg[state][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (p0i_1/iu/\r_reg[w][s][ec] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\ua1.uart1 /\FSM_onehot_r_reg[rxstate][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\ua1.uart1 /\r_reg[ctsn][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\ua1.uart1 /\r_reg[ctsn][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ua1.uart1 /\r_reg[ctsn][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\r_reg[flushl2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\mg2.sr1 /\r_reg[area][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/ahb0/\r_reg[hrdatas][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hsize][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\mg2.sr1 /\r_reg[hburst][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\mg2.sr1 /\r_reg[area][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[en][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/ahb0/\r_reg[hrdatas][18] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\eth0.e1/m100.u0/ethc0 /ahb0/\r_reg[retry] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[en][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /\a0/r_reg[retry] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:06:30 ; elapsed = 00:07:19 . Memory (MB): peak = 1763.527 ; gain = 1124.875
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:35 ; elapsed = 00:07:25 . Memory (MB): peak = 1763.527 ; gain = 1124.875
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:40 ; elapsed = 00:07:31 . Memory (MB): peak = 1763.527 ; gain = 1124.875
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ahb0/r_reg[hrdatas][25] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:49 ; elapsed = 00:08:55 . Memory (MB): peak = 1774.082 ; gain = 1135.430
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+Gated Clock Conversion mode: off
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:51 ; elapsed = 00:08:57 . Memory (MB): peak = 1780.363 ; gain = 1141.711
+---------------------------------------------------------------------------------
+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:51 ; elapsed = 00:08:58 . Memory (MB): peak = 1780.363 ; gain = 1141.711
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:55 ; elapsed = 00:09:02 . Memory (MB): peak = 1780.363 ; gain = 1141.711
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|leon3mp     | leon3gen.cpu[0].u0/leon3x0/p0/iu/r_reg[x][ctrl][inst][16] | 4      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|leon3mp     | leon3gen.cpu[0].u0/leon3x0/p0/iu/r_reg[x][ctrl][inst][13] | 3      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++------------+-----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |fir_compiler_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |fir_compiler_0_bbox |     1|
+|2     |BUFG                |     7|
+|3     |CARRY4              |   221|
+|4     |DSP48E1_1           |     2|
+|5     |DSP48E1_2           |     2|
+|6     |LUT1                |   234|
+|7     |LUT2                |   619|
+|8     |LUT3                |  1026|
+|9     |LUT4                |  1437|
+|10    |LUT5                |  2907|
+|11    |LUT6                |  6313|
+|12    |MUXF7               |   847|
+|13    |MUXF8               |   313|
+|14    |PLLE2_ADV_1         |     1|
+|15    |PLLE2_ADV_2         |     1|
+|16    |RAM32M              |     6|
+|17    |RAMB16_S18          |     4|
+|18    |RAMB16_S36          |     2|
+|19    |RAMB16_S36_S36      |    11|
+|20    |RAMB16_S9           |     8|
+|21    |SRL16E              |    11|
+|22    |XADC                |     1|
+|23    |FDCE                |  4262|
+|24    |FDPE                |     6|
+|25    |FDRE                |  4265|
+|26    |FDSE                |   115|
+|27    |LD                  |    48|
+|28    |IBUF                |     8|
+|29    |IOBUF               |    17|
+|30    |OBUF                |    58|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+-------------------------------------+------+
+|      |Instance                           |Module                               |Cells |
++------+-----------------------------------+-------------------------------------+------+
+|1     |top                                |                                     | 22770|
+|2     |  \ethpads.emdio_pad               |iopad__parameterized0                |     1|
+|3     |    \xcv.x0                        |unisim_iopad__parameterized0_125     |     1|
+|4     |  io0                              |dummyapb__parameterized0             |  6536|
+|5     |    inst_ADC_TOP                   |ADC_TOP                              |  3174|
+|6     |      inst_Buffer                  |ADC_buffer__parameterized0           |  3147|
+|7     |      inst_ADC                     |default_ADC                          |     1|
+|8     |    inst_top                       |dacTop                               |  3322|
+|9     |      inst_clk_divider             |clk_divide__parameterized0           |   138|
+|10    |      inst_DAC_BUFFER              |DAC_buffer__parameterized0           |  3167|
+|11    |      inst_DAC_SPI                 |DAC_SPI                              |    16|
+|12    |  clkgen0                          |clkgen__parameterized0               |     4|
+|13    |    \xc7l.v                        |clkgen_virtex7__parameterized0       |     4|
+|14    |  \ethpads.erxd_pad                |inpadv__parameterized0               |     2|
+|15    |    \v[1].x0                       |inpad__parameterized0_121            |     1|
+|16    |      \xcv.x0                      |unisim_inpad__parameterized0_124     |     1|
+|17    |    \v[0].x0                       |inpad__parameterized0_122            |     1|
+|18    |      \xcv.x0                      |unisim_inpad__parameterized0_123     |     1|
+|19    |  \mgpads.oen_pad                  |outpad__parameterized0               |     1|
+|20    |    \xcv.x0                        |unisim_outpad__parameterized0_120    |     1|
+|21    |  rst0                             |rstgen__parameterized0               |    26|
+|22    |  apb0                             |apbctrl__parameterized0              |   530|
+|23    |  bdr                              |iopadv__parameterized0               |     8|
+|24    |    \v[1].x0                       |iopad__parameterized0_104            |     1|
+|25    |      \xcv.x0                      |unisim_iopad__parameterized0_119     |     1|
+|26    |    \v[5].x0                       |iopad__parameterized0_105            |     1|
+|27    |      \xcv.x0                      |unisim_iopad__parameterized0_118     |     1|
+|28    |    \v[3].x0                       |iopad__parameterized0_106            |     1|
+|29    |      \xcv.x0                      |unisim_iopad__parameterized0_117     |     1|
+|30    |    \v[7].x0                       |iopad__parameterized0_107            |     1|
+|31    |      \xcv.x0                      |unisim_iopad__parameterized0_116     |     1|
+|32    |    \v[2].x0                       |iopad__parameterized0_108            |     1|
+|33    |      \xcv.x0                      |unisim_iopad__parameterized0_115     |     1|
+|34    |    \v[0].x0                       |iopad__parameterized0_109            |     1|
+|35    |      \xcv.x0                      |unisim_iopad__parameterized0_114     |     1|
+|36    |    \v[6].x0                       |iopad__parameterized0_110            |     1|
+|37    |      \xcv.x0                      |unisim_iopad__parameterized0_113     |     1|
+|38    |    \v[4].x0                       |iopad__parameterized0_111            |     1|
+|39    |      \xcv.x0                      |unisim_iopad__parameterized0_112     |     1|
+|40    |  \mgpads.addr_pad                 |outpadv__parameterized0              |    23|
+|41    |    \v[11].x0                      |outpad__parameterized0_58            |     1|
+|42    |      \xcv.x0                      |unisim_outpad__parameterized0_103    |     1|
+|43    |    \v[16].x0                      |outpad__parameterized0_59            |     1|
+|44    |      \xcv.x0                      |unisim_outpad__parameterized0_102    |     1|
+|45    |    \v[13].x0                      |outpad__parameterized0_60            |     1|
+|46    |      \xcv.x0                      |unisim_outpad__parameterized0_101    |     1|
+|47    |    \v[18].x0                      |outpad__parameterized0_61            |     1|
+|48    |      \xcv.x0                      |unisim_outpad__parameterized0_100    |     1|
+|49    |    \v[5].x0                       |outpad__parameterized0_62            |     1|
+|50    |      \xcv.x0                      |unisim_outpad__parameterized0_99     |     1|
+|51    |    \v[0].x0                       |outpad__parameterized0_63            |     1|
+|52    |      \xcv.x0                      |unisim_outpad__parameterized0_98     |     1|
+|53    |    \v[20].x0                      |outpad__parameterized0_64            |     1|
+|54    |      \xcv.x0                      |unisim_outpad__parameterized0_97     |     1|
+|55    |    \v[7].x0                       |outpad__parameterized0_65            |     1|
+|56    |      \xcv.x0                      |unisim_outpad__parameterized0_96     |     1|
+|57    |    \v[12].x0                      |outpad__parameterized0_66            |     1|
+|58    |      \xcv.x0                      |unisim_outpad__parameterized0_95     |     1|
+|59    |    \v[19].x0                      |outpad__parameterized0_67            |     1|
+|60    |      \xcv.x0                      |unisim_outpad__parameterized0_94     |     1|
+|61    |    \v[14].x0                      |outpad__parameterized0_68            |     1|
+|62    |      \xcv.x0                      |unisim_outpad__parameterized0_93     |     1|
+|63    |    \v[6].x0                       |outpad__parameterized0_69            |     1|
+|64    |      \xcv.x0                      |unisim_outpad__parameterized0_92     |     1|
+|65    |    \v[1].x0                       |outpad__parameterized0_70            |     1|
+|66    |      \xcv.x0                      |unisim_outpad__parameterized0_91     |     1|
+|67    |    \v[21].x0                      |outpad__parameterized0_71            |     1|
+|68    |      \xcv.x0                      |unisim_outpad__parameterized0_90     |     1|
+|69    |    \v[8].x0                       |outpad__parameterized0_72            |     1|
+|70    |      \xcv.x0                      |unisim_outpad__parameterized0_89     |     1|
+|71    |    \v[3].x0                       |outpad__parameterized0_73            |     1|
+|72    |      \xcv.x0                      |unisim_outpad__parameterized0_88     |     1|
+|73    |    \v[15].x0                      |outpad__parameterized0_74            |     1|
+|74    |      \xcv.x0                      |unisim_outpad__parameterized0_87     |     1|
+|75    |    \v[10].x0                      |outpad__parameterized0_75            |     1|
+|76    |      \xcv.x0                      |unisim_outpad__parameterized0_86     |     1|
+|77    |    \v[17].x0                      |outpad__parameterized0_76            |     1|
+|78    |      \xcv.x0                      |unisim_outpad__parameterized0_85     |     1|
+|79    |    \v[2].x0                       |outpad__parameterized0_77            |     1|
+|80    |      \xcv.x0                      |unisim_outpad__parameterized0_84     |     1|
+|81    |    \v[22].x0                      |outpad__parameterized0_78            |     1|
+|82    |      \xcv.x0                      |unisim_outpad__parameterized0_83     |     1|
+|83    |    \v[9].x0                       |outpad__parameterized0_79            |     1|
+|84    |      \xcv.x0                      |unisim_outpad__parameterized0_82     |     1|
+|85    |    \v[4].x0                       |outpad__parameterized0_80            |     1|
+|86    |      \xcv.x0                      |unisim_outpad__parameterized0_81     |     1|
+|87    |  \ethpads.emdc_pad                |outpad__parameterized0_0             |     1|
+|88    |    \xcv.x0                        |unisim_outpad__parameterized0_57     |     1|
+|89    |  etxc_pad                         |outpad__parameterized0_1             |     1|
+|90    |    \xcv.x0                        |unisim_outpad__parameterized0_56     |     1|
+|91    |  \ethpads.etxen_pad               |outpad__parameterized0_2             |     1|
+|92    |    \xcv.x0                        |unisim_outpad__parameterized0_55     |     1|
+|93    |  \mgpads.ub_pad                   |outpad__parameterized0_3             |     1|
+|94    |    \xcv.x0                        |unisim_outpad__parameterized0_54     |     1|
+|95    |  \mg2.sr1                         |mctrl__parameterized0                |   342|
+|96    |  \leon3gen.cpu[0].u0              |leon3s__parameterized0               |  8688|
+|97    |    leon3x0                        |leon3x__parameterized0               |  8688|
+|98    |      rf0                          |regfile_3p_l3__parameterized0        |   168|
+|99    |        \s1.rhu                    |regfile_3p__parameterized0           |   168|
+|100   |          \s1.dp.x1                |syncram_2p__parameterized0           |    60|
+|101   |            \xc2v.x0               |unisim_syncram_2p__parameterized0_52 |    48|
+|102   |              \a6.x0               |unisim_syncram_dp__parameterized0_53 |    48|
+|103   |          \s1.dp.x0                |syncram_2p__parameterized0_51        |   108|
+|104   |            \xc2v.x0               |unisim_syncram_2p__parameterized0    |    53|
+|105   |              \a6.x0               |unisim_syncram_dp__parameterized0    |    53|
+|106   |      cmem0                        |cachemem__parameterized0             |   104|
+|107   |        \dme.dd0[1].ddata0         |syncram__parameterized6              |     6|
+|108   |          \xc2v.x0                 |unisim_syncram__parameterized6_50    |     6|
+|109   |        \dme.dtags0.dt0[0].dtags0  |syncram__parameterized4              |    10|
+|110   |          \xc2v.x0                 |unisim_syncram__parameterized4_49    |    10|
+|111   |        \dme.dd0[0].ddata0         |syncram__parameterized6_43           |     2|
+|112   |          \xc2v.x0                 |unisim_syncram__parameterized6       |     2|
+|113   |        \dme.dtags0.dt0[1].dtags0  |syncram__parameterized4_44           |    12|
+|114   |          \xc2v.x0                 |unisim_syncram__parameterized4       |    12|
+|115   |        \ime.im0[1].idata0         |syncram__parameterized2              |    28|
+|116   |          \xc2v.x0                 |unisim_syncram__parameterized2_48    |    28|
+|117   |        \ime.im0[1].itags0         |syncram__parameterized0              |    10|
+|118   |          \xc2v.x0                 |unisim_syncram__parameterized0_47    |    10|
+|119   |        \ime.im0[0].idata0         |syncram__parameterized2_45           |     9|
+|120   |          \xc2v.x0                 |unisim_syncram__parameterized2       |     9|
+|121   |        \ime.im0[0].itags0         |syncram__parameterized0_46           |    11|
+|122   |          \xc2v.x0                 |unisim_syncram__parameterized0       |    11|
+|123   |      \tbmem_gen.tbmem0            |tbufmem__parameterized0_38           |    34|
+|124   |        \mem0[0].ram0              |syncram64__parameterized0_39         |    33|
+|125   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_42  |    33|
+|126   |        \mem0[1].ram0              |syncram64__parameterized0_40         |     1|
+|127   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_41  |     1|
+|128   |      p0                           |proc3__parameterized0                |  8381|
+|129   |        c0mmu                      |mmu_cache__parameterized0            |  3065|
+|130   |          icache0                  |mmu_icache__parameterized0           |  1124|
+|131   |          dcache0                  |mmu_dcache__parameterized0           |  1015|
+|132   |          a0                       |mmu_acache__parameterized0           |   144|
+|133   |        \mgen.mul0                 |mul32__parameterized0                |    96|
+|134   |          \xm3232.m3232            |techmult__parameterized0             |    96|
+|135   |            \pipe2.arch0.dwm       |gen_mult_pipe__parameterized0        |    96|
+|136   |        iu                         |iu3__parameterized0                  |  4832|
+|137   |        \mgen.div0                 |div32                                |   367|
+|138   |  \gpt.timer0                      |gptimer__parameterized0              |   372|
+|139   |  \eth0.e1                         |grethm__parameterized0               |  3888|
+|140   |    \m100.u0                       |greth__parameterized0                |  3888|
+|141   |      ethc0                        |grethc__parameterized0               |  3787|
+|142   |        ahb0                       |eth_ahb_mst                          |   266|
+|143   |        \tx_rmii1.tx0              |greth_tx__parameterized0             |   505|
+|144   |          tx_rst                   |eth_rstgen__parameterized0           |    19|
+|145   |        \rx_rmii1.rx0              |greth_rx__parameterized0             |   770|
+|146   |      \nft.tx_fifo0                |syncram_2p__parameterized2           |     1|
+|147   |        \xc2v.x0                   |unisim_syncram_2p__parameterized2    |     1|
+|148   |          \a6.x0                   |unisim_syncram_dp__parameterized2    |     1|
+|149   |      \edclramnft.r0               |syncram_2p__parameterized6           |    20|
+|150   |        \xc2v.x0                   |unisim_syncram_2p__parameterized6_36 |    20|
+|151   |          \a6.x0                   |unisim_syncram_dp__parameterized4_37 |    20|
+|152   |      \edclramnft.r1               |syncram_2p__parameterized6_35        |    16|
+|153   |        \xc2v.x0                   |unisim_syncram_2p__parameterized6    |    16|
+|154   |          \a6.x0                   |unisim_syncram_dp__parameterized4    |    16|
+|155   |      \nft.rx_fifo0                |syncram_2p__parameterized4           |    38|
+|156   |        \xc2v.x0                   |unisim_syncram_2p__parameterized4    |    38|
+|157   |          \a0.x0                   |generic_syncram_2p__parameterized0   |    38|
+|158   |  \mgpads.cs_pad                   |outpad__parameterized0_4             |     1|
+|159   |    \xcv.x0                        |unisim_outpad__parameterized0_34     |     1|
+|160   |  \ethpads.erxcr_pad               |inpad__parameterized0                |     1|
+|161   |    \xcv.x0                        |unisim_inpad__parameterized0_33      |     1|
+|162   |  ahb0                             |ahbctrl__parameterized0              |   171|
+|163   |  \leon3gen.dsugen.dsu0            |dsu3__parameterized0                 |  1186|
+|164   |    x0                             |dsu3x__parameterized0                |  1173|
+|165   |      \tb0.mem0                    |tbufmem__parameterized0              |   247|
+|166   |        \mem0[0].ram0              |syncram64__parameterized0            |   144|
+|167   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_32  |   144|
+|168   |        \mem0[1].ram0              |syncram64__parameterized0_31         |   103|
+|169   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0     |   103|
+|170   |  \bpromgen.brom                   |ahbrom                               |   191|
+|171   |  \ua1.dsutx_pad                   |outpad__parameterized0_5             |     1|
+|172   |    \xcv.x0                        |unisim_outpad__parameterized0_30     |     1|
+|173   |  \mgpads.wri_pad                  |outpad__parameterized0_6             |     1|
+|174   |    \xcv.x0                        |unisim_outpad__parameterized0_29     |     1|
+|175   |  adderahb_if                      |adderahb__parameterized0             |   358|
+|176   |  \ethpads.etxd_pad                |outpadv__parameterized2              |     2|
+|177   |    \v[1].x0                       |outpad__parameterized0_25            |     1|
+|178   |      \xcv.x0                      |unisim_outpad__parameterized0_28     |     1|
+|179   |    \v[0].x0                       |outpad__parameterized0_26            |     1|
+|180   |      \xcv.x0                      |unisim_outpad__parameterized0_27     |     1|
+|181   |  \ua1.uart1                       |apbuart__parameterized0              |   231|
+|182   |  bdr2                             |iopadv__parameterized0_7             |     8|
+|183   |    \v[1].x0                       |iopad__parameterized0_10             |     1|
+|184   |      \xcv.x0                      |unisim_iopad__parameterized0_24      |     1|
+|185   |    \v[5].x0                       |iopad__parameterized0_11             |     1|
+|186   |      \xcv.x0                      |unisim_iopad__parameterized0_23      |     1|
+|187   |    \v[3].x0                       |iopad__parameterized0_12             |     1|
+|188   |      \xcv.x0                      |unisim_iopad__parameterized0_22      |     1|
+|189   |    \v[7].x0                       |iopad__parameterized0_13             |     1|
+|190   |      \xcv.x0                      |unisim_iopad__parameterized0_21      |     1|
+|191   |    \v[2].x0                       |iopad__parameterized0_14             |     1|
+|192   |      \xcv.x0                      |unisim_iopad__parameterized0_20      |     1|
+|193   |    \v[0].x0                       |iopad__parameterized0_15             |     1|
+|194   |      \xcv.x0                      |unisim_iopad__parameterized0_19      |     1|
+|195   |    \v[6].x0                       |iopad__parameterized0_16             |     1|
+|196   |      \xcv.x0                      |unisim_iopad__parameterized0_18      |     1|
+|197   |    \v[4].x0                       |iopad__parameterized0_17             |     1|
+|198   |      \xcv.x0                      |unisim_iopad__parameterized0         |     1|
+|199   |  \mgpads.lb_pad                   |outpad__parameterized0_8             |     1|
+|200   |    \xcv.x0                        |unisim_outpad__parameterized0        |     1|
+|201   |  \ua1.dsurx_pad                   |inpad__parameterized0_9              |     2|
+|202   |    \xcv.x0                        |unisim_inpad__parameterized0         |     2|
+|203   |  \irqctrl.irqctrl0                |irqmp__parameterized0                |   130|
++------+-----------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:56 ; elapsed = 00:09:03 . Memory (MB): peak = 1780.363 ; gain = 1141.711
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 559 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:07:56 ; elapsed = 00:09:03 . Memory (MB): peak = 1780.363 ; gain = 1141.711
+INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  IOBUF => IOBUF (OBUFT, IBUF): 17 instances
+  LD => LDCE: 48 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAMB16_S18 => RAMB18E1: 4 instances
+  RAMB16_S36 => RAMB36E1: 2 instances
+  RAMB16_S36_S36 => RAMB36E1: 11 instances
+  RAMB16_S9 => RAMB18E1: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+383 Infos, 469 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:16 ; elapsed = 00:09:26 . Memory (MB): peak = 1879.363 ; gain = 1147.316
+# write_checkpoint leon3mp.dcp
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1889.633 ; gain = 10.270
+# report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.63 . Memory (MB): peak = 1891.645 ; gain = 2.012
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  8 23:25:31 2014...

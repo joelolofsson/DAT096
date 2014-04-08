@@ -92,7 +92,7 @@ port map (
 
 inst_ADC_TOP : ADC_TOP 
 port map (
-    clk => clk,
+    clk => clk100,
     rst => rstn,
     sampleclk => sampleclk,
     vauxp3 => vauxp3,
