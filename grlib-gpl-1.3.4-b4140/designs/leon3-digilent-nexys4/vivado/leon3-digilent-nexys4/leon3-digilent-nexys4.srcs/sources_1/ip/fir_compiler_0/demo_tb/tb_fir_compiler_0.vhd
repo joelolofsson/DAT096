@@ -185,7 +185,7 @@ begin
 
     -- Procedure to drive an impulse and let the impulse response emerge on the data master channel
     -- samples is the number of input samples to drive; default is enough for impulse response output to emerge
-    procedure drive_impulse ( samples : natural := 75 ) is
+    procedure drive_impulse ( samples : natural := 47 ) is
       variable impulse : std_logic_vector(15 downto 0);
     begin
       impulse := (others => '0');  -- initialize unused bits to zero
@@ -212,11 +212,11 @@ begin
     drive_zeros(2);  -- 2 normal input samples
     s_axis_data_tvalid <= '1';
     wait for CLOCK_PERIOD * 350;  -- provide data as fast as the core can accept it for 5 input samples worth
-    drive_zeros(66);  -- back to normal operation
+    drive_zeros(38);  -- back to normal operation
 
     -- Drive another impulse, during which demonstrate:
     --   reset (aresetn)
-    drive_impulse(17);  -- to partway through impulse response
+    drive_impulse(10);  -- to partway through impulse response
     s_axis_data_tvalid <= '0';
     aresetn <= '0';  -- assert reset (active low)
     wait for CLOCK_PERIOD * 2;  -- hold reset active for 2 clock cycles, as recommended in FIR Compiler Datasheet

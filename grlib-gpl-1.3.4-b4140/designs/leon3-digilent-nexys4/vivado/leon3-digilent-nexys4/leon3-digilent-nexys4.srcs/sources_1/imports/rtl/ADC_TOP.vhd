@@ -49,22 +49,34 @@ end ADC_TOP;
 -- ! @details The architecture containing the main body of the component.
 architecture Behavioral of ADC_TOP is
 
+   component digitalfilter
+      GENERIC(WIDTH:INTEGER:=8;
+              N:INTEGER:=4);
+      PORT(reset:STD_LOGIC;
+           start:STD_LOGIC;
+           clk:STD_LOGIC;
+           x:IN STD_LOGIC_VECTOR(WIDTH-1 DOWNTO 0);
+           y:OUT STD_LOGIC_VECTOR(2*WIDTH-1 DOWNTO 0);
+           finished:OUT STD_LOGIC);
+   END  component;
+
+
 -- ! FIR filter IP component.
-COMPONENT fir_compiler_0
-  PORT (
-    aresetn : IN STD_LOGIC;									-- ! Global reset active low.
-    aclk : IN STD_LOGIC;									-- ! Global clock running at 100 MHz
-    s_axis_data_tvalid : IN STD_LOGIC;						-- ! Signalling a new data word is available
-    s_axis_data_tready : OUT STD_LOGIC;						-- ! Signalling the FIR component is ready for a new value
-    s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);	-- ! The input data coming from the ADC 
-    m_axis_data_tvalid : OUT STD_LOGIC;						-- ! Signalling the output is valid
-    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)	-- ! The output from the FIR-filter.
-  );
-END COMPONENT;
-ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
-ATTRIBUTE SYN_BLACK_BOX OF fir_compiler_0 : COMPONENT IS TRUE;
-ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF fir_compiler_0 : COMPONENT IS "aresetn,aclk,s_axis_data_tvalid,s_axis_data_tready,s_axis_data_tdata[15:0],m_axis_data_tvalid,m_axis_data_tdata[31:0]";
+ COMPONENT fir_compiler_0
+   PORT (
+     aresetn : IN STD_LOGIC;									-- ! Global reset active low.
+     aclk : IN STD_LOGIC;									-- ! Global clock running at 100 MHz
+     s_axis_data_tvalid : IN STD_LOGIC;						-- ! Signalling a new data word is available
+     s_axis_data_tready : OUT STD_LOGIC;						-- ! Signalling the FIR component is ready for a new value
+     s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);	-- ! The input data coming from the ADC 
+     m_axis_data_tvalid : OUT STD_LOGIC;						-- ! Signalling the output is valid
+     m_axis_data_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)	-- ! The output from the FIR-filter.
+   );
+ END COMPONENT;
+ ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
+ ATTRIBUTE SYN_BLACK_BOX OF fir_compiler_0 : COMPONENT IS TRUE;
+ ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
+ ATTRIBUTE BLACK_BOX_PAD_PIN OF fir_compiler_0 : COMPONENT IS "aresetn,aclk,s_axis_data_tvalid,s_axis_data_tready,s_axis_data_tdata[15:0],m_axis_data_tvalid,m_axis_data_tdata[15:0]";
 
 -- ! XADC IP component
 COMPONENT ADC
@@ -118,7 +130,7 @@ signal di_in : STD_LOGIC_VECTOR(15 downto 0);			-- ! Signal for the input vector
 signal daddr_in : std_LOGIC_vector(6 downto 0);			-- ! Address in registers
 signal inv_rst : std_logic;								-- ! Inversed reset for XADC
 signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);	-- ! Sampled value from XADC
-signal sampleFLT : STD_LOGIC_VECTOR(15 downto 0);		-- ! Filtered signal to be decimated
+signal sampleFLT : STD_LOGIC_VECTOR(31 downto 0);		-- ! Filtered signal to be decimated
 signal busy : STD_LOGIC;								-- ! Busy signal from XADC
 signal dataready : STD_LOGIC;							-- ! Signalling the FIR filter is done to load new value to FIR filter
 signal FIRready : STD_LOGIC;                            -- ! Signalling the firfilter is done with calculation
@@ -126,7 +138,7 @@ signal cnt : integer range 0 to 3;                      -- !
 signal FIRvalid : std_logic;
 signal Buffer_in : STD_LOGIC_VECTOR(15 downto 0);
 
-
+signal lastsampleclk : STD_LOGIC;
 
 begin
 
@@ -136,7 +148,8 @@ begin
         dataready <= '1';
 		den_in <= '0';
     elsif rising_edge(clk) then 
-        if sampleclk = '1' then
+		lastsampleclk <= sampleclk;
+        if (sampleclk = '1') and (lastsampleclk = '0' )then
             dataready <= '1';
             cnt <= 3;
 			den_in <= '1';
@@ -163,17 +176,28 @@ inv_rst <= not rst;						-- ! Reset is inverted to create a active high reset fo
 --end if;
 --end process;
 
+inst_digitalfilter : digitalfilter
+generic map (width => 16,
+             N => 41)
+port map (reset => rst,
+          start => dataready,
+          clk => clk,
+          x => sampledvalue,
+          y => sampleflt,
+          finished => FIRvalid);
+
+
 -- ! Instanciations of FIR filter
-inst_fir : fir_compiler_0
-PORT MAP (
-    aresetn => rst,
-    aclk => clk,
-    s_axis_data_tvalid => dataready,
-    s_axis_data_tready => FIRready,
-    s_axis_data_tdata => sampledvalue,
-    m_axis_data_tvalid => FIRvalid,
-    m_axis_data_tdata => sampleflt
-    );
+--inst_fir : fir_compiler_0
+-- PORT MAP (
+--     aresetn => rst,
+--     aclk => clk,
+--     s_axis_data_tvalid => dataready,
+--     s_axis_data_tready => FIRready,
+--     s_axis_data_tdata => sampledvalue,
+--     m_axis_data_tvalid => FIRvalid,
+--     m_axis_data_tdata => sampleflt
+--     );
 
 --DC_buff_out <= sampledvalue;
 
@@ -189,7 +213,7 @@ inst_ADC : ADC
     den_in => den_in,
     dwe_in => dwe_in,
     drdy_out => open,
-    do_out => sampledvalue,
+--    do_out => sampledvalue,
     dclk_in => clk,
     reset_in => inv_rst,
     convstclk_in => sampleclk,
@@ -208,15 +232,7 @@ inst_ADC : ADC
     busy_out => busy
   );
  
-  --inst_css : ila_0
-  --  PORT MAP (
-  --    clk => clk,
-  --    probe0 => cssig,
-  --    probe1 => cssig2
-  --  );
---  cssig <= sampledvalue & x"0000";
---  cssig2 <= sampledvalue;
-  
+
  --process(clk)
  --begin
  --   if rising_edge(clk) then
@@ -235,7 +251,7 @@ inst_ADC : ADC
  		clk                 => clk,
  		rst                 => rst,
  		buff_write			=> ADC_buff_write,
- 		Buffin 				=> sampleFLT,
+ 		Buffin 				=> sampleflt(31 downto 16),
  		Buffout 			=> ADC_buff_out,
  		Bufferfull 		    => Buff_full,
  		Addr 				=> addr);

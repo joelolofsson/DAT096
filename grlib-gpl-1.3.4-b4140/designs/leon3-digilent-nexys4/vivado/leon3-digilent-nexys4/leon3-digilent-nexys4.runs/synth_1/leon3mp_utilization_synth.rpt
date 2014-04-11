@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Thu Apr 10 18:00:00 2014
+| Date         : Fri Apr 11 18:33:34 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
@@ -29,16 +29,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 11265 |     0 |     63400 | 17.76 |
-|   LUT as Logic             | 11230 |     0 |     63400 | 17.71 |
+| Slice LUTs*                | 11472 |     0 |     63400 | 18.09 |
+|   LUT as Logic             | 11437 |     0 |     63400 | 18.03 |
 |   LUT as Memory            |    35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    24 |     0 |           |       |
 |     LUT as Shift Register  |    11 |     0 |           |       |
-| Slice Registers            |  8696 |     0 |    126800 |  6.85 |
-|   Register as Flip Flop    |  8648 |     0 |    126800 |  6.82 |
+| Slice Registers            |  8771 |     0 |    126800 |  6.91 |
+|   Register as Flip Flop    |  8723 |     0 |    126800 |  6.87 |
 |   Register as Latch        |    48 |     0 |    126800 |  0.03 |
-| F7 Muxes                   |   847 |     0 |     31700 |  2.67 |
-| F8 Muxes                   |   313 |     0 |     15850 |  1.97 |
+| F7 Muxes                   |   824 |     0 |     31700 |  2.59 |
+| F8 Muxes                   |   299 |     0 |     15850 |  1.88 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
 
@@ -64,8 +64,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Loced | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |    4 |     0 |       240 |  1.66 |
-|   DSP48E1 only |    4 |       |           |       |
+| DSPs           |    6 |     0 |       240 |  2.50 |
+|   DSP48E1 only |    6 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Loced | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   81 |     0 |       210 | 38.57 |
+| Bonded IOB                  |   82 |     0 |       210 | 39.04 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | IBUFGDS                     |    0 |     0 |       202 |  0.00 |
 | IDELAYCTRL                  |    0 |     0 |         6 |  0.00 |
@@ -133,19 +133,19 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
-| LUT6      | 6315 |
-| FDRE      | 4265 |
-| FDCE      | 4262 |
-| LUT5      | 2924 |
-| LUT4      | 1423 |
-| LUT3      | 1031 |
-| MUXF7     |  847 |
-| LUT2      |  614 |
-| MUXF8     |  313 |
-| LUT1      |  233 |
-| CARRY4    |  221 |
+| LUT6      | 6397 |
+| FDCE      | 4330 |
+| FDRE      | 4272 |
+| LUT5      | 2891 |
+| LUT4      | 1495 |
+| LUT3      | 1034 |
+| MUXF7     |  824 |
+| LUT2      |  704 |
+| MUXF8     |  299 |
+| LUT1      |  290 |
+| CARRY4    |  285 |
 | FDSE      |  115 |
-| OBUF      |   58 |
+| OBUF      |   59 |
 | LDCE      |   48 |
 | RAMD32    |   36 |
 | IBUF      |   23 |
@@ -156,7 +156,7 @@ Table of Contents
 | SRL16E    |   11 |
 | BUFG      |    7 |
 | FDPE      |    6 |
-| DSP48E1   |    4 |
+| DSP48E1   |    6 |
 | PLLE2_ADV |    2 |
 +-----------+------+
 
@@ -164,12 +164,11 @@ Table of Contents
 8. Black Boxes
 --------------
 
-+----------------+------+
-|    Ref Name    | Used |
-+----------------+------+
-| fir_compiler_0 |    1 |
-| ADC            |    1 |
-+----------------+------+
++----------+------+
+| Ref Name | Used |
++----------+------+
+| ADC      |    1 |
++----------+------+
 
 
 9. Instantiated Netlists

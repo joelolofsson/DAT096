@@ -151,7 +151,7 @@ begin
  U0 : XADC
      generic map(
         INIT_40 => X"0613", -- config reg 0
-        INIT_41 => X"3130", -- config reg 1
+        INIT_41 => X"3100", -- config reg 1
         INIT_42 => X"0300", -- config reg 2
         INIT_48 => X"0100", -- Sequencer channel selection
         INIT_49 => X"0000", -- Sequencer channel selection
@@ -172,7 +172,7 @@ begin
         INIT_58 => X"5999",  -- Vbram upper alarm limit
         INIT_5C => X"5111",  -- Vbram lower alarm limit
         SIM_DEVICE => "7SERIES",
-        SIM_MONITOR_FILE => "c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt"
+        SIM_MONITOR_FILE => "c:/CHALMERS/DAT096/softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt"
         )
 
 port map (
