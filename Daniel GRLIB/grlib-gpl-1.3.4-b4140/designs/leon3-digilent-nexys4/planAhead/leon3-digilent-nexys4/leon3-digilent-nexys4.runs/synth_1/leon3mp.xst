@@ -1,8 +1,0 @@
-set -loop_iteration_limit 1000
-run
--ifn leon3mp.prj
--top leon3mp
--p xc7a100tcsg324-2
--ofn leon3mp.ngc
--opt_mode speed
--opt_level 1

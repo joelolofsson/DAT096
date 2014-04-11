@@ -3,6 +3,14 @@
  Attempting to get a license: %s
 78*common2"
 Implementation2default:defaultZ17-78
+<<<<<<< HEAD
+=======
+x
+%Your %s license expires in %s day(s)
+86*common2"
+Implementation2default:default2
+212default:defaultZ17-86
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 Q
 Feature available: %s
 81*common2"
@@ -56,9 +64,15 @@ Starting synthesis...
 310*common2
 	Synthesis2default:default2
 xc7a100t2default:defaultZ17-349
+<<<<<<< HEAD
 ›
 %s*synth2‹
 wStarting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 337.559 ; gain = 79.199
+=======
+œ
+%s*synth2Œ
+xStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 791.043 ; gain = 152.391
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 ­
 synthesizing module '%s'638*oasys2
@@ -224,7 +238,11 @@ O
 842default:default8@Z8-256
 œ
 %s*synth2Œ
+<<<<<<< HEAD
 xFinished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 361.691 ; gain = 103.332
+=======
+xFinished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 825.863 ; gain = 187.211
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 ;
 %s*synth2,
@@ -328,6 +346,7 @@ u
 %s111*project29
 %No Unisim elements were transformed.
 2default:defaultZ1-111
+<<<<<<< HEAD
 µ
 %s*synth2¥
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 479.902 ; gain = 221.543
@@ -335,6 +354,15 @@ u
 
 %s*synth2
 yFinished RTL Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 479.902 ; gain = 221.543
+=======
+¶
+%s*synth2¦
+‘Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1026.570 ; gain = 387.918
+2default:default
+ž
+%s*synth2Ž
+zFinished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1026.570 ; gain = 387.918
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 <
 %s*synth2-
@@ -363,9 +391,15 @@ WPart Resources:
 DSPs: 240 (col length:80)
 BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
+<<<<<<< HEAD
 ±
 %s*synth2¡
 ŒFinished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 520.301 ; gain = 261.941
+=======
+²
+%s*synth2¢
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1096.859 ; gain = 458.207
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 B
 %s*synth23
@@ -383,9 +417,15 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+<<<<<<< HEAD
 ©
 %s*synth2™
 „Finished Cross Boundary Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 520.309 ; gain = 261.949
+=======
+ª
+%s*synth2š
+…Finished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1096.859 ; gain = 458.207
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 ¢
 %s*synth2’
@@ -405,6 +445,7 @@ u
 %s*synth2f
 R---------------------------------------------------------------------------------
 2default:default
+<<<<<<< HEAD
 ž
 %s*synth2Ž
 zFinished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 522.379 ; gain = 264.020
@@ -420,14 +461,37 @@ zFinished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Me
 Ÿ
 %s*synth2
 {Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 526.340 ; gain = 267.980
+=======
+Ÿ
+%s*synth2
+{Finished Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1097.855 ; gain = 459.203
+2default:default
+®
+%s*synth2ž
+‰Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1097.855 ; gain = 459.203
+2default:default
+¡
+%s*synth2‘
+}Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1097.855 ; gain = 459.203
+2default:default
+ 
+%s*synth2
+|Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1106.871 ; gain = 468.219
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 D
 %s*synth25
 !Gated Clock Conversion mode: off
 2default:default
+<<<<<<< HEAD
 ™
 %s*synth2‰
 uFinished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 526.340 ; gain = 267.980
+=======
+š
+%s*synth2Š
+vFinished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1106.871 ; gain = 468.219
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 ;
 %s*synth2,
@@ -454,6 +518,7 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
+<<<<<<< HEAD
 ª
 %s*synth2š
 …Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 526.340 ; gain = 267.980
@@ -461,6 +526,15 @@ I+------+------------------+-------+---------+-------+------------------+
 §
 %s*synth2—
 ‚Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 526.340 ; gain = 267.980
+=======
+«
+%s*synth2›
+†Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1106.871 ; gain = 468.219
+2default:default
+¨
+%s*synth2˜
+ƒFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1106.871 ; gain = 468.219
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 ¢
 %s*synth2’
@@ -551,17 +625,29 @@ E
 %s*synth26
 "+------+---------+-------+------+
 2default:default
+<<<<<<< HEAD
 ¦
 %s*synth2–
 Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 526.340 ; gain = 267.980
+=======
+§
+%s*synth2—
+‚Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1106.871 ; gain = 468.219
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 i
 %s*synth2Z
 FSynthesis finished with 0 errors, 0 critical warnings and 0 warnings.
 2default:default
+<<<<<<< HEAD
 £
 %s*synth2“
 Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 526.340 ; gain = 267.980
+=======
+¥
+%s*synth2•
+€Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1106.871 ; gain = 468.219
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -619,6 +705,7 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
+<<<<<<< HEAD
 00:01:022default:default2
 00:01:092default:default2
 754.5122default:default2
@@ -628,9 +715,24 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 35*timingZ38-35
 
 sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 754.512 ; gain = 0.000
+=======
+00:00:432default:default2
+00:00:512default:default2
+1475.3012default:default2
+731.2542default:defaultZ17-268
+<
+%Done setting XDC timing constraints.
+35*timingZ38-35
+‚
+vreport_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.38 . Memory (MB): peak = 1477.316 ; gain = 2.012
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
+<<<<<<< HEAD
 Tue Apr 08 15:59:42 20142default:defaultZ17-206
+=======
+Tue Apr  8 22:55:32 20142default:defaultZ17-206
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f

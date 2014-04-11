@@ -1,9 +1,16 @@
 // Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
+<<<<<<< HEAD
 // Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
 // Date        : Tue Apr 08 15:59:42 2014
 // Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub {C:/CHALMERS/DAT096/softcore/Daniel
+=======
+// Tool Version: Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+// Date        : Tue Apr  8 22:55:31 2014
+// Host        : joel-MacBookPro running 64-bit Ubuntu 12.04.4 LTS
+// Command     : write_verilog -force -mode synth_stub {/home/joel/Documents/DAT096/Daniel
+>>>>>>> 4a343a657c27b1b3c97393d73d0b2ccb32b7b23f
 //               GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v}
 // Design      : ADC
 // Purpose     : Stub declaration of top-level module interface

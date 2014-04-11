@@ -17,6 +17,14 @@ Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2
 -- Compiling entity clk_divide
 -- Compiling architecture behavioral of clk_divide
 
+} {} {}} C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DAC_SPI
+-- Compiling architecture behavioral of DAC_SPI
+
 } {} {}} C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd {0 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd
 Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
 -- Loading package STANDARD
@@ -26,12 +34,4 @@ Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2
 -- Compiling architecture behavioral of dacTop
 ** Error: C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd(103): near "end": expecting ';'
 
-} {8.0 9.0} {}} C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd
-Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity DAC_SPI
--- Compiling architecture behavioral of DAC_SPI
-
-} {} {}}
+} {8.0 9.0} {}}
