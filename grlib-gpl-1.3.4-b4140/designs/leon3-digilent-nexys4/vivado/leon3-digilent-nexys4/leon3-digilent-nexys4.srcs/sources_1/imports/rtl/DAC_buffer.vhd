@@ -35,20 +35,20 @@ entity DAC_buffer is
     generic (
         bufferwidth: integer:=7);
   Port ( 
-        clk                 : in STD_LOGIC;
-        rst                 : in STD_LOGIC;
-        buff_read           : in STD_LOGIC;
-        index_reset         : in STD_LOGIC;
-		buff_write			: in STD_LOGIC;
-        Buffin              : in STD_LOGIC_VECTOR (31 downto 0);
-        Buffout             : out STD_LOGIC_VECTOR (31 downto 0);
-        Addr                : in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
+        clk		:	in STD_LOGIC;
+        rst		:	in STD_LOGIC;
+        buffRead	:	in STD_LOGIC;
+        indexReset	:	in STD_LOGIC;
+	      buffWrite	:	in STD_LOGIC;
+       	buffIn		:	in STD_LOGIC_VECTOR (15 downto 0);
+        buffOut		:	out STD_LOGIC_VECTOR (15 downto 0);
+        addr		:	in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 end DAC_buffer;
 
 architecture Behavioral of DAC_buffer is
 
 
-type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(31 downto 0);
+type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(15 downto 0);
 
 signal Memory_array : Memory_array_type;
 
@@ -63,7 +63,8 @@ begin
         read_index <= 0;
         Memory_array <= (others => (others => '0'));
     elsif rising_edge(clk) then
-        if (buff_read = '1')then
+				lastread <= buffread;
+        if (buffRead = '1') and (lastread = '0') then
             buffout <= Memory_array(read_index);
 
             if read_index = 2**bufferwidth -1 then
@@ -72,10 +73,10 @@ begin
                 read_index <= read_index + 1 ;
             end if;
         end if;
-        if index_reset = '1' then
+        if indexReset = '1' then
            read_index <= 0;
         end if;
-		if buff_write = '1' then
+		if buffWrite = '1' then
 			Memory_array(to_integer(unsigned(addr))) <= buffin;     
 		end if;
     end if;

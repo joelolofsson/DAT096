@@ -23,7 +23,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk]
 # All timing constraint translations are rough conversions, intended to act as a template for further manual refinement. The translations should not be expected to produce semantically identical results to the original ucf. Each xdc timing constraint must be manually inspected and verified to ensure it captures the desired intent
 
 # /home/joel/Documents/hejhej/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/planAhead/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.constrs/leon3mp.ucf:11
-create_clock -name clk -period 10.000 [get_ports clk]
+create_clock -period 10.000 -name clk [get_ports clk]
 
 ## Switches
 #Bank = 34, Pin name = IO_L21P_T3_DQS_34,					Sch name = SW0
@@ -74,7 +74,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {sw[14]}]
 #Bank = 34, Pin name = IO_L14P_T2_SRCC_34,					Sch name = SW15
 set_property PACKAGE_PIN P4 [get_ports {sw[15]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {sw[15]}]
- 
+
 ## LEDs
 #Bank = 34, Pin name = IO_L24N_T3_34,						Sch name = LED0
 set_property PACKAGE_PIN T8 [get_ports {Led[0]}]
@@ -181,7 +181,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {btn[3]}]
 #Bank = 14, Pin name = IO_25_14,							Sch name = BTNR
 set_property PACKAGE_PIN R10 [get_ports {btn[4]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {btn[4]}]
- 
+
 ## Pmod Header JA
 #NET "JA<0>"			LOC = "B13"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L1N_T0_AD0N_15,					Sch name = JA1
 #NET "JA<1>"			LOC = "F14"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L5N_T0_AD9N_15,					Sch name = JA2
@@ -192,16 +192,32 @@ set_property IOSTANDARD LVCMOS33 [get_ports {btn[4]}]
 #NET "JA<6>"			LOC = "D18"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L21N_T3_A17_15,					Sch name = JA9
 #NET "JA<7>"			LOC = "E18"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L21P_T3_DQS_15,					Sch name = JA10
 
-## Pmod Header JB
-#NET "JB<0>"			LOC = "G14"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L15N_T2_DQS_ADV_B_15,				Sch name = JB1
-#NET "JB<1>"			LOC = "P15"	| IOSTANDARD = "LVCMOS33";		#Bank = 14, Pin name = IO_L13P_T2_MRCC_14,					Sch name = JB2
-#NET "JB<2>"			LOC = "V11"	| IOSTANDARD = "LVCMOS33";		#Bank = 14, Pin name = IO_L21N_T3_DQS_A06_D22_14,			Sch name = JB3
-#NET "JB<3>"			LOC = "V15"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L16P_T2_CSI_B_14,				Sch name = JB4
-#NET "JB<4>"			LOC = "K16"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_25_15,							Sch name = JB7
-#NET "JB<5>"			LOC = "R16"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L15P_T2_DQS_RWR_B_14,			Sch name = JB8
-#NET "JB<6>"			LOC = "T9"  | IOSTANDARD = "LVCMOS33";		#Bank = 14, Pin name = IO_L24P_T3_A01_D17_14,				Sch name = JB9
-#NET "JB<7>"			LOC = "U11"	| IOSTANDARD = "LVCMOS33";		#Bank = 14, Pin name = IO_L19N_T3_A09_D25_VREF_14,			Sch name = JB10 
- 
+#Pmod Header JB
+#Bank = 15, Pin name = IO_L15N_T2_DQS_ADV_B_15,				Sch name = JB1
+#set_property PACKAGE_PIN G14 [get_ports {JB[0]}]					
+#set_property IOSTANDARD LVCMOS33 [get_ports {JB[0]}]
+#Bank = 14, Pin name = IO_L13P_T2_MRCC_14,					Sch name = JB2
+#set_property PACKAGE_PIN P15 [get_ports {JB[1]}]					
+#set_property IOSTANDARD LVCMOS33 [get_ports {JB[1]}]
+#Bank = 14, Pin name = IO_L21N_T3_DQS_A06_D22_14,			Sch name = JB3
+#set_property PACKAGE_PIN V11 [get_ports {JB[2]}]					
+#set_property IOSTANDARD LVCMOS33 [get_ports {JB[2]}]
+#Bank = CONFIG, Pin name = IO_L16P_T2_CSI_B_14,				Sch name = JB4
+#set_property PACKAGE_PIN V15 [get_ports {JB[3]}]					
+#set_property IOSTANDARD LVCMOS33 [get_ports {JB[3]}]
+#Bank = 15, Pin name = IO_25_15,							Sch name = JB7
+#set_property PACKAGE_PIN K16 [get_ports {JB[4]}]					
+#set_property IOSTANDARD LVCMOS33 [get_ports {JB[4]}]
+#Bank = CONFIG, Pin name = IO_L15P_T2_DQS_RWR_B_14,			Sch name = JB8
+#set_property PACKAGE_PIN R16 [get_ports {JB[5]}]					
+#set_property IOSTANDARD LVCMOS33 [get_ports {JB[5]}]
+#Bank = 14, Pin name = IO_L24P_T3_A01_D17_14,				Sch name = JB9
+#set_property PACKAGE_PIN T9 [get_ports {JB[6]}]					
+#set_property IOSTANDARD LVCMOS33 [get_ports {JB[6]}]
+#Bank = 14, Pin name = IO_L19N_T3_A09_D25_VREF_14,			Sch name = JB10 
+#set_property PACKAGE_PIN U11 [get_ports {JB[7]}]					
+#set_property IOSTANDARD LVCMOS33 [get_ports {JB[7]}]
+
 ## Pmod Header JC
 #NET "JC<0>"			LOC = "K2"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L23P_T3_35,						Sch name = JC1
 #NET "JC<1>"			LOC = "E7"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L6P_T0_35,						Sch name = JC2
@@ -211,7 +227,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {btn[4]}]
 #NET "JC<5>"			LOC = "E6"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L5P_T0_AD13P_35,					Sch name = JC8
 #NET "JC<6>"			LOC = "J2"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L22N_T3_35,						Sch name = JC9
 #NET "JC<7>"			LOC = "G6"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L19P_T3_35,						Sch name = JC10
- 
+
 ## Pmod Header JD
 #NET "JD<0>"			LOC = "H4"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L21N_T2_DQS_35,					Sch name = JD1
 #NET "JD<1>"			LOC = "H1"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L17P_T2_35,						Sch name = JD2
@@ -221,32 +237,31 @@ set_property IOSTANDARD LVCMOS33 [get_ports {btn[4]}]
 #NET "JD<5>"			LOC = "G4"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L20P_T3_35,						Sch name = JD8
 #NET "JD<6>"			LOC = "G2"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L15N_T2_DQS_35,					Sch name = JD9
 #NET "JD<7>"			LOC = "F3"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L13N_T2_MRCC_35,					Sch name = JD10
- 
+
 ##Pmod Header JXADC
 ##Bank = 15, Pin name = IO_L9P_T1_DQS_AD3P_15,				Sch name = XADC1_P -> XA1_P
-set_property PACKAGE_PIN A13 [get_ports {vauxp3}]				
-	set_property IOSTANDARD LVCMOS33 [get_ports {vauxp3}]
+set_property IOSTANDARD LVCMOS33 [get_ports vauxp3]
 ##Bank = 15, Pin name = IO_L8P_T1_AD10P_15,					Sch name = XADC2_P -> XA2_P
 #set_property PACKAGE_PIN A15 [get_ports {JXADC[1]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[1]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[1]}]
 ##Bank = 15, Pin name = IO_L7P_T1_AD2P_15,					Sch name = XADC3_P -> XA3_P
 #set_property PACKAGE_PIN B16 [get_ports {JXADC[2]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[2]}]
 ##Bank = 15, Pin name = IO_L10P_T1_AD11P_15,					Sch name = XADC4_P -> XA4_P
 #set_property PACKAGE_PIN B18 [get_ports {JXADC[3]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[3]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[3]}]
 ##Bank = 15, Pin name = IO_L9N_T1_DQS_AD3N_15,				Sch name = XADC1_N -> XA1_N
-set_property PACKAGE_PIN A14 [get_ports {vauxn3}]				
-	set_property IOSTANDARD LVCMOS33 [get_ports {vauxn3}]
+set_property PACKAGE_PIN A14 [get_ports vauxn3]
+set_property IOSTANDARD LVCMOS33 [get_ports vauxn3]
 ##Bank = 15, Pin name = IO_L8N_T1_AD10N_15,					Sch name = XADC2_N -> XA2_N
 #set_property PACKAGE_PIN A16 [get_ports {JXADC[5]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[5]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[5]}]
 ##Bank = 15, Pin name = IO_L7N_T1_AD2N_15,					Sch name = XADC3_N -> XA3_N 
 #set_property PACKAGE_PIN B17 [get_ports {JXADC[6]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[6]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[6]}]
 ##Bank = 15, Pin name = IO_L10N_T1_AD11N_15,					Sch name = XADC4_N -> XA4_N
 #set_property PACKAGE_PIN A18 [get_ports {JXADC[7]}]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[7]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {JXADC[7]}]
 
 ## VGA Connector
 #NET "vgaRed<0>"		LOC = "A3"	| IOSTANDARD = "LVCMOS33";		#Bank = 35, Pin name = IO_L8N_T1_AD14N_35,					Sch name = VGA_R0
@@ -298,12 +313,12 @@ set_property PACKAGE_PIN A14 [get_ports {vauxn3}]
 #NET "ampSD"			LOC = "D12"	| IOSTANDARD = "LVCMOS33";		#Bank = 15, Pin name = IO_L6P_T0_15,						Sch name = AUD_SD
 ##PWM Audio Amplifier
 ##Bank = 15, Pin name = IO_L4N_T0_15,						Sch name = AUD_PWM
-set_property PACKAGE_PIN A11 [get_ports ampPWM]					
-	set_property IOSTANDARD LVCMOS33 [get_ports ampPWM]
+set_property PACKAGE_PIN A11 [get_ports ampPWM]
+set_property IOSTANDARD LVCMOS33 [get_ports ampPWM]
 ##Bank = 15, Pin name = IO_L6P_T0_15,						Sch name = AUD_SD
-set_property PACKAGE_PIN D12 [get_ports ampSD]						
-	set_property IOSTANDARD LVCMOS33 [get_ports ampSD]
-	
+set_property PACKAGE_PIN D12 [get_ports ampSD]
+set_property IOSTANDARD LVCMOS33 [get_ports ampSD]
+
 ## USB-RS232 Interface
 #Bank = 35, Pin name = IO_L7P_T1_AD6P_35,					Sch name = UART_TXD_IN
 set_property PACKAGE_PIN C4 [get_ports RsRx]
@@ -627,4 +642,20 @@ set_property PACKAGE_PIN U13 [get_ports {address[22]}]
 # /home/joel/Documents/hejhej/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/planAhead/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.constrs/leon3mp.ucf:461
 # The conversion of 'IOSTANDARD' constraint on 'net' object 'address[22]' has been applied to the port object 'address[22]'.
 set_property IOSTANDARD LVCMOS33 [get_ports {address[22]}]
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports {jb[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb[0]}]
+
+
+set_property PACKAGE_PIN V11 [get_ports {jb[2]}]
+set_property PACKAGE_PIN P15 [get_ports {jb[1]}]
+set_property PACKAGE_PIN G14 [get_ports {jb[0]}]
+
 

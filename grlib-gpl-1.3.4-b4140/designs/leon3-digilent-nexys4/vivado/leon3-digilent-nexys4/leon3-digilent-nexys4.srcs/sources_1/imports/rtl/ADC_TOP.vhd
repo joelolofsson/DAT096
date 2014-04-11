@@ -40,7 +40,9 @@ entity ADC_TOP is
            buff_full : out STD_LOGIC;
            ADC_buff_write : in STD_LOGIC;
            
-           ADC_buff_out : out STD_LOGIC_VECTOR (31 downto 0));		-- ! Sampled value after decimation.
+--           sampleout : out STD_LOGIC_VECTOR(15 downto 0);
+           
+           ADC_buff_out : out STD_LOGIC_VECTOR (15 downto 0));		-- ! Sampled value after decimation.
 end ADC_TOP;
 
 -- ! @brief Architecture of the ADC_TOP
@@ -56,7 +58,7 @@ COMPONENT fir_compiler_0
     s_axis_data_tready : OUT STD_LOGIC;						-- ! Signalling the FIR component is ready for a new value
     s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);	-- ! The input data coming from the ADC 
     m_axis_data_tvalid : OUT STD_LOGIC;						-- ! Signalling the output is valid
-    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)	-- ! The output from the FIR-filter.
+    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)	-- ! The output from the FIR-filter.
   );
 END COMPONENT;
 ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
@@ -75,7 +77,7 @@ COMPONENT ADC
     do_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);		-- ! Output from the registers
     dclk_in : IN STD_LOGIC;							-- ! Clocking for the registers
     reset_in : IN STD_LOGIC;						-- ! Reset, active high
-    convst_in : IN STD_LOGIC;						-- ! Signal to determine if the sample should be read or not
+    convstclk_in : IN STD_LOGIC;						-- ! Signal to determine if the sample should be read or not
     vp_in : IN STD_LOGIC;							-- ! Unused analogue input
     vn_in : IN STD_LOGIC;							-- ! Unused analogue input
     vauxp3 : IN STD_LOGIC;							-- ! Positive analogue signal
@@ -103,8 +105,8 @@ component ADC_buffer
 		clk 				: in STD_LOGIC;
 		rst 				: in STD_LOGIC;
 		buff_write			: in STD_LOGIC;
-		Buffin 				: in STD_LOGIC_VECTOR (31 downto 0);
-		Buffout 			: out STD_LOGIC_VECTOR (31 downto 0);
+		Buffin 				: in STD_LOGIC_VECTOR (15 downto 0);
+		Buffout 			: out STD_LOGIC_VECTOR (15 downto 0);
 		Bufferfull 		: out STD_LOGIC;
 		Addr 				: in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 end component;
@@ -116,14 +118,15 @@ signal di_in : STD_LOGIC_VECTOR(15 downto 0);			-- ! Signal for the input vector
 signal daddr_in : std_LOGIC_vector(6 downto 0);			-- ! Address in registers
 signal inv_rst : std_logic;								-- ! Inversed reset for XADC
 signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);	-- ! Sampled value from XADC
-signal cssig,cssig2 : STD_LOGIC_VECTOR(31 downto 0);	-- ! to be removed
-signal sampleFLT : STD_LOGIC_VECTOR(31 downto 0);		-- ! Filtered signal to be decimated
+signal sampleFLT : STD_LOGIC_VECTOR(15 downto 0);		-- ! Filtered signal to be decimated
 signal busy : STD_LOGIC;								-- ! Busy signal from XADC
 signal dataready : STD_LOGIC;							-- ! Signalling the FIR filter is done to load new value to FIR filter
 signal FIRready : STD_LOGIC;                            -- ! Signalling the firfilter is done with calculation
 signal cnt : integer range 0 to 3;                      -- ! 
 signal FIRvalid : std_logic;
-signal Buffer_in : STD_LOGIC_VECTOR(31 downto 0);
+signal Buffer_in : STD_LOGIC_VECTOR(15 downto 0);
+
+
 
 begin
 
@@ -131,19 +134,23 @@ process(clk,rst)
 begin
     if rst = '0' then
         dataready <= '1';
+		den_in <= '0';
     elsif rising_edge(clk) then 
         if sampleclk = '1' then
             dataready <= '1';
             cnt <= 3;
+			den_in <= '1';
         elsif cnt = 0 then
             dataready <= '0';
+			den_in <= '0';
         else
             cnt <= cnt -1;
+			den_in <= '0';
         end if;
     end if;
 end process;
 
-den_in <= not busy; 					-- ! Enable is set to one when the signal XADC is not busy
+--den_in <= not busy; 					-- ! Enable is set to one when the signal XADC is not busy
 inv_rst <= not rst;						-- ! Reset is inverted to create a active high reset for XADC
 --process(clk,sampleclk)
 --begin
@@ -158,7 +165,7 @@ inv_rst <= not rst;						-- ! Reset is inverted to create a active high reset fo
 
 -- ! Instanciations of FIR filter
 inst_fir : fir_compiler_0
-  PORT MAP (
+PORT MAP (
     aresetn => rst,
     aclk => clk,
     s_axis_data_tvalid => dataready,
@@ -166,22 +173,13 @@ inst_fir : fir_compiler_0
     s_axis_data_tdata => sampledvalue,
     m_axis_data_tvalid => FIRvalid,
     m_axis_data_tdata => sampleflt
-  );
+    );
+
+--DC_buff_out <= sampledvalue;
 
 daddr_in <= "0010011";					-- ! Address is set to 0x13
 dwe_in <= '0';							-- ! Write enable is set to 0
 di_in <= (others =>'0');				-- ! Input vector is set to 0 since it unused
-
-
--- ! to be removed
---inst_Decimator : decimator
---port map (
---    clk => clk,
---    rst => rst,
---    samplein => cssig,
---    sampleout => cssig2,
---    sampleclk => sampleclk
---    );
 
 -- ! Instantiation of the XADC
 inst_ADC : ADC
@@ -194,7 +192,7 @@ inst_ADC : ADC
     do_out => sampledvalue,
     dclk_in => clk,
     reset_in => inv_rst,
-    convst_in => sampleclk,
+    convstclk_in => sampleclk,
     vp_in => '0',
     vn_in => '0',
     vauxp3 => vauxp3,
@@ -228,15 +226,16 @@ inst_ADC : ADC
       --  end if;
  --   end if;
  --end process;
- 
- buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) & x"0000";
+--buffer_in <= not(sampleflt(15)) & sampleflt(14 downto 0);
+ --buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) ;--& x"0000";
+ --sampleout <= sampledvalue;
  
  inst_Buffer:ADC_buffer
      Port map ( 
  		clk                 => clk,
  		rst                 => rst,
  		buff_write			=> ADC_buff_write,
- 		Buffin 				=> buffer_in,
+ 		Buffin 				=> sampleFLT,
  		Buffout 			=> ADC_buff_out,
  		Bufferfull 		    => Buff_full,
  		Addr 				=> addr);

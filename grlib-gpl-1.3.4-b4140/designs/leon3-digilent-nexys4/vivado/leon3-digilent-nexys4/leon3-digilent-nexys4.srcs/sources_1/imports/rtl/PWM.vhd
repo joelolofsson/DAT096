@@ -72,7 +72,7 @@ begin
 		end if;
         lastcnt <= cnt;												-- ! lastcnt is designated the value of current cnt
 
-		if (cnt MOD 128) = 0 and (lastcnt MOD 128) = 127  then		-- ! When the current cnt is a multiple of 128 and when last cnt:
+		if ((cnt MOD 128) = 0) then -- and (lastcnt MOD 128) = 127) or  then		-- ! When the current cnt is a multiple of 128 and when last cnt:
 			sampleEna705Khz <= '1';									-- ! The sampleEna705KHz is set to '1' for one clockcycle
 		else														-- ! Otherwise:
 	        sampleEna705Khz <= '0';									-- ! it is set to '0'
