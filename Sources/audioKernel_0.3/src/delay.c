@@ -35,6 +35,7 @@ int16_t lastOutput = 0;
 void delayInitialize(int32_t size, int16_t *adr){
     int16_t zero = 0;
     cbInit(&circBuffer, size, adr);
+    lastOutput = 0;
     
     unsigned int i;
     for( i=0; i<circBuffer.size+2; i++ )
@@ -62,7 +63,7 @@ void delay(int16_t *audioBuffer, int framesPerBuffer, uint8_t feedback, uint8_t 
     
     for( i=0; i<framesPerBuffer; i++ )
     {
-        temp = *audioBuffer + ((lastOutput * feedback) >> 8);
+        temp = *audioBuffer	 + ((lastOutput * feedback) >> 8);
         
         cbWrite(&circBuffer, &temp);
         cbIncrement(&circBuffer, 0);

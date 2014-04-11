@@ -8,15 +8,20 @@
 #include "delay.h"
 #include "circularBuffer.h"
 #include "biquad.h"
+#include <time.h>
 
 
 #define ADC_adr 0x80000800
 #define DAC_adr 0x80000A00
 #define buffSize 128 //the generic for the audio buffer.
 
-int16_t input;
+//variables for measuring execution time
+time_t start, end;
+
+int32_t input;
 int16_t audioBuffer[buffSize];
 int16_t *samples;
+
 
 
 //Delay related variables
@@ -30,22 +35,48 @@ biquad highs;
 
 
 void adcHandler(){
+	int i;
+	int j;
 
-	//making sure that
-	disable_irq(10);
+	//printf("IRQ ok");
 
-	//printf("IRQ OK");
+	/*Triangle wave
+	for(i=0; i<buffSize;i++){
+		if(i < 64){
+			*(volatile int*)(DAC_adr+(i*4)) = 1000*i;
+			for(j=0;j<3;j++);
+		}else{
+			*(volatile int*)((DAC_adr+(i*4))) = 1000*(i-63);
+		}
+	}
 
-	//input loop
-	int i = 0;
+	*/
+
+
+	//output loop
+	i = 0;
 	while(i < buffSize){
-		input = *(volatile int*)((ADC_adr+(i*4)));
-		audioBuffer[i] = input;
+		input = (int32_t)(audioBuffer[i]);// + (32768)
+		*(volatile int*)(DAC_adr+(i*4)) = input;
 		i++;
 	}
 
-	//delay processing
-	delay(&audioBuffer, (int32_t) buffSize, (uint8_t) 50, (uint8_t) 127, (uint8_t) 50);
+
+	i =0;
+	while(i <  buffSize){
+		input = *(volatile int*)(ADC_adr);//+(i*4));
+		input = *(volatile int*)(ADC_adr);//+(i*4));
+
+		for(j=0;j < 3 ;j++);
+
+		input = (input);	 //32768);
+		audioBuffer[i] = (int16_t)input ;
+		i++;
+	}
+
+
+
+	//////////////////////////////////////////////////////////
 
 
 	//EQ processing
@@ -54,31 +85,33 @@ void adcHandler(){
 	//filter(&highs,samples,buffSize);
 
 
-	//output loop
-	i = 0;
-	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4)) = (audioBuffer[i]);
-		i++;
-	}
 
-	enable_irq(10);
+	//////////////////////////////////////////////////////////
+
+
+	//delay processing
+	//delay(samples, buffSize, 32, 127, 127);
+
+	//////////////////////////////////////////////////////////
+
+
 }
 
 
 int main(void){
 
+samples =  audioBuffer;
+
 printf("Initializing \n");
 
 //delay
 delayArrayPtr = delayArray;
-delayInitialize(40001, delayArrayPtr);
+delayInitialize(40000, delayArrayPtr);
 
 //EQ
 //filterCoefficients(&lows, -1.0f, 44100, 300, 0.7f, BASS);
 //filterCoefficients(&mids, 1.00f, 44100, 8000, 0.7f, TREBLE);
 //filterCoefficients(&highs, 1.00f, 44100, 1000, 0.7f , PEAK);
-
-
 
 //Installing interrupt
 catch_interrupt(adcHandler, 10);

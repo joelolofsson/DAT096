@@ -15,15 +15,16 @@
 					<folderInfo id="cdt.managedbuild.config.bcc.exe.debug.699133678." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.bcc.exe.debug.131434946" name="SPARC Bare C" superClass="cdt.managedbuild.toolchain.bcc.exe.debug">
 							<targetPlatform id="cdt.managedbuild.target.bcc.platform.exe.debug.503137134" name="Debug Platform" superClass="cdt.managedbuild.target.bcc.platform.exe.debug"/>
-							<builder buildPath="${workspace_loc:/audioKernel_0.3}/Debug" id="cdt.managedbuild.target.bcc.builder.exe.debug.1501554005" managedBuildOn="true" name="BCC Make.Debug" superClass="cdt.managedbuild.target.bcc.builder.exe.debug"/>
+							<builder buildPath="${workspace_loc:/audioKernel_0.3}/Debug" id="cdt.managedbuild.target.bcc.builder.exe.debug.1501554005" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="BCC Make" superClass="cdt.managedbuild.target.bcc.builder.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug.827346113" name="SPARC Bare C++ Compiler" superClass="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug">
-								<option id="bcc.cpp.compiler.exe.debug.option.optimization.level.1923706293" superClass="bcc.cpp.compiler.exe.debug.option.optimization.level" value="bcc.cpp.compiler.optimization.level.none" valueType="enumerated"/>
-								<option id="bcc.cpp.compiler.exe.debug.option.debugging.level.602243723" superClass="bcc.cpp.compiler.exe.debug.option.debugging.level" value="bcc.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="bcc.cpp.compiler.exe.debug.option.optimization.level.1923706293" name="Optimization Level" superClass="bcc.cpp.compiler.exe.debug.option.optimization.level" value="bcc.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="bcc.cpp.compiler.exe.debug.option.debugging.level.602243723" name="Debug Level" superClass="bcc.cpp.compiler.exe.debug.option.debugging.level" value="bcc.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="bcc.cpp.compiler.option.hardware.v8.502848037" superClass="bcc.cpp.compiler.option.hardware.v8" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.base.cpp.compiler.input.cpp.2124344254" superClass="cdt.managedbuild.tool.base.cpp.compiler.input.cpp"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.625439649" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.debug">
-								<option defaultValue="bcc.c.optimization.level.none" id="bcc.c.compiler.exe.debug.option.optimization.level.1251784205" superClass="bcc.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
-								<option id="bcc.c.compiler.exe.debug.option.debugging.level.1614520907" superClass="bcc.c.compiler.exe.debug.option.debugging.level" value="bcc.c.debugging.level.max" valueType="enumerated"/>
+								<option defaultValue="bcc.c.optimization.level.none" id="bcc.c.compiler.exe.debug.option.optimization.level.1251784205" name="Optimization Level" superClass="bcc.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
+								<option id="bcc.c.compiler.exe.debug.option.debugging.level.1614520907" name="Debug Level" superClass="bcc.c.compiler.exe.debug.option.debugging.level" value="bcc.c.debugging.level.max" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.757717021" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1141522955" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
 							</tool>
@@ -55,15 +56,15 @@
 					<folderInfo id="cdt.managedbuild.config.bcc.exe.release.231088543." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.bcc.exe.release.716652727" name="SPARC Bare C" superClass="cdt.managedbuild.toolchain.bcc.exe.release">
 							<targetPlatform id="cdt.managedbuild.target.bcc.platform.exe.release.1691262129" name="Debug Platform" superClass="cdt.managedbuild.target.bcc.platform.exe.release"/>
-							<builder buildPath="${workspace_loc:/audioKernel_0.3}/Release" id="cdt.managedbuild.target.bcc.builder.exe.release.137857527" managedBuildOn="true" name="BCC Make.Release" superClass="cdt.managedbuild.target.bcc.builder.exe.release"/>
+							<builder buildPath="${workspace_loc:/audioKernel_0.3}/Release" id="cdt.managedbuild.target.bcc.builder.exe.release.137857527" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="BCC Make" superClass="cdt.managedbuild.target.bcc.builder.exe.release"/>
 							<tool id="cdt.managedbuild.tool.bcc.cpp.compiler.exe.release.57341851" name="SPARC Bare C++ Compiler" superClass="cdt.managedbuild.tool.bcc.cpp.compiler.exe.release">
-								<option id="bcc.cpp.compiler.exe.release.option.optimization.level.2088346932" superClass="bcc.cpp.compiler.exe.release.option.optimization.level" value="bcc.cpp.compiler.optimization.level.most" valueType="enumerated"/>
-								<option id="bcc.cpp.compiler.exe.release.option.debugging.level.508981696" superClass="bcc.cpp.compiler.exe.release.option.debugging.level" value="bcc.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="bcc.cpp.compiler.exe.release.option.optimization.level.2088346932" name="Optimization Level" superClass="bcc.cpp.compiler.exe.release.option.optimization.level" value="bcc.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="bcc.cpp.compiler.exe.release.option.debugging.level.508981696" name="Debug Level" superClass="bcc.cpp.compiler.exe.release.option.debugging.level" value="bcc.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.base.cpp.compiler.input.cpp.1602926346" superClass="cdt.managedbuild.tool.base.cpp.compiler.input.cpp"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.release.2004497015" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.release">
-								<option defaultValue="bcc.c.optimization.level.most" id="bcc.c.compiler.exe.release.option.optimization.level.100896638" superClass="bcc.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
-								<option id="bcc.c.compiler.exe.release.option.debugging.level.1139283541" superClass="bcc.c.compiler.exe.release.option.debugging.level" value="bcc.c.debugging.level.none" valueType="enumerated"/>
+								<option defaultValue="bcc.c.optimization.level.most" id="bcc.c.compiler.exe.release.option.optimization.level.100896638" name="Optimization Level" superClass="bcc.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
+								<option id="bcc.c.compiler.exe.release.option.debugging.level.1139283541" name="Debug Level" superClass="bcc.c.compiler.exe.release.option.debugging.level" value="bcc.c.debugging.level.none" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.1531142236" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1708797329" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
 							</tool>
@@ -79,6 +80,7 @@
 					</folderInfo>
 				</configuration>
 			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -106,4 +108,12 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/audioKernel_0.3"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/audioKernel_0.3"/>
+		</configuration>
+	</storageModule>
 </cproject>
