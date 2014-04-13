@@ -97,7 +97,7 @@ architecture tb of tb_fir_compiler_0 is
 
   -- Data master channel signals
   signal m_axis_data_tvalid              : std_logic := '0';  -- payload is valid
-  signal m_axis_data_tdata               : std_logic_vector(31 downto 0) := (others => '0');  -- data payload
+  signal m_axis_data_tdata               : std_logic_vector(15 downto 0) := (others => '0');  -- data payload
 
   -----------------------------------------------------------------------
   -- Aliases for AXI channel TDATA and TUSER fields
@@ -107,10 +107,10 @@ architecture tb of tb_fir_compiler_0 is
   -----------------------------------------------------------------------
 
   -- Data slave channel alias signals
-  signal s_axis_data_tdata_data        : std_logic_vector(15 downto 0) := (others => '0');
+  signal s_axis_data_tdata_data        : std_logic_vector(11 downto 0) := (others => '0');
 
   -- Data master channel alias signals
-  signal m_axis_data_tdata_data        : std_logic_vector(31 downto 0) := (others => '0');
+  signal m_axis_data_tdata_data        : std_logic_vector(13 downto 0) := (others => '0');
 
 
 begin
@@ -169,9 +169,9 @@ begin
         end loop;
         ip_count := ip_count + 1;
         wait for T_HOLD;
-      -- Input rate is 1 input each 141 clock cycles: drive valid inputs at this rate
+      -- Input rate is 1 input each 70 clock cycles: drive valid inputs at this rate
         s_axis_data_tvalid <= '0';
-        wait for CLOCK_PERIOD * 140;
+        wait for CLOCK_PERIOD * 69;
         exit when ip_count >= samples;
       end loop;
     end procedure drive_data;
@@ -185,11 +185,11 @@ begin
 
     -- Procedure to drive an impulse and let the impulse response emerge on the data master channel
     -- samples is the number of input samples to drive; default is enough for impulse response output to emerge
-    procedure drive_impulse ( samples : natural := 135 ) is
+    procedure drive_impulse ( samples : natural := 75 ) is
       variable impulse : std_logic_vector(15 downto 0);
     begin
       impulse := (others => '0');  -- initialize unused bits to zero
-      impulse(15 downto 0) := "0100000000000000";
+      impulse(11 downto 0) := "010000000000";
       drive_data(impulse);
       if samples > 1 then
         drive_zeros(samples-1);
@@ -208,15 +208,15 @@ begin
     -- Drive another impulse, during which demonstrate use and effect of AXI handshaking signals
     drive_impulse(2);  -- start of impulse; data is now zero
     s_axis_data_tvalid <= '0';
-    wait for CLOCK_PERIOD * 705;  -- provide no data for 5 input samples worth
+    wait for CLOCK_PERIOD * 350;  -- provide no data for 5 input samples worth
     drive_zeros(2);  -- 2 normal input samples
     s_axis_data_tvalid <= '1';
-    wait for CLOCK_PERIOD * 705;  -- provide data as fast as the core can accept it for 5 input samples worth
-    drive_zeros(126);  -- back to normal operation
+    wait for CLOCK_PERIOD * 350;  -- provide data as fast as the core can accept it for 5 input samples worth
+    drive_zeros(66);  -- back to normal operation
 
     -- Drive another impulse, during which demonstrate:
     --   reset (aresetn)
-    drive_impulse(32);  -- to partway through impulse response
+    drive_impulse(17);  -- to partway through impulse response
     s_axis_data_tvalid <= '0';
     aresetn <= '0';  -- assert reset (active low)
     wait for CLOCK_PERIOD * 2;  -- hold reset active for 2 clock cycles, as recommended in FIR Compiler Datasheet
@@ -264,9 +264,9 @@ begin
   -----------------------------------------------------------------------
 
   -- Data slave channel alias signals
-  s_axis_data_tdata_data        <= s_axis_data_tdata(15 downto 0);
+  s_axis_data_tdata_data        <= s_axis_data_tdata(11 downto 0);
 
   -- Data master channel alias signals: update these only when they are valid
-  m_axis_data_tdata_data        <= m_axis_data_tdata(31 downto 0) when m_axis_data_tvalid = '1';
+  m_axis_data_tdata_data        <= m_axis_data_tdata(13 downto 0) when m_axis_data_tvalid = '1';
 
 end tb;

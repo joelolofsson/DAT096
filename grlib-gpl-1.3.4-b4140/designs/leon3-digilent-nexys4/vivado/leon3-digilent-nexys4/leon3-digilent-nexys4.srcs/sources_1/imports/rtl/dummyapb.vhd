@@ -22,7 +22,10 @@ entity dummyapb is
     apbo : out apb_slv_out_type;
     pwmout : out std_logic;
     Debugvector : out STD_LOGIC_VECTOR(7 downto 0);
-    led : out std_logic_vector (15 downto 4) 
+    led : out std_logic_vector (15 downto 4);
+    spiSclk :   out std_logic;
+    spiDin  :   out std_logic;
+    spiNsync    :   out std_logic    
     );
 end entity dummyapb;
 architecture rtl of dummyapb is
@@ -38,26 +41,27 @@ component ADC_TOP
            buff_full : out STD_LOGIC;
            ADC_buff_write : in STD_LOGIC;
            
-           ADC_buff_out : out STD_LOGIC_VECTOR (31 downto 0));		-- ! Sampled value after decimation.
+           ADC_buff_out : out STD_LOGIC_VECTOR (15 downto 0));		-- ! Sampled value after decimation.
            
 end component;
 
-component DAC_top
-    Port ( clk : in  STD_LOGIC;
-           clk100 : in STD_LOGIC;
-           pwmout : out  STD_LOGIC;
---			  Value	: in STD_LOGIC_VECTOR(31 downto 0);
-			  sampleEna705kHzout : out STD_logic;
-			  sampleEna44kHzout : out STD_LOGIC;
-			  DAC_buff_in : in STD_LOGIC_vector(31 downto 0);
-			  DAC_buff_write : in STD_LOGIC;
-			  ADDR : in STD_LOGIC_VECTOR(6 downto 0);
-           rst : in  STD_LOGIC);
+component DacTop
+	port(
+		rstn	:	in STD_LOGIC;	 	
+		clk	:	in STD_LOGIC;
+		data	:	in STD_LOGIC_VECTOR(15 downto 0);
+		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
+		sampleclk : out STD_LOGIC;
+		sampleclk44kHz : out STD_LOGIC;
+		write	:	in STD_LOGIC;
+		sclk	:	out STD_LOGIC;
+		din	:	out std_logic;
+	 	nSync	:	out STD_LOGIC
+	);
 end component;
-
 -- APB related signals
 signal sLED    : std_logic_vector(31 downto 0);
-signal sampledvalue : STD_LOGIC_VECTOR(31 downto 0);
+signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);
 signal sampleclk : std_logic;
 Signal ADDR : STD_LOGIC_VECTOR(6 downto 0);
 signal buffer_interupt : STD_LOGIC;
@@ -72,18 +76,18 @@ constant pconfig        : apb_config_type := (
 
 begin
 
-inst_top : DAC_top
+inst_top : DACtop
 port map ( 
-    clk => clk,
-    clk100 => clk100,
-    rst => rstn,
-    pwmout => pwmout,
---    Value => sLED,
-    sampleEna705kHzout => sampleclk,
-    sampleEna44kHzout => sampleEna44kHz,
-    DAC_buff_write => dac_buff_write,
-    DAC_buff_in => sLED(31 downto 0),
-    ADDR => ADDR
+   rstn     => rstn,
+   clk      => clk100,
+   data     => sLED(15 downto 0),
+   addr     => Addr,
+   write    => dac_buff_write,
+   sampleclk => sampleclk,
+   sampleclk44kHz => sampleEna44kHz, 
+   sclk     => spiSclk,
+   din      => spiDin,
+   nSync    => spiNSync
     );
 
 inst_ADC_TOP : ADC_TOP 
@@ -112,25 +116,24 @@ apb_comb : process(rstn, apbi)
     -- Read registers
 --        apbo.prdata <= (others => '0');
         dac_buff_write <= apbi.paddr(9);
-        case apbi.paddr(9) is         
-            when '0' =>
-                apbo.prdata <= sampledvalue;
+ --       case apbi.paddr(9) is         
+ --           when '0' =>
                
-            when others =>
-        end case;
+ --           when others =>
+ --       end case;
 
     -- Write registers
         if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
-        case apbi.paddr(9) is
-            when '1' =>
+--        case apbi.paddr(9) is
+ --           when '1' =>
                 sLED <= apbi.pwdata; -- write value should be to DAC
-            when others =>
-        end case;
+  --          when others =>
+  --      end case;
         end if;
     end process;
 
 -- Sequential process
-    regs: process (clk)
+    regs: process (clk,rstn)
     begin
         if rstn = '0' then
             irq<='0';
@@ -138,7 +141,8 @@ apb_comb : process(rstn, apbi)
         elsif rising_edge(clk) then
             Addr <= apbi.paddr(8 downto 2);
             --do something
-             --apbo.prdata(31 downto 0) <= sampledvalue; --Read value, should be from ADC
+             apbo.prdata(15 downto 0) <= sampledvalue; --Read value, should be from ADC
+             apbo.prdata(31 downto 16) <= (others => (sampledvalue(15)));
              if irq='0' and buffer_interupt='1' then
                 irq <= '1';
              else
