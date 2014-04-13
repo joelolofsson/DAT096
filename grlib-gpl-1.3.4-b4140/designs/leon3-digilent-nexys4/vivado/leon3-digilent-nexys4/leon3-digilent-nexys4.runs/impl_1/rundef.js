@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "write_bitstream", "begin" );
+ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
          "-log leon3mp.rdi -applog -m64 -messageDb vivado.pb -mode batch -source leon3mp.tcl -notrace" );
 

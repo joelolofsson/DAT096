@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date         : Sun Apr 13 14:17:38 2014
+| Date         : Sun Apr 13 15:35:11 2014
 | Host         : xploited-W740SU running 64-bit Ubuntu 13.10
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -119,126 +119,116 @@ REPORT SUMMARY
                      Hold option missing in multicycle path constraint
                      Delay constraint missing on IO port
            Max violations: <unlimited>
-         Violations found: 74
+         Violations found: 72
 
 2. REPORT DETAILS
 -----------------
 BUFC-1#1 Warning
 Input Buffer Connections  
-Input buffer IBUF has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_10 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#2 Warning
 Input Buffer Connections  
-Input buffer IBUF_1 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_11 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#3 Warning
 Input Buffer Connections  
-Input buffer IBUF_10 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_12 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#4 Warning
 Input Buffer Connections  
-Input buffer IBUF_11 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_13 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#5 Warning
 Input Buffer Connections  
-Input buffer IBUF_12 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_14 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#6 Warning
 Input Buffer Connections  
-Input buffer IBUF_13 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_15 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#7 Warning
 Input Buffer Connections  
-Input buffer IBUF_14 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_16 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#8 Warning
 Input Buffer Connections  
-Input buffer IBUF_15 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_17 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#9 Warning
 Input Buffer Connections  
-Input buffer IBUF_16 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_18 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#10 Warning
 Input Buffer Connections  
-Input buffer IBUF_17 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_19 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#11 Warning
 Input Buffer Connections  
-Input buffer IBUF_18 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_2 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#12 Warning
 Input Buffer Connections  
-Input buffer IBUF_19 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_20 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#13 Warning
 Input Buffer Connections  
-Input buffer IBUF_2 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_21 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#14 Warning
 Input Buffer Connections  
-Input buffer IBUF_20 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_22 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#15 Warning
 Input Buffer Connections  
-Input buffer IBUF_21 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_23 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#16 Warning
 Input Buffer Connections  
-Input buffer IBUF_22 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_3 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#17 Warning
 Input Buffer Connections  
-Input buffer IBUF_23 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_4 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#18 Warning
 Input Buffer Connections  
-Input buffer IBUF_3 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_5 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#19 Warning
 Input Buffer Connections  
-Input buffer IBUF_4 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_6 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#20 Warning
 Input Buffer Connections  
-Input buffer IBUF_5 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_7 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#21 Warning
 Input Buffer Connections  
-Input buffer IBUF_6 has no loads. An input buffer must drive an internal load.
-Related violations: <none>
-
-BUFC-1#22 Warning
-Input Buffer Connections  
-Input buffer IBUF_7 has no loads. An input buffer must drive an internal load.
-Related violations: <none>
-
-BUFC-1#23 Warning
-Input Buffer Connections  
 Input buffer IBUF_8 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
-BUFC-1#24 Warning
+BUFC-1#22 Warning
 Input Buffer Connections  
 Input buffer IBUF_9 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
@@ -298,17 +288,17 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Physical design rule  
-Net adderahb_if/n_1_n_0_7705_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_7705_BUFG_inst_i_1/O, cell adderahb_if/n_0_7705_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net adderahb_if/n_1_n_0_11423_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_11423_BUFG_inst_i_1/O, cell adderahb_if/n_0_11423_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT adderahb_if/n_0_7705_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
-    adderahb_if/hrdata_reg[0] {LDCE}
-    adderahb_if/hrdata_reg[31] {LDCE}
+A LUT adderahb_if/n_0_11423_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
     adderahb_if/hrdata_reg[1] {LDCE}
     adderahb_if/hrdata_reg[2] {LDCE}
     adderahb_if/hrdata_reg[3] {LDCE}
+    adderahb_if/hrdata_reg[4] {LDCE}
+    adderahb_if/hrdata_reg[5] {LDCE}
 
 Related violations: <none>
 
@@ -504,7 +494,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Advisory
 No routable loads  
-26 net(s) have no routable loads. The problem net(s) are clkgen0/xc7l.v/CLKOUT1, clkgen0/xc7l.v/CLKOUT2, xlnx_opt__2, xlnx_opt__4, xlnx_opt__6, xlnx_opt__8, xlnx_opt__10, xlnx_opt__12, xlnx_opt__14, xlnx_opt__16, xlnx_opt__18, xlnx_opt__20, xlnx_opt__22, xlnx_opt__24, xlnx_opt__26 (the first 15 of 26 listed).
+24 net(s) have no routable loads. The problem net(s) are clkgen0/xc7l.v/CLKOUT1, clkgen0/xc7l.v/CLKOUT2, xlnx_opt__4, xlnx_opt__6, xlnx_opt__8, xlnx_opt__10, xlnx_opt__12, xlnx_opt__14, xlnx_opt__16, xlnx_opt__18, xlnx_opt__20, xlnx_opt__22, xlnx_opt__24, xlnx_opt__26, xlnx_opt__28 (the first 15 of 24 listed).
 Related violations: <none>
 
 

@@ -95,7 +95,7 @@ END COMPONENT;
 --ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
 --ATTRIBUTE BLACK_BOX_PAD_PIN OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,convst_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
 
-component ADC_buffer_const --for the constant buffer and test of APB
+component ADC_buffer--_const --for the constant buffer and test of APB
 	generic (
 		bufferwidth: integer:=7);
     Port ( 
@@ -206,7 +206,7 @@ inst_ADC : ADC
   );
  
   
- inst_Buffer:ADC_buffer_const --for the constant buffer and test of APB
+ inst_Buffer:ADC_buffer--_const --for the constant buffer and test of APB
      Port map ( 
  		clk                 => clk,
  		rst                 => rst,

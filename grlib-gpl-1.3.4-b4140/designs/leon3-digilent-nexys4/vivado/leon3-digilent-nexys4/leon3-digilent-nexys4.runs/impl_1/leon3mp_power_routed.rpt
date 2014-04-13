@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date             : Sun Apr 13 14:17:54 2014
+| Date             : Sun Apr 13 15:35:29 2014
 | Host             : xploited-W740SU running 64-bit Ubuntu 13.10
 | Command          : report_power -file leon3mp_power_routed.rpt -pb leon3mp_power_summary_routed.pb
 | Design           : leon3mp
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.395 |
-| Dynamic (W)              | 0.297 |
+| Total On-Chip Power (W)  | 0.399 |
+| Dynamic (W)              | 0.301 |
 | Device Static (W)        | 0.098 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 83.2  |
@@ -49,23 +49,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.021 |       11 |       --- |             --- |
-| Slice Logic              |     0.013 |    19516 |       --- |             --- |
-|   LUT as Logic           |     0.013 |    10452 |     63400 |           16.48 |
-|   Register               |    <0.001 |     6626 |    126800 |            5.22 |
-|   CARRY4                 |    <0.001 |      213 |     15850 |            1.34 |
-|   F7/F8 Muxes            |    <0.001 |      746 |     63400 |            1.17 |
+| Clocks                   |     0.022 |       11 |       --- |             --- |
+| Slice Logic              |     0.014 |    22661 |       --- |             --- |
+|   LUT as Logic           |     0.014 |    11059 |     63400 |           17.44 |
+|   Register               |    <0.001 |     8694 |    126800 |            6.85 |
+|   CARRY4                 |    <0.001 |      221 |     15850 |            1.39 |
+|   F7/F8 Muxes            |    <0.001 |     1160 |     63400 |            1.82 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
 |   LUT as Shift Register  |    <0.001 |       10 |     19000 |            0.05 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     19000 |            0.12 |
-|   Others                 |     0.000 |      146 |       --- |             --- |
-| Signals                  |     0.019 |    15613 |       --- |             --- |
-| Block RAM                |     0.015 |       19 |       135 |           14.07 |
+|   Others                 |     0.000 |      147 |       --- |             --- |
+| Signals                  |     0.021 |    17957 |       --- |             --- |
+| Block RAM                |     0.014 |       19 |       135 |           14.07 |
 | PLL                      |     0.196 |        2 |         6 |           33.33 |
 | DSPs                     |     0.002 |        4 |       240 |            1.66 |
 | I/O                      |     0.031 |      111 |       210 |           52.85 |
+| XADC                     |    <0.001 |        1 |       --- |             --- |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.395 |          |           |                 |
+| Total                    |     0.399 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.100 |       0.084 |      0.016 |
+| Vccint    |       1.000 |     0.103 |       0.087 |      0.016 |
 | Vccaux    |       1.800 |     0.120 |       0.102 |      0.018 |
 | Vcco33    |       3.300 |     0.013 |       0.009 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +85,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       0.000 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.001 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.001 |      0.000 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -154,8 +155,8 @@ Table of Contents
 +----------------------------------+-----------+
 | Name                             | Power (W) |
 +----------------------------------+-----------+
-| leon3mp                          |     0.297 |
-|   adderahb_if                    |     0.002 |
+| leon3mp                          |     0.301 |
+|   adderahb_if                    |     0.001 |
 |   ahb0                           |    <0.001 |
 |   apb0                           |     0.001 |
 |   bdr                            |     0.001 |
@@ -211,16 +212,16 @@ Table of Contents
 |   bpromgen.brom                  |    <0.001 |
 |   clkgen0                        |     0.102 |
 |     xc7l.v                       |     0.102 |
-|   eth0.e1                        |     0.012 |
-|     m100.u0                      |     0.012 |
+|   eth0.e1                        |     0.011 |
+|     m100.u0                      |     0.011 |
 |       edclramnft.r0              |    <0.001 |
 |         xc2v.x0                  |    <0.001 |
 |           a6.x0                  |    <0.001 |
 |       edclramnft.r1              |    <0.001 |
 |         xc2v.x0                  |    <0.001 |
 |           a6.x0                  |    <0.001 |
-|       ethc0                      |     0.009 |
-|         ahb0                     |    <0.001 |
+|       ethc0                      |     0.008 |
+|         ahb0                     |     0.001 |
 |         rx_rmii1.rx0             |     0.001 |
 |         tx_rmii1.tx0             |     0.001 |
 |           tx_rst                 |    <0.001 |
@@ -258,9 +259,10 @@ Table of Contents
 |   etxc_pad                       |     0.006 |
 |     xcv.x0                       |     0.006 |
 |   gpt.timer0                     |    <0.001 |
-|   io0                            |     0.007 |
-|     inst_ADC_TOP                 |    <0.001 |
-|       inst_Buffer                |    <0.001 |
+|   io0                            |     0.015 |
+|     inst_ADC_TOP                 |     0.008 |
+|       inst_ADC                   |     0.002 |
+|       inst_Buffer                |     0.006 |
 |       inst_fir                   |     0.000 |
 |         U0                       |     0.000 |
 |     inst_top                     |     0.006 |
@@ -268,17 +270,17 @@ Table of Contents
 |       inst_DAC_SPI               |    <0.001 |
 |       inst_clk_divider           |    <0.001 |
 |   irqctrl.irqctrl0               |    <0.001 |
-|   leon3gen.cpu[0].u0             |     0.039 |
-|     leon3x0                      |     0.039 |
+|   leon3gen.cpu[0].u0             |     0.037 |
+|     leon3x0                      |     0.037 |
 |       cmem0                      |     0.012 |
 |         dme.dd0[0].ddata0        |     0.001 |
 |           xc2v.x0                |     0.001 |
 |         dme.dd0[1].ddata0        |     0.001 |
 |           xc2v.x0                |     0.001 |
-|         dme.dtags0.dt0[0].dtags0 |     0.002 |
-|           xc2v.x0                |     0.002 |
-|         dme.dtags0.dt0[1].dtags0 |     0.002 |
-|           xc2v.x0                |     0.002 |
+|         dme.dtags0.dt0[0].dtags0 |     0.001 |
+|           xc2v.x0                |     0.001 |
+|         dme.dtags0.dt0[1].dtags0 |     0.001 |
+|           xc2v.x0                |     0.001 |
 |         ime.im0[0].idata0        |     0.002 |
 |           xc2v.x0                |     0.002 |
 |         ime.im0[0].itags0        |     0.001 |
@@ -291,8 +293,8 @@ Table of Contents
 |         c0mmu                    |     0.008 |
 |           a0                     |    <0.001 |
 |           dcache0                |     0.003 |
-|           icache0                |     0.004 |
-|         iu                       |     0.015 |
+|           icache0                |     0.003 |
+|         iu                       |     0.014 |
 |         mgen.div0                |     0.001 |
 |         mgen.mul0                |    <0.001 |
 |           xm3232.m3232           |    <0.001 |
