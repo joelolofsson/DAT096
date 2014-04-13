@@ -1,8 +1,8 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
-| Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Thu Apr 10 18:03:39 2014
-| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+| Date         : Sun Apr 13 14:16:54 2014
+| Host         : xploited-W740SU running 64-bit Ubuntu 13.10
 | Command      : report_io -file leon3mp_io_placed.rpt
 | Design       : leon3mp
 | Device       : xc7a100t

@@ -38,10 +38,7 @@ entity ADC_TOP is
            
            addr : in STD_LOGIC_vector(6 downto 0);
            buff_full : out STD_LOGIC;
-           ADC_buff_write : in STD_LOGIC;
-           
---           sampleout : out STD_LOGIC_VECTOR(15 downto 0);
-           
+           ADC_buff_write : in STD_LOGIC;     
            ADC_buff_out : out STD_LOGIC_VECTOR (15 downto 0));		-- ! Sampled value after decimation.
 end ADC_TOP;
 
@@ -98,7 +95,7 @@ END COMPONENT;
 --ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
 --ATTRIBUTE BLACK_BOX_PAD_PIN OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,convst_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
 
-component ADC_buffer
+component ADC_buffer_const --for the constant buffer and test of APB
 	generic (
 		bufferwidth: integer:=7);
     Port ( 
@@ -208,38 +205,14 @@ inst_ADC : ADC
     busy_out => busy
   );
  
-  --inst_css : ila_0
-  --  PORT MAP (
-  --    clk => clk,
-  --    probe0 => cssig,
-  --    probe1 => cssig2
-  --  );
---  cssig <= sampledvalue & x"0000";
---  cssig2 <= sampledvalue;
   
- --process(clk)
- --begin
- --   if rising_edge(clk) then
-      --  if  FIRvalid = '1' then
-           -- sampleout <= not(sampleflt(31)) & sampleflt(30 downto 0);
- --          buffer_in <= not(sampleflt(31)) & sampleflt(30 downto 0);
-      --  end if;
- --   end if;
- --end process;
---buffer_in <= not(sampleflt(15)) & sampleflt(14 downto 0);
- --buffer_in <= not(sampledvalue(15))&sampledvalue(14 downto 0) ;--& x"0000";
- --sampleout <= sampledvalue;
- 
- inst_Buffer:ADC_buffer
+ inst_Buffer:ADC_buffer_const --for the constant buffer and test of APB
      Port map ( 
  		clk                 => clk,
  		rst                 => rst,
  		buff_write			=> ADC_buff_write,
- 		Buffin 				=> sampleFLT,
+ 		Buffin 				=> sampledvalue,
  		Buffout 			=> ADC_buff_out,
  		Bufferfull 		    => Buff_full,
  		Addr 				=> addr);
---  sampleout <= not(sampledvalue(15)) & sampledvalue(14 downto 0) & x"0000";
---  sampleout <= cssig;
-
 end Behavioral;

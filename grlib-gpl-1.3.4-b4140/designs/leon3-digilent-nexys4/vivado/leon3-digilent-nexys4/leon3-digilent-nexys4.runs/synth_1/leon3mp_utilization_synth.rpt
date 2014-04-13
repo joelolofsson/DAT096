@@ -1,8 +1,8 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Thu Apr 10 18:00:00 2014
-| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+| Date         : Sun Apr 13 14:15:31 2014
+| Host         : xploited-W740SU running 64-bit Ubuntu 13.10
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
 | Device       : xc7a100t
@@ -29,16 +29,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 11265 |     0 |     63400 | 17.76 |
-|   LUT as Logic             | 11230 |     0 |     63400 | 17.71 |
+| Slice LUTs*                | 10703 |     0 |     63400 | 16.88 |
+|   LUT as Logic             | 10668 |     0 |     63400 | 16.82 |
 |   LUT as Memory            |    35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    24 |     0 |           |       |
 |     LUT as Shift Register  |    11 |     0 |           |       |
-| Slice Registers            |  8696 |     0 |    126800 |  6.85 |
-|   Register as Flip Flop    |  8648 |     0 |    126800 |  6.82 |
-|   Register as Latch        |    48 |     0 |    126800 |  0.03 |
-| F7 Muxes                   |   847 |     0 |     31700 |  2.67 |
-| F8 Muxes                   |   313 |     0 |     15850 |  1.97 |
+| Slice Registers            |  6632 |     0 |    126800 |  5.23 |
+|   Register as Flip Flop    |  6600 |     0 |    126800 |  5.20 |
+|   Register as Latch        |    32 |     0 |    126800 |  0.02 |
+| F7 Muxes                   |   563 |     0 |     31700 |  1.77 |
+| F8 Muxes                   |   183 |     0 |     15850 |  1.15 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
 
@@ -49,11 +49,11 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Loced | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |   19 |     0 |       135 | 14.07 |
+| Block RAM Tile    | 19.5 |     0 |       135 | 14.07 |
 |   RAMB36/FIFO*    |   13 |     0 |       135 |  9.62 |
 |     RAMB36E1 only |   13 |       |           |       |
-|   RAMB18          |   12 |     0 |       270 |  4.44 |
-|     RAMB18E1 only |   12 |       |           |       |
+|   RAMB18          |   13 |     0 |       270 |  4.81 |
+|     RAMB18E1 only |   13 |       |           |       |
 +-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -133,26 +133,26 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
-| LUT6      | 6315 |
-| FDRE      | 4265 |
-| FDCE      | 4262 |
-| LUT5      | 2924 |
-| LUT4      | 1423 |
-| LUT3      | 1031 |
-| MUXF7     |  847 |
-| LUT2      |  614 |
-| MUXF8     |  313 |
-| LUT1      |  233 |
+| LUT6      | 5965 |
+| FDRE      | 4233 |
+| LUT5      | 2705 |
+| FDCE      | 2238 |
+| LUT4      | 1416 |
+| LUT3      | 1033 |
+| LUT2      |  597 |
+| MUXF7     |  563 |
+| LUT1      |  235 |
 | CARRY4    |  221 |
-| FDSE      |  115 |
+| MUXF8     |  183 |
+| FDSE      |  123 |
 | OBUF      |   58 |
-| LDCE      |   48 |
 | RAMD32    |   36 |
+| LDCE      |   32 |
 | IBUF      |   23 |
 | OBUFT     |   17 |
 | RAMB36E1  |   13 |
+| RAMB18E1  |   13 |
 | RAMS32    |   12 |
-| RAMB18E1  |   12 |
 | SRL16E    |   11 |
 | BUFG      |    7 |
 | FDPE      |    6 |

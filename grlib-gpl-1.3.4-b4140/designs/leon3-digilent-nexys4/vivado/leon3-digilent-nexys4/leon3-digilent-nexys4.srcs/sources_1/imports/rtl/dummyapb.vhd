@@ -103,55 +103,69 @@ port map (
     ADC_buff_write => sampleena44kHz ,
     ADC_buff_out => sampledvalue
     
-        );
+ );
 debugvector(0) <= buffer_interupt;
 debugvector(1) <= sampleclk;
 debugvector(2) <= sampleena44kHz;
 debugvector(3) <= dac_buff_write;
 debugvector(7 downto 4) <= addr(6 downto 3);
--- combinatorial process
-apb_comb : process(rstn, apbi)
-    begin
-        
-    -- Read registers
---        apbo.prdata <= (others => '0');
-        dac_buff_write <= apbi.paddr(9);
- --       case apbi.paddr(9) is         
- --           when '0' =>
-               
- --           when others =>
- --       end case;
 
-    -- Write registers
-        if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
---        case apbi.paddr(9) is
- --           when '1' =>
-                sLED <= apbi.pwdata; -- write value should be to DAC
-  --          when others =>
-  --      end case;
-        end if;
-    end process;
 
--- Sequential process
+-- APB process, handling everything with the APB-bus and setting select signals to peripherals
     regs: process (clk,rstn)
-    begin
+    begin  
         if rstn = '0' then
             irq<='0';
-            --sLED <= (others => '0');
-        elsif rising_edge(clk) then
+            sLED <= (others => '0');
+            Addr <= (others => '0');
+            dac_buff_write <= '0';
+            
+        elsif rising_edge(clk) then        
+            
+            --connceted to both DAC and ADC, used to select elements in both components
             Addr <= apbi.paddr(8 downto 2);
-            --do something
-             apbo.prdata(15 downto 0) <= sampledvalue; --Read value, should be from ADC
-             apbo.prdata(31 downto 16) <= (others => (sampledvalue(15)));
-             if irq='0' and buffer_interupt='1' then
+            --select signal to DAC
+            
+            --setting default output signal to softcore
+            apbo.prdata(31 downto 0) <= (others =>'0');
+            
+            --setting default output to DAC_buffer
+            sLED <= (others => '0');             
+            
+            --setting default dac_buff_write signal
+            dac_buff_write <= '0';
+             
+             -- if ADC selected then drive the outputs to read value
+             if apbi.paddr(9)= '0' then
+                 apbo.prdata(15 downto 0) <= sampledvalue; 
+                 apbo.prdata(31 downto 16) <= (others => (sampledvalue(15))); --saturating for sign
+             
+             --if the DAC is selected and there is a pending write with correct psel
+             elsif apbi.paddr(9) = '1' then               
+                 if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
+                    sLED <= apbi.pwdata; -- write value should be to DAC
+                    dac_buff_write <= '1';
+                 end if;
+             end if;
+             
+             
+             --interrupt generated from ADC_buffer when full
+              if irq='0' and buffer_interupt='1' then
                 irq <= '1';
              else
                 irq <='0';
-              end if;
+             end if;                
                 
         end if;
     end process;
+    
     led <= sLED (15 downto 4);
+    
+    
+    
+    
+    
+    
 -- Set APB bus signals
     apbo.pirq(31 downto 11) <= (others => '0');
     apbo.pirq(10)    <= irq;

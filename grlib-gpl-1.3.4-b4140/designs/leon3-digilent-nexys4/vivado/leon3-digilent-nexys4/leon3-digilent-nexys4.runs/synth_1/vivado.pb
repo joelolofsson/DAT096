@@ -3,22 +3,27 @@
  Attempting to get a license: %s
 78*common2"
 Implementation2default:defaultZ17-78
+x
+%Your %s license expires in %s day(s)
+86*common2"
+Implementation2default:default2
+162default:defaultZ17-86
 Q
 Feature available: %s
 81*common2"
 Implementation2default:defaultZ17-81
-É
+Ö
 +Loading parts and site information from %s
-36*device2?
-+C:/Xilinx/Vivado/2013.4/data/parts/arch.xml2default:defaultZ21-36
-ê
+36*device2A
+-/opt/Xilinx/Vivado/2013.4/data/parts/arch.xml2default:defaultZ21-36
+í
 !Parsing RTL primitives file [%s]
-14*netlist2U
-AC:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-14
-ô
+14*netlist2W
+C/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-14
+õ
 *Finished parsing RTL primitives file [%s]
-11*netlist2U
-AC:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-11
+11*netlist2W
+C/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-11
 l
 Command: %s
 53*	vivadotcl2D
@@ -38,14 +43,14 @@ Starting synthesis...
 310*common2
 	Synthesis2default:default2
 xc7a100t2default:defaultZ17-349
-õ
-%s*synth2ã
-wStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 335.340 ; gain = 77.125
+ú
+%s*synth2å
+xStarting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 787.344 ; gain = 146.391
 2default:default
-Î
+Ÿ
 synthesizing module '%s'638*oasys2
-leon3mp2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+leon3mp2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 1482default:default8@Z8-638
 T
 %s*synth2E
@@ -91,19 +96,19 @@ R
 %s*synth2C
 /	Parameter syncin bound to: 0 - type: integer 
 2default:default
-⁄
+∂
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-rstgen2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/rstgen.vhd2default:default2
+rstgen2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/rstgen.vhd2default:default2
 322default:default2
 rst02default:default2
-rstgen2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+rstgen2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 3202default:default8@Z8-3491
-Î
+Ÿ
 synthesizing module '%s'638*oasys2*
-rstgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/rstgen.vhd2default:default2
+rstgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/rstgen.vhd2default:default2
 492default:default8@Z8-638
 S
 %s*synth2D
@@ -121,12 +126,12 @@ R
 %s*synth2C
 /	Parameter syncin bound to: 0 - type: integer 
 2default:default
-¶
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 rstgen__parameterized02default:default2
 12default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/rstgen.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/rstgen.vhd2default:default2
 492default:default8@Z8-256
 Q
 %s*synth2B
@@ -184,19 +189,19 @@ U
 %s*synth2F
 2	Parameter clkc_odiv bound to: 0 - type: integer 
 2default:default
-›
+π
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-clkgen2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 322default:default2
 clkgen02default:default2
-clkgen2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+clkgen2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 3252default:default8@Z8-3491
-Î
+Ÿ
 synthesizing module '%s'638*oasys2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 662default:default8@Z8-638
 Q
 %s*synth2B
@@ -266,19 +271,19 @@ U
 %s*synth2F
 2	Parameter freq bound to: 100000 - type: integer 
 2default:default
-‚
+æ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2"
-clkgen_virtex72default:default2w
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
+clkgen_virtex72default:default2e
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
 2952default:default2
 v2default:default2"
-clkgen_virtex72default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen_virtex72default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 922default:default8@Z8-3491
-˝
+Î
 synthesizing module '%s'638*oasys22
-clkgen_virtex7__parameterized02default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
+clkgen_virtex7__parameterized02default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
 3112default:default8@Z8-638
 T
 %s*synth2E
@@ -404,19 +409,19 @@ Z
 %s*synth2K
 7	Parameter STARTUP_WAIT bound to: TRUE - type: string 
 2default:default
-√
+≥
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	PLLE2_ADV2default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+	PLLE2_ADV2default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 263382default:default2"
 PLLE2_ADV_inst2default:default2
-	PLLE2_ADV2default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
+	PLLE2_ADV2default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
 3872default:default8@Z8-3491
-Ã
+Œ
 synthesizing module '%s'638*oasys2-
-PLLE2_ADV__parameterized02default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+PLLE2_ADV__parameterized02default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 263382default:default8@Z8-638
 \
 %s*synth2M
@@ -542,113 +547,113 @@ c
 %s*synth2M
 9	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
 2default:default
-á
+â
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 PLLE2_ADV__parameterized02default:default2
 22default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 263382default:default8@Z8-256
-±
+°
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-BUFG2default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+BUFG2default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 6122default:default2
 bufgclk02default:default2
-BUFG2default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
+BUFG2default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
 4572default:default8@Z8-3491
-µ
+∑
 synthesizing module '%s'638*oasys2
-BUFG2default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+BUFG2default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 6122default:default8@Z8-638
-
+Ú
 %done synthesizing module '%s' (%s#%s)256*oasys2
 BUFG2default:default2
 32default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 6122default:default8@Z8-256
-≤
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-BUFG2default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+BUFG2default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 6122default:default2
 	bufgclk902default:default2
-BUFG2default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
+BUFG2default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
 4582default:default8@Z8-3491
-≤
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-BUFG2default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+BUFG2default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 6122default:default2
 	bufgclkio2default:default2
-BUFG2default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
+BUFG2default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
 4592default:default8@Z8-3491
-∏
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys22
 clkgen_virtex7__parameterized02default:default2
 42default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd2default:default2
 3112default:default8@Z8-256
-†
+é
 0Net %s in module/entity %s does not have driver.3422*oasys2
 sdclk2default:default2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 542default:default8@Z8-3848
-°
+è
 0Net %s in module/entity %s does not have driver.3422*oasys2
 pciclk2default:default2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 552default:default8@Z8-3848
-†
+é
 0Net %s in module/entity %s does not have driver.3422*oasys2
 clk4x2default:default2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 582default:default8@Z8-3848
-°
+è
 0Net %s in module/entity %s does not have driver.3422*oasys2
 clk1xu2default:default2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 592default:default8@Z8-3848
-°
+è
 0Net %s in module/entity %s does not have driver.3422*oasys2
 clk2xu2default:default2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 602default:default8@Z8-3848
-ü
+ç
 0Net %s in module/entity %s does not have driver.3422*oasys2
 clkb2default:default2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 612default:default8@Z8-3848
-ü
+ç
 0Net %s in module/entity %s does not have driver.3422*oasys2
 clkc2default:default2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 622default:default8@Z8-3848
-†
+é
 0Net %s in module/entity %s does not have driver.3422*oasys2
 clk8x2default:default2*
-clkgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+clkgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 632default:default8@Z8-3848
-¶
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 clkgen__parameterized02default:default2
 52default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd2default:default2
 662default:default8@Z8-256
 S
 %s*synth2D
@@ -774,19 +779,19 @@ T
 %s*synth2E
 1	Parameter fourgslv bound to: 0 - type: integer 
 2default:default
-€
+∑
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-ahbctrl2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
+ahbctrl2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
 392default:default2
 ahb02default:default2
-ahbctrl2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+ahbctrl2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 3332default:default8@Z8-3491
-Î
+Ÿ
 synthesizing module '%s'638*oasys2+
-ahbctrl__parameterized02default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
+ahbctrl__parameterized02default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
 882default:default8@Z8-638
 S
 %s*synth2D
@@ -912,12 +917,12 @@ T
 %s*synth2E
 1	Parameter fourgslv bound to: 0 - type: integer 
 2default:default
-¶
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 ahbctrl__parameterized02default:default2
 62default:default2
-12default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
+12default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
 882default:default8@Z8-256
 R
 %s*synth2C
@@ -1107,19 +1112,19 @@ N
 %s*synth2?
 +	Parameter bp bound to: 1 - type: integer 
 2default:default
-€
+∑
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-leon3s2default:default2q
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd2default:default2
+leon3s2default:default2_
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd2default:default2
 352default:default2
 u02default:default2
-leon3s2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+leon3s2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 3472default:default8@Z8-3491
-Ô
+›
 synthesizing module '%s'638*oasys2*
-leon3s__parameterized02default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd2default:default2
+leon3s__parameterized02default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd2default:default2
 1002default:default8@Z8-638
 R
 %s*synth2C
@@ -1525,19 +1530,19 @@ N
 %s*synth2?
 +	Parameter bp bound to: 1 - type: integer 
 2default:default
-’
+±
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-leon3x2default:default2q
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
+leon3x2default:default2_
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
 422default:default2
 leon3x02default:default2
-leon3x2default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd2default:default2
+leon3x2default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd2default:default2
 1102default:default8@Z8-3491
-Ô
+›
 synthesizing module '%s'638*oasys2*
-leon3x__parameterized02default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
+leon3x__parameterized02default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
 1212default:default8@Z8-638
 R
 %s*synth2C
@@ -1947,19 +1952,19 @@ N
 %s*synth2?
 +	Parameter bp bound to: 1 - type: integer 
 2default:default
-Õ
+©
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-proc32default:default2p
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
+proc32default:default2^
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
 432default:default2
 p02default:default2
-proc32default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
+proc32default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
 1542default:default8@Z8-3491
-Ì
+€
 synthesizing module '%s'638*oasys2)
-proc3__parameterized02default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
+proc3__parameterized02default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
 1232default:default8@Z8-638
 R
 %s*synth2C
@@ -2245,19 +2250,19 @@ N
 %s*synth2?
 +	Parameter bp bound to: 1 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iu32default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu32default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 452default:default2
 iu2default:default2
-iu32default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
+iu32default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
 1452default:default8@Z8-3491
-È
+◊
 synthesizing module '%s'638*oasys2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 1012default:default8@Z8-638
 P
 %s*synth2A
@@ -2351,514 +2356,514 @@ N
 %s*synth2?
 +	Parameter bp bound to: 1 - type: integer 
 2default:default
-ƒ
-default block is never used226*oasys2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+≤
+default block is never used226*oasys2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 27572default:default8@Z8-226
-ƒ
-default block is never used226*oasys2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+≤
+default block is never used226*oasys2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 14262default:default8@Z8-226
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[flush]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[exack]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[a_rs1]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[d][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[d][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 fpi[d][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[d][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 fpi[d][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[d][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[a][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[a][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 fpi[a][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[a][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 fpi[a][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[a][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[e][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[e][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 fpi[e][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[e][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 fpi[e][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[e][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[m][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[m][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 fpi[m][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[m][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 fpi[m][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[m][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[x][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[x][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 fpi[x][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 fpi[x][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 fpi[x][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 fpi[x][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 fpi[lddata]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-®
+ñ
 0Net %s in module/entity %s does not have driver.3422*oasys2$
 fpi[dbg][enable]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-ß
+ï
 0Net %s in module/entity %s does not have driver.3422*oasys2#
 fpi[dbg][write]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 fpi[dbg][fsr]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¶
+î
 0Net %s in module/entity %s does not have driver.3422*oasys2"
 fpi[dbg][addr]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¶
+î
 0Net %s in module/entity %s does not have driver.3422*oasys2"
 fpi[dbg][data]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 892default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[flush]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[exack]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[a_rs1]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[d][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[d][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 cpi[d][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[d][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 cpi[d][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[d][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[a][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[a][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 cpi[a][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[a][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 cpi[a][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[a][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[e][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[e][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 cpi[e][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[e][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 cpi[e][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[e][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[m][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[m][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 cpi[m][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[m][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 cpi[m][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[m][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[x][pc]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[x][inst]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 cpi[x][cnt]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 0Net %s in module/entity %s does not have driver.3422*oasys2 
 cpi[x][trap]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 cpi[x][annul]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¢
+ê
 0Net %s in module/entity %s does not have driver.3422*oasys2
 
 cpi[x][pv]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-£
+ë
 0Net %s in module/entity %s does not have driver.3422*oasys2
 cpi[lddata]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-®
+ñ
 0Net %s in module/entity %s does not have driver.3422*oasys2$
 cpi[dbg][enable]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-ß
+ï
 0Net %s in module/entity %s does not have driver.3422*oasys2#
 cpi[dbg][write]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 cpi[dbg][fsr]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¶
+î
 0Net %s in module/entity %s does not have driver.3422*oasys2"
 cpi[dbg][addr]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-¶
+î
 0Net %s in module/entity %s does not have driver.3422*oasys2"
 cpi[dbg][data]2default:default2'
-iu3__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+iu3__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 912default:default8@Z8-3848
-§
+í
 %done synthesizing module '%s' (%s#%s)256*oasys2'
 iu3__parameterized02default:default2
 72default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 1012default:default8@Z8-256
 Q
 %s*synth2B
@@ -2880,19 +2885,19 @@ P
 %s*synth2A
 -	Parameter arch bound to: 0 - type: integer 
 2default:default
-Ã
+®
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-mul322default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd2default:default2
+mul322default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd2default:default2
 392default:default2
 mul02default:default2
-mul322default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
+mul322default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
 1552default:default8@Z8-3491
-Í
+ÿ
 synthesizing module '%s'638*oasys2)
-mul32__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd2default:default2
+mul32__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd2default:default2
 562default:default8@Z8-638
 Q
 %s*synth2B
@@ -2938,19 +2943,19 @@ V
 %s*synth2G
 3	Parameter stall_mode bound to: 1 - type: integer 
 2default:default
-”
+Ø
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-techmult2default:default2p
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd2default:default2
+techmult2default:default2^
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd2default:default2
 352default:default2
 m32322default:default2
-techmult2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd2default:default2
+techmult2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd2default:default2
 3872default:default8@Z8-3491
-Ô
+›
 synthesizing module '%s'638*oasys2,
-techmult__parameterized02default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd2default:default2
+techmult__parameterized02default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd2default:default2
 522default:default8@Z8-638
 Q
 %s*synth2B
@@ -2992,19 +2997,19 @@ V
 %s*synth2G
 3	Parameter stall_mode bound to: 1 - type: integer 
 2default:default
-Â
+¡
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2!
-gen_mult_pipe2default:default2x
-dC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd2default:default2
+gen_mult_pipe2default:default2f
+R/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd2default:default2
 752default:default2
 dwm2default:default2!
-gen_mult_pipe2default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd2default:default2
+gen_mult_pipe2default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd2default:default2
 1332default:default8@Z8-3491
-¸
+Í
 synthesizing module '%s'638*oasys21
-gen_mult_pipe__parameterized02default:default2z
-dC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd2default:default2
+gen_mult_pipe__parameterized02default:default2h
+R/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd2default:default2
 902default:default8@Z8-638
 T
 %s*synth2E
@@ -3022,47 +3027,47 @@ V
 %s*synth2G
 3	Parameter stall_mode bound to: 1 - type: integer 
 2default:default
-∑
+•
 %done synthesizing module '%s' (%s#%s)256*oasys21
 gen_mult_pipe__parameterized02default:default2
 82default:default2
-12default:default2z
-dC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd2default:default2
+12default:default2h
+R/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd2default:default2
 902default:default8@Z8-256
-™
+ò
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 techmult__parameterized02default:default2
 92default:default2
-12default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd2default:default2
+12default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd2default:default2
 522default:default8@Z8-256
-¶
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 mul32__parameterized02default:default2
 102default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd2default:default2
 562default:default8@Z8-256
-Ã
+®
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-div322default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/div32.vhd2default:default2
+div322default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/div32.vhd2default:default2
 422default:default2
 div02default:default2
-div322default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
+div322default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
 1572default:default8@Z8-3491
-⁄
+»
 synthesizing module '%s'638*oasys2
-div322default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/div32.vhd2default:default2
+div322default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/div32.vhd2default:default2
 522default:default8@Z8-638
-ñ
+Ñ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 div322default:default2
 112default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/div32.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/div32.vhd2default:default2
 522default:default8@Z8-256
 R
 %s*synth2C
@@ -3192,19 +3197,19 @@ Q
 %s*synth2B
 .	Parameter mmuen bound to: 0 - type: integer 
 2default:default
-€
+∑
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	mmu_cache2default:default2t
-`C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
+	mmu_cache2default:default2b
+N/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
 402default:default2
 c0mmu2default:default2
-	mmu_cache2default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
+	mmu_cache2default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
 1672default:default8@Z8-3491
-Ù
+‚
 synthesizing module '%s'638*oasys2-
-mmu_cache__parameterized02default:default2v
-`C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
+mmu_cache__parameterized02default:default2d
+N/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
 962default:default8@Z8-638
 R
 %s*synth2C
@@ -3374,21 +3379,21 @@ Q
 %s*synth2B
 .	Parameter mmuen bound to: 0 - type: integer 
 2default:default
-‰
+¿
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-mmu_icache2default:default2u
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
+mmu_icache2default:default2c
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
 412default:default2
 icache02default:default2
 
-mmu_icache2default:default2v
-`C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
+mmu_icache2default:default2d
+N/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
 1232default:default8@Z8-3491
-ˆ
+‰
 synthesizing module '%s'638*oasys2.
-mmu_icache__parameterized02default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
+mmu_icache__parameterized02default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
 732default:default8@Z8-638
 P
 %s*synth2A
@@ -3430,28 +3435,28 @@ Q
 %s*synth2B
 .	Parameter mmuen bound to: 0 - type: integer 
 2default:default
- 
-default block is never used226*oasys2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
+∏
+default block is never used226*oasys2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
 3812default:default8@Z8-226
-≠
+õ
 0Net %s in module/entity %s does not have driver.3422*oasys2
 tag[2]2default:default2.
-mmu_icache__parameterized02default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
+mmu_icache__parameterized02default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
 2792default:default8@Z8-3848
-≠
+õ
 0Net %s in module/entity %s does not have driver.3422*oasys2
 tag[3]2default:default2.
-mmu_icache__parameterized02default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
+mmu_icache__parameterized02default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
 2792default:default8@Z8-3848
-≤
+†
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 mmu_icache__parameterized02default:default2
 122default:default2
-12default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
+12default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd2default:default2
 732default:default8@Z8-256
 O
 %s*synth2@
@@ -3537,21 +3542,21 @@ Q
 %s*synth2B
 .	Parameter mmuen bound to: 0 - type: integer 
 2default:default
-‰
+¿
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-mmu_dcache2default:default2u
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+mmu_dcache2default:default2c
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 442default:default2
 dcache02default:default2
 
-mmu_dcache2default:default2v
-`C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
+mmu_dcache2default:default2d
+N/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
 1292default:default8@Z8-3491
-ˆ
+‰
 synthesizing module '%s'638*oasys2.
-mmu_dcache__parameterized02default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+mmu_dcache__parameterized02default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 882default:default8@Z8-638
 O
 %s*synth2@
@@ -3637,12 +3642,12 @@ Q
 %s*synth2B
 .	Parameter mmuen bound to: 0 - type: integer 
 2default:default
-≤
+†
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 mmu_dcache__parameterized02default:default2
 132default:default2
-12default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+12default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 882default:default8@Z8-256
 R
 %s*synth2C
@@ -3664,21 +3669,21 @@ T
 %s*synth2E
 1	Parameter scantest bound to: 0 - type: integer 
 2default:default
-ﬂ
+ª
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-mmu_acache2default:default2u
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
+mmu_acache2default:default2c
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
 412default:default2
 a02default:default2
 
-mmu_acache2default:default2v
-`C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
+mmu_acache2default:default2d
+N/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
 1382default:default8@Z8-3491
-ˆ
+‰
 synthesizing module '%s'638*oasys2.
-mmu_acache__parameterized02default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
+mmu_acache__parameterized02default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
 672default:default8@Z8-638
 R
 %s*synth2C
@@ -3700,41 +3705,41 @@ T
 %s*synth2E
 1	Parameter scantest bound to: 0 - type: integer 
 2default:default
-Î
+Ÿ
 found unpartitioned %s node3665*oasys2
-	construct2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
+	construct2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
 1782default:default8@Z8-4512
-Î
+Ÿ
 found unpartitioned %s node3665*oasys2
-	construct2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
+	construct2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
 1782default:default8@Z8-4512
-Î
+Ÿ
 found unpartitioned %s node3665*oasys2
-	construct2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
+	construct2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
 1782default:default8@Z8-4512
-≤
+†
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 mmu_acache__parameterized02default:default2
 142default:default2
-12default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
+12default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd2default:default2
 672default:default8@Z8-256
-∞
+û
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 mmu_cache__parameterized02default:default2
 152default:default2
-12default:default2v
-`C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
+12default:default2d
+N/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd2default:default2
 962default:default8@Z8-256
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 proc3__parameterized02default:default2
 162default:default2
-12default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
+12default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd2default:default2
 1232default:default8@Z8-256
 Q
 %s*synth2B
@@ -3760,19 +3765,19 @@ R
 %s*synth2C
 /	Parameter testen bound to: 0 - type: integer 
 2default:default
-Ê
+¬
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2!
-regfile_3p_l32default:default2x
-dC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd2default:default2
+regfile_3p_l32default:default2f
+R/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd2default:default2
 332default:default2
 rf02default:default2!
-regfile_3p_l32default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
+regfile_3p_l32default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
 1672default:default8@Z8-3491
-¸
+Í
 synthesizing module '%s'638*oasys21
-regfile_3p_l3__parameterized02default:default2z
-dC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd2default:default2
+regfile_3p_l3__parameterized02default:default2h
+R/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd2default:default2
 542default:default8@Z8-638
 Q
 %s*synth2B
@@ -3826,21 +3831,21 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-‡
+º
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-regfile_3p2default:default2r
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
+regfile_3p2default:default2`
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
 322default:default2
 rhu2default:default2
 
-regfile_3p2default:default2z
-dC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd2default:default2
+regfile_3p2default:default2h
+R/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd2default:default2
 792default:default8@Z8-3491
-Û
+·
 synthesizing module '%s'638*oasys2.
-regfile_3p__parameterized02default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
+regfile_3p__parameterized02default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
 542default:default8@Z8-638
 Q
 %s*synth2B
@@ -3902,21 +3907,21 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-Ÿ
+µ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-syncram_2p2default:default2r
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+syncram_2p2default:default2`
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 362default:default2
 x02default:default2
 
-syncram_2p2default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
+syncram_2p2default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
 772default:default8@Z8-3491
-Û
+·
 synthesizing module '%s'638*oasys2.
-syncram_2p__parameterized02default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+syncram_2p__parameterized02default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-638
 Q
 %s*synth2B
@@ -3966,19 +3971,19 @@ Q
 %s*synth2B
 .	Parameter wrfst bound to: 1 - type: integer 
 2default:default
-Ó
+ 
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2%
-unisim_syncram_2p2default:default2w
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram_2p2default:default2e
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5362default:default2
 x02default:default2%
-unisim_syncram_2p2default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+unisim_syncram_2p2default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 1792default:default8@Z8-3491
-Ä
+Ó
 synthesizing module '%s'638*oasys25
-!unisim_syncram_2p__parameterized02default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+!unisim_syncram_2p__parameterized02default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-638
 Q
 %s*synth2B
@@ -4004,19 +4009,19 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 32 - type: integer 
 2default:default
-Û
+œ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2%
-unisim_syncram_dp2default:default2w
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram_dp2default:default2e
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2762default:default2
 x02default:default2%
-unisim_syncram_dp2default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram_dp2default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 6022default:default8@Z8-3491
-Ä
+Ó
 synthesizing module '%s'638*oasys25
-!unisim_syncram_dp__parameterized02default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+!unisim_syncram_dp__parameterized02default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2952default:default8@Z8-638
 Q
 %s*synth2B
@@ -4026,19 +4031,19 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 32 - type: integer 
 2default:default
-¡
+±
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2"
-RAMB16_S36_S362default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S36_S362default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 317702default:default2
 r02default:default2"
-RAMB16_S36_S362default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+RAMB16_S36_S362default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 4342default:default8@Z8-3491
-¡
+√
 synthesizing module '%s'638*oasys2"
-RAMB16_S36_S362default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S36_S362default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 317702default:default8@Z8-638
 `
 %s*synth2Q
@@ -4356,33 +4361,33 @@ j
 %s*synth2[
 G	Parameter SRVAL_B bound to: 36'b000000000000000000000000000000000000 
 2default:default
-˝
+ˇ
 %done synthesizing module '%s' (%s#%s)256*oasys2"
 RAMB16_S36_S362default:default2
 172default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 317702default:default8@Z8-256
-º
+™
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_dp__parameterized02default:default2
 182default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2952default:default8@Z8-256
-º
+™
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_2p__parameterized02default:default2
 192default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-256
-Ø
+ù
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 syncram_2p__parameterized02default:default2
 202default:default2
-12default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+12default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-256
 Q
 %s*synth2B
@@ -4416,30 +4421,30 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-Ÿ
+µ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-syncram_2p2default:default2r
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+syncram_2p2default:default2`
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 362default:default2
 x12default:default2
 
-syncram_2p2default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
+syncram_2p2default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
 802default:default8@Z8-3491
-Ø
+ù
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 regfile_3p__parameterized02default:default2
 212default:default2
-12default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
+12default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd2default:default2
 542default:default8@Z8-256
-∏
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys21
 regfile_3p_l3__parameterized02default:default2
 222default:default2
-12default:default2z
-dC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd2default:default2
+12default:default2h
+R/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd2default:default2
 542default:default8@Z8-256
 Q
 %s*synth2B
@@ -4521,19 +4526,19 @@ R
 %s*synth2C
 /	Parameter testen bound to: 0 - type: integer 
 2default:default
-Ÿ
+µ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-cachemem2default:default2s
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+cachemem2default:default2a
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 372default:default2
 cmem02default:default2
-cachemem2default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
+cachemem2default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
 1772default:default8@Z8-3491
-Ú
+‡
 synthesizing module '%s'638*oasys2,
-cachemem__parameterized02default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+cachemem__parameterized02default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 702default:default8@Z8-638
 Q
 %s*synth2B
@@ -4635,19 +4640,19 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-÷
+≤
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-syncram2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 352default:default2
 itags02default:default2
-syncram2default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+syncram2default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 3232default:default8@Z8-3491
-Ì
+€
 synthesizing module '%s'638*oasys2+
-syncram__parameterized02default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram__parameterized02default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 512default:default8@Z8-638
 Q
 %s*synth2B
@@ -4677,19 +4682,19 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 23 - type: integer 
 2default:default
-‰
+¿
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2"
-unisim_syncram2default:default2w
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram2default:default2e
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 442default:default2
 x02default:default2"
-unisim_syncram2default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+unisim_syncram2default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 1122default:default8@Z8-3491
-¸
+Í
 synthesizing module '%s'638*oasys22
-unisim_syncram__parameterized02default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram__parameterized02default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 562default:default8@Z8-638
 Q
 %s*synth2B
@@ -4699,22 +4704,22 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 23 - type: integer 
 2default:default
-∏
+®
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-RAMB16_S362default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S362default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 316742default:default2
 r2default:default2
 
-RAMB16_S362default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+RAMB16_S362default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 1972default:default8@Z8-3491
-Ω
+ø
 synthesizing module '%s'638*oasys2
 
-RAMB16_S362default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S362default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 316742default:default8@Z8-638
 _
 %s*synth2P
@@ -5016,27 +5021,27 @@ h
 %s*synth2Y
 E	Parameter SRVAL bound to: 36'b000000000000000000000000000000000000 
 2default:default
-˘
+˚
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 RAMB16_S362default:default2
 232default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 316742default:default8@Z8-256
-∏
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys22
 unisim_syncram__parameterized02default:default2
 242default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 562default:default8@Z8-256
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 syncram__parameterized02default:default2
 252default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 512default:default8@Z8-256
 Q
 %s*synth2B
@@ -5058,19 +5063,19 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-÷
+≤
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-syncram2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 352default:default2
 idata02default:default2
-syncram2default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+syncram2default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 3252default:default8@Z8-3491
-Ì
+€
 synthesizing module '%s'638*oasys2+
-syncram__parameterized22default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram__parameterized22default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 512default:default8@Z8-638
 Q
 %s*synth2B
@@ -5100,19 +5105,19 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 32 - type: integer 
 2default:default
-‰
+¿
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2"
-unisim_syncram2default:default2w
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram2default:default2e
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 442default:default2
 x02default:default2"
-unisim_syncram2default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+unisim_syncram2default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 1122default:default8@Z8-3491
-¸
+Í
 synthesizing module '%s'638*oasys22
-unisim_syncram__parameterized22default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram__parameterized22default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 562default:default8@Z8-638
 R
 %s*synth2C
@@ -5122,19 +5127,19 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 32 - type: integer 
 2default:default
-∂
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	RAMB16_S92default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+	RAMB16_S92default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 324012default:default2
 r2default:default2
-	RAMB16_S92default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+	RAMB16_S92default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2152default:default8@Z8-3491
-º
+æ
 synthesizing module '%s'638*oasys2
-	RAMB16_S92default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+	RAMB16_S92default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 324012default:default8@Z8-638
 _
 %s*synth2P
@@ -5436,53 +5441,53 @@ L
 %s*synth2=
 )	Parameter SRVAL bound to: 9'b000000000 
 2default:default
-¯
+˙
 %done synthesizing module '%s' (%s#%s)256*oasys2
 	RAMB16_S92default:default2
 262default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 324012default:default8@Z8-256
-∂
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	RAMB16_S92default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+	RAMB16_S92default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 324012default:default2
 r2default:default2
-	RAMB16_S92default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+	RAMB16_S92default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2152default:default8@Z8-3491
-∂
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	RAMB16_S92default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+	RAMB16_S92default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 324012default:default2
 r2default:default2
-	RAMB16_S92default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+	RAMB16_S92default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2152default:default8@Z8-3491
-∂
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	RAMB16_S92default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+	RAMB16_S92default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 324012default:default2
 r2default:default2
-	RAMB16_S92default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+	RAMB16_S92default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2152default:default8@Z8-3491
-∏
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys22
 unisim_syncram__parameterized22default:default2
 262default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 562default:default8@Z8-256
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 syncram__parameterized22default:default2
 262default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 512default:default8@Z8-256
 Q
 %s*synth2B
@@ -5504,14 +5509,14 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-÷
+≤
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-syncram2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 352default:default2
 itags02default:default2
-syncram2default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+syncram2default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 3232default:default8@Z8-3491
 Q
 %s*synth2B
@@ -5533,14 +5538,14 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-÷
+≤
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-syncram2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 352default:default2
 idata02default:default2
-syncram2default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+syncram2default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 3252default:default8@Z8-3491
 Q
 %s*synth2B
@@ -5562,19 +5567,19 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-÷
+≤
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-syncram2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 352default:default2
 dtags02default:default2
-syncram2default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+syncram2default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 3482default:default8@Z8-3491
-Ì
+€
 synthesizing module '%s'638*oasys2+
-syncram__parameterized42default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram__parameterized42default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 512default:default8@Z8-638
 Q
 %s*synth2B
@@ -5604,19 +5609,19 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 24 - type: integer 
 2default:default
-‰
+¿
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2"
-unisim_syncram2default:default2w
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram2default:default2e
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 442default:default2
 x02default:default2"
-unisim_syncram2default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+unisim_syncram2default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 1122default:default8@Z8-3491
-¸
+Í
 synthesizing module '%s'638*oasys22
-unisim_syncram__parameterized42default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram__parameterized42default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 562default:default8@Z8-638
 Q
 %s*synth2B
@@ -5626,28 +5631,28 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 24 - type: integer 
 2default:default
-¡
+±
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2"
-RAMB16_S36_S362default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S36_S362default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 317702default:default2
 r02default:default2"
-RAMB16_S36_S362default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+RAMB16_S36_S362default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 1852default:default8@Z8-3491
-∏
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys22
 unisim_syncram__parameterized42default:default2
 262default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 562default:default8@Z8-256
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 syncram__parameterized42default:default2
 262default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 512default:default8@Z8-256
 Q
 %s*synth2B
@@ -5669,14 +5674,14 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-÷
+≤
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-syncram2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 352default:default2
 dtags02default:default2
-syncram2default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+syncram2default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 3482default:default8@Z8-3491
 Q
 %s*synth2B
@@ -5698,19 +5703,19 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-÷
+≤
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-syncram2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 352default:default2
 ddata02default:default2
-syncram2default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+syncram2default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 4072default:default8@Z8-3491
-Ì
+€
 synthesizing module '%s'638*oasys2+
-syncram__parameterized62default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram__parameterized62default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 512default:default8@Z8-638
 Q
 %s*synth2B
@@ -5740,19 +5745,19 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 32 - type: integer 
 2default:default
-‰
+¿
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2"
-unisim_syncram2default:default2w
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram2default:default2e
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 442default:default2
 x02default:default2"
-unisim_syncram2default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+unisim_syncram2default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 1122default:default8@Z8-3491
-¸
+Í
 synthesizing module '%s'638*oasys22
-unisim_syncram__parameterized62default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram__parameterized62default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 562default:default8@Z8-638
 R
 %s*synth2C
@@ -5762,22 +5767,22 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 32 - type: integer 
 2default:default
-∏
+®
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-RAMB16_S182default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S182default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 301032default:default2
 r2default:default2
 
-RAMB16_S182default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+RAMB16_S182default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2062default:default8@Z8-3491
-Ω
+ø
 synthesizing module '%s'638*oasys2
 
-RAMB16_S182default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S182default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 301032default:default8@Z8-638
 _
 %s*synth2P
@@ -6079,38 +6084,38 @@ V
 %s*synth2π
 §	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 2default:default
-˘
+˚
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 RAMB16_S182default:default2
 272default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 301032default:default8@Z8-256
-∏
+®
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-RAMB16_S182default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S182default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 301032default:default2
 r2default:default2
 
-RAMB16_S182default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+RAMB16_S182default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2062default:default8@Z8-3491
-∏
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys22
 unisim_syncram__parameterized62default:default2
 272default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 562default:default8@Z8-256
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 syncram__parameterized62default:default2
 272default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 512default:default8@Z8-256
 Q
 %s*synth2B
@@ -6132,21 +6137,21 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-÷
+≤
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-syncram2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
+syncram2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd2default:default2
 352default:default2
 ddata02default:default2
-syncram2default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+syncram2default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 4072default:default8@Z8-3491
-Æ
+ú
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 cachemem__parameterized02default:default2
 282default:default2
-12default:default2u
-_C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
+12default:default2c
+M/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd2default:default2
 702default:default8@Z8-256
 Q
 %s*synth2B
@@ -6160,19 +6165,19 @@ R
 %s*synth2C
 /	Parameter testen bound to: 0 - type: integer 
 2default:default
-◊
+≥
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-tbufmem2default:default2r
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
+tbufmem2default:default2`
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
 352default:default2
 tbmem02default:default2
-tbufmem2default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
+tbufmem2default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
 1872default:default8@Z8-3491
-
+ﬁ
 synthesizing module '%s'638*oasys2+
-tbufmem__parameterized02default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
+tbufmem__parameterized02default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
 472default:default8@Z8-638
 Q
 %s*synth2B
@@ -6206,19 +6211,19 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-ÿ
+¥
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	syncram642default:default2q
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
+	syncram642default:default2_
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
 372default:default2
 ram02default:default2
-	syncram642default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
+	syncram642default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
 562default:default8@Z8-3491
-Ò
+ﬂ
 synthesizing module '%s'638*oasys2-
-syncram64__parameterized02default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
+syncram64__parameterized02default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
 532default:default8@Z8-638
 Q
 %s*synth2B
@@ -6244,46 +6249,46 @@ Q
 %s*synth2B
 .	Parameter abits bound to: 7 - type: integer 
 2default:default
-Î
+«
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2$
-unisim_syncram642default:default2w
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+unisim_syncram642default:default2e
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 6172default:default2
 x02default:default2$
-unisim_syncram642default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
+unisim_syncram642default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
 1202default:default8@Z8-3491
-ˇ
+Ì
 synthesizing module '%s'638*oasys24
- unisim_syncram64__parameterized02default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+ unisim_syncram64__parameterized02default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 6292default:default8@Z8-638
 Q
 %s*synth2B
 .	Parameter abits bound to: 7 - type: integer 
 2default:default
-¡
+±
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2"
-RAMB16_S36_S362default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+RAMB16_S36_S362default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 317702default:default2
 r02default:default2"
-RAMB16_S36_S362default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+RAMB16_S36_S362default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 6722default:default8@Z8-3491
-ª
+©
 %done synthesizing module '%s' (%s#%s)256*oasys24
  unisim_syncram64__parameterized02default:default2
 292default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 6292default:default8@Z8-256
-≠
+õ
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 syncram64__parameterized02default:default2
 302default:default2
-12default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
+12default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
 532default:default8@Z8-256
 Q
 %s*synth2B
@@ -6305,35 +6310,35 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-ÿ
+¥
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-	syncram642default:default2q
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
+	syncram642default:default2_
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd2default:default2
 372default:default2
 ram02default:default2
-	syncram642default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
+	syncram642default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
 562default:default8@Z8-3491
-¨
+ö
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 tbufmem__parameterized02default:default2
 312default:default2
-12default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
+12default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
 472default:default8@Z8-256
-´
+ô
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 leon3x__parameterized02default:default2
 322default:default2
-12default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
+12default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd2default:default2
 1212default:default8@Z8-256
-´
+ô
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 leon3s__parameterized02default:default2
 332default:default2
-12default:default2s
-]C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd2default:default2
+12default:default2a
+K/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd2default:default2
 1002default:default8@Z8-256
 R
 %s*synth2C
@@ -6371,19 +6376,19 @@ R
 %s*synth2C
 /	Parameter testen bound to: 0 - type: integer 
 2default:default
-◊
+≥
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-dsu32default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
+dsu32default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
 372default:default2
 dsu02default:default2
-dsu32default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+dsu32default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 3632default:default8@Z8-3491
-Í
+ÿ
 synthesizing module '%s'638*oasys2(
-dsu3__parameterized02default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
+dsu3__parameterized02default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
 622default:default8@Z8-638
 R
 %s*synth2C
@@ -6461,19 +6466,19 @@ R
 %s*synth2C
 /	Parameter testen bound to: 0 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-dsu3x2default:default2p
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd2default:default2
+dsu3x2default:default2^
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd2default:default2
 392default:default2
 x02default:default2
-dsu3x2default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
+dsu3x2default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
 702default:default8@Z8-3491
-Ï
+⁄
 synthesizing module '%s'638*oasys2)
-dsu3x__parameterized02default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd2default:default2
+dsu3x__parameterized02default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd2default:default2
 682default:default8@Z8-638
 R
 %s*synth2C
@@ -6527,28 +6532,28 @@ R
 %s*synth2C
 /	Parameter testen bound to: 0 - type: integer 
 2default:default
-‘
+∞
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-tbufmem2default:default2r
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
+tbufmem2default:default2`
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd2default:default2
 352default:default2
 mem02default:default2
-tbufmem2default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd2default:default2
+tbufmem2default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd2default:default2
 7432default:default8@Z8-3491
-®
+ñ
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 dsu3x__parameterized02default:default2
 342default:default2
-12default:default2r
-\C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd2default:default2
+12default:default2`
+J/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd2default:default2
 682default:default8@Z8-256
-¶
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 dsu3__parameterized02default:default2
 352default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd2default:default2
 622default:default8@Z8-256
 R
 %s*synth2C
@@ -6658,19 +6663,19 @@ R
 %s*synth2C
 /	Parameter mobile bound to: 0 - type: integer 
 2default:default
-ÿ
+¥
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-mctrl2default:default2o
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+mctrl2default:default2]
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 352default:default2
 sr12default:default2
-mctrl2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+mctrl2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3491
-Î
+Ÿ
 synthesizing module '%s'638*oasys2)
-mctrl__parameterized02default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+mctrl__parameterized02default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 792default:default8@Z8-638
 R
 %s*synth2C
@@ -6780,34 +6785,34 @@ R
 %s*synth2C
 /	Parameter mobile bound to: 0 - type: integer 
 2default:default
-ƒ
-default block is never used226*oasys2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+≤
+default block is never used226*oasys2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 3662default:default8@Z8-226
-ƒ
-default block is never used226*oasys2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+≤
+default block is never used226*oasys2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 4772default:default8@Z8-226
-ƒ
-default block is never used226*oasys2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+≤
+default block is never used226*oasys2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 4922default:default8@Z8-226
-ƒ
-default block is never used226*oasys2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+≤
+default block is never used226*oasys2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 7002default:default8@Z8-226
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2
 	rrsbdrive2default:default2)
-mctrl__parameterized02default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+mctrl__parameterized02default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 1932default:default8@Z8-3848
-ß
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 mctrl__parameterized02default:default2
 362default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 792default:default8@Z8-256
 Q
 %s*synth2B
@@ -6833,19 +6838,19 @@ R
 %s*synth2C
 /	Parameter width bound to: 23 - type: integer 
 2default:default
-·
+Ω
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpadv2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpadv2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1272default:default2
 addr_pad2default:default2
-outpadv2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+outpadv2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4192default:default8@Z8-3491
-Ì
+€
 synthesizing module '%s'638*oasys2+
-outpadv__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpadv__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1352default:default8@Z8-638
 Q
 %s*synth2B
@@ -6891,19 +6896,19 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
-Î
+Ÿ
 synthesizing module '%s'638*oasys2*
-outpad__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 392default:default8@Z8-638
 Q
 %s*synth2B
@@ -6941,19 +6946,19 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-ﬂ
+ª
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2!
-unisim_outpad2default:default2u
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+unisim_outpad2default:default2c
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 2022default:default2
 x02default:default2!
-unisim_outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+unisim_outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z8-3491
-˙
+Ë
 synthesizing module '%s'638*oasys21
-unisim_outpad__parameterized02default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+unisim_outpad__parameterized02default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 2072default:default8@Z8-638
 Q
 %s*synth2B
@@ -6987,19 +6992,19 @@ R
 %s*synth2C
 /	Parameter SLEW bound to: SLOW - type: string 
 2default:default
-´
+õ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-OBUF2default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+OBUF2default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 175922default:default2
 op2default:default2
-OBUF2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+OBUF2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 2292default:default8@Z8-3491
-«
+…
 synthesizing module '%s'638*oasys2(
-OBUF__parameterized02default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+OBUF__parameterized02default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 175922default:default8@Z8-638
 ^
 %s*synth2O
@@ -7017,26 +7022,26 @@ R
 %s*synth2C
 /	Parameter DRIVE bound to: 12 - type: integer 
 2default:default
-É
+Ö
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 OBUF__parameterized02default:default2
 372default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 175922default:default8@Z8-256
-∂
+§
 %done synthesizing module '%s' (%s#%s)256*oasys21
 unisim_outpad__parameterized02default:default2
 382default:default2
-12default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+12default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 2072default:default8@Z8-256
-ß
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 outpad__parameterized02default:default2
 392default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 392default:default8@Z8-256
 Q
 %s*synth2B
@@ -7058,14 +7063,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7087,14 +7092,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7116,14 +7121,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7145,14 +7150,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7174,14 +7179,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7203,14 +7208,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7232,14 +7237,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7261,14 +7266,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7290,14 +7295,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7319,14 +7324,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7348,14 +7353,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7377,14 +7382,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7406,14 +7411,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7435,14 +7440,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7464,14 +7469,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7493,14 +7498,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7522,14 +7527,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7551,14 +7556,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7580,14 +7585,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7609,14 +7614,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7638,14 +7643,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7667,21 +7672,21 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
- 
+¶
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 x02default:default2
-outpad2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z8-3491
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 outpadv__parameterized02default:default2
 402default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1352default:default8@Z8-256
 Q
 %s*synth2B
@@ -7703,14 +7708,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-›
+π
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 oen_pad2default:default2
-outpad2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+outpad2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4212default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7732,14 +7737,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-‹
+∏
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 cs_pad2default:default2
-outpad2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+outpad2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4232default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7761,14 +7766,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-‹
+∏
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 lb_pad2default:default2
-outpad2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+outpad2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4252default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7790,14 +7795,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-‹
+∏
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 ub_pad2default:default2
-outpad2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+outpad2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4272default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7819,14 +7824,14 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-›
+π
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-outpad2default:default2n
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpad2default:default2\
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 322default:default2
 wri_pad2default:default2
-outpad2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+outpad2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4292default:default8@Z8-3491
 Q
 %s*synth2B
@@ -7860,19 +7865,19 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-Ÿ
+µ
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopadv2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopadv2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1572default:default2
 bdr2default:default2
-iopadv2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+iopadv2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4332default:default8@Z8-3491
-Î
+Ÿ
 synthesizing module '%s'638*oasys2*
-iopadv__parameterized02default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopadv__parameterized02default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1682default:default8@Z8-638
 Q
 %s*synth2B
@@ -7934,19 +7939,19 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopad2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 322default:default2
 x02default:default2
-iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z8-3491
-È
+◊
 synthesizing module '%s'638*oasys2)
-iopad__parameterized02default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad__parameterized02default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 402default:default8@Z8-638
 Q
 %s*synth2B
@@ -7992,19 +7997,19 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-€
+∑
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2 
-unisim_iopad2default:default2u
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+unisim_iopad2default:default2c
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 942default:default2
 x02default:default2 
-unisim_iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+unisim_iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z8-3491
-¯
+Ê
 synthesizing module '%s'638*oasys20
-unisim_iopad__parameterized02default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+unisim_iopad__parameterized02default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 992default:default8@Z8-638
 Q
 %s*synth2B
@@ -8034,19 +8039,19 @@ R
 %s*synth2C
 /	Parameter SLEW bound to: SLOW - type: string 
 2default:default
-≠
+ù
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-IOBUF2default:default2I
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+IOBUF2default:default2K
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 132412default:default2
 op2default:default2
-IOBUF2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+IOBUF2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 1212default:default8@Z8-3491
-»
+ 
 synthesizing module '%s'638*oasys2)
-IOBUF__parameterized02default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+IOBUF__parameterized02default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 132412default:default8@Z8-638
 Z
 %s*synth2K
@@ -8064,26 +8069,26 @@ R
 %s*synth2C
 /	Parameter DRIVE bound to: 12 - type: integer 
 2default:default
-Ñ
+Ü
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 IOBUF__parameterized02default:default2
 412default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 132412default:default8@Z8-256
-¥
+¢
 %done synthesizing module '%s' (%s#%s)256*oasys20
 unisim_iopad__parameterized02default:default2
 422default:default2
-12default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+12default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 992default:default8@Z8-256
-•
+ì
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 iopad__parameterized02default:default2
 432default:default2
-12default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+12default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 402default:default8@Z8-256
 Q
 %s*synth2B
@@ -8113,14 +8118,14 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopad2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 322default:default2
 x02default:default2
-iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z8-3491
 Q
 %s*synth2B
@@ -8150,14 +8155,14 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopad2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 322default:default2
 x02default:default2
-iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z8-3491
 Q
 %s*synth2B
@@ -8187,14 +8192,14 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopad2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 322default:default2
 x02default:default2
-iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z8-3491
 Q
 %s*synth2B
@@ -8224,14 +8229,14 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopad2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 322default:default2
 x02default:default2
-iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z8-3491
 Q
 %s*synth2B
@@ -8261,14 +8266,14 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopad2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 322default:default2
 x02default:default2
-iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z8-3491
 Q
 %s*synth2B
@@ -8298,14 +8303,14 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopad2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 322default:default2
 x02default:default2
-iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z8-3491
 Q
 %s*synth2B
@@ -8335,21 +8340,21 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-∆
+¢
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopad2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 322default:default2
 x02default:default2
-iopad2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopad2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z8-3491
-ß
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 iopadv__parameterized02default:default2
 442default:default2
-12default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+12default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1682default:default8@Z8-256
 Q
 %s*synth2B
@@ -8383,14 +8388,14 @@ R
 %s*synth2C
 /	Parameter filter bound to: 0 - type: integer 
 2default:default
-⁄
+∂
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-iopadv2default:default2m
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+iopadv2default:default2[
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1572default:default2
 bdr22default:default2
-iopadv2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+iopadv2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4362default:default8@Z8-3491
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
@@ -8445,10 +8450,10 @@ R
 %s*synth2C
 /	Parameter ccheck bound to: 1 - type: integer 
 2default:default
-Î
+Ÿ
 synthesizing module '%s'638*oasys2+
-apbctrl__parameterized02default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/grlib/amba/apbctrl.vhd2default:default2
+apbctrl__parameterized02default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/grlib/amba/apbctrl.vhd2default:default2
 632default:default8@Z8-638
 R
 %s*synth2C
@@ -8498,12 +8503,12 @@ R
 %s*synth2C
 /	Parameter ccheck bound to: 1 - type: integer 
 2default:default
-ß
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 apbctrl__parameterized02default:default2
 452default:default2
-12default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/grlib/amba/apbctrl.vhd2default:default2
+12default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/grlib/amba/apbctrl.vhd2default:default2
 632default:default8@Z8-256
 R
 %s*synth2C
@@ -8525,10 +8530,10 @@ P
 %s*synth2A
 -	Parameter eirq bound to: 0 - type: integer 
 2default:default
-Í
+ÿ
 synthesizing module '%s'638*oasys2)
-irqmp__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd2default:default2
+irqmp__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd2default:default2
 562default:default8@Z8-638
 R
 %s*synth2C
@@ -8550,16 +8555,16 @@ P
 %s*synth2A
 -	Parameter eirq bound to: 0 - type: integer 
 2default:default
-√
-default block is never used226*oasys2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd2default:default2
+±
+default block is never used226*oasys2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd2default:default2
 1572default:default8@Z8-226
-¶
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 irqmp__parameterized02default:default2
 462default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd2default:default2
 562default:default8@Z8-256
 R
 %s*synth2C
@@ -8601,10 +8606,10 @@ S
 %s*synth2D
 0	Parameter ewdogen bound to: 0 - type: integer 
 2default:default
-Ì
+€
 synthesizing module '%s'638*oasys2+
-gptimer__parameterized02default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/gptimer.vhd2default:default2
+gptimer__parameterized02default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/gptimer.vhd2default:default2
 652default:default8@Z8-638
 R
 %s*synth2C
@@ -8646,12 +8651,12 @@ S
 %s*synth2D
 0	Parameter ewdogen bound to: 0 - type: integer 
 2default:default
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 gptimer__parameterized02default:default2
 472default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/gptimer.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/gptimer.vhd2default:default2
 652default:default8@Z8-256
 R
 %s*synth2C
@@ -8693,10 +8698,10 @@ R
 %s*synth2C
 /	Parameter sbits bound to: 12 - type: integer 
 2default:default
-Ì
+€
 synthesizing module '%s'638*oasys2+
-apbuart__parameterized02default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/apbuart.vhd2default:default2
+apbuart__parameterized02default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/apbuart.vhd2default:default2
 632default:default8@Z8-638
 R
 %s*synth2C
@@ -8738,12 +8743,12 @@ R
 %s*synth2C
 /	Parameter sbits bound to: 12 - type: integer 
 2default:default
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 apbuart__parameterized02default:default2
 482default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/apbuart.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/apbuart.vhd2default:default2
 632default:default8@Z8-256
 Q
 %s*synth2B
@@ -8765,10 +8770,10 @@ T
 %s*synth2E
 1	Parameter strength bound to: 0 - type: integer 
 2default:default
-È
+◊
 synthesizing module '%s'638*oasys2)
-inpad__parameterized02default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
+inpad__parameterized02default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
 392default:default8@Z8-638
 Q
 %s*synth2B
@@ -8798,10 +8803,10 @@ S
 %s*synth2D
 0	Parameter voltage bound to: 3 - type: integer 
 2default:default
-¯
+Ê
 synthesizing module '%s'638*oasys20
-unisim_inpad__parameterized02default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+unisim_inpad__parameterized02default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 392default:default8@Z8-638
 Q
 %s*synth2B
@@ -8819,10 +8824,10 @@ Y
 %s*synth2J
 6	Parameter IOSTANDARD bound to: LVTTL - type: string 
 2default:default
-∑
+π
 synthesizing module '%s'638*oasys2
-IBUF2default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+IBUF2default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 105802default:default8@Z8-638
 ^
 %s*synth2O
@@ -8844,26 +8849,26 @@ Y
 %s*synth2J
 6	Parameter IOSTANDARD bound to: LVTTL - type: string 
 2default:default
-Û
+ı
 %done synthesizing module '%s' (%s#%s)256*oasys2
 IBUF2default:default2
 492default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 105802default:default8@Z8-256
-¥
+¢
 %done synthesizing module '%s' (%s#%s)256*oasys20
 unisim_inpad__parameterized02default:default2
 502default:default2
-12default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
+12default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd2default:default2
 392default:default8@Z8-256
-•
+ì
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 inpad__parameterized02default:default2
 512default:default2
-12default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
+12default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
 392default:default8@Z8-256
 Q
 %s*synth2B
@@ -9021,10 +9026,10 @@ T
 %s*synth2E
 1	Parameter mdiohold bound to: 1 - type: integer 
 2default:default
-Ï
+⁄
 synthesizing module '%s'638*oasys2*
-grethm__parameterized02default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/grethm.vhd2default:default2
+grethm__parameterized02default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/grethm.vhd2default:default2
 852default:default8@Z8-638
 R
 %s*synth2C
@@ -9294,10 +9299,10 @@ V
 %s*synth2G
 3	Parameter maxsize bound to: 1500 - type: integer 
 2default:default
-Í
+ÿ
 synthesizing module '%s'638*oasys2)
-greth__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/greth.vhd2default:default2
+greth__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/greth.vhd2default:default2
 862default:default8@Z8-638
 R
 %s*synth2C
@@ -9523,10 +9528,10 @@ V
 %s*synth2G
 3	Parameter maxsize bound to: 1500 - type: integer 
 2default:default
-Ë
+÷
 synthesizing module '%s'638*oasys2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 1582default:default8@Z8-638
 T
 %s*synth2E
@@ -9624,9 +9629,9 @@ V
 %s*synth2G
 3	Parameter maxsize bound to: 1500 - type: integer 
 2default:default
-¿
-default block is never used226*oasys2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+Æ
+default block is never used226*oasys2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 10502default:default8@Z8-226
 T
 %s*synth2E
@@ -9648,10 +9653,10 @@ P
 %s*synth2A
 -	Parameter rmii bound to: 1 - type: integer 
 2default:default
-Î
+Ÿ
 synthesizing module '%s'638*oasys2,
-greth_tx__parameterized02default:default2n
-XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
+greth_tx__parameterized02default:default2\
+F/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
 482default:default8@Z8-638
 T
 %s*synth2E
@@ -9677,32 +9682,32 @@ S
 %s*synth2D
 0	Parameter acthigh bound to: 0 - type: integer 
 2default:default
-Ô
+›
 synthesizing module '%s'638*oasys2.
-eth_rstgen__parameterized02default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_rstgen.vhd2default:default2
+eth_rstgen__parameterized02default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_rstgen.vhd2default:default2
 402default:default8@Z8-638
 S
 %s*synth2D
 0	Parameter acthigh bound to: 0 - type: integer 
 2default:default
-´
+ô
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 eth_rstgen__parameterized02default:default2
 522default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_rstgen.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_rstgen.vhd2default:default2
 402default:default8@Z8-256
-¡
-default block is never used226*oasys2n
-XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
+Ø
+default block is never used226*oasys2\
+F/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
 3602default:default8@Z8-226
-ß
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 greth_tx__parameterized02default:default2
 532default:default2
-12default:default2n
-XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
+12default:default2\
+F/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
 482default:default8@Z8-256
 Q
 %s*synth2B
@@ -9720,10 +9725,10 @@ V
 %s*synth2G
 3	Parameter maxsize bound to: 1500 - type: integer 
 2default:default
-Î
+Ÿ
 synthesizing module '%s'638*oasys2,
-greth_rx__parameterized02default:default2n
-XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
+greth_rx__parameterized02default:default2\
+F/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
 492default:default8@Z8-638
 Q
 %s*synth2B
@@ -9745,125 +9750,125 @@ S
 %s*synth2D
 0	Parameter acthigh bound to: 0 - type: integer 
 2default:default
-»
+∂
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2
 
 r_reg[rxd]2default:default2
 42default:default2
-22default:default2n
-XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
+22default:default2\
+F/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
 3562default:default8@Z8-3936
- 
+∏
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2 
 rin_reg[rxd]2default:default2
 42default:default2
-22default:default2n
-XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
+22default:default2\
+F/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
 3412default:default8@Z8-3936
-ß
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 greth_rx__parameterized02default:default2
 542default:default2
-12default:default2n
-XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
+12default:default2\
+F/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd2default:default2
 492default:default8@Z8-256
-·
+œ
 synthesizing module '%s'638*oasys2
-eth_ahb_mst2default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
+eth_ahb_mst2default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
 462default:default8@Z8-638
-ƒ
-default block is never used226*oasys2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
+≤
+default block is never used226*oasys2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
 1212default:default8@Z8-226
-ƒ
-default block is never used226*oasys2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
+≤
+default block is never used226*oasys2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
 1322default:default8@Z8-226
-ù
+ã
 %done synthesizing module '%s' (%s#%s)256*oasys2
 eth_ahb_mst2default:default2
 552default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd2default:default2
 462default:default8@Z8-256
-ß
+ï
 0Net %s in module/entity %s does not have driver.3422*oasys2#
 ahbmo2[hbusreq]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 ahbmo2[hlock]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-¶
+î
 0Net %s in module/entity %s does not have driver.3422*oasys2"
 ahbmo2[htrans]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 ahbmo2[haddr]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-¶
+î
 0Net %s in module/entity %s does not have driver.3422*oasys2"
 ahbmo2[hwrite]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 ahbmo2[hsize]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-¶
+î
 0Net %s in module/entity %s does not have driver.3422*oasys2"
 ahbmo2[hburst]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 ahbmo2[hprot]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-¶
+î
 0Net %s in module/entity %s does not have driver.3422*oasys2"
 ahbmo2[hwdata]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4652default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 tmsti2[ready]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4562default:default8@Z8-3848
-•
+ì
 0Net %s in module/entity %s does not have driver.3422*oasys2!
 tmsti2[error]2default:default2*
-grethc__parameterized02default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+grethc__parameterized02default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 4562default:default8@Z8-3848
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
 Synth 8-38482default:default2
 1002default:defaultZ17-14
-§
+í
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 grethc__parameterized02default:default2
 562default:default2
-12default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+12default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 1582default:default8@Z8-256
 Q
 %s*synth2B
@@ -9897,10 +9902,10 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-Û
+·
 synthesizing module '%s'638*oasys2.
-syncram_2p__parameterized22default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+syncram_2p__parameterized22default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-638
 Q
 %s*synth2B
@@ -9950,10 +9955,10 @@ Q
 %s*synth2B
 .	Parameter wrfst bound to: 0 - type: integer 
 2default:default
-Ä
+Ó
 synthesizing module '%s'638*oasys25
-!unisim_syncram_2p__parameterized22default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+!unisim_syncram_2p__parameterized22default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-638
 Q
 %s*synth2B
@@ -9979,10 +9984,10 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 32 - type: integer 
 2default:default
-Ä
+Ó
 synthesizing module '%s'638*oasys25
-!unisim_syncram_dp__parameterized22default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+!unisim_syncram_dp__parameterized22default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2952default:default8@Z8-638
 Q
 %s*synth2B
@@ -9992,26 +9997,26 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 32 - type: integer 
 2default:default
-º
+™
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_dp__parameterized22default:default2
 562default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2952default:default8@Z8-256
-º
+™
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_2p__parameterized22default:default2
 562default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-256
-Ø
+ù
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 syncram_2p__parameterized22default:default2
 562default:default2
-12default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+12default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-256
 Q
 %s*synth2B
@@ -10045,10 +10050,10 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-Û
+·
 synthesizing module '%s'638*oasys2.
-syncram_2p__parameterized42default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+syncram_2p__parameterized42default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-638
 Q
 %s*synth2B
@@ -10098,10 +10103,10 @@ Q
 %s*synth2B
 .	Parameter wrfst bound to: 0 - type: integer 
 2default:default
-Ä
+Ó
 synthesizing module '%s'638*oasys25
-!unisim_syncram_2p__parameterized42default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+!unisim_syncram_2p__parameterized42default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-638
 Q
 %s*synth2B
@@ -10131,10 +10136,10 @@ R
 %s*synth2C
 /	Parameter sepclk bound to: 0 - type: integer 
 2default:default
-Ö
+Û
 synthesizing module '%s'638*oasys26
-"generic_syncram_2p__parameterized02default:default2}
-gC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/memory_inferred.vhd2default:default2
+"generic_syncram_2p__parameterized02default:default2k
+U/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/memory_inferred.vhd2default:default2
 1302default:default8@Z8-638
 Q
 %s*synth2B
@@ -10148,26 +10153,26 @@ R
 %s*synth2C
 /	Parameter sepclk bound to: 0 - type: integer 
 2default:default
-¡
+Ø
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "generic_syncram_2p__parameterized02default:default2
 572default:default2
-12default:default2}
-gC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/memory_inferred.vhd2default:default2
+12default:default2k
+U/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/memory_inferred.vhd2default:default2
 1302default:default8@Z8-256
-º
+™
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_2p__parameterized42default:default2
 572default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-256
-Ø
+ù
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 syncram_2p__parameterized42default:default2
 572default:default2
-12default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+12default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-256
 Q
 %s*synth2B
@@ -10201,10 +10206,10 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-Û
+·
 synthesizing module '%s'638*oasys2.
-syncram_2p__parameterized62default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+syncram_2p__parameterized62default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-638
 Q
 %s*synth2B
@@ -10254,10 +10259,10 @@ Q
 %s*synth2B
 .	Parameter wrfst bound to: 0 - type: integer 
 2default:default
-Ä
+Ó
 synthesizing module '%s'638*oasys25
-!unisim_syncram_2p__parameterized62default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+!unisim_syncram_2p__parameterized62default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-638
 Q
 %s*synth2B
@@ -10283,10 +10288,10 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 16 - type: integer 
 2default:default
-Ä
+Ó
 synthesizing module '%s'638*oasys25
-!unisim_syncram_dp__parameterized42default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+!unisim_syncram_dp__parameterized42default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2952default:default8@Z8-638
 Q
 %s*synth2B
@@ -10296,26 +10301,26 @@ R
 %s*synth2C
 /	Parameter dbits bound to: 16 - type: integer 
 2default:default
-º
+™
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_dp__parameterized42default:default2
 572default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 2952default:default8@Z8-256
-º
+™
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !unisim_syncram_2p__parameterized62default:default2
 572default:default2
-12default:default2y
-cC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
+12default:default2g
+Q/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd2default:default2
 5502default:default8@Z8-256
-Ø
+ù
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 syncram_2p__parameterized62default:default2
 572default:default2
-12default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+12default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 552default:default8@Z8-256
 Q
 %s*synth2B
@@ -10349,19 +10354,19 @@ V
 %s*synth2G
 3	Parameter custombits bound to: 1 - type: integer 
 2default:default
-¶
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 greth__parameterized02default:default2
 582default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/greth.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/greth.vhd2default:default2
 862default:default8@Z8-256
-®
+ñ
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 grethm__parameterized02default:default2
 592default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/grethm.vhd2default:default2
+12default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/grethm.vhd2default:default2
 852default:default8@Z8-256
 Q
 %s*synth2B
@@ -10435,10 +10440,10 @@ T
 %s*synth2E
 1	Parameter strength bound to: 0 - type: integer 
 2default:default
-Î
+Ÿ
 synthesizing module '%s'638*oasys2*
-inpadv__parameterized02default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
+inpadv__parameterized02default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
 1262default:default8@Z8-638
 Q
 %s*synth2B
@@ -10504,12 +10509,12 @@ T
 %s*synth2E
 1	Parameter strength bound to: 0 - type: integer 
 2default:default
-ß
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 inpadv__parameterized02default:default2
 602default:default2
-12default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
+12default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd2default:default2
 1262default:default8@Z8-256
 Q
 %s*synth2B
@@ -10575,10 +10580,10 @@ Q
 %s*synth2B
 .	Parameter width bound to: 2 - type: integer 
 2default:default
-Ì
+€
 synthesizing module '%s'638*oasys2+
-outpadv__parameterized22default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+outpadv__parameterized22default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1352default:default8@Z8-638
 Q
 %s*synth2B
@@ -10644,12 +10649,12 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-©
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 outpadv__parameterized22default:default2
 602default:default2
-12default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+12default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1352default:default8@Z8-256
 Q
 %s*synth2B
@@ -10691,10 +10696,10 @@ U
 %s*synth2F
 2	Parameter strength bound to: 12 - type: integer 
 2default:default
-Ë
+÷
 synthesizing module '%s'638*oasys2
-ahbrom2default:default2}
-gC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/ahbrom.vhd2default:default2
+ahbrom2default:default2k
+U/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/ahbrom.vhd2default:default2
 342default:default8@Z8-638
 R
 %s*synth2C
@@ -10720,12 +10725,12 @@ R
 %s*synth2C
 /	Parameter kbytes bound to: 1 - type: integer 
 2default:default
-§
+í
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ahbrom2default:default2
 612default:default2
-12default:default2}
-gC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/ahbrom.vhd2default:default2
+12default:default2k
+U/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/ahbrom.vhd2default:default2
 342default:default8@Z8-256
 R
 %s*synth2C
@@ -10739,10 +10744,10 @@ T
 %s*synth2E
 1	Parameter hmask bound to: 4095 - type: integer 
 2default:default
-Ã
+∫
 synthesizing module '%s'638*oasys2,
-adderahb__parameterized02default:default2Œ
-∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
+adderahb__parameterized02default:default2º
+•/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
 282default:default8@Z8-638
 R
 %s*synth2C
@@ -10756,37 +10761,37 @@ T
 %s*synth2E
 1	Parameter hmask bound to: 4095 - type: integer 
 2default:default
-Ê
+‘
 Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
-rstn2default:default2Œ
-∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
+rstn2default:default2º
+•/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
 1342default:default8@Z8-614
 Q
 %s*synth2B
 .	Parameter size bound to: 32 - type: integer 
 2default:default
- 
+∏
 synthesizing module '%s'638*oasys2+
-SKadder__parameterized02default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd2default:default2
+SKadder__parameterized02default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd2default:default2
 202default:default8@Z8-638
 Q
 %s*synth2B
 .	Parameter size bound to: 32 - type: integer 
 2default:default
-Ü
+Ù
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 SKadder__parameterized02default:default2
 622default:default2
-12default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd2default:default2
+12default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd2default:default2
 202default:default8@Z8-256
-à
+ˆ
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 adderahb__parameterized02default:default2
 632default:default2
-12default:default2Œ
-∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
+12default:default2º
+•/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
 282default:default8@Z8-256
 R
 %s*synth2C
@@ -10800,10 +10805,10 @@ T
 %s*synth2E
 1	Parameter pmask bound to: 4092 - type: integer 
 2default:default
-Ã
+∫
 synthesizing module '%s'638*oasys2,
-dummyapb__parameterized02default:default2Œ
-∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
+dummyapb__parameterized02default:default2º
+•/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
 312default:default8@Z8-638
 R
 %s*synth2C
@@ -10817,10 +10822,10 @@ T
 %s*synth2E
 1	Parameter pmask bound to: 4092 - type: integer 
 2default:default
-π
+ß
 synthesizing module '%s'638*oasys2
-dacTop2default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+dacTop2default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
 192default:default8@Z8-638
 _
 %s*synth2P
@@ -10834,10 +10839,10 @@ P
 %s*synth2A
 -	Parameter OSR bound to: 16 - type: integer 
 2default:default
-–
+æ
 synthesizing module '%s'638*oasys2.
-clk_divide__parameterized02default:default2–
-πC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd2default:default2
+clk_divide__parameterized02default:default2æ
+ß/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd2default:default2
 212default:default8@Z8-638
 _
 %s*synth2P
@@ -10851,101 +10856,101 @@ P
 %s*synth2A
 -	Parameter OSR bound to: 16 - type: integer 
 2default:default
-å
+˙
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 clk_divide__parameterized02default:default2
 642default:default2
-12default:default2–
-πC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd2default:default2
+12default:default2æ
+ß/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd2default:default2
 212default:default8@Z8-256
-∫
+®
 synthesizing module '%s'638*oasys2
-DAC_SPI2default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
+DAC_SPI2default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
 162default:default8@Z8-638
-ˆ
+‰
 %done synthesizing module '%s' (%s#%s)256*oasys2
 DAC_SPI2default:default2
 652default:default2
-12default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
+12default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
 162default:default8@Z8-256
 W
 %s*synth2H
 4	Parameter bufferwidth bound to: 7 - type: integer 
 2default:default
-–
+æ
 synthesizing module '%s'638*oasys2.
-DAC_buffer__parameterized02default:default2–
-πC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd2default:default2
+DAC_buffer__parameterized02default:default2æ
+ß/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd2default:default2
 482default:default8@Z8-638
 W
 %s*synth2H
 4	Parameter bufferwidth bound to: 7 - type: integer 
 2default:default
-å
+˙
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 DAC_buffer__parameterized02default:default2
 662default:default2
-12default:default2–
-πC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd2default:default2
+12default:default2æ
+ß/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd2default:default2
 482default:default8@Z8-256
-ı
+„
 %done synthesizing module '%s' (%s#%s)256*oasys2
 dacTop2default:default2
 672default:default2
-12default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+12default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
 192default:default8@Z8-256
-∫
+®
 synthesizing module '%s'638*oasys2
-ADC_TOP2default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
-502default:default8@Z8-638
-˝
+ADC_TOP2default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+472default:default8@Z8-638
+Î
 5synthesizing blackbox instance '%s' of component '%s'637*oasys2
 inst_fir2default:default2"
-fir_compiler_02default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
-1672default:default8@Z8-637
-∞
+fir_compiler_02default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+1642default:default8@Z8-637
+û
 synthesizing module '%s'638*oasys2
-ADC2default:default2«
-∞c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v2default:default2
+ADC2default:default2µ
+û/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v2default:default2
 162default:default8@Z8-638
 W
 %s*synth2H
 4	Parameter bufferwidth bound to: 7 - type: integer 
 2default:default
-–
-synthesizing module '%s'638*oasys2.
-ADC_buffer__parameterized02default:default2–
-πC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd2default:default2
+ 
+synthesizing module '%s'638*oasys24
+ ADC_buffer_const__parameterized02default:default2ƒ
+≠/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer_const.vhd2default:default2
 482default:default8@Z8-638
 W
 %s*synth2H
 4	Parameter bufferwidth bound to: 7 - type: integer 
 2default:default
-å
-%done synthesizing module '%s' (%s#%s)256*oasys2.
-ADC_buffer__parameterized02default:default2
+Ü
+%done synthesizing module '%s' (%s#%s)256*oasys24
+ ADC_buffer_const__parameterized02default:default2
 682default:default2
-12default:default2–
-πC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd2default:default2
+12default:default2ƒ
+≠/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer_const.vhd2default:default2
 482default:default8@Z8-256
-ˆ
+‰
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ADC_TOP2default:default2
 692default:default2
-12default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
-502default:default8@Z8-256
-à
+12default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+472default:default8@Z8-256
+ˆ
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 dummyapb__parameterized02default:default2
 702default:default2
-12default:default2Œ
-∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
+12default:default2º
+•/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
 312default:default8@Z8-256
 \
 %s*synth2M
@@ -11059,10 +11064,10 @@ Z
 %s*synth2K
 7	Parameter STARTUP_WAIT bound to: TRUE - type: string 
 2default:default
-Ã
+Œ
 synthesizing module '%s'638*oasys2-
-PLLE2_ADV__parameterized22default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+PLLE2_ADV__parameterized22default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 263382default:default8@Z8-638
 \
 %s*synth2M
@@ -11188,19 +11193,19 @@ c
 %s*synth2M
 9	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
 2default:default
-à
+ä
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 PLLE2_ADV__parameterized22default:default2
 702default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2013.4/scripts/rt/data/unisim_comp.v2default:default2
 263382default:default8@Z8-256
-ß
+ï
 %done synthesizing module '%s' (%s#%s)256*oasys2
 leon3mp2default:default2
 712default:default2
-12default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+12default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 1482default:default8@Z8-256
 î
 +design %s has port %s driven by constant %s3447*oasys2
@@ -11326,9 +11331,9 @@ s
 !design %s has unconnected port %s3331*oasys2
 leon3mp2default:default2
 btn[0]2default:defaultZ8-3331
-ú
-%s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 485.379 ; gain = 227.164
+ù
+%s*synth2ç
+yFinished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1050.305 ; gain = 409.352
 2default:default
 ;
 %s*synth2,
@@ -11355,705 +11360,705 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-ü
+ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 clkgen02default:default2!
-\cgi[pllref] 2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\cgi[pllref] 2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 3252default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 clkgen02default:default2$
-\cgi[clksel] [1]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\cgi[clksel] [1]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 3252default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 clkgen02default:default2$
-\cgi[clksel] [0]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\cgi[clksel] [0]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 3252default:default8@Z8-3295
-§
+í
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
-\memi[data] [15]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [15]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-§
+í
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
-\memi[data] [14]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [14]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-§
+í
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
-\memi[data] [13]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [13]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-§
+í
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
-\memi[data] [12]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [12]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-§
+í
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
-\memi[data] [11]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [11]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-§
+í
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
-\memi[data] [10]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [10]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [9]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [9]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [8]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [8]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [7]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [7]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [6]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [6]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [5]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [5]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [4]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [4]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [3]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [3]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [2]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [2]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [1]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [1]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[data] [0]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[data] [0]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [63]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [63]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [62]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [62]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [61]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [61]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [60]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [60]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [59]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [59]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [58]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [58]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [57]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [57]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [56]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [56]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [55]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [55]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [54]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [54]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [53]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [53]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [52]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [52]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [51]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [51]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [50]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [50]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [49]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [49]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [48]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [48]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [47]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [47]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [46]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [46]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [45]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [45]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [44]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [44]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [43]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [43]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [42]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [42]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [41]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [41]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [40]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [40]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [39]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [39]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [38]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [38]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [37]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [37]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [36]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [36]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [35]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [35]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [34]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [34]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [33]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [33]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [32]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [32]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [31]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [31]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [30]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [30]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [29]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [29]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [28]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [28]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [27]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [27]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [26]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [26]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [25]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [25]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [24]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [24]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [23]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [23]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [22]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [22]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [21]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [21]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [20]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [20]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [19]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [19]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [18]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [18]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [17]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [17]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [16]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [16]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [15]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [15]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [14]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [14]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [13]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [13]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [12]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [12]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [11]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [11]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[sd] [10]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [10]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [9]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [9]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [8]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [8]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [7]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [7]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [6]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [6]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [5]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [5]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [4]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [4]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [3]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [3]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [2]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [2]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [1]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [1]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[sd] [0]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[sd] [0]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[cb] [15]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [15]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[cb] [14]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [14]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[cb] [13]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [13]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[cb] [12]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [12]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[cb] [11]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [11]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-¢
+ê
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2"
-\memi[cb] [10]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [10]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [9]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [9]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [8]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [8]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [7]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [7]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [6]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [6]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [5]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [5]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [4]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [4]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [3]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [3]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [2]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [2]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [1]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [1]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-°
+è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2!
-\memi[cb] [0]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[cb] [0]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
-£
+ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
-\memi[scb] [15]2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+\memi[scb] [15]2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4012default:default8@Z8-3295
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
@@ -12068,933 +12073,933 @@ a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
-õ
+ù
 Loading clock regions from %s
-13*device2d
-PC:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml2default:defaultZ21-13
-ú
+13*device2f
+R/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml2default:defaultZ21-13
+û
 Loading clock buffers from %s
-11*device2e
-QC:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml2default:defaultZ21-11
-ô
+11*device2g
+S/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml2default:defaultZ21-11
+õ
 &Loading clock placement rules from %s
-318*place2Y
-EC:/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ClockPlacerRules.xml2default:defaultZ30-318
-ó
+318*place2[
+G/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ClockPlacerRules.xml2default:defaultZ30-318
+ô
 )Loading package pin functions from %s...
-17*device2U
-AC:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/PinFunctions.xml2default:defaultZ21-17
-ò
+17*device2W
+C/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/PinFunctions.xml2default:defaultZ21-17
+ö
 Loading package from %s
-16*device2g
-SC:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml2default:defaultZ21-16
-å
+16*device2i
+U/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml2default:defaultZ21-16
+é
 Loading io standards from %s
-15*device2V
-BC:/Xilinx/Vivado/2013.4/data\./parts/xilinx/artix7/IOStandards.xml2default:defaultZ21-15
-ò
+15*device2X
+D/opt/Xilinx/Vivado/2013.4/data/./parts/xilinx/artix7/IOStandards.xml2default:defaultZ21-15
+ö
 +Loading device configuration modes from %s
-14*device2T
-@C:/Xilinx/Vivado/2013.4/data\parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
-ù
+14*device2V
+B/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4332default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 1712default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4362default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 5212default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4192default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4212default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4232default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4252default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4272default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4292default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 4912default:default8@Z18-548
-ù
+ã
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
+Vivado2default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd2default:default2
 662default:default8@Z18-548
-≠
+õ
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2~
-hC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
+Vivado2default:default2l
+V/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
 5242default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
-ü
+ç
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 1382default:default8@Z18-548
-û
+å
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
 slew2default:default24
  invalid SLEW value '0' specified2default:default2
 slew2default:default2
-Vivado2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
+Vivado2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd2default:default2
 512default:default8@Z18-548
 ⁄
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
@@ -13005,30 +13010,30 @@ ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps
 
 Processing XDC Constraints
 244*projectZ1-262
-Å
+Ô
 Parsing XDC File [%s]
-179*designutils2 
-µC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:defaultZ20-179
-ä
+179*designutils2∏
+£/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:defaultZ20-179
+¯
 Finished Parsing XDC File [%s]
-178*designutils2 
-µC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:defaultZ20-178
+178*designutils2∏
+£/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:defaultZ20-178
 /
 Deriving generated clocks
 2*timingZ38-2
-é
+Í
 ŸImplementation specific constraints were found while reading constraint file [%s]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [%s].
-233*project2 
-µC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:default2À
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/.Xil/leon3mp_propImpl.xdc2default:defaultZ1-236
-¯
+233*project2∏
+£/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:default2π
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/.Xil/leon3mp_propImpl.xdc2default:defaultZ1-236
+Ê
 Parsing XDC File [%s]
-179*designutils2¡
-¨C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_buffer.xdc2default:defaultZ20-179
-Å
+179*designutils2Ø
+ö/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_buffer.xdc2default:defaultZ20-179
+Ô
 Finished Parsing XDC File [%s]
-178*designutils2¡
-¨C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_buffer.xdc2default:defaultZ20-178
+178*designutils2Ø
+ö/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/dont_buffer.xdc2default:defaultZ20-178
 ?
 &Completed Processing XDC Constraints
 
@@ -13046,49 +13051,42 @@ MSuccessfully populated the BRAM INIT strings from the following elf files: %s
   RAMB16_S36_S36 => RAMB36E1: 11 instances
   RAMB16_S9 => RAMB18E1: 8 instances
 2default:defaultZ1-111
-µ
-%s*synth2•
-êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 666.539 ; gain = 408.324
+∂
+%s*synth2¶
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1377.398 ; gain = 736.445
 2default:default
-ù
-%s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 666.539 ; gain = 408.324
+û
+%s*synth2é
+zFinished RTL Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1377.398 ; gain = 736.445
 2default:default
-Ã
+∫
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2 
 r_reg[haddr]2default:default2
 142default:default2
-92default:default2o
-YC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
+92default:default2]
+G/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd2default:default2
 6982default:default8@Z8-3936
-‰
+“
 merging register '%s' into '%s'3619*oasys2
 	ready_reg2default:default2
-	nSync_reg2default:default2Õ
-∂C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
+	nSync_reg2default:default2ª
+§/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
 352default:default8@Z8-4471
-®
-RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2
-sLED_reg2default:default2
-322default:default2
-162default:default2Œ
-∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
-832default:default8@Z8-3936
-”
+¡
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2#
 r_reg[readdata]2default:default2
 322default:default2
-162default:default2q
-[C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
+162default:default2_
+I/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd2default:default2
 10032default:default8@Z8-3936
 õ
 3inferred FSM for state register '%s' in module '%s'802*oasys2"
 r_reg[rxstate]2default:default2+
 apbuart__parameterized02default:defaultZ8-802
-¿
+Æ
 }HDL ADVISOR - The operator resource <%s> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator3413*oasys2
-adder2default:default2n
-XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
+adder2default:default2\
+F/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd2default:default2
 2672default:default8@Z8-3537
 û
 3inferred FSM for state register '%s' in module '%s'802*oasys2$
@@ -13102,15 +13100,15 @@ XC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/gre
 3inferred FSM for state register '%s' in module '%s'802*oasys2#
 r_reg[rx_state]2default:default2,
 greth_rx__parameterized02default:defaultZ8-802
-æ
+¨
 }HDL ADVISOR - The operator resource <%s> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator3413*oasys2
-adder2default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+adder2default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 8262default:default8@Z8-3537
-ø
+≠
 }HDL ADVISOR - The operator resource <%s> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator3413*oasys2
-adder2default:default2l
-VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
+adder2default:default2Z
+D/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd2default:default2
 15392default:default8@Z8-3537
 õ
 3inferred FSM for state register '%s' in module '%s'802*oasys2#
@@ -13132,98 +13130,93 @@ VC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/eth/core/gre
 3inferred FSM for state register '%s' in module '%s'802*oasys2%
 r_reg[edclrstate]2default:default2*
 grethc__parameterized02default:defaultZ8-802
-í
+Ä
 merging register '%s' into '%s'3619*oasys2!
 r_reg[e][mac]2default:default2#
-r_reg[w][s][ec]2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+r_reg[w][s][ec]2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 33602default:default8@Z8-4471
-î
+Ç
 merging register '%s' into '%s'3619*oasys2#
 r_reg[w][s][ef]2default:default2#
-r_reg[w][s][ec]2default:default2p
-ZC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
+r_reg[w][s][ec]2default:default2^
+H/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd2default:default2
 33602default:default8@Z8-4471
-¢
+ê
 merging register '%s' into '%s'3619*oasys2(
 r_reg[cctrl][dsnoop]2default:default2%
-r_reg[mmctrl1][e]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+r_reg[mmctrl1][e]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 16192default:default8@Z8-4471
-†
+é
 merging register '%s' into '%s'3619*oasys2&
 r_reg[mmctrl1][nf]2default:default2%
-r_reg[mmctrl1][e]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+r_reg[mmctrl1][e]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 16192default:default8@Z8-4471
-°
+è
 merging register '%s' into '%s'3619*oasys2'
 r_reg[mmctrl1][pso]2default:default2%
-r_reg[mmctrl1][e]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
-16192default:default8@Z8-4471
-§
-merging register '%s' into '%s'3619*oasys2*
-r_reg[mmctrl1][tlbdis]2default:default2%
-r_reg[mmctrl1][e]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
-16192default:default8@Z8-4471
-≤
-merging register '%s' into '%s'3619*oasys2,
-r_reg[mmctrl1][bar][1:0]2default:default21
-r_reg[mmctrl1][pagesize][1:0]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
-16192default:default8@Z8-4471
-ö
-merging register '%s' into '%s'3619*oasys2%
-r_reg[mmctrl1][e]2default:default2 
-r_reg[reqst]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+r_reg[mmctrl1][e]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 16192default:default8@Z8-4471
 í
+merging register '%s' into '%s'3619*oasys2*
+r_reg[mmctrl1][tlbdis]2default:default2%
+r_reg[mmctrl1][e]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+16192default:default8@Z8-4471
+†
+merging register '%s' into '%s'3619*oasys2,
+r_reg[mmctrl1][bar][1:0]2default:default21
+r_reg[mmctrl1][pagesize][1:0]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+16192default:default8@Z8-4471
+à
+merging register '%s' into '%s'3619*oasys2%
+r_reg[mmctrl1][e]2default:default2 
+r_reg[reqst]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+16192default:default8@Z8-4471
+Ä
 merging register '%s' into '%s'3619*oasys2
 r_reg[lock]2default:default2
 
-r_reg[lrr]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+r_reg[lrr]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 16192default:default8@Z8-4471
-ù
+ã
 merging register '%s' into '%s'3619*oasys2$
 r_reg[dadj][1:0]2default:default2$
-r_reg[tadj][1:0]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+r_reg[tadj][1:0]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 16192default:default8@Z8-4471
-ù
+ã
 merging register '%s' into '%s'3619*oasys2$
 r_reg[sadj][1:0]2default:default2$
-r_reg[tadj][1:0]2default:default2w
-aC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
+r_reg[tadj][1:0]2default:default2e
+O/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd2default:default2
 16192default:default8@Z8-4471
 ù
 3inferred FSM for state register '%s' in module '%s'802*oasys2!
 r_reg[dstate]2default:default2.
 mmu_dcache__parameterized02default:defaultZ8-802
-—
+ø
 }HDL ADVISOR - The operator resource <%s> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator3413*oasys2
 
-multiplier2default:default2z
-dC:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd2default:default2
+multiplier2default:default2h
+R/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd2default:default2
 1042default:default8@Z8-3537
 á
 3inferred FSM for state register '%s' in module '%s'802*oasys2 
 r_reg[state]2default:default2
 div322default:defaultZ8-802
-»
+∂
 !inferring latch for variable '%s'327*oasys2
 
-hrdata_reg2default:default2Œ
-∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
+hrdata_reg2default:default2º
+•/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
 1072default:default8@Z8-327
-≈
-!inferring latch for variable '%s'327*oasys2
-sLED_reg2default:default2Œ
-∑C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
-832default:default8@Z8-327
 Œ
 Gencoded FSM with state register '%s' using encoding '%s' in module '%s'3353*oasys2"
 r_reg[rxstate]2default:default2
@@ -13310,15 +13303,11 @@ a
 2default:default
 a
 %s*synth2R
->|4     |leon3mp__GCB0               |           1|     25400|
+>|4     |leon3mp__GCB0               |           1|     27605|
 2default:default
 a
 %s*synth2R
->|5     |leon3mp__GCB1               |           1|     18432|
-2default:default
-a
-%s*synth2R
->|6     |leon3mp__GCB2               |           1|     12367|
+>|5     |leon3mp__GCB1               |           1|     23639|
 2default:default
 a
 %s*synth2R
@@ -13330,9 +13319,9 @@ WPart Resources:
 DSPs: 240 (col length:80)
 BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
-±
-%s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:01:36 ; elapsed = 00:01:40 . Memory (MB): peak = 666.539 ; gain = 408.324
+≤
+%s*synth2¢
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1377.398 ; gain = 736.445
 2default:default
 B
 %s*synth23
@@ -13348,11 +13337,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     33 Bit       Adders := 1     
+.	   2 Input     33 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     33 Bit       Adders := 1     
+.	   3 Input     33 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -13392,7 +13381,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      8 Bit       Adders := 1     
+.	   4 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -13400,7 +13389,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      8 Bit       Adders := 1     
+.	   3 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -13460,7 +13449,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 56    
+.	               32 Bit    Registers := 57    
 2default:default
 Q
 %s*synth2B
@@ -13484,7 +13473,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               16 Bit    Registers := 264   
+.	               16 Bit    Registers := 136   
 2default:default
 Q
 %s*synth2B
@@ -13512,7 +13501,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                7 Bit    Registers := 13    
+.	                7 Bit    Registers := 14    
 2default:default
 Q
 %s*synth2B
@@ -13536,7 +13525,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 1182  
+.	                1 Bit    Registers := 1183  
 2default:default
 /
 %s*synth2 
@@ -13588,43 +13577,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   7 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 132   
-2default:default
-Q
-%s*synth2B
-.	  11 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input     32 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	  13 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 22    
-2default:default
-Q
-%s*synth2B
-.	   9 Input     32 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	 142 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13632,7 +13585,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 11    
+.	  16 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 12    
+2default:default
+Q
+%s*synth2B
+.	  11 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13640,7 +13601,27 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input     32 Bit        Muxes := 1     
+.	   9 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   6 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   8 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  13 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 133   
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
@@ -13648,7 +13629,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     30 Bit        Muxes := 2     
+.	 142 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  15 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  12 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13656,15 +13645,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input     30 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   4 Input     30 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	  12 Input     30 Bit        Muxes := 1     
+.	   3 Input     30 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   7 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13700,15 +13689,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit        Muxes := 34    
-2default:default
-Q
-%s*synth2B
 .	  15 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input     16 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -13716,7 +13697,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     16 Bit        Muxes := 34    
+2default:default
+Q
+%s*synth2B
+.	   6 Input     16 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
 .	   4 Input     15 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     15 Bit        Muxes := 17    
 2default:default
 Q
 %s*synth2B
@@ -13728,19 +13721,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     15 Bit        Muxes := 17    
-2default:default
-Q
-%s*synth2B
 .	   2 Input     14 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     13 Bit        Muxes := 6     
+.	  12 Input     13 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  12 Input     13 Bit        Muxes := 1     
+.	   2 Input     13 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -13752,19 +13741,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     11 Bit        Muxes := 11    
-2default:default
-Q
-%s*synth2B
-.	   8 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   7 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   9 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13772,11 +13749,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     11 Bit        Muxes := 11    
+2default:default
+Q
+%s*synth2B
+.	   9 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	  19 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   6 Input     10 Bit        Muxes := 1     
+.	   8 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13784,11 +13769,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 25    
+.	   6 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   4 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     10 Bit        Muxes := 25    
 2default:default
 Q
 %s*synth2B
@@ -13808,7 +13797,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	 142 Input      8 Bit        Muxes := 1     
+.	   4 Input      8 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -13816,7 +13805,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      8 Bit        Muxes := 2     
+.	 142 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13824,15 +13813,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      7 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      7 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      7 Bit        Muxes := 26    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13848,15 +13837,27 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	  12 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
+.	  10 Input      7 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      6 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   9 Input      6 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      6 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      6 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -13868,35 +13869,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      6 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   5 Input      6 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      6 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      5 Bit        Muxes := 32    
-2default:default
-Q
-%s*synth2B
-.	   3 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  13 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      5 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	  19 Input      5 Bit        Muxes := 1     
+.	   4 Input      5 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -13904,11 +13877,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      5 Bit        Muxes := 3     
+.	  19 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   9 Input      4 Bit        Muxes := 2     
+.	   3 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      5 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	  13 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 32    
 2default:default
 Q
 %s*synth2B
@@ -13916,11 +13901,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      4 Bit        Muxes := 5     
+.	  15 Input      4 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	  10 Input      4 Bit        Muxes := 8     
+.	   7 Input      4 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -13928,7 +13913,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      4 Bit        Muxes := 3     
+.	   4 Input      4 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   9 Input      4 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -13936,19 +13925,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   3 Input      4 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      4 Bit        Muxes := 4     
+.	   6 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   9 Input      3 Bit        Muxes := 1     
+.	  10 Input      4 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 52    
+2default:default
+Q
+%s*synth2B
+.	  16 Input      3 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -13956,7 +13949,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit        Muxes := 52    
+.	   3 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  15 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   9 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      3 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -13968,7 +13973,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  15 Input      3 Bit        Muxes := 1     
+.	  19 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -13976,43 +13981,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  19 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      3 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      3 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      2 Bit        Muxes := 10    
-2default:default
-Q
-%s*synth2B
-.	  19 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      2 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   5 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      2 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -14020,11 +13989,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      2 Bit        Muxes := 5     
+.	  16 Input      2 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 124   
+.	  10 Input      2 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -14032,47 +14001,35 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  19 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
 .	  11 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  15 Input      1 Bit        Muxes := 19    
+.	   2 Input      2 Bit        Muxes := 125   
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 107   
+.	   4 Input      2 Bit        Muxes := 10    
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 109   
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 180   
-2default:default
-Q
-%s*synth2B
-.	   9 Input      1 Bit        Muxes := 17    
-2default:default
-Q
-%s*synth2B
-.	  14 Input      1 Bit        Muxes := 29    
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit        Muxes := 22    
-2default:default
-Q
-%s*synth2B
-.	   5 Input      1 Bit        Muxes := 11    
+.	   2 Input      1 Bit        Muxes := 2139  
 2default:default
 Q
 %s*synth2B
 .	  10 Input      1 Bit        Muxes := 105   
-2default:default
-Q
-%s*synth2B
-.	  16 Input      1 Bit        Muxes := 39    
 2default:default
 Q
 %s*synth2B
@@ -14084,7 +14041,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input      1 Bit        Muxes := 9     
+.	   5 Input      1 Bit        Muxes := 11    
+2default:default
+Q
+%s*synth2B
+.	  14 Input      1 Bit        Muxes := 29    
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 180   
+2default:default
+Q
+%s*synth2B
+.	  11 Input      1 Bit        Muxes := 22    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 107   
 2default:default
 Q
 %s*synth2B
@@ -14092,7 +14065,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 2267  
+.	  19 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 110   
+2default:default
+Q
+%s*synth2B
+.	  16 Input      1 Bit        Muxes := 39    
+2default:default
+Q
+%s*synth2B
+.	   9 Input      1 Bit        Muxes := 17    
+2default:default
+Q
+%s*synth2B
+.	  15 Input      1 Bit        Muxes := 19    
 2default:default
 F
 %s*synth27
@@ -14240,11 +14229,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     30 Bit        Muxes := 2     
+.	   2 Input     30 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     30 Bit        Muxes := 8     
+.	   4 Input     30 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -14260,19 +14249,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 15    
+.	   4 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 531   
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 15    
 2default:default
 F
 %s*synth27
@@ -14336,11 +14325,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input     32 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 3     
+.	   9 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -14348,7 +14333,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input     32 Bit        Muxes := 2     
+.	  10 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -14360,6 +14349,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     10 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
 .	   6 Input     10 Bit        Muxes := 1     
 2default:default
 Q
@@ -14368,15 +14361,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      8 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   7 Input      4 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -14384,7 +14369,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 8     
+.	   7 Input      4 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -14392,11 +14377,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit        Muxes := 55    
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 524   
+.	   2 Input      2 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
@@ -14405,6 +14386,14 @@ Q
 Q
 %s*synth2B
 .	  14 Input      1 Bit        Muxes := 29    
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 524   
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 55    
 2default:default
 F
 %s*synth27
@@ -14440,11 +14429,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     32 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 1     
+.	   4 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14456,7 +14445,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      2 Bit        Muxes := 1     
+.	   3 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14464,7 +14453,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      2 Bit        Muxes := 1     
+.	   4 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
@@ -14473,10 +14466,6 @@ Q
 Q
 %s*synth2B
 .	   4 Input      1 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit        Muxes := 7     
 2default:default
 E
 %s*synth26
@@ -14600,7 +14589,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     32 Bit        Muxes := 2     
+.	   6 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -14608,7 +14597,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input     32 Bit        Muxes := 2     
+.	   3 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -14616,11 +14605,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     30 Bit        Muxes := 12    
+.	  19 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -14629,6 +14614,10 @@ Q
 Q
 %s*synth2B
 .	   4 Input     30 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     30 Bit        Muxes := 12    
 2default:default
 Q
 %s*synth2B
@@ -14652,15 +14641,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 19    
-2default:default
-Q
-%s*synth2B
 .	   8 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   4 Input      8 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit        Muxes := 19    
 2default:default
 Q
 %s*synth2B
@@ -14672,15 +14661,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      6 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      6 Bit        Muxes := 20    
 2default:default
 Q
 %s*synth2B
-.	  19 Input      5 Bit        Muxes := 1     
+.	   4 Input      6 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14692,7 +14677,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 15    
+.	  19 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -14704,7 +14689,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      4 Bit        Muxes := 15    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      3 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
 .	  19 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 20    
 2default:default
 Q
 %s*synth2B
@@ -14716,19 +14717,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit        Muxes := 20    
+.	  16 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      3 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      3 Bit        Muxes := 1     
+.	   3 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
 .	   5 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 16    
 2default:default
 Q
 %s*synth2B
@@ -14740,43 +14741,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 16    
-2default:default
-Q
-%s*synth2B
-.	  19 Input      1 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
-.	  13 Input      1 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      1 Bit        Muxes := 39    
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      1 Bit        Muxes := 14    
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 113   
+.	   7 Input      1 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
@@ -14784,7 +14749,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 22    
+.	  11 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      1 Bit        Muxes := 39    
+2default:default
+Q
+%s*synth2B
+.	  13 Input      1 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 14    
 2default:default
 Q
 %s*synth2B
@@ -14792,7 +14769,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      1 Bit        Muxes := 8     
+.	   3 Input      1 Bit        Muxes := 22    
+2default:default
+Q
+%s*synth2B
+.	  19 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 113   
 2default:default
 I
 %s*synth2:
@@ -15274,6 +15263,802 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
+O
+%s*synth2@
+,Module unisim_syncram64__parameterized0__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+H
+%s*synth29
+%Module syncram64__parameterized0__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module unisim_syncram64__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+E
+%s*synth26
+"Module syncram64__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+C
+%s*synth24
+ Module tbufmem__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+A
+%s*synth22
+Module dsu3x__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     30 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit       Adders := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     30 Bit         XORs := 2     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	               30 Bit    Registers := 4     
+2default:default
+Q
+%s*synth2B
+.	               25 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 5     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 30    
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	  11 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  12 Input     30 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  12 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 51    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 25    
+2default:default
+Q
+%s*synth2B
+.	  11 Input      1 Bit        Muxes := 21    
+2default:default
+@
+%s*synth21
+Module dsu3__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+2
+%s*synth2#
+Module ahbrom 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                8 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	 142 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	 142 Input      8 Bit        Muxes := 1     
+2default:default
+C
+%s*synth24
+ Module ahbctrl__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                9 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 9     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     13 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     12 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      6 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 7     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      3 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 154   
+2default:default
+Q
+%s*synth2B
+.	   5 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 63    
+2default:default
+Q
+%s*synth2B
+.	   8 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 1     
+2default:default
+C
+%s*synth24
+ Module apbctrl__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	               20 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 5     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     20 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 5     
+2default:default
+C
+%s*synth24
+ Module SKadder__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit         XORs := 63    
+2default:default
+D
+%s*synth25
+!Module adderahb__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 6     
+2default:default
+F
+%s*synth27
+#Module clk_divide__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     12 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               12 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 8     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     12 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+3
+%s*synth2$
+Module DAC_SPI 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   3 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 4     
+2default:default
+F
+%s*synth27
+#Module DAC_buffer__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 129   
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 130   
+2default:default
+2
+%s*synth2#
+Module dacTop 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module ADC_buffer_const__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      7 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+3
+%s*synth2$
+Module ADC_TOP 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+D
+%s*synth25
+!Module dummyapb__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 1     
+2default:default
+A
+%s*synth22
+Module mctrl__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 4     
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 8     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 3     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 10    
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 17    
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   8 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 27    
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     16 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit        Muxes := 22    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      4 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 29    
+2default:default
+Q
+%s*synth2B
+.	   4 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 7     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 22    
+2default:default
+Q
+%s*synth2B
+.	   8 Input      2 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 48    
+2default:default
+Q
+%s*synth2B
+.	   8 Input      1 Bit        Muxes := 13    
+2default:default
 A
 %s*synth22
 Module irqmp__parameterized0 
@@ -15329,6 +16114,90 @@ Q
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 33    
+2default:default
+C
+%s*synth24
+ Module gptimer__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      9 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               32 Bit    Registers := 4     
+2default:default
+Q
+%s*synth2B
+.	                8 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 18    
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 7     
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      8 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 40    
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 28    
 2default:default
 C
 %s*synth24
@@ -15436,19 +16305,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   6 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   7 Input      3 Bit        Muxes := 1     
+.	   4 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      3 Bit        Muxes := 1     
+.	   2 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   7 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -15464,11 +16333,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 64    
+.	   4 Input      1 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 9     
+.	   2 Input      1 Bit        Muxes := 64    
 2default:default
 Q
 %s*synth2B
@@ -15636,11 +16505,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit        Muxes := 13    
+.	  15 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  15 Input     16 Bit        Muxes := 1     
+.	   2 Input     16 Bit        Muxes := 13    
 2default:default
 Q
 %s*synth2B
@@ -15664,11 +16533,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 6     
+.	   3 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      4 Bit        Muxes := 1     
+.	   2 Input      4 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -15684,7 +16553,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      1 Bit        Muxes := 1     
+.	   6 Input      1 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -15692,11 +16561,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 4     
+.	  16 Input      1 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
-.	  16 Input      1 Bit        Muxes := 22    
+.	   8 Input      1 Bit        Muxes := 1     
 2default:default
 I
 %s*synth2:
@@ -15808,11 +16677,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 7     
+.	   9 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   9 Input     10 Bit        Muxes := 1     
+.	   2 Input     10 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
@@ -15876,15 +16745,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   3 Input      8 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
 .	   4 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      8 Bit       Adders := 2     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -15984,39 +16853,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input     48 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     48 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	  15 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  13 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   8 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input     32 Bit        Muxes := 1     
+.	  13 Input     48 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16024,7 +16865,35 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   8 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   7 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
 .	   9 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  13 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  15 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  16 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16036,11 +16905,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input     18 Bit        Muxes := 2     
+.	  15 Input     18 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  15 Input     18 Bit        Muxes := 1     
+.	  10 Input     18 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16080,7 +16949,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input     11 Bit        Muxes := 1     
+.	  19 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16092,11 +16965,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  19 Input     11 Bit        Muxes := 1     
+.	   7 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16104,11 +16973,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 15    
+.	   8 Input      8 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      8 Bit        Muxes := 2     
+.	   2 Input      8 Bit        Muxes := 15    
 2default:default
 Q
 %s*synth2B
@@ -16116,11 +16985,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      7 Bit        Muxes := 2     
+.	   2 Input      7 Bit        Muxes := 12    
 2default:default
 Q
 %s*synth2B
 .	  15 Input      7 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   7 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16132,11 +17009,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit        Muxes := 12    
+.	   5 Input      6 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16148,7 +17021,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   5 Input      6 Bit        Muxes := 2     
+.	   2 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16160,15 +17033,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   6 Input      5 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
-.	  10 Input      4 Bit        Muxes := 7     
+.	  13 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16176,7 +17045,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      4 Bit        Muxes := 1     
+.	  10 Input      4 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
@@ -16188,6 +17057,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   6 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   9 Input      3 Bit        Muxes := 1     
 2default:default
 Q
@@ -16196,19 +17069,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      3 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  15 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      3 Bit        Muxes := 17    
-2default:default
-Q
-%s*synth2B
-.	   6 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -16216,19 +17077,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      2 Bit        Muxes := 1     
+.	  15 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 22    
-2default:default
-Q
-%s*synth2B
-.	  10 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  11 Input      2 Bit        Muxes := 1     
+.	   8 Input      3 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -16236,23 +17089,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 8     
+.	   2 Input      2 Bit        Muxes := 22    
+2default:default
+Q
+%s*synth2B
+.	   8 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  11 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	  13 Input      1 Bit        Muxes := 29    
-2default:default
-Q
-%s*synth2B
-.	   6 Input      1 Bit        Muxes := 30    
-2default:default
-Q
-%s*synth2B
-.	   5 Input      1 Bit        Muxes := 10    
-2default:default
-Q
-%s*synth2B
-.	  16 Input      1 Bit        Muxes := 15    
 2default:default
 Q
 %s*synth2B
@@ -16264,7 +17117,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   5 Input      1 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 30    
+2default:default
+Q
+%s*synth2B
 .	   7 Input      1 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      1 Bit        Muxes := 35    
 2default:default
 Q
 %s*synth2B
@@ -16272,7 +17137,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      1 Bit        Muxes := 35    
+.	   3 Input      1 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      1 Bit        Muxes := 15    
 2default:default
 M
 %s*synth2>
@@ -16402,862 +17271,6 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-C
-%s*synth24
- Module apbctrl__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               32 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	               20 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 5     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     20 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit        Muxes := 5     
-2default:default
-C
-%s*synth24
- Module ahbctrl__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               32 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	                9 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                3 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 9     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   3 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     13 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     12 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      6 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      5 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      4 Bit        Muxes := 7     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      3 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      3 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit        Muxes := 63    
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 154   
-2default:default
-Q
-%s*synth2B
-.	   5 Input      1 Bit        Muxes := 1     
-2default:default
-2
-%s*synth2#
-Module ahbrom 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                8 Bit    Registers := 1     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	 142 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	 142 Input      8 Bit        Muxes := 1     
-2default:default
-C
-%s*synth24
- Module gptimer__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      9 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               32 Bit    Registers := 4     
-2default:default
-Q
-%s*synth2B
-.	                8 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 18    
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 7     
-2default:default
-Q
-%s*synth2B
-.	   3 Input     32 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      8 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      8 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   3 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 40    
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 28    
-2default:default
-O
-%s*synth2@
-,Module unisim_syncram64__parameterized0__3 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-H
-%s*synth29
-%Module syncram64__parameterized0__3 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-L
-%s*synth2=
-)Module unisim_syncram64__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-E
-%s*synth26
-"Module syncram64__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-C
-%s*synth24
- Module tbufmem__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-A
-%s*synth22
-Module dsu3x__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     30 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit       Adders := 4     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      3 Bit       Adders := 1     
-2default:default
-/
-%s*synth2 
-+---XORs : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     30 Bit         XORs := 2     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               32 Bit    Registers := 3     
-2default:default
-Q
-%s*synth2B
-.	               30 Bit    Registers := 4     
-2default:default
-Q
-%s*synth2B
-.	               25 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                7 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	                4 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                3 Bit    Registers := 5     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 30    
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	  11 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  12 Input     30 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  12 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit        Muxes := 21    
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 51    
-2default:default
-Q
-%s*synth2B
-.	   6 Input      1 Bit        Muxes := 25    
-2default:default
-@
-%s*synth21
-Module dsu3__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-A
-%s*synth22
-Module mctrl__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      4 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               32 Bit    Registers := 4     
-2default:default
-Q
-%s*synth2B
-.	               16 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	                5 Bit    Registers := 2     
-2default:default
-Q
-%s*synth2B
-.	                4 Bit    Registers := 8     
-2default:default
-Q
-%s*synth2B
-.	                3 Bit    Registers := 3     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 10    
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 17    
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 27    
-2default:default
-Q
-%s*synth2B
-.	   8 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     16 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      8 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      5 Bit        Muxes := 22    
-2default:default
-Q
-%s*synth2B
-.	   4 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      4 Bit        Muxes := 29    
-2default:default
-Q
-%s*synth2B
-.	   3 Input      4 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      3 Bit        Muxes := 7     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      2 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 22    
-2default:default
-Q
-%s*synth2B
-.	   8 Input      1 Bit        Muxes := 13    
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 48    
-2default:default
-Q
-%s*synth2B
-.	   3 Input      1 Bit        Muxes := 2     
-2default:default
-F
-%s*synth27
-#Module clk_divide__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     12 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               12 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 8     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     12 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 3     
-2default:default
-3
-%s*synth2$
-Module DAC_SPI 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit       Adders := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      5 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                5 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 3     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   3 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 4     
-2default:default
-F
-%s*synth27
-#Module DAC_buffer__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               16 Bit    Registers := 129   
-2default:default
-Q
-%s*synth2B
-.	                7 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 130   
-2default:default
-2
-%s*synth2#
-Module dacTop 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-F
-%s*synth27
-#Module ADC_buffer__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               16 Bit    Registers := 128   
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 2     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      7 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 130   
-2default:default
-3
-%s*synth2$
-Module ADC_TOP 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-1
-%s*synth2"
-+---Adders : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit       Adders := 1     
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 2     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 3     
-2default:default
-D
-%s*synth25
-!Module dummyapb__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               16 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                7 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-C
-%s*synth24
- Module SKadder__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-/
-%s*synth2 
-+---XORs : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit         XORs := 63    
-2default:default
-D
-%s*synth25
-!Module adderahb__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               32 Bit    Registers := 3     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 3     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   3 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 6     
-2default:default
 J
 %s*synth2;
 'Module clkgen_virtex7__parameterized0 
@@ -17294,23 +17307,23 @@ Q
 %s*synth2B
 .	                1 Bit    Registers := 1     
 2default:default
-Ö
+Û
 merging register '%s' into '%s'3619*oasys2Z
 Fs1.dp.x1/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[waddr][7:0]2default:default2Z
-Fs1.dp.x0/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[waddr][7:0]2default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+Fs1.dp.x0/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[waddr][7:0]2default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 1252default:default8@Z8-4471
-˚
+È
 merging register '%s' into '%s'3619*oasys2U
 As1.dp.x1/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[write]2default:default2U
-As1.dp.x0/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[write]2default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+As1.dp.x0/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[write]2default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 1252default:default8@Z8-4471
-â
+˜
 merging register '%s' into '%s'3619*oasys2\
 Hs1.dp.x1/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[datain][31:0]2default:default2\
-Hs1.dp.x0/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[datain][31:0]2default:default2t
-^C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
+Hs1.dp.x0/wrfst_gen.no_contention_check.wfrstblocknoc.r_reg[datain][31:0]2default:default2b
+L/home/xploited/Desktop/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd2default:default2
 1252default:default8@Z8-4471
 µ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2%
@@ -17648,38 +17661,6 @@ hDSP Report: operator p_1_out is absorbed into DSP mgen.mul0/xm3232.m3232/pipe2.
 %s*synth2|
 hDSP Report: operator p_0_out is absorbed into DSP mgen.mul0/xm3232.m3232/pipe2.arch0.dwm/w2.p_i_reg[1].
 2default:default
-±
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
-\r_reg[rcnt][1] 2default:default2+
-apbuart__parameterized02default:defaultZ8-3332
-Æ
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2!
-\r_reg[rtsn] 2default:default2+
-apbuart__parameterized02default:defaultZ8-3332
-±
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
-\r_reg[rcnt][1] 2default:default2+
-apbuart__parameterized02default:defaultZ8-3332
-∂
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[done_ack][1] 2default:default2,
-greth_rx__parameterized02default:defaultZ8-3332
-∂
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2(
-\r_reg[done_ack][1] 2default:default2,
-greth_rx__parameterized02default:defaultZ8-3332
-≤
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2&
-\r_reg[capbil][0] 2default:default2*
-grethc__parameterized02default:defaultZ8-3332
-≤
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2&
-\r_reg[rxrenable] 2default:default2*
-grethc__parameterized02default:defaultZ8-3332
-≤
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2&
-\r_reg[capbil][0] 2default:default2*
-grethc__parameterized02default:defaultZ8-3332
 µ
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
 \r_reg[slv][haddr][1] 2default:default2)
@@ -17768,11 +17749,48 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
 \r_reg[writedata][15] 2default:default2)
 mctrl__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
+\r_reg[writedata][14] 2default:default2)
+mctrl__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
+\r_reg[writedata][13] 2default:default2)
+mctrl__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
+\r_reg[writedata][12] 2default:default2)
+mctrl__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
+\r_reg[writedata][11] 2default:default2)
+mctrl__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2*
+\r_reg[writedata][10] 2default:default2)
+mctrl__parameterized02default:defaultZ8-3332
+¥
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2)
+\r_reg[writedata][9] 2default:default2)
+mctrl__parameterized02default:defaultZ8-3332
+¥
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2)
+\r_reg[writedata][8] 2default:default2)
+mctrl__parameterized02default:defaultZ8-3332
+¥
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2)
+\r_reg[writedata][7] 2default:default2)
+mctrl__parameterized02default:defaultZ8-3332
 ‘
 ÅMessage '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
 Synth 8-33322default:default2
 1002default:defaultZ17-14
+ö
+øThe signal %s was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (%s address bits)* is shallow.
+3471*oasys2(
+io0/apbo_reg[prdata]2default:default2
+72default:defaultZ8-3969
 î
 +design %s has port %s driven by constant %s3447*oasys2
 leon3mp2default:default2
@@ -17897,9 +17915,9 @@ s
 !design %s has unconnected port %s3331*oasys2
 leon3mp2default:default2
 btn[0]2default:defaultZ8-3331
-©
-%s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 666.539 ; gain = 408.324
+™
+%s*synth2ö
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 1377.398 ; gain = 736.445
 2default:default
 ¢
 %s*synth2í
@@ -17929,7 +17947,7 @@ Distributed RAM:
 2default:default
 ª
 %s*synth2´
-ñ|leon3mp__GCB0 | eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/rfd_reg | Implied            | 4 X 32               | RAM32M x 6   | ram__1            | 
+ñ|leon3mp__GCB1 | eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/rfd_reg | Implied            | 4 X 32               | RAM32M x 6   | ram__1            | 
 2default:default
 ª
 %s*synth2´
@@ -17994,51 +18012,55 @@ K\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\FSM_onehot_r_reg[dstate][7] 2de
 ´
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2C
-/i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] 2default:defaultZ8-3333
-¨
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2D
-0i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] 2default:defaultZ8-3333
+/i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] 2default:defaultZ8-3333
 ≤
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2J
-6i_4/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hmaster][3] 2default:defaultZ8-3333
+6i_3/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hmaster][3] 2default:defaultZ8-3333
+¨
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2D
+0i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] 2default:defaultZ8-3333
+ö
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default22
+i_3/\mg2.sr1 /\r_reg[area][1] 2default:defaultZ8-3333
 õ
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default23
-i_4/\mg2.sr1 /\r_reg[data][15] 2default:defaultZ8-3333
+i_3/\mg2.sr1 /\r_reg[data][15] 2default:defaultZ8-3333
 ô
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default21
-i_4/ahb0/\r_reg[hrdatam][31] 2default:defaultZ8-3333
+i_3/ahb0/\r_reg[hrdatam][31] 2default:defaultZ8-3333
 ò
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default20
-i_4/\mg2.sr1 /\r_reg[bexcn] 2default:defaultZ8-3333
+i_3/\mg2.sr1 /\r_reg[bexcn] 2default:defaultZ8-3333
 ï
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2-
-i_4/ahb0/\r_reg[ldefmst] 2default:defaultZ8-3333
+i_3/ahb0/\r_reg[ldefmst] 2default:defaultZ8-3333
 õ
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default23
-i_4/\mg2.sr1 /\r_reg[hresp][1] 2default:defaultZ8-3333
+i_3/\mg2.sr1 /\r_reg[hresp][1] 2default:defaultZ8-3333
 ´
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2C
-/i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] 2default:defaultZ8-3333
+/i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] 2default:defaultZ8-3333
 ¨
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2D
-0i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] 2default:defaultZ8-3333
+0i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] 2default:defaultZ8-3333
+¨
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2D
+0i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][2] 2default:defaultZ8-3333
 ´
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2C
-/i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] 2default:defaultZ8-3333
-¨
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2D
-0i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsubre][0] 2default:defaultZ8-3333
+/i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[dsuen][0] 2default:defaultZ8-3333
 ®
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2@
@@ -18050,98 +18072,90 @@ K\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\FSM_onehot_r_reg[dstate][7] 2de
 ∑
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2O
-;i_3/\eth0.e1/m100.u0/ethc0 /\rx_rmii1.rx0 /\r_reg[rxen][0] 2default:defaultZ8-3333
+;i_4/\eth0.e1/m100.u0/ethc0 /\rx_rmii1.rx0 /\r_reg[rxen][0] 2default:defaultZ8-3333
 «
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2_
-Ki_3/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[def_state][6] 2default:defaultZ8-3333
+Ki_4/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[def_state][6] 2default:defaultZ8-3333
 Æ
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2F
-2i_3/\eth0.e1/m100.u0/ethc0 /\r_reg[applength][15] 2default:defaultZ8-3333
-™
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2B
-.i_3/\ua1.uart1 /\FSM_onehot_r_reg[rxstate][5] 2default:defaultZ8-3333
-ú
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default24
- i_3/\ua1.uart1 /\r_reg[ctsn][0] 2default:defaultZ8-3333
-∫
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2R
->i_3/\eth0.e1/m100.u0/ethc0 /\FSM_onehot_r_reg[mdio_state][12] 2default:defaultZ8-3333
+2i_4/\eth0.e1/m100.u0/ethc0 /\r_reg[applength][15] 2default:defaultZ8-3333
 …
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2a
-Mi_3/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[main_state][15] 2default:defaultZ8-3333
+Mi_4/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[main_state][15] 2default:defaultZ8-3333
+∫
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2R
+>i_4/\eth0.e1/m100.u0/ethc0 /\FSM_onehot_r_reg[mdio_state][12] 2default:defaultZ8-3333
+®
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2@
+,i_4/\ua1.uart1/FSM_onehot_r_reg[rxstate][5] 2default:defaultZ8-3333
+ö
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default22
+i_4/\ua1.uart1/r_reg[ctsn][0] 2default:defaultZ8-3333
 ∑
 6propagating constant %s across sequential element (%s)3333*oasys2
 12default:default2O
-;i_3/\eth0.e1/m100.u0/ethc0 /\rx_rmii1.rx0 /\r_reg[rxen][0] 2default:defaultZ8-3333
-ú
+;i_4/\eth0.e1/m100.u0/ethc0 /\rx_rmii1.rx0 /\r_reg[rxen][0] 2default:defaultZ8-3333
+ö
 6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default24
- i_3/\ua1.uart1 /\r_reg[ctsn][0] 2default:defaultZ8-3333
+02default:default22
+i_4/\ua1.uart1/r_reg[ctsn][0] 2default:defaultZ8-3333
 ∫
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2R
 >\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\r_reg[flushl2] 2default:defaultZ8-3333
-∞
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2H
-4i_4/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hsize][2] 2default:defaultZ8-3333
-ú
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default24
- i_4/\mg2.sr1 /\r_reg[hburst][2] 2default:defaultZ8-3333
-ö
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default22
-i_4/\mg2.sr1 /\r_reg[area][1] 2default:defaultZ8-3333
-®
-6propagating constant %s across sequential element (%s)3333*oasys2
-12default:default2@
-,i_4/\leon3gen.dsugen.dsu0/x0 /\r_reg[en][0] 2default:defaultZ8-3333
-ô
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default21
-i_4/ahb0/\r_reg[hrdatas][18] 2default:defaultZ8-3333
-´
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2C
-/i_3/\eth0.e1/m100.u0/ethc0 /ahb0/\r_reg[retry] 2default:defaultZ8-3333
 ≥
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2K
 7\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /\a0/r_reg[retry] 2default:defaultZ8-3333
-û
-%s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:05:51 ; elapsed = 00:06:02 . Memory (MB): peak = 872.465 ; gain = 614.250
-2default:default
-≠
-%s*synth2ù
-àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:05:57 ; elapsed = 00:06:09 . Memory (MB): peak = 872.465 ; gain = 614.250
-2default:default
+∞
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2H
+4i_3/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hsize][2] 2default:defaultZ8-3333
+ú
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default24
+ i_3/\mg2.sr1 /\r_reg[hburst][2] 2default:defaultZ8-3333
+®
+6propagating constant %s across sequential element (%s)3333*oasys2
+12default:default2@
+,i_3/\leon3gen.dsugen.dsu0/x0 /\r_reg[en][0] 2default:defaultZ8-3333
+´
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2C
+/i_4/\eth0.e1/m100.u0/ethc0 /ahb0/\r_reg[retry] 2default:defaultZ8-3333
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:06:02 ; elapsed = 00:06:14 . Memory (MB): peak = 872.465 ; gain = 614.250
+|Finished Area Optimization : Time (s): cpu = 00:03:57 ; elapsed = 00:03:58 . Memory (MB): peak = 1738.211 ; gain = 1097.258
 2default:default
-ï
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2-
-\ahb0/r_reg[hrdatas][25] 2default:defaultZ8-3333
-ü
-%s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:07:23 ; elapsed = 00:07:39 . Memory (MB): peak = 916.949 ; gain = 658.734
+Ø
+%s*synth2ü
+äFinished Applying XDC Timing Constraints : Time (s): cpu = 00:03:59 ; elapsed = 00:04:01 . Memory (MB): peak = 1738.211 ; gain = 1097.258
+2default:default
+¢
+%s*synth2í
+~Finished Timing Optimization : Time (s): cpu = 00:04:01 ; elapsed = 00:04:03 . Memory (MB): peak = 1738.211 ; gain = 1097.258
+2default:default
+ù
+◊The timing for the instance %s (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+3630*oasys2*
+\io0/apbo_reg[prdata] 2default:defaultZ8-4480
+°
+%s*synth2ë
+}Finished Technology Mapping : Time (s): cpu = 00:04:43 ; elapsed = 00:04:48 . Memory (MB): peak = 1833.969 ; gain = 1193.016
 2default:default
 D
 %s*synth25
 !Gated Clock Conversion mode: off
 2default:default
-ô
-%s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:07:25 ; elapsed = 00:07:41 . Memory (MB): peak = 916.949 ; gain = 658.734
+õ
+%s*synth2ã
+wFinished IO Insertion : Time (s): cpu = 00:04:45 ; elapsed = 00:04:49 . Memory (MB): peak = 1833.969 ; gain = 1193.016
 2default:default
 ;
 %s*synth2,
@@ -18168,13 +18182,13 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-™
-%s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:07:26 ; elapsed = 00:07:41 . Memory (MB): peak = 916.949 ; gain = 658.734
+¨
+%s*synth2ú
+áFinished Renaming Generated Instances : Time (s): cpu = 00:04:45 ; elapsed = 00:04:49 . Memory (MB): peak = 1833.969 ; gain = 1193.016
 2default:default
-ß
-%s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:07:30 ; elapsed = 00:07:46 . Memory (MB): peak = 916.949 ; gain = 658.734
+©
+%s*synth2ô
+ÑFinished Rebuilding User Hierarchy : Time (s): cpu = 00:04:46 ; elapsed = 00:04:51 . Memory (MB): peak = 1833.969 ; gain = 1193.016
 2default:default
 ¢
 %s*synth2í
@@ -18296,35 +18310,35 @@ H
 2default:default
 H
 %s*synth29
-%|7     |LUT1                |   233|
+%|7     |LUT1                |   235|
 2default:default
 H
 %s*synth29
-%|8     |LUT2                |   614|
+%|8     |LUT2                |   597|
 2default:default
 H
 %s*synth29
-%|9     |LUT3                |  1031|
+%|9     |LUT3                |  1033|
 2default:default
 H
 %s*synth29
-%|10    |LUT4                |  1423|
+%|10    |LUT4                |  1416|
 2default:default
 H
 %s*synth29
-%|11    |LUT5                |  2924|
+%|11    |LUT5                |  2705|
 2default:default
 H
 %s*synth29
-%|12    |LUT6                |  6315|
+%|12    |LUT6                |  5965|
 2default:default
 H
 %s*synth29
-%|13    |MUXF7               |   847|
+%|13    |MUXF7               |   563|
 2default:default
 H
 %s*synth29
-%|14    |MUXF8               |   313|
+%|14    |MUXF8               |   183|
 2default:default
 H
 %s*synth29
@@ -18356,39 +18370,43 @@ H
 2default:default
 H
 %s*synth29
-%|22    |SRL16E              |    11|
+%|22    |RAMB18E1_1          |     1|
 2default:default
 H
 %s*synth29
-%|23    |FDCE                |  4262|
+%|23    |SRL16E              |    11|
 2default:default
 H
 %s*synth29
-%|24    |FDPE                |     6|
+%|24    |FDCE                |  2238|
 2default:default
 H
 %s*synth29
-%|25    |FDRE                |  4265|
+%|25    |FDPE                |     6|
 2default:default
 H
 %s*synth29
-%|26    |FDSE                |   115|
+%|26    |FDRE                |  4233|
 2default:default
 H
 %s*synth29
-%|27    |LD                  |    48|
+%|27    |FDSE                |   123|
 2default:default
 H
 %s*synth29
-%|28    |IBUF                |     6|
+%|28    |LD                  |    32|
 2default:default
 H
 %s*synth29
-%|29    |IOBUF               |    17|
+%|29    |IBUF                |     6|
 2default:default
 H
 %s*synth29
-%|30    |OBUF                |    58|
+%|30    |IOBUF               |    17|
+2default:default
+H
+%s*synth29
+%|31    |OBUF                |    58|
 2default:default
 H
 %s*synth29
@@ -18413,43 +18431,43 @@ Z+------+-----------------------------------+-----------------------------------
 2default:default
 }
 %s*synth2n
-Z|1     |top                                |                                     | 22801|
+Z|1     |top                                |                                     | 19735|
 2default:default
 }
 %s*synth2n
-Z|2     |  \ethpads.emdio_pad               |iopad__parameterized0                |     1|
+Z|2     |  io0                              |dummyapb__parameterized0             |  3418|
 2default:default
 }
 %s*synth2n
-Z|3     |    \xcv.x0                        |unisim_iopad__parameterized0_125     |     1|
+Z|3     |    inst_ADC_TOP                   |ADC_TOP                              |    74|
 2default:default
 }
 %s*synth2n
-Z|4     |  io0                              |dummyapb__parameterized0             |  6564|
+Z|4     |      inst_Buffer                  |ADC_buffer_const__parameterized0     |    19|
 2default:default
 }
 %s*synth2n
-Z|5     |    inst_ADC_TOP                   |ADC_TOP                              |  3202|
+Z|5     |    inst_top                       |dacTop                               |  3318|
 2default:default
 }
 %s*synth2n
-Z|6     |      inst_Buffer                  |ADC_buffer__parameterized0           |  3146|
+Z|6     |      inst_clk_divider             |clk_divide__parameterized0           |   134|
 2default:default
 }
 %s*synth2n
-Z|7     |    inst_top                       |dacTop                               |  3322|
+Z|7     |      inst_DAC_BUFFER              |DAC_buffer__parameterized0           |  3167|
 2default:default
 }
 %s*synth2n
-Z|8     |      inst_clk_divider             |clk_divide__parameterized0           |   138|
+Z|8     |      inst_DAC_SPI                 |DAC_SPI                              |    16|
 2default:default
 }
 %s*synth2n
-Z|9     |      inst_DAC_BUFFER              |DAC_buffer__parameterized0           |  3167|
+Z|9     |  \ethpads.emdio_pad               |iopad__parameterized0                |     1|
 2default:default
 }
 %s*synth2n
-Z|10    |      inst_DAC_SPI                 |DAC_SPI                              |    16|
+Z|10    |    \xcv.x0                        |unisim_iopad__parameterized0_125     |     1|
 2default:default
 }
 %s*synth2n
@@ -18489,11 +18507,11 @@ Z|19    |    \xcv.x0                        |unisim_outpad__parameterized0_120  
 2default:default
 }
 %s*synth2n
-Z|20    |  rst0                             |rstgen__parameterized0               |    26|
+Z|20    |  rst0                             |rstgen__parameterized0               |    25|
 2default:default
 }
 %s*synth2n
-Z|21    |  apb0                             |apbctrl__parameterized0              |   535|
+Z|21    |  apb0                             |apbctrl__parameterized0              |   539|
 2default:default
 }
 %s*synth2n
@@ -18785,51 +18803,51 @@ Z|93    |    \xcv.x0                        |unisim_outpad__parameterized0_54   
 2default:default
 }
 %s*synth2n
-Z|94    |  \mg2.sr1                         |mctrl__parameterized0                |   342|
+Z|94    |  \mg2.sr1                         |mctrl__parameterized0                |   346|
 2default:default
 }
 %s*synth2n
-Z|95    |  \leon3gen.cpu[0].u0              |leon3s__parameterized0               |  8686|
+Z|95    |  \leon3gen.cpu[0].u0              |leon3s__parameterized0               |  8711|
 2default:default
 }
 %s*synth2n
-Z|96    |    leon3x0                        |leon3x__parameterized0               |  8686|
+Z|96    |    leon3x0                        |leon3x__parameterized0               |  8711|
 2default:default
 }
 %s*synth2n
-Z|97    |      rf0                          |regfile_3p_l3__parameterized0        |   168|
+Z|97    |      rf0                          |regfile_3p_l3__parameterized0        |   166|
 2default:default
 }
 %s*synth2n
-Z|98    |        \s1.rhu                    |regfile_3p__parameterized0           |   168|
+Z|98    |        \s1.rhu                    |regfile_3p__parameterized0           |   166|
 2default:default
 }
 %s*synth2n
-Z|99    |          \s1.dp.x1                |syncram_2p__parameterized0           |    60|
+Z|99    |          \s1.dp.x1                |syncram_2p__parameterized0           |    61|
 2default:default
 }
 %s*synth2n
-Z|100   |            \xc2v.x0               |unisim_syncram_2p__parameterized0_52 |    48|
+Z|100   |            \xc2v.x0               |unisim_syncram_2p__parameterized0_52 |    49|
 2default:default
 }
 %s*synth2n
-Z|101   |              \a6.x0               |unisim_syncram_dp__parameterized0_53 |    48|
+Z|101   |              \a6.x0               |unisim_syncram_dp__parameterized0_53 |    49|
 2default:default
 }
 %s*synth2n
-Z|102   |          \s1.dp.x0                |syncram_2p__parameterized0_51        |   108|
+Z|102   |          \s1.dp.x0                |syncram_2p__parameterized0_51        |   105|
 2default:default
 }
 %s*synth2n
-Z|103   |            \xc2v.x0               |unisim_syncram_2p__parameterized0    |    53|
+Z|103   |            \xc2v.x0               |unisim_syncram_2p__parameterized0    |    50|
 2default:default
 }
 %s*synth2n
-Z|104   |              \a6.x0               |unisim_syncram_dp__parameterized0    |    53|
+Z|104   |              \a6.x0               |unisim_syncram_dp__parameterized0    |    50|
 2default:default
 }
 %s*synth2n
-Z|105   |      cmem0                        |cachemem__parameterized0             |   104|
+Z|105   |      cmem0                        |cachemem__parameterized0             |    78|
 2default:default
 }
 %s*synth2n
@@ -18841,11 +18859,11 @@ Z|107   |          \xc2v.x0                 |unisim_syncram__parameterized6_50  
 2default:default
 }
 %s*synth2n
-Z|108   |        \dme.dtags0.dt0[0].dtags0  |syncram__parameterized4              |     9|
+Z|108   |        \dme.dtags0.dt0[0].dtags0  |syncram__parameterized4              |     7|
 2default:default
 }
 %s*synth2n
-Z|109   |          \xc2v.x0                 |unisim_syncram__parameterized4_49    |     9|
+Z|109   |          \xc2v.x0                 |unisim_syncram__parameterized4_49    |     7|
 2default:default
 }
 %s*synth2n
@@ -18857,35 +18875,35 @@ Z|111   |          \xc2v.x0                 |unisim_syncram__parameterized6     
 2default:default
 }
 %s*synth2n
-Z|112   |        \dme.dtags0.dt0[1].dtags0  |syncram__parameterized4_44           |    15|
+Z|112   |        \dme.dtags0.dt0[1].dtags0  |syncram__parameterized4_44           |     7|
 2default:default
 }
 %s*synth2n
-Z|113   |          \xc2v.x0                 |unisim_syncram__parameterized4       |    15|
+Z|113   |          \xc2v.x0                 |unisim_syncram__parameterized4       |     7|
 2default:default
 }
 %s*synth2n
-Z|114   |        \ime.im0[1].idata0         |syncram__parameterized2              |    27|
+Z|114   |        \ime.im0[1].idata0         |syncram__parameterized2              |    12|
 2default:default
 }
 %s*synth2n
-Z|115   |          \xc2v.x0                 |unisim_syncram__parameterized2_48    |    27|
+Z|115   |          \xc2v.x0                 |unisim_syncram__parameterized2_48    |    12|
 2default:default
 }
 %s*synth2n
-Z|116   |        \ime.im0[1].itags0         |syncram__parameterized0              |    10|
+Z|116   |        \ime.im0[1].itags0         |syncram__parameterized0              |    25|
 2default:default
 }
 %s*synth2n
-Z|117   |          \xc2v.x0                 |unisim_syncram__parameterized0_47    |    10|
+Z|117   |          \xc2v.x0                 |unisim_syncram__parameterized0_47    |    25|
 2default:default
 }
 %s*synth2n
-Z|118   |        \ime.im0[0].idata0         |syncram__parameterized2_45           |     8|
+Z|118   |        \ime.im0[0].idata0         |syncram__parameterized2_45           |     4|
 2default:default
 }
 %s*synth2n
-Z|119   |          \xc2v.x0                 |unisim_syncram__parameterized2       |     8|
+Z|119   |          \xc2v.x0                 |unisim_syncram__parameterized2       |     4|
 2default:default
 }
 %s*synth2n
@@ -18917,23 +18935,23 @@ Z|126   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_41
 2default:default
 }
 %s*synth2n
-Z|127   |      p0                           |proc3__parameterized0                |  8379|
+Z|127   |      p0                           |proc3__parameterized0                |  8432|
 2default:default
 }
 %s*synth2n
-Z|128   |        c0mmu                      |mmu_cache__parameterized0            |  2987|
+Z|128   |        c0mmu                      |mmu_cache__parameterized0            |  2962|
 2default:default
 }
 %s*synth2n
-Z|129   |          icache0                  |mmu_icache__parameterized0           |  1124|
+Z|129   |          icache0                  |mmu_icache__parameterized0           |  1121|
 2default:default
 }
 %s*synth2n
-Z|130   |          dcache0                  |mmu_dcache__parameterized0           |   937|
+Z|130   |          dcache0                  |mmu_dcache__parameterized0           |   891|
 2default:default
 }
 %s*synth2n
-Z|131   |          a0                       |mmu_acache__parameterized0           |   144|
+Z|131   |          a0                       |mmu_acache__parameterized0           |   169|
 2default:default
 }
 %s*synth2n
@@ -18949,31 +18967,31 @@ Z|134   |            \pipe2.arch0.dwm       |gen_mult_pipe__parameterized0      
 2default:default
 }
 %s*synth2n
-Z|135   |        iu                         |iu3__parameterized0                  |  4908|
+Z|135   |        iu                         |iu3__parameterized0                  |  4985|
 2default:default
 }
 %s*synth2n
-Z|136   |        \mgen.div0                 |div32                                |   367|
+Z|136   |        \mgen.div0                 |div32                                |   368|
 2default:default
 }
 %s*synth2n
-Z|137   |  \gpt.timer0                      |gptimer__parameterized0              |   372|
+Z|137   |  \gpt.timer0                      |gptimer__parameterized0              |   374|
 2default:default
 }
 %s*synth2n
-Z|138   |  \eth0.e1                         |grethm__parameterized0               |  3890|
+Z|138   |  \eth0.e1                         |grethm__parameterized0               |  3810|
 2default:default
 }
 %s*synth2n
-Z|139   |    \m100.u0                       |greth__parameterized0                |  3890|
+Z|139   |    \m100.u0                       |greth__parameterized0                |  3810|
 2default:default
 }
 %s*synth2n
-Z|140   |      ethc0                        |grethc__parameterized0               |  3789|
+Z|140   |      ethc0                        |grethc__parameterized0               |  3710|
 2default:default
 }
 %s*synth2n
-Z|141   |        ahb0                       |eth_ahb_mst                          |   266|
+Z|141   |        ahb0                       |eth_ahb_mst                          |   230|
 2default:default
 }
 %s*synth2n
@@ -18985,7 +19003,7 @@ Z|143   |          tx_rst                   |eth_rstgen__parameterized0         
 2default:default
 }
 %s*synth2n
-Z|144   |        \rx_rmii1.rx0              |greth_rx__parameterized0             |   770|
+Z|144   |        \rx_rmii1.rx0              |greth_rx__parameterized0             |   763|
 2default:default
 }
 %s*synth2n
@@ -19053,39 +19071,39 @@ Z|160   |    \xcv.x0                        |unisim_inpad__parameterized0_33    
 2default:default
 }
 %s*synth2n
-Z|161   |  ahb0                             |ahbctrl__parameterized0              |   171|
+Z|161   |  ahb0                             |ahbctrl__parameterized0              |   188|
 2default:default
 }
 %s*synth2n
-Z|162   |  \leon3gen.dsugen.dsu0            |dsu3__parameterized0                 |  1186|
+Z|162   |  \leon3gen.dsugen.dsu0            |dsu3__parameterized0                 |  1176|
 2default:default
 }
 %s*synth2n
-Z|163   |    x0                             |dsu3x__parameterized0                |  1173|
+Z|163   |    x0                             |dsu3x__parameterized0                |  1166|
 2default:default
 }
 %s*synth2n
-Z|164   |      \tb0.mem0                    |tbufmem__parameterized0              |   247|
+Z|164   |      \tb0.mem0                    |tbufmem__parameterized0              |   242|
 2default:default
 }
 %s*synth2n
-Z|165   |        \mem0[0].ram0              |syncram64__parameterized0            |   144|
+Z|165   |        \mem0[0].ram0              |syncram64__parameterized0            |   141|
 2default:default
 }
 %s*synth2n
-Z|166   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_32  |   144|
+Z|166   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0_32  |   141|
 2default:default
 }
 %s*synth2n
-Z|167   |        \mem0[1].ram0              |syncram64__parameterized0_31         |   103|
+Z|167   |        \mem0[1].ram0              |syncram64__parameterized0_31         |   101|
 2default:default
 }
 %s*synth2n
-Z|168   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0     |   103|
+Z|168   |          \nopar.s64.xc2v.x0       |unisim_syncram64__parameterized0     |   101|
 2default:default
 }
 %s*synth2n
-Z|169   |  \bpromgen.brom                   |ahbrom                               |   191|
+Z|169   |  \bpromgen.brom                   |ahbrom                               |   186|
 2default:default
 }
 %s*synth2n
@@ -19097,15 +19115,15 @@ Z|171   |    \xcv.x0                        |unisim_outpad__parameterized0_30   
 2default:default
 }
 %s*synth2n
-Z|172   |  \mgpads.wri_pad                  |outpad__parameterized0_6             |     1|
+Z|172   |  adderahb_if                      |adderahb__parameterized0             |   445|
 2default:default
 }
 %s*synth2n
-Z|173   |    \xcv.x0                        |unisim_outpad__parameterized0_29     |     1|
+Z|173   |  \mgpads.wri_pad                  |outpad__parameterized0_6             |     1|
 2default:default
 }
 %s*synth2n
-Z|174   |  adderahb_if                      |adderahb__parameterized0             |   358|
+Z|174   |    \xcv.x0                        |unisim_outpad__parameterized0_29     |     1|
 2default:default
 }
 %s*synth2n
@@ -19129,7 +19147,7 @@ Z|179   |      \xcv.x0                      |unisim_outpad__parameterized0_27   
 2default:default
 }
 %s*synth2n
-Z|180   |  \ua1.uart1                       |apbuart__parameterized0              |   231|
+Z|180   |  \ua1.uart1                       |apbuart__parameterized0              |   250|
 2default:default
 }
 %s*synth2n
@@ -19217,28 +19235,28 @@ Z|201   |    \xcv.x0                        |unisim_inpad__parameterized0       
 2default:default
 }
 %s*synth2n
-Z|202   |  \irqctrl.irqctrl0                |irqmp__parameterized0                |   130|
+Z|202   |  \irqctrl.irqctrl0                |irqmp__parameterized0                |   148|
 2default:default
 }
 %s*synth2n
 Z+------+-----------------------------------+-------------------------------------+------+
 2default:default
-¶
-%s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:07:31 ; elapsed = 00:07:47 . Memory (MB): peak = 916.949 ; gain = 658.734
+®
+%s*synth2ò
+ÉFinished Writing Synthesis Report : Time (s): cpu = 00:04:47 ; elapsed = 00:04:52 . Memory (MB): peak = 1833.969 ; gain = 1193.016
 2default:default
 k
 %s*synth2\
-HSynthesis finished with 0 errors, 0 critical warnings and 559 warnings.
+HSynthesis finished with 0 errors, 0 critical warnings and 553 warnings.
 2default:default
-£
-%s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:07:32 ; elapsed = 00:07:47 . Memory (MB): peak = 916.949 ; gain = 658.734
+¶
+%s*synth2ñ
+ÅSynthesis Optimization Complete : Time (s): cpu = 00:04:47 ; elapsed = 00:04:52 . Memory (MB): peak = 1833.969 ; gain = 1193.016
 2default:default
-^
+]
 -Analyzing %s Unisim elements for replacement
-17*netlist2
-1082default:defaultZ29-17
+17*netlist2
+932default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -19259,9 +19277,9 @@ MSuccessfully populated the BRAM INIT strings from the following elf files: %s
 √
 !Unisim Transformation Summary:
 %s111*project2Ü
-Ò  A total of 96 instances were transformed.
+Ò  A total of 80 instances were transformed.
   IOBUF => IOBUF (OBUFT, IBUF): 17 instances
-  LD => LDCE: 48 instances
+  LD => LDCE: 32 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
   RAMB16_S18 => RAMB18E1: 4 instances
   RAMB16_S36 => RAMB36E1: 2 instances
@@ -19276,29 +19294,29 @@ L
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
 3812default:default2
-4682default:default2
+4662default:default2
 02default:default2
 02default:defaultZ4-41
 U
 %s completed successfully
 29*	vivadotcl2 
 synth_design2default:defaultZ4-42
-¸
+˛
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:07:572default:default2
-00:08:142default:default2
-952.2812default:default2
-651.2772default:defaultZ17-268
+00:04:572default:default2
+00:05:012default:default2
+1946.9692default:default2
+1212.6212default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
-
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.280 . Memory (MB): peak = 962.563 ; gain = 0.000
+Ç
+vreport_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1956.164 ; gain = 2.012
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Thu Apr 10 18:00:01 20142default:defaultZ17-206
+Sun Apr 13 14:15:31 20142default:defaultZ17-206
