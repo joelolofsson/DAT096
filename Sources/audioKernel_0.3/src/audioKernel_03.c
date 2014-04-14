@@ -40,7 +40,7 @@ void adcHandler(){
 
 	//printf("IRQ ok");
 
-	/*Triangle wave
+	//Triangle wave
 	for(i=0; i<buffSize;i++){
 		if(i < 64){
 			*(volatile int*)(DAC_adr+(i*4)) = 1000*i;
@@ -50,10 +50,10 @@ void adcHandler(){
 		}
 	}
 
-	*/
 
-
-	//output loop
+/*
+	/*output loop
+	 * We havent observed any improvement of the signal introducing delays and doubble readings here...
 	i = 0;
 	while(i < buffSize){
 		input = (int32_t)(audioBuffer[i]);// + (32768)
@@ -62,19 +62,20 @@ void adcHandler(){
 	}
 
 
+	/*Reading twice and introducing a delay makes our readings less glitchy.
+	 *  is there anything else we should do in software?
 	i =0;
 	while(i <  buffSize){
-		input = *(volatile int*)(ADC_adr);//+(i*4));
-		input = *(volatile int*)(ADC_adr);//+(i*4));
+		input = *(volatile int*)(ADC_adr+(i*4));
+		input = *(volatile int*)(ADC_adr+(i*4));
 
 		for(j=0;j < 3 ;j++);
 
-		input = (input);	 //32768);
+		input = (input);
 		audioBuffer[i] = (int16_t)input ;
 		i++;
 	}
-
-
+*/
 
 	//////////////////////////////////////////////////////////
 
