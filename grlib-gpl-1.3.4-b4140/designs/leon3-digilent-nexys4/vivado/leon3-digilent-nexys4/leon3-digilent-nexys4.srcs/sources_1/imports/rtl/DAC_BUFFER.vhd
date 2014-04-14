@@ -39,7 +39,7 @@ entity DAC_buffer is
         rst		:	in STD_LOGIC;
         buffRead	:	in STD_LOGIC;
         indexReset	:	in STD_LOGIC;
-	      buffWrite	:	in STD_LOGIC;
+	    buffWrite	:	in STD_LOGIC;
        	buffIn		:	in STD_LOGIC_VECTOR (15 downto 0);
         buffOut		:	out STD_LOGIC_VECTOR (15 downto 0);
         addr		:	in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));

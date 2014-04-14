@@ -92,7 +92,7 @@ port map (
 
 inst_ADC_TOP : ADC_TOP 
 port map (
-    clk => clk,
+    clk => clk100, --this was clk
     rst => rstn,
     sampleclk => sampleclk,
     vauxp3 => vauxp3,
@@ -130,7 +130,7 @@ debugvector(7 downto 4) <= addr(6 downto 3);
             apbo.prdata(31 downto 0) <= (others =>'0');
             
             --setting default output to DAC_buffer
-            sLED <= (others => '0');             
+            --sLED <= (others => '0');             
             
             --setting default dac_buff_write signal
             dac_buff_write <= '0';
@@ -139,20 +139,19 @@ debugvector(7 downto 4) <= addr(6 downto 3);
              if apbi.paddr(9)= '0' then
                  apbo.prdata(15 downto 0) <= sampledvalue; 
                  apbo.prdata(31 downto 16) <= (others => (sampledvalue(15))); --saturating for sign
-             
+                              
              --if the DAC is selected and there is a pending write with correct psel
              elsif apbi.paddr(9) = '1' then               
-                 if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
-                    sLED <= apbi.pwdata; -- write value should be to DAC
+                if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
+                    sLED <= apbi.pwdata; --written value should go to DAC
                     dac_buff_write <= '1';
-                 end if;
-             end if;
-             
+                end if;
+             end if;            
              
              --interrupt generated from ADC_buffer when full
               if irq='0' and buffer_interupt='1' then
                 irq <= '1';
-             else
+             else   
                 irq <='0';
              end if;                
                 
