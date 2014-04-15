@@ -65,7 +65,7 @@ begin
     elsif rising_edge(clk) then
 				lastread <= buffread;
         if (buffRead = '1') and (lastread = '0') then
-            buffout <= Memory_array(read_index);
+            buffout <= Memory_array(read_index); --idea, always outpul like ADC
 
             if read_index = 2**bufferwidth -1 then
                 read_index <= 0;
@@ -73,10 +73,12 @@ begin
                 read_index <= read_index + 1 ;
             end if;
         end if;
+        
         if indexReset = '1' then
            read_index <= 0;
         end if;
-		if buffWrite = '1' then
+        
+		if buffWrite = '1' then 
 			Memory_array(to_integer(unsigned(addr))) <= buffin;     
 		end if;
     end if;

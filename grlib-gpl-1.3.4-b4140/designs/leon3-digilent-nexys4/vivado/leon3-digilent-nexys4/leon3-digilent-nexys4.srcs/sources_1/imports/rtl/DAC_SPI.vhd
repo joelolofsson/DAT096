@@ -20,15 +20,20 @@ architecture behavioral of DAC_SPI is
 	signal counter : integer range 0 to 5;
 	SIGNAL configBits: STD_LOGIC_VECTOR(7 DOWNTO 0); -- we might send too many
 	signal lastsampleclk : STD_LOGIC;
+	signal databuff : STD_LOGIC_VECTOR(15 DOWNTO 0);
 	
 begin
+
+--infere latches on input. Lock on input at sample clk, also look at spec for low power operation.
+	
 	
 	dataOut: process(rstn, Clk) begin
 		if rstn = '0' then
 		  din <= '0';   
 		  ready <= '1'; -- dataCounter-start by asking for data
 		  dataCounter <= 0;
-		  nsync <='1'; -- comunication not yet ready		  
+		  nsync <='1'; -- comunication not yet ready
+		  databuff <= (others => '0');		  
 		elsif rising_edge(Clk) then
 			lastsampleclk <= sampleclk;
 		  nSync <='0'; --setting to zero to indicate start of send
@@ -37,13 +42,14 @@ begin
 				din <= configBits (dataCounter);
 				dataCounter <= dataCounter + 1;  
 			elsif datacounter < 24 then
-				din <= data(23 - dataCounter);
+				din <= databuff(23 - dataCounter);
 				dataCounter <= dataCounter + 1; 
 			else
 				nSync <= '1'; --set nSync high for 1 clock, 40ns (minimum 33ns)
 				ready <= '1'; -- askfor new data, must be fixed due to 50Mhz system clock...
 				if (sampleclk = '1') and (lastsampleclk = '0') then
 					dataCounter <=0;
+					databuff <= data;
 				end if;
 			end if;
 		end if;

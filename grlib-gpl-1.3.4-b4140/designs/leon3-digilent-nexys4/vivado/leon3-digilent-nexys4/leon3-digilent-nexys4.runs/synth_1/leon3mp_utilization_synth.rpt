@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date         : Sun Apr 13 15:32:57 2014
+| Date         : Tue Apr 15 17:10:17 2014
 | Host         : xploited-W740SU running 64-bit Ubuntu 13.10
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
@@ -29,13 +29,13 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 11285 |     0 |     63400 | 17.79 |
-|   LUT as Logic             | 11250 |     0 |     63400 | 17.74 |
+| Slice LUTs*                | 11272 |     0 |     63400 | 17.77 |
+|   LUT as Logic             | 11237 |     0 |     63400 | 17.72 |
 |   LUT as Memory            |    35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    24 |     0 |           |       |
 |     LUT as Shift Register  |    11 |     0 |           |       |
-| Slice Registers            |  8697 |     0 |    126800 |  6.85 |
-|   Register as Flip Flop    |  8665 |     0 |    126800 |  6.83 |
+| Slice Registers            |  8713 |     0 |    126800 |  6.87 |
+|   Register as Flip Flop    |  8681 |     0 |    126800 |  6.84 |
 |   Register as Latch        |    32 |     0 |    126800 |  0.02 |
 | F7 Muxes                   |   847 |     0 |     31700 |  2.67 |
 | F8 Muxes                   |   313 |     0 |     15850 |  1.97 |
@@ -133,16 +133,16 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
-| LUT6      | 6329 |
-| FDCE      | 4286 |
+| LUT6      | 6314 |
+| FDCE      | 4302 |
 | FDRE      | 4258 |
 | LUT5      | 2907 |
-| LUT4      | 1440 |
-| LUT3      | 1030 |
+| LUT4      | 1443 |
+| LUT3      | 1031 |
 | MUXF7     |  847 |
-| LUT2      |  620 |
+| LUT2      |  619 |
 | MUXF8     |  313 |
-| LUT1      |  233 |
+| LUT1      |  234 |
 | CARRY4    |  221 |
 | FDSE      |  115 |
 | OBUF      |   58 |
