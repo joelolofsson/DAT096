@@ -12,7 +12,8 @@ entity dacTop is
 		sampleclk44khz : out STD_LOGIC;
 		sclk	:	out STD_LOGIC;
 		din	:	out std_logic;
-	 	nSync	:	out STD_LOGIC
+	 	nSync	:	out STD_LOGIC;
+		buffer_reset : in STD_logic
 	);
 end entity dacTop;
 
@@ -99,7 +100,7 @@ DACin <= not(sBuffOut(15)) & sBuffOut(14 downto 0);
 		clk		=> clk,
 		rst		=> rstn,
 		buffRead	=> readBuffer,
-		indexReset	=> '0',
+		indexReset	=> buffer_reset,
 		buffWrite	=> write,
 		buffIn		=> data,
 		buffOut 	=> sBuffOut,

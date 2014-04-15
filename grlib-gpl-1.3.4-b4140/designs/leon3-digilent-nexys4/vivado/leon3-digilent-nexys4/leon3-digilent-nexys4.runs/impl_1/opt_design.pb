@@ -27,7 +27,7 @@ Starting %s Task
 G
 Running DRC with %s threads
 24*drc2
-82default:defaultZ23-27
+22default:defaultZ23-27
 L
 DRC finished with %s
 272*project2
@@ -35,156 +35,44 @@ L
 [
 BPlease refer to the DRC report (report_drc) for more information.
 274*projectZ1-462
-ç
+â
 
 %s
-*constraints2v
-bTime (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1430.043 ; gain = 11.0272default:default
+*constraints2r
+^Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.552 . Memory (MB): peak = 748.141 ; gain = 1.9452default:default
 X
 
 Starting %s Task
 103*constraints2&
 Logic Optimization2default:defaultZ18-103
-<
-%Done setting XDC timing constraints.
-35*timingZ38-35
-/
-Deriving generated clocks
-2*timingZ38-2
-`
+{
 
 Phase %s%s
 101*constraints2
-1 2default:default2
-Retarget2default:defaultZ18-101
-C
-Pushed %s inverter(s).
-98*opt2
-02default:defaultZ31-138
-B
-Retargeted %s cell(s).
-49*opt2
-02default:defaultZ31-49
-3
-'Phase 1 Retarget | Checksum: 1557d1535
-*common
-á
-
-%s
-*constraints2p
-\Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1522.496 ; gain = 92.4532default:default
-l
-
-Phase %s%s
-101*constraints2
-2 2default:default2(
-Constant Propagation2default:defaultZ18-101
-C
-Pushed %s inverter(s).
-98*opt2
-02default:defaultZ31-138
-B
-Eliminated %s cells.
-10*opt2
-1722default:defaultZ31-10
-?
-3Phase 2 Constant Propagation | Checksum: 19870fd92
-*common
-á
-
-%s
-*constraints2p
-\Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1522.496 ; gain = 92.4532default:default
-]
-
-Phase %s%s
-101*constraints2
-3 2default:default2
-Sweep2default:defaultZ18-101
+1 2default:default27
+#Generate And Synthesize Debug Cores2default:defaultZ18-101
+U
+Implementing debug core %s...93*	chipscope2
+dbg_hub2default:defaultZ16-126
 N
- Eliminated %s unconnected nets.
-12*opt2
-17312default:defaultZ31-12
-N
-!Eliminated %s unconnected cells.
-11*opt2
-4732default:defaultZ31-11
-0
-$Phase 3 Sweep | Checksum: 2033423e5
+BPhase 1 Generate And Synthesize Debug Cores | Checksum: 28b71a1de
 *common
-á
+Ö
 
 %s
-*constraints2p
-\Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1522.496 ; gain = 92.4532default:default
-A
-5Ending Logic Optimization Task | Checksum: 2033423e5
-*common
-á
-
-%s
-*constraints2p
-\Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1522.496 ; gain = 92.4532default:default
-8
-,Implement Debug Cores | Checksum: 1f2f32d95
-*common
+*constraints2n
+ZTime (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 748.141 ; gain = 0.0002default:default
 5
-)Logic Optimization | Checksum: 1f2f32d95
+)Logic Optimization | Checksum: 28b71a1de
 *common
-X
-
-Starting %s Task
-103*constraints2&
-Power Optimization2default:defaultZ18-103
-[
-
-Starting %s Task
-103*constraints2)
-PowerOpt TimerUpdates2default:defaultZ18-103
-<
-%Done setting XDC timing constraints.
-35*timingZ38-35
-D
-8Ending PowerOpt TimerUpdates Task | Checksum: 2033423e5
-*common
-â
-
-%s
-*constraints2r
-^Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.96 . Memory (MB): peak = 1526.496 ; gain = 4.0002default:default
-4
-Applying IDT optimizations ...
-9*pwroptZ34-9
-6
-Applying ODC optimizations ...
-10*pwroptZ34-10
-
-
-*pwropt
-Ú
-©WRITE_MODE attribute of %s BRAM(s) out of a total of %s was updated to NO_CHANGE to save power.
-    Run report_power_opt to get a complete listing of the BRAMs updated.
-129*pwropt2
-72default:default2
-252default:defaultZ34-162
-[
-+Structural ODC has moved %s WE to EN ports
-155*pwropt2
-22default:defaultZ34-201
-†
-CNumber of BRAM Ports augmented: %s newly gated: %s Total Ports: %s
-65*pwropt2
-02default:default2
-22default:default2
-502default:defaultZ34-65
 A
-5Ending Power Optimization Task | Checksum: 1c9069e0d
+5Ending Logic Optimization Task | Checksum: 28b71a1de
 *common
-à
+Ö
 
 %s
-*constraints2q
-]Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1674.520 ; gain = 152.0232default:default
+*constraints2n
+ZTime (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 748.141 ; gain = 0.0002default:default
 Q
 Releasing license: %s
 83*common2"
@@ -192,43 +80,27 @@ Q
 Ω
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-282default:default2
+162default:default2
 02default:default2
 02default:default2
 02default:defaultZ4-41
-S
-%s completed successfully
-29*	vivadotcl2
+C
 
-opt_design2default:defaultZ4-42
-˚
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2 
-opt_design: 2default:default2
-00:00:122default:default2
-00:00:112default:default2
-1674.5202default:default2
-255.5042default:defaultZ17-268
-<
-%Done setting XDC timing constraints.
-35*timingZ38-35
-4
-Writing XDEF routing.
-211*designutilsZ20-211
-A
-#Writing XDEF routing logical nets.
-209*designutilsZ20-209
-A
-#Writing XDEF routing special nets.
-210*designutilsZ20-210
-à
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2)
-Write XDEF Complete: 2default:default2
-00:00:00.242default:default2
-00:00:00.242default:default2
-1674.5232default:default2
-0.0002default:defaultZ17-268
-
+%s failed
+30*	vivadotcl2
 
-End Record
+opt_design2default:defaultZ4-43
+œ
+&Implementing debug core %s failed.
+%s
+90*	chipscope2
+dbg_hub2default:default2Ó
+ŸERROR: [Chipscope 16-133] Failed to generate and synthesize debug IP "xilinx.com:ip:labtools_xsdb_master_lib:2.0".
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: c:/CHALMERS/DAT096/softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-4852-MININT-VV401LP/dbg_hub_CV_1/dbg_hub_CV.srcs/sources_1/ip/dbg_hub_CV/blk_mem_gen_v8_0/blk_mem_gen_v8_0_synth_comp.vhd
+
+2default:defaultZ16-119
+w
+Exiting %s at %s...
+206*common2
+Vivado2default:default2,
+Tue Apr 15 17:48:06 20142default:defaultZ17-206
