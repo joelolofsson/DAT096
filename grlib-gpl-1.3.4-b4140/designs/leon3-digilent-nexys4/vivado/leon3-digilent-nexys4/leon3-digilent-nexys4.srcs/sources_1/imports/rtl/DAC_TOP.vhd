@@ -13,7 +13,11 @@ entity dacTop is
 		sclk	:	out STD_LOGIC;
 		din	:	out std_logic;
 	 	nSync	:	out STD_LOGIC;
+<<<<<<< HEAD
 		buffer_reset : in STD_logic
+=======
+	 	index_reset : in std_logic
+>>>>>>> 6f9fe6d9066b8ccd93e03fc826da489bb3245bc7
 	);
 end entity dacTop;
 
@@ -100,7 +104,11 @@ DACin <= not(sBuffOut(15)) & sBuffOut(14 downto 0);
 		clk		=> clk,
 		rst		=> rstn,
 		buffRead	=> readBuffer,
+<<<<<<< HEAD
 		indexReset	=> buffer_reset,
+=======
+		indexReset	=> index_reset,
+>>>>>>> 6f9fe6d9066b8ccd93e03fc826da489bb3245bc7
 		buffWrite	=> write,
 		buffIn		=> data,
 		buffOut 	=> sBuffOut,

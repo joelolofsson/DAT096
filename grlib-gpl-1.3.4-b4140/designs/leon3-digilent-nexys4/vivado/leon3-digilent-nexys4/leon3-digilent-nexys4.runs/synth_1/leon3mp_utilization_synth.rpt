@@ -1,8 +1,14 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
 | Date         : Tue Apr 15 17:41:42 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+=======
+| Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+| Date         : Tue Apr 15 17:10:17 2014
+| Host         : xploited-W740SU running 64-bit Ubuntu 13.10
+>>>>>>> 6f9fe6d9066b8ccd93e03fc826da489bb3245bc7
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
 | Device       : xc7a100t
@@ -29,6 +35,7 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
+<<<<<<< HEAD
 | Slice LUTs*                | 12444 |     0 |     63400 | 19.62 |
 |   LUT as Logic             | 12313 |     0 |     63400 | 19.42 |
 |   LUT as Memory            |   131 |     0 |     19000 |  0.68 |
@@ -36,6 +43,15 @@ Table of Contents
 |     LUT as Shift Register  |   107 |     0 |           |       |
 | Slice Registers            |  9576 |     0 |    126800 |  7.55 |
 |   Register as Flip Flop    |  9544 |     0 |    126800 |  7.52 |
+=======
+| Slice LUTs*                | 11272 |     0 |     63400 | 17.77 |
+|   LUT as Logic             | 11237 |     0 |     63400 | 17.72 |
+|   LUT as Memory            |    35 |     0 |     19000 |  0.18 |
+|     LUT as Distributed RAM |    24 |     0 |           |       |
+|     LUT as Shift Register  |    11 |     0 |           |       |
+| Slice Registers            |  8713 |     0 |    126800 |  6.87 |
+|   Register as Flip Flop    |  8681 |     0 |    126800 |  6.84 |
+>>>>>>> 6f9fe6d9066b8ccd93e03fc826da489bb3245bc7
 |   Register as Latch        |    32 |     0 |    126800 |  0.02 |
 | F7 Muxes                   |   831 |     0 |     31700 |  2.62 |
 | F8 Muxes                   |   305 |     0 |     15850 |  1.92 |
@@ -133,6 +149,7 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
+<<<<<<< HEAD
 | LUT6      | 7152 |
 | FDRE      | 5120 |
 | FDCE      | 4302 |
@@ -148,6 +165,21 @@ Table of Contents
 | SRL16E    |   81 |
 | SRLC32E   |   68 |
 | OBUF      |   57 |
+=======
+| LUT6      | 6314 |
+| FDCE      | 4302 |
+| FDRE      | 4258 |
+| LUT5      | 2907 |
+| LUT4      | 1443 |
+| LUT3      | 1031 |
+| MUXF7     |  847 |
+| LUT2      |  619 |
+| MUXF8     |  313 |
+| LUT1      |  234 |
+| CARRY4    |  221 |
+| FDSE      |  115 |
+| OBUF      |   58 |
+>>>>>>> 6f9fe6d9066b8ccd93e03fc826da489bb3245bc7
 | RAMD32    |   36 |
 | LDCE      |   32 |
 | IBUF      |   22 |

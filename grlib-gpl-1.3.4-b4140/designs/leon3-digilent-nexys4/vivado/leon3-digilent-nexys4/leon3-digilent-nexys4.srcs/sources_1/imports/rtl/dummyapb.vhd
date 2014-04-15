@@ -56,7 +56,8 @@ component DacTop
 		write	:	in STD_LOGIC;
 		sclk	:	out STD_LOGIC;
 		din	:	out std_logic;
-	 	nSync	:	out STD_LOGIC
+	 	nSync	:	out STD_LOGIC;
+	 	index_reset : in std_logic
 	);
 end component;
 -- APB related signals
@@ -87,12 +88,14 @@ port map (
    sampleclk44kHz => sampleEna44kHz, 
    sclk     => spiSclk,
    din      => spiDin,
-   nSync    => spiNSync
+   nSync    => spiNSync,
+   index_reset => buffer_interupt
+   
     );
 
 inst_ADC_TOP : ADC_TOP 
 port map (
-    clk => clk100, --this was clk
+    clk => clk, --this was clk
     rst => rstn,
     sampleclk => sampleclk,
     vauxp3 => vauxp3,
@@ -136,12 +139,12 @@ debugvector(7 downto 4) <= addr(6 downto 3);
             dac_buff_write <= '0';
              
              -- if ADC selected then drive the outputs to read value
-             if apbi.paddr(9)= '0' then
+             if apbi.paddr(11 downto 9) = "100" then 
                  apbo.prdata(15 downto 0) <= sampledvalue; 
                  apbo.prdata(31 downto 16) <= (others => (sampledvalue(15))); --saturating for sign
                               
              --if the DAC is selected and there is a pending write with correct psel
-             elsif apbi.paddr(9) = '1' then               
+             elsif apbi.paddr(11 downto 9) = "101" then               
                 if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
                     sLED <= apbi.pwdata; --written value should go to DAC
                     dac_buff_write <= '1';

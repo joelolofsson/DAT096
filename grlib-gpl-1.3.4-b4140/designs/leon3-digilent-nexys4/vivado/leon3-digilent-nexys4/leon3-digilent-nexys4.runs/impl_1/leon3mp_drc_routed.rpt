@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
-| Date         : Sun Apr 13 15:35:11 2014
+| Date         : Tue Apr 15 17:12:43 2014
 | Host         : xploited-W740SU running 64-bit Ubuntu 13.10
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -288,17 +288,17 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Physical design rule  
-Net adderahb_if/n_1_n_0_11423_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_11423_BUFG_inst_i_1/O, cell adderahb_if/n_0_11423_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net adderahb_if/n_1_n_0_11427_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_11427_BUFG_inst_i_1/O, cell adderahb_if/n_0_11427_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT adderahb_if/n_0_11423_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
-    adderahb_if/hrdata_reg[1] {LDCE}
-    adderahb_if/hrdata_reg[2] {LDCE}
-    adderahb_if/hrdata_reg[3] {LDCE}
-    adderahb_if/hrdata_reg[4] {LDCE}
+A LUT adderahb_if/n_0_11427_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
     adderahb_if/hrdata_reg[5] {LDCE}
+    adderahb_if/hrdata_reg[6] {LDCE}
+    adderahb_if/hrdata_reg[7] {LDCE}
+    adderahb_if/hrdata_reg[8] {LDCE}
+    adderahb_if/hrdata_reg[9] {LDCE}
 
 Related violations: <none>
 
