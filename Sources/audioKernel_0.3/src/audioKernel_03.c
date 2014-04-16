@@ -15,9 +15,6 @@
 #define DAC_adr 0x80000A00
 #define buffSize 128 //the generic for the audio buffer.
 
-//variables for measuring execution time
-time_t start, end;
-
 int32_t input;
 int16_t audioBuffer[buffSize];
 int16_t *samples;
@@ -36,52 +33,23 @@ biquad highs;
 
 void adcHandler(){
 	int i;
-	int j;
 
-	//printf("IRQ ok");
-
-	//Triangle wave
-	for(i=0; i<buffSize;i++){
-		if(i < 64){
-			*(volatile int*)(DAC_adr+(i*4)) = 1000*i;
-			for(j=0;j<3;j++);
-		}else{
-			*(volatile int*)((DAC_adr+(i*4))) = 1000*(i-63);
-		}
-	}
-
-
-/*
-	/*output loop
-	 * We havent observed any improvement of the signal introducing delays and doubble readings here...
 	i = 0;
 	while(i < buffSize){
-		input = (int32_t)(audioBuffer[i]);// + (32768)
+		input = (audioBuffer[i]);
 		*(volatile int*)(DAC_adr+(i*4)) = input;
-		i++;
-	}
-
-
-	/*Reading twice and introducing a delay makes our readings less glitchy.
-	 *  is there anything else we should do in software?
-	i =0;
-	while(i <  buffSize){
 		input = *(volatile int*)(ADC_adr+(i*4));
 		input = *(volatile int*)(ADC_adr+(i*4));
-
-		for(j=0;j < 3 ;j++);
-
-		input = (input);
 		audioBuffer[i] = (int16_t)input ;
 		i++;
 	}
-*/
+
 
 	//////////////////////////////////////////////////////////
 
 
 	//EQ processing
-	//filter(&lows, samples,buffSize);
+	filter(&lows, samples,buffSize);
 	//filter(&mids, samples,buffSize);
 	//filter(&highs,samples,buffSize);
 
@@ -91,13 +59,12 @@ void adcHandler(){
 
 
 	//delay processing
-	//delay(samples, buffSize, 32, 127, 127);
+	//delay(samples, buffSize, 127, 127, 127);
 
 	//////////////////////////////////////////////////////////
 
 
 }
-
 
 int main(void){
 
@@ -110,9 +77,9 @@ delayArrayPtr = delayArray;
 delayInitialize(40000, delayArrayPtr);
 
 //EQ
-//filterCoefficients(&lows, -1.0f, 44100, 300, 0.7f, BASS);
-//filterCoefficients(&mids, 1.00f, 44100, 8000, 0.7f, TREBLE);
-//filterCoefficients(&highs, 1.00f, 44100, 1000, 0.7f , PEAK);
+filterCoefficients(&lows, 0.00f, 44100, 300, 0.7f, BASS);
+filterCoefficients(&mids, 0.00f, 44100, 8000, 0.7f, TREBLE);
+filterCoefficients(&highs, 0.00f, 44100, 1000, 0.7f , PEAK);
 
 //Installing interrupt
 catch_interrupt(adcHandler, 10);

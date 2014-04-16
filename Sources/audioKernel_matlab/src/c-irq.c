@@ -9,13 +9,12 @@
 #define ADC_adr 0x80000800
 #define DAC_adr 0x80000A00
 #define IRQ_reg 0x80000000
-#define buffers 10000
+#define buffers 100
 
 int *lreg = (int *) IRQ_reg; //seems to be close to
 int32_t input;
 int16_t ioBuffer[buffers*buffSize];
-
-int derp;
+int32_t *comPointer;
 
 #define ILR 0x200
 #define ICLEAR 0x20c
@@ -45,25 +44,16 @@ void irqhandler(int irq){
 
 //This function is called whenever an interrupt is triggered by the ADC, in this version it fills a buffer of size buffSize
 void adcHandler(){
-	//input loop
-
-	int j;
 	int i=0;
 	while(i <  buffSize){
-		input = *(volatile int*)(ADC_adr);//+(i*4));
-		for(j=0;j < 6 ;j++);
-		input = *(volatile int*)(ADC_adr);//+(i*4));
-
-
-
-		//input = (input - 32768);
+		input = *(volatile int*)(ADC_adr+(i*4));
+		input = *(volatile int*)(ADC_adr+(i*4));
 		ioBuffer[i+(iter*buffSize)] = (int16_t)(input);
 		i++;
 	}
 
 	iter++;
 	if(iter == buffers){
-
 		disable_irq(10);
 
 		int d;
@@ -71,19 +61,6 @@ void adcHandler(){
 			printf(" %d,", ioBuffer[d]);
 		exit = 0;
 	}
-
-	/*
-
-	i = 0;
-	while(i < buffSize){
-		*(volatile int*)(DAC_adr+(i*4)) = (int)(ioBuffer[i+(iter*128)]);
-		i++;
-	}
-	*/
-
-
-
-
 
 }
 
