@@ -1,0 +1,71 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Feb 28 16:47:18 2014
+
+drc -z leon3mp_routed.ncd leon3mp.pcf
+
+WARNING:PhysDesignRules:367 - The signal <btn(0)_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <btn(1)_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <btn(2)_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <btn(3)_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <btn(4)_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+INFO:PhysDesignRules:2288 - The read port and write port clocks of BRAM
+   instance, eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a9.x[0].r0, are using
+   the same clock signal (synchronous clocking) with WRITE_FIRST mode specified.
+   This configuration may encounter address collisions if the same address
+   appears on both ports. It is suggested for this configuration to use
+   READ_FIRST mode to avoid any conditions for address collision. See the FPGA
+   Memory Resources User Guide for additional information.
+INFO:PhysDesignRules:2288 - The read port and write port clocks of BRAM
+   instance, eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a9.x[0].r0, are using
+   the same clock signal (synchronous clocking) with WRITE_FIRST mode specified.
+   This configuration may encounter address collisions if the same address
+   appears on both ports. It is suggested for this configuration to use
+   READ_FIRST mode to avoid any conditions for address collision. See the FPGA
+   Memory Resources User Guide for additional information.
+INFO:PhysDesignRules:2288 - The read port and write port clocks of BRAM
+   instance,
+   leon3gen.cpu[0].u0/leon3x0/rf0/s1.rhu/s1.dp.x1/xc2v.x0/a6.x0/a9.x[0].r0, are
+   using the same clock signal (synchronous clocking) with WRITE_FIRST mode
+   specified. This configuration may encounter address collisions if the same
+   address appears on both ports. It is suggested for this configuration to use
+   READ_FIRST mode to avoid any conditions for address collision. See the FPGA
+   Memory Resources User Guide for additional information.
+INFO:PhysDesignRules:2288 - The read port and write port clocks of BRAM
+   instance,
+   leon3gen.cpu[0].u0/leon3x0/rf0/s1.rhu/s1.dp.x0/xc2v.x0/a6.x0/a9.x[0].r0, are
+   using the same clock signal (synchronous clocking) with WRITE_FIRST mode
+   specified. This configuration may encounter address collisions if the same
+   address appears on both ports. It is suggested for this configuration to use
+   READ_FIRST mode to avoid any conditions for address collision. See the FPGA
+   Memory Resources User Guide for additional information.
+INFO:PhysDesignRules:2288 - The read port and write port clocks of BRAM
+   instance, eth0.e1/m100.u0/nft.tx_fifo0/xc2v.x0/a6.x0/a9.x[0].r0, are using
+   the same clock signal (synchronous clocking) with WRITE_FIRST mode specified.
+   This configuration may encounter address collisions if the same address
+   appears on both ports. It is suggested for this configuration to use
+   READ_FIRST mode to avoid any conditions for address collision. See the FPGA
+   Memory Resources User Guide for additional information.
+DRC detected 0 errors and 10 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

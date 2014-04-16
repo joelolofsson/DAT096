@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="DMC" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DMC">
+    <Config>
+      <Option Name="TopModule" Val="DMC"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/../../IP"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+</DARoots>

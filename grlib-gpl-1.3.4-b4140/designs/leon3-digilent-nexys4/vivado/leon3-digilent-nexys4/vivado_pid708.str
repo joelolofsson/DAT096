@@ -1,0 +1,136 @@
+/*
+
+Vivado v2013.4
+SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+Process ID: 708
+
+Current time: 	4/16/14 9:01:12 AM
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 7
+Version: 6.1
+Architecture: x86
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.7.0_40 32-bit
+Java home: 	C:/Xilinx/Vivado/2013.4/tps/win32/jre
+
+User name: 	Administratör
+User directory: C:/Users/Administratör/Desktop/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4
+User country: 	SE
+User language: 	sv
+User locale: 	sv_SE
+
+GUI Allocated memory:	135 mb
+GUI Max memory:		227 mb
+Engine Allocated memory: 456 mb
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// cb:I (bT:JFrame):  Opening project 'C:\Users\Administratör\Desktop\leon3-digilent-nexys4\vivado\leon3-digilent-nexys4\leon3-digilent-nexys4.xpr' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project {C:\Users\Administratör\Desktop\leon3-digilent-nexys4\vivado\leon3-digilent-nexys4\leon3-digilent-nexys4.xpr} 
+// Tcl Message: INFO: [Project 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Administratör/Desktop/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4' 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 9:01:14 AM
+// [GUI Memory]: 45 mb (+44449kb) [00:00:20]
+// [Engine Memory]: 488 mb (+359918kb) [00:00:20]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 61 mb (+17143kb) [00:00:25]
+// [Engine Memory]: 498 mb (+10362kb) [00:00:25]
+// [GUI Memory]: 91 mb (+31502kb) [00:00:28]
+// [Engine Memory]: 525 mb (+29011kb) [00:00:28]
+// [GUI Memory]: 99 mb (+8588kb) [00:00:28]
+// [Engine Memory]: 528 mb (+3043kb) [00:00:28]
+// [Engine Memory]: 537 mb (+8896kb) [00:00:28]
+// [Engine Memory]: 557 mb (+21569kb) [00:00:30]
+// [Engine Memory]: 562 mb (+5115kb) [00:00:32]
+// [GUI Memory]: 101 mb (+1914kb) [00:00:33]
+// [GUI Memory]: 103 mb (+2203kb) [00:00:33]
+// [GUI Memory]: 105 mb (+2200kb) [00:00:33]
+// [GUI Memory]: 107 mb (+1466kb) [00:00:33]
+// [GUI Memory]: 109 mb (+2199kb) [00:00:33]
+// [Engine Memory]: 563 mb (+1052kb) [00:00:34]
+// Tcl Message: open_project {C:\Users\Administratör\Desktop\leon3-digilent-nexys4\vivado\leon3-digilent-nexys4\leon3-digilent-nexys4.xpr} 
+// Tcl Message: INFO: [Common 17-14] Message 'Project 1-311' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2013.4/data/ip'. 
+// [Engine Memory]: 563 mb (+323kb) [00:00:35]
+// [Engine Memory]: 565 mb (+1818kb) [00:00:35]
+// [Engine Memory]: 567 mb (+1789kb) [00:00:37]
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:19 . Memory (MB): peak = 680.430 ; gain = 112.793 
+// a:a (bT:JFrame): Critical Messages: addNotify
+// TclEventType: STOP_PROGRESS_DIALOG
+// [GUI Memory]: 114 mb (+5205kb) [00:00:38]
+// [GUI Memory]: 117 mb (+2873kb) [00:00:38]
+dismissDialog ("Opening project 'C:\\Users\\Administratör\\Desktop\\leon3-digilent-nexys4\\vivado\\leon3-digilent-nexys4\\leon3-digilent-nexys4.xpr'"); // cb:I (bT:JFrame)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 143 mb (+28142kb) [00:00:45]
+// [Engine Memory]: 570 mb (+3211kb) [00:00:45]
+// [Engine Memory]: 574 mb (+4734kb) [00:00:45]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 577 mb (+3186kb) [00:00:46]
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 580 mb (+3117kb) [00:00:48]
+// [Engine Memory]: 584 mb (+3801kb) [00:00:49]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 9:01:45 AM
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 584 mb (+86kb) [00:00:50]
+// [Engine Memory]: 585 mb (+417kb) [00:00:51]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 585 mb (+380kb) [00:00:51]
+// Tcl Message: update_compile_order -fileset sim_leon3-digilent-nexys4 
+// [Engine Memory]: 586 mb (+1052kb) [00:00:53]
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 586 mb (+20kb) [00:00:54]
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 587 mb (+630kb) [00:00:55]
+// Elapsed time: 29 seconds
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, a:a)
+selectButton (PAResourceAtoH.FileSetPanel_0_CRITICAL_WARNING, "701 critical warnings"); // h:j (CommandBar:DockableBar, bT:JFrame)
+// [Engine Memory]: 587 mb (+970kb) [00:01:11]
+// [Engine Memory]: 596 mb (+8474kb) [00:01:12]
+// [Engine Memory]: 597 mb (+1953kb) [00:01:15]
+// J:X (bT:JFrame): Can not show file: addNotify
+selectButton (PAResourceItoP.OpenFileAction_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, J:X)
+dismissDialog ("Can not show file"); // J:X (bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd)]", 2); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), ethpads.erxer_pad - inpad]", 31); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), ethpads.erxer_pad - inpad]", 31); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), ethpads.erxer_pad - inpad]", 31, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), ethpads.erxer_pad - inpad]", 31); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), ethpads.erxer_pad - inpad]", 31, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), ethpads.erxer_pad - inpad]", 31, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenu (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu (PAResourceQtoZ.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu (PAResourceQtoZ.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+// [GUI Memory]: 147 mb (+3390kb) [00:01:44]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), ethpads.erxcr_pad - inpad]", 32); // o:f (u:JPanel, bT:JFrame)
+// [GUI Memory]: 153 mb (+7118kb) [00:02:00]
