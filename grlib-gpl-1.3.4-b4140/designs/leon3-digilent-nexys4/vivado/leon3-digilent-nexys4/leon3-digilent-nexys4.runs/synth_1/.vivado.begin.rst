@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-<<<<<<< HEAD
-    <Process Command="vivado.bat" Owner="Administratör" Host="MININT-VV401LP" Pid="7832">
-=======
-    <Process Command="vivado" Owner="xploited" Host="" Pid="15412">
->>>>>>> 6f9fe6d9066b8ccd93e03fc826da489bb3245bc7
-    </Process>
-</ProcessHandle>
