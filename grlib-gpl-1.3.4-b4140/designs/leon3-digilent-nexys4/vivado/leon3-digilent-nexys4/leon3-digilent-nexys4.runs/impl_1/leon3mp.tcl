@@ -50,12 +50,12 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param gui.test TreeTableDev
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir {C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.data/wt} [current_project]
-  set_property parent.project_dir {C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4} [current_project]
-  add_files {{C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/leon3mp.dcp}}
-  add_files {{C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp}}
-  add_files {{C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp}}
-  read_xdc {{C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc}}
+  set_property webtalk.parent_dir {/home/xploited/Desktop/Working directory softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.data/wt} [current_project]
+  set_property parent.project_dir {/home/xploited/Desktop/Working directory softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4} [current_project]
+  add_files {{/home/xploited/Desktop/Working directory softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/leon3mp.dcp}}
+  add_files {{/home/xploited/Desktop/Working directory softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp}}
+  add_files {{/home/xploited/Desktop/Working directory softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp}}
+  read_xdc {{/home/xploited/Desktop/Working directory softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc}}
   link_design -top leon3mp -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -115,5 +115,18 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+}
+
+start_step write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  write_bitstream -force leon3mp.bit 
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
 }
 

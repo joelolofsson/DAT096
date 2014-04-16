@@ -1124,6 +1124,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ADC_buffer_const.vhd">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/Throughput_top.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd"/>

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc} rfile:../../../leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{/home/xploited/Desktop/Working directory softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc} rfile:../../../leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]

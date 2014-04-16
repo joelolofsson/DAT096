@@ -1,8 +1,8 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Thu Apr 10 18:00:00 2014
-| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2013.4 (lin64) Build 353583 Mon Dec  9 17:26:26 MST 2013
+| Date         : Tue Apr 15 17:10:17 2014
+| Host         : xploited-W740SU running 64-bit Ubuntu 13.10
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
 | Device       : xc7a100t
@@ -29,14 +29,14 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 11265 |     0 |     63400 | 17.76 |
-|   LUT as Logic             | 11230 |     0 |     63400 | 17.71 |
+| Slice LUTs*                | 11272 |     0 |     63400 | 17.77 |
+|   LUT as Logic             | 11237 |     0 |     63400 | 17.72 |
 |   LUT as Memory            |    35 |     0 |     19000 |  0.18 |
 |     LUT as Distributed RAM |    24 |     0 |           |       |
 |     LUT as Shift Register  |    11 |     0 |           |       |
-| Slice Registers            |  8696 |     0 |    126800 |  6.85 |
-|   Register as Flip Flop    |  8648 |     0 |    126800 |  6.82 |
-|   Register as Latch        |    48 |     0 |    126800 |  0.03 |
+| Slice Registers            |  8713 |     0 |    126800 |  6.87 |
+|   Register as Flip Flop    |  8681 |     0 |    126800 |  6.84 |
+|   Register as Latch        |    32 |     0 |    126800 |  0.02 |
 | F7 Muxes                   |   847 |     0 |     31700 |  2.67 |
 | F8 Muxes                   |   313 |     0 |     15850 |  1.97 |
 +----------------------------+-------+-------+-----------+-------+
@@ -133,21 +133,21 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
-| LUT6      | 6315 |
-| FDRE      | 4265 |
-| FDCE      | 4262 |
-| LUT5      | 2924 |
-| LUT4      | 1423 |
+| LUT6      | 6314 |
+| FDCE      | 4302 |
+| FDRE      | 4258 |
+| LUT5      | 2907 |
+| LUT4      | 1443 |
 | LUT3      | 1031 |
 | MUXF7     |  847 |
-| LUT2      |  614 |
+| LUT2      |  619 |
 | MUXF8     |  313 |
-| LUT1      |  233 |
+| LUT1      |  234 |
 | CARRY4    |  221 |
 | FDSE      |  115 |
 | OBUF      |   58 |
-| LDCE      |   48 |
 | RAMD32    |   36 |
+| LDCE      |   32 |
 | IBUF      |   23 |
 | OBUFT     |   17 |
 | RAMB36E1  |   13 |

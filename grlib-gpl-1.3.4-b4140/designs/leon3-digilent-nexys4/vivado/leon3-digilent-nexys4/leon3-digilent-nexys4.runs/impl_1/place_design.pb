@@ -20,7 +20,7 @@ g
 G
 Running DRC with %s threads
 24*drc2
-22default:defaultZ23-27
+82default:defaultZ23-27
 M
 DRC finished with %s
 79*	vivadotcl2
@@ -35,7 +35,7 @@ Starting %s Task
 Placer2default:defaultZ18-103
 t
 BMultithreading enabled for place_design using a maximum of %s CPUs12*	placeflow2
-22default:defaultZ30-611
+42default:defaultZ30-611
 m
 
 Phase %s%s
@@ -48,13 +48,13 @@ Phase %s%s
 101*constraints2
 1.1 2default:default2.
 Placer Initialization Core2default:defaultZ18-101
-Š
+
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2.
-Netlist sorting complete. 2default:default2
-00:00:002default:default2 
-00:00:00.0512default:default2
-892.0902default:default2
+Netlist sorting complete. 2default:default2
+00:00:00.022default:default2
+00:00:00.022default:default2
+1674.5312default:default2
 0.0002default:defaultZ17-268
 x
 
@@ -72,22 +72,22 @@ C
 Pushed %s inverter(s).
 98*opt2
 02default:defaultZ31-138
-Š
+
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2.
-Netlist sorting complete. 2default:default2
-00:00:002default:default2 
-00:00:00.0592default:default2
-892.0902default:default2
+Netlist sorting complete. 2default:default2
+00:00:00.032default:default2
+00:00:00.032default:default2
+1674.5312default:default2
 0.0002default:defaultZ17-268
 K
 ?Phase 1.1.1 Mandatory Logic Optimization | Checksum: 13306ec1f
 *common
-…
+Œ
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2u
+aTime (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.64 . Memory (MB): peak = 1674.531 ; gain = 0.0002default:default
 ƒ
 
 Phase %s%s
@@ -97,11 +97,11 @@ Phase %s%s
 V
 JPhase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 13306ec1f
 *common
-…
+Œ
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2u
+aTime (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.66 . Memory (MB): peak = 1674.531 ; gain = 0.0002default:default
 k
 
 Phase %s%s
@@ -111,11 +111,11 @@ Phase %s%s
 >
 2Phase 1.1.3 Add Constraints | Checksum: 13306ec1f
 *common
-…
+Œ
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2u
+aTime (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.66 . Memory (MB): peak = 1674.531 ; gain = 0.0002default:default
 h
 
 Phase %s%s
@@ -123,13 +123,13 @@ Phase %s%s
 1.1.4 2default:default2 
 Build Macros2default:defaultZ18-101
 ;
-/Phase 1.1.4 Build Macros | Checksum: 1aba03305
+/Phase 1.1.4 Build Macros | Checksum: 188ca8ed8
 *common
-…
+†
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2o
+[Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1674.531 ; gain = 0.0002default:default
 |
 
 Phase %s%s
@@ -146,36 +146,25 @@ Phase %s%s
 jb[5]:'  '"
 jb[6]:'  '"
 jb[7]:' 2default:default8Z30-87
-ô
-„A LUT '%s' is driving clock pin of %s registers. This could lead to large hold time violations. First few involved registers are:
-%s524*place2)
-apb0/sLED_reg[15]_i_12default:default2
-162default:default2‘
-}	io0/sLED_reg[14] {LDCE}
-	io0/sLED_reg[13] {LDCE}
-	io0/sLED_reg[12] {LDCE}
-	io0/sLED_reg[11] {LDCE}
-	io0/sLED_reg[10] {LDCE}
-2default:defaultZ30-568
-µ
+°
 „A LUT '%s' is driving clock pin of %s registers. This could lead to large hold time violations. First few involved registers are:
 %s524*place27
-#adderahb_if/n_0_11420_BUFG_inst_i_12default:default2
-322default:default2Ä
-¯	adderahb_if/hrdata_reg[30] {LDCE}
-	adderahb_if/hrdata_reg[29] {LDCE}
-	adderahb_if/hrdata_reg[28] {LDCE}
-	adderahb_if/hrdata_reg[27] {LDCE}
-	adderahb_if/hrdata_reg[26] {LDCE}
+#adderahb_if/n_0_11427_BUFG_inst_i_12default:default2
+322default:default2¿
+ª	adderahb_if/hrdata_reg[5] {LDCE}
+	adderahb_if/hrdata_reg[6] {LDCE}
+	adderahb_if/hrdata_reg[7] {LDCE}
+	adderahb_if/hrdata_reg[8] {LDCE}
+	adderahb_if/hrdata_reg[9] {LDCE}
 2default:defaultZ30-568
 O
-CPhase 1.1.5 Implementation Feasibility check | Checksum: 1aba03305
+CPhase 1.1.5 Implementation Feasibility check | Checksum: 188ca8ed8
 *common
-…
+†
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2o
+[Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1674.531 ; gain = 0.0002default:default
 k
 
 Phase %s%s
@@ -183,13 +172,13 @@ Phase %s%s
 1.1.6 2default:default2#
 Pre-Place Cells2default:defaultZ18-101
 >
-2Phase 1.1.6 Pre-Place Cells | Checksum: 1aba03305
+2Phase 1.1.6 Pre-Place Cells | Checksum: 188ca8ed8
 *common
-…
+†
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2o
+[Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1674.531 ; gain = 0.0002default:default
 Ž
 
 Phase %s%s
@@ -197,13 +186,13 @@ Phase %s%s
 1.1.7 2default:default2F
 2IO Placement/ Clock Placement/ Build Placer Device2default:defaultZ18-101
 a
-UPhase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 15cf1485e
+UPhase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1b998f658
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 v
 
 Phase %s%s
@@ -224,29 +213,29 @@ Phase %s%s
 1.1.8.1.1 2default:default2$
 Build Clock Data2default:defaultZ18-101
 C
-7Phase 1.1.8.1.1 Build Clock Data | Checksum: 20af961d7
+7Phase 1.1.8.1.1 Build Clock Data | Checksum: 26b4a96d4
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 B
-6Phase 1.1.8.1 Place Init Design | Checksum: 24945485f
+6Phase 1.1.8.1 Place Init Design | Checksum: 28ce7c39f
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 I
-=Phase 1.1.8 Build Placer Netlist Model | Checksum: 24945485f
+=Phase 1.1.8 Build Placer Netlist Model | Checksum: 28ce7c39f
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 s
 
 Phase %s%s
@@ -260,37 +249,37 @@ Phase %s%s
 1.1.9.1 2default:default24
  Constrain Global/Regional Clocks2default:defaultZ18-101
 Q
-EPhase 1.1.9.1 Constrain Global/Regional Clocks | Checksum: 1e33e00d8
+EPhase 1.1.9.1 Constrain Global/Regional Clocks | Checksum: 226e07c18
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 F
-:Phase 1.1.9 Constrain Clocks/Macros | Checksum: 1e33e00d8
+:Phase 1.1.9 Constrain Clocks/Macros | Checksum: 226e07c18
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 G
-;Phase 1.1 Placer Initialization Core | Checksum: 1e33e00d8
+;Phase 1.1 Placer Initialization Core | Checksum: 226e07c18
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 @
-4Phase 1 Placer Initialization | Checksum: 1e33e00d8
+4Phase 1 Placer Initialization | Checksum: 226e07c18
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 h
 
 Phase %s%s
@@ -298,13 +287,13 @@ Phase %s%s
 2 2default:default2$
 Global Placement2default:defaultZ18-101
 ;
-/Phase 2 Global Placement | Checksum: 1efe9ad60
+/Phase 2 Global Placement | Checksum: 1590ae641
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:05 ; elapsed = 00:01:32 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 h
 
 Phase %s%s
@@ -318,13 +307,13 @@ Phase %s%s
 3.1 2default:default2.
 Commit Multi Column Macros2default:defaultZ18-101
 G
-;Phase 3.1 Commit Multi Column Macros | Checksum: 1efe9ad60
+;Phase 3.1 Commit Multi Column Macros | Checksum: 1590ae641
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:05 ; elapsed = 00:01:32 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 v
 
 Phase %s%s
@@ -332,13 +321,13 @@ Phase %s%s
 3.2 2default:default20
 Commit Most Macros & LUTRAMs2default:defaultZ18-101
 I
-=Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1321b7e08
+=Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 128abc66d
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:18 ; elapsed = 00:01:40 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 p
 
 Phase %s%s
@@ -346,27 +335,27 @@ Phase %s%s
 3.3 2default:default2*
 Area Swap Optimization2default:defaultZ18-101
 C
-7Phase 3.3 Area Swap Optimization | Checksum: 1da38cb0b
+7Phase 3.3 Area Swap Optimization | Checksum: 138852d14
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:18 ; elapsed = 00:01:40 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 o
 
 Phase %s%s
 101*constraints2
 3.4 2default:default2)
 Timing Path Optimizer2default:defaultZ18-101
-B
-6Phase 3.4 Timing Path Optimizer | Checksum: 16982de42
+A
+5Phase 3.4 Timing Path Optimizer | Checksum: d9d069e3
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:22 ; elapsed = 00:01:43 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1698.539 ; gain = 24.0082default:default
 z
 
 Phase %s%s
@@ -374,13 +363,13 @@ Phase %s%s
 3.5 2default:default24
  Commit Small Macros & Core Logic2default:defaultZ18-101
 M
-APhase 3.5 Commit Small Macros & Core Logic | Checksum: 1e1de7cee
+APhase 3.5 Commit Small Macros & Core Logic | Checksum: 118802016
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:35 ; elapsed = 00:01:57 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:51 ; elapsed = 00:00:48 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 l
 
 Phase %s%s
@@ -388,21 +377,21 @@ Phase %s%s
 3.6 2default:default2&
 Re-assign LUT pins2default:defaultZ18-101
 ?
-3Phase 3.6 Re-assign LUT pins | Checksum: 1e1de7cee
+3Phase 3.6 Re-assign LUT pins | Checksum: 118802016
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:37 ; elapsed = 00:01:58 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:52 ; elapsed = 00:00:49 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 ;
-/Phase 3 Detail Placement | Checksum: 1e1de7cee
+/Phase 3 Detail Placement | Checksum: 118802016
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:37 ; elapsed = 00:01:58 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:52 ; elapsed = 00:00:49 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 €
 
 Phase %s%s
@@ -416,13 +405,13 @@ Phase %s%s
 4.1 2default:default2'
 PCOPT Shape updates2default:defaultZ18-101
 @
-4Phase 4.1 PCOPT Shape updates | Checksum: 1f584820a
+4Phase 4.1 PCOPT Shape updates | Checksum: 174855243
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:37 ; elapsed = 00:01:58 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:52 ; elapsed = 00:00:49 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 u
 
 Phase %s%s
@@ -436,21 +425,21 @@ Phase %s%s
 4.2.1 2default:default26
 "Post Placement Timing Optimization2default:defaultZ18-101
 Q
-EPhase 4.2.1 Post Placement Timing Optimization | Checksum: 22290e8cf
+EPhase 4.2.1 Post Placement Timing Optimization | Checksum: 180268e2e
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:48 ; elapsed = 00:02:05 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:59 ; elapsed = 00:00:51 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 H
-<Phase 4.2 Post Placement Optimization | Checksum: 22290e8cf
+<Phase 4.2 Post Placement Optimization | Checksum: 180268e2e
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:48 ; elapsed = 00:02:05 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:01:59 ; elapsed = 00:00:51 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 p
 
 Phase %s%s
@@ -458,13 +447,13 @@ Phase %s%s
 4.3 2default:default2*
 Post Placement Cleanup2default:defaultZ18-101
 C
-7Phase 4.3 Post Placement Cleanup | Checksum: 22290e8cf
+7Phase 4.3 Post Placement Cleanup | Checksum: 180268e2e
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:48 ; elapsed = 00:02:05 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:02:00 ; elapsed = 00:00:51 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 j
 
 Phase %s%s
@@ -478,55 +467,55 @@ Phase %s%s
 4.4.1 2default:default2(
 Congestion Reporting2default:defaultZ18-101
 C
-7Phase 4.4.1 Congestion Reporting | Checksum: 22290e8cf
+7Phase 4.4.1 Congestion Reporting | Checksum: 180268e2e
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:49 ; elapsed = 00:02:05 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:02:00 ; elapsed = 00:00:51 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 n
 
 Phase %s%s
 101*constraints2
 4.4.2 2default:default2&
 updateTiming final2default:defaultZ18-101
-A
-5Phase 4.4.2 updateTiming final | Checksum: 2d1e6b469
+@
+4Phase 4.4.2 updateTiming final | Checksum: f715525a
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:57 ; elapsed = 00:02:10 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:02:05 ; elapsed = 00:00:53 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 p
 
 Phase %s%s
 101*constraints2
 4.4.3 2default:default2(
 Dump Critical Paths 2default:defaultZ18-101
-C
-7Phase 4.4.3 Dump Critical Paths  | Checksum: 2d1e6b469
+B
+6Phase 4.4.3 Dump Critical Paths  | Checksum: f715525a
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:57 ; elapsed = 00:02:10 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:02:05 ; elapsed = 00:00:53 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 g
 
 Phase %s%s
 101*constraints2
 4.4.4 2default:default2
 Restore STA2default:defaultZ18-101
-:
-.Phase 4.4.4 Restore STA | Checksum: 2d1e6b469
+9
+-Phase 4.4.4 Restore STA | Checksum: f715525a
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:02:57 ; elapsed = 00:02:10 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:02:05 ; elapsed = 00:00:53 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 k
 
 Phase %s%s
@@ -536,54 +525,54 @@ Phase %s%s
 m
 !Post Placement Timing Summary %s
 2*	placeflow20
-| WNS=1.109  | TNS=0.000  |
+| WNS=1.296  | TNS=0.000  |
 2default:defaultZ30-100
->
-2Phase 4.4.5 Print Final WNS | Checksum: 2d1e6b469
-*common
-…
-
-%s
-*constraints2n
-ZTime (s): cpu = 00:03:12 ; elapsed = 00:02:19 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
 =
-1Phase 4.4 Placer Reporting | Checksum: 2d1e6b469
+1Phase 4.4.5 Print Final WNS | Checksum: f715525a
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:03:14 ; elapsed = 00:02:20 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:02:17 ; elapsed = 00:00:56 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
+<
+0Phase 4.4 Placer Reporting | Checksum: f715525a
+*common
+‡
+
+%s
+*constraints2p
+\Time (s): cpu = 00:02:18 ; elapsed = 00:00:57 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 q
 
 Phase %s%s
 101*constraints2
 4.5 2default:default2+
 Final Placement Cleanup2default:defaultZ18-101
-D
-8Phase 4.5 Final Placement Cleanup | Checksum: 2bfba4396
+C
+7Phase 4.5 Final Placement Cleanup | Checksum: e4ff3aa9
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:03:14 ; elapsed = 00:02:20 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
-S
-GPhase 4 Post Placement Optimization and Clean-Up | Checksum: 2bfba4396
+*constraints2p
+\Time (s): cpu = 00:02:18 ; elapsed = 00:00:57 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
+R
+FPhase 4 Post Placement Optimization and Clean-Up | Checksum: e4ff3aa9
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:03:14 ; elapsed = 00:02:20 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
-5
-)Ending Placer Task | Checksum: 1ceed31be
+*constraints2p
+\Time (s): cpu = 00:02:18 ; elapsed = 00:00:57 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
+4
+(Ending Placer Task | Checksum: e18e6975
 *common
-…
+‡
 
 %s
-*constraints2n
-ZTime (s): cpu = 00:00:00 ; elapsed = 00:02:20 . Memory (MB): peak = 892.090 ; gain = 0.0002default:default
+*constraints2p
+\Time (s): cpu = 00:02:18 ; elapsed = 00:00:57 . Memory (MB): peak = 1722.551 ; gain = 48.0202default:default
 Q
 Releasing license: %s
 83*common2"
@@ -592,33 +581,33 @@ Q
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
 392default:default2
-32default:default2
+22default:default2
 02default:default2
 02default:defaultZ4-41
 U
 %s completed successfully
 29*	vivadotcl2 
 place_design2default:defaultZ4-42
-ú
+ü
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 place_design: 2default:default2
-00:03:152default:default2
-00:02:212default:default2
-892.0902default:default2
-0.0002default:defaultZ17-268
-^
+00:02:192default:default2
+00:00:582default:default2
+1722.5512default:default2
+48.0202default:defaultZ17-268
+a
 
-DEBUG : %s144*timing29
-%Generate clock report | CPU: 1 secs 
+DEBUG : %s144*timing2<
+(Generate clock report | CPU: 0.45 secs 
 2default:defaultZ38-163
-
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.392 . Memory (MB): peak = 892.090 ; gain = 0.000
+‚
+vreport_utilization: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.29 . Memory (MB): peak = 1724.566 ; gain = 0.000
 *common
-j
+m
 
-DEBUG : %s134*designutils2@
-,Generate Control Sets report | CPU: 0 secs 
+DEBUG : %s134*designutils2C
+/Generate Control Sets report | CPU: 0.13 secs 
 2default:defaultZ20-134
 4
 Writing XDEF routing.
@@ -629,21 +618,13 @@ A
 A
 #Writing XDEF routing special nets.
 210*designutilsZ20-210
-
+‚
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2)
 Write XDEF Complete: 2default:default2
-00:00:032default:default2
-00:00:032default:default2
-892.0902default:default2
-0.0002default:defaultZ17-268
-þ
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2&
-write_checkpoint: 2default:default2
-00:00:062default:default2
-00:00:062default:default2
-892.0902default:default2
+00:00:022default:default2
+00:00:022default:default2
+1724.5702default:default2
 0.0002default:defaultZ17-268
 
 
