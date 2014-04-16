@@ -5,6 +5,7 @@ entity dacTop is
 	port(
 		rstn	:	in STD_LOGIC;	 	
 		clk	:	in STD_LOGIC;
+		clk50MHz : in STD_LOGIC;
 		data	:	in STD_LOGIC_VECTOR(15 downto 0);
 		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
 		write	:	in STD_LOGIC;
@@ -35,7 +36,16 @@ component clk_divide
 	);
 end component;
 
-
+COMPONENT ila_0
+  PORT (
+    clk : IN STD_LOGIC;
+    trig_in : IN STD_LOGIC;
+    trig_in_ack : OUT STD_LOGIC;
+    probe0 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    probe1 : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+    probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
+  );
+END COMPONENT;
 
 	component DAC_SPI
 		port(
@@ -66,10 +76,19 @@ end component;
 	signal DACin : std_logic_vector(15 downto 0);
 	signal sBuffOut : std_logic_vector(15 downto 0);
 	signal readBuffer : std_logic;
-	signal clk50MHz : STD_LOGIC;
 	signal clk25MHz : STD_LOGIC;
 
 begin
+
+your_instance_name : ila_0
+  PORT MAP (
+    clk => clk50MHz,
+    trig_in => write,
+    trig_in_ack => open,
+    probe0 => data,
+    probe1 => addr,
+    probe2(0) => write
+  );
 
 sampleclk44kHz <= readbuffer;
 sclk <= clk25MHz;
@@ -79,7 +98,7 @@ DACin <= not(sBuffOut(15)) & sBuffOut(14 downto 0);
 	port map(
 		rst => rstn,
 		clk	=> clk,
-		clk50MHz	=> clk50MHz,
+--		clk50MHz	=> clk50MHz,
 		clk25MHz 	=> clk25MHz,
 		clk44kHz => readbuffer,
 		clk705kHz => sampleclk);
@@ -100,8 +119,7 @@ DACin <= not(sBuffOut(15)) & sBuffOut(14 downto 0);
 		port map(
 		clk		=> clk,
 		rst		=> rstn,
-		buffRead	=> readBuffer,
-		indexReset	=> index_reset,
+		buffRead	=> readBuffer,	indexReset	=> index_reset,
 		buffWrite	=> write,
 		buffIn		=> data,
 		buffOut 	=> sBuffOut,

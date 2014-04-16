@@ -1,0 +1,3115 @@
+/*
+
+Vivado v2013.4
+SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+Process ID: 8060
+
+Current time: 	4/16/14 10:46:21 AM
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 7
+Version: 6.1
+Architecture: x86
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.7.0_40 32-bit
+Java home: 	C:/Xilinx/Vivado/2013.4/tps/win32/jre
+
+User name: 	Administratör
+User directory: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4
+User country: 	SE
+User language: 	sv
+User locale: 	sv_SE
+
+GUI Allocated memory:	155 mb
+GUI Max memory:		227 mb
+Engine Allocated memory: 465 mb
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// cb:I (bT:JFrame):  Opening project 'C:\designs\leon3-digilent-nexys4\vivado\leon3-digilent-nexys4\leon3-digilent-nexys4.xpr' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 10:46:23 AM
+// [GUI Memory]: 52 mb (+51882kb) [00:00:25]
+// [Engine Memory]: 509 mb (+382089kb) [00:00:25]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 63 mb (+11801kb) [00:00:28]
+// [GUI Memory]: 87 mb (+24547kb) [00:00:30]
+// [GUI Memory]: 88 mb (+1112kb) [00:00:30]
+// [GUI Memory]: 93 mb (+5228kb) [00:00:31]
+// [Engine Memory]: 510 mb (+1642kb) [00:00:31]
+// [Engine Memory]: 522 mb (+12206kb) [00:00:32]
+// [Engine Memory]: 524 mb (+2269kb) [00:00:32]
+// [Engine Memory]: 544 mb (+21213kb) [00:00:33]
+// [Engine Memory]: 565 mb (+21635kb) [00:00:35]
+// [Engine Memory]: 568 mb (+3121kb) [00:00:36]
+// [GUI Memory]: 93 mb (+275kb) [00:00:41]
+// [GUI Memory]: 95 mb (+2255kb) [00:00:41]
+// [GUI Memory]: 97 mb (+2253kb) [00:00:41]
+// [GUI Memory]: 101 mb (+3758kb) [00:00:41]
+// [GUI Memory]: 102 mb (+1502kb) [00:00:41]
+// Tcl Message: open_project {C:\designs\leon3-digilent-nexys4\vivado\leon3-digilent-nexys4\leon3-digilent-nexys4.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/AdministratÃ¶r/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4' since last save. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2013.4/data/ip'. 
+// [GUI Memory]: 103 mb (+1007kb) [00:00:42]
+// [GUI Memory]: 104 mb (+715kb) [00:00:42]
+// Tcl Message: open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 736.949 ; gain = 161.789 
+// TclEventType: STOP_PROGRESS_DIALOG
+dismissDialog ("Opening project 'C:\\designs\\leon3-digilent-nexys4\\vivado\\leon3-digilent-nexys4\\leon3-digilent-nexys4.xpr'"); // cb:I (bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 113 mb (+10118kb) [00:00:48]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 571 mb (+3059kb) [00:00:49]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 571 mb (+274kb) [00:00:50]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 572 mb (+413kb) [00:00:51]
+// [Engine Memory]: 573 mb (+1437kb) [00:00:54]
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 573 mb (+16kb) [00:00:55]
+// [Engine Memory]: 584 mb (+11726kb) [00:00:56]
+// [GUI Memory]: 123 mb (+10178kb) [00:00:57]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 129 mb (+5812kb) [00:00:58]
+// [GUI Memory]: 131 mb (+2764kb) [00:00:58]
+// [GUI Memory]: 131 mb (+102kb) [00:00:58]
+// [GUI Memory]: 132 mb (+105kb) [00:00:58]
+// [GUI Memory]: 132 mb (+96kb) [00:00:58]
+// [GUI Memory]: 133 mb (+1768kb) [00:00:58]
+// Tcl Message: update_compile_order -fileset sim_leon3-digilent-nexys4 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+selectButton ((HResource) null, "Run from Step: opt_design"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 586 mb (+1675kb) [00:01:12]
+// [Engine Memory]: 587 mb (+778kb) [00:01:12]
+// [Engine Memory]: 594 mb (+7786kb) [00:01:12]
+// [GUI Memory]: 139 mb (+5909kb) [00:01:13]
+// [Engine Memory]: 597 mb (+3350kb) [00:01:13]
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 10:47:15 AM
+// TclEventType: RUN_RESET
+// [Engine Memory]: 603 mb (+5656kb) [00:01:16]
+// [Engine Memory]: 603 mb (+159kb) [00:01:16]
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 609 mb (+6287kb) [00:01:18]
+// [Engine Memory]: 612 mb (+3559kb) [00:01:18]
+// [Engine Memory]: 613 mb (+1040kb) [00:01:18]
+// [Engine Memory]: 621 mb (+8503kb) [00:01:20]
+// Tcl Message: reset_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 759.355 ; gain = 19.215 
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// [Engine Memory]: 628 mb (+7483kb) [00:01:21]
+// [Engine Memory]: 629 mb (+167kb) [00:01:21]
+// [Engine Memory]: 629 mb (+507kb) [00:01:22]
+// [Engine Memory]: 646 mb (+17420kb) [00:01:22]
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 148 mb (+9086kb) [00:01:23]
+// [Engine Memory]: 648 mb (+2334kb) [00:01:23]
+// [Engine Memory]: 649 mb (+1748kb) [00:01:24]
+// [Engine Memory]: 650 mb (+425kb) [00:01:24]
+// [Engine Memory]: 652 mb (+2203kb) [00:01:24]
+// [Engine Memory]: 658 mb (+6795kb) [00:01:25]
+// Tcl Message: [Wed Apr 16 10:47:24 2014] Launched impl_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 767.203 ; gain = 7.848 
+// [Engine Memory]: 659 mb (+716kb) [00:01:26]
+// 'g' command handler elapsed time: 17 seconds
+// Elapsed time: 15 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// [GUI Memory]: 154 mb (+6540kb) [00:01:40]
+// [Engine Memory]: 659 mb (+331kb) [00:01:40]
+// [GUI Memory]: 163 mb (+9868kb) [00:02:05]
+// [Engine Memory]: 660 mb (+380kb) [00:02:05]
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 662 mb (+2469kb) [00:02:15]
+// [GUI Memory]: 171 mb (+8273kb) [00:04:20]
+// [GUI Memory]: 179 mb (+8013kb) [00:05:41]
+// [GUI Memory]: 180 mb (+1622kb) [00:09:46]
+// [GUI Memory]: 190 mb (+10431kb) [00:10:01]
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 709 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 10:59:21 2014] Launched impl_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 789.719 ; gain = 3.793 
+dismissDialog ("Generate Bitstream"); // cb:I (bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 193 mb (+3193kb) [00:15:37]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:01:38 AM
+// O:af (bT:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 140 seconds
+selectRadioButton (PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, O:af)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog ("Bitstream Generation Completed"); // O:af (bT:JFrame)
+selectButton (PAResourceItoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Open recent target"); // h:j (JPanel:JComponent, bT:JFrame)
+selectMenuItem ((HResource) null, "localhost:60001,xilinx_tcf/Digilent/210274504873A"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// cb:I (bT:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -host localhost -port 60001 
+// Tcl Message: INFO: [Xicom 50-2] Connecting to hw_server... 
+// Tcl Message: INFO: [Xicom 50-1] Attempting to launch hw_server... 
+// Tcl Message: INFO: [#UNDEF]  ****** Xilinx hw_server v2013.4   **** Build date : Dec  9 2013-17:37:53     ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application  
+// Tcl Message: INFO: [Labtools 27-109] Started Vivado Cse Server instance on port: 60001 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 791.715 ; gain = 1.996 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274504873A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: ERROR: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/debug_nets.ltx. The device design has 0 ILA core(s) and 0 VIO core(s). The probes file has 1 ILA core(s) and 0 VIO core(s). Resolution: Make sure the device probes file is up-to-date, then re-program the device. 
+// Q:a (bT:JFrame): Critical Messages: addNotify
+// Elapsed time: 11 seconds
+dismissDialog ("Open Hardware Target"); // cb:I (bT:JFrame)
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, Q:a)
+selectTable (PAResourceAtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (0) (active) ; Programmed", 2, false, false, false, true, false); // f:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTable (PAResourceAtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (0) (active) ; Programmed", 2); // f:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (0) (active) ; Programmed", 2, false, false, false, true, false); // f:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// ap:a (bT:JFrame): Program Device: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:a)
+// cb:I (bT:JFrame):  Program Device : addNotify
+dismissDialog ("Program Device"); // ap:a (bT:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-2154] Reading 3825877 bytes from file C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit... 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 853.613 ; gain = 61.898 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+selectButton (PAResourceItoP.IlaDashboardView_VIEW_AND_EDIT_PROPERTIES_FOR_ILA_CORE, "Debug_options"); // q:JideToggleButton (CommandBar:DockableBar): FALSE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1432] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s) in it. 
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 853.613 ; gain = 0.000 
+// 'k' command handler elapsed time: 13 seconds
+dismissDialog ("Program Device"); // cb:I (bT:JFrame)
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+// Elapsed time: 48 seconds
+selectButton (PAResourceItoP.IlaProbeTablePanel_SET_TRIGGER_CONDITION_TO_GLOBAL, "IlaProbeTablePanel_OPERATOR"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+selectMenuItem (PAResourceItoP.IlaProbeTablePanel_SET_TRIGGER_CONDITION_TO_GLOBAL, "Set Trigger Condition to Global AND'"); // Y:JCheckBoxMenuItem (al:JPopupMenu)
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, null, -1, false, false, false, true, false); // q:u (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+// Elapsed time: 13 seconds
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:03:41 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:03:41 
+// Waveform: addNotify
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+// Elapsed time: 13 seconds
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:04:00 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:04:01 
+// TclEventType: HW_ILA_CHANGE
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:05 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:09 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:16 AM
+// Elapsed time: 21 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 277, 45); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 317, 46); // o:a (JViewport:JComponent, bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 239, 109); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:04:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 239, 109); // o:a (JViewport:JComponent, bT:JFrame)Waveform: addNotify
+unmaximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectTree (PAResourceItoP.ProbesView_PROBES_TREE, "[root, hw_ila_1]", 0); // o:f (JViewport:JComponent, bT:JFrame)
+selectTree (PAResourceItoP.ProbesView_PROBES_TREE, "[root, hw_ila_1, io0/inst_top/I1]", 1); // o:f (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, "io0/inst_top/I1 ; eq1'bX", 0); // q:u (JViewport:JComponent, bT:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes io0/inst_top/I1 -of_objects [get_hw_ilas hw_ila_1]] 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, "io0/inst_top/I1 ; eq1'b1", 0); // q:u (JViewport:JComponent, bT:JFrame)
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  RunTrigger : addNotify
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:05:11 
+// TclEventType: HW_ILA_CHANGE
+dismissDialog ("RunTrigger"); // cb:I (bT:JFrame)
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:05:12 
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:14 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 10, 96); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 10, 95); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:16 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:17 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 15, 78); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:22 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 11, 75); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:23 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:23 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:23 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 11, 129); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:26 AM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:29 AM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:35 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 13 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 416, 65); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 9, 105); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:44 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:44 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 62, 121); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 29, 100); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:05:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 15 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 15, 93); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:06:03 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 15, 93); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 15, 93); // o:a (JViewport:JComponent, bT:JFrame)Waveform: addNotify
+unmaximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectButton (PAResourceQtoZ.TaskBanner_CLOSE, (String) null); // j:JideButton (JPanel:JComponent, bT:JFrame)
+closeTask ("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:06:16 AM
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+closeView (RDIResource.RDIViews_WAVEFORM_VIEWER, "hw_ila_data_1.wcfg"); // v:aC
+closeView (PAResourceItoP.PAViews_ILA, "ILA - hw_ila_1"); // h:aC
+// Tcl Message: close_hw 
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (y:aC, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0]", 1, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+// 'B' command handler elapsed time: 8 seconds
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+selectCheckBox ((HResource) null, "Advanced Trigger", true); // v:JCheckBox (h:t, q:I): TRUE
+selectCheckBox ((HResource) null, "Advanced Trigger", false); // v:JCheckBox (h:t, q:I): FALSE
+selectTab (PAResourceAtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Probe_Ports(0..2)", 1); // aq:g (t:JPanel, q:I)
+selectTab (PAResourceAtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "General Options", 0); // aq:g (t:JPanel, q:I)
+selectComboBox ("Sample Data Depth", "131072", 7); // p:c (t:JPanel, q:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+// cb:I (q:I):  Re-customize IP : addNotify
+// Tcl Message: set_property -dict [list CONFIG.C_DATA_DEPTH {131072} CONFIG.C_ADV_TRIGGER {false}] [get_ips ila_0] 
+// TclEventType: FILESET_UPDATE_IP
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 196 mb (+2620kb) [00:21:04]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:07:09 AM
+// [Engine Memory]: 670 mb (+7839kb) [00:21:09]
+// TclEventType: PARAM_UPDATED
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:07:11 AM
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 670 mb (+708kb) [00:21:16]
+// TclEventType: PARAM_UPDATED
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:07:24 AM
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// [GUI Memory]: 198 mb (+2525kb) [00:21:31]
+// [Engine Memory]: 686 mb (+16437kb) [00:21:31]
+// [GUI Memory]: 202 mb (+4363kb) [00:21:31]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:07:33 AM
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 688 mb (+2310kb) [00:21:34]
+// Tcl Message: generate_target: Time (s): cpu = 00:00:57 ; elapsed = 00:00:48 . Memory (MB): peak = 853.613 ; gain = 0.000 
+// Elapsed time: 48 seconds
+dismissDialog ("Managing Output Products"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 210 mb (+7576kb) [00:21:44]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:07:45 AM
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:07:51 AM
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:07:54 AM
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:08:08 AM
+// Elapsed time: 29 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// af:bw (bT:JFrame): Run Synthesis: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:bw)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+dismissDialog ("Run Synthesis"); // af:bw (bT:JFrame)
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 692 mb (+3936kb) [00:22:12]
+// [Engine Memory]: 695 mb (+2957kb) [00:22:13]
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// [Engine Memory]: 697 mb (+2166kb) [00:22:14]
+// [Engine Memory]: 698 mb (+1503kb) [00:22:14]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:08:15 AM
+// [Engine Memory]: 698 mb (+200kb) [00:22:15]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 699 mb (+708kb) [00:22:16]
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// [Engine Memory]: 700 mb (+1089kb) [00:22:21]
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 11:08:22 2014] Launched synth_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 853.613 ; gain = 0.000 
+// 'q' command handler elapsed time: 12 seconds
+// Elapsed time: 10 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// Elapsed time: 196 seconds
+selectCodeEditor ("Monitor", 687, 35); // K:aR (JPanel:JComponent, bT:JFrame)
+// [Engine Memory]: 701 mb (+454kb) [00:26:23]
+// [Engine Memory]: 701 mb (+4kb) [00:26:48]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:13:45 AM
+// [Engine Memory]: 701 mb (+188kb) [00:28:03]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:16:05 AM
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:20:43 AM
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 11:20:45 2014] Launched impl_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 863.957 ; gain = 10.344 
+// 'g' command handler elapsed time: 10 seconds
+// Elapsed time: 550 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 735 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:33:10 AM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:33:10 AM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:33:10 AM
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 11:33:14 2014] Launched impl_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 868.270 ; gain = 0.000 
+// Elapsed time: 12 seconds
+dismissDialog ("Generate Bitstream"); // cb:I (bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 166 seconds
+selectRadioButton (PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, O:af)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog ("Bitstream Generation Completed"); // O:af (bT:JFrame)
+selectButton (PAResourceItoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Open recent target"); // h:j (JPanel:JComponent, bT:JFrame)
+selectMenuItem ((HResource) null, "localhost:60001,xilinx_tcf/Digilent/210274504873A"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// cb:I (bT:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -host localhost -port 60001 
+// Tcl Message: INFO: [Xicom 50-2] Connecting to hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274504873A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: ERROR: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/debug_nets.ltx. The device design has 0 ILA core(s) and 0 VIO core(s). The probes file has 1 ILA core(s) and 0 VIO core(s). Resolution: Make sure the device probes file is up-to-date, then re-program the device. 
+// Q:a (bT:JFrame): Critical Messages: addNotify
+// Elapsed time: 12 seconds
+dismissDialog ("Open Hardware Target"); // cb:I (bT:JFrame)
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, Q:a)
+selectTable (PAResourceAtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (0) (active) ; Programmed", 2, false, false, false, true, false); // f:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// ap:a (bT:JFrame): Program Device: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:a)
+// cb:I (bT:JFrame):  Program Device : addNotify
+dismissDialog ("Program Device"); // ap:a (bT:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-2154] Reading 3825877 bytes from file C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit... 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 915.000 ; gain = 37.320 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+selectButton (PAResourceItoP.IlaDashboardView_VIEW_AND_EDIT_PROPERTIES_FOR_ILA_CORE, "Debug_options"); // q:JideToggleButton (CommandBar:DockableBar): FALSE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1432] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s) in it. 
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// 'k' command handler elapsed time: 12 seconds
+dismissDialog ("Program Device"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:37:07 AM
+// Elapsed time: 18 seconds
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, "io0/inst_top/I1 ; eq1'b1", 0); // q:u (JViewport:JComponent, bT:JFrame)
+selectComboBox (PAResourceQtoZ.TriggerCaptureControlPanel_DATA_DEPTH, "131072", 17); // c:JComboBox (JPanel:JComponent, bT:JFrame)
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: set_property CONTROL.DATA_DEPTH 131072 [get_hw_ilas hw_ila_1] 
+selectTable (PAResourceAtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 3); // f:aj (JViewport:JComponent, bT:JFrame)
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  RunTrigger : addNotify
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:37:23 
+// TclEventType: HW_ILA_CHANGE
+dismissDialog ("RunTrigger"); // cb:I (bT:JFrame)
+// Elapsed time: 27 seconds
+selectCheckBox (PAResourceQtoZ.TriggerCaptureControlPanel_TRIGGER_IN, "Trigger in", false); // v:JCheckBox (JPanel:JComponent, bT:JFrame): FALSE
+// Tcl Message: set_property CONTROL.IS_TRIGGER_INPUT_ENABLED false [get_hw_ilas hw_ila_1] 
+selectCheckBox (PAResourceQtoZ.TriggerCaptureControlPanel_TRIGGER_IN, "Trigger in", true); // v:JCheckBox (JPanel:JComponent, bT:JFrame): TRUE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: set_property CONTROL.IS_TRIGGER_INPUT_ENABLED true [get_hw_ilas hw_ila_1] 
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, "io0/inst_top/I1 ; eq1'b1", 0); // q:u (JViewport:JComponent, bT:JFrame)
+// Elapsed time: 10 seconds
+selectTree (PAResourceItoP.ProbesView_PROBES_TREE, null, -1, false, false, false, true, false); // o:f (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:38:41 
+// TclEventType: HW_ILA_CHANGE
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 37 seconds
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 55, 46); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:38:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:38:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:38:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:38:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  RunTrigger : addNotify
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:38:57 
+// TclEventType: HW_ILA_CHANGE
+dismissDialog ("RunTrigger"); // cb:I (bT:JFrame)
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:38:57 
+// TclEventType: HW_ILA_CHANGE
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:00 AM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 14, 60); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:06 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 64, 124); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 52, 71); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 12, 84); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:16 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:18 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:18 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:18 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 7, 80); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:20 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:20 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 6, 117); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 281, 88); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 420, 532, false, false, false, true, false); // o:a (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu ((HResource) null, "Signal Color"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Cursors"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Cursors"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Cursors"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Markers"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Markers"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Markers"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Cursors"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Markers"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenu ((HResource) null, "Markers"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenuItem ((HResource) null, "Add Marker"); // ah:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:39:55 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 281, 89); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 286, 89); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:01 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 287, 84); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:02 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 265, 63); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 291, 2); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:06 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 469, 204); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 366, 121); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:16 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 350, 52); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:19 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 573, 279); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 642, 86); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:40:24 AM
+// Elapsed time: 77 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 642, 86); // o:a (JViewport:JComponent, bT:JFrame)Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:41:52 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 282, 63); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:41:55 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 250, 66); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 288, 86); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 257, 44); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:20 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:29 AM
+// Elapsed time: 34 seconds
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:42:45 
+// TclEventType: HW_ILA_CHANGE
+// [GUI Memory]: 211 mb (+1929kb) [00:56:46]
+// [GUI Memory]: 215 mb (+3998kb) [00:56:46]
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:42:47 AM
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:42:45 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: HW_ILA_CHANGE
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 263, 38); // o:a (JViewport:JComponent, bT:JFrame)Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectTree (PAResourceItoP.ProbesView_PROBES_TREE, "[root, hw_ila_1, io0/inst_top/I2[6:0]]", 2); // o:f (JViewport:JComponent, bT:JFrame)
+selectTree (PAResourceItoP.ProbesView_PROBES_TREE, "[root, hw_ila_1, io0/inst_top/I2[6:0]]", 2); // o:f (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, "io0/inst_top/I1 ; eq1'b1", 0); // q:u (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, "io0/inst_top/I1 ; eq1'b1", 0); // q:u (JViewport:JComponent, bT:JFrame)
+selectButton (PAResourceItoP.IlaProbeTablePanel_REMOVE_SELECTED_PROBE, "IlaProbeTablePanel_remove"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes io0/inst_top/I1 -of_objects [get_hw_ilas hw_ila_1]] 
+selectTree (PAResourceItoP.ProbesView_PROBES_TREE, "[root, hw_ila_1, io0/inst_top/I2[6:0]]", 2); // o:f (JViewport:JComponent, bT:JFrame)
+selectTree (PAResourceItoP.ProbesView_PROBES_TREE, "[root, hw_ila_1, io0/inst_top/I1]", 1); // o:f (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, "io0/inst_top/I2[6:0] ; eq7'hXX", 0); // q:u (JViewport:JComponent, bT:JFrame)
+selectButton (PAResourceItoP.IlaProbeTablePanel_REMOVE_SELECTED_PROBE, "IlaProbeTablePanel_remove"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+selectTree (PAResourceItoP.ProbesView_PROBES_TREE, "[root, hw_ila_1, io0/inst_top/I1]", 1); // o:f (JViewport:JComponent, bT:JFrame)
+setText (PAResourceQtoZ.TriggerCaptureControlPanel_TRIGGER_POSITION, "1000"); // I:F (JPanel:JComponent, bT:JFrame)
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  RunTrigger : addNotify
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:43:29 
+// TclEventType: HW_ILA_CHANGE
+dismissDialog ("RunTrigger"); // cb:I (bT:JFrame)
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:43:29 
+// TclEventType: HW_ILA_CHANGE
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:31 AM
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:36 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 172, 118); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:38 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 202, 151); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:39 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:39 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 202, 163); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:40 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 167, 204); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:42 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 113, 223); // o:a (JViewport:JComponent, bT:JFrame)Waveform: addNotify
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:43:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectTable (PAResourceItoP.IlaProbeTablePanel_ILA_PROBE_TABLE, "io0/inst_top/I1 ; eq1'bX", 0); // q:u (JViewport:JComponent, bT:JFrame)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes io0/inst_top/I1 -of_objects [get_hw_ilas hw_ila_1]] 
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:43:56 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:43:56 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 7, 146); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:05 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 11, 124); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:06 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:08 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 5, 60); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:11 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 13, 63); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:16 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:16 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:44:23 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:44:23 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:25 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+// TclEventType: HW_ILA_CHANGE
+// Elapsed time: 13 seconds
+setText (PAResourceQtoZ.TriggerCaptureControlPanel_TRIGGER_POSITION, "1000", true); // I:F (JPanel:JComponent, bT:JFrame)
+// Tcl Message: set_property CONTROL.TRIGGER_POSITION 1000 [get_hw_ilas hw_ila_1] 
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:44:40 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:44:41 
+// TclEventType: HW_ILA_CHANGE
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:43 AM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu ((HResource) null, "Waveform Style"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu ((HResource) null, "Radix"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu ((HResource) null, "Signal Color"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu ((HResource) null, "Radix"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenuItem ((HResource) null, "Unsigned Decimal"); // Y:JCheckBoxMenuItem (JPopupMenu:JComponent)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:56 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:58 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:44:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:01 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:01 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:01 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:01 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:02 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:02 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:02 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:02 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:02 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 230, 62); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:09 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 33 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 288, 85); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:45:42 AM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:46:07 AM
+// Elapsed time: 102 seconds
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:47:25 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:47:25 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+// Elapsed time: 10 seconds
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:47:38 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:47:38 
+// TclEventType: HW_ILA_CHANGE
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  RunTrigger : addNotify
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:47:48 
+// TclEventType: HW_ILA_CHANGE
+dismissDialog ("RunTrigger"); // cb:I (bT:JFrame)
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:47:48 
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: HW_ILA_CHANGE
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:47:50 AM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 228, 75); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:47:56 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 280, 66); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 302, 162); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:04 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:05 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:05 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:07 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:07 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:07 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:08 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:08 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:09 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:09 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:09 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:09 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:10 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:11 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:12 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:13 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:14 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:15 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:19 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:19 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:22 AM
+// Elapsed time: 19 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 352, 34); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 416, 35); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:29 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:30 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:39 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:39 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:39 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:39 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:39 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:40 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:40 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:40 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:40 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:40 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:42 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:42 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:42 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:42 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:42 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:44 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:44 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:44 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:44 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:48:52 AM
+// Elapsed time: 31 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 675, -1); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 39 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 457, 215); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 701, 14); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:41 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 587, 8); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 83, 10); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:50 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:51 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 141, 2); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:57 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 138, 12); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:49:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:00 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 27 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 326, -4); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:26 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 186, 25); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:47 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:50:49 AM
+// Elapsed time: 123 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 246, 34); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 246, 34, false, false, false, false, true); // o:a (JViewport:JComponent, bT:JFrame) - DOUBLE CLICK
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:52:31 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 278, 40); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:52:33 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 248, 33); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 283, 38); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:52:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 247, 37); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:52:41 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 280, 38); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 37 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 403, 210); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:53:19 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:53:20 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 234, 41); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:53:25 AM
+// Elapsed time: 34 seconds
+selectButton (PAResourceQtoZ.TaskBanner_CLOSE, (String) null); // j:JideButton (JPanel:JComponent, bT:JFrame)
+closeTask ("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+closeView (RDIResource.RDIViews_WAVEFORM_VIEWER, "hw_ila_data_1.wcfg*"); // v:aC (TdiGroup:JideTabbedPane, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:54:01 AM
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+selectButton ((HResource) null, "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: save_wave_config {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+closeView (PAResourceItoP.PAViews_ILA, "ILA - hw_ila_1"); // h:aC
+// Tcl Message: close_hw 
+// Elapsed time: 17 seconds
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (y:aC, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd)]", 1); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd)]", 38); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectCodeEditor ("DACTOP.vhd", 99, 39); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:54:49 AM
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 117 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 24); // w:Q (v:u, bT:JFrame)
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectButton (PAResourceItoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Open recent target"); // h:j (JPanel:JComponent, bT:JFrame)
+selectMenuItem ((HResource) null, "localhost:60001,xilinx_tcf/Digilent/210274504873A"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// cb:I (bT:JFrame):  Open Hardware Target : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -host localhost -port 60001 
+// Tcl Message: INFO: [Xicom 50-2] Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274504873A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+selectButton (PAResourceItoP.IlaDashboardView_VIEW_AND_EDIT_PROPERTIES_FOR_ILA_CORE, "Debug_options"); // q:JideToggleButton (CommandBar:DockableBar): FALSE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: INFO: [Labtools 27-1432] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s) in it. 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+dismissDialog ("Open Hardware Target"); // cb:I (bT:JFrame)
+// Elapsed time: 28 seconds
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:57:13 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:57:13 
+// TclEventType: HW_ILA_CHANGE
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ILA - hw_ila_1", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+// Elapsed time: 32 seconds
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 11:57:56 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 11:57:57 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_data_1.wcfg", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 16, -2); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:01 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:01 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:02 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:02 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 39, 136); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:03 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:04 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 368, 69); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 368, 64); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:08 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 12 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 365, 45); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:20 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:21 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:22 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 11 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 269, 220); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:32 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 228, 211); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 246, 204); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:34 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 156, 194); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:37 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 101, 214); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:38 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 100, 34); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:40 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:41 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:42 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:42 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:43 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:44 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 436, 86); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:45 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:46 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:46 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 764, -6); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 772, 5); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:48 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:49 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:49 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 770, 2); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:58 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:58 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:58 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:58 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:58 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:59 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:58:59 AM
+// Elapsed time: 24 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 272, 111); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:59:23 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 187, 3); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:59:25 AM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 284, 17); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 186, 10); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:59:27 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 188, 8); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:59:28 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 281, 14); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:59:33 AM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 286, 10); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 11:59:34 AM
+// Elapsed time: 27 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// af:bw (bT:JFrame): Run Synthesis: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:bw)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+dismissDialog ("Run Synthesis"); // af:bw (bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 915.000 ; gain = 0.000 
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 12:00:11 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 12:00:18 2014] Launched synth_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 915.805 ; gain = 0.805 
+// 'q' command handler elapsed time: 17 seconds
+// Elapsed time: 15 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// Elapsed time: 50 seconds
+selectButton (PAResourceQtoZ.StateMonitor_CANCEL, "Cancel"); // a:JButton (v:JPanel, bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton ((HResource) null, "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// Tcl Message: reset_run synth_1 
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ILA - hw_ila_1", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DACTOP.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 119, 160); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 206, 107); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 18 seconds
+selectCodeEditor ("DACTOP.vhd", 246, 123); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 242, 215); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 7, 79); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 286, 56); // o:a (JViewport:JComponent, bT:JFrame)Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectButton (PAResourceQtoZ.TaskBanner_CLOSE, (String) null); // j:JideButton (JPanel:JComponent, bT:JFrame)
+closeTask ("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 12:02:02 PM
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+closeView (RDIResource.RDIViews_WAVEFORM_VIEWER, "hw_ila_data_1.wcfg"); // v:aC
+closeView (PAResourceItoP.PAViews_ILA, "ILA - hw_ila_1"); // h:aC
+// Tcl Message: close_hw 
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd)]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd)]", 38); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectCodeEditor ("dummyapb.vhd", 258, 91); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 47 seconds
+selectCodeEditor ("Monitor", 791, 147); // K:aR (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("dummyapb.vhd", 323, 205); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("dummyapb.vhd", 323, 205); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("dummyapb.vhd", 125, 58); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("dummyapb.vhd", 196, 100); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 41 seconds
+selectCodeEditor ("dummyapb.vhd", 239, 176); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("dummyapb.vhd", 123, 88); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectCodeEditor ("dummyapb.vhd", 265, 202); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 24 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 12:04:55 2014] Launched synth_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 915.805 ; gain = 0.000 
+// 'q' command handler elapsed time: 5 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 639 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 12:15:41 2014] Launched impl_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 915.805 ; gain = 0.000 
+// 'g' command handler elapsed time: 9 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 12:16:08 PM
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 1747 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// TclEventType: RUN_LAUNCH
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 12:44:56 PM
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 12:44:58 2014] Launched impl_1... Run output will be captured here: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 920.582 ; gain = 2.402 
+dismissDialog ("Generate Bitstream"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 12:46:12 PM
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 177 seconds
+selectRadioButton (PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, O:af)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog ("Bitstream Generation Completed"); // O:af (bT:JFrame)
+selectButton (PAResourceItoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Open recent target"); // h:j (JPanel:JComponent, bT:JFrame)
+selectMenuItem ((HResource) null, "localhost:60001,xilinx_tcf/Digilent/210274504873A"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// cb:I (bT:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -host localhost -port 60001 
+// Tcl Message: INFO: [Xicom 50-2] Connecting to hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274504873A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+selectButton (PAResourceItoP.IlaDashboardView_VIEW_AND_EDIT_PROPERTIES_FOR_ILA_CORE, "Debug_options"); // q:JideToggleButton (CommandBar:DockableBar): FALSE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: INFO: [Labtools 27-1432] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s) in it. 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+dismissDialog ("Open Hardware Target"); // cb:I (bT:JFrame)
+selectTable (PAResourceAtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a100t_0 (1) (active) ; Programmed", 2, false, false, false, true, false); // f:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// ap:a (bT:JFrame): Program Device: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:a)
+// cb:I (bT:JFrame):  Program Device : addNotify
+dismissDialog ("Program Device"); // ap:a (bT:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-2154] Reading 3825877 bytes from file C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit... 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 952.645 ; gain = 30.543 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+closeView (PAResourceItoP.PAViews_ILA, "ILA - hw_ila_1"); // h:aC
+selectButton (PAResourceItoP.IlaDashboardView_VIEW_AND_EDIT_PROPERTIES_FOR_ILA_CORE, "Debug_options"); // q:JideToggleButton (CommandBar:DockableBar): FALSE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1432] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s) in it. 
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// 'k' command handler elapsed time: 10 seconds
+dismissDialog ("Program Device"); // cb:I (bT:JFrame)
