@@ -1,20 +1,21 @@
-## @file leonSer.py
-#  @brief Functions for handling the communication through serial port.
-#
-#  The leonSer methods handle the communication to the serial port. The current setup is for Windows system. 
-#  It includes 3 methods for opening, communicating and closing serial ports.
-#
-# @author Stavros Giannakopoulos
+'''file leonSer.py
+  Functions for handling the communication through serial port.
+
+  The leonSer methods handle the communication to the serial port. The current setup is for Windows system. 
+  It includes 3 methods for opening, communicating and closing serial ports.
+
+  Author: Stavros Giannakopoulos
+'''
+
 def leonstart():
+	'''
+	This is the first function which is used to initialize the Communication Port. 
+	Returns the opened port. The Com3 port is set to open for now, but it might be 
+	implemented as an argument in a later date. The baudrate is set to 9600 and it 
+	might be implemented as an argument also
 	
-	##This is the first function which is used to initialize the Communication Port. 
-	#Returns the opened port. The Com3 port is set to open for now, but it might be 
-	#implemented as an argument in a later date. The baudrate is set to 9600 and it 
-	#might be implemented as an argument also
-	#
-	# @return serport Returns the serial port object that was opened	
-	# @see serial
-	# @see time
+	:returns: serport, which is the serial port object that was opened.	
+	'''
 	import serial  #used for serial communication
 	import time		#used for waiting functions
 	import platform	
@@ -38,24 +39,24 @@ def leonstart():
 	
 	
 def leonsend(serport, strinp):	
-	##This is the second function which is used to send and receive data to the Communication Port.
-	# It takes a port object, in which it sends the string object also received after concatenating the '\n' character to the end.	
-	# It finaly receives the answer from the board  up to 100 bytes and it prints it to the terminal.
-	# It may be modified to return the answer as a string.
-	# @param serport Receives an open serial port object as an input.
-	# @param strinp Receives a string to be sent to the com- port.
-	# @see serial
-	# @see time
+	'''
+	This is the second function which is used to send and receive data to the Communication Port.
+	It takes a port object, in which it sends the string object also received after concatenating 
+	the '\n' character to the end.	
+	It finally receives the answer from the board  up to 100 bytes and it prints it to the terminal.
+	It may be modified to return the answer as a string.
+	
+	:param serport: Receives an open serial port object as an input.
+	:param strinp: Receives a string to be sent to the com- port.
+	:returns: s, which is a string read by the serial port.
+	'''
 	import serial
 	import time
-	
+
 	#print 'started sending'
 	#print strinp
 	serport.write(strinp)  
-	
-	
 	time.sleep(0.05)
-	
 	
 	x=1
 	while x==1:
@@ -68,14 +69,16 @@ def leonsend(serport, strinp):
 	return s
 	
 def leonTx(serport, strinp):	
-	##This is the second function which is used to send and receive data to the Communication Port.
-	# It takes a port object, in which it sends the string object also received after concatenating the '\n' character to the end.	
-	# It finaly receives the answer from the board  up to 100 bytes and it prints it to the terminal.
-	# It may be modified to return the answer as a string.
-	# @param serport Receives an open serial port object as an input.
-	# @param strinp Receives a string to be sent to the com- port.
-	# @see serial
-	# @see time
+	'''
+	This is the second function which is used to send data to the Communication Port.
+	It takes a port object, in which it sends the string object also received after concatenating 
+	the '\n' character to the end.	
+	It finally receives the answer from the board  up to 100 bytes and it prints it to the terminal.
+	It may be modified to return the answer as a string.
+
+	:param serport: Receives an open serial port object as an input.
+	:param strinp: Receives a string to be sent to the com- port.
+	'''
 	import serial
 	import time
 	
@@ -83,15 +86,19 @@ def leonTx(serport, strinp):
 	#print strinp
 	serport.write(strinp)  
 	
-	return s
 	
 	
 	
 def  leonstop(serport):
-	##This is the third function which is used to close the Communication Port supplemented as an argument.
-	# while printing a debugging message on the terminal.	
-	# @param serport Receives an open serial port object as an input.
-	# @see serial
+	'''
+	This is the third function which is used to close the Communication Port supplemented as an 
+	argument while printing a debugging message on the terminal.	
+
+	:param serport: Receives an open serial port object as an input.
+	'''
 	import serial
 	print 'closing port'
 	serport.close()
+
+if __name__ == '__main__':
+    leonstart()
