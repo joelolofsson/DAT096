@@ -8,116 +8,196 @@ z2
 !i10f 100
 cModel Technology
 dC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4
-Edac_buffer
-Z0 w1396472151
-Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dC:/CHALMERS/DAT096/softcore/DACSPI
-Z5 8C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_BUFFER.vhd
-Z6 FC:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_BUFFER.vhd
+Eclk_divide
+Z0 w1397400541
+Z1 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/CHALMERS/DAT096/softcore/DACSPI
+Z6 8C:/CHALMERS/DAT096/softcore/DACSPI/CLK_divide.vhd
+Z7 FC:/CHALMERS/DAT096/softcore/DACSPI/CLK_divide.vhd
 l0
-L34
-VSmIG@=AfeSTFiUaF<H?Z01
-!s100 k[I`f7:2Zk8;5^o1AC_VP0
-Z7 OP;C;10.3;59
+L6
+VbO@?^]8f>>32LfPG5[M<b3
+!s100 fSdQSboX5OO61ZKSi5d442
+Z8 OP;C;10.3;59
 32
-Z8 !s110 1396473747
+Z9 !s110 1397569730
 !i10b 1
-Z9 !s108 1396473747.812000
-Z10 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_BUFFER.vhd|
-Z11 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_BUFFER.vhd|
-Z12 o-work work -2002 -explicit -O0
-Z13 tExplicit 1
+Z10 !s108 1397569730.694000
+Z11 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/CLK_divide.vhd|
+Z12 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/CLK_divide.vhd|
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
 Abehavioral
 R1
 R2
 R3
-DEx4 work 10 dac_buffer 0 22 SmIG@=AfeSTFiUaF<H?Z01
-l58
-L48
-V8BzW2dBK`kUfmY6Jcz3Tk2
-!s100 Koc4EN<>BgOiPo?UhKWN50
-R7
-32
+R4
+DEx4 work 10 clk_divide 0 22 bO@?^]8f>>32LfPG5[M<b3
+l33
+L21
+VI5VoL2fZchlQMfz9_LNal0
+!s100 :kSONS5EOIjQA:M`71az]0
 R8
-!i10b 1
+32
 R9
+!i10b 1
 R10
 R11
 R12
 R13
-Edac_spi
-R0
+R14
+Edac_buffer
+Z15 w1397560918
 R2
 R3
 R4
-Z14 8C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd
-Z15 FC:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd
+R5
+Z16 8C:/CHALMERS/DAT096/softcore/DACSPI/DAC_BUFFER.vhd
+Z17 FC:/CHALMERS/DAT096/softcore/DACSPI/DAC_BUFFER.vhd
 l0
-L4
-ViLAMFL7ke7KOAfjHWhoX00
-!s100 b@?j>W6@Fm3EhAkiGg2Ul2
-R7
+L34
+V`b84K1?kH4o0Pm:QbPI[b0
+!s100 S9Ph@eKIhLRWhnL=NjIR31
+R8
 32
-Z16 !s110 1396473748
+Z18 !s110 1397569731
 !i10b 1
-Z17 !s108 1396473748.481000
-Z18 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd|
-!s107 C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd|
-R12
+Z19 !s108 1397569731.248000
+Z20 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/DAC_BUFFER.vhd|
+Z21 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/DAC_BUFFER.vhd|
 R13
+R14
 Abehavioral
 R2
 R3
-DEx4 work 7 dac_spi 0 22 iLAMFL7ke7KOAfjHWhoX00
-l24
-L16
-VUK?;[`e1T7aDGLg44C9zO3
-!s100 CaGKQ6`aI?[MNRdok^V5N1
-R7
+R4
+DEx4 work 10 dac_buffer 0 22 `b84K1?kH4o0Pm:QbPI[b0
+l58
+L48
+V7463h;0^T?hC5gC9<_;_A3
+!s100 VmglSBBC^5WhInA1>dQ]V2
+R8
 32
-R16
-!i10b 1
-R17
 R18
-Z19 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/02042014/DAC_SPI.vhd|
-R12
+!i10b 1
+R19
+R20
+R21
 R13
+R14
+Edac_spi
+Z22 w1397570693
+R3
+R4
+R5
+Z23 8C:/CHALMERS/DAT096/softcore/DACSPI/DAC_SPI.vhd
+Z24 FC:/CHALMERS/DAT096/softcore/DACSPI/DAC_SPI.vhd
+l0
+L4
+Vcm3@ZC=aWh[@<@7C8OR9[1
+!s100 U0c0>@bDa=ZPoMo]Gd5kY2
+R8
+32
+Z25 !s110 1397570696
+!i10b 1
+Z26 !s108 1397570696.629000
+Z27 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/DAC_SPI.vhd|
+Z28 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/DAC_SPI.vhd|
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 7 dac_spi 0 22 cm3@ZC=aWh[@<@7C8OR9[1
+l25
+L16
+V`LYKL3PI?UaCRCIEG[33U3
+!s100 8PenJVBd4?aiR^Z`Ddh:F3
+R8
+32
+R25
+!i10b 1
+R26
+R27
+R28
+R13
+R14
 Edactop
-R0
+Z29 w1397570598
+R3
+R4
+R5
+Z30 8C:/CHALMERS/DAT096/softcore/DACSPI/DAC_TOP.vhd
+Z31 FC:/CHALMERS/DAT096/softcore/DACSPI/DAC_TOP.vhd
+l0
+L4
+Vj3flQ9=_4[A4i>2RnW`K23
+!s100 4^m`TmjkCb;fP6VoSTHD:2
+R8
+32
+Z32 !s110 1397570605
+!i10b 1
+Z33 !s108 1397570605.769000
+Z34 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/DAC_TOP.vhd|
+Z35 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/DAC_TOP.vhd|
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 6 dactop 0 22 j3flQ9=_4[A4i>2RnW`K23
+l71
+L20
+VI@3jfPbGHo4]ABLkHf`6n0
+!s100 HjkLn>NC8;f_@feX^HZ_;2
+R8
+32
+R32
+!i10b 1
+R33
+R34
+R35
+R13
+R14
+Etb
+Z36 w1397574168
 R2
 R3
 R4
-Z20 8C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd
-Z21 FC:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd
+R5
+Z37 8C:/CHALMERS/DAT096/softcore/DACSPI/testbench.vhd
+Z38 FC:/CHALMERS/DAT096/softcore/DACSPI/testbench.vhd
 l0
-L4
-Vzn_bP[?X0h9KOSA@]8j1>1
-!s100 Kk>NGzD0YY;N3ig1kU:NQ1
-R7
-32
+L5
+VUgZ@ENMNgEL`gdSf9Yf2X3
+!s100 I@0S?AlG>iE>MAM1O`@@90
 R8
+32
+Z39 !s110 1397574177
 !i10b 1
-Z22 !s108 1396473747.151000
-Z23 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd|
-Z24 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/02042014/top.vhd|
-R12
+Z40 !s108 1397574177.143000
+Z41 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/CHALMERS/DAT096/softcore/DACSPI/testbench.vhd|
+Z42 !s107 C:/CHALMERS/DAT096/softcore/DACSPI/testbench.vhd|
 R13
+R14
 Abehavioral
 R2
 R3
-DEx4 work 6 dactop 0 22 zn_bP[?X0h9KOSA@]8j1>1
-l47
-L17
-VTcaYAaL4Q=FWU9RLoh>UL3
-!s100 U3iYM@O`G=YYlc?]d6fn22
-R7
-32
+R4
+Z43 DEx4 work 2 tb 0 22 UgZ@ENMNgEL`gdSf9Yf2X3
+l35
+L8
+Vklb67ABJZLbMzC]P2ZkGh1
+!s100 @GBG>FS952Xf^l0:;OZ]Q1
 R8
+32
+R39
 !i10b 1
-R22
-R23
-R24
-R12
+R40
+R41
+R42
 R13
+R14

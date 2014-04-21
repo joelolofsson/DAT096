@@ -39,16 +39,16 @@ entity DAC_buffer is
         rst		:	in STD_LOGIC;
         buffRead	:	in STD_LOGIC;
         indexReset	:	in STD_LOGIC;
-	buffWrite	:	in STD_LOGIC;
-       	buffIn		:	in STD_LOGIC_VECTOR (31 downto 0);
-        buffOut		:	out STD_LOGIC_VECTOR (31 downto 0);
+	    buffWrite	:	in STD_LOGIC;
+       	buffIn		:	in STD_LOGIC_VECTOR (15 downto 0);
+        buffOut		:	out STD_LOGIC_VECTOR (15 downto 0);
         addr		:	in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));
 end DAC_buffer;
 
 architecture Behavioral of DAC_buffer is
 
 
-type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(31 downto 0);
+type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(15 downto 0);
 
 signal Memory_array : Memory_array_type;
 
@@ -58,12 +58,13 @@ signal read_index : integer range 0 to 2**bufferwidth-1;
 begin
 process(clk,rst)
 begin
-    if rst = '1' then
+    if rst = '0' then
         buffout <= (others => '0');
         read_index <= 0;
         Memory_array <= (others => (others => '0'));
     elsif rising_edge(clk) then
-        if (buffRead = '1')then
+				lastread <= buffread;
+        if (buffRead = '1') and (lastread = '0') then
             buffout <= Memory_array(read_index);
 
             if read_index = 2**bufferwidth -1 then
