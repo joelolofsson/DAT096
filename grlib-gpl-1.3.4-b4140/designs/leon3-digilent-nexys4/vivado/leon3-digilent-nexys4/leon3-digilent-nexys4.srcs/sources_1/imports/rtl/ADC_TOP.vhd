@@ -160,18 +160,6 @@ inv_rst <= not rst;						-- ! Reset is inverted to create a active high reset fo
 --end if;
 --end process;
 
--- ! Instanciations of FIR filter
-inst_fir : fir_compiler_0
-PORT MAP (
-    aresetn => rst,
-    aclk => clk,
-    s_axis_data_tvalid => dataready,
-    s_axis_data_tready => FIRready,
-    s_axis_data_tdata => sampledvalue,
-    m_axis_data_tvalid => FIRvalid,
-    m_axis_data_tdata => sampleflt
-    );
-
 --DC_buff_out <= sampledvalue;
 
 daddr_in <= "0010011";					-- ! Address is set to 0x13

@@ -3,12 +3,12 @@ restart -f
 #view signals wave
 #add wave -radix unsigned clk rstn sclk nsync din data write addr sim:/dactop/inst_DAC_BUFFER/Memory_array
 
-force clk 0 0, 1 50ns -repeat 100ns
+force clk 0 0, 1 5ns -repeat 10ns
 
 
-force rstn '1'
-run 100 ns
 force rstn '0'
+run 100 ns
+force rstn '1'
 force write '1'
 force addr "0000000"
 force data 16#FFFFFFF0

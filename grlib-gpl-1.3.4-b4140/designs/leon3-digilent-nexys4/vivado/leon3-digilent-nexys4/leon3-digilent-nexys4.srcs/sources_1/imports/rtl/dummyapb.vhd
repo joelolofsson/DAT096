@@ -49,6 +49,7 @@ component DacTop
 	port(
 		rstn	:	in STD_LOGIC;	 	
 		clk	:	in STD_LOGIC;
+		clk50MHz : in STD_LOGIC;
 		data	:	in STD_LOGIC_VECTOR(15 downto 0);
 		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
 		sampleclk : out STD_LOGIC;
@@ -69,6 +70,7 @@ signal buffer_interupt : STD_LOGIC;
 signal sampleena44kHz : STD_LOGIC;
 signal dac_buff_write : STD_LOGIC;
 signal irq            : STD_LOGIC;
+signal Dac_buff_write_temp : STD_LOGIC;
 
 --constant REVISION       : amba_version_type := 0; 
 constant pconfig        : apb_config_type := (
@@ -81,6 +83,7 @@ inst_top : DACtop
 port map ( 
    rstn     => rstn,
    clk      => clk100,
+   clk50MHz => clk,
    data     => sLED(15 downto 0),
    addr     => Addr,
    write    => dac_buff_write,
@@ -124,7 +127,7 @@ debugvector(7 downto 4) <= addr(6 downto 3);
             dac_buff_write <= '0';
             
         elsif rising_edge(clk) then        
-            
+            Dac_buff_write <= Dac_buff_write_temp;
             --connceted to both DAC and ADC, used to select elements in both components
             Addr <= apbi.paddr(8 downto 2);
             --select signal to DAC
@@ -147,7 +150,7 @@ debugvector(7 downto 4) <= addr(6 downto 3);
              elsif apbi.paddr(11 downto 9) = "101" then               
                 if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
                     sLED <= apbi.pwdata; --written value should go to DAC
-                    dac_buff_write <= '1';
+                    dac_buff_write_temp <= '1';
                 end if;
              end if;            
              

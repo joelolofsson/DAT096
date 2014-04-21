@@ -265,3 +265,908 @@ dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
 // [Engine Memory]: 642 mb (+155kb) [00:06:05]
 // TclEventType: RUN_COMPLETED
 // O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 989 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// Tcl Message: launch_runs impl_1 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 09:32:53 2014] Launched impl_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// az:a (bT:JFrame): Launch Run Critical Messages: addNotify
+// Elapsed time: 108 seconds
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, az:a)
+// TclEventType: RUN_FAILED
+dismissDialog ("Launch Run Critical Messages"); // az:a (bT:JFrame)
+// O:af (bT:JFrame): Implementation Failed: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Implementation Failed"); // O:af (bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd)]", 2); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd)]", 39); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 40); // o:f (u:JPanel, bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 40); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_ADC_TOP - ADC_TOP - Behavioral (ADC_TOP.vhd)]", 41); // o:f (u:JPanel, bT:JFrame)
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (y:aC, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fir_compiler_0]", 2, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] 
+// TclEventType: LOAD_FEATURE
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir_compiler_0'... INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'fir_compiler_0'. Target already exists and is up to date. 
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir_compiler_0'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir_compiler_0'... 
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir_compiler_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir_compiler_0'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [xilinx.com:ip:fir_compiler:7.1-1] fir_compiler_0: Coefficient Reload not selected, no files generated INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir_compiler_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 800.793 ; gain = 0.000 
+// Tcl Message: launch_run  fir_compiler_0_synth_1 
+// Tcl Message: ERROR: [Common 17-162] Invalid option value specified for '-runs'. 
+// HOptionPane Error: 'ERROR: [Common 17-162] Invalid option value specified for '-runs'.  (Managing Output Products)'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// 'aG' command handler elapsed time: 20 seconds
+// Elapsed time: 18 seconds
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: PARAM_UPDATED
+// Tcl Message: generate_target all [get_files  C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'ADC'. Target already exists and is up to date. 
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ADC'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Change Log' target for IP 'ADC'. Target already exists and is up to date. 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 800.793 ; gain = 0.000 
+// Tcl Message: launch_run  ADC_synth_1 
+// Tcl Message: ERROR: [Common 17-162] Invalid option value specified for '-runs'. 
+// HOptionPane Error: 'ERROR: [Common 17-162] Invalid option value specified for '-runs'.  (Managing Output Products)'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// 'aG' command handler elapsed time: 16 seconds
+// Elapsed time: 15 seconds
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenu (PAResourceQtoZ.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu (PAResourceQtoZ.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu (PAResourceQtoZ.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenu (PAResourceQtoZ.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectTree (PAResourceItoP.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Opt 31-30] Blackbox io0/inst_ADC_TOP/inst_ADC (ADC) is driving pin D of primitive cell io0/inst_ADC_TOP/inst_Buffer/Memory_array_reg[0][4]. This blackbox cannot be found in the existing library.. ]", 22); // O:f (JViewport:JComponent, bT:JFrame)
+// Elapsed time: 11 seconds
+collapseTree (PAResourceItoP.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 7); // O:f (JViewport:JComponent, bT:JFrame)
+selectTree (PAResourceItoP.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_run  ADC_synth_1. , [Common 17-162] Invalid option value specified for '-runs'.. ]", 6); // O:f (JViewport:JComponent, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Simulation]", 6, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Change Log' target for IP 'ADC'. Target already exists and is up to date. 
+// Tcl Message: launch_run  ADC_synth_1 
+// Tcl Message: ERROR: [Common 17-162] Invalid option value specified for '-runs'. 
+// HOptionPane Error: 'ERROR: [Common 17-162] Invalid option value specified for '-runs'.  (Managing Output Products)'
+// 'aG' command handler elapsed time: 4 seconds
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Simulation]", 6, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+selectRadioButton ((HResource) null, "None"); // bR:a
+selectRadioButton ((HResource) null, "DRP"); // bR:a
+selectRadioButton ((HResource) null, "AXI4Lite"); // bR:a
+selectRadioButton ((HResource) null, "DRP"); // bR:a
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.INTERFACE_SELECTION {ENABLE_DRP}] [get_ips ADC] 
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Change Log' target for IP 'ADC'. Target already exists and is up to date. 
+// Tcl Message: launch_run  ADC_synth_1 
+// Tcl Message: ERROR: [Common 17-162] Invalid option value specified for '-runs'. 
+// HOptionPane Error: 'ERROR: [Common 17-162] Invalid option value specified for '-runs'.  (Managing Output Products)'
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectTree (PAResourceItoP.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project {C:\\Users\\Administratör\\Desktop\\designs\\leon3-digilent-nexys4\\vivado\\leon3-digilent-nexys4\\leon3-digilent-nexys4.xpr}. , [Project 1-311] Could not find the file 'C:/Users/Administratör/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd', nor could it be found using path 'C:/CHALMERS/DAT096/softcore/Daniel GRLIB/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd'.. ]", 2); // O:f (JViewport:JComponent, bT:JFrame)
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (y:aC, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, DAC_TOP.vhd]", 2); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, DAC_TOP.vhd]", 2, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// Elapsed time: 31 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, DAC_TOP.vhd]", 2, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 180, 138); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, DAC_TOP.vhd]", 2, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aA:I (bT:JFrame): Remove Sources: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aA:I)
+dismissDialog ("Remove Sources"); // aA:I (bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files {{C:/Users/Administratör/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd}} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd)]", 1); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd)]", 38); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_ADC_TOP - ADC_TOP - Behavioral (ADC_TOP.vhd)]", 40); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_ADC_TOP - ADC_TOP - Behavioral (ADC_TOP.vhd), inst_fir - fir_compiler_0 (fir_compiler_0.xci)]", 41); // o:f (u:JPanel, bT:JFrame)
+// Elapsed time: 14 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+selectButton ((HResource) null, "Run from Step: opt_design"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 643 mb (+1220kb) [00:29:12]
+// Tcl Message: [Wed Apr 16 09:39:35 2014] Launched impl_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// [Engine Memory]: 644 mb (+1056kb) [00:29:13]
+// 'g' command handler elapsed time: 4 seconds
+// [Engine Memory]: 644 mb (+40kb) [00:29:13]
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+selectTab ((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, bT:JFrame)
+// [Engine Memory]: 645 mb (+131kb) [00:29:25]
+// TclEventType: RUN_STEP_COMPLETED
+// az:a (bT:JFrame): Launch Run Critical Messages: addNotify
+// Elapsed time: 38 seconds
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, az:a)
+// [Engine Memory]: 645 mb (+16kb) [00:29:53]
+dismissDialog ("Launch Run Critical Messages"); // az:a (bT:JFrame)
+// [Engine Memory]: 645 mb (+8kb) [00:29:57]
+// TclEventType: RUN_FAILED
+// [Engine Memory]: 645 mb (+45kb) [00:29:58]
+// O:af (bT:JFrame): Implementation Failed: addNotify
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 9:40:24 AM
+// [Engine Memory]: 653 mb (+9252kb) [00:30:00]
+dismissDialog ("Implementation Failed"); // O:af (bT:JFrame)
+selectCodeEditor ("ADC_TOP.vhd", 106, 110); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("ADC_TOP.vhd", 71, 173); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("ADC_TOP.vhd", 63, 186); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("ADC_TOP.vhd", 244, 41); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 654 mb (+241kb) [00:30:21]
+// Tcl Message: [Wed Apr 16 09:40:44 2014] Launched synth_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// 'q' command handler elapsed time: 5 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// Elapsed time: 45 seconds
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (y:aC, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fir_compiler_0]", 2, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenu (PAResourceQtoZ.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Instantiation Template]", 4); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Instantiation Template]", 4, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Instantiation Template, ADC.vho]", 5); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Instantiation Template, ADC.vho]", 5, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Instantiation Template, ADC.vho]", 5); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Instantiation Template, ADC.vho]", 5, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 9:42:04 AM
+// [Engine Memory]: 665 mb (+11386kb) [00:31:45]
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC_TOP.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC.vho", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC_TOP.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC.vho", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC_TOP.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC.vho", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC_TOP.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC.vho", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC_TOP.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC.vho", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+selectTab ("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ADC_TOP.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 384 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 09:49:14 2014] Launched impl_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// az:a (bT:JFrame): Launch Run Critical Messages: addNotify
+// Elapsed time: 54 seconds
+selectButton (PAResourceAtoH.CmdMsgDialog_OK, "OK"); // g:a (JPanel:JComponent, az:a)
+dismissDialog ("Launch Run Critical Messages"); // az:a (bT:JFrame)
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Implementation Failed: addNotify
+// Elapsed time: 28 seconds
+selectRadioButton (PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log"); // a:JRadioButton (JPanel:JComponent, O:af)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Implementation Failed"); // O:af (bT:JFrame)
+// Elapsed time: 27 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fir_compiler_0]", 2, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenu (PAResourceQtoZ.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae:JMenu (al:JPopupMenu, bT:JFrame)
+selectMenuItem (RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, Simulation]", 6, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// cb:I (bT:JFrame):  Re-customize IP : addNotify
+// TclEventType: PARAM_UPDATED
+// q:I (bT:JFrame): Re-customize IP: addNotify
+dismissDialog ("Re-customize IP"); // cb:I (bT:JFrame)
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "ADC Setup", 1); // bW:g (t:JPanel, q:I)
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Alarms", 2); // bW:g (t:JPanel, q:I)
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Single Channel", 3); // bW:g (t:JPanel, q:I)
+selectTab (PAResourceQtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // bW:g (t:JPanel, q:I)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:I)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Change Log' target for IP 'ADC'. Target already exists and is up to date. 
+// Tcl Message: launch_run  ADC_synth_1 
+// Tcl Message: ERROR: [Common 17-162] Invalid option value specified for '-runs'. 
+// HOptionPane Error: 'ERROR: [Common 17-162] Invalid option value specified for '-runs'.  (Managing Output Products)'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// 'aG' command handler elapsed time: 72 seconds
+// Elapsed time: 69 seconds
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aC:X (bT:JFrame): Reset Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_target all [get_files  C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: delete_ip_run [get_files -of_objects [get_fileset ADC] C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci' from fileset 'ADC' to fileset 'sources_1'. 
+// 'aG' command handler elapsed time: 6 seconds
+dismissDialog ("Managing Output Products"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 1, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ADC'... 
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ADC'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ADC'... 
+// TclEventType: PARAM_UPDATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PARAM_UPDATED
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ADC'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 842.941 ; gain = 0.000 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// Tcl Message: launch_run  ADC_synth_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 09:53:23 2014] Launched ADC_synth_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/runme.log 
+// 'aG' command handler elapsed time: 14 seconds
+// Elapsed time: 11 seconds
+dismissDialog ("Managing Output Products"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// aT:X (bT:JFrame): Save Project: addNotify
+selectButton (PAResourceQtoZ.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aT:X)
+// cb:I (bT:JFrame):  Save Design : addNotify
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+dismissDialog ("Save Project"); // aT:X (bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 09:53:33 2014] Launched synth_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// 'q' command handler elapsed time: 6 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Synthesis Failed: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Synthesis Failed"); // O:af (bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTab ((HResource) null, (HResource) null, "Design Runs", 4); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, bT:JFrame)
+expandTreeTable (PAResourceAtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "ADC_synth_1 ; xc7a100tcsg324-1 ; ADC ; Vivado Synthesis Defaults (Vivado Synthesis 2013) ; synth_design Complete! ; 100 ; Tue Apr 15 13:41:31 CEST 2014 ; 00:01:09 ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults", 3); // Y:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "ADC_impl_1 ; xc7a100tcsg324-1 ; ADC ; Vivado Implementation Defaults (Vivado Implementation 2013) ; Not started ; 0 ;  ; 00:00:00 ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults", 4); // Y:aj (JViewport:JComponent, bT:JFrame)
+selectTable (PAResourceAtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "ADC_impl_1 ; xc7a100tcsg324-1 ; ADC ; Vivado Implementation Defaults (Vivado Implementation 2013) ; Not started ; 0 ;  ; 00:00:00 ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults", 4, false, false, false, true, false); // Y:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTable (PAResourceAtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "ADC_impl_1 ; xc7a100tcsg324-1 ; ADC ; Vivado Implementation Defaults (Vivado Implementation 2013) ; Not started ; 0 ;  ; 00:00:00 ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults", 4, false, false, false, true, false); // Y:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectTable (PAResourceAtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "ADC_impl_1 ; xc7a100tcsg324-1 ; ADC ; Vivado Implementation Defaults (Vivado Implementation 2013) ; Not started ; 0 ;  ; 00:00:00 ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults", 4, false, false, false, true, false); // Y:aj (JViewport:JComponent, bT:JFrame) - POPUP TRIGGER
+selectMenu (PAResourceAtoH.ExpRunMenu_LAUNCH_STEP, "Launch Step To"); // ae:JMenu (al:JPopupMenu, Popup:JWindow)
+selectMenuItem (PAResourceAtoH.ExpRunMenu_LAUNCH_RUNS, "Launch Runs..."); // ah:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// e:I (bT:JFrame): Launch Selected Runs: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, e:I)
+// e:I (bT:JFrame): Launch Selected Runs: addNotify
+// cb:I (e:I):  Starting Design runs : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs ADC_impl_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 09:54:08 2014] Launched ADC_impl_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_impl_1/runme.log 
+dismissDialog ("Starting Design runs"); // cb:I (e:I)
+// [GUI Memory]: 149 mb (+2184kb) [00:44:05]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 93 seconds
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, ADC.dcp]", 8); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, ADC.dcp]", 8, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// J:X (bT:JFrame): Can not show file: addNotify
+selectButton (PAResourceItoP.OpenFileAction_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, J:X)
+dismissDialog ("Can not show file"); // J:X (bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC, ADC.dcp]", 8, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// ak:X (bT:JFrame): Report IP Status: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ak:X)
+// [GUI Memory]: 152 mb (+2370kb) [00:45:27]
+dismissDialog ("Report IP Status"); // ak:X (bT:JFrame)
+// cb:I (bT:JFrame):  Report IP Status : addNotify
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status_1  
+dismissDialog ("Report IP Status"); // cb:I (bT:JFrame)
+// [GUI Memory]: 153 mb (+1478kb) [00:45:32]
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ADC]", 3, false, false, false, true, false); // o:f (u:JPanel, bT:JFrame) - POPUP TRIGGER
+selectMenuItem (PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// aC:X (bT:JFrame): Generate Output Products: addNotify
+selectButton (PAResourceQtoZ.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aC:X)
+// cb:I (bT:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'ADC'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Change Log' target for IP 'ADC'. Target already exists and is up to date. 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run ADC_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_run  ADC_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 09:56:07 2014] Launched ADC_synth_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/runme.log 
+// 'aG' command handler elapsed time: 6 seconds
+dismissDialog ("Managing Output Products"); // cb:I (bT:JFrame)
+selectTab ((HResource) null, (HResource) null, "Design Runs", 4); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 85 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 09:57:39 2014] Launched synth_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// 'q' command handler elapsed time: 5 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 676 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// Tcl Message: launch_runs impl_1 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 10:08:58 2014] Launched impl_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 10:10:38 AM
+// Elapsed time: 187 seconds
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (y:aC, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd)]", 1); // o:f (u:JPanel, bT:JFrame)
+// Elapsed time: 12 seconds
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd)]", 38); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_ADC_TOP - ADC_TOP - Behavioral (ADC_TOP.vhd)]", 40); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 435 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 10:19:46 2014] Launched impl_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+dismissDialog ("Generate Bitstream"); // cb:I (bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 153 seconds
+selectRadioButton (PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, O:af)
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// 'o' command handler elapsed time: 5 seconds
+// Tcl Message: open_hw 
+dismissDialog ("Bitstream Generation Completed"); // O:af (bT:JFrame)
+// Elapsed time: 89 seconds
+selectButton (PAResourceItoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Open recent target"); // h:j (JPanel:JComponent, bT:JFrame)
+selectMenuItem ((HResource) null, "localhost:60001,xilinx_tcf/Digilent/210274504873A"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// cb:I (bT:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -host localhost -port 60001 
+// Tcl Message: INFO: [Xicom 50-2] Connecting to hw_server... 
+// Tcl Message: INFO: [Xicom 50-1] Attempting to launch hw_server... 
+// Tcl Message: INFO: [#UNDEF]  ****** Xilinx hw_server v2013.4   **** Build date : Dec  9 2013-17:37:53     ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application  
+// Tcl Message: INFO: [Labtools 27-109] Started Vivado Cse Server instance on port: 60001 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 848.953 ; gain = 0.000 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274504873A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 11 seconds
+dismissDialog ("Open Hardware Target"); // cb:I (bT:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor ("DACTOP.vhd", 81, 87); // aR:G (JPanel:JComponent, bT:JFrame)
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 628, 260); // aR:G (JPanel:JComponent, bT:JFrame)
+setText (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ila", true); // j:am (c:JComboBox, bT:JFrame)
+applyEnter (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ila"); // j:am (c:JComboBox, bT:JFrame)
+applyEnter (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ila"); // j:am (c:JComboBox, bT:JFrame)
+applyEnter (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ila"); // j:am (c:JComboBox, bT:JFrame)
+unmaximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+selectButton (PAResourceQtoZ.TaskBanner_CLOSE, (String) null); // j:JideButton (JPanel:JComponent, bT:JFrame)
+closeTask ("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39); // o:f (u:JPanel, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39); // o:f (u:JPanel, bT:JFrame)
+collapseTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, leon3mp - rtl (leon3mp.vhd), io0 - dummyapb - rtl (dummyapb.vhd), inst_top - dacTop - behavioral (DACTOP.vhd)]", 39); // o:f (u:JPanel, bT:JFrame)
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (y:aC, bT:JFrame)
+expandTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0, Instantiation Template]", 2); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0, Instantiation Template]", 2, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0, Instantiation Template, ila_0.vho]", 3); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, ila_0, Instantiation Template, ila_0.vho]", 3, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+selectCodeEditor ("ila_0.vho", 49, 216); // K:aR (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("ila_0.vho", 118, 230); // K:aR (JPanel:JComponent, bT:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor ("ADC_TOP.vhd", 47, 108); // aR:G (JPanel:JComponent, bT:JFrame)
+closeView (PAResourceItoP.PAViews_CODE, "Code"); // I:b
+selectCodeEditor ("ila_0.vho", 57, 226); // K:aR (JPanel:JComponent, bT:JFrame)
+// r:af (bT:JFrame): Save Text Editor Changes: addNotify
+closeView (PAResourceItoP.PAViews_CODE, "Code"); // I:b (TdiGroup:JideTabbedPane, bT:JFrame)
+selectButton (RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a:JButton (JPanel:JComponent, r:af)
+dismissDialog ("Save Text Editor Changes"); // r:af (bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 179, 188); // aR:G (JPanel:JComponent, bT:JFrame)
+setText (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ila"); // j:am (c:JComboBox)
+selectCodeEditor ("DACTOP.vhd", 54, 158); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 99, 216); // aR:G (JPanel:JComponent, bT:JFrame)
+// Elapsed time: 110 seconds
+selectCodeEditor ("DACTOP.vhd", 366, 136); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 366, 136, false, true, false, false, false); // aR:G (JPanel:JComponent, bT:JFrame) - CONTROL KEY DOWN
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor ("DACTOP.vhd", 134, 115); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor ("ila_0.vho", 130, 209); // K:aR (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor ("ila_0.vho", 103, 229); // K:aR (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 13, 128); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab (PAResourceAtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 0); // g:JideTabbedPane (y:aC, bT:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// af:bw (bT:JFrame): Run Synthesis: addNotify
+selectCheckBox (RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // v:JCheckBox (JPanel:JComponent, af:bw): FALSE
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:bw)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+dismissDialog ("Run Synthesis"); // af:bw (bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 10:28:09 2014] Launched synth_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 848.953 ; gain = 0.000 
+// 'q' command handler elapsed time: 11 seconds
+// Elapsed time: 10 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 45 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Synthesis Failed"); // O:af (bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 108, 179); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 130, 194); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 103, 176); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 13 seconds
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 10:29:21 2014] Launched synth_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// 'q' command handler elapsed time: 3 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 36 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Synthesis Failed"); // O:af (bT:JFrame)
+selectCodeEditor ("DACTOP.vhd", 68, 248); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton (PAResourceAtoH.FileSetPanel_0_CRITICAL_WARNING, "1 critical warning"); // h:j (CommandBar:DockableBar, bT:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton (PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 10:30:20 2014] Launched synth_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/runme.log 
+// 'q' command handler elapsed time: 3 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 10:40:27 AM
+// Elapsed time: 607 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 10:40:30 2014] Launched impl_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// 'g' command handler elapsed time: 3 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Implementation Failed: addNotify
+// Elapsed time: 84 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Implementation Failed"); // O:af (bT:JFrame)
+selectButton (PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+selectButton ((HResource) null, "Run from Step: opt_design"); // JButton:AbstractButton (JPanel:JComponent, V:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// Tcl Message: launch_runs impl_1 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 16 10:42:06 2014] Launched impl_1... Run output will be captured here: C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/runme.log 
+// 'g' command handler elapsed time: 7 seconds
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// O:af (bT:JFrame): Implementation Failed: addNotify
+// Elapsed time: 101 seconds
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Implementation Failed"); // O:af (bT:JFrame)
