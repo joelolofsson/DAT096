@@ -48,72 +48,69 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="module-leonSer">
-<span id="auto-generated-documentation"></span><h1>Auto Generated Documentation<a class="headerlink" href="#module-leonSer" title="Permalink to this headline">¶</a></h1>
-<p>file leonSer.py
-Functions for handling the communication through serial port.</p>
-<p>The leonSer methods handle the communication to the serial port. The current setup is for Windows system. 
-It includes 3 methods for opening, communicating and closing serial ports.</p>
+  <div class="section" id="auto-generated-documentation">
+<h1>Auto Generated Documentation<a class="headerlink" href="#auto-generated-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-leonSer">
+<span id="serial-communication"></span><h2>Serial Communication<a class="headerlink" href="#module-leonSer" title="Permalink to this headline">¶</a></h2>
+<p>The leonSer module includes functions for handling the communication through serial port on the 
+most basic level.</p>
+<p>The current setup automatically detects the OS and opens the port accordingly (see <tt class="xref py py-mod docutils literal"><span class="pre">platform</span></tt>). 
+It includes 4 methods for opening, communicating and closing serial ports.</p>
 <p>Author: Stavros Giannakopoulos</p>
 <dl class="function">
 <dt id="leonSer.leonTx">
 <tt class="descclassname">leonSer.</tt><tt class="descname">leonTx</tt><big>(</big><em>serport</em>, <em>strinp</em><big>)</big><a class="headerlink" href="#leonSer.leonTx" title="Permalink to this definition">¶</a></dt>
-<dd><blockquote>
-<div>This is the second function which is used to send data to the Communication Port.
+<dd><p>This is the second function which is used to send data to the Communication Port.
 It takes a port object, in which it sends the string object also received after concatenating 
-the &#8216;</div></blockquote>
-<dl class="docutils">
-<dt>&#8216; character to the end. </dt>
-<dd><p class="first">It finally receives the answer from the board  up to 100 bytes and it prints it to the terminal.
+the &#8216;endline&#8217; character to the end.     
+It finally receives the answer from the board  up to 100 bytes and it prints it to the terminal.
 It may be modified to return the answer as a string.</p>
-<table class="last docutils field-list" frame="void" rules="none">
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">param serport:</th><td class="field-body">Receives an open serial port object as an input.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">param strinp:</th><td class="field-body">Receives a string to be sent to the com- port.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>serport</strong> &#8211; Receives an open serial port object as an input.</li>
+<li><strong>strinp</strong> &#8211; Receives a string to be sent to the com- port.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="function">
 <dt id="leonSer.leonsend">
 <tt class="descclassname">leonSer.</tt><tt class="descname">leonsend</tt><big>(</big><em>serport</em>, <em>strinp</em><big>)</big><a class="headerlink" href="#leonSer.leonsend" title="Permalink to this definition">¶</a></dt>
-<dd><blockquote>
-<div>This is the second function which is used to send and receive data to the Communication Port.
+<dd><p>This is the second function which is used to send and receive data to the Communication Port.
 It takes a port object, in which it sends the string object also received after concatenating 
-the &#8216;</div></blockquote>
-<dl class="docutils">
-<dt>&#8216; character to the end. </dt>
-<dd><p class="first">It finally receives the answer from the board  up to 100 bytes and it prints it to the terminal.
+the &#8216;endline&#8217; character to the end.     
+It finally receives the answer from the board  up to 100 bytes and it prints it to the terminal.
 It may be modified to return the answer as a string.</p>
-<table class="last docutils field-list" frame="void" rules="none">
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">param serport:</th><td class="field-body">Receives an open serial port object as an input.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>serport</strong> &#8211; Receives an open serial port object as an input.</li>
+<li><strong>strinp</strong> &#8211; Receives a string to be sent to the com- port.</li>
+</ul>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">param strinp:</th><td class="field-body">Receives a string to be sent to the com- port.</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">returns:</th><td class="field-body">s, which is a string read by the serial port.</td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">s, which is a string read by the serial port.</p>
+</td>
 </tr>
 </tbody>
 </table>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="function">
 <dt id="leonSer.leonstart">
 <tt class="descclassname">leonSer.</tt><tt class="descname">leonstart</tt><big>(</big><big>)</big><a class="headerlink" href="#leonSer.leonstart" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is the first function which is used to initialize the Communication Port. 
-Returns the opened port. The Com3 port is set to open for now, but it might be 
-implemented as an argument in a later date. The baudrate is set to 9600 and it 
-might be implemented as an argument also</p>
+Returns the opened port. The Com5 port is set to open for now, but it might be 
+implemented as an argument- or detected automatically in a later date.
+The baudrate is set to 38343 and it might be implemented as an argument in a later build.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -139,6 +136,228 @@ argument while printing a debugging message on the terminal.</p>
 </table>
 </dd></dl>
 
+<hr class="docutils" />
+<span class="target" id="module-SeriL"></span><p>The SeriL module includes functions for calling and managing the communication through use of 
+the py:mod:&#8217;leonSer&#8217; module.</p>
+<p>The current setup includes two functions, one for running the communication from the GUI, and one for
+user triggered communication for debugging purposes.</p>
+<blockquote>
+<div>Author: Stavros Giannakopoulos</div></blockquote>
+<dl class="function">
+<dt id="SeriL.GuiLeon">
+<tt class="descclassname">SeriL.</tt><tt class="descname">GuiLeon</tt><big>(</big><em>inp</em><big>)</big><a class="headerlink" href="#SeriL.GuiLeon" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function takes a input string and then calls :func:&#8217;leonstart&#8217; to open a serial port. 
+Then it sends the input argument over with :func:&#8217;leonsend&#8217; on the port opened.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inp</strong> &#8211; Input string to be sent over the serial port.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="SeriL.SeriLeon">
+<tt class="descclassname">SeriL.</tt><tt class="descname">SeriLeon</tt><big>(</big><em>inp</em><big>)</big><a class="headerlink" href="#SeriL.SeriLeon" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function takes a input string and then calls :func:&#8217;leonstart&#8217; to open a serial port. 
+Then it sends the input argument over with :func:&#8217;leonsend&#8217; on the port opened.
+Finally it captures the response of the device.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inp</strong> &#8211; Input string to be sent over the serial port.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">y, a string containing the response of the Leon3 board.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<hr class="docutils" />
+<span class="target" id="module-ahbSeri"></span><p>The ahbSeri module is used to manage and debug the :mod:&#8217;SeriL&#8217; module for debugging reasons
+by simulating user triggered read and write functions on the Leon3 board AHB uart.</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">Stavros Giannakopoulos</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="function">
+<dt id="ahbSeri.ahbread">
+<tt class="descclassname">ahbSeri.</tt><tt class="descname">ahbread</tt><big>(</big><em>addrr</em><big>)</big><a class="headerlink" href="#ahbSeri.ahbread" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to receive a 32-bit hex memory address in the form of a string by the user. 
+And then it reads a 32 bit hex number from this address and prints it to the terminal.
+In a future build it will return the value of the memory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>addrr</strong> &#8211; Input string , adrress in the form &#8216;0x########&#8217;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ahbSeri.ahbwrite">
+<tt class="descclassname">ahbSeri.</tt><tt class="descname">ahbwrite</tt><big>(</big><em>addrr</em>, <em>data</em><big>)</big><a class="headerlink" href="#ahbSeri.ahbwrite" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to write a 32-bit hex number in a 32-bit memory address in the form of a 
+string by the user.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>addrr</strong> &#8211; Input string , address in the form &#8216;0x########&#8217;</li>
+<li><strong>data</strong> &#8211; Input string, data to be writen on the memory, in the form &#8216;0x########&#8217;</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ahbSeri.userinput">
+<tt class="descclassname">ahbSeri.</tt><tt class="descname">userinput</tt><big>(</big><big>)</big><a class="headerlink" href="#ahbSeri.userinput" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used as the main function of this module. It simulates the input by the data handling 
+function. 
+The user inputs the mode:</p>
+<blockquote>
+<div>R= Read
+W= Write</div></blockquote>
+<p>Depending on the mode, the respective function is called and executed with the user input as its arguments.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-DataStrLeon">
+<span id="data-handling"></span><h2>Data handling<a class="headerlink" href="#module-DataStrLeon" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="DataStrLeon.data4intformator">
+<tt class="descclassname">DataStrLeon.</tt><tt class="descname">data4intformator</tt><big>(</big><em>FloatInt_list</em><big>)</big><a class="headerlink" href="#DataStrLeon.data4intformator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="DataStrLeon.guiparse">
+<tt class="descclassname">DataStrLeon.</tt><tt class="descname">guiparse</tt><big>(</big><em>guinput</em><big>)</big><a class="headerlink" href="#DataStrLeon.guiparse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="DataStrLeon.hexconcatenator">
+<tt class="descclassname">DataStrLeon.</tt><tt class="descname">hexconcatenator</tt><big>(</big><em>Inhexed_list</em><big>)</big><a class="headerlink" href="#DataStrLeon.hexconcatenator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="DataStrLeon.hexizer">
+<tt class="descclassname">DataStrLeon.</tt><tt class="descname">hexizer</tt><big>(</big><em>numbered_data</em><big>)</big><a class="headerlink" href="#DataStrLeon.hexizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="DataStrLeon.kickoff">
+<tt class="descclassname">DataStrLeon.</tt><tt class="descname">kickoff</tt><big>(</big><big>)</big><a class="headerlink" href="#DataStrLeon.kickoff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="DataStrLeon.numerizer">
+<tt class="descclassname">DataStrLeon.</tt><tt class="descname">numerizer</tt><big>(</big><em>instring</em><big>)</big><a class="headerlink" href="#DataStrLeon.numerizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="DataStrLeon.parsed2values">
+<tt class="descclassname">DataStrLeon.</tt><tt class="descname">parsed2values</tt><big>(</big><em>parsed_data</em><big>)</big><a class="headerlink" href="#DataStrLeon.parsed2values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-GUI5">
+<span id="graphic-user-interface"></span><h2>Graphic User Interface<a class="headerlink" href="#module-GUI5" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="GUI5.Delay">
+<tt class="descclassname">GUI5.</tt><tt class="descname">Delay</tt><big>(</big><big>)</big><a class="headerlink" href="#GUI5.Delay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.EQ">
+<tt class="descclassname">GUI5.</tt><tt class="descname">EQ</tt><big>(</big><big>)</big><a class="headerlink" href="#GUI5.EQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.delayvalset">
+<tt class="descclassname">GUI5.</tt><tt class="descname">delayvalset</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.delayvalset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.delayvalset1">
+<tt class="descclassname">GUI5.</tt><tt class="descname">delayvalset1</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.delayvalset1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.delayvalset2">
+<tt class="descclassname">GUI5.</tt><tt class="descname">delayvalset2</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.delayvalset2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.eqvalsetb">
+<tt class="descclassname">GUI5.</tt><tt class="descname">eqvalsetb</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.eqvalsetb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.eqvalsetb1">
+<tt class="descclassname">GUI5.</tt><tt class="descname">eqvalsetb1</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.eqvalsetb1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.eqvalsetp">
+<tt class="descclassname">GUI5.</tt><tt class="descname">eqvalsetp</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.eqvalsetp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.eqvalsetp1">
+<tt class="descclassname">GUI5.</tt><tt class="descname">eqvalsetp1</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.eqvalsetp1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.eqvalsett">
+<tt class="descclassname">GUI5.</tt><tt class="descname">eqvalsett</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.eqvalsett" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.eqvalsett1">
+<tt class="descclassname">GUI5.</tt><tt class="descname">eqvalsett1</tt><big>(</big><em>event</em><big>)</big><a class="headerlink" href="#GUI5.eqvalsett1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.main">
+<tt class="descclassname">GUI5.</tt><tt class="descname">main</tt><big>(</big><big>)</big><a class="headerlink" href="#GUI5.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.outp">
+<tt class="descclassname">GUI5.</tt><tt class="descname">outp</tt><big>(</big><em>strprint</em>, <em>position</em><big>)</big><a class="headerlink" href="#GUI5.outp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.set_bv">
+<tt class="descclassname">GUI5.</tt><tt class="descname">set_bv</tt><big>(</big><big>)</big><a class="headerlink" href="#GUI5.set_bv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.set_pv">
+<tt class="descclassname">GUI5.</tt><tt class="descname">set_pv</tt><big>(</big><big>)</big><a class="headerlink" href="#GUI5.set_pv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="GUI5.set_tv">
+<tt class="descclassname">GUI5.</tt><tt class="descname">set_tv</tt><big>(</big><big>)</big><a class="headerlink" href="#GUI5.set_tv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
 </div>
 
 
@@ -147,6 +366,16 @@ argument while printing a debugging message on the terminal.</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Auto Generated Documentation</a><ul>
+<li><a class="reference internal" href="#module-leonSer">Serial Communication</a></li>
+<li><a class="reference internal" href="#module-DataStrLeon">Data handling</a></li>
+<li><a class="reference internal" href="#module-GUI5">Graphic User Interface</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="Introduction.html"
                         title="previous chapter">Introduction</a></p>

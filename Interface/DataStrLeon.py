@@ -136,15 +136,22 @@ def numerizer (instring):
         return int(instring)
     except ValueError:
         return float(instring)
-import ahbSeri
-	
-addr=['0x44004400','0x44004404','0x44004408','0x44004416']
-zomginput= "-4.2,13000,4.2,#,11.0,00000,2.5,#,0.0,1000,12.0,#,1,0.10,16,3"
-String_list=guiparse(zomginput)
-Number_list=parsed2values(String_list)
-Formated_list=data4intformator(Number_list)
-hexed_list=hexizer(Formated_list)
-Data_packets=hexconcatenator(hexed_list)
 
-for x in Data_packets:
-	ahbSeri.ahbwrite(addr[Data_packets.index(x)],x)
+
+def kickoff ():
+			
+	import ahbSeri
+		
+	addr=['0x44004400','0x44004404','0x44004408','0x44004416']
+	zomginput= "-4.2,13000,4.2,#,11.0,00000,2.5,#,0.0,1000,12.0,#,1,0.10,16,3"
+	String_list=guiparse(zomginput)
+	Number_list=parsed2values(String_list)
+	Formated_list=data4intformator(Number_list)
+	hexed_list=hexizer(Formated_list)
+	Data_packets=hexconcatenator(hexed_list)
+
+	for x in Data_packets:
+		ahbSeri.ahbwrite(addr[Data_packets.index(x)],x)
+
+if __name__ == '__main__':
+    kickoff()

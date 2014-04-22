@@ -1,8 +1,20 @@
+'''The ahbSeri module is used to manage and debug the :mod:'SeriL' module for debugging reasons
+by simulating user triggered read and write functions on the Leon3 board AHB uart.
+
+  Author: Stavros Giannakopoulos
+'''
 import SeriL
 from struct import *
 
 
 def ahbread(addrr):
+	'''
+	This function is used to receive a 32-bit hex memory address in the form of a string by the user. 
+	And then it reads a 32 bit hex number from this address and prints it to the terminal.
+	In a future build it will return the value of the memory. 
+	
+	:param addrr: Input string , adrress in the form '0x########'
+	'''
 	leng='0000'
 	id='1000'
 	idlen=id+leng
@@ -48,6 +60,13 @@ def ahbread(addrr):
 
 	
 def ahbwrite(addrr,data):
+	'''
+	This function is used to write a 32-bit hex number in a 32-bit memory address in the form of a 
+	string by the user. 
+		
+	:param addrr: Input string , address in the form '0x########'
+	:param data: Input string, data to be writen on the memory, in the form '0x########'
+	'''
 	leng='0000'
 	id='1100'
 	
@@ -69,15 +88,27 @@ def ahbwrite(addrr,data):
 	indata=SeriL.SeriLeon(packed)
 	
 	
+def userinput():	
+	'''
+	This function is used as the main function of this module. It simulates the input by the data handling 
+	function. 
+	The user inputs the mode: 
 	
-inusr=raw_input("Please select mode, R for read, W for write: ")
-while inusr != "R"  and inusr != "W":
+		R= Read
+		W= Write
+	
+	Depending on the mode, the respective function is called and executed with the user input as its arguments.
+	'''
 	inusr=raw_input("Please select mode, R for read, W for write: ")
-if inusr=="R":
-	address=raw_input("Select address: ")
-	ahbread(address)
-else:
-	address=raw_input("Type address: ")
-	Data=raw_input("Type Data: ")
-	ahbwrite(address, Data)
-	
+	while inusr != "R"  and inusr != "W":
+		inusr=raw_input("Please select mode, R for read, W for write: ")
+	if inusr=="R":
+		address=raw_input("Select address: ")
+		ahbread(address)
+	else:
+		address=raw_input("Type address: ")
+		Data=raw_input("Type Data: ")
+		ahbwrite(address, Data)
+
+if __name__ == '__main__':
+    userinput()
