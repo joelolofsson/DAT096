@@ -14,8 +14,7 @@ entity dacTop is
 		sclk	:	out STD_LOGIC;
 		din	:	out std_logic;
 	 	nSync	:	out STD_LOGIC;
-		buffer_reset : in STD_logic;
-	 	index_reset : in std_logic
+		index_reset : in STD_logic
 	);
 end entity dacTop;
 
@@ -82,12 +81,12 @@ begin
 
 your_instance_name : ila_0
   PORT MAP (
-    clk => clk50MHz,
-    trig_in => write,
+    clk => clk,
+    trig_in => readBuffer,
     trig_in_ack => open,
     probe0 => data,
     probe1 => addr,
-    probe2(0) => write
+    probe2(0) => readBuffer
   );
 
 sampleclk44kHz <= readbuffer;
@@ -119,7 +118,8 @@ DACin <= not(sBuffOut(15)) & sBuffOut(14 downto 0);
 		port map(
 		clk		=> clk,
 		rst		=> rstn,
-		buffRead	=> readBuffer,	indexReset	=> index_reset,
+		buffRead	=> readBuffer,
+		indexReset	=> index_reset,
 		buffWrite	=> write,
 		buffIn		=> data,
 		buffOut 	=> sBuffOut,

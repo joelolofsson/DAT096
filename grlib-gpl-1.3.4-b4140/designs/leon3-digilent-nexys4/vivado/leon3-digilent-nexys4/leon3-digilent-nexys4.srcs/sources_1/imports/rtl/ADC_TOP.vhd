@@ -30,9 +30,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- ! This component handles the ADC and the components needed to complete the decimation.
 
 entity ADC_TOP is
-    Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 100 MHz.
+    Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 50 MHz.
+		   CLK100 : in STD_LOGIC; 								-- ! A clock on 100MHz to let the filter have more taps
            RST : in STD_LOGIC;									-- ! Global reset active low.
-           sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.						-- ! To be removed.
+           sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.
            vauxp3 : in STD_LOGIC;								-- ! Positive analogue signal.
            vauxn3 : IN STD_LOGIC;								-- ! Negative analogue signal.
            
@@ -46,22 +47,28 @@ end ADC_TOP;
 -- ! @details The architecture containing the main body of the component.
 architecture Behavioral of ADC_TOP is
 
--- ! FIR filter IP component.
-COMPONENT fir_compiler_0
+COMPONENT ila_1
   PORT (
-    aresetn : IN STD_LOGIC;									-- ! Global reset active low.
-    aclk : IN STD_LOGIC;									-- ! Global clock running at 100 MHz
-    s_axis_data_tvalid : IN STD_LOGIC;						-- ! Signalling a new data word is available
-    s_axis_data_tready : OUT STD_LOGIC;						-- ! Signalling the FIR component is ready for a new value
-    s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);	-- ! The input data coming from the ADC 
-    m_axis_data_tvalid : OUT STD_LOGIC;						-- ! Signalling the output is valid
-    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)	-- ! The output from the FIR-filter.
+    clk : IN STD_LOGIC;
+    probe0 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    probe1 : IN STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END COMPONENT;
 ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
-ATTRIBUTE SYN_BLACK_BOX OF fir_compiler_0 : COMPONENT IS TRUE;
+ATTRIBUTE SYN_BLACK_BOX OF ila_1 : COMPONENT IS TRUE;
 ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF fir_compiler_0 : COMPONENT IS "aresetn,aclk,s_axis_data_tvalid,s_axis_data_tready,s_axis_data_tdata[15:0],m_axis_data_tvalid,m_axis_data_tdata[31:0]";
+ATTRIBUTE BLACK_BOX_PAD_PIN OF ila_1 : COMPONENT IS "clk,probe0[15:0],probe1[15:0]";
+
+   component digitalfilter
+      GENERIC(WIDTH:INTEGER:=8;
+              N:INTEGER:=4);
+      PORT(reset:STD_LOGIC;
+           start:STD_LOGIC;
+           clk:STD_LOGIC;
+           x:IN STD_LOGIC_VECTOR(WIDTH-1 DOWNTO 0);
+           y:OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+           finished:OUT STD_LOGIC);
+   END  component;
 
 -- ! XADC IP component
 COMPONENT ADC
@@ -90,10 +97,10 @@ COMPONENT ADC
     busy_out : OUT STD_LOGIC						-- ! Signalling the ADC is busy sampling
   );
 END COMPONENT;
---ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
---ATTRIBUTE SYN_BLACK_BOX OF ADC : COMPONENT IS TRUE;
---ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
---ATTRIBUTE BLACK_BOX_PAD_PIN OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,convst_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
+ATTRIBUTE SYN_BLACK_BOX_ADC : BOOLEAN;
+ATTRIBUTE SYN_BLACK_BOX_ADC OF ADC : COMPONENT IS TRUE;
+ATTRIBUTE BLACK_BOX_PAD_PIN_ADC : STRING;
+ATTRIBUTE BLACK_BOX_PAD_PIN_ADC OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,convst_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
 
 component ADC_buffer--_const --for the constant buffer and test of APB
 	generic (
@@ -117,48 +124,57 @@ signal inv_rst : std_logic;								-- ! Inversed reset for XADC
 signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);	-- ! Sampled value from XADC
 signal sampleFLT : STD_LOGIC_VECTOR(15 downto 0);		-- ! Filtered signal to be decimated
 signal busy : STD_LOGIC;								-- ! Busy signal from XADC
-signal dataready : STD_LOGIC;							-- ! Signalling the FIR filter is done to load new value to FIR filter
+--signal dataready : STD_LOGIC;							-- ! Signalling the FIR filter is done to load new value to FIR filter
 signal FIRready : STD_LOGIC;                            -- ! Signalling the firfilter is done with calculation
-signal cnt : integer range 0 to 3;                      -- ! 
+--signal cnt : integer range 0 to 3;                      -- ! 
 signal FIRvalid : std_logic;
 signal Buffer_in : STD_LOGIC_VECTOR(15 downto 0);
+signal lastsampleclk : STD_LOGIC;
+signal filterin : STD_LOGIC_VECTOR(31 downto 0);
+signal filterout : STD_LOGIC_VECTOR(31 downto 0);
 
 
 
 begin
+
+ILA_ADC : ila_1
+  PORT MAP (
+    clk => clk,
+    probe0 => sampledvalue,
+    probe1 => filterout(31 downto 16)
+  );
+
 
 process(clk,rst)
 begin
     if rst = '0' then
-        dataready <= '1';
 		den_in <= '0';
     elsif rising_edge(clk) then 
-        if sampleclk = '1' then
-            dataready <= '1';
-            cnt <= 3;
-			den_in <= '1';
-        elsif cnt = 0 then
-            dataready <= '0';
-			den_in <= '0';
-        else
-            cnt <= cnt -1;
-			den_in <= '0';
-        end if;
+			lastsampleclk <= sampleclk;
+      if (sampleclk = '1') and (lastsampleclk = '0') then
+				den_in <= '1';
+	    else
+				den_in <= '0';
+      end if;
     end if;
 end process;
 
 --den_in <= not busy; 					-- ! Enable is set to one when the signal XADC is not busy
 inv_rst <= not rst;						-- ! Reset is inverted to create a active high reset for XADC
---process(clk,sampleclk)
---begin
---if rising_edge(clk ) then
---    if sampleclk = '1' then
---        den_in <= '1';
---    else 
---        den_in <= '0';
---    end if;
---end if;
---end process;
+filterin(15 downto 0) <= sampledvalue;
+filterin(31 downto 16) <= (others => sampledvalue(15));
+
+  isnt_filter : digitalfilter
+      GENERIC map (WIDTH => 32,
+              N=> 130)
+      PORT map (
+					reset => rst,
+           start => den_in,
+           clk => clk100,
+           x => filterin,
+           y => filterout,
+           finished => open);
+
 
 --DC_buff_out <= sampledvalue;
 
@@ -199,7 +215,7 @@ inst_ADC : ADC
  		clk                 => clk,
  		rst                 => rst,
  		buff_write			=> ADC_buff_write,
- 		Buffin 				=> sampledvalue,
+ 		Buffin 				=> filterout(31 downto 16),
  		Buffout 			=> ADC_buff_out,
  		Bufferfull 		    => Buff_full,
  		Addr 				=> addr);

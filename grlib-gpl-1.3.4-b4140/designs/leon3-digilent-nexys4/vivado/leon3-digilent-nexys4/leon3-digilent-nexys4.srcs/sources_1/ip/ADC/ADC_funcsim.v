@@ -1,10 +1,10 @@
-// Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-// Date        : Wed Apr 16 09:57:23 2014
+// Tool Version: Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
+// Date        : Mon Apr 21 15:46:57 2014
 // Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim
-//               C:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.v
+//               C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.v
 // Design      : ADC
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -60,7 +60,6 @@ module ADC
   input vp_in;
   input vn_in;
 
-  wire \<const0> ;
   wire alarm_out;
   wire busy_out;
   wire [4:0]channel_out;
@@ -89,12 +88,10 @@ module ADC
   wire [6:3]NLW_U0_ALM_UNCONNECTED;
   wire [4:0]NLW_U0_MUXADDR_UNCONNECTED;
 
-GND GND
-       (.G(\<const0> ));
 (* box_type = "PRIMITIVE" *) 
    XADC #(
     .INIT_40(16'h0613),
-    .INIT_41(16'h3130),
+    .INIT_41(16'h3100),
     .INIT_42(16'h0300),
     .INIT_43(16'h0000),
     .INIT_44(16'h0000),
@@ -128,12 +125,12 @@ GND GND
     .IS_CONVSTCLK_INVERTED(1'b0),
     .IS_DCLK_INVERTED(1'b0),
     .SIM_DEVICE("7SERIES"),
-    .SIM_MONITOR_FILE("c:/Users/Administratör/Desktop/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt")) 
+    .SIM_MONITOR_FILE("c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt")) 
      U0
        (.ALM({alarm_out,NLW_U0_ALM_UNCONNECTED[6:3],vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out}),
         .BUSY(busy_out),
         .CHANNEL(channel_out),
-        .CONVST(\<const0> ),
+        .CONVST(1'b0),
         .CONVSTCLK(convstclk_in),
         .DADDR(daddr_in),
         .DCLK(dclk_in),
@@ -150,8 +147,8 @@ GND GND
         .MUXADDR(NLW_U0_MUXADDR_UNCONNECTED[4:0]),
         .OT(ot_out),
         .RESET(reset_in),
-        .VAUXN({\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,vauxn3,\<const0> ,\<const0> ,\<const0> }),
-        .VAUXP({\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,\<const0> ,vauxp3,\<const0> ,\<const0> ,\<const0> }),
+        .VAUXN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,vauxn3,1'b0,1'b0,1'b0}),
+        .VAUXP({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,vauxp3,1'b0,1'b0,1'b0}),
         .VN(vn_in),
         .VP(vp_in));
 endmodule
