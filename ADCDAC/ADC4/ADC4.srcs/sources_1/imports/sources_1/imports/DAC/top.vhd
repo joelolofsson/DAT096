@@ -67,12 +67,12 @@ component PWM
            PWMout : out  STD_LOGIC);
 end component;
 
-ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
-ATTRIBUTE SYN_BLACK_BOX OF DMC : COMPONENT IS TRUE;
-
-
-ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF DMC : COMPONENT IS "clk_in1,clk_out1,resetn";
+--ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
+--ATTRIBUTE SYN_BLACK_BOX OF DMC : COMPONENT IS TRUE;
+--
+--
+--ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
+--ATTRIBUTE BLACK_BOX_PAD_PIN OF DMC : COMPONENT IS "clk_in1,clk_out1,resetn";
 
 component DAC_buffer
 	generic (
@@ -104,6 +104,10 @@ signal sampleEna705kHz : STD_LOGIC;
 
 signal sampleEna44kHz : STD_LOGIC;
 
+signal sampleEna44kHzsync : STD_LOGIC;
+
+signal sampleEna705kHzsync : STD_LOGIC;
+
 signal sampleEna44kHzfixed : STD_LOGIC;
 
 signal sampleEna705kHzfixed : STD_LOGIC;
@@ -111,7 +115,6 @@ signal sampleEna705kHzfixed : STD_LOGIC;
 signal dac_read : STD_LOGIC;
 
 begin
-
 inst_DMC : DMC
    port map ( 
 
@@ -158,10 +161,14 @@ begin
 				sampleEna44kHzfixed <= '0';
 				lastSampleEna705kHz <= '0';
         lastSampleEna44kHz <= '0';
+				sampleEna705kHzout <= '0';
+				sampleEna44kHzout <= '0';
     elsif rising_edge(clk100) then
-        lastSampleEna705kHz <= SampleEna705kHz;
-        lastSampleEna44kHz <= SampleEna44kHz;
-        if (sampleena705kHz = '1') and (lastSampleena705kHz = '0') then
+        lastSampleEna705kHz <= SampleEna705kHzsync;
+        lastSampleEna44kHz <= SampleEna44kHzsync;
+        SampleEna705kHzsync <= SampleEna705kHz;
+        SampleEna44kHzsync <= SampleEna44kHz;
+        if (sampleena705kHzsync = '1') and (lastSampleena705kHz = '0') then
             sampleEna705kHzfixed <= '1';
 						sampleEna705kHzout <= '1';
         elsif sampleEna705kHzfixed = '0' then
@@ -170,7 +177,7 @@ begin
 						sampleEna705kHzfixed <= '0';
         end if;
         
-        if (sampleEna44kHz = '1') and (lastSampleEna44kHz ='0') then
+        if (sampleEna44kHzsync = '1') and (lastSampleEna44kHz ='0') then
             sampleEna44kHzfixed <= '1';
 						sampleEna44kHzout <= '1';
 						DAC_read <= '1';

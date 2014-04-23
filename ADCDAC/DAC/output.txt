@@ -1,12 +1,11 @@
 Storage Target: SPI Flash Single FPGA
 128M
 FF
-Untitled
-C:\CHALMERS\DAT096\DAT096\ADCDAC\DAC\
+leon3_flash
+C:/CHALMERS/DAT096/softcore/bitfiles/16042014
 
 MCS
 No
-
 
 MCS
 No

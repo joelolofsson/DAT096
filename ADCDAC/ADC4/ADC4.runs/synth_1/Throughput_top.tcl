@@ -3,6 +3,9 @@
 # 
 
   set_param gui.test TreeTableDev
+  set_param iopl.placeGlobalClockInstsInIOPlacer 0
+  set_param iopl.placeRegionalClockInstsInIOPlacer 0
+set_msg_config -id {Common-41} -limit 4294967295
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config -id {Labtools 27-147} -limit 4294967295
@@ -10,35 +13,30 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
 add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/filtercoeff.coe
-add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp
-set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
-set_property use_blackbox_stub false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
+add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/FIR705kHz.coe
+add_files {{c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe}}
 add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/ADC_synth_1/ADC.dcp
 set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/ADC_synth_1/ADC.dcp]
 set_property use_blackbox_stub false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/ADC_synth_1/ADC.dcp]
-
-read_ip C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/DMC/DMC.xci
-set_property used_in_implementation false [get_files c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/DMC/DMC.dcp]
-set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property is_locked true [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/DMC/DMC.xci]
-
+add_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp
+set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
+set_property use_blackbox_stub false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/fir_compiler_0_synth_1/fir_compiler_0.dcp]
 read_verilog {
+  {c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v}
   c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_stub.v
-  c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC_stub.v
 }
 read_vhdl {
-  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd
-  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd
-  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd
-  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd
-  C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd
+  {C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd}
+  {C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd}
+  {C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd}
+  {C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd}
+  {C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd}
+  {C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd}
   C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd
 }
 read_xdc C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/constrs_1/imports/new/ADC_TOP.xdc
 set_property used_in_implementation false [get_files C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/constrs_1/imports/new/ADC_TOP.xdc]
 
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 read_xdc dont_buffer.xdc
 set_property used_in_implementation false [get_files dont_buffer.xdc]
 set_param synth.vivado.isSynthRun true

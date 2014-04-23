@@ -1,4 +1,4 @@
-## This file is a general .ucf for the Nexys4 rev B board
+TP1P## This file is a general .ucf for the Nexys4 rev B board
 ## To use it in a project:
 ## - uncomment the lines corresponding to used pins
 ## - rename the used signals according to the project

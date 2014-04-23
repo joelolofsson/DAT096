@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--Product Version: Vivado v2013.4-->
+<Project Version="6" Minor="14" Path="C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC572/ADC572.xpr">
+	<FileSet Dir="sources_1" File="fileset.xml"/>
+	<FileSet Dir="constrs_1" File="fileset.xml"/>
+	<FileSet Dir="sim_1" File="fileset.xml"/>
+	<FileSet Dir="xadc_wiz_0" File="fileset.xml"/>
+	<HWSession Dir="hw" File="hwsession_1.xml"/>
+	<RunSet Dir="runs" File="runs.xml"/>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<Config>
+		<Option Name="Id" Val="07ef027ccbb64b4b93a2e125634af74c"/>
+		<Option Name="Part" Val="xc7a100tcsg324-1"/>
+		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+		<Option Name="TargetLanguage" Val="VHDL"/>
+		<Option Name="Board" Val=""/>
+		<Option Name="ActiveSimSet" Val="sim_1"/>
+	</Config>
+</Project>
+

@@ -19,16 +19,6 @@ AC:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:def
 *Finished parsing RTL primitives file [%s]
 11*netlist2U
 AC:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml2default:defaultZ29-11
-5
-Refreshing IP repositories
-234*coregenZ19-234
->
-"No user IP repositories specified
-1154*coregenZ19-1704
-s
-"Loaded Vivado IP repository '%s'.
-1332*coregen23
-C:/Xilinx/Vivado/2013.4/data/ip2default:defaultZ19-2313
 s
 Command: %s
 53*	vivadotcl2K
@@ -38,11 +28,6 @@ s
 Starting synthesis...
 
 3*	vivadotclZ4-3
-©
-%IP '%s' is locked. Locked reason: %s
-1260*coregen2
-DMC2default:default2M
-9Property 'IS_LOCKED' is set to true by the system or user2default:defaultZ19-2162
 –
 @Attempting to get a license for feature '%s' and/or device '%s'
 308*common2
@@ -55,181 +40,244 @@ Starting synthesis...
 xc7a100t2default:defaultZ17-349
 ›
 %s*synth2‹
-wStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 338.488 ; gain = 80.500
+wStarting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 334.559 ; gain = 76.449
 2default:default
 ë
 synthesizing module '%s'638*oasys2"
 Throughput_top2default:default2x
 bC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd2default:default2
-482default:default8@Z8-638
-ß
+502default:default8@Z8-638
+¼
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-ADC_TOP2default:default2o
-[C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd2default:default2
+ADC_TOP2default:default2Ë
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
 322default:default2 
 inst_ADC_TOP2default:default2
 ADC_TOP2default:default2x
 bC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd2default:default2
-1032default:default8@Z8-3491
-Ý
+1082default:default8@Z8-3491
+º
 synthesizing module '%s'638*oasys2
-ADC_TOP2default:default2q
-[C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd2default:default2
+ADC_TOP2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
 502default:default8@Z8-638
-¼
+ý
+5synthesizing blackbox instance '%s' of component '%s'637*oasys2
+inst_fir2default:default2"
+fir_compiler_02default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+1672default:default8@Z8-637
+€
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-ADC2default:default2_
-Kc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC_stub.v2default:default2
+ADC2default:default2Å
+°c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v2default:default2
 162default:default2
 inst_ADC2default:default2
-ADC2default:default2q
-[C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd2default:default2
-1962default:default8@Z8-3491
-É
+ADC2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+1852default:default8@Z8-3491
+°
 synthesizing module '%s'638*oasys2
-ADC2default:default2a
-Kc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC_stub.v2default:default2
+ADC2default:default2Ç
+°c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v2default:default2
 162default:default8@Z8-638
 W
 %s*synth2H
 4	Parameter bufferwidth bound to: 7 - type: integer 
 2default:default
-à
+š
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-ADC_buffer2default:default2r
-^C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd2default:default2
+ADC_buffer2default:default2Î
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd2default:default2
 342default:default2
 inst_Buffer2default:default2
 
-ADC_buffer2default:default2q
-[C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd2default:default2
-2442default:default8@Z8-3491
-ó
+ADC_buffer2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+2332default:default8@Z8-3491
+Ð
 synthesizing module '%s'638*oasys2.
-ADC_buffer__parameterized02default:default2t
-^C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd2default:default2
+ADC_buffer__parameterized02default:default2Ð
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd2default:default2
 482default:default8@Z8-638
 W
 %s*synth2H
 4	Parameter bufferwidth bound to: 7 - type: integer 
 2default:default
-®
+‹
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 ADC_buffer__parameterized02default:default2
 12default:default2
-12default:default2t
-^C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd2default:default2
+12default:default2Ð
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd2default:default2
 482default:default8@Z8-256
-˜
+ö
+0Net %s in module/entity %s does not have driver.3422*oasys2 
+ADC_buff_out2default:default2
+ADC_TOP2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+452default:default8@Z8-3848
+õ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ADC_TOP2default:default2
 22default:default2
-12default:default2q
-[C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_TOP.vhd2default:default2
+12default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
 502default:default8@Z8-256
-ß
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-DAC_top2default:default2s
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd2default:default2
-322default:default2
-inst_top2default:default2
-DAC_top2default:default2x
+µ
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+dacTop2default:default2Ë
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+42default:default2
+inst_top2default:default2
+DacTop2default:default2x
 bC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd2default:default2
-1182default:default8@Z8-3491
-á
-synthesizing module '%s'638*oasys2
-DAC_top2default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd2default:default2
-462default:default8@Z8-638
-™
-5synthesizing blackbox instance '%s' of component '%s'637*oasys2
-inst_DMC2default:default2
-DMC2default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd2default:default2
-1152default:default8@Z8-637
-W
-%s*synth2H
-4	Parameter Resolution bound to: 11 - type: integer 
+1232default:default8@Z8-3491
+¹
+synthesizing module '%s'638*oasys2
+dacTop2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+192default:default8@Z8-638
+_
+%s*synth2P
+<	Parameter systemclock bound to: 100000000 - type: integer 
 2default:default
-Ô
-Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
-PWM2default:default2s
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd2default:default2
-342default:default2
-Inst_PWM2default:default2
-PWM2default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd2default:default2
-1262default:default8@Z8-3491
-í
-synthesizing module '%s'638*oasys2'
-PWM__parameterized02default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd2default:default2
-462default:default8@Z8-638
-W
-%s*synth2H
-4	Parameter Resolution bound to: 11 - type: integer 
+[
+%s*synth2L
+8	Parameter sampleclock bound to: 44100 - type: integer 
 2default:default
-¨
-%done synthesizing module '%s' (%s#%s)256*oasys2'
-PWM__parameterized02default:default2
+P
+%s*synth2A
+-	Parameter OSR bound to: 16 - type: integer 
+2default:default
+
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+
+clk_divide2default:default2Î
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd2default:default2
+62default:default2$
+inst_clk_divider2default:default2
+
+clk_divide2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+762default:default8@Z8-3491
+Ð
+synthesizing module '%s'638*oasys2.
+clk_divide__parameterized02default:default2Ð
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd2default:default2
+212default:default8@Z8-638
+_
+%s*synth2P
+<	Parameter systemclock bound to: 100000000 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter sampleclock bound to: 44100 - type: integer 
+2default:default
+P
+%s*synth2A
+-	Parameter OSR bound to: 16 - type: integer 
+2default:default
+‹
+%done synthesizing module '%s' (%s#%s)256*oasys2.
+clk_divide__parameterized02default:default2
 32default:default2
-12default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd2default:default2
-462default:default8@Z8-256
+12default:default2Ð
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd2default:default2
+212default:default8@Z8-256
+
+Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
+DAC_SPI2default:default2Ë
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
+42default:default2 
+inst_DAC_SPI2default:default2
+DAC_SPI2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+862default:default8@Z8-3491
+º
+synthesizing module '%s'638*oasys2
+DAC_SPI2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
+162default:default8@Z8-638
+õ
+%done synthesizing module '%s' (%s#%s)256*oasys2
+DAC_SPI2default:default2
+42default:default2
+12default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
+162default:default8@Z8-256
 W
 %s*synth2H
 4	Parameter bufferwidth bound to: 7 - type: integer 
 2default:default
-è
+
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2
 
-DAC_buffer2default:default2r
-^C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd2default:default2
+DAC_buffer2default:default2Î
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd2default:default2
 342default:default2#
-inst_DAC_buffer2default:default2
+inst_DAC_BUFFER2default:default2
 
-DAC_buffer2default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd2default:default2
-1352default:default8@Z8-3491
-ó
+DAC_buffer2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+972default:default8@Z8-3491
+Ð
 synthesizing module '%s'638*oasys2.
-DAC_buffer__parameterized02default:default2t
-^C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd2default:default2
+DAC_buffer__parameterized02default:default2Ð
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd2default:default2
 482default:default8@Z8-638
 W
 %s*synth2H
 4	Parameter bufferwidth bound to: 7 - type: integer 
 2default:default
-®
+‹
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 DAC_buffer__parameterized02default:default2
-42default:default2
-12default:default2t
-^C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd2default:default2
-482default:default8@Z8-256
-œ
-%done synthesizing module '%s' (%s#%s)256*oasys2
-DAC_top2default:default2
 52default:default2
-12default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd2default:default2
-462default:default8@Z8-256
+12default:default2Ð
+¹C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd2default:default2
+482default:default8@Z8-256
+ô
+%done synthesizing module '%s' (%s#%s)256*oasys2
+dacTop2default:default2
+62default:default2
+12default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_TOP.vhd2default:default2
+192default:default8@Z8-256
+¢
+0Net %s in module/entity %s does not have driver.3422*oasys2
+sample2default:default2"
+Throughput_top2default:default2x
+bC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd2default:default2
+1012default:default8@Z8-3848
 ¦
 %done synthesizing module '%s' (%s#%s)256*oasys2"
 Throughput_top2default:default2
-62default:default2
+72default:default2
 12default:default2x
 bC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd2default:default2
-482default:default8@Z8-256
+502default:default8@Z8-256
 š
 +design %s has port %s driven by constant %s3447*oasys2"
 Throughput_top2default:default2
 opena2default:default2
 12default:defaultZ8-3917
+{
+!design %s has unconnected port %s3331*oasys2"
+Throughput_top2default:default2
+testout2default:defaultZ8-3331
+|
+!design %s has unconnected port %s3331*oasys2"
+Throughput_top2default:default2
+testout22default:defaultZ8-3331
+
+!design %s has unconnected port %s3331*oasys2"
+Throughput_top2default:default2
+diodeswitch2default:defaultZ8-3331
 œ
 %s*synth2Œ
-xFinished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 363.484 ; gain = 105.496
+xFinished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 359.738 ; gain = 101.629
 2default:default
 ;
 %s*synth2,
@@ -301,24 +349,10 @@ QC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/constrs_1/imports/new/ADC_TOP.x
 233*project2e
 QC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/constrs_1/imports/new/ADC_TOP.xdc2default:default2l
 XC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/synth_1/.Xil/Throughput_top_propImpl.xdc2default:defaultZ1-236
-
-Parsing XDC File [%s]
-179*designutils2Z
-FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/synth_1/dont_touch.xdc2default:defaultZ20-179
-™
-Finished Parsing XDC File [%s]
-178*designutils2Z
-FC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/synth_1/dont_touch.xdc2default:defaultZ20-178
 ‘
 Parsing XDC File [%s]
 179*designutils2[
 GC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/synth_1/dont_buffer.xdc2default:defaultZ20-179
-˜
-No cells matched '%s'.
-180*	planAhead2g
-Sget_cells -hier -filter {REF_NAME==fir_compiler_0 || ORIG_REF_NAME==fir_compiler_0}2default:default2]
-GC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.runs/synth_1/dont_buffer.xdc2default:default2
-52default:default8@Z12-180
 š
 Finished Parsing XDC File [%s]
 178*designutils2[
@@ -337,31 +371,36 @@ u
 2default:defaultZ1-111
 µ
 %s*synth2¥
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 507.410 ; gain = 249.422
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 497.633 ; gain = 239.523
 2default:default
 
 %s*synth2
-yFinished RTL Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 507.410 ; gain = 249.422
+yFinished RTL Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 497.633 ; gain = 239.523
 2default:default
-Ð
-RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2
-lastcnt_reg2default:default2
-112default:default2
-92default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd2default:default2
-732default:default8@Z8-3936
-›
-merging register '%s' into '%s'3619*oasys2 
-dac_read_reg2default:default2)
-sampleEna44kHzout_reg2default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd2default:default2
-1402default:default8@Z8-4471
+ä
+merging register '%s' into '%s'3619*oasys2
+	ready_reg2default:default2
+	nSync_reg2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
+352default:default8@Z8-4471
+ö
+0Net %s in module/entity %s does not have driver.3422*oasys2 
+ADC_buff_out2default:default2
+ADC_TOP2default:default2Í
+¶C:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+452default:default8@Z8-3848
+¢
+0Net %s in module/entity %s does not have driver.3422*oasys2
+sample2default:default2"
+Throughput_top2default:default2x
+bC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd2default:default2
+1012default:default8@Z8-3848
 ñ
 !inferring latch for variable '%s'327*oasys2
 
 DIODES_reg2default:default2x
 bC:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Throughput_top.vhd2default:default2
-1462default:default8@Z8-327
+1412default:default8@Z8-327
 <
 %s*synth2-
 
@@ -391,7 +430,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
 ±
 %s*synth2¡
-ŒFinished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 539.535 ; gain = 281.547
+ŒFinished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 530.953 ; gain = 272.844
 2default:default
 B
 %s*synth23
@@ -403,15 +442,23 @@ B
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit       Adders := 1     
+.	   2 Input     32 Bit       Adders := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     11 Bit       Adders := 1     
+.	   2 Input     12 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      7 Bit       Adders := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
 2default:default
 4
 %s*synth2%
@@ -419,15 +466,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 258   
+.	               32 Bit    Registers := 1     
 2default:default
 Q
 %s*synth2B
-.	               11 Bit    Registers := 2     
+.	               16 Bit    Registers := 257   
 2default:default
 Q
 %s*synth2B
-.	                9 Bit    Registers := 1     
+.	               12 Bit    Registers := 1     
 2default:default
 Q
 %s*synth2B
@@ -435,7 +482,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 12    
+.	                5 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 18    
 2default:default
 0
 %s*synth2!
@@ -447,11 +502,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     15 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     11 Bit        Muxes := 1     
+.	   2 Input     12 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -459,7 +510,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 267   
+.	   3 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 272   
 2default:default
 F
 %s*synth27
@@ -507,10 +562,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     15 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input      1 Bit        Muxes := 2     
 2default:default
 F
@@ -535,11 +586,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 128   
+.	               16 Bit    Registers := 128   
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 1     
+.	                1 Bit    Registers := 2     
 2default:default
 0
 %s*synth2!
@@ -561,9 +612,37 @@ B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-?
-%s*synth20
-Module PWM__parameterized0 
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                2 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+F
+%s*synth27
+#Module clk_divide__parameterized0 
 2default:default
 B
 %s*synth23
@@ -575,7 +654,7 @@ B
 2default:default
 Q
 %s*synth2B
-.	   2 Input     11 Bit       Adders := 1     
+.	   2 Input     12 Bit       Adders := 1     
 2default:default
 4
 %s*synth2%
@@ -583,11 +662,51 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               11 Bit    Registers := 2     
+.	               12 Bit    Registers := 1     
 2default:default
 Q
 %s*synth2B
-.	                9 Bit    Registers := 1     
+.	                1 Bit    Registers := 8     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     12 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 3     
+2default:default
+3
+%s*synth2$
+Module DAC_SPI 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit       Adders := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      5 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                5 Bit    Registers := 1     
 2default:default
 Q
 %s*synth2B
@@ -599,11 +718,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     11 Bit        Muxes := 1     
+.	   3 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 3     
+.	   2 Input      1 Bit        Muxes := 4     
 2default:default
 F
 %s*synth27
@@ -627,11 +746,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 129   
+.	               16 Bit    Registers := 129   
 2default:default
 Q
 %s*synth2B
 .	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
 2default:default
 0
 %s*synth2!
@@ -645,53 +768,439 @@ Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 130   
 2default:default
-3
-%s*synth2$
-Module DAC_top 
+2
+%s*synth2#
+Module dacTop 
 2default:default
 B
 %s*synth23
 Detailed RTL Component Info : 
 2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 6     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 2     
-2default:default
-º
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys26
-"\inst_top/Inst_PWM/lastcnt_reg[8] 2default:default2"
+À
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2<
+(\inst_top/inst_clk_divider/clk50MHz_reg 2default:default2"
 Throughput_top2default:defaultZ8-3332
-º
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys26
-"\inst_top/Inst_PWM/lastcnt_reg[7] 2default:default2"
-Throughput_top2default:defaultZ8-3332
-á
-RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys21
-inst_top/Inst_PWM/lastcnt_reg2default:default2
-92default:default2
-72default:default2u
-_C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd2default:default2
-732default:default8@Z8-3936
+°
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2 
+lastread_reg2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+·
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2'
+\read_index_reg[6] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+·
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2'
+\read_index_reg[5] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+·
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2'
+\read_index_reg[4] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+·
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2'
+\read_index_reg[3] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+·
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2'
+\read_index_reg[2] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+·
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2'
+\read_index_reg[1] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+·
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2'
+\read_index_reg[0] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2%
+\buffOut_reg[15] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2%
+\buffOut_reg[14] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2%
+\buffOut_reg[13] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2%
+\buffOut_reg[12] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2%
+\buffOut_reg[11] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+µ
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2%
+\buffOut_reg[10] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[9] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[8] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[7] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[6] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[5] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[4] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[3] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[2] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[1] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+´
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2$
+\buffOut_reg[0] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[0][15] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[0][14] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[0][13] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[0][12] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[0][11] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[0][10] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][9] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][8] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][7] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][6] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][5] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][4] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][3] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][2] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][1] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[0][0] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[1][15] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[1][14] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[1][13] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[1][12] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[1][11] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[1][10] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][9] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][8] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][7] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][6] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][5] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][4] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][3] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][2] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][1] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[1][0] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[2][15] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[2][14] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[2][13] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[2][12] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[2][11] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[2][10] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][9] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][8] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][7] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][6] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][5] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][4] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][3] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][2] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][1] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[2][0] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[3][15] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[3][14] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[3][13] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[3][12] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[3][11] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[3][10] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][9] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][8] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][7] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][6] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][5] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][4] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][3] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][2] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][1] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[3][0] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[4][15] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[4][14] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[4][13] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[4][12] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[4][11] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+½
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
+\Memory_array_reg[4][10] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[4][9] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[4][8] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[4][7] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[4][6] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+¼
+ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
+\Memory_array_reg[4][5] 2default:default2.
+DAC_buffer__parameterized02default:defaultZ8-3332
+Ô
+Message '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
+14*common2 
+Synth 8-33322default:default2
+1002default:defaultZ17-14
 š
 +design %s has port %s driven by constant %s3447*oasys2"
 Throughput_top2default:default2
 opena2default:default2
 12default:defaultZ8-3917
+{
+!design %s has unconnected port %s3331*oasys2"
+Throughput_top2default:default2
+testout2default:defaultZ8-3331
+|
+!design %s has unconnected port %s3331*oasys2"
+Throughput_top2default:default2
+testout22default:defaultZ8-3331
+
+!design %s has unconnected port %s3331*oasys2"
+Throughput_top2default:default2
+diodeswitch2default:defaultZ8-3331
 ©
 %s*synth2™
-„Finished Cross Boundary Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 546.090 ; gain = 288.102
+„Finished Cross Boundary Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 537.723 ; gain = 279.613
 2default:default
 ¢
 %s*synth2’
@@ -711,823 +1220,21 @@ u
 %s*synth2f
 R---------------------------------------------------------------------------------
 2default:default
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[127][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[126][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[125][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[124][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[123][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[122][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[121][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[120][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[119][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[118][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[117][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[116][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[115][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[114][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[113][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[112][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[111][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[110][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[109][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[108][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[107][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[106][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[105][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[104][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[103][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[102][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[101][15] 2default:defaultZ8-3333
-²
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2J
-6\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[100][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[99][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[98][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[97][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[96][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[95][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[94][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[93][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[92][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[91][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[90][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[89][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[88][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[87][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[86][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[85][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[84][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[83][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[82][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[81][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[80][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[79][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[78][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[77][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[76][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[75][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[74][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[73][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[72][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[71][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[70][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[69][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[68][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[67][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[66][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[65][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[64][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[63][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[62][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[61][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[60][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[59][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[58][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[57][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[56][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[55][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[54][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[53][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[52][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[51][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[50][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[49][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[48][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[47][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[46][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[45][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[44][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[43][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[42][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[41][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[40][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[39][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[38][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[37][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[36][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[35][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[34][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[33][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[32][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[31][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[30][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[29][15] 2default:defaultZ8-3333
-±
-6propagating constant %s across sequential element (%s)3333*oasys2
-02default:default2I
-5\inst_ADC_TOP/inst_Buffer /\Memory_array_reg[28][15] 2default:defaultZ8-3333
-Ô
-Message '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
-14*common2 
-Synth 8-33332default:default2
-1002default:defaultZ17-14
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[0][16] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[0][15] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[0][14] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[0][13] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[0][12] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[0][11] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[0][10] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][9] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][8] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][7] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][6] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][5] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][4] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][3] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][2] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][1] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[0][0] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[1][16] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[1][15] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[1][14] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[1][13] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[1][12] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[1][11] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[1][10] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][9] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][8] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][7] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][6] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][5] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][4] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][3] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][2] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][1] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[1][0] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[2][16] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[2][15] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[2][14] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[2][13] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[2][12] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[2][11] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[2][10] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][9] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][8] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][7] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][6] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][5] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][4] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][3] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][2] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][1] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[2][0] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[3][16] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[3][15] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[3][14] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[3][13] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[3][12] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[3][11] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[3][10] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][9] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][8] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][7] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][6] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][5] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][4] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][3] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][2] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][1] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[3][0] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[4][16] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[4][15] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[4][14] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[4][13] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[4][12] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[4][11] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[4][10] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][9] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][8] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][7] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][6] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][5] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][4] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][3] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][2] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][1] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[4][0] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[5][16] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[5][15] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[5][14] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[5][13] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[5][12] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[5][11] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-½
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2-
-\Memory_array_reg[5][10] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[5][9] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[5][8] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[5][7] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[5][6] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[5][5] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-¼
-ESequential element (%s) is unused and will be removed from module %s.3332*oasys2,
-\Memory_array_reg[5][4] 2default:default2.
-ADC_buffer__parameterized02default:defaultZ8-3332
-Ô
-Message '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
-14*common2 
-Synth 8-33322default:default2
-1002default:defaultZ17-14
 ž
 %s*synth2Ž
-zFinished Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 574.270 ; gain = 316.281
+zFinished Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
 ­
 %s*synth2
-ˆFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 574.270 ; gain = 316.281
+ˆFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
  
 %s*synth2
-|Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 574.270 ; gain = 316.281
+|Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
 Ÿ
 %s*synth2
-{Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 574.270 ; gain = 316.281
+{Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
 D
 %s*synth25
@@ -1535,7 +1242,7 @@ D
 2default:default
 ™
 %s*synth2‰
-uFinished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 574.270 ; gain = 316.281
+uFinished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
 ;
 %s*synth2,
@@ -1564,11 +1271,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ª
 %s*synth2š
-…Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 574.270 ; gain = 316.281
+…Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
 §
 %s*synth2—
-‚Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:07 . Memory (MB): peak = 574.270 ; gain = 316.281
+‚Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
 ¢
 %s*synth2’
@@ -1593,179 +1300,175 @@ R-------------------------------------------------------------------------------
 
 Report BlackBoxes: 
 2default:default
-F
-%s*synth27
-#+------+--------------+----------+
+G
+%s*synth28
+$+------+---------------+----------+
 2default:default
-F
-%s*synth27
-#|      |BlackBox name |Instances |
+G
+%s*synth28
+$|      |BlackBox name  |Instances |
 2default:default
-F
-%s*synth27
-#+------+--------------+----------+
+G
+%s*synth28
+$+------+---------------+----------+
 2default:default
-F
-%s*synth27
-#|1     |ADC           |         1|
+G
+%s*synth28
+$|1     |fir_compiler_0 |         1|
 2default:default
-F
-%s*synth27
-#|2     |DMC           |         1|
+G
+%s*synth28
+$|2     |ADC            |         1|
 2default:default
-F
-%s*synth27
-#+------+--------------+----------+
+G
+%s*synth28
+$+------+---------------+----------+
 2default:default
 8
 %s*synth2)
 
 Report Cell Usage: 
 2default:default
-=
-%s*synth2.
-+------+---------+------+
+H
+%s*synth29
+%+------+--------------------+------+
 2default:default
-=
-%s*synth2.
-|      |Cell     |Count |
+H
+%s*synth29
+%|      |Cell                |Count |
 2default:default
-=
-%s*synth2.
-+------+---------+------+
+H
+%s*synth29
+%+------+--------------------+------+
 2default:default
-=
-%s*synth2.
-|1     |ADC_bbox |     1|
+H
+%s*synth29
+%|1     |ADC_bbox            |     1|
 2default:default
-=
-%s*synth2.
-|2     |DMC_bbox |     1|
+H
+%s*synth29
+%|2     |fir_compiler_0_bbox |     1|
 2default:default
-=
-%s*synth2.
-|3     |BUFG     |     2|
+H
+%s*synth29
+%|3     |BUFG                |     1|
 2default:default
-=
-%s*synth2.
-|4     |CARRY4   |    13|
+H
+%s*synth29
+%|4     |CARRY4              |    20|
 2default:default
-=
-%s*synth2.
-|5     |LUT1     |    38|
+H
+%s*synth29
+%|5     |LUT1                |    25|
 2default:default
-=
-%s*synth2.
-|6     |LUT2     |    24|
+H
+%s*synth29
+%|6     |LUT2                |    53|
 2default:default
-=
-%s*synth2.
-|7     |LUT3     |    25|
+H
+%s*synth29
+%|7     |LUT3                |    14|
 2default:default
-=
-%s*synth2.
-|8     |LUT4     |    23|
+H
+%s*synth29
+%|8     |LUT4                |    13|
 2default:default
-=
-%s*synth2.
-|9     |LUT5     |   148|
+H
+%s*synth29
+%|9     |LUT5                |     9|
 2default:default
-=
-%s*synth2.
-|10    |LUT6     |  1025|
+H
+%s*synth29
+%|10    |LUT6                |    14|
 2default:default
-=
-%s*synth2.
-|11    |MUXF7    |   438|
+H
+%s*synth29
+%|11    |FDCE                |    35|
 2default:default
-=
-%s*synth2.
-|12    |MUXF8    |   208|
+H
+%s*synth29
+%|12    |FDPE                |     2|
 2default:default
-=
-%s*synth2.
-|13    |FDCE     |  3361|
+H
+%s*synth29
+%|13    |FDRE                |     4|
 2default:default
-=
-%s*synth2.
-|14    |FDPE     |    11|
+H
+%s*synth29
+%|14    |LDC                 |     1|
 2default:default
-=
-%s*synth2.
-|15    |FDRE     |    61|
+H
+%s*synth29
+%|15    |IBUF                |     1|
 2default:default
-=
-%s*synth2.
-|16    |LDC      |     1|
+H
+%s*synth29
+%|16    |OBUF                |     5|
 2default:default
-=
-%s*synth2.
-|17    |IBUF     |     1|
+H
+%s*synth29
+%|17    |OBUFT               |     2|
 2default:default
-=
-%s*synth2.
-|18    |OBUF     |    19|
-2default:default
-=
-%s*synth2.
-+------+---------+------+
+H
+%s*synth29
+%+------+--------------------+------+
 2default:default
 <
 %s*synth2-
 
 Report Instance Areas: 
 2default:default
-d
-%s*synth2U
-A+------+--------------------+---------------------------+------+
+e
+%s*synth2V
+B+------+---------------------+---------------------------+------+
 2default:default
-d
-%s*synth2U
-A|      |Instance            |Module                     |Cells |
+e
+%s*synth2V
+B|      |Instance             |Module                     |Cells |
 2default:default
-d
-%s*synth2U
-A+------+--------------------+---------------------------+------+
+e
+%s*synth2V
+B+------+---------------------+---------------------------+------+
 2default:default
-d
-%s*synth2U
-A|1     |top                 |                           |  5429|
+e
+%s*synth2V
+B|1     |top                  |                           |   247|
 2default:default
-d
-%s*synth2U
-A|2     |  inst_ADC_TOP      |ADC_TOP                    |  3005|
+e
+%s*synth2V
+B|2     |  inst_ADC_TOP       |ADC_TOP                    |    73|
 2default:default
-d
-%s*synth2U
-A|3     |    inst_Buffer     |ADC_buffer__parameterized0 |  2974|
+e
+%s*synth2V
+B|3     |    inst_Buffer      |ADC_buffer__parameterized0 |    18|
 2default:default
-d
-%s*synth2U
-A|4     |  inst_top          |DAC_top                    |  2300|
+e
+%s*synth2V
+B|4     |  inst_top           |dacTop                     |   148|
 2default:default
-d
-%s*synth2U
-A|5     |    Inst_PWM        |PWM__parameterized0        |    65|
+e
+%s*synth2V
+B|5     |    inst_clk_divider |clk_divide__parameterized0 |   132|
 2default:default
-d
-%s*synth2U
-A|6     |    inst_DAC_buffer |DAC_buffer__parameterized0 |  2226|
+e
+%s*synth2V
+B|6     |    inst_DAC_SPI     |DAC_SPI                    |    16|
 2default:default
-d
-%s*synth2U
-A+------+--------------------+---------------------------+------+
+e
+%s*synth2V
+B+------+---------------------+---------------------------+------+
 2default:default
 ¦
 %s*synth2–
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 574.270 ; gain = 316.281
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
 l
 %s*synth2]
-ISynthesis finished with 0 errors, 0 critical warnings and 4891 warnings.
+ISynthesis finished with 0 errors, 0 critical warnings and 4168 warnings.
 2default:default
 £
 %s*synth2“
-Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 574.270 ; gain = 316.281
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 549.902 ; gain = 291.793
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -1798,11 +1501,11 @@ L
 Releasing license: %s
 83*common2
 	Synthesis2default:defaultZ17-83
-À
+¿
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
-28*	vivadotcl2
-1342default:default2
-1062default:default2
+28*	vivadotcl2
+362default:default2
+1132default:default2
 02default:default2
 02default:defaultZ4-41
 U
@@ -1813,18 +1516,18 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:01:222default:default2
-00:01:262default:default2
-783.4222default:default2
-471.9102default:defaultZ17-268
+00:01:042default:default2
+00:01:072default:default2
+767.6522default:default2
+466.5352default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 783.422 ; gain = 0.000
+sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 767.652 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Sun Mar 30 14:56:13 20142default:defaultZ17-206
+Thu Apr 10 16:47:48 20142default:defaultZ17-206

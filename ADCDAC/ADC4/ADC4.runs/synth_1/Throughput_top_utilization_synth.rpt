@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Sun Mar 30 14:56:13 2014
+| Date         : Thu Apr 10 16:47:48 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file Throughput_top_utilization_synth.rpt -pb Throughput_top_utilization_synth.pb
 | Design       : Throughput_top
@@ -29,14 +29,14 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Loced | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 1252 |     0 |     63400 |  1.97 |
-|   LUT as Logic          | 1252 |     0 |     63400 |  1.97 |
+| Slice LUTs*             |  111 |     0 |     63400 |  0.17 |
+|   LUT as Logic          |  111 |     0 |     63400 |  0.17 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         | 3434 |     0 |    126800 |  2.70 |
-|   Register as Flip Flop | 3433 |     0 |    126800 |  2.70 |
+| Slice Registers         |   42 |     0 |    126800 |  0.03 |
+|   Register as Flip Flop |   41 |     0 |    126800 |  0.03 |
 |   Register as Latch     |    1 |     0 |    126800 | <0.01 |
-| F7 Muxes                |  438 |     0 |     31700 |  1.38 |
-| F8 Muxes                |  208 |     0 |     15850 |  1.31 |
+| F7 Muxes                |    0 |     0 |     31700 |  0.00 |
+| F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Loced | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   20 |     0 |       210 |  9.52 |
+| Bonded IOB                  |    8 |     0 |       210 |  3.80 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | IBUFGDS                     |    0 |     0 |       202 |  0.00 |
 | IDELAYCTRL                  |    0 |     0 |         6 |  0.00 |
@@ -94,7 +94,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Loced | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
+| BUFGCTRL   |    1 |     0 |        32 |  3.12 |
 | BUFIO      |    0 |     0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         6 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         6 |  0.00 |
@@ -128,34 +128,33 @@ Table of Contents
 +----------+------+
 | Ref Name | Used |
 +----------+------+
-| FDCE     | 3361 |
-| LUT6     | 1025 |
-| MUXF7    |  438 |
-| MUXF8    |  208 |
-| LUT5     |  148 |
-| FDRE     |   61 |
-| LUT1     |   38 |
-| LUT3     |   25 |
-| LUT2     |   24 |
-| LUT4     |   23 |
-| OBUF     |   19 |
-| CARRY4   |   13 |
-| FDPE     |   11 |
-| BUFG     |    2 |
+| LUT2     |   53 |
+| FDCE     |   35 |
+| LUT1     |   25 |
+| CARRY4   |   20 |
+| LUT6     |   14 |
+| LUT3     |   14 |
+| LUT4     |   13 |
+| LUT5     |    9 |
+| OBUF     |    5 |
+| FDRE     |    4 |
+| OBUFT    |    2 |
+| FDPE     |    2 |
 | LDCE     |    1 |
 | IBUF     |    1 |
+| BUFG     |    1 |
 +----------+------+
 
 
 8. Black Boxes
 --------------
 
-+----------+------+
-| Ref Name | Used |
-+----------+------+
-| DMC      |    1 |
-| ADC      |    1 |
-+----------+------+
++----------------+------+
+|    Ref Name    | Used |
++----------------+------+
+| fir_compiler_0 |    1 |
+| ADC            |    1 |
++----------------+------+
 
 
 9. Instantiated Netlists

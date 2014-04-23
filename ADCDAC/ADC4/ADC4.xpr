@@ -4,8 +4,8 @@
 	<FileSet Dir="sources_1" File="fileset.xml"/>
 	<FileSet Dir="constrs_1" File="fileset.xml"/>
 	<FileSet Dir="sim_1" File="fileset.xml"/>
-	<FileSet Dir="fir_compiler_0" File="fileset.xml"/>
 	<FileSet Dir="ADC" File="fileset.xml"/>
+	<FileSet Dir="fir_compiler_0" File="fileset.xml"/>
 	<HWSession Dir="hw" File="hwsession_1.xml"/>
 	<RunSet Dir="runs" File="runs.xml"/>
 	<DefaultLaunch Dir="$PRUNDIR"/>
@@ -15,6 +15,7 @@
 		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
 		<Option Name="TargetLanguage" Val="VHDL"/>
 		<Option Name="SimulatorLanguage" Val="VHDL"/>
+		<Option Name="TargetSimulator" Val="ModelSim"/>
 		<Option Name="Board" Val=""/>
 		<Option Name="ActiveSimSet" Val="sim_1"/>
 	</Config>
@@ -36,6 +37,16 @@
 		<MsgAttr Name="Severity" Val="ANY"/>
 		<MsgAttr Name="ShowRule" Val="1"/>
 		<MsgAttr Name="RuleSource" Val="16"/>
+	</MsgRule>
+	<MsgRule>
+		<MsgAttr Name="RuleType" Val="0"/>
+		<MsgAttr Name="Limit" Val="-1"/>
+		<MsgAttr Name="NewSeverity" Val="ANY"/>
+		<MsgAttr Name="Id" Val="Common 17-301"/>
+		<MsgAttr Name="Severity" Val="ANY"/>
+		<MsgAttr Name="ShowRule" Val="1"/>
+		<MsgAttr Name="RuleSource" Val="8"/>
+		<MsgAttr Name="StringsToMatch" Val="WARNING: [Common 17-301] Failed to get a license: Implementation"/>
 	</MsgRule>
 </Project>
 

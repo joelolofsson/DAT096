@@ -1,0 +1,265 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
+| Date         : Sun Mar 30 23:36:38 2014
+| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Command      : report_timing_summary -file XADC_interface_timing_summary_routed.rpt -pb XADC_interface_timing_summary_routed.pb
+| Design       : XADC_interface
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.11 2013-11-22
+----------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Check Timing
+| ------------
+------------------------------------------------------------------------------------------------
+
+
+Checking 'no_clock'.
+ There are 0 register/latch pins with no clock.
+ There are 0 register/latch pins with constant_clock.
+
+Checking 'unconstrained_internal_endpoints'.
+ There are 0 pins that are not constrained for maximum delay.
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+Checking 'no_input_delay'.
+ There are 0 input ports with no input delay specified.
+
+Checking 'no_output_delay'.
+ There are 16 ports with no output delay specified.
+
+Checking 'multiple_clock'.
+ There are 0 register/latch pins with related clocks.
+ There are 0 register/latch pins with exclusive clocks.
+
+Checking 'generated_clocks'.
+ There are 0 generated clocks that are not connected to a clock source.
+
+Checking 'loops'.
+ There are 0 combinational loops in the design.
+
+Checking 'partial_input_delay'.
+ There are 0 input ports with partial input delay specified.
+
+Checking 'partial_output_delay'.
+ There are 0 ports with partial output delay specified.
+
+Checking 'unexpandable_clocks'.
+ There are 0 related clock pairs.
+ There are 0 User Ignored clock pairs.
+
+Checking 'latch_loops'.
+ There are 0 combinational latch loops in the design through latch input
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      6.653        0.000                      0                    1        0.776        0.000                      0                    1        6.000        0.000                       0                     1  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 6.653        0.000                      0                    1        0.776        0.000                      0                    1        6.000        0.000                       0                     1  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        6.653ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.776ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        6.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             6.653ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/DCLK
+                            (rising edge-triggered cell XADC clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            your_instance_name/U0/DEN
+                            (rising edge-triggered cell XADC clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.464ns  (logic 1.418ns (57.556%)  route 1.046ns (42.444%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.480ns = ( 13.480 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.893ns
+    Clock Pessimism Removal (CPR):    0.414ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  IBUF/O
+                         net (fo=1, routed)           2.412     3.893    your_instance_name/dclk_in
+    XADC_X0Y0                                                         r  your_instance_name/U0/DCLK
+  -------------------------------------------------------------------    -------------------
+    XADC_X0Y0            XADC (Prop_xadc_DCLK_BUSY)
+                                                      1.294     5.187 f  your_instance_name/U0/BUSY
+                         net (fo=1, routed)           0.763     5.951    busy_out
+    SLICE_X28Y126        LUT1 (Prop_lut1_I0_O)        0.124     6.075 r  your_instance_name_i_1/O
+                         net (fo=1, routed)           0.282     6.357    your_instance_name/den_in
+    XADC_X0Y0            XADC                                         r  your_instance_name/U0/DEN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  IBUF/O
+                         net (fo=1, routed)           2.069    13.480    your_instance_name/dclk_in
+    XADC_X0Y0                                                         r  your_instance_name/U0/DCLK
+                         clock pessimism              0.414    13.893    
+                         clock uncertainty           -0.035    13.858    
+    XADC_X0Y0            XADC (Setup_xadc_DCLK_DEN)
+                                                     -0.848    13.010    your_instance_name/U0
+  -------------------------------------------------------------------
+                         required time                         13.010    
+                         arrival time                          -6.357    
+  -------------------------------------------------------------------
+                         slack                                  6.653    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.776ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/DCLK
+                            (rising edge-triggered cell XADC clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            your_instance_name/U0/DEN
+                            (rising edge-triggered cell XADC clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.687ns  (logic 0.346ns (50.387%)  route 0.341ns (49.613%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.646ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.400     0.400 r  IBUF/O
+                         net (fo=1, routed)           1.047     1.446    your_instance_name/dclk_in
+    XADC_X0Y0                                                         r  your_instance_name/U0/DCLK
+  -------------------------------------------------------------------    -------------------
+    XADC_X0Y0            XADC (Prop_xadc_DCLK_BUSY)
+                                                      0.301     1.747 f  your_instance_name/U0/BUSY
+                         net (fo=1, routed)           0.247     1.995    busy_out
+    SLICE_X28Y126        LUT1 (Prop_lut1_I0_O)        0.045     2.040 r  your_instance_name_i_1/O
+                         net (fo=1, routed)           0.093     2.133    your_instance_name/den_in
+    XADC_X0Y0            XADC                                         r  your_instance_name/U0/DEN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  IBUF/O
+                         net (fo=1, routed)           1.209     1.646    your_instance_name/dclk_in
+    XADC_X0Y0                                                         r  your_instance_name/U0/DCLK
+                         clock pessimism             -0.200     1.446    
+    XADC_X0Y0            XADC (Hold_xadc_DCLK_DEN)   -0.089     1.357    your_instance_name/U0
+  -------------------------------------------------------------------
+                         required time                         -1.357    
+                         arrival time                           2.133    
+  -------------------------------------------------------------------
+                         slack                                  0.776    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform:           { 0 5 }
+Period:             10.000
+Sources:            { clk }
+
+Check Type  Corner  Lib Pin    Reference Pin  Required  Actual  Slack  Location   Pin
+Min Period  n/a     XADC/DCLK  n/a            4.000     10.000  6.000  XADC_X0Y0  your_instance_name/U0/DCLK
+
+
+

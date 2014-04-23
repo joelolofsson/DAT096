@@ -44,15 +44,11 @@ set_property IOSTANDARD LVTTL [get_ports {DIODES[0]}]
 set_property IOSTANDARD LVTTL [get_ports vauxn3]
 set_property IOSTANDARD LVTTL [get_ports vauxp3]
 
-set_property PACKAGE_PIN A11 [get_ports pwmout]
-set_property IOSTANDARD LVTTL [get_ports pwmout]
-
 
 set_property IOSTANDARD LVTTL [get_ports opena]
 set_property PACKAGE_PIN D12 [get_ports opena]
 
 set_property IOSTANDARD LVTTL [get_ports diodeswitch]
-set_property SLEW FAST [get_ports pwmout]
 set_property PACKAGE_PIN U8 [get_ports diodeswitch]
 
 
@@ -60,7 +56,6 @@ set_property PACKAGE_PIN U8 [get_ports diodeswitch]
 
 
 
-set_property PACKAGE_PIN R16 [get_ports sampleclkout]
 set_property IOSTANDARD LVTTL [get_ports sampleclkout]
 
 
@@ -74,7 +69,29 @@ set_property SLEW FAST [get_ports sampleclkout]
 
 
 set_property IOSTANDARD LVTTL [get_ports testout]
-set_property PACKAGE_PIN G14 [get_ports testout]
 
-set_property PACKAGE_PIN P15 [get_ports testout2]
 set_property IOSTANDARD LVTTL [get_ports testout2]
+
+
+
+
+
+
+
+create_clock -period 10.00000000000000000 -name clk [get_ports CLK]
+
+
+
+set_property IOSTANDARD LVTTL [get_ports nSync]
+set_property IOSTANDARD LVTTL [get_ports sclk]
+set_property IOSTANDARD LVTTL [get_ports din]
+set_property PACKAGE_PIN G14 [get_ports nSync]
+set_property PACKAGE_PIN P15 [get_ports sclk]
+set_property PACKAGE_PIN V11 [get_ports din]
+
+set_property LOC R7 [get_cells testout_OBUF_inst]
+set_property PACKAGE_PIN R7 [get_ports testout]
+set_property LOC R10 [get_cells OBUF]
+set_property PACKAGE_PIN R10 [get_ports sampleclkout]
+set_property LOC V6 [get_cells testout2_OBUF_inst]
+set_property PACKAGE_PIN V6 [get_ports testout2]

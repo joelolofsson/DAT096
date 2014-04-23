@@ -1,7 +1,7 @@
 Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
-| Date         : Sun Mar 30 14:22:10 2014
+| Date         : Thu Apr 10 16:51:47 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file fir_compiler_0_utilization_synth.rpt -pb fir_compiler_0_utilization_synth.pb
 | Design       : fir_compiler_0
@@ -29,15 +29,15 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Loced | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  214 |     0 |     63400 |  0.33 |
-|   LUT as Logic             |  163 |     0 |     63400 |  0.25 |
-|   LUT as Memory            |   51 |     0 |     19000 |  0.26 |
-|     LUT as Distributed RAM |   24 |     0 |           |       |
-|     LUT as Shift Register  |   27 |     0 |           |       |
-| Slice Registers            |  327 |     0 |    126800 |  0.25 |
-|   Register as Flip Flop    |  327 |     0 |    126800 |  0.25 |
+| Slice LUTs*                |  183 |     0 |     63400 |  0.28 |
+|   LUT as Logic             |  104 |     0 |     63400 |  0.16 |
+|   LUT as Memory            |   79 |     0 |     19000 |  0.41 |
+|     LUT as Distributed RAM |    0 |     0 |           |       |
+|     LUT as Shift Register  |   79 |     0 |           |       |
+| Slice Registers            |  233 |     0 |    126800 |  0.18 |
+|   Register as Flip Flop    |  233 |     0 |    126800 |  0.18 |
 |   Register as Latch        |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                   |   31 |     0 |     31700 |  0.09 |
+| F7 Muxes                   |   30 |     0 |     31700 |  0.09 |
 | F8 Muxes                   |    0 |     0 |     15850 |  0.00 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis for a more realistic count.
@@ -46,14 +46,13 @@ Table of Contents
 2. Memory
 ---------
 
-+-------------------+------+-------+-----------+-------+
-|     Site Type     | Used | Loced | Available | Util% |
-+-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |  0.5 |     0 |       135 |  0.00 |
-|   RAMB36/FIFO*    |    0 |     0 |       135 |  0.00 |
-|   RAMB18          |    1 |     0 |       270 |  0.37 |
-|     RAMB18E1 only |    1 |       |           |       |
-+-------------------+------+-------+-----------+-------+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Loced | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       135 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       135 |  0.00 |
+|   RAMB18       |    0 |     0 |       270 |  0.00 |
++----------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
@@ -132,20 +131,18 @@ Table of Contents
 +----------+------+
 | Ref Name | Used |
 +----------+------+
-| FDRE     |  304 |
-| LUT6     |   85 |
-| LUT2     |   40 |
-| MUXF7    |   31 |
-| LUT3     |   29 |
-| SRL16E   |   27 |
-| RAMD64E  |   24 |
-| FDSE     |   23 |
-| LUT4     |   15 |
-| LUT5     |   14 |
-| LUT1     |   12 |
-| CARRY4   |    6 |
+| FDRE     |  222 |
+| LUT6     |   60 |
+| SRLC32E  |   56 |
+| LUT2     |   36 |
+| MUXF7    |   30 |
+| SRL16E   |   23 |
+| FDSE     |   11 |
+| LUT5     |    9 |
+| LUT4     |    9 |
+| LUT3     |    9 |
+| LUT1     |    5 |
 | DSP48E1  |    3 |
-| RAMB18E1 |    1 |
 +----------+------+
 
 

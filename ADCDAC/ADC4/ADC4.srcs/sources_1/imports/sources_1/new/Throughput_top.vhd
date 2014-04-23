@@ -37,29 +37,32 @@ entity Throughput_top is
            vauxp3 : in STD_LOGIC;
            vauxn3 : in STD_LOGIC;
            diodeswitch : in STD_LOGIC;
-           pwmout : out STD_LOGIC;
            opena : out STD_LOGIC;
            sampleclkout : out STD_LOGIC;
            DIODES : out STD_LOGIC_vector(15 downto 0);
            testout : out STD_LOGIC;
-           testout2 : out STD_LOGIC);
+           testout2 : out STD_LOGIC;
+           sclk : out STD_LOGIC;
+           din : out STD_LOGIC;
+           nSync : out STD_LOGIC);
 end Throughput_top;
 
     architecture Behavioral of Throughput_top is
 
-component DAC_top
-    Port ( clk : in  STD_LOGIC;
-           clk100 : in STD_LOGIC;
-           pwmout : out  STD_LOGIC;
---			  Value	: in STD_LOGIC_VECTOR(31 downto 0);
-            index_reset : in STD_LOGIC;
-			  sampleEna705kHzout : out STD_logic;
-			  sampleEna44kHzout : out STD_LOGIC;
-			  DAC_buff_in : in STD_LOGIC_vector(31 downto 0);
-              DAC_buff_write : in STD_LOGIC;
-              ADDR : in STD_LOGIC_VECTOR(6 downto 0);			  
-           rst : in  STD_LOGIC);
-end component;
+component DacTop
+	port(
+		rstn	:	in STD_LOGIC;	 	
+		clk	:	in STD_LOGIC;
+		data	:	in STD_LOGIC_VECTOR(15 downto 0);
+		addr	:	in STD_LOGIC_VECTOR(6 downto 0);
+		sampleclk : out STD_LOGIC;
+		sampleclk44kHz : out STD_LOGIC;
+		write	:	in STD_LOGIC;
+		sclk	:	out STD_LOGIC;
+		din	:	out std_logic;
+	 	nSync	:	out STD_LOGIC
+	);
+	end component;
 
 component ADC_TOP
     Port ( CLK : in STD_LOGIC;
@@ -71,8 +74,8 @@ component ADC_TOP
 --           ADC_buff_read : in STD_LOGIC;
            buff_full : out STD_LOGIC;
            ADC_buff_write : in STD_LOGIC;
-           sampleout : out STD_LOGIC_VECTOR(15 downto 0);
-           ADC_buff_out : out STD_LOGIC_VECTOR (31 downto 0));
+--          sampleout : out STD_LOGIC_VECTOR(15 downto 0);
+           ADC_buff_out : out STD_LOGIC_VECTOR (15 downto 0));
 end component;
 
 signal sampleclk : STD_LOGIC;
@@ -84,18 +87,20 @@ signal clk50MHz : STD_LOGIC;
 signal ADDR : STD_LOGIC_VECTOR(6 downto 0);
 signal ADC_buff_write: STD_LOGIC;
 signal ADC_buff_read: STD_LOGIC;
-Signal ADC_buff_out : STD_LOGIC_VECTOR(31 downto 0);
+Signal ADC_buff_out : STD_LOGIC_VECTOR(15 downto 0);
 
 
 signal cntsample : integer;
 signal cntaddr : integer;
 signal cnt : integer;
 signal ADC_full : STD_LOGIC;
-signal DAC_buff_in : STD_LOGIC_VECTOR(31 downto 0);
+signal DAC_buff_in : STD_LOGIC_VECTOR(15 downto 0);
 signal DAC_buff_write : STD_LOGIC;
 signal buff_buff_full : STD_LOGIC;
 
 signal sample : STD_LOGIC_VECTOR(15 downto 0);
+
+signal pwmbuf : STD_LOGIC;
 begin
 
 opena <= '1';
@@ -110,31 +115,30 @@ port map (
     ADC_buff_out => ADC_buff_out,
     ADDR => ADDR,
     ADC_buff_write => sampleEna44kHz,
-    sampleout => sample,
+--    ADC_BUFF_OUT => sample,
 --    ADC_buff_read => ADC_buff_read,
     buff_full => ADC_full
         );
 
-inst_top : DAC_top
+inst_top : DACtop
 port map ( 
-    clk => clk50MHz,
-    clk100 => clk,
-    rst => rst,
-    pwmout => pwmout,
-    index_reset => ADC_full,
+--    clk => clk50MHz,
+    clk => clk,
+    rstn => rst,
+    sclk => sclk,
+    din => din,
+    nSync => nSync,
 --    Value => Value,
-    sampleEna705kHzout => sampleclk,
-    sampleEna44kHzout => sampleEna44kHz,
-    Dac_buff_in => DAC_buff_in,
-    Dac_buff_write => DAC_buff_write,
+    sampleclk => sampleclk,
+    sampleclk44kHz => sampleEna44kHz,
+    data => DAC_buff_in,
+    write => DAC_buff_write,
     ADDR => ADDR
     );
  
  DAC_buff_in <= ADC_buff_out;
     
-with diodeswitch select
-diodes(15 downto 1) <= ADC_buff_out(31 downto 17) when '1',
-          ADC_buff_out(15 downto 1) when others;
+diodes(15 downto 1) <=  ADC_buff_out(15 downto 1);
 
 --diodes(0) <= ADC_buff_read;
    
@@ -148,6 +152,8 @@ elsif ADC_full = '1' then
     diodes(0) <= '1';
 end if;
 end process;
+
+--pwmout <= pwmbuf;
 sampleclkout <= sampleclk;
 --DAC_buff_write <= ADC_buff_read;
 --ADDR <= "0000000";
@@ -183,7 +189,6 @@ begin
 		end if;
 	end if;
 end process;
-
 
 testout <= sample(0);
 testout2 <= sample(1);

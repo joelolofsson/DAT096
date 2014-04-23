@@ -45,16 +45,16 @@ end DAC_top;
 
 architecture Behavioral of DAC_top is
 
-component DMC
-port
- (-- Clock in ports
-  clk_in1           : in     std_logic;
-  -- Clock out ports
-  clk_out1          : out    std_logic;
-  -- Status and control signals
-  resetn             : in     std_logic
- );
-end component;
+--component DMC
+--port
+-- (-- Clock in ports
+--  clk_in1           : in     std_logic;
+--  -- Clock out ports
+--  clk_out1          : out    std_logic;
+--  -- Status and control signals
+--  resetn             : in     std_logic
+-- );
+--end component;
 
 component PWM
 	 Generic(
@@ -67,12 +67,12 @@ component PWM
            PWMout : out  STD_LOGIC);
 end component;
 
-ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
-ATTRIBUTE SYN_BLACK_BOX OF DMC : COMPONENT IS TRUE;
-
-
-ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF DMC : COMPONENT IS "clk_in1,clk_out1,resetn";
+--ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
+--ATTRIBUTE SYN_BLACK_BOX OF DMC : COMPONENT IS TRUE;
+--
+--
+--ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
+--ATTRIBUTE BLACK_BOX_PAD_PIN OF DMC : COMPONENT IS "clk_in1,clk_out1,resetn";
 
 component DAC_buffer
 	generic (
@@ -108,18 +108,20 @@ signal sampleEna44kHzfixed : STD_LOGIC;
 
 signal sampleEna705kHzfixed : STD_LOGIC;
 
+signal dac_read : STD_LOGIC;
+
 begin
 
-inst_DMC : DMC
-   port map ( 
-
-   -- Clock in ports
-   clk_in1 => clk100,
-  -- Clock out ports  
-   clk_out1 => pwmclock,
-  -- Status and control signals                
-   resetn => rst             
- );
+--inst_DMC : DMC
+--   port map ( 
+--
+--   -- Clock in ports
+--   clk_in1 => clk100,
+--  -- Clock out ports  
+--   clk_out1 => pwmclock,
+--  -- Status and control signals                
+--   resetn => rst             
+-- );
 	 
 	 	Inst_PWM: PWM PORT MAP(
 		PWMclk => pwmclock,
@@ -135,16 +137,16 @@ inst_DMC : DMC
       Port map ( 
     		clk 				=> clk,
     		rst 				=> rst,
-    		buff_read			=> sampleEna44kHz,
+    		buff_read			=> dac_read,
     		index_reset         => index_reset,
     		buff_write			=> DAC_buff_write,
     		Buffin 				=> DAC_buff_in,
     		Buffout 			=> Buff_out,
     		Addr 				=> ADDR);
 	
-	values_pwm(10 downto 1) <= buff_out(31 downto 22);
+	values_pwm(10 downto 0) <= buff_out(31 downto 21);
 	
-	values_pwm(0) <= buff_out(21) XOR buff_out(20) XOR buff_out(19) XOR buff_out(18) XOR buff_out(17) XOR buff_out(16) XOR buff_out(15) XOR buff_out(14) XOR buff_out(13) XOR buff_out(12) XOR buff_out(11) XOR buff_out(10) XOR buff_out(9) XOR buff_out(8) XOR buff_out(7) XOR buff_out(6) XOR buff_out(5) XOR buff_out(4) XOR buff_out(3) XOR buff_out(2) XOR buff_out(1) XOR buff_out(0);
+	--values_pwm(0) <= buff_out(21) XOR buff_out(20) XOR buff_out(19) XOR buff_out(18) XOR buff_out(17) XOR buff_out(16) XOR buff_out(15) XOR buff_out(14) XOR buff_out(13) XOR buff_out(12) XOR buff_out(11) XOR buff_out(10) XOR buff_out(9) XOR buff_out(8) XOR buff_out(7) XOR buff_out(6) XOR buff_out(5) XOR buff_out(4) XOR buff_out(3) XOR buff_out(2) XOR buff_out(1) XOR buff_out(0);
 
 --sampleena44kHzout <= sampleEna44kHzfixed;
 --sampleena705kHzout <= sampleEna705kHzfixed;
@@ -156,6 +158,8 @@ begin
 				sampleEna44kHzfixed <= '0';
 				lastSampleEna705kHz <= '0';
         lastSampleEna44kHz <= '0';
+				sampleEna705kHzout <= '0';
+				sampleEna44kHzout <= '0';
     elsif rising_edge(clk100) then
         lastSampleEna705kHz <= SampleEna705kHz;
         lastSampleEna44kHz <= SampleEna44kHz;
@@ -171,8 +175,10 @@ begin
         if (sampleEna44kHz = '1') and (lastSampleEna44kHz ='0') then
             sampleEna44kHzfixed <= '1';
 						sampleEna44kHzout <= '1';
+						DAC_read <= '1';
         elsif sampleEna44kHzfixed = '0' then
-            SampleEna44kHzout <= '1';
+            SampleEna44kHzout <= '0';
+			DAC_read <= '0';
 				else 
 						sampleEna44kHzfixed <= '0';
         end if;

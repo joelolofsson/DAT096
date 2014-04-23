@@ -52,29 +52,63 @@ type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(31 d
 
 signal Memory_array : Memory_array_type;
 
-signal lastread : STD_LOGIC;
+signal last_read : STD_LOGIC;
 
 signal read_index : integer range 0 to 2**bufferwidth-1;
+
+type DAC_record_type is
+	record 
+		cnt : natural;
+		
+	end record;
+
+signal current : DAC_record_type;
+signal nxt 		 : DAC_record_type;
+
 begin
+
+
+process(current,index_reset,buff_read,last_read)
+begin
+	buffout <= Memory_array(current.cnt);
+	if rst = '0' then
+	else	
+		if (buff_read = '1') and (last_read = '0') then
+			if current.cnt = 2**bufferwidth -1 then
+				nxt.cnt <= 0;
+			else
+				nxt.cnt <= current.cnt +1;
+			end if;
+		end if;
+	
+	
+		if index_reset = '1' then
+			nxt.cnt <= 0;
+		end if;
+	end if;
+end process;
+
+
 process(clk,rst)
 begin
     if rst = '0' then
-        buffout <= (others => '0');
-        read_index <= 0;
         Memory_array <= (others => (others => '0'));
+				current.cnt <= 0;
     elsif rising_edge(clk) then
-        if (buff_read = '1')then
-            buffout <= Memory_array(read_index);
-
-            if read_index = 2**bufferwidth -1 then
-                read_index <= 0;
-            else
-                read_index <= read_index + 1 ;
-            end if;
-        end if;
-        if index_reset = '1' then
-           read_index <= 0;
-        end if;
+				last_read <= buff_read;
+				current <= nxt;
+--        if (buff_read = '1') and (Last_read = '0') then
+--            buffout <= Memory_array(read_index);
+--
+--            if read_index = 2**bufferwidth -1 then
+--                read_index <= 0;
+--            else
+--                read_index <= read_index + 1 ;
+--            end if;
+--        end if;
+--        if index_reset = '1' then
+--           read_index <= 0;
+--        end if;
 		if buff_write = '1' then
 			Memory_array(to_integer(unsigned(addr))) <= buffin;     
 		end if;

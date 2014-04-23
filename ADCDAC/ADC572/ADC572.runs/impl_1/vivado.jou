@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4
+# SW Build 353583 on Mon Dec  9 17:38:55 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sun Mar 30 23:37:47 2014
+# Process ID: 7548
+# Log file: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC572/ADC572.runs/impl_1/XADC_interface.rdi
+# Journal file: C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC572/ADC572.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source XADC_interface.tcl -notrace

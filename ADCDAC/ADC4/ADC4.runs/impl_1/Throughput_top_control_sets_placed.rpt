@@ -1,0 +1,61 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (win32) Build 353583 Mon Dec  9 17:38:55 MST 2013
+| Date         : Thu Apr 10 16:52:27 2014
+| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Throughput_top_control_sets_placed.rpt
+| Design       : Throughput_top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     8 |
+| Minimum Number of register sites lost to control set restrictions |    42 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |              23 |           10 |
+| No           | Yes                   | No                     |               1 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              12 |            3 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+----------------------------------------------+------------------------------+------------------+----------------+
+|             Clock Signal            |                 Enable Signal                |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-------------------------------------+----------------------------------------------+------------------------------+------------------+----------------+
+|  inst_ADC_TOP/inst_Buffer/buff_full |                                              | inst_top/inst_clk_divider/O1 |                1 |              1 |
+|  inst_top/inst_clk_divider/CLK      |                                              |                              |                1 |              1 |
+|  xlnx_opt__19                       |                                              |                              |                1 |              1 |
+|  xlnx_opt__19                       |                                              | inst_top/inst_clk_divider/O1 |                1 |              1 |
+|  inst_top/inst_clk_divider/CLK      |                                              | inst_top/inst_clk_divider/O1 |                1 |              2 |
+|  inst_top/inst_clk_divider/CLK      | inst_top/inst_DAC_SPI/n_0_dataCounter[4]_i_1 | inst_top/inst_clk_divider/O1 |                1 |              5 |
+|  xlnx_opt__19                       | inst_top/inst_clk_divider/E[0]               | inst_top/inst_clk_divider/O1 |                2 |              7 |
+|  CLK_IBUF_BUFG                      |                                              | inst_top/inst_clk_divider/O1 |                8 |             20 |
++-------------------------------------+----------------------------------------------+------------------------------+------------------+----------------+
+
+

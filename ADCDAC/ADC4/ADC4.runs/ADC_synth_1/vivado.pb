@@ -55,20 +55,20 @@ Starting synthesis...
 xc7a100t2default:defaultZ17-349
 õ
 %s*synth2ã
-wStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 337.613 ; gain = 80.137
+wStarting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 337.547 ; gain = 79.250
 2default:default
-∆
+≠
 synthesizing module '%s'638*oasys2
-ADC2default:default2^
-Hc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
-822default:default8@Z8-638
+ADC2default:default2ƒ
+≠c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
+842default:default8@Z8-638
 V
 %s*synth2G
-3	Parameter INIT_40 bound to: 16'b0000010000010011 
+3	Parameter INIT_40 bound to: 16'b0000011000010011 
 2default:default
 V
 %s*synth2G
-3	Parameter INIT_41 bound to: 16'b0011000100000000 
+3	Parameter INIT_41 bound to: 16'b0011000100110000 
 2default:default
 V
 %s*synth2G
@@ -202,26 +202,26 @@ O
 %s*synth2L
 8	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 2default:default
-¡
-%s*synth2±
-ú	Parameter SIM_MONITOR_FILE bound to: c:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt - type: string 
+¶
+%s*synth2ñ
+Å	Parameter SIM_MONITOR_FILE bound to: c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt - type: string 
 2default:default
-Ù
+€
 ,binding component instance '%s' to cell '%s'113*oasys2
 U02default:default2
-XADC2default:default2^
-Hc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
-1492default:default8@Z8-113
-Å
+XADC2default:default2ƒ
+≠c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
+1512default:default8@Z8-113
+Ë
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ADC2default:default2
 12default:default2
-12default:default2^
-Hc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
-822default:default8@Z8-256
+12default:default2ƒ
+≠c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
+842default:default8@Z8-256
 ú
 %s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 361.688 ; gain = 104.211
+xFinished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 361.570 ; gain = 103.273
 2default:default
 ;
 %s*synth2,
@@ -288,25 +288,25 @@ BC:/Xilinx/Vivado/2013.4/data\./parts/xilinx/artix7/IOStandards.xml2default:de
 
 Processing XDC Constraints
 244*projectZ1-262
-º
+£
 $Parsing XDC File [%s] for cell '%s'
-848*designutils2`
-Lc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC_OOC.xdc2default:default2
+848*designutils2∆
+±c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_OOC.xdc2default:default2
 U02default:defaultZ20-848
-≈
+¨
 -Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2`
-Lc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC_OOC.xdc2default:default2
+847*designutils2∆
+±c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_OOC.xdc2default:default2
 U02default:defaultZ20-847
-∏
+ü
 $Parsing XDC File [%s] for cell '%s'
-848*designutils2\
-Hc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
+848*designutils2¬
+≠c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
 U02default:defaultZ20-848
-¡
+®
 -Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2\
-Hc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
+847*designutils2¬
+≠c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
 U02default:defaultZ20-847
 î
 Parsing XDC File [%s]
@@ -327,11 +327,11 @@ u
 2default:defaultZ1-111
 µ
 %s*synth2•
-êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 480.270 ; gain = 222.793
+êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 480.215 ; gain = 221.918
 2default:default
 ù
 %s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 480.270 ; gain = 222.793
+yFinished RTL Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 480.215 ; gain = 221.918
 2default:default
 <
 %s*synth2-
@@ -362,7 +362,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
 ±
 %s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 520.434 ; gain = 262.957
+åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 520.457 ; gain = 262.160
 2default:default
 B
 %s*synth23
@@ -382,7 +382,7 @@ B
 2default:default
 ©
 %s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 520.445 ; gain = 262.969
+ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 520.465 ; gain = 262.168
 2default:default
 ¢
 %s*synth2í
@@ -404,19 +404,19 @@ R-------------------------------------------------------------------------------
 2default:default
 û
 %s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 521.504 ; gain = 264.027
+zFinished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 521.520 ; gain = 263.223
 2default:default
 ≠
 %s*synth2ù
-àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 521.504 ; gain = 264.027
+àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 521.520 ; gain = 263.223
 2default:default
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 521.504 ; gain = 264.027
+|Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 521.520 ; gain = 263.223
 2default:default
 ü
 %s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 526.336 ; gain = 268.859
+{Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 526.164 ; gain = 267.867
 2default:default
 D
 %s*synth25
@@ -424,7 +424,7 @@ D
 2default:default
 ô
 %s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 526.336 ; gain = 268.859
+uFinished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 526.164 ; gain = 267.867
 2default:default
 ;
 %s*synth2,
@@ -453,11 +453,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ™
 %s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 526.336 ; gain = 268.859
+ÖFinished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 526.164 ; gain = 267.867
 2default:default
 ß
 %s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 526.336 ; gain = 268.859
+ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 526.164 ; gain = 267.867
 2default:default
 ¢
 %s*synth2í
@@ -550,7 +550,7 @@ E
 2default:default
 ¶
 %s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 526.336 ; gain = 268.859
+ÅFinished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 526.164 ; gain = 267.867
 2default:default
 i
 %s*synth2Z
@@ -558,7 +558,7 @@ FSynthesis finished with 0 errors, 0 critical warnings and 0 warnings.
 2default:default
 £
 %s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 526.336 ; gain = 268.859
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 526.164 ; gain = 267.867
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -568,25 +568,25 @@ a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
-º
+£
 $Parsing XDC File [%s] for cell '%s'
-848*designutils2`
-Lc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC_OOC.xdc2default:default2
+848*designutils2∆
+±c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_OOC.xdc2default:default2
 U02default:defaultZ20-848
-≈
+¨
 -Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2`
-Lc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC_OOC.xdc2default:default2
+847*designutils2∆
+±c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_OOC.xdc2default:default2
 U02default:defaultZ20-847
-∏
+ü
 $Parsing XDC File [%s] for cell '%s'
-848*designutils2\
-Hc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
+848*designutils2¬
+≠c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
 U02default:defaultZ20-848
-¡
+®
 -Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2\
-Hc:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
+847*designutils2¬
+≠c:/CHALMERS/DAT096/softcore/Daniel GRLIB/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
 U02default:defaultZ20-847
 C
 Pushed %s inverter(s).
@@ -616,18 +616,18 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:00:552default:default2
-00:01:002default:default2
-754.6022default:default2
+00:00:562default:default2
+00:00:582default:default2
+754.6052default:default2
 442.9842default:defaultZ17-268
 <
 %Done setting XDC timing constraints.
 35*timingZ38-35
 
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 754.602 ; gain = 0.000
+sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 754.605 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Sun Mar 30 14:42:48 20142default:defaultZ17-206
+Thu Apr 10 12:31:04 20142default:defaultZ17-206

@@ -20,14 +20,16 @@
 			<Port Id="0" Dir="OUT"/>
 		</Bus>
 		<Port Id="CLK" Dir="IN"/>
-		<Port Id="testout2" Dir="OUT"/>
+		<Port Id="nSync" Dir="OUT"/>
 		<Port Id="vauxp3" Dir="IN"/>
 		<Port Id="vauxn3" Dir="IN"/>
 		<Port Id="diodeswitch" Dir="IN"/>
-		<Port Id="pwmout" Dir="OUT"/>
 		<Port Id="opena" Dir="OUT"/>
 		<Port Id="sampleclkout" Dir="OUT"/>
 		<Port Id="testout" Dir="OUT"/>
+		<Port Id="testout2" Dir="OUT"/>
+		<Port Id="sclk" Dir="OUT"/>
+		<Port Id="din" Dir="OUT"/>
 		<Port Id="RST" Dir="IN"/>
 	</Ifc>
 </Interface>

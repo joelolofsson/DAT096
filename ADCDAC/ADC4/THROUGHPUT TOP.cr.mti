@@ -1,12 +1,39 @@
-C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/top.vhd {1 {vcom -nostats -work work -2002 -explicit {C:\CHALMERS\DAT096\DAT096\ADCDAC\ADC4\ADC4.srcs\sources_1\imports\sources_1\imports\DAC\top.vhd}
+C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl
 Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity DAC_top
--- Compiling architecture Behavioral of DAC_top
+-- Loading package VCOMPONENTS
+-- Compiling entity ADC
+-- Compiling architecture STRUCTURE of ADC
 
-} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/imports/DAC/PWM.vhd
+} {} {}} {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity digitalfilter
+-- Compiling architecture Behavioral of digitalfilter
+
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DAC_buffer
+-- Compiling architecture Behavioral of DAC_buffer
+
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd {1 {vcom -nostats -work work -2002 -explicit {C:\designs\leon3-digilent-nexys4\vivado\leon3-digilent-nexys4\leon3-digilent-nexys4.srcs\sources_1\imports\rtl\ADC_TOP.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ADC_TOP
+-- Compiling architecture Behavioral of ADC_TOP
+
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd
 Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -15,16 +42,36 @@ Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2
 -- Compiling entity PWM
 -- Compiling architecture Behavioral of PWM
 
-} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Decimator.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/Decimator.vhd
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DMC.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DMC.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading package VCOMPONENTS
+-- Compiling entity DMC
+-- Compiling architecture xilinx of DMC
+
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SKadder
+-- Compiling architecture structural of SKadder
+
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer_const.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer_const.vhd
 Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity Decimator
--- Compiling architecture Behavioral of Decimator
+-- Compiling entity ADC_buffer_const
+-- Compiling architecture Behavioral of ADC_buffer_const
 
-} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/ADC_buffer.vhd
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd
 Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -33,13 +80,39 @@ Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2
 -- Compiling entity ADC_buffer
 -- Compiling architecture Behavioral of ADC_buffer
 
-} {} {}} C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd {1 {vcom -nostats -work work -2002 -explicit C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC4/ADC4.srcs/sources_1/imports/sources_1/new/DAC_buffer.vhd
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dacTop
+-- Compiling architecture behavioral of dacTop
+
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DAC_SPI
+-- Compiling architecture behavioral of DAC_SPI
+
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/Throughput_top.vhd {1 {vcom -nostats -work work -2002 -explicit {C:\designs\leon3-digilent-nexys4\vivado\leon3-digilent-nexys4\leon3-digilent-nexys4.srcs\sources_1\imports\rtl\Throughput_top.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity DAC_buffer
--- Compiling architecture Behavioral of DAC_buffer
+-- Compiling entity Throughput_top
+-- Compiling architecture Behavioral of Throughput_top
+
+} {} {}} C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd {1 {vcom -nostats -work work -2002 -explicit C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity clk_divide
+-- Compiling architecture behavioral of clk_divide
 
 } {} {}}
