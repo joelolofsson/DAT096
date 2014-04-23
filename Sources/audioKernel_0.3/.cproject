@@ -23,9 +23,9 @@
 								<inputType id="cdt.managedbuild.tool.base.cpp.compiler.input.cpp.2124344254" superClass="cdt.managedbuild.tool.base.cpp.compiler.input.cpp"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.625439649" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.debug">
-								<option defaultValue="bcc.c.optimization.level.none" id="bcc.c.compiler.exe.debug.option.optimization.level.1251784205" name="Optimization Level" superClass="bcc.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
+								<option defaultValue="bcc.c.optimization.level.none" id="bcc.c.compiler.exe.debug.option.optimization.level.1251784205" name="Optimization Level" superClass="bcc.c.compiler.exe.debug.option.optimization.level" value="bcc.c.optimization.level.most" valueType="enumerated"/>
 								<option id="bcc.c.compiler.exe.debug.option.debugging.level.1614520907" name="Debug Level" superClass="bcc.c.compiler.exe.debug.option.debugging.level" value="bcc.c.debugging.level.max" valueType="enumerated"/>
-								<option id="bcc.c.compiler.option.hardware.v8.1870067268" superClass="bcc.c.compiler.option.hardware.v8" value="true" valueType="boolean"/>
+								<option id="bcc.c.compiler.option.hardware.v8.1870067268" name="V8 Extension (-mcpu=v8)" superClass="bcc.c.compiler.option.hardware.v8" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.c.757717021" superClass="cdt.managedbuild.tool.base.c.compiler.input.c"/>
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1141522955" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
 							</tool>

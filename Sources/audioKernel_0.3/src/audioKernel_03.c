@@ -8,32 +8,20 @@
 #include "delay.h"
 #include "circularBuffer.h"
 #include "biquad.h"
-#include <time.h>
-
+#include "flex.h"
 
 #define ADC_adr 0x80000800
 #define DAC_adr 0x80000A00
-#define buffSize 128 //the generic for the audio buffer.
+#define comSize 16
 
 int32_t input;
-int16_t audioBuffer[buffSize];
-int16_t *samples;
+int32_t i;
 
-
-
-//Delay related variables
-int16_t delayArray[40001];
-int16_t *delayArrayPtr;
-
-//EQ related objects
-biquad lows;
-biquad mids;
-biquad highs;
+//communication related variables
+int32_t* comPtr;
 
 
 void adcHandler(){
-	int i;
-
 	i = 0;
 	while(i < buffSize){
 		input = (audioBuffer[i]);
@@ -44,42 +32,49 @@ void adcHandler(){
 		i++;
 	}
 
-
-	//////////////////////////////////////////////////////////
-
-
-	//EQ processing
-	filter(&lows, samples,buffSize);
-	//filter(&mids, samples,buffSize);
-	//filter(&highs,samples,buffSize);
-
-
-
-	//////////////////////////////////////////////////////////
-
-
-	//delay processing
-	//delay(samples, buffSize, 127, 127, 127);
-
-	//////////////////////////////////////////////////////////
-
+	//insert function pointer array here
+	//fnk_Array[0]();
+	//fnk_Array[1]();
 
 }
 
 int main(void){
 
-samples =  audioBuffer;
-
 printf("Initializing \n");
 
-//delay
-delayArrayPtr = delayArray;
-delayInitialize(40000, delayArrayPtr);
+/*Installing communications
+comPtr = (int *) malloc(comSize);
+*(volatile int*)(0x40000000) = &comPtr;
 
-//EQ
-filterCoefficients(&lows, 0.00f, 44100, 300, 0.7f, BASS);
-filterCoefficients(&mids, 0.00f, 44100, 8000, 0.7f, TREBLE);
-filterCoefficients(&highs, 0.00f, 44100, 1000, 0.7f , PEAK);
+//dummy writes to memory
+*(volatile int*)(&comPtr) = 0.00f;
+*(volatile int*)(&comPtr+1) = 123;
+*(volatile int*)(&comPtr +2) = 123;
+*/
+
+//all of these values will be read from memory allocated for communications
+
+/////////////EQ///////////////
+gainL = 0.00f;
+gainM = 0.00f;
+gainH = 0.00f;
+fcL = 300.0f;
+fcM = 80000.0f;
+fcH = 1000.0f;
+QL = 0.7f;
+QM =0.7f;
+QH =0.7f;
+/////////////////////////////
+
+/////////////delay///////////
+feedback = 127;
+time = 127;
+level = 127;
+/////////////////////////////
+
+initialize();
+
+printf("Com and effects installed, entering IRQ operation \n");
 
 //Installing interrupt
 catch_interrupt(adcHandler, 10);

@@ -1,0 +1,65 @@
+/*
+ * flex.h
+ *
+ *  Created on: Apr 17, 2014
+ *      Author: xploited
+ */
+
+#ifndef FLEX_H_
+#define FLEX_H_
+
+#include "flex.h"
+#include "c-irq.h"
+#include "delay.h"
+#include "circularBuffer.h"
+#include "biquad.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdint.h>
+
+////////////////////////audioRelated parameters//////////
+#define buffSize 128
+#define NO_effects 2
+////////////////////////////////////////////////////////
+
+/////////////////////fnk_Array//////////////////////////
+typedef void (*fnk_ptr_Array[NO_effects]) ();
+///////////////////////////////////////////////////////
+
+////////////////////////AudioBuffer//////////////////////
+int16_t audioBuffer[buffSize];
+int16_t *samples;
+/////////////////////////////////////////////////////////
+
+
+/////////////////////////function array///////////////////
+fnk_ptr_Array fnk_Array;
+/////////////////////////////////////////////////////////
+
+
+/////////////////Delay related variables/////////////////
+int16_t delayArray[40001];
+int16_t *delayArrayPtr;
+uint8_t feedback;
+uint8_t time;
+uint8_t level;
+
+////////////////////////////////////////////////////////
+
+
+/////////////////EQ Related parameters//////////////////
+
+//EQ related objects
+biquad lows;
+biquad mids;
+biquad highs;
+
+//and parameters
+float gainL,gainM,gainH;
+float fcL,fcM,fcH;
+float QL,QM,QH;
+
+////////////////////////////////////////////////////////
+
+
+#endif /* FLEX_H_ */
