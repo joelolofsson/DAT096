@@ -81,12 +81,12 @@ begin
 
 your_instance_name : ila_0
   PORT MAP (
-    clk => clk50MHz,
-    trig_in => write,
+    clk => clk,
+    trig_in => readBuffer,
     trig_in_ack => open,
     probe0 => data,
     probe1 => addr,
-    probe2(0) => write
+    probe2(0) => readBuffer
   );
 
 sampleclk44kHz <= readbuffer;

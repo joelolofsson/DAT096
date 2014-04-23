@@ -30,9 +30,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- ! This component handles the ADC and the components needed to complete the decimation.
 
 entity ADC_TOP is
-    Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 100 MHz.
+    Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 50 MHz.
+		   CLK100 : in STD_LOGIC; 								-- ! A clock on 100MHz to let the filter have more taps
            RST : in STD_LOGIC;									-- ! Global reset active low.
-           sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.						-- ! To be removed.
+           sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.
            vauxp3 : in STD_LOGIC;								-- ! Positive analogue signal.
            vauxn3 : IN STD_LOGIC;								-- ! Negative analogue signal.
            
@@ -138,7 +139,7 @@ begin
 
 ILA_ADC : ila_1
   PORT MAP (
-    clk => ADC_buff_write,
+    clk => clk,
     probe0 => sampledvalue,
     probe1 => filterout(31 downto 16)
   );
@@ -165,11 +166,11 @@ filterin(31 downto 16) <= (others => sampledvalue(15));
 
   isnt_filter : digitalfilter
       GENERIC map (WIDTH => 32,
-              N=>69)
+              N=> 130)
       PORT map (
 					reset => rst,
            start => den_in,
-           clk => clk,
+           clk => clk100,
            x => filterin,
            y => filterout,
            finished => open);

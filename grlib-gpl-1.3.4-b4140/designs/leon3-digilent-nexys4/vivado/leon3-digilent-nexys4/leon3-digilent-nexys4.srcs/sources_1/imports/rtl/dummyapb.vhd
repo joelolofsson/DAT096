@@ -32,6 +32,7 @@ architecture rtl of dummyapb is
 
 component ADC_TOP
     Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 100 MHz.
+           clk100 : in STD_LOGIC;
            RST : in STD_LOGIC;									-- ! Global reset active low.
            sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.						-- ! To be removed.
            vauxp3 : in STD_LOGIC;								-- ! Positive analogue signal.
@@ -99,6 +100,7 @@ port map (
 inst_ADC_TOP : ADC_TOP 
 port map (
     clk => clk, --this was clk
+    clk100 => clk100,
     rst => rstn,
     sampleclk => sampleclk,
     vauxp3 => vauxp3,

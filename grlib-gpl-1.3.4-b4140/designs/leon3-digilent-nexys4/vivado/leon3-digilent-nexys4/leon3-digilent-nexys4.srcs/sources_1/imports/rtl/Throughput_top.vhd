@@ -68,6 +68,7 @@ component DacTop
 
 component ADC_TOP
     Port ( CLK : in STD_LOGIC;
+		   clk100 : in STD_LOGIC;
            RST : in STD_LOGIC;
            sampleclk : in STD_LOGIC;
            vauxp3 : in STD_LOGIC;
@@ -110,6 +111,7 @@ opena <= '1';
 inst_ADC_TOP : ADC_TOP 
 port map (
     clk => clk50MHz,
+	clk100 => clk,
     rst => rst,
     sampleclk => sampleclk,
     vauxp3 => vauxp3,
