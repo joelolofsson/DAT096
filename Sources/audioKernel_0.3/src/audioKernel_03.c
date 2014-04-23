@@ -33,8 +33,12 @@ void adcHandler(){
 	}
 
 	//insert function pointer array here
-	//fnk_Array[0]();
-	//fnk_Array[1]();
+	//fnk_Array[0](); //delay
+	//fnk_Array[1](); //EQ
+	//fnk_Array[2](); //Chorus
+	//fnk_Array[3](); //Flanger
+	//fnk_Array[4](); //tremolo
+	fnk_Array[5](); //vibrato
 
 }
 
@@ -71,6 +75,38 @@ feedback = 127;
 time = 127;
 level = 127;
 /////////////////////////////
+
+///////////Chorus///////////
+rate = 200;
+depth = 8;
+level = 127;
+type = LFO_SINE;
+delayLineSize =10000;
+////////////////////////////
+
+/////////Flanger///////////
+rate_f = 127;
+depth_f = 127;
+delay_f = 12;
+level_f = 127;
+type_f = LFO_SINE;
+delayLineSize_f = 10000;
+//////////////////////////
+
+//////Tremolo////////////
+rate_t = 127;
+depth_t = 127;
+level_t = 255;
+type_t = LFO_SINE;
+
+////////////////////////
+
+//////////Vibrato///////
+rate_v = 255;
+depth_v = 127;
+type_v = LFO_SINE;
+delayLineSize_v = 10000;
+///////////////////
 
 initialize();
 

@@ -9,6 +9,11 @@
 #include "delay.h"
 #include "circularBuffer.h"
 #include "biquad.h"
+#include "chorus.h"
+#include "LFO.h"
+#include "flanger.h"
+#include "tremolo.h"
+#include "vibrato.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
@@ -18,9 +23,25 @@ void dummyDelay(){
 }
 
 void dummyEQ(){
-	filter(&lows, samples,buffSize);
-	filter(&mids, samples,buffSize);
-	filter(&highs,samples,buffSize);
+	filter(&lows,samples,buffSize);
+	//filter(&mids, samples,buffSize);
+	//filter(&highs,samples,buffSize);
+}
+
+void dummyChorus(){
+	applyChorus(buffSize, &chorusInst, samples);
+}
+
+void dummyFlanger(){
+	applyFlanger(buffSize, &flangerInst, samples);
+}
+
+void dummyTremolo(){
+	applyTremolo(buffSize, &tremoloInst, samples);
+}
+
+void dummyVibrato(){
+	applyVibrato(buffSize, &vibratoInst, samples);
 }
 
 /*
@@ -46,9 +67,32 @@ void initialize(){
 	filterCoefficients(&highs, gainH, 44100, fcH, QH , PEAK);
 	////////////////////////////////////////////
 
+	/////////Installing chorus//////////////////
+	chorusArrayPtr = chorusArray;
+	initChorus(&chorusInst, rate, depth, level, type, delayLineSize, chorusArrayPtr);
+	///////////////////////////////////////////
+
+	////////Installing flanger/////////////////
+	flangerArrayPtr = flangerArray;
+	initFlanger(&flangerInst, rate_f, depth_f, delay_f, level_f, type_f, delayLineSize_f, flangerArrayPtr);
+	///////////////////////////////////////////
+
+	//////Installing tremolo//////////////////
+	initTremolo(&tremoloInst, rate_t, depth_t, level_t, type_t);
+	//////////////////////////////////////////
+
+	/////Installing vibrato//////////////////
+	vibratoArrayPtr = vibratoArray;
+	initVibrato(&vibratoInst, rate_v, depth_v, type_v ,delayLineSize_v, vibratoArrayPtr);
+
+
 	/////////Function array pointer/////////////
 	fnk_Array[0] = dummyDelay;
 	fnk_Array[1] = dummyEQ;
+	fnk_Array[2] = dummyChorus;
+	fnk_Array[3] = dummyFlanger;
+	fnk_Array[4] = dummyTremolo;
+	fnk_Array[5] = dummyVibrato;
 	////////////////////////////////////////////
 
 }
