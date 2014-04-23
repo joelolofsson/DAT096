@@ -127,7 +127,7 @@ debugvector(7 downto 4) <= addr(6 downto 3);
             dac_buff_write <= '0';
             
         elsif rising_edge(clk) then        
-            Dac_buff_write <= Dac_buff_write_temp;
+--           Dac_buff_write <= Dac_buff_write_temp;
             --connceted to both DAC and ADC, used to select elements in both components
             Addr <= apbi.paddr(8 downto 2);
             --select signal to DAC
@@ -150,7 +150,7 @@ debugvector(7 downto 4) <= addr(6 downto 3);
              elsif apbi.paddr(11 downto 9) = "101" then               
                 if (apbi.psel(pindex) and apbi.penable and apbi.pwrite) = '1' then
                     sLED <= apbi.pwdata; --written value should go to DAC
-                    dac_buff_write_temp <= '1';
+                    dac_buff_write <= '1';
                 end if;
              end if;            
              

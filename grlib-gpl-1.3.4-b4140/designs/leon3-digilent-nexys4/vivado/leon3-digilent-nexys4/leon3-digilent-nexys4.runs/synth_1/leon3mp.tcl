@@ -3,17 +3,20 @@
 # 
 
   set_param gui.test TreeTableDev
+  set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config -id {Labtools 27-147} -limit 4294967295
 create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
+set_property default_lib xil_defaultlib [current_project]
 set_property ip_repo_paths C:/designs/leon3-digilent-nexys4/IP [current_fileset]
 add_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe
-add_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp
+add_files -quiet C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp
 set_property used_in_implementation false [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp]
-set_property use_blackbox_stub false [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp]
+add_files -quiet C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp
+set_property used_in_implementation false [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp]
 
 read_ip C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0.xci
 set_property used_in_implementation false [get_files -all c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/constraints/ila.xdc]
@@ -21,10 +24,6 @@ set_property used_in_implementation false [get_files -all c:/designs/leon3-digil
 set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property is_locked true [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0.xci]
 
-read_verilog {
-  c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0_stub.v
-  c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v
-}
 read_vhdl -library grlib {
   C:/lib/grlib/stdlib/version.vhd
   C:/lib/grlib/stdlib/config_types.vhd
@@ -143,11 +142,12 @@ read_vhdl -library eth {
   C:/lib/eth/core/grethc.vhd
   C:/lib/eth/comp/ethcomp.vhd
 }
-read_vhdl {
+read_vhdl -library xil_defaultlib {
   C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd
   C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd
   C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd
   C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd
+  {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd}
   C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd
   C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd
   C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adder_pkg.vhd
@@ -170,7 +170,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 read_xdc dont_buffer.xdc
 set_property used_in_implementation false [get_files dont_buffer.xdc]
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.data/wt [current_project]
+set_property webtalk.parent_dir C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/wt [current_project]
 set_property parent.project_dir C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4 [current_project]
 synth_design -top leon3mp -part xc7a100tcsg324-1
 write_checkpoint leon3mp.dcp

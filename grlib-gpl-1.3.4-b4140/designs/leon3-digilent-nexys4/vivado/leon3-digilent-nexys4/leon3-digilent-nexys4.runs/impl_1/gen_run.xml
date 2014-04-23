@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1398170077">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="leon3mp_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="leon3mp_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="leon3mp_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="leon3mp.tcl"/>
+  <File Type="OPT-DCP" Name="leon3mp_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="leon3mp_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="leon3mp_placed.dcp"/>
+  <File Type="PLACE-IO" Name="leon3mp_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="leon3mp_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="leon3mp_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="leon3mp_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="leon3mp_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="leon3mp_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="leon3mp_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="leon3mp_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="leon3mp_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="leon3mp_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="leon3mp_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="leon3mp_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="leon3mp_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="leon3mp_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="leon3mp_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="leon3mp_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="leon3mp_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="leon3mp_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="leon3mp_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="leon3mp_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="leon3mp_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="leon3mp.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="leon3mp_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="leon3mp.bit"/>
+  <File Type="BG-BIN" Name="leon3mp.bin"/>
+  <File Type="BITSTR-MSK" Name="leon3mp.msk"/>
+  <File Type="BITSTR-RBT" Name="leon3mp.rbt"/>
+  <File Type="BITSTR-NKY" Name="leon3mp.nky"/>
+  <File Type="BITSTR-BMM" Name="leon3mp_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="leon3mp.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="$PSDKDIR/SDK/SDK_Export/hw/leon3mp.sysdef"/>
+  <File Type="BG-BGN" Name="leon3mp.bgn"/>
+  <File Type="BG-DRC" Name="leon3mp.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/joel/leon3.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../leon3.xdc"/>
+        <Attr Name="ImportTime" Val="1394111321"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PDATADIR/constrs_1/designprops.xml">
+      <FileInfo SFType="CompatPartsDb"/>
+    </File>
+    <File Path="$PDATADIR/constrs_1/usercols.xml">
+      <FileInfo SFType="UserColsDb"/>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/joel/leon3.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2013"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ADC"/>
+</GenRun>

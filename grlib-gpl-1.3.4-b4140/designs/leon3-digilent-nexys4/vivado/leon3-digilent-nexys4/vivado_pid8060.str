@@ -3113,3 +3113,97 @@ selectButton (PAResourceItoP.IlaDashboardView_VIEW_AND_EDIT_PROPERTIES_FOR_ILA_C
 // TclEventType: HW_DEVICE_PROBES_CHANGE
 // 'k' command handler elapsed time: 10 seconds
 dismissDialog ("Program Device"); // cb:I (bT:JFrame)
+// Elapsed time: 1417 seconds
+selectButton (PAResourceItoP.IlaDashboardView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Debug_run_trigger"); // u:JideButton (CommandBar:DockableBar, bT:JFrame)
+// Tcl Message: run_hw_ila hw_ila_1 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2014-Apr-16 13:12:13 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila hw_ila_1 
+// cb:I (bT:JFrame):  Upload Waveform : addNotify
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data hw_ila_1] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2014-Apr-16 13:14:07 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 118 seconds
+dismissDialog ("Upload Waveform"); // cb:I (bT:JFrame)
+// Elapsed time: 17 seconds
+maximizeView (PAResourceItoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // J:a (Workspace:JPanel, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:14:28 PM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 37, 90); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 30 seconds
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 24, 112); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:03 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 16, 114); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:04 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:04 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:05 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:05 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:05 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 149, 215); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:07 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 36, 68); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:09 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:09 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:09 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:11 PM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 47, 72); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:13 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:13 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:13 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:13 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:14 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 449, 3); // o:a (JViewport:JComponent, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:15 PM
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 491, 86); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:15:17 PM
+selectGraphicalView (RDIResource.RDIViews_WAVEFORM_VIEWER, 454, 27); // o:a (JViewport:JComponent, bT:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:16:12 PM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 1:46:12 PM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 2:16:12 PM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 2:46:12 PM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 3:16:13 PM
+// HMemoryUtils.trashcanNow. Current time: 4/16/14 3:46:13 PM

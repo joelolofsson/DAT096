@@ -1,29 +1,34 @@
+2014.1:
+ * Version 3.0 (Rev. 3)
+ * Internal device family name change, no functional changes
+ * Corrected GUI enablement option in Default sequencer mode
+
 2013.4:
  * Version 3.0 (Rev. 2)
  * No changes
 
 2013.3:
  * Version 3.0 (Rev. 2)
- * Updated AXI4 Streaming FIFO depth from [1:1017] to [7:1020] 
- * Added check to disable invalid Vauxp/Vauxn pairs for x*7z010clg225 Zynq device 
- * Defined Vp/Vn and Vauxp/Vauxn as bus interfaces, no functional change 
- * Added option in GUI to provide relative path for sim file, no functional change 
- * Added a summary tab in the GUI, no functional change 
- * Added support for Cadence IES and Synopsys VCS simulators 
- * Reduced warnings in synthesis and simulation 
- * Enhanced support for IP Integrator 
+ * Updated AXI4 Streaming FIFO depth from [1:1017] to [7:1020]
+ * Added check to disable invalid Vauxp/Vauxn pairs for x*7z010clg225 Zynq device
+ * Defined Vp/Vn and Vauxp/Vauxn as bus interfaces, no functional change
+ * Added option in GUI to provide relative path for sim file, no functional change
+ * Added a summary tab in the GUI, no functional change
+ * Added support for Cadence IES and Synopsys VCS simulators
+ * Reduced warnings in synthesis and simulation
+ * Enhanced support for IP Integrator
 
 2013.2:
  * Version 3.0 (Rev. 1)
- * Fixed CRITICAL WARNING for clock constraints on DCLK 
- * Updated Life-Cycle status of devices 
+ * Fixed CRITICAL WARNING for clock constraints on DCLK
+ * Updated Life-Cycle status of devices
 
 2013.1:
  * Version 3.0
- * Lower case ports for Verilog 
- * Added AXI4STREAM interface support 
+ * Lower case ports for Verilog
+ * Added AXI4STREAM interface support
 
-(c) Copyright 2011 - 2013 Xilinx, Inc. All rights reserved.
+(c) Copyright 2011 - 2014 Xilinx, Inc. All rights reserved.
 
 This file contains confidential and proprietary information
 of Xilinx, Inc. and is protected under U.S. and

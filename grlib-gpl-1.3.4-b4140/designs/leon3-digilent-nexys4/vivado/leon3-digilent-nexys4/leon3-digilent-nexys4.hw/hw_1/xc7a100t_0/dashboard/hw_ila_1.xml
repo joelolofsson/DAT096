@@ -4,15 +4,16 @@
         <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
             <Settings/>
             <GadgetContainer boxAxis="1" count="2" height="337"
-                layout="JideBoxLayout" vgap="6" width="288">
-                <Gadget height="76" key="Trigger Capture Status" width="288">
+                layout="JideBoxLayout" vgap="6" width="238">
+                <Gadget height="75" key="Trigger Capture Status" width="238">
                     <Ila capture_condition="AND" capture_mode="ALWAYS"
-                        data_depth="131072" trigger_condition="AND"
-                        trigger_in="true" trigger_mode="BASIC"
-                        trigger_out="false" trigger_position="1000" tsm_file=""/>
+                        data_depth="1024" trigger_condition="AND"
+                        trigger_mode="BASIC_ONLY"
+                        trigger_position="1000" trigout_mode="DISABLED"
+                        tsm_file="" window_count="1"/>
                 </Gadget>
-                <Gadget height="248" key="Basic Trigger Setup" width="288">
-                    <Probe name="io0/inst_top/I1"/>
+                <Gadget height="246" key="Basic Trigger Setup" width="238">
+                    <Probe name="io0/inst_top/I2"/>
                 </Gadget>
                 <Settings/>
             </GadgetContainer>

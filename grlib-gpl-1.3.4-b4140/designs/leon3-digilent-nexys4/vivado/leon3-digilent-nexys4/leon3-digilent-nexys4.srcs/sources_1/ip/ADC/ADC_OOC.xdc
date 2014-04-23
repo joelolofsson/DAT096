@@ -1,6 +1,6 @@
  
 
-# file: ADC_OOC.xdc
+# file: ADC_ooc.xdc
 # (c) Copyright 2009 - 2013 Xilinx, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information

@@ -1,0 +1,517 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/designs
+Eadc
+Z1 w1398244451
+Z2 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl
+Z6 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl
+l0
+L17
+V<i6;SoZeGU023N4gGN[CQ2
+!s100 jlJZjKGZ_8lF;Ka?aG:Rd0
+Z7 OP;C;10.3;59
+32
+Z8 !s110 1398244457
+!i10b 1
+Z9 !s108 1398244457.513000
+Z10 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl|
+Z11 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Astructure
+R2
+R3
+R4
+Z14 DEx4 work 3 adc 0 22 <i6;SoZeGU023N4gGN[CQ2
+l56
+L48
+VAn>[gX`Ii;Z:9o5>9n`G40
+!s100 IX@]h6WE70I7ZRZj<VfdV3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Eadc_buffer
+Z15 w1397400541
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R0
+Z17 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd
+Z18 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd
+l0
+L34
+VbGChZAk9@FZX_bb`Q>njM1
+!s100 C2m@Q?@Ih>61fceV?7cCS0
+R7
+32
+Z19 !s110 1398244027
+!i10b 1
+Z20 !s108 1398244027.780000
+Z21 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd|
+Z22 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd|
+R12
+R13
+Abehavioral
+R16
+R3
+R4
+DEx4 work 10 adc_buffer 0 22 bGChZAk9@FZX_bb`Q>njM1
+l58
+L48
+V3Tl`CHeSM]l:>gSUF5G5A3
+!s100 Ycd:@HHFOe0Fc6WWAOi=N3
+R7
+32
+R19
+!i10b 1
+R20
+R21
+R22
+R12
+R13
+Eadc_buffer_const
+R15
+R16
+R3
+R4
+R0
+Z23 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer_const.vhd
+Z24 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer_const.vhd
+l0
+L34
+V5mK6NjKVbb=:l2VOSQa;g2
+!s100 bfYP[^OLV:YR68YZSlXWn2
+R7
+32
+Z25 !s110 1398244028
+!i10b 1
+Z26 !s108 1398244028.493000
+Z27 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer_const.vhd|
+Z28 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer_const.vhd|
+R12
+R13
+Abehavioral
+R16
+R3
+R4
+DEx4 work 16 adc_buffer_const 0 22 5mK6NjKVbb=:l2VOSQa;g2
+l187
+L48
+V]m1^^giKVPb37Zm]3hROW0
+!s100 oK^2aaRAP[>L<0aE]c>mQ2
+R7
+32
+R25
+!i10b 1
+R26
+R27
+R28
+R12
+R13
+Eadc_top
+Z29 w1398091335
+R3
+R4
+R0
+Z30 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd
+Z31 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd
+l0
+L32
+V_69^3jl5KbbIKd4K3[`g^3
+!s100 Yge^?MiQ6ThcndGSiT22B1
+R7
+32
+Z32 !s110 1398244029
+!i10b 1
+Z33 !s108 1398244029.125000
+Z34 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd|
+Z35 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd|
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 7 adc_top 0 22 _69^3jl5KbbIKd4K3[`g^3
+l137
+L47
+VlLDm7657EiN]TUm:n;_Kn1
+!s100 AR?U^VjcS687[4D7nMnXh0
+R7
+32
+R32
+!i10b 1
+R33
+R34
+R35
+R12
+R13
+Eclk_divide
+R15
+Z36 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R16
+R3
+R4
+R0
+Z37 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd
+Z38 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd
+l0
+L6
+VbO@?^]8f>>32LfPG5[M<b3
+!s100 fSdQSboX5OO61ZKSi5d442
+R7
+32
+R32
+!i10b 1
+Z39 !s108 1398244029.741000
+Z40 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd|
+Z41 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd|
+R12
+R13
+Abehavioral
+R36
+R16
+R3
+R4
+DEx4 work 10 clk_divide 0 22 bO@?^]8f>>32LfPG5[M<b3
+l33
+L21
+VI5VoL2fZchlQMfz9_LNal0
+!s100 :kSONS5EOIjQA:M`71az]0
+R7
+32
+R32
+!i10b 1
+R39
+R40
+R41
+R12
+R13
+Edac_buffer
+Z42 w1397577014
+R16
+R3
+R4
+R0
+Z43 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd
+Z44 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd
+l0
+L34
+V`b84K1?kH4o0Pm:QbPI[b0
+!s100 S9Ph@eKIhLRWhnL=NjIR31
+R7
+32
+Z45 !s110 1398244030
+!i10b 1
+Z46 !s108 1398244030.367000
+Z47 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd|
+Z48 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd|
+R12
+R13
+Abehavioral
+R16
+R3
+R4
+DEx4 work 10 dac_buffer 0 22 `b84K1?kH4o0Pm:QbPI[b0
+l58
+L48
+V[0WFAbD;jzmeVn9]L0aDN3
+!s100 DUJaJBTC=86HM3=gJ@kaO2
+R7
+32
+R45
+!i10b 1
+R46
+R47
+R48
+R12
+R13
+Edac_spi
+Z49 w1397630435
+R3
+R4
+R0
+Z50 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd
+Z51 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd
+l0
+L4
+Vcm3@ZC=aWh[@<@7C8OR9[1
+!s100 U0c0>@bDa=ZPoMo]Gd5kY2
+R7
+32
+Z52 !s110 1398244031
+!i10b 1
+Z53 !s108 1398244030.993000
+Z54 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd|
+Z55 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd|
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 7 dac_spi 0 22 cm3@ZC=aWh[@<@7C8OR9[1
+l26
+L16
+VKYPC9LVjO1IDjH;T4RC570
+!s100 S2E4z68cE3?[mh[hHEOgC3
+R7
+32
+R52
+!i10b 1
+R53
+R54
+R55
+R12
+R13
+Edactop
+Z56 w1398169129
+R3
+R4
+R0
+Z57 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd
+Z58 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd
+l0
+L4
+V:9gL4gQNfS4I6<]<ESKQS0
+!s100 Eek86JUF9KL_6V96?655@3
+R7
+32
+R52
+!i10b 1
+Z59 !s108 1398244031.773000
+Z60 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd|
+Z61 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd|
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 6 dactop 0 22 :9gL4gQNfS4I6<]<ESKQS0
+l80
+L21
+VmXVMReb8Z0Iab18I6F<9J3
+!s100 S>Z1hN844:m3MRRD@eKaR2
+R7
+32
+R52
+!i10b 1
+R59
+R60
+R61
+R12
+R13
+Edigitalfilter
+Z62 w1397740177
+R16
+R3
+R4
+R0
+Z63 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd
+Z64 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd
+l0
+L7
+VQT1I45^`WY?4::i`=gD9c3
+!s100 1NjFB6od]dN7FSHD2cPh`2
+R7
+32
+Z65 !s110 1398244036
+!i10b 1
+Z66 !s108 1398244036.045000
+Z67 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd|
+Z68 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd|
+R12
+R13
+Abehavioral
+R16
+R3
+R4
+DEx4 work 13 digitalfilter 0 22 QT1I45^`WY?4::i`=gD9c3
+l105
+L18
+VARNLz9mRQ7:adj^8JfAQ=0
+!s100 cg1a_49z5MMD_IH:_@Q2M0
+R7
+32
+R65
+!i10b 1
+R66
+R67
+R68
+R12
+R13
+Edmc
+R15
+R2
+R16
+Z69 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z70 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z71 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DMC.vhd
+Z72 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DMC.vhd
+l0
+L74
+V=XS3jb07]Zb4kg`98SZ]]0
+!s100 1gljiQEma<B>6[Y`J0[;E0
+R7
+32
+Z73 !s110 1398244033
+!i10b 1
+Z74 !s108 1398244032.524000
+Z75 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DMC.vhd|
+Z76 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DMC.vhd|
+R12
+R13
+Axilinx
+R2
+R16
+R69
+R70
+R3
+R4
+DEx4 work 3 dmc 0 22 =XS3jb07]Zb4kg`98SZ]]0
+l100
+L85
+VWZJX5J[ocdjC:jM0jb^Ae3
+!s100 4VlDLAe@jB<[E^;_@:dh33
+R7
+32
+R73
+!i10b 1
+R74
+R75
+R76
+R12
+R13
+Epwm
+R15
+R16
+R3
+R4
+R0
+Z77 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd
+Z78 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd
+l0
+L34
+V6?NZ8?8CebN7NKcaFZ3Ao1
+!s100 >oUL0T3FkZP9_dz;_UZgk0
+R7
+32
+Z79 !s110 1398244034
+!i10b 1
+Z80 !s108 1398244034.363000
+Z81 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd|
+Z82 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/PWM.vhd|
+R12
+R13
+Abehavioral
+R16
+R3
+R4
+DEx4 work 3 pwm 0 22 6?NZ8?8CebN7NKcaFZ3Ao1
+l52
+L46
+Vb=l15^GBN<HWD^]Qk?KS83
+!s100 oa3Ba1FTN<[GobE`:8o^z0
+R7
+32
+R79
+!i10b 1
+R80
+R81
+R82
+R12
+R13
+Eskadder
+R15
+R3
+R4
+R0
+Z83 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd
+Z84 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd
+l0
+L13
+VCFkbQo2C:8o7bf`R<d]NT3
+!s100 hQ87A9W;lDSbZ`]4d`4OR0
+R7
+32
+Z85 !s110 1398244035
+!i10b 1
+Z86 !s108 1398244035.127000
+Z87 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd|
+Z88 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd|
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 7 skadder 0 22 CFkbQo2C:8o7bf`R<d]NT3
+l47
+L20
+VFJTMO:7m7]?gMdBZ_e3iI3
+!s100 B9RXF^WzBN8Y<c_6734nO2
+R7
+32
+R85
+!i10b 1
+R86
+R87
+R88
+R12
+R13
+Ethroughput_top
+Z89 w1397722554
+R16
+R3
+R4
+R0
+Z90 8C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/Throughput_top.vhd
+Z91 FC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/Throughput_top.vhd
+l0
+L34
+V1z8FRm3NodN<GiAM6CGnA1
+!s100 5nORB3UHS7:3_z6>Ddhic3
+R7
+32
+R65
+!i10b 1
+Z92 !s108 1398244036.833000
+Z93 !s90 -reportprogress|300|-nostats|-work|work|-2002|-explicit|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/Throughput_top.vhd|
+Z94 !s107 C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/Throughput_top.vhd|
+R12
+R13
+Abehavioral
+R16
+R3
+R4
+DEx4 work 14 throughput_top 0 22 1z8FRm3NodN<GiAM6CGnA1
+l106
+L50
+V?f]Jeoi>_LNYeQ1i4z0X22
+!s100 kd3Le2@B;`lY5O2zz_mZJ2
+R7
+32
+R65
+!i10b 1
+R92
+R93
+R94
+R12
+R13

@@ -5,7 +5,7 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="your_instance_name"/>
+        <Option Id="HW_ILA" value="io0/inst_top/your_instance_name"/>
         <Option Id="PROBE_PORT" value="0"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
@@ -33,32 +33,88 @@
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq7&apos;hXX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="your_instance_name"/>
+        <Option Id="HW_ILA" value="io0/inst_top/your_instance_name"/>
         <Option Id="PROBE_PORT" value="1"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="7"/>
       </probeOptions>
       <nets>
-        <net name="io0/inst_top/I2[6]"/>
-        <net name="io0/inst_top/I2[5]"/>
-        <net name="io0/inst_top/I2[4]"/>
-        <net name="io0/inst_top/I2[3]"/>
-        <net name="io0/inst_top/I2[2]"/>
-        <net name="io0/inst_top/I2[1]"/>
-        <net name="io0/inst_top/I2[0]"/>
+        <net name="io0/inst_top/I3[6]"/>
+        <net name="io0/inst_top/I3[5]"/>
+        <net name="io0/inst_top/I3[4]"/>
+        <net name="io0/inst_top/I3[3]"/>
+        <net name="io0/inst_top/I3[2]"/>
+        <net name="io0/inst_top/I3[1]"/>
+        <net name="io0/inst_top/I3[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="HW_ILA" value="your_instance_name"/>
+        <Option Id="HW_ILA" value="io0/inst_top/your_instance_name"/>
         <Option Id="PROBE_PORT" value="2"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
       </probeOptions>
       <nets>
-        <net name="io0/inst_top/I1"/>
+        <net name="io0/inst_top/I2"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="io0/inst_ADC_TOP/ILA_ADC"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
+      </probeOptions>
+      <nets>
+        <net name="io0/inst_ADC_TOP/do_out[15]"/>
+        <net name="io0/inst_ADC_TOP/do_out[14]"/>
+        <net name="io0/inst_ADC_TOP/do_out[13]"/>
+        <net name="io0/inst_ADC_TOP/do_out[12]"/>
+        <net name="io0/inst_ADC_TOP/do_out[11]"/>
+        <net name="io0/inst_ADC_TOP/do_out[10]"/>
+        <net name="io0/inst_ADC_TOP/do_out[9]"/>
+        <net name="io0/inst_ADC_TOP/do_out[8]"/>
+        <net name="io0/inst_ADC_TOP/do_out[7]"/>
+        <net name="io0/inst_ADC_TOP/do_out[6]"/>
+        <net name="io0/inst_ADC_TOP/do_out[5]"/>
+        <net name="io0/inst_ADC_TOP/do_out[4]"/>
+        <net name="io0/inst_ADC_TOP/do_out[3]"/>
+        <net name="io0/inst_ADC_TOP/do_out[2]"/>
+        <net name="io0/inst_ADC_TOP/do_out[1]"/>
+        <net name="io0/inst_ADC_TOP/do_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="HW_ILA" value="io0/inst_ADC_TOP/ILA_ADC"/>
+        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
+      </probeOptions>
+      <nets>
+        <net name="io0/inst_ADC_TOP/Buffin[15]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[14]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[13]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[12]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[11]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[10]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[9]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[8]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[7]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[6]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[5]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[4]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[3]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[2]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[1]"/>
+        <net name="io0/inst_ADC_TOP/Buffin[0]"/>
       </nets>
     </probe>
   </probeset>

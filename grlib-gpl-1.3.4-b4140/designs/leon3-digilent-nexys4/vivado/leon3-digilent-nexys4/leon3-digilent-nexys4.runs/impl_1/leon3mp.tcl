@@ -50,6 +50,7 @@ start_step write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param gui.test TreeTableDev
+  set_param xicom.use_bs_reader 1
   open_checkpoint leon3mp_routed.dcp
   write_bitstream -force leon3mp.bit 
   close_msg_db -file write_bitstream.pb
