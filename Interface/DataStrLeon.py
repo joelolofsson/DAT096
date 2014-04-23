@@ -1,4 +1,17 @@
+'''
+The DataStrLeon module is used to parse and handle the input data by the GUI to the Serial Communication.
+
+Author: Stavros Giannakopoulos
+'''
 def guiparse(guinput):
+	'''
+	This function receives a string from the GUI. Each component is separated by '#' and each parameter
+	of the respective component is separated by ','.
+	It separates the string into a list of strings with each cell being a coefficient.
+	
+	:param guinput: String that has proper formating.
+	:returns: datalist, a list of strings. The dimensions are defined by the input string separators.
+	'''
 	#List initial split into components
 	componentlist=guinput.split('#')
 	edited_componentlist=[]
@@ -16,8 +29,6 @@ def guiparse(guinput):
 		edited_componentlist.append(component)
 		#print "Edited component is: %s" %component
 		
-	
-	
 	#print '\n\nEdited componentlist: ', edited_componentlist
 	
 	datalist=[]	
@@ -32,6 +43,15 @@ def guiparse(guinput):
 	return datalist
 	
 def parsed2values(parsed_data):
+	'''
+	This function receives a list of strings from the *guiparse* function. 
+	It parses the list of strings supplied and then outputs the int or float equivalents in a simlar list.
+	The numbers are parsed through the *numerizer* function due to the distinction between string to float and
+	string to int, to avoid exceptions.
+	
+	:param parsed_data: A list of strings.
+	:returns: Outbound_data, a list of int and float numbers. The dimensions are equal to the input list.
+	''' 
 	print "Parsed Data as input: \n", parsed_data
 	Outbound_data=[]
 	for comp_data in parsed_data:
@@ -46,6 +66,11 @@ def parsed2values(parsed_data):
 	return Outbound_data
 	
 def hexizer(numbered_data): # Function to convert mixed Float and integer data list into Hex numbers
+	'''This function converts a mixed list of float and int numbers into a list of hex numbers.
+	
+	:param numbered_data: List of Float and Int numbers.
+	:returns: final_data, a list of string hex numbers. The dimensions are defined by the *lengthshouldbe* list.
+	'''
 	lengthshouldbe=[[2, 4, 2], [2, 4, 2], [2, 4, 2], [2, 2, 2, 2]]
 	
 	print "hexizer/numbered_data: ",numbered_data
@@ -93,6 +118,11 @@ def hexizer(numbered_data): # Function to convert mixed Float and integer data l
 	return final_data
 	
 def data4intformator(FloatInt_list):
+	'''This function receives a list of float and int numbers and applies the proper multipliers and
+	additions in order to eliminate any decimals or negative numbers.
+	
+	:param FloatInt_list: A list float and int numbers.
+	:returns: Grouped_data, a list of float and int data properly formated.'''
 	print "data4intformator/FloatInt_list: ", FloatInt_list
 	Multipliers=[[10,1,10],[1,100,1,1]] # Multipliers[0] = Treble, bass, Peak
 										  # Multipliers[1] = Delay
@@ -118,6 +148,11 @@ def data4intformator(FloatInt_list):
 	return Grouped_data	
 		
 def hexconcatenator(Inhexed_list):
+	'''This function receives a list of strings representing hex numbers and 
+	concatenates them into 32 bit hex numbers for sending over the serial medium.
+	
+	:param Inhexed_list: A list of strings representing hex numbers.
+	:returns: packets, a list of strings ready to send over the *ahbSeri* module.'''
 	print "hexconcatenator/Inhexed_list: ", Inhexed_list
 	packets=['0x00000001']
 	for component in Inhexed_list:
@@ -132,14 +167,23 @@ def hexconcatenator(Inhexed_list):
 	return packets
 	
 def numerizer (instring):
-    try:
-        return int(instring)
-    except ValueError:
-        return float(instring)
+	'''This function receives a number in the form of a string and it converts it in its 
+	proper numeric form respectively.
 
+	:param instring: A string representing a float or int number.
+	:returns: the float or int equivalent of the input string respectively.'''
+	try:
+		x= int(instring)
+	except ValueError:
+		x= float(instring)
+	return x
 
 def kickoff ():
-			
+	'''This function starts the execution of the module. It handles and sends the values to the proper 
+	functions. 
+	In this build it is also used for debugging by forcing input and printing the output of the module and 
+	by sending the data to the *ahbSeri* module.
+	'''		
 	import ahbSeri
 		
 	addr=['0x44004400','0x44004404','0x44004408','0x44004416']

@@ -180,15 +180,7 @@ Finally it captures the response of the device.</p>
 <span class="target" id="module-ahbSeri"></span><p>The ahbSeri module is used to manage and debug the :mod:&#8217;SeriL&#8217; module for debugging reasons
 by simulating user triggered read and write functions on the Leon3 board AHB uart.</p>
 <blockquote>
-<div><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">Stavros Giannakopoulos</td>
-</tr>
-</tbody>
-</table>
-</div></blockquote>
+<div>Author: Stavros Giannakopoulos</div></blockquote>
 <dl class="function">
 <dt id="ahbSeri.ahbread">
 <tt class="descclassname">ahbSeri.</tt><tt class="descname">ahbread</tt><big>(</big><em>addrr</em><big>)</big><a class="headerlink" href="#ahbSeri.ahbread" title="Permalink to this definition">¶</a></dt>
@@ -239,40 +231,120 @@ W= Write</div></blockquote>
 </div>
 <div class="section" id="module-DataStrLeon">
 <span id="data-handling"></span><h2>Data handling<a class="headerlink" href="#module-DataStrLeon" title="Permalink to this headline">¶</a></h2>
+<p>The DataStrLeon module is used to parse and handle the input data by the GUI to the Serial Communication.</p>
+<p>Author: Stavros Giannakopoulos</p>
 <dl class="function">
 <dt id="DataStrLeon.data4intformator">
 <tt class="descclassname">DataStrLeon.</tt><tt class="descname">data4intformator</tt><big>(</big><em>FloatInt_list</em><big>)</big><a class="headerlink" href="#DataStrLeon.data4intformator" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function receives a list of float and int numbers and applies the proper multipliers and
+additions in order to eliminate any decimals or negative numbers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>FloatInt_list</strong> &#8211; A list float and int numbers.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Grouped_data, a list of float and int data properly formated.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="function">
 <dt id="DataStrLeon.guiparse">
 <tt class="descclassname">DataStrLeon.</tt><tt class="descname">guiparse</tt><big>(</big><em>guinput</em><big>)</big><a class="headerlink" href="#DataStrLeon.guiparse" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function receives a string from the GUI. Each component is separated by &#8216;#&#8217; and each parameter
+of the respective component is separated by &#8216;,&#8217;.
+It separates the string into a list of strings with each cell being a coefficient.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>guinput</strong> &#8211; String that has proper formating.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">datalist, a list of strings. The dimensions are defined by the input string separators.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="function">
 <dt id="DataStrLeon.hexconcatenator">
 <tt class="descclassname">DataStrLeon.</tt><tt class="descname">hexconcatenator</tt><big>(</big><em>Inhexed_list</em><big>)</big><a class="headerlink" href="#DataStrLeon.hexconcatenator" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function receives a list of strings representing hex numbers and 
+concatenates them into 32 bit hex numbers for sending over the serial medium.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Inhexed_list</strong> &#8211; A list of strings representing hex numbers.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">packets, a list of strings ready to send over the <em>ahbSeri</em> module.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="function">
 <dt id="DataStrLeon.hexizer">
 <tt class="descclassname">DataStrLeon.</tt><tt class="descname">hexizer</tt><big>(</big><em>numbered_data</em><big>)</big><a class="headerlink" href="#DataStrLeon.hexizer" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function converts a mixed list of float and int numbers into a list of hex numbers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>numbered_data</strong> &#8211; List of Float and Int numbers.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">final_data, a list of string hex numbers. The dimensions are defined by the <em>lengthshouldbe</em> list.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="function">
 <dt id="DataStrLeon.kickoff">
 <tt class="descclassname">DataStrLeon.</tt><tt class="descname">kickoff</tt><big>(</big><big>)</big><a class="headerlink" href="#DataStrLeon.kickoff" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function starts the execution of the module. It handles and sends the values to the proper 
+functions. 
+In this build it is also used for debugging by forcing input and printing the output of the module and 
+by sending the data to the <em>ahbSeri</em> module.</p>
+</dd></dl>
 
 <dl class="function">
 <dt id="DataStrLeon.numerizer">
 <tt class="descclassname">DataStrLeon.</tt><tt class="descname">numerizer</tt><big>(</big><em>instring</em><big>)</big><a class="headerlink" href="#DataStrLeon.numerizer" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function receives a number in the form of a string and it converts it in its 
+proper numeric form respectively.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>instring</strong> &#8211; A string representing a float or int number.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the float or int equivalent of the input string respectively.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="function">
 <dt id="DataStrLeon.parsed2values">
 <tt class="descclassname">DataStrLeon.</tt><tt class="descname">parsed2values</tt><big>(</big><em>parsed_data</em><big>)</big><a class="headerlink" href="#DataStrLeon.parsed2values" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>This function receives a list of strings from the <em>guiparse</em> function. 
+It parses the list of strings supplied and then outputs the int or float equivalents in a simlar list.
+The numbers are parsed through the <em>numerizer</em> function due to the distinction between string to float and
+string to int, to avoid exceptions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parsed_data</strong> &#8211; A list of strings.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Outbound_data, a list of int and float numbers. The dimensions are equal to the input list.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </div>
 <div class="section" id="module-GUI5">
