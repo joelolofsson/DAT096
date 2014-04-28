@@ -18,13 +18,14 @@
 #include "flanger.h"
 #include "tremolo.h"
 #include "vibrato.h"
+#include "wahwah.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
 
 ////////////////////////audioRelated parameters//////////
 #define buffSize 128
-#define NO_effects 6
+#define NO_effects 7
 ////////////////////////////////////////////////////////
 
 /////////////////////fnk_Array//////////////////////////
@@ -118,6 +119,11 @@ LFOwaveTable type_v;
 int16_t delayLineSize_v;
 /////////////////////////////////
 
+//////////////Wahwah////////////
+wahwah wahwahInst;
+//////////////////////////////
+
+
 void dummyEQ();
 
 void dummyDelay();
@@ -129,6 +135,8 @@ void dummyFlanger();
 void dummyTremolo();
 
 void dummyVibrato();
+
+void dummyWahwah();
 
 void initialize();
 

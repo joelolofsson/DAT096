@@ -46,6 +46,8 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
         y_n_2 = y_n_1;
         y_n_1 = tempRes;
         
+
+
         //Twice because of stereo
         *audioBuffer++ = (int16_t)tempRes;
 

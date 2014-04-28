@@ -23,9 +23,10 @@ void dummyDelay(){
 }
 
 void dummyEQ(){
-	filter(&lows,samples,buffSize);
-	//filter(&mids, samples,buffSize);
+	//filter(&lows,samples,buffSize);
+	filter(&mids, samples,buffSize);
 	//filter(&highs,samples,buffSize);
+
 }
 
 void dummyChorus(){
@@ -42,6 +43,10 @@ void dummyTremolo(){
 
 void dummyVibrato(){
 	applyVibrato(buffSize, &vibratoInst, samples);
+}
+
+void dummyWahwah(){
+	applyWahwah(buffSize,&wahwahInst,samples);
 }
 
 /*
@@ -63,8 +68,8 @@ void initialize(){
 
 	//////////Initializing EQ///////////////////
 	filterCoefficients(&lows,gainL, 44100, fcL, QL, BASS);
-	filterCoefficients(&mids, gainM, 44100, fcM, QM, TREBLE);
-	filterCoefficients(&highs, gainH, 44100, fcH, QH , PEAK);
+	filterCoefficients(&mids, gainM, 44100, fcM, QM, PEAK);
+	filterCoefficients(&highs, gainH, 44100, fcH, QH , TREBLE);
 	////////////////////////////////////////////
 
 	/////////Installing chorus//////////////////
@@ -84,7 +89,11 @@ void initialize(){
 	/////Installing vibrato//////////////////
 	vibratoArrayPtr = vibratoArray;
 	initVibrato(&vibratoInst, rate_v, depth_v, type_v ,delayLineSize_v, vibratoArrayPtr);
+	////////////////////////////////////////
 
+	//////////////////Wahwah/////////////////
+	initWahwah(&wahwahInst);
+	////////////////////////////////////////
 
 	/////////Function array pointer/////////////
 	fnk_Array[0] = dummyDelay;
@@ -93,6 +102,7 @@ void initialize(){
 	fnk_Array[3] = dummyFlanger;
 	fnk_Array[4] = dummyTremolo;
 	fnk_Array[5] = dummyVibrato;
+	fnk_Array[6] = dummyWahwah;
 	////////////////////////////////////////////
 
 }

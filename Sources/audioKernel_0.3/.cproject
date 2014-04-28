@@ -11,18 +11,18 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.bcc.exe.debug.699133678" name="Debug" parent="cdt.managedbuild.config.bcc.exe.debug">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="cdt.managedbuild.config.bcc.exe.debug.699133678" name="Debug" parent="cdt.managedbuild.config.bcc.exe.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="cdt.managedbuild.config.bcc.exe.debug.699133678." name="/" resourcePath="">
-						<toolChain id="cdt.managedbuild.toolchain.bcc.exe.debug.131434946" name="SPARC Bare C" superClass="cdt.managedbuild.toolchain.bcc.exe.debug">
-							<targetPlatform id="cdt.managedbuild.target.bcc.platform.exe.debug.503137134" name="Debug Platform" superClass="cdt.managedbuild.target.bcc.platform.exe.debug"/>
-							<builder buildPath="${workspace_loc:/audioKernel_0.3}/Debug" id="cdt.managedbuild.target.bcc.builder.exe.debug.1501554005" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="BCC Make" superClass="cdt.managedbuild.target.bcc.builder.exe.debug"/>
-							<tool id="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug.827346113" name="SPARC Bare C++ Compiler" superClass="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug">
+						<toolChain errorParsers="" id="cdt.managedbuild.toolchain.bcc.exe.debug.131434946" name="SPARC Bare C" superClass="cdt.managedbuild.toolchain.bcc.exe.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.bcc.platform.exe.debug.503137134" name="Debug Platform" superClass="cdt.managedbuild.target.bcc.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/audioKernel_0.3}/Debug" errorParsers="" id="cdt.managedbuild.target.bcc.builder.exe.debug.1501554005" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="BCC Make" superClass="cdt.managedbuild.target.bcc.builder.exe.debug"/>
+							<tool command="sparc-elf-g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser" id="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug.827346113" name="SPARC Bare C++ Compiler" superClass="cdt.managedbuild.tool.bcc.cpp.compiler.exe.debug">
 								<option id="bcc.cpp.compiler.exe.debug.option.optimization.level.1923706293" name="Optimization Level" superClass="bcc.cpp.compiler.exe.debug.option.optimization.level" value="bcc.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="bcc.cpp.compiler.exe.debug.option.debugging.level.602243723" name="Debug Level" superClass="bcc.cpp.compiler.exe.debug.option.debugging.level" value="bcc.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="bcc.cpp.compiler.option.hardware.v8.502848037" name="V8 Extension (-mcpu=v8)" superClass="bcc.cpp.compiler.option.hardware.v8" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.base.cpp.compiler.input.cpp.2124344254" superClass="cdt.managedbuild.tool.base.cpp.compiler.input.cpp"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.625439649" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.debug">
+							<tool command="sparc-elf-gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser" id="cdt.managedbuild.tool.bcc.c.compiler.exe.debug.625439649" name="SPARC Bare C Compiler" superClass="cdt.managedbuild.tool.bcc.c.compiler.exe.debug">
 								<option defaultValue="bcc.c.optimization.level.none" id="bcc.c.compiler.exe.debug.option.optimization.level.1251784205" name="Optimization Level" superClass="bcc.c.compiler.exe.debug.option.optimization.level" value="bcc.c.optimization.level.most" valueType="enumerated"/>
 								<option id="bcc.c.compiler.exe.debug.option.debugging.level.1614520907" name="Debug Level" superClass="bcc.c.compiler.exe.debug.option.debugging.level" value="bcc.c.debugging.level.max" valueType="enumerated"/>
 								<option id="bcc.c.compiler.option.hardware.v8.1870067268" name="V8 Extension (-mcpu=v8)" superClass="bcc.c.compiler.option.hardware.v8" value="true" valueType="boolean"/>
@@ -30,7 +30,7 @@
 								<inputType id="cdt.managedbuild.tool.base.c.compiler.input.asm.1141522955" superClass="cdt.managedbuild.tool.base.c.compiler.input.asm"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.bcc.c.linker.exe.debug.1681642007" name="SPARC Bare C Linker" superClass="cdt.managedbuild.tool.bcc.c.linker.exe.debug"/>
-							<tool id="cdt.managedbuild.tool.bcc.cpp.linker.exe.debug.747517611" name="SPARC Bare C++ Linker" superClass="cdt.managedbuild.tool.bcc.cpp.linker.exe.debug">
+							<tool command="sparc-elf-g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GLDErrorParser" id="cdt.managedbuild.tool.bcc.cpp.linker.exe.debug.747517611" name="SPARC Bare C++ Linker" superClass="cdt.managedbuild.tool.bcc.cpp.linker.exe.debug">
 								<inputType id="cdt.managedbuild.tool.base.cpp.linker.input.2048578211" superClass="cdt.managedbuild.tool.base.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
