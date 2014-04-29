@@ -19,13 +19,13 @@
 #include <stdint.h>
 
 void dummyDelay(){
-	delay(samples, buffSize, feedback, time, level);
+	delay(samples, buffSize, feedback_d, time_d,level_d);
 }
 
 void dummyEQ(){
-	//filter(&lows,samples,buffSize);
+	filter(&lows,samples,buffSize);
 	filter(&mids, samples,buffSize);
-	//filter(&highs,samples,buffSize);
+	filter(&highs,samples,buffSize);
 
 }
 
@@ -74,7 +74,7 @@ void initialize(){
 
 	/////////Installing chorus//////////////////
 	chorusArrayPtr = chorusArray;
-	initChorus(&chorusInst, rate, depth, level, type, delayLineSize, chorusArrayPtr);
+	initChorus(&chorusInst, rate_c, depth_c, level_c, type_c, delayLineSize_c, chorusArrayPtr);
 	///////////////////////////////////////////
 
 	////////Installing flanger/////////////////

@@ -4,8 +4,8 @@
 #include "circularBuffer.h"
 #define _USE_MATH_DEFINES
 
-int16_t x_n_1, x_n_2 = 0;
-int32_t y_n_1, y_n_2 = 0;
+//int16_t x_n_1, x_n_2 = 0;
+//int32_t y_n_1, y_n_2 = 0;
 
 /**@file biquad.c
 *@brief This file houses all filter related functionallity.     
@@ -38,13 +38,13 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
         
         temp = *audioBuffer;
         
-        tempRes = (int32_t)FMUL(self->b0,temp,15) + (int32_t)FMUL(self->b1,x_n_1,15) + (int32_t)FMUL((self->b2),x_n_2,15) - (int32_t)FMUL(self->a1, y_n_1,15) - (int32_t)FMUL(self->a2,y_n_2,15);
+        tempRes = (int32_t)FMUL(self->b0,temp,15) + (int32_t)FMUL(self->b1,self->x_n_1,15) + (int32_t)FMUL((self->b2),self->x_n_2,15) - (int32_t)FMUL(self->a1,self-> y_n_1,15) - (int32_t)FMUL(self->a2,self->y_n_2,15);
         
-        x_n_2 = x_n_1;
-        x_n_1 = temp;
+        self-> x_n_2 = self-> x_n_1;
+        self-> x_n_1 = temp;
         
-        y_n_2 = y_n_1;
-        y_n_1 = tempRes;
+        self-> y_n_2 = self->y_n_1;
+        self-> y_n_1 = tempRes;
         
 
 
@@ -72,7 +72,10 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
 void filterCoefficients(biquad *self,float gain, float fs, float fc, float Q, filterType type){
     
     self->type = type;
-
+    self-> x_n_1 = 0;
+    self-> x_n_2 = 0;
+    self-> y_n_1 = 0;
+    self-> y_n_2 = 0;
     
     //Linear interpolation for V0///////////////
     float xf = (64.00f + gain * (64.00f / 24.00f));

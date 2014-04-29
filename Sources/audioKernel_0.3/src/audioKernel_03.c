@@ -60,8 +60,8 @@ comPtr = (int *) malloc(comSize);
 //all of these values will be read from memory allocated for communications
 
 /////////////EQ///////////////
-gainL = 0.00f;
-gainM = -10.00f;
+gainL = 5.00f;
+gainM = 0.00f;
 gainH = 0.00f;
 fcL = 300.0f;
 fcM = 800.0f;
@@ -72,17 +72,17 @@ QH =0.7f;
 /////////////////////////////
 
 /////////////delay///////////
-feedback = 32;
-time = 127;
-level = 127;
+feedback_d = 100;
+time_d= 130;
+level_d = 0;
 /////////////////////////////
 
 ///////////Chorus///////////
-rate = 200;
-depth = 8;
-level = 127;
-type = LFO_SINE;
-delayLineSize =10000;
+rate_c= 200;
+depth_c = 8;
+level_c = 127;
+type_c = LFO_SINE;
+delayLineSize_c =10000;
 ////////////////////////////
 
 /////////Flanger///////////
@@ -104,7 +104,7 @@ type_t = LFO_SINE;
 
 //////////Vibrato///////
 rate_v = 255;
-depth_v = 127;
+depth_v = 10;
 type_v = LFO_SINE;
 delayLineSize_v = 10000;
 ///////////////////

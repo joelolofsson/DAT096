@@ -47,9 +47,9 @@ int16_t delayArray[40001];
 int16_t *delayArrayPtr;
 
 //Delay parameters
-uint8_t feedback;
-uint8_t time;
-uint8_t level;
+uint8_t feedback_d;
+uint8_t time_d;
+uint8_t level_d;
 
 ////////////////////////////////////////////////////////
 
@@ -73,11 +73,11 @@ int16_t *chorusArrayPtr;
 chorus chorusInst;
 
 //chorus parameters
-uint8_t rate;
-uint8_t depth;
-uint8_t level;
-LFOwaveTable type;
-int16_t delayLineSize;
+uint8_t rate_c;
+uint8_t depth_c;
+uint8_t level_c;
+LFOwaveTable type_c;
+int16_t delayLineSize_c;
 
 ////////////////////////////////////////////////////////
 
