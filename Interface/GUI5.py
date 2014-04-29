@@ -1,7 +1,8 @@
 from Tkinter import *
-import serial
+#import serial
 import tkMessageBox
-
+import io
+import os
 master = Tk()
 master.wm_title(u"SoundBox") # the u is so that it wont read the text as ASCII signs.
 
@@ -32,11 +33,40 @@ entry_delaydw = Entry(master, width=6)
 
 strout = ['0.0','0.0','0.0','#','0.0','0.0','0.0','#','0.0','0.0','0.0',"#",'0.0','0.0','0.0']
 
+def hello():
+    print "hello!"
+    
+def makeMenu():
+	menubar = Menu(master)
+
+	# create a pulldown menu, and add it to the menu bar
+	filemenu = Menu(menubar, tearoff=0)
+	filemenu.add_command(label="Open", command=openFile)
+	filemenu.add_command(label="Save", command=saveFile)
+	filemenu.add_separator()
+	filemenu.add_command(label="Exit", command=master.quit)
+	menubar.add_cascade(label="File", menu=filemenu)
+
+	# create more pulldown menus
+	editmenu = Menu(menubar, tearoff=0)
+	editmenu.add_command(label="Cut", command=hello)
+	editmenu.add_command(label="Copy", command=hello)
+	editmenu.add_command(label="Paste", command=hello)
+	menubar.add_cascade(label="Edit", menu=editmenu)
+
+	helpmenu = Menu(menubar, tearoff=0)
+	helpmenu.add_command(label="About", command=hello)
+	menubar.add_cascade(label="Help", menu=helpmenu)
+
+	# display the menu
+	master.config(menu=menubar)
+
 ######## Turn On/Off effects ########
 effect1 = IntVar()
 Checkbutton(master, text="Equalizer", variable=effect1, onvalue = 1).grid(row=0, column = 4,  sticky=W, padx = 20)
 effect2 = IntVar()
 Checkbutton(master, text="Delay", variable=effect2).grid(row=0, column = 5, sticky=W, padx = 20)
+
 
 ######## Output              ########
 def outp(strprint, position):
@@ -45,6 +75,19 @@ def outp(strprint, position):
 	x = ','.join(strout)
 #	print strout
 	print x
+
+def saveFile():
+	fo = open("foo.txt", "wb")
+	x = ','.join(strout)
+	fo.write(x);
+	fo.close()
+	
+######## Open File
+def openFile():
+	fo = open("foo.txt", "r")
+	str = fo.read();
+	print "Read String is : ", str
+	fo.close()
 
 ######## Equalizer           ########	
 def set_bv():
@@ -252,6 +295,7 @@ def Delay():
 	entry_delaydw.grid(row=12, column=1)
 
 def main():
+	makeMenu()
 	EQ()
 	Delay()
 	
