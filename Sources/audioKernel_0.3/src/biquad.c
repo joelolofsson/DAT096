@@ -38,15 +38,22 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
         
         temp = *audioBuffer;
         
-        tempRes = (int32_t)FMUL(self->b0,temp,15) + (int32_t)FMUL(self->b1,self->x_n_1,15) + (int32_t)FMUL((self->b2),self->x_n_2,15) - (int32_t)FMUL(self->a1,self-> y_n_1,15) - (int32_t)FMUL(self->a2,self->y_n_2,15);
+        tempRes = (int32_t)FMUL(self->b0,temp,15) + (int32_t)FMUL(self->b1,self->x_n_1,15) + (int32_t)FMUL((self->b2),self->x_n_2,15) - (int32_t)FMUL(self->a1,self->y_n_1,15) - (int32_t)FMUL(self->a2,self->y_n_2,15);
         
-        self-> x_n_2 = self-> x_n_1;
-        self-> x_n_1 = temp;
+        self->x_n_2 = self->x_n_1;
+        self->x_n_1 = temp;
         
-        self-> y_n_2 = self->y_n_1;
-        self-> y_n_1 = tempRes;
+        self->y_n_2 = self->y_n_1;
+        self->y_n_1 = tempRes;
         
+        tempRes = (tempRes*self->level) >> 8;
 
+        if(tempRes >= 32767){
+            tempRes = 32767;
+        }
+        else if(tempRes <= -32768){
+            tempRes = -32768;
+        }
 
         //Twice because of stereo
         *audioBuffer++ = (int16_t)tempRes;
@@ -77,6 +84,8 @@ void filterCoefficients(biquad *self,float gain, float fs, float fc, float Q, fi
     self-> y_n_1 = 0;
     self-> y_n_2 = 0;
     
+    self->level = 255;
+
     //Linear interpolation for V0///////////////
     float xf = (64.00f + gain * (64.00f / 24.00f));
     

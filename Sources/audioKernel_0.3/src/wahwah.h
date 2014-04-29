@@ -16,9 +16,10 @@ extern const int16_t logScale[];
 typedef struct {
     SVF wahFilter;
     LFO wahLFO;
+    uint8_t depth;
 }wahwah;
 
-void initWahwah(wahwah *self);
+void initWahwah(wahwah *self, uint8_t rate, uint8_t depth);
 
 void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer);
 

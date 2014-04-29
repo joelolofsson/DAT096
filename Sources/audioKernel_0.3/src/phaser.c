@@ -1,21 +1,21 @@
 //
-//  wahwah.c
-//  FMX
+//  phaser.c
+//  audioKernel
 //
-//  Created by Philip Karlsson on 3/31/14.
-//  Copyright (c) 2014 Philip Karlsson Enterprises. All rights reserved.
+//  Created by Philip Karlsson on 2014-04-29.
+//  Copyright (c) 2014 Philip Karlsson. All rights reserved.
 //
 
 #include <stdio.h>
-#include "wahwah.h"
+#include "phaser.h"
 
-void initWahwah(wahwah *self, uint8_t rate, uint8_t depth){
+void initPhaser(phaser *self, uint8_t rate, uint8_t depth){
     self->depth = depth;
-    initSVF(&self->wahFilter, BP);
+    initSVF(&self->wahFilter, NOTCH);
     initLFO(rate << 3, LFO_SINE, &self->wahLFO);
 }
 
-void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
+void applyPhaser(int16_t framesPerBuffer, phaser *self, int16_t *audioBuffer){
     int i;
     int16_t tempOut;
     int16_t tempLFO;

@@ -19,13 +19,14 @@
 #include "tremolo.h"
 #include "vibrato.h"
 #include "wahwah.h"
+#include "phaser.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
 
 ////////////////////////audioRelated parameters//////////
 #define buffSize 128
-#define NO_effects 7
+#define NO_effects 8
 ////////////////////////////////////////////////////////
 
 /////////////////////fnk_Array//////////////////////////
@@ -121,6 +122,14 @@ int16_t delayLineSize_v;
 
 //////////////Wahwah////////////
 wahwah wahwahInst;
+uint8_t rate_w;
+uint8_t depth_w;
+//////////////////////////////
+
+//////////////Phaser////////////
+phaser phaserInst;
+uint8_t rate_p;
+uint8_t depth_p;
 //////////////////////////////
 
 

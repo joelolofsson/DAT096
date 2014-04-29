@@ -49,6 +49,10 @@ void dummyWahwah(){
 	applyWahwah(buffSize,&wahwahInst,samples);
 }
 
+void dummyPhaser(){
+    applyPhaser(buffSize, &phaserInst, samples);
+}
+
 /*
  * To be expanded as more effects are added to the audiokernel
  *
@@ -92,7 +96,11 @@ void initialize(){
 	////////////////////////////////////////
 
 	//////////////////Wahwah/////////////////
-	initWahwah(&wahwahInst);
+	initWahwah(&wahwahInst, rate_w, depth_w);
+	////////////////////////////////////////
+    
+    //////////////////Phaser/////////////////
+	initPhaser(&phaserInst, rate_p, depth_p);
 	////////////////////////////////////////
 
 	/////////Function array pointer/////////////
@@ -103,6 +111,7 @@ void initialize(){
 	fnk_Array[4] = dummyTremolo;
 	fnk_Array[5] = dummyVibrato;
 	fnk_Array[6] = dummyWahwah;
+    fnk_Array[7] = dummyPhaser;
 	////////////////////////////////////////////
 
 }

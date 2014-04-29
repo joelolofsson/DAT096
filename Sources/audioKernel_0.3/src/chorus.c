@@ -36,7 +36,7 @@ void applyChorus(int16_t framesPerBuffer, chorus *self, int16_t *audioBuffer){
     
     int16_t LFOtempValue;
     
-    for( i=0; i<framesPerBuffer/2; i++ )
+    for( i=0; i<framesPerBuffer; i++ )
     {
         cbWrite(&self->delayLine, audioBuffer);
         getLFOValue(&LFOtempValue, &self->chorusLFO);
@@ -72,7 +72,6 @@ void applyChorus(int16_t framesPerBuffer, chorus *self, int16_t *audioBuffer){
         
         tempOut = ((*audioBuffer*(255-self->level) >> 8) + ((temp2*self->level) >> 8)); // Subject to change
         
-        *audioBuffer++ = tempOut;
         *audioBuffer++ = tempOut;
         
     }

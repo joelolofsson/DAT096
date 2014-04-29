@@ -21,7 +21,7 @@ void initVibrato(vibrato *self, uint8_t rate, uint8_t depth, LFOwaveTable type, 
         cbWrite(&self->delayLine, &zero);
     }
     
-    initLFO(rate, type, &self->vibratoLFO);
+    initLFO(rate << 3, type, &self->vibratoLFO);
     
     self->rate = rate;
     self->depth = depth;
@@ -35,7 +35,7 @@ void applyVibrato(int16_t framesPerBuffer, vibrato *self, int16_t *audioBuffer){
     
     int16_t LFOtempValue;
     
-    for( i=0; i<framesPerBuffer/2; i++ )
+    for( i=0; i<framesPerBuffer; i++ )
     {
         cbWrite(&self->delayLine, audioBuffer);
         getLFOValue(&LFOtempValue, &self->vibratoLFO);
@@ -70,7 +70,6 @@ void applyVibrato(int16_t framesPerBuffer, vibrato *self, int16_t *audioBuffer){
         //temp = ((*audioBuffer*(255-self->level) >> 8) + ((temp*self->level) >> 8)) >> 2;
         //temp = temp2;
         tempOut = temp2;
-        *audioBuffer++ = tempOut;
         *audioBuffer++ = tempOut;
         
     }

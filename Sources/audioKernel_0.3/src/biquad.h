@@ -72,6 +72,9 @@ typedef struct{
     /** y_n_1 and y_n_2 are output values used in the filter.
     */
     int32_t y_n_1, y_n_2;
+
+    uint8_t level; // Add to argument of the initializer function.. First use for debugging =) =) =) =) =) =) =) =)
+
 } biquad;
 
 void filterCoefficients(biquad *self,float gain, float fs, float fc, float Q, filterType type);

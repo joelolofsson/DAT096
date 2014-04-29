@@ -26,7 +26,7 @@ void applyTremolo(int16_t framesPerBuffer, tremolo *self, int16_t *audioBuffer){
     
     int16_t LFOtempValue;
     
-    for( i=0; i<framesPerBuffer/2; i++ )
+    for( i=0; i<framesPerBuffer; i++ )
     {
         getLFOValue(&LFOtempValue, &self->tremoloLFO);
         
@@ -35,7 +35,6 @@ void applyTremolo(int16_t framesPerBuffer, tremolo *self, int16_t *audioBuffer){
         
         temp = ((*audioBuffer*(255-self->level) >> 8) + ((temp*self->level) >> 8));
         
-        *audioBuffer++ = temp;
         *audioBuffer++ = temp;
         
     }

@@ -38,7 +38,7 @@ void applyFlanger(int16_t framesPerBuffer, flanger *self, int16_t *audioBuffer){
     
     int16_t LFOtempValue;
     
-    for( i=0; i<framesPerBuffer/2; i++ )
+    for( i=0; i<framesPerBuffer; i++ )
     {
         temp = *audioBuffer + (self->feedback*240 >> 8); // Subject to change... (177)
         
@@ -79,7 +79,6 @@ void applyFlanger(int16_t framesPerBuffer, flanger *self, int16_t *audioBuffer){
         tempOut = ((*audioBuffer*(255-self->level) >> 8) + ((temp2*self->level) >> 8)); // Subject to change
         
         self->feedback = tempOut;
-        *audioBuffer++ = tempOut;
         *audioBuffer++ = tempOut;
     }
     audioBuffer = audioBuffer - framesPerBuffer; // Decrease the pointers
