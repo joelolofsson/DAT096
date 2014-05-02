@@ -33,11 +33,20 @@ def ahbread(addrr):
 	#print "\n The converted message is:" 
 	#print	x 
 	packed = pack('Bcccc', idleng,converted_addr[0],converted_addr[1],converted_addr[2],converted_addr[3])
-	print packed
+	print "Packed: ",packed
+	print "the length is: ", len(packed)
+	
 	indata=SeriL.SeriLeon(packed)
+	print "Indata: ",indata
 	print "the length is: ",  len(indata)
-	unpacked=unpack('I', indata)
-	print "Unpacked: ", unpacked, "\n"
+	
+	if len(indata)==0:
+		print 'Cannot unpack, read value is wrong or 0'
+		unpacked=unpack('BI', packed)
+	else:
+		unpacked=unpack('BI', indata)
+		print "Unpacked: ", unpacked, "\n"
+		
 	
 	data=hex(unpacked[0])
 	Reverse_data='0x'
