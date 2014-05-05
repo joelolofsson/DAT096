@@ -17,9 +17,10 @@ typedef struct {
     SVF wahFilter;
     LFO wahLFO;
     uint8_t depth;
+    uint8_t res;
 }phaser;
 
-void initPhaser(phaser *self, uint8_t rate, uint8_t depth);
+void initPhaser(phaser *self, uint8_t rate, uint8_t depth, uint8_t res);
 
 void applyPhaser(int16_t framesPerBuffer, phaser *self, int16_t *audioBuffer);
 

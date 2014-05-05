@@ -27,7 +27,7 @@ void initSVF(SVF *self, SVFFilterType type){
 }
 
 void applySVF(SVF *self, uint16_t cutoff, uint16_t q, int16_t *audioBuffer){
-    uint16_t X0,X1, Y1, Y0;
+    uint32_t X0,X1, Y1, Y0;
     uint32_t temp,temp2, frac;
     
     if(self->cutoff != cutoff || self->q != q){
@@ -49,7 +49,7 @@ void applySVF(SVF *self, uint16_t cutoff, uint16_t q, int16_t *audioBuffer){
         
         temp2 = cutoff * 12031; //12031 - 1/5.54.... Q.16
         
-        temp = temp2 >> 16;
+        temp = temp2 >> 16; 
         
         X0 = (uint16_t) temp; // The integer part..
         
@@ -63,14 +63,19 @@ void applySVF(SVF *self, uint16_t cutoff, uint16_t q, int16_t *audioBuffer){
         
         self->f = 2 * (Y0 + ((Y1-Y0)*frac >> 16)); // Maybe not two and maybe check for boundaries // Redo table to Q.15 unsigned format
         
+        self->f = 2*Y0; // Test
+        
+        self->f = self->f >> 8;
+        
     }
     
     self->highOutput = *audioBuffer - self->lowOutput_n_1 - (self->q * self->bandOutput_n_1 >> 14);
-    self->bandOutput = (self->highOutput * self->f >> 16) + self->bandOutput_n_1;
-    self->lowOutput = (self->f * self->bandOutput >> 16) + self->lowOutput;
+    self->bandOutput = (self->highOutput * self->f >> 8) + self->bandOutput_n_1;
+    self->lowOutput = (self->f * self->bandOutput >> 8) + self->lowOutput;
     
     self->bandOutput_n_1 = self->bandOutput;
     self->lowOutput_n_1 = self->lowOutput;
+    
     
     switch (self->type) {
         case HP:

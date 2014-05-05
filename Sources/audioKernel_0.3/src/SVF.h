@@ -20,10 +20,10 @@ typedef struct {
     uint16_t    q; // Q Form [0->1]
     int32_t     f;
     SVFFilterType   type;
-    int16_t     lowOutput, lowOutput_n_1;
-    int16_t     highOutput;
-    int16_t     bandOutput, bandOutput_n_1;
-    int16_t     notchOutput;
+    int32_t     lowOutput, lowOutput_n_1;
+    int32_t     highOutput;
+    int32_t     bandOutput, bandOutput_n_1;
+    int32_t     notchOutput;
 }SVF;
 
 const uint16_t *SVFLookupTablePtr;

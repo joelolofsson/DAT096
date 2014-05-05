@@ -24,7 +24,7 @@ void dummyDelay(){
 
 void dummyEQ(){
 	filter(&lows,samples,buffSize);
-	filter(&mids, samples,buffSize);
+	//filter(&mids, samples,buffSize);
 	filter(&highs,samples,buffSize);
 
 }
@@ -51,6 +51,13 @@ void dummyWahwah(){
 
 void dummyPhaser(){
     applyPhaser(buffSize, &phaserInst, samples);
+}
+
+void dummyDistortion(){
+    applyDistortion(buffSize, &distortionInst, samples);
+    //filter(&lows_d,samples,buffSize);
+	//filter(&mids_d, samples,buffSize);
+	//filter(&highs_d,samples,buffSize);
 }
 
 /*
@@ -96,12 +103,18 @@ void initialize(){
 	////////////////////////////////////////
 
 	//////////////////Wahwah/////////////////
-	initWahwah(&wahwahInst, rate_w, depth_w);
+	initWahwah(&wahwahInst, rate_w, depth_w, res_w, type_w);
 	////////////////////////////////////////
     
     //////////////////Phaser/////////////////
-	initPhaser(&phaserInst, rate_p, depth_p);
+	initPhaser(&phaserInst, rate_p, depth_p, res_p);
 	////////////////////////////////////////
+    
+    /////// Distortion //////
+    
+    initDistortion(&distortionInst, master_d, pre_amp_d, level_d, tone_d);
+    
+    /////////////////////////
 
 	/////////Function array pointer/////////////
 	fnk_Array[0] = dummyDelay;
@@ -112,6 +125,7 @@ void initialize(){
 	fnk_Array[5] = dummyVibrato;
 	fnk_Array[6] = dummyWahwah;
     fnk_Array[7] = dummyPhaser;
+    fnk_Array[8] = dummyDistortion;
 	////////////////////////////////////////////
 
 }

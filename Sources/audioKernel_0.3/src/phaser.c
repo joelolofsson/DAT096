@@ -9,7 +9,8 @@
 #include <stdio.h>
 #include "phaser.h"
 
-void initPhaser(phaser *self, uint8_t rate, uint8_t depth){
+void initPhaser(phaser *self, uint8_t rate, uint8_t depth, uint8_t res){
+    self->res = res;
     self->depth = depth;
     initSVF(&self->wahFilter, NOTCH);
     initLFO(rate << 3, LFO_SINE, &self->wahLFO);
@@ -24,7 +25,7 @@ void applyPhaser(int16_t framesPerBuffer, phaser *self, int16_t *audioBuffer){
     {
         getLFOValue(&tempLFO, &self->wahLFO);
         tempOut = *audioBuffer;
-        applySVF(&self->wahFilter, logScale[ ( 2000 + (tempLFO * 500 >> 15))], 8192, &tempOut);
+        applySVF(&self->wahFilter, logScale[  2000 + (self->depth * (tempLFO * 500 >> 14) >> 8)], 60000*self->res >> 8, &tempOut);
         
         *audioBuffer++ = tempOut;
     }

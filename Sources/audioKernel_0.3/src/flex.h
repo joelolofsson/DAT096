@@ -20,13 +20,15 @@
 #include "vibrato.h"
 #include "wahwah.h"
 #include "phaser.h"
+#include "distortion.h"
+
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
 
 ////////////////////////audioRelated parameters//////////
 #define buffSize 128
-#define NO_effects 8
+#define NO_effects 9
 ////////////////////////////////////////////////////////
 
 /////////////////////fnk_Array//////////////////////////
@@ -124,14 +126,21 @@ int16_t delayLineSize_v;
 wahwah wahwahInst;
 uint8_t rate_w;
 uint8_t depth_w;
+uint8_t res_w;
+wahType type_w;
 //////////////////////////////
 
 //////////////Phaser////////////
 phaser phaserInst;
 uint8_t rate_p;
 uint8_t depth_p;
+uint8_t res_p;
 //////////////////////////////
 
+///// Distortion /////
+distortion distortionInst;
+uint8_t     master_d, pre_amp_d, level_d, tone_d;
+//////////////////////
 
 void dummyEQ();
 
@@ -146,6 +155,8 @@ void dummyTremolo();
 void dummyVibrato();
 
 void dummyWahwah();
+
+void dummyDistortion();
 
 void initialize();
 

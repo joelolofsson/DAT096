@@ -46,7 +46,7 @@ void applyChorus(int16_t framesPerBuffer, chorus *self, int16_t *audioBuffer){
         X0 = 8000 + (((LFOtempValue) * self->depth) >> 13);
         X1 = 8001 + (((LFOtempValue) * self->depth) >> 13);
         
-        cbIncrement(&self->delayLine, 0);
+        //cbIncrement(&self->delayLine, 0);
         
         cbRead(&self->delayLine, &temp, X0); // This line that perhaps will need chaning for anotha table...
         Y0 = temp;

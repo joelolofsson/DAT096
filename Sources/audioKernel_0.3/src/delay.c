@@ -66,7 +66,6 @@ void delay(int16_t *audioBuffer, int framesPerBuffer, uint8_t feedback, uint8_t 
         temp = *audioBuffer	 + ((lastOutput * feedback) >> 8);
         
         cbWrite(&circBuffer, &temp);
-        cbIncrement(&circBuffer, 0);
         cbRead(&circBuffer, &temp, (40000 * (255 - time)) >> 8);
         
         tempOut = ((*audioBuffer * (255 - level)) >> 8) + ((level*temp) >> 8);

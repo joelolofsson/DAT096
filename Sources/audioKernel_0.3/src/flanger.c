@@ -56,7 +56,7 @@ void applyFlanger(int16_t framesPerBuffer, flanger *self, int16_t *audioBuffer){
             X1 = 10000;
         
         
-        cbIncrement(&self->delayLine, 0);
+        //cbIncrement(&self->delayLine, 0);
         
         cbRead(&self->delayLine, &temp, X0); // This line that perhaps will need chaning for anotha table...
         Y0 = temp;
