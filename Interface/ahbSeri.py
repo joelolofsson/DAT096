@@ -42,9 +42,9 @@ def ahbread(addrr):
 	
 	if len(indata)==0:
 		print 'Cannot unpack, read value is wrong or 0'
-		unpacked=unpack('BI', packed)
+		unpacked=unpack('I', packed)
 	else:
-		unpacked=unpack('BI', indata)
+		unpacked=unpack('I', indata)
 		print "Unpacked: ", unpacked, "\n"
 		
 	
@@ -76,6 +76,8 @@ def ahbwrite(addrr,data):
 	:param addrr: Input string , address in the form '0x########'
 	:param data: Input string, data to be writen on the memory, in the form '0x########'
 	'''
+	import serial
+	
 	leng='0000'
 	id='1100'
 	
@@ -95,6 +97,11 @@ def ahbwrite(addrr,data):
 	converted_data[0],converted_data[1],converted_data[2],converted_data[3])
 	print "\n The converted message is:" , packed
 	indata=SeriL.SeriLeon(packed)
+	if indata==-1:
+		return -1
+	else:
+		return 0
+	
 	
 	
 def userinput():	

@@ -178,6 +178,13 @@ def numerizer (instring):
 		x= float(instring)
 	return x
 
+def addresser (addressinstring):
+	addresslist=[]
+	x=int(addressinstring,16)
+	
+	addresslist.append(str(x))
+	return addresslist
+	
 def kickoff ():
 	'''This function starts the execution of the module. It handles and sends the values to the proper 
 	functions. 
@@ -185,9 +192,22 @@ def kickoff ():
 	by sending the data to the *ahbSeri* module.
 	'''		
 	import ahbSeri
-		
-	addr=['0x40004000','0x40004004','0x40004008','0x40004016','0x40004024']
-	zomginput= "-4.2,13000,4.2,#,11.0,00000,2.5,#,0.0,1000,12.0,#,1,0.10,16,3"
+	import leonSer
+	
+	ahbSeri.ahbread('0x40039adc')
+	
+	addr=['0x40039aec','0x40039af0','0x40039af4','0x40039af8','0x40039afc']
+	zomginput= "-4.2,13000,4.2,#,-11.0,00000,2.5,#,0.0,1000,5.0,#,1,0.10,16,3"
+	
+	#test Communication
+	testcom=leonSer.leonstart()
+	if testcom==-1:
+		print "Error in Communication!"
+		exit()
+	else:
+		print "Communication relay works!"
+		leonSer.leonstop(testcom)
+	#end of Testing Communication
 	
 	String_list=guiparse(zomginput)
 	Number_list=parsed2values(String_list)
@@ -196,7 +216,9 @@ def kickoff ():
 	Data_packets=hexconcatenator(hexed_list)
 
 	for x in Data_packets:
-		ahbSeri.ahbwrite(addr[Data_packets.index(x)],x)
-
+		x=ahbSeri.ahbwrite(addr[Data_packets.index(x)],x)
+		if x==-1:
+			print "Error in Communication!"
+			break
 if __name__ == '__main__':
     kickoff()

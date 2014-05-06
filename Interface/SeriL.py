@@ -22,12 +22,15 @@ def SeriLeon(inp):
 	end=0
 	port = leonSer.leonstart()
 	time.sleep(0.05)
-	y=leonSer.leonsend(port, inp)
-	if y==1:
-		print 'No correct responce'
-	end+=1
-	leonSer.leonstop(port)
-	return y
+	if port !=-1:
+		y=leonSer.leonsend(port, inp)
+		if y==1:
+			print 'No correct responce'
+		end+=1
+		leonSer.leonstop(port)
+		return y
+	else:
+		return -1
 	
 def GuiLeon(inp):
 	"""

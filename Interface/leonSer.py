@@ -24,7 +24,12 @@ def leonstart():
 		portname='COM5'
 	else:
 		portname='/dev/ttyUSB1'
-	serport = serial.Serial(port=portname, baudrate=38343, timeout=2) # ,timeout=2 initializing and opening the port
+	
+	try:
+		serport = serial.Serial(port=portname, baudrate=38343, timeout=2) # ,timeout=2 initializing and opening the port
+	except serial.serialutil.SerialException:
+		print "Unable to Initialize port"
+		return -1
 	print 'Opened port...\n'
 	i=0
 	while i<10:		#USED IN ORDER FOR THE LEON TO SYNCHRONIZE ON OUR BAUDRATE
