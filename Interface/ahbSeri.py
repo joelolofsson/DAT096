@@ -50,10 +50,14 @@ def ahbread(addrr):
 	
 	data=hex(unpacked[0])
 	Reverse_data='0x'
-	#print "The length is: " , len(data)
+	print "The data are before reversing: " , data
 	print "len(data)", len(data)
 	if len(data)>10:
 		data=data[:len(data)-1]
+		print "reduced the data by one: ", data
+	elif (len(data)<10):
+		data=data[0:2]+(10-len(data))*'0'+data[2:len(data)]
+		
 	for i in range(len(data),2,-2):
 		Reverse_data=Reverse_data+data[i-2:i]
 
@@ -64,6 +68,7 @@ def ahbread(addrr):
 	print len(data)
 	print "The Reversed Data are: " + ''.join(str(x) for x in Reverse_data) + "\n  Length: " 
 	print len(Reverse_data)
+	return Reverse_data
 
 
 

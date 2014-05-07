@@ -47,7 +47,7 @@ def parsed2values(parsed_data):
 	This function receives a list of strings from the *guiparse* function. 
 	It parses the list of strings supplied and then outputs the int or float equivalents in a simlar list.
 	The numbers are parsed through the *numerizer* function due to the distinction between string to float and
-	string to int, to avoid exceptions.
+	string to int conversions, to avoid exceptions.
 	
 	:param parsed_data: A list of strings.
 	:returns: Outbound_data, a list of int and float numbers. The dimensions are equal to the input list.
@@ -71,7 +71,7 @@ def hexizer(numbered_data): # Function to convert mixed Float and integer data l
 	:param numbered_data: List of Float and Int numbers.
 	:returns: final_data, a list of string hex numbers. The dimensions are defined by the *lengthshouldbe* list.
 	'''
-	lengthshouldbe=[[2, 4, 2], [2, 4, 2], [2, 4, 2], [2, 2, 2, 2]]
+	lengthshouldbe=[[2, 4, 2], [2, 4, 2], [2, 4, 2], [2, 2, 2]]
 	
 	print "hexizer/numbered_data: ",numbered_data
 	hexed_half_data=[]
@@ -124,9 +124,9 @@ def data4intformator(FloatInt_list):
 	:param FloatInt_list: A list float and int numbers.
 	:returns: Grouped_data, a list of float and int data properly formated.'''
 	print "data4intformator/FloatInt_list: ", FloatInt_list
-	Multipliers=[[10,1,10],[1,100,1,1]] # Multipliers[0] = Treble, bass, Peak
+	Multipliers=[[10,1,10],[100,1,1]] # Multipliers[0] = Treble, bass, Peak
 										  # Multipliers[1] = Delay
-	Adders= [[120,0,0],[0,0,0,0]]
+	Adders= [[120,0,0],[0,0,0]]
 	Grouped_data=[]
 		
 	for component_data in FloatInt_list:
@@ -194,12 +194,19 @@ def kickoff ():
 	import ahbSeri
 	import leonSer
 	
-	ahbSeri.ahbread('0x40039adc')
+	WordNumber=5
+	#compointer = ahbSeri.ahbread('0x40039ea0')
+	#print 'Compointer address: '+ compointer
 	
-	addr=['0x40039aec','0x40039af0','0x40039af4','0x40039af8','0x40039afc']
-	zomginput= "-4.2,13000,4.2,#,-11.0,00000,2.5,#,0.0,1000,5.0,#,1,0.10,16,3"
+	#  0x00000001', '0x4e32c82a', '0x0a000019', '0x7803e832', '0x010a1003'
 	
-	#test Communication
+	#addr=['0x40039ea0','0x40039ea4','0x40039ea8','0x40039eac','0x40039eb0']
+	addr=['0x40039ed0','0x40039ed4','0x40039ed8','0x40039edc','0x40039ee0']
+	#addr=['0x40039eb0','0x40039eb4','0x40039eb8','0x40039ebc','0x40039ec0']
+	
+	zomginput= "-4.2,13000,4.2,#,-11.0,00000,2.5,#,0.0,1000,5.0,#,0.10,16,3"
+	#zomgtest=" "4E,32C8,A2,#,
+	#test Communication-----------------------------------------------------------------------------------
 	testcom=leonSer.leonstart()
 	if testcom==-1:
 		print "Error in Communication!"
@@ -207,7 +214,7 @@ def kickoff ():
 	else:
 		print "Communication relay works!"
 		leonSer.leonstop(testcom)
-	#end of Testing Communication
+	#end of Testing Communication-------------------------------------------------------------------------
 	
 	String_list=guiparse(zomginput)
 	Number_list=parsed2values(String_list)
