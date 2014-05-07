@@ -31,16 +31,18 @@ def guiparse(guinput):
 		
 	#print '\n\nEdited componentlist: ', edited_componentlist
 	
-	datalist=[]	
+	input_datalist=[]	
 	for i in edited_componentlist:
 		#print i,"index: ", componentlist.index(i)
 		#datalist[componentlist.index(i)]=i.split(',')
-		datalist.append(i.split(','))
+		input_datalist.append(i.split(','))
 		#print datalist[componentlist.index(i)]
 		#print datalist
-	print "\ndatalist: ",datalist
+	print "\ndatalist: ",input_datalist
 	print "Edited_componentlist: ", edited_componentlist
-	return datalist
+	priority= input_datalist[0]
+	datalist=input_datalist[1:]
+	return priority, datalist
 	
 def parsed2values(parsed_data):
 	'''
@@ -147,14 +149,29 @@ def data4intformator(FloatInt_list):
 	print "data4intformator/Grouped_data: " , Grouped_data
 	return Grouped_data	
 		
-def hexconcatenator(Inhexed_list):
+def prioritizer(In_priority_list):
+	"""This function receives a list of numbers that indicate the priority of each effect. The most significant decimal digit 
+	indicates the first effect, and so on up to 9 effects. A 0 for a priority means that the effect is disabled.
+	The order of the effect is as follows: 
+	Delay, Chorus, Flanger,  Tremolo, Vibrato, Modulating Wah wah, Auto Wah wah, Phaser and Distortion.
+	
+	param In_priority_list: a list of string decimal numbers from 0-9. Each number corresponds to one effect.
+	:returns: hexoutput, a string converted hex number that includes the effects encoded."""
+	decimalvalue=int(''.join(In_priority_list),10)
+	hexvalue=hex(decimalvalue)
+	hexoutput=hexvalue[:2]+((10-len(hexvalue))*'0')+hexvalue[2:]
+	return hexoutput
+	
+def hexconcatenator(Inhexed_list,In_priority):
 	'''This function receives a list of strings representing hex numbers and 
 	concatenates them into 32 bit hex numbers for sending over the serial medium.
 	
 	:param Inhexed_list: A list of strings representing hex numbers.
+	:param In_priority: A string of a hex number with the priority of the effects already encoded.
 	:returns: packets, a list of strings ready to send over the *ahbSeri* module.'''
 	print "hexconcatenator/Inhexed_list: ", Inhexed_list
 	packets=['0x00000001']
+	packets.append(In_priority)
 	for component in Inhexed_list:
 		word=''
 		for data in component:
@@ -178,12 +195,23 @@ def numerizer (instring):
 		x= float(instring)
 	return x
 
-def addresser (addressinstring):
-	addresslist=[]
-	x=int(addressinstring,16)
+def addresser (addressinstring,words,wordlen):
+	'''This function takes a startng address and a number of words, and generates a list of addresses sparated by the word
+	length.
 	
-	addresslist.append(str(x))
+	:param addressinstring: Is the starting hex address in string format.
+	:param words: Is the number of words addresses that will be generated beyond the first.
+	:param wordlen: Is the length of the word measured in bytes.
+	:returns: addresslist a list of Hex addresses.
+	'''		
+	addresslist=[addressinstring]
+	x=int(addressinstring,16)
+	for i in range(words):
+		x=x+wordlen
+		addresslist.append(hex(x))
 	return addresslist
+
+
 	
 def kickoff ():
 	'''This function starts the execution of the module. It handles and sends the values to the proper 
@@ -194,17 +222,19 @@ def kickoff ():
 	import ahbSeri
 	import leonSer
 	
+	
+	
+	WordLength=4
 	WordNumber=5
+	StartingAdress='0x40039ed0'
+	
 	#compointer = ahbSeri.ahbread('0x40039ea0')
 	#print 'Compointer address: '+ compointer
+	addr=['0x40039ed0','0x40039ed4','0x40039ed8','0x40039edc','0x40039ee0', '0x400039ee4']
 	
-	#  0x00000001', '0x4e32c82a', '0x0a000019', '0x7803e832', '0x010a1003'
 	
-	#addr=['0x40039ea0','0x40039ea4','0x40039ea8','0x40039eac','0x40039eb0']
-	addr=['0x40039ed0','0x40039ed4','0x40039ed8','0x40039edc','0x40039ee0']
-	#addr=['0x40039eb0','0x40039eb4','0x40039eb8','0x40039ebc','0x40039ec0']
 	
-	zomginput= "-4.2,13000,4.2,#,-11.0,00000,2.5,#,0.0,1000,5.0,#,0.10,16,3"
+	zomginput= "0,1,2,3,4,5,#,-4.2,13000,4.2,#,-11.0,00000,2.5,#,0.0,1000,5.0,#,0.10,16,3"
 	#zomgtest=" "4E,32C8,A2,#,
 	#test Communication-----------------------------------------------------------------------------------
 	testcom=leonSer.leonstart()
@@ -216,14 +246,17 @@ def kickoff ():
 		leonSer.leonstop(testcom)
 	#end of Testing Communication-------------------------------------------------------------------------
 	
-	String_list=guiparse(zomginput)
+	Priority_list,String_list=guiparse(zomginput)
+	print "Priolist: ", Priority_list
+	Priority_packet=prioritizer(Priority_list)
 	Number_list=parsed2values(String_list)
 	Formated_list=data4intformator(Number_list)
 	hexed_list=hexizer(Formated_list)
-	Data_packets=hexconcatenator(hexed_list)
+	Data_packets=hexconcatenator(hexed_list,Priority_packet)
 
+	addresses=addresser(StartingAdress,WordNumber,WordLength)
 	for x in Data_packets:
-		x=ahbSeri.ahbwrite(addr[Data_packets.index(x)],x)
+		x=ahbSeri.ahbwrite(addresses[Data_packets.index(x)],x)
 		if x==-1:
 			print "Error in Communication!"
 			break
