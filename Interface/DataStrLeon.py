@@ -255,10 +255,16 @@ def kickoff ():
 	Data_packets=hexconcatenator(hexed_list,Priority_packet)
 
 	addresses=addresser(StartingAdress,WordNumber,WordLength)
-	for x in Data_packets:
-		x=ahbSeri.ahbwrite(addresses[Data_packets.index(x)],x)
-		if x==-1:
+	for x in range(Data_packets):
+		confirm=ahbSeri.ahbwrite(addresses[x],Data_packets[x])
+		#confirm=ahbSeri.ahbwrite(addresses[Data_packets.index(x)],x)
+		if confirm==-1:
 			print "Error in Communication!"
 			break
+		y=ahbSeri.ahbRead(addresses[x])
+		if y==Data_packets[x]:
+			print 'Package'+x+' delivered succesfully'
+		else:
+			print 'ERROR IN PACKAGE'+x
 if __name__ == '__main__':
     kickoff()
