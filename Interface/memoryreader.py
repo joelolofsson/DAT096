@@ -1,0 +1,2 @@
+def memoryreader ():
+import ahbSeri
