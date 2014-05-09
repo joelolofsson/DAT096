@@ -223,24 +223,24 @@ def kickoff ():
 	import leonSer
 	
 	
-	
-	WordLength=4
-	WordNumber=5
-	StartingAdress='0x40039ed0'
+	Debug=1							# debuging mode, Enables printing and disables the communication testing.
+	WordLength=4 #the length of each data packet to be written in memory, measured in bytes.
+	WordNumber=5 # the number of words that will be written on the memory.
+	StartingAdress='0x40f00000'
 	
 	#compointer = ahbSeri.ahbread('0x40039ea0')
 	#print 'Compointer address: '+ compointer
-	addr=['0x40039ed0','0x40039ed4','0x40039ed8','0x40039edc','0x40039ee0', '0x400039ee4']
+	#addr=['0x40039ed0','0x40039ed4','0x40039ed8','0x40039edc','0x40039ee0', '0x400039ee4']
 	
 	
 	
-	zomginput= "0,1,2,3,4,5,#,-4.2,13000,4.2,#,-11.0,00000,2.5,#,0.0,1000,5.0,#,0.10,16,3"
-	#zomgtest=" "4E,32C8,A2,#,
+	zomginput= "0,1,2,3,4,5,#,-4.2,13000,4.2,#,-11.0,00000,2.5,#,0.0,1000,5.0,#,1.00,5,50"
 	#test Communication-----------------------------------------------------------------------------------
 	testcom=leonSer.leonstart()
 	if testcom==-1:
 		print "Error in Communication!"
-		exit()
+		if Debug=='0':
+			exit()
 	else:
 		print "Communication relay works!"
 		leonSer.leonstop(testcom)
@@ -255,16 +255,16 @@ def kickoff ():
 	Data_packets=hexconcatenator(hexed_list,Priority_packet)
 
 	addresses=addresser(StartingAdress,WordNumber,WordLength)
-	for x in range(Data_packets):
+	for x in range(len(Data_packets)):
 		confirm=ahbSeri.ahbwrite(addresses[x],Data_packets[x])
 		#confirm=ahbSeri.ahbwrite(addresses[Data_packets.index(x)],x)
 		if confirm==-1:
 			print "Error in Communication!"
 			break
-		y=ahbSeri.ahbRead(addresses[x])
+		y=ahbSeri.ahbread(addresses[x])
 		if y==Data_packets[x]:
-			print 'Package'+x+' delivered succesfully'
+			print 'Package'+str(x)+' delivered succesfully in address: ',addresses[x]
 		else:
-			print 'ERROR IN PACKAGE'+x
+			print 'ERROR IN PACKAGE'+str(x)
 if __name__ == '__main__':
     kickoff()
