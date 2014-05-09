@@ -5,7 +5,8 @@ by simulating user triggered read and write functions on the Leon3 board AHB uar
 '''
 import SeriL
 from struct import *
-
+global Debug
+Debug='0'
 
 def ahbread(addrr):
 	'''
@@ -18,7 +19,8 @@ def ahbread(addrr):
 	leng='0000'
 	id='1000'
 	idlen=id+leng
-	print "idlen: " , idlen
+	if Debug=='1':
+		print "idlen: " , idlen
 	#HEX DATA
 	chr_addrr = [int(addrr[2:4], 16),int(addrr[4:6], 16), int(addrr[6:8], 16),int(addrr[8:10], 16),]
 	
@@ -26,35 +28,36 @@ def ahbread(addrr):
 	converted_addr=[chr(chr_addrr[0]),chr(chr_addrr[1]),chr(chr_addrr[2]),chr(chr_addrr[3]),]
 	
 	idleng=int((idlen), base=2)
-	print "idleng: " , idleng, chr(idleng)
-	#print chr_addrr, converted_addr
-	#x= chr(idleng)+(''.join(str(z) for z in converted_addr)) 
+	if Debug=='1':
+		print "idleng: " , idleng, chr(idleng)
 	
-	#print "\n The converted message is:" 
-	#print	x 
 	packed = pack('Bcccc', idleng,converted_addr[0],converted_addr[1],converted_addr[2],converted_addr[3])
-	print "Packed: ",packed
-	print "the length is: ", len(packed)
+	if Debug=='1':
+		print "Packed: ",packed
+		print "the length is: ", len(packed)
 	
 	indata=SeriL.SeriLeon(packed)
-	print "Indata: ",indata
-	print "the length is: ",  len(indata)
+	if Debug=='1':	
+		print "Indata: ",indata
+		print "the length is: ",  len(indata)
 	
 	if len(indata)==0:
-		print 'Cannot unpack, read value is wrong or 0'
+		if Debug=='1':
+			print 'Cannot unpack, read value is wrong or 0'
 		unpacked=unpack('I', packed)
 	else:
 		unpacked=unpack('I', indata)
-		print "Unpacked: ", unpacked, "\n"
+		if Debug=='1':
+			print "Unpacked: ", unpacked, "\n"
 		
 	
 	data=hex(unpacked[0])
 	Reverse_data='0x'
-	print "The data are before reversing: " , data
-	print "len(data)", len(data)
+	if Debug=='1':	
+		print "The data are before reversing: " , data
+		print "len(data)", len(data)
 	if len(data)>10:
 		data=data[:len(data)-1]
-		print "reduced the data by one: ", data
 	elif (len(data)<10):
 		data=data[0:2]+(10-len(data))*'0'+data[2:len(data)]
 		
@@ -64,10 +67,11 @@ def ahbread(addrr):
 	Reverse_data=Reverse_data+(10-len(data))*'0'
 	# reverse= '0x'+ data[length:length-2
 	#Reverse_data='0x'+data[:1:-2]+(10-len(data))*'0'
-	print "The Data are: " + data + "\n Length: [" +data[8:10] + "]"
-	print len(data)
-	print "The Reversed Data are: " + ''.join(str(x) for x in Reverse_data) + "\n  Length: " 
-	print len(Reverse_data)
+	if Debug=='1':
+		print "The Data are: " + data + "\n Length: [" +data[8:10] + "]"
+		print len(data)
+		print "The Reversed Data are: " + ''.join(str(x) for x in Reverse_data) + "\n  Length: " 
+		print len(Reverse_data)
 	return Reverse_data
 
 
@@ -100,7 +104,8 @@ def ahbwrite(addrr,data):
 	
 	packed = pack('Bcccccccc', idleng,converted_addr[0],converted_addr[1],converted_addr[2],converted_addr[3],
 	converted_data[0],converted_data[1],converted_data[2],converted_data[3])
-	print "\n The converted message is:" , packed
+	if Debug=='1':	
+		print "\n The converted message is:" , packed
 	indata=SeriL.SeriLeon(packed)
 	if indata==-1:
 		return -1
@@ -125,7 +130,8 @@ def userinput():
 		inusr=raw_input("Please select mode, R for read, W for write: ")
 	if inusr=="R":
 		address=raw_input("Select address: ")
-		ahbread(address)
+		y=ahbread(address)
+		print y
 	else:
 		address=raw_input("Type address: ")
 		Data=raw_input("Type Data: ")

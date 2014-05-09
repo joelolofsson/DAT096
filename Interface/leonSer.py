@@ -6,6 +6,8 @@
 
   Author: Stavros Giannakopoulos
 '''
+global Debug
+Debug='0'
 
 def leonstart():
 	'''
@@ -28,14 +30,16 @@ def leonstart():
 	try:
 		serport = serial.Serial(port=portname, baudrate=38343, timeout=2) # ,timeout=2 initializing and opening the port
 	except serial.serialutil.SerialException:
-		print "Unable to Initialize port"
+		print "leonstart/Unable to Initialize port"
 		return -1
-	print 'Opened port...\n'
+	if Debug=='1':
+		print 'Opened port...\n'
 	i=0
 	while i<10:		#USED IN ORDER FOR THE LEON TO SYNCHRONIZE ON OUR BAUDRATE
 		serport.write(chr(0x55))
 		i=i+1
-	print 'Done synching..\n'
+	if Debug=='1':
+		print 'Done synching..\n'
 	return serport  # return the opened port
 	
 	
@@ -60,7 +64,8 @@ def leonsend(serport, strinp):
 	x=1
 	while x==1:
 		s=serport.read(serport.inWaiting())
-		print 'Leon response: ', s
+		if Debug=='1':
+			print 'Leon response: ', s
 		x=0
 	return s
 	
@@ -90,7 +95,8 @@ def  leonstop(serport):
 	:param serport: Receives an open serial port object as an input.
 	'''
 	import serial
-	print 'closing port'
+	if Debug=='1':
+		print 'closing port'
 	serport.close()
 
 if __name__ == '__main__':

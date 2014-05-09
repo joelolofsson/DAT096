@@ -6,7 +6,8 @@ user triggered communication for debugging purposes.
 
   Author: Stavros Giannakopoulos
 '''
-
+global Debug
+Debug=0
 
 def SeriLeon(inp):
 	"""

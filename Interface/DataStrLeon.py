@@ -223,7 +223,7 @@ def kickoff ():
 	import leonSer
 	
 	
-	Debug=1							# debuging mode, Enables printing and disables the communication testing.
+	Debug='1'						# debuging mode, Enables printing and disables the communication testing.
 	WordLength=4 #the length of each data packet to be written in memory, measured in bytes.
 	WordNumber=5 # the number of words that will be written on the memory.
 	StartingAdress='0x40f00000'

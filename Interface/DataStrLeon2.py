@@ -15,31 +15,28 @@ def guiparse(guinput):
 	#List initial split into components
 	componentlist=guinput.split('#')
 	edited_componentlist=[]
+	if Debug=='1':
+		print "componentlist: ",componentlist
+		print "length: ",len(componentlist)
 	
-	print "componentlist: ",componentlist
-	print "length: ",len(componentlist)
-	
-	#list cleanup from Rogue ","
+	#list cleanup from Rogue "," that are around the data
 	for component in componentlist:
-		#print "\ncomponent is: %s" %component
+		
 		if component.endswith(','):
 			component=component[:len(component)-1]
 		if component.startswith(','):
 			component=component[1:len(component)]
 		edited_componentlist.append(component)
-		#print "Edited component is: %s" %component
 		
-	#print '\n\nEdited componentlist: ', edited_componentlist
+		
+	
 	
 	input_datalist=[]	
 	for i in edited_componentlist:
-		#print i,"index: ", componentlist.index(i)
-		#datalist[componentlist.index(i)]=i.split(',')
 		input_datalist.append(i.split(','))
-		#print datalist[componentlist.index(i)]
-		#print datalist
-	print "\ndatalist: ",input_datalist
-	print "Edited_componentlist: ", edited_componentlist
+	if Debug=='1':
+		print "\datalist: ",input_datalist
+		print "Edited_componentlist: ", edited_componentlist
 	priority= input_datalist[0]
 	datalist=input_datalist[1:]
 	return priority, datalist
@@ -54,17 +51,22 @@ def parsed2values(parsed_data):
 	:param parsed_data: A list of strings.
 	:returns: Outbound_data, a list of int and float numbers. The dimensions are equal to the input list.
 	''' 
-	print "Parsed Data as input: \n", parsed_data
+	if Debug=='1':
+		print "Parsed Data as input: \n", parsed_data
 	Outbound_data=[]
 	for comp_data in parsed_data:
-		print 'comp_data: ',comp_data
+		
+		if Debug=='1': 
+			print 'comp_data: ',comp_data
+		
 		inter_data=[]
 		for data in comp_data:
 			inter_data.append(numerizer(data))
 		Outbound_data.append(inter_data)
-	print "Outbound Data: ", Outbound_data
-	#SUMATION=sum(Outbound_data)
-	#print "sum is: ",SUMATION
+	
+	if Debug=='1':
+		print "Outbound Data: ", Outbound_data
+		
 	return Outbound_data
 
 
@@ -81,20 +83,24 @@ def hexizer(numbered_data): # Function to convert mixed Float and integer data l
 	hexedcomp=[]
 	for component in numbered_data:
 		hexedcomp.append(['%x'%item for item in component])
-	print hexedcomp
+	if Debug=='1':
+		print hexedcomp
 
 	for component in hexedcomp:
 		newhexed=[]
 		for item in component:
 			newhexed.append('0'*(2-len(item))+item)
 		newhexed_list.append(newhexed)
-	print newhexed_list
+	if Debug=='1':
+		print newhexed_list
 
 	for comp in newhexed_list:
 		if newhexed_list.index(comp)<3 :
 			comp[1]='0'*(4-len(str(comp[1])))+str(comp[1])
 		final_data.append(comp)    
-	print "hexizer/final data: ", final_data
+	
+	if Debug=='1':
+		print "hexizer/final data: ", final_data
 	return final_data
 	
 def data4intformator(FloatInt_list, Multipliers, Adders):
@@ -105,8 +111,8 @@ def data4intformator(FloatInt_list, Multipliers, Adders):
 	:param Multipliers: A list with multiplier values for the various components.
 	:param Adders: A list with adder values for the EQ calculation.
 	:returns: Grouped_data, a list of float and int data properly formated.'''
-	
-	print "data4intformator/FloatInt_list: ", FloatInt_list
+	if Debug=='1':
+		print "data4intformator/FloatInt_list: ", FloatInt_list
 										  
 	Grouped_data=[]
 	EQ=FloatInt_list[:3]
@@ -116,15 +122,19 @@ def data4intformator(FloatInt_list, Multipliers, Adders):
 	#--------------------------SETTING UP EQ CALCULATIONS--------------------------------------
 	for component in EQ: 
 		newEQ.append([int(component[i]*Multipliers[0][i]+Adders[i]) for i in range(len(component))])
-	print "data4intformator/newEQ: " ,newEQ
+	if Debug=='1':
+		print "data4intformator/newEQ: " ,newEQ
 	#------------------------------------------------------------------------------------------
 	#--------------------------SETTING UP EFFECTS CALCULATIONS
 	for effect in Effects:
 		newEffects.append([int(effect[i]*Multipliers[Effects.index(effect)+1][i]) for i in range(len(effect))])
-	print "data4intformator/newEffects: " ,newEffects
+	if Debug=='1':
+		print "data4intformator/newEffects: " ,newEffects
 
 	Grouped_data=newEQ+newEffects
-	print "data4intformator/Grouped_data: " , Grouped_data
+	
+	if Debug=='1':
+		print "data4intformator/Grouped_data: " , Grouped_data
 	return Grouped_data	
 		
 def prioritizer(In_priority_list,EffectNum):
@@ -140,29 +150,35 @@ def prioritizer(In_priority_list,EffectNum):
 	outpout=[]
 	enabled=0
 	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2'}
-	#In_priority_list = ['0','3','0','1','2','4','5','6','8','7','0']
-
-	#effects = ['D','C','F','T','V']
+	
 	int_inp = map(int, In_priority_list)
-	print 'int input: ', int_inp
+	if Debug=='1':
+		print 'Prioritizer/int input: ', int_inp
 
 	for inp in range(len(int_inp)):
 		if int_inp[inp]==0:
 			int_inp[inp]='disabled'
 		else:
 			enabled = enabled + 1
-	print 'int input: ', int_inp
-	sorted_outp=sorted(range(len(int_inp)), key=lambda k: int_inp[k])
-	print 'sorted_outp: ',sorted_outp
-
-	print 'this is the trimmed sorted output: ',sorted_outp[0:enabled]
-	output=sorted_outp[0:enabled]
+	if Debug=='1':
+		print 'Prioritizer/int input: ', int_inp
+	sorted_outp=sorted(range(len(int_inp)), key=lambda k: int_inp[k]+1)
+	if Debug=='1':
+		print 'Prioritizer/sorted_outp: ', sorted_outp
+	
+	added_one=[i+1 for i in sorted_outp]
+	if Debug=='1':
+		print 'Prioritizer/added_one: ', added_one
+	output=added_one[0:enabled]              #CHANGE_HERE
+	if Debug=='1':
+		print 'Prioritizer/output: ', output
 
 	for n in range(len(output),EffectNum):
 		output.append(255)
-	print 'final output: ',output
+	if Debug=='1':
+		print 'Prioritizer/final output: ',output
 	for item in output:
-		final_priority_packet_list.append('0x'+'0'*(8-len(str(item)))+'%x'%item)
+		final_priority_packet_list.append('0x'+'0'*7+'%x'%item)
 	return final_priority_packet_list
 
 	
@@ -173,8 +189,9 @@ def hexconcatenator(Inhexed_list,In_priority):
 	:param Inhexed_list: A list of strings representing hex numbers.
 	:param In_priority: A string of a hex number with the priority of the effects already encoded.
 	:returns: packets, a list of strings ready to send over the *ahbSeri* module.'''
-	print "hexconcatenator/Inhexed_list: ", Inhexed_list
-	print "hexconcatenator/In_priority: ",In_priority
+	if Debug=='1':
+		print "hexconcatenator/Inhexed_list: ", Inhexed_list
+		print "hexconcatenator/In_priority: ",In_priority
 	packets=['0x00000001']
 	packets.extend(In_priority)
 
@@ -187,7 +204,6 @@ def hexconcatenator(Inhexed_list,In_priority):
 		for data in component:
 			word=word+data
 		outword=HX(word)
-		print outword
 		packets.append(outword)
 	#-----------------Correction of the Distortion Packet-----------------------
 	for i in range(len(packets)):
@@ -197,8 +213,8 @@ def hexconcatenator(Inhexed_list,In_priority):
 			z = HX(x[10:])
 			packets[i]=y
 			packets.insert(i+1,z)
-
-	print 'hexconcatenator/packets: ',packets
+	if Debug=='1':
+		print 'hexconcatenator/packets: ',packets
 	return packets
 	
 def numerizer (instring):
@@ -231,22 +247,25 @@ def addresser (addressinstring,words,wordlen):
 
 
 	
-def kickoff ():
+def main ():
 	'''This function starts the execution of the module. It handles and sends the values to the proper 
 	functions. 
 	In this build it is also used for debugging by forcing input and printing the output of the module and 
-	by sending the data to the *ahbSeri* module.
+	by sending the data to the *ahbSeri* module.f
 	'''		
+	import time
 	import ahbSeri
 	import leonSer
+	global Debug
 	
-	Debug=1							# debuging mode, Enables printing and disables the communication testing.
+	
+	Debug='1'					# debuging mode, Enables printing and disables the communication testing.
 	NumberOfEffects=11				# the number of the effects included in the design.
 	WordLength=4 					# the length of each data packet to be written in memory, measured in bytes.
-	WordNumber=5 					# the number of words that will be written on the memory.
+	WordNumber=27 					# the number of words that will be written on the memory.
 	StartingAdress='0x40f00000'		# Starting Address where the data will be written.
-	
-	Multiplier_list=[[10,1,10],									# Multipliers[0] = Treble, bass, Peak
+	print "Debug mode= ",Debug
+	Multiplier_list=[[10,1,10],									# Multipliers[0] = bass, peak, treble
 	[255,2.55,2.55],[2.55,2.55,2.55,1],[2.55,2.55,2.55,2.55], 	# Multipliers[1:4] = Delay, Chorus, Flanger
 	[2.55,2.55,2.55,1],[2.55,2.55,1],[2.55,2.55,2.55,1],		# Multipliers[4:7] = Tremolo, Vibrato, Wahwah
 	[2.55,2.55,2.55], [2.55,2.55,2.55,2.55,1],					# Multipliers[7:9] = Phaser, Distortion
@@ -255,8 +274,8 @@ def kickoff ():
 	Adder_list= [120,0,0]											# Adders[0] = Treble, bass, Peak
 	
 	
-	zomginput= '''0,1,2,3,4,5,#,
-	-4.2,13000,4.2,#,-11.0,00000,2.5,#,0.0,1000,5.0,#,
+	zomginput= ''',1,2,3,4,5,6,7,8,9,10,11,#,
+	-4.2,13000,4.2,#,-11.0,10000,2.5,#,0.1,1000,5.0,#,
 	0.10,15,20,#,15,20,89,2#,55,40,32,0,#,
 	55,40,32,0,#,50,22,0,#,15,20,92,0,#,
 	15,20,52,#,15,20,92,50,1,#,
@@ -266,31 +285,50 @@ def kickoff ():
 	if testcom==-1:
 		print "Error in Communication!"
 		if Debug=='0':
+			print "Aborting Program!!!!"
 			exit()
+			
 	else:
 		print "Communication relay works!"
 		leonSer.leonstop(testcom)
 	#end of Testing Communication-------------------------------------------------------------------------
 	
 	Priority_list,String_list=guiparse(zomginput)
-	#print "Priolist: ", Priority_list
-	Priority_packets=prioritizer(Priority_list,NumberOfEffects) #checked for many effects
-	Number_list=parsed2values(String_list)						#checked for many effects, float and int values
+	if Debug=='1':
+		print "Priority_list: ", Priority_list
+	Priority_packets=prioritizer(Priority_list,NumberOfEffects) 			#checked for all effects
+	if Debug=='1':	
+		print 'Priority_packets: ', Priority_packets
+	Number_list=parsed2values(String_list)									#checked for all effects, float and int values
 	Formated_list=data4intformator(Number_list,Multiplier_list,Adder_list)	#Multiplies, adds, and turns to int. For variable number of effects depending on input.
-	hexed_list=hexizer(Formated_list)	
-	Data_packets=hexconcatenator(hexed_list,Priority_packets)
+	hexed_list=hexizer(Formated_list)										#checked for all effects
+	Data_packets=hexconcatenator(hexed_list,Priority_packets)				#checked for all effects
 
+	#--------------------------------------------Creating adresses 
 	addresses=addresser(StartingAdress,WordNumber,WordLength)
+	print 'The data packets are: ',len(Data_packets), Data_packets
+	Errorcount=0
+	Errorlog=[]
+	Data_number=len(Data_packets)
 	for x in range(len(Data_packets)):
 		confirm=ahbSeri.ahbwrite(addresses[x],Data_packets[x])
-		#confirm=ahbSeri.ahbwrite(addresses[Data_packets.index(x)],x)
 		if confirm==-1:
 			print "Error in Communication!"
 			break
+		
 		y=ahbSeri.ahbread(addresses[x])
-		if y==Data_packets[x]:
-			print 'Package'+str(x)+' delivered succesfully in address: ',addresses[x]
+		if x==0:
+			pass
+		elif y==Data_packets[x]:
+			print 'Package'+str(x)+'',Data_packets[x],' delivered succesfully in address: ',addresses[x]
 		else:
-			print 'ERROR IN PACKAGE'+str(x)
+			print 'ERROR IN PACKAGE'+str(x),': ',Data_packets[x], 'in address: ',addresses[x]
+			Errorcount=Errorcount+1
+			Errorlog.append(str(Data_packets[x]))
+	if Errorcount!=0 :
+		print 'Communication was executed with ',Errorcount, 'Errors.'
+		print 'the packets lost are: ',Errorlog
+	elif confirm!=-1 and testcom!=-1:
+		print 'Communication was succesfull!!!'
 if __name__ == '__main__':
-    kickoff()
+    main()
