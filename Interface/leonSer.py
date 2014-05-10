@@ -59,7 +59,7 @@ def leonsend(serport, strinp):
 	import time
 
 	serport.write(strinp)  
-	time.sleep(0.05)
+	time.sleep(0.02)
 	
 	x=1
 	while x==1:

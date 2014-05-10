@@ -22,7 +22,7 @@ def SeriLeon(inp):
 	import time
 	end=0
 	port = leonSer.leonstart()
-	time.sleep(0.05)
+	#time.sleep(0.001)
 	if port !=-1:
 		y=leonSer.leonsend(port, inp)
 		if y==1:
@@ -45,7 +45,7 @@ def GuiLeon(inp):
 	
 	print "you entered", inp
 	port = leonSer.leonstart()
-	time.sleep(0.05)
+	time.sleep(0.001)
 	leonSer.leonsend(port, inp+'\n')
 	leonSer.leonstop(port)
 	

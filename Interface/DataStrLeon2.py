@@ -162,14 +162,14 @@ def prioritizer(In_priority_list,EffectNum):
 			enabled = enabled + 1
 	if Debug=='1':
 		print 'Prioritizer/int input: ', int_inp
-	sorted_outp=sorted(range(len(int_inp)), key=lambda k: int_inp[k]+1)
+	sorted_outp=sorted(range(len(int_inp)), key=lambda k: int_inp[k])    #CHANGE_HERE
 	if Debug=='1':
 		print 'Prioritizer/sorted_outp: ', sorted_outp
 	
 	added_one=[i+1 for i in sorted_outp]
 	if Debug=='1':
 		print 'Prioritizer/added_one: ', added_one
-	output=added_one[0:enabled]              #CHANGE_HERE
+	output=added_one[0:enabled]              
 	if Debug=='1':
 		print 'Prioritizer/output: ', output
 
@@ -178,7 +178,10 @@ def prioritizer(In_priority_list,EffectNum):
 	if Debug=='1':
 		print 'Prioritizer/final output: ',output
 	for item in output:
-		final_priority_packet_list.append('0x'+'0'*7+'%x'%item)
+		if item!=255:
+			final_priority_packet_list.append('0x'+'0'*7+'%x'%item)
+		else:
+			final_priority_packet_list.append('0x'+'0'*6+'%x'%item)
 	return final_priority_packet_list
 
 	
@@ -259,7 +262,7 @@ def main ():
 	global Debug
 	
 	
-	Debug='1'					# debuging mode, Enables printing and disables the communication testing.
+	Debug='0'					# debuging mode, Enables printing and disables the communication testing.
 	NumberOfEffects=11				# the number of the effects included in the design.
 	WordLength=4 					# the length of each data packet to be written in memory, measured in bytes.
 	WordNumber=27 					# the number of words that will be written on the memory.
@@ -273,11 +276,17 @@ def main ():
 
 	Adder_list= [120,0,0]											# Adders[0] = Treble, bass, Peak
 	
-	
-	zomginput= ''',1,2,3,4,5,6,7,8,9,10,11,#,
-	-4.2,13000,4.2,#,-11.0,10000,2.5,#,0.1,1000,5.0,#,
-	0.10,15,20,#,15,20,89,2#,55,40,32,0,#,
+	zomginput1= ''',0,0,0,0,0,0,0,0,0,0,0,#,
+	-4.0,200,0.7,#,2.0,800,1.0,#,1.0,8000,1.0,#,
+	0.0,0,0,#,0,0,0,2#,55,40,32,0,#,
 	55,40,32,0,#,50,22,0,#,15,20,92,0,#,
+	15,20,52,#,15,20,92,50,1,#,
+	50,#,35,#,20,'''
+	
+	zomginput2= ''',0,1,0,0,0,0,0,0,0,0,0,#,
+	-4.0,200,0.7,#,2.0,800,1.0,#,1.0,8000,1.0,#,
+	0.0,15,40,#,23,20,89,2#,0,0,0,0,#,
+	99,40,32,0,#,50,22,0,#,15,20,92,0,#,
 	15,20,52,#,15,20,92,50,1,#,
 	50,#,35,#,20,'''
 	#test Communication-----------------------------------------------------------------------------------
@@ -293,7 +302,7 @@ def main ():
 		leonSer.leonstop(testcom)
 	#end of Testing Communication-------------------------------------------------------------------------
 	
-	Priority_list,String_list=guiparse(zomginput)
+	Priority_list,String_list=guiparse(zomginput2) # <--------------------input goes here
 	if Debug=='1':
 		print "Priority_list: ", Priority_list
 	Priority_packets=prioritizer(Priority_list,NumberOfEffects) 			#checked for all effects
@@ -315,11 +324,12 @@ def main ():
 		if confirm==-1:
 			print "Error in Communication!"
 			break
-		
-		y=ahbSeri.ahbread(addresses[x])
+		#---------------------------Test the written data and compare them with those in the device
+		y=ahbSeri.ahbread(addresses[x])		
 		if x==0:
 			pass
 		elif y==Data_packets[x]:
+			
 			print 'Package'+str(x)+'',Data_packets[x],' delivered succesfully in address: ',addresses[x]
 		else:
 			print 'ERROR IN PACKAGE'+str(x),': ',Data_packets[x], 'in address: ',addresses[x]
@@ -330,5 +340,6 @@ def main ():
 		print 'the packets lost are: ',Errorlog
 	elif confirm!=-1 and testcom!=-1:
 		print 'Communication was succesfull!!!'
+		#-----------------------------------------------------------------------------------------------
 if __name__ == '__main__':
     main()
