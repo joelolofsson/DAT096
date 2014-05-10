@@ -47,10 +47,6 @@ vibratoFrame.grid(row=0, column=0, padx=10, pady=12)
 mod_wahwahFrame = Frame(interFrame, width=500, height=600)
 mod_wahwahFrame.grid(row=0, column=0, padx=10, pady=12)
 
-###### Auto Wah Wah frame ######
-auto_wahwahFrame = Frame(interFrame, width=500, height=600)
-auto_wahwahFrame.grid(row=0, column=0, padx=10, pady=12)
-
 ###### Phaser frame ######
 phaserFrame = Frame(interFrame, width=500, height=600)
 phaserFrame.grid(row=0, column=0, padx=10, pady=12)
@@ -108,11 +104,30 @@ flangerDelay = DoubleVar()
 flangerLevel = DoubleVar()
 
 ######### Tremolo ########
+tremoloRate = DoubleVar()
+tremoloDepth = DoubleVar()
+tremoloLevel = DoubleVar()
+
 ######### Vibrato ########
+vibratoRate = DoubleVar()
+vibratoDepth = DoubleVar()
+
 ######### Modulating Wah Wah ########
-######### Auto Wah Wah ########
+modwahwahRate = DoubleVar()
+modwahwahDepth = DoubleVar()
+modwahwahRes = DoubleVar()
+
 ######### Phaser ########
+phaserRate = DoubleVar()
+phaserDepth = DoubleVar()
+phaserRes = DoubleVar()
+
 ######### Distortion ########
+distortionPregain = DoubleVar()
+distortionMastergain = DoubleVar()
+distortionTone = DoubleVar()
+distortionLevel = DoubleVar()
+
 ######### Output #######
 
 strout = ['0.0','0.0','0.0','#','0.0','0.0','0.0','#','0.0','0.0','0.0',"#",'0.0','0.0','0.0',"#", '0','0','0', "#", '0','0','0','0','0', "#"]
@@ -211,7 +226,7 @@ def set_pv():
 	
 def set_pc():
 	labelc3 = Label(eqFrame)
-	labelc3.grid(row=2, column= 7)
+	labelc3.grid(row=6, column= 7)
 	eq_peakc = str(peakCutoff.get())
 	outp(eq_peakc,7)
 	
@@ -271,7 +286,6 @@ def EQ():
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
 	mod_wahwahFrame.grid_forget()
-	auto_wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
 	
@@ -360,7 +374,6 @@ def Delay():
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
 	mod_wahwahFrame.grid_forget()
-	auto_wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
 	
@@ -411,7 +424,6 @@ def Chorus():
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
 	mod_wahwahFrame.grid_forget()
-	auto_wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
 	
@@ -422,12 +434,12 @@ def Chorus():
 	label = Label(chorusFrame, padx =10)
 	label.grid(row=1, column=0)
 	
-	ch_depthscale = Scale(chorusFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = chorusDepth)
+	ch_depthscale = Scale(chorusFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = chorusDepth)
 	ch_depthscale.grid(row = 4, column=0, padx=10, pady=20)
 	label = Label(chorusFrame, padx =10)
 	label.grid(row=3, column=0)
 	
-	ch_levelscale = Scale(chorusFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = chorusLevel)
+	ch_levelscale = Scale(chorusFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Level: ", orient = HORIZONTAL, variable = chorusLevel)
 	ch_levelscale.grid(row = 6, column=0, padx=10, pady=20)
 	label = Label(chorusFrame, padx =10)
 	label.grid(row=5, column=0)
@@ -435,6 +447,10 @@ def Chorus():
 	Button(chorusFrame, text='Set Value', command=set_chorusRate).grid(row=2, column=2, padx=10, pady=20)
 	Button(chorusFrame, text='Set Value', command=set_chorusDepth).grid(row=4, column=2, padx=10, pady=20)
 	Button(chorusFrame, text='Set Value', command=set_chorusLevel).grid(row=6, column=2, padx=10, pady=20)
+	
+	
+	
+	#####   ADD THE TYPE !!!!!!!!!!!!!!!!!!!!!!!!
 
 ############# Flanger #############
 
@@ -442,7 +458,7 @@ def set_flangerRate():
 	flangerrate = Label(flangerFrame)
 	flangerrate.grid(row=4, column= 4)
 	flanger_rate = str(flangerRate.get())
-	outp(flanger_Rate, 15)
+	outp(flanger_rate, 15)
 
 def set_flangerDepth():
 	flangerdepth= Label(flangerFrame)
@@ -451,7 +467,7 @@ def set_flangerDepth():
 	outp(flanger_depth, 16)
 	
 def set_flangerDelay():
-	flangedelay = Label(flangerFrame)
+	flangerdelay = Label(flangerFrame)
 	flangerdelay.grid(row=6, column= 4)
 	flanger_delay = str(flangerDelay.get())
 	outp(flanger_delay, 17)
@@ -470,43 +486,308 @@ def Flanger():
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
 	mod_wahwahFrame.grid_forget()
-	auto_wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
 	
 	Label(flangerFrame, text= "Flanger ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 
-	fl_ratecale = Scale(flangerFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = flangerRate)
+	fl_ratescale = Scale(flangerFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = flangerRate)
 	fl_ratescale.grid(row = 2, column=0, padx=10, pady=20)
 	label = Label(flangerFrame, padx =10)
 	label.grid(row=1, column=0)
 	
-	fl_depthscale = Scale(chorusFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = flangerDepth)
+	fl_depthscale = Scale(flangerFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = flangerDepth)
 	fl_depthscale.grid(row = 4, column=0, padx=10, pady=20)
 	label = Label(chorusFrame, padx =10)
 	label.grid(row=3, column=0)
 	
-	fl_delayscale = Scale(chorusFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Delay: ", orient = HORIZONTAL, variable = flangerDelay)
+	fl_delayscale = Scale(flangerFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Delay: ", orient = HORIZONTAL, variable = flangerDelay)
 	fl_delayscale.grid(row = 6, column=0, padx=10, pady=20)
 	label = Label(chorusFrame, padx =10)
 	label.grid(row=5, column=0)
 	
-	fl_levelscale = Scale(chorusFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Level: ", orient = HORIZONTAL, variable = flangerLevel)
+	fl_levelscale = Scale(flangerFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Level: ", orient = HORIZONTAL, variable = flangerLevel)
 	fl_levelscale.grid(row = 8, column=0, padx=10, pady=20)
 	label = Label(chorusFrame, padx =10)
 	label.grid(row=7, column=0)
 	
-	Button(chorusFrame, text='Set Value', command=set_flangerRate).grid(row=2, column=2, padx=10, pady=20)
-	Button(chorusFrame, text='Set Value', command=set_flangerDepth).grid(row=4, column=2, padx=10, pady=20)
-	Button(chorusFrame, text='Set Value', command=set_flangerDelay).grid(row=6, column=2, padx=10, pady=20)
-	Button(chorusFrame, text='Set Value', command=set_flangerLevel).grid(row=8, column=2, padx=10, pady=20)
+	Button(flangerFrame, text='Set Value', command=set_flangerRate).grid(row=2, column=2, padx=10, pady=20)
+	Button(flangerFrame, text='Set Value', command=set_flangerDepth).grid(row=4, column=2, padx=10, pady=20)
+	Button(flangerFrame, text='Set Value', command=set_flangerDelay).grid(row=6, column=2, padx=10, pady=20)
+	Button(flangerFrame, text='Set Value', command=set_flangerLevel).grid(row=8, column=2, padx=10, pady=20)
 	
 ######### Tremolo ########
+
+def set_tremoloRate():
+	ratelabel = Label(tremoloFrame)
+	ratelabel.grid(row=2, column= 4)
+	tremolo_rate = str(tremoloRate.get())
+	outp(tremolo_rate,12)
+
+def set_tremoloDepth():
+	depthlabel = Label(tremoloFrame)
+	depthlabel.grid(row=2, column= 7)
+	tremolo_depth = str(tremoloDepth.get())
+	outp(tremolo_depth,13)
+
+def	set_tremoloLevel():
+	levellabel = Label(tremoloFrame)
+	levellabel.grid(row=2, column= 9)
+	tremolo_level = str(tremoloLevel.get())
+	outp(tremolo_level,14)
+
+def Tremolo():
+	eqFrame.grid_forget()
+	delayFrame.grid_forget()
+	chorusFrame.grid_forget()
+	flangerFrame.grid_forget()
+	tremoloFrame.grid()
+	vibratoFrame.grid_forget()
+	mod_wahwahFrame.grid_forget()
+	phaserFrame.grid_forget()
+	distortionFrame.grid_forget()
+	
+	Label(tremoloFrame, text= "Tremolo ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	
+	tr_ratescale = Scale(tremoloFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = tremoloRate)
+	tr_ratescale.grid(row = 2, column=0, padx=10, pady=20)
+	label = Label(tremoloFrame, padx =10)
+	label.grid(row=1, column=0)
+	
+	ch_depthscale = Scale(tremoloFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = tremoloDepth)
+	ch_depthscale.grid(row = 4, column=0, padx=10, pady=20)
+	label = Label(tremoloFrame, padx =10)
+	label.grid(row=3, column=0)
+	
+	ch_levelscale = Scale(tremoloFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Level: ", orient = HORIZONTAL, variable = tremoloLevel)
+	ch_levelscale.grid(row = 6, column=0, padx=10, pady=20)
+	label = Label(tremoloFrame, padx =10)
+	label.grid(row=5, column=0)
+	
+	Button(tremoloFrame, text='Set Value', command=set_tremoloRate).grid(row=2, column=2, padx=10, pady=20)
+	Button(tremoloFrame, text='Set Value', command=set_tremoloDepth).grid(row=4, column=2, padx=10, pady=20)
+	Button(tremoloFrame, text='Set Value', command=set_tremoloLevel).grid(row=6, column=2, padx=10, pady=20)
+	
+	
+	
+	#####   ADD THE TYPE !!!!!!!!!!!!!!!!!!!!!!!!
+
 ######### Vibrato ########
+
+def set_vibratoRate():
+	ratelabel = Label(vibratoFrame)
+	ratelabel.grid(row=2, column= 4)
+	vibrato_rate = str(vibratoRate.get())
+	outp(vibrato_rate,12)
+
+def set_vibratoDepth():
+	depthlabel = Label(vibratoFrame)
+	depthlabel.grid(row=2, column= 7)
+	vibrato_depth = str(vibratoDepth.get())
+	outp(vibrato_depth,13)
+	
+def Vibrato():
+	eqFrame.grid_forget()
+	delayFrame.grid_forget()
+	chorusFrame.grid_forget()
+	flangerFrame.grid_forget()
+	tremoloFrame.grid_forget()
+	vibratoFrame.grid()
+	mod_wahwahFrame.grid_forget()
+	phaserFrame.grid_forget()
+	distortionFrame.grid_forget()
+	
+	Label(vibratoFrame, text= "Vibrato ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	
+	vi_ratescale = Scale(vibratoFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = vibratoRate)
+	vi_ratescale.grid(row = 2, column=0, padx=10, pady=20)
+	label = Label(vibratoFrame, padx =10)
+	label.grid(row=1, column=0)
+	
+	vi_depthscale = Scale(vibratoFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = vibratoDepth)
+	vi_depthscale.grid(row = 4, column=0, padx=10, pady=20)
+	label = Label(vibratoFrame, padx =10)
+	label.grid(row=3, column=0)
+	
+	Button(vibratoFrame, text='Set Value', command=set_vibratoRate).grid(row=2, column=2, padx=10, pady=20)
+	Button(vibratoFrame, text='Set Value', command=set_vibratoDepth).grid(row=4, column=2, padx=10, pady=20)
+	
+	#####   ADD THE TYPE !!!!!!!!!!!!!!!!!!!!!!!!
+
 ######### Modulating Wah Wah ########
-######### Auto Wah Wah ########
+
+def set_modwahwahRate():
+	ratelabel = Label(mod_wahwahFrame)
+	ratelabel.grid(row=2, column= 4)
+	modwahwah_rate = str(modwahwahRate.get())
+	outp(modwahwah_rate,12)
+
+def set_modwahwahDepth():
+	depthlabel = Label(mod_wahwahFrame)
+	depthlabel.grid(row=2, column= 7)
+	modwahwah_depth = str(modwahwahDepth.get())
+	outp(modwahwah_depth,13)
+
+def	set_modwahwahRes():
+	reslabel = Label(mod_wahwahFrame)
+	reslabel.grid(row=2, column= 9)
+	modwahwah_res = str(modwahwahRes.get())
+	outp(modwahwah_res,14)
+
+def Mod_WahWah():
+	eqFrame.grid_forget()
+	delayFrame.grid_forget()
+	chorusFrame.grid_forget()
+	flangerFrame.grid_forget()
+	tremoloFrame.grid_forget()
+	vibratoFrame.grid_forget()
+	mod_wahwahFrame.grid()
+	phaserFrame.grid_forget()
+	distortionFrame.grid_forget()
+	
+	Label(mod_wahwahFrame, text= "Modulating Wah Wah ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	
+	mw_ratescale = Scale(mod_wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = modwahwahRate)
+	mw_ratescale.grid(row = 2, column=0, padx=10, pady=20)
+	label = Label(mod_wahwahFrame, padx =10)
+	label.grid(row=1, column=0)
+	
+	mw_depthscale = Scale(mod_wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = modwahwahDepth)
+	mw_depthscale.grid(row = 4, column=0, padx=10, pady=20)
+	label = Label(mod_wahwahFrame, padx =10)
+	label.grid(row=3, column=0)
+	
+	mw_levelscale = Scale(mod_wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Res: ", orient = HORIZONTAL, variable = modwahwahRes)
+	mw_levelscale.grid(row = 6, column=0, padx=10, pady=20)
+	label = Label(mod_wahwahFrame, padx =10)
+	label.grid(row=5, column=0)
+	
+	Button(mod_wahwahFrame, text='Set Value', command=set_modwahwahRate).grid(row=2, column=2, padx=10, pady=20)
+	Button(mod_wahwahFrame, text='Set Value', command=set_modwahwahDepth).grid(row=4, column=2, padx=10, pady=20)
+	Button(mod_wahwahFrame, text='Set Value', command=set_modwahwahRes).grid(row=6, column=2, padx=10, pady=20)
+	
+	#####   ADD THE TYPE !!!!!!!!!!!!!!!!!!!!!!!!
+
 ######### Phaser ########
+
+def set_phaserRate():
+	ratelabel = Label(phaserFrame)
+	ratelabel.grid(row=2, column= 4)
+	phaser_rate = str(phaserRate.get())
+	outp(phaser_rate,12)
+
+def set_phaserDepth():
+	depthlabel = Label(phaserFrame)
+	depthlabel.grid(row=2, column= 7)
+	phaser_depth = str(phaserDepth.get())
+	outp(phaser_depth,13)
+
+def	set_phaserRes():
+	reslabel = Label(phaserFrame)
+	reslabel.grid(row=2, column= 9)
+	phaser_res = str(phaserRes.get())
+	outp(phaser_res,14)
+
+def Phaser():
+	eqFrame.grid_forget()
+	delayFrame.grid_forget()
+	chorusFrame.grid_forget()
+	flangerFrame.grid_forget()
+	tremoloFrame.grid_forget()
+	vibratoFrame.grid_forget()
+	mod_wahwahFrame.grid_forget()
+	phaserFrame.grid()
+	distortionFrame.grid_forget()
+	
+	Label(phaserFrame, text= "Phaser ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	
+	ph_ratescale = Scale(phaserFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = phaserRate)
+	ph_ratescale.grid(row = 2, column=0, padx=10, pady=20)
+	label = Label(phaserFrame, padx =10)
+	label.grid(row=1, column=0)
+	
+	ph_depthscale = Scale(phaserFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = phaserDepth)
+	ph_depthscale.grid(row = 4, column=0, padx=10, pady=20)
+	label = Label(phaserFrame, padx =10)
+	label.grid(row=3, column=0)
+	
+	ph_levelscale = Scale(phaserFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Res: ", orient = HORIZONTAL, variable = phaserRes)
+	ph_levelscale.grid(row = 6, column=0, padx=10, pady=20)
+	label = Label(phaserFrame, padx =10)
+	label.grid(row=5, column=0)
+	
+	Button(phaserFrame, text='Set Value', command=set_phaserRate).grid(row=2, column=2, padx=10, pady=20)
+	Button(phaserFrame, text='Set Value', command=set_phaserDepth).grid(row=4, column=2, padx=10, pady=20)
+	Button(phaserFrame, text='Set Value', command=set_phaserRes).grid(row=6, column=2, padx=10, pady=20)
+	
+
 ######### Distortion ########
+def set_distortionPregain():
+	pregainlabel = Label(distortionFrame)
+	pregainlabel.grid(row=2, column= 4)
+	distortion_pregain = str(distortionPregain.get())
+	outp(distortion_pregain,12)
+
+def set_distortionMastergain():
+	mastergainlabel = Label(distortionFrame)
+	mastergainlabel.grid(row=2, column= 7)
+	distortion_mastergain = str(distortionMastergain.get())
+	outp(distortion_mastergain,13)
+
+def	set_distortionTone():
+	tonelabel = Label(distortionFrame)
+	tonelabel.grid(row=2, column= 9)
+	distortion_tone = str(distortionTone.get())
+	outp(distortion_tone,14)
+	
+def	set_distortionLevel():
+	levellabel = Label(distortionFrame)
+	levellabel.grid(row=2, column= 12)
+	distortion_level = str(distortionLevel.get())
+	outp(distortion_level,14)
+
+def Distortion():
+	eqFrame.grid_forget()
+	delayFrame.grid_forget()
+	chorusFrame.grid_forget()
+	flangerFrame.grid_forget()
+	tremoloFrame.grid_forget()
+	vibratoFrame.grid_forget()
+	mod_wahwahFrame.grid_forget()
+	phaserFrame.grid_forget()
+	distortionFrame.grid()
+	
+	Label(phaserFrame, text= "Distortion ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	
+	di_pregainscale = Scale(distortionFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Pregain: ", orient = HORIZONTAL, variable = distortionPregain)
+	di_pregainscale.grid(row = 2, column=0, padx=10, pady=20)
+	label = Label(distortionFrame, padx =10)
+	label.grid(row=1, column=0)
+	
+	di_mastergainscale = Scale(distortionFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Mastergain: ", orient = HORIZONTAL, variable = distortionMastergain)
+	di_mastergainscale.grid(row = 4, column=0, padx=10, pady=20)
+	label = Label(distortionFrame, padx =10)
+	label.grid(row=3, column=0)
+	
+	di_tonescale = Scale(distortionFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Tone: ", orient = HORIZONTAL, variable = distortionTone)
+	di_tonescale.grid(row = 6, column=0, padx=10, pady=20)
+	label = Label(distortionFrame, padx =10)
+	label.grid(row=5, column=0)
+	
+	di_levelscale = Scale(distortionFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Level: ", orient = HORIZONTAL, variable = distortionLevel)
+	di_levelscale.grid(row = 8, column=0, padx=10, pady=20)
+	label = Label(distortionFrame, padx =10)
+	label.grid(row=7, column=0)
+	
+	Button(distortionFrame, text='Set Value', command=set_distortionPregain).grid(row=2, column=2, padx=10, pady=20)
+	Button(distortionFrame, text='Set Value', command=set_distortionMastergain).grid(row=4, column=2, padx=10, pady=20)
+	Button(distortionFrame, text='Set Value', command=set_distortionTone).grid(row=6, column=2, padx=10, pady=20)
+	Button(distortionFrame, text='Set Value', command=set_distortionLevel).grid(row=8, column=2, padx=10, pady=20)
+
+
+	#####   FIX THE TYPE & STRING !!!!!!!!!!!!!!!!!!!!!!!!
+
+
 ######### Output #######
 
 ####################################################################################
@@ -516,13 +797,12 @@ def radiobuttons():
 	eq = Radiobutton(effectsFrame, text="EQ", variable=v, value=1,anchor=W, command = EQ).grid(row=0,column=0,sticky = W)
 	delay = Radiobutton(effectsFrame, text="Delay", variable=v, value=2, anchor=W, command = Delay).grid(row=0,column=1,sticky = W)
 	chorus = Radiobutton(effectsFrame, text="Chorus", variable=v, value=3,anchor=W, command = Chorus).grid(row=0,column=2, sticky = W)
-	flanger = Radiobutton(effectsFrame, text="Flanger", variable=v, value=4,anchor=W).grid(row=0,column=3, sticky = W)
-	tremolo = Radiobutton(effectsFrame, text="Tremolo", variable=v, value=5,anchor=W).grid(row=0,column=4, sticky = W)
-	vibrato = Radiobutton(effectsFrame, text="Vibrato", variable=v, value=6,anchor=W).grid(row=1,column=0, sticky = W)
-	mod_wahwah = Radiobutton(effectsFrame, text="Modulating Wah Wah", variable=v, value=7,anchor=W).grid(row=1,column=1, sticky = W)
-	auto_wahwah = Radiobutton(effectsFrame, text="Auto Wah Wah", variable=v, value=8,anchor=W).grid(row=1,column=2, sticky = W)
-	phaser = Radiobutton(effectsFrame, text="Phaser", variable=v, value=9,anchor=W).grid(row=1,column=3, sticky = W)
-	distortion = Radiobutton(effectsFrame, text="Distortion", variable=v, value=10,anchor=W).grid(row=1,column=4, sticky = W)
+	flanger = Radiobutton(effectsFrame, text="Flanger", variable=v, value=4,anchor=W, command = Flanger).grid(row=0,column=3, sticky = W)
+	tremolo = Radiobutton(effectsFrame, text="Tremolo", variable=v, value=5,anchor=W, command = Tremolo).grid(row=0,column=4, sticky = W)
+	vibrato = Radiobutton(effectsFrame, text="Vibrato", variable=v, value=6,anchor=W, command = Vibrato).grid(row=1,column=0, sticky = W)
+	mod_wahwah = Radiobutton(effectsFrame, text="Modulating Wah Wah", variable=v, value=7,anchor=W, command = Mod_WahWah).grid(row=1,column=1, sticky = W)
+	phaser = Radiobutton(effectsFrame, text="Phaser", variable=v, value=9,anchor=W, command = Phaser).grid(row=1,column=3, sticky = W)
+	distortion = Radiobutton(effectsFrame, text="Distortion", variable=v, value=10,anchor=W, command = Distortion).grid(row=1,column=4, sticky = W)
 	
 def main():
 	if v==1:
@@ -540,10 +820,8 @@ def main():
 	elif v==7:
 		Mod_WahWah()
 	elif v==8:
-		Auto_WahWah()
-	elif v==9:
 		Phaser()
-	elif v==10:
+	elif v==9:
 		Distortion()
 	
 main()
