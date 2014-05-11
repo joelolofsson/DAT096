@@ -262,7 +262,7 @@ def main ():
 	global Debug
 	
 	
-	Debug='0'					# debuging mode, Enables printing and disables the communication testing.
+	Debug='1'					# debuging mode, Enables printing and disables the communication testing.
 	NumberOfEffects=11				# the number of the effects included in the design.
 	WordLength=4 					# the length of each data packet to be written in memory, measured in bytes.
 	WordNumber=27 					# the number of words that will be written on the memory.
