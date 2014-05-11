@@ -22,11 +22,10 @@ def leonstart():
 	import time		#used for waiting functions
 	import platform	
 	oscheck=platform.system()
-	if oscheck=="Windows":
-		portname='COM5'
-	else:
-		portname='/dev/ttyUSB1'
-	
+	if oscheck=="Windows":				
+		portname='COM5'				#<==========================================================================
+	else:							#-------------------CHECK IF THE USB PORT IS CORRECT------------------------
+		portname='/dev/ttyUSB1'		#<==========================================================================
 	try:
 		serport = serial.Serial(port=portname, baudrate=38343, timeout=2) # ,timeout=2 initializing and opening the port
 	except serial.serialutil.SerialException:
