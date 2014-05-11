@@ -12,11 +12,11 @@ master.wm_title(u"SoundBox") # the u is so that it wont read the text as ASCII s
 ############################# Frames ###############################################
 
 #############Frame for selecting settings for specified effect############
-effectsFrame = Frame(master, width=600, height=100, bg = "green")
+effectsFrame = Frame(master, width=600, height=200)
 effectsFrame.grid(row=0, column=0, padx=10, pady=2)
 
 #############Frame for showing effect settings################
-interFrame = Frame(master, width=900, height=900, bg = "red")
+interFrame = Frame(master, width=900, height=900)
 interFrame.grid(row=1, column=0, padx=10, pady=2)
 
 ####### EQ frame #####
@@ -24,11 +24,11 @@ eqFrame = Frame(interFrame, width=500, height=600)
 eqFrame.grid(row=0, column=0, padx=10, pady=12)
 
 ###### Delay frame #####
-delayFrame = Frame(interFrame, width=500, height=600, bg="orange")
+delayFrame = Frame(interFrame, width=500, height=600)
 delayFrame.grid(row=0, column=0, padx=10, pady=12)
 
 ###### Chorus frame ######
-chorusFrame = Frame(interFrame, width=500, height=600, bg="pink")
+chorusFrame = Frame(interFrame, width=500, height=600)
 chorusFrame.grid(row=0, column=0, padx=10, pady=12)
 
 ###### Flanger frame ######
@@ -44,8 +44,8 @@ vibratoFrame = Frame(interFrame, width=500, height=600)
 vibratoFrame.grid(row=0, column=0, padx=10, pady=12)
 
 ###### Modulating Wah Wah frame ######
-mod_wahwahFrame = Frame(interFrame, width=500, height=600)
-mod_wahwahFrame.grid(row=0, column=0, padx=10, pady=12)
+wahwahFrame = Frame(interFrame, width=500, height=600)
+wahwahFrame.grid(row=0, column=0, padx=10, pady=12)
 
 ###### Phaser frame ######
 phaserFrame = Frame(interFrame, width=500, height=600)
@@ -55,6 +55,14 @@ phaserFrame.grid(row=0, column=0, padx=10, pady=12)
 distortionFrame = Frame(interFrame, width=500, height=600)
 distortionFrame.grid(row=0, column=0, padx=10, pady=12)
 
+###### Noise Gate frame ######
+noisegateFrame = Frame(interFrame, width=500, height=600)
+noisegateFrame.grid(row=0, column=0, padx=10, pady=12)
+
+###### Gain frame ######
+gainFrame = Frame(interFrame, width=500, height=600)
+gainFrame.grid(row=0, column=0, padx=10, pady=12)
+
 ############Frame for showing current prio ordering##########
 prioFrame = Frame(master, width=100, height=600, bg = "grey")
 prioFrame.grid(row=1, column=2, padx=10, pady=2)
@@ -62,7 +70,6 @@ prioFrame.grid(row=1, column=2, padx=10, pady=2)
 ############Frame for setting prio of effects###############
 setprioFrame = Frame(master, width=600, height=100, bg = "blue")
 setprioFrame.grid(row=2, column=0, padx=10, pady=2)
-
 ####################################################################################
 
 
@@ -97,6 +104,14 @@ chorusRate = DoubleVar()
 chorusDepth = DoubleVar()
 chorusLevel = DoubleVar()
 
+ch_chosen = IntVar()
+
+ch_Sine  = IntVar()
+ch_Square = IntVar()
+ch_Triangle = IntVar()
+ch_Sawtooth = IntVar()
+ch_Random = IntVar()
+
 ######### Flanger ########
 flangerRate = DoubleVar()
 flangerDepth = DoubleVar()
@@ -108,14 +123,35 @@ tremoloRate = DoubleVar()
 tremoloDepth = DoubleVar()
 tremoloLevel = DoubleVar()
 
+tr_chosen = IntVar()
+
+tr_Sine  = IntVar()
+tr_Square = IntVar()
+tr_Triangle = IntVar()
+tr_Sawtooth = IntVar()
+tr_Random = IntVar()
+
 ######### Vibrato ########
 vibratoRate = DoubleVar()
 vibratoDepth = DoubleVar()
 
+vi_chosen = IntVar()
+
+vi_Sine  = IntVar()
+vi_Square = IntVar()
+vi_Triangle = IntVar()
+vi_Sawtooth = IntVar()
+vi_Random = IntVar()
+
 ######### Modulating Wah Wah ########
-modwahwahRate = DoubleVar()
-modwahwahDepth = DoubleVar()
-modwahwahRes = DoubleVar()
+wahwahRate = DoubleVar()
+wahwahDepth = DoubleVar()
+wahwahRes = DoubleVar()
+
+wa_chosen = IntVar()
+
+wa_Modulating  = IntVar()
+wa_Auto = IntVar()
 
 ######### Phaser ########
 phaserRate = DoubleVar()
@@ -128,18 +164,30 @@ distortionMastergain = DoubleVar()
 distortionTone = DoubleVar()
 distortionLevel = DoubleVar()
 
+di_chosen = IntVar()
+
+di_Rock  = IntVar()
+di_Metal = IntVar()
+di_Blues = IntVar()
+
+######### Noise Gate ########
+noisegateThreshold = DoubleVar()
+
+######### Gains ########
+Gain1 = DoubleVar()
+Gain2 = DoubleVar()
+
+
 ######### Output #######
 
-strout = ['0.0','0.0','0.0','#','0.0','0.0','0.0','#','0.0','0.0','0.0',"#",'0.0','0.0','0.0',"#", '0','0','0', "#", '0','0','0','0','0', "#"]
-
+strout1 = []
+strout2 = ["0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","0","#",
+		   "0","0","0","0","#","0","0","0","0","#","0","0","0","#","0","0","0","0","#","0","0","0","#",
+		   "0","0","0","0","0","#","0","#","0","#","0","#"]
 ####################################################################################
 
 ####################################################################################
 ############################# Settings & output ####################################
-
-######## Turn On/Off effects ########
-#effect1 = IntVar()
-#effect2 = IntVar()
 
 def hello():
     print "hello!"
@@ -169,17 +217,18 @@ def makeMenu():
 	# display the menu
 	master.config(menu=menubar)
 
-######## Output              ########
+############### Output #################
 def outp(strprint, position):
 	x = ''
-	strout[position]= strprint
-	x = ','.join(strout)
+	strout2[position]= strprint
+	x = '/'.join(strout2)
 #	print strout
 	print x
 
+########### Save File
 def saveFile():
 	fo = open("foo.txt", "wb")
-	x = ','.join(strout)
+	x = ','.join(strout2)
 	fo.write(x);
 	fo.close()
 	
@@ -189,6 +238,7 @@ def openFile():
 	str = fo.read();
 	print "Read String is : ", str
 	fo.close()
+####################################################################################
 
 ####################################################################################
 ################################### Effects ########################################
@@ -210,25 +260,25 @@ def set_tv():
 	label2 = Label(eqFrame)
 	label2.grid(row=4, column= 4)
 	eq_trebbg = str(trebbleGain.get())
-	outp(eq_trebbg, 3)
+	outp(eq_trebbg, 4)
 
 def set_tc():
 	labelc2 = Label(eqFrame)
 	labelc2.grid(row=4, column= 7)
 	eq_trebbc = str(trebbleCutoff.get())
-	outp(eq_trebbc, 4)
+	outp(eq_trebbc, 5)
 	
 def set_pv():
 	label3 = Label(eqFrame)
 	label3.grid(row=6, column= 4)
 	eq_peakg = str(peakGain.get())
-	outp(eq_peakg, 6)
+	outp(eq_peakg, 8)
 	
 def set_pc():
 	labelc3 = Label(eqFrame)
 	labelc3.grid(row=6, column= 7)
 	eq_peakc = str(peakCutoff.get())
-	outp(eq_peakc,7)
+	outp(eq_peakc,9)
 	
 def eqvalsetb1(event):
 	eq_bassq = float(entry_eqbq.get())
@@ -252,20 +302,7 @@ def eqvalsett1(event):
 		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")
 	
 	else : 
-		outp(str(eq_trebbq), 5)
-
-def eqvalsetp(event):
-	eq_peakc = float(entry_eqpc.get())
-	entry_eqpc.delete(0, END)	
-	if eq_peakc < 0 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 15000")
-		
-	elif eq_peakc > 15000 :
-		entry_eqpc.delete(0, END)
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 15000")
-			
-	else :
-		outp(str(eq_peakc), 7)
+		outp(str(eq_trebbq), 6)
 	
 def eqvalsetp1(event):
 	eq_peakq = float(entry_eqpq.get())
@@ -277,7 +314,7 @@ def eqvalsetp1(event):
 		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
 		
 	else : 
-		outp(str(eq_peakq), 8)
+		outp(str(eq_peakq), 10)
 def EQ():
 	eqFrame.grid()
 	delayFrame.grid_forget()
@@ -285,9 +322,11 @@ def EQ():
 	flangerFrame.grid_forget()
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
-	mod_wahwahFrame.grid_forget()
+	wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
 	
 	Label(eqFrame, text= "Equalizer ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	
@@ -351,20 +390,19 @@ def delayvalset(event):
 		tkMessageBox.showinfo( "Error", "The value must be between 0 and 1")
 		
 	else :
-		outp(str(delay_time), 9)
+		outp(str(delay_time), 12)
 
 def set_delayFeedback():
 	feedbacklabel = Label(delayFrame)
 	feedbacklabel.grid(row=2, column=4)
 	delay_feedback = str(delayFeedback.get())
-	outp(delay_feedback,10)
+	outp(delay_feedback,13)
 	
 def set_delayDryWet():
 	drywetlabel = Label(delayFrame)
 	drywetlabel.grid(row=2, column=7)
 	delay_drywet = str(delayDryWet.get())
-	outp(delay_drywet, 11)
-
+	outp(delay_drywet, 14)
 	
 def Delay():
 	eqFrame.grid_forget()
@@ -373,9 +411,11 @@ def Delay():
 	flangerFrame.grid_forget()
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
-	mod_wahwahFrame.grid_forget()
+	wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
 	
 	Label(delayFrame, text= "Delay ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	
@@ -402,20 +442,60 @@ def set_chorusRate():
 	ratelabel = Label(chorusFrame)
 	ratelabel.grid(row=2, column= 4)
 	chorus_rate = str(chorusRate.get())
-	outp(chorus_rate,12)
+	outp(chorus_rate,16)
 
 def set_chorusDepth():
 	depthlabel = Label(chorusFrame)
 	depthlabel.grid(row=2, column= 7)
 	chorus_depth = str(chorusDepth.get())
-	outp(chorus_depth,13)
+	outp(chorus_depth,17)
 
 def	set_chorusLevel():
 	levellabel = Label(chorusFrame)
 	levellabel.grid(row=2, column= 9)
 	chorus_level = str(chorusLevel.get())
-	outp(chorus_level,14)
+	outp(chorus_level,18)
+	
+def chorusSINE_val():
+	sine_val= str(ch_Sine.get())
+	display_choice = Text(chorusFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Sine")
+	ch_chosen =str(1)
+	outp(ch_chosen, 19)
+	
+def chorusSQUARE_val():
+	square_val = str(ch_Square.get())
+	display_choice = Text(chorusFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Square")
+	ch_chosen =str(2)
+	outp(ch_chosen, 19)
+	
+def chorusTRIANGLE_val():
+	triangle_val=str(ch_Triangle.get())
+	display_choice = Text(chorusFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Triangle")
+	ch_chosen =str(3)
+	outp(ch_chosen, 19)
 
+def chorusSAWTOOTH_val():
+	sawtooth_val=str(ch_Sawtooth.get())
+	display_choice = Text(chorusFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Sawtooth")
+	ch_chosen =str(4)
+	outp(ch_chosen, 19)
+	
+def chorusRANDOM_val():
+	random_val=str(ch_Random.get())
+	display_choice = Text(chorusFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Random")
+	ch_chosen =str(5)
+	outp(ch_chosen, 19)
+	
 def Chorus():
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
@@ -423,12 +503,14 @@ def Chorus():
 	flangerFrame.grid_forget()
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
-	mod_wahwahFrame.grid_forget()
+	wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
 	
 	Label(chorusFrame, text= "Chorus ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
-	
+
 	ch_ratescale = Scale(chorusFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = chorusRate)
 	ch_ratescale.grid(row = 2, column=0, padx=10, pady=20)
 	label = Label(chorusFrame, padx =10)
@@ -448,9 +530,18 @@ def Chorus():
 	Button(chorusFrame, text='Set Value', command=set_chorusDepth).grid(row=4, column=2, padx=10, pady=20)
 	Button(chorusFrame, text='Set Value', command=set_chorusLevel).grid(row=6, column=2, padx=10, pady=20)
 	
-	
-	
-	#####   ADD THE TYPE !!!!!!!!!!!!!!!!!!!!!!!!
+	menuType_choice=  Menubutton ( chorusFrame, text="Type")
+	menuType_choice.grid(row=7, column=1)
+	menuType_choice.menu  =  Menu ( menuType_choice, tearoff = 0 )
+	menuType_choice["menu"]  =  menuType_choice.menu
+    
+	menuType_choice.menu.add_checkbutton ( label="Sine",variable=ch_Sine, command=chorusSINE_val)
+	menuType_choice.menu.add_checkbutton ( label="Square",variable=ch_Square, command=chorusSQUARE_val)
+	menuType_choice.menu.add_checkbutton ( label="Triangle",variable=ch_Triangle, command=chorusTRIANGLE_val)
+	menuType_choice.menu.add_checkbutton ( label="Sawtooth",variable=ch_Sawtooth, command=chorusSAWTOOTH_val)
+	menuType_choice.menu.add_checkbutton ( label="Random",variable=ch_Random, command=chorusRANDOM_val)
+
+	menuType_choice.grid(row=7, column=1)
 
 ############# Flanger #############
 
@@ -458,26 +549,26 @@ def set_flangerRate():
 	flangerrate = Label(flangerFrame)
 	flangerrate.grid(row=4, column= 4)
 	flanger_rate = str(flangerRate.get())
-	outp(flanger_rate, 15)
+	outp(flanger_rate, 21)
 
 def set_flangerDepth():
 	flangerdepth= Label(flangerFrame)
 	flangerdepth.grid(row=4, column= 7)
 	flanger_depth = str(flangerDepth.get())
-	outp(flanger_depth, 16)
+	outp(flanger_depth, 22)
 	
 def set_flangerDelay():
 	flangerdelay = Label(flangerFrame)
 	flangerdelay.grid(row=6, column= 4)
 	flanger_delay = str(flangerDelay.get())
-	outp(flanger_delay, 17)
+	outp(flanger_delay, 23)
 	
 def set_flangerLevel():
 	flangerlevel = Label(flangerFrame)
 	flangerlevel.grid(row=2, column= 7)
 	flanger_level = str(flangerLevel.get())
-	outp(flanger_level,18)
-	
+	outp(flanger_level,24)
+
 def Flanger():
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
@@ -485,9 +576,11 @@ def Flanger():
 	flangerFrame.grid()
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
-	mod_wahwahFrame.grid_forget()
+	wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
 	
 	Label(flangerFrame, text= "Flanger ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 
@@ -522,19 +615,59 @@ def set_tremoloRate():
 	ratelabel = Label(tremoloFrame)
 	ratelabel.grid(row=2, column= 4)
 	tremolo_rate = str(tremoloRate.get())
-	outp(tremolo_rate,12)
+	outp(tremolo_rate,26)
 
 def set_tremoloDepth():
 	depthlabel = Label(tremoloFrame)
 	depthlabel.grid(row=2, column= 7)
 	tremolo_depth = str(tremoloDepth.get())
-	outp(tremolo_depth,13)
+	outp(tremolo_depth,27)
 
 def	set_tremoloLevel():
 	levellabel = Label(tremoloFrame)
 	levellabel.grid(row=2, column= 9)
 	tremolo_level = str(tremoloLevel.get())
-	outp(tremolo_level,14)
+	outp(tremolo_level,28)
+
+def tremoloSINE_val():
+	sine_val= str(tr_Sine.get())
+	display_choice = Text(tremoloFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Sine")
+	tr_chosen =str(1)
+	outp(tr_chosen, 29)
+	
+def tremoloSQUARE_val():
+	square_val = str(tr_Square.get())
+	display_choice = Text(tremoloFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Square")
+	tr_chosen =str(2)
+	outp(tr_chosen, 29)
+	
+def tremoloTRIANGLE_val():
+	triangle_val=str(tr_Triangle.get())
+	display_choice = Text(tremoloFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Triangle")
+	tr_chosen =str(3)
+	outp(tr_chosen, 29)
+
+def tremoloSAWTOOTH_val():
+	sawtooth_val=str(tr_Sawtooth.get())
+	display_choice = Text(tremoloFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Sawtooth")
+	tr_chosen =str(4)
+	outp(tr_chosen, 29)
+	
+def tremoloRANDOM_val():
+	random_val=str(tr_Random.get())
+	display_choice = Text(tremoloFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Random")
+	tr_chosen =str(5)
+	outp(tr_chosen, 29)
 
 def Tremolo():
 	eqFrame.grid_forget()
@@ -543,9 +676,11 @@ def Tremolo():
 	flangerFrame.grid_forget()
 	tremoloFrame.grid()
 	vibratoFrame.grid_forget()
-	mod_wahwahFrame.grid_forget()
+	wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
 	
 	Label(tremoloFrame, text= "Tremolo ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	
@@ -567,10 +702,19 @@ def Tremolo():
 	Button(tremoloFrame, text='Set Value', command=set_tremoloRate).grid(row=2, column=2, padx=10, pady=20)
 	Button(tremoloFrame, text='Set Value', command=set_tremoloDepth).grid(row=4, column=2, padx=10, pady=20)
 	Button(tremoloFrame, text='Set Value', command=set_tremoloLevel).grid(row=6, column=2, padx=10, pady=20)
-	
-	
-	
-	#####   ADD THE TYPE !!!!!!!!!!!!!!!!!!!!!!!!
+
+	menuType_choice=  Menubutton (tremoloFrame, text="Type")
+	menuType_choice.grid(row=7, column=1)
+	menuType_choice.menu  =  Menu ( menuType_choice, tearoff = 0 )
+	menuType_choice["menu"]  =  menuType_choice.menu
+    
+	menuType_choice.menu.add_checkbutton ( label="Sine",variable=tr_Sine, command=tremoloSINE_val)
+	menuType_choice.menu.add_checkbutton ( label="Square",variable=tr_Square, command=tremoloSQUARE_val)
+	menuType_choice.menu.add_checkbutton ( label="Triangle",variable=tr_Triangle, command=tremoloTRIANGLE_val)
+	menuType_choice.menu.add_checkbutton ( label="Sawtooth",variable=tr_Sawtooth, command=tremoloSAWTOOTH_val)
+	menuType_choice.menu.add_checkbutton ( label="Random",variable=tr_Random, command=tremoloRANDOM_val)
+
+	menuType_choice.grid(row=7, column=1)
 
 ######### Vibrato ########
 
@@ -578,13 +722,54 @@ def set_vibratoRate():
 	ratelabel = Label(vibratoFrame)
 	ratelabel.grid(row=2, column= 4)
 	vibrato_rate = str(vibratoRate.get())
-	outp(vibrato_rate,12)
+	outp(vibrato_rate, 31)
 
 def set_vibratoDepth():
 	depthlabel = Label(vibratoFrame)
 	depthlabel.grid(row=2, column= 7)
 	vibrato_depth = str(vibratoDepth.get())
-	outp(vibrato_depth,13)
+	outp(vibrato_depth,32)
+	
+def vibratoSINE_val():
+	sine_val= str(vi_Sine.get())
+	display_choice = Text(vibratoFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Sine")
+	vi_chosen =str(1)
+	outp(vi_chosen, 33)
+	
+def vibratoSQUARE_val():
+	square_val = str(vi_Square.get())
+	display_choice = Text(vibratoFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Square")
+	vi_chosen =str(2)
+	outp(vi_chosen, 33)
+	
+def vibratoTRIANGLE_val():
+	triangle_val=str(vi_Triangle.get())
+	display_choice = Text(vibratoFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Triangle")
+	vi_chosen =str(3)
+	outp(vi_chosen, 33)
+
+def vibratoSAWTOOTH_val():
+	sawtooth_val=str(vi_Sawtooth.get())
+	display_choice = Text(vibratoFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Sawtooth")
+	vi_chosen =str(4)
+	outp(vi_chosen, 33)
+	
+def vibratoRANDOM_val():
+	random_val=str(vi_Random.get())
+	display_choice = Text(vibratoFrame, height=1, width=8)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Random")
+	vi_chosen =str(5)
+	outp(vi_chosen, 33)
+	
 	
 def Vibrato():
 	eqFrame.grid_forget()
@@ -593,9 +778,11 @@ def Vibrato():
 	flangerFrame.grid_forget()
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid()
-	mod_wahwahFrame.grid_forget()
+	wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
 	
 	Label(vibratoFrame, text= "Vibrato ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	
@@ -612,61 +799,101 @@ def Vibrato():
 	Button(vibratoFrame, text='Set Value', command=set_vibratoRate).grid(row=2, column=2, padx=10, pady=20)
 	Button(vibratoFrame, text='Set Value', command=set_vibratoDepth).grid(row=4, column=2, padx=10, pady=20)
 	
-	#####   ADD THE TYPE !!!!!!!!!!!!!!!!!!!!!!!!
+	menuType_choice=  Menubutton ( vibratoFrame, text="Type")
+	menuType_choice.grid(row=7, column=1)
+	menuType_choice.menu  =  Menu ( menuType_choice, tearoff = 0 )
+	menuType_choice["menu"]  =  menuType_choice.menu
+    
+	menuType_choice.menu.add_checkbutton ( label="Sine",variable=vi_Sine, command=vibratoSINE_val)
+	menuType_choice.menu.add_checkbutton ( label="Square",variable=vi_Square, command=vibratoSQUARE_val)
+	menuType_choice.menu.add_checkbutton ( label="Triangle",variable=vi_Triangle, command=vibratoTRIANGLE_val)
+	menuType_choice.menu.add_checkbutton ( label="Sawtooth",variable=vi_Sawtooth, command=vibratoSAWTOOTH_val)
+	menuType_choice.menu.add_checkbutton ( label="Random",variable=vi_Random, command=vibratoRANDOM_val)
 
-######### Modulating Wah Wah ########
+	menuType_choice.grid(row=7, column=1)
+	
+	
+	
+##############  Wah Wah ###################
 
-def set_modwahwahRate():
-	ratelabel = Label(mod_wahwahFrame)
+def set_wahwahRate():
+	ratelabel = Label(wahwahFrame)
 	ratelabel.grid(row=2, column= 4)
-	modwahwah_rate = str(modwahwahRate.get())
-	outp(modwahwah_rate,12)
+	wahwah_rate = str(wahwahRate.get())
+	outp(wahwah_rate,35)
 
-def set_modwahwahDepth():
-	depthlabel = Label(mod_wahwahFrame)
+def set_wahwahDepth():
+	depthlabel = Label(wahwahFrame)
 	depthlabel.grid(row=2, column= 7)
-	modwahwah_depth = str(modwahwahDepth.get())
-	outp(modwahwah_depth,13)
+	wahwah_depth = str(wahwahDepth.get())
+	outp(wahwah_depth, 36)
 
-def	set_modwahwahRes():
-	reslabel = Label(mod_wahwahFrame)
+def	set_wahwahRes():
+	reslabel = Label(wahwahFrame)
 	reslabel.grid(row=2, column= 9)
-	modwahwah_res = str(modwahwahRes.get())
-	outp(modwahwah_res,14)
+	wahwah_res = str(wahwahRes.get())
+	outp(wahwah_res, 37)
+	
+def MOD_val():
+	mod_val = str(wa_Modulating.get())
+	display_choice = Text(wahwahFrame, height=1, width=10)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Modulating")
+	wa_chosen =str(1)
+	outp(wa_chosen, 38)
+	
+def AUTO_val():
+	auto_val=str(wa_Auto.get())
+	display_choice = Text(wahwahFrame, height=1, width=10)
+	display_choice.grid(row=7, column=0)
+	display_choice.insert(0.0, "Auto")
+	wa_chosen =str(2)
+	outp(wa_chosen, 38)
 
-def Mod_WahWah():
+
+def WahWah():
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
 	flangerFrame.grid_forget()
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
-	mod_wahwahFrame.grid()
+	wahwahFrame.grid()
 	phaserFrame.grid_forget()
 	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
 	
-	Label(mod_wahwahFrame, text= "Modulating Wah Wah ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	Label(wahwahFrame, text= "Wah Wah ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	
-	mw_ratescale = Scale(mod_wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = modwahwahRate)
-	mw_ratescale.grid(row = 2, column=0, padx=10, pady=20)
-	label = Label(mod_wahwahFrame, padx =10)
+	wa_ratescale = Scale(wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Rate: ", orient = HORIZONTAL, variable = wahwahRate)
+	wa_ratescale.grid(row = 2, column=0, padx=10, pady=20)
+	label = Label(wahwahFrame, padx =10)
 	label.grid(row=1, column=0)
 	
-	mw_depthscale = Scale(mod_wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = modwahwahDepth)
-	mw_depthscale.grid(row = 4, column=0, padx=10, pady=20)
-	label = Label(mod_wahwahFrame, padx =10)
+	wa_depthscale = Scale(wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Depth: ", orient = HORIZONTAL, variable = wahwahDepth)
+	wa_depthscale.grid(row = 4, column=0, padx=10, pady=20)
+	label = Label(wahwahFrame, padx =10)
 	label.grid(row=3, column=0)
 	
-	mw_levelscale = Scale(mod_wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Res: ", orient = HORIZONTAL, variable = modwahwahRes)
-	mw_levelscale.grid(row = 6, column=0, padx=10, pady=20)
-	label = Label(mod_wahwahFrame, padx =10)
+	wa_levelscale = Scale(wahwahFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Res: ", orient = HORIZONTAL, variable = wahwahRes)
+	wa_levelscale.grid(row = 6, column=0, padx=10, pady=20)
+	label = Label(wahwahFrame, padx =10)
 	label.grid(row=5, column=0)
 	
-	Button(mod_wahwahFrame, text='Set Value', command=set_modwahwahRate).grid(row=2, column=2, padx=10, pady=20)
-	Button(mod_wahwahFrame, text='Set Value', command=set_modwahwahDepth).grid(row=4, column=2, padx=10, pady=20)
-	Button(mod_wahwahFrame, text='Set Value', command=set_modwahwahRes).grid(row=6, column=2, padx=10, pady=20)
+	Button(wahwahFrame, text='Set Value', command=set_wahwahRate).grid(row=2, column=2, padx=10, pady=20)
+	Button(wahwahFrame, text='Set Value', command=set_wahwahDepth).grid(row=4, column=2, padx=10, pady=20)
+	Button(wahwahFrame, text='Set Value', command=set_wahwahRes).grid(row=6, column=2, padx=10, pady=20)
 	
-	#####   ADD THE TYPE !!!!!!!!!!!!!!!!!!!!!!!!
+	menuType_choice=  Menubutton ( wahwahFrame, text="Type")
+	menuType_choice.grid(row=7, column=1)
+	menuType_choice.menu  =  Menu ( menuType_choice, tearoff = 0 )
+	menuType_choice["menu"]  =  menuType_choice.menu
+    
+	menuType_choice.menu.add_checkbutton ( label="Modulating",variable=wa_Modulating, command=MOD_val)
+	menuType_choice.menu.add_checkbutton ( label="Auto      ",variable=wa_Auto, command=AUTO_val)
+
+	menuType_choice.grid(row=7, column=1)
 
 ######### Phaser ########
 
@@ -674,19 +901,19 @@ def set_phaserRate():
 	ratelabel = Label(phaserFrame)
 	ratelabel.grid(row=2, column= 4)
 	phaser_rate = str(phaserRate.get())
-	outp(phaser_rate,12)
+	outp(phaser_rate,40)
 
 def set_phaserDepth():
 	depthlabel = Label(phaserFrame)
 	depthlabel.grid(row=2, column= 7)
 	phaser_depth = str(phaserDepth.get())
-	outp(phaser_depth,13)
+	outp(phaser_depth,41)
 
 def	set_phaserRes():
 	reslabel = Label(phaserFrame)
 	reslabel.grid(row=2, column= 9)
 	phaser_res = str(phaserRes.get())
-	outp(phaser_res,14)
+	outp(phaser_res,42)
 
 def Phaser():
 	eqFrame.grid_forget()
@@ -695,9 +922,12 @@ def Phaser():
 	flangerFrame.grid_forget()
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
-	mod_wahwahFrame.grid_forget()
+	wahwahFrame.grid_forget()
 	phaserFrame.grid()
 	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
+
 	
 	Label(phaserFrame, text= "Phaser ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	
@@ -726,25 +956,49 @@ def set_distortionPregain():
 	pregainlabel = Label(distortionFrame)
 	pregainlabel.grid(row=2, column= 4)
 	distortion_pregain = str(distortionPregain.get())
-	outp(distortion_pregain,12)
+	outp(distortion_pregain, 44)
 
 def set_distortionMastergain():
 	mastergainlabel = Label(distortionFrame)
 	mastergainlabel.grid(row=2, column= 7)
 	distortion_mastergain = str(distortionMastergain.get())
-	outp(distortion_mastergain,13)
+	outp(distortion_mastergain,45)
 
 def	set_distortionTone():
 	tonelabel = Label(distortionFrame)
 	tonelabel.grid(row=2, column= 9)
 	distortion_tone = str(distortionTone.get())
-	outp(distortion_tone,14)
+	outp(distortion_tone,46)
 	
 def	set_distortionLevel():
 	levellabel = Label(distortionFrame)
 	levellabel.grid(row=2, column= 12)
 	distortion_level = str(distortionLevel.get())
-	outp(distortion_level,14)
+	outp(distortion_level,47)
+
+def ROCK_val():
+	rock_val= str(di_Rock.get())
+	chosen =str(1)
+	display_choice = Text(distortionFrame, height=1, width=8)
+	display_choice.grid(row=9, column=0)
+	display_choice.insert(0.0, "Rock")
+	outp(chosen, 48)
+	
+def METAL_val():
+	square_val = str(di_Metal.get())
+	di_chosen =str(2)
+	display_choice = Text(distortionFrame, height=1, width=8)
+	display_choice.grid(row=9, column=0)
+	display_choice.insert(0.0, "Metal")
+	outp(di_chosen, 48)
+	
+def BLUES_val():
+	triangle_val=str(di_Blues.get())
+	display_choice = Text(distortionFrame, height=1, width=8)
+	display_choice.grid(row=9, column=0)
+	display_choice.insert(0.0, "Blues")
+	di_chosen =str(3)
+	outp(di_chosen, 48)
 
 def Distortion():
 	eqFrame.grid_forget()
@@ -753,11 +1007,13 @@ def Distortion():
 	flangerFrame.grid_forget()
 	tremoloFrame.grid_forget()
 	vibratoFrame.grid_forget()
-	mod_wahwahFrame.grid_forget()
+	wahwahFrame.grid_forget()
 	phaserFrame.grid_forget()
 	distortionFrame.grid()
+	noisegateFrame.grid_forget()
+	gainFrame.grid_forget()
 	
-	Label(phaserFrame, text= "Distortion ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	Label(distortionFrame, text= "Distortion ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	
 	di_pregainscale = Scale(distortionFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Pregain: ", orient = HORIZONTAL, variable = distortionPregain)
 	di_pregainscale.grid(row = 2, column=0, padx=10, pady=20)
@@ -784,11 +1040,92 @@ def Distortion():
 	Button(distortionFrame, text='Set Value', command=set_distortionTone).grid(row=6, column=2, padx=10, pady=20)
 	Button(distortionFrame, text='Set Value', command=set_distortionLevel).grid(row=8, column=2, padx=10, pady=20)
 
+	menuType_choice=  Menubutton ( distortionFrame, text="Type")
+	menuType_choice.grid(row=9, column=1)
+	menuType_choice.menu  =  Menu ( menuType_choice, tearoff = 0 )
+	menuType_choice["menu"]  =  menuType_choice.menu
+    
+	menuType_choice.menu.add_checkbutton ( label="Rock",variable=di_Rock, command=ROCK_val)
+	menuType_choice.menu.add_checkbutton ( label="Metal",variable=di_Metal, command=METAL_val)
+	menuType_choice.menu.add_checkbutton ( label="Blues",variable=di_Blues, command=BLUES_val)
 
-	#####   FIX THE TYPE & STRING !!!!!!!!!!!!!!!!!!!!!!!!
+	menuType_choice.grid(row=9, column=1)
+
+######### Noise Gate #######
+def	set_noisegateThreshold():
+	thresholdlabel = Label(noisegateFrame)
+	thresholdlabel.grid(row=2, column= 12)
+	noisegate_threshold = str(noisegateThreshold.get())
+	outp(noisegate_threshold,50)
+	
+def NoiseGate():
+	eqFrame.grid_forget()
+	delayFrame.grid_forget()
+	chorusFrame.grid_forget()
+	flangerFrame.grid_forget()
+	tremoloFrame.grid_forget()
+	vibratoFrame.grid_forget()
+	wahwahFrame.grid_forget()
+	phaserFrame.grid_forget()
+	distortionFrame.grid_forget()
+	noisegateFrame.grid()
+	gainFrame.grid_forget()
+	
+	Label(noisegateFrame, text= "Noisegate ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	
+	no_thresholdscale = Scale(noisegateFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Treshold: ", orient = HORIZONTAL, variable = noisegateThreshold)
+	no_thresholdscale.grid(row = 2, column=0, padx=10, pady=20)
+	label = Label(distortionFrame, padx =10)
+	label.grid(row=1, column=0)	
+	
+	Button(noisegateFrame, text='Set Value', command=set_noisegateThreshold).grid(row=2, column=2, padx=10, pady=20)
+
+
+######### Gains #######
+def	set_gain1():
+	gain1label = Label(gainFrame)
+	gain1label.grid(row=2, column= 12)
+	gain_1 = str(Gain1.get())
+	outp(gain_1,52)
+	
+def	set_gain2():
+	gain2label = Label(gainFrame)
+	gain2label.grid(row=4, column= 12)
+	gain_2 = str(Gain2.get())
+	outp(gain_2,54)
+	
+def Gains():
+	eqFrame.grid_forget()
+	delayFrame.grid_forget()
+	chorusFrame.grid_forget()
+	flangerFrame.grid_forget()
+	tremoloFrame.grid_forget()
+	vibratoFrame.grid_forget()
+	wahwahFrame.grid_forget()
+	phaserFrame.grid_forget()
+	distortionFrame.grid_forget()
+	noisegateFrame.grid_forget()
+	gainFrame.grid()
+	
+	Label(gainFrame, text= "Gains ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	
+	gain1scale = Scale(gainFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Gain 1: ", orient = HORIZONTAL, variable = Gain1)
+	gain1scale.grid(row = 2, column=0, padx=10, pady=20)
+	label = Label(gainFrame, padx =10)
+	label.grid(row=1, column=0)	
+	
+	gain2scale = Scale(gainFrame, length = 200, from_=0.0, to = 100.0, resolution = 0.1, label = "Gain 2: ", orient = HORIZONTAL, variable = Gain2)
+	gain2scale.grid(row = 4, column=0, padx=10, pady=20)
+	label = Label(gainFrame, padx =10)
+	label.grid(row=3, column=0)	
+	
+	Button(gainFrame, text='Set Value', command=set_gain1).grid(row=2, column=2, padx=10, pady=20)
+	Button(gainFrame, text='Set Value', command=set_gain2).grid(row=4, column=2, padx=10, pady=20)
 
 
 ######### Output #######
+
+
 
 ####################################################################################
 ########################## Radiobuttons for effects ################################
@@ -799,10 +1136,12 @@ def radiobuttons():
 	chorus = Radiobutton(effectsFrame, text="Chorus", variable=v, value=3,anchor=W, command = Chorus).grid(row=0,column=2, sticky = W)
 	flanger = Radiobutton(effectsFrame, text="Flanger", variable=v, value=4,anchor=W, command = Flanger).grid(row=0,column=3, sticky = W)
 	tremolo = Radiobutton(effectsFrame, text="Tremolo", variable=v, value=5,anchor=W, command = Tremolo).grid(row=0,column=4, sticky = W)
-	vibrato = Radiobutton(effectsFrame, text="Vibrato", variable=v, value=6,anchor=W, command = Vibrato).grid(row=1,column=0, sticky = W)
-	mod_wahwah = Radiobutton(effectsFrame, text="Modulating Wah Wah", variable=v, value=7,anchor=W, command = Mod_WahWah).grid(row=1,column=1, sticky = W)
-	phaser = Radiobutton(effectsFrame, text="Phaser", variable=v, value=9,anchor=W, command = Phaser).grid(row=1,column=3, sticky = W)
-	distortion = Radiobutton(effectsFrame, text="Distortion", variable=v, value=10,anchor=W, command = Distortion).grid(row=1,column=4, sticky = W)
+	vibrato = Radiobutton(effectsFrame, text="Vibrato", variable=v, value=6,anchor=W, command = Vibrato).grid(row=0,column=5, sticky = W)
+	wahwah = Radiobutton(effectsFrame, text="Wah Wah", variable=v, value=7,anchor=W, command = WahWah).grid(row=1,column=0, sticky = W)
+	phaser = Radiobutton(effectsFrame, text="Phaser", variable=v, value=8,anchor=W, command = Phaser).grid(row=1,column=1, sticky = W)
+	distortion = Radiobutton(effectsFrame, text="Distortion", variable=v, value=9,anchor=W, command = Distortion).grid(row=1,column=2, sticky = W)
+	noisegate = Radiobutton(effectsFrame, text="Noise Gate", variable=v, value=10,anchor=W, command = NoiseGate).grid(row=1,column=3, sticky = W)
+	gains = Radiobutton(effectsFrame, text="Gains", variable=v, value=11,anchor=W, command = Gains).grid(row=1,column=4, sticky = W)
 	
 def main():
 	if v==1:
@@ -818,11 +1157,15 @@ def main():
 	elif v==6:
 		Vibrato()
 	elif v==7:
-		Mod_WahWah()
+		WahWah()
 	elif v==8:
 		Phaser()
 	elif v==9:
 		Distortion()
+	elif v==10:
+		NoiseGate()
+	elif v==11:
+		Gains
 	
 main()
 radiobuttons()
