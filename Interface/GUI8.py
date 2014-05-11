@@ -4,7 +4,7 @@ import tkMessageBox
 import io
 import os
 
-import DataStrLeon2*
+import DataStrLeon2
 
 master = Tk()
 v = IntVar()
@@ -181,11 +181,11 @@ Gain2 = DoubleVar()
 
 
 ######### Output #######
-
+PriorityList = ['0','0','0','0','0','0','0','0','0','0','0','#',]
 strout1 = []
 strout2 = ["0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","0","#",
 		   "0","0","0","0","#","0","0","0","0","#","0","0","0","#","0","0","0","0","#","0","0","0","#",
-		   "0","0","0","0","0","#","0","#","0","#","0","#"]
+		   "0","0","0","0","0","#","0","#","0","#","0",]
 ####################################################################################
 
 ####################################################################################
@@ -224,7 +224,7 @@ def outp(strprint, position):
 	global x
 	x=''
 	strout2[position]= strprint
-	x = '/'.join(strout2)
+	x = ','.join(strout2)
 
 #	print x
 
@@ -1048,7 +1048,8 @@ def update_send():
 	set_gain1()
 	set_gain2()
 	print x
-	DataStrLeon2()
+	OUTPUTSTRING=','.join(PriorityList)+x
+	DataStrLeon2.main(OUTPUTSTRING)
 
 
 Button(master, text='PROGRAM', command=update_send).grid(row=0, column=3, padx=10, pady=20)
