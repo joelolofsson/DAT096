@@ -250,7 +250,7 @@ def addresser (addressinstring,words,wordlen):
 
 
 	
-def main ():
+def main (StrGuiinput):
 	'''This function starts the execution of the module. It handles and sends the values to the proper 
 	functions. 
 	In this build it is also used for debugging by forcing input and printing the output of the module and 
@@ -276,12 +276,7 @@ def main ():
 
 	Adder_list= [120,0,0]											# Adders[0] = Treble, bass, Peak
 	
-	zomginput1= ''',0,0,0,0,0,0,0,0,0,0,0,#,
-	-4.0,200,0.7,#,2.0,800,1.0,#,1.0,8000,1.0,#,
-	0.0,0,0,#,0,0,0,2#,55,40,32,0,#,
-	55,40,32,0,#,50,22,0,#,15,20,92,0,#,
-	15,20,52,#,15,20,92,50,1,#,
-	50,#,35,#,20,'''
+	zomginput1= StrGuiinput
 	
 	zomginput2= ''',0,1,0,0,0,0,0,0,0,0,0,#,
 	-4.0,200,0.7,#,2.0,800,1.0,#,1.0,8000,1.0,#,
@@ -302,7 +297,7 @@ def main ():
 		leonSer.leonstop(testcom)
 	#end of Testing Communication-------------------------------------------------------------------------
 	
-	Priority_list,String_list=guiparse(zomginput2) # <--------------------input goes here
+	Priority_list,String_list=guiparse(zomginput1) # <--------------------input goes here
 	if Debug=='1':
 		print "Priority_list: ", Priority_list
 	Priority_packets=prioritizer(Priority_list,NumberOfEffects) 			#checked for all effects
