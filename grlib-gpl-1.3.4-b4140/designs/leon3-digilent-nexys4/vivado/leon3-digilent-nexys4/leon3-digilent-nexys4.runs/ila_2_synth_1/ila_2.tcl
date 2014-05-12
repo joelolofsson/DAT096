@@ -9,28 +9,28 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
-set_property ip_repo_paths C:/designs/leon3-digilent-nexys4/IP [current_fileset]
+set_property ip_repo_paths /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP [current_fileset]
 
-read_ip C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.xci
-set_property used_in_implementation false [get_files c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.dcp]
-set_property used_in_implementation false [get_files -all c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.dcp]
+read_ip /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.xci
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.dcp]
+set_property used_in_implementation false [get_files -all /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.dcp]
 set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property is_locked true [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.xci]
+set_property is_locked true [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.xci]
 
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/wt [current_project]
-set_property parent.project_dir C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4 [current_project]
+set_property webtalk.parent_dir /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/wt [current_project]
+set_property parent.project_dir /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4 [current_project]
 synth_design -top ila_2 -part xc7a100tcsg324-1 -mode out_of_context
 
 rename_ref -prefix_all ila_2
 write_checkpoint -noxdef ila_2.dcp
 report_utilization -file ila_2_utilization_synth.rpt -pb ila_2_utilization_synth.pb
 if { [catch {
-  file copy -force C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.dcp
-  write_verilog -force -mode synth_stub C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_stub.v
-  write_vhdl -force -mode synth_stub C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_stub.vhdl
-  write_verilog -force -mode funcsim C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_funcsim.v
-  write_vhdl -force -mode funcsim C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_funcsim.vhdl
+  file copy -force /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.dcp
+  write_verilog -force -mode synth_stub /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_stub.v
+  write_vhdl -force -mode synth_stub /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_stub.vhdl
+  write_verilog -force -mode funcsim /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_funcsim.v
+  write_vhdl -force -mode funcsim /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_funcsim.vhdl
 } _RESULT ] } { 
   error "ERROR: Unable to successfully create or copy supporting IP files."
 }

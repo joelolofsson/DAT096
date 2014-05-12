@@ -3,183 +3,187 @@
 # 
 
   set_param gui.test TreeTableDev
-  set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Labtools 27-147} -limit 4294967295
 create_project -in_memory -part xc7a100tcsg324-1
 set_property target_language VHDL [current_project]
 set_param project.compositeFile.enableAutoGeneration 0
 set_property default_lib xil_defaultlib [current_project]
-set_property ip_repo_paths C:/designs/leon3-digilent-nexys4/IP [current_fileset]
-add_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe
-add_files -quiet C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp
-set_property used_in_implementation false [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp]
-add_files -quiet C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp
-set_property used_in_implementation false [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp]
-add_files -quiet C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp
-set_property used_in_implementation false [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp]
+set_property ip_repo_paths /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP [current_fileset]
+add_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/filtercoeff.coe
+add_files -quiet /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp]
+add_files -quiet /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp]
+add_files -quiet /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp]
 
-read_ip C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0.xci
-set_property used_in_implementation false [get_files -all c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0_ooc.xdc]
+read_ip /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0.xci
+set_property used_in_implementation false [get_files -all /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0_ooc.xdc]
 set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property is_locked true [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0.xci]
+set_property is_locked true [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_0.xci]
 
 read_vhdl -library grlib {
-  C:/lib/grlib/stdlib/version.vhd
-  C:/lib/grlib/stdlib/config_types.vhd
-  C:/lib/grlib/stdlib/stdlib.vhd
-  C:/lib/grlib/stdlib/config.vhd
-  C:/lib/grlib/amba/amba.vhd
-  C:/lib/grlib/sparc/sparc.vhd
-  C:/lib/grlib/modgen/multlib.vhd
-  C:/lib/grlib/modgen/leaves.vhd
-  C:/lib/grlib/amba/devices.vhd
-  C:/lib/grlib/amba/ahbmst.vhd
-  C:/lib/grlib/amba/apbctrl.vhd
-  C:/lib/grlib/amba/ahbctrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/stdlib/version.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/stdlib/config_types.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/stdlib/stdlib.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/stdlib/config.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/amba.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/sparc/sparc.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/modgen/multlib.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/modgen/leaves.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/devices.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbmst.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/apbctrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/grlib/amba/ahbctrl.vhd
 }
 read_vhdl -library techmap {
-  C:/lib/techmap/gencomp/gencomp.vhd
-  C:/lib/techmap/maps/allclkgen.vhd
-  C:/lib/techmap/inferred/memory_inferred.vhd
-  C:/lib/techmap/unisim/memory_unisim.vhd
-  C:/lib/techmap/maps/grgates.vhd
-  C:/lib/techmap/maps/allmem.vhd
-  C:/lib/techmap/maps/syncram.vhd
-  C:/lib/techmap/maps/syncram_2p.vhd
-  C:/lib/techmap/maps/allmul.vhd
-  C:/lib/techmap/inferred/mul_inferred.vhd
-  C:/lib/techmap/maps/techmult.vhd
-  C:/lib/techmap/maps/regfile_3p.vhd
-  C:/lib/techmap/unisim/clkgen_unisim.vhd
-  C:/lib/techmap/unisim/buffer_unisim.vhd
-  C:/lib/techmap/maps/syncram_dp.vhd
-  C:/lib/techmap/maps/syncram64.vhd
-  C:/lib/techmap/maps/grlfpw_net.vhd
-  C:/lib/techmap/maps/grfpw_net.vhd
-  C:/lib/techmap/gencomp/netcomp.vhd
-  C:/lib/techmap/unisim/tap_unisim.vhd
-  C:/lib/techmap/maps/techbuf.vhd
-  C:/lib/techmap/maps/clkmux.vhd
-  C:/lib/techmap/maps/clkand.vhd
-  C:/lib/techmap/maps/alltap.vhd
-  C:/lib/techmap/unisim/pads_unisim.vhd
-  C:/lib/techmap/maps/tap.vhd
-  C:/lib/techmap/maps/syncreg.vhd
-  C:/lib/techmap/maps/syncrambw.vhd
-  C:/lib/techmap/maps/allpads.vhd
-  C:/lib/techmap/maps/outpad.vhd
-  C:/lib/techmap/maps/iopad.vhd
-  C:/lib/techmap/maps/inpad.vhd
-  C:/lib/techmap/maps/clkgen.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/gencomp/gencomp.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/allclkgen.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/memory_inferred.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/memory_unisim.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grgates.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/allmem.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_2p.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/allmul.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/inferred/mul_inferred.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techmult.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/regfile_3p.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/clkgen_unisim.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/buffer_unisim.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram_dp.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncram64.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grlfpw_net.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/grfpw_net.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/gencomp/netcomp.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/tap_unisim.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/spictrl_unisim.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/techbuf.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkmux.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkand.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/alltap.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/unisim/pads_unisim.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/tap.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncreg.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/syncrambw.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/spictrl_net.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/allpads.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/outpad.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/odpad.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/iopad.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/inpad.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/techmap/maps/clkgen.vhd
 }
 read_vhdl -library gaisler {
-  C:/lib/gaisler/srmmu/mmuconfig.vhd
-  C:/lib/gaisler/srmmu/mmuiface.vhd
-  C:/lib/gaisler/leon3/leon3.vhd
-  C:/lib/gaisler/srmmu/mmulrue.vhd
-  C:/lib/gaisler/srmmu/libmmu.vhd
-  C:/lib/gaisler/leon3v3/libfpu.vhd
-  C:/lib/gaisler/arith/arith.vhd
-  C:/lib/gaisler/srmmu/mmutlbcam.vhd
-  C:/lib/gaisler/srmmu/mmulru.vhd
-  C:/lib/gaisler/leon3v3/libiu.vhd
-  C:/lib/gaisler/srmmu/mmutw.vhd
-  C:/lib/gaisler/srmmu/mmutlb.vhd
-  C:/lib/gaisler/leon3v3/libcache.vhd
-  C:/lib/gaisler/srmmu/mmu.vhd
-  C:/lib/gaisler/leon3v3/mmu_icache.vhd
-  C:/lib/gaisler/leon3v3/mmu_dcache.vhd
-  C:/lib/gaisler/leon3v3/mmu_acache.vhd
-  C:/lib/gaisler/leon3v3/libleon3.vhd
-  C:/lib/gaisler/uart/uart.vhd
-  C:/lib/gaisler/net/net.vhd
-  C:/lib/gaisler/misc/misc.vhd
-  C:/lib/gaisler/leon3v3/regfile_3p_l3.vhd
-  C:/lib/gaisler/leon3v3/mmu_cache.vhd
-  C:/lib/gaisler/leon3v3/iu3.vhd
-  C:/lib/gaisler/arith/mul32.vhd
-  C:/lib/gaisler/arith/div32.vhd
-  C:/lib/gaisler/uart/libdcom.vhd
-  C:/lib/gaisler/memctrl/memctrl.vhd
-  C:/lib/gaisler/leon3v3/tbufmem.vhd
-  C:/lib/gaisler/leon3v3/proc3.vhd
-  C:/lib/gaisler/leon3v3/grlfpwx.vhd
-  C:/lib/gaisler/leon3v3/grfpwxsh.vhd
-  C:/lib/gaisler/leon3v3/grfpwx.vhd
-  C:/lib/gaisler/leon3v3/cachemem.vhd
-  C:/lib/gaisler/jtag/libjtagcom.vhd
-  C:/lib/gaisler/greth/ethernet_mac.vhd
-  C:/lib/gaisler/uart/dcom_uart.vhd
-  C:/lib/gaisler/uart/dcom.vhd
-  C:/lib/gaisler/memctrl/sdmctrl.vhd
-  C:/lib/gaisler/leon3v3/leon3x.vhd
-  C:/lib/gaisler/leon3v3/dsu3x.vhd
-  C:/lib/gaisler/jtag/jtagcom2.vhd
-  C:/lib/gaisler/jtag/jtagcom.vhd
-  C:/lib/gaisler/jtag/jtag.vhd
-  C:/lib/gaisler/greth/greth_gbit.vhd
-  C:/lib/gaisler/greth/greth.vhd
-  C:/lib/gaisler/uart/apbuart.vhd
-  C:/lib/gaisler/uart/ahbuart.vhd
-  C:/lib/gaisler/spi/spi.vhd
-  C:/lib/gaisler/misc/rstgen.vhd
-  C:/lib/gaisler/misc/gptimer.vhd
-  C:/lib/gaisler/misc/ahbram.vhd
-  C:/lib/gaisler/leon3v3/leon3s.vhd
-  C:/lib/gaisler/leon3v3/dsu3.vhd
-  C:/lib/gaisler/jtag/ahbjtag.vhd
-  C:/lib/gaisler/irqmp/irqmp.vhd
-  C:/lib/gaisler/greth/grethm.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/mmuconfig.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/mmuiface.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3/leon3.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/mmulrue.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/libmmu.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/libfpu.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/arith.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/mmutlbcam.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/mmulru.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/libiu.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/mmutw.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/mmutlb.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/libcache.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/srmmu/mmu.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_icache.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_dcache.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_acache.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/libleon3.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/uart.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/net/net.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/misc.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/regfile_3p_l3.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/mmu_cache.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/iu3.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/mul32.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/arith/div32.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/libdcom.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/spi/spi.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/memctrl/memctrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/tbufmem.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/proc3.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/grlfpwx.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/grfpwxsh.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/grfpwx.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/cachemem.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/libjtagcom.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/ethernet_mac.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom_uart.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/dcom.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/spi/spictrlx.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/memctrl/sdmctrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3x.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3x.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom2.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtagcom.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/jtag.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/greth_gbit.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/greth.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/apbuart.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/uart/ahbuart.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/spi/spimctrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/spi/spictrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/rstgen.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/gptimer.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/misc/ahbram.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/leon3s.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/leon3v3/dsu3.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/jtag/ahbjtag.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/irqmp/irqmp.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/gaisler/greth/grethm.vhd
 }
 read_vhdl -library eth {
-  C:/lib/eth/core/greth_pkg.vhd
-  C:/lib/eth/core/eth_rstgen.vhd
-  C:/lib/eth/core/greth_tx.vhd
-  C:/lib/eth/core/greth_rx.vhd
-  C:/lib/eth/core/eth_edcl_ahb_mst.vhd
-  C:/lib/eth/core/eth_ahb_mst.vhd
-  C:/lib/eth/core/grethc.vhd
-  C:/lib/eth/comp/ethcomp.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_pkg.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_rstgen.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_tx.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/greth_rx.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_edcl_ahb_mst.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/eth_ahb_mst.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/core/grethc.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/eth/comp/ethcomp.vhd
 }
 read_vhdl -library xil_defaultlib {
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/BCD_block.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/clk_div_seven_seg.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bounce_filter.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bin2bcd.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd
-  {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd}
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/seven_seg_control.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/RGB_diode_controller.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/button_control.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/Button_and_hex_wrapper.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd
-  C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adder_pkg.vhd
-  C:/designs/leon3-digilent-nexys4/config.vhd
-  C:/designs/leon3-digilent-nexys4/ahbrom.vhd
-  C:/designs/leon3-digilent-nexys4/leon3mp.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/BCD_block.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/clk_div_seven_seg.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bounce_filter.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bin2bcd.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd
+  {/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd}
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/seven_seg_control.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/RGB_diode_controller.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/button_control.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/Button_and_hex_wrapper.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adder_pkg.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/config.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/ahbrom.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/leon3mp.vhd
 }
 read_vhdl -library esa {
-  C:/lib/esa/memoryctrl/memoryctrl.vhd
-  C:/lib/esa/memoryctrl/mctrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/memoryctrl.vhd
+  /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/lib/esa/memoryctrl/mctrl.vhd
 }
-read_xdc C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc
-set_property used_in_implementation false [get_files C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc]
+read_xdc /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc
+set_property used_in_implementation false [get_files /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 read_xdc dont_buffer.xdc
 set_property used_in_implementation false [get_files dont_buffer.xdc]
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/wt [current_project]
-set_property parent.project_dir C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4 [current_project]
+set_property webtalk.parent_dir /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/wt [current_project]
+set_property parent.project_dir /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4 [current_project]
 synth_design -top leon3mp -part xc7a100tcsg324-1
 write_checkpoint leon3mp.dcp
 report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb

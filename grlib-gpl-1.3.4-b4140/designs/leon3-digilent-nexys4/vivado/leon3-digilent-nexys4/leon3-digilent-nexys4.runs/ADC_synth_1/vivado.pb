@@ -1,70 +1,42 @@
 
-ƒ
-scannot add Board Part %s available at %s as part %s specified in board_part file is either invalid or not available5*board2.
-xilinx.com:kc705:part0:0.92default:default2d
-PC:/Xilinx/Vivado/2014.1/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml2default:default2$
-xc7k325tffg900-22default:defaultZ49-26
-ƒ
-scannot add Board Part %s available at %s as part %s specified in board_part file is either invalid or not available5*board2.
-xilinx.com:kc705:part0:1.02default:default2d
-PC:/Xilinx/Vivado/2014.1/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml2default:default2$
-xc7k325tffg900-22default:defaultZ49-26
-¿
-scannot add Board Part %s available at %s as part %s specified in board_part file is either invalid or not available5*board2.
-xilinx.com:zc706:part0:0.92default:default2a
-MC:/Xilinx/Vivado/2014.1/data/boards/board_parts/zynq/zc706/0.9/board_part.xml2default:default2#
-xc7z045ffg900-22default:defaultZ49-26
-¿
-scannot add Board Part %s available at %s as part %s specified in board_part file is either invalid or not available5*board2.
-xilinx.com:zc706:part0:1.02default:default2a
-MC:/Xilinx/Vivado/2014.1/data/boards/board_parts/zynq/zc706/1.0/board_part.xml2default:default2#
-xc7z045ffg900-22default:defaultZ49-26
 5
 Refreshing IP repositories
 234*coregenZ19-234
-™
+Ÿ
 †Failed to load user IP repository '%s'; %s
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-1318*coregen27
-#c:/designs/leon3-digilent-nexys4/IP2default:default22
+1318*coregen2f
+R/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP2default:default22
 Can't find the specified path.2default:defaultZ19-2248
-s
+u
 "Loaded Vivado IP repository '%s'.
-1332*coregen23
-C:/Xilinx/Vivado/2014.1/data/ip2default:defaultZ19-2313
-É
+1332*coregen25
+!/opt/Xilinx/Vivado/2014.1/data/ip2default:defaultZ19-2313
+≥
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ADC2default:default2Ö
-qc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.dcp2default:defaultZ19-3664
-Ü
+ADC2default:default2µ
+†/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.dcp2default:defaultZ19-3664
+∂
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ADC2default:default2à
-tc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v2default:defaultZ19-3664
-â
+ADC2default:default2∏
+£/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v2default:defaultZ19-3664
+π
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ADC2default:default2ã
-wc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.vhdl2default:defaultZ19-3664
-â
+ADC2default:default2ª
+¶/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.vhdl2default:defaultZ19-3664
+π
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ADC2default:default2ã
-wc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.v2default:defaultZ19-3664
-å
+ADC2default:default2ª
+¶/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.v2default:defaultZ19-3664
+º
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ADC2default:default2é
-zc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl2default:defaultZ19-3664
-ı
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2
-	read_ip: 2default:default2
-00:00:012default:default2
-00:00:062default:default2
-154.6482default:default2
-9.5082default:defaultZ17-268
+ADC2default:default2æ
+©/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl2default:defaultZ19-3664
 }
 Command: %s
 53*	vivadotcl2U
@@ -84,14 +56,14 @@ Starting synthesis...
 310*common2
 	Synthesis2default:default2
 xc7a100t2default:defaultZ17-349
-õ
-%s*synth2ã
-wStarting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 180.418 ; gain = 62.656
+ú
+%s*synth2å
+xStarting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 804.922 ; gain = 162.910
 2default:default
-
+†
 synthesizing module '%s'638*oasys2
-ADC2default:default2á
-qc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
+ADC2default:default2∑
+†/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
 842default:default8@Z8-638
 V
 %s*synth2G
@@ -233,26 +205,26 @@ O
 %s*synth2L
 8	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 2default:default
-Í
-%s*synth2⁄
-≈	Parameter SIM_MONITOR_FILE bound to: c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt - type: string 
+ô
+%s*synth2â
+Ù	Parameter SIM_MONITOR_FILE bound to: /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt - type: string 
 2default:default
-û
+Œ
 ,binding component instance '%s' to cell '%s'113*oasys2
 U02default:default2
-XADC2default:default2á
-qc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
+XADC2default:default2∑
+†/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
 1512default:default8@Z8-113
-´
+€
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ADC2default:default2
 12default:default2
-12default:default2á
-qc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
+12default:default2∑
+†/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd2default:default2
 842default:default8@Z8-256
-õ
-%s*synth2ã
-wFinished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 204.172 ; gain = 86.410
+ú
+%s*synth2å
+xFinished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 839.789 ; gain = 197.777
 2default:default
 ;
 %s*synth2,
@@ -287,66 +259,66 @@ a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
-õ
+ù
 Loading clock regions from %s
-13*device2d
-PC:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml2default:defaultZ21-13
-ú
+13*device2f
+R/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml2default:defaultZ21-13
+û
 Loading clock buffers from %s
-11*device2e
-QC:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml2default:defaultZ21-11
-ô
+11*device2g
+S/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml2default:defaultZ21-11
+õ
 &Loading clock placement rules from %s
-318*place2Y
-EC:/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ClockPlacerRules.xml2default:defaultZ30-318
-ó
+318*place2[
+G/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ClockPlacerRules.xml2default:defaultZ30-318
+ô
 )Loading package pin functions from %s...
-17*device2U
-AC:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/PinFunctions.xml2default:defaultZ21-17
-ò
+17*device2W
+C/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/PinFunctions.xml2default:defaultZ21-17
+ö
 Loading package from %s
-16*device2g
-SC:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml2default:defaultZ21-16
-å
+16*device2i
+U/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml2default:defaultZ21-16
+é
 Loading io standards from %s
-15*device2V
-BC:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml2default:defaultZ21-15
-ò
+15*device2X
+D/opt/Xilinx/Vivado/2014.1/data/./parts/xilinx/artix7/IOStandards.xml2default:defaultZ21-15
+ö
 +Loading device configuration modes from %s
-14*device2T
-@C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
+14*device2V
+B/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
 5
 
 Processing XDC Constraints
 244*projectZ1-262
-Ê
+ñ
 $Parsing XDC File [%s] for cell '%s'
-848*designutils2â
-uc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc2default:default2
+848*designutils2π
+§/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc2default:default2
 U02default:defaultZ20-848
-Ô
+ü
 -Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2â
-uc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc2default:default2
+847*designutils2π
+§/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc2default:default2
 U02default:defaultZ20-847
-‚
+í
 $Parsing XDC File [%s] for cell '%s'
-848*designutils2Ö
-qc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
+848*designutils2µ
+†/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
 U02default:defaultZ20-848
-Î
+õ
 -Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2Ö
-qc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
+847*designutils2µ
+†/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
 U02default:defaultZ20-847
-æ
+Ó
 Parsing XDC File [%s]
-179*designutils2á
-sC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/dont_touch.xdc2default:defaultZ20-179
-«
+179*designutils2∑
+¢/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/dont_touch.xdc2default:defaultZ20-179
+˜
 Finished Parsing XDC File [%s]
-178*designutils2á
-sC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/dont_touch.xdc2default:defaultZ20-178
+178*designutils2∑
+¢/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/dont_touch.xdc2default:defaultZ20-178
 ?
 &Completed Processing XDC Constraints
 
@@ -356,17 +328,17 @@ u
 %s111*project29
 %No Unisim elements were transformed.
 2default:defaultZ1-111
-±
-%s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:39 . Memory (MB): peak = 329.340 ; gain = 211.578
+≤
+%s*synth2¢
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1026.992 ; gain = 384.980
 2default:default
-µ
-%s*synth2•
-êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 329.340 ; gain = 211.578
+∂
+%s*synth2¶
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1026.992 ; gain = 384.980
 2default:default
-ù
-%s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 329.340 ; gain = 211.578
+û
+%s*synth2é
+zFinished RTL Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1026.992 ; gain = 384.980
 2default:default
 <
 %s*synth2-
@@ -411,9 +383,9 @@ WPart Resources:
 DSPs: 240 (col length:80)
 BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
-©
-%s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:13 . Memory (MB): peak = 382.867 ; gain = 265.105
+™
+%s*synth2ö
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1088.992 ; gain = 446.980
 2default:default
 ¢
 %s*synth2í
@@ -433,25 +405,25 @@ u
 %s*synth2f
 R---------------------------------------------------------------------------------
 2default:default
-û
-%s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 384.609 ; gain = 266.848
+ü
+%s*synth2è
+{Finished Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1088.992 ; gain = 446.980
 2default:default
-≠
-%s*synth2ù
-àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 384.609 ; gain = 266.848
+Æ
+%s*synth2û
+âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1088.992 ; gain = 446.980
+2default:default
+°
+%s*synth2ë
+}Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1088.992 ; gain = 446.980
 2default:default
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 384.609 ; gain = 266.848
+|Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1098.004 ; gain = 455.992
 2default:default
-ü
-%s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 388.555 ; gain = 270.793
-2default:default
-ô
-%s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:17 . Memory (MB): peak = 388.555 ; gain = 270.793
+ö
+%s*synth2ä
+vFinished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1098.004 ; gain = 455.992
 2default:default
 ;
 %s*synth2,
@@ -478,13 +450,13 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-™
-%s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:17 . Memory (MB): peak = 388.555 ; gain = 270.793
+´
+%s*synth2õ
+ÜFinished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1098.004 ; gain = 455.992
 2default:default
-ß
-%s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:17 . Memory (MB): peak = 388.555 ; gain = 270.793
+®
+%s*synth2ò
+ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1098.004 ; gain = 455.992
 2default:default
 ¢
 %s*synth2í
@@ -575,17 +547,17 @@ E
 %s*synth26
 "+------+---------+-------+------+
 2default:default
-¶
-%s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:17 . Memory (MB): peak = 388.555 ; gain = 270.793
+ß
+%s*synth2ó
+ÇFinished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1098.004 ; gain = 455.992
 2default:default
 i
 %s*synth2Z
 FSynthesis finished with 0 errors, 0 critical warnings and 0 warnings.
 2default:default
-£
-%s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:17 . Memory (MB): peak = 388.555 ; gain = 270.793
+•
+%s*synth2ï
+ÄSynthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1098.004 ; gain = 455.992
 2default:default
 \
 -Analyzing %s Unisim elements for replacement
@@ -595,25 +567,25 @@ a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
-Ê
+ñ
 $Parsing XDC File [%s] for cell '%s'
-848*designutils2â
-uc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc2default:default2
+848*designutils2π
+§/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc2default:default2
 U02default:defaultZ20-848
-Ô
+ü
 -Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2â
-uc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc2default:default2
+847*designutils2π
+§/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc2default:default2
 U02default:defaultZ20-847
-‚
+í
 $Parsing XDC File [%s] for cell '%s'
-848*designutils2Ö
-qc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
+848*designutils2µ
+†/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
 U02default:defaultZ20-848
-Î
+õ
 -Finished Parsing XDC File [%s] for cell '%s'
-847*designutils2Ö
-qc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
+847*designutils2µ
+†/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc2default:default2
 U02default:defaultZ20-847
 C
 Pushed %s inverter(s).
@@ -639,19 +611,19 @@ U
 %s completed successfully
 29*	vivadotcl2 
 synth_design2default:defaultZ4-42
-¸
+˝
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:00:492default:default2
-00:01:132default:default2
-388.5552default:default2
-233.9062default:defaultZ17-268
-
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.301 . Memory (MB): peak = 388.555 ; gain = 0.000
+00:00:342default:default2
+00:00:422default:default2
+1120.0982default:default2
+361.1722default:defaultZ17-268
+Ç
+vreport_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.39 . Memory (MB): peak = 1120.102 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Mon May 12 13:28:37 20142default:defaultZ17-206
+Mon May 12 20:09:06 20142default:defaultZ17-206

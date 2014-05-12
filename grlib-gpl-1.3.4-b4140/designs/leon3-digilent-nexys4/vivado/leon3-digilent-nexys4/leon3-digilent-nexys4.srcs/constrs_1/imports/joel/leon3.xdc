@@ -395,13 +395,24 @@ set_property PACKAGE_PIN D5 [get_ports PhyClk50Mhz]
 set_property IOSTANDARD LVCMOS33 [get_ports PhyClk50Mhz]
 #NET "PhyIntn"			LOC = "B8"	| IOSTANDARD = "LVCMOS33";		#Bank = 16, Pin name = IO_L12P_T1_MRCC_16,					Sch name = ETH_INTN
 
-## Quad SPI Flash
-#NET "QspiSCK"			LOC = "E9"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = CCLK_0,							Sch name = QSPI_SCK
-#NET "QspiDB<0>"			LOC = "K17"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L1P_T0_D00_MOSI_14,			Sch name = QSPI_DQ0
-#NET "QspiDB<1>"			LOC = "K18"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L1N_T0_D01_DIN_14,			Sch name = QSPI_DQ1
-#NET "QspiDB<2>"			LOC = "L14"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L20_T0_D02_14,				Sch name = QSPI_DQ2
-#NET "QspiDB<3>"			LOC = "M14"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L2P_T0_D03_14,				Sch name = QSPI_DQ3
-#NET "QspiCSn"			LOC = "L13"	| IOSTANDARD = "LVCMOS33";		#Bank = CONFIG, Pin name = IO_L15N_T2_DQS_DOUT_CSO_B_14,	Sch name = QSPI_CSN
+#Quad SPI Flash
+#Bank = CONFIG, Pin name = CCLK_0,							Sch name = QSPI_SCK
+
+#Bank = CONFIG, Pin name = IO_L1P_T0_D00_MOSI_14,			Sch name = QSPI_DQ0
+set_property PACKAGE_PIN K17 [get_ports {QspiDB[0]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[0]}]
+#Bank = CONFIG, Pin name = IO_L1N_T0_D01_DIN_14,			Sch name = QSPI_DQ1
+set_property PACKAGE_PIN K18 [get_ports {QspiDB[1]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[1]}]
+#Bank = CONFIG, Pin name = IO_L20_T0_D02_14,				Sch name = QSPI_DQ2
+set_property PACKAGE_PIN L14 [get_ports {QspiDB[2]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[2]}]
+#Bank = CONFIG, Pin name = IO_L2P_T0_D03_14,				Sch name = QSPI_DQ3
+set_property PACKAGE_PIN M14 [get_ports {QspiDB[3]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[3]}]
+#Bank = CONFIG, Pin name = IO_L15N_T2_DQS_DOUT_CSO_B_14,	Sch name = QSPI_CSN
+set_property PACKAGE_PIN L13 [get_ports QspiCSn]					
+	set_property IOSTANDARD LVCMOS33 [get_ports QspiCSn]
 
 ## Cellular RAM
 #Bank = 14, Pin name = IO_L14N_T2_SRCC_14,					Sch name = CRAM_CLK

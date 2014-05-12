@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
-| Date         : Mon May 12 13:54:09 2014
-| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2014.1 (lin64) Build 881834 Fri Apr  4 14:00:25 MDT 2014
+| Date         : Mon May 12 20:38:54 2014
+| Host         : joel-MacBookPro running 64-bit unknown
 | Command      : report_io -file leon3mp_io_placed.rpt
 | Design       : leon3mp
 | Device       : xc7a100tcsg324-1
@@ -22,7 +22,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           129 |
+|           134 |
 +---------------+
 
 
@@ -210,8 +210,8 @@ Table of Contents
 | K14        |                  | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |      |                  |
 | K15        | address[5]       | High Range | IO_L24P_T3_RS1_15            | OUTPUT      | LVCMOS33    |      15 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | K16        |                  | High Range | IO_25_15                     | User IO     |             |      15 |            |      |                     |                      |         |            |           |      |                  |
-| K17        |                  | High Range | IO_L1P_T0_D00_MOSI_14        | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |
-| K18        |                  | High Range | IO_L1N_T0_D01_DIN_14         | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |
+| K17        | QspiDB[0]        | High Range | IO_L1P_T0_D00_MOSI_14        | BIDIR       | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| K18        | QspiDB[1]        | High Range | IO_L1N_T0_D01_DIN_14         | BIDIR       | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | L1         | seven_seg_sel[6] | High Range | IO_L1P_T0_34                 | OUTPUT      | LVTTL       |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | L2         |                  |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | L3         | seven_seg_out[0] | High Range | IO_L2N_T0_34                 | OUTPUT      | LVCMOS33    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
@@ -224,8 +224,8 @@ Table of Contents
 | L10        |                  |            | DXP_0                        | Temp Sensor |             |         |            |      |                     |                      |         |            |           |      |                  |
 | L11        |                  |            | VCCINT                       | VCCINT      |             |         |            |      |                     |                      |         |            |           |      |                  |
 | L12        |                  |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
-| L13        |                  | High Range | IO_L6P_T0_FCS_B_14           | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |
-| L14        |                  | High Range | IO_L2P_T0_D02_14             | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |
+| L13        | QspiCSn          | High Range | IO_L6P_T0_FCS_B_14           | TRISTATE    | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| L14        | QspiDB[2]        | High Range | IO_L2P_T0_D02_14             | BIDIR       | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | L15        |                  | High Range | IO_L3P_T0_DQS_PUDC_B_14      | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |
 | L16        |                  | High Range | IO_L3N_T0_DQS_EMCCLK_14      | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |
 | L17        |                  | High Range | VCCO_14                      | VCCO        |             |      14 |            |      |                     |                      |    3.30 |            |           |      |                  |
@@ -243,7 +243,7 @@ Table of Contents
 | M11        |                  |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | M12        |                  |            | VCCAUX                       | VCCAUX      |             |         |            |      |                     |                      |    1.80 |            |           |      |                  |
 | M13        | address[17]      | High Range | IO_L6N_T0_D08_VREF_14        | OUTPUT      | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
-| M14        |                  | High Range | IO_L2N_T0_D03_14             | User IO     |             |      14 |            |      |                     |                      |         |            |           |      |                  |
+| M14        | QspiDB[3]        | High Range | IO_L2N_T0_D03_14             | BIDIR       | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | M15        |                  |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | M16        | address[21]      | High Range | IO_L10P_T1_D14_14            | OUTPUT      | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | M17        | data[12]         | High Range | IO_L10N_T1_D15_14            | BIDIR       | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |

@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
-| Date         : Mon May 12 14:10:00 2014
-| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2014.1 (lin64) Build 881834 Fri Apr  4 14:00:25 MDT 2014
+| Date         : Mon May 12 20:27:44 2014
+| Host         : joel-MacBookPro running 64-bit unknown
 | Command      : report_utilization -file leon3mp_utilization_synth.rpt -pb leon3mp_utilization_synth.pb
 | Design       : leon3mp
 | Device       : xc7a100t
@@ -29,16 +29,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Loced | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 15810 |     0 |     63400 | 24.93 |
-|   LUT as Logic             | 15435 |     0 |     63400 | 24.34 |
+| Slice LUTs*                | 16042 |     0 |     63400 | 25.30 |
+|   LUT as Logic             | 15667 |     0 |     63400 | 24.71 |
 |   LUT as Memory            |   375 |     0 |     19000 |  1.97 |
 |     LUT as Distributed RAM |    88 |     0 |           |       |
 |     LUT as Shift Register  |   287 |     0 |           |       |
-| Slice Registers            | 14394 |     0 |    126800 | 11.35 |
-|   Register as Flip Flop    | 14394 |     0 |    126800 | 11.35 |
+| Slice Registers            | 14555 |     0 |    126800 | 11.47 |
+|   Register as Flip Flop    | 14555 |     0 |    126800 | 11.47 |
 |   Register as Latch        |     0 |     0 |    126800 |  0.00 |
-| F7 Muxes                   |   905 |     0 |     31700 |  2.85 |
-| F8 Muxes                   |   340 |     0 |     15850 |  2.14 |
+| F7 Muxes                   |   909 |     0 |     31700 |  2.86 |
+| F8 Muxes                   |   341 |     0 |     15850 |  2.15 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Loced | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |  103 |     0 |       210 | 49.04 |
+| Bonded IOB                  |  106 |     0 |       210 | 50.47 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -112,19 +112,19 @@ Table of Contents
 6. Specific Feature
 -------------------
 
-+-------------+------+-------+-----------+-------+
-|  Site Type  | Used | Loced | Available | Util% |
-+-------------+------+-------+-----------+-------+
-| BSCANE2     |    0 |     0 |         4 |  0.00 |
-| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
-| DNA_PORT    |    0 |     0 |         1 |  0.00 |
-| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
-| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
-| ICAPE2      |    0 |     0 |         2 |  0.00 |
-| PCIE_2_1    |    0 |     0 |         1 |  0.00 |
-| STARTUPE2   |    0 |     0 |         1 |  0.00 |
-| XADC        |    0 |     0 |         1 |  0.00 |
-+-------------+------+-------+-----------+-------+
++-------------+------+-------+-----------+--------+
+|  Site Type  | Used | Loced | Available |  Util% |
++-------------+------+-------+-----------+--------+
+| BSCANE2     |    0 |     0 |         4 |   0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |   0.00 |
+| DNA_PORT    |    0 |     0 |         1 |   0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |   0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |   0.00 |
+| ICAPE2      |    0 |     0 |         2 |   0.00 |
+| PCIE_2_1    |    0 |     0 |         1 |   0.00 |
+| STARTUPE2   |    1 |     0 |         1 | 100.00 |
+| XADC        |    0 |     0 |         1 |   0.00 |
++-------------+------+-------+-----------+--------+
 
 
 7. Primitives
@@ -133,25 +133,25 @@ Table of Contents
 +-----------+------+---------------------+
 |  Ref Name | Used | Functional Category |
 +-----------+------+---------------------+
-| LUT6      | 8628 |                 LUT |
-| FDRE      | 7745 |        Flop & Latch |
+| LUT6      | 8675 |                 LUT |
+| FDRE      | 7888 |        Flop & Latch |
 | FDCE      | 6486 |        Flop & Latch |
-| LUT5      | 2771 |                 LUT |
-| LUT4      | 2532 |                 LUT |
-| LUT3      | 1862 |                 LUT |
-| LUT2      | 1059 |                 LUT |
-| MUXF7     |  905 |               MuxFx |
-| CARRY4    |  494 |          CarryLogic |
+| LUT5      | 2884 |                 LUT |
+| LUT4      | 2579 |                 LUT |
+| LUT3      | 1903 |                 LUT |
+| LUT2      | 1056 |                 LUT |
+| MUXF7     |  909 |               MuxFx |
+| CARRY4    |  498 |          CarryLogic |
 | LUT1      |  489 |                 LUT |
-| MUXF8     |  340 |               MuxFx |
+| MUXF8     |  341 |               MuxFx |
 | SRLC32E   |  242 |  Distributed Memory |
 | SRL16E    |  227 |  Distributed Memory |
-| FDSE      |  150 |        Flop & Latch |
-| OBUF      |   76 |                  IO |
+| FDSE      |  168 |        Flop & Latch |
+| OBUF      |   77 |                  IO |
 | RAMD64E   |   64 |  Distributed Memory |
 | RAMD32    |   36 |  Distributed Memory |
-| IBUF      |   26 |                  IO |
-| OBUFT     |   18 |                  IO |
+| IBUF      |   27 |                  IO |
+| OBUFT     |   19 |                  IO |
 | RAMB36E1  |   14 |        Block Memory |
 | FDPE      |   13 |        Flop & Latch |
 | RAMS32    |   12 |  Distributed Memory |
@@ -160,6 +160,7 @@ Table of Contents
 | BUFG      |    5 |               Clock |
 | SRLC16E   |    2 |  Distributed Memory |
 | PLLE2_ADV |    2 |               Clock |
+| STARTUPE2 |    1 |              Others |
 +-----------+------+---------------------+
 
 

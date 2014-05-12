@@ -180,14 +180,14 @@ package config is
   constant CFG_GRGPIO_WIDTH : integer := (8);
 
 -- SPI memory controller
-  constant CFG_SPIMCTRL : integer := 0;
+  constant CFG_SPIMCTRL : integer := 1;
   constant CFG_SPIMCTRL_SDCARD : integer := 0;
-  constant CFG_SPIMCTRL_READCMD : integer := 16#0#;
-  constant CFG_SPIMCTRL_DUMMYBYTE : integer := 0;
+  constant CFG_SPIMCTRL_READCMD : integer := 16#0B#;
+  constant CFG_SPIMCTRL_DUMMYBYTE : integer := 1;
   constant CFG_SPIMCTRL_DUALOUTPUT : integer := 0;
-  constant CFG_SPIMCTRL_SCALER : integer := 1;
-  constant CFG_SPIMCTRL_ASCALER : integer := 1;
-  constant CFG_SPIMCTRL_PWRUPCNT : integer := 0;
+  constant CFG_SPIMCTRL_SCALER : integer := (1);
+  constant CFG_SPIMCTRL_ASCALER : integer := (8);
+  constant CFG_SPIMCTRL_PWRUPCNT : integer := (0);
   constant CFG_SPIMCTRL_OFFSET : integer := 16#0#;
 
 -- SPI controller
@@ -203,7 +203,6 @@ package config is
   constant CFG_SPICTRL_MAXWLEN : integer := 0;
   constant CFG_SPICTRL_SYNCRAM : integer := 0;
   constant CFG_SPICTRL_FT : integer := 0;
-
 -- GRLIB debugging
   constant CFG_DUART : integer := 1;
 end;

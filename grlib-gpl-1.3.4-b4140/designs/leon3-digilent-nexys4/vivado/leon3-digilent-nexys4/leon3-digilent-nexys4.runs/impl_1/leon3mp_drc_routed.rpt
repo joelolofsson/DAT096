@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
-| Date         : Mon May 12 14:13:14 2014
-| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
+| Tool Version : Vivado v.2014.1 (lin64) Build 881834 Fri Apr  4 14:00:25 MDT 2014
+| Date         : Mon May 12 20:52:47 2014
+| Host         : joel-MacBookPro running 64-bit unknown
 | Command      : report_drc
 -----------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ REPORT SUMMARY
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 50
+         Violations found: 52
 
 2. REPORT DETAILS
 -----------------
@@ -266,22 +266,32 @@ Related violations: <none>
 
 RPBF-3#1 Warning
 IO port buffering is incomplete  
-Device port jb[0] expects both input and output buffering but the buffers are incomplete.
+Device port QspiDB[0] expects both input and output buffering but the buffers are incomplete.
 Related violations: <none>
 
 RPBF-3#2 Warning
 IO port buffering is incomplete  
-Device port jb[1] expects both input and output buffering but the buffers are incomplete.
+Device port QspiDB[1] expects both input and output buffering but the buffers are incomplete.
 Related violations: <none>
 
 RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port jb[0] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port jb[1] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#5 Warning
 IO port buffering is incomplete  
 Device port jb[2] expects both input and output buffering but the buffers are incomplete.
 Related violations: <none>
 
 RTSTAT-10#1 Advisory
 No routable loads  
-1585 net(s) have no routable loads. The problem net(s) are dbg_hub/inst/bscan_inst/CAPTURE, dbg_hub/inst/bscan_inst/RESET, io0/inst_ADC_TOP/inst_ADC/alarm_out, io0/inst_ADC_TOP/inst_ADC/busy_out, io0/inst_ADC_TOP/inst_ADC/channel_out[0], io0/inst_ADC_TOP/inst_ADC/channel_out[1], io0/inst_ADC_TOP/inst_ADC/channel_out[2], io0/inst_ADC_TOP/inst_ADC/channel_out[3], io0/inst_ADC_TOP/inst_ADC/channel_out[4], clkml, io0/inst_ADC_TOP/inst_ADC/drdy_out, io0/inst_ADC_TOP/inst_ADC/eoc_out, io0/inst_ADC_TOP/inst_ADC/eos_out, rst0/n_0_16095, leon3gen.cpu[0].u0/leon3x0/rf0/s1.rhu/s1.dp.x1/xc2v.x0/a6.x0/n_0_a9.x[0].r0 (the first 15 of 1585 listed).
+1597 net(s) have no routable loads. The problem net(s) are dbg_hub/inst/bscan_inst/CAPTURE, dbg_hub/inst/bscan_inst/RESET, io0/inst_ADC_TOP/inst_ADC/alarm_out, io0/inst_ADC_TOP/inst_ADC/busy_out, io0/inst_ADC_TOP/inst_ADC/channel_out[0], io0/inst_ADC_TOP/inst_ADC/channel_out[1], io0/inst_ADC_TOP/inst_ADC/channel_out[2], io0/inst_ADC_TOP/inst_ADC/channel_out[3], io0/inst_ADC_TOP/inst_ADC/channel_out[4], clkml, io0/inst_ADC_TOP/inst_ADC/drdy_out, io0/inst_ADC_TOP/inst_ADC/eoc_out, io0/inst_ADC_TOP/inst_ADC/eos_out, rst0/n_0_16347, leon3gen.cpu[0].u0/leon3x0/rf0/s1.rhu/s1.dp.x1/xc2v.x0/a6.x0/n_0_a9.x[0].r0 (the first 15 of 1597 listed).
 Related violations: <none>
 
 

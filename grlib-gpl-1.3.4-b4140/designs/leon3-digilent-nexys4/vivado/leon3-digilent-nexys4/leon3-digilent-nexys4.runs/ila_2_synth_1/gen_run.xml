@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ila_2_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1399883220">
-  <File Type="RDS-UTIL-PB" Name="ila_2_utilization_synth.pb"/>
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/ila_2_synth_1/constrs_in.xml"/>
-  <File Type="RDS-UTIL" Name="ila_2_utilization_synth.rpt"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/ila_2_synth_1/sources.xml"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/ila_2_synth_1/ila_2_synth_1.psg"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ila_2_timing_summary_synth.rpt"/>
-  <File Type="PA-TCL" Name="ila_2.tcl"/>
-  <File Type="RDS-RDS" Name="ila_2.vds"/>
-  <File Type="RDS-DCP" Name="ila_2.dcp"/>
+<GenRun Id="ila_2_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1399918082">
   <File Type="VDS-TIMING-PB" Name="ila_2_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ila_2_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="ila_2.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="ila_2_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="ila_2_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="ila_2.vds"/>
+  <File Type="PA-TCL" Name="ila_2.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/ila_2_synth_1/ila_2_synth_1.psg"/>
   <File Type="VDS-HWDEF" Name="$PSDKDIR/SDK/SDK_Export/hw/ila_2.hwdef"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/ila_2_synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/ila_2_synth_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_2">
     <File Path="$PSRCDIR/sources_1/ip/ila_2/ila_2.xci">
       <FileInfo>

@@ -1,62 +1,42 @@
 
-ƒ
-scannot add Board Part %s available at %s as part %s specified in board_part file is either invalid or not available5*board2.
-xilinx.com:kc705:part0:0.92default:default2d
-PC:/Xilinx/Vivado/2014.1/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml2default:default2$
-xc7k325tffg900-22default:defaultZ49-26
-ƒ
-scannot add Board Part %s available at %s as part %s specified in board_part file is either invalid or not available5*board2.
-xilinx.com:kc705:part0:1.02default:default2d
-PC:/Xilinx/Vivado/2014.1/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml2default:default2$
-xc7k325tffg900-22default:defaultZ49-26
-¿
-scannot add Board Part %s available at %s as part %s specified in board_part file is either invalid or not available5*board2.
-xilinx.com:zc706:part0:0.92default:default2a
-MC:/Xilinx/Vivado/2014.1/data/boards/board_parts/zynq/zc706/0.9/board_part.xml2default:default2#
-xc7z045ffg900-22default:defaultZ49-26
-¿
-scannot add Board Part %s available at %s as part %s specified in board_part file is either invalid or not available5*board2.
-xilinx.com:zc706:part0:1.02default:default2a
-MC:/Xilinx/Vivado/2014.1/data/boards/board_parts/zynq/zc706/1.0/board_part.xml2default:default2#
-xc7z045ffg900-22default:defaultZ49-26
 5
 Refreshing IP repositories
 234*coregenZ19-234
-™
+Ÿ
 †Failed to load user IP repository '%s'; %s
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-1318*coregen27
-#c:/designs/leon3-digilent-nexys4/IP2default:default22
+1318*coregen2f
+R/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/IP2default:default22
 Can't find the specified path.2default:defaultZ19-2248
-s
+u
 "Loaded Vivado IP repository '%s'.
-1332*coregen23
-C:/Xilinx/Vivado/2014.1/data/ip2default:defaultZ19-2313
-â
+1332*coregen25
+!/opt/Xilinx/Vivado/2014.1/data/ip2default:defaultZ19-2313
+π
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ila_22default:default2â
-uc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.dcp2default:defaultZ19-3664
-å
+ila_22default:default2π
+§/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2.dcp2default:defaultZ19-3664
+º
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ila_22default:default2å
-xc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_stub.v2default:defaultZ19-3664
-è
+ila_22default:default2º
+ß/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_stub.v2default:defaultZ19-3664
+ø
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ila_22default:default2è
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_stub.vhdl2default:defaultZ19-3664
-è
+ila_22default:default2ø
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_stub.vhdl2default:defaultZ19-3664
+ø
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ila_22default:default2è
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_funcsim.v2default:defaultZ19-3664
-í
+ila_22default:default2ø
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_funcsim.v2default:defaultZ19-3664
+¬
 FIP '%s' generated file not found '%s'. Please regenerate to continue.
 1688*coregen2
-ila_22default:default2í
-~c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_funcsim.vhdl2default:defaultZ19-3664
+ila_22default:default2¬
+≠/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_funcsim.vhdl2default:defaultZ19-3664
 
 Command: %s
 53*	vivadotcl2W
@@ -76,14 +56,14 @@ Starting synthesis...
 310*common2
 	Synthesis2default:default2
 xc7a100t2default:defaultZ17-349
-õ
-%s*synth2ã
-wStarting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 203.906 ; gain = 86.563
+ú
+%s*synth2å
+xStarting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 832.387 ; gain = 190.375
 2default:default
-¸
+¨
 synthesizing module '%s'638*oasys2
-ila_22default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+ila_22default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 632default:default8@Z8-638
 ´
 %s*synth2õ
@@ -8381,19 +8361,19 @@ Z
 %s*synth2O
 ;	Parameter C_PROBE1023_MU_CNT bound to: 1 - type: integer 
 2default:default
-∞
+è
 Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'3392*oasys2 
-ila_v4_0_ila2default:default2§
-èc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila.v2default:default2
+ila_v4_0_ila2default:default2”
+æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila.v2default:default2
 792default:default2
 U02default:default2 
-ila_v4_0_ila2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+ila_v4_0_ila2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3491
-®
+◊
 synthesizing module '%s'638*oasys20
-ila_v4_0_ila__parameterized02default:default2¶
-èc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila.v2default:default2
+ila_v4_0_ila__parameterized02default:default2’
+æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila.v2default:default2
 792default:default8@Z8-638
 ´
 %s*synth2õ
@@ -20814,10 +20794,10 @@ M	Parameter LC_MATCH_TPID_VEC bound to: 32'b00000000000000010000000000000000
 %s*synth2L
 8	Parameter LC_NUM_TRIG_EQS bound to: 1 - type: integer 
 2default:default
-¢
+—
 synthesizing module '%s'638*oasys2%
-ila_v4_0_ila_core2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+ila_v4_0_ila_core2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 772default:default8@Z8-638
 _
 %s*synth2P
@@ -20951,10 +20931,10 @@ W
 %s*synth2H
 4	Parameter C_TRIGIN_EN bound to: 0 - type: integer 
 2default:default
-™
+Ÿ
 synthesizing module '%s'638*oasys2)
-ila_v4_0_ila_register2default:default2Ø
-òc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_register.v2default:default2
+ila_v4_0_ila_register2default:default2ﬁ
+«/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_register.v2default:default2
 792default:default8@Z8-638
 [
 %s*synth2L
@@ -21092,10 +21072,10 @@ X
 %s*synth2I
 5	Parameter LC_D_ZERO bound to: 16'b0000000000000000 
 2default:default
-º
+Î
 synthesizing module '%s'638*oasys2(
-chipscope_xsdb_slave2default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/chipscope_xsdb_slave.v2default:default2
+chipscope_xsdb_slave2default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/chipscope_xsdb_slave.v2default:default2
 792default:default8@Z8-638
 _
 %s*synth2P
@@ -21153,17 +21133,17 @@ X
 %s*synth2I
 5	Parameter C_CORE_INFO2 bound to: 0 - type: integer 
 2default:default
-˜
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 chipscope_xsdb_slave2default:default2
 12default:default2
-12default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/chipscope_xsdb_slave.v2default:default2
+12default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/chipscope_xsdb_slave.v2default:default2
 792default:default8@Z8-256
-Æ
+›
 synthesizing module '%s'638*oasys2!
-xsdb_register2default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register2default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21189,33 +21169,33 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-∏
+Á
 synthesizing module '%s'638*oasys2&
-xsdb_register_stat2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+xsdb_register_stat2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 762default:default8@Z8-638
 U
 %s*synth2F
 2	Parameter C_DATA_W bound to: 16 - type: integer 
 2default:default
-Û
+¢
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 xsdb_register_stat2default:default2
 22default:default2
-12default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+12default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 762default:default8@Z8-256
-È
+ò
 %done synthesizing module '%s' (%s#%s)256*oasys2!
 xsdb_register2default:default2
 32default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized02default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized02default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21241,17 +21221,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized02default:default2
 32default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21277,17 +21257,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized12default:default2
 32default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized22default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized22default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21313,17 +21293,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized22default:default2
 32default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized32default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized32default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21349,17 +21329,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized32default:default2
 32default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized42default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized42default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21385,17 +21365,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized42default:default2
 32default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized52default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized52default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21421,10 +21401,10 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-∂
+Â
 synthesizing module '%s'638*oasys2%
-xsdb_register_ctl2default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
+xsdb_register_ctl2default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-638
 U
 %s*synth2F
@@ -21434,24 +21414,24 @@ U
 %s*synth2L
 8	Parameter C_CTLRST_VAL bound to: 16'b0000000000000000 
 2default:default
-Ò
+†
 %done synthesizing module '%s' (%s#%s)256*oasys2%
 xsdb_register_ctl2default:default2
 42default:default2
-12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
+12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-256
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized52default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized62default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized62default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21477,10 +21457,10 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-∆
+ı
 synthesizing module '%s'638*oasys25
-!xsdb_register_ctl__parameterized02default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
+!xsdb_register_ctl__parameterized02default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-638
 U
 %s*synth2F
@@ -21490,24 +21470,24 @@ U
 %s*synth2L
 8	Parameter C_CTLRST_VAL bound to: 16'b0000000000001100 
 2default:default
-Å
+∞
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_ctl__parameterized02default:default2
 42default:default2
-12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
+12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-256
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized62default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized72default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized72default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21533,17 +21513,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized72default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized82default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized82default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21569,17 +21549,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized82default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys21
-xsdb_register__parameterized92default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized92default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21605,17 +21585,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˘
+®
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized92default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized102default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized102default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21641,17 +21621,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized102default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized112default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized112default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21677,17 +21657,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized112default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized122default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized122default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21713,17 +21693,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized122default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized132default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized132default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21749,17 +21729,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized132default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized142default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized142default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21785,17 +21765,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized142default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized152default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized152default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21821,17 +21801,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized152default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized162default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized162default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21857,17 +21837,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized162default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized172default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized172default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21893,17 +21873,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized172default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized182default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized182default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21929,17 +21909,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized182default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized192default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized192default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -21965,17 +21945,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized192default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized202default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized202default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22001,17 +21981,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized202default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized212default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized212default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22037,17 +22017,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized212default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized222default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized222default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22073,17 +22053,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized222default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized232default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized232default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22109,17 +22089,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized232default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized242default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized242default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22145,17 +22125,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized242default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized252default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized252default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22181,10 +22161,10 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-∆
+ı
 synthesizing module '%s'638*oasys25
-!xsdb_register_ctl__parameterized12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
+!xsdb_register_ctl__parameterized12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-638
 U
 %s*synth2F
@@ -22194,24 +22174,24 @@ U
 %s*synth2L
 8	Parameter C_CTLRST_VAL bound to: 16'b0000000000000001 
 2default:default
-Å
+∞
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_ctl__parameterized12default:default2
 42default:default2
-12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
+12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-256
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized252default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized262default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized262default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22237,17 +22217,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized262default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized272default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized272default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22273,17 +22253,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized272default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized282default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized282default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22309,17 +22289,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized282default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized292default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized292default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22345,17 +22325,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized292default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized302default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized302default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22381,17 +22361,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized302default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized312default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized312default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22417,17 +22397,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized312default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized322default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized322default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22453,17 +22433,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized322default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized332default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized332default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22489,17 +22469,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized332default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized342default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized342default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22525,17 +22505,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized342default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized352default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized352default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22561,17 +22541,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized352default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized362default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized362default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22597,17 +22577,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized362default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized372default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized372default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22633,17 +22613,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized372default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized382default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized382default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22669,17 +22649,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized382default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized392default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized392default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22705,17 +22685,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized392default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized402default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized402default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22741,17 +22721,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized402default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized412default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized412default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22777,17 +22757,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized412default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized422default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized422default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22813,17 +22793,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized422default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized432default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized432default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22849,17 +22829,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized432default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized442default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized442default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22885,17 +22865,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized442default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-ø
+Ó
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized452default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+xsdb_register__parameterized452default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
 %s*synth2F
@@ -22921,17 +22901,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized452default:default2
 42default:default2
-12default:default2ª
-§c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+12default:default2Í
+”/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
-∂
+Â
 synthesizing module '%s'638*oasys2%
-xsdb_register_p2s2default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+xsdb_register_p2s2default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
 %s*synth2F
@@ -22965,17 +22945,17 @@ E
 %s*synth26
 "	Parameter S2P bound to: 4'b1000 
 2default:default
-Ò
+†
 %done synthesizing module '%s' (%s#%s)256*oasys2%
 xsdb_register_p2s2default:default2
 52default:default2
-12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
-∆
+ı
 synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized02default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+!xsdb_register_p2s__parameterized02default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
 %s*synth2F
@@ -23009,17 +22989,17 @@ E
 %s*synth26
 "	Parameter S2P bound to: 4'b1000 
 2default:default
-Å
+∞
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_p2s__parameterized02default:default2
 52default:default2
-12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
-∆
+ı
 synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+!xsdb_register_p2s__parameterized12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
 %s*synth2F
@@ -23053,17 +23033,17 @@ E
 %s*synth26
 "	Parameter S2P bound to: 4'b1000 
 2default:default
-Å
+∞
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_p2s__parameterized12default:default2
 52default:default2
-12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
-∆
+ı
 synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized22default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+!xsdb_register_p2s__parameterized22default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
 %s*synth2F
@@ -23097,17 +23077,17 @@ E
 %s*synth26
 "	Parameter S2P bound to: 4'b1000 
 2default:default
-Å
+∞
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_p2s__parameterized22default:default2
 52default:default2
-12default:default2ø
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+12default:default2Ó
+◊/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
-º
+Î
 synthesizing module '%s'638*oasys2(
-xsdb_register_stream2default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
+xsdb_register_stream2default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
 802default:default8@Z8-638
 U
 %s*synth2F
@@ -23133,17 +23113,17 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 1 - type: integer 
 2default:default
-˜
+¶
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 xsdb_register_stream2default:default2
 62default:default2
-12default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
+12default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
 802default:default8@Z8-256
-Ã
+˚
 synthesizing module '%s'638*oasys28
-$xsdb_register_stream__parameterized02default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
+$xsdb_register_stream__parameterized02default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
 802default:default8@Z8-638
 U
 %s*synth2F
@@ -23169,24 +23149,24 @@ T
 %s*synth2E
 1	Parameter C_EN_CTL bound to: 0 - type: integer 
 2default:default
-á
+∂
 %done synthesizing module '%s' (%s#%s)256*oasys28
 $xsdb_register_stream__parameterized02default:default2
 62default:default2
-12default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
+12default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
 802default:default8@Z8-256
-Â
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 ila_v4_0_ila_register2default:default2
 72default:default2
-12default:default2Ø
-òc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_register.v2default:default2
+12default:default2ﬁ
+«/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_register.v2default:default2
 792default:default8@Z8-256
-®
+◊
 synthesizing module '%s'638*oasys2(
-ila_v4_0_ila_trigger2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trigger.v2default:default2
+ila_v4_0_ila_trigger2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trigger.v2default:default2
 792default:default8@Z8-638
 ]
 %s*synth2N
@@ -23236,10 +23216,10 @@ L	Parameter C_MATCH_TPID_VEC bound to: 32'b00000000000000010000000000000000
 %s*synth2M
 9	Parameter C_TRIG_COND_TYPE bound to: 0 - type: integer 
 2default:default
-Æ
+›
 synthesizing module '%s'638*oasys2+
-ila_v4_0_ila_trig_match2default:default2±
-öc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trig_match.v2default:default2
+ila_v4_0_ila_trig_match2default:default2‡
+…/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trig_match.v2default:default2
 772default:default8@Z8-638
 ]
 %s*synth2N
@@ -23265,10 +23245,10 @@ L	Parameter C_MATCH_TPID_VEC bound to: 32'b00000000000000010000000000000000
 %s*synth2N
 :	Parameter C_MATCH_UNIT_TYPE bound to: 0 - type: integer 
 2default:default
-¨
+€
 synthesizing module '%s'638*oasys2
-cs_match2default:default2æ
-ßc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
+cs_match2default:default2Ì
+÷/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
 772default:default8@Z8-638
 ]
 %s*synth2N
@@ -23286,10 +23266,10 @@ S
 %s*synth2M
 9	Parameter C_USE_OUTPUT_REG bound to: 1 - type: integer 
 2default:default
-∂
+Â
 synthesizing module '%s'638*oasys2!
-cs_allx_typeA2default:default2√
-¨c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+cs_allx_typeA2default:default2Ú
+€/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 772default:default8@Z8-638
 [
 %s*synth2L
@@ -23319,10 +23299,10 @@ Y
 %s*synth2J
 6	Parameter START_DLY_IDX bound to: 0 - type: integer 
 2default:default
-¥
+„
 synthesizing module '%s'638*oasys2 
-cs_all_typeA2default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
+cs_all_typeA2default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
 812default:default8@Z8-638
 [
 %s*synth2L
@@ -23348,10 +23328,10 @@ f
 %s*synth2W
 C	Parameter LC_REMAINDER_SLICE_SIGNALS bound to: 0 - type: integer 
 2default:default
-¿
+Ô
 synthesizing module '%s'638*oasys2&
-cs_all_typeA_slice2default:default2»
-±c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
+cs_all_typeA_slice2default:default2˜
+‡/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-638
 \
 %s*synth2M
@@ -23361,10 +23341,10 @@ b
 %s*synth2S
 ?	Parameter C_IS_TERMINATION_SLICE bound to: 1 - type: integer 
 2default:default
-∏
+∫
 synthesizing module '%s'638*oasys2
-CFGLUT52default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+CFGLUT52default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 9872default:default8@Z8-638
 N
 %s*synth2?
@@ -23374,64 +23354,64 @@ c
 %s*synth2T
 @	Parameter INIT bound to: 32'b00000000000000000000000000000000 
 2default:default
-Û
+ı
 %done synthesizing module '%s' (%s#%s)256*oasys2
 CFGLUT52default:default2
 82default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 9872default:default8@Z8-256
-∑
+π
 synthesizing module '%s'638*oasys2
-CARRY42default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+CARRY42default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 9502default:default8@Z8-638
-Ú
+Ù
 %done synthesizing module '%s' (%s#%s)256*oasys2
 CARRY42default:default2
 92default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 9502default:default8@Z8-256
-¸
+´
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 cs_all_typeA_slice2default:default2
 102default:default2
-12default:default2»
-±c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
+12default:default2˜
+‡/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-256
-
+ü
 %done synthesizing module '%s' (%s#%s)256*oasys2 
 cs_all_typeA2default:default2
 112default:default2
-12default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
+12default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
 812default:default8@Z8-256
-Ú
+°
 %done synthesizing module '%s' (%s#%s)256*oasys2!
 cs_allx_typeA2default:default2
 122default:default2
-12default:default2√
-¨c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+12default:default2Ú
+€/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 772default:default8@Z8-256
-Ë
+ó
 %done synthesizing module '%s' (%s#%s)256*oasys2
 cs_match2default:default2
 132default:default2
-12default:default2æ
-ßc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
+12default:default2Ì
+÷/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
 772default:default8@Z8-256
-Í
+ô
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 ila_v4_0_ila_trig_match2default:default2
 142default:default2
-12default:default2±
-öc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trig_match.v2default:default2
+12default:default2‡
+…/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trig_match.v2default:default2
 772default:default8@Z8-256
-º
+Î
 synthesizing module '%s'638*oasys2,
-cs_match__parameterized02default:default2æ
-ßc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
+cs_match__parameterized02default:default2Ì
+÷/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
 772default:default8@Z8-638
 ]
 %s*synth2N
@@ -23449,10 +23429,10 @@ S
 %s*synth2M
 9	Parameter C_USE_OUTPUT_REG bound to: 1 - type: integer 
 2default:default
-∆
+ı
 synthesizing module '%s'638*oasys21
-cs_allx_typeA__parameterized02default:default2√
-¨c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+cs_allx_typeA__parameterized02default:default2Ú
+€/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 772default:default8@Z8-638
 [
 %s*synth2L
@@ -23482,31 +23462,31 @@ Y
 %s*synth2J
 6	Parameter START_DLY_IDX bound to: 0 - type: integer 
 2default:default
-Ç
+±
 %done synthesizing module '%s' (%s#%s)256*oasys21
 cs_allx_typeA__parameterized02default:default2
 142default:default2
-12default:default2√
-¨c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+12default:default2Ú
+€/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 772default:default8@Z8-256
-¯
+ß
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 cs_match__parameterized02default:default2
 142default:default2
-12default:default2æ
-ßc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
+12default:default2Ì
+÷/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
 772default:default8@Z8-256
-‰
+ì
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 ila_v4_0_ila_trigger2default:default2
 152default:default2
-12default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trigger.v2default:default2
+12default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trigger.v2default:default2
 792default:default8@Z8-256
-Æ
+›
 synthesizing module '%s'638*oasys2+
-ila_v4_0_ila_reset_ctrl2default:default2±
-öc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_reset_ctrl.v2default:default2
+ila_v4_0_ila_reset_ctrl2default:default2‡
+…/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_reset_ctrl.v2default:default2
 792default:default8@Z8-638
 Y
 %s*synth2J
@@ -23516,63 +23496,63 @@ I
 %s*synth2:
 &	Parameter C_SAME_CLK bound to: 1'b0 
 2default:default
-»
+˜
 synthesizing module '%s'638*oasys2*
-cs_async_edge_transfer2default:default2Ã
-µc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
+cs_async_edge_transfer2default:default2˚
+‰/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
 762default:default8@Z8-638
-Á
+ñ
 &Detected and applied attribute %s = %s3620*oasys2!
 shreg_extract2default:default2
-no2default:default2Ã
-µc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
+no2default:default2˚
+‰/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
 862default:default8@Z8-4472
-Á
+ñ
 &Detected and applied attribute %s = %s3620*oasys2!
 shreg_extract2default:default2
-no2default:default2Ã
-µc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
+no2default:default2˚
+‰/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
 882default:default8@Z8-4472
-Á
+ñ
 &Detected and applied attribute %s = %s3620*oasys2!
 shreg_extract2default:default2
-no2default:default2Ã
-µc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
+no2default:default2˚
+‰/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
 902default:default8@Z8-4472
-Ñ
+≥
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 cs_async_edge_transfer2default:default2
 162default:default2
-12default:default2Ã
-µc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
+12default:default2˚
+‰/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
 762default:default8@Z8-256
-Ã
+˚
 synthesizing module '%s'638*oasys2,
-cs_rising_edge_detection2default:default2Œ
-∑c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_rising_edge_detection.v2default:default2
+cs_rising_edge_detection2default:default2˝
+Ê/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_rising_edge_detection.v2default:default2
 742default:default8@Z8-638
 Z
 %s*synth2K
 7	Parameter C_PULSE_LENGTH bound to: 2 - type: integer 
 2default:default
-à
+∑
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 cs_rising_edge_detection2default:default2
 172default:default2
-12default:default2Œ
-∑c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_rising_edge_detection.v2default:default2
+12default:default2˝
+Ê/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_rising_edge_detection.v2default:default2
 742default:default8@Z8-256
-Í
+ô
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 ila_v4_0_ila_reset_ctrl2default:default2
 182default:default2
-12default:default2±
-öc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_reset_ctrl.v2default:default2
+12default:default2‡
+…/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_reset_ctrl.v2default:default2
 792default:default8@Z8-256
-∏
+Á
 synthesizing module '%s'638*oasys20
-ila_v4_0_ila_cap_ctrl_legacy2default:default2∂
-üc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_ctrl_legacy.v2default:default2
+ila_v4_0_ila_cap_ctrl_legacy2default:default2Â
+Œ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_ctrl_legacy.v2default:default2
 762default:default8@Z8-638
 W
 %s*synth2H
@@ -23598,11 +23578,11 @@ W
 %s*synth2O
 ;	Parameter log2_C_DATA_DEPTH bound to: 10 - type: integer 
 2default:default
-∞
+ﬂ
 synthesizing module '%s'638*oasys2
 
-cs_cfglut72default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut7.v2default:default2
+cs_cfglut72default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut7.v2default:default2
 742default:default8@Z8-638
 X
 %s*synth2I
@@ -23616,10 +23596,10 @@ _
 %s*synth2M
 9	Parameter C_USE_OUTPUT_REG bound to: 1 - type: integer 
 2default:default
-∫
+º
 synthesizing module '%s'638*oasys2
-SRLC32E2default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+SRLC32E2default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 346742default:default8@Z8-638
 N
 %s*synth2?
@@ -23629,25 +23609,25 @@ c
 %s*synth2T
 @	Parameter INIT bound to: 32'b00000000000000000000000000000000 
 2default:default
-ˆ
+¯
 %done synthesizing module '%s' (%s#%s)256*oasys2
 SRLC32E2default:default2
 192default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 346742default:default8@Z8-256
-Ï
+õ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 cs_cfglut72default:default2
 202default:default2
-12default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut7.v2default:default2
+12default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut7.v2default:default2
 742default:default8@Z8-256
-∞
+ﬂ
 synthesizing module '%s'638*oasys2,
-ila_v4_0_ila_cap_addrgen2default:default2≤
-õc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
+ila_v4_0_ila_cap_addrgen2default:default2·
+ /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
 752default:default8@Z8-638
 _
 %s*synth2P
@@ -23669,24 +23649,24 @@ W
 %s*synth2O
 ;	Parameter log2_C_DATA_DEPTH bound to: 10 - type: integer 
 2default:default
-Õ
+¸
 &Detected and applied attribute %s = %s3620*oasys2
 
 dont_touch2default:default2
-true2default:default2≤
-õc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
+true2default:default2·
+ /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
 1152default:default8@Z8-4472
-Õ
+¸
 &Detected and applied attribute %s = %s3620*oasys2
 
 dont_touch2default:default2
-true2default:default2≤
-õc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
+true2default:default2·
+ /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
 1252default:default8@Z8-4472
-π
+ª
 synthesizing module '%s'638*oasys2
-SRL16E2default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+SRL16E2default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 345242default:default8@Z8-638
 N
 %s*synth2?
@@ -23696,18 +23676,18 @@ S
 %s*synth2D
 0	Parameter INIT bound to: 16'b0000000000000000 
 2default:default
-ı
+˜
 %done synthesizing module '%s' (%s#%s)256*oasys2
 SRL16E2default:default2
 212default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 345242default:default8@Z8-256
-∞
+ﬂ
 synthesizing module '%s'638*oasys2
 
-cs_cfglut62default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
+cs_cfglut62default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
 742default:default8@Z8-638
 _
 %s*synth2P
@@ -23721,18 +23701,18 @@ X
 %s*synth2M
 9	Parameter C_USE_OUTPUT_REG bound to: 0 - type: integer 
 2default:default
-Ï
+õ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 cs_cfglut62default:default2
 222default:default2
-12default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
+12default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
 742default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys23
-ila_v4_0_ila_cap_sample_counter2default:default2π
-¢c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_sample_counter.v2default:default2
+ila_v4_0_ila_cap_sample_counter2default:default2Ë
+—/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_sample_counter.v2default:default2
 752default:default8@Z8-638
 _
 %s*synth2P
@@ -23746,11 +23726,11 @@ Y
 %s*synth2N
 :	Parameter C_MATCH_UNIT_TYPE bound to: 0 - type: integer 
 2default:default
-∞
+ﬂ
 synthesizing module '%s'638*oasys2
 
-cs_cfglut42default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut4.v2default:default2
+cs_cfglut42default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut4.v2default:default2
 742default:default8@Z8-638
 _
 %s*synth2P
@@ -23760,10 +23740,10 @@ X
 %s*synth2I
 5	Parameter C_SRL16_TYPE bound to: 2 - type: integer 
 2default:default
-∫
+º
 synthesizing module '%s'638*oasys2
-SRLC16E2default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+SRLC16E2default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 346132default:default8@Z8-638
 N
 %s*synth2?
@@ -23773,26 +23753,26 @@ S
 %s*synth2D
 0	Parameter INIT bound to: 16'b0000000000000000 
 2default:default
-ˆ
+¯
 %done synthesizing module '%s' (%s#%s)256*oasys2
 SRLC16E2default:default2
 232default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 346132default:default8@Z8-256
-Ï
+õ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 cs_cfglut42default:default2
 242default:default2
-12default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut4.v2default:default2
+12default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut4.v2default:default2
 742default:default8@Z8-256
-∞
+ﬂ
 synthesizing module '%s'638*oasys2
 
-cs_cfglut52default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut5.v2default:default2
+cs_cfglut52default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut5.v2default:default2
 742default:default8@Z8-638
 _
 %s*synth2P
@@ -23806,18 +23786,18 @@ X
 %s*synth2M
 9	Parameter C_USE_OUTPUT_REG bound to: 0 - type: integer 
 2default:default
-Ï
+õ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 cs_cfglut52default:default2
 252default:default2
-12default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut5.v2default:default2
+12default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut5.v2default:default2
 742default:default8@Z8-256
-º
+Î
 synthesizing module '%s'638*oasys2$
-cs_match_nodelay2default:default2∆
-Øc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match_nodelay.v2default:default2
+cs_match_nodelay2default:default2ı
+ﬁ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match_nodelay.v2default:default2
 772default:default8@Z8-638
 ]
 %s*synth2N
@@ -23835,10 +23815,10 @@ T
 %s*synth2M
 9	Parameter C_USE_OUTPUT_REG bound to: 0 - type: integer 
 2default:default
-∆
+ı
 synthesizing module '%s'638*oasys2)
-cs_allx_typeA_nodelay2default:default2À
-¥c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA_nodelay.v2default:default2
+cs_allx_typeA_nodelay2default:default2˙
+„/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA_nodelay.v2default:default2
 772default:default8@Z8-638
 [
 %s*synth2L
@@ -23868,10 +23848,10 @@ Y
 %s*synth2J
 6	Parameter START_DLY_IDX bound to: 8 - type: integer 
 2default:default
-ƒ
+Û
 synthesizing module '%s'638*oasys20
-cs_all_typeA__parameterized02default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
+cs_all_typeA__parameterized02default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
 812default:default8@Z8-638
 [
 %s*synth2L
@@ -23897,10 +23877,10 @@ f
 %s*synth2W
 C	Parameter LC_REMAINDER_SLICE_SIGNALS bound to: 0 - type: integer 
 2default:default
-–
+ˇ
 synthesizing module '%s'638*oasys26
-"cs_all_typeA_slice__parameterized02default:default2»
-±c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
+"cs_all_typeA_slice__parameterized02default:default2˜
+‡/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-638
 \
 %s*synth2M
@@ -23910,17 +23890,17 @@ b
 %s*synth2S
 ?	Parameter C_IS_TERMINATION_SLICE bound to: 0 - type: integer 
 2default:default
-å
+ª
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "cs_all_typeA_slice__parameterized02default:default2
 252default:default2
-12default:default2»
-±c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
+12default:default2˜
+‡/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-256
-–
+ˇ
 synthesizing module '%s'638*oasys26
-"cs_all_typeA_slice__parameterized12default:default2»
-±c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
+"cs_all_typeA_slice__parameterized12default:default2˜
+‡/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-638
 \
 %s*synth2M
@@ -23930,38 +23910,38 @@ b
 %s*synth2S
 ?	Parameter C_IS_TERMINATION_SLICE bound to: 1 - type: integer 
 2default:default
-å
+ª
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "cs_all_typeA_slice__parameterized12default:default2
 252default:default2
-12default:default2»
-±c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
+12default:default2˜
+‡/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-256
-Ä
+Ø
 %done synthesizing module '%s' (%s#%s)256*oasys20
 cs_all_typeA__parameterized02default:default2
 252default:default2
-12default:default2¬
-´c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
+12default:default2Ò
+⁄/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
 812default:default8@Z8-256
-Ç
+±
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 cs_allx_typeA_nodelay2default:default2
 262default:default2
-12default:default2À
-¥c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA_nodelay.v2default:default2
+12default:default2˙
+„/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA_nodelay.v2default:default2
 772default:default8@Z8-256
-¯
+ß
 %done synthesizing module '%s' (%s#%s)256*oasys2$
 cs_match_nodelay2default:default2
 272default:default2
-12default:default2∆
-Øc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match_nodelay.v2default:default2
+12default:default2ı
+ﬁ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_match_nodelay.v2default:default2
 772default:default8@Z8-256
-∂
+∏
 synthesizing module '%s'638*oasys2
-FDRE2default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+FDRE2default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 30142default:default8@Z8-638
 C
 %s*synth24
@@ -23979,24 +23959,24 @@ L
 %s*synth2=
 )	Parameter IS_R_INVERTED bound to: 1'b0 
 2default:default
-Ú
+Ù
 %done synthesizing module '%s' (%s#%s)256*oasys2
 FDRE2default:default2
 282default:default2
-12default:default2K
-5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
+12default:default2M
+7/opt/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 30142default:default8@Z8-256
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys23
 ila_v4_0_ila_cap_sample_counter2default:default2
 292default:default2
-12default:default2π
-¢c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_sample_counter.v2default:default2
+12default:default2Ë
+—/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_sample_counter.v2default:default2
 752default:default8@Z8-256
-æ
+Ì
 synthesizing module '%s'638*oasys23
-ila_v4_0_ila_cap_window_counter2default:default2π
-¢c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_window_counter.v2default:default2
+ila_v4_0_ila_cap_window_counter2default:default2Ë
+—/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_window_counter.v2default:default2
 752default:default8@Z8-638
 _
 %s*synth2P
@@ -24010,24 +23990,24 @@ Y
 %s*synth2N
 :	Parameter C_MATCH_UNIT_TYPE bound to: 0 - type: integer 
 2default:default
-˙
+©
 %done synthesizing module '%s' (%s#%s)256*oasys23
 ila_v4_0_ila_cap_window_counter2default:default2
 302default:default2
-12default:default2π
-¢c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_window_counter.v2default:default2
+12default:default2Ë
+—/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_window_counter.v2default:default2
 752default:default8@Z8-256
-Ï
+õ
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 ila_v4_0_ila_cap_addrgen2default:default2
 312default:default2
-12default:default2≤
-õc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
+12default:default2·
+ /home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
 752default:default8@Z8-256
-¿
+Ô
 synthesizing module '%s'638*oasys2.
-cs_cfglut6__parameterized02default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
+cs_cfglut6__parameterized02default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
 742default:default8@Z8-638
 _
 %s*synth2P
@@ -24041,24 +24021,24 @@ X
 %s*synth2M
 9	Parameter C_USE_OUTPUT_REG bound to: 1 - type: integer 
 2default:default
-¸
+´
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 cs_cfglut6__parameterized02default:default2
 312default:default2
-12default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
+12default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
 742default:default8@Z8-256
-Ù
+£
 %done synthesizing module '%s' (%s#%s)256*oasys20
 ila_v4_0_ila_cap_ctrl_legacy2default:default2
 322default:default2
-12default:default2∂
-üc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_ctrl_legacy.v2default:default2
+12default:default2Â
+Œ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_ctrl_legacy.v2default:default2
 762default:default8@Z8-256
-≤
+·
 synthesizing module '%s'638*oasys2-
-ila_v4_0_ila_trace_memory2default:default2≥
-úc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trace_memory.v2default:default2
+ila_v4_0_ila_trace_memory2default:default2‚
+À/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trace_memory.v2default:default2
 762default:default8@Z8-638
 W
 %s*synth2H
@@ -24088,10 +24068,10 @@ Z
 %s*synth2K
 7	Parameter LC_BLK_MEM_CNT bound to: 1 - type: integer 
 2default:default
-ü
+Œ
 synthesizing module '%s'638*oasys2$
-blk_mem_gen_v8_12default:default2®
-ëc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_v8_1.vhd2default:default2
+blk_mem_gen_v8_12default:default2◊
+¿/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_v8_1.vhd2default:default2
 2502default:default8@Z8-638
 X
 %s*synth2I
@@ -24345,10 +24325,10 @@ d
 %s*synth2U
 A	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 2default:default
-´
+⁄
 synthesizing module '%s'638*oasys2*
-blk_mem_gen_v8_1_synth2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_v8_1_synth.vhd2default:default2
+blk_mem_gen_v8_1_synth2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_v8_1_synth.vhd2default:default2
 3112default:default8@Z8-638
 X
 %s*synth2I
@@ -24602,10 +24582,10 @@ d
 %s*synth2U
 A	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 2default:default
-ù
+Ã
 synthesizing module '%s'638*oasys2#
-blk_mem_gen_top2default:default2ß
-êc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_top.vhd2default:default2
+blk_mem_gen_top2default:default2÷
+ø/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_top.vhd2default:default2
 4312default:default8@Z8-638
 ]
 %s*synth2N
@@ -24839,10 +24819,10 @@ d
 %s*synth2U
 A	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 2default:default
-•
+‘
 synthesizing module '%s'638*oasys2'
-blk_mem_input_block2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_input_block.vhd2default:default2
+blk_mem_input_block2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_input_block.vhd2default:default2
 3922default:default8@Z8-638
 Y
 %s*synth2J
@@ -24988,17 +24968,17 @@ Y
 %s*synth2L
 8	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
 2default:default
-·
+ê
 %done synthesizing module '%s' (%s#%s)256*oasys2'
 blk_mem_input_block2default:default2
 332default:default2
-12default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_input_block.vhd2default:default2
+12default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_input_block.vhd2default:default2
 3922default:default8@Z8-256
-Ø
+ﬁ
 synthesizing module '%s'638*oasys2,
-blk_mem_gen_generic_cstr2default:default2∞
-ôc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_generic_cstr.vhd2default:default2
+blk_mem_gen_generic_cstr2default:default2ﬂ
+»/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_generic_cstr.vhd2default:default2
 4422default:default8@Z8-638
 Y
 %s*synth2J
@@ -25267,10 +25247,10 @@ b
 %s*synth2S
 ?	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 2default:default
-´
+⁄
 synthesizing module '%s'638*oasys2*
-blk_mem_gen_prim_width2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+blk_mem_gen_prim_width2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 3932default:default8@Z8-638
 ]
 %s*synth2N
@@ -25468,18 +25448,18 @@ b
 %s*synth2S
 ?	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 2default:default
-Å
-null assignment ignored3449*oasys2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+∞
+null assignment ignored3449*oasys2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10352default:default8@Z8-3919
-Å
-null assignment ignored3449*oasys2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+∞
+null assignment ignored3449*oasys2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10362default:default8@Z8-3919
-Ø
+ﬁ
 synthesizing module '%s'638*oasys2,
-blk_mem_gen_prim_wrapper2default:default2∞
-ôc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
+blk_mem_gen_prim_wrapper2default:default2ﬂ
+»/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
 3872default:default8@Z8-638
 ]
 %s*synth2N
@@ -25677,9 +25657,9 @@ b
 %s*synth2S
 ?	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
 2default:default
-É
-null assignment ignored3449*oasys2∞
-ôc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
+≤
+null assignment ignored3449*oasys2ﬂ
+»/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
 85972default:default8@Z8-3919
 S
 %s*synth2D
@@ -26077,37 +26057,37 @@ Z
 %s*synth2K
 7	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
 2default:default
-Õ
+¸
 ,binding component instance '%s' to cell '%s'113*oasys2
 ram2default:default2
-RAMB18E12default:default2∞
-ôc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
+RAMB18E12default:default2ﬂ
+»/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
 86572default:default8@Z8-113
-Î
+ö
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 blk_mem_gen_prim_wrapper2default:default2
 342default:default2
-12default:default2∞
-ôc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
+12default:default2ﬂ
+»/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
 3872default:default8@Z8-256
-Á
+ñ
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 blk_mem_gen_prim_width2default:default2
 352default:default2
-12default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+12default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 3932default:default8@Z8-256
-Î
+ö
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 blk_mem_gen_generic_cstr2default:default2
 362default:default2
-12default:default2∞
-ôc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_generic_cstr.vhd2default:default2
+12default:default2ﬂ
+»/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_generic_cstr.vhd2default:default2
 4422default:default8@Z8-256
-ß
+÷
 synthesizing module '%s'638*oasys2(
-blk_mem_output_block2default:default2¨
-ïc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_output_block.vhd2default:default2
+blk_mem_output_block2default:default2€
+ƒ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_output_block.vhd2default:default2
 2142default:default8@Z8-638
 V
 %s*synth2G
@@ -26149,45 +26129,45 @@ U
 %s*synth2F
 2	Parameter C_USE_ECC bound to: 0 - type: integer 
 2default:default
-„
+í
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 blk_mem_output_block2default:default2
 372default:default2
-12default:default2¨
-ïc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_output_block.vhd2default:default2
+12default:default2€
+ƒ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_output_block.vhd2default:default2
 2142default:default8@Z8-256
-Ÿ
+à
 %done synthesizing module '%s' (%s#%s)256*oasys2#
 blk_mem_gen_top2default:default2
 382default:default2
-12default:default2ß
-êc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_top.vhd2default:default2
+12default:default2÷
+ø/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_top.vhd2default:default2
 4312default:default8@Z8-256
-Á
+ñ
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 blk_mem_gen_v8_1_synth2default:default2
 392default:default2
-12default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_v8_1_synth.vhd2default:default2
+12default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_v8_1_synth.vhd2default:default2
 3112default:default8@Z8-256
-€
+ä
 %done synthesizing module '%s' (%s#%s)256*oasys2$
 blk_mem_gen_v8_12default:default2
 402default:default2
-12default:default2®
-ëc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_v8_1.vhd2default:default2
+12default:default2◊
+¿/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_v8_1.vhd2default:default2
 2502default:default8@Z8-256
-Ó
+ù
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 ila_v4_0_ila_trace_memory2default:default2
 412default:default2
-12default:default2≥
-úc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trace_memory.v2default:default2
+12default:default2‚
+À/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_trace_memory.v2default:default2
 762default:default8@Z8-256
-»
+˜
 synthesizing module '%s'638*oasys2*
-cs_generic_memory_read2default:default2Ã
-µc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_memory_read.v2default:default2
+cs_generic_memory_read2default:default2˚
+‰/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_memory_read.v2default:default2
 762default:default8@Z8-638
 Y
 %s*synth2J
@@ -26245,10 +26225,10 @@ V
 %s*synth2G
 3	Parameter INCREMENT_ADDRESS bound to: 7'b1000000 
 2default:default
-∏
+Á
 synthesizing module '%s'638*oasys2"
-cs_generic_mux2default:default2ƒ
-≠c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_mux.v2default:default2
+cs_generic_mux2default:default2Û
+‹/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_mux.v2default:default2
 732default:default8@Z8-638
 T
 %s*synth2E
@@ -26258,60 +26238,60 @@ W
 %s*synth2H
 4	Parameter C_NUM_BUSES bound to: 1 - type: integer 
 2default:default
-Ù
+£
 %done synthesizing module '%s' (%s#%s)256*oasys2"
 cs_generic_mux2default:default2
 422default:default2
-12default:default2ƒ
-≠c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_mux.v2default:default2
+12default:default2Û
+‹/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_mux.v2default:default2
 732default:default8@Z8-256
-≤
--case statement is not full and has no default155*oasys2Ã
-µc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_memory_read.v2default:default2
+·
+-case statement is not full and has no default155*oasys2˚
+‰/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_memory_read.v2default:default2
 1852default:default8@Z8-155
-Ñ
+≥
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 cs_generic_memory_read2default:default2
 432default:default2
-12default:default2Ã
-µc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_memory_read.v2default:default2
+12default:default2˚
+‰/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_memory_read.v2default:default2
 762default:default8@Z8-256
-Ì
+ú
 0Net %s in module/entity %s does not have driver.3422*oasys2.
 cnt_config_cs_serial_input2default:default2%
-ila_v4_0_ila_core2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+ila_v4_0_ila_core2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 1502default:default8@Z8-3848
-ﬁ
+ç
 %done synthesizing module '%s' (%s#%s)256*oasys2%
 ila_v4_0_ila_core2default:default2
 442default:default2
-12default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+12default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 772default:default8@Z8-256
-‰
+ì
 %done synthesizing module '%s' (%s#%s)256*oasys20
 ila_v4_0_ila__parameterized02default:default2
 452default:default2
-12default:default2¶
-èc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila.v2default:default2
+12default:default2’
+æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila.v2default:default2
 792default:default8@Z8-256
-∑
+Á
 0Net %s in module/entity %s does not have driver.3422*oasys2
 	sl_iport02default:default2
-ila_22default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+ila_22default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31862default:default8@Z8-3848
-∏
+Ë
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ila_22default:default2
 462default:default2
-12default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+12default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 632default:default8@Z8-256
-ú
-%s*synth2å
-xFinished RTL Elaboration : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 312.508 ; gain = 195.164
+ù
+%s*synth2ç
+yFinished RTL Elaboration : Time (s): cpu = 00:01:24 ; elapsed = 00:01:38 . Memory (MB): peak = 1005.188 ; gain = 363.176
 2default:default
 ;
 %s*synth2,
@@ -26338,682 +26318,682 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[17]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[17]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[16]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[16]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[15]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[15]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[14]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[14]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[13]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[13]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[12]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[12]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[11]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[11]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[10]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[10]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[8]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[8]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[7]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[7]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[6]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[6]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[5]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[5]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[4]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[4]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[3]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[3]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINA[2]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINA[2]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[17]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[17]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[16]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[16]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[15]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[15]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[14]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[14]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[13]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[13]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[12]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[12]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[11]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[11]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-÷
+Ö
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[10]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[10]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[8]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[8]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[7]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[7]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[6]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[6]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[5]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[5]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[4]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[4]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[3]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[3]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-’
+Ñ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2%
 \prim_noinit.ram 2default:default2
-DINB[2]2default:default2Æ
-óc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
+DINB[2]2default:default2›
+∆/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 10492default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[31]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[31]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[30]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[30]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[29]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[29]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[28]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[28]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[27]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[27]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[26]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[26]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[25]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[25]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[24]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[24]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[23]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[23]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[22]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[22]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[21]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[21]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[20]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[20]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[19]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[19]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[18]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[18]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[17]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[17]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[16]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[16]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[15]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[15]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[14]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[14]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[13]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[13]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[12]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[12]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[11]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[11]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-◊
+Ü
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2(
-CAPTURE_CNT_SL_I[10]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CAPTURE_CNT_SL_I[10]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-‹
+ã
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2-
-CNT_CONFIG_CS_SERIAL_I[3]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CNT_CONFIG_CS_SERIAL_I[3]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-‹
+ã
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2-
-CNT_CONFIG_CS_SERIAL_I[2]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CNT_CONFIG_CS_SERIAL_I[2]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-‹
+ã
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2-
-CNT_CONFIG_CS_SERIAL_I[1]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CNT_CONFIG_CS_SERIAL_I[1]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-‹
+ã
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 
 u_ila_regs2default:default2-
-CNT_CONFIG_CS_SERIAL_I[0]2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+CNT_CONFIG_CS_SERIAL_I[0]2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 2452default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[36]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[36]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[35]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[35]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[34]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[34]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[33]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[33]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[32]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[32]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[31]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[31]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[30]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[30]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[29]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[29]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[28]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[28]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[27]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[27]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[26]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[26]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[25]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[25]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[24]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[24]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[23]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[23]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[22]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[22]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[21]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[21]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[20]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[20]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[19]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[19]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[18]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[18]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[17]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[17]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[16]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[16]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[15]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[15]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[14]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[14]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[13]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[13]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[12]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[12]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[11]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[11]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Ø
+ﬂ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2!
-sl_iport0[10]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[10]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[9]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[9]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[8]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[8]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[7]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[7]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[6]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[6]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[5]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[5]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[4]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[4]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[3]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[3]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[2]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[2]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[1]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[1]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
-Æ
+ﬁ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 U02default:default2 
-sl_iport0[0]2default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+sl_iport0[0]2default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31892default:default8@Z8-3295
 ]
 -Analyzing %s Unisim elements for replacement
@@ -27023,54 +27003,54 @@ a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
-õ
+ù
 Loading clock regions from %s
-13*device2d
-PC:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml2default:defaultZ21-13
-ú
+13*device2f
+R/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml2default:defaultZ21-13
+û
 Loading clock buffers from %s
-11*device2e
-QC:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml2default:defaultZ21-11
-ô
+11*device2g
+S/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml2default:defaultZ21-11
+õ
 &Loading clock placement rules from %s
-318*place2Y
-EC:/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ClockPlacerRules.xml2default:defaultZ30-318
-ó
+318*place2[
+G/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ClockPlacerRules.xml2default:defaultZ30-318
+ô
 )Loading package pin functions from %s...
-17*device2U
-AC:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/PinFunctions.xml2default:defaultZ21-17
-ò
+17*device2W
+C/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/PinFunctions.xml2default:defaultZ21-17
+ö
 Loading package from %s
-16*device2g
-SC:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml2default:defaultZ21-16
-å
+16*device2i
+U/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml2default:defaultZ21-16
+é
 Loading io standards from %s
-15*device2V
-BC:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml2default:defaultZ21-15
-ò
+15*device2X
+D/opt/Xilinx/Vivado/2014.1/data/./parts/xilinx/artix7/IOStandards.xml2default:defaultZ21-15
+ö
 +Loading device configuration modes from %s
-14*device2T
-@C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
+14*device2V
+B/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
 5
 
 Processing XDC Constraints
 244*projectZ1-262
-ƒ
+Ù
 Parsing XDC File [%s]
-179*designutils2ç
-yc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc2default:defaultZ20-179
-Õ
+179*designutils2Ω
+®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc2default:defaultZ20-179
+˝
 Finished Parsing XDC File [%s]
-178*designutils2ç
-yc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc2default:defaultZ20-178
- 
+178*designutils2Ω
+®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc2default:defaultZ20-178
+˙
 Parsing XDC File [%s]
-179*designutils2ì
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:defaultZ20-179
-”
+179*designutils2√
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:defaultZ20-179
+É
 Finished Parsing XDC File [%s]
-178*designutils2ì
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:defaultZ20-178
+178*designutils2√
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:defaultZ20-178
 ?
 &Completed Processing XDC Constraints
 
@@ -27082,17 +27062,17 @@ yc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 36 instances
   CFGLUT5 => SRLC32E: 6 instances
 2default:defaultZ1-111
-±
-%s*synth2°
-åFinished Loading Part and Timing Information : Time (s): cpu = 00:01:45 ; elapsed = 00:01:50 . Memory (MB): peak = 377.758 ; gain = 260.414
+≤
+%s*synth2¢
+çFinished Loading Part and Timing Information : Time (s): cpu = 00:01:53 ; elapsed = 00:02:13 . Memory (MB): peak = 1103.199 ; gain = 461.188
 2default:default
-µ
-%s*synth2•
-êFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 377.758 ; gain = 260.414
+∂
+%s*synth2¶
+ëFinished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:02:15 . Memory (MB): peak = 1103.199 ; gain = 461.188
 2default:default
-ù
-%s*synth2ç
-yFinished RTL Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 377.758 ; gain = 260.414
+û
+%s*synth2é
+zFinished RTL Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:15 . Memory (MB): peak = 1103.199 ; gain = 461.188
 2default:default
 ù
 6No Re-encoding of one hot register '%s' in module '%s'3445*oasys2%
@@ -27110,17 +27090,17 @@ yFinished RTL Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Mem
 6No Re-encoding of one hot register '%s' in module '%s'3445*oasys2%
 current_state_reg2default:default25
 !xsdb_register_p2s__parameterized22default:defaultZ8-3898
-Ì
+ú
 0Net %s in module/entity %s does not have driver.3422*oasys2.
 cnt_config_cs_serial_input2default:default2%
-ila_v4_0_ila_core2default:default2´
-îc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
+ila_v4_0_ila_core2default:default2⁄
+√/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 1502default:default8@Z8-3848
-∑
+Á
 0Net %s in module/entity %s does not have driver.3422*oasys2
 	sl_iport02default:default2
-ila_22default:default2ë
-{c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
+ila_22default:default2¡
+™/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/synth/ila_2.vhd2default:default2
 31862default:default8@Z8-3848
 <
 %s*synth2-
@@ -27221,23 +27201,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  25 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     16 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
 .	   5 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     16 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -27245,7 +27209,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  35 Input     16 Bit        Muxes := 1     
+.	   4 Input     16 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  25 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     16 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -27253,7 +27229,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 1     
+.	  35 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -27261,11 +27237,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      7 Bit        Muxes := 1     
+.	   2 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input      7 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -27277,11 +27257,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   5 Input      4 Bit        Muxes := 4     
+.	   2 Input      4 Bit        Muxes := 13    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 13    
+.	   5 Input      4 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -27293,11 +27273,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      1 Bit        Muxes := 4     
+.	   2 Input      1 Bit        Muxes := 32    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 32    
+.	   8 Input      1 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -28261,14 +28241,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   5 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     16 Bit        Muxes := 5     
 2default:default
 Q
@@ -28278,6 +28250,14 @@ Q
 Q
 %s*synth2B
 .	   6 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -28909,83 +28889,83 @@ WPart Resources:
 DSPs: 240 (col length:80)
 BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 2default:default
-ü
+Œ
 merging register '%s' into '%s'3619*oasys2A
 -reg_3/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_0/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_0/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-ü
+Œ
 merging register '%s' into '%s'3619*oasys2A
 -reg_5/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-†
+œ
 merging register '%s' into '%s'3619*oasys2B
 .reg_86/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-°
+–
 merging register '%s' into '%s'3619*oasys2C
 /reg_887/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-°
+–
 merging register '%s' into '%s'3619*oasys2C
 /reg_88c/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-≥
+‚
 merging register '%s' into '%s'3619*oasys2A
 -reg_4/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2U
-AMU_STATUS[0].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+AMU_STATUS[0].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-≤
+·
 merging register '%s' into '%s'3619*oasys2T
 @MU_STATUS[0].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-«
+ˆ
 merging register '%s' into '%s'3619*oasys2U
 AMU_STATUS[1].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2U
-AMU_STATUS[0].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+AMU_STATUS[0].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-∆
+ı
 merging register '%s' into '%s'3619*oasys2T
 @MU_STATUS[1].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2U
-AMU_STATUS[0].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+AMU_STATUS[0].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-ª
+Í
 merging register '%s' into '%s'3619*oasys2]
 ICNT_WIDTH_STATUS[0].cnt_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-ª
+Í
 merging register '%s' into '%s'3619*oasys2]
 ICNT_WIDTH_STATUS[1].cnt_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-ª
+Í
 merging register '%s' into '%s'3619*oasys2]
 ICNT_WIDTH_STATUS[2].cnt_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
-ª
+Í
 merging register '%s' into '%s'3619*oasys2]
 ICNT_WIDTH_STATUS[3].cnt_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
--reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2¿
-©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Ô
+ÿ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
 ¯
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2f
@@ -28999,11 +28979,11 @@ O\ila_core_inst/xsdb_memory_read_inst/multiple_enable_latency.enable_out_reg[0] 
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2P
 <\ila_core_inst/xsdb_memory_read_inst/curr_read_block_reg[0] 2default:default20
 ila_v4_0_ila__parameterized02default:defaultZ8-3332
-Ò
+†
 merging register '%s' into '%s'3619*oasys2£
 éila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[9:0]2default:default2£
-éila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[9:0]2default:default2À
-¥c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA_nodelay.v2default:default2
+éila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[9:0]2default:default2˙
+„/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA_nodelay.v2default:default2
 1562default:default8@Z8-4471
 ¯
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2f
@@ -29013,9 +28993,9 @@ R\ila_core_inst/xsdb_memory_read_inst/multiple_read_latency.read_enable_out_reg[
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2c
 O\ila_core_inst/xsdb_memory_read_inst/multiple_enable_latency.enable_out_reg[0] 2default:default20
 ila_v4_0_ila__parameterized02default:defaultZ8-3332
-©
-%s*synth2ô
-ÑFinished Cross Boundary Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:10 . Memory (MB): peak = 434.895 ; gain = 317.551
+™
+%s*synth2ö
+ÖFinished Cross Boundary Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:35 . Memory (MB): peak = 1161.234 ; gain = 519.223
 2default:default
 ¢
 %s*synth2í
@@ -29111,45 +29091,45 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 ESequential element (%s) is unused and will be removed from module %s.3332*oasys2@
 ,\ila_core_inst/u_ila_regs/FSM_BRAM_WE_O_reg 2default:default20
 ila_v4_0_ila__parameterized02default:defaultZ8-3332
-û
-%s*synth2é
-zFinished Area Optimization : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 454.816 ; gain = 337.473
+ü
+%s*synth2è
+{Finished Area Optimization : Time (s): cpu = 00:02:15 ; elapsed = 00:02:39 . Memory (MB): peak = 1200.289 ; gain = 558.277
 2default:default
-∆
+¶
 $%s for constraint at line %s of %s.
 3321*oasys2#
 Empty from list2default:default2
-722default:default2ì
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2ï
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2
+722default:default2√
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2≈
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2
 722default:default8@Z8-3321
-∆
+¶
 $%s for constraint at line %s of %s.
 3321*oasys2#
 Empty from list2default:default2
-782default:default2ì
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2ï
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2
+782default:default2√
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2≈
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2
 782default:default8@Z8-3321
-∆
+¶
 $%s for constraint at line %s of %s.
 3321*oasys2#
 Empty from list2default:default2
-792default:default2ì
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2ï
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2
+792default:default2√
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2≈
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2
 792default:default8@Z8-3321
-≠
-%s*synth2ù
-àFinished Applying XDC Timing Constraints : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 454.816 ; gain = 337.473
+Æ
+%s*synth2û
+âFinished Applying XDC Timing Constraints : Time (s): cpu = 00:02:19 ; elapsed = 00:02:44 . Memory (MB): peak = 1200.289 ; gain = 558.277
+2default:default
+°
+%s*synth2ë
+}Finished Timing Optimization : Time (s): cpu = 00:02:20 ; elapsed = 00:02:44 . Memory (MB): peak = 1200.289 ; gain = 558.277
 2default:default
 †
 %s*synth2ê
-|Finished Timing Optimization : Time (s): cpu = 00:02:14 ; elapsed = 00:02:17 . Memory (MB): peak = 454.816 ; gain = 337.473
-2default:default
-ü
-%s*synth2è
-{Finished Technology Mapping : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 454.816 ; gain = 337.473
+|Finished Technology Mapping : Time (s): cpu = 00:02:21 ; elapsed = 00:02:45 . Memory (MB): peak = 1200.289 ; gain = 558.277
 2default:default
 {
 'tying undriven pin %s:%s to constant 0
@@ -29191,9 +29171,9 @@ $%s for constraint at line %s of %s.
 14*common2 
 Synth 8-32952default:default2
 1002default:defaultZ17-14
-ô
-%s*synth2â
-uFinished IO Insertion : Time (s): cpu = 00:02:16 ; elapsed = 00:02:19 . Memory (MB): peak = 454.816 ; gain = 337.473
+ö
+%s*synth2ä
+vFinished IO Insertion : Time (s): cpu = 00:02:21 ; elapsed = 00:02:46 . Memory (MB): peak = 1200.289 ; gain = 558.277
 2default:default
 ;
 %s*synth2,
@@ -29220,13 +29200,13 @@ l
 %s*synth2]
 I+------+------------------+-------+---------+-------+------------------+
 2default:default
-™
-%s*synth2ö
-ÖFinished Renaming Generated Instances : Time (s): cpu = 00:02:16 ; elapsed = 00:02:19 . Memory (MB): peak = 454.816 ; gain = 337.473
+´
+%s*synth2õ
+ÜFinished Renaming Generated Instances : Time (s): cpu = 00:02:21 ; elapsed = 00:02:46 . Memory (MB): peak = 1200.289 ; gain = 558.277
 2default:default
-ß
-%s*synth2ó
-ÇFinished Rebuilding User Hierarchy : Time (s): cpu = 00:02:16 ; elapsed = 00:02:19 . Memory (MB): peak = 454.816 ; gain = 337.473
+®
+%s*synth2ò
+ÉFinished Rebuilding User Hierarchy : Time (s): cpu = 00:02:22 ; elapsed = 00:02:47 . Memory (MB): peak = 1200.289 ; gain = 558.277
 2default:default
 ¢
 %s*synth2í
@@ -29963,17 +29943,17 @@ y|139   |      xsdb_memory_read_inst                                      |cs_ge
 %s*synth2ç
 y+------+-----------------------------------------------------------------+--------------------------------------+------+
 2default:default
-¶
-%s*synth2ñ
-ÅFinished Writing Synthesis Report : Time (s): cpu = 00:02:16 ; elapsed = 00:02:19 . Memory (MB): peak = 454.816 ; gain = 337.473
+ß
+%s*synth2ó
+ÇFinished Writing Synthesis Report : Time (s): cpu = 00:02:22 ; elapsed = 00:02:47 . Memory (MB): peak = 1200.289 ; gain = 558.277
 2default:default
 i
 %s*synth2Z
 FSynthesis finished with 0 errors, 0 critical warnings and 5 warnings.
 2default:default
-£
-%s*synth2ì
-Synthesis Optimization Complete : Time (s): cpu = 00:02:16 ; elapsed = 00:02:19 . Memory (MB): peak = 454.816 ; gain = 337.473
+•
+%s*synth2ï
+ÄSynthesis Optimization Complete : Time (s): cpu = 00:02:22 ; elapsed = 00:02:47 . Memory (MB): peak = 1200.289 ; gain = 558.277
 2default:default
 ]
 -Analyzing %s Unisim elements for replacement
@@ -29983,22 +29963,22 @@ a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
 02default:defaultZ29-28
-ƒ
+Ù
 Parsing XDC File [%s]
-179*designutils2ç
-yc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc2default:defaultZ20-179
-Õ
+179*designutils2Ω
+®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc2default:defaultZ20-179
+˝
 Finished Parsing XDC File [%s]
-178*designutils2ç
-yc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc2default:defaultZ20-178
- 
+178*designutils2Ω
+®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc2default:defaultZ20-178
+˙
 Parsing XDC File [%s]
-179*designutils2ì
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:defaultZ20-179
-”
+179*designutils2√
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:defaultZ20-179
+É
 Finished Parsing XDC File [%s]
-178*designutils2ì
-c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:defaultZ20-178
+178*designutils2√
+Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:defaultZ20-178
 C
 Pushed %s inverter(s).
 98*opt2
@@ -30025,23 +30005,23 @@ U
 %s completed successfully
 29*	vivadotcl2 
 synth_design2default:defaultZ4-42
-¸
+˝
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:02:202default:default2
-00:02:232default:default2
-454.8162default:default2
-268.5432default:defaultZ17-268
+00:02:282default:default2
+00:02:542default:default2
+1211.2892default:default2
+424.9022default:defaultZ17-268
 I
 Renamed %s cell refs.
 330*coretcl2
 1382default:defaultZ2-1174
-
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 454.816 ; gain = 0.000
+Ç
+vreport_utilization: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.30 . Memory (MB): peak = 1211.293 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Mon May 12 10:35:03 20142default:defaultZ17-206
+Mon May 12 20:12:24 20142default:defaultZ17-206

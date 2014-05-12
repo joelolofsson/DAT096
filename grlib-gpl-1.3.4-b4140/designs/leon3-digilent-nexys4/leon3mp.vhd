@@ -38,6 +38,10 @@ use gaisler.misc.all;
 use gaisler.spi.all;
 use gaisler.net.all;
 use gaisler.jtag.all;
+
+library UNISIM;
+use UNISIM.VCOMPONENTS.all;
+
 --pragma translate_off
 use gaisler.sim.all;
 library unisim;
@@ -74,9 +78,9 @@ entity leon3mp is
     RamUB           : out   std_ulogic;
     --RamWait         : in   std_ulogic;
 
-    --QspiCSn         : out   std_ulogic;
+    QspiCSn         : out   std_ulogic;
     --QspiSCK         : out   std_ulogic;
-    --QspiDB          : inout std_logic_vector(3 downto 0);
+    QspiDB          : inout std_logic_vector(3 downto 0);
 
     address         : out   std_logic_vector(22 downto 0);
 
@@ -517,10 +521,105 @@ begin
   noua0 : if CFG_UART1_ENABLE = 0 generate apbo(1) <= apb_none; end generate;
 
 
-  nospi: if CFG_SPICTRL_ENABLE = 0 and CFG_SPIMCTRL = 0 generate
-    apbo(7) <= apb_none;
+  spimc: if CFG_SPICTRL_ENABLE = 0 and CFG_SPIMCTRL = 1 generate
+    spimctrl0 : spimctrl        -- SPI Memory Controller
+      generic map (hindex => 0, hirq => 0, faddr => 16#000#, fmask => 16#ff8#,
+                   ioaddr => 16#002#, iomask => 16#fff#,
+                   spliten => CFG_SPLIT, oepol  => 0,
+                   sdcard => CFG_SPIMCTRL_SDCARD,
+                   readcmd => CFG_SPIMCTRL_READCMD,
+                   dummybyte => CFG_SPIMCTRL_DUMMYBYTE,
+                   dualoutput => CFG_SPIMCTRL_DUALOUTPUT,
+                   scaler => CFG_SPIMCTRL_SCALER,
+                   altscaler => CFG_SPIMCTRL_ASCALER,
+                   pwrupcnt => CFG_SPIMCTRL_PWRUPCNT)
+      port map (rstn, clkm, ahbsi, ahbso(0), spmi, spmo); 
+	  
+
+    miso_pad : inpad generic map (tech => padtech)
+      port map (QspiDB(1), spmi.miso);
+    mosi_pad : outpad generic map (tech => padtech)
+      port map (QspiDB(0), spmo.mosi);      
+--    sck_pad  : outpad generic map (tech => padtech)
+--      port map (spi_clk, spmo.sck);
+    slvsel0_pad : odpad generic map (tech => padtech)
+      port map (QspiCSn, spmo.csn);  
+
+-- STARTUPE2: STARTUP Block
+    STARTUPE2_inst : STARTUPE2
+    generic map (
+        PROG_USR => "FALSE", -- Activate program event security feature. Requires encrypted bitstreams.
+        SIM_CCLK_FREQ => 5.0 -- Set the Configuration Clock Frequency(ns) for simulation.
+    )
+    port map (
+        --CFGCLK => CFGCLK, -- 1-bit output: Configuration main clock output
+        --CFGMCLK => CFGMCLK, -- 1-bit output: Configuration internal oscillator clock output
+        --EOS => EOS, -- 1-bit output: Active high output signal indicating the End Of Startup.
+        --PREQ => PREQ, -- 1-bit output: PROGRAM request to fabric output
+        CLK => '1', -- 1-bit input: User start-up clock input
+        GSR => '0', -- 1-bit input: Global Set/Reset input (GSR cannot be used for the port name)
+        GTS => '0', -- 1-bit input: Global 3-state input (GTS cannot be used for the port name)
+        KEYCLEARB => '0', -- 1-bit input: Clear AES Decrypter Key input from Battery-Backed RAM (BBRAM)
+        PACK => '0', -- 1-bit input: PROGRAM acknowledge input
+        USRCCLKO => spmo.sck, -- 1-bit input: User CCLK input
+        USRCCLKTS => '0', -- 1-bit input: User CCLK 3-state enable input
+        USRDONEO => '1', -- 1-bit input: User DONE pin output control
+        USRDONETS => '0' -- 1-bit input: User DONE 3-state enable output
+    );
+    -- End of STARTUPE2_inst instantiation
+
   end generate;
 
+
+
+
+  spic: if CFG_SPICTRL_ENABLE = 1 generate  -- SPI controller
+    spi1 : spictrl
+      generic map (pindex => 7, paddr => 9, pmask  => 16#fff#, pirq => 11,
+                   fdepth => CFG_SPICTRL_FIFO, slvselen => CFG_SPICTRL_SLVREG,
+                   slvselsz => CFG_SPICTRL_SLVS, odmode => 0, twen => 0)
+      port map (rstn, clkm, apbi, apbo(7), spii, spio, slvsel);
+    spii.spisel <= '1';                 -- Master only
+
+    miso_pad : inpad generic map (tech => padtech)
+      port map (QspiDB(1), spii.miso);
+--      spii.miso <= QspiSDO;
+    mosi_pad : outpad generic map (tech => padtech)
+      port map (QspiDB(0), spio.mosi);
+--      QspiSDI <= spio.mosi;
+
+-- STARTUPE2: STARTUP Block
+    STARTUPE2_inst : STARTUPE2
+    generic map (
+        PROG_USR => "FALSE", -- Activate program event security feature. Requires encrypted bitstreams.
+        SIM_CCLK_FREQ => 5.0 -- Set the Configuration Clock Frequency(ns) for simulation.
+    )
+    port map (
+        --CFGCLK => CFGCLK, -- 1-bit output: Configuration main clock output
+        --CFGMCLK => CFGMCLK, -- 1-bit output: Configuration internal oscillator clock output
+        --EOS => EOS, -- 1-bit output: Active high output signal indicating the End Of Startup.
+        --PREQ => PREQ, -- 1-bit output: PROGRAM request to fabric output
+        CLK => '1', -- 1-bit input: User start-up clock input
+        GSR => '0', -- 1-bit input: Global Set/Reset input (GSR cannot be used for the port name)
+        GTS => '0', -- 1-bit input: Global 3-state input (GTS cannot be used for the port name)
+        KEYCLEARB => '0', -- 1-bit input: Clear AES Decrypter Key input from Battery-Backed RAM (BBRAM)
+        PACK => '0', -- 1-bit input: PROGRAM acknowledge input
+        USRCCLKO => spio.sck, -- 1-bit input: User CCLK input
+        USRCCLKTS => '0', -- 1-bit input: User CCLK 3-state enable input
+        USRDONEO => '1', -- 1-bit input: User DONE pin output control
+        USRDONETS => '0' -- 1-bit input: User DONE 3-state enable output
+    );
+-- End of STARTUPE2_inst instantiation
+      
+--    sck_pad  : outpad generic map (tech => padtech)
+--      port map (QspiSCK, spio.sck);
+    slvsel_pad : odpad generic map (tech => padtech)
+      port map (QspiCSn, slvsel(0));
+--     QspiCSn <= slvsel(0);
+  end generate spic;
+--  nospi: if CFG_SPICTRL_ENABLE = 0 and CFG_SPIMCTRL = 0 generate
+  --    apbo(7) <= apb_none;
+  --  end generate;
 -----------------------------------------------------------------------
 ---  ETHERNET ---------------------------------------------------------
 -----------------------------------------------------------------------
