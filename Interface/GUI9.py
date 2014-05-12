@@ -5,7 +5,7 @@ import io
 import os
 
 import DataStrLeon2
-
+Debug=1
 master = Tk()
 v = IntVar()
 master.wm_title(u"SoundBox") # the u is so that it wont read the text as ASCII signs.
