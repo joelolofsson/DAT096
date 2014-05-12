@@ -2,8 +2,8 @@
 # Vivado v2014.1
 # SW Build 881834 on Fri Apr  4 14:09:24 MDT 2014
 # IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
-# Start of session at: Wed Apr 23 15:14:52 2014
-# Process ID: 4900
+# Start of session at: Mon May 12 13:48:25 2014
+# Process ID: 5824
 # Log file: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp.vdi
 # Journal file: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
@@ -16,7 +16,8 @@ Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Project 1-454] Reading design checkpoint 'C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp' for cell 'io0/inst_ADC_TOP/inst_ADC'
 INFO: [Project 1-454] Reading design checkpoint 'C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp' for cell 'io0/inst_ADC_TOP/ILA_ADC'
-INFO: [Netlist 29-17] Analyzing 538 Unisim elements for replacement
+INFO: [Project 1-454] Reading design checkpoint 'C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp' for cell 'selector/your_instance_name'
+INFO: [Netlist 29-17] Analyzing 550 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2014.1
 Loading clock regions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
@@ -26,7 +27,7 @@ Loading package pin functions from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/art
 Loading package from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
 Loading io standards from C:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml
 Loading device configuration modes from C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/ConfigModes.xml
-INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/constraints/ila.xdc] for cell 'io0/inst_top/your_instance_name'
 Finished Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/constraints/ila.xdc] for cell 'io0/inst_top/your_instance_name'
@@ -34,312 +35,662 @@ Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/
 Finished Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.xdc] for cell 'io0/inst_ADC_TOP/inst_ADC/U0'
 Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_1_0/constraints/ila.xdc] for cell 'io0/inst_ADC_TOP/ILA_ADC'
 Finished Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_1_0/constraints/ila.xdc] for cell 'io0/inst_ADC_TOP/ILA_ADC'
+Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc] for cell 'selector/your_instance_name'
+Finished Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc] for cell 'selector/your_instance_name'
 Parsing XDC File [C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF_BUFG'. [C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc:714]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc:714]
 Finished Parsing XDC File [C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc]
 INFO: [Project 1-538] Ignoring constraints in dcp 'C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp'
 INFO: [Project 1-538] Ignoring constraints in dcp 'C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp'
+INFO: [Project 1-538] Ignoring constraints in dcp 'C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp'
 INFO: [Opt 31-138] Pushed 0 inverter(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 403 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 348 instances
+  A total of 443 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 388 instances
   IOBUF => IOBUF (IBUF, OBUFT): 17 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
 
-link_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 457.660 ; gain = 243.484
-Command: opt_design
+link_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:53 . Memory (MB): peak = 407.820 ; gain = 255.305
+Command: place_design -directive Quick
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
-Running DRC as a precondition to command opt_design
-
-Starting DRC Task
-INFO: [Drc 23-27] Running DRC with 2 threads
-INFO: [Project 1-461] DRC finished with 0 Errors
-INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 458.953 ; gain = 1.293
-
-Starting Logic Optimization Task
-
-Phase 1 Generate And Synthesize Debug Cores
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.1/data/ip'.
-INFO: [IP_Flow 19-3825] Re-using generated and synthesized IP, "xilinx.com:ip:labtools_xsdb_master_lib:3.0", from Vivado Debug IP cache, "c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/02bda3ad".
+INFO: [IP_Flow 19-3825] Re-using generated and synthesized IP, "xilinx.com:ip:labtools_xsdb_master_lib:3.0", from Vivado Debug IP cache, "c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/64359f89".
 INFO: [Common 17-87] Messaging disabled: WARNING limit exceeded.
-get_clocks: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 761.938 ; gain = 285.340
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.245 . Memory (MB): peak = 761.938 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: 124300150
-
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 761.938 ; gain = 302.984
-
-Phase 2 Retarget
-INFO: [Opt 31-138] Pushed 0 inverter(s).
-INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 12f6b609a
-
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 762.910 ; gain = 303.957
-
-Phase 3 Constant Propagation
-INFO: [Opt 31-138] Pushed 0 inverter(s).
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1. Routing contention at pips element DOUTMUX.
-INFO: [Opt 31-10] Eliminated 653 cells.
-Phase 3 Constant Propagation | Checksum: 1e54ba24b
-
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 762.910 ; gain = 303.957
-
-Phase 4 Sweep
-INFO: [Opt 31-12] Eliminated 2602 unconnected nets.
-INFO: [Opt 31-11] Eliminated 194 unconnected cells.
-Phase 4 Sweep | Checksum: 2920628e8
-
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 762.910 ; gain = 303.957
-Ending Logic Optimization Task | Checksum: 2920628e8
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:57 . Memory (MB): peak = 762.910 ; gain = 303.957
-Implement Debug Cores | Checksum: 124300150
-Logic Optimization | Checksum: 18e6f81ba
-
-Starting Power Optimization Task
-
-Starting PowerOpt TimerUpdates Task
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending PowerOpt TimerUpdates Task | Checksum: 2920628e8
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 766.027 ; gain = 3.117
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
-
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 8 BRAM(s) out of a total of 118 has been updated to save power.
-    Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
-Number of BRAM Ports augmented: 134 newly gated: 2 Total Ports: 236
-Number of Flops added for Enable Generation: 2
-
-Ending Power Optimization Task | Checksum: 17af3bd75
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1013.008 ; gain = 250.098
-INFO: [Common 17-83] Releasing license: Implementation
-32 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
-opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 1013.008 ; gain = 555.348
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1013.008 ; gain = 0.000
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Command: place_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+get_clocks: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 712.152 ; gain = 288.078
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 712.152 ; gain = 0.000
 Running DRC as a precondition to command place_design
 INFO: [Drc 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Quick' directive.
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Core
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.123 . Memory (MB): peak = 720.820 ; gain = 0.000
 
 Phase 1.1.1 Mandatory Logic Optimization
-INFO: [Opt 31-140] Inserted 22 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-140] Inserted 18 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 1.1.1 Mandatory Logic Optimization | Checksum: fb470362
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 720.820 ; gain = 0.000
+Phase 1.1.1 Mandatory Logic Optimization | Checksum: eb5cf754
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 720.820 ; gain = 0.000
 
 Phase 1.1.2 Build Super Logic Region (SLR) Database
-Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: fb470362
+Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: eb5cf754
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 720.820 ; gain = 0.000
 
 Phase 1.1.3 Add Constraints
-Phase 1.1.3 Add Constraints | Checksum: fb470362
+Phase 1.1.3 Add Constraints | Checksum: eb5cf754
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 720.820 ; gain = 0.000
 
 Phase 1.1.4 Build Shapes/ HD Config
 
 Phase 1.1.4.1 Build Macros
-Phase 1.1.4.1 Build Macros | Checksum: 1f987e294
+Phase 1.1.4.1 Build Macros | Checksum: fc30b1eb
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 1.1.4 Build Shapes/ HD Config | Checksum: 1f987e294
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 725.223 ; gain = 4.402
+Phase 1.1.4 Build Shapes/ HD Config | Checksum: fc30b1eb
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 725.223 ; gain = 4.402
 
 Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device
 
 Phase 1.1.5.1 Pre-Place Cells
-Phase 1.1.5.1 Pre-Place Cells | Checksum: f2377fde
+Phase 1.1.5.1 Pre-Place Cells | Checksum: 774c0cea
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 725.223 ; gain = 4.402
 
 Phase 1.1.5.2 Implementation Feasibility check
 WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus jb are not locked:  'jb[7]'  'jb[6]'  'jb[5]'  'jb[4]'  'jb[3]' 
-WARNING: [Place 30-568] A LUT 'adderahb_if/n_0_13363_BUFG_inst_i_1' is driving clock pin of 32 registers. This could lead to large hold time violations. First few involved registers are:
-	adderahb_if/hrdata_reg[11] {LDCE}
-	adderahb_if/hrdata_reg[12] {LDCE}
-	adderahb_if/hrdata_reg[14] {LDCE}
-	adderahb_if/hrdata_reg[16] {LDCE}
-	adderahb_if/hrdata_reg[19] {LDCE}
-Phase 1.1.5.2 Implementation Feasibility check | Checksum: f2377fde
+Phase 1.1.5.2 Implementation Feasibility check | Checksum: 774c0cea
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1013.008 ; gain = 0.000
-INFO: [Timing 38-35] Done setting XDC timing constraints.
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 727.473 ; gain = 6.652
 
 Phase 1.1.5.3 Implementation Feasibility check On IDelay
-Phase 1.1.5.3 Implementation Feasibility check On IDelay | Checksum: f2377fde
+Phase 1.1.5.3 Implementation Feasibility check On IDelay | Checksum: 774c0cea
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:25 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 143c0fa02
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 729.258 ; gain = 8.438
+Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 3e568883
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:25 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 729.258 ; gain = 8.438
 
 Phase 1.1.6 Build Placer Netlist Model
 
 Phase 1.1.6.1 Place Init Design
+Phase 1.1.6.1 Place Init Design | Checksum: 10e899254
 
-Phase 1.1.6.1.1 Build Clock Data
-Phase 1.1.6.1.1 Build Clock Data | Checksum: 1b416cbc9
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 743.949 ; gain = 23.129
+Phase 1.1.6 Build Placer Netlist Model | Checksum: 10e899254
 
-Time (s): cpu = 00:01:46 ; elapsed = 00:01:08 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 1.1.6.1 Place Init Design | Checksum: 16e38c20b
-
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:11 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 1.1.6 Build Placer Netlist Model | Checksum: 16e38c20b
-
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:12 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 743.949 ; gain = 23.129
 
 Phase 1.1.7 Constrain Clocks/Macros
 
 Phase 1.1.7.1 Constrain Global/Regional Clocks
-Phase 1.1.7.1 Constrain Global/Regional Clocks | Checksum: 16e38c20b
+Phase 1.1.7.1 Constrain Global/Regional Clocks | Checksum: 10e899254
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:12 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 1.1.7 Constrain Clocks/Macros | Checksum: 16e38c20b
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 743.949 ; gain = 23.129
+Phase 1.1.7 Constrain Clocks/Macros | Checksum: 10e899254
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:12 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 1.1 Placer Initialization Core | Checksum: 16e38c20b
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 743.949 ; gain = 23.129
+Phase 1.1 Placer Initialization Core | Checksum: 10e899254
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:12 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 16e38c20b
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 743.949 ; gain = 23.129
+Phase 1 Placer Initialization | Checksum: 10e899254
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:12 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 743.949 ; gain = 23.129
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 24dfd88e7
+Phase 2 Global Placement | Checksum: a2be05d6
 
-Time (s): cpu = 00:04:08 ; elapsed = 00:02:49 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:10 . Memory (MB): peak = 774.164 ; gain = 53.344
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 24dfd88e7
+Phase 3.1 Commit Multi Column Macros | Checksum: a2be05d6
 
-Time (s): cpu = 00:04:09 ; elapsed = 00:02:49 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:10 . Memory (MB): peak = 774.164 ; gain = 53.344
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 221ccc3bc
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1c9d453b8
 
-Time (s): cpu = 00:04:38 ; elapsed = 00:03:09 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:13 . Memory (MB): peak = 774.164 ; gain = 53.344
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 195ce263d
+Phase 3.3 Area Swap Optimization | Checksum: 168cd8310
 
-Time (s): cpu = 00:04:39 ; elapsed = 00:03:10 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:15 . Memory (MB): peak = 774.164 ; gain = 53.344
 
-Phase 3.4 Timing Path Optimizer
-Phase 3.4 Timing Path Optimizer | Checksum: 183df506e
+Phase 3.4 Commit Small Macros & Core Logic
+Phase 3.4 Commit Small Macros & Core Logic | Checksum: a5eb5127
 
-Time (s): cpu = 00:04:52 ; elapsed = 00:03:18 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:46 . Memory (MB): peak = 788.605 ; gain = 67.785
 
-Phase 3.5 Commit Small Macros & Core Logic
-Phase 3.5 Commit Small Macros & Core Logic | Checksum: 1cd56a8e9
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: a5eb5127
 
-Time (s): cpu = 00:05:24 ; elapsed = 00:03:51 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:50 . Memory (MB): peak = 789.695 ; gain = 68.875
+Phase 3 Detail Placement | Checksum: a5eb5127
 
-Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 1cd56a8e9
-
-Time (s): cpu = 00:05:27 ; elapsed = 00:03:54 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1cd56a8e9
-
-Time (s): cpu = 00:05:28 ; elapsed = 00:03:54 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:50 . Memory (MB): peak = 789.695 ; gain = 68.875
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 PCOPT Shape updates
-Phase 4.1 PCOPT Shape updates | Checksum: 115fa5db0
+Phase 4.1 PCOPT Shape updates | Checksum: 152703303
 
-Time (s): cpu = 00:05:29 ; elapsed = 00:03:55 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:52 . Memory (MB): peak = 789.695 ; gain = 68.875
 
-Phase 4.2 Post Placement Optimization
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 152703303
 
-Phase 4.2.1 Post Placement Timing Optimization
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:52 . Memory (MB): peak = 789.695 ; gain = 68.875
 
-Phase 4.2.1.1 Restore Best Placement
-Phase 4.2.1.1 Restore Best Placement | Checksum: 1e18e797d
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 152703303
 
-Time (s): cpu = 00:06:45 ; elapsed = 00:05:03 . Memory (MB): peak = 1013.008 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-4.011. For the most accurate timing information please run report_timing.
-Phase 4.2.1 Post Placement Timing Optimization | Checksum: 1e18e797d
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:52 . Memory (MB): peak = 789.695 ; gain = 68.875
 
-Time (s): cpu = 00:06:45 ; elapsed = 00:05:03 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 4.2 Post Placement Optimization | Checksum: 1e18e797d
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 60a5eea3
 
-Time (s): cpu = 00:06:45 ; elapsed = 00:05:04 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:53 . Memory (MB): peak = 789.695 ; gain = 68.875
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 60a5eea3
 
-Phase 4.3 Post Placement Cleanup
-Phase 4.3 Post Placement Cleanup | Checksum: 1e18e797d
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:53 . Memory (MB): peak = 789.695 ; gain = 68.875
+Ending Placer Task | Checksum: 22d187a9
 
-Time (s): cpu = 00:06:46 ; elapsed = 00:05:04 . Memory (MB): peak = 1013.008 ; gain = 0.000
-
-Phase 4.4 Placer Reporting
-
-Phase 4.4.1 Restore STA
-Phase 4.4.1 Restore STA | Checksum: 1e18e797d
-
-Time (s): cpu = 00:06:46 ; elapsed = 00:05:04 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 4.4 Placer Reporting | Checksum: 1e18e797d
-
-Time (s): cpu = 00:06:51 ; elapsed = 00:05:07 . Memory (MB): peak = 1013.008 ; gain = 0.000
-
-Phase 4.5 Final Placement Cleanup
-Phase 4.5 Final Placement Cleanup | Checksum: 17e14f253
-
-Time (s): cpu = 00:06:51 ; elapsed = 00:05:07 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17e14f253
-
-Time (s): cpu = 00:06:51 ; elapsed = 00:05:08 . Memory (MB): peak = 1013.008 ; gain = 0.000
-Ending Placer Task | Checksum: 9a4594b6
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:05:08 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:54 . Memory (MB): peak = 789.695 ; gain = 68.875
 INFO: [Common 17-83] Releasing license: Implementation
-43 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+27 Infos, 6 Warnings, 1 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:06:56 ; elapsed = 00:05:11 . Memory (MB): peak = 1013.008 ; gain = 0.000
+place_design: Time (s): cpu = 00:02:41 ; elapsed = 00:02:50 . Memory (MB): peak = 789.695 ; gain = 381.875
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.008 ; gain = 0.000
-write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1013.008 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.803 . Memory (MB): peak = 1013.008 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 789.695 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:53 . Memory (MB): peak = 789.695 ; gain = 0.000
+report_clock_utilization: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 789.695 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 789.695 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+Phase 1 Physical Synthesis Initialization | Checksum: 6d58f71e
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 813.438 ; gain = 16.992
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.356 . Memory (MB): peak = 813.445 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-7.116 | TNS=-347.473 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 15 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_rep__0. Replicated 7 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_452. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]. Replicated 8 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_rep__1. Replicated 8 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[0]_rep__0. Replicated 8 times.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[15]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1_i_1 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[0]_rep. Replicated 10 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/O18. Replicated 6 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/O69 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[0]_rep__1. Replicated 6 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/O4[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/O8. Replicated 8 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[0]_rep__2. Replicated 6 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/O34. Replicated 7 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/O9. Replicated 8 times.
+INFO: [Physopt 32-29] End Pass 1. Optimized 12 nets. Created 83 new instances.
+
+INFO: [Physopt 32-76] Pass 2. Identified 12 candidate nets for fanout optimization.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[15]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1_i_1 was replaced.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_repN_1. Net driver io0/inst_ADC_TOP/isnt_filter/i_reg[1]_replica_1 was replaced.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/O69. Replicated 8 times.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O18_repN_1. Net driver io0/inst_ADC_TOP/isnt_filter/g2_b25_i_2_replica_1 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_452. Replicated 2 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_rep__0. Net driver io0/inst_ADC_TOP/isnt_filter/i_reg[1]_rep__0 was replaced.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/O4[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[0]_rep__1. Net driver io0/inst_ADC_TOP/isnt_filter/i_reg[0]_rep__1 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_454. Replicated 2 times.
+INFO: [Physopt 32-29] End Pass 2. Optimized 3 nets. Created 12 new instances.
+
+INFO: [Physopt 32-76] Pass 3. Identified 5 candidate nets for fanout optimization.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_repN_1. Net driver io0/inst_ADC_TOP/isnt_filter/i_reg[1]_replica_1 was replaced.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_rep__0. Net driver io0/inst_ADC_TOP/isnt_filter/i_reg[1]_rep__0 was replaced.
+INFO: [Physopt 32-29] End Pass 3. Optimized 0 net. Created 0 new instance.
+
+Phase 2 Fanout Optimization | Checksum: 128332e6e
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:02:19 . Memory (MB): peak = 825.137 ; gain = 28.691
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/O7[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_12
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[127]_127[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[127][3]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_197.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_197
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_592.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_592
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[23]_i_6.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array[23]_i_6
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[63]_i_2.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[63]_i_2
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[57]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[57]_i_1
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[60]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[60]_i_1
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[61]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[61]_i_1
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[27]_i_6.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array[27]_i_6
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[23]_i_7.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array[23]_i_7
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_452_repN.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_452_replica
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_rep__0_repN.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/i_reg[1]_rep__0_replica
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_194.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_194
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_195.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_195
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/O7[1].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_14
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[91]_91[1].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[91][1]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_211.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_211
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_649.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_649
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/O7[0].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_15
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[106]_106[0].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[106][0]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_220.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_220
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_685.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_685
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[126]_126[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[126][3]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_196.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_196
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[107]_107[0].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[107][0]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[62]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[62]_i_1
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[56]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[56]_i_1
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[59]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[59]_i_1
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[15]_15[1].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[15][1]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_214.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_214
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_660.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_660
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/O7[2].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_13
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[43]_43[2].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[43][2]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_208.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_208
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_637.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_637
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[78]_78[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[78][3]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_580.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_580
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[23]_i_10.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[23]_i_10
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[27]_i_7.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array[27]_i_7
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[53]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[53]_i_1
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[79]_79[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[79][3]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/O7[5].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_10
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[95]_95[5].  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[95][5]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_179.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_179
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_520.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_520
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[56]_56[2].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[56][2]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_209.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_209
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_641.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_641
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[23]_i_11.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[23]_i_11
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[59]_59[2].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[59][2]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[42]_42[5].  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[42][5]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_184.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_184
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_541.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_541
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[43]_43[5].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[43][5]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[55]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[55]_i_1
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_215.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_215
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[94]_94[5].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[94][5]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[74]_74[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[74][3]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_581.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_581
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[58]_i_1.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[58]_i_1
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[28]_28[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[28][3]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_199.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_199
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_600.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_600
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[108]_108[0].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[108][0]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_210.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_210
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_684.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_684
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[90]_90[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[90][3]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_585.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_585
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[75]_75[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[75][3]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[23]_i_5.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array[23]_i_5
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[90]_90[1].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[90][1]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[23]_i_4.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array[23]_i_4
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[19]_i_4.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array[19]_i_4
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[47]_47[2].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[47][2]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[75]_75[1].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[75][1]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_636.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_636
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_645.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_645
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[19]_i_7.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[19]_i_7
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[110]_110[5].  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[110][5]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_180.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_180
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_524.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_524
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[19]_i_5.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[19]_i_5
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[111]_111[5].  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[111][5]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[39]_39[2].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[39][2]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[63]_63[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[63][3]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_201.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_201
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_608.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_608
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_638.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_638
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[27]_i_10.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[27]_i_10
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[74]_74[1].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[74][1]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[124]_124[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[124][3]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[46]_46[2].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[46][2]
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[19]_i_6.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[19]_i_6
+INFO: [Physopt 32-662] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[27]_i_11.  Did not re-place instance io0/inst_ADC_TOP/isnt_filter/y_array[27]_i_11
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[102]_102[0].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[102][0]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[14]_14[1].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[14][1]
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_686.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_686
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_repN_3.  Re-placed instance io0/inst_ADC_TOP/isnt_filter/i_reg[1]_replica_3
+INFO: [Physopt 32-663] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[108]_108[3].  Re-placed instance io0/inst_ADC_TOP/isnt_filter/x_array_reg[108][3]
+INFO: [Physopt 32-661] Optimized 63 nets.  Re-placed 63 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.189 | TNS=-293.281 |
+Phase 3 Placement Based Optimization | Checksum: 1a47b25d6
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:03:22 . Memory (MB): peak = 825.215 ; gain = 28.770
+
+Phase 4 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Phase 4 Rewire | Checksum: 1a47b25d6
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:03:23 . Memory (MB): peak = 825.215 ; gain = 28.770
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 99 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[4]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_11 was replaced.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[0]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_15 was replaced.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[58]_58[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[59]_59[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[46]_46[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[8]_8[25]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[14]_14[19]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[62]_62[0]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[2]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_13 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[120]_120[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[63]_63[0]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[12]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_3 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[92]_92[12]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[13]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_2 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[15]_15[18]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[91]_91[13]. Replicated 1 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[11]_11[22] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[9]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_6 was replaced.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[8]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_7 was replaced.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[11]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_4 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[27]_27[0]. Replicated 1 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[56]_56[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[111]_111[12]. Replicated 1 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[10]_10[23] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[108]_108[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/O69_repN_9. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[95]_95[8]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[6]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_9 was replaced.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[10]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_5 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[47]_47[0]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[14]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_1 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[78]_78[14]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[79]_79[14]. Replicated 1 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/O7[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[94]_94[12] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/O7[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[44]_44[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[42]_42[25]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[60]_60[0]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net io0/inst_ADC_TOP/isnt_filter/O7[7]. Net driver io0/inst_ADC_TOP/isnt_filter/y_array1__1_i_8 was replaced.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[126]_126[12]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[43]_43[24]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[14]_14[0]. Replicated 1 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[106]_106[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[106]_106[11]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[62]_62[9]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[107]_107[28]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[52]_52[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[68]_68[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[26]_26[0]. Replicated 1 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[120]_120[15] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[75]_75[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[7]_7[26]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[76]_76[25]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[106]_106[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[104]_104[10]. Replicated 1 times.
+INFO: [Physopt 32-572] Net io0/inst_ADC_TOP/isnt_filter/x_array_reg[92]_92[4] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 46 nets. Created 35 new instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.189 | TNS=-293.281 |
+Phase 5 Critical Cell Optimization | Checksum: 157f3fe8a
+
+Time (s): cpu = 00:05:13 ; elapsed = 00:05:12 . Memory (MB): peak = 825.691 ; gain = 29.246
+
+Phase 6 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+Phase 6 DSP Register Optimization | Checksum: 157f3fe8a
+
+Time (s): cpu = 00:05:14 ; elapsed = 00:05:12 . Memory (MB): peak = 825.691 ; gain = 29.246
+
+Phase 7 BRAM Register Optimization
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a10.x[0].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/dme.dd0[0].ddata0/xc2v.x0/a10.x[1].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/dme.dd0[1].ddata0/xc2v.x0/a10.x[0].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/dme.dd0[1].ddata0/xc2v.x0/a10.x[1].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[0].idata0/xc2v.x0/a11.x[0].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[0].idata0/xc2v.x0/a11.x[1].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[0].idata0/xc2v.x0/a11.x[2].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[0].idata0/xc2v.x0/a11.x[3].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[0].itags0/xc2v.x0/a9.x[0].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[0].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[1].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[2].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[1].idata0/xc2v.x0/a11.x[3].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'leon3gen.cpu[0].u0/leon3x0/cmem0/ime.im0[1].itags0/xc2v.x0/a9.x[0].r' is 0. Skip BRAM Register Optimization on the cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+Phase 7 BRAM Register Optimization | Checksum: 157f3fe8a
+
+Time (s): cpu = 00:05:14 ; elapsed = 00:05:13 . Memory (MB): peak = 825.691 ; gain = 29.246
+
+Phase 8 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+Phase 8 Shift Register Optimization | Checksum: 157f3fe8a
+
+Time (s): cpu = 00:05:14 ; elapsed = 00:05:13 . Memory (MB): peak = 825.691 ; gain = 29.246
+
+Phase 9 Critical Pin Optimization
+INFO: [Physopt 32-606] Identified 100 candidate nets for critical-pin optimization.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[91]_91[27].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_19.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_42.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[63].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[57].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[60].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_54.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_37.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/O69_repN_9_repN.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_65.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[56].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[59].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[127]_127[1].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_42.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[53].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[106]_106[0].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_44.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_705.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_452_repN.  Swapped 16 critical pin.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_rep__0_repN.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_38.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_41.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_629.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[55].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[3]_3[11].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_23.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_repN_5.  Swapped 3 critical pin.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1].  Swapped 30 critical pin.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_28.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_419.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[58].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[15]_15[2].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[6]_6[2].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_628.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_704.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[1]_repN_1.  Swapped 4 critical pin.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_43.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_672.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[120]_120[15].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[43]_43[3].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_605.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[38]_38[2].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_638.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_55.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[7]_7[26]_repN.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[75]_75[2].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_40.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_613.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_653.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[31]_31[1].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_664.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[30]_30[2].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[44]_44[23].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_46.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_61.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[6]_6[27].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[26]_26[8].  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_439.  Swapped 1 critical pins.
+INFO: [Physopt 32-613] Processed net io0/inst_ADC_TOP/isnt_filter/x_array_reg[92]_92[26].  Swapped 1 critical pins.
+INFO: [Physopt 32-608] Optimized 59 nets.  Swapped 108 pins.
+Phase 9 Critical Pin Optimization | Checksum: 157f3fe8a
+
+Time (s): cpu = 00:05:51 ; elapsed = 00:05:50 . Memory (MB): peak = 825.691 ; gain = 29.246
+
+Phase 10 Very High Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net rst0/p_0_in_0. Replicated 24 times.
+INFO: [Physopt 32-29] End Pass 1. Optimized 1 net. Created 24 new instances.
+
+Phase 10 Very High Fanout Optimization | Checksum: 1f4bd0b5b
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:06:56 . Memory (MB): peak = 833.145 ; gain = 36.699
+
+Phase 11 BRAM Enable Optimization
+Phase 11 BRAM Enable Optimization | Checksum: 1f4bd0b5b
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:06:56 . Memory (MB): peak = 833.145 ; gain = 36.699
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.439 . Memory (MB): peak = 833.145 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-5.724 | TNS=-268.189 |
+Ending Physical Synthesis Task | Checksum: 24707d75e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:06:57 . Memory (MB): peak = 833.145 ; gain = 36.699
+INFO: [Common 17-83] Releasing license: Implementation
+315 Infos, 87 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:08:11 ; elapsed = 00:08:38 . Memory (MB): peak = 833.145 ; gain = 43.449
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 833.145 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 833.145 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -355,27 +706,425 @@ INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 
 Starting Route Task
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: c0377ecc
+Phase 1 Build RT Design | Checksum: 7753f20a
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:00:58 . Memory (MB): peak = 1064.168 ; gain = 51.160
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:04 . Memory (MB): peak = 995.773 ; gain = 161.648
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: c0377ecc
+Phase 2.1 Create Timer | Checksum: 7753f20a
 
-Time (s): cpu = 00:01:24 ; elapsed = 00:00:59 . Memory (MB): peak = 1066.004 ; gain = 52.996
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:07 . Memory (MB): peak = 997.457 ; gain = 163.332
  Number of Nodes with overlaps = 0
 
 Phase 2.2 Update Timing
-WARNING: [Route 35-41] Unusually high hold violations were detected on a large number of pins. This may result in high router runtime.
-Phase 2.2 Update Timing | Checksum: f959d400
+Phase 2.2 Update Timing | Checksum: 10bce8daa
 
-Time (s): cpu = 00:02:08 ; elapsed = 00:01:27 . Memory (MB): peak = 1103.977 ; gain = 90.969
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.85  | TNS=-306   | WHS=-1.96  | THS=-4.44e+003|
+Time (s): cpu = 00:02:46 ; elapsed = 00:02:09 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.99  | TNS=-342   | WHS=-0.788 | THS=-2.21e+003|
 
-Phase 2 Router Initialization | Checksum: f959d400
+Phase 2 Router Initialization | Checksum: 10bce8daa
 
-Time (s): cpu = 00:02:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1104.668 ; gain = 91.660
+Time (s): cpu = 00:03:08 ; elapsed = 00:02:25 . Memory (MB): peak = 1185.129 ; gain = 351.004
 
 Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: cf091b96
+
+Time (s): cpu = 00:03:42 ; elapsed = 00:02:43 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 5860
+ Number of Nodes with overlaps = 1271
+ Number of Nodes with overlaps = 472
+ Number of Nodes with overlaps = 239
+ Number of Nodes with overlaps = 117
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: a5d042a8
+
+Time (s): cpu = 00:06:20 ; elapsed = 00:04:17 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-6.02  | TNS=-849   | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 3269531c
+
+Time (s): cpu = 00:06:22 ; elapsed = 00:04:19 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 3269531c
+
+Time (s): cpu = 00:06:26 ; elapsed = 00:04:23 . Memory (MB): peak = 1185.129 ; gain = 351.004
+Phase 4.1.2 GlobIterForTiming | Checksum: 11aa86a8d
+
+Time (s): cpu = 00:06:32 ; elapsed = 00:04:29 . Memory (MB): peak = 1185.129 ; gain = 351.004
+Phase 4.1 Global Iteration 0 | Checksum: 11aa86a8d
+
+Time (s): cpu = 00:06:32 ; elapsed = 00:04:29 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 543
+ Number of Nodes with overlaps = 553
+ Number of Nodes with overlaps = 168
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 81ec5ebf
+
+Time (s): cpu = 00:08:20 ; elapsed = 00:05:45 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.99  | TNS=-1.18e+003| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.2.2 GlobIterForTiming
+
+Phase 4.2.2.1 Update Timing
+Phase 4.2.2.1 Update Timing | Checksum: 11c89329d
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:05:47 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 4.2.2.2 Fast Budgeting
+Phase 4.2.2.2 Fast Budgeting | Checksum: 11c89329d
+
+Time (s): cpu = 00:08:26 ; elapsed = 00:05:51 . Memory (MB): peak = 1185.129 ; gain = 351.004
+Phase 4.2.2 GlobIterForTiming | Checksum: 8a8fd80c
+
+Time (s): cpu = 00:08:28 ; elapsed = 00:05:53 . Memory (MB): peak = 1185.129 ; gain = 351.004
+Phase 4.2 Global Iteration 1 | Checksum: 8a8fd80c
+
+Time (s): cpu = 00:08:29 ; elapsed = 00:05:54 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 1916
+ Number of Nodes with overlaps = 647
+ Number of Nodes with overlaps = 109
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: 6293eba1
+
+Time (s): cpu = 00:10:02 ; elapsed = 00:06:59 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.97  | TNS=-810   | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 6293eba1
+
+Time (s): cpu = 00:10:03 ; elapsed = 00:07:00 . Memory (MB): peak = 1185.129 ; gain = 351.004
+Phase 4 Rip-up And Reroute | Checksum: 6293eba1
+
+Time (s): cpu = 00:10:04 ; elapsed = 00:07:00 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 6293eba1
+
+Time (s): cpu = 00:10:09 ; elapsed = 00:07:04 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.97  | TNS=-810   | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5 Delay CleanUp | Checksum: 4d53818c
+
+Time (s): cpu = 00:11:13 ; elapsed = 00:07:37 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: 4d53818c
+
+Time (s): cpu = 00:11:13 ; elapsed = 00:07:37 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 4d53818c
+
+Time (s): cpu = 00:11:21 ; elapsed = 00:07:42 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.95  | TNS=-718   | WHS=-0.481 | THS=-54.9  |
+
+Phase 7 Post Hold Fix | Checksum: 14c974690
+
+Time (s): cpu = 00:11:24 ; elapsed = 00:07:46 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 11.1202 %
+  Global Horizontal Routing Utilization  = 12.2805 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 81.0811%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 77.9412%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X23Y49 -> INT_R_X23Y49
+   INT_L_X16Y43 -> INT_L_X16Y43
+   INT_L_X18Y42 -> INT_L_X18Y42
+Phase 8 Route finalize | Checksum: 14c974690
+
+Time (s): cpu = 00:11:25 ; elapsed = 00:07:46 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 14c974690
+
+Time (s): cpu = 00:11:25 ; elapsed = 00:07:47 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 14c530371
+
+Time (s): cpu = 00:11:29 ; elapsed = 00:07:54 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Phase 11 Post Router Timing
+
+Phase 11.1 Update Timing
+Phase 11.1 Update Timing | Checksum: 14c530371
+
+Time (s): cpu = 00:11:36 ; elapsed = 00:07:58 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.95  | TNS=-718   | WHS=-0.141 | THS=-45.6  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 11 Post Router Timing | Checksum: 14c530371
+
+Time (s): cpu = 00:11:36 ; elapsed = 00:07:59 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: 14c530371
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:07:59 . Memory (MB): peak = 1185.129 ; gain = 351.004
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:08:02 . Memory (MB): peak = 1185.129 ; gain = 351.004
+INFO: [Common 17-83] Releasing license: Implementation
+329 Infos, 88 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:11:50 ; elapsed = 00:08:14 . Memory (MB): peak = 1185.129 ; gain = 351.984
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 1185.129 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:01:05 . Memory (MB): peak = 1185.129 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/leon3mp_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:21 ; elapsed = 00:00:40 . Memory (MB): peak = 1185.129 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:56 ; elapsed = 00:00:45 . Memory (MB): peak = 1185.129 ; gain = 0.000
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1185.129 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+WARNING: [Constraints 18-838] Failed to create SRL placer macro for cell selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1. Bel does not match with the valid locations at which this inst can be placed.
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+Phase 1 Physical Synthesis Initialization | Checksum: 2d25f9a47
+----- Checksum: : 234c669d3 : 9d993074 
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:26 . Memory (MB): peak = 1185.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1185.129 ; gain = 0.000
+
+Phase 2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-680.009 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/p_0_in_0[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/O4[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/y_array0[62]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[59]_i_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[55]_i_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[55]_i_14. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/n_87_y_array1__0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/n_106_y_array1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/O7[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_19. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_25. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_32. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array1_i_51. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net io0/inst_ADC_TOP/isnt_filter/n_0_y_array[62]_i_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r_reg[data][1].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][1]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-679.582 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data3[2].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][6]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-679.092 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data6[0].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][16]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-678.708 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data1[2].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][22]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-678.324 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data7[0].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][8]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-677.940 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data7[1].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][9]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-677.385 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-702] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][4].  Re-placed instance eth0.e1/m100.u0/ethc0/r_reg[txlength][4]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-667.834 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-702] Processed net eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_2__0.  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r[data][31]_i_2__0
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-662.393 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-702] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_2__0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r_reg[main_state][9]_i_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_8. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_16.  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/FSM_onehot_r[main_state][9]_i_16
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-661.435 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-702] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_16. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_1__1.  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r[data][31]_i_1__1
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-658.049 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data7[2].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][10]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-657.947 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data5[0].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][24]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-657.734 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-702] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-657.557 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data2[0].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][12]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-657.552 | WHS=-0.119 | THS=-0.119 |
+INFO: [Physopt 32-663] Processed net eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data0[2].  Re-placed instance eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][30]
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-5.894 | TNS=-657.548 | WHS=-0.119 | THS=-0.119 |
+Phase 2 Critical Path Optimization | Checksum: 2bd474633
+----- Checksum: : 1f42c76bc : c91acf77 
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:03:28 . Memory (MB): peak = 1211.039 ; gain = 25.910
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1211.039 ; gain = 0.000
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=-5.894 | TNS=-657.548 | WHS=-0.119 | THS=-0.119 |
+Ending Physical Synthesis Task | Checksum: 2bd474633
+----- Checksum: : 1f42c76bc : c91acf77 
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:03:28 . Memory (MB): peak = 1211.039 ; gain = 25.910
+INFO: [Common 17-83] Releasing license: Implementation
+389 Infos, 169 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:04:12 ; elapsed = 00:03:42 . Memory (MB): peak = 1211.039 ; gain = 25.910
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1211.039 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1211.039 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 1211.039 ; gain = 0.000
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 48 Warnings, 1 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./leon3mp.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory for users of free Webpack licenses. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-185] WebTalk report has not been sent to Xilinx. Please check your network and proxy settings.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:01:55 ; elapsed = 00:02:02 . Memory (MB): peak = 1211.039 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 14:21:04 2014...

@@ -82,9 +82,11 @@ entity leon3mp is
 
     data            : inout std_logic_vector(15 downto 0);
 
+    diode_out : OUT STD_LOGIC_vector(2 downto 0);
+
     -- 7 segment display
-    --seg             : out   std_logic_vector(6 downto 0);
-    --an              : out   std_logic_vector(7 downto 0);
+    seven_seg_out   : out   std_logic_vector(6 downto 0);
+    seven_seg_sel   : out   std_logic_vector(7 downto 0);
 
     -- LEDs
     Led             : out   std_logic_vector(15 downto 0);
@@ -94,7 +96,7 @@ entity leon3mp is
 
     -- Buttons
     btnCpuResetn    : in    std_ulogic;
-    btn             : in    std_logic_vector(4 downto 0);
+    buttons_in      : in    std_logic_vector(4 downto 0);
 
     -- VGA Connector
     --vgaRed          : out   std_logic_vector(2 downto 0);
@@ -166,6 +168,24 @@ architecture rtl of leon3mp is
     spiNsync    :   out std_logic
     );
 end component dummyapb;
+
+component button_and_hex_wrapper
+  generic (
+    pindex : integer := 0;
+    paddr : integer := 0; 
+    pmask : integer := 16#002#);
+  port (
+    rstn : in std_ulogic;
+    clk : in std_ulogic;
+    apbi : in apb_slv_in_type;
+    apbo : out apb_slv_out_type;
+	Buttons_in : IN STD_LOGIC_VECTOR(4 downto 0);
+	seven_seg_out : OUT STD_LOGIC_VECTOR(6 downto 0);
+	seven_seg_sel : OUT STD_LOGIC_VECTOR(7 downto 0);
+	diode_out : OUT STD_LOGIC_VECTOR(2 downto 0)
+    );
+end component;
+
   component PLLE2_ADV
   generic (
      BANDWIDTH : string := "OPTIMIZED";
@@ -588,18 +608,34 @@ begin
    -- port map (rstn => rstn, clk => clkm, apbi => apbi, apbo => apbo(8), sw=>sw);
 
 ----------------------------------------------------------------------
-----------  Sklansky Adder on AHB ------------------------------------
+----------  ADC/DAC Adder on APB ------------------------------------
 ----------------------------------------------------------------------
-adderahb_if : adderahb
-    generic map (hindex => 7, haddr => 16#500#, hmask => 16#FFF#) 
-    port map (rstn => rstn, clk => clkm, ahbsi => ahbsi, ahbso => ahbso(7));
-
 -----------------------------------------------------------------------
 io0 : dummyapb
      generic map (pindex => 8, paddr => 8, pmask => 16#FFC#)
      port map (rstn,clkm,clk,vauxp3,vauxn3, apbi, apbo(8), ampPWM, led(15 downto 4),jb(1),
                 jb(2),jb(0)); --added another clk
 ampSD <='1';
+
+----------------------------------------------------------------------
+----------  buttons for preset selection Adder on APB ------------------------------------
+----------------------------------------------------------------------
+
+selector : button_and_hex_wrapper
+  generic map (
+    pindex => 13,
+    paddr => 13,
+    pmask => 16#FFF#)
+  port map (
+    rstn => rstn,
+    clk => clkm,
+    apbi => apbi,
+    apbo => apbo(13),
+	Buttons_in => buttons_in,
+	seven_seg_out => seven_seg_out,
+	seven_seg_sel => seven_seg_sel,
+	diode_out => diode_out
+    );
 -----------------------------------------------------------------------
 ---  Boot message  ----------------------------------------------------
 -----------------------------------------------------------------------
@@ -607,7 +643,7 @@ ampSD <='1';
 -- pragma translate_off
   x : report_design
     generic map (
-      msg1 => "LEON3 Demonstration design for Digilent NEXYS 3 board",
+      msg1 => "The most awesome and featured Sound effect box ever!",
       fabtech => tech_table(fabtech), memtech => tech_table(memtech),
       mdel => 1
       );

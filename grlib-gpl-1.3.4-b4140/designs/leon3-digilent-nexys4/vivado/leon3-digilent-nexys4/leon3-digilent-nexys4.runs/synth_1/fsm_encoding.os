@@ -1,8 +1,8 @@
 
  add_fsm_encoding \
-       {apbuart__parameterized0.r_reg[rxst} \
+       {dcom.r_reg[st} \
        { }  \
-       {{000 000010} {001 000100} {010 001000} {011 010000} {100 100000} }
+       {{000 0000010} {001 0000100} {010 0010000} {011 0100000} {100 0001000} {101 1000000} }
 
  add_fsm_encoding \
        {greth_tx__parameterized0.r_reg[def_st} \

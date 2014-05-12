@@ -27,7 +27,7 @@ library IEEE;
 -- ! Use of standard logic arguments
 use IEEE.STD_LOGIC_1164.ALL;
 
--- ! This component handles the ADC and the components needed to complete the decimation.
+-- ! This component handles the ADC, a buffer and the components needed to complete the decimation.
 
 entity ADC_TOP is
     Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 50 MHz.
@@ -139,7 +139,7 @@ begin
 
 ILA_ADC : ila_1
   PORT MAP (
-    clk => clk,
+    clk => sampleclk,
     probe0 => sampledvalue,
     probe1 => filterout(31 downto 16)
   );
@@ -149,7 +149,7 @@ process(clk,rst)
 begin
     if rst = '0' then
 		den_in <= '0';
-    elsif rising_edge(clk) then 
+    elsif rising_edge(clk100) then 
 			lastsampleclk <= sampleclk;
       if (sampleclk = '1') and (lastsampleclk = '0') then
 				den_in <= '1';
@@ -191,7 +191,7 @@ inst_ADC : ADC
     dwe_in => dwe_in,
     drdy_out => open,
     do_out => sampledvalue,
-    dclk_in => clk,
+    dclk_in => clk100,
     reset_in => inv_rst,
     convstclk_in => sampleclk,
     vp_in => '0',

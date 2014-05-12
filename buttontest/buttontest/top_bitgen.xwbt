@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\CHALMERS\DAT096\softcore\buttontest\buttontest\top.ncd
+OUTFILE=C:\CHALMERS\DAT096\softcore\buttontest\buttontest\top.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=C:\CHALMERS\DAT096\softcore\buttontest\buttontest
+LICENSE=WebPack
+USER_INFO=210655449_178259189_210574059_844

@@ -1,0 +1,34 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE TRUE
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE verilogsim false
+SET_PREFERENCE vhdlsim true
+SET_PREFERENCE subworkingdirectory ./tmp/_cg/
+SET_PREFERENCE workingdirectory .\tmp\
+SET_PREFERENCE speedgrade -1
+SET_PREFERENCE simulationfiles Structural
+SET_PREFERENCE asysymbol true
+SET_PREFERENCE addpads false
+SET_PREFERENCE outputdirectory ./
+SET_PREFERENCE device xc7a100t
+SET_PREFERENCE projectname cs
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE foundationsym false
+SET_PREFERENCE package csg324
+SET_PREFERENCE createndf false
+SET_PREFERENCE designentry VHDL
+SET_PREFERENCE devicefamily artix7
+SET_PREFERENCE formalverification false
+SET_PREFERENCE removerpms false
+SET_PARAMETER component_name cs
+SET_CORE_CLASS PSF
+SET_CORE_PATH C:\Xilinx\14.7\ISE_DS\ISE\coregen\iprepo\Chipscope\pcores\agilent_atc2_v1_05_a\
+SET_CORE_GUIPATH C:\Xilinx\14.7\ISE_DS\ISE\coregen\iprepo\Chipscope\pcores\agilent_atc2_v1_05_a\tooldata\coregen\gui\agilent_atc2.tcl
+SET_CORE_NAME ATC2 (ChipScope Pro - Agilent Trace Core 2)
+SET_CORE_VERSION 1.05.a
+SET_CORE_VLNV xilinx.com:ip:agilent_atc2:1.05.a
+SET_CORE_DATASHEET C:\Xilinx\14.7\ISE_DS\ISE\coregen\iprepo\Chipscope\pcores\agilent_atc2_v1_05_a\doc\agilent_atc2.pdf
+ADD_CORE_DOCUMENT <C:\Xilinx\14.7\ISE_DS\ISE\coregen\iprepo\Chipscope\pcores\agilent_atc2_v1_05_a\doc\agilent_atc2.pdf><Data Sheet>
+ADD_CORE_DOCUMENT <C:\Xilinx\14.7\ISE_DS\ISE\coregen\iprepo\Chipscope\pcores\agilent_atc2_v1_05_a\doc\html\change_log.html><Version Information>

@@ -1,0 +1,1 @@
+vhdtdtfi -prj buttontest -o C:/CHALMERS/DAT096/softcore/buttontest/buttontest/RGB_diode_controller.vhi -module RGB_diode_controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../../../../designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/RGB_diode_controller.vhd 

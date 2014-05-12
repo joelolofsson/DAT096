@@ -57,7 +57,7 @@ package config is
   constant CFG_DLINE : integer := 4;
   constant CFG_DREPL : integer := 0;
   constant CFG_DLOCK : integer := 0;
-  constant CFG_DSNOOP : integer := 0 + 0 + 4*0;
+  constant CFG_DSNOOP : integer := 1 + 0 + 4*0;
   constant CFG_DFIXED : integer := 16#0#;
   constant CFG_DLRAMEN : integer := 0;
   constant CFG_DLRAMADDR: integer := 16#8F#;
@@ -92,7 +92,7 @@ package config is
   constant CFG_AHB_MONWAR : integer := 0;
   constant CFG_AHB_DTRACE : integer := 0;
 -- DSU UART
-  constant CFG_AHB_UART : integer := 0;
+  constant CFG_AHB_UART : integer := 1;
 -- JTAG based DSU interface
   constant CFG_AHB_JTAG : integer := 0;
 -- Ethernet DSU
@@ -157,7 +157,7 @@ package config is
 
 
 -- UART 1
-  constant CFG_UART1_ENABLE : integer := 1;
+  constant CFG_UART1_ENABLE : integer := 0;
   constant CFG_UART1_FIFO : integer := 1;
 
 -- LEON3 interrupt controller

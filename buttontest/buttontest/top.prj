@@ -1,0 +1,8 @@
+vhdl work "../../../../../designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/BCD_block.vhd"
+vhdl work "../../../../../designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/clk_div_seven_seg.vhd"
+vhdl work "../../../../../designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bounce_filter.vhd"
+vhdl work "../../../../../designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bin2bcd.vhd"
+vhdl work "../../../../../designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/seven_seg_control.vhd"
+vhdl work "../../../../../designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/RGB_diode_controller.vhd"
+vhdl work "../../../../../designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/button_control.vhd"
+vhdl work "top.vhd"

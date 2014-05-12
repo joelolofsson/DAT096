@@ -1,0 +1,118 @@
+
+
+NET "Buttons_in[0]" LOC = F15;
+NET "Buttons_in[1]" LOC = T16;
+NET "Buttons_in[2]" LOC = E16;
+NET "Buttons_in[3]" LOC = R10;
+NET "Buttons_in[4]" LOC = V10;
+
+
+NET "Buttons_in[4]" IOSTANDARD = LVTTL;
+NET "Buttons_in[3]" IOSTANDARD = LVTTL;
+NET "Buttons_in[2]" IOSTANDARD = LVTTL;
+NET "Buttons_in[1]" IOSTANDARD = LVTTL;
+NET "Buttons_in[0]" IOSTANDARD = LVTTL;
+NET "seven_seg_out[6]" IOSTANDARD = LVTTL;
+NET "seven_seg_out[5]" IOSTANDARD = LVTTL;
+NET "seven_seg_out[4]" IOSTANDARD = LVTTL;
+NET "seven_seg_out[3]" IOSTANDARD = LVTTL;
+NET "seven_seg_out[2]" IOSTANDARD = LVTTL;
+NET "seven_seg_out[1]" IOSTANDARD = LVTTL;
+NET "seven_seg_out[0]" IOSTANDARD = LVTTL;
+NET "seven_seg_sel[7]" IOSTANDARD = LVTTL;
+NET "seven_seg_sel[6]" IOSTANDARD = LVTTL;
+NET "seven_seg_sel[5]" IOSTANDARD = LVTTL;
+NET "seven_seg_sel[4]" IOSTANDARD = LVTTL;
+NET "seven_seg_sel[3]" IOSTANDARD = LVTTL;
+NET "seven_seg_sel[2]" IOSTANDARD = LVTTL;
+NET "seven_seg_sel[1]" IOSTANDARD = LVTTL;
+NET "seven_seg_sel[0]" IOSTANDARD = LVTTL;
+NET "Buttons_in[4]" DRIVE = 12;
+NET "Buttons_in[3]" DRIVE = 12;
+NET "Buttons_in[2]" DRIVE = 12;
+NET "Buttons_in[1]" DRIVE = 12;
+NET "Buttons_in[0]" DRIVE = 12;
+NET "seven_seg_out[6]" DRIVE = 12;
+NET "seven_seg_out[5]" DRIVE = 12;
+NET "seven_seg_out[4]" DRIVE = 12;
+NET "seven_seg_out[3]" DRIVE = 12;
+NET "seven_seg_out[2]" DRIVE = 12;
+NET "seven_seg_out[1]" DRIVE = 12;
+NET "seven_seg_out[0]" DRIVE = 12;
+NET "seven_seg_sel[7]" DRIVE = 12;
+NET "seven_seg_sel[6]" DRIVE = 12;
+NET "seven_seg_sel[5]" DRIVE = 12;
+NET "seven_seg_sel[4]" DRIVE = 12;
+NET "seven_seg_sel[3]" DRIVE = 12;
+NET "seven_seg_sel[2]" DRIVE = 12;
+NET "seven_seg_sel[1]" DRIVE = 12;
+NET "seven_seg_sel[0]" DRIVE = 12;
+NET "Buttons_in[4]" SLEW = SLOW;
+NET "Buttons_in[3]" SLEW = SLOW;
+NET "Buttons_in[2]" SLEW = SLOW;
+NET "Buttons_in[1]" SLEW = SLOW;
+NET "Buttons_in[0]" SLEW = SLOW;
+NET "seven_seg_out[6]" SLEW = SLOW;
+NET "seven_seg_out[5]" SLEW = SLOW;
+NET "seven_seg_out[4]" SLEW = SLOW;
+NET "seven_seg_out[3]" SLEW = SLOW;
+NET "seven_seg_out[2]" SLEW = SLOW;
+NET "seven_seg_out[1]" SLEW = SLOW;
+NET "seven_seg_out[0]" SLEW = SLOW;
+NET "seven_seg_sel[7]" SLEW = SLOW;
+NET "seven_seg_sel[6]" SLEW = SLOW;
+NET "seven_seg_sel[5]" SLEW = SLOW;
+NET "seven_seg_sel[4]" SLEW = SLOW;
+NET "seven_seg_sel[3]" SLEW = SLOW;
+NET "seven_seg_sel[2]" SLEW = SLOW;
+NET "seven_seg_sel[1]" SLEW = SLOW;
+NET "seven_seg_sel[0]" SLEW = SLOW;
+
+
+NET "clk" LOC = E3;
+NET "rstn" LOC = U9;
+
+
+NET "rstn" IOSTANDARD = LVTTL;
+NET "clk" IOSTANDARD = LVTTL;
+NET "rstn" DRIVE = 12;
+NET "clk" DRIVE = 12;
+NET "rstn" SLEW = SLOW;
+NET "clk" SLEW = SLOW;
+
+
+NET "seven_seg_out[0]" LOC = L3;
+NET "seven_seg_out[1]" LOC = N1;
+NET "seven_seg_out[2]" LOC = L5;
+NET "seven_seg_out[3]" LOC = L4;
+NET "seven_seg_out[4]" LOC = K3;
+NET "seven_seg_out[5]" LOC = M2;
+NET "seven_seg_out[6]" LOC = L6;
+NET "seven_seg_sel[0]" LOC = N6;
+NET "seven_seg_sel[1]" LOC = M6;
+NET "seven_seg_sel[2]" LOC = M3;
+NET "seven_seg_sel[3]" LOC = N5;
+NET "seven_seg_sel[4]" LOC = N2;
+NET "seven_seg_sel[5]" LOC = N4;
+NET "seven_seg_sel[6]" LOC = L1;
+NET "seven_seg_sel[7]" LOC = M1;
+
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+NET "dp" IOSTANDARD = LVTTL;
+
+
+NET "dp" LOC = T8;
+
+# PlanAhead Generated IO constraints 
+
+NET "diode_out[2]" IOSTANDARD = LVTTL;
+NET "diode_out[1]" IOSTANDARD = LVTTL;
+NET "diode_out[0]" IOSTANDARD = LVTTL;
+
+# PlanAhead Generated physical constraints 
+
+NET "diode_out[2]" LOC = F6;
+NET "diode_out[1]" LOC = K5;
+NET "diode_out[0]" LOC = F13;

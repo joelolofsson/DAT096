@@ -1,7 +1,7 @@
 -- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
--- Date        : Mon Apr 21 15:46:57 2014
+-- Date        : Mon May 12 13:28:37 2014
 -- Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl
@@ -42,7 +42,7 @@ entity ADC is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of ADC : entity is true;
   attribute core_generation_info : string;
-  attribute core_generation_info of ADC : entity is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=50,enable_busy=true,enable_convst=false,enable_convstclk=true,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
+  attribute core_generation_info of ADC : entity is "ADC,xadc_wiz_v3_0,{component_name=ADC,enable_axi=false,enable_axi4stream=false,dclk_frequency=100,enable_busy=true,enable_convst=false,enable_convstclk=true,enable_dclk=true,enable_drp=true,enable_eoc=true,enable_eos=true,enable_vbram_alaram=false,enable_vccddro_alaram=false,enable_Vccint_Alaram=true,enable_Vccaux_alaram=trueenable_vccpaux_alaram=false,enable_vccpint_alaram=false,ot_alaram=true,user_temp_alaram=true,timing_mode=event_driven,channel_averaging=None,sequencer_mode=off,startup_channel_selection=single_channel}";
 end ADC;
 
 architecture STRUCTURE of ADC is
@@ -58,7 +58,7 @@ U0: unisim.vcomponents.XADC
     generic map(
       INIT_40 => X"0613",
       INIT_41 => X"3100",
-      INIT_42 => X"0300",
+      INIT_42 => X"0600",
       INIT_43 => X"0000",
       INIT_44 => X"0000",
       INIT_45 => X"0000",
@@ -88,10 +88,10 @@ U0: unisim.vcomponents.XADC
       INIT_5D => X"0000",
       INIT_5E => X"0000",
       INIT_5F => X"0000",
---      IS_CONVSTCLK_INVERTED => '0',
---      IS_DCLK_INVERTED => '0',
+      IS_CONVSTCLK_INVERTED => '0',
+      IS_DCLK_INVERTED => '0',
       SIM_DEVICE => "7SERIES",
-      SIM_MONITOR_FILE => "c:/designs/work/design.txt"
+      SIM_MONITOR_FILE => "c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt"
     )
     port map (
       ALM(7) => alarm_out,

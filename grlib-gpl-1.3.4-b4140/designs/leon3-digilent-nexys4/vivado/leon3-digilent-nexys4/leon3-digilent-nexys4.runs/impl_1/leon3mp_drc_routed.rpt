@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
-| Date         : Tue Apr 22 14:43:51 2014
+| Date         : Mon May 12 14:13:14 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ REPORT SUMMARY
       Design limits: <entire design considered>
            Ruledeck: default
            Max violations: <unlimited>
-         Violations found: 53
+         Violations found: 50
 
 2. REPORT DETAILS
 -----------------
@@ -108,60 +108,40 @@ Related violations: <none>
 
 BUFC-1#11 Warning
 Input Buffer Connections  
-Input buffer IBUF_2 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_20 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#12 Warning
 Input Buffer Connections  
-Input buffer IBUF_20 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_3 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#13 Warning
 Input Buffer Connections  
-Input buffer IBUF_21 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_4 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#14 Warning
 Input Buffer Connections  
-Input buffer IBUF_22 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_5 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#15 Warning
 Input Buffer Connections  
-Input buffer IBUF_23 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_6 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#16 Warning
 Input Buffer Connections  
-Input buffer IBUF_3 has no loads. An input buffer must drive an internal load.
+Input buffer IBUF_7 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
 BUFC-1#17 Warning
 Input Buffer Connections  
-Input buffer IBUF_4 has no loads. An input buffer must drive an internal load.
-Related violations: <none>
-
-BUFC-1#18 Warning
-Input Buffer Connections  
-Input buffer IBUF_5 has no loads. An input buffer must drive an internal load.
-Related violations: <none>
-
-BUFC-1#19 Warning
-Input Buffer Connections  
-Input buffer IBUF_6 has no loads. An input buffer must drive an internal load.
-Related violations: <none>
-
-BUFC-1#20 Warning
-Input Buffer Connections  
-Input buffer IBUF_7 has no loads. An input buffer must drive an internal load.
-Related violations: <none>
-
-BUFC-1#21 Warning
-Input Buffer Connections  
 Input buffer IBUF_8 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
 
-BUFC-1#22 Warning
+BUFC-1#18 Warning
 Input Buffer Connections  
 Input buffer IBUF_9 has no loads. An input buffer must drive an internal load.
 Related violations: <none>
@@ -179,9 +159,24 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
 Refer to the device configuration user guide for more information.
 Related violations: <none>
 
+CKLD-1#1 Warning
+Excessive Loads  
+Clock net xlnx_opt_ is not driven by a Clock Buffer and has more than 2000 loads. Drive(s): IBUF/O
+Related violations: <none>
+
 CSCL-1#1 Warning
 Clocked by a non-clock net.  
 Net io0/inst_ADC_TOP/I1 is a non-clock net, connected to the clock port on ChipScope debug core io0/inst_ADC_TOP/ILA_ADC.  Please verify this is correct.
+Related violations: <none>
+
+CSCL-1#2 Warning
+Clocked by a non-clock net.  
+Net io0/inst_top/clk is a non-clock net, connected to the clock port on ChipScope debug core io0/inst_top/your_instance_name.  Please verify this is correct.
+Related violations: <none>
+
+CSCL-1#3 Warning
+Clocked by a non-clock net.  
+Net xlnx_opt_ is a non-clock net, connected to the clock port on ChipScope debug core dbg_hub.  Please verify this is correct.
 Related violations: <none>
 
 DPIP-1#1 Warning
@@ -264,22 +259,6 @@ Output pipelining
 DSP leon3gen.cpu[0].u0/leon3x0/p0/p_1_out__0 output P  is not pipelined. Pipelining DSP48 output will improve performance. Both multiplier/adder output can be pipelined.
 Related violations: <none>
 
-PDRC-153#1 Warning
-Gated clock check  
-Net adderahb_if/n_1_n_0_11379_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_11379_BUFG_inst_i_1/O, cell adderahb_if/n_0_11379_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT adderahb_if/n_0_11379_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
-    adderahb_if/hrdata_reg[0] {LDCE}
-    adderahb_if/hrdata_reg[10] {LDCE}
-    adderahb_if/hrdata_reg[11] {LDCE}
-    adderahb_if/hrdata_reg[12] {LDCE}
-    adderahb_if/hrdata_reg[13] {LDCE}
-
-Related violations: <none>
-
 PLIO-3#1 Warning
 Placement Constraints Check for IO constraints  
 Partially locked IO Bus is found. Following components of the IO Bus jb[7:0] are not locked:  jb[7] jb[6] jb[5] jb[4] jb[3]
@@ -302,7 +281,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Advisory
 No routable loads  
-24 net(s) have no routable loads. The problem net(s) are clkgen0/xc7l.v/CLKOUT1, clkgen0/xc7l.v/CLKOUT2, xlnx_opt__3, xlnx_opt__5, xlnx_opt__7, xlnx_opt__9, xlnx_opt__11, xlnx_opt__13, xlnx_opt__15, xlnx_opt__17, xlnx_opt__19, xlnx_opt__21, xlnx_opt__23, xlnx_opt__25, xlnx_opt__27 (the first 15 of 24 listed).
+1585 net(s) have no routable loads. The problem net(s) are dbg_hub/inst/bscan_inst/CAPTURE, dbg_hub/inst/bscan_inst/RESET, io0/inst_ADC_TOP/inst_ADC/alarm_out, io0/inst_ADC_TOP/inst_ADC/busy_out, io0/inst_ADC_TOP/inst_ADC/channel_out[0], io0/inst_ADC_TOP/inst_ADC/channel_out[1], io0/inst_ADC_TOP/inst_ADC/channel_out[2], io0/inst_ADC_TOP/inst_ADC/channel_out[3], io0/inst_ADC_TOP/inst_ADC/channel_out[4], clkml, io0/inst_ADC_TOP/inst_ADC/drdy_out, io0/inst_ADC_TOP/inst_ADC/eoc_out, io0/inst_ADC_TOP/inst_ADC/eos_out, rst0/n_0_16095, leon3gen.cpu[0].u0/leon3x0/rf0/s1.rhu/s1.dp.x1/xc2v.x0/a6.x0/n_0_a9.x[0].r0 (the first 15 of 1585 listed).
 Related violations: <none>
 
 
