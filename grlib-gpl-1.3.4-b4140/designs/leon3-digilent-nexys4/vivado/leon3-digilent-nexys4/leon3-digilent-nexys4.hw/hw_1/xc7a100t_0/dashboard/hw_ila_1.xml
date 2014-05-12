@@ -4,17 +4,16 @@
         <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
             <Settings/>
             <GadgetContainer boxAxis="1" count="2" height="337"
-                layout="JideBoxLayout" vgap="6" width="314">
-                <Gadget height="75" key="Trigger Capture Status" width="314">
+                layout="JideBoxLayout" vgap="6" width="250">
+                <Gadget height="72" key="Trigger Capture Status" width="250">
                     <Ila capture_condition="AND" capture_mode="ALWAYS"
-                        data_depth="1024" trigger_condition="AND"
-                        trigger_mode="BASIC_ONLY"
-                        trigger_position="1000" trigout_mode="DISABLED"
-                        tsm_file="" window_count="1"/>
+                        data_depth="2" trigger_condition="AND"
+                        trigger_mode="BASIC_ONLY" trigger_position="0"
+                        trigout_mode="DISABLED"
+                        tsm_file="C:/CHALMERS/DAT096/DAT096/ADCDAC/ADC_vivado/triggertest.tsm" window_count="1"/>
                 </Gadget>
-                <Gadget height="246" key="Basic Trigger Setup" width="314">
-                    <Probe name="io0/inst_top/I1"/>
-                    <Probe name="io0/inst_top/I2"/>
+                <Gadget height="252" key="Basic Trigger Setup" width="250">
+                    <Probe name="io0/inst_top/trig"/>
                 </Gadget>
                 <Settings/>
             </GadgetContainer>

@@ -139,7 +139,7 @@ begin
 
 ILA_ADC : ila_1
   PORT MAP (
-    clk => clk,
+    clk => sampleclk,
     probe0 => sampledvalue,
     probe1 => filterout(31 downto 16)
   );

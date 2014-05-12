@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1398258011">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1399398328">
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <File Type="PWROPT-DCP" Name="leon3mp_pwropt.dcp"/>
   <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
@@ -65,14 +65,19 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2013"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
     <Step Id="init_design"/>
-    <Step Id="opt_design"/>
+    <Step Id="opt_design" EnableStepBool="0"/>
     <Step Id="power_opt_design"/>
-    <Step Id="place_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">16</Option>
+    </Step>
     <Step Id="post_place_power_opt_design"/>
     <Step Id="phys_opt_design"/>
-    <Step Id="route_design"/>
+    <Step Id="route_design">
+      <Option Id="Directive">6</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="ila_1"/>

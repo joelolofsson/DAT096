@@ -2,17 +2,15 @@
 # Vivado v2014.1
 # SW Build 881834 on Fri Apr  4 14:09:24 MDT 2014
 # IP Build 877625 on Fri Mar 28 16:29:15 MDT 2014
-# Start of session at: Mon Apr 21 15:44:14 2014
-# Process ID: 2180
+# Start of session at: Tue May 06 19:10:44 2014
+# Process ID: 7452
 # Log file: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.vds
 # Journal file: C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1\vivado.jou
 #-----------------------------------------------------------
 source ADC.tcl
 # set_param gui.test TreeTableDev
-# set_param xicom.use_bs_reader 1
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
-# set_msg_config -id {Labtools 27-147} -limit 4294967295
 # create_project -in_memory -part xc7a100tcsg324-1
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.1/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.1/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
@@ -32,7 +30,6 @@ WARNING: [IP_Flow 19-3664] IP 'ADC' generated file not found 'c:/designs/leon3-d
 WARNING: [IP_Flow 19-3664] IP 'ADC' generated file not found 'c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'ADC' generated file not found 'c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'ADC' generated file not found 'c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl'. Please regenerate to continue.
-read_ip: Time (s): cpu = 00:00:01 ; elapsed = 00:00:33 . Memory (MB): peak = 245.590 ; gain = 9.473
 # set_property used_in_implementation false [get_files c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.dcp]
 # set_property used_in_implementation false [get_files -all c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.dcp]
 # set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
@@ -50,7 +47,7 @@ Starting synthesis...
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:01:22 . Memory (MB): peak = 271.152 ; gain = 87.434
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 252.852 ; gain = 85.574
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ADC' [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd:84]
 	Parameter INIT_40 bound to: 16'b0000011000010011 
@@ -92,7 +89,7 @@ INFO: [Synth 8-638] synthesizing module 'ADC' [c:/designs/leon3-digilent-nexys4/
 INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd:151]
 INFO: [Synth 8-256] done synthesizing module 'ADC' (1#1) [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.vhd:84]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:01:25 . Memory (MB): peak = 294.875 ; gain = 111.156
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 275.855 ; gain = 108.578
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -137,7 +134,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:01:48 . Memory (MB): peak = 420.094 ; gain = 236.375
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 401.016 ; gain = 233.738
 ---------------------------------------------------------------------------------
 
 
@@ -145,11 +142,11 @@ Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapse
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:01:48 . Memory (MB): peak = 420.094 ; gain = 236.375
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 401.016 ; gain = 233.738
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:01:48 . Memory (MB): peak = 420.094 ; gain = 236.375
+Finished RTL Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 401.016 ; gain = 233.738
 ---------------------------------------------------------------------------------
 
 
@@ -194,7 +191,7 @@ Finished Part Resource Summary
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:07 . Memory (MB): peak = 473.496 ; gain = 289.777
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 454.457 ; gain = 287.180
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -208,7 +205,7 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . Memory (MB): peak = 474.301 ; gain = 290.582
+Finished Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 456.008 ; gain = 288.730
 ---------------------------------------------------------------------------------
 
 
@@ -220,11 +217,11 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . Memory (MB): peak = 474.301 ; gain = 290.582
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 456.008 ; gain = 288.730
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . Memory (MB): peak = 474.301 ; gain = 290.582
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 456.008 ; gain = 288.730
 ---------------------------------------------------------------------------------
 
 
@@ -232,7 +229,7 @@ Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . M
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . Memory (MB): peak = 478.871 ; gain = 295.152
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 460.207 ; gain = 292.930
 ---------------------------------------------------------------------------------
 
 
@@ -256,7 +253,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:02:09 . Memory (MB): peak = 478.871 ; gain = 295.152
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 460.207 ; gain = 292.930
 ---------------------------------------------------------------------------------
 
 
@@ -271,7 +268,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:02:09 . Memory (MB): peak = 478.871 ; gain = 295.152
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 460.207 ; gain = 292.930
 ---------------------------------------------------------------------------------
 
 
@@ -279,7 +276,7 @@ Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:02:09 . Memory (MB): peak = 478.871 ; gain = 295.152
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 460.207 ; gain = 292.930
 ---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
@@ -313,11 +310,11 @@ Report Instance Areas:
 |1     |top      |       |     1|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:02:09 . Memory (MB): peak = 478.871 ; gain = 295.152
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 460.207 ; gain = 292.930
 ---------------------------------------------------------------------------------
 
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:02:09 . Memory (MB): peak = 478.871 ; gain = 295.152
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 460.207 ; gain = 292.930
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 Parsing XDC File [c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_ooc.xdc] for cell 'U0'
@@ -331,11 +328,11 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:58 . Memory (MB): peak = 478.871 ; gain = 233.281
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 460.207 ; gain = 233.617
 # rename_ref -prefix_all ADC
 # write_checkpoint -noxdef ADC.dcp
 # report_utilization -file ADC_utilization_synth.rpt -pb ADC_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.267 . Memory (MB): peak = 478.871 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 460.207 ; gain = 0.000
 # if { [catch {
 #   file copy -force C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ADC_synth_1/ADC.dcp C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC.dcp
 #   write_verilog -force -mode synth_stub C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_stub.v
@@ -345,4 +342,4 @@ report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.267 . Memory (
 # } _RESULT ] } { 
 #   error "ERROR: Unable to successfully create or copy supporting IP files."
 # }
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 21 15:46:58 2014...
+INFO: [Common 17-206] Exiting Vivado at Tue May 06 19:11:30 2014...

@@ -76,17 +76,20 @@ END COMPONENT;
 	signal sBuffOut : std_logic_vector(15 downto 0);
 	signal readBuffer : std_logic;
 	signal clk25MHz : STD_LOGIC;
+	
+	signal lastreadbuffer : STD_LOGIC;
+	signal trig : STD_LOGIC;
 
 begin
 
 your_instance_name : ila_0
   PORT MAP (
     clk => clk,
-    trig_in => readBuffer,
+    trig_in => trig,
     trig_in_ack => open,
-    probe0 => data,
+    probe0 => dacin,
     probe1 => addr,
-    probe2(0) => readBuffer
+    probe2(0) => trig
   );
 
 sampleclk44kHz <= readbuffer;
@@ -125,7 +128,17 @@ DACin <= not(sBuffOut(15)) & sBuffOut(14 downto 0);
 		buffOut 	=> sBuffOut,
 		addr		=> addr
 		);  
-		    
-		
+			    
+process(clk)
+begin
+    if rising_edge(clk) then
+        lastreadbuffer <= readbuffer;
+        if (lastreadbuffer = '0') and (readbuffer = '1') then
+            trig <= '1';
+        else 
+            trig <= '0';
+        end if;
+     end if;
+end process;	
 		
 end architecture behavioral;

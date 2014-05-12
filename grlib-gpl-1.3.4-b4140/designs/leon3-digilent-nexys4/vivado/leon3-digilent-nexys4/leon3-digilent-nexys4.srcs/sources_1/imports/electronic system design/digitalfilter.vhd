@@ -193,23 +193,23 @@ BEGIN
         finished <= '0';
       elsif i = N then
         finished <= '1';
---		if y_array(63 downto 48) <= x"FFFE" then
---			if y_array(63 downto 49) >= x"8000" then
---				y(31) <= '1';
---				y(30 downto 0) <= (others => '0');
---			elsif y_array(63 downto 48) >= x"0001" then
---				if y_array(63 downto 48) <= x"7FFF" then
---					y(31) <= '0';
---					y(30 -2 downto 0) <= (others => '1');
---				else 
---					y <=  y_array(49 downto 49-32+1);
---				end if;
---			else
---				y <=  y_array(49 downto 49-32+1);
---			end if;
---		else
+		if y_array(63 downto 48) <= x"FFFB" then
+			if y_array(63 downto 49) >= x"8000" then
+				y(31) <= '1';
+				y(30 downto 0) <= (others => '0');
+			elsif y_array(63 downto 48) >= x"0004" then
+				if y_array(63 downto 48) <= x"7FFF" then
+					y(31) <= '0';
+					y(30 -2 downto 0) <= (others => '1');
+				else 
+					y <=  y_array(50 downto 50-32+1);
+				end if;
+			else
+				y <=  y_array(50 downto 50-32+1);
+			end if;
+		else
 			y <=  y_array(50 downto 50-32+1); 
---		end if;
+		end if;
       elsif i = 0 then
         y_array <= STD_LOGIC_VECTOR(SIGNED(x_array(n-1)) * FILTER_PARAMETERS(n-1));
         i <= i + 1;

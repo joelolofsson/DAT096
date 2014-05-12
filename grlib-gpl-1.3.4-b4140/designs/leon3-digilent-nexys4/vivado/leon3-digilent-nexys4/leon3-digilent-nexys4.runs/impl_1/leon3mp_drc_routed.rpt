@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
-| Date         : Tue Apr 22 14:43:51 2014
+| Date         : Tue May 06 20:01:57 2014
 | Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_drc
 -----------------------------------------------------------------------------------
@@ -266,17 +266,17 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net adderahb_if/n_1_n_0_11379_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_11379_BUFG_inst_i_1/O, cell adderahb_if/n_0_11379_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net adderahb_if/n_1_n_0_14879_BUFG_inst is a gated clock net sourced by a combinational pin adderahb_if/n_0_14879_BUFG_inst_i_1/O, cell adderahb_if/n_0_14879_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT adderahb_if/n_0_11379_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
-    adderahb_if/hrdata_reg[0] {LDCE}
-    adderahb_if/hrdata_reg[10] {LDCE}
-    adderahb_if/hrdata_reg[11] {LDCE}
-    adderahb_if/hrdata_reg[12] {LDCE}
-    adderahb_if/hrdata_reg[13] {LDCE}
+A LUT adderahb_if/n_0_14879_BUFG_inst_i_1 is driving clock pin of 32 cells. This could lead to large hold time violations. First few involved cells are:
+    adderahb_if/hrdata_reg[25] {LDCE}
+    adderahb_if/hrdata_reg[29] {LDCE}
+    adderahb_if/hrdata_reg[7] {LDCE}
+    adderahb_if/hrdata_reg[5] {LDCE}
+    adderahb_if/hrdata_reg[26] {LDCE}
 
 Related violations: <none>
 
@@ -302,7 +302,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Advisory
 No routable loads  
-24 net(s) have no routable loads. The problem net(s) are clkgen0/xc7l.v/CLKOUT1, clkgen0/xc7l.v/CLKOUT2, xlnx_opt__3, xlnx_opt__5, xlnx_opt__7, xlnx_opt__9, xlnx_opt__11, xlnx_opt__13, xlnx_opt__15, xlnx_opt__17, xlnx_opt__19, xlnx_opt__21, xlnx_opt__23, xlnx_opt__25, xlnx_opt__27 (the first 15 of 24 listed).
+1516 net(s) have no routable loads. The problem net(s) are dbg_hub/inst/bscan_inst/CAPTURE, dbg_hub/inst/bscan_inst/RESET, io0/inst_ADC_TOP/inst_ADC/alarm_out, io0/inst_ADC_TOP/inst_ADC/busy_out, io0/inst_ADC_TOP/inst_ADC/channel_out[0], io0/inst_ADC_TOP/inst_ADC/channel_out[1], io0/inst_ADC_TOP/inst_ADC/channel_out[2], io0/inst_ADC_TOP/inst_ADC/channel_out[3], io0/inst_ADC_TOP/inst_ADC/channel_out[4], clkml, io0/inst_ADC_TOP/inst_ADC/drdy_out, io0/inst_ADC_TOP/inst_ADC/eoc_out, io0/inst_ADC_TOP/inst_ADC/eos_out, dbg_hub/inst/UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/n_1_addr_reg[3]_i_1, dbg_hub/inst/UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/n_1_addr_reg[7]_i_1 (the first 15 of 1516 listed).
 Related violations: <none>
 
 

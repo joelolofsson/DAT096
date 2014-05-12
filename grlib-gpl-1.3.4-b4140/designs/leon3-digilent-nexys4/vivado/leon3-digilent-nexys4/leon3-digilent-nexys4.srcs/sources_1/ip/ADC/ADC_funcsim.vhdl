@@ -1,7 +1,7 @@
 -- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
--- Date        : Mon Apr 21 15:46:57 2014
+-- Date        : Tue May 06 19:11:30 2014
 -- Host        : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC_funcsim.vhdl
@@ -88,10 +88,10 @@ U0: unisim.vcomponents.XADC
       INIT_5D => X"0000",
       INIT_5E => X"0000",
       INIT_5F => X"0000",
---      IS_CONVSTCLK_INVERTED => '0',
---      IS_DCLK_INVERTED => '0',
+      IS_CONVSTCLK_INVERTED => '0',
+      IS_DCLK_INVERTED => '0',
       SIM_DEVICE => "7SERIES",
-      SIM_MONITOR_FILE => "c:/designs/work/design.txt"
+      SIM_MONITOR_FILE => "c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ADC/ADC/simulation/functional/design.txt"
     )
     port map (
       ALM(7) => alarm_out,

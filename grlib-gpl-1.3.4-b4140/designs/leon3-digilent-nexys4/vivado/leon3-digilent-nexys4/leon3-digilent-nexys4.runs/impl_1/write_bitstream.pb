@@ -26,7 +26,7 @@ MC:/Xilinx/Vivado/2014.1/data/boards/board_parts/zynq/zc706/1.0/board_part.xml2
 ^
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-4282default:defaultZ29-17
+5242default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -66,15 +66,15 @@ BC:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml2default:de
 á
 Parsing XDC File [%s]
 179*designutils2ª
-•C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-6544-MININT-VV401LP/dcp/leon3mp_early.xdc2default:defaultZ20-179
+•C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-6504-MININT-VV401LP/dcp/leon3mp_early.xdc2default:defaultZ20-179
 ê
 Finished Parsing XDC File [%s]
 178*designutils2ª
-•C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-6544-MININT-VV401LP/dcp/leon3mp_early.xdc2default:defaultZ20-178
+•C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-6504-MININT-VV401LP/dcp/leon3mp_early.xdc2default:defaultZ20-178
 Û
 Parsing XDC File [%s]
 179*designutils2¤
-C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-6544-MININT-VV401LP/dcp/leon3mp.xdc2default:defaultZ20-179
+C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-6504-MININT-VV401LP/dcp/leon3mp.xdc2default:defaultZ20-179
 ò
 %Done setting XDC timing constraints.
 35*timing2•
@@ -89,14 +89,14 @@ BC:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml2default:de
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2 
 get_clocks: 2default:default2
-00:00:312default:default2
-00:00:332default:default2
-751.1052default:default2
-283.6842default:defaultZ17-268
+00:00:262default:default2
+00:00:282default:default2
+769.2932default:default2
+285.8162default:defaultZ17-268
 ä
 Finished Parsing XDC File [%s]
 178*designutils2¤
-C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-6544-MININT-VV401LP/dcp/leon3mp.xdc2default:defaultZ20-178
+C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-6504-MININT-VV401LP/dcp/leon3mp.xdc2default:defaultZ20-178
 6
 Reading XDEF placement.
 206*designutilsZ20-206
@@ -107,19 +107,19 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2$
 Read XDEF File: 2default:default2
-00:00:062default:default2
-00:00:062default:default2
-769.9572default:default2
-18.8522default:defaultZ17-268
+00:00:052default:default2
+00:00:052default:default2
+788.2502default:default2
+18.9572default:defaultZ17-268
 3
 Restoring placement.
 754*designutilsZ20-754
 Þ
 ORestored %s out of %s XDEF sites from archive | CPU: %s secs | Memory: %s MB |
 403*designutils2
-76762default:default2
-76762default:default2
-	13.0000002default:default2
+73512default:default2
+73512default:default2
+	12.0000002default:default2
 0.0000002default:defaultZ20-403
 C
 Pushed %s inverter(s).
@@ -128,11 +128,11 @@ C
 Š
 !Unisim Transformation Summary:
 %s111*project2Í
-¸  A total of 269 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 224 instances
+¸  A total of 397 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 336 instances
   IOBUF => IOBUF (IBUF, OBUFT): 17 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
-  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 16 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
 2default:defaultZ1-111
 Y
 $Checkpoint was created with build %s293*project2
@@ -141,10 +141,10 @@ $Checkpoint was created with build %s293*project2
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2%
 open_checkpoint: 2default:default2
-00:01:362default:default2
-00:01:482default:default2
-785.7502default:default2
-571.6802default:defaultZ17-268
+00:01:342default:default2
+00:01:412default:default2
+804.0592default:default2
+588.6252default:defaultZ17-268
 ›
 @Attempting to get a license for feature '%s' and/or device '%s'
 308*common2"
@@ -166,7 +166,7 @@ G
 l
 DRC finished with %s
 1905*	planAhead27
-#0 Errors, 61 Warnings, 1 Advisories2default:defaultZ12-3199
+#0 Errors, 51 Warnings, 1 Advisories2default:defaultZ12-3199
 `
 BPlease refer to the DRC report (report_drc) for more information.
 1906*	planAheadZ12-3200
@@ -209,10 +209,10 @@ Q
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2%
 write_bitstream: 2default:default2
-00:02:032default:default2
-00:02:052default:default2
-1047.0472default:default2
-261.2972default:defaultZ17-268
+00:01:342default:default2
+00:01:582default:default2
+1065.0232default:default2
+260.9652default:defaultZ17-268
 
 
 End Record

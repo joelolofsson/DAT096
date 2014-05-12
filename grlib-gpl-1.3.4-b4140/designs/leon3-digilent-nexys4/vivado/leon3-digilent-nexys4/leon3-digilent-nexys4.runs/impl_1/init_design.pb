@@ -40,7 +40,7 @@ pC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
 ^
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-5382default:defaultZ29-17
+4942default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -136,8 +136,8 @@ C
 ‰
 !Unisim Transformation Summary:
 %s111*project2Ì
-·  A total of 403 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 348 instances
+·  A total of 391 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 336 instances
   IOBUF => IOBUF (IBUF, OBUFT): 17 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
@@ -146,10 +146,10 @@ C
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2!
 link_design: 2default:default2
-00:01:192default:default2
-00:01:242default:default2
-457.6602default:default2
-243.4842default:defaultZ17-268
+00:01:102default:default2
+00:01:172default:default2
+473.8832default:default2
+249.7502default:defaultZ17-268
 
 
 End Record
