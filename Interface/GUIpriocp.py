@@ -71,23 +71,13 @@ def labellistset(): #<==========================================================
 	global Outputpriorities
 	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2',0:' '}
 	print "Outputpriorities Internal: ", Outputpriorities 
-	newlist=[]
+	newlist=['']*11
 	for n in range(len(Outputpriorities)):
 		if Outputpriorities[n]=='0' or Outputpriorities[n]==0:
 			pass
 		else:
-			
-			x=dictionary[int(n+1)]
-			newlist.append(x)
-			print n, Outputpriorities[n]
-			print newlist
-	for i in range(len(newlist),len(Outputpriorities)):
-		newlist.append(' ')
-	print 'newlist:', newlist
-	print newlist[0],newlist[1]
-	Label_List=newlist   #<=======================================================================
-	print 'Internal Label_List',Label_List
-	print Label_List[0],Label_List[1]
+			newlist[int(Outputpriorities[n])-1]=dictionary[int(n+1)]
+		Label_List=newlist   #<=======================================================================
 	set_labels()
 	return
 	
