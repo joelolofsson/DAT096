@@ -1055,27 +1055,27 @@ def Gains():
 ################################# Priorities #######################################
 def Create_labels():
 	prio1 = Label (prioFrame, textvariable=priotextvar1)
-	prio1.grid(row=0, column=0)
+	prio1.grid(row=1, column=0)
 	prio2 = Label (prioFrame, textvariable=priotextvar2)
-	prio2.grid(row=1, column=0)
+	prio2.grid(row=2, column=0)
 	prio3 = Label (prioFrame, textvariable=priotextvar3)
-	prio3.grid(row=2, column=0)
+	prio3.grid(row=3, column=0)
 	prio4 = Label (prioFrame, textvariable=priotextvar4)
-	prio4.grid(row=3, column=0)
+	prio4.grid(row=4, column=0)
 	prio5 = Label (prioFrame, textvariable=priotextvar5)
-	prio5.grid(row=4, column=0)
+	prio5.grid(row=5, column=0)
 	prio6 = Label (prioFrame, textvariable=priotextvar6)
-	prio6.grid(row=5, column=0)
+	prio6.grid(row=6, column=0)
 	prio7 = Label (prioFrame, textvariable=priotextvar7)
-	prio7.grid(row=6, column=0)
+	prio7.grid(row=7, column=0)
 	prio8 = Label (prioFrame, textvariable=priotextvar8)
-	prio8.grid(row=7, column=0)
+	prio8.grid(row=8, column=0)
 	prio9 = Label (prioFrame, textvariable=priotextvar9)
-	prio9.grid(row=8, column=0)
+	prio9.grid(row=9, column=0)
 	prio10 = Label (prioFrame, textvariable=priotextvar10)
-	prio10.grid(row=9, column=0)
+	prio10.grid(row=10, column=0)
 	prio11 = Label (prioFrame, textvariable=priotextvar11)
-	prio11.grid(row=10, column=0)
+	prio11.grid(row=11, column=0)
 
 
 def resetbtn():
@@ -1161,7 +1161,7 @@ def SetPriority():
 	Outputpriorities=['0','0','0','0','0','0','0','0','0','0','0',]
 	global dictionary
 	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2'}
-	Label(priorityFrame, text= "Order of effects ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+	Label(prioFrame, text= "Order of effects ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 
 	button2 = Button(setprioFrame, text='RESET', width=10,command=resetbtn)
 	button2.grid(sticky=W ,row=0,column=12)
