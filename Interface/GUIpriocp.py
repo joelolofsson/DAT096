@@ -1,6 +1,8 @@
 from Tkinter import*
 import tkMessageBox
 
+global Label_List
+Label_List= [0]*11
 
 def Programm():
     global count
@@ -22,7 +24,23 @@ def resetbtn():
 		x=vardict[n]
 		x.set(0)
 	
-
+def labellistset(outlist): #<=======================================================================
+	global Label_list
+	dictionary={0:' ',1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2'}
+	
+	newlist=[]
+	for n in outlist:
+	if n=='0' or n==0:
+		pass
+	else:
+		x=n
+		newlist.append(x)
+	for i in range(len(newlist),len(outlist)):
+		newlist.append(0)
+	Label_List= [dictionary[nu] for nu in newlist]  #<=======================================================================
+	return
+	
+	
 def checkClicked(number):
 	global count
 	global Outputpriorities
@@ -53,6 +71,7 @@ def checkClicked(number):
 		order=str(count)
 		Outputpriorities[checkValue-1]=str(order)
 		print dictionary[int(checkValue)]
+	labellistset(Outputpriorities) #<=======================================================================
 	return
 
 
