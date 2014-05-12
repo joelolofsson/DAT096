@@ -30,14 +30,14 @@ def labellistset(outlist): #<===================================================
 	
 	newlist=[]
 	for n in outlist:
-	if n=='0' or n==0:
-		pass
-	else:
-		x=n
-		newlist.append(x)
+		if n=='0' or n==0:
+			pass
+		else:
+			x=n
+			newlist.append(x)
 	for i in range(len(newlist),len(outlist)):
 		newlist.append(0)
-	Label_List= [dictionary[nu] for nu in newlist]  #<=======================================================================
+	Label_List= [dictionary[int(nu)] for nu in newlist]  #<=======================================================================
 	return
 	
 	
