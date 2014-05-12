@@ -1,14 +1,12 @@
-//
-//  LFOSineWaveTable.c
-//  FMX
-//
-//  Created by Philip Karlsson on 3/26/14.
-//  Copyright (c) 2014 Philip Karlsson Enterprises. All rights reserved.
-//
+/** @file LFOSineWaveTable.c
+ *  @brief This file contains the values of the sine LFO table.
+ *  @author Philip Karlsson
+ */
 
-#include <stdio.h>
 #include <stdint.h>
-
+/**
+ * Here, all the values for the wavetable are stored.
+ */
 const int16_t LFOSineWaveTable[] =
 
 {

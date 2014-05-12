@@ -1,12 +1,14 @@
-//
-//  SVFLookupTable.c
-//  FMX
-//
-//  Created by Philip Karlsson on 2014-03-28.
-//  Copyright (c) 2014 Philip Karlsson Enterprises. All rights reserved.
-//
+/** @file SVFLookupTable.c
+ *  @brief This file contains the look up table which is used to perform the algorithm for calculating the output of the SVF.
+ *
+ *  @author Philip Karlsson
+ */
 
 #include <stdint.h>
+
+/**
+ * This array contains the lookup table.
+ */
 
 const uint16_t SVFLookupTable[] =
 {

@@ -1,13 +1,12 @@
-//
-//  kTable.c
-//  STM32F4_SYNTH
-//
-//  Created by Philip Karlsson on 2014-02-23.
-//  Copyright (c) 2014 Philip Karlsson. All rights reserved.
-//
+/** @file kTable.c
+ *  @brief This file contains the lookup table for the k values when calculating the filter coefficients in biquad.c.
+ *  @author Philip Karlsson
+ */
 
-#include <stdio.h>
 
+/**
+ * This is the lookup table for the k values used in the algorithms of biquad.c
+ */
 
 const float kTable[] = {
     0,

@@ -1,15 +1,15 @@
-//
-//  kDistortionTable.c
-//  audioKernel
-//
-//  Created by Philip Karlsson on 5/2/14.
-//  Copyright (c) 2014 Philip Karlsson. All rights reserved.
-//
+/** @file kDistortionTable.c
+ *  @brief This file contains the lookup table for the wave shaper which is used when adding distortion to the audio signal.
+ *  @author Philip Karlsson
+ */
 
-#include <stdio.h>
 #include <stdint.h>
 
-const uint16_t kDistortionTable[] = { // Q.3
+/**
+ * The lookup table for the wave shaper algorithm.
+ */
+
+const uint16_t kDistortionTable[] = {
     0,
     0,
     0,

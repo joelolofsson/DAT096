@@ -1,13 +1,19 @@
-//
-//  wahwah.c
-//  FMX
-//
-//  Created by Philip Karlsson on 3/31/14.
-//  Copyright (c) 2014 Philip Karlsson Enterprises. All rights reserved.
-//
+/** @file wahwah.c
+ *  @brief This is the implementation of the wah wah effect.
+ *
+ *  @author Philip Karlsson
+ */
 
-#include <stdio.h>
 #include "wahwah.h"
+
+/**
+ * This method initializes a wah wah object.
+ * @param *self is a pointer to the object that is to be initialized.
+ * @param rate defines the rate of the effect in oscillating mode.
+ * @param depth is the depth of the effect when in oscillating mode i.e. the rate of the LFO.
+ * @param res is the resonance of the filter i.e. the resonance of the SVF connected to the wah wah.
+ * @param typ defines the type of wah wah that is to be initialized.
+ */
 
 void initWahwah(wahwah *self, uint8_t rate, uint8_t depth, uint8_t res, wahType type){
     self->res = res;
@@ -15,9 +21,7 @@ void initWahwah(wahwah *self, uint8_t rate, uint8_t depth, uint8_t res, wahType 
     self->type = type;
     
     initSVF(&self->wahFilter, BP);
-    
     initLFO(rate << 3, LFO_SINE, &self->wahLFO);
-    
     wahBufPtr = wahBuf;
     int16_t zero = 0;
     cbInit(&wahCircBuffer, 1024, wahBufPtr);
@@ -29,15 +33,16 @@ void initWahwah(wahwah *self, uint8_t rate, uint8_t depth, uint8_t res, wahType 
     }
 }
 
+/** This method applies the effect to an audio buffer.
+ *@param framesPerBuffer specifies the buffer size.
+ *@param *self is the reference to the wah wah object which is used to process the samples.
+ *@param *audioBuffer contains the pointer to the audio buffer that is to be processed.
+ */
+
 void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
     int i, j;
-    int16_t tempOut;
-    int16_t tempLFO;
-    int16_t tempFreqValue;
+    int16_t tempOut, tempLFO, tempFreqValue, temp;
     uint32_t runningSum;
-    int16_t temp;
-    
-    
     
     switch (self->type) {
         case oscilating:
@@ -45,7 +50,7 @@ void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
             {
                 getLFOValue(&tempLFO, &self->wahLFO);
                 tempOut = *audioBuffer;
-                tempFreqValue = ( 2000 + (self->depth*(tempLFO * 500 >> 15)>>8));
+                tempFreqValue = (3000 + (self->depth*(tempLFO * 500 >> 15)>>8));
                 
                 
                 if (tempFreqValue >= 4095) {
@@ -55,13 +60,13 @@ void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
                     tempFreqValue = 0;
                 }
                 
-                applySVF(&self->wahFilter, logScale[tempFreqValue], 60000*self->res >> 8, &tempOut);
+                applySVF(&self->wahFilter, logScale[tempFreqValue], 32768*self->res >> 8, &tempOut);
                 *audioBuffer++ = tempOut;
             }
-            audioBuffer = audioBuffer - framesPerBuffer; // Decrease the pointers
+            audioBuffer = audioBuffer - framesPerBuffer;
             break;
             
-        case automatic: // Develop envelope follower
+        case automatic:
             runningSum = 0;
             
             for( i=0; i<(framesPerBuffer); i++ )
@@ -90,8 +95,6 @@ void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
     
                 tempOut = *audioBuffer;
                 tempFreqValue = 1250 + (int16_t)(runningSum >> 10);
-                //printf("Sum: %i \n", tempFreqValue);
-                
                 
                 if (tempFreqValue >= 3100) {
                     tempFreqValue = 3100;
@@ -100,13 +103,10 @@ void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
                     tempFreqValue = 0;
                 }
                 
-                //printf("Sum: %i \n", tempFreqValue);
-                
                 applySVF(&self->wahFilter, logScale[tempFreqValue], 60000*self->res, &tempOut);
-                
                 *audioBuffer++ = tempOut;
             }
-            audioBuffer = audioBuffer - framesPerBuffer; // Decrease the pointers
+            audioBuffer = audioBuffer - framesPerBuffer;
             break;
             
         default:

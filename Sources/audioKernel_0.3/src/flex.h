@@ -21,6 +21,8 @@
 #include "wahwah.h"
 #include "phaser.h"
 #include "distortion.h"
+#include "noiseGate.h"
+#include "gain.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -28,7 +30,7 @@
 
 ////////////////////////audioRelated parameters//////////
 #define buffSize 128
-#define NO_effects 9
+#define NO_effects 12
 ////////////////////////////////////////////////////////
 
 /////////////////////fnk_Array//////////////////////////
@@ -140,7 +142,23 @@ uint8_t res_p;
 ///// Distortion /////
 distortion distortionInst;
 uint8_t     master_d, pre_amp_d, level_d, tone_d;
+distType    type_d;
 //////////////////////
+
+///// Noise Gate ////
+noiseGate noiseGateInst;
+uint8_t sens_t, threshold_t;
+/////////////////////
+
+
+//// Pre Gain ////
+uint8_t gain_p;
+//////////////////
+
+/// Output Gain ///
+uint8_t gain_o;
+///////////////////
+
 
 void dummyEQ();
 
@@ -158,7 +176,14 @@ void dummyWahwah();
 
 void dummyDistortion();
 
+void dummyNoiseGate();
+
+void dummyPreGain();
+
+void dummyOutGain();
+
 void initialize();
+
 
 
 #endif /* FLEX_H_ */

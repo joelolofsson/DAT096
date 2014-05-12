@@ -1,24 +1,12 @@
-//
-//  circularBuffer.c
-//  audioKernel
-//
-//  Created by Philip Karlsson on 2/3/14.
-//  Copyright (c) 2014 Philip Karlsson. All rights reserved.
-//
-
-/* Circular buffer, keeps one slot open */
-
 /** @file circularBuffer.c
  *  @brief The circular buffer used for the delay, chorus and flanger effects.
  *
- *  These methods contains the
+ * 
  *
  *
  *
  *  @author Philip Karlsson
  */
-
-
 
 #include <stdio.h>
 #include <stdlib.h>

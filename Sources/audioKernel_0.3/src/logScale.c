@@ -1,14 +1,12 @@
-//
-//  logScale.c
-//  FMX
-//
-//  Created by Philip Karlsson on 3/31/14.
-//  Copyright (c) 2014 Philip Karlsson Enterprises. All rights reserved.
-//
+/** @file logScale.c
+ *  @brief This file contains an array of 4096 entries which corresponds to a logarithmic frequency scle between 0->20kHz. It is used when applying LFOs to state variable filters e.g. the wah wah and the phaser effect.
+ *  @author Philip Karlsson
+ */
 
-#include <stdio.h>
 #include <stdint.h>
-
+/**
+ * here, all the values are stored.
+ */
 const int16_t logScale[] = {
     20,
     20,

@@ -1,16 +1,7 @@
-//
-//  delay.c
-//  audioKernel
-//
-//  Created by Philip Karlsson on 2/3/14.
-//  Copyright (c) 2014 Philip Karlsson. All rights reserved.
-//
-
-
 /** @file delay.c
- *  @brief The delay effect.
+ *  @brief The implementation of the delay effect.
  *
- *  These methods contains the functions for initializing and applying the delay effect.
+ *  This file contains the functions for initializing and applying the delay effect.
  *  The last output variable is used for applying the feedback.
  *
  *
@@ -24,7 +15,6 @@
 #include <stdint.h>
 
 int16_t lastOutput = 0;
-
 
 /** This method initializes the delay by using a circular buffer of 40000 entries called circBuffer as defined in delay.h .
  Then it initializes the buffer with zeros.
@@ -44,7 +34,6 @@ void delayInitialize(int32_t size, int16_t *adr){
     }
 }
 
-
 /** This method applies the delay effect to a buffer of samples.
  * @param *audioBuffer is the adress to the buffer that is to be processed.
  * @param framesPerBuffer is the number of frames per buffer.
@@ -53,13 +42,10 @@ void delayInitialize(int32_t size, int16_t *adr){
  * @param level defines the amount of the effect applied to the signal 0-255
  */
 
-
 void delay(int16_t *audioBuffer, int framesPerBuffer, uint8_t feedback, uint8_t time, uint8_t level){
     unsigned int i;
-    
     int16_t temp;
-    int16_t tempOut;
-    
+    int32_t tempOut;
     
     for( i=0; i<framesPerBuffer; i++ )
     {
@@ -69,8 +55,16 @@ void delay(int16_t *audioBuffer, int framesPerBuffer, uint8_t feedback, uint8_t 
         cbRead(&circBuffer, &temp, (40000 * (255 - time)) >> 8);
         
         tempOut = ((*audioBuffer * (255 - level)) >> 8) + ((level*temp) >> 8);
-        *audioBuffer++ = tempOut;
+        
+        if(tempOut > 32767){
+            tempOut = 32767;
+        }
+        else if (tempOut < -32767){
+            tempOut = -32767;
+        }
+        
+        *audioBuffer++ = (int16_t)tempOut;
         lastOutput = temp;
     }
-    audioBuffer = audioBuffer - framesPerBuffer; // Decrease the pointers
+    audioBuffer = audioBuffer - framesPerBuffer;
 }

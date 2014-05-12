@@ -4,11 +4,9 @@
 #include "circularBuffer.h"
 #define _USE_MATH_DEFINES
 
-//int16_t x_n_1, x_n_2 = 0;
-//int32_t y_n_1, y_n_2 = 0;
 
 /**@file biquad.c
-*@brief This file houses all filter related functionallity.     
+*@brief This file houses all biquad filter related functionality.     
 *
 *It contains an implementation of a fixed point biquad filter on direct form 1. Additionally it supplies the functionallity to calculate the related
 *filter coefficients for a bass,trembel and peak filter in floating point. 
@@ -23,8 +21,8 @@ int j;
 
 /**
 *This method handles the biquad filtering. It is oblivious to what kind of filter it is as this is determined by the biquad pointer.
-*@param biquad* self is the struct containing the filter coefficients. These fiter coefficients determine the character of the filter.
-*@param SAMPLE* audiobuffer is the input buffer that is to be filtered. It is of int_t16 type but renamed to allow different target devices.
+*@param self is the struct containing the filter coefficients. These fiter coefficients determine the character of the filter.
+*@param audiobuffer is the input buffer that is to be filtered. It is of int_t16 type but renamed to allow different target devices.
 *@param framesPerBuffer is the size of the audioBuffer. Supplied to allow for different target devices and grainularity of the audio processing.
 *
 */
@@ -69,11 +67,11 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
 *All of these arguments are supplied by the user through the user interface allowing for a flexibility. To reduce the workload for the target device (might not have
 * a FPU) lookup tables in combination with linear interpolation are applied.
 *
-*@param biquad *self is the struct that the function initializes
-*@param float gain sets the gain for the filter, affects the coefficients.
-*@param float fc is the cuttoff frequency of the filter, affects the coefficients.
-*@param float Q sets the "width" of the filter, affects the filter coefficients.
-*@param filterType type is an enum type Bass,tremble or peak. The filter coefficients are calculated accordingly.
+*@param *self is the struct that the function initializes
+*@param gain sets the gain for the filter, affects the coefficients.
+*@param fc is the cuttoff frequency of the filter, affects the coefficients.
+*@param Q sets the "width" of the filter, affects the filter coefficients.
+*@param type is an enum type Bass,tremble or peak. The filter coefficients are calculated accordingly.
 */
 
 void filterCoefficients(biquad *self,float gain, float fs, float fc, float Q, filterType type){

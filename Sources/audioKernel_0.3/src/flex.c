@@ -60,6 +60,20 @@ void dummyDistortion(){
 	//filter(&highs_d,samples,buffSize);
 }
 
+void dummyNoiseGate(){
+    applyNoiseGate(buffSize, &noiseGateInst, samples);
+}
+
+void dummyPreGain(){
+    applyGain(buffSize, gain_p, samples);
+}
+
+void dummyOutGain(){
+    applyGain(buffSize, gain_o, samples);
+}
+
+
+
 /*
  * To be expanded as more effects are added to the audiokernel
  *
@@ -111,10 +125,12 @@ void initialize(){
 	////////////////////////////////////////
     
     /////// Distortion //////
-    
-    initDistortion(&distortionInst, master_d, pre_amp_d, level_d, tone_d);
-    
+    initDistortion(&distortionInst, master_d, pre_amp_d, level_d, tone_d, type_d);
     /////////////////////////
+    
+    ////// Noise Gate //////
+    initNoiseGate(&noiseGateInst, sens_t, threshold_t);
+    ////////////////////////
 
 	/////////Function array pointer/////////////
 	fnk_Array[0] = dummyDelay;
@@ -126,6 +142,9 @@ void initialize(){
 	fnk_Array[6] = dummyWahwah;
     fnk_Array[7] = dummyPhaser;
     fnk_Array[8] = dummyDistortion;
+    fnk_Array[9] = dummyNoiseGate;
+    fnk_Array[10] = dummyPreGain;
+    fnk_Array[11] = dummyOutGain;
 	////////////////////////////////////////////
 
 }

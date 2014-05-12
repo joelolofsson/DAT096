@@ -77,7 +77,26 @@ typedef struct{
 
 } biquad;
 
+/**
+ *This method handles the biquad filtering. It is oblivious to what kind of filter it is as this is determined by the biquad pointer.
+ *@param self is the struct containing the filter coefficients. These fiter coefficients determine the character of the filter.
+ *@param audiobuffer is the input buffer that is to be filtered. It is of int_t16 type but renamed to allow different target devices.
+ *@param framesPerBuffer is the size of the audioBuffer. Supplied to allow for different target devices and grainularity of the audio processing.
+ *
+ */
 void filterCoefficients(biquad *self,float gain, float fs, float fc, float Q, filterType type);
+
+/**
+ *This function initializes the filter pointed to by self. Depending on what type of filter self is meant to be, the coefficients will be calculated differently.
+ *All of these arguments are supplied by the user through the user interface allowing for a flexibility. To reduce the workload for the target device (might not have
+ * a FPU) lookup tables in combination with linear interpolation are applied.
+ *
+ *@param *self is the struct that the function initializes
+ *@param gain sets the gain for the filter, affects the coefficients.
+ *@param fc is the cuttoff frequency of the filter, affects the coefficients.
+ *@param Q sets the "width" of the filter, affects the filter coefficients.
+ *@param type is an enum type Bass,tremble or peak. The filter coefficients are calculated accordingly.
+ */
 void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer);
 
 

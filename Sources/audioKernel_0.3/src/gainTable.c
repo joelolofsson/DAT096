@@ -1,12 +1,11 @@
-//
-//  gainTable.c
-//  STM32F4_SYNTH
-//
-//  Created by Philip Karlsson on 2014-02-23.
-//  Copyright (c) 2014 Philip Karlsson. All rights reserved.
-//
+/** @file gainTable.c
+ *  @brief This file contains the lookup table for the gain values when calculating the filter coefficients in biquad.c.
+ *  @author Philip Karlsson
+ */
 
-#include <stdio.h>
+/**
+ * This is the lookup table for the gain used in the algorithms of biquad.c
+ */
 
 const float gainTable[] = {
     6.309573e-02,

@@ -1,37 +1,40 @@
-//
-//  SVF.c
-//  FMX
-//
-//  Created by Philip Karlsson on 2014-03-28.
-//  Copyright (c) 2014 Philip Karlsson Enterprises. All rights reserved.
-//
+/** @file SVF.c
+ *  @brief This file contains the implementation of the state variable filter.
+ *
+ *  It countains the methods for initializing state variable filter (SVF) objects as well as applying them to audio signals.
+ *
+ *  @author Philip Karlsson
+ */
 
-#include <stdio.h>
 #include "SVF.h"
 
+/**
+ * This method initializes a SVF.
+ * @param *self is the pointer to the object that is to be initialized
+ * @param type specifies the type of filter that the SVF will be initialized to.
+ */
 void initSVF(SVF *self, SVFFilterType type){
     self->cutoff = 0;
     self->q = 0;
-    
     self->type = type;
     self->bandOutput = 0;
     self->lowOutput = 0;
     self->notchOutput = 0;
     self->highOutput = 0;
     self->f = 0;
-    
     self->bandOutput_n_1 = 0;
     self->lowOutput_n_1 = 0;
-    SVFLookupTablePtr = SVFLookupTable; // Pointer to the first element of the external lookup table
-    
+    SVFLookupTablePtr = SVFLookupTable;
 }
-
+/** This method applies the SVF to an audio buffer.
+ *@param framesPerBuffer specifies the buffer size.
+ *@param *self is the reference to the SVF object which is used to process the samples.
+ *@param *audioBuffer contains the pointer to the audio buffer that is to be processed.
+ */
 void applySVF(SVF *self, uint16_t cutoff, uint16_t q, int16_t *audioBuffer){
-    uint32_t X0,X1, Y1, Y0;
-    uint32_t temp,temp2, frac;
+    uint32_t X0,X1, Y1, Y0, temp, frac;
     
     if(self->cutoff != cutoff || self->q != q){
-        /* Check the bounds ****/
         if(cutoff > 15000)
             self->cutoff = 15000;
         else if(cutoff < 0)
@@ -39,43 +42,28 @@ void applySVF(SVF *self, uint16_t cutoff, uint16_t q, int16_t *audioBuffer){
         else
             self->cutoff = cutoff;
         
-        if(q > 65535)
-            self->q = 65535;
+        if(q > 32767)
+            self->q = 32767;
         else if (q < 0)
             self->q = 0;
         else
             self->q = q;
-        /**********************/
         
-        temp2 = cutoff * 12031; //12031 - 1/5.54.... Q.16
-        
-        temp = temp2 >> 16; 
-        
-        X0 = (uint16_t) temp; // The integer part..
-        
-        X1 = X0 + 1; // for interpool
-        
-        frac = temp2 - X0; // The fractional part for the interpolation..
-        
+        temp = self->cutoff * 12031;
+        X0 = temp >> 16;
+        frac = temp - (X0 << 16);
+        X1 = X0 + 1;
         Y0 = *(SVFLookupTablePtr + X0);
-        
         Y1 = *(SVFLookupTablePtr + X1);
-        
-        self->f = 2 * (Y0 + ((Y1-Y0)*frac >> 16)); // Maybe not two and maybe check for boundaries // Redo table to Q.15 unsigned format
-        
-        self->f = 2*Y0; // Test
-        
-        self->f = self->f >> 8;
-        
+        self->f = (Y0 + ((Y1-Y0)*frac >> 16));
+        self->f = self->f >> 4; // Change to Q.11 and mult 2
     }
     
-    self->highOutput = *audioBuffer - self->lowOutput_n_1 - (self->q * self->bandOutput_n_1 >> 14);
-    self->bandOutput = (self->highOutput * self->f >> 8) + self->bandOutput_n_1;
-    self->lowOutput = (self->f * self->bandOutput >> 8) + self->lowOutput;
-    
+    self->highOutput = (int32_t)*audioBuffer - self->lowOutput_n_1 - (self->q * self->bandOutput_n_1 >> 15);
+    self->bandOutput = (self->highOutput * self->f >> 11) + self->bandOutput_n_1;
+    self->lowOutput = (self->f * self->bandOutput >> 11) + self->lowOutput;
     self->bandOutput_n_1 = self->bandOutput;
     self->lowOutput_n_1 = self->lowOutput;
-    
     
     switch (self->type) {
         case HP:
@@ -94,27 +82,3 @@ void applySVF(SVF *self, uint16_t cutoff, uint16_t q, int16_t *audioBuffer){
             break;
     }
 }
-
-/*
- 
- cutoff = cutoff freq in Hz
- fs = sampling frequency //(e.g. 44100Hz)
- f = 2 sin (pi * cutoff / fs) //[approximately]
- q = resonance/bandwidth [0 < q <= 1]  most res: q=1, less: q=0
- low = lowpass output
- high = highpass output
- band = bandpass output
- notch = notch output
- 
- scale = q
- 
- low=high=band=0;
- 
- //--beginloop
- low = low + f * band;
- high = scale * input - low - q*band;
- band = f * high + band;
- notch = high + low;
- //--endloop
- 
- */
