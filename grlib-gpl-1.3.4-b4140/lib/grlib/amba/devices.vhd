@@ -60,6 +60,7 @@ package devices is
   constant VENDOR_CAL        : amba_vendor_type := 16#CA#;
   constant VENDOR_CETON      : amba_vendor_type := 16#CB#;
   constant VENDOR_EMBEDDIT   : amba_vendor_type := 16#EA#;
+  constant VENDOR_GROUP		 : amba_vendor_type := 16#EE#;
 
 -- Aeroflex Gaisler device id's
 
@@ -313,6 +314,11 @@ package devices is
 
   constant CONTRIB_CORE1        : amba_device_type := 16#001#;
   constant CONTRIB_CORE2        : amba_device_type := 16#002#;
+  
+ -- Own ID's
+
+	constant OWN_ADC			: amba_device_type := 16#001#;
+	constant OWN_BTN			: amba_device_type := 16#002#;
 
 -- grlib system device id's
 
@@ -359,6 +365,8 @@ package devices is
   constant GAISLER_GR712RC      : system_device_type := 16#0712#;
   constant GAISLER_SPWRTRASIC   : system_device_type := 16#0718#;
   constant AEROFLEX_UT840       : system_device_type := 16#0840#;
+  constant Group_OWN_ADC		: system_device_type := 16#1313#;
+  constant Group_own_BTN		: system_device_type := 16#1314#;
 
 -- pragma translate_off
 
@@ -612,6 +620,19 @@ package devices is
      vendordesc      => CONTRIB_DESC,
      device_table    => contrib_device_table
    );
+   
+  constant GROUP_DESC : vendor_description :=   "Group 1 EDA016 2014   ";
+  
+  constant Group_device_table : device_table_type := (
+   OWN_ADC    => 		"ADC                            ",
+   OWM_BTN		=> 		"Button interface               ", 
+   others           =>  "Unknown Device test                ");
+   
+     constant group_lib : vendor_library_type := (
+     vendorid 	     => VENDOR_GROUP,
+     vendordesc      => GROUP_DESC,
+     device_table    => Group_device_table
+   ); 
 
   constant MENTA_DESC : vendor_description :=  "Menta                   ";
 
@@ -829,6 +850,7 @@ package devices is
     VENDOR_ACTEL       => actel_lib,
     VENDOR_NASA        => nasa_lib,
     VENDOR_S3          => s3_lib,
+	VENDOR_group	   => group_lib,
     others             => unknown_lib);
 
   type system_table_type is array (0 to 4095) of device_description;
@@ -860,6 +882,8 @@ package devices is
    NGMP_PROTOTYPE2    => "NGMP Prototype System-on-Chip  ",
    ORBITA_OBTMP       => "Orbita LEON4 prototype system  ",
    GAISLER_SPWRTRASIC => "Gaisler SpaceWire Router ASIC  ",
+   GROUP_OWN_ADC	  => "Groups 1 own devices           ",
+   GROUP_OWN_BTN	  => "Groups 1 own devices           ",
    others             => "Unknown system                 ");
 
 -- pragma translate_on

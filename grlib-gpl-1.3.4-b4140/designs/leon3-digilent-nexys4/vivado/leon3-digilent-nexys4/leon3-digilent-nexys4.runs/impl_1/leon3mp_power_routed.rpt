@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
-| Date             : Tue May 06 20:02:55 2014
+| Date             : Mon May 12 14:14:25 2014
 | Host             : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command          : report_power -file leon3mp_power_routed.rpt -pb leon3mp_power_summary_routed.pb
 | Design           : leon3mp
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.490 |
-| Dynamic (W)              | 0.390 |
+| Total On-Chip Power (W)  | 0.546 |
+| Dynamic (W)              | 0.446 |
 | Device Static (W)        | 0.100 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 82.8  |
-| Junction Temperature (C) | 27.2  |
+| Max Ambient (C)          | 82.5  |
+| Junction Temperature (C) | 27.5  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,24 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.048 |       10 |       --- |             --- |
-| Slice Logic              |     0.035 |    41853 |       --- |             --- |
-|   LUT as Logic           |     0.033 |    17915 |     63400 |           28.25 |
-|   CARRY4                 |    <0.001 |      585 |     15850 |            3.69 |
-|   Register               |    <0.001 |    17910 |    126800 |           14.12 |
-|   F7/F8 Muxes            |    <0.001 |     1406 |     63400 |            2.21 |
-|   LUT as Shift Register  |    <0.001 |      503 |     19000 |            2.64 |
+| Clocks                   |     0.099 |       10 |       --- |             --- |
+| Slice Logic              |     0.034 |    44634 |       --- |             --- |
+|   LUT as Logic           |     0.032 |    18841 |     63400 |           29.71 |
+|   Register               |    <0.001 |    19268 |    126800 |           15.19 |
+|   CARRY4                 |    <0.001 |      630 |     15850 |            3.97 |
+|   F7/F8 Muxes            |    <0.001 |     1436 |     63400 |            2.26 |
+|   LUT as Shift Register  |    <0.001 |      589 |     19000 |            3.10 |
 |   LUT as Distributed RAM |    <0.001 |      176 |     19000 |            0.92 |
-|   BUFG                   |    <0.001 |        1 |        32 |            3.12 |
-|   Others                 |     0.000 |      769 |       --- |             --- |
-| Signals                  |     0.044 |    33359 |       --- |             --- |
-| Block RAM                |     0.013 |       80 |       135 |           59.25 |
+|   Others                 |     0.000 |      914 |       --- |             --- |
+| Signals                  |     0.051 |    35500 |       --- |             --- |
+| Block RAM                |     0.013 |     80.5 |       135 |           59.62 |
 | PLL                      |     0.196 |        2 |         6 |           33.33 |
 | DSPs                     |     0.005 |        8 |       240 |            3.33 |
-| I/O                      |     0.048 |      111 |       210 |           52.85 |
-| XADC                     |    <0.001 |        1 |       --- |             --- |
+| I/O                      |     0.047 |      129 |       210 |           61.42 |
+| XADC                     |     0.002 |        1 |       --- |             --- |
 | Static Power             |     0.100 |          |           |                 |
-| Total                    |     0.490 |          |           |                 |
+| Total                    |     0.546 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.176 |       0.159 |      0.017 |
+| Vccint    |       1.000 |     0.232 |       0.215 |      0.017 |
 | Vccaux    |       1.800 |     0.121 |       0.103 |      0.018 |
 | Vcco33    |       3.300 |     0.017 |       0.013 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -88,7 +87,7 @@ Table of Contents
 | Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
-| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
+| Vccadc    |       1.800 |     0.021 |       0.001 |      0.020 |
 +-----------+-------------+-----------+-------------+------------+
 
 
@@ -133,8 +132,8 @@ Table of Contents
 | Clock                                                   | Domain                         | Constraint (ns) |
 +---------------------------------------------------------+--------------------------------+-----------------+
 | dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/DRCK   | dbg_hub/inst/bscan_inst/DRCK   |            30.0 |
-| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE |            60.0 |
 | clk                                                     | clk                            |            10.0 |
+| dbg_hub/inst/bscan_inst/SERIES7_BSCAN.bscan_inst/UPDATE | dbg_hub/inst/bscan_inst/UPDATE |            60.0 |
 | CLKFBOUT                                                | CLKFBOUT                       |            10.0 |
 | CLKOUT0                                                 | CLKOUT0                        |            20.0 |
 | CLKOUT1                                                 | CLKOUT1                        |            20.0 |
@@ -154,8 +153,7 @@ Table of Contents
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                                                                                                        | Power (W) |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| leon3mp                                                                                                                                                                                     |     0.390 |
-|   adderahb_if                                                                                                                                                                               |     0.001 |
+| leon3mp                                                                                                                                                                                     |     0.446 |
 |   ahb0                                                                                                                                                                                      |     0.003 |
 |   apb0                                                                                                                                                                                      |     0.001 |
 |   bdr                                                                                                                                                                                       |     0.005 |
@@ -208,24 +206,24 @@ Table of Contents
 |     v[7].x0                                                                                                                                                                                 |    <0.001 |
 |       xcv.x0                                                                                                                                                                                |    <0.001 |
 |         ttl0.slow0.op                                                                                                                                                                       |    <0.001 |
-|   bpromgen.brom                                                                                                                                                                             |     0.001 |
+|   bpromgen.brom                                                                                                                                                                             |    <0.001 |
 |   clkgen0                                                                                                                                                                                   |     0.103 |
 |     xc7l.v                                                                                                                                                                                  |     0.103 |
-|   dbg_hub                                                                                                                                                                                   |     0.003 |
-|     inst                                                                                                                                                                                    |     0.003 |
-|       UUT_MASTER                                                                                                                                                                            |     0.003 |
-|         U_ICON_INTERFACE                                                                                                                                                                    |     0.002 |
+|   dbg_hub                                                                                                                                                                                   |     0.004 |
+|     inst                                                                                                                                                                                    |     0.004 |
+|       UUT_MASTER                                                                                                                                                                            |     0.004 |
+|         U_ICON_INTERFACE                                                                                                                                                                    |     0.003 |
 |           U_CMD1                                                                                                                                                                            |    <0.001 |
 |           U_CMD2                                                                                                                                                                            |    <0.001 |
 |           U_CMD3                                                                                                                                                                            |    <0.001 |
 |           U_CMD4                                                                                                                                                                            |    <0.001 |
 |           U_CMD5                                                                                                                                                                            |    <0.001 |
-|           U_CMD6_RD                                                                                                                                                                         |    <0.001 |
-|             U_RD_FIFO                                                                                                                                                                       |    <0.001 |
-|               SUBCORE_FIFO.xsdb_rdfifo_inst                                                                                                                                                 |    <0.001 |
-|                 inst_fifo_gen                                                                                                                                                               |    <0.001 |
-|                   gconvfifo.rf                                                                                                                                                              |    <0.001 |
-|                     grf.rf                                                                                                                                                                  |    <0.001 |
+|           U_CMD6_RD                                                                                                                                                                         |     0.001 |
+|             U_RD_FIFO                                                                                                                                                                       |     0.001 |
+|               SUBCORE_FIFO.xsdb_rdfifo_inst                                                                                                                                                 |     0.001 |
+|                 inst_fifo_gen                                                                                                                                                               |     0.001 |
+|                   gconvfifo.rf                                                                                                                                                              |     0.001 |
+|                     grf.rf                                                                                                                                                                  |     0.001 |
 |                       gntv_or_sync_fifo.gcx.clkx                                                                                                                                            |    <0.001 |
 |                         gsync_stage[1].rd_stg_inst                                                                                                                                          |    <0.001 |
 |                         gsync_stage[1].wr_stg_inst                                                                                                                                          |    <0.001 |
@@ -272,7 +270,7 @@ Table of Contents
 |           U_STATIC_STATUS                                                                                                                                                                   |    <0.001 |
 |         U_XSDB_ADDRESS_CONTROLLER                                                                                                                                                           |    <0.001 |
 |         U_XSDB_BURST_WD_LEN_CONTROLLER                                                                                                                                                      |    <0.001 |
-|         U_XSDB_BUS_CONTROLLER                                                                                                                                                               |    <0.001 |
+|         U_XSDB_BUS_CONTROLLER                                                                                                                                                               |     0.001 |
 |           U_RD_ABORT_FLAG                                                                                                                                                                   |    <0.001 |
 |           U_RD_REQ_FLAG                                                                                                                                                                     |    <0.001 |
 |           U_TIMER                                                                                                                                                                           |    <0.001 |
@@ -299,11 +297,11 @@ Table of Contents
 |       edclramnft.r1                                                                                                                                                                         |    <0.001 |
 |         xc2v.x0                                                                                                                                                                             |    <0.001 |
 |           a6.x0                                                                                                                                                                             |    <0.001 |
-|       ethc0                                                                                                                                                                                 |     0.007 |
+|       ethc0                                                                                                                                                                                 |     0.008 |
 |         ahb0                                                                                                                                                                                |    <0.001 |
 |         rx_rmii1.rx0                                                                                                                                                                        |     0.001 |
 |           rx_rst                                                                                                                                                                            |    <0.001 |
-|         tx_rmii1.tx0                                                                                                                                                                        |     0.001 |
+|         tx_rmii1.tx0                                                                                                                                                                        |    <0.001 |
 |           tx_rst                                                                                                                                                                            |    <0.001 |
 |       nft.rx_fifo0                                                                                                                                                                          |    <0.001 |
 |         xc2v.x0                                                                                                                                                                             |    <0.001 |
@@ -339,11 +337,11 @@ Table of Contents
 |   etxc_pad                                                                                                                                                                                  |     0.006 |
 |     xcv.x0                                                                                                                                                                                  |     0.006 |
 |   gpt.timer0                                                                                                                                                                                |    <0.001 |
-|   io0                                                                                                                                                                                       |     0.073 |
-|     inst_ADC_TOP                                                                                                                                                                            |     0.047 |
-|       ILA_ADC                                                                                                                                                                               |     0.011 |
-|         U0                                                                                                                                                                                  |     0.011 |
-|           ila_core_inst                                                                                                                                                                     |     0.011 |
+|   io0                                                                                                                                                                                       |     0.124 |
+|     inst_ADC_TOP                                                                                                                                                                            |     0.074 |
+|       ILA_ADC                                                                                                                                                                               |     0.023 |
+|         U0                                                                                                                                                                                  |     0.023 |
+|           ila_core_inst                                                                                                                                                                     |     0.023 |
 |             ADV_TRIG.u_adv_trig                                                                                                                                                             |    <0.001 |
 |               fsm_mem_data_reg_0_63_0_2                                                                                                                                                     |    <0.001 |
 |               fsm_mem_data_reg_0_63_12_14                                                                                                                                                   |    <0.001 |
@@ -534,7 +532,7 @@ Table of Contents
 |                           u_srlB                                                                                                                                                            |    <0.001 |
 |                           u_srlC                                                                                                                                                            |    <0.001 |
 |                           u_srlD                                                                                                                                                            |    <0.001 |
-|             u_ila_regs                                                                                                                                                                      |     0.008 |
+|             u_ila_regs                                                                                                                                                                      |     0.017 |
 |               ADV_TRIG_STREAM.reg_stream_ffc                                                                                                                                                |    <0.001 |
 |                 I_EN_CTL_EQ1.U_CTL                                                                                                                                                          |    <0.001 |
 |               CNT.CNT_SRL[0].cnt_srl_reg                                                                                                                                                    |    <0.001 |
@@ -662,7 +660,7 @@ Table of Contents
 |               asyncrounous_transfer.halt_in_transfer_inst                                                                                                                                   |    <0.001 |
 |               asyncrounous_transfer.halt_out_transfer_inst                                                                                                                                  |    <0.001 |
 |               halt_detection_inst                                                                                                                                                           |    <0.001 |
-|             u_trig                                                                                                                                                                          |     0.001 |
+|             u_trig                                                                                                                                                                          |     0.002 |
 |               U_TM                                                                                                                                                                          |    <0.001 |
 |                 G_NMU[0].U_M                                                                                                                                                                |    <0.001 |
 |                   allx_typeA_match_detection.cs_allx_typeA_inst                                                                                                                             |    <0.001 |
@@ -947,15 +945,15 @@ Table of Contents
 |                       u_srlC                                                                                                                                                                |    <0.001 |
 |                       u_srlD                                                                                                                                                                |    <0.001 |
 |             xsdb_memory_read_inst                                                                                                                                                           |    <0.001 |
-|       inst_ADC                                                                                                                                                                              |     0.001 |
+|       inst_ADC                                                                                                                                                                              |     0.002 |
 |       inst_Buffer                                                                                                                                                                           |     0.006 |
-|       isnt_filter                                                                                                                                                                           |     0.029 |
-|     inst_top                                                                                                                                                                                |     0.020 |
-|       inst_DAC_BUFFER                                                                                                                                                                       |     0.006 |
+|       isnt_filter                                                                                                                                                                           |     0.043 |
+|     inst_top                                                                                                                                                                                |     0.044 |
+|       inst_DAC_BUFFER                                                                                                                                                                       |     0.013 |
 |       inst_DAC_SPI                                                                                                                                                                          |    <0.001 |
-|       inst_clk_divider                                                                                                                                                                      |     0.002 |
-|       your_instance_name                                                                                                                                                                    |     0.012 |
-|         U0                                                                                                                                                                                  |     0.012 |
+|       inst_clk_divider                                                                                                                                                                      |     0.003 |
+|       your_instance_name                                                                                                                                                                    |     0.028 |
+|         U0                                                                                                                                                                                  |     0.028 |
 |           ila_core_inst/ADV_TRIG.u_adv_trig/fsm_mem_data_reg_0_63_0_2                                                                                                                       |    <0.001 |
 |           ila_core_inst/ADV_TRIG.u_adv_trig/fsm_mem_data_reg_0_63_12_14                                                                                                                     |    <0.001 |
 |           ila_core_inst/ADV_TRIG.u_adv_trig/fsm_mem_data_reg_0_63_15_17                                                                                                                     |    <0.001 |
@@ -1013,10 +1011,26 @@ Table of Contents
 |           ila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB                                      |    <0.001 |
 |           ila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC                                      |    <0.001 |
 |           ila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlD                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlB                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlC                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlD                                      |    <0.001 |
 |           ila_core_inst/u_trig/U_TM/G_NMU[2].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA                                      |    <0.001 |
 |           ila_core_inst/u_trig/U_TM/G_NMU[2].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB                                      |    <0.001 |
 |           ila_core_inst/u_trig/U_TM/G_NMU[2].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC                                      |    <0.001 |
 |           ila_core_inst/u_trig/U_TM/G_NMU[2].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlD                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[3].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[3].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[3].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[3].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlD                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[4].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[4].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[4].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[4].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlD                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[5].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[5].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[5].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC                                      |    <0.001 |
+|           ila_core_inst/u_trig/U_TM/G_NMU[5].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlD                                      |    <0.001 |
 |           ila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA                                        |    <0.001 |
 |           ila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB                                        |    <0.001 |
 |           ila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC                                        |    <0.001 |
@@ -1165,11 +1179,11 @@ Table of Contents
 |           xc2v.x0                                                                                                                                                                           |     0.002 |
 |         ime.im0[1].itags0                                                                                                                                                                   |     0.001 |
 |           xc2v.x0                                                                                                                                                                           |     0.001 |
-|       p0                                                                                                                                                                                    |     0.030 |
+|       p0                                                                                                                                                                                    |     0.031 |
 |         c0mmu                                                                                                                                                                               |     0.007 |
 |           a0                                                                                                                                                                                |    <0.001 |
 |           dcache0                                                                                                                                                                           |     0.003 |
-|           icache0                                                                                                                                                                           |     0.003 |
+|           icache0                                                                                                                                                                           |     0.004 |
 |         iu                                                                                                                                                                                  |     0.019 |
 |         mgen.div0                                                                                                                                                                           |     0.002 |
 |         mgen.mul0                                                                                                                                                                           |     0.002 |
@@ -1196,7 +1210,7 @@ Table of Contents
 |         mem0[1].ram0                                                                                                                                                                        |    <0.001 |
 |           nopar.s64.xc2v.x0                                                                                                                                                                 |    <0.001 |
 |   mg2.sr1                                                                                                                                                                                   |     0.002 |
-|   mgpads.addr_pad                                                                                                                                                                           |     0.022 |
+|   mgpads.addr_pad                                                                                                                                                                           |     0.020 |
 |     v[0].x0                                                                                                                                                                                 |    <0.001 |
 |       xcv.x0                                                                                                                                                                                |    <0.001 |
 |     v[10].x0                                                                                                                                                                                |    <0.001 |
@@ -1254,6 +1268,190 @@ Table of Contents
 |   mgpads.wri_pad                                                                                                                                                                            |    <0.001 |
 |     xcv.x0                                                                                                                                                                                  |    <0.001 |
 |   rst0                                                                                                                                                                                      |    <0.001 |
+|   selector                                                                                                                                                                                  |     0.009 |
+|     inst_RGB_diode_controller                                                                                                                                                               |    <0.001 |
+|     inst_button                                                                                                                                                                             |    <0.001 |
+|       Bouncefix[1].bounce_fix                                                                                                                                                               |    <0.001 |
+|       Bouncefix[2].bounce_fix                                                                                                                                                               |    <0.001 |
+|       Bouncefix[3].bounce_fix                                                                                                                                                               |    <0.001 |
+|       Bouncefix[4].bounce_fix                                                                                                                                                               |    <0.001 |
+|     inst_seven_seg                                                                                                                                                                          |    <0.001 |
+|       clk_div                                                                                                                                                                               |    <0.001 |
+|     your_instance_name                                                                                                                                                                      |     0.008 |
+|       U0                                                                                                                                                                                    |     0.008 |
+|         ila_core_inst                                                                                                                                                                       |     0.008 |
+|           ila_trace_memory_inst                                                                                                                                                             |    <0.001 |
+|             SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                                                                                                                        |    <0.001 |
+|               inst_blk_mem_gen                                                                                                                                                              |    <0.001 |
+|                 gnativebmg.native_blk_mem_gen                                                                                                                                               |    <0.001 |
+|                   valid.cstr                                                                                                                                                                |    <0.001 |
+|                     ramloop[0].ram.r                                                                                                                                                        |    <0.001 |
+|                       prim_noinit.ram                                                                                                                                                       |    <0.001 |
+|           u_ila_cap_ctrl                                                                                                                                                                    |     0.001 |
+|             U_CDONE                                                                                                                                                                         |    <0.001 |
+|             U_NS0                                                                                                                                                                           |    <0.001 |
+|             U_NS1                                                                                                                                                                           |    <0.001 |
+|             u_cap_addrgen                                                                                                                                                                   |    <0.001 |
+|               U_CMPRESET                                                                                                                                                                    |    <0.001 |
+|               u_cap_sample_counter                                                                                                                                                          |    <0.001 |
+|                 U_SCE                                                                                                                                                                       |    <0.001 |
+|                 U_SCMPCE                                                                                                                                                                    |    <0.001 |
+|                 U_SCRST                                                                                                                                                                     |    <0.001 |
+|                 u_scnt_cmp                                                                                                                                                                  |    <0.001 |
+|                   allx_typeA_match_detection.cs_allx_typeA_inst                                                                                                                             |    <0.001 |
+|                     DUT                                                                                                                                                                     |    <0.001 |
+|                       I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                                                                                                          |    <0.001 |
+|                         u_srlA                                                                                                                                                              |    <0.001 |
+|                         u_srlB                                                                                                                                                              |    <0.001 |
+|                         u_srlC                                                                                                                                                              |    <0.001 |
+|                         u_srlD                                                                                                                                                              |    <0.001 |
+|                       I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                                                                                                          |    <0.001 |
+|                         u_srlA                                                                                                                                                              |    <0.001 |
+|                         u_srlB                                                                                                                                                              |    <0.001 |
+|                         u_srlC                                                                                                                                                              |    <0.001 |
+|                         u_srlD                                                                                                                                                              |    <0.001 |
+|               u_cap_window_counter                                                                                                                                                          |    <0.001 |
+|                 U_WCE                                                                                                                                                                       |    <0.001 |
+|                 U_WHCMPCE                                                                                                                                                                   |    <0.001 |
+|                 U_WLCMPCE                                                                                                                                                                   |    <0.001 |
+|                 u_wcnt_hcmp                                                                                                                                                                 |    <0.001 |
+|                   allx_typeA_match_detection.cs_allx_typeA_inst                                                                                                                             |    <0.001 |
+|                     DUT                                                                                                                                                                     |    <0.001 |
+|                       I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                                                                                                          |    <0.001 |
+|                         u_srlA                                                                                                                                                              |    <0.001 |
+|                         u_srlB                                                                                                                                                              |    <0.001 |
+|                         u_srlC                                                                                                                                                              |    <0.001 |
+|                         u_srlD                                                                                                                                                              |    <0.001 |
+|                       I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                                                                                                          |    <0.001 |
+|                         u_srlA                                                                                                                                                              |    <0.001 |
+|                         u_srlB                                                                                                                                                              |    <0.001 |
+|                         u_srlC                                                                                                                                                              |    <0.001 |
+|                         u_srlD                                                                                                                                                              |    <0.001 |
+|                 u_wcnt_lcmp                                                                                                                                                                 |    <0.001 |
+|                   allx_typeA_match_detection.cs_allx_typeA_inst                                                                                                                             |    <0.001 |
+|                     DUT                                                                                                                                                                     |    <0.001 |
+|                       I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                                                                                                          |    <0.001 |
+|                         u_srlA                                                                                                                                                              |    <0.001 |
+|                         u_srlB                                                                                                                                                              |    <0.001 |
+|                         u_srlC                                                                                                                                                              |    <0.001 |
+|                         u_srlD                                                                                                                                                              |    <0.001 |
+|                       I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE                                                                                                                          |    <0.001 |
+|                         u_srlA                                                                                                                                                              |    <0.001 |
+|                         u_srlB                                                                                                                                                              |    <0.001 |
+|                         u_srlC                                                                                                                                                              |    <0.001 |
+|                         u_srlD                                                                                                                                                              |    <0.001 |
+|           u_ila_regs                                                                                                                                                                        |     0.006 |
+|             MU_SRL[0].mu_srl_reg                                                                                                                                                            |    <0.001 |
+|             MU_SRL[1].mu_srl_reg                                                                                                                                                            |    <0.001 |
+|             MU_STATUS[0].mu_width_reg                                                                                                                                                       |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             TC_SRL[0].tc_srl_reg                                                                                                                                                            |    <0.001 |
+|             U_XSDB_SLAVE                                                                                                                                                                    |    <0.001 |
+|             reg_0                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_1                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_10                                                                                                                                                                          |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_11                                                                                                                                                                          |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_12                                                                                                                                                                          |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_13                                                                                                                                                                          |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_14                                                                                                                                                                          |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_15                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_16                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_17                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_18                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_19                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_1a                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_2                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_6                                                                                                                                                                           |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_7                                                                                                                                                                           |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_8                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_80                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_81                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_82                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_83                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_84                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_85                                                                                                                                                                          |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_88d                                                                                                                                                                         |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_88f                                                                                                                                                                         |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_892                                                                                                                                                                         |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_9                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_a                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_b                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_c                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_d                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_e                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_f                                                                                                                                                                           |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|             reg_srl_fff                                                                                                                                                                     |    <0.001 |
+|             reg_stream_ffd                                                                                                                                                                  |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                                                                                                                                                            |    <0.001 |
+|             reg_stream_ffe                                                                                                                                                                  |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                                                                                                                                                          |    <0.001 |
+|           u_ila_reset_ctrl                                                                                                                                                                  |    <0.001 |
+|             arm_detection_inst                                                                                                                                                              |    <0.001 |
+|             asyncrounous_transfer.arm_in_transfer_inst                                                                                                                                      |    <0.001 |
+|             asyncrounous_transfer.arm_out_transfer_inst                                                                                                                                     |    <0.001 |
+|             asyncrounous_transfer.halt_in_transfer_inst                                                                                                                                     |    <0.001 |
+|             asyncrounous_transfer.halt_out_transfer_inst                                                                                                                                    |    <0.001 |
+|             halt_detection_inst                                                                                                                                                             |    <0.001 |
+|           u_trig                                                                                                                                                                            |    <0.001 |
+|             U_TM                                                                                                                                                                            |    <0.001 |
+|               G_NMU[0].U_M                                                                                                                                                                  |    <0.001 |
+|                 allx_typeA_match_detection.cs_allx_typeA_inst                                                                                                                               |    <0.001 |
+|                   DUT                                                                                                                                                                       |    <0.001 |
+|                     I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                                                                                                            |    <0.001 |
+|                       u_srlA                                                                                                                                                                |    <0.001 |
+|                       u_srlB                                                                                                                                                                |    <0.001 |
+|                       u_srlC                                                                                                                                                                |    <0.001 |
+|                       u_srlD                                                                                                                                                                |    <0.001 |
+|               G_NMU[1].U_M                                                                                                                                                                  |    <0.001 |
+|                 allx_typeA_match_detection.cs_allx_typeA_inst                                                                                                                               |    <0.001 |
+|                   DUT                                                                                                                                                                       |    <0.001 |
+|                     I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                                                                                                            |    <0.001 |
+|                       u_srlA                                                                                                                                                                |    <0.001 |
+|                       u_srlB                                                                                                                                                                |    <0.001 |
+|                       u_srlC                                                                                                                                                                |    <0.001 |
+|                       u_srlD                                                                                                                                                                |    <0.001 |
+|             genblk1[0].U_TC                                                                                                                                                                 |    <0.001 |
+|               allx_typeA_match_detection.cs_allx_typeA_inst                                                                                                                                 |    <0.001 |
+|                 DUT                                                                                                                                                                         |    <0.001 |
+|                   I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE                                                                                                                              |    <0.001 |
+|                     u_srlA                                                                                                                                                                  |    <0.001 |
+|                     u_srlB                                                                                                                                                                  |    <0.001 |
+|                     u_srlC                                                                                                                                                                  |    <0.001 |
+|                     u_srlD                                                                                                                                                                  |    <0.001 |
+|           xsdb_memory_read_inst                                                                                                                                                             |    <0.001 |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 
 

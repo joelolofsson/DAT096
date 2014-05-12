@@ -75,7 +75,7 @@ signal Dac_buff_write_temp : STD_LOGIC;
 
 --constant REVISION       : amba_version_type := 0; 
 constant pconfig        : apb_config_type := (
-                      0 => ahb_device_reg ( VENDOR_OPENCORES, GAISLER_GPREG, 0, 0, 0),
+                      0 => ahb_device_reg ( VENDOR_GROUP, OWN_ADC, 0, 0, 0),
                       1 => apb_iobar(paddr, pmask));
 
 begin

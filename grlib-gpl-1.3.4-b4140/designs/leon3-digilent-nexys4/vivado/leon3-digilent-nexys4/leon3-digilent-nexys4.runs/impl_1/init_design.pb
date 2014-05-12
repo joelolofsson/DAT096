@@ -37,10 +37,15 @@ lC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
 275*project2„
 pC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp2default:default2,
 io0/inst_ADC_TOP/ILA_ADC2default:defaultZ1-454
+þ
+-Reading design checkpoint '%s' for cell '%s'
+275*project2„
+pC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp2default:default2/
+selector/your_instance_name2default:defaultZ1-454
 ^
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-4942default:defaultZ29-17
+5502default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -79,7 +84,7 @@ BC:/Xilinx/Vivado/2014.1/data\./parts/xilinx/artix7/IOStandards.xml2default:de
 @C:/Xilinx/Vivado/2014.1/data\parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
 ^
 1Inserted %s IBUFs to IO ports without IO buffers.100*opt2
-22default:defaultZ31-140
+32default:defaultZ31-140
 ^
 1Inserted %s OBUFs to IO ports without IO buffers.101*opt2
 02default:defaultZ31-141
@@ -113,10 +118,32 @@ $Parsing XDC File [%s] for cell '%s'
 847*designutils2–
 c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_1_0/constraints/ila.xdc2default:default2,
 io0/inst_ADC_TOP/ILA_ADC2default:defaultZ20-847
+‰
+$Parsing XDC File [%s] for cell '%s'
+848*designutils2“
+c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2/
+selector/your_instance_name2default:defaultZ20-848
+’
+-Finished Parsing XDC File [%s] for cell '%s'
+847*designutils2“
+c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_2/constraints/ila.xdc2default:default2/
+selector/your_instance_name2default:defaultZ20-847
 Ä
 Parsing XDC File [%s]
 179*designutils2
 yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:defaultZ20-179
+†
+No nets matched '%s'.
+507*	planAhead2!
+clk_IBUF_BUFG2default:default2
+yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:default2
+7142default:default8@Z12-507
+Ž
+)Invalid option value specified for '%s'.
+162*common2
+-nets2default:default2
+yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:default2
+7142default:default8@Z17-162
 Í
 Finished Parsing XDC File [%s]
 178*designutils2
@@ -129,6 +156,10 @@ lC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
 !Ignoring constraints in dcp '%s'
 325*project2„
 pC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_1_synth_1/ila_1.dcp2default:defaultZ1-538
+Á
+!Ignoring constraints in dcp '%s'
+325*project2„
+pC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/ila_2_synth_1/ila_2.dcp2default:defaultZ1-538
 C
 Pushed %s inverter(s).
 98*opt2
@@ -136,8 +167,8 @@ C
 ‰
 !Unisim Transformation Summary:
 %s111*project2Ì
-·  A total of 391 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 336 instances
+·  A total of 443 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 388 instances
   IOBUF => IOBUF (IBUF, OBUFT): 17 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
@@ -146,10 +177,10 @@ C
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2!
 link_design: 2default:default2
-00:01:102default:default2
-00:01:172default:default2
-473.8832default:default2
-249.7502default:defaultZ17-268
+00:01:432default:default2
+00:01:532default:default2
+407.8202default:default2
+255.3052default:defaultZ17-268
 
 
 End Record

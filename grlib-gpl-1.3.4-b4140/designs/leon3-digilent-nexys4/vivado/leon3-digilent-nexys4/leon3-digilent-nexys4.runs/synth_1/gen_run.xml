@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1399398327">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1399895498">
   <File Type="RDS-UTIL-PB" Name="leon3mp_utilization_synth.pb"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL" Name="leon3mp_utilization_synth.rpt"/>
@@ -433,6 +433,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/BCD_block.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../../../../lib/techmap/unisim/tap_unisim.vhd">
       <FileInfo>
         <Attr Name="Library" Val="techmap"/>
@@ -548,6 +554,24 @@
     <File Path="$PPRDIR/../../../../lib/eth/comp/ethcomp.vhd">
       <FileInfo>
         <Attr Name="Library" Val="eth"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_div_seven_seg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bounce_filter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bin2bcd.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -708,24 +732,26 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/rtl/SKadder.vhd">
+    <File Path="$PSRCDIR/sources_1/new/seven_seg_control.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/SKadder.vhd"/>
-        <Attr Name="ImportTime" Val="1393605393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RGB_diode_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/button_control.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/imports/rtl/DACTOP.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/rtl/adder_pkg.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/adder_pkg.vhd"/>
-        <Attr Name="ImportTime" Val="1394030591"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -864,6 +890,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Button_and_hex_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/rtl/dummyapb.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/dummyapb.vhd"/>
@@ -872,10 +904,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/rtl/adderahb.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/rtl/adder_pkg.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/adderahb.vhd"/>
-        <Attr Name="ImportTime" Val="1393605393"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/adder_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1394030591"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -894,6 +926,22 @@
     </File>
     <File Path="$PPRDIR/../../leon3mp.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SKadder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/SKadder.vhd"/>
+        <Attr Name="ImportTime" Val="1393605393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/adderahb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/adderahb.vhd"/>
+        <Attr Name="ImportTime" Val="1393605393"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -1701,10 +1749,10 @@
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PDATADIR/constrs_1/designprops.xml">
+    <File Path="$PIOPLANDIR/constrs_1/designprops.xml">
       <FileInfo SFType="CompatPartsDb"/>
     </File>
-    <File Path="$PDATADIR/constrs_1/usercols.xml">
+    <File Path="$PIOPLANDIR/constrs_1/usercols.xml">
       <FileInfo SFType="UserColsDb"/>
     </File>
     <Config>
@@ -1718,4 +1766,5 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="ila_1"/>
   <BlockFileSet Type="BlockSrcs" Name="ADC"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_2"/>
 </GenRun>

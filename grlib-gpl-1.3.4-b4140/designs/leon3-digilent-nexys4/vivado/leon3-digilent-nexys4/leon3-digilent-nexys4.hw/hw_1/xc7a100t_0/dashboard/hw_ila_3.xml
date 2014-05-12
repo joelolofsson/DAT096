@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="337"
+                layout="JideBoxLayout" vgap="6" width="250">
+                <Gadget height="96" key="Trigger Capture Status" width="250">
+                    <Ila capture_condition="AND" capture_mode="ALWAYS"
+                        data_depth="1024" trigger_condition="OR"
+                        trigger_mode="BASIC_ONLY" trigger_position="50"
+                        trigout_mode="DISABLED" tsm_file="" window_count="1"/>
+                </Gadget>
+                <Gadget height="225" key="Basic Trigger Setup" width="250">
+                    <Probe name="selector/O1"/>
+                    <Probe name="selector/apbo[13][pirq][0:0]"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

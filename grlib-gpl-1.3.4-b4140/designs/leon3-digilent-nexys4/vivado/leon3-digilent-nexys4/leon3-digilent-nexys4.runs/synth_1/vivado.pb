@@ -36,10 +36,10 @@ s
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2
 	read_ip: 2default:default2
-00:00:042default:default2
-00:00:082default:default2
-257.7772default:default2
-33.4222default:defaultZ17-268
+00:00:072default:default2
+00:00:152default:default2
+185.4572default:default2
+32.9882default:defaultZ17-268
 l
 Command: %s
 53*	vivadotcl2D
@@ -59,15 +59,20 @@ Starting synthesis...
 310*common2
 	Synthesis2default:default2
 xc7a100t2default:defaultZ17-349
-œ
-%s*synth2Œ
-xStarting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 275.492 ; gain = 108.461
+›
+%s*synth2‹
+wStarting RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:01:34 . Memory (MB): peak = 204.039 ; gain = 86.859
 2default:default
+¹
+Sactual for formal port %s is neither a static name nor a globally static expression1565*oasys2
+probe12default:default2
+yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd2default:default2
+1092default:default8@Z8-1565
 ¯
 synthesizing module '%s'638*oasys2
 leon3mp2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-1482default:default8@Z8-638
+1502default:default8@Z8-638
 T
 %s*synth2E
 1	Parameter fabtech bound to: 50 - type: integer 
@@ -120,7 +125,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 rst02default:default2
 rstgen2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3202default:default8@Z8-3491
+3402default:default8@Z8-3491
 ¯
 synthesizing module '%s'638*oasys2*
 rstgen__parameterized02default:default24
@@ -213,7 +218,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 clkgen02default:default2
 clkgen2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3252default:default8@Z8-3491
+3452default:default8@Z8-3491
 ¯
 synthesizing module '%s'638*oasys2*
 clkgen__parameterized02default:default24
@@ -803,7 +808,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 ahb02default:default2
 ahbctrl2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3332default:default8@Z8-3491
+3532default:default8@Z8-3491
 ¯
 synthesizing module '%s'638*oasys2+
 ahbctrl__parameterized02default:default23
@@ -1136,7 +1141,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 u02default:default2
 leon3s2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3472default:default8@Z8-3491
+3672default:default8@Z8-3491
 ³
 synthesizing module '%s'638*oasys2*
 leon3s__parameterized02default:default27
@@ -6404,7 +6409,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 dsu02default:default2
 dsu32default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3632default:default8@Z8-3491
+3832default:default8@Z8-3491
 ®
 synthesizing module '%s'638*oasys2(
 dsu3__parameterized02default:default25
@@ -6599,7 +6604,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 dcom02default:default2
 ahbuart2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3802default:default8@Z8-3491
+4002default:default8@Z8-3491
 ±
 synthesizing module '%s'638*oasys2+
 ahbuart__parameterized02default:default25
@@ -6800,7 +6805,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 	dsurx_pad2default:default2
 inpad2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3832default:default8@Z8-3491
+4032default:default8@Z8-3491
 ­
 synthesizing module '%s'638*oasys2)
 inpad__parameterized02default:default23
@@ -6947,7 +6952,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 	dsutx_pad2default:default2
 outpad2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3842default:default8@Z8-3491
+4042default:default8@Z8-3491
 ¯
 synthesizing module '%s'638*oasys2*
 outpad__parameterized02default:default24
@@ -7202,7 +7207,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 sr12default:default2
 mctrl2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3491
+4212default:default8@Z8-3491
 ¯
 synthesizing module '%s'638*oasys2)
 mctrl__parameterized02default:default25
@@ -7377,7 +7382,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 addr_pad2default:default2
 outpadv2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4192default:default8@Z8-3491
+4392default:default8@Z8-3491
 ±
 synthesizing module '%s'638*oasys2+
 outpadv__parameterized02default:default24
@@ -8109,7 +8114,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 oen_pad2default:default2
 outpad2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4212default:default8@Z8-3491
+4412default:default8@Z8-3491
 Q
 %s*synth2B
 .	Parameter tech bound to: 50 - type: integer 
@@ -8138,7 +8143,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 cs_pad2default:default2
 outpad2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4232default:default8@Z8-3491
+4432default:default8@Z8-3491
 Q
 %s*synth2B
 .	Parameter tech bound to: 50 - type: integer 
@@ -8167,7 +8172,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 lb_pad2default:default2
 outpad2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4252default:default8@Z8-3491
+4452default:default8@Z8-3491
 Q
 %s*synth2B
 .	Parameter tech bound to: 50 - type: integer 
@@ -8196,7 +8201,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 ub_pad2default:default2
 outpad2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4272default:default8@Z8-3491
+4472default:default8@Z8-3491
 Q
 %s*synth2B
 .	Parameter tech bound to: 50 - type: integer 
@@ -8225,7 +8230,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 wri_pad2default:default2
 outpad2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4292default:default8@Z8-3491
+4492default:default8@Z8-3491
 Q
 %s*synth2B
 .	Parameter tech bound to: 50 - type: integer 
@@ -8266,7 +8271,7 @@ Hmodule '%s' declared at '%s:%s' bound to instance '%s' of component '%s'339
 bdr2default:default2
 iopadv2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4332default:default8@Z8-3491
+4532default:default8@Z8-3491
 ¯
 synthesizing module '%s'638*oasys2*
 iopadv__parameterized02default:default23
@@ -10823,67 +10828,6 @@ R
 342default:default8@Z8-256
 R
 %s*synth2C
-/	Parameter hindex bound to: 7 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter haddr bound to: 1280 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter hmask bound to: 4095 - type: integer 
-2default:default
-
-synthesizing module '%s'638*oasys2,
-adderahb__parameterized02default:default2‘
-{C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
-282default:default8@Z8-638
-R
-%s*synth2C
-/	Parameter hindex bound to: 7 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter haddr bound to: 1280 - type: integer 
-2default:default
-T
-%s*synth2E
-1	Parameter hmask bound to: 4095 - type: integer 
-2default:default
-©
-Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
-rstn2default:default2‘
-{C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
-1342default:default8@Z8-614
-Q
-%s*synth2B
-.	Parameter size bound to: 32 - type: integer 
-2default:default
-
-synthesizing module '%s'638*oasys2+
-SKadder__parameterized02default:default2
-zC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd2default:default2
-202default:default8@Z8-638
-Q
-%s*synth2B
-.	Parameter size bound to: 32 - type: integer 
-2default:default
-É
-%done synthesizing module '%s' (%s#%s)256*oasys2+
-SKadder__parameterized02default:default2
-662default:default2
-12default:default2
-zC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/SKadder.vhd2default:default2
-202default:default8@Z8-256
-Ë
-%done synthesizing module '%s' (%s#%s)256*oasys2,
-adderahb__parameterized02default:default2
-672default:default2
-12default:default2‘
-{C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
-282default:default8@Z8-256
-R
-%s*synth2C
 /	Parameter pindex bound to: 8 - type: integer 
 2default:default
 Q
@@ -10915,7 +10859,7 @@ T
 synthesizing module '%s'638*oasys2
 dacTop2default:default2
 yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd2default:default2
-212default:default8@Z8-638
+282default:default8@Z8-638
 þ
 synthesizing module '%s'638*oasys2
 ila_02default:default2“
@@ -10923,7 +10867,7 @@ yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
 652default:default8@Z8-638
 ¬
 %s*synth2œ
-‡	Parameter C_XLNX_HW_PROBE_INFO bound to: NUM_OF_PROBES=3,DATA_DEPTH=1024,PROBE0_WIDTH=16,PROBE0_MU_CNT=1,PROBE1_WIDTH=7,PROBE1_MU_CNT=1,PROBE2_WIDTH=1,PROBE2_MU_CNT=1,PROBE3_WIDTH=1,PROBE3_MU_CNT=1,PROBE4_WIDTH=1,PROBE4_MU_CNT=1,PROBE5_WIDTH=1,PROBE5_MU_CNT=1,PROBE6_WIDTH=1,PROBE6_MU_CNT=1,PROBE7_WIDTH=1,PROBE7_MU_CNT=1,PROBE8_WIDTH=1,PROBE8_MU_CNT=1,PROBE9_WIDTH=1,PROBE9_MU_CNT=1,PROBE10_WIDTH=1,PROBE10_MU_CNT=1,PROBE11_WIDTH=1,PROBE11_MU_CNT=1,PROBE12_WIDTH=1,PROBE12_MU_CNT=1,PROBE13_WIDTH=1,PROBE13_MU_CNT=1,PROBE14_WIDTH=1,PROBE14_MU_CNT=1,PROBE15_WIDTH=1,PROBE15_MU_CNT=1,PROBE16_WIDTH=1,PROBE16_MU_CNT=1,PROBE17_WIDTH=1,PROBE17_MU_CNT=1,PROBE18_WIDTH=1,PROBE18_MU_CNT=1,PROBE19_WIDTH=1,PROBE19_MU_CNT=1,PROBE20_WIDTH=1,PROBE20_MU_CNT=1,PROBE21_WIDTH=1,PROBE21_MU_CNT=1,PROBE22_WIDTH=1,PROBE22_MU_CNT=1,PROBE23_WIDTH=1,PROBE23_MU_CNT=1,PROBE24_WIDTH=1,PROBE24_MU_CNT=1,PROBE25_WIDTH=1,PROBE25_MU_CNT=1,PROBE26_WIDTH=1,PROBE26_MU_CNT=1,PROBE27_WIDTH=1,PROBE27_MU_CNT=1,PROBE28_WIDTH=1,PROBE28_MU_CNT=1,PROBE29_WIDTH=1,PROBE29_MU_CNT=1,PROBE30_WIDTH=1,PROBE30_MU_CNT=1,PROBE31_WIDTH=1,PROBE31_MU_CNT=1,PROBE32_WIDTH=1,PROBE32_MU_CNT=1,PROBE33_WIDTH=1,PROBE33_MU_CNT=1,PROBE34_WIDTH=1,PROBE34_MU_CNT=1,PROBE35_WIDTH=1,PROBE35_MU_CNT=1,PROBE36_WIDTH=1,PROBE36_MU_CNT=1,PROBE37_WIDTH=1,PROBE37_MU_CNT=1,PROBE38_WIDTH=1,PROBE38_MU_CNT=1,PROBE39_WIDTH=1,PROBE39_MU_CNT=1,PROBE40_WIDTH=1,PROBE40_MU_CNT=1,PROBE41_WIDTH=1,PROBE41_MU_CNT=1,PROBE42_WIDTH=1,PROBE42_MU_CNT=1,PROBE43_WIDTH=1,PROBE43_MU_CNT=1,PROBE44_WIDTH=1,PROBE44_MU_CNT=1,PROBE45_WIDTH=1,PROBE45_MU_CNT=1,PROBE46_WIDTH=1,PROBE46_MU_CNT=1,PROBE47_WIDTH=1,PROBE47_MU_CNT=1,PROBE48_WIDTH=1,PROBE48_MU_CNT=1,PROBE49_WIDTH=1,PROBE49_MU_CNT=1,PROBE50_WIDTH=1,PROBE50_MU_CNT=1,PROBE51_WIDTH=1,PROBE51_MU_CNT=1,PROBE52_WIDTH=1,PROBE52_MU_CNT=1,PROBE53_WIDTH=1,PROBE53_MU_CNT=1,PROBE54_WIDTH=1,PROBE54_MU_CNT=1,PROBE55_WIDTH=1,PROBE55_MU_CNT=1,PROBE56_WIDTH=1,PROBE56_MU_CNT=1,PROBE57_WIDTH=1,PROBE57_MU_CNT=1,PROBE58_WIDTH=1,PROBE58_MU_CNT=1,PROBE59_WIDTH=1,PROBE59_MU_CNT=1,PROBE60_WIDTH=1,PROBE60_MU_CNT=1,PROBE61_WIDTH=1,PROBE61_MU_CNT=1,PROBE62_WIDTH=1,PROBE62_MU_CNT=1,PROBE63_WIDTH=1,PROBE63_MU_CNT=1 - type: string 
+‡	Parameter C_XLNX_HW_PROBE_INFO bound to: NUM_OF_PROBES=3,DATA_DEPTH=1024,PROBE0_WIDTH=16,PROBE0_MU_CNT=2,PROBE1_WIDTH=7,PROBE1_MU_CNT=2,PROBE2_WIDTH=1,PROBE2_MU_CNT=2,PROBE3_WIDTH=1,PROBE3_MU_CNT=1,PROBE4_WIDTH=1,PROBE4_MU_CNT=1,PROBE5_WIDTH=1,PROBE5_MU_CNT=1,PROBE6_WIDTH=1,PROBE6_MU_CNT=1,PROBE7_WIDTH=1,PROBE7_MU_CNT=1,PROBE8_WIDTH=1,PROBE8_MU_CNT=1,PROBE9_WIDTH=1,PROBE9_MU_CNT=1,PROBE10_WIDTH=1,PROBE10_MU_CNT=1,PROBE11_WIDTH=1,PROBE11_MU_CNT=1,PROBE12_WIDTH=1,PROBE12_MU_CNT=1,PROBE13_WIDTH=1,PROBE13_MU_CNT=1,PROBE14_WIDTH=1,PROBE14_MU_CNT=1,PROBE15_WIDTH=1,PROBE15_MU_CNT=1,PROBE16_WIDTH=1,PROBE16_MU_CNT=1,PROBE17_WIDTH=1,PROBE17_MU_CNT=1,PROBE18_WIDTH=1,PROBE18_MU_CNT=1,PROBE19_WIDTH=1,PROBE19_MU_CNT=1,PROBE20_WIDTH=1,PROBE20_MU_CNT=1,PROBE21_WIDTH=1,PROBE21_MU_CNT=1,PROBE22_WIDTH=1,PROBE22_MU_CNT=1,PROBE23_WIDTH=1,PROBE23_MU_CNT=1,PROBE24_WIDTH=1,PROBE24_MU_CNT=1,PROBE25_WIDTH=1,PROBE25_MU_CNT=1,PROBE26_WIDTH=1,PROBE26_MU_CNT=1,PROBE27_WIDTH=1,PROBE27_MU_CNT=1,PROBE28_WIDTH=1,PROBE28_MU_CNT=1,PROBE29_WIDTH=1,PROBE29_MU_CNT=1,PROBE30_WIDTH=1,PROBE30_MU_CNT=1,PROBE31_WIDTH=1,PROBE31_MU_CNT=1,PROBE32_WIDTH=1,PROBE32_MU_CNT=1,PROBE33_WIDTH=1,PROBE33_MU_CNT=1,PROBE34_WIDTH=1,PROBE34_MU_CNT=1,PROBE35_WIDTH=1,PROBE35_MU_CNT=1,PROBE36_WIDTH=1,PROBE36_MU_CNT=1,PROBE37_WIDTH=1,PROBE37_MU_CNT=1,PROBE38_WIDTH=1,PROBE38_MU_CNT=1,PROBE39_WIDTH=1,PROBE39_MU_CNT=1,PROBE40_WIDTH=1,PROBE40_MU_CNT=1,PROBE41_WIDTH=1,PROBE41_MU_CNT=1,PROBE42_WIDTH=1,PROBE42_MU_CNT=1,PROBE43_WIDTH=1,PROBE43_MU_CNT=1,PROBE44_WIDTH=1,PROBE44_MU_CNT=1,PROBE45_WIDTH=1,PROBE45_MU_CNT=1,PROBE46_WIDTH=1,PROBE46_MU_CNT=1,PROBE47_WIDTH=1,PROBE47_MU_CNT=1,PROBE48_WIDTH=1,PROBE48_MU_CNT=1,PROBE49_WIDTH=1,PROBE49_MU_CNT=1,PROBE50_WIDTH=1,PROBE50_MU_CNT=1,PROBE51_WIDTH=1,PROBE51_MU_CNT=1,PROBE52_WIDTH=1,PROBE52_MU_CNT=1,PROBE53_WIDTH=1,PROBE53_MU_CNT=1,PROBE54_WIDTH=1,PROBE54_MU_CNT=1,PROBE55_WIDTH=1,PROBE55_MU_CNT=1,PROBE56_WIDTH=1,PROBE56_MU_CNT=1,PROBE57_WIDTH=1,PROBE57_MU_CNT=1,PROBE58_WIDTH=1,PROBE58_MU_CNT=1,PROBE59_WIDTH=1,PROBE59_MU_CNT=1,PROBE60_WIDTH=1,PROBE60_MU_CNT=1,PROBE61_WIDTH=1,PROBE61_MU_CNT=1,PROBE62_WIDTH=1,PROBE62_MU_CNT=1,PROBE63_WIDTH=1,PROBE63_MU_CNT=1 - type: string 
 2default:default
 _
 %s*synth2P
@@ -15123,15 +15067,15 @@ Z
 2default:default
 [
 %s*synth2L
-8	Parameter C_PROBE0_MU_CNT bound to: 1 - type: integer 
+8	Parameter C_PROBE0_MU_CNT bound to: 2 - type: integer 
 2default:default
 [
 %s*synth2L
-8	Parameter C_PROBE1_MU_CNT bound to: 1 - type: integer 
+8	Parameter C_PROBE1_MU_CNT bound to: 2 - type: integer 
 2default:default
 [
 %s*synth2L
-8	Parameter C_PROBE2_MU_CNT bound to: 1 - type: integer 
+8	Parameter C_PROBE2_MU_CNT bound to: 2 - type: integer 
 2default:default
 [
 %s*synth2L
@@ -19224,7 +19168,7 @@ Z
 792default:default8@Z8-638
 ¬
 %s*synth2œ
-‡	Parameter C_XLNX_HW_PROBE_INFO bound to: NUM_OF_PROBES=3,DATA_DEPTH=1024,PROBE0_WIDTH=16,PROBE0_MU_CNT=1,PROBE1_WIDTH=7,PROBE1_MU_CNT=1,PROBE2_WIDTH=1,PROBE2_MU_CNT=1,PROBE3_WIDTH=1,PROBE3_MU_CNT=1,PROBE4_WIDTH=1,PROBE4_MU_CNT=1,PROBE5_WIDTH=1,PROBE5_MU_CNT=1,PROBE6_WIDTH=1,PROBE6_MU_CNT=1,PROBE7_WIDTH=1,PROBE7_MU_CNT=1,PROBE8_WIDTH=1,PROBE8_MU_CNT=1,PROBE9_WIDTH=1,PROBE9_MU_CNT=1,PROBE10_WIDTH=1,PROBE10_MU_CNT=1,PROBE11_WIDTH=1,PROBE11_MU_CNT=1,PROBE12_WIDTH=1,PROBE12_MU_CNT=1,PROBE13_WIDTH=1,PROBE13_MU_CNT=1,PROBE14_WIDTH=1,PROBE14_MU_CNT=1,PROBE15_WIDTH=1,PROBE15_MU_CNT=1,PROBE16_WIDTH=1,PROBE16_MU_CNT=1,PROBE17_WIDTH=1,PROBE17_MU_CNT=1,PROBE18_WIDTH=1,PROBE18_MU_CNT=1,PROBE19_WIDTH=1,PROBE19_MU_CNT=1,PROBE20_WIDTH=1,PROBE20_MU_CNT=1,PROBE21_WIDTH=1,PROBE21_MU_CNT=1,PROBE22_WIDTH=1,PROBE22_MU_CNT=1,PROBE23_WIDTH=1,PROBE23_MU_CNT=1,PROBE24_WIDTH=1,PROBE24_MU_CNT=1,PROBE25_WIDTH=1,PROBE25_MU_CNT=1,PROBE26_WIDTH=1,PROBE26_MU_CNT=1,PROBE27_WIDTH=1,PROBE27_MU_CNT=1,PROBE28_WIDTH=1,PROBE28_MU_CNT=1,PROBE29_WIDTH=1,PROBE29_MU_CNT=1,PROBE30_WIDTH=1,PROBE30_MU_CNT=1,PROBE31_WIDTH=1,PROBE31_MU_CNT=1,PROBE32_WIDTH=1,PROBE32_MU_CNT=1,PROBE33_WIDTH=1,PROBE33_MU_CNT=1,PROBE34_WIDTH=1,PROBE34_MU_CNT=1,PROBE35_WIDTH=1,PROBE35_MU_CNT=1,PROBE36_WIDTH=1,PROBE36_MU_CNT=1,PROBE37_WIDTH=1,PROBE37_MU_CNT=1,PROBE38_WIDTH=1,PROBE38_MU_CNT=1,PROBE39_WIDTH=1,PROBE39_MU_CNT=1,PROBE40_WIDTH=1,PROBE40_MU_CNT=1,PROBE41_WIDTH=1,PROBE41_MU_CNT=1,PROBE42_WIDTH=1,PROBE42_MU_CNT=1,PROBE43_WIDTH=1,PROBE43_MU_CNT=1,PROBE44_WIDTH=1,PROBE44_MU_CNT=1,PROBE45_WIDTH=1,PROBE45_MU_CNT=1,PROBE46_WIDTH=1,PROBE46_MU_CNT=1,PROBE47_WIDTH=1,PROBE47_MU_CNT=1,PROBE48_WIDTH=1,PROBE48_MU_CNT=1,PROBE49_WIDTH=1,PROBE49_MU_CNT=1,PROBE50_WIDTH=1,PROBE50_MU_CNT=1,PROBE51_WIDTH=1,PROBE51_MU_CNT=1,PROBE52_WIDTH=1,PROBE52_MU_CNT=1,PROBE53_WIDTH=1,PROBE53_MU_CNT=1,PROBE54_WIDTH=1,PROBE54_MU_CNT=1,PROBE55_WIDTH=1,PROBE55_MU_CNT=1,PROBE56_WIDTH=1,PROBE56_MU_CNT=1,PROBE57_WIDTH=1,PROBE57_MU_CNT=1,PROBE58_WIDTH=1,PROBE58_MU_CNT=1,PROBE59_WIDTH=1,PROBE59_MU_CNT=1,PROBE60_WIDTH=1,PROBE60_MU_CNT=1,PROBE61_WIDTH=1,PROBE61_MU_CNT=1,PROBE62_WIDTH=1,PROBE62_MU_CNT=1,PROBE63_WIDTH=1,PROBE63_MU_CNT=1 - type: string 
+‡	Parameter C_XLNX_HW_PROBE_INFO bound to: NUM_OF_PROBES=3,DATA_DEPTH=1024,PROBE0_WIDTH=16,PROBE0_MU_CNT=2,PROBE1_WIDTH=7,PROBE1_MU_CNT=2,PROBE2_WIDTH=1,PROBE2_MU_CNT=2,PROBE3_WIDTH=1,PROBE3_MU_CNT=1,PROBE4_WIDTH=1,PROBE4_MU_CNT=1,PROBE5_WIDTH=1,PROBE5_MU_CNT=1,PROBE6_WIDTH=1,PROBE6_MU_CNT=1,PROBE7_WIDTH=1,PROBE7_MU_CNT=1,PROBE8_WIDTH=1,PROBE8_MU_CNT=1,PROBE9_WIDTH=1,PROBE9_MU_CNT=1,PROBE10_WIDTH=1,PROBE10_MU_CNT=1,PROBE11_WIDTH=1,PROBE11_MU_CNT=1,PROBE12_WIDTH=1,PROBE12_MU_CNT=1,PROBE13_WIDTH=1,PROBE13_MU_CNT=1,PROBE14_WIDTH=1,PROBE14_MU_CNT=1,PROBE15_WIDTH=1,PROBE15_MU_CNT=1,PROBE16_WIDTH=1,PROBE16_MU_CNT=1,PROBE17_WIDTH=1,PROBE17_MU_CNT=1,PROBE18_WIDTH=1,PROBE18_MU_CNT=1,PROBE19_WIDTH=1,PROBE19_MU_CNT=1,PROBE20_WIDTH=1,PROBE20_MU_CNT=1,PROBE21_WIDTH=1,PROBE21_MU_CNT=1,PROBE22_WIDTH=1,PROBE22_MU_CNT=1,PROBE23_WIDTH=1,PROBE23_MU_CNT=1,PROBE24_WIDTH=1,PROBE24_MU_CNT=1,PROBE25_WIDTH=1,PROBE25_MU_CNT=1,PROBE26_WIDTH=1,PROBE26_MU_CNT=1,PROBE27_WIDTH=1,PROBE27_MU_CNT=1,PROBE28_WIDTH=1,PROBE28_MU_CNT=1,PROBE29_WIDTH=1,PROBE29_MU_CNT=1,PROBE30_WIDTH=1,PROBE30_MU_CNT=1,PROBE31_WIDTH=1,PROBE31_MU_CNT=1,PROBE32_WIDTH=1,PROBE32_MU_CNT=1,PROBE33_WIDTH=1,PROBE33_MU_CNT=1,PROBE34_WIDTH=1,PROBE34_MU_CNT=1,PROBE35_WIDTH=1,PROBE35_MU_CNT=1,PROBE36_WIDTH=1,PROBE36_MU_CNT=1,PROBE37_WIDTH=1,PROBE37_MU_CNT=1,PROBE38_WIDTH=1,PROBE38_MU_CNT=1,PROBE39_WIDTH=1,PROBE39_MU_CNT=1,PROBE40_WIDTH=1,PROBE40_MU_CNT=1,PROBE41_WIDTH=1,PROBE41_MU_CNT=1,PROBE42_WIDTH=1,PROBE42_MU_CNT=1,PROBE43_WIDTH=1,PROBE43_MU_CNT=1,PROBE44_WIDTH=1,PROBE44_MU_CNT=1,PROBE45_WIDTH=1,PROBE45_MU_CNT=1,PROBE46_WIDTH=1,PROBE46_MU_CNT=1,PROBE47_WIDTH=1,PROBE47_MU_CNT=1,PROBE48_WIDTH=1,PROBE48_MU_CNT=1,PROBE49_WIDTH=1,PROBE49_MU_CNT=1,PROBE50_WIDTH=1,PROBE50_MU_CNT=1,PROBE51_WIDTH=1,PROBE51_MU_CNT=1,PROBE52_WIDTH=1,PROBE52_MU_CNT=1,PROBE53_WIDTH=1,PROBE53_MU_CNT=1,PROBE54_WIDTH=1,PROBE54_MU_CNT=1,PROBE55_WIDTH=1,PROBE55_MU_CNT=1,PROBE56_WIDTH=1,PROBE56_MU_CNT=1,PROBE57_WIDTH=1,PROBE57_MU_CNT=1,PROBE58_WIDTH=1,PROBE58_MU_CNT=1,PROBE59_WIDTH=1,PROBE59_MU_CNT=1,PROBE60_WIDTH=1,PROBE60_MU_CNT=1,PROBE61_WIDTH=1,PROBE61_MU_CNT=1,PROBE62_WIDTH=1,PROBE62_MU_CNT=1,PROBE63_WIDTH=1,PROBE63_MU_CNT=1 - type: string 
 2default:default
 _
 %s*synth2P
@@ -23424,15 +23368,15 @@ _
 2default:default
 [
 %s*synth2L
-8	Parameter C_PROBE0_MU_CNT bound to: 1 - type: integer 
+8	Parameter C_PROBE0_MU_CNT bound to: 2 - type: integer 
 2default:default
 [
 %s*synth2L
-8	Parameter C_PROBE1_MU_CNT bound to: 1 - type: integer 
+8	Parameter C_PROBE1_MU_CNT bound to: 2 - type: integer 
 2default:default
 [
 %s*synth2L
-8	Parameter C_PROBE2_MU_CNT bound to: 1 - type: integer 
+8	Parameter C_PROBE2_MU_CNT bound to: 2 - type: integer 
 2default:default
 [
 %s*synth2L
@@ -27518,17 +27462,17 @@ _
 %s*synth2O
 ;	Parameter C_PROBE1023_MU_CNT bound to: 1 - type: integer 
 2default:default
-\
-%s*synth2M
-9	Parameter LC_PROBE0_PID bound to: 16'b0000000000000000 
+Y
+%s*synth2J
+6	Parameter LC_PROBE0_PID bound to: 0 - type: integer 
 2default:default
-\
-%s*synth2M
-9	Parameter LC_PROBE1_PID bound to: 16'b0000000000000001 
+]
+%s*synth2N
+:	Parameter LC_PROBE1_PID bound to: 65537 - type: integer 
 2default:default
-\
-%s*synth2M
-9	Parameter LC_PROBE2_PID bound to: 16'b0000000000000010 
+^
+%s*synth2O
+;	Parameter LC_PROBE2_PID bound to: 131074 - type: integer 
 2default:default
 \
 %s*synth2M
@@ -31616,7 +31560,7 @@ _
 2default:default
 Ó
 %s*synth2Ã
-®	Parameter LC_MU_CNT_STRING bound to: 2048'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+®	Parameter LC_MU_CNT_STRING bound to: 2048'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010101 
 2default:default
 ¤@
 %s*synth2”@
@@ -31627,11 +31571,11 @@ _
 2default:default
 W
 %s*synth2H
-4	Parameter LC_MU_COUNT bound to: 3 - type: integer 
+4	Parameter LC_MU_COUNT bound to: 6 - type: integer 
 2default:default
-€
-%s*synth2q
-]	Parameter LC_MATCH_TPID_VEC bound to: 48'b000000000000001000000000000000010000000000000000 
+²
+%s*synth2¢
+	Parameter LC_MATCH_TPID_VEC bound to: 96'b000000000000001000000000000000100000000000000001000000000000000100000000000000000000000000000000 
 2default:default
 \
 %s*synth2M
@@ -31664,7 +31608,7 @@ Y
 2default:default
 ]
 %s*synth2N
-:	Parameter C_NUM_MATCH_UNITS bound to: 3 - type: integer 
+:	Parameter C_NUM_MATCH_UNITS bound to: 6 - type: integer 
 2default:default
 X
 %s*synth2I
@@ -31678,9 +31622,9 @@ Z
 %s*synth2q
 ]	Parameter C_MATCH_WIDTH_VEC bound to: 48'b000000000000000000000000000001100000000000001111 
 2default:default
-
-%s*synth2p
-\	Parameter C_MATCH_TPID_VEC bound to: 48'b000000000000001000000000000000010000000000000000 
+±
+%s*synth2¡
+Œ	Parameter C_MATCH_TPID_VEC bound to: 96'b000000000000001000000000000000100000000000000001000000000000000100000000000000000000000000000000 
 2default:default
 [
 %s*synth2L
@@ -31793,7 +31737,7 @@ W
 2default:default
 W
 %s*synth2H
-4	Parameter MU_CNT_SS_P bound to: 3 - type: integer 
+4	Parameter MU_CNT_SS_P bound to: 6 - type: integer 
 2default:default
 X
 %s*synth2I
@@ -31843,9 +31787,9 @@ X
 %s*synth2q
 ]	Parameter C_MATCH_WIDTH_VEC bound to: 48'b000000000000000000000000000001100000000000001111 
 2default:default
-
-%s*synth2p
-\	Parameter C_MATCH_TPID_VEC bound to: 48'b000000000000001000000000000000010000000000000000 
+±
+%s*synth2¡
+Œ	Parameter C_MATCH_TPID_VEC bound to: 96'b000000000000001000000000000000100000000000000001000000000000000100000000000000000000000000000000 
 2default:default
 _
 %s*synth2P
@@ -31983,7 +31927,7 @@ X
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 chipscope_xsdb_slave2default:default2
-682default:default2
+662default:default2
 12default:default2Ä
 ­c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/chipscope_xsdb_slave.v2default:default2
 792default:default8@Z8-256
@@ -32028,14 +31972,14 @@ U
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 xsdb_register_stat2default:default2
-692default:default2
+672default:default2
 12default:default2Â
 «c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 762default:default8@Z8-256
 ì
 %done synthesizing module '%s' (%s#%s)256*oasys2!
 xsdb_register2default:default2
-702default:default2
+682default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32071,7 +32015,7 @@ T
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized02default:default2
-702default:default2
+682default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32107,7 +32051,7 @@ T
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized12default:default2
-702default:default2
+682default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32143,7 +32087,7 @@ T
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized22default:default2
-702default:default2
+682default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32179,7 +32123,7 @@ T
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized32default:default2
-702default:default2
+682default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32215,7 +32159,7 @@ T
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized42default:default2
-702default:default2
+682default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32264,14 +32208,14 @@ U
 ô
 %done synthesizing module '%s' (%s#%s)256*oasys2%
 xsdb_register_ctl2default:default2
-712default:default2
+692default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-256
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized52default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32320,14 +32264,14 @@ U
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_ctl__parameterized02default:default2
-712default:default2
+692default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-256
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized62default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32363,7 +32307,7 @@ T
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized72default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32399,7 +32343,7 @@ T
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized82default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32435,7 +32379,7 @@ T
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys21
 xsdb_register__parameterized92default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32471,7 +32415,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized102default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32507,7 +32451,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized112default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32543,7 +32487,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized122default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32579,7 +32523,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized132default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32615,7 +32559,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized142default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32651,7 +32595,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized152default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32687,7 +32631,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized162default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32723,7 +32667,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized172default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32759,7 +32703,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized182default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32795,7 +32739,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized192default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32831,7 +32775,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized202default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32867,7 +32811,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized212default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32903,7 +32847,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized222default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32939,7 +32883,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized232default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -32975,7 +32919,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized242default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33024,14 +32968,14 @@ U
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_ctl__parameterized12default:default2
-712default:default2
+692default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-256
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized252default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33080,14 +33024,14 @@ U
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_ctl__parameterized22default:default2
-712default:default2
+692default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_ctl.v2default:default2
 742default:default8@Z8-256
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized262default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33123,7 +33067,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized272default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33159,7 +33103,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized282default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33195,7 +33139,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized292default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33231,7 +33175,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized302default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33267,7 +33211,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized312default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33303,7 +33247,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized322default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33339,7 +33283,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized332default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33375,7 +33319,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized342default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33411,7 +33355,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized352default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33447,7 +33391,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized362default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33483,7 +33427,7 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized372default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33519,13 +33463,229 @@ T
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
 xsdb_register__parameterized382default:default2
-712default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
 xsdb_register__parameterized392default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_CTLRST_VAL bound to: 16'b0000000000010101 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_ADDR bound to: 141 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_EN_STAT bound to: 1 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter C_EN_CTL bound to: 0 - type: integer 
+2default:default
+ý
+%done synthesizing module '%s' (%s#%s)256*oasys22
+xsdb_register__parameterized392default:default2
+692default:default2
+12default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-256
+Á
+synthesizing module '%s'638*oasys22
+xsdb_register__parameterized402default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_CTLRST_VAL bound to: 16'b0000000000000000 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_ADDR bound to: 142 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_EN_STAT bound to: 1 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter C_EN_CTL bound to: 0 - type: integer 
+2default:default
+ý
+%done synthesizing module '%s' (%s#%s)256*oasys22
+xsdb_register__parameterized402default:default2
+692default:default2
+12default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-256
+Á
+synthesizing module '%s'638*oasys22
+xsdb_register__parameterized412default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_CTLRST_VAL bound to: 16'b0000000000010101 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_ADDR bound to: 143 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_EN_STAT bound to: 1 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter C_EN_CTL bound to: 0 - type: integer 
+2default:default
+ý
+%done synthesizing module '%s' (%s#%s)256*oasys22
+xsdb_register__parameterized412default:default2
+692default:default2
+12default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-256
+Á
+synthesizing module '%s'638*oasys22
+xsdb_register__parameterized422default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_CTLRST_VAL bound to: 16'b0000000000000000 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_ADDR bound to: 144 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_EN_STAT bound to: 1 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter C_EN_CTL bound to: 0 - type: integer 
+2default:default
+ý
+%done synthesizing module '%s' (%s#%s)256*oasys22
+xsdb_register__parameterized422default:default2
+692default:default2
+12default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-256
+Á
+synthesizing module '%s'638*oasys22
+xsdb_register__parameterized432default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_CTLRST_VAL bound to: 16'b0000000000010101 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_ADDR bound to: 145 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_EN_STAT bound to: 1 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter C_EN_CTL bound to: 0 - type: integer 
+2default:default
+ý
+%done synthesizing module '%s' (%s#%s)256*oasys22
+xsdb_register__parameterized432default:default2
+692default:default2
+12default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-256
+Á
+synthesizing module '%s'638*oasys22
+xsdb_register__parameterized442default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+[
+%s*synth2L
+8	Parameter C_CTLRST_VAL bound to: 16'b0000000000000000 
+2default:default
+X
+%s*synth2I
+5	Parameter C_REG_ADDR bound to: 146 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_EN_STAT bound to: 1 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter C_EN_CTL bound to: 0 - type: integer 
+2default:default
+ý
+%done synthesizing module '%s' (%s#%s)256*oasys22
+xsdb_register__parameterized442default:default2
+692default:default2
+12default:default2½
+¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
+752default:default8@Z8-256
+Á
+synthesizing module '%s'638*oasys22
+xsdb_register__parameterized452default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33554,14 +33714,14 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized392default:default2
-712default:default2
+xsdb_register__parameterized452default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized402default:default2½
+xsdb_register__parameterized462default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33590,14 +33750,14 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized402default:default2
-712default:default2
+xsdb_register__parameterized462default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized412default:default2½
+xsdb_register__parameterized472default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33626,14 +33786,14 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized412default:default2
-712default:default2
+xsdb_register__parameterized472default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized422default:default2½
+xsdb_register__parameterized482default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33662,14 +33822,14 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized422default:default2
-712default:default2
+xsdb_register__parameterized482default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized432default:default2½
+xsdb_register__parameterized492default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33698,14 +33858,14 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized432default:default2
-712default:default2
+xsdb_register__parameterized492default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized442default:default2½
+xsdb_register__parameterized502default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33734,14 +33894,14 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized442default:default2
-712default:default2
+xsdb_register__parameterized502default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized452default:default2½
+xsdb_register__parameterized512default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33770,14 +33930,14 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized452default:default2
-712default:default2
+xsdb_register__parameterized512default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized462default:default2½
+xsdb_register__parameterized522default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33806,14 +33966,14 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized462default:default2
-712default:default2
+xsdb_register__parameterized522default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
 Á
 synthesizing module '%s'638*oasys22
-xsdb_register__parameterized472default:default2½
+xsdb_register__parameterized532default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-638
 U
@@ -33842,8 +34002,8 @@ T
 2default:default
 ý
 %done synthesizing module '%s' (%s#%s)256*oasys22
-xsdb_register__parameterized472default:default2
-712default:default2
+xsdb_register__parameterized532default:default2
+692default:default2
 12default:default2½
 ¦c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register.v2default:default2
 752default:default8@Z8-256
@@ -33887,7 +34047,7 @@ E
 ô
 %done synthesizing module '%s' (%s#%s)256*oasys2%
 xsdb_register_p2s2default:default2
-722default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
@@ -33931,7 +34091,7 @@ E
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_p2s__parameterized02default:default2
-722default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
@@ -33975,7 +34135,7 @@ E
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_p2s__parameterized12default:default2
-722default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
@@ -34019,13 +34179,145 @@ E
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
 !xsdb_register_p2s__parameterized22default:default2
-722default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 È
 synthesizing module '%s'638*oasys25
 !xsdb_register_p2s__parameterized32default:default2Á
+ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+762default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_REG_ADDR bound to: 4099 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter COUNT_SIZE bound to: 4 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter IDLE bound to: 4'b0001 
+2default:default
+E
+%s*synth26
+"	Parameter REG bound to: 4'b0010 
+2default:default
+E
+%s*synth26
+"	Parameter P2S bound to: 4'b0100 
+2default:default
+E
+%s*synth26
+"	Parameter S2P bound to: 4'b1000 
+2default:default
+„
+%done synthesizing module '%s' (%s#%s)256*oasys25
+!xsdb_register_p2s__parameterized32default:default2
+702default:default2
+12default:default2Á
+ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+762default:default8@Z8-256
+È
+synthesizing module '%s'638*oasys25
+!xsdb_register_p2s__parameterized42default:default2Á
+ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+762default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_REG_ADDR bound to: 4100 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter COUNT_SIZE bound to: 4 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter IDLE bound to: 4'b0001 
+2default:default
+E
+%s*synth26
+"	Parameter REG bound to: 4'b0010 
+2default:default
+E
+%s*synth26
+"	Parameter P2S bound to: 4'b0100 
+2default:default
+E
+%s*synth26
+"	Parameter S2P bound to: 4'b1000 
+2default:default
+„
+%done synthesizing module '%s' (%s#%s)256*oasys25
+!xsdb_register_p2s__parameterized42default:default2
+702default:default2
+12default:default2Á
+ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+762default:default8@Z8-256
+È
+synthesizing module '%s'638*oasys25
+!xsdb_register_p2s__parameterized52default:default2Á
+ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+762default:default8@Z8-638
+U
+%s*synth2F
+2	Parameter C_ADDR_W bound to: 13 - type: integer 
+2default:default
+U
+%s*synth2F
+2	Parameter C_DATA_W bound to: 16 - type: integer 
+2default:default
+Y
+%s*synth2J
+6	Parameter C_REG_ADDR bound to: 4101 - type: integer 
+2default:default
+V
+%s*synth2G
+3	Parameter COUNT_SIZE bound to: 4 - type: integer 
+2default:default
+F
+%s*synth27
+#	Parameter IDLE bound to: 4'b0001 
+2default:default
+E
+%s*synth26
+"	Parameter REG bound to: 4'b0010 
+2default:default
+E
+%s*synth26
+"	Parameter P2S bound to: 4'b0100 
+2default:default
+E
+%s*synth26
+"	Parameter S2P bound to: 4'b1000 
+2default:default
+„
+%done synthesizing module '%s' (%s#%s)256*oasys25
+!xsdb_register_p2s__parameterized52default:default2
+702default:default2
+12default:default2Á
+ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
+762default:default8@Z8-256
+È
+synthesizing module '%s'638*oasys25
+!xsdb_register_p2s__parameterized62default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34062,14 +34354,14 @@ E
 2default:default
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
-!xsdb_register_p2s__parameterized32default:default2
-722default:default2
+!xsdb_register_p2s__parameterized62default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 È
 synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized42default:default2Á
+!xsdb_register_p2s__parameterized72default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34106,14 +34398,14 @@ E
 2default:default
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
-!xsdb_register_p2s__parameterized42default:default2
-722default:default2
+!xsdb_register_p2s__parameterized72default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 È
 synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized52default:default2Á
+!xsdb_register_p2s__parameterized82default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34150,14 +34442,14 @@ E
 2default:default
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
-!xsdb_register_p2s__parameterized52default:default2
-722default:default2
+!xsdb_register_p2s__parameterized82default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 È
 synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized62default:default2Á
+!xsdb_register_p2s__parameterized92default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34194,14 +34486,14 @@ E
 2default:default
 „
 %done synthesizing module '%s' (%s#%s)256*oasys25
-!xsdb_register_p2s__parameterized62default:default2
-722default:default2
+!xsdb_register_p2s__parameterized92default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
-È
-synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized72default:default2Á
+É
+synthesizing module '%s'638*oasys26
+"xsdb_register_p2s__parameterized102default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34236,16 +34528,16 @@ E
 %s*synth26
 "	Parameter S2P bound to: 4'b1000 
 2default:default
-„
-%done synthesizing module '%s' (%s#%s)256*oasys25
-!xsdb_register_p2s__parameterized72default:default2
-722default:default2
+…
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"xsdb_register_p2s__parameterized102default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
-È
-synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized82default:default2Á
+É
+synthesizing module '%s'638*oasys26
+"xsdb_register_p2s__parameterized112default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34280,16 +34572,16 @@ E
 %s*synth26
 "	Parameter S2P bound to: 4'b1000 
 2default:default
-„
-%done synthesizing module '%s' (%s#%s)256*oasys25
-!xsdb_register_p2s__parameterized82default:default2
-722default:default2
+…
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"xsdb_register_p2s__parameterized112default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
-È
-synthesizing module '%s'638*oasys25
-!xsdb_register_p2s__parameterized92default:default2Á
+É
+synthesizing module '%s'638*oasys26
+"xsdb_register_p2s__parameterized122default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34324,16 +34616,16 @@ E
 %s*synth26
 "	Parameter S2P bound to: 4'b1000 
 2default:default
-„
-%done synthesizing module '%s' (%s#%s)256*oasys25
-!xsdb_register_p2s__parameterized92default:default2
-722default:default2
+…
+%done synthesizing module '%s' (%s#%s)256*oasys26
+"xsdb_register_p2s__parameterized122default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized102default:default2Á
+"xsdb_register_p2s__parameterized132default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34370,14 +34662,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized102default:default2
-722default:default2
+"xsdb_register_p2s__parameterized132default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized112default:default2Á
+"xsdb_register_p2s__parameterized142default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34414,14 +34706,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized112default:default2
-722default:default2
+"xsdb_register_p2s__parameterized142default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized122default:default2Á
+"xsdb_register_p2s__parameterized152default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34458,14 +34750,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized122default:default2
-722default:default2
+"xsdb_register_p2s__parameterized152default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized132default:default2Á
+"xsdb_register_p2s__parameterized162default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34502,14 +34794,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized132default:default2
-722default:default2
+"xsdb_register_p2s__parameterized162default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized142default:default2Á
+"xsdb_register_p2s__parameterized172default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34546,14 +34838,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized142default:default2
-722default:default2
+"xsdb_register_p2s__parameterized172default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized152default:default2Á
+"xsdb_register_p2s__parameterized182default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34590,14 +34882,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized152default:default2
-722default:default2
+"xsdb_register_p2s__parameterized182default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized162default:default2Á
+"xsdb_register_p2s__parameterized192default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34634,14 +34926,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized162default:default2
-722default:default2
+"xsdb_register_p2s__parameterized192default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized172default:default2Á
+"xsdb_register_p2s__parameterized202default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34678,14 +34970,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized172default:default2
-722default:default2
+"xsdb_register_p2s__parameterized202default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized182default:default2Á
+"xsdb_register_p2s__parameterized212default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34722,14 +35014,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized182default:default2
-722default:default2
+"xsdb_register_p2s__parameterized212default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized192default:default2Á
+"xsdb_register_p2s__parameterized222default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34766,14 +35058,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized192default:default2
-722default:default2
+"xsdb_register_p2s__parameterized222default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized202default:default2Á
+"xsdb_register_p2s__parameterized232default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34810,14 +35102,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized202default:default2
-722default:default2
+"xsdb_register_p2s__parameterized232default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized212default:default2Á
+"xsdb_register_p2s__parameterized242default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34854,14 +35146,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized212default:default2
-722default:default2
+"xsdb_register_p2s__parameterized242default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized222default:default2Á
+"xsdb_register_p2s__parameterized252default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34898,14 +35190,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized222default:default2
-722default:default2
+"xsdb_register_p2s__parameterized252default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized232default:default2Á
+"xsdb_register_p2s__parameterized262default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34942,14 +35234,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized232default:default2
-722default:default2
+"xsdb_register_p2s__parameterized262default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized242default:default2Á
+"xsdb_register_p2s__parameterized272default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -34986,14 +35278,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized242default:default2
-722default:default2
+"xsdb_register_p2s__parameterized272default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized252default:default2Á
+"xsdb_register_p2s__parameterized282default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35030,14 +35322,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized252default:default2
-722default:default2
+"xsdb_register_p2s__parameterized282default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized262default:default2Á
+"xsdb_register_p2s__parameterized292default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35074,14 +35366,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized262default:default2
-722default:default2
+"xsdb_register_p2s__parameterized292default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized272default:default2Á
+"xsdb_register_p2s__parameterized302default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35118,14 +35410,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized272default:default2
-722default:default2
+"xsdb_register_p2s__parameterized302default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized282default:default2Á
+"xsdb_register_p2s__parameterized312default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35162,14 +35454,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized282default:default2
-722default:default2
+"xsdb_register_p2s__parameterized312default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized292default:default2Á
+"xsdb_register_p2s__parameterized322default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35206,14 +35498,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized292default:default2
-722default:default2
+"xsdb_register_p2s__parameterized322default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized302default:default2Á
+"xsdb_register_p2s__parameterized332default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35250,14 +35542,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized302default:default2
-722default:default2
+"xsdb_register_p2s__parameterized332default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized312default:default2Á
+"xsdb_register_p2s__parameterized342default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35294,14 +35586,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized312default:default2
-722default:default2
+"xsdb_register_p2s__parameterized342default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized322default:default2Á
+"xsdb_register_p2s__parameterized352default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35338,14 +35630,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized322default:default2
-722default:default2
+"xsdb_register_p2s__parameterized352default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized332default:default2Á
+"xsdb_register_p2s__parameterized362default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35382,14 +35674,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized332default:default2
-722default:default2
+"xsdb_register_p2s__parameterized362default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized342default:default2Á
+"xsdb_register_p2s__parameterized372default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35426,14 +35718,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized342default:default2
-722default:default2
+"xsdb_register_p2s__parameterized372default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized352default:default2Á
+"xsdb_register_p2s__parameterized382default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35470,14 +35762,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized352default:default2
-722default:default2
+"xsdb_register_p2s__parameterized382default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized362default:default2Á
+"xsdb_register_p2s__parameterized392default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35514,14 +35806,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized362default:default2
-722default:default2
+"xsdb_register_p2s__parameterized392default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized372default:default2Á
+"xsdb_register_p2s__parameterized402default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35558,14 +35850,14 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized372default:default2
-722default:default2
+"xsdb_register_p2s__parameterized402default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
 É
 synthesizing module '%s'638*oasys26
-"xsdb_register_p2s__parameterized382default:default2Á
+"xsdb_register_p2s__parameterized412default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-638
 U
@@ -35602,8 +35894,8 @@ E
 2default:default
 …
 %done synthesizing module '%s' (%s#%s)256*oasys26
-"xsdb_register_p2s__parameterized382default:default2
-722default:default2
+"xsdb_register_p2s__parameterized412default:default2
+702default:default2
 12default:default2Á
 ªc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_p2s.v2default:default2
 762default:default8@Z8-256
@@ -35639,7 +35931,7 @@ T
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 xsdb_register_stream2default:default2
-732default:default2
+712default:default2
 12default:default2Ä
 ­c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
 802default:default8@Z8-256
@@ -35675,7 +35967,7 @@ T
 Š
 %done synthesizing module '%s' (%s#%s)256*oasys28
 $xsdb_register_stream__parameterized02default:default2
-732default:default2
+712default:default2
 12default:default2Ä
 ­c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
 802default:default8@Z8-256
@@ -35711,14 +36003,14 @@ T
 Š
 %done synthesizing module '%s' (%s#%s)256*oasys28
 $xsdb_register_stream__parameterized12default:default2
-732default:default2
+712default:default2
 12default:default2Ä
 ­c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stream.v2default:default2
 802default:default8@Z8-256
 è
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 ila_v4_0_ila_register2default:default2
-742default:default2
+722default:default2
 12default:default2±
 šc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_register.v2default:default2
 792default:default8@Z8-256
@@ -35729,7 +36021,7 @@ $xsdb_register_stream__parameterized12default:default2
 792default:default8@Z8-638
 ]
 %s*synth2N
-:	Parameter C_NUM_MATCH_UNITS bound to: 3 - type: integer 
+:	Parameter C_NUM_MATCH_UNITS bound to: 6 - type: integer 
 2default:default
 X
 %s*synth2I
@@ -35763,9 +36055,9 @@ Z
 %s*synth2p
 \	Parameter C_TRIG_WIDTH_VEC bound to: 48'b000000000000000000000000000001100000000000001111 
 2default:default
-
-%s*synth2p
-\	Parameter C_MATCH_TPID_VEC bound to: 48'b000000000000001000000000000000010000000000000000 
+±
+%s*synth2¡
+Œ	Parameter C_MATCH_TPID_VEC bound to: 96'b000000000000001000000000000000100000000000000001000000000000000100000000000000000000000000000000 
 2default:default
 ]
 %s*synth2N
@@ -35782,7 +36074,7 @@ Z
 772default:default8@Z8-638
 ]
 %s*synth2N
-:	Parameter C_NUM_MATCH_UNITS bound to: 3 - type: integer 
+:	Parameter C_NUM_MATCH_UNITS bound to: 6 - type: integer 
 2default:default
 X
 %s*synth2I
@@ -35796,9 +36088,9 @@ Y
 %s*synth2p
 \	Parameter C_TRIG_WIDTH_VEC bound to: 48'b000000000000000000000000000001100000000000001111 
 2default:default
-
-%s*synth2p
-\	Parameter C_MATCH_TPID_VEC bound to: 48'b000000000000001000000000000000010000000000000000 
+±
+%s*synth2¡
+Œ	Parameter C_MATCH_TPID_VEC bound to: 96'b000000000000001000000000000000100000000000000001000000000000000100000000000000000000000000000000 
 2default:default
 ]
 %s*synth2N
@@ -35916,7 +36208,7 @@ c
 ô
 %done synthesizing module '%s' (%s#%s)256*oasys2
 CFGLUT52default:default2
-752default:default2
+732default:default2
 12default:default2K
 5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 9872default:default8@Z8-256
@@ -35928,14 +36220,14 @@ c
 ó
 %done synthesizing module '%s' (%s#%s)256*oasys2
 CARRY42default:default2
-762default:default2
+742default:default2
 12default:default2K
 5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 9502default:default8@Z8-256
 þ
 %done synthesizing module '%s' (%s#%s)256*oasys2&
 cs_all_typeA_slice2default:default2
-772default:default2
+752default:default2
 12default:default2Ê
 ³c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-256
@@ -35955,28 +36247,28 @@ b
 Ž
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "cs_all_typeA_slice__parameterized02default:default2
-772default:default2
+752default:default2
 12default:default2Ê
 ³c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-256
 ò
 %done synthesizing module '%s' (%s#%s)256*oasys2 
 cs_all_typeA2default:default2
-782default:default2
+762default:default2
 12default:default2Ä
 ­c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
 812default:default8@Z8-256
 ô
 %done synthesizing module '%s' (%s#%s)256*oasys2!
 cs_allx_typeA2default:default2
-792default:default2
+772default:default2
 12default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 772default:default8@Z8-256
 ê
 %done synthesizing module '%s' (%s#%s)256*oasys2
 cs_match2default:default2
-802default:default2
+782default:default2
 12default:default2À
 ©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
 772default:default8@Z8-256
@@ -36066,21 +36358,21 @@ C	Parameter LC_REMAINDER_SLICE_SIGNALS bound to: 0 - type: integer
 ‚
 %done synthesizing module '%s' (%s#%s)256*oasys20
 cs_all_typeA__parameterized02default:default2
-802default:default2
+782default:default2
 12default:default2Ä
 ­c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
 812default:default8@Z8-256
 „
 %done synthesizing module '%s' (%s#%s)256*oasys21
 cs_allx_typeA__parameterized02default:default2
-802default:default2
+782default:default2
 12default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 772default:default8@Z8-256
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 cs_match__parameterized02default:default2
-802default:default2
+782default:default2
 12default:default2À
 ©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
 772default:default8@Z8-256
@@ -36141,21 +36433,21 @@ Y
 „
 %done synthesizing module '%s' (%s#%s)256*oasys21
 cs_allx_typeA__parameterized12default:default2
-802default:default2
+782default:default2
 12default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 772default:default8@Z8-256
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 cs_match__parameterized12default:default2
-802default:default2
+782default:default2
 12default:default2À
 ©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
 772default:default8@Z8-256
 ì
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 ila_v4_0_ila_trig_match2default:default2
-812default:default2
+792default:default2
 12default:default2³
 œc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_trig_match.v2default:default2
 772default:default8@Z8-256
@@ -36170,7 +36462,7 @@ Y
 2default:default
 S
 %s*synth2D
-0	Parameter C_WIDTH bound to: 3 - type: integer 
+0	Parameter C_WIDTH bound to: 6 - type: integer 
 2default:default
 [
 %s*synth2L
@@ -36195,7 +36487,7 @@ S
 2default:default
 S
 %s*synth2D
-0	Parameter C_WIDTH bound to: 3 - type: integer 
+0	Parameter C_WIDTH bound to: 6 - type: integer 
 2default:default
 b
 %s*synth2S
@@ -36216,21 +36508,21 @@ Y
 „
 %done synthesizing module '%s' (%s#%s)256*oasys21
 cs_allx_typeA__parameterized22default:default2
-812default:default2
+792default:default2
 12default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 772default:default8@Z8-256
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 cs_match__parameterized22default:default2
-812default:default2
+792default:default2
 12default:default2À
 ©c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_match.v2default:default2
 772default:default8@Z8-256
 æ
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 ila_v4_0_ila_trigger2default:default2
-822default:default2
+802default:default2
 12default:default2°
 ™c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_trigger.v2default:default2
 792default:default8@Z8-256
@@ -36263,14 +36555,14 @@ W
 ë
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 ila_v4_0_generic_counter2default:default2
-832default:default2
+812default:default2
 12default:default2°
 ™c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_counter.v2default:default2
 1222default:default8@Z8-256
 æ
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 ila_v4_0_ila_counter2default:default2
-842default:default2
+822default:default2
 12default:default2°
 ™c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_counter.v2default:default2
 742default:default8@Z8-256
@@ -36312,7 +36604,7 @@ Y
 ‚
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "ila_v4_0_ila_adv_trigger_sequencer2default:default2
-852default:default2
+832default:default2
 12default:default2¾
 §c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_adv_trigger_sequencer.v2default:default2
 752default:default8@Z8-256
@@ -36355,7 +36647,7 @@ I
 †
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 cs_async_edge_transfer2default:default2
-862default:default2
+842default:default2
 12default:default2Î
 ·c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_async_edge_transfer.v2default:default2
 762default:default8@Z8-256
@@ -36371,14 +36663,14 @@ Z
 Š
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 cs_rising_edge_detection2default:default2
-872default:default2
+852default:default2
 12default:default2Ð
 ¹c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_rising_edge_detection.v2default:default2
 742default:default8@Z8-256
 ì
 %done synthesizing module '%s' (%s#%s)256*oasys2+
 ila_v4_0_ila_reset_ctrl2default:default2
-882default:default2
+862default:default2
 12default:default2³
 œc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_reset_ctrl.v2default:default2
 792default:default8@Z8-256
@@ -36445,7 +36737,7 @@ c
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2
 SRLC32E2default:default2
-892default:default2
+872default:default2
 12default:default2K
 5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 346742default:default8@Z8-256
@@ -36453,7 +36745,7 @@ c
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 cs_cfglut72default:default2
-902default:default2
+882default:default2
 12default:default2Â
 «c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut7.v2default:default2
 742default:default8@Z8-256
@@ -36512,7 +36804,7 @@ S
 õ
 %done synthesizing module '%s' (%s#%s)256*oasys2
 SRL16E2default:default2
-912default:default2
+892default:default2
 12default:default2K
 5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 345242default:default8@Z8-256
@@ -36538,7 +36830,7 @@ X
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 cs_cfglut62default:default2
-922default:default2
+902default:default2
 12default:default2Â
 «c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
 742default:default8@Z8-256
@@ -36589,7 +36881,7 @@ S
 ö
 %done synthesizing module '%s' (%s#%s)256*oasys2
 SRLC16E2default:default2
-932default:default2
+912default:default2
 12default:default2K
 5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 346132default:default8@Z8-256
@@ -36597,7 +36889,7 @@ S
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 cs_cfglut42default:default2
-942default:default2
+922default:default2
 12default:default2Â
 «c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut4.v2default:default2
 742default:default8@Z8-256
@@ -36623,7 +36915,7 @@ X
 %done synthesizing module '%s' (%s#%s)256*oasys2
 
 cs_cfglut52default:default2
-952default:default2
+932default:default2
 12default:default2Â
 «c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut5.v2default:default2
 742default:default8@Z8-256
@@ -36726,7 +37018,7 @@ b
 Ž
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "cs_all_typeA_slice__parameterized12default:default2
-952default:default2
+932default:default2
 12default:default2Ê
 ³c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-256
@@ -36746,28 +37038,28 @@ b
 Ž
 %done synthesizing module '%s' (%s#%s)256*oasys26
 "cs_all_typeA_slice__parameterized22default:default2
-952default:default2
+932default:default2
 12default:default2Ê
 ³c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA_slice.v2default:default2
 752default:default8@Z8-256
 ‚
 %done synthesizing module '%s' (%s#%s)256*oasys20
 cs_all_typeA__parameterized12default:default2
-952default:default2
+932default:default2
 12default:default2Ä
 ­c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_all_typeA.v2default:default2
 812default:default8@Z8-256
 „
 %done synthesizing module '%s' (%s#%s)256*oasys2)
 cs_allx_typeA_nodelay2default:default2
-962default:default2
+942default:default2
 12default:default2Í
 ¶c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA_nodelay.v2default:default2
 772default:default8@Z8-256
 ú
 %done synthesizing module '%s' (%s#%s)256*oasys2$
 cs_match_nodelay2default:default2
-972default:default2
+952default:default2
 12default:default2È
 ±c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_match_nodelay.v2default:default2
 772default:default8@Z8-256
@@ -36795,14 +37087,14 @@ L
 ò
 %done synthesizing module '%s' (%s#%s)256*oasys2
 FDRE2default:default2
-982default:default2
+962default:default2
 12default:default2K
 5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 30142default:default8@Z8-256
 ü
 %done synthesizing module '%s' (%s#%s)256*oasys23
 ila_v4_0_ila_cap_sample_counter2default:default2
-992default:default2
+972default:default2
 12default:default2»
 ¤c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_sample_counter.v2default:default2
 752default:default8@Z8-256
@@ -36823,17 +37115,17 @@ Y
 %s*synth2N
 :	Parameter C_MATCH_UNIT_TYPE bound to: 0 - type: integer 
 2default:default
-ý
+ü
 %done synthesizing module '%s' (%s#%s)256*oasys23
-ila_v4_0_ila_cap_window_counter2default:default2
-1002default:default2
+ila_v4_0_ila_cap_window_counter2default:default2
+982default:default2
 12default:default2»
 ¤c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_window_counter.v2default:default2
 752default:default8@Z8-256
-ï
+î
 %done synthesizing module '%s' (%s#%s)256*oasys2,
-ila_v4_0_ila_cap_addrgen2default:default2
-1012default:default2
+ila_v4_0_ila_cap_addrgen2default:default2
+992default:default2
 12default:default2´
 c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_addrgen.v2default:default2
 752default:default8@Z8-256
@@ -36854,17 +37146,17 @@ X
 %s*synth2M
 9	Parameter C_USE_OUTPUT_REG bound to: 1 - type: integer 
 2default:default
-ÿ
+þ
 %done synthesizing module '%s' (%s#%s)256*oasys2.
-cs_cfglut6__parameterized02default:default2
-1012default:default2
+cs_cfglut6__parameterized02default:default2
+992default:default2
 12default:default2Â
 «c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_cfglut6.v2default:default2
 742default:default8@Z8-256
 ÷
 %done synthesizing module '%s' (%s#%s)256*oasys20
 ila_v4_0_ila_cap_ctrl_legacy2default:default2
-1022default:default2
+1002default:default2
 12default:default2¸
 ¡c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_cap_ctrl_legacy.v2default:default2
 762default:default8@Z8-256
@@ -37804,7 +38096,7 @@ Y
 ä
 %done synthesizing module '%s' (%s#%s)256*oasys2'
 blk_mem_input_block2default:default2
-1032default:default2
+1012default:default2
 12default:default2­
 –c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/blk_mem_gen_v8_1/blk_mem_input_block.vhd2default:default2
 3922default:default8@Z8-256
@@ -39203,21 +39495,21 @@ Z
 î
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 blk_mem_gen_prim_wrapper2default:default2
-1042default:default2
+1022default:default2
 12default:default2²
 ›c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/blk_mem_gen_v8_1/blk_mem_gen_prim_wrapper.vhd2default:default2
 3872default:default8@Z8-256
 ê
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 blk_mem_gen_prim_width2default:default2
-1052default:default2
+1032default:default2
 12default:default2°
 ™c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/blk_mem_gen_v8_1/blk_mem_gen_prim_width.vhd2default:default2
 3932default:default8@Z8-256
 î
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 blk_mem_gen_generic_cstr2default:default2
-1062default:default2
+1042default:default2
 12default:default2²
 ›c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/blk_mem_gen_v8_1/blk_mem_gen_generic_cstr.vhd2default:default2
 4422default:default8@Z8-256
@@ -39269,35 +39561,35 @@ U
 æ
 %done synthesizing module '%s' (%s#%s)256*oasys2(
 blk_mem_output_block2default:default2
-1072default:default2
+1052default:default2
 12default:default2®
 —c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/blk_mem_gen_v8_1/blk_mem_output_block.vhd2default:default2
 2142default:default8@Z8-256
 Ü
 %done synthesizing module '%s' (%s#%s)256*oasys2#
 blk_mem_gen_top2default:default2
-1082default:default2
+1062default:default2
 12default:default2©
 ’c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/blk_mem_gen_v8_1/blk_mem_gen_top.vhd2default:default2
 4312default:default8@Z8-256
 ê
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 blk_mem_gen_v8_1_synth2default:default2
-1092default:default2
+1072default:default2
 12default:default2°
 ™c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/blk_mem_gen_v8_1/blk_mem_gen_v8_1_synth.vhd2default:default2
 3112default:default8@Z8-256
 Þ
 %done synthesizing module '%s' (%s#%s)256*oasys2$
 blk_mem_gen_v8_12default:default2
-1102default:default2
+1082default:default2
 12default:default2ª
 “c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/blk_mem_gen_v8_1/blk_mem_gen_v8_1.vhd2default:default2
 2502default:default8@Z8-256
 ñ
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 ila_v4_0_ila_trace_memory2default:default2
-1112default:default2
+1092default:default2
 12default:default2µ
 žc:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_trace_memory.v2default:default2
 762default:default8@Z8-256
@@ -39309,7 +39601,7 @@ U
 ÷
 %done synthesizing module '%s' (%s#%s)256*oasys20
 ila_v4_0_ila_fsm_memory_read2default:default2
-1122default:default2
+1102default:default2
 12default:default2¸
 ¡c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_fsm_memory_read.v2default:default2
 752default:default8@Z8-256
@@ -39390,7 +39682,7 @@ W
 ÷
 %done synthesizing module '%s' (%s#%s)256*oasys2"
 cs_generic_mux2default:default2
-1132default:default2
+1112default:default2
 12default:default2Æ
 ¯c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_mux.v2default:default2
 732default:default8@Z8-256
@@ -39401,28 +39693,28 @@ W
 ‡
 %done synthesizing module '%s' (%s#%s)256*oasys2*
 cs_generic_memory_read2default:default2
-1142default:default2
+1122default:default2
 12default:default2Î
 ·c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_generic_memory_read.v2default:default2
 762default:default8@Z8-256
 á
 %done synthesizing module '%s' (%s#%s)256*oasys2%
 ila_v4_0_ila_core2default:default2
-1152default:default2
+1132default:default2
 12default:default2­
 –c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila_core.v2default:default2
 772default:default8@Z8-256
 ç
 %done synthesizing module '%s' (%s#%s)256*oasys20
 ila_v4_0_ila__parameterized02default:default2
-1162default:default2
+1142default:default2
 12default:default2¨
 ‘c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/ila_v4_0/hdl/verilog/ila_v4_0_ila.v2default:default2
 792default:default8@Z8-256
 »
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ila_02default:default2
-1172default:default2
+1152default:default2
 12default:default2“
 }c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/synth/ila_0.vhd2default:default2
 652default:default8@Z8-256
@@ -39458,7 +39750,7 @@ P
 Ð
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 clk_divide__parameterized02default:default2
-1182default:default2
+1162default:default2
 12default:default2“
 }C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/CLK_divide.vhd2default:default2
 212default:default8@Z8-256
@@ -39470,7 +39762,7 @@ zC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
 º
 %done synthesizing module '%s' (%s#%s)256*oasys2
 DAC_SPI2default:default2
-1192default:default2
+1172default:default2
 12default:default2
 zC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_SPI.vhd2default:default2
 162default:default8@Z8-256
@@ -39490,7 +39782,7 @@ W
 Ð
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 DAC_buffer__parameterized02default:default2
-1202default:default2
+1182default:default2
 12default:default2“
 }C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DAC_BUFFER.vhd2default:default2
 482default:default8@Z8-256
@@ -39507,10 +39799,10 @@ Hbinding instance '%s' in module '%s' to reference '%s' which has no pins115
 ¸
 %done synthesizing module '%s' (%s#%s)256*oasys2
 dacTop2default:default2
-1212default:default2
+1192default:default2
 12default:default2
 yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/DACTOP.vhd2default:default2
-212default:default8@Z8-256
+282default:default8@Z8-256
 ý
 synthesizing module '%s'638*oasys2
 ADC_TOP2default:default2
@@ -39522,6 +39814,11 @@ zC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
 ila_12default:default2
 zC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
 1402default:default8@Z8-637
+ª
+Esignal '%s' is read in the process but is not in the sensitivity list614*oasys2
+CLK1002default:default2
+zC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
+1482default:default8@Z8-614
 R
 %s*synth2C
 /	Parameter WIDTH bound to: 32 - type: integer 
@@ -39546,14 +39843,14 @@ O
 ì
 %done synthesizing module '%s' (%s#%s)256*oasys21
 digitalfilter__parameterized02default:default2
-1222default:default2
+1202default:default2
 12default:default2¬
 •C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/electronic system design/digitalfilter.vhd2default:default2
 182default:default8@Z8-256
 —
 synthesizing module '%s'638*oasys2
 ADC2default:default2®
-—C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/.Xil/Vivado-6788-MININT-VV401LP/realtime/ADC_stub.vhdl2default:default2
+—C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/synth_1/.Xil/Vivado-6572-MININT-VV401LP/realtime/ADC_stub.vhdl2default:default2
 332default:default8@Z8-638
 W
 %s*synth2H
@@ -39571,24 +39868,194 @@ W
 Ð
 %done synthesizing module '%s' (%s#%s)256*oasys2.
 ADC_buffer__parameterized02default:default2
-1232default:default2
+1212default:default2
 12default:default2“
 }C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_buffer.vhd2default:default2
 482default:default8@Z8-256
 º
 %done synthesizing module '%s' (%s#%s)256*oasys2
 ADC_TOP2default:default2
-1242default:default2
+1222default:default2
 12default:default2
 zC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/ADC_TOP.vhd2default:default2
 482default:default8@Z8-256
 Ì
 %done synthesizing module '%s' (%s#%s)256*oasys2,
 dummyapb__parameterized02default:default2
-1252default:default2
+1232default:default2
 12default:default2‘
 {C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/dummyapb.vhd2default:default2
 312default:default8@Z8-256
+S
+%s*synth2D
+0	Parameter pindex bound to: 13 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter paddr bound to: 13 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter pmask bound to: 4095 - type: integer 
+2default:default
+¤
+synthesizing module '%s'638*oasys2:
+&button_and_hex_wrapper__parameterized02default:default2˜
+C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/Button_and_hex_wrapper.vhd2default:default2
+262default:default8@Z8-638
+S
+%s*synth2D
+0	Parameter pindex bound to: 13 - type: integer 
+2default:default
+R
+%s*synth2C
+/	Parameter paddr bound to: 13 - type: integer 
+2default:default
+T
+%s*synth2E
+1	Parameter pmask bound to: 4095 - type: integer 
+2default:default
+È
+5synthesizing blackbox instance '%s' of component '%s'637*oasys2&
+your_instance_name2default:default2
+ila_22default:default2˜
+C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/Button_and_hex_wrapper.vhd2default:default2
+872default:default8@Z8-637
+ƒ
+synthesizing module '%s'638*oasys2"
+button_control2default:default2
+yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/button_control.vhd2default:default2
+462default:default8@Z8-638
+X
+%s*synth2I
+5	Parameter counterbits bound to: 13 - type: integer 
+2default:default
+‘
+synthesizing module '%s'638*oasys21
+bounce_filter__parameterized02default:default2Ž
+xC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bounce_filter.vhd2default:default2
+442default:default8@Z8-638
+X
+%s*synth2I
+5	Parameter counterbits bound to: 13 - type: integer 
+2default:default
+Î
+%done synthesizing module '%s' (%s#%s)256*oasys21
+bounce_filter__parameterized02default:default2
+1242default:default2
+12default:default2Ž
+xC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bounce_filter.vhd2default:default2
+442default:default8@Z8-256
+X
+%s*synth2I
+5	Parameter counterbits bound to: 13 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter counterbits bound to: 13 - type: integer 
+2default:default
+X
+%s*synth2I
+5	Parameter counterbits bound to: 13 - type: integer 
+2default:default
+À
+%done synthesizing module '%s' (%s#%s)256*oasys2"
+button_control2default:default2
+1252default:default2
+12default:default2
+yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/button_control.vhd2default:default2
+462default:default8@Z8-256
+‰
+synthesizing module '%s'638*oasys2%
+seven_seg_control2default:default2’
+|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/seven_seg_control.vhd2default:default2
+242default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter bits bound to: 8 - type: integer 
+2default:default
+…
+synthesizing module '%s'638*oasys2+
+bin2bcd__parameterized02default:default2ˆ
+rC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bin2bcd.vhd2default:default2
+412default:default8@Z8-638
+P
+%s*synth2A
+-	Parameter bits bound to: 8 - type: integer 
+2default:default
+ù
+synthesizing module '%s'638*oasys2
+	BCD_block2default:default2Š
+tC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/BCD_block.vhd2default:default2
+392default:default8@Z8-638
+¶
+%done synthesizing module '%s' (%s#%s)256*oasys2
+	BCD_block2default:default2
+1262default:default2
+12default:default2Š
+tC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/BCD_block.vhd2default:default2
+392default:default8@Z8-256
+Â
+%done synthesizing module '%s' (%s#%s)256*oasys2+
+bin2bcd__parameterized02default:default2
+1272default:default2
+12default:default2ˆ
+rC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/bin2bcd.vhd2default:default2
+412default:default8@Z8-256
+P
+%s*synth2A
+-	Parameter bits bound to: 8 - type: integer 
+2default:default
+‰
+synthesizing module '%s'638*oasys2%
+clk_div_seven_seg2default:default2’
+|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/clk_div_seven_seg.vhd2default:default2
+412default:default8@Z8-638
+X
+%s*synth2I
+5	Parameter counterbits bound to: 17 - type: integer 
+2default:default
+Æ
+%done synthesizing module '%s' (%s#%s)256*oasys2%
+clk_div_seven_seg2default:default2
+1282default:default2
+12default:default2’
+|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/clk_div_seven_seg.vhd2default:default2
+412default:default8@Z8-256
+Æ
+%done synthesizing module '%s' (%s#%s)256*oasys2%
+seven_seg_control2default:default2
+1292default:default2
+12default:default2’
+|C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/seven_seg_control.vhd2default:default2
+242default:default8@Z8-256
+W
+%s*synth2H
+4	Parameter duty_cycle bound to: 10 - type: integer 
+2default:default
+Ÿ
+synthesizing module '%s'638*oasys28
+$RGB_diode_controller__parameterized02default:default2•
+C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/RGB_diode_controller.vhd2default:default2
+442default:default8@Z8-638
+W
+%s*synth2H
+4	Parameter duty_cycle bound to: 10 - type: integer 
+2default:default
+Ü
+%done synthesizing module '%s' (%s#%s)256*oasys28
+$RGB_diode_controller__parameterized02default:default2
+1302default:default2
+12default:default2•
+C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/RGB_diode_controller.vhd2default:default2
+442default:default8@Z8-256
+á
+%done synthesizing module '%s' (%s#%s)256*oasys2:
+&button_and_hex_wrapper__parameterized02default:default2
+1312default:default2
+12default:default2˜
+C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/new/Button_and_hex_wrapper.vhd2default:default2
+262default:default8@Z8-256
 \
 %s*synth2M
 9	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
@@ -39833,17 +40300,17 @@ c
 ‰
 %done synthesizing module '%s' (%s#%s)256*oasys2-
 PLLE2_ADV__parameterized22default:default2
-1252default:default2
+1312default:default2
 12default:default2K
 5C:/Xilinx/Vivado/2014.1/scripts/rt/data/unisim_comp.v2default:default2
 260572default:default8@Z8-256
 ì
 %done synthesizing module '%s' (%s#%s)256*oasys2
 leon3mp2default:default2
-1262default:default2
+1322default:default2
 12default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-1482default:default8@Z8-256
+1502default:default8@Z8-256
 ”
 +design %s has port %s driven by constant %s3447*oasys2
 leon3mp2default:default2
@@ -39948,29 +40415,9 @@ r
 !design %s has unconnected port %s3331*oasys2
 leon3mp2default:default2
 sw[0]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[4]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[3]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[2]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[1]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[0]2default:defaultZ8-3331
 œ
 %s*synth2Œ
-xFinished RTL Elaboration : Time (s): cpu = 00:01:38 ; elapsed = 00:01:52 . Memory (MB): peak = 519.141 ; gain = 352.109
+xFinished RTL Elaboration : Time (s): cpu = 00:02:29 ; elapsed = 00:04:18 . Memory (MB): peak = 444.418 ; gain = 327.238
 2default:default
 ;
 %s*synth2,
@@ -40592,133 +41039,133 @@ u_ila_regs2default:default2(
 clkgen02default:default2!
 \cgi[pllref] 2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3252default:default8@Z8-3295
+3452default:default8@Z8-3295
 æ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 clkgen02default:default2$
 \cgi[clksel] [1]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3252default:default8@Z8-3295
+3452default:default8@Z8-3295
 æ
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 clkgen02default:default2$
 \cgi[clksel] [0]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3252default:default8@Z8-3295
+3452default:default8@Z8-3295
 ë
 'tying undriven pin %s:%s to constant 0
 3295*oasys2#
 \dcomgen.dcom0 2default:default2!
 \uarti[ctsn] 2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3802default:default8@Z8-3295
+4002default:default8@Z8-3295
 í
 'tying undriven pin %s:%s to constant 0
 3295*oasys2#
 \dcomgen.dcom0 2default:default2#
 \uarti[extclk] 2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3802default:default8@Z8-3295
+4002default:default8@Z8-3295
 è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [15]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [14]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [13]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [12]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [11]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 è
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2$
 \memi[data] [10]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [9]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [8]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [7]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [6]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [5]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [4]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [3]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 ç
 'tying undriven pin %s:%s to constant 0
 3295*oasys2
 	\mg2.sr1 2default:default2#
 \memi[data] [2]2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4012default:default8@Z8-3295
+4212default:default8@Z8-3295
 Ô
 Message '%s' appears more than %s times and has been disabled. User can change this message limit to see more message instances.
 14*common2 
@@ -40727,7 +41174,7 @@ u_ila_regs2default:default2(
 ^
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-2562default:defaultZ29-17
+2752default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -40912,7 +41359,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4332default:default8@Z18-548
+4532default:default8@Z18-548
 á
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41065,7 +41512,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4362default:default8@Z18-548
+4562default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41083,7 +41530,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-5212default:default8@Z18-548
+5412default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41101,7 +41548,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-3842default:default8@Z18-548
+4042default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41524,7 +41971,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4192default:default8@Z18-548
+4392default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41542,7 +41989,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4212default:default8@Z18-548
+4412default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41560,7 +42007,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4232default:default8@Z18-548
+4432default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41578,7 +42025,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4252default:default8@Z18-548
+4452default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41596,7 +42043,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4272default:default8@Z18-548
+4472default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41614,7 +42061,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-4292default:default8@Z18-548
+4492default:default8@Z18-548
 á
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41632,7 +42079,7 @@ jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserve
 slew2default:default2
 Vivado2default:default2B
 ,C:/designs/leon3-digilent-nexys4/leon3mp.vhd2default:default2
-5242default:default8@Z18-548
+5442default:default8@Z18-548
 â
 jCould not create '%s' constraint because %s. '%s' is ignored by %s but preserved for implementation tool.
 526*constraints2
@@ -41687,6 +42134,14 @@ yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
 Finished Parsing XDC File [%s]
 178*designutils2
 yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:defaultZ20-178
+/
+Deriving generated clocks
+2*timingZ38-2
+²
+ÙImplementation specific constraints were found while reading constraint file [%s]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [%s].
+233*project2
+yC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc2default:default2-
+.Xil/leon3mp_propImpl.xdc2default:defaultZ1-236
 º
 Parsing XDC File [%s]
 179*designutils2ƒ
@@ -41710,29 +42165,26 @@ pC:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-ne
 ¡
 !Unisim Transformation Summary:
 %s111*project2ä
-Ï  A total of 248 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 168 instances
-  CFGLUT5 => SRLC32E: 38 instances
+Ï  A total of 267 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 184 instances
+  CFGLUT5 => SRLC32E: 41 instances
   IOBUF => IOBUF (IBUF, OBUFT): 17 instances
   RAMB16_S18 => RAMB18E1: 4 instances
   RAMB16_S36 => RAMB36E1: 2 instances
   RAMB16_S36_S36 => RAMB36E1: 11 instances
   RAMB16_S9 => RAMB18E1: 8 instances
 2default:defaultZ1-111
-/
-Deriving generated clocks
-2*timingZ38-2
 ±
 %s*synth2¡
-ŒFinished Loading Part and Timing Information : Time (s): cpu = 00:02:53 ; elapsed = 00:03:13 . Memory (MB): peak = 673.355 ; gain = 506.324
+ŒFinished Loading Part and Timing Information : Time (s): cpu = 00:04:09 ; elapsed = 00:07:21 . Memory (MB): peak = 597.891 ; gain = 480.711
 2default:default
 µ
 %s*synth2¥
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:02 ; elapsed = 00:03:18 . Memory (MB): peak = 673.355 ; gain = 506.324
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:20 ; elapsed = 00:07:30 . Memory (MB): peak = 597.891 ; gain = 480.711
 2default:default
 
 %s*synth2
-yFinished RTL Optimization : Time (s): cpu = 00:03:02 ; elapsed = 00:03:18 . Memory (MB): peak = 673.355 ; gain = 506.324
+yFinished RTL Optimization : Time (s): cpu = 00:04:20 ; elapsed = 00:07:30 . Memory (MB): peak = 597.891 ; gain = 480.711
 2default:default
 
 RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bits.3455*oasys2 
@@ -41901,6 +42353,18 @@ RFound unconnected internal register '%s' and it is trimmed from '%s' to '%s' bi
 6No Re-encoding of one hot register '%s' in module '%s'3445*oasys2%
 current_state_reg2default:default26
 "xsdb_register_p2s__parameterized382default:defaultZ8-3898
+®
+6No Re-encoding of one hot register '%s' in module '%s'3445*oasys2%
+current_state_reg2default:default26
+"xsdb_register_p2s__parameterized392default:defaultZ8-3898
+®
+6No Re-encoding of one hot register '%s' in module '%s'3445*oasys2%
+current_state_reg2default:default26
+"xsdb_register_p2s__parameterized402default:defaultZ8-3898
+®
+6No Re-encoding of one hot register '%s' in module '%s'3445*oasys2%
+current_state_reg2default:default26
+"xsdb_register_p2s__parameterized412default:defaultZ8-3898
 §
 merging register '%s' into '%s'3619*oasys2
 	ready_reg2default:default2
@@ -42045,12 +42509,6 @@ multiplier2default:default2>
 3inferred FSM for state register '%s' in module '%s'802*oasys2 
 r_reg[state]2default:default2
 div322default:defaultZ8-802
-‹
-!inferring latch for variable '%s'327*oasys2
-
-hrdata_reg2default:default2‘
-{C:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/imports/rtl/adderahb.vhd2default:default2
-1072default:default8@Z8-327
 ²
 Hbinding instance '%s' in module '%s' to reference '%s' which has no pins115*oasys2
 i_22default:default2
@@ -42139,7 +42597,7 @@ c
 2default:default
 c
 %s*synth2T
-@|2     |dummyapb__parameterized0__GB1 |           1|     22878|
+@|2     |dummyapb__parameterized0__GB1 |           1|     23925|
 2default:default
 c
 %s*synth2T
@@ -42155,11 +42613,11 @@ c
 2default:default
 c
 %s*synth2T
-@|6     |leon3mp__GCB0                 |           1|     24967|
+@|6     |leon3mp__GCB0                 |           1|     25652|
 2default:default
 c
 %s*synth2T
-@|7     |leon3mp__GCB1                 |           1|     23133|
+@|7     |leon3mp__GCB1                 |           1|     23235|
 2default:default
 c
 %s*synth2T
@@ -42183,11 +42641,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     33 Bit       Adders := 1     
+.	   3 Input     33 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input     33 Bit       Adders := 1     
+.	   2 Input     33 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -42203,7 +42661,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     17 Bit       Adders := 1     
+.	   2 Input     17 Bit       Adders := 2     
 2default:default
 Q
 %s*synth2B
@@ -42227,7 +42685,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit       Adders := 7     
+.	   2 Input      8 Bit       Adders := 8     
 2default:default
 Q
 %s*synth2B
@@ -42247,11 +42705,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit       Adders := 45    
+.	   2 Input      4 Bit       Adders := 49    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit       Adders := 18    
+.	   2 Input      3 Bit       Adders := 19    
 2default:default
 Q
 %s*synth2B
@@ -42275,7 +42733,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     13 Bit         XORs := 54    
+.	   2 Input     13 Bit         XORs := 57    
 2default:default
 Q
 %s*synth2B
@@ -42283,7 +42741,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit         XORs := 172   
+.	   2 Input      1 Bit         XORs := 109   
 2default:default
 4
 %s*synth2%
@@ -42303,7 +42761,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               32 Bit    Registers := 200   
+.	               32 Bit    Registers := 197   
 2default:default
 Q
 %s*synth2B
@@ -42335,11 +42793,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	               17 Bit    Registers := 2     
+.	               17 Bit    Registers := 3     
 2default:default
 Q
 %s*synth2B
-.	               16 Bit    Registers := 413   
+.	               16 Bit    Registers := 427   
 2default:default
 Q
 %s*synth2B
@@ -42363,15 +42821,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                8 Bit    Registers := 29    
+.	                8 Bit    Registers := 33    
 2default:default
 Q
 %s*synth2B
-.	                7 Bit    Registers := 18    
+.	                7 Bit    Registers := 21    
 2default:default
 Q
 %s*synth2B
-.	                6 Bit    Registers := 8     
+.	                6 Bit    Registers := 40    
 2default:default
 Q
 %s*synth2B
@@ -42379,19 +42837,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	                4 Bit    Registers := 109   
+.	                4 Bit    Registers := 116   
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 53    
+.	                3 Bit    Registers := 24    
 2default:default
 Q
 %s*synth2B
-.	                2 Bit    Registers := 70    
+.	                2 Bit    Registers := 69    
 2default:default
 Q
 %s*synth2B
-.	                1 Bit    Registers := 1423  
+.	                1 Bit    Registers := 1455  
 2default:default
 6
 %s*synth2'
@@ -42415,11 +42873,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     65 Bit        Muxes := 2     
+.	   2 Input     65 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     65 Bit        Muxes := 3     
+.	   6 Input     65 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -42455,7 +42913,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 157   
+.	  11 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42463,39 +42921,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  14 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  11 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input     32 Bit        Muxes := 10    
-2default:default
-Q
-%s*synth2B
-.	  18 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input     32 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   3 Input     32 Bit        Muxes := 12    
-2default:default
-Q
-%s*synth2B
-.	 142 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 31    
-2default:default
-Q
-%s*synth2B
-.	   7 Input     32 Bit        Muxes := 4     
+.	  16 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -42503,7 +42929,27 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  16 Input     32 Bit        Muxes := 2     
+.	  10 Input     32 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 153   
+2default:default
+Q
+%s*synth2B
+.	   3 Input     32 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 30    
+2default:default
+Q
+%s*synth2B
+.	   6 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	 142 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42511,7 +42957,19 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   7 Input     32 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	  14 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   9 Input     32 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	  18 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42519,7 +42977,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  12 Input     30 Bit        Muxes := 1     
+.	   4 Input     30 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
@@ -42527,15 +42985,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     30 Bit        Muxes := 7     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     30 Bit        Muxes := 23    
 2default:default
 Q
 %s*synth2B
-.	   6 Input     30 Bit        Muxes := 1     
+.	  12 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42543,11 +42997,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     28 Bit        Muxes := 1     
+.	   6 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input     28 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     28 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42559,6 +43017,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input     20 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
 .	  10 Input     20 Bit        Muxes := 2     
 2default:default
 Q
@@ -42567,19 +43029,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     20 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     19 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  10 Input     18 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     18 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -42591,19 +43041,43 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     17 Bit        Muxes := 2     
+.	  10 Input     18 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit        Muxes := 41    
+.	   4 Input     18 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  35 Input     16 Bit        Muxes := 1     
+.	   2 Input     17 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  25 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	  15 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input     16 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
+.	  32 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     16 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     16 Bit        Muxes := 41    
 2default:default
 Q
 %s*synth2B
@@ -42615,27 +43089,23 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     16 Bit        Muxes := 7     
+.	  12 Input     16 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   3 Input     16 Bit        Muxes := 41    
+.	  35 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   5 Input     16 Bit        Muxes := 1     
+.	   3 Input     16 Bit        Muxes := 43    
 2default:default
 Q
 %s*synth2B
-.	  32 Input     16 Bit        Muxes := 1     
+.	   4 Input     15 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  25 Input     16 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     16 Bit        Muxes := 3     
+.	  14 Input     15 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42647,14 +43117,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  14 Input     15 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     15 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     15 Bit        Muxes := 17    
 2default:default
 Q
@@ -42663,11 +43125,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     13 Bit        Muxes := 5     
+.	  12 Input     13 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  12 Input     13 Bit        Muxes := 1     
+.	   2 Input     13 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -42679,23 +43141,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   9 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   7 Input     11 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   4 Input     11 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   8 Input     11 Bit        Muxes := 1     
+.	   7 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42707,6 +43157,18 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   9 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  19 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input     11 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   8 Input     10 Bit        Muxes := 1     
 2default:default
 Q
@@ -42715,23 +43177,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 26    
-2default:default
-Q
-%s*synth2B
-.	   6 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  10 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  16 Input     10 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     10 Bit        Muxes := 2     
+.	   2 Input     10 Bit        Muxes := 26    
 2default:default
 Q
 %s*synth2B
@@ -42739,7 +43189,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   6 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     10 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  16 Input     10 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   6 Input      9 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      9 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42747,7 +43213,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      9 Bit        Muxes := 1     
+.	   8 Input      8 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -42763,35 +43229,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      8 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
 .	   4 Input      8 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      7 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	  12 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      7 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      7 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  15 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42799,7 +43237,31 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  15 Input      7 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      7 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
 .	   2 Input      7 Bit        Muxes := 32    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      7 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  12 Input      7 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      7 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -42807,15 +43269,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      6 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   6 Input      6 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 35    
+.	   7 Input      6 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42827,27 +43285,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   6 Input      5 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      5 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      5 Bit        Muxes := 32    
-2default:default
-Q
-%s*synth2B
-.	  19 Input      5 Bit        Muxes := 1     
+.	   2 Input      6 Bit        Muxes := 35    
 2default:default
 Q
 %s*synth2B
@@ -42855,31 +43293,35 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   6 Input      5 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
 .	  13 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 255   
+.	  19 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   4 Input      4 Bit        Muxes := 7     
+.	   2 Input      5 Bit        Muxes := 32    
 2default:default
 Q
 %s*synth2B
-.	  15 Input      4 Bit        Muxes := 3     
+.	  16 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      4 Bit        Muxes := 6     
+.	   3 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   5 Input      4 Bit        Muxes := 40    
+.	   8 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  16 Input      4 Bit        Muxes := 5     
+.	   2 Input      4 Bit        Muxes := 265   
 2default:default
 Q
 %s*synth2B
@@ -42887,11 +43329,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      4 Bit        Muxes := 2     
+.	  16 Input      4 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      4 Bit        Muxes := 1     
+.	   8 Input      4 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -42899,23 +43341,31 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  10 Input      4 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   7 Input      3 Bit        Muxes := 4     
+.	   6 Input      4 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   6 Input      3 Bit        Muxes := 1     
+.	  15 Input      4 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	  10 Input      3 Bit        Muxes := 2     
+.	   5 Input      4 Bit        Muxes := 43    
+2default:default
+Q
+%s*synth2B
+.	  13 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      4 Bit        Muxes := 7     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      4 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -42923,23 +43373,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   5 Input      3 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      3 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	  15 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      3 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      3 Bit        Muxes := 89    
+.	   2 Input      3 Bit        Muxes := 93    
 2default:default
 Q
 %s*synth2B
@@ -42951,11 +43385,71 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   8 Input      3 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      3 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	  15 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   9 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
+.	   7 Input      3 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      3 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      3 Bit        Muxes := 6     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      2 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      2 Bit        Muxes := 12    
+2default:default
+Q
+%s*synth2B
+.	   8 Input      2 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	   9 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      2 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
 .	   5 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 145   
+2default:default
+Q
+%s*synth2B
+.	  19 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -42967,35 +43461,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      2 Bit        Muxes := 4     
+.	   4 Input      1 Bit        Muxes := 248   
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 144   
+.	  11 Input      1 Bit        Muxes := 22    
 2default:default
 Q
 %s*synth2B
-.	  16 Input      2 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      2 Bit        Muxes := 5     
-2default:default
-Q
-%s*synth2B
-.	  19 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      2 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      2 Bit        Muxes := 12    
-2default:default
-Q
-%s*synth2B
-.	   9 Input      2 Bit        Muxes := 1     
+.	   2 Input      1 Bit        Muxes := 2335  
 2default:default
 Q
 %s*synth2B
@@ -43007,6 +43481,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   5 Input      1 Bit        Muxes := 11    
+2default:default
+Q
+%s*synth2B
 .	   6 Input      1 Bit        Muxes := 76    
 2default:default
 Q
@@ -43015,11 +43493,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 246   
+.	  14 Input      1 Bit        Muxes := 28    
 2default:default
 Q
 %s*synth2B
-.	   5 Input      1 Bit        Muxes := 11    
+.	   8 Input      1 Bit        Muxes := 94    
 2default:default
 Q
 %s*synth2B
@@ -43031,11 +43509,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      1 Bit        Muxes := 94    
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit        Muxes := 22    
+.	   9 Input      1 Bit        Muxes := 16    
 2default:default
 Q
 %s*synth2B
@@ -43043,19 +43517,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input      1 Bit        Muxes := 16    
-2default:default
-Q
-%s*synth2B
 .	  16 Input      1 Bit        Muxes := 41    
-2default:default
-Q
-%s*synth2B
-.	  14 Input      1 Bit        Muxes := 28    
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 2320  
 2default:default
 F
 %s*synth27
@@ -43295,7 +43757,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__61 
+Module xsdb_register_stat__67 
 2default:default
 B
 %s*synth23
@@ -43319,7 +43781,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__60 
+Module xsdb_register_stat__66 
 2default:default
 B
 %s*synth23
@@ -43343,7 +43805,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__59 
+Module xsdb_register_stat__65 
 2default:default
 B
 %s*synth23
@@ -43367,7 +43829,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__58 
+Module xsdb_register_stat__64 
 2default:default
 B
 %s*synth23
@@ -43391,7 +43853,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__57 
+Module xsdb_register_stat__63 
 2default:default
 B
 %s*synth23
@@ -43479,7 +43941,7 @@ Q
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__56 
+Module xsdb_register_stat__62 
 2default:default
 B
 %s*synth23
@@ -43503,7 +43965,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__55 
+Module xsdb_register_stat__61 
 2default:default
 B
 %s*synth23
@@ -43527,7 +43989,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__54 
+Module xsdb_register_stat__60 
 2default:default
 B
 %s*synth23
@@ -43551,7 +44013,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__53 
+Module xsdb_register_stat__59 
 2default:default
 B
 %s*synth23
@@ -43575,7 +44037,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__52 
+Module xsdb_register_stat__58 
 2default:default
 B
 %s*synth23
@@ -43599,7 +44061,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__51 
+Module xsdb_register_stat__57 
 2default:default
 B
 %s*synth23
@@ -43623,7 +44085,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__50 
+Module xsdb_register_stat__56 
 2default:default
 B
 %s*synth23
@@ -43647,7 +44109,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__49 
+Module xsdb_register_stat__55 
 2default:default
 B
 %s*synth23
@@ -43671,7 +44133,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__48 
+Module xsdb_register_stat__54 
 2default:default
 B
 %s*synth23
@@ -43695,7 +44157,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__47 
+Module xsdb_register_stat__53 
 2default:default
 B
 %s*synth23
@@ -43719,7 +44181,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__46 
+Module xsdb_register_stat__52 
 2default:default
 B
 %s*synth23
@@ -43743,7 +44205,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__45 
+Module xsdb_register_stat__51 
 2default:default
 B
 %s*synth23
@@ -43767,7 +44229,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__44 
+Module xsdb_register_stat__50 
 2default:default
 B
 %s*synth23
@@ -44175,7 +44637,7 @@ Q
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__43 
+Module xsdb_register_stat__49 
 2default:default
 B
 %s*synth23
@@ -44199,55 +44661,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__42 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               16 Bit    Registers := 1     
-2default:default
-J
-%s*synth2;
-'Module xsdb_register__parameterized39 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-B
-%s*synth23
-Module xsdb_register_stat__41 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               16 Bit    Registers := 1     
-2default:default
-J
-%s*synth2;
-'Module xsdb_register__parameterized44 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-B
-%s*synth23
-Module xsdb_register_stat__40 
+Module xsdb_register_stat__48 
 2default:default
 B
 %s*synth23
@@ -44271,7 +44685,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__39 
+Module xsdb_register_stat__47 
 2default:default
 B
 %s*synth23
@@ -44287,7 +44701,7 @@ Q
 2default:default
 J
 %s*synth2;
-'Module xsdb_register__parameterized46 
+'Module xsdb_register__parameterized50 
 2default:default
 B
 %s*synth23
@@ -44295,7 +44709,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__38 
+Module xsdb_register_stat__46 
 2default:default
 B
 %s*synth23
@@ -44311,7 +44725,55 @@ Q
 2default:default
 J
 %s*synth2;
-'Module xsdb_register__parameterized47 
+'Module xsdb_register__parameterized51 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module xsdb_register_stat__45 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module xsdb_register__parameterized52 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module xsdb_register_stat__44 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module xsdb_register__parameterized53 
 2default:default
 B
 %s*synth23
@@ -44467,7 +44929,7 @@ Q
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__37 
+Module xsdb_register_stat__43 
 2default:default
 B
 %s*synth23
@@ -44499,7 +44961,7 @@ Q
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__36 
+Module xsdb_register_stat__42 
 2default:default
 B
 %s*synth23
@@ -44523,7 +44985,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__35 
+Module xsdb_register_stat__41 
 2default:default
 B
 %s*synth23
@@ -44547,7 +45009,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__34 
+Module xsdb_register_stat__40 
 2default:default
 B
 %s*synth23
@@ -44571,7 +45033,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__33 
+Module xsdb_register_stat__39 
 2default:default
 B
 %s*synth23
@@ -44595,7 +45057,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__32 
+Module xsdb_register_stat__38 
 2default:default
 B
 %s*synth23
@@ -44619,7 +45081,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__31 
+Module xsdb_register_stat__37 
 2default:default
 B
 %s*synth23
@@ -44643,7 +45105,31 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__30 
+Module xsdb_register_stat__36 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module xsdb_register__parameterized39 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module xsdb_register_stat__35 
 2default:default
 B
 %s*synth23
@@ -44667,7 +45153,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__29 
+Module xsdb_register_stat__34 
 2default:default
 B
 %s*synth23
@@ -44691,7 +45177,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__28 
+Module xsdb_register_stat__33 
 2default:default
 B
 %s*synth23
@@ -44715,7 +45201,7 @@ B
 2default:default
 B
 %s*synth23
-Module xsdb_register_stat__27 
+Module xsdb_register_stat__32 
 2default:default
 B
 %s*synth23
@@ -44732,6 +45218,126 @@ Q
 J
 %s*synth2;
 'Module xsdb_register__parameterized43 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module xsdb_register_stat__31 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module xsdb_register__parameterized44 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module xsdb_register_stat__30 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module xsdb_register__parameterized46 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module xsdb_register_stat__29 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module xsdb_register__parameterized47 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module xsdb_register_stat__28 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module xsdb_register__parameterized48 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+B
+%s*synth23
+Module xsdb_register_stat__27 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 1     
+2default:default
+J
+%s*synth2;
+'Module xsdb_register__parameterized49 
 2default:default
 B
 %s*synth23
@@ -47389,6 +47995,210 @@ Q
 %s*synth2B
 .	   4 Input      1 Bit        Muxes := 1     
 2default:default
+N
+%s*synth2?
++Module xsdb_register_p2s__parameterized39 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     13 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   3 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 1     
+2default:default
+N
+%s*synth2?
++Module xsdb_register_p2s__parameterized40 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     13 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   3 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 1     
+2default:default
+N
+%s*synth2?
++Module xsdb_register_p2s__parameterized41 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+/
+%s*synth2 
++---XORs : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     13 Bit         XORs := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   3 Input     16 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   5 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 1     
+2default:default
 A
 %s*synth22
 Module ila_v4_0_ila_register 
@@ -47431,19 +48241,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  35 Input     16 Bit        Muxes := 1     
+.	   8 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     16 Bit        Muxes := 5     
+.	   6 Input     16 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   6 Input     16 Bit        Muxes := 3     
-2default:default
-Q
-%s*synth2B
-.	  32 Input     16 Bit        Muxes := 1     
+.	  12 Input     16 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -47451,11 +48257,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input     16 Bit        Muxes := 1     
+.	  32 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   8 Input     16 Bit        Muxes := 1     
+.	   2 Input     16 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
+.	  35 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -47476,6 +48286,70 @@ Q
 Q
 %s*synth2B
 .	   2 Input      1 Bit        Muxes := 2     
+2default:default
+A
+%s*synth22
+Module cs_all_typeA_slice__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+R
+%s*synth2C
+/Module cs_all_typeA_slice__parameterized0__74 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+;
+%s*synth2,
+Module cs_all_typeA__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+<
+%s*synth2-
+Module cs_allx_typeA__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               16 Bit    Registers := 2     
+2default:default
+7
+%s*synth2(
+Module cs_match__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
 2default:default
 >
 %s*synth2/
@@ -47543,7 +48417,63 @@ Q
 2default:default
 R
 %s*synth2C
-/Module cs_all_typeA_slice__parameterized0__35 
+/Module cs_all_typeA_slice__parameterized0__73 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+L
+%s*synth2=
+)Module cs_all_typeA__parameterized0__70 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module cs_allx_typeA__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 2     
+2default:default
+G
+%s*synth28
+$Module cs_match__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+R
+%s*synth2C
+/Module cs_all_typeA_slice__parameterized0__38 
 2default:default
 B
 %s*synth23
@@ -47599,7 +48529,7 @@ Q
 2default:default
 R
 %s*synth2C
-/Module cs_all_typeA_slice__parameterized0__37 
+/Module cs_all_typeA_slice__parameterized0__72 
 2default:default
 B
 %s*synth23
@@ -47615,7 +48545,63 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__35 
+)Module cs_all_typeA__parameterized0__69 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+L
+%s*synth2=
+)Module cs_allx_typeA__parameterized1__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+G
+%s*synth28
+$Module cs_match__parameterized1__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+R
+%s*synth2C
+/Module cs_all_typeA_slice__parameterized0__40 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+L
+%s*synth2=
+)Module cs_all_typeA__parameterized0__37 
 2default:default
 B
 %s*synth23
@@ -47663,119 +48649,7 @@ B
 2default:default
 R
 %s*synth2C
-/Module cs_all_typeA_slice__parameterized0__38 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-L
-%s*synth2=
-)Module cs_all_typeA__parameterized0__36 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-M
-%s*synth2>
-*Module cs_allx_typeA__parameterized2__32 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                3 Bit    Registers := 1     
-2default:default
-H
-%s*synth29
-%Module cs_match__parameterized2__32 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-R
-%s*synth2C
-/Module cs_all_typeA_slice__parameterized0__39 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-L
-%s*synth2=
-)Module cs_all_typeA__parameterized0__37 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-M
-%s*synth2>
-*Module cs_allx_typeA__parameterized2__33 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                3 Bit    Registers := 1     
-2default:default
-H
-%s*synth29
-%Module cs_match__parameterized2__33 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-R
-%s*synth2C
-/Module cs_all_typeA_slice__parameterized0__40 
+/Module cs_all_typeA_slice__parameterized0__41 
 2default:default
 B
 %s*synth23
@@ -47799,7 +48673,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__34 
+*Module cs_allx_typeA__parameterized2__32 
 2default:default
 B
 %s*synth23
@@ -47811,67 +48685,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__34 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-R
-%s*synth2C
-/Module cs_all_typeA_slice__parameterized0__41 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 1     
-2default:default
-L
-%s*synth2=
-)Module cs_all_typeA__parameterized0__39 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-M
-%s*synth2>
-*Module cs_allx_typeA__parameterized2__35 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                3 Bit    Registers := 1     
-2default:default
-H
-%s*synth29
-%Module cs_match__parameterized2__35 
+%Module cs_match__parameterized2__32 
 2default:default
 B
 %s*synth23
@@ -47903,7 +48721,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__40 
+)Module cs_all_typeA__parameterized0__39 
 2default:default
 B
 %s*synth23
@@ -47911,7 +48729,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__36 
+*Module cs_allx_typeA__parameterized2__33 
 2default:default
 B
 %s*synth23
@@ -47923,11 +48741,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__36 
+%Module cs_match__parameterized2__33 
 2default:default
 B
 %s*synth23
@@ -47959,7 +48777,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__41 
+)Module cs_all_typeA__parameterized0__40 
 2default:default
 B
 %s*synth23
@@ -47967,7 +48785,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__37 
+*Module cs_allx_typeA__parameterized2__34 
 2default:default
 B
 %s*synth23
@@ -47979,11 +48797,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__37 
+%Module cs_match__parameterized2__34 
 2default:default
 B
 %s*synth23
@@ -48015,7 +48833,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__42 
+)Module cs_all_typeA__parameterized0__41 
 2default:default
 B
 %s*synth23
@@ -48023,7 +48841,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__38 
+*Module cs_allx_typeA__parameterized2__35 
 2default:default
 B
 %s*synth23
@@ -48035,11 +48853,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__38 
+%Module cs_match__parameterized2__35 
 2default:default
 B
 %s*synth23
@@ -48071,7 +48889,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__43 
+)Module cs_all_typeA__parameterized0__42 
 2default:default
 B
 %s*synth23
@@ -48079,7 +48897,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__39 
+*Module cs_allx_typeA__parameterized2__36 
 2default:default
 B
 %s*synth23
@@ -48091,11 +48909,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__39 
+%Module cs_match__parameterized2__36 
 2default:default
 B
 %s*synth23
@@ -48127,7 +48945,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__44 
+)Module cs_all_typeA__parameterized0__43 
 2default:default
 B
 %s*synth23
@@ -48135,7 +48953,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__40 
+*Module cs_allx_typeA__parameterized2__37 
 2default:default
 B
 %s*synth23
@@ -48147,11 +48965,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__40 
+%Module cs_match__parameterized2__37 
 2default:default
 B
 %s*synth23
@@ -48183,7 +49001,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__45 
+)Module cs_all_typeA__parameterized0__44 
 2default:default
 B
 %s*synth23
@@ -48191,7 +49009,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__41 
+*Module cs_allx_typeA__parameterized2__38 
 2default:default
 B
 %s*synth23
@@ -48203,11 +49021,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__41 
+%Module cs_match__parameterized2__38 
 2default:default
 B
 %s*synth23
@@ -48239,7 +49057,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__46 
+)Module cs_all_typeA__parameterized0__45 
 2default:default
 B
 %s*synth23
@@ -48247,7 +49065,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__42 
+*Module cs_allx_typeA__parameterized2__39 
 2default:default
 B
 %s*synth23
@@ -48259,11 +49077,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__42 
+%Module cs_match__parameterized2__39 
 2default:default
 B
 %s*synth23
@@ -48295,7 +49113,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__47 
+)Module cs_all_typeA__parameterized0__46 
 2default:default
 B
 %s*synth23
@@ -48303,7 +49121,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__43 
+*Module cs_allx_typeA__parameterized2__40 
 2default:default
 B
 %s*synth23
@@ -48315,11 +49133,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__43 
+%Module cs_match__parameterized2__40 
 2default:default
 B
 %s*synth23
@@ -48351,7 +49169,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__48 
+)Module cs_all_typeA__parameterized0__47 
 2default:default
 B
 %s*synth23
@@ -48359,7 +49177,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__44 
+*Module cs_allx_typeA__parameterized2__41 
 2default:default
 B
 %s*synth23
@@ -48371,11 +49189,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__44 
+%Module cs_match__parameterized2__41 
 2default:default
 B
 %s*synth23
@@ -48407,7 +49225,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__49 
+)Module cs_all_typeA__parameterized0__48 
 2default:default
 B
 %s*synth23
@@ -48415,7 +49233,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__45 
+*Module cs_allx_typeA__parameterized2__42 
 2default:default
 B
 %s*synth23
@@ -48427,11 +49245,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__45 
+%Module cs_match__parameterized2__42 
 2default:default
 B
 %s*synth23
@@ -48463,7 +49281,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__50 
+)Module cs_all_typeA__parameterized0__49 
 2default:default
 B
 %s*synth23
@@ -48471,7 +49289,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__46 
+*Module cs_allx_typeA__parameterized2__43 
 2default:default
 B
 %s*synth23
@@ -48483,11 +49301,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__46 
+%Module cs_match__parameterized2__43 
 2default:default
 B
 %s*synth23
@@ -48519,7 +49337,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__51 
+)Module cs_all_typeA__parameterized0__50 
 2default:default
 B
 %s*synth23
@@ -48527,7 +49345,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__47 
+*Module cs_allx_typeA__parameterized2__44 
 2default:default
 B
 %s*synth23
@@ -48539,11 +49357,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__47 
+%Module cs_match__parameterized2__44 
 2default:default
 B
 %s*synth23
@@ -48575,7 +49393,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__52 
+)Module cs_all_typeA__parameterized0__51 
 2default:default
 B
 %s*synth23
@@ -48583,7 +49401,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__48 
+*Module cs_allx_typeA__parameterized2__45 
 2default:default
 B
 %s*synth23
@@ -48595,11 +49413,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__48 
+%Module cs_match__parameterized2__45 
 2default:default
 B
 %s*synth23
@@ -48631,7 +49449,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__53 
+)Module cs_all_typeA__parameterized0__52 
 2default:default
 B
 %s*synth23
@@ -48639,7 +49457,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__49 
+*Module cs_allx_typeA__parameterized2__46 
 2default:default
 B
 %s*synth23
@@ -48651,11 +49469,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__49 
+%Module cs_match__parameterized2__46 
 2default:default
 B
 %s*synth23
@@ -48687,7 +49505,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__54 
+)Module cs_all_typeA__parameterized0__53 
 2default:default
 B
 %s*synth23
@@ -48695,7 +49513,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__50 
+*Module cs_allx_typeA__parameterized2__47 
 2default:default
 B
 %s*synth23
@@ -48707,11 +49525,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__50 
+%Module cs_match__parameterized2__47 
 2default:default
 B
 %s*synth23
@@ -48743,7 +49561,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__55 
+)Module cs_all_typeA__parameterized0__54 
 2default:default
 B
 %s*synth23
@@ -48751,7 +49569,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__51 
+*Module cs_allx_typeA__parameterized2__48 
 2default:default
 B
 %s*synth23
@@ -48763,11 +49581,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__51 
+%Module cs_match__parameterized2__48 
 2default:default
 B
 %s*synth23
@@ -48799,7 +49617,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__56 
+)Module cs_all_typeA__parameterized0__55 
 2default:default
 B
 %s*synth23
@@ -48807,7 +49625,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__52 
+*Module cs_allx_typeA__parameterized2__49 
 2default:default
 B
 %s*synth23
@@ -48819,11 +49637,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__52 
+%Module cs_match__parameterized2__49 
 2default:default
 B
 %s*synth23
@@ -48855,7 +49673,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__57 
+)Module cs_all_typeA__parameterized0__56 
 2default:default
 B
 %s*synth23
@@ -48863,7 +49681,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__53 
+*Module cs_allx_typeA__parameterized2__50 
 2default:default
 B
 %s*synth23
@@ -48875,11 +49693,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__53 
+%Module cs_match__parameterized2__50 
 2default:default
 B
 %s*synth23
@@ -48911,7 +49729,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__58 
+)Module cs_all_typeA__parameterized0__57 
 2default:default
 B
 %s*synth23
@@ -48919,7 +49737,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__54 
+*Module cs_allx_typeA__parameterized2__51 
 2default:default
 B
 %s*synth23
@@ -48931,11 +49749,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__54 
+%Module cs_match__parameterized2__51 
 2default:default
 B
 %s*synth23
@@ -48967,7 +49785,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__59 
+)Module cs_all_typeA__parameterized0__58 
 2default:default
 B
 %s*synth23
@@ -48975,7 +49793,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__55 
+*Module cs_allx_typeA__parameterized2__52 
 2default:default
 B
 %s*synth23
@@ -48987,11 +49805,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__55 
+%Module cs_match__parameterized2__52 
 2default:default
 B
 %s*synth23
@@ -49023,7 +49841,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__60 
+)Module cs_all_typeA__parameterized0__59 
 2default:default
 B
 %s*synth23
@@ -49031,7 +49849,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__56 
+*Module cs_allx_typeA__parameterized2__53 
 2default:default
 B
 %s*synth23
@@ -49043,11 +49861,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__56 
+%Module cs_match__parameterized2__53 
 2default:default
 B
 %s*synth23
@@ -49079,7 +49897,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__61 
+)Module cs_all_typeA__parameterized0__60 
 2default:default
 B
 %s*synth23
@@ -49087,7 +49905,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__57 
+*Module cs_allx_typeA__parameterized2__54 
 2default:default
 B
 %s*synth23
@@ -49099,11 +49917,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__57 
+%Module cs_match__parameterized2__54 
 2default:default
 B
 %s*synth23
@@ -49135,7 +49953,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__62 
+)Module cs_all_typeA__parameterized0__61 
 2default:default
 B
 %s*synth23
@@ -49143,7 +49961,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__58 
+*Module cs_allx_typeA__parameterized2__55 
 2default:default
 B
 %s*synth23
@@ -49155,11 +49973,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__58 
+%Module cs_match__parameterized2__55 
 2default:default
 B
 %s*synth23
@@ -49191,7 +50009,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__63 
+)Module cs_all_typeA__parameterized0__62 
 2default:default
 B
 %s*synth23
@@ -49199,7 +50017,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__59 
+*Module cs_allx_typeA__parameterized2__56 
 2default:default
 B
 %s*synth23
@@ -49211,11 +50029,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__59 
+%Module cs_match__parameterized2__56 
 2default:default
 B
 %s*synth23
@@ -49247,7 +50065,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__64 
+)Module cs_all_typeA__parameterized0__63 
 2default:default
 B
 %s*synth23
@@ -49255,7 +50073,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__60 
+*Module cs_allx_typeA__parameterized2__57 
 2default:default
 B
 %s*synth23
@@ -49267,11 +50085,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__60 
+%Module cs_match__parameterized2__57 
 2default:default
 B
 %s*synth23
@@ -49303,7 +50121,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__65 
+)Module cs_all_typeA__parameterized0__64 
 2default:default
 B
 %s*synth23
@@ -49311,7 +50129,7 @@ B
 2default:default
 M
 %s*synth2>
-*Module cs_allx_typeA__parameterized2__61 
+*Module cs_allx_typeA__parameterized2__58 
 2default:default
 B
 %s*synth23
@@ -49323,11 +50141,11 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
-%Module cs_match__parameterized2__61 
+%Module cs_match__parameterized2__58 
 2default:default
 B
 %s*synth23
@@ -49359,7 +50177,175 @@ Q
 2default:default
 L
 %s*synth2=
+)Module cs_all_typeA__parameterized0__65 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module cs_allx_typeA__parameterized2__59 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                6 Bit    Registers := 1     
+2default:default
+H
+%s*synth29
+%Module cs_match__parameterized2__59 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+R
+%s*synth2C
+/Module cs_all_typeA_slice__parameterized0__69 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+L
+%s*synth2=
 )Module cs_all_typeA__parameterized0__66 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module cs_allx_typeA__parameterized2__60 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                6 Bit    Registers := 1     
+2default:default
+H
+%s*synth29
+%Module cs_match__parameterized2__60 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+R
+%s*synth2C
+/Module cs_all_typeA_slice__parameterized0__70 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+L
+%s*synth2=
+)Module cs_all_typeA__parameterized0__67 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+M
+%s*synth2>
+*Module cs_allx_typeA__parameterized2__61 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                6 Bit    Registers := 1     
+2default:default
+H
+%s*synth29
+%Module cs_match__parameterized2__61 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+R
+%s*synth2C
+/Module cs_all_typeA_slice__parameterized0__71 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+L
+%s*synth2=
+)Module cs_all_typeA__parameterized0__68 
 2default:default
 B
 %s*synth23
@@ -49379,7 +50365,7 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 H
 %s*synth29
@@ -49399,7 +50385,7 @@ Q
 2default:default
 R
 %s*synth2C
-/Module cs_all_typeA_slice__parameterized0__36 
+/Module cs_all_typeA_slice__parameterized0__39 
 2default:default
 B
 %s*synth23
@@ -49415,7 +50401,7 @@ Q
 2default:default
 L
 %s*synth2=
-)Module cs_all_typeA__parameterized0__34 
+)Module cs_all_typeA__parameterized0__36 
 2default:default
 B
 %s*synth23
@@ -49435,7 +50421,7 @@ B
 2default:default
 Q
 %s*synth2B
-.	                3 Bit    Registers := 1     
+.	                6 Bit    Registers := 1     
 2default:default
 D
 %s*synth25
@@ -50899,6 +51885,14 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  10 Input     32 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   4 Input     32 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
 .	   9 Input     32 Bit        Muxes := 2     
 2default:default
 Q
@@ -50907,19 +51901,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  14 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     32 Bit        Muxes := 27    
 2default:default
 Q
 %s*synth2B
-.	  10 Input     32 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 3     
+.	  14 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -50935,11 +51921,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 9     
+.	  10 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  14 Input     10 Bit        Muxes := 1     
+.	   2 Input     10 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
@@ -50947,7 +51933,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input     10 Bit        Muxes := 1     
+.	  14 Input     10 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -50959,11 +51945,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input      4 Bit        Muxes := 3     
+.	   7 Input      4 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
-.	   7 Input      4 Bit        Muxes := 5     
+.	  10 Input      4 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -50971,15 +51957,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 9     
-2default:default
-Q
-%s*synth2B
 .	  10 Input      2 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
-.	  10 Input      1 Bit        Muxes := 45    
+.	   2 Input      2 Bit        Muxes := 9     
 2default:default
 Q
 %s*synth2B
@@ -50988,6 +51970,10 @@ Q
 Q
 %s*synth2B
 .	   7 Input      1 Bit        Muxes := 12    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 45    
 2default:default
 Q
 %s*synth2B
@@ -51047,11 +52033,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 35    
+.	   3 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      2 Bit        Muxes := 1     
+.	   2 Input      2 Bit        Muxes := 35    
 2default:default
 Q
 %s*synth2B
@@ -51187,7 +52173,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     32 Bit        Muxes := 2     
+.	   2 Input     32 Bit        Muxes := 39    
 2default:default
 Q
 %s*synth2B
@@ -51203,11 +52189,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 39    
+.	   6 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
 .	   2 Input     30 Bit        Muxes := 12    
+2default:default
+Q
+%s*synth2B
+.	   4 Input     30 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -51216,10 +52206,6 @@ Q
 Q
 %s*synth2B
 .	  10 Input     30 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     30 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -51235,11 +52221,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     10 Bit        Muxes := 8     
+.	   4 Input     10 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   4 Input     10 Bit        Muxes := 2     
+.	   2 Input     10 Bit        Muxes := 8     
 2default:default
 Q
 %s*synth2B
@@ -51251,11 +52237,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 19    
+.	  10 Input      8 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  10 Input      8 Bit        Muxes := 1     
+.	   2 Input      8 Bit        Muxes := 19    
 2default:default
 Q
 %s*synth2B
@@ -51271,11 +52257,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      6 Bit        Muxes := 20    
+.	   8 Input      6 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      6 Bit        Muxes := 2     
+.	   2 Input      6 Bit        Muxes := 20    
 2default:default
 Q
 %s*synth2B
@@ -51291,10 +52277,6 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      4 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
 .	   6 Input      4 Bit        Muxes := 1     
 2default:default
 Q
@@ -51303,19 +52285,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit        Muxes := 20    
-2default:default
-Q
-%s*synth2B
-.	   3 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  19 Input      3 Bit        Muxes := 1     
+.	   4 Input      4 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -51323,7 +52293,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      3 Bit        Muxes := 20    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   8 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  19 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -51331,19 +52317,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      2 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      2 Bit        Muxes := 16    
-2default:default
-Q
-%s*synth2B
-.	  19 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   5 Input      2 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      2 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -51351,39 +52329,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input      1 Bit        Muxes := 9     
+.	  19 Input      2 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 22    
-2default:default
-Q
-%s*synth2B
-.	  13 Input      1 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 113   
-2default:default
-Q
-%s*synth2B
-.	   6 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      1 Bit        Muxes := 14    
-2default:default
-Q
-%s*synth2B
-.	   7 Input      1 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      1 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	  11 Input      1 Bit        Muxes := 1     
+.	   2 Input      2 Bit        Muxes := 16    
 2default:default
 Q
 %s*synth2B
@@ -51391,7 +52341,43 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   6 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  13 Input      1 Bit        Muxes := 4     
+2default:default
+Q
+%s*synth2B
+.	  11 Input      1 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   8 Input      1 Bit        Muxes := 39    
+2default:default
+Q
+%s*synth2B
+.	  19 Input      1 Bit        Muxes := 9     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      1 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
+.	   7 Input      1 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 22    
+2default:default
+Q
+%s*synth2B
+.	  10 Input      1 Bit        Muxes := 14    
+2default:default
+Q
+%s*synth2B
+.	   4 Input      1 Bit        Muxes := 113   
 2default:default
 I
 %s*synth2:
@@ -51955,15 +52941,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   4 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
 .	   3 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input     32 Bit        Muxes := 6     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -51991,6 +52977,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      4 Bit        Muxes := 3     
+2default:default
+Q
+%s*synth2B
 .	   3 Input      4 Bit        Muxes := 1     
 2default:default
 Q
@@ -51999,15 +52989,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 3     
+.	   4 Input      3 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
 .	  16 Input      3 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      3 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -52027,11 +53013,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input      1 Bit        Muxes := 4     
+.	   5 Input      1 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 63    
+.	   4 Input      1 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -52039,7 +53025,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   5 Input      1 Bit        Muxes := 1     
+.	   3 Input      1 Bit        Muxes := 63    
 2default:default
 C
 %s*synth24
@@ -52092,6 +53078,414 @@ Q
 Q
 %s*synth2B
 .	   3 Input      1 Bit        Muxes := 5     
+2default:default
+L
+%s*synth2=
+)Module bounce_filter__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+L
+%s*synth2=
+)Module bounce_filter__parameterized0__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+L
+%s*synth2=
+)Module bounce_filter__parameterized0__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+I
+%s*synth2:
+&Module bounce_filter__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 2     
+2default:default
+:
+%s*synth2+
+Module button_control 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      8 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                8 Bit    Registers := 2     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 5     
+2default:default
+9
+%s*synth2*
+Module BCD_block__13 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+9
+%s*synth2*
+Module BCD_block__12 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+9
+%s*synth2*
+Module BCD_block__11 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+9
+%s*synth2*
+Module BCD_block__10 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__9 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__8 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__7 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+F
+%s*synth27
+#Module bin2bcd__parameterized0__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__1 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__2 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__3 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__4 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__5 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+8
+%s*synth2)
+Module BCD_block__6 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+5
+%s*synth2&
+Module BCD_block 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+C
+%s*synth24
+ Module bin2bcd__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+=
+%s*synth2.
+Module clk_div_seven_seg 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     17 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	               17 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input     17 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+=
+%s*synth2.
+Module seven_seg_control 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                8 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                7 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   8 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      3 Bit        Muxes := 1     
+2default:default
+P
+%s*synth2A
+-Module RGB_diode_controller__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+1
+%s*synth2"
++---Adders : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit       Adders := 1     
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                4 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                3 Bit    Registers := 2     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 1     
+2default:default
+R
+%s*synth2C
+/Module button_and_hex_wrapper__parameterized0 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                8 Bit    Registers := 1     
+2default:default
+Q
+%s*synth2B
+.	                1 Bit    Registers := 3     
 2default:default
 B
 %s*synth23
@@ -52371,15 +53765,15 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   4 Input     32 Bit        Muxes := 5     
+2default:default
+Q
+%s*synth2B
 .	   8 Input     32 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
 .	   2 Input     32 Bit        Muxes := 27    
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 5     
 2default:default
 Q
 %s*synth2B
@@ -52395,6 +53789,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      4 Bit        Muxes := 29    
+2default:default
+Q
+%s*synth2B
 .	   4 Input      4 Bit        Muxes := 1     
 2default:default
 Q
@@ -52403,19 +53801,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 29    
-2default:default
-Q
-%s*synth2B
 .	   8 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   8 Input      3 Bit        Muxes := 1     
+.	   2 Input      3 Bit        Muxes := 7     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      3 Bit        Muxes := 7     
+.	   8 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -52431,11 +53825,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 2     
+.	   8 Input      1 Bit        Muxes := 13    
 2default:default
 Q
 %s*synth2B
-.	   8 Input      1 Bit        Muxes := 13    
+.	   3 Input      1 Bit        Muxes := 2     
 2default:default
 A
 %s*synth22
@@ -52581,30 +53975,6 @@ Q
 %s*synth2B
 .	   4 Input      1 Bit        Muxes := 28    
 2default:default
-2
-%s*synth2#
-Module ahbrom 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	                8 Bit    Registers := 1     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	 142 Input     32 Bit        Muxes := 1     
-2default:default
 O
 %s*synth2@
 ,Module unisim_syncram64__parameterized0__3 
@@ -52723,11 +54093,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   4 Input     32 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 1     
+.	   4 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -52735,15 +54105,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input     30 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  12 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   6 Input      7 Bit        Muxes := 2     
+.	   6 Input     30 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -52755,7 +54121,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 1     
+.	   6 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -52767,11 +54133,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 25    
+.	   2 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	  11 Input      1 Bit        Muxes := 21    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 25    
 2default:default
 Q
 %s*synth2B
@@ -52784,6 +54154,30 @@ Q
 B
 %s*synth23
 Detailed RTL Component Info : 
+2default:default
+2
+%s*synth2#
+Module ahbrom 
+2default:default
+B
+%s*synth23
+Detailed RTL Component Info : 
+2default:default
+4
+%s*synth2%
++---Registers : 
+2default:default
+Q
+%s*synth2B
+.	                8 Bit    Registers := 1     
+2default:default
+0
+%s*synth2!
++---Muxes : 
+2default:default
+Q
+%s*synth2B
+.	 142 Input     32 Bit        Muxes := 1     
 2default:default
 7
 %s*synth2(
@@ -52943,19 +54337,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	  16 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  15 Input     16 Bit        Muxes := 1     
+.	   2 Input     32 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
 .	   2 Input     16 Bit        Muxes := 13    
+2default:default
+Q
+%s*synth2B
+.	  15 Input     16 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -52967,11 +54361,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      9 Bit        Muxes := 3     
+.	   6 Input      9 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   6 Input      9 Bit        Muxes := 1     
+.	   2 Input      9 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -52979,7 +54373,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      7 Bit        Muxes := 3     
+.	   6 Input      7 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -52987,7 +54381,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      7 Bit        Muxes := 1     
+.	   2 Input      7 Bit        Muxes := 3     
 2default:default
 Q
 %s*synth2B
@@ -53011,11 +54405,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      2 Bit        Muxes := 6     
+.	  16 Input      2 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
-.	  16 Input      2 Bit        Muxes := 4     
+.	   2 Input      2 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
@@ -53127,6 +54521,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   9 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   4 Input     32 Bit        Muxes := 1     
 2default:default
 Q
@@ -53135,15 +54533,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   9 Input     32 Bit        Muxes := 1     
+.	   4 Input     28 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
 .	   2 Input     28 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   4 Input     28 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53163,15 +54557,15 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   9 Input      4 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
 .	  10 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53223,11 +54617,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      8 Bit       Adders := 1     
+.	   2 Input      8 Bit       Adders := 3     
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit       Adders := 3     
+.	   3 Input      8 Bit       Adders := 1     
 2default:default
 Q
 %s*synth2B
@@ -53327,19 +54721,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input     48 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     48 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
-.	  15 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input     32 Bit        Muxes := 2     
+.	  13 Input     48 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -53347,15 +54733,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	  16 Input     32 Bit        Muxes := 1     
+.	  15 Input     32 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53363,7 +54741,23 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  10 Input     32 Bit        Muxes := 2     
+2default:default
+Q
+%s*synth2B
 .	   8 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   7 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  16 Input     32 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   2 Input     32 Bit        Muxes := 4     
 2default:default
 Q
 %s*synth2B
@@ -53375,11 +54769,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  10 Input     18 Bit        Muxes := 2     
+.	  15 Input     18 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	  15 Input     18 Bit        Muxes := 1     
+.	  10 Input     18 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -53395,6 +54789,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	  14 Input     15 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   2 Input     15 Bit        Muxes := 12    
 2default:default
 Q
@@ -53403,15 +54801,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  14 Input     15 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	   2 Input     14 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     13 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53419,7 +54809,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  19 Input     11 Bit        Muxes := 1     
+.	   2 Input     13 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   7 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53427,11 +54821,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input     11 Bit        Muxes := 1     
+.	  19 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
-.	   7 Input     11 Bit        Muxes := 1     
+.	   8 Input     11 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53443,6 +54837,10 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   2 Input      8 Bit        Muxes := 15    
+2default:default
+Q
+%s*synth2B
 .	   8 Input      8 Bit        Muxes := 2     
 2default:default
 Q
@@ -53451,7 +54849,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      8 Bit        Muxes := 15    
+.	  16 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -53459,15 +54857,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      7 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
 .	  10 Input      7 Bit        Muxes := 6     
 2default:default
 Q
 %s*synth2B
-.	  16 Input      7 Bit        Muxes := 2     
+.	   7 Input      7 Bit        Muxes := 2     
 2default:default
 Q
 %s*synth2B
@@ -53491,7 +54885,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   8 Input      5 Bit        Muxes := 1     
+.	   2 Input      5 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53503,7 +54897,19 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   2 Input      5 Bit        Muxes := 1     
+.	   8 Input      5 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  16 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  13 Input      4 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      4 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53515,15 +54921,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	  13 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  16 Input      4 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      4 Bit        Muxes := 1     
+.	   7 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53535,15 +54933,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
 .	  15 Input      3 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   6 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53551,23 +54945,7 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   7 Input      3 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   8 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   9 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  10 Input      2 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	  11 Input      2 Bit        Muxes := 1     
+.	  10 Input      3 Bit        Muxes := 1     
 2default:default
 Q
 %s*synth2B
@@ -53575,7 +54953,31 @@ Q
 2default:default
 Q
 %s*synth2B
+.	   9 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  11 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	  10 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
+.	   8 Input      2 Bit        Muxes := 1     
+2default:default
+Q
+%s*synth2B
 .	   5 Input      1 Bit        Muxes := 10    
+2default:default
+Q
+%s*synth2B
+.	   3 Input      1 Bit        Muxes := 8     
+2default:default
+Q
+%s*synth2B
+.	   2 Input      1 Bit        Muxes := 144   
 2default:default
 Q
 %s*synth2B
@@ -53587,15 +54989,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   6 Input      1 Bit        Muxes := 30    
-2default:default
-Q
-%s*synth2B
-.	   8 Input      1 Bit        Muxes := 36    
-2default:default
-Q
-%s*synth2B
 .	  16 Input      1 Bit        Muxes := 15    
+2default:default
+Q
+%s*synth2B
+.	   6 Input      1 Bit        Muxes := 30    
 2default:default
 Q
 %s*synth2B
@@ -53603,15 +55001,11 @@ Q
 2default:default
 Q
 %s*synth2B
-.	   3 Input      1 Bit        Muxes := 8     
-2default:default
-Q
-%s*synth2B
 .	  13 Input      1 Bit        Muxes := 29    
 2default:default
 Q
 %s*synth2B
-.	   2 Input      1 Bit        Muxes := 144   
+.	   8 Input      1 Bit        Muxes := 36    
 2default:default
 M
 %s*synth2>
@@ -53740,70 +55134,6 @@ B
 B
 %s*synth23
 Detailed RTL Component Info : 
-2default:default
-C
-%s*synth24
- Module SKadder__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-/
-%s*synth2 
-+---XORs : 
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit         XORs := 63    
-2default:default
-D
-%s*synth25
-!Module adderahb__parameterized0 
-2default:default
-B
-%s*synth23
-Detailed RTL Component Info : 
-2default:default
-4
-%s*synth2%
-+---Registers : 
-2default:default
-Q
-%s*synth2B
-.	               32 Bit    Registers := 3     
-2default:default
-Q
-%s*synth2B
-.	                2 Bit    Registers := 1     
-2default:default
-Q
-%s*synth2B
-.	                1 Bit    Registers := 3     
-2default:default
-0
-%s*synth2!
-+---Muxes : 
-2default:default
-Q
-%s*synth2B
-.	   4 Input     32 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input     32 Bit        Muxes := 4     
-2default:default
-Q
-%s*synth2B
-.	   3 Input     32 Bit        Muxes := 2     
-2default:default
-Q
-%s*synth2B
-.	   4 Input      1 Bit        Muxes := 1     
-2default:default
-Q
-%s*synth2B
-.	   2 Input      1 Bit        Muxes := 6     
 2default:default
 z
 %s*synth2k
@@ -54053,10 +55383,46 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 -reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
 «c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
+É
+merging register '%s' into '%s'3619*oasys2U
+AMU_STATUS[1].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2U
+AMU_STATUS[0].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
+«c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+982default:default8@Z8-4471
+´
+merging register '%s' into '%s'3619*oasys2T
+@MU_STATUS[1].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2A
+-reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
+«c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+982default:default8@Z8-4471
+É
+merging register '%s' into '%s'3619*oasys2U
+AMU_STATUS[3].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2U
+AMU_STATUS[2].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
+«c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+982default:default8@Z8-4471
+Ç
+merging register '%s' into '%s'3619*oasys2T
+@MU_STATUS[3].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2T
+@MU_STATUS[2].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
+«c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+982default:default8@Z8-4471
 È
 merging register '%s' into '%s'3619*oasys2U
-AMU_STATUS[2].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2T
-@MU_STATUS[1].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
+AMU_STATUS[4].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2T
+@MU_STATUS[2].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
+«c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+982default:default8@Z8-4471
+È
+merging register '%s' into '%s'3619*oasys2U
+AMU_STATUS[5].mu_width_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2T
+@MU_STATUS[2].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
+«c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
+982default:default8@Z8-4471
+Ç
+merging register '%s' into '%s'3619*oasys2T
+@MU_STATUS[5].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2T
+@MU_STATUS[4].mu_tpid_reg/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[15:0]2default:default2Â
 «c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_xsdb_slave_lib_v3_0/hdl/verilog/xsdb_register_stat.v2default:default2
 982default:default8@Z8-4471
 Ù
@@ -54350,190 +55716,226 @@ ESequential element (%s) is unused and will be removed from module %s.3332*
 14*common2 
 Synth 8-33322default:default2
 1002default:defaultZ17-14
-™
-merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[1].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+Ÿ
+merging register '%s' into '%s'3619*oasys2~
+jila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[15:0]2default:default2~
+jila_core_inst/u_trig/U_TM/G_NMU[0].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[15:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
-™
-merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[2].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+É
+merging register '%s' into '%s'3619*oasys2’
+~ila_core_inst/u_trig/U_TM/G_NMU[1].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[15:0]2default:default2’
+~ila_core_inst/u_trig/U_TM/G_NMU[0].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[15:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1802default:default8@Z8-4471
+
+merging register '%s' into '%s'3619*oasys2}
+iila_core_inst/u_trig/U_TM/G_NMU[3].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[6:0]2default:default2}
+iila_core_inst/u_trig/U_TM/G_NMU[2].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[6:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
-™
-merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[3].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+Ç
+merging register '%s' into '%s'3619*oasys2‘
+}ila_core_inst/u_trig/U_TM/G_NMU[3].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[6:0]2default:default2‘
+}ila_core_inst/u_trig/U_TM/G_NMU[2].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[6:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1802default:default8@Z8-4471
+
+merging register '%s' into '%s'3619*oasys2}
+iila_core_inst/u_trig/U_TM/G_NMU[5].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[0:0]2default:default2}
+iila_core_inst/u_trig/U_TM/G_NMU[4].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[0:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
-™
-merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[4].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+Ç
+merging register '%s' into '%s'3619*oasys2‘
+}ila_core_inst/u_trig/U_TM/G_NMU[5].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[0:0]2default:default2‘
+}ila_core_inst/u_trig/U_TM/G_NMU[4].U_M/allx_typeA_match_detection.cs_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[0:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
-1562default:default8@Z8-4471
+1802default:default8@Z8-4471
 ™
 merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[5].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
-1562default:default8@Z8-4471
-™
-merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[6].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
-1562default:default8@Z8-4471
-™
-merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[7].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
-®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
-1562default:default8@Z8-4471
-™
-merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[8].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+gila_core_inst/u_trig/genblk1[1].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 ™
 merging register '%s' into '%s'3619*oasys2{
-gila_core_inst/u_trig/genblk1[9].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+gila_core_inst/u_trig/genblk1[2].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1562default:default8@Z8-4471
+™
+merging register '%s' into '%s'3619*oasys2{
+gila_core_inst/u_trig/genblk1[3].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1562default:default8@Z8-4471
+™
+merging register '%s' into '%s'3619*oasys2{
+gila_core_inst/u_trig/genblk1[4].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1562default:default8@Z8-4471
+™
+merging register '%s' into '%s'3619*oasys2{
+gila_core_inst/u_trig/genblk1[5].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1562default:default8@Z8-4471
+™
+merging register '%s' into '%s'3619*oasys2{
+gila_core_inst/u_trig/genblk1[6].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1562default:default8@Z8-4471
+™
+merging register '%s' into '%s'3619*oasys2{
+gila_core_inst/u_trig/genblk1[7].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1562default:default8@Z8-4471
+™
+merging register '%s' into '%s'3619*oasys2{
+gila_core_inst/u_trig/genblk1[8].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
+®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
+1562default:default8@Z8-4471
+™
+merging register '%s' into '%s'3619*oasys2{
+gila_core_inst/u_trig/genblk1[9].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[10].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[10].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[11].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[11].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[12].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[12].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[13].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[13].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[14].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[14].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[15].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[15].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[16].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[16].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[17].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[17].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[18].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[18].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[19].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[19].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[20].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[20].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[21].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[21].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[22].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[22].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[23].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[23].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[24].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[24].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[25].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[25].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[26].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[26].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[27].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[27].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[28].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[28].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[29].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[29].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[30].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[30].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 š
 merging register '%s' into '%s'3619*oasys2|
-hila_core_inst/u_trig/genblk1[31].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2{
-gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[2:0]2default:default2Å
+hila_core_inst/u_trig/genblk1[31].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2{
+gila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.cs_allx_typeA_inst/probeDelay1_reg[5:0]2default:default2Å
 ®c:/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/sources_1/ip/ila_0_0/labtools_general_components_lib_v2_0/hdl/verilog/cs_allx_typeA.v2default:default2
 1562default:default8@Z8-4471
 ó
@@ -54706,29 +56108,9 @@ r
 !design %s has unconnected port %s3331*oasys2
 leon3mp2default:default2
 sw[0]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[4]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[3]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[2]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[1]2default:defaultZ8-3331
-s
-!design %s has unconnected port %s3331*oasys2
-leon3mp2default:default2
-btn[0]2default:defaultZ8-3331
 ©
 %s*synth2™
-„Finished Cross Boundary Optimization : Time (s): cpu = 00:04:12 ; elapsed = 00:04:11 . Memory (MB): peak = 673.355 ; gain = 506.324
+„Finished Cross Boundary Optimization : Time (s): cpu = 00:05:43 ; elapsed = 00:08:35 . Memory (MB): peak = 597.891 ; gain = 480.711
 2default:default
 ¢
 %s*synth2’
@@ -54872,6 +56254,10 @@ K\leon3gen.cpu[0].u0/leon3x0/p0/c0mmu /dcache0/\FSM_onehot_r_reg[dstate][9] 2de
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2J
 6i_5/\leon3gen.dsugen.dsu0/x0 /\tb0.tr_reg[hmaster][3] 2default:defaultZ8-3333
+¸
+6propagating constant %s across sequential element (%s)3333*oasys2
+02default:default2P
+<i_5/selector/\inst_RGB_diode_controller/diode_enable_reg[2] 2default:defaultZ8-3333
 ²
 6propagating constant %s across sequential element (%s)3333*oasys2
 02default:default2J
@@ -54978,7 +56364,7 @@ Li_6/\eth0.e1/m100.u0/ethc0 /\tx_rmii1.tx0 /\FSM_onehot_r_reg[main_state][0] 2d
 /i_6/\eth0.e1/m100.u0/ethc0 /ahb0/\r_reg[retry] 2default:defaultZ8-3333
 ž
 %s*synth2Ž
-zFinished Area Optimization : Time (s): cpu = 00:09:12 ; elapsed = 00:09:15 . Memory (MB): peak = 847.777 ; gain = 680.746
+zFinished Area Optimization : Time (s): cpu = 00:12:07 ; elapsed = 00:15:10 . Memory (MB): peak = 777.977 ; gain = 660.797
 2default:default
 Ì
 $%s for constraint at line %s of %s.
@@ -55006,19 +56392,19 @@ $%s for constraint at line %s of %s.
 792default:default8@Z8-3321
 ­
 %s*synth2
-ˆFinished Applying XDC Timing Constraints : Time (s): cpu = 00:09:24 ; elapsed = 00:09:27 . Memory (MB): peak = 847.777 ; gain = 680.746
+ˆFinished Applying XDC Timing Constraints : Time (s): cpu = 00:12:24 ; elapsed = 00:15:29 . Memory (MB): peak = 777.977 ; gain = 660.797
 2default:default
  
 %s*synth2
-|Finished Timing Optimization : Time (s): cpu = 00:09:31 ; elapsed = 00:09:34 . Memory (MB): peak = 847.777 ; gain = 680.746
+|Finished Timing Optimization : Time (s): cpu = 00:12:34 ; elapsed = 00:15:38 . Memory (MB): peak = 777.977 ; gain = 660.797
 2default:default
 Ÿ
 %s*synth2
-{Finished Technology Mapping : Time (s): cpu = 00:10:20 ; elapsed = 00:10:24 . Memory (MB): peak = 893.883 ; gain = 726.852
+{Finished Technology Mapping : Time (s): cpu = 00:13:43 ; elapsed = 00:16:51 . Memory (MB): peak = 817.789 ; gain = 700.609
 2default:default
 ™
 %s*synth2‰
-uFinished IO Insertion : Time (s): cpu = 00:10:24 ; elapsed = 00:10:28 . Memory (MB): peak = 893.883 ; gain = 726.852
+uFinished IO Insertion : Time (s): cpu = 00:13:47 ; elapsed = 00:16:55 . Memory (MB): peak = 817.789 ; gain = 700.609
 2default:default
 ;
 %s*synth2,
@@ -55047,11 +56433,11 @@ I+------+------------------+-------+---------+-------+------------------+
 2default:default
 ª
 %s*synth2š
-…Finished Renaming Generated Instances : Time (s): cpu = 00:10:24 ; elapsed = 00:10:28 . Memory (MB): peak = 893.883 ; gain = 726.852
+…Finished Renaming Generated Instances : Time (s): cpu = 00:13:48 ; elapsed = 00:16:56 . Memory (MB): peak = 817.789 ; gain = 700.609
 2default:default
 §
 %s*synth2—
-‚Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:30 ; elapsed = 00:10:34 . Memory (MB): peak = 893.883 ; gain = 726.852
+‚Finished Rebuilding User Hierarchy : Time (s): cpu = 00:13:55 ; elapsed = 00:17:03 . Memory (MB): peak = 817.789 ; gain = 700.609
 2default:default
 ¢
 %s*synth2’
@@ -55148,6 +56534,10 @@ F
 2default:default
 F
 %s*synth27
+#|3     |ila_2         |         1|
+2default:default
+F
+%s*synth27
 #+------+--------------+----------+
 2default:default
 8
@@ -55177,127 +56567,127 @@ C
 2default:default
 C
 %s*synth24
- |3     |BUFG           |     7|
+ |3     |ila_2_bbox     |     1|
 2default:default
 C
 %s*synth24
- |4     |CARRY4         |   464|
+ |4     |BUFG           |     5|
 2default:default
 C
 %s*synth24
- |5     |CFGLUT5        |   206|
+ |5     |CARRY4         |   494|
 2default:default
 C
 %s*synth24
- |6     |DSP48E1        |     6|
+ |6     |CFGLUT5        |   225|
 2default:default
 C
 %s*synth24
- |7     |DSP48E1_1      |     2|
+ |7     |DSP48E1        |     6|
 2default:default
 C
 %s*synth24
- |8     |LUT1           |   464|
+ |8     |DSP48E1_1      |     2|
 2default:default
 C
 %s*synth24
- |9     |LUT2           |  1081|
+ |9     |LUT1           |   489|
 2default:default
 C
 %s*synth24
- |10    |LUT3           |  1766|
+ |10    |LUT2           |  1059|
 2default:default
 C
 %s*synth24
- |11    |LUT4           |  2488|
+ |11    |LUT3           |  1862|
 2default:default
 C
 %s*synth24
- |12    |LUT5           |  2786|
+ |12    |LUT4           |  2532|
 2default:default
 C
 %s*synth24
- |13    |LUT6           |  8567|
+ |13    |LUT5           |  2771|
 2default:default
 C
 %s*synth24
- |14    |MUXF7          |   907|
+ |14    |LUT6           |  8628|
 2default:default
 C
 %s*synth24
- |15    |MUXF8          |   325|
+ |15    |MUXF7          |   905|
 2default:default
 C
 %s*synth24
- |16    |PLLE2_ADV      |     1|
+ |16    |MUXF8          |   340|
 2default:default
 C
 %s*synth24
- |17    |PLLE2_ADV_1    |     1|
+ |17    |PLLE2_ADV      |     1|
 2default:default
 C
 %s*synth24
- |18    |RAM32M         |     6|
+ |18    |PLLE2_ADV_1    |     1|
 2default:default
 C
 %s*synth24
- |19    |RAM64M         |    16|
+ |19    |RAM32M         |     6|
 2default:default
 C
 %s*synth24
- |20    |RAMB16_S18     |     4|
+ |20    |RAM64M         |    16|
 2default:default
 C
 %s*synth24
- |21    |RAMB16_S36     |     2|
+ |21    |RAMB16_S18     |     4|
 2default:default
 C
 %s*synth24
- |22    |RAMB16_S36_S36 |    11|
+ |22    |RAMB16_S36     |     2|
 2default:default
 C
 %s*synth24
- |23    |RAMB16_S9      |     8|
+ |23    |RAMB16_S36_S36 |    11|
 2default:default
 C
 %s*synth24
- |24    |RAMB36E1       |     1|
+ |24    |RAMB16_S9      |     8|
 2default:default
 C
 %s*synth24
- |25    |SRL16E         |    43|
+ |25    |RAMB36E1       |     1|
 2default:default
 C
 %s*synth24
- |26    |SRLC16E        |     2|
+ |26    |SRL16E         |    43|
 2default:default
 C
 %s*synth24
- |27    |SRLC32E        |    17|
+ |27    |SRLC16E        |     2|
 2default:default
 C
 %s*synth24
- |28    |FDCE           |  6461|
+ |28    |SRLC32E        |    17|
 2default:default
 C
 %s*synth24
- |29    |FDPE           |     5|
+ |29    |FDCE           |  6486|
 2default:default
 C
 %s*synth24
- |30    |FDRE           |  7594|
+ |30    |FDPE           |    13|
 2default:default
 C
 %s*synth24
- |31    |FDSE           |   150|
+ |31    |FDRE           |  7745|
 2default:default
 C
 %s*synth24
- |32    |LD             |    32|
+ |32    |FDSE           |   150|
 2default:default
 C
 %s*synth24
- |33    |IBUF           |     6|
+ |33    |IBUF           |     9|
 2default:default
 C
 %s*synth24
@@ -55305,7 +56695,7 @@ C
 2default:default
 C
 %s*synth24
- |35    |OBUF           |    58|
+ |35    |OBUF           |    76|
 2default:default
 C
 %s*synth24
@@ -55320,894 +56710,926 @@ C
 
 Report Instance Areas: 
 2default:default
-œ
-%s*synth2Œ
-x+------+-----------------------------------------------------------------+-------------------------------------+------+
-2default:default
-œ
-%s*synth2Œ
-x|      |Instance                                                         |Module                               |Cells |
-2default:default
-œ
-%s*synth2Œ
-x+------+-----------------------------------------------------------------+-------------------------------------+------+
-2default:default
-œ
-%s*synth2Œ
-x|1     |top                                                              |                                     | 33535|
-2default:default
-œ
-%s*synth2Œ
-x|2     |  adderahb_if                                                    |adderahb__parameterized0             |   313|
-2default:default
-œ
-%s*synth2Œ
-x|3     |  ahb0                                                           |ahbctrl__parameterized0              |   380|
-2default:default
-œ
-%s*synth2Œ
-x|4     |  apb0                                                           |apbctrl__parameterized0              |   559|
-2default:default
-œ
-%s*synth2Œ
-x|5     |  bdr                                                            |iopadv__parameterized0               |     8|
-2default:default
-œ
-%s*synth2Œ
-x|6     |    \v[0].x0                                                     |iopad__parameterized0_111            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|7     |      \xcv.x0                                                    |unisim_iopad__parameterized0_126     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|8     |    \v[1].x0                                                     |iopad__parameterized0_112            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|9     |      \xcv.x0                                                    |unisim_iopad__parameterized0_125     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|10    |    \v[2].x0                                                     |iopad__parameterized0_113            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|11    |      \xcv.x0                                                    |unisim_iopad__parameterized0_124     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|12    |    \v[3].x0                                                     |iopad__parameterized0_114            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|13    |      \xcv.x0                                                    |unisim_iopad__parameterized0_123     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|14    |    \v[4].x0                                                     |iopad__parameterized0_115            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|15    |      \xcv.x0                                                    |unisim_iopad__parameterized0_122     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|16    |    \v[5].x0                                                     |iopad__parameterized0_116            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|17    |      \xcv.x0                                                    |unisim_iopad__parameterized0_121     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|18    |    \v[6].x0                                                     |iopad__parameterized0_117            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|19    |      \xcv.x0                                                    |unisim_iopad__parameterized0_120     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|20    |    \v[7].x0                                                     |iopad__parameterized0_118            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|21    |      \xcv.x0                                                    |unisim_iopad__parameterized0_119     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|22    |  bdr2                                                           |iopadv__parameterized0_0             |     8|
-2default:default
-œ
-%s*synth2Œ
-x|23    |    \v[0].x0                                                     |iopad__parameterized0_95             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|24    |      \xcv.x0                                                    |unisim_iopad__parameterized0_110     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|25    |    \v[1].x0                                                     |iopad__parameterized0_96             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|26    |      \xcv.x0                                                    |unisim_iopad__parameterized0_109     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|27    |    \v[2].x0                                                     |iopad__parameterized0_97             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|28    |      \xcv.x0                                                    |unisim_iopad__parameterized0_108     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|29    |    \v[3].x0                                                     |iopad__parameterized0_98             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|30    |      \xcv.x0                                                    |unisim_iopad__parameterized0_107     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|31    |    \v[4].x0                                                     |iopad__parameterized0_99             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|32    |      \xcv.x0                                                    |unisim_iopad__parameterized0_106     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|33    |    \v[5].x0                                                     |iopad__parameterized0_100            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|34    |      \xcv.x0                                                    |unisim_iopad__parameterized0_105     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|35    |    \v[6].x0                                                     |iopad__parameterized0_101            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|36    |      \xcv.x0                                                    |unisim_iopad__parameterized0_104     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|37    |    \v[7].x0                                                     |iopad__parameterized0_102            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|38    |      \xcv.x0                                                    |unisim_iopad__parameterized0_103     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|39    |  \bpromgen.brom                                                 |ahbrom                               |   183|
-2default:default
-œ
-%s*synth2Œ
-x|40    |  clkgen0                                                        |clkgen__parameterized0               |     4|
-2default:default
-œ
-%s*synth2Œ
-x|41    |    \xc7l.v                                                      |clkgen_virtex7__parameterized0       |     4|
-2default:default
-œ
-%s*synth2Œ
-x|42    |  \dcomgen.dcom0                                                 |ahbuart__parameterized0              |   506|
-2default:default
-œ
-%s*synth2Œ
-x|43    |    ahbmst0                                                      |ahbmst__parameterized0               |     6|
-2default:default
-œ
-%s*synth2Œ
-x|44    |    dcom0                                                        |dcom                                 |   213|
-2default:default
-œ
-%s*synth2Œ
-x|45    |    dcom_uart0                                                   |dcom_uart__parameterized0            |   287|
-2default:default
-œ
-%s*synth2Œ
-x|46    |  \dcomgen.dsurx_pad                                             |inpad__parameterized0                |     2|
-2default:default
-œ
-%s*synth2Œ
-x|47    |    \xcv.x0                                                      |unisim_inpad__parameterized0_94      |     2|
-2default:default
-œ
-%s*synth2Œ
-x|48    |  \dcomgen.dsutx_pad                                             |outpad__parameterized0               |     1|
-2default:default
-œ
-%s*synth2Œ
-x|49    |    \xcv.x0                                                      |unisim_outpad__parameterized0_93     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|50    |  \eth0.e1                                                       |grethm__parameterized0               |  3866|
-2default:default
-œ
-%s*synth2Œ
-x|51    |    \m100.u0                                                     |greth__parameterized0                |  3866|
-2default:default
-œ
-%s*synth2Œ
-x|52    |      \edclramnft.r0                                             |syncram_2p__parameterized6           |    25|
-2default:default
-œ
-%s*synth2Œ
-x|53    |        \xc2v.x0                                                 |unisim_syncram_2p__parameterized6_91 |    25|
-2default:default
-œ
-%s*synth2Œ
-x|54    |          \a6.x0                                                 |unisim_syncram_dp__parameterized6_92 |    25|
-2default:default
-œ
-%s*synth2Œ
-x|55    |      \edclramnft.r1                                             |syncram_2p__parameterized6_89        |    16|
-2default:default
-œ
-%s*synth2Œ
-x|56    |        \xc2v.x0                                                 |unisim_syncram_2p__parameterized6    |    16|
-2default:default
-œ
-%s*synth2Œ
-x|57    |          \a6.x0                                                 |unisim_syncram_dp__parameterized6    |    16|
-2default:default
-œ
-%s*synth2Œ
-x|58    |      ethc0                                                      |grethc__parameterized0               |  3733|
-2default:default
-œ
-%s*synth2Œ
-x|59    |        ahb0                                                     |eth_ahb_mst                          |   240|
-2default:default
-œ
-%s*synth2Œ
-x|60    |        \rx_rmii1.rx0                                            |greth_rx__parameterized0             |   693|
-2default:default
-œ
-%s*synth2Œ
-x|61    |          rx_rst                                                 |eth_rstgen__parameterized0_90        |     2|
-2default:default
-œ
-%s*synth2Œ
-x|62    |        \tx_rmii1.tx0                                            |greth_tx__parameterized0             |   558|
-2default:default
-œ
-%s*synth2Œ
-x|63    |          tx_rst                                                 |eth_rstgen__parameterized0           |    12|
-2default:default
-œ
-%s*synth2Œ
-x|64    |      \nft.rx_fifo0                                              |syncram_2p__parameterized4           |    38|
-2default:default
-œ
-%s*synth2Œ
-x|65    |        \xc2v.x0                                                 |unisim_syncram_2p__parameterized4    |    38|
-2default:default
-œ
-%s*synth2Œ
-x|66    |          \a0.x0                                                 |generic_syncram_2p__parameterized0   |    38|
-2default:default
-œ
-%s*synth2Œ
-x|67    |      \nft.tx_fifo0                                              |syncram_2p__parameterized2           |     1|
-2default:default
-œ
-%s*synth2Œ
-x|68    |        \xc2v.x0                                                 |unisim_syncram_2p__parameterized2    |     1|
-2default:default
-œ
-%s*synth2Œ
-x|69    |          \a6.x0                                                 |unisim_syncram_dp__parameterized4    |     1|
-2default:default
-œ
-%s*synth2Œ
-x|70    |  \ethpads.emdc_pad                                              |outpad__parameterized0_1             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|71    |    \xcv.x0                                                      |unisim_outpad__parameterized0_88     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|72    |  \ethpads.emdio_pad                                             |iopad__parameterized0                |     1|
-2default:default
-œ
-%s*synth2Œ
-x|73    |    \xcv.x0                                                      |unisim_iopad__parameterized0         |     1|
-2default:default
-œ
-%s*synth2Œ
-x|74    |  \ethpads.erxcr_pad                                             |inpad__parameterized0_2              |     1|
-2default:default
-œ
-%s*synth2Œ
-x|75    |    \xcv.x0                                                      |unisim_inpad__parameterized0_87      |     1|
-2default:default
-œ
-%s*synth2Œ
-x|76    |  \ethpads.erxd_pad                                              |inpadv__parameterized0               |     2|
-2default:default
-œ
-%s*synth2Œ
-x|77    |    \v[0].x0                                                     |inpad__parameterized0_84             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|78    |      \xcv.x0                                                    |unisim_inpad__parameterized0_86      |     1|
-2default:default
-œ
-%s*synth2Œ
-x|79    |    \v[1].x0                                                     |inpad__parameterized0_85             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|80    |      \xcv.x0                                                    |unisim_inpad__parameterized0         |     1|
-2default:default
-œ
-%s*synth2Œ
-x|81    |  \ethpads.etxd_pad                                              |outpadv__parameterized2              |     2|
-2default:default
-œ
-%s*synth2Œ
-x|82    |    \v[0].x0                                                     |outpad__parameterized0_80            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|83    |      \xcv.x0                                                    |unisim_outpad__parameterized0_83     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|84    |    \v[1].x0                                                     |outpad__parameterized0_81            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|85    |      \xcv.x0                                                    |unisim_outpad__parameterized0_82     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|86    |  \ethpads.etxen_pad                                             |outpad__parameterized0_3             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|87    |    \xcv.x0                                                      |unisim_outpad__parameterized0_79     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|88    |  etxc_pad                                                       |outpad__parameterized0_4             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|89    |    \xcv.x0                                                      |unisim_outpad__parameterized0_78     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|90    |  \gpt.timer0                                                    |gptimer__parameterized0              |   372|
-2default:default
-œ
-%s*synth2Œ
-x|91    |  io0                                                            |dummyapb__parameterized0             | 16285|
-2default:default
-œ
-%s*synth2Œ
-x|92    |    inst_ADC_TOP                                                 |ADC_TOP                              |  6634|
-2default:default
-œ
-%s*synth2Œ
-x|93    |      inst_Buffer                                                |ADC_buffer__parameterized0           |  3155|
-2default:default
-œ
-%s*synth2Œ
-x|94    |      isnt_filter                                                |digitalfilter__parameterized0        |  3447|
-2default:default
-œ
-%s*synth2Œ
-x|95    |    inst_top                                                     |dacTop                               |  9535|
-2default:default
-œ
-%s*synth2Œ
-x|96    |      your_instance_name                                         |ila_0                                |  6167|
-2default:default
-œ
-%s*synth2Œ
-x|97    |        U0                                                       |ila_v4_0_ila__parameterized0         |  6167|
-2default:default
-œ
-%s*synth2Œ
-x|98    |          \ila_core_inst/u_ila_regs/U_XSDB_SLAVE                 |chipscope_xsdb_slave                 |   126|
-2default:default
-œ
-%s*synth2Œ
-x|99    |          \ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER  |ila_v4_0_generic_counter__1          |    75|
-2default:default
-œ
-%s*synth2Œ
-x|100   |          \ila_core_inst/COUNTER.u_count/G_COUNTER[1].U_COUNTER  |ila_v4_0_generic_counter__2          |    75|
-2default:default
-œ
-%s*synth2Œ
-x|101   |          \ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER  |ila_v4_0_generic_counter__3          |    75|
-2default:default
-œ
-%s*synth2Œ
-x|102   |          \ila_core_inst/COUNTER.u_count/G_COUNTER[3].U_COUNTER  |ila_v4_0_generic_counter             |    75|
-2default:default
-œ
-%s*synth2Œ
-x|103   |      inst_DAC_BUFFER                                            |DAC_buffer__parameterized0           |  3176|
-2default:default
-œ
-%s*synth2Œ
-x|104   |      inst_DAC_SPI                                               |DAC_SPI                              |    39|
-2default:default
-œ
-%s*synth2Œ
-x|105   |      inst_clk_divider                                           |clk_divide__parameterized0           |   151|
-2default:default
-œ
-%s*synth2Œ
-x|106   |  \irqctrl.irqctrl0                                              |irqmp__parameterized0                |   163|
-2default:default
-œ
-%s*synth2Œ
-x|107   |  \leon3gen.cpu[0].u0                                            |leon3s__parameterized0               |  8955|
-2default:default
-œ
-%s*synth2Œ
-x|108   |    leon3x0                                                      |leon3x__parameterized0               |  8955|
-2default:default
-œ
-%s*synth2Œ
-x|109   |      cmem0                                                      |cachemem__parameterized0             |   110|
-2default:default
-œ
-%s*synth2Œ
-x|110   |        \dme.dd0[0].ddata0                                       |syncram__parameterized4              |     2|
-2default:default
-œ
-%s*synth2Œ
-x|111   |          \xc2v.x0                                               |unisim_syncram__parameterized4_77    |     2|
-2default:default
-œ
-%s*synth2Œ
-x|112   |        \dme.dd0[1].ddata0                                       |syncram__parameterized4_70           |    10|
-2default:default
-œ
-%s*synth2Œ
-x|113   |          \xc2v.x0                                               |unisim_syncram__parameterized4       |    10|
-2default:default
-œ
-%s*synth2Œ
-x|114   |        \dme.dtags1.dt1.dt0[0].dtags0                            |syncram_dp__parameterized0           |    21|
-2default:default
-œ
-%s*synth2Œ
-x|115   |          \xc2v.x0                                               |unisim_syncram_dp__parameterized2_76 |    21|
-2default:default
-œ
-%s*synth2Œ
-x|116   |        \dme.dtags1.dt1.dt0[1].dtags0                            |syncram_dp__parameterized0_71        |    21|
-2default:default
-œ
-%s*synth2Œ
-x|117   |          \xc2v.x0                                               |unisim_syncram_dp__parameterized2    |    21|
-2default:default
-œ
-%s*synth2Œ
-x|118   |        \ime.im0[0].idata0                                       |syncram__parameterized2              |     4|
-2default:default
-œ
-%s*synth2Œ
-x|119   |          \xc2v.x0                                               |unisim_syncram__parameterized2_75    |     4|
-2default:default
-œ
-%s*synth2Œ
-x|120   |        \ime.im0[0].itags0                                       |syncram__parameterized0              |    11|
-2default:default
-œ
-%s*synth2Œ
-x|121   |          \xc2v.x0                                               |unisim_syncram__parameterized0_74    |    11|
-2default:default
-œ
-%s*synth2Œ
-x|122   |        \ime.im0[1].idata0                                       |syncram__parameterized2_72           |     4|
-2default:default
-œ
-%s*synth2Œ
-x|123   |          \xc2v.x0                                               |unisim_syncram__parameterized2       |     4|
-2default:default
-œ
-%s*synth2Œ
-x|124   |        \ime.im0[1].itags0                                       |syncram__parameterized0_73           |    33|
-2default:default
-œ
-%s*synth2Œ
-x|125   |          \xc2v.x0                                               |unisim_syncram__parameterized0       |    33|
-2default:default
-œ
-%s*synth2Œ
-x|126   |      p0                                                         |proc3__parameterized0                |  8652|
-2default:default
-œ
-%s*synth2Œ
-x|127   |        c0mmu                                                    |mmu_cache__parameterized0            |  3075|
-2default:default
-œ
-%s*synth2Œ
-x|128   |          a0                                                     |mmu_acache__parameterized0           |   120|
-2default:default
-œ
-%s*synth2Œ
-x|129   |          dcache0                                                |mmu_dcache__parameterized0           |  1324|
-2default:default
-œ
-%s*synth2Œ
-x|130   |          icache0                                                |mmu_icache__parameterized0           |  1631|
-2default:default
-œ
-%s*synth2Œ
-x|131   |        iu                                                       |iu3__parameterized0                  |  5165|
-2default:default
-œ
-%s*synth2Œ
-x|132   |        \mgen.div0                                               |div32                                |   307|
-2default:default
-œ
-%s*synth2Œ
-x|133   |        \mgen.mul0                                               |mul32__parameterized0                |   103|
-2default:default
-œ
-%s*synth2Œ
-x|134   |          \xm3232.m3232                                          |techmult__parameterized0             |   103|
-2default:default
-œ
-%s*synth2Œ
-x|135   |            \pipe2.arch0.dwm                                     |gen_mult_pipe__parameterized0        |   103|
-2default:default
-œ
-%s*synth2Œ
-x|136   |      rf0                                                        |regfile_3p_l3__parameterized0        |   158|
-2default:default
-œ
-%s*synth2Œ
-x|137   |        \s1.rhu                                                  |regfile_3p__parameterized0           |   158|
-2default:default
-œ
-%s*synth2Œ
-x|138   |          \s1.dp.x0                                              |syncram_2p__parameterized0           |   146|
-2default:default
-œ
-%s*synth2Œ
-x|139   |            \xc2v.x0                                             |unisim_syncram_2p__parameterized0_68 |    58|
-2default:default
-œ
-%s*synth2Œ
-x|140   |              \a6.x0                                             |unisim_syncram_dp__parameterized0_69 |    58|
-2default:default
-œ
-%s*synth2Œ
-x|141   |          \s1.dp.x1                                              |syncram_2p__parameterized0_67        |    12|
-2default:default
-œ
-%s*synth2Œ
-x|142   |            \xc2v.x0                                             |unisim_syncram_2p__parameterized0    |     1|
-2default:default
-œ
-%s*synth2Œ
-x|143   |              \a6.x0                                             |unisim_syncram_dp__parameterized0    |     1|
-2default:default
-œ
-%s*synth2Œ
-x|144   |      \tbmem_gen.tbmem0                                          |tbufmem__parameterized0_62           |    34|
-2default:default
-œ
-%s*synth2Œ
-x|145   |        \mem0[0].ram0                                            |syncram64__parameterized0_63         |    33|
-2default:default
-œ
-%s*synth2Œ
-x|146   |          \nopar.s64.xc2v.x0                                     |unisim_syncram64__parameterized0_66  |    33|
-2default:default
-œ
-%s*synth2Œ
-x|147   |        \mem0[1].ram0                                            |syncram64__parameterized0_64         |     1|
-2default:default
-œ
-%s*synth2Œ
-x|148   |          \nopar.s64.xc2v.x0                                     |unisim_syncram64__parameterized0_65  |     1|
-2default:default
-œ
-%s*synth2Œ
-x|149   |  \leon3gen.dsugen.dsu0                                          |dsu3__parameterized0                 |  1097|
-2default:default
-œ
-%s*synth2Œ
-x|150   |    x0                                                           |dsu3x__parameterized0                |  1086|
-2default:default
-œ
-%s*synth2Œ
-x|151   |      \tb0.mem0                                                  |tbufmem__parameterized0              |   214|
-2default:default
-œ
-%s*synth2Œ
-x|152   |        \mem0[0].ram0                                            |syncram64__parameterized0            |   130|
-2default:default
-œ
-%s*synth2Œ
-x|153   |          \nopar.s64.xc2v.x0                                     |unisim_syncram64__parameterized0_61  |   130|
-2default:default
-œ
-%s*synth2Œ
-x|154   |        \mem0[1].ram0                                            |syncram64__parameterized0_60         |    84|
-2default:default
-œ
-%s*synth2Œ
-x|155   |          \nopar.s64.xc2v.x0                                     |unisim_syncram64__parameterized0     |    84|
-2default:default
-œ
-%s*synth2Œ
-x|156   |  \mg2.sr1                                                       |mctrl__parameterized0                |   345|
-2default:default
-œ
-%s*synth2Œ
-x|157   |  \mgpads.addr_pad                                               |outpadv__parameterized0              |    23|
-2default:default
-œ
-%s*synth2Œ
-x|158   |    \v[0].x0                                                     |outpad__parameterized0_14            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|159   |      \xcv.x0                                                    |unisim_outpad__parameterized0_59     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|160   |    \v[10].x0                                                    |outpad__parameterized0_15            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|161   |      \xcv.x0                                                    |unisim_outpad__parameterized0_58     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|162   |    \v[11].x0                                                    |outpad__parameterized0_16            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|163   |      \xcv.x0                                                    |unisim_outpad__parameterized0_57     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|164   |    \v[12].x0                                                    |outpad__parameterized0_17            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|165   |      \xcv.x0                                                    |unisim_outpad__parameterized0_56     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|166   |    \v[13].x0                                                    |outpad__parameterized0_18            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|167   |      \xcv.x0                                                    |unisim_outpad__parameterized0_55     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|168   |    \v[14].x0                                                    |outpad__parameterized0_19            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|169   |      \xcv.x0                                                    |unisim_outpad__parameterized0_54     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|170   |    \v[15].x0                                                    |outpad__parameterized0_20            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|171   |      \xcv.x0                                                    |unisim_outpad__parameterized0_53     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|172   |    \v[16].x0                                                    |outpad__parameterized0_21            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|173   |      \xcv.x0                                                    |unisim_outpad__parameterized0_52     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|174   |    \v[17].x0                                                    |outpad__parameterized0_22            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|175   |      \xcv.x0                                                    |unisim_outpad__parameterized0_51     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|176   |    \v[18].x0                                                    |outpad__parameterized0_23            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|177   |      \xcv.x0                                                    |unisim_outpad__parameterized0_50     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|178   |    \v[19].x0                                                    |outpad__parameterized0_24            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|179   |      \xcv.x0                                                    |unisim_outpad__parameterized0_49     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|180   |    \v[1].x0                                                     |outpad__parameterized0_25            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|181   |      \xcv.x0                                                    |unisim_outpad__parameterized0_48     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|182   |    \v[20].x0                                                    |outpad__parameterized0_26            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|183   |      \xcv.x0                                                    |unisim_outpad__parameterized0_47     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|184   |    \v[21].x0                                                    |outpad__parameterized0_27            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|185   |      \xcv.x0                                                    |unisim_outpad__parameterized0_46     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|186   |    \v[22].x0                                                    |outpad__parameterized0_28            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|187   |      \xcv.x0                                                    |unisim_outpad__parameterized0_45     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|188   |    \v[2].x0                                                     |outpad__parameterized0_29            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|189   |      \xcv.x0                                                    |unisim_outpad__parameterized0_44     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|190   |    \v[3].x0                                                     |outpad__parameterized0_30            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|191   |      \xcv.x0                                                    |unisim_outpad__parameterized0_43     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|192   |    \v[4].x0                                                     |outpad__parameterized0_31            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|193   |      \xcv.x0                                                    |unisim_outpad__parameterized0_42     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|194   |    \v[5].x0                                                     |outpad__parameterized0_32            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|195   |      \xcv.x0                                                    |unisim_outpad__parameterized0_41     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|196   |    \v[6].x0                                                     |outpad__parameterized0_33            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|197   |      \xcv.x0                                                    |unisim_outpad__parameterized0_40     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|198   |    \v[7].x0                                                     |outpad__parameterized0_34            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|199   |      \xcv.x0                                                    |unisim_outpad__parameterized0_39     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|200   |    \v[8].x0                                                     |outpad__parameterized0_35            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|201   |      \xcv.x0                                                    |unisim_outpad__parameterized0_38     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|202   |    \v[9].x0                                                     |outpad__parameterized0_36            |     1|
-2default:default
-œ
-%s*synth2Œ
-x|203   |      \xcv.x0                                                    |unisim_outpad__parameterized0_37     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|204   |  \mgpads.cs_pad                                                 |outpad__parameterized0_5             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|205   |    \xcv.x0                                                      |unisim_outpad__parameterized0_13     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|206   |  \mgpads.lb_pad                                                 |outpad__parameterized0_6             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|207   |    \xcv.x0                                                      |unisim_outpad__parameterized0_12     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|208   |  \mgpads.oen_pad                                                |outpad__parameterized0_7             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|209   |    \xcv.x0                                                      |unisim_outpad__parameterized0_11     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|210   |  \mgpads.ub_pad                                                 |outpad__parameterized0_8             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|211   |    \xcv.x0                                                      |unisim_outpad__parameterized0_10     |     1|
-2default:default
-œ
-%s*synth2Œ
-x|212   |  \mgpads.wri_pad                                                |outpad__parameterized0_9             |     1|
-2default:default
-œ
-%s*synth2Œ
-x|213   |    \xcv.x0                                                      |unisim_outpad__parameterized0        |     1|
-2default:default
-œ
-%s*synth2Œ
-x|214   |  rst0                                                           |rstgen__parameterized0               |    13|
-2default:default
-œ
-%s*synth2Œ
-x+------+-----------------------------------------------------------------+-------------------------------------+------+
+ž
+%s*synth2Ž
+z+------+-----------------------------------------------------------------+---------------------------------------+------+
+2default:default
+ž
+%s*synth2Ž
+z|      |Instance                                                         |Module                                 |Cells |
+2default:default
+ž
+%s*synth2Ž
+z+------+-----------------------------------------------------------------+---------------------------------------+------+
+2default:default
+ž
+%s*synth2Ž
+z|1     |top                                                              |                                       | 33957|
+2default:default
+ž
+%s*synth2Ž
+z|2     |  ahb0                                                           |ahbctrl__parameterized0                |   366|
+2default:default
+ž
+%s*synth2Ž
+z|3     |  apb0                                                           |apbctrl__parameterized0                |   584|
+2default:default
+ž
+%s*synth2Ž
+z|4     |  bdr                                                            |iopadv__parameterized0                 |     8|
+2default:default
+ž
+%s*synth2Ž
+z|5     |    \v[0].x0                                                     |iopad__parameterized0_114              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|6     |      \xcv.x0                                                    |unisim_iopad__parameterized0_129       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|7     |    \v[1].x0                                                     |iopad__parameterized0_115              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|8     |      \xcv.x0                                                    |unisim_iopad__parameterized0_128       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|9     |    \v[2].x0                                                     |iopad__parameterized0_116              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|10    |      \xcv.x0                                                    |unisim_iopad__parameterized0_127       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|11    |    \v[3].x0                                                     |iopad__parameterized0_117              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|12    |      \xcv.x0                                                    |unisim_iopad__parameterized0_126       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|13    |    \v[4].x0                                                     |iopad__parameterized0_118              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|14    |      \xcv.x0                                                    |unisim_iopad__parameterized0_125       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|15    |    \v[5].x0                                                     |iopad__parameterized0_119              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|16    |      \xcv.x0                                                    |unisim_iopad__parameterized0_124       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|17    |    \v[6].x0                                                     |iopad__parameterized0_120              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|18    |      \xcv.x0                                                    |unisim_iopad__parameterized0_123       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|19    |    \v[7].x0                                                     |iopad__parameterized0_121              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|20    |      \xcv.x0                                                    |unisim_iopad__parameterized0_122       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|21    |  bdr2                                                           |iopadv__parameterized0_0               |     8|
+2default:default
+ž
+%s*synth2Ž
+z|22    |    \v[0].x0                                                     |iopad__parameterized0_98               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|23    |      \xcv.x0                                                    |unisim_iopad__parameterized0_113       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|24    |    \v[1].x0                                                     |iopad__parameterized0_99               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|25    |      \xcv.x0                                                    |unisim_iopad__parameterized0_112       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|26    |    \v[2].x0                                                     |iopad__parameterized0_100              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|27    |      \xcv.x0                                                    |unisim_iopad__parameterized0_111       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|28    |    \v[3].x0                                                     |iopad__parameterized0_101              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|29    |      \xcv.x0                                                    |unisim_iopad__parameterized0_110       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|30    |    \v[4].x0                                                     |iopad__parameterized0_102              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|31    |      \xcv.x0                                                    |unisim_iopad__parameterized0_109       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|32    |    \v[5].x0                                                     |iopad__parameterized0_103              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|33    |      \xcv.x0                                                    |unisim_iopad__parameterized0_108       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|34    |    \v[6].x0                                                     |iopad__parameterized0_104              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|35    |      \xcv.x0                                                    |unisim_iopad__parameterized0_107       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|36    |    \v[7].x0                                                     |iopad__parameterized0_105              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|37    |      \xcv.x0                                                    |unisim_iopad__parameterized0_106       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|38    |  \bpromgen.brom                                                 |ahbrom                                 |   184|
+2default:default
+ž
+%s*synth2Ž
+z|39    |  clkgen0                                                        |clkgen__parameterized0                 |     4|
+2default:default
+ž
+%s*synth2Ž
+z|40    |    \xc7l.v                                                      |clkgen_virtex7__parameterized0         |     4|
+2default:default
+ž
+%s*synth2Ž
+z|41    |  \dcomgen.dcom0                                                 |ahbuart__parameterized0                |   507|
+2default:default
+ž
+%s*synth2Ž
+z|42    |    ahbmst0                                                      |ahbmst__parameterized0                 |     7|
+2default:default
+ž
+%s*synth2Ž
+z|43    |    dcom0                                                        |dcom                                   |   214|
+2default:default
+ž
+%s*synth2Ž
+z|44    |    dcom_uart0                                                   |dcom_uart__parameterized0              |   286|
+2default:default
+ž
+%s*synth2Ž
+z|45    |  \dcomgen.dsurx_pad                                             |inpad__parameterized0                  |     2|
+2default:default
+ž
+%s*synth2Ž
+z|46    |    \xcv.x0                                                      |unisim_inpad__parameterized0_97        |     2|
+2default:default
+ž
+%s*synth2Ž
+z|47    |  \dcomgen.dsutx_pad                                             |outpad__parameterized0                 |     1|
+2default:default
+ž
+%s*synth2Ž
+z|48    |    \xcv.x0                                                      |unisim_outpad__parameterized0_96       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|49    |  \eth0.e1                                                       |grethm__parameterized0                 |  3907|
+2default:default
+ž
+%s*synth2Ž
+z|50    |    \m100.u0                                                     |greth__parameterized0                  |  3907|
+2default:default
+ž
+%s*synth2Ž
+z|51    |      \edclramnft.r0                                             |syncram_2p__parameterized6             |    25|
+2default:default
+ž
+%s*synth2Ž
+z|52    |        \xc2v.x0                                                 |unisim_syncram_2p__parameterized6_94   |    25|
+2default:default
+ž
+%s*synth2Ž
+z|53    |          \a6.x0                                                 |unisim_syncram_dp__parameterized6_95   |    25|
+2default:default
+ž
+%s*synth2Ž
+z|54    |      \edclramnft.r1                                             |syncram_2p__parameterized6_92          |    16|
+2default:default
+ž
+%s*synth2Ž
+z|55    |        \xc2v.x0                                                 |unisim_syncram_2p__parameterized6      |    16|
+2default:default
+ž
+%s*synth2Ž
+z|56    |          \a6.x0                                                 |unisim_syncram_dp__parameterized6      |    16|
+2default:default
+ž
+%s*synth2Ž
+z|57    |      ethc0                                                      |grethc__parameterized0                 |  3776|
+2default:default
+ž
+%s*synth2Ž
+z|58    |        ahb0                                                     |eth_ahb_mst                            |   202|
+2default:default
+ž
+%s*synth2Ž
+z|59    |        \rx_rmii1.rx0                                            |greth_rx__parameterized0               |   693|
+2default:default
+ž
+%s*synth2Ž
+z|60    |          rx_rst                                                 |eth_rstgen__parameterized0_93          |     2|
+2default:default
+ž
+%s*synth2Ž
+z|61    |        \tx_rmii1.tx0                                            |greth_tx__parameterized0               |   569|
+2default:default
+ž
+%s*synth2Ž
+z|62    |          tx_rst                                                 |eth_rstgen__parameterized0             |    12|
+2default:default
+ž
+%s*synth2Ž
+z|63    |      \nft.rx_fifo0                                              |syncram_2p__parameterized4             |    38|
+2default:default
+ž
+%s*synth2Ž
+z|64    |        \xc2v.x0                                                 |unisim_syncram_2p__parameterized4      |    38|
+2default:default
+ž
+%s*synth2Ž
+z|65    |          \a0.x0                                                 |generic_syncram_2p__parameterized0     |    38|
+2default:default
+ž
+%s*synth2Ž
+z|66    |      \nft.tx_fifo0                                              |syncram_2p__parameterized2             |     1|
+2default:default
+ž
+%s*synth2Ž
+z|67    |        \xc2v.x0                                                 |unisim_syncram_2p__parameterized2      |     1|
+2default:default
+ž
+%s*synth2Ž
+z|68    |          \a6.x0                                                 |unisim_syncram_dp__parameterized4      |     1|
+2default:default
+ž
+%s*synth2Ž
+z|69    |  \ethpads.emdc_pad                                              |outpad__parameterized0_1               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|70    |    \xcv.x0                                                      |unisim_outpad__parameterized0_91       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|71    |  \ethpads.emdio_pad                                             |iopad__parameterized0                  |     1|
+2default:default
+ž
+%s*synth2Ž
+z|72    |    \xcv.x0                                                      |unisim_iopad__parameterized0           |     1|
+2default:default
+ž
+%s*synth2Ž
+z|73    |  \ethpads.erxcr_pad                                             |inpad__parameterized0_2                |     1|
+2default:default
+ž
+%s*synth2Ž
+z|74    |    \xcv.x0                                                      |unisim_inpad__parameterized0_90        |     1|
+2default:default
+ž
+%s*synth2Ž
+z|75    |  \ethpads.erxd_pad                                              |inpadv__parameterized0                 |     2|
+2default:default
+ž
+%s*synth2Ž
+z|76    |    \v[0].x0                                                     |inpad__parameterized0_87               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|77    |      \xcv.x0                                                    |unisim_inpad__parameterized0_89        |     1|
+2default:default
+ž
+%s*synth2Ž
+z|78    |    \v[1].x0                                                     |inpad__parameterized0_88               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|79    |      \xcv.x0                                                    |unisim_inpad__parameterized0           |     1|
+2default:default
+ž
+%s*synth2Ž
+z|80    |  \ethpads.etxd_pad                                              |outpadv__parameterized2                |     2|
+2default:default
+ž
+%s*synth2Ž
+z|81    |    \v[0].x0                                                     |outpad__parameterized0_83              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|82    |      \xcv.x0                                                    |unisim_outpad__parameterized0_86       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|83    |    \v[1].x0                                                     |outpad__parameterized0_84              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|84    |      \xcv.x0                                                    |unisim_outpad__parameterized0_85       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|85    |  \ethpads.etxen_pad                                             |outpad__parameterized0_3               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|86    |    \xcv.x0                                                      |unisim_outpad__parameterized0_82       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|87    |  etxc_pad                                                       |outpad__parameterized0_4               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|88    |    \xcv.x0                                                      |unisim_outpad__parameterized0_81       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|89    |  \gpt.timer0                                                    |gptimer__parameterized0                |   372|
+2default:default
+ž
+%s*synth2Ž
+z|90    |  io0                                                            |dummyapb__parameterized0               | 16600|
+2default:default
+ž
+%s*synth2Ž
+z|91    |    inst_ADC_TOP                                                 |ADC_TOP                                |  6634|
+2default:default
+ž
+%s*synth2Ž
+z|92    |      inst_Buffer                                                |ADC_buffer__parameterized0             |  3155|
+2default:default
+ž
+%s*synth2Ž
+z|93    |      isnt_filter                                                |digitalfilter__parameterized0          |  3447|
+2default:default
+ž
+%s*synth2Ž
+z|94    |    inst_top                                                     |dacTop                                 |  9840|
+2default:default
+ž
+%s*synth2Ž
+z|95    |      your_instance_name                                         |ila_0                                  |  6472|
+2default:default
+ž
+%s*synth2Ž
+z|96    |        U0                                                       |ila_v4_0_ila__parameterized0           |  6472|
+2default:default
+ž
+%s*synth2Ž
+z|97    |          \ila_core_inst/u_ila_regs/U_XSDB_SLAVE                 |chipscope_xsdb_slave                   |   126|
+2default:default
+ž
+%s*synth2Ž
+z|98    |          \ila_core_inst/COUNTER.u_count/G_COUNTER[0].U_COUNTER  |ila_v4_0_generic_counter__1            |    75|
+2default:default
+ž
+%s*synth2Ž
+z|99    |          \ila_core_inst/COUNTER.u_count/G_COUNTER[1].U_COUNTER  |ila_v4_0_generic_counter__2            |    75|
+2default:default
+ž
+%s*synth2Ž
+z|100   |          \ila_core_inst/COUNTER.u_count/G_COUNTER[2].U_COUNTER  |ila_v4_0_generic_counter__3            |    75|
+2default:default
+ž
+%s*synth2Ž
+z|101   |          \ila_core_inst/COUNTER.u_count/G_COUNTER[3].U_COUNTER  |ila_v4_0_generic_counter               |    75|
+2default:default
+ž
+%s*synth2Ž
+z|102   |      inst_DAC_BUFFER                                            |DAC_buffer__parameterized0             |  3176|
+2default:default
+ž
+%s*synth2Ž
+z|103   |      inst_DAC_SPI                                               |DAC_SPI                                |    39|
+2default:default
+ž
+%s*synth2Ž
+z|104   |      inst_clk_divider                                           |clk_divide__parameterized0             |   151|
+2default:default
+ž
+%s*synth2Ž
+z|105   |  \irqctrl.irqctrl0                                              |irqmp__parameterized0                  |   162|
+2default:default
+ž
+%s*synth2Ž
+z|106   |  \leon3gen.cpu[0].u0                                            |leon3s__parameterized0                 |  8944|
+2default:default
+ž
+%s*synth2Ž
+z|107   |    leon3x0                                                      |leon3x__parameterized0                 |  8944|
+2default:default
+ž
+%s*synth2Ž
+z|108   |      cmem0                                                      |cachemem__parameterized0               |   110|
+2default:default
+ž
+%s*synth2Ž
+z|109   |        \dme.dd0[0].ddata0                                       |syncram__parameterized4                |     2|
+2default:default
+ž
+%s*synth2Ž
+z|110   |          \xc2v.x0                                               |unisim_syncram__parameterized4_80      |     2|
+2default:default
+ž
+%s*synth2Ž
+z|111   |        \dme.dd0[1].ddata0                                       |syncram__parameterized4_73             |    10|
+2default:default
+ž
+%s*synth2Ž
+z|112   |          \xc2v.x0                                               |unisim_syncram__parameterized4         |    10|
+2default:default
+ž
+%s*synth2Ž
+z|113   |        \dme.dtags1.dt1.dt0[0].dtags0                            |syncram_dp__parameterized0             |    21|
+2default:default
+ž
+%s*synth2Ž
+z|114   |          \xc2v.x0                                               |unisim_syncram_dp__parameterized2_79   |    21|
+2default:default
+ž
+%s*synth2Ž
+z|115   |        \dme.dtags1.dt1.dt0[1].dtags0                            |syncram_dp__parameterized0_74          |    21|
+2default:default
+ž
+%s*synth2Ž
+z|116   |          \xc2v.x0                                               |unisim_syncram_dp__parameterized2      |    21|
+2default:default
+ž
+%s*synth2Ž
+z|117   |        \ime.im0[0].idata0                                       |syncram__parameterized2                |     4|
+2default:default
+ž
+%s*synth2Ž
+z|118   |          \xc2v.x0                                               |unisim_syncram__parameterized2_78      |     4|
+2default:default
+ž
+%s*synth2Ž
+z|119   |        \ime.im0[0].itags0                                       |syncram__parameterized0                |    11|
+2default:default
+ž
+%s*synth2Ž
+z|120   |          \xc2v.x0                                               |unisim_syncram__parameterized0_77      |    11|
+2default:default
+ž
+%s*synth2Ž
+z|121   |        \ime.im0[1].idata0                                       |syncram__parameterized2_75             |     4|
+2default:default
+ž
+%s*synth2Ž
+z|122   |          \xc2v.x0                                               |unisim_syncram__parameterized2         |     4|
+2default:default
+ž
+%s*synth2Ž
+z|123   |        \ime.im0[1].itags0                                       |syncram__parameterized0_76             |    33|
+2default:default
+ž
+%s*synth2Ž
+z|124   |          \xc2v.x0                                               |unisim_syncram__parameterized0         |    33|
+2default:default
+ž
+%s*synth2Ž
+z|125   |      p0                                                         |proc3__parameterized0                  |  8641|
+2default:default
+ž
+%s*synth2Ž
+z|126   |        c0mmu                                                    |mmu_cache__parameterized0              |  3074|
+2default:default
+ž
+%s*synth2Ž
+z|127   |          a0                                                     |mmu_acache__parameterized0             |   119|
+2default:default
+ž
+%s*synth2Ž
+z|128   |          dcache0                                                |mmu_dcache__parameterized0             |  1324|
+2default:default
+ž
+%s*synth2Ž
+z|129   |          icache0                                                |mmu_icache__parameterized0             |  1631|
+2default:default
+ž
+%s*synth2Ž
+z|130   |        iu                                                       |iu3__parameterized0                    |  5155|
+2default:default
+ž
+%s*synth2Ž
+z|131   |        \mgen.div0                                               |div32                                  |   307|
+2default:default
+ž
+%s*synth2Ž
+z|132   |        \mgen.mul0                                               |mul32__parameterized0                  |   103|
+2default:default
+ž
+%s*synth2Ž
+z|133   |          \xm3232.m3232                                          |techmult__parameterized0               |   103|
+2default:default
+ž
+%s*synth2Ž
+z|134   |            \pipe2.arch0.dwm                                     |gen_mult_pipe__parameterized0          |   103|
+2default:default
+ž
+%s*synth2Ž
+z|135   |      rf0                                                        |regfile_3p_l3__parameterized0          |   158|
+2default:default
+ž
+%s*synth2Ž
+z|136   |        \s1.rhu                                                  |regfile_3p__parameterized0             |   158|
+2default:default
+ž
+%s*synth2Ž
+z|137   |          \s1.dp.x0                                              |syncram_2p__parameterized0             |   146|
+2default:default
+ž
+%s*synth2Ž
+z|138   |            \xc2v.x0                                             |unisim_syncram_2p__parameterized0_71   |    58|
+2default:default
+ž
+%s*synth2Ž
+z|139   |              \a6.x0                                             |unisim_syncram_dp__parameterized0_72   |    58|
+2default:default
+ž
+%s*synth2Ž
+z|140   |          \s1.dp.x1                                              |syncram_2p__parameterized0_70          |    12|
+2default:default
+ž
+%s*synth2Ž
+z|141   |            \xc2v.x0                                             |unisim_syncram_2p__parameterized0      |     1|
+2default:default
+ž
+%s*synth2Ž
+z|142   |              \a6.x0                                             |unisim_syncram_dp__parameterized0      |     1|
+2default:default
+ž
+%s*synth2Ž
+z|143   |      \tbmem_gen.tbmem0                                          |tbufmem__parameterized0_65             |    34|
+2default:default
+ž
+%s*synth2Ž
+z|144   |        \mem0[0].ram0                                            |syncram64__parameterized0_66           |    33|
+2default:default
+ž
+%s*synth2Ž
+z|145   |          \nopar.s64.xc2v.x0                                     |unisim_syncram64__parameterized0_69    |    33|
+2default:default
+ž
+%s*synth2Ž
+z|146   |        \mem0[1].ram0                                            |syncram64__parameterized0_67           |     1|
+2default:default
+ž
+%s*synth2Ž
+z|147   |          \nopar.s64.xc2v.x0                                     |unisim_syncram64__parameterized0_68    |     1|
+2default:default
+ž
+%s*synth2Ž
+z|148   |  \leon3gen.dsugen.dsu0                                          |dsu3__parameterized0                   |  1109|
+2default:default
+ž
+%s*synth2Ž
+z|149   |    x0                                                           |dsu3x__parameterized0                  |  1095|
+2default:default
+ž
+%s*synth2Ž
+z|150   |      \tb0.mem0                                                  |tbufmem__parameterized0                |   218|
+2default:default
+ž
+%s*synth2Ž
+z|151   |        \mem0[0].ram0                                            |syncram64__parameterized0              |   133|
+2default:default
+ž
+%s*synth2Ž
+z|152   |          \nopar.s64.xc2v.x0                                     |unisim_syncram64__parameterized0_64    |   133|
+2default:default
+ž
+%s*synth2Ž
+z|153   |        \mem0[1].ram0                                            |syncram64__parameterized0_63           |    85|
+2default:default
+ž
+%s*synth2Ž
+z|154   |          \nopar.s64.xc2v.x0                                     |unisim_syncram64__parameterized0       |    85|
+2default:default
+ž
+%s*synth2Ž
+z|155   |  \mg2.sr1                                                       |mctrl__parameterized0                  |   354|
+2default:default
+ž
+%s*synth2Ž
+z|156   |  \mgpads.addr_pad                                               |outpadv__parameterized0                |    23|
+2default:default
+ž
+%s*synth2Ž
+z|157   |    \v[0].x0                                                     |outpad__parameterized0_17              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|158   |      \xcv.x0                                                    |unisim_outpad__parameterized0_62       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|159   |    \v[10].x0                                                    |outpad__parameterized0_18              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|160   |      \xcv.x0                                                    |unisim_outpad__parameterized0_61       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|161   |    \v[11].x0                                                    |outpad__parameterized0_19              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|162   |      \xcv.x0                                                    |unisim_outpad__parameterized0_60       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|163   |    \v[12].x0                                                    |outpad__parameterized0_20              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|164   |      \xcv.x0                                                    |unisim_outpad__parameterized0_59       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|165   |    \v[13].x0                                                    |outpad__parameterized0_21              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|166   |      \xcv.x0                                                    |unisim_outpad__parameterized0_58       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|167   |    \v[14].x0                                                    |outpad__parameterized0_22              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|168   |      \xcv.x0                                                    |unisim_outpad__parameterized0_57       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|169   |    \v[15].x0                                                    |outpad__parameterized0_23              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|170   |      \xcv.x0                                                    |unisim_outpad__parameterized0_56       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|171   |    \v[16].x0                                                    |outpad__parameterized0_24              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|172   |      \xcv.x0                                                    |unisim_outpad__parameterized0_55       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|173   |    \v[17].x0                                                    |outpad__parameterized0_25              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|174   |      \xcv.x0                                                    |unisim_outpad__parameterized0_54       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|175   |    \v[18].x0                                                    |outpad__parameterized0_26              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|176   |      \xcv.x0                                                    |unisim_outpad__parameterized0_53       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|177   |    \v[19].x0                                                    |outpad__parameterized0_27              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|178   |      \xcv.x0                                                    |unisim_outpad__parameterized0_52       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|179   |    \v[1].x0                                                     |outpad__parameterized0_28              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|180   |      \xcv.x0                                                    |unisim_outpad__parameterized0_51       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|181   |    \v[20].x0                                                    |outpad__parameterized0_29              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|182   |      \xcv.x0                                                    |unisim_outpad__parameterized0_50       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|183   |    \v[21].x0                                                    |outpad__parameterized0_30              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|184   |      \xcv.x0                                                    |unisim_outpad__parameterized0_49       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|185   |    \v[22].x0                                                    |outpad__parameterized0_31              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|186   |      \xcv.x0                                                    |unisim_outpad__parameterized0_48       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|187   |    \v[2].x0                                                     |outpad__parameterized0_32              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|188   |      \xcv.x0                                                    |unisim_outpad__parameterized0_47       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|189   |    \v[3].x0                                                     |outpad__parameterized0_33              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|190   |      \xcv.x0                                                    |unisim_outpad__parameterized0_46       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|191   |    \v[4].x0                                                     |outpad__parameterized0_34              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|192   |      \xcv.x0                                                    |unisim_outpad__parameterized0_45       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|193   |    \v[5].x0                                                     |outpad__parameterized0_35              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|194   |      \xcv.x0                                                    |unisim_outpad__parameterized0_44       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|195   |    \v[6].x0                                                     |outpad__parameterized0_36              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|196   |      \xcv.x0                                                    |unisim_outpad__parameterized0_43       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|197   |    \v[7].x0                                                     |outpad__parameterized0_37              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|198   |      \xcv.x0                                                    |unisim_outpad__parameterized0_42       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|199   |    \v[8].x0                                                     |outpad__parameterized0_38              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|200   |      \xcv.x0                                                    |unisim_outpad__parameterized0_41       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|201   |    \v[9].x0                                                     |outpad__parameterized0_39              |     1|
+2default:default
+ž
+%s*synth2Ž
+z|202   |      \xcv.x0                                                    |unisim_outpad__parameterized0_40       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|203   |  \mgpads.cs_pad                                                 |outpad__parameterized0_5               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|204   |    \xcv.x0                                                      |unisim_outpad__parameterized0_16       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|205   |  \mgpads.lb_pad                                                 |outpad__parameterized0_6               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|206   |    \xcv.x0                                                      |unisim_outpad__parameterized0_15       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|207   |  \mgpads.oen_pad                                                |outpad__parameterized0_7               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|208   |    \xcv.x0                                                      |unisim_outpad__parameterized0_14       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|209   |  \mgpads.ub_pad                                                 |outpad__parameterized0_8               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|210   |    \xcv.x0                                                      |unisim_outpad__parameterized0_13       |     1|
+2default:default
+ž
+%s*synth2Ž
+z|211   |  \mgpads.wri_pad                                                |outpad__parameterized0_9               |     1|
+2default:default
+ž
+%s*synth2Ž
+z|212   |    \xcv.x0                                                      |unisim_outpad__parameterized0          |     1|
+2default:default
+ž
+%s*synth2Ž
+z|213   |  rst0                                                           |rstgen__parameterized0                 |    12|
+2default:default
+ž
+%s*synth2Ž
+z|214   |  selector                                                       |button_and_hex_wrapper__parameterized0 |   339|
+2default:default
+ž
+%s*synth2Ž
+z|215   |    inst_RGB_diode_controller                                    |RGB_diode_controller__parameterized0   |    16|
+2default:default
+ž
+%s*synth2Ž
+z|216   |    inst_button                                                  |button_control                         |   221|
+2default:default
+ž
+%s*synth2Ž
+z|217   |      \Bouncefix[1].bounce_fix                                   |bounce_filter__parameterized0          |    42|
+2default:default
+ž
+%s*synth2Ž
+z|218   |      \Bouncefix[2].bounce_fix                                   |bounce_filter__parameterized0_10       |    37|
+2default:default
+ž
+%s*synth2Ž
+z|219   |      \Bouncefix[3].bounce_fix                                   |bounce_filter__parameterized0_11       |    36|
+2default:default
+ž
+%s*synth2Ž
+z|220   |      \Bouncefix[4].bounce_fix                                   |bounce_filter__parameterized0_12       |    38|
+2default:default
+ž
+%s*synth2Ž
+z|221   |    inst_seven_seg                                               |seven_seg_control                      |    90|
+2default:default
+ž
+%s*synth2Ž
+z|222   |      clk_div                                                    |clk_div_seven_seg                      |    61|
+2default:default
+ž
+%s*synth2Ž
+z+------+-----------------------------------------------------------------+---------------------------------------+------+
 2default:default
 ¦
 %s*synth2–
-Finished Writing Synthesis Report : Time (s): cpu = 00:10:31 ; elapsed = 00:10:36 . Memory (MB): peak = 893.883 ; gain = 726.852
+Finished Writing Synthesis Report : Time (s): cpu = 00:13:57 ; elapsed = 00:17:05 . Memory (MB): peak = 817.789 ; gain = 700.609
 2default:default
 l
 %s*synth2]
-ISynthesis finished with 0 errors, 0 critical warnings and 2833 warnings.
+ISynthesis finished with 0 errors, 0 critical warnings and 2832 warnings.
 2default:default
 £
 %s*synth2“
-Synthesis Optimization Complete : Time (s): cpu = 00:10:32 ; elapsed = 00:10:36 . Memory (MB): peak = 893.883 ; gain = 726.852
+Synthesis Optimization Complete : Time (s): cpu = 00:13:57 ; elapsed = 00:17:06 . Memory (MB): peak = 817.789 ; gain = 700.609
 2default:default
 ^
 -Analyzing %s Unisim elements for replacement
 17*netlist2
-3192default:defaultZ29-17
+3092default:defaultZ29-17
 a
 2Unisim Transformation completed in %s CPU seconds
 28*netlist2
@@ -56222,14 +57644,13 @@ C
 Pushed %s inverter(s).
 98*opt2
 02default:defaultZ31-138
-ã
+È
 !Unisim Transformation Summary:
-%s111*project2¦
-‘  A total of 302 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 168 instances
-  CFGLUT5 => SRLC32E: 38 instances
+%s111*project2‹
+ö  A total of 289 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 184 instances
+  CFGLUT5 => SRLC32E: 41 instances
   IOBUF => IOBUF (IBUF, OBUFT): 17 instances
-  LD => LDCE: 32 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 16 instances
   RAMB16_S18 => RAMB18E1: 4 instances
@@ -56244,8 +57665,8 @@ L
 À
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-8712default:default2
-3932default:default2
+9192default:default2
+3832default:default2
 02default:default2
 02default:defaultZ4-41
 U
@@ -56256,15 +57677,23 @@ U
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2"
 synth_design: 2default:default2
-00:10:452default:default2
-00:10:432default:default2
-893.8832default:default2
-636.1052default:defaultZ17-268
-
-sreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.872 . Memory (MB): peak = 893.883 ; gain = 0.000
+00:14:162default:default2
+00:17:242default:default2
+817.7892default:default2
+632.3322default:defaultZ17-268
+þ
+I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
+268*common2&
+write_checkpoint: 2default:default2
+00:00:062default:default2
+00:00:132default:default2
+817.7892default:default2
+0.0002default:defaultZ17-268
+{
+oreport_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 817.789 ; gain = 0.000
 *common
 w
 Exiting %s at %s...
 206*common2
 Vivado2default:default2,
-Tue May 06 19:56:39 20142default:defaultZ17-206
+Mon May 12 14:10:29 20142default:defaultZ17-206

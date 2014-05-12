@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log leon3mp.vdi -applog -m32 -messageDb vivado.pb -mode batch -source leon3mp.tcl -notrace
 
 
