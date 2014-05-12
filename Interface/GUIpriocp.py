@@ -26,6 +26,7 @@ def resetbtn():
 	
 def labellistset(outlist): #<=======================================================================
 	global Label_list
+        global Outputpriorities
 	dictionary={0:' ',1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2'}
 	
 	newlist=[]
@@ -55,11 +56,12 @@ def checkClicked(number):
         
         
 	if checkValue==0 or checkValue=='0' or checkValue>20:
-		for countreset in Outputpriorities:
-                    print countreset,'>',Outputpriorities[checkValue-21]                  
-                    if int(countreset) > int(Outputpriorities[checkValue-21]):
-                        print "Yes it is!", "Outputlist: ", Outputpriorities      
-                        Outputpriorities[Outputpriorities.index(countreset)]=str(int(countreset)-1)
+                resetValue=Outputpriorities[checkValue-21]		
+                for ind in range(len(Outputpriorities)):
+    
+                    print Outputpriorities[ind],'>',resetValue                  
+                    if int(Outputpriorities[ind]) > int(resetValue):    
+                        Outputpriorities[ind]=str(int(Outputpriorities[ind])-1)
                         #print countreset,'index: ', Outputpriorities.index(countreset)
                 Outputpriorities[checkValue-21]='0'
                 count= count -1
