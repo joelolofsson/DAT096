@@ -27,20 +27,21 @@ def Create_labels():
 	prio11.grid(row=10, column=0)
 
 global Label_List
-Label_List= [0]*11
+Label_List= [' ']*11
 
 def Programm():
     global count
     global Outputpriorities
     print ','.join(Outputpriorities)
-   # Outputpriorities=['0','0','0','0','0','0','0','0','0','0','0',]
-   # count =0
+  
     
     return
 
 def resetbtn():
 	global count
 	global Outputpriorities
+	global Label_List
+	Label_List=[' ']*11
 	count=0
 	vardict={1:var1,2:var2,3:var3,4:var4,5:var5,6:var6,7:var7,8:var8,9:var9,10:var10,11:var11}
 	Outputpriorities=['0','0','0','0','0','0','0','0','0','0','0',]
@@ -48,6 +49,8 @@ def resetbtn():
 	for n in range(1,12):
 		x=vardict[n]
 		x.set(0)
+	set_labels()
+	return
 		
 def set_labels():
 	priotextvar1.set(Label_List[0])
@@ -65,20 +68,26 @@ def set_labels():
 	
 def labellistset(): #<=======================================================================
 	global Label_List
-        global Outputpriorities
-	dictionary={0:' ',1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2'}
-	
+	global Outputpriorities
+	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2',0:' '}
+	print "Outputpriorities Internal: ", Outputpriorities 
 	newlist=[]
-	for n in Outputpriorities:
-		if n=='0' or n==0:
+	for n in range(len(Outputpriorities)):
+		if Outputpriorities[n]=='0' or Outputpriorities[n]==0:
 			pass
 		else:
-			x=n
+			
+			x=dictionary[int(n+1)]
 			newlist.append(x)
+			print n, Outputpriorities[n]
+			print newlist
 	for i in range(len(newlist),len(Outputpriorities)):
-		newlist.append(0)
-	print newlist
-	Label_List= [dictionary[int(nu)] for nu in newlist]  #<=======================================================================
+		newlist.append(' ')
+	print 'newlist:', newlist
+	print newlist[0],newlist[1]
+	Label_List=newlist   #<=======================================================================
+	print 'Internal Label_List',Label_List
+	print Label_List[0],Label_List[1]
 	set_labels()
 	return
 	
@@ -103,19 +112,18 @@ def checkClicked(number):
                     print Outputpriorities[ind],'>',resetValue                  
                     if int(Outputpriorities[ind]) > int(resetValue):    
                         Outputpriorities[ind]=str(int(Outputpriorities[ind])-1)
-                        #print countreset,'index: ', Outputpriorities.index(countreset)
+                        
                 Outputpriorities[checkValue-21]='0'
                 count= count -1
-                             
-                #for num in Outputpriorities:
-                        
 	else:
-                count= count+1
+		count= count+1
 		order=str(count)
 		Outputpriorities[checkValue-1]=str(order)
 		print dictionary[int(checkValue)]
-	print Label_List
+	print "Outputpriorities Before: ", Outputpriorities
+	print "Label_List Before: ", Label_List
 	labellistset() #<=======================================================================
+	print "Label_List After: ",Label_List
 	return
 
 
@@ -125,7 +133,7 @@ global Outputpriorities
 Outputpriorities=['0','0','0','0','0','0','0','0','0','0','0',]
 dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2'}
 
-print count
+
 
 
 app = Tk()
@@ -175,4 +183,5 @@ c10 = Checkbutton(app, text=dictionary[10],onvalue=10, offvalue=30 ,variable=var
 c11 = Checkbutton(app, text=dictionary[11],onvalue=11, offvalue=31 ,variable=var11,command= lambda: checkClicked(var11.get()), indicatoron=0).grid(row=10, column=1)
 
 Create_labels()
+set_labels()
 app.mainloop()
