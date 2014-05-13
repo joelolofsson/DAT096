@@ -2,14 +2,14 @@
  *@brief Basic driver for the SPIM controller used in grlib
  *
  *Contains functions needed for writing and reading data to Spansions S25FL128S flash memory
- *using the SPIM controller used in grlib
+ *using the SPIM controller used in grlib. Write functions is based on the SPIMCtrl.c Provided by Gaisler
  *
  *@author Joel Olofsson
  */
 #include <stdio.h>
 #include <stdint.h>
 /* SPIMCTRL defines */
-
+#define SPIADDRESS 0x40f00000
 /* Core register address */
 #define CORE_REGS 0xfff00200
 
@@ -47,6 +47,7 @@ struct spimctrlregs {
 #define EXTENDED_PP 0x12 /*Page program extended address*/
 #define SE 0xD8 /* Sector erase */
 #define SE_4k 0x21
+#define P4E	0x20	/*4kb sector erase*/
 #define BE 0xC7 /* Bulk erase */
 #define DP 0xB9 /* Deep power-down */
 #define RES 0xAB /* Release from Deep power-down
@@ -58,7 +59,7 @@ struct spimctrlregs {
 *@param buf Pointer to array containing data that should be written to SPI flash memory
 *@param bytes Number of bytes to be written to SPI flash memory.
 */
-void spiFlashWrite(uint8_t addressArray[4], uint8_t* buf, int bytes){
+void spiFlashWrite(uint8_t addressArray[3], uint8_t* buf, int bytes){
 	int i;
 	struct spimctrlregs *regs;
 
@@ -102,12 +103,12 @@ void spiFlashWrite(uint8_t addressArray[4], uint8_t* buf, int bytes){
 
 	regs->ctrl &= ~SPIM_CSN;
 
-	regs->tx = EXTENDED_PP;
+	regs->tx = PP;
 
 	while (!(regs->stat & SPIM_DONE))
 	   ;
 	regs->stat = SPIM_DONE;
-	for (i = 0; i < 4; i++) {
+	for (i = 0; i < 3; i++) {
 	   regs->tx = addressArray[i];
 	   while (!(regs->stat & SPIM_DONE))
 		  ;
@@ -132,19 +133,19 @@ void spiFlashWrite(uint8_t addressArray[4], uint8_t* buf, int bytes){
 	   while (!(regs->stat & SPIM_DONE));
 	   regs->stat = SPIM_DONE;
 	} while (regs->rx & 1);
+
+
+//	//----------------
+//	regs->ctrl &= ~SPIM_CSN;
+//	regs->tx = WRDI;
+//
+//	while (!(regs->stat & SPIM_DONE));
+//	regs->stat = SPIM_DONE;
+//
+//	regs->ctrl |= SPIM_CSN;
+//
+//	printf("Write disable issued\n");
 	regs->ctrl |= SPIM_CSN;
-
-	//----------------
-	regs->ctrl &= ~SPIM_CSN;
-	regs->tx = WRDI;
-
-	while (!(regs->stat & SPIM_DONE));
-	regs->stat = SPIM_DONE;
-
-	regs->ctrl |= SPIM_CSN;
-
-	printf("Write disable issued\n");
-
 	regs->tx = 0;
 	regs->rx = 0;
 	regs->ctrl = 0;
@@ -156,7 +157,7 @@ void spiFlashWrite(uint8_t addressArray[4], uint8_t* buf, int bytes){
 *@param addressArray Starting address 31-0 address bits.
 *@see spiFlashWrite
 */
-void spiFlashSectorErase(uint8_t addressArray[4]){
+void spiFlashSectorErase(uint8_t addressArray[3]){
 	int i;
 	struct spimctrlregs *regs;
 
@@ -170,7 +171,7 @@ void spiFlashSectorErase(uint8_t addressArray[4]){
 
 	regs->ctrl |= SPIM_CSN;
 
-	printf("Write enable issued\n");
+	//printf("Write enable issued\n");
 
 	/*
 	 * Write enable command has been sent, wait for the Write Enable
@@ -189,23 +190,23 @@ void spiFlashSectorErase(uint8_t addressArray[4]){
 	   regs->tx = 0;
 	   while (!(regs->stat & SPIM_DONE));
 	   regs->stat = SPIM_DONE;
-	   printf("status register: 0x%x\n", regs->rx);
+	   //printf("status register: 0x%x\n", regs->rx);
 	}  while (!(regs->rx));
 
 	regs->ctrl |= SPIM_CSN;
 
-	printf("Write enable latch bit was set\n");
+	//printf("Write enable latch bit was set\n");
 
 	/* Write a page starting at address 0, don't care about overflow */
 
 	regs->ctrl &= ~SPIM_CSN;
 
-	regs->tx = SE_4k;
+	regs->tx = P4E;
 
 	while (!(regs->stat & SPIM_DONE))
 	   ;
 	regs->stat = SPIM_DONE;
-	for (i = 0; i < 4; i++) {
+	for (i = 0; i < 3; i++) {
 	   regs->tx = addressArray[i];
 	   while (!(regs->stat & SPIM_DONE))
 		  ;
@@ -213,8 +214,9 @@ void spiFlashSectorErase(uint8_t addressArray[4]){
 	}
 
 	regs->ctrl |= SPIM_CSN;
-
-	printf("Sector erases\n");
+	//regs->tx = 0;
+	for(i=0;i<100000;i++);
+	//printf("Sector erases\n");
 
 	/* Make sure that the memory has finished its write cycle */
 	regs->ctrl &= ~SPIM_CSN;
@@ -227,15 +229,15 @@ void spiFlashSectorErase(uint8_t addressArray[4]){
 	regs->ctrl |= SPIM_CSN;
 
 	//----------------
-	regs->ctrl &= ~SPIM_CSN;
-	regs->tx = WRDI;	//disable write, dunno if this is needed
-
-	while (!(regs->stat & SPIM_DONE));
-	regs->stat = SPIM_DONE;
-
-	regs->ctrl |= SPIM_CSN;
-
-	printf("Write disable issued\n");
+//	regs->ctrl &= ~SPIM_CSN;
+//	regs->tx = WRDI;	//disable write, dunno if this is needed
+//
+//	while (!(regs->stat & SPIM_DONE));
+//	regs->stat = SPIM_DONE;
+//
+//	regs->ctrl |= SPIM_CSN;
+//
+//	printf("Write disable issued\n");
 
 	//clear registers
 	regs->tx = 0;
@@ -248,7 +250,7 @@ void spiFlashSectorErase(uint8_t addressArray[4]){
 *@param buf Pointer to array where read data will be placed.
 *@param bytes Number of bytes to be written to SPI flash memory.
 */
-void spiFlashRead(uint8_t addressArray[4],uint8_t* buf,int bytes){
+void spiFlashRead(uint8_t addressArray[3],uint8_t* buf,int bytes){
 	int i;
 	struct spimctrlregs *regs;
 	regs = (struct spimctrlregs*)CORE_REGS;
@@ -256,18 +258,18 @@ void spiFlashRead(uint8_t addressArray[4],uint8_t* buf,int bytes){
 	regs->ctrl = SPIM_USRC; //Set user control to 1 to enable SPI communication
 	regs->ctrl &= ~SPIM_CSN; //Chip select to 0 to start an instruction
 
-	regs->tx = EXTENDED_READ; //send read instruction
+	regs->tx = READ; //send read instruction
 	while (!(regs->stat & SPIM_DONE)); //Wait until core has transfered instruction
 	regs->stat = SPIM_DONE;	//Clear bit
 
-	for (i = 0; i < 4; i++) {
+	for (i = 0; i < 3; i++) {
 	   regs->tx = addressArray[i]; //Send address 31-0 bits
 	   while (!(regs->stat & SPIM_DONE)); //wait each iteration for the core to send theaddress
 	   regs->stat = SPIM_DONE;
 	}
 	//regs->tx=0;
 	for (i = 0; i < bytes; i++) {
-		regs->tx=0xff;		//Send dummybyte, needed to make SCK "clock"
+		regs->tx=0;		//Send dummybyte, needed to make SCK "clock"
 		buf[i] = regs->rx;	//Read values
 		while (!(regs->stat & SPIM_DONE));
 		regs->stat = SPIM_DONE;
@@ -279,26 +281,52 @@ void spiFlashRead(uint8_t addressArray[4],uint8_t* buf,int bytes){
 	regs->ctrl |= SPIM_CSN; //terminate read operation by pulling chip-select high
 	regs->ctrl = 0;
 }
+void setPreset(uint8_t id, uint8_t* buf){
+	uint8_t addressArray[3];
+	addressArray[0] = 0x60;
+	addressArray[1]	= id*0x10;
+	addressArray[2] = 0x00;
+
+	spiFlashSectorErase(addressArray);
+	spiFlashWrite(addressArray,buf, 98);
+}
+void getPreset(uint8_t id,uint8_t* buf){
+	int i;
+	uint32_t address = 0x006ffffff +(0x1000*id);
+	uint8_t addressArray[3];
+
+	addressArray[2] = (address & 0x000000ff);
+	addressArray[1] = (address & 0x0000ff00) >> 8;
+	addressArray[0] = (address & 0x00ff0000) >> 16;
+
+
+	for (i=0;i<98;i++){
+		address++;
+		addressArray[2] = (address & 0x000000ff);
+		addressArray[1] = (address & 0x0000ff00) >> 8;
+		addressArray[0] = (address & 0x00ff0000) >> 16;
+
+		spiFlashRead(addressArray,&buf[i], 1);
+	}
+}
 int main(void)
 {
 	int i;
 	uint8_t readValuesArray[255];
 	uint8_t dataArray[255];
-	uint8_t resetArray[255];
-	uint8_t aArray[4];
+	uint8_t aArray[3];
 	aArray[0] = 0x00;
 	aArray[1] = 0x00;
 	aArray[2] = 0x00;
-	aArray[3] = 0x02;
 	for(i=0;i<256;i++){
-		dataArray[i]= 32;
-		resetArray[i]=255;
+		dataArray[i]= i;
+
 	}
 	spiFlashSectorErase(aArray);
 	spiFlashWrite(aArray,dataArray, 255);
-	//spiFlashWrite(aArray,resetArray, 255);
-	spiFlashRead(aArray,readValuesArray, 1);
-	for (i=0;i<1;i++)
-		printf("%x\n",readValuesArray[i]);
+
+	//spiFlashRead(aArray,readValuesArray, 5);
+	for (i=0;i<5;i++)
+		*(volatile int*)(SPIADDRESS+(i*4))= readValuesArray[i];
     return 0;
 }
