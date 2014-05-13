@@ -149,7 +149,7 @@ def prioritizer(In_priority_list,EffectNum):
 	final_priority_packet_list=[]
 	outpout=[]
 	enabled=0
-	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2'}
+	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2',12:'eq'}
 	
 	int_inp = map(int, In_priority_list)
 	if Debug=='1':
@@ -182,6 +182,8 @@ def prioritizer(In_priority_list,EffectNum):
 			final_priority_packet_list.append('0x'+'0'*7+'%x'%item)
 		else:
 			final_priority_packet_list.append('0x'+'0'*6+'%x'%item)
+	if Debug=='1':
+		print 'Prioritizer/final_priority_packet_list: ',final_priority_packet_list
 	return final_priority_packet_list
 
 	
@@ -263,9 +265,9 @@ def main (StrGuiinput):
 	
 	
 	Debug='1'					# debuging mode, Enables printing and disables the communication testing.
-	NumberOfEffects=11				# the number of the effects included in the design.
+	NumberOfEffects=12				# the number of the effects included in the design.
 	WordLength=4 					# the length of each data packet to be written in memory, measured in bytes.
-	WordNumber=27 					# the number of words that will be written on the memory.
+	WordNumber=28 					# the number of words that will be written on the memory.
 	StartingAdress='0x40f00000'		# Starting Address where the data will be written.
 	print "Debug mode= ",Debug
 	Multiplier_list=[[10,1,10],									# Multipliers[0] = bass, peak, treble

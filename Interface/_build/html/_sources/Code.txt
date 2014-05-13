@@ -27,7 +27,7 @@ Serial Communication
 Data handling
 -------------	
 	
-.. automodule:: DataStrLeon
+.. automodule:: DataStrLeon2
     :members:
     :undoc-members:
     :show-inheritance:
@@ -35,7 +35,7 @@ Data handling
 Graphic User Interface
 ----------------------
 	
-.. automodule:: GUI5
+.. automodule:: GUI9
     :members:
     :undoc-members:
     :show-inheritance:
