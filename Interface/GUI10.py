@@ -1,3 +1,9 @@
+'''
+The GUI10 module is used create and handle the Graphic User Interface for setting the
+effect coefficients of the Soundbox.
+
+Author: 
+'''
 from Tkinter import *
 import serial
 import tkMessageBox
@@ -1085,6 +1091,8 @@ def Create_labels():
 	prio12.grid(row=12, column=0)
 
 def resetbtn():
+	"""This function resets the effect priorities to their zero values and clears the priority list. 
+	"""
 	global count
 	global Outputpriorities
 	global Label_List
@@ -1115,6 +1123,8 @@ def set_labels():
 	
 	
 def labellistset(): #<=======================================================================
+	"""This function updates the Outputpriorities list that is then sent on the Leon3 via the communication code.
+	"""
 	global Label_List
 	global Outputpriorities
 	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'PreGain',11:'OutGain',12:'EQ',0:' '}
@@ -1130,6 +1140,10 @@ def labellistset(): #<==========================================================
 	return
 		
 def checkClicked(number):
+	"""This function takes is called whenever a priority item is clicked. It takes the number of the priority item that called it as 
+	an input and places the appropriate effect on the priority list frame.
+	:param name: Number that coresponds to a priority checkbox clicked.
+	"""
 	global count
 	global Outputpriorities
 	global dictionary
@@ -1162,6 +1176,9 @@ def checkClicked(number):
 	return
 	
 def SetPriority():
+	"""This function handles the creation of the 12 priority checkboxes.
+	the effects are as follows: 1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'PreGain',11:'OutGain',12:'EQ'
+	"""
 	global count
 	count=0
 	global Outputpriorities
