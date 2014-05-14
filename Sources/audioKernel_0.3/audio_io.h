@@ -12,7 +12,7 @@
 
 
 //reader function
-void readAddr(int32_t* dest, uint32_t source);
+void readAddr(int32_t* dest, uint32_t source, uint32_t n);
 //writer function
 void writeAddr(uint32_t dest, int32_t *source);
 //writer function for constants

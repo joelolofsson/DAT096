@@ -38,25 +38,10 @@
 #define HID_ADDR 0x80000D00
 
 //////////////////////Communication related parameters/////////
-uint8_t order[11];
-
+int32_t coms_in[26];
+uint8_t order[12];
 #define ADDR_COM 0x40f00000
-#define ADDR_PRIO 0x40f00004
-#define ADDR_BASS 0x40f00034
-#define ADDR_MIDS 0x40f00038
-#define ADDR_HIGHS 0x40f0003c
-#define ADDR_DELAY 0x40f00040
-#define ADDR_CHORUS 0x40f00044
-#define ADDR_FLANGER 0x40f00048
-#define ADDR_TREMOLO 0x40f0004c
-#define ADDR_VIBRATO 0x40f00050
-#define ADDR_WAHWAH 0x40f00054
-#define ADDR_PHASER 0x40f00058
-#define ADDR_DIST 0x40f0005c
-#define ADDR_NOISE 0x40f00064
-#define ADDR_G1 0x40f00068
-#define ADDR_G2 0x40f0006c
-#define debug_offset 400
+#define DEBUG_ADDR 0x400
 
 
 /////////////////////fnk_Array//////////////////////////
@@ -204,7 +189,7 @@ void dummyPreGain();
 
 void dummyOutGain();
 
-void extractParams();
+void extractParams(int32_t* input);
 
 void initialize();
 

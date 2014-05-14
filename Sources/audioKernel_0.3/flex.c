@@ -19,9 +19,7 @@
 #include <stdint.h>
 #include "audio_io.h"
 
-
-int32_t tmp;
-int16_t i;
+int16_t i,j;
 
 void dummyDelay(){
 	delay(samples, buffSize, feedback_d, time_d,level_d);
@@ -79,137 +77,131 @@ void dummyOutGain(){
 }
 
 
-void extractParams(){
-
-	readAddr(&tmp, ADDR_COM);
-
+void extractParams(int32_t* input){
+	//start of loop
+	i = 0;
 	//if new data has been written
-	if(tmp == 1){
+	if(input[i] == 1){
 	disable_irq(10);
 	disable_irq(12);
 	disable_irq(13);
 
-	for(i = 0; i<NO_effects-2; i++){
-		readAddr(&tmp, ADDR_PRIO+i*4);
-		order[i] = getByte(tmp,0);
+	i++;
+
+	while(i<12){
+		order[i-1] = getByte(input[i],0);
+		i++;
 	}
-
-	//extracting EQ parameters
-
+	i++;
 	//Bass
-	readAddr(&tmp, ADDR_BASS);
-	gainL = (getByte(tmp,3)-120)/10.0f;
-	fcL = (float)mergeByte(getByte(tmp,2),getByte(tmp,1)); //should be a float....
-	QL =  getByte(tmp,0)/10.0f;
-
-	//debug, to be removed
-
+	gainL = (getByte(input[i],3)-120)/10.0f;
+	fcL = (float)mergeByte(getByte(input[i],2),getByte(input[i],1)); //should be a float....
+	QL =  getByte(input[i],0)/10.0f;
+	i++;
 
 	//mids
-	readAddr(&tmp, ADDR_MIDS);
-	gainM = (getByte(tmp,3)-120)/10.0f;
-	fcM = (float)mergeByte(getByte(tmp,2),getByte(tmp,1)); //should be a float....
-	QM =  getByte(tmp,0)/10.0f;
-	//debug, to be removed
+	gainM = (getByte(input[i],3)-120)/10.0f;
+	fcM = (float)mergeByte(getByte(input[i],2),getByte(input[i],1)); //should be a float....
+	QM =  getByte(input[i],0)/10.0f;
+	i++;
 
 	//Highs
-	readAddr(&tmp, ADDR_HIGHS);
-	gainH = (getByte(tmp,3)-120)/10.0f;
-	fcH = (float)mergeByte(getByte(tmp,2),getByte(tmp,1)); //should be a float....
-	QH =  getByte(tmp,0)/10.0f;
-
+	gainH = (getByte(input[i],3)-120)/10.0f;
+	fcH = (float)mergeByte(getByte(input[i],2),getByte(input[i],1)); //should be a float....
+	QH =  getByte(input[i],0)/10.0f;
+	i++;
 
 	filterCoefficients(&lows,gainL, 44100, fcL, QL, BASS);
 	filterCoefficients(&mids, gainM, 44100, fcM, QM, PEAK);
 	filterCoefficients(&highs, gainH, 44100, fcH, QH , TREBLE);
 
+	//EQ not WORKING look at that...
 
 	//extracting delay
-	readAddr(&tmp, ADDR_DELAY);
-	time_d = getByte(tmp,2);
-	feedback_d = getByte(tmp, 1);
-	level_d = getByte(tmp, 0);
+	time_d = getByte(input[i],2);
+	feedback_d = getByte(input[i], 1);
+	level_d = getByte(input[i], 0);
+	i++;
+
+	*(volatile int*)(0x40f00400) = time_d;
+	*(volatile int*)(0x40f00400+4) = feedback_d;
+	*(volatile int*)(0x40f00400+8) = level_d;
 
 	//extracting Chorus
-	readAddr(&tmp, ADDR_CHORUS);
-	chorusInst.chorusLFO.stepSize = getByte(tmp,3) << 4;
-	chorusInst.rate = getByte(tmp,3);
-	chorusInst.depth = getByte(tmp,2);
-	chorusInst.level = getByte(tmp,1);
+	chorusInst.chorusLFO.stepSize = getByte(input[i],3) << 4;
+	chorusInst.rate = getByte(input[i],3);
+	chorusInst.depth = getByte(input[i],2);
+	chorusInst.level = getByte(input[i],1);
 	//type_c to be added ?
+	i++;
 
 	//extracting flanger
-	readAddr(&tmp, ADDR_FLANGER);
-	flangerInst.flangerLFO.stepSize = getByte(tmp,3) << 1;
-	flangerInst. depth = (getByte(tmp,2)*12) >> 8 ;
-	flangerInst.level = getByte(tmp,0);
+	flangerInst.flangerLFO.stepSize = getByte(input[i],3) << 1;
+	flangerInst. depth = (getByte(input[i],2)*12) >> 8 ;
+	flangerInst.level = getByte(input[i],0);
 	//type_f;
+	i++;
 
 	//extracting tremolo
-	readAddr(&tmp, ADDR_TREMOLO);
-	tremoloInst.tremoloLFO.stepSize = getByte(tmp,3) << 4;
-	tremoloInst.rate = getByte(tmp,3);
-	tremoloInst.depth = getByte(tmp,2);
-	tremoloInst.level = getByte(tmp,1);
+	tremoloInst.tremoloLFO.stepSize = getByte(input[i],3) << 4;
+	tremoloInst.rate = getByte(input[i],3);
+	tremoloInst.depth = getByte(input[i],2);
+	tremoloInst.level = getByte(input[i],1);
 	//type_t;
+	i++;
 
 	//extracting Vibarto
-	readAddr(&tmp, ADDR_VIBRATO);
-	vibratoInst.vibratoLFO.stepSize = getByte(tmp,2) << 4;
-	vibratoInst.depth = (getByte(tmp,1)*8) >> 8;
+	vibratoInst.vibratoLFO.stepSize = getByte(input[i],2) << 4;
+	vibratoInst.depth = (getByte(input[i],1)*8) >> 8;
 	//type_v;
+	i++;
 
-	//wahwah
-	readAddr(&tmp, ADDR_WAHWAH);
-	wahwahInst.wahLFO.stepSize = getByte(tmp,3) << 4;
-	wahwahInst.rate = getByte(tmp,3);
-	wahwahInst.depth = getByte(tmp,2);
-	wahwahInst.res = getByte(tmp,1);
-
-	//This doesnt work for some reason
-	if(getByte(tmp,0) == 1){
+	//extracting wahwah
+	wahwahInst.wahLFO.stepSize = getByte(input[i],3) << 4;
+	wahwahInst.rate = getByte(input[i],3);
+	wahwahInst.depth = getByte(input[i],2);
+	wahwahInst.res = getByte(input[i],1);
+	if(getByte(input[i],0) == 1){
 		wahwahInst.type = oscilating;
 	}
 	else
 		wahwahInst.type= automatic;
 
+	i++;
+
 	//extracting Phaser
-	readAddr(&tmp, ADDR_PHASER);
-	phaserInst.wahLFO.stepSize = getByte(tmp,2) << 4;
-	phaserInst.depth = getByte(tmp,1);
-	phaserInst.res = getByte(tmp,0);
+	phaserInst.wahLFO.stepSize = getByte(input[i],2) << 4;
+	phaserInst.depth = getByte(input[i],1);
+	phaserInst.res = getByte(input[i],0);
+	i++;
 
 	//extracting distortion
-	readAddr(&tmp, ADDR_DIST);
-	distortionInst.pre_amp = getByte(tmp,3);
-	distortionInst.master = getByte(tmp,2);
-	distortionInst.tone = getByte(tmp,1);
-	distortionInst.level = getByte(tmp,0);
-
-	readAddr(&tmp, ADDR_DIST+4);
-
-	if (tmp == 3)
+	distortionInst.pre_amp = getByte(input[i],3);
+	distortionInst.master = getByte(input[i],2);
+	distortionInst.tone = getByte(input[i],1);
+	distortionInst.level = getByte(input[i],0);
+	i++;
+	if (input[i] == 3)
 		distortionInst.type = BLUES;
-	else if(tmp == 1)
+	else if(input[i] == 1)
 		distortionInst.type = ROCK;
 	else
 		distortionInst.type = METAL;
+	i++;
 
 	//extracting noiesgate
-	 readAddr(&tmp, ADDR_NOISE);
-	 noiseGateInst.threshold = (15000 * getByte(tmp,0) >> 8);
+	 noiseGateInst.threshold = (15000 * getByte(input[i],0) >> 8);
+	 i++;
 
 	//extracting gain1
-	readAddr(&tmp, ADDR_G1);
-	gain_p = getByte(tmp, 0);
+	gain_p = getByte(input[i], 0);
+	i++;
 
 	//extracting gain2
-	readAddr(&tmp, ADDR_G2);
-	gain_o = getByte(tmp, 0);
+	gain_o = getByte(input[i], 0);
 
 
 }
-
 	//Communication serviced
 	writeAddrConst(ADDR_COM,0 );
 
@@ -228,6 +220,88 @@ void extractParams(){
 
 //Will install all effects, called from main
 void initialize(){
+
+	//all of these values will be read from memory allocated for communications these are for debug purposes
+	/////////////EQ///////////////
+	gainL = 0.00f;
+	gainM = 0.00f;
+	gainH = 0.00f;
+	fcL = 300.0f;
+	fcM = 800.0f;
+	fcH = 5000.0f;
+	QL = 0.7f;
+	QM =0.3f;
+	QH =0.7f;
+	/////////////////////////////
+
+	/////////////delay///////////
+	feedback_d = 64;
+	time_d= 80;
+	level_d = 100;
+	/////////////////////////////
+
+	///////////Chorus///////////
+	rate_c= 200;
+	depth_c = 180;
+	level_c = 255;
+	type_c = LFO_SINE;
+	delayLineSize_c = 10000;
+	////////////////////////////
+
+	/////////Flanger///////////
+	rate_f = 32;
+	depth_f = 127;
+	delay_f = 255;
+	level_f = 255;
+	type_f = LFO_SINE;
+	delayLineSize_f = 1000;
+	//////////////////////////
+
+	//////Tremolo////////////
+	rate_t = 255;
+	depth_t = 255;
+	level_t = 127;
+	type_t = LFO_SINE;
+
+	////////////////////////
+
+	//////////Vibrato///////
+	rate_v = 64;
+	depth_v = 64;
+	type_v = LFO_SINE;
+	delayLineSize_v = 200;
+	///////////////////
+
+	//////// WAH WAH ///////
+	type_w = automatic;
+	rate_w = 127;
+	depth_w = 255;
+	res_w = 127;
+	///////////////////////
+
+	/////// Phaser ////////
+	rate_p = 32;
+	depth_p = 127;
+	res_p = 255;
+	//////////////////////
+
+	/////// Distortion ///////
+	pre_amp_d = 220;
+	master_d = 150;
+	tone_d = 130;
+	level_d = 150;
+	type_d = METAL;
+	//////////////////////////
+
+	////// NoiseGate////////
+	threshold_t = 140;
+	///////////////////////
+
+	////////Gains/////////
+	gain_p = 160;
+	gain_o = 127;
+	//////////////////////
+
 
 	//Installing audioBuffer
 	samples =  audioBuffer;

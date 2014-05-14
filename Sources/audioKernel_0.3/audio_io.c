@@ -9,9 +9,13 @@
 
 
 //reader function
-void readAddr(int32_t* dest, uint32_t source){
-	*dest = *(volatile int*)(source);
-	*dest = *(volatile int*)(source);
+void readAddr(int32_t* dest, uint32_t source, uint32_t n){
+	int32_t i;
+	for(i = 0; i<n;i++){
+		dest[i] = *(volatile int*)(source+i*4);
+		dest[i] = *(volatile int*)(source+i*4);
+
+	}
 }
 
 //writer function

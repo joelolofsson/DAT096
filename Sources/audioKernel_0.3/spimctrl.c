@@ -73,7 +73,8 @@ void spiFlashWrite(uint8_t addressArray[3], uint8_t* buf, int bytes){
 
 	regs->ctrl |= SPIM_CSN;
 
-	printf("Write enable issued\n");
+
+	for(i = 0;i<1000000;i++);
 
 	/*
 	 * Write enable command has been sent, wait for the Write Enable
@@ -92,12 +93,11 @@ void spiFlashWrite(uint8_t addressArray[3], uint8_t* buf, int bytes){
 	   regs->tx = 0;
 	   while (!(regs->stat & SPIM_DONE));
 	   regs->stat = SPIM_DONE;
-	   printf("status register: 0x%x\n", regs->rx);
+
 	}  while (!(regs->rx));
 
 	regs->ctrl |= SPIM_CSN;
-
-	printf("Write enable latch bit was set\n");
+	for(i = 0;i<1000000;i++);
 
 	/* Write a page starting at address 0, don't care about overflow */
 
@@ -123,17 +123,16 @@ void spiFlashWrite(uint8_t addressArray[3], uint8_t* buf, int bytes){
 	}
 
 	regs->ctrl |= SPIM_CSN;
-
-	printf("Page written\n");
+	for (i=0;i<10000000;i++);
 
 	/* Make sure that the memory has finished its write cycle */
-	regs->ctrl &= ~SPIM_CSN;
-	do {
-	   regs->tx = RDSR;
-	   while (!(regs->stat & SPIM_DONE));
-	   regs->stat = SPIM_DONE;
-	} while (regs->rx & 1);
-
+//	regs->ctrl &= ~SPIM_CSN;
+//	do {
+//	   regs->tx = RDSR;
+//	   while (!(regs->stat & SPIM_DONE));
+//	   regs->stat = SPIM_DONE;
+//	} while (regs->rx & 1);
+//
 
 //	//----------------
 //	regs->ctrl &= ~SPIM_CSN;
@@ -283,7 +282,7 @@ void setPreset(uint8_t id, int32_t* buf){
 	uint32_t address = 0x00600000 + (0x00001000*id);
 	uint8_t addressArray[3];
 	int32_t tmp;
-	int8_t data[98];
+	uint8_t data[98];
 	int i;
 	for (i=0;i<26;i++){
 		tmp = buf[i];
@@ -297,7 +296,7 @@ void setPreset(uint8_t id, int32_t* buf){
 	addressArray[1] = (address & 0x0000ff00) >> 8;
 	addressArray[2] = (address & 0x000000ff);
 	spiFlashSectorErase(addressArray);
-	spiFlashWrite(addressArray,buf, 98);
+	spiFlashWrite(addressArray,data, 98);
 }
 void getPreset(uint8_t id,int32_t* buf){
 	uint32_t address = 0x00600000 +(0x00001000*id);
@@ -317,31 +316,7 @@ void getPreset(uint8_t id,int32_t* buf){
 		buf[i]=(tmp[(i*4)+3]);
 	}
 }
-int spi_transfer(volatile int data)
-{
-	int i;
-	struct spimctrlregs *regs;
-	regs = (struct spimctrlregs*)CORE_REGS;
-	regs->tx = data;     // Start the transmission
-	while (!(regs->stat & SPIM_DONE));
-	regs->stat = 1;
-  return (regs->rx);    // return the received byte
-}
-void newSpiRead(){
-	int i;
-	int buf[10];
-	spi_transfer(READ);
 
-	spi_transfer(0x60);
-	spi_transfer(0x10);
-	spi_transfer(0x00);
-
-	spi_transfer(0x00);
-	for (i=0;i<1;i++)
-		buf[i]=spi_transfer(0x00);
-	for (i=0;i<10;i++)
-		printf("%x\n",buf[i]);
-}
 //int main(void)
 //{
 //	int i;
