@@ -486,6 +486,7 @@ def chorusSQUARE_val():
 	ch_chosen =str(2)
 	outp(ch_chosen, 19)
 	
+	
 def chorusTRIANGLE_val():
 	triangle_val=str(ch_Triangle.get())
 	display_choice = Text(chorusFrame, height=1, width=8)
