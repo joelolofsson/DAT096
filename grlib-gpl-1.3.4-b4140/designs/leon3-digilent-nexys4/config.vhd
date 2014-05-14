@@ -139,7 +139,7 @@ package config is
   constant CFG_MIG_BANKBITS: integer := (2);
   constant CFG_MIG_HMASK : integer := 16#F00#;
 -- AHB ROM
-  constant CFG_AHBROMEN : integer := 1;
+  constant CFG_AHBROMEN : integer := 0;
   constant CFG_AHBROPIP : integer := 0;
   constant CFG_AHBRODDR : integer := 16#000#;
   constant CFG_ROMADDR : integer := 16#100#;
