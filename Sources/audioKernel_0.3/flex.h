@@ -30,7 +30,7 @@
 
 ////////////////////////audioRelated parameters//////////
 #define buffSize 128
-#define NO_effects 12
+#define NO_effects 13
 
 ////////////////////////APB-adresses///////////////////////////
 #define ADC_adr 0x80000800
@@ -42,25 +42,25 @@ uint8_t order[11];
 
 #define ADDR_COM 0x40f00000
 #define ADDR_PRIO 0x40f00004
-#define ADDR_BASS 0x40f00030
-#define ADDR_MIDS 0x40f00034
-#define ADDR_HIGHS 0x40f00038
-#define ADDR_DELAY 0x40f0003c
-#define ADDR_CHORUS 0x40f00040
-#define ADDR_FLANGER 0x40f00044
-#define ADDR_TREMOLO 0x40f00048
-#define ADDR_VIBRATO 0x40f0004c
-#define ADDR_WAHWAH 0x40f00050
-#define ADDR_PHASER 0x40f00054
-#define ADDR_DIST 0x40f00058
-#define ADDR_NOISE 0x40f00060
-#define ADDR_G1 0x40f00064
-#define ADDR_G2 0x40f00068
+#define ADDR_BASS 0x40f00034
+#define ADDR_MIDS 0x40f00038
+#define ADDR_HIGHS 0x40f0003c
+#define ADDR_DELAY 0x40f00040
+#define ADDR_CHORUS 0x40f00044
+#define ADDR_FLANGER 0x40f00048
+#define ADDR_TREMOLO 0x40f0004c
+#define ADDR_VIBRATO 0x40f00050
+#define ADDR_WAHWAH 0x40f00054
+#define ADDR_PHASER 0x40f00058
+#define ADDR_DIST 0x40f0005c
+#define ADDR_NOISE 0x40f00064
+#define ADDR_G1 0x40f00068
+#define ADDR_G2 0x40f0006c
 #define debug_offset 400
 
 
 /////////////////////fnk_Array//////////////////////////
-typedef void (*fnk_ptr_Array[NO_effects]) ();
+typedef void (*fnk_ptr_Array[NO_effects])();
 
 ////////////////////////AudioBuffer//////////////////////
 int16_t audioBuffer[buffSize];
@@ -169,7 +169,7 @@ uint8_t     master_d, pre_amp_d, level_d, tone_d,type_d;
 
 /////Noise Gate/////
 noiseGate noiseGateInst;
-uint8_t sens_t,threshold_t;
+uint8_t threshold_t;
 ///////////////////
 
 /////Pre gain////////
@@ -180,6 +180,7 @@ uint8_t gain_p;
 uint8_t gain_o;
 /////////////////////
 
+void dummyDummy();
 
 void dummyEQ();
 

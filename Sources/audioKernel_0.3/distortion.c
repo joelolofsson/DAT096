@@ -49,10 +49,10 @@ void applyDistortion(int16_t framesPerBuffer, distortion *self, int16_t *audioBu
                 applyDrive(audioBuffer, 240 * self->pre_amp >> 8);
                 applySVF(&self->lowFilter, 5000, 32768*64 >> 8, audioBuffer);
                 applyDrive(audioBuffer, 220 * self->pre_amp >> 8);
-                //applySVF(&self->midFilter, 7000, 32768*127 >> 8, audioBuffer);
+                applySVF(&self->midFilter, 7000, 32768*127 >> 8, audioBuffer);
                 
                 // Output Gain
-                //applyDrive(audioBuffer, 100 * self->master >> 8);
+                applyDrive(audioBuffer, 100 * self->master >> 8);
                 applyDrive(audioBuffer, 150 * self->master >> 8);
                 applySVF(&self->highFilter, 100, 32768*180 >> 8, audioBuffer);
                 

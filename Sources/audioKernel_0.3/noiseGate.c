@@ -7,6 +7,7 @@
  */
 
 #include "noiseGate.h"
+#include <stdio.h>
 
 /**
  * This method initializes the noise gate.
@@ -15,13 +16,12 @@
  * @param threshold correponds the the threshold value of the noise gate.
  */
 
-void initNoiseGate(noiseGate *self, uint8_t sens, uint8_t threshold){
-    self->sens = sens;
-    self->threshold = threshold;
+void initNoiseGate(noiseGate *self, uint8_t threshold){
+    self->threshold = (15000 * threshold >> 8); 
     self->noiseBufPtr = self->noiseBuffer;
     
     int16_t zero = 0;
-    cbInit(&self->circBuffer, 1024, self->noiseBufPtr);
+    cbInit(&self->circBuffer, 32, self->noiseBufPtr);
     
     unsigned int i;
     for( i=0; i<self->circBuffer.size+2; i++ )
@@ -55,21 +55,17 @@ void applyNoiseGate(int16_t framesPerBuffer, noiseGate *self, int16_t *audioBuff
         audioBuffer++;
     }
     audioBuffer = audioBuffer - framesPerBuffer;
-    uint16_t cond = 1024 * self->sens >> 8;
     
-    for (i = 0; i<cond; i++) {
+    for (i = 0; i<32; i++) {
         cbRead(&self->circBuffer, &temp, i);
         tempRes += temp;
     }
     
-    tempRes = (tempRes >> 5);
-    uint32_t cond2 = (25000 * self->threshold >> 8) * self->sens >> 7;
-
-    if(cond2 > tempRes){
+    
+    if(self->threshold > tempRes){
         for( i=0; i<(framesPerBuffer); i++ )
         {
-            *audioBuffer = *audioBuffer * tempRes >> 18;
-            audioBuffer++;
+            *audioBuffer++ = 0;
         }
         
         audioBuffer = audioBuffer - framesPerBuffer;

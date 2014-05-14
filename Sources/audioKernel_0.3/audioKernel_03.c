@@ -20,33 +20,16 @@ void adcHandler(){
 	writeAddrConst(HID_ADDR, 0);
 
 	while(i < buffSize){
-		input = (audioBuffer[i]);
-		writeAddr((DAC_adr+(i*4)), &input);
-		readAddr(&input,(ADC_adr+(i*4)));
-		audioBuffer[i] = (int16_t)input ;
+		*(volatile int*)(DAC_adr+(i*4)) = (audioBuffer[i]);
+		audioBuffer[i] = *(volatile int*)(ADC_adr+(i*4));
+		audioBuffer[i] = *(volatile int*)(ADC_adr+(i*4));
 		i++;
 	}
 
-
-	//insert function pointer array here
-	//fnk_Array[0](); //EQ
-	//fnk_Array[1](); //delay
-	//fnk_Array[2](); //Chorus
-	//fnk_Array[3](); //Flanger
-	//fnk_Array[4](); //tremolo
-	//fnk_Array[5](); //vibrato
-	//fnk_Array[6](); //Wahwah x2
-	//fnk_Array[7](); //Phaser
-	//fnk_Array[10](); //Pre gain
-	//fnk_Array[9](); //noise gate
-	//fnk_Array[8](); //Distortion
-	//fnk_Array[10](); //Pre gain
-	//fnk_Array[11](); //out gain
-
-	//The loop which allows for changing order of the effects
-	for(i=0; i < NO_effects; i++){
-		if(order[i] != 0xff)
+	for(i=0; i < NO_effects-2; i++){
+		if(order[i] != 0xff){
 			fnk_Array[order[i]]();
+		}
 	}
 
 	writeAddrConst(HID_ADDR, 1);
@@ -54,17 +37,16 @@ void adcHandler(){
 }
 
 //will extract parameters from mem and apply them
-//Should extract parameters,write to SPI, overwriting the selected currently selected preset
+//Should extract parameters,write to SPI, overwriting the selected currently selected preset -- Confirmed!
 void progHandler(){
 
-	//extractParams();
+	extractParams();
 
 }
 
-//skipp this for now, will allow the user to load selected preset
+//skipp this for now, will allow the user to load selected preset from SPI flash
 void selectHandler(){
 
-	//extractParams();
 
 }
 
@@ -72,7 +54,7 @@ int main(void){
 
 //all of these values will be read from memory allocated for communications these are for debug purposes
 /////////////EQ///////////////
-gainL = 10.00f;
+gainL = 0.00f;
 gainM = 0.00f;
 gainH = 0.00f;
 fcL = 300.0f;
@@ -83,18 +65,18 @@ QM =0.3f;
 QH =0.7f;
 /////////////////////////////
 
-/////////////delay///////////n
+/////////////delay///////////
 feedback_d = 64;
 time_d= 80;
 level_d = 100;
 /////////////////////////////
 
 ///////////Chorus///////////
-rate_c= 127;
-depth_c = 127;
-level_c = 127;
+rate_c= 200;
+depth_c = 180;
+level_c = 255;
 type_c = LFO_SINE;
-delayLineSize_c =10000;
+delayLineSize_c = 10000;
 ////////////////////////////
 
 /////////Flanger///////////
@@ -138,13 +120,12 @@ res_p = 255;
 pre_amp_d = 220;
 master_d = 150;
 tone_d = 130;
-level_d = 127;
+level_d = 150;
 type_d = METAL;
 //////////////////////////
 
 ////// NoiseGate////////
-threshold_t = 127;
-sens_t = 128;
+threshold_t = 140;
 ///////////////////////
 
 ////////Gains/////////
@@ -155,11 +136,9 @@ gain_o = 127;
 initialize();
 
 //Installing interrupt
-
 catch_interrupt(adcHandler, 10);
 catch_interrupt(progHandler,12);
 catch_interrupt(selectHandler,13);
-
 
 enable_irq(12);
 enable_irq(13);

@@ -11,20 +11,15 @@
 
 #include <stdint.h>
 #include "circularBuffer.h"
-#include <stdio.h>
 
 /**
  *This struct defines the data type of the noise gate object.
  */
 typedef struct{
     /**
-     *This parameter sets the sensitivity of the noise gate. For now, the sens value is not accesible from the users perspective due to limitied computational resources but it may be altered in furhter developement.
-     */
-    uint8_t    sens;
-    /**
      *This parameter sets the threshold of the noise gate. A large threshold will recuce more noise but may also interpret parts of the actual audio as noise.
      */
-    uint8_t threshold;
+    uint32_t threshold;
     /**
      *This is the cirular buffer which is needed in order to determine the energy of the sound.
      */
@@ -32,7 +27,7 @@ typedef struct{
     /**
      * This is the array in which the circular buffer is stored.
      */
-    int16_t noiseBuffer[1024];
+    int16_t noiseBuffer[32];
     /**
      * This is the pointer which is used when reffering to the buffer assoicated with the circular buffer object.
      */
@@ -45,7 +40,7 @@ typedef struct{
  * @param sens correspons the sensitivity of the noise gate
  * @param threshold correponds the the threshold value of the noise gate.
  */
-void initNoiseGate(noiseGate *self, uint8_t sens, uint8_t threshold);
+void initNoiseGate(noiseGate *self, uint8_t threshold);
 
 /**
  * This method applies the noise gate to an audio buffer. 

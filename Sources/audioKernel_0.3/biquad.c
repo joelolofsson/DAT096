@@ -49,8 +49,8 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
         if(tempRes >= 32767){
             tempRes = 32767;
         }
-        else if(tempRes <= -32768){
-            tempRes = -32768;
+        else if(tempRes <= -32767){
+            tempRes = -32767;
         }
 
         //Twice because of stereo

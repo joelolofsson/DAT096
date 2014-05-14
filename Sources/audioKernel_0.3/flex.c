@@ -28,10 +28,14 @@ void dummyDelay(){
 }
 
 void dummyEQ(){
+
 	filter(&lows,samples,buffSize);
 	filter(&mids, samples,buffSize);
 	filter(&highs,samples,buffSize);
+}
 
+void dummyDummy(){
+	//nothing is done here
 }
 
 void dummyChorus(){
@@ -85,7 +89,7 @@ void extractParams(){
 	disable_irq(12);
 	disable_irq(13);
 
-	for(i = 0; i<NO_effects; i++){
+	for(i = 0; i<NO_effects-2; i++){
 		readAddr(&tmp, ADDR_PRIO+i*4);
 		order[i] = getByte(tmp,0);
 	}
@@ -113,6 +117,12 @@ void extractParams(){
 	gainH = (getByte(tmp,3)-120)/10.0f;
 	fcH = (float)mergeByte(getByte(tmp,2),getByte(tmp,1)); //should be a float....
 	QH =  getByte(tmp,0)/10.0f;
+
+
+	filterCoefficients(&lows,gainL, 44100, fcL, QL, BASS);
+	filterCoefficients(&mids, gainM, 44100, fcM, QM, PEAK);
+	filterCoefficients(&highs, gainH, 44100, fcH, QH , TREBLE);
+
 
 	//extracting delay
 	readAddr(&tmp, ADDR_DELAY);
@@ -156,12 +166,12 @@ void extractParams(){
 	wahwahInst.depth = getByte(tmp,2);
 	wahwahInst.res = getByte(tmp,1);
 
-	if(getByte(tmp,0) != 0){
+	//This doesnt work for some reason
+	if(getByte(tmp,0) == 1){
 		wahwahInst.type = oscilating;
 	}
 	else
 		wahwahInst.type= automatic;
-
 
 	//extracting Phaser
 	readAddr(&tmp, ADDR_PHASER);
@@ -178,17 +188,16 @@ void extractParams(){
 
 	readAddr(&tmp, ADDR_DIST+4);
 
-	if (tmp == 1)
+	if (tmp == 3)
 		distortionInst.type = BLUES;
-	else if(tmp == 2)
+	else if(tmp == 1)
 		distortionInst.type = ROCK;
 	else
 		distortionInst.type = METAL;
 
 	//extracting noiesgate
 	 readAddr(&tmp, ADDR_NOISE);
-	 noiseGateInst.threshold = getByte(tmp,0);
-
+	 noiseGateInst.threshold = (15000 * getByte(tmp,0) >> 8);
 
 	//extracting gain1
 	readAddr(&tmp, ADDR_G1);
@@ -266,10 +275,10 @@ void initialize(){
     /////////////////////////
 
     /////Noise gate////////
-    initNoiseGate(&noiseGateInst, sens_t, threshold_t);
+    initNoiseGate(&noiseGateInst, threshold_t);
 
 	/////////Function array pointer/////////////
-    fnk_Array[0] = dummyEQ;
+    fnk_Array[0] = dummyDummy;
     fnk_Array[1] = dummyDelay;
 	fnk_Array[2] = dummyChorus;
 	fnk_Array[3] = dummyFlanger;
@@ -281,10 +290,14 @@ void initialize(){
     fnk_Array[9] = dummyNoiseGate;
     fnk_Array[10] = dummyPreGain;
     fnk_Array[11] = dummyOutGain;
+    fnk_Array[12] = dummyEQ;
 
 
-    for(i=0; i< NO_effects;i++)
+    for(i=0; i< NO_effects-2;i++){
     	order[i] = 0xff;
+    }
+
+    //order[0] = 2;//testing chorus
     //to be expanded as more effects are added
 
 	////////////////////////////////////////////
