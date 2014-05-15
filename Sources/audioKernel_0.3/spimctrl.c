@@ -73,8 +73,7 @@ void spiFlashWrite(uint8_t addressArray[3], uint8_t* buf, int bytes){
 
 	regs->ctrl |= SPIM_CSN;
 
-
-	for(i = 0;i<1000000;i++);
+	printf("Write enable issued\n");
 
 	/*
 	 * Write enable command has been sent, wait for the Write Enable
@@ -93,11 +92,12 @@ void spiFlashWrite(uint8_t addressArray[3], uint8_t* buf, int bytes){
 	   regs->tx = 0;
 	   while (!(regs->stat & SPIM_DONE));
 	   regs->stat = SPIM_DONE;
-
+	   printf("status register: 0x%x\n", regs->rx);
 	}  while (!(regs->rx));
 
 	regs->ctrl |= SPIM_CSN;
-	for(i = 0;i<1000000;i++);
+
+	printf("Write enable latch bit was set\n");
 
 	/* Write a page starting at address 0, don't care about overflow */
 
@@ -123,16 +123,17 @@ void spiFlashWrite(uint8_t addressArray[3], uint8_t* buf, int bytes){
 	}
 
 	regs->ctrl |= SPIM_CSN;
-	for (i=0;i<10000000;i++);
+
+	printf("Page written\n");
 
 	/* Make sure that the memory has finished its write cycle */
-//	regs->ctrl &= ~SPIM_CSN;
-//	do {
-//	   regs->tx = RDSR;
-//	   while (!(regs->stat & SPIM_DONE));
-//	   regs->stat = SPIM_DONE;
-//	} while (regs->rx & 1);
-//
+	regs->ctrl &= ~SPIM_CSN;
+	do {
+	   regs->tx = RDSR;
+	   while (!(regs->stat & SPIM_DONE));
+	   regs->stat = SPIM_DONE;
+	} while (regs->rx & 1);
+
 
 //	//----------------
 //	regs->ctrl &= ~SPIM_CSN;
@@ -181,8 +182,7 @@ void spiFlashSectorErase(uint8_t addressArray[3]){
 
 	regs->tx = RDSR;
 
-	while (!(regs->stat & SPIM_DONE))
-	   ;
+	while (!(regs->stat & SPIM_DONE));
 	regs->stat = SPIM_DONE;
 
 	do {
@@ -214,33 +214,31 @@ void spiFlashSectorErase(uint8_t addressArray[3]){
 
 	regs->ctrl |= SPIM_CSN;
 	//regs->tx = 0;
-	for(i=0;i<100000;i++);
 	//printf("Sector erases\n");
 
 	/* Make sure that the memory has finished its write cycle */
 	regs->ctrl &= ~SPIM_CSN;
 	do {
 	   regs->tx = RDSR;
-	   while (!(regs->stat & SPIM_DONE))
-		  ;
+	   while (!(regs->stat & SPIM_DONE));
 	   regs->stat = SPIM_DONE;
+
 	} while (regs->rx & 1);
 	regs->ctrl |= SPIM_CSN;
 
 	//----------------
-//	regs->ctrl &= ~SPIM_CSN;
-//	regs->tx = WRDI;	//disable write, dunno if this is needed
-//
-//	while (!(regs->stat & SPIM_DONE));
-//	regs->stat = SPIM_DONE;
-//
-//	regs->ctrl |= SPIM_CSN;
-//
-//	printf("Write disable issued\n");
+	regs->ctrl &= ~SPIM_CSN;
+	regs->tx = WRDI;	//disable write, dunno if this is needed
+	while (!(regs->stat & SPIM_DONE));
+	regs->stat = SPIM_DONE;
+
+	regs->ctrl |= SPIM_CSN;
+
+	printf("Write disable issued\n");
 
 	//clear registers
-	regs->tx = 0;
-	regs->rx = 0;
+	//regs->tx = 0;
+	//regs->rx = 0;
 	regs->ctrl = 0;
 }
 /**
@@ -276,14 +274,15 @@ void spiFlashRead(uint8_t addressArray[3],uint8_t* buf,int bytes){
 	}
 	regs->ctrl |= SPIM_CSN; //terminate read operation by pulling chip-select high
 	regs->ctrl = 0;
-	for(i=0;i<1000;i++);
+
 }
-void setPreset(uint8_t id, int32_t* buf){
-	uint32_t address = 0x00600000 + (0x00001000*id);
+void setPreset(uint8_t id, uint8_t* buf){
+	uint32_t address = 0x00000000 + (0x1000*id);
 	uint8_t addressArray[3];
-	int32_t tmp;
-	uint8_t data[98];
 	int i;
+	int32_t tmp;
+	int8_t data[104];
+
 	for (i=0;i<26;i++){
 		tmp = buf[i];
 		data[(i*4)+0] = (tmp & 0xff000000) >> 24;
@@ -291,59 +290,82 @@ void setPreset(uint8_t id, int32_t* buf){
 		data[(i*4)+2] = (tmp & 0x0000ff00) >> 8;
 		data[(i*4)+3] = (tmp & 0xff0000ff);
 	}
-
 	addressArray[0] = (address & 0x00ff0000) >> 16;
 	addressArray[1] = (address & 0x0000ff00) >> 8;
 	addressArray[2] = (address & 0x000000ff);
+
 	spiFlashSectorErase(addressArray);
-	spiFlashWrite(addressArray,data, 98);
+	for (i=0;i<1000000;i++);
+	spiFlashWrite(addressArray,buf, 104);
 }
 void getPreset(uint8_t id,int32_t* buf){
-	uint32_t address = 0x00600000 +(0x00001000*id);
+	uint32_t address = 0x00000000 + (0x00001000*id);
 	uint8_t addressArray[3];
-	uint8_t tmp [98];
+	uint8_t tmp [104];
 	int i;
 
 	addressArray[0] = (address & 0x00ff0000) >> 16;
 	addressArray[1] = (address & 0x0000ff00) >> 8;
 	addressArray[2] = (address & 0x000000ff);
 
-	spiFlashRead(addressArray,tmp, 98);
+	spiFlashRead(addressArray,buf, 104);
 	for(i=0;i<26;i++){
 		buf[i]=(tmp[(i*4)+0]<<24);
 		buf[i]=(tmp[(i*4)+1]<<16);
 		buf[i]=(tmp[(i*4)+2]<<8);
 		buf[i]=(tmp[(i*4)+3]);
-	}
 }
-
-//int main(void)
+//int spi_transfer(volatile int data)
 //{
 //	int i;
-//	uint8_t readValuesArray[255];
-//	uint8_t dataArray[255];
-//	uint8_t aArray[3];
-//	aArray[0] = 0x00;
-//	aArray[1] = 0x00;
-//	aArray[2] = 0x00;
-//
-//	for(i=0;i<256;i++){
-//		if (i%2==0)
-//			dataArray[i]=2;
-//		else
-//			dataArray[i]= i;
-//
-//	}
-//	//newSpiRead();
-//	//spiFlashSectorErase(aArray);
-//	//spiFlashWrite(aArray,dataArray, 255);
-//
-//	setPreset(1,dataArray);
-//	getPreset(1,readValuesArray);
-//	//spiFlashRead(aArray,readValuesArray, 198);
-//	//spiFlashRead(aArray2,&readValuesArray[1],1);
-//	for (i=0;i<98;i++)
-//		printf("%x\n",readValuesArray[i]);
-////		//*(volatile int*)(SPIADDRESS+(i*4)) = readValuesArray[i];
-////    return 0;
+//	struct spimctrlregs *regs;
+//	regs = (struct spimctrlregs*)CORE_REGS;
+//	regs->tx = data;     // Start the transmission
+//	while (!(regs->stat & SPIM_DONE));
+//	regs->stat = 1;
+//  return (regs->rx);    // return the received byte
 //}
+//void newSpiRead(){
+//	int i;
+//	int buf[10];
+//	spi_transfer(READ);
+//
+//	spi_transfer(0x60);
+//	spi_transfer(0x10);
+//	spi_transfer(0x00);
+//
+//	spi_transfer(0x00);
+//	for (i=0;i<1;i++)
+//		buf[i]=spi_transfer(0x00);
+//	for (i=0;i<10;i++)
+//		printf("%x\n",buf[i]);
+//}
+int main(void)
+{
+	int i;
+	uint8_t readValuesArray[255];
+	uint8_t dataArray[255];
+	uint8_t aArray[3];
+	aArray[0] = 0x7f;
+	aArray[1] = 0xf0;
+	aArray[2] = 0x00;
+
+	for(i=0;i<256;i++){
+			dataArray[i]=0x88;
+
+
+	}
+	//newSpiRead();
+	//spiFlashSectorErase(aArray);
+//	for (i=0;i<1000000;i++);
+//	spiFlashWrite(aArray,dataArray, 255);
+
+	setPreset(31,dataArray);
+	for (i=0;i<10000;i++);
+	getPreset(31,readValuesArray);
+	//spiFlashRead(aArray,readValuesArray, 198);
+	//spiFlashRead(aArray2,&readValuesArray[1],1);
+	for (i=0;i<104;i++)
+		*(volatile int*)(SPIADDRESS+(i*4)) = readValuesArray[i];
+//    return 0;
+}
