@@ -407,6 +407,19 @@ def eqvalsetb1(event):
 	else :
 		outp(str(eq_bassq), 2)
 		show_eqbq.config(text = str(eq_bassq))
+
+def eqvalsetp1(event):
+	eq_peakq = float(entry_eqpq.get())
+	entry_eqpq.delete(0, END)
+	if eq_peakq < 0.1 :
+		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
+		
+	elif eq_peakq > 6 :
+		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
+		
+	else : 
+		outp(str(eq_peakq), 6)
+		show_eqpq.config(text = str(eq_peakq))
 	
 def eqvalsett1(event):
 	eq_trebbq = float(entry_eqtq.get())
@@ -418,21 +431,8 @@ def eqvalsett1(event):
 		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")
 	
 	else : 
-		outp(str(eq_trebbq), 6)
+		outp(str(eq_trebbq), 10)
 		show_eqtq.config(text = str(eq_trebbq))
-	
-def eqvalsetp1(event):
-	eq_peakq = float(entry_eqpq.get())
-	entry_eqpq.delete(0, END)
-	if eq_peakq < 0.1 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
-		
-	elif eq_peakq > 6 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
-		
-	else : 
-		outp(str(eq_peakq), 10)
-		show_eqpq.config(text = str(eq_peakq))
 		
 def EQ():
 	eqFrame.grid()
