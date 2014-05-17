@@ -35,7 +35,7 @@ Data handling
 Graphic User Interface
 ----------------------
 	
-.. automodule:: GUI9
+.. automodule:: GUI10
     :members:
     :undoc-members:
     :show-inheritance:
