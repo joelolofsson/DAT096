@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Fri May 09 17:06:41 2014">
+<application name="pn" timeStamp="Fri May 16 22:52:12 2014">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="F1D454C332D7438D8B55A6724664557E" type="project"/>
-<property name="ProjectIteration" value="36" type="project"/>
+<property name="ProjectIteration" value="37" type="project"/>
 <property name="ProjectFile" value="C:/CHALMERS/DAT096/softcore/buttontest/buttontest/buttontest.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2014-05-08T13:46:08" type="project"/>
 </section>
@@ -24,7 +24,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2014-05-08T13:46:08" type="design"/>
 <property name="PROP_intWbtProjectID" value="F1D454C332D7438D8B55A6724664557E" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="36" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="37" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
