@@ -1,0 +1,40 @@
+grmon2> info sys
+  cpu0      Aeroflex Gaisler  LEON3 SPARC V8 Processor    
+            AHB Master 0
+  ahbuart0  Aeroflex Gaisler  AHB Debug UART    
+            AHB Master 1
+            APB: 80000700 - 80000800
+            Baudrate 115200, AHB frequency 50.00 MHz
+  greth0    Aeroflex Gaisler  GR Ethernet MAC    
+            AHB Master 2
+            APB: 80000F00 - 80001000
+            IRQ: 12
+            edcl ip 10.42.0.88, buffer 2 kbyte
+  spim0     Aeroflex Gaisler  SPI Memory Controller    
+            AHB: FFF00200 - FFF00300
+            AHB: 00000000 - 00800000
+            SPI memory device read command: 0x0b
+  apbmst0   Aeroflex Gaisler  AHB/APB Bridge    
+            AHB: 80000000 - 80100000
+  dsu0      Aeroflex Gaisler  LEON3 Debug Support Unit    
+            AHB: 90000000 - A0000000
+            AHB trace: 128 lines, 32-bit bus
+            CPU0:  win 8, hwbp 2, itrace 128, V8 mul/div, lddel 1
+                   stack pointer 0x40f00000
+                   icache 2 * 8 kB, 16 B/line lru
+                   dcache 2 * 4 kB, 16 B/line lru
+  mctrl0    European Space Agency  LEON2 Memory Controller    
+            AHB: 40000000 - 80000000
+            APB: 80000000 - 80000100
+            16-bit static ram: 1 * 16384 kbyte @ 0x40000000
+  irqmp0    Aeroflex Gaisler  Multi-processor Interrupt Ctrl.    
+            APB: 80000200 - 80000300
+  gptimer0  Aeroflex Gaisler  Modular Timer Unit    
+            APB: 80000300 - 80000400
+            IRQ: 8
+            8-bit scalar, 2 * 32-bit timers, divisor 50
+  adev9     Unknown vendor  Unknown device    
+            APB: 80000800 - 80000C00
+  adev10    Unknown vendor  Unknown device    
+            APB: 80000D00 - 80000E00
+

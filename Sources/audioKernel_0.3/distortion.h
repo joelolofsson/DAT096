@@ -53,7 +53,10 @@ typedef struct{
     /**
      * These state variable filters are used after each stage of distortion in the effect.
      */
-    SVF         highFilter, midFilter, lowFilter, toneFilter, toneControl;
+    
+    SVF toneControl, metal;
+    
+    biquad low,mid,high, pre; // For the amp simulator
     /**
      * Specifies the type of distortion-model that will be used in the effect.
      */

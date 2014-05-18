@@ -49,8 +49,9 @@ void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
             for( i=0; i< (framesPerBuffer); i++ )
             {
                 getLFOValue(&tempLFO, &self->wahLFO);
+                tempLFO = 0;
                 tempOut = *audioBuffer;
-                tempFreqValue = (3000 + (self->depth*(tempLFO * 500 >> 15)>>8));
+                tempFreqValue = (2000 + (self->depth*(tempLFO * 500 >> 15)>>8));
                 
                 
                 if (tempFreqValue >= 4095) {

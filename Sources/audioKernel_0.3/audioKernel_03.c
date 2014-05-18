@@ -12,8 +12,7 @@
 #include "audio_io.h"
 #include "spimctrl.h"
 
-int32_t input;
-int32_t i;
+int16_t i;
 
 void adcHandler(){
 	i = 0;
@@ -40,11 +39,11 @@ void adcHandler(){
 //will extract parameters from mem and apply them
 //Should extract parameters,write to SPI, overwriting the selected currently selected preset -- Confirmed!
 void progHandler(){
+	disable_irq(10);
 	readAddr(coms_in, ADDR_COM, 26);
 	extractParams(coms_in);
 	//setPreset(0,&coms_in[1]);
-
-
+	enable_irq(10);
 }
 
 //skipp this for now, will allow the user to load selected preset from SPI flash
@@ -52,7 +51,7 @@ void selectHandler(){
 
 
 	//readSPI
-	extractParams(coms_in);
+	//extractParams(coms_in);
 
 
 }

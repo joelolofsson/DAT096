@@ -21,9 +21,13 @@ extern const int16_t logScale[];
  */
 typedef struct {
     /**
-     * This is the SVF that is connected to the phaser.
+     * This is the fist SVF that is connected to the phaser.
      */
     SVF wahFilter;
+    /**
+     * This is the second SVF that is connected to the phaser.
+     */
+    SVF phaseFilter;
     /**
      * This is the LFO object that modulates the frequency of the SVF.
      */

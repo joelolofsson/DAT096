@@ -99,17 +99,29 @@ void extractParams(int32_t* input){
 	QL =  getByte(input[i],0)/10.0f;
 	i++;
 
+	*(volatile float*)(0x40f00400) = gainL;
+	*(volatile float*)(0x40f00400+4) = fcL ;
+	*(volatile float*)(0x40f00400+8) = QL;
+
 	//mids
 	gainM = (getByte(input[i],3)-120)/10.0f;
 	fcM = (float)mergeByte(getByte(input[i],2),getByte(input[i],1)); //should be a float....
 	QM =  getByte(input[i],0)/10.0f;
 	i++;
 
+	*(volatile float*)(0x40f00400+12) = gainM;
+		*(volatile float*)(0x40f00400+16) = fcM ;
+		*(volatile float*)(0x40f00400+20) = QM;
+
 	//Highs
 	gainH = (getByte(input[i],3)-120)/10.0f;
 	fcH = (float)mergeByte(getByte(input[i],2),getByte(input[i],1)); //should be a float....
 	QH =  getByte(input[i],0)/10.0f;
 	i++;
+
+	*(volatile float*)(0x40f00400+24) = gainH;
+		*(volatile float*)(0x40f00400+28) = fcH ;
+		*(volatile float*)(0x40f00400+32) = QH;
 
 	filterCoefficients(&lows,gainL, 44100, fcL, QL, BASS);
 	filterCoefficients(&mids, gainM, 44100, fcM, QM, PEAK);
@@ -123,9 +135,7 @@ void extractParams(int32_t* input){
 	level_d = getByte(input[i], 0);
 	i++;
 
-	*(volatile int*)(0x40f00400) = time_d;
-	*(volatile int*)(0x40f00400+4) = feedback_d;
-	*(volatile int*)(0x40f00400+8) = level_d;
+
 
 	//extracting Chorus
 	chorusInst.chorusLFO.stepSize = getByte(input[i],3) << 4;

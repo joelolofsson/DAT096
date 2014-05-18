@@ -20,6 +20,7 @@ void initPhaser(phaser *self, uint8_t rate, uint8_t depth, uint8_t res){
     self->res = res;
     self->depth = depth;
     initSVF(&self->wahFilter, NOTCH);
+    initSVF(&self->phaseFilter, NOTCH);
     initLFO(rate << 3, LFO_SINE, &self->wahLFO);
 }
 /** This method applies the effect to an audio buffer.
@@ -34,7 +35,8 @@ void applyPhaser(int16_t framesPerBuffer, phaser *self, int16_t *audioBuffer){
     for( i=0; i< (framesPerBuffer); i++ )
     {
         getLFOValue(&tempLFO, &self->wahLFO);
-        applySVF(&self->wahFilter, logScale[  2000 + (self->depth * (tempLFO * 500 >> 14) >> 8)], 32768*self->res >> 8, audioBuffer);
+        applySVF(&self->wahFilter, logScale[  2500 + (self->depth * (tempLFO * 500 >> 14) >> 8)], 32768*self->res >> 8, audioBuffer);
+        applySVF(&self->phaseFilter, logScale[  2000 + (self->depth * (tempLFO * 500 >> 14) >> 8)], 32768*self->res >> 8, audioBuffer);
         audioBuffer++;
     }
     audioBuffer = audioBuffer - framesPerBuffer;

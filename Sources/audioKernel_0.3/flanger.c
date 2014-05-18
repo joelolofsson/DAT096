@@ -46,7 +46,6 @@ void initFlanger(flanger *self, uint8_t rate, uint8_t depth, uint8_t delay, uint
  *@param *self is the reference to the flanger object which is used to process the samples.
  *@param *audioBuffer contains the pointer to the audio buffer that is to be processed.
  */
-
 void applyFlanger(int16_t framesPerBuffer, flanger *self, int16_t *audioBuffer){
     int i;
     int16_t temp;
@@ -56,7 +55,7 @@ void applyFlanger(int16_t framesPerBuffer, flanger *self, int16_t *audioBuffer){
     
     for( i=0; i<framesPerBuffer; i++ )
     {
-        temp = *audioBuffer + (self->feedback*240 >> 8);
+        temp = *audioBuffer + (self->feedback*220 >> 8);
         cbWrite(&self->delayLine, &temp);
         getLFOValue(&LFOtempValue, &self->flangerLFO);
         
@@ -72,9 +71,17 @@ void applyFlanger(int16_t framesPerBuffer, flanger *self, int16_t *audioBuffer){
         _X0 = X0 >> 13;
         frac = X0 - (_X0 << 13);
         temp = Y0 + ((frac * (Y1 - Y0)) >> 13);
+        self->feedback = temp;
         temp = (*audioBuffer >> 1) + (temp >> 1);
         tempOut = ((*audioBuffer*(255-self->level) >> 8) + ((temp*self->level) >> 8));
-        self->feedback = tempOut;
+        
+        if (tempOut >= 32767) {
+            tempOut = 32767;
+        }
+        else if (tempOut <= -32767){
+            tempOut = -32767;
+        }
+        
         *audioBuffer++ = tempOut;
     }
     audioBuffer = audioBuffer - framesPerBuffer;

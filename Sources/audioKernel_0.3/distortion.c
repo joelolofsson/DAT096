@@ -6,6 +6,10 @@
  */
 
 #include "distortion.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+#define or_p(p,n) p |= n
 
 /**
  * This method initializes a distortion object and the filters connected to it.
@@ -17,6 +21,7 @@
  * @param distType specifies which kind of distortion the effect will be.
  */
 
+
 void initDistortion(distortion *self, uint8_t master, uint8_t pre_amp, uint8_t level, uint8_t tone, distType distType){
     self->pre_amp = pre_amp;
     self->master = master;
@@ -24,11 +29,74 @@ void initDistortion(distortion *self, uint8_t master, uint8_t pre_amp, uint8_t l
     self->tone = tone;
     self->type = distType;
     
-    initSVF(&self->toneFilter, HP);
-    initSVF(&self->lowFilter, LP);
-    initSVF(&self->midFilter, LP);
-    initSVF(&self->highFilter, HP);
+    self->low.x_n_1 = 0;
+    self->low.x_n_2 = 0;
+    self->low.y_n_1 = 0;
+    self->low.y_n_2 = 0;
+    
+    self->pre.x_n_1 = 0;
+    self->pre.x_n_2 = 0;
+    self->pre.y_n_1 = 0;
+    self->pre.y_n_2 = 0;
+    
+    self->high.x_n_1 = 0;
+    self->high.x_n_2 = 0;
+    self->high.y_n_1 = 0;
+    self->high.y_n_2 = 0;
+    
+    self->mid.x_n_1 = 0;
+    self->mid.x_n_2 = 0;
+    self->mid.y_n_1 = 0;
+    self->mid.y_n_2 = 0;
+    
+    self->low.a1 = -65281;
+    self->low.a2 = 32519;
+    self->low.b0 = 32642;
+    self->low.b1 = -65284;
+    self->low.b2 = 32642;
+    
+    
+    self->mid.a1 = -55356;//-58088;
+    self->mid.a2 = 22826;//25444;
+    self->mid.b0 = 29982;//30716;
+    self->mid.b1 = -55356;//-58088;
+    self->mid.b2 = 25612;//27496;
+    
+    self->mid.a1 = -58088;
+    self->mid.a2 = 25444;
+    self->mid.b0 = 30716;
+    self->mid.b1 = -58088;
+    self->mid.b2 = 27496;
+    
+    //self->high.a1 = -44726;
+    //self->high.a2 = 26330;
+    //self->high.b0 = 3593;
+    //self->high.b1 = 7186;
+    //self->high.b2 = 3593;
+    
+    self->pre.a1 = -64150;
+    self->pre.a2 = 31410;;
+    self->pre.b0 = 32082;
+    self->pre.b1 = -64164;
+    self->pre.b2 = 32082;
+    
+    
+    self->high.a1 = -23778;//-44726;
+    self->high.a2 = 24149;//26330;
+    self->high.b0 = 8285;//3593;
+    self->high.b1 = 16569;//7186;
+    self->high.b2 = 8285;//3593;
+    
+    
+    self->high.level = 255;
+    self->low.level = 255;
+    self->mid.level = 255;
+    self->pre.level = 255;
+    
     initSVF(&self->toneControl, LP);
+    initSVF(&self->metal, HP);
+    
+    
 }
 
 /** This method applies the effect to an audio buffer.
@@ -38,44 +106,34 @@ void initDistortion(distortion *self, uint8_t master, uint8_t pre_amp, uint8_t l
  */
 void applyDistortion(int16_t framesPerBuffer, distortion *self, int16_t *audioBuffer){
     int i;
-    
     switch (self->type) {
         case METAL:
+            //filter(&self->pre, audioBuffer, framesPerBuffer);
             for( i=0; i<(framesPerBuffer); i++ )
             {
                 *audioBuffer = *audioBuffer * self->level >>7;
-                // Pre Gain
-                applySVF(&self->toneFilter, 500, 32768*250 >> 8, audioBuffer);
-                applyDrive(audioBuffer, 240 * self->pre_amp >> 8);
-                applySVF(&self->lowFilter, 5000, 32768*64 >> 8, audioBuffer);
                 applyDrive(audioBuffer, 220 * self->pre_amp >> 8);
-                applySVF(&self->midFilter, 7000, 32768*127 >> 8, audioBuffer);
+                applySVF(&self->metal, 500, 32768*255 >> 8, audioBuffer);
+                applyDrive(audioBuffer, 240 * self->pre_amp >> 8);
                 
-                // Output Gain
-                applyDrive(audioBuffer, 100 * self->master >> 8);
-                applyDrive(audioBuffer, 150 * self->master >> 8);
-                applySVF(&self->highFilter, 100, 32768*180 >> 8, audioBuffer);
+                applyDrive(audioBuffer, 200 * self->master >> 8);
                 
-                applySVF(&self->toneControl, 10000*self->tone >> 8, 32768*127>>8, audioBuffer);
+                applySVF(&self->toneControl, 8000*self->tone >> 8, 32768*255>>8, audioBuffer);
+                
                 audioBuffer++;
                 
             }
             break;
             
         case ROCK:
+            filter(&self->pre, audioBuffer, framesPerBuffer);
             for( i=0; i<(framesPerBuffer); i++ )
             {
                 *audioBuffer = *audioBuffer * self->level >>7;
-                // Pre Gain
-                applySVF(&self->toneFilter, 600, 32768*250 >> 8, audioBuffer);
-                applyDrive(audioBuffer, 240 * self->pre_amp >> 8);
-                applySVF(&self->lowFilter, 5000, 32768*250 >> 8, audioBuffer);
-                
-                // Output Gain
-                applyDrive(audioBuffer, 240 * self->master >> 8);
-                applySVF(&self->highFilter, 100, 32768*128 >> 8, audioBuffer);
-                
-                applySVF(&self->toneControl, 10000*self->tone >> 8, 32768*32>>8, audioBuffer);
+                applyDrive(audioBuffer, 230 * self->pre_amp >> 8);
+                applyDrive(audioBuffer, 180 * self->master >> 8);
+                applySVF(&self->toneControl, 8000*self->tone >> 8, 32768*255>>8, audioBuffer);
+
                 audioBuffer++;
                 
             }
@@ -85,15 +143,11 @@ void applyDistortion(int16_t framesPerBuffer, distortion *self, int16_t *audioBu
             for( i=0; i<(framesPerBuffer); i++ )
             {
                 *audioBuffer = *audioBuffer * self->level >>7;
-                // Pre Gain
-                applySVF(&self->toneFilter, 500, 32768*250 >> 8, audioBuffer);
-                applyDrive(audioBuffer, 150 * self->pre_amp >> 8);
-                applySVF(&self->lowFilter, 5000, 32768*127 >> 8, audioBuffer);
                 
-                // Output Gain
-                applyDrive(audioBuffer, 240 * self->master >> 8);
-                applySVF(&self->highFilter, 100, 32768*128 >> 8, audioBuffer);
-                applySVF(&self->toneControl, 10000*self->tone >> 8, 32768*32>>8, audioBuffer);
+                applyDrive(audioBuffer, 240 * self->pre_amp >> 8);
+                
+                applySVF(&self->toneControl, 8000*self->tone >> 8, 32768*255>>8, audioBuffer);
+                
                 audioBuffer++;
             }
             break;
@@ -102,7 +156,13 @@ void applyDistortion(int16_t framesPerBuffer, distortion *self, int16_t *audioBu
             break;
     }
     
+    
     audioBuffer = audioBuffer - framesPerBuffer;
+    
+    filter(&self->low, audioBuffer, framesPerBuffer);
+    filter(&self->mid, audioBuffer, framesPerBuffer);
+    filter(&self->high, audioBuffer, framesPerBuffer);
+
 }
 
 /**
