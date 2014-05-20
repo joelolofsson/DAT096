@@ -1227,7 +1227,7 @@ def labellistset(): #<==========================================================
 def checkClicked(number):
 	"""This function takes is called whenever a priority item is clicked. It takes the number of the priority item that called it as 
 	an input and places the appropriate effect on the priority list frame.
-	:param name: Number that coresponds to a priority checkbox clicked.
+	:param number: Coresponds to a priority checkbox clicked.
 	"""
 	global count
 	global Outputpriorities

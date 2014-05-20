@@ -11,7 +11,6 @@ import io
 import os
 
 import DataStrLeon2
-Debug=1
 master = Tk()
 v = IntVar()
 master.wm_title(u"SoundBox") # the u is so that it wont read the text as ASCII signs.
@@ -79,12 +78,22 @@ prioFrame.grid(row=1, column=2, padx=10, pady=2)
 ############Frame for setting prio of effects###############
 setprioFrame = Frame(master, width=600, height=100)
 setprioFrame.grid(row=2, column=0, padx=10, pady=2)
+
+############ Filler frame so that the window wont resize ###############
+fillerFrame = Frame(master, width=1, height=700, bg="white")
+fillerFrame.grid(row=1, column=4, padx=10, pady=2)
 ####################################################################################
 
 
 
 ####################################################################################
 ############################# Declarations #########################################
+
+######## Variable used for debugging #######
+"""
+If debug is set to 1 certain variables & lists will be printed for easier debugging of the code.
+"""
+Debug=1
 
 ######## EQ ########
 """
@@ -97,25 +106,18 @@ peakGain = DoubleVar() #for band 3
 bassCutoff = DoubleVar() #for cutoff frequency (Bass)
 trebbleCutoff = DoubleVar() #for cutoff frequency (Trebble)
 peakCutoff = DoubleVar() #for cutoff frequency (Peak)
+bassQ = DoubleVar()
+trebbleQ = DoubleVar()
+peakQ = DoubleVar()
 
 q = DoubleVar()
-
-entry_eqbq = Entry(eqFrame, width=6)
-show_eqbq = Label(eqFrame)
-
-entry_eqtq = Entry(eqFrame, width=6)
-show_eqtq = Label(eqFrame)
-
-entry_eqpq = Entry(eqFrame, width=6)
-show_eqpq = Label(eqFrame)
 
 ######### Delay ########
 """
 All the global variables required for the Delay are declared here.
 """
-entry_delayt = Entry(delayFrame, width=6)
-show_delayt = Label(delayFrame)
 
+delayTime = DoubleVar()
 delayFeedback = DoubleVar()
 delayDryWet = DoubleVar()
 
@@ -294,12 +296,12 @@ strout2 = ["0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","#","0","
 def hello():       ########## REMOVE ??????
     print "hello!"
     
-"""
-Creates a File menu, Edit menu, and Help menu.
-The File menu has the ability to save the current output string to a text file and reload it. The Edit and Help menu calls the hello
-function and prints hello.
-"""
+
 def makeMenu():
+	"""Creates a File menu, Edit menu, and Help menu.
+	The File menu has the ability to save the current output string to a text file and reload it. The Edit and Help menu calls the hello
+	function and prints hello.
+	"""
 	menubar = Menu(master)
 
 	# create a pulldown menu, and add it to the menu bar
@@ -325,31 +327,32 @@ def makeMenu():
 	master.config(menu=menubar)
 
 ############### Output #################
-"""
-This function is called from every function where an effect value can be set and places the chosen values in the correct place.
-"""
+
 def outp(strprint, position):
+	"""This function is called from every function where an effect value can be set and places the chosen values in the correct place.
+	:param strprint: Places the values in the string.
+	:param position: Places the values in the chosen position (in the string).
+	"""
 	global x
 	x=''
 	strout2[position]= strprint
 	x = ','.join(strout2)
-#	print x
 
 ########### Save File
-"""
-Saves the current string to a file.
-"""
+
 def saveFile():
+	"""Saves the current string to a file.
+	"""
 	fo = open("foo.txt", "wb")
 	x = ','.join(strout2)
 	fo.write(x);
 	fo.close()
 
 ######## Open File
-"""
-Displays the last saved string.	
-"""	
+
 def openFile():
+	"""Displays the last saved string.	
+	"""	
 	fo = open("foo.txt", "r")
 	str = fo.read();
 	print "Read String is : ", str
@@ -360,10 +363,8 @@ def openFile():
 ################################### Effects ########################################
 
 ################### Equalizer ######################
-"""
-The set_XX functions is called when the PROGRAM button is pressed and calls in turn he output function where it stores the chosen 
-values for the gains and cutoff frequencies in the correct place. 
 
+"""
 The eqvalsetXX functions is used to get the value written in the entry slots for the Q. When the "Enter" keyboard is pressed,
 the written value is displayed next to the entry slot. An error message is received if a value that is outside the allowed interval
 is used.
@@ -372,69 +373,72 @@ The EQ function makes sure that the only thing displayed on the screen is the se
 i.e sliders, entries.
 """	
 def set_bv():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Bass gain.
+	"""
 	eq_bassg = str(bassGain.get())
 	outp(eq_bassg,0)
 	
 def set_bc():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Bass cutoff.
+	"""
 	eq_bassc = str(bassCutoff.get())
 	outp(eq_bassc,1)
 	
+def set_bq():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Bass Q.
+	"""
+	eq_bassq = str(bassQ.get())
+	outp(str(eq_bassq), 2)
+	
 def set_pv():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Peak gain.
+	"""
 	eq_peakg = str(peakGain.get())
 	outp(eq_peakg, 4)
 	
 def set_pc():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Peak cutoff.
+	"""
 	eq_peakc = str(peakCutoff.get())
 	outp(eq_peakc,5)
 
+def set_pq():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Peak Q.
+	"""
+	eq_peakq = str(peakQ.get())
+	outp(str(eq_peakq), 6)	
+	
 def set_tv():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Trebble gain.
+	"""
 	eq_trebbg = str(trebbleGain.get())
 	outp(eq_trebbg, 8)
 
 def set_tc():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Trebble cutoff.
+	"""
 	eq_trebbc = str(trebbleCutoff.get())
 	outp(eq_trebbc, 9)
 	
-def eqvalsetb1(event):
-	eq_bassq = float(entry_eqbq.get())
-	entry_eqbq.delete(0, END)
-	if eq_bassq < 0.1 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")
-	
-	elif eq_bassq > 6 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")
-		
-	else :
-		outp(str(eq_bassq), 2)
-		show_eqbq.config(text = str(eq_bassq))
-
-def eqvalsetp1(event):
-	eq_peakq = float(entry_eqpq.get())
-	entry_eqpq.delete(0, END)
-	if eq_peakq < 0.1 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
-		
-	elif eq_peakq > 6 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
-		
-	else : 
-		outp(str(eq_peakq), 6)
-		show_eqpq.config(text = str(eq_peakq))
-	
-def eqvalsett1(event):
-	eq_trebbq = float(entry_eqtq.get())
-	entry_eqtq.delete(0, END)
-	if eq_trebbq < 0.1 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")
-	
-	elif eq_trebbq > 6 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")
-	
-	else : 
-		outp(str(eq_trebbq), 10)
-		show_eqtq.config(text = str(eq_trebbq))
-		
+def set_tq():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Trebble Q.
+	"""
+	eq_trebbq = str(trebbleQ.get())
+	outp(str(eq_trebbq), 10)	
+			
 def EQ():
+	"""This function makes sure that the only frame displayed is the Equalizer frame. The sliders and the entry slots placement in
+	the frame is set.
+	"""
 	eqFrame.grid()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -454,70 +458,73 @@ def EQ():
 	label = Label(eqFrame, padx =10)
 	label.grid(row=1, column=0)
 	
-	eq_cutoffscale1 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 100, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = bassCutoff)
+	eq_cutoffscale1 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 100,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = bassCutoff)
 	eq_cutoffscale1.grid(row = 2, column=5, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=1, column=5)
+	
+	eq_qscale1 = Scale(eqFrame, length = 100, from_= 0.0, to = 6, resolution = 0.1,label = "Q: ", orient = HORIZONTAL, variable = bassQ)
+	eq_qscale1.grid(row = 2, column=6, padx=10, pady=20)
+	label = Label(eqFrame, padx =10)
+	label.grid(row=2, column=5)
 	
 	eq_gainscale2 = Scale(eqFrame, length = 200, from_= -12, to = 12, resolution = 0.1,label = "Peak (gain): ", orient = HORIZONTAL, variable = peakGain)
 	eq_gainscale2.grid(row=4, column=0, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=3, column=0)
 
-	eq_cutoffscale2 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 1000, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = peakCutoff)
+	eq_cutoffscale2 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 100,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = peakCutoff)
 	eq_cutoffscale2.grid(row = 4, column=5, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=3, column=5)
+	
+	eq_qscale2 = Scale(eqFrame, length = 100, from_= 0.0, to = 6, resolution = 0.1,label = "Q: ", orient = HORIZONTAL, variable = peakQ)
+	eq_qscale2.grid(row = 4, column=6, padx=10, pady=20)
+	label = Label(eqFrame, padx =10)
+	label.grid(row=4, column=5)
 	
 	eq_gainscale3 = Scale(eqFrame, length = 200, from_= -12, to = 12, resolution = 0.1, label = "Trebble (gain): ", orient = HORIZONTAL, variable = trebbleGain)
 	eq_gainscale3.grid(row=6, column=0, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=5, column=0)
 
-	eq_cutoffscale3 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 1000, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = trebbleCutoff)
+	eq_cutoffscale3 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 100,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = trebbleCutoff)
 	eq_cutoffscale3.grid(row = 6, column=5, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=5, column=5)
 	
-	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=3, column=5)
-	entry_eqbq.bind("<Return>", eqvalsetb1)
-	entry_eqbq.grid(row=3, column=6)
-	show_eqbq.grid(row=3, column=7)
-
-	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=7, column=5)
-	entry_eqpq.bind("<Return>", eqvalsetp1)
-	entry_eqpq.grid(row=5, column=6)
-	show_eqpq.grid(row=5, column=7)
-	
-	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=5, column=5)
-	entry_eqtq.bind("<Return>", eqvalsett1)
-	entry_eqtq.grid(row=7, column=6)
-	show_eqtq.grid(row=7, column=7)
-	
+	eq_qscale3 = Scale(eqFrame, length = 100, from_= 0.0, to = 6, resolution = 0.1, label = "Q: ", orient = HORIZONTAL, variable = trebbleQ)
+	eq_qscale3.grid(row = 6, column=6, padx=10, pady=20)
+	label = Label(eqFrame, padx =10)
+	label.grid(row=6, column=5)
 	
 ######################  Delay  ###########################
-def delayvalset(event):
-	delay_time = float(entry_delayt.get())
-	entry_delayt.delete(0, END)		
-	if delay_time < 0 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 1")
-		
-	elif delay_time> 1 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 1")
-		
-	else :
-		outp(str(delay_time), 12)
-		show_delayt.config(text = str(delay_time))		
 
+def set_delayTime():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Delay feedback.
+	"""
+	delay_time = str(delayTime.get())
+	outp(str(delay_time), 12)
+	
 def set_delayFeedback():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Delay feedback.
+	"""
 	delay_feedback = str(delayFeedback.get())
 	outp(delay_feedback,13)
 	
 def set_delayDryWet():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Delay Dry/Wet.
+	"""
 	delay_drywet = str(delayDryWet.get())
 	outp(delay_drywet, 14)
 	
 def Delay():
+	""" This function makes sure that the only frame displayed is the Delay frame. The sliders and the entry slots placement in
+	the frame is set.
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid()
 	chorusFrame.grid_forget()
@@ -532,15 +539,15 @@ def Delay():
 	
 	Label(delayFrame, text= "Delay ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	
-	Label(delayFrame, text="Time \n (0-1s):").grid(row=1, column=0)
-	entry_delayt.bind("<Return>", delayvalset)
-	entry_delayt.grid(row=1, column=2)
-	show_delayt.grid(row=1, column=3)
-	
+	de_time = Scale(delayFrame, length=200, from_=0.0, to= 100.0, resolution = 0.1, label = "Delay", orient = HORIZONTAL, variable=delayTime)
+	de_time.grid(row=1, column=0)
+#	label = Label(delayFrame, padx=10)
+#	label.grid(row=2, column=0)	
+		
 	de_feedbackscale = Scale(delayFrame, length=200, from_=0.0, to= 100.0, resolution = 0.1, label = "Feedback", orient = HORIZONTAL, variable=delayFeedback)
 	de_feedbackscale.grid(row=3, column=0)
-	label = Label(delayFrame, padx=10)
-	label.grid(row=2, column=0)
+#	label = Label(delayFrame, padx=10)
+#	label.grid(row=2, column=0)
 
 	de_drywetscale = Scale(delayFrame, length=200, from_=0.0, to= 100.0, resolution = 0.1, label = "Dry/Wet", orient = HORIZONTAL, variable=delayDryWet)
 	de_drywetscale.grid(row=4, column=0)
@@ -550,18 +557,30 @@ def Delay():
 #################### Chorus ###################
 
 def set_chorusRate():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Chorus rate.
+	"""
 	chorus_rate = str(chorusRate.get())
 	outp(chorus_rate,16)
 
 def set_chorusDepth():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Chorus depths
+	"""
 	chorus_depth = str(chorusDepth.get())
 	outp(chorus_depth,17)
 
 def	set_chorusLevel():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Chorus level.
+	"""
 	chorus_level = str(chorusLevel.get())
 	outp(chorus_level,18)
 	
 def chorusSINE_val():
+	"""Makes the Sine type selectable and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	sine_val= str(ch_Sine.get())
 	display_choice = Text(chorusFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -570,6 +589,9 @@ def chorusSINE_val():
 	outp(ch_chosen, 19)
 	
 def chorusSQUARE_val():
+	"""Makes the Square type selectable for the Chorus and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	square_val = str(ch_Square.get())
 	display_choice = Text(chorusFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -579,6 +601,9 @@ def chorusSQUARE_val():
 	
 	
 def chorusTRIANGLE_val():
+	"""Makes the Triangle type selectable for the Chorus and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	triangle_val=str(ch_Triangle.get())
 	display_choice = Text(chorusFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -587,6 +612,9 @@ def chorusTRIANGLE_val():
 	outp(ch_chosen, 19)
 
 def chorusSAWTOOTH_val():
+	"""Makes the Sawtooth type selectable for the Chorus and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	sawtooth_val=str(ch_Sawtooth.get())
 	display_choice = Text(chorusFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -595,6 +623,9 @@ def chorusSAWTOOTH_val():
 	outp(ch_chosen, 19)
 	
 def chorusRANDOM_val():
+	"""Makes the Random type selectable for the Chorus and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	random_val=str(ch_Random.get())
 	display_choice = Text(chorusFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -603,6 +634,9 @@ def chorusRANDOM_val():
 	outp(ch_chosen, 19)
 	
 def Chorus():
+	""" This function makes sure that the only frame displayed is the Chorus frame. The sliders and Type menus placement 
+	in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid()
@@ -648,22 +682,36 @@ def Chorus():
 ############# Flanger #############
 
 def set_flangerRate():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Flanger rate.
+	"""
 	flanger_rate = str(flangerRate.get())
 	outp(flanger_rate, 21)
 
 def set_flangerDepth():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Flanger depth.
+	"""
 	flanger_depth = str(flangerDepth.get())
 	outp(flanger_depth, 22)
 	
 def set_flangerDelay():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Flanger delay.
+	"""
 	flanger_delay = str(flangerDelay.get())
 	outp(flanger_delay, 23)
 	
 def set_flangerLevel():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Flanger level.
+	"""
 	flanger_level = str(flangerLevel.get())
 	outp(flanger_level,24)
 
 def Flanger():
+	""" This function makes sure that the only frame displayed is the Flanger frame. The sliders placement in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -701,18 +749,30 @@ def Flanger():
 ######### Tremolo ########
 
 def set_tremoloRate():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Tremolo rate.
+	"""
 	tremolo_rate = str(tremoloRate.get())
 	outp(tremolo_rate,26)
 
 def set_tremoloDepth():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Tremolo depth.
+	"""
 	tremolo_depth = str(tremoloDepth.get())
 	outp(tremolo_depth,27)
 
 def	set_tremoloLevel():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Tremolo level.
+	"""
 	tremolo_level = str(tremoloLevel.get())
 	outp(tremolo_level,28)
 
 def tremoloSINE_val():
+	"""Makes the Sine type selectable for the Tremolo and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	sine_val= str(tr_Sine.get())
 	display_choice = Text(tremoloFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -721,6 +781,9 @@ def tremoloSINE_val():
 	outp(tr_chosen, 29)
 	
 def tremoloSQUARE_val():
+	"""Makes the Square type selectable for the Tremolo and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	square_val = str(tr_Square.get())
 	display_choice = Text(tremoloFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -729,6 +792,9 @@ def tremoloSQUARE_val():
 	outp(tr_chosen, 29)
 	
 def tremoloTRIANGLE_val():
+	"""Makes the Triangle type selectable for the Tremolo and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	triangle_val=str(tr_Triangle.get())
 	display_choice = Text(tremoloFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -737,6 +803,9 @@ def tremoloTRIANGLE_val():
 	outp(tr_chosen, 29)
 
 def tremoloSAWTOOTH_val():
+	"""Makes the Sawtooth type selectable for the Tremolo and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	sawtooth_val=str(tr_Sawtooth.get())
 	display_choice = Text(tremoloFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -745,6 +814,9 @@ def tremoloSAWTOOTH_val():
 	outp(tr_chosen, 29)
 	
 def tremoloRANDOM_val():
+	"""Makes the Random type selectable for the Tremolo and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	random_val=str(tr_Random.get())
 	display_choice = Text(tremoloFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -753,6 +825,9 @@ def tremoloRANDOM_val():
 	outp(tr_chosen, 29)
 
 def Tremolo():
+	""" This function makes sure that the only frame displayed is the Tremolo frame. The sliders and the menu type placement 
+	in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -798,14 +873,23 @@ def Tremolo():
 ######### Vibrato ########
 
 def set_vibratoRate():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Vibrato rate.
+	"""
 	vibrato_rate = str(vibratoRate.get())
 	outp(vibrato_rate, 31)
 
 def set_vibratoDepth():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Vibrato depth.
+	"""
 	vibrato_depth = str(vibratoDepth.get())
 	outp(vibrato_depth,32)
 	
 def vibratoSINE_val():
+	"""Makes the Sine type selectable for the Vibrato and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	sine_val= str(vi_Sine.get())
 	display_choice = Text(vibratoFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -814,6 +898,9 @@ def vibratoSINE_val():
 	outp(vi_chosen, 33)
 	
 def vibratoSQUARE_val():
+	"""Makes the Square type selectable for the Vibrato and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	square_val = str(vi_Square.get())
 	display_choice = Text(vibratoFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -822,6 +909,9 @@ def vibratoSQUARE_val():
 	outp(vi_chosen, 33)
 	
 def vibratoTRIANGLE_val():
+	"""Makes the Triangle type selectable for the Vibrato and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	triangle_val=str(vi_Triangle.get())
 	display_choice = Text(vibratoFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -830,6 +920,9 @@ def vibratoTRIANGLE_val():
 	outp(vi_chosen, 33)
 
 def vibratoSAWTOOTH_val():
+	"""Makes the Sawtooth type selectable for the Vibrato and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	sawtooth_val=str(vi_Sawtooth.get())
 	display_choice = Text(vibratoFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -838,6 +931,9 @@ def vibratoSAWTOOTH_val():
 	outp(vi_chosen, 33)
 	
 def vibratoRANDOM_val():
+	"""Makes the Random type selectable for the Vibrato and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	random_val=str(vi_Random.get())
 	display_choice = Text(vibratoFrame, height=1, width=8)
 	display_choice.grid(row=7, column=0)
@@ -846,6 +942,9 @@ def vibratoRANDOM_val():
 	outp(vi_chosen, 33)
 	
 def Vibrato():
+	""" This function makes sure that the only frame displayed is the Vibrato frame. The sliders and the menu type placement 
+	in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -888,18 +987,30 @@ def Vibrato():
 ##############  Wah Wah ###################
 
 def set_wahwahRate():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Wah Wah rate.
+	"""
 	wahwah_rate = str(wahwahRate.get())
 	outp(wahwah_rate,35)
 
 def set_wahwahDepth():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Wah Wah depth.
+	"""
 	wahwah_depth = str(wahwahDepth.get())
 	outp(wahwah_depth, 36)
 
 def	set_wahwahRes():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Wah Wah res.
+	"""
 	wahwah_res = str(wahwahRes.get())
 	outp(wahwah_res, 37)
 	
 def MOD_val():
+	"""Makes the Modulating type selectable for the Wah Wah and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	mod_val = str(wa_Modulating.get())
 	display_choice = Text(wahwahFrame, height=1, width=10)
 	display_choice.grid(row=7, column=0)
@@ -908,6 +1019,9 @@ def MOD_val():
 	outp(wa_chosen, 38)
 	
 def AUTO_val():
+	"""Makes the Auto type selectable for the Wah Wah and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	auto_val=str(wa_Auto.get())
 	display_choice = Text(wahwahFrame, height=1, width=10)
 	display_choice.grid(row=7, column=0)
@@ -917,6 +1031,9 @@ def AUTO_val():
 
 
 def WahWah():
+	""" This function makes sure that the only frame displayed is the Wah Wah frame. The sliders and the menu type placement 
+	in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -959,18 +1076,30 @@ def WahWah():
 ######### Phaser ########
 
 def set_phaserRate():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Phaser rate.
+	"""
 	phaser_rate = str(phaserRate.get())
 	outp(phaser_rate,40)
 
 def set_phaserDepth():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Phaser depth.
+	"""
 	phaser_depth = str(phaserDepth.get())
 	outp(phaser_depth,41)
 
 def	set_phaserRes():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Phaser res.
+	"""
 	phaser_res = str(phaserRes.get())
 	outp(phaser_res,42)
 
 def Phaser():
+	""" This function makes sure that the only frame displayed is the Phaser frame. The sliders placement 
+	in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -1002,22 +1131,37 @@ def Phaser():
 	
 ######### Distortion ########
 def set_distortionPregain():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Distortion pregain.
+	"""
 	distortion_pregain = str(distortionPregain.get())
 	outp(distortion_pregain, 44)
 
 def set_distortionMastergain():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Distortion master gain.
+	"""
 	distortion_mastergain = str(distortionMastergain.get())
 	outp(distortion_mastergain,45)
 
 def	set_distortionTone():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Distortion tone.
+	"""
 	distortion_tone = str(distortionTone.get())
 	outp(distortion_tone,46)
 	
 def	set_distortionLevel():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Distortion level.
+	"""
 	distortion_level = str(distortionLevel.get())
 	outp(distortion_level,47)
 
 def ROCK_val():
+	"""Makes the Rock type selectable for the Distortion and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	rock_val= str(di_Rock.get())
 	chosen =str(1)
 	display_choice = Text(distortionFrame, height=1, width=8)
@@ -1026,7 +1170,10 @@ def ROCK_val():
 	outp(chosen, 48)
 	
 def METAL_val():
-	square_val = str(di_Metal.get())
+	"""Makes the Metal type selectable for the Distortion and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
+	metal_val = str(di_Metal.get())
 	di_chosen =str(2)
 	display_choice = Text(distortionFrame, height=1, width=8)
 	display_choice.grid(row=9, column=0)
@@ -1034,6 +1181,9 @@ def METAL_val():
 	outp(di_chosen, 48)
 	
 def BLUES_val():
+	"""Makes the Blues type selectable for the Distortion and displays it if selected. Calls the outp function and saves the selected 
+	type on the string.
+	"""
 	triangle_val=str(di_Blues.get())
 	display_choice = Text(distortionFrame, height=1, width=8)
 	display_choice.grid(row=9, column=0)
@@ -1042,6 +1192,9 @@ def BLUES_val():
 	outp(di_chosen, 48)
 
 def Distortion():
+	""" This function makes sure that the only frame displayed is the Distortion frame. The sliders and menu types placement 
+	in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -1089,10 +1242,15 @@ def Distortion():
 
 ######### Noise Gate #######
 def	set_noisegateThreshold():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Noisegate threshold.
+	"""
 	noisegate_threshold = str(noisegateThreshold.get())
 	outp(noisegate_threshold,50)
 	
 def NoiseGate():
+	""" This function makes sure that the only frame displayed is the Noisegate frame. The sliders placement in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -1114,14 +1272,22 @@ def NoiseGate():
 
 ######### Gains #######
 def	set_gain1():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Pregain.
+	"""
 	gain_1 = str(Gain1.get())
 	outp(gain_1,52)
 	
 def	set_gain2():
+	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
+	value for the Outgain.
+	"""
 	gain_2 = str(Gain2.get())
 	outp(gain_2,54)
 	
 def Gains():
+	""" This function makes sure that the only frame displayed is the Gains frame. The sliders placement in the frame is set. 
+	"""
 	eqFrame.grid_forget()
 	delayFrame.grid_forget()
 	chorusFrame.grid_forget()
@@ -1149,7 +1315,8 @@ def Gains():
 ####################################################################################	
 ################################# Priorities #######################################
 def Create_labels():
-	
+	""" This function creates the labels where the priority order will be stored.
+	"""
 	prio1 = Label (prioFrame, textvariable=priotextvar1)
 	prio1.grid(row=1, column=0)
 	prio2 = Label (prioFrame, textvariable=priotextvar2)
@@ -1185,7 +1352,10 @@ def resetbtn():
 	count=0
 	vardict={1:prio_var1,2:prio_var2,3:prio_var3,4:prio_var4,5:prio_var5,6:prio_var6,7:prio_var7,8:prio_var8,9:prio_var9,10:prio_var10,11:prio_var11,12:prio_var12}
 	Outputpriorities=['0','0','0','0','0','0','0','0','0','0','0','0',]
-	print Outputpriorities
+	
+	if Debug == 1:
+		print Outputpriorities
+	
 	for n in range(1,13):
 		x=vardict[n]
 		x.set(0)
@@ -1193,6 +1363,8 @@ def resetbtn():
 	return
 
 def set_labels():
+	"""Places the variables in the correct order.
+	"""
 	priotextvar1.set(Label_List[0])
 	priotextvar2.set(Label_List[1])
 	priotextvar3.set(Label_List[2])
@@ -1213,7 +1385,10 @@ def labellistset(): #<==========================================================
 	global Label_List
 	global Outputpriorities
 	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'PreGain',11:'OutGain',12:'EQ',0:' '}
-	print "Outputpriorities Internal: ", Outputpriorities 
+	
+	if Debug == 1:
+		print "Outputpriorities Internal: ", Outputpriorities 
+	
 	newlist=['']*12
 	for n in range(len(Outputpriorities)):
 		if Outputpriorities[n]=='0' or Outputpriorities[n]==0:
@@ -1236,12 +1411,14 @@ def checkClicked(number):
 	
 	vardict={1:prio_var1,2:prio_var2,3:prio_var3,4:prio_var4,5:prio_var5,6:prio_var6,7:prio_var7,8:prio_var8,9:prio_var9,10:prio_var10,11:prio_var11,12:prio_var12}
 
-	# value = vardict[number]
-	print 'number', number
+	if Debug == 1:
+		print 'number', number
+	
 	checkValue = number
-	print checkValue
-        
-        
+	
+	if Debug == 1:
+		print checkValue
+
 	if checkValue==0 or checkValue=='0' or checkValue>20:
                 resetValue=Outputpriorities[checkValue-21]		
                 for ind in range(len(Outputpriorities)):
@@ -1256,9 +1433,12 @@ def checkClicked(number):
 		count= count+1
 		order=str(count)
 		Outputpriorities[checkValue-1]=str(order)
-		print dictionary[int(checkValue)]
-	labellistset() #<=======================================================================
+		if Debug == 1:
+			print dictionary[int(checkValue)]
+	labellistset()
 	return
+	
+	
 	
 def SetPriority():
 	"""This function handles the creation of the 12 priority checkboxes.
@@ -1292,13 +1472,20 @@ def SetPriority():
 
 ######### Output #######
 def update_send():
+	"""
+	When the Program button is clicked, this function stores the values for all the sliders and outputs them.
+	"""
 	global x
 	set_bv()
 	set_bc()
+	set_bq()
 	set_tv()
 	set_tc()
+	set_tq()
 	set_pv()
 	set_pc()
+	set_pq()
+	set_delayTime()
 	set_delayFeedback()
 	set_delayDryWet()
 	set_chorusRate()
@@ -1330,14 +1517,18 @@ def update_send():
 	if Debug == 1:
 		print OUTPUTSTRING
 	
-	DataStrLeon2.main(OUTPUTSTRING)
+#	DataStrLeon2.main(OUTPUTSTRING)
 	
 def exitGUI():
+	"""When the EXIT button is clicked the master frame is closed, thus closing the entire GUI.
+	"""
 	master.quit()
 ####################################################################################
 ########################## Radiobuttons for effects ################################
 
 def radiobuttons():
+	""" Creates a radiobutton for every effect, and assigns the variable v a value depending on which effect is selected.
+	"""
 	eq = Radiobutton(effectsFrame, text="EQ", variable=v, value=1,anchor=W, command = EQ).grid(row=0,column=0,sticky = W)
 	delay = Radiobutton(effectsFrame, text="Delay", variable=v, value=2, anchor=W, command = Delay).grid(row=0,column=1,sticky = W)
 	chorus = Radiobutton(effectsFrame, text="Chorus", variable=v, value=3,anchor=W, command = Chorus).grid(row=0,column=2, sticky = W)
@@ -1351,6 +1542,8 @@ def radiobuttons():
 	gains = Radiobutton(effectsFrame, text="Gains", variable=v, value=11,anchor=W, command = Gains).grid(row=1,column=4, sticky = W)
 	
 def main():
+	""" Depending on the value of v, a function of an effect is called and can be modified.
+	"""
 	if v==1:
 		EQ()
 	elif v==2:
@@ -1373,7 +1566,10 @@ def main():
 		NoiseGate()
 	elif v==11:
 		Gains
-
+		
+""" The PROGRAM button makes sure that all the sliders value are updated as well as the string is outputted. The EXIT
+button closes the GUI.
+"""
 Button(master, text='PROGRAM', command=update_send).grid(row=0, column=3, padx=10, pady=20)
 Button(master, text='EXIT', command=exitGUI).grid(row=1, column=3, padx=10, pady=20)
 
