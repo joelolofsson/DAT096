@@ -18,7 +18,8 @@ master.wm_title(u"SoundBox") # the u is so that it wont read the text as ASCII s
 
 ####################################################################################
 ############################# Frames ###############################################
-
+""" Here the setup of the frames is created. The frames sizes and placement is decided.
+"""
 #############Frame for selecting settings for specified effect############
 effectsFrame = Frame(master, width=600, height=200)
 effectsFrame.grid(row=0, column=0, padx=10, pady=2)
@@ -86,6 +87,10 @@ setprioFrame.grid(row=2, column=0, padx=10, pady=2)
 ############################# Declarations #########################################
 
 ######## EQ ########
+"""
+All the global variables required for the Equalizer are declared here.
+"""
+
 bassGain = DoubleVar() #for band 1
 trebbleGain = DoubleVar() #for band 2
 peakGain = DoubleVar() #for band 3
@@ -105,6 +110,9 @@ entry_eqpq = Entry(eqFrame, width=6)
 show_eqpq = Label(eqFrame)
 
 ######### Delay ########
+"""
+All the global variables required for the Delay are declared here.
+"""
 entry_delayt = Entry(delayFrame, width=6)
 show_delayt = Label(delayFrame)
 
@@ -112,6 +120,9 @@ delayFeedback = DoubleVar()
 delayDryWet = DoubleVar()
 
 ######### Chorus ########
+"""
+All the global variables required for the Chorus are declared here.
+"""
 chorusRate = DoubleVar()
 chorusDepth = DoubleVar()
 chorusLevel = DoubleVar()
@@ -125,12 +136,19 @@ ch_Sawtooth = IntVar()
 ch_Random = IntVar()
 
 ######### Flanger ########
+"""
+All the global variables required for the Flanger are declared here.
+"""
+
 flangerRate = DoubleVar()
 flangerDepth = DoubleVar()
 flangerDelay = DoubleVar()
 flangerLevel = DoubleVar()
 
 ######### Tremolo ########
+"""
+All the global variables required for the Tremolo are declared here.
+"""
 tremoloRate = DoubleVar()
 tremoloDepth = DoubleVar()
 tremoloLevel = DoubleVar()
@@ -144,6 +162,9 @@ tr_Sawtooth = IntVar()
 tr_Random = IntVar()
 
 ######### Vibrato ########
+"""
+All the global variables required for the Vibrato are declared here.
+"""
 vibratoRate = DoubleVar()
 vibratoDepth = DoubleVar()
 
@@ -155,7 +176,10 @@ vi_Triangle = IntVar()
 vi_Sawtooth = IntVar()
 vi_Random = IntVar()
 
-######### Modulating Wah Wah ########
+######### Wah Wah ########
+"""
+All the global variables required for the Wah Wah are declared here.
+"""
 wahwahRate = DoubleVar()
 wahwahDepth = DoubleVar()
 wahwahRes = DoubleVar()
@@ -166,11 +190,17 @@ wa_Modulating  = IntVar()
 wa_Auto = IntVar()
 
 ######### Phaser ########
+"""
+All the global variables required for the Phaser are declared here.
+"""
 phaserRate = DoubleVar()
 phaserDepth = DoubleVar()
 phaserRes = DoubleVar()
 
 ######### Distortion ########
+"""
+All the global variables required for the Distortion are declared here.
+"""
 distortionPregain = DoubleVar()
 distortionMastergain = DoubleVar()
 distortionTone = DoubleVar()
@@ -183,13 +213,22 @@ di_Metal = IntVar()
 di_Blues = IntVar()
 
 ######### Noise Gate ########
+"""
+The global variable required for the noisegate is declared here.
+"""
 noisegateThreshold = DoubleVar()
 
 ######### Gains ########
+"""
+The global variables required for the gains are declared here.
+"""
 Gain1 = DoubleVar()
 Gain2 = DoubleVar()
 
 ######## Priority ######
+"""
+The global variables required for setting up the priority list are declared here.
+"""
 
 prio_var1=IntVar()
 prio_var2=IntVar()
@@ -223,6 +262,26 @@ global Label_List
 Label_List= [' ']*12
 
 ######### Output #######
+"""
+This is the strings that are outputted from the GUI. The PriorityList keeps track of the order of the effects. The strout2 string 
+keeps track of all the values set for the different effects. The '#' is used to separate the effects from each other.
+The order of the effects is the following: 
+
+Bass gain, Bass Cutoff frequency, Bass Q and then a '#'.
+Peak gain, Peak Cutoff frequency, Peak Q and then a '#'.
+Trebble gain, Trebble	Cutoff frequency, Trebble Q and then a '#'.
+Delay time, Delay feedback, Delay dry/wet and then a '#'.
+Chorus rate, Chorus depth, Chorus level, Chorus type and then a '#'.
+Flanger	rate, Flanger depth, Flanger delay, Flanger level and then a '#'.
+Tremolo	Rate, Tremolo depth, Tremolo level, Tremolo type and then a '#'.
+Vibrato rate, Vibrato depth, Vibrato type and then a '#'.
+Wah Wah	rate, Wah Wah depth, Wah Wah res, Wah Wah type and then a '#'.
+Phaser rate, Phaser depth, Phaser res and then a '#'.
+Distortion pre gain, Distortion master gain, Distortion tone, Distortion level, Distortion type and then a '#'.
+Noise Gate threshold and then a '#'.
+Gain 1 and then a '#'.
+Gain 2 and then a '#'.
+"""
 PriorityList = ['0','0','0','0','0','0','0','0','0','0','0','0','#',]
 strout2 = ["0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","0","#",
 		   "0","0","0","0","#","0","0","0","0","#","0","0","0","#","0","0","0","0","#","0","0","0","#",
@@ -232,9 +291,14 @@ strout2 = ["0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","#","0","
 ####################################################################################
 ############################# Settings & output ####################################
 
-def hello():
+def hello():       ########## REMOVE ??????
     print "hello!"
     
+"""
+Creates a File menu, Edit menu, and Help menu.
+The File menu has the ability to save the current output string to a text file and reload it. The Edit and Help menu calls the hello
+function and prints hello.
+"""
 def makeMenu():
 	menubar = Menu(master)
 
@@ -261,6 +325,9 @@ def makeMenu():
 	master.config(menu=menubar)
 
 ############### Output #################
+"""
+This function is called from every function where an effect value can be set and places the chosen values in the correct place.
+"""
 def outp(strprint, position):
 	global x
 	x=''
@@ -269,13 +336,19 @@ def outp(strprint, position):
 #	print x
 
 ########### Save File
+"""
+Saves the current string to a file.
+"""
 def saveFile():
 	fo = open("foo.txt", "wb")
 	x = ','.join(strout2)
 	fo.write(x);
 	fo.close()
-	
+
 ######## Open File
+"""
+Displays the last saved string.	
+"""	
 def openFile():
 	fo = open("foo.txt", "r")
 	str = fo.read();
@@ -286,7 +359,18 @@ def openFile():
 ####################################################################################
 ################################### Effects ########################################
 
-################### Equalizer ######################	
+################### Equalizer ######################
+"""
+The set_XX functions is called when the PROGRAM button is pressed and calls in turn he output function where it stores the chosen 
+values for the gains and cutoff frequencies in the correct place. 
+
+The eqvalsetXX functions is used to get the value written in the entry slots for the Q. When the "Enter" keyboard is pressed,
+the written value is displayed next to the entry slot. An error message is received if a value that is outside the allowed interval
+is used.
+
+The EQ function makes sure that the only thing displayed on the screen is the settings related to the Equalizer
+i.e sliders, entries.
+"""	
 def set_bv():
 	eq_bassg = str(bassGain.get())
 	outp(eq_bassg,0)
@@ -295,21 +379,21 @@ def set_bc():
 	eq_bassc = str(bassCutoff.get())
 	outp(eq_bassc,1)
 	
-def set_tv():
-	eq_trebbg = str(trebbleGain.get())
-	outp(eq_trebbg, 4)
-
-def set_tc():
-	eq_trebbc = str(trebbleCutoff.get())
-	outp(eq_trebbc, 5)
-	
 def set_pv():
 	eq_peakg = str(peakGain.get())
-	outp(eq_peakg, 8)
+	outp(eq_peakg, 4)
 	
 def set_pc():
 	eq_peakc = str(peakCutoff.get())
-	outp(eq_peakc,9)
+	outp(eq_peakc,5)
+
+def set_tv():
+	eq_trebbg = str(trebbleGain.get())
+	outp(eq_trebbg, 8)
+
+def set_tc():
+	eq_trebbc = str(trebbleCutoff.get())
+	outp(eq_trebbc, 9)
 	
 def eqvalsetb1(event):
 	eq_bassq = float(entry_eqbq.get())
@@ -323,6 +407,19 @@ def eqvalsetb1(event):
 	else :
 		outp(str(eq_bassq), 2)
 		show_eqbq.config(text = str(eq_bassq))
+
+def eqvalsetp1(event):
+	eq_peakq = float(entry_eqpq.get())
+	entry_eqpq.delete(0, END)
+	if eq_peakq < 0.1 :
+		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
+		
+	elif eq_peakq > 6 :
+		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
+		
+	else : 
+		outp(str(eq_peakq), 6)
+		show_eqpq.config(text = str(eq_peakq))
 	
 def eqvalsett1(event):
 	eq_trebbq = float(entry_eqtq.get())
@@ -334,21 +431,8 @@ def eqvalsett1(event):
 		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")
 	
 	else : 
-		outp(str(eq_trebbq), 6)
+		outp(str(eq_trebbq), 10)
 		show_eqtq.config(text = str(eq_trebbq))
-	
-def eqvalsetp1(event):
-	eq_peakq = float(entry_eqpq.get())
-	entry_eqpq.delete(0, END)
-	if eq_peakq < 0.1 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
-		
-	elif eq_peakq > 6 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0.1 and 6")	
-		
-	else : 
-		outp(str(eq_peakq), 10)
-		show_eqpq.config(text = str(eq_peakq))
 		
 def EQ():
 	eqFrame.grid()
@@ -370,45 +454,46 @@ def EQ():
 	label = Label(eqFrame, padx =10)
 	label.grid(row=1, column=0)
 	
-	eq_cutoffscale1 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 1000, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = bassCutoff)
+	eq_cutoffscale1 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 100, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = bassCutoff)
 	eq_cutoffscale1.grid(row = 2, column=5, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=1, column=5)
 	
-	eq_gainscale2 = Scale(eqFrame, length = 200, from_= -12, to = 12, resolution = 0.1, label = "Trebble (gain): ", orient = HORIZONTAL, variable = trebbleGain)
+	eq_gainscale2 = Scale(eqFrame, length = 200, from_= -12, to = 12, resolution = 0.1,label = "Peak (gain): ", orient = HORIZONTAL, variable = peakGain)
 	eq_gainscale2.grid(row=4, column=0, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=3, column=0)
 
-	eq_cutoffscale2 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 1000, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = trebbleCutoff)
+	eq_cutoffscale2 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 1000, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = peakCutoff)
 	eq_cutoffscale2.grid(row = 4, column=5, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=3, column=5)
 	
-	eq_gainscale3 = Scale(eqFrame, length = 200, from_= -12, to = 12, resolution = 0.1,label = "Peak (gain): ", orient = HORIZONTAL, variable = peakGain)
+	eq_gainscale3 = Scale(eqFrame, length = 200, from_= -12, to = 12, resolution = 0.1, label = "Trebble (gain): ", orient = HORIZONTAL, variable = trebbleGain)
 	eq_gainscale3.grid(row=6, column=0, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=5, column=0)
 
-	eq_cutoffscale3 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 1000, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = peakCutoff)
+	eq_cutoffscale3 = Scale(eqFrame, length = 300, from_= 0.0, to = 15000.0, resolution = 1000, tickinterval = 5000,label = "Cut-off frequency : ", orient = HORIZONTAL, variable = trebbleCutoff)
 	eq_cutoffscale3.grid(row = 6, column=5, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
-	label.grid(row=6, column=5)
+	label.grid(row=5, column=5)
 	
 	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=3, column=5)
 	entry_eqbq.bind("<Return>", eqvalsetb1)
 	entry_eqbq.grid(row=3, column=6)
 	show_eqbq.grid(row=3, column=7)
 
-	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=5, column=5)
-	entry_eqtq.bind("<Return>", eqvalsett1)
-	entry_eqtq.grid(row=5, column=6)
-	show_eqtq.grid(row=5, column=7)
-	
 	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=7, column=5)
 	entry_eqpq.bind("<Return>", eqvalsetp1)
-	entry_eqpq.grid(row=7, column=6)
-	show_eqpq.grid(row=7, column=7)
+	entry_eqpq.grid(row=5, column=6)
+	show_eqpq.grid(row=5, column=7)
+	
+	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=5, column=5)
+	entry_eqtq.bind("<Return>", eqvalsett1)
+	entry_eqtq.grid(row=7, column=6)
+	show_eqtq.grid(row=7, column=7)
+	
 	
 ######################  Delay  ###########################
 def delayvalset(event):
@@ -1242,12 +1327,13 @@ def update_send():
 	set_gain1()
 	set_gain2()
 	OUTPUTSTRING = ','.join(Outputpriorities) +',#,'+ x
-	
 	if Debug == 1:
 		print OUTPUTSTRING
 	
-	DataStrLeon2.main(OUTPUTSTRING)
+#	DataStrLeon2.main(OUTPUTSTRING)
 	
+def exitGUI():
+	master.quit()
 ####################################################################################
 ########################## Radiobuttons for effects ################################
 
@@ -1289,6 +1375,8 @@ def main():
 		Gains
 
 Button(master, text='PROGRAM', command=update_send).grid(row=0, column=3, padx=10, pady=20)
+Button(master, text='EXIT', command=exitGUI).grid(row=1, column=3, padx=10, pady=20)
+
 	
 main()
 radiobuttons()
