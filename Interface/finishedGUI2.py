@@ -497,7 +497,6 @@ def EQ():
 	eq_qscale3.grid(row = 6, column=6, padx=10, pady=20)
 	label = Label(eqFrame, padx =10)
 	label.grid(row=6, column=5)
-	
 ######################  Delay  ###########################
 
 def set_delayTime():

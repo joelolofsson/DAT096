@@ -1,37 +1,10 @@
 from Tkinter import *
-#import serial
+from main import*
+import serial
 import tkMessageBox
 
-master = Tk()
-v = IntVar()
-master.wm_title(u"SoundBox") # the u is so that it wont read the text as ASCII signs.
+##################### Declarations ########################
 
-#############Frame for selecting settings for specified effect############
-effectsFrame = Frame(master, width=600, height=100, bg = "green")
-effectsFrame.grid(row=0, column=0, padx=10, pady=2)
-
-#############Frame for showing effect settings################
-interFrame = Frame(master, width=500, height=600, bg = "red")
-interFrame.grid(row=1, column=0, padx=10, pady=2)
-
-############Frame for showing current prio ordering##########
-prioFrame = Frame(master, width=100, height=600, bg = "grey")
-prioFrame.grid(row=1, column=2, padx=10, pady=2)
-
-############Frame for setting prio of effects###############
-setprioFrame = Frame(master, width=600, height=100, bg = "blue")
-setprioFrame.grid(row=2, column=0, padx=10, pady=2)
-
-strout = ['0.0','0.0','0.0','#','0.0','0.0','0.0','#','0.0','0.0','0.0',"#",'0.0','0.0','0.0']
-
-
-######## Turn On/Off effects ########
-effect1 = IntVar()
-#Checkbutton(interFrame, text="Equalizer", variable=effect1, onvalue = 1).grid(row=0, column = 4,  sticky=W, padx = 20)
-effect2 = IntVar()
-#Checkbutton(interFrame, text="Delay", variable=effect2).grid(row=0, column = 5, sticky=W, padx = 20)
-
-## EQ ##
 var1 = DoubleVar() #for band 1
 var2 = DoubleVar() #for band 2
 var3 = DoubleVar() #for band 3
@@ -46,22 +19,6 @@ entry_eqbq = Entry(master, width=6)
 entry_eqtq = Entry(master, width=6)
 
 entry_eqpq = Entry(master, width=6)
-
-
-## Delay ##
-entry_delayt = Entry(master, width=6)
-
-entry_delayf = Entry(master, width=6)
-
-entry_delaydw = Entry(master, width=6)
-
-######## Output              ########
-def outp(strprint, position):
-	x = ''
-	strout[position]= strprint
-	x = ','.join(strout)
-#	print strout
-	print x
 
 ######## Equalizer           ########	
 def set_bv():
@@ -148,7 +105,6 @@ def eqvalsetp1(event):
 		
 	else : 
 		outp(str(eq_peakq), 8)
-	
 def EQ():
 	Label(interFrame, text= "Equalizer ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
 	eq_effect1 = effect1.get ################## SHOULD BE UNRESPONSIVE #####################
@@ -216,74 +172,5 @@ def EQ():
 		separator = Frame(height=2, width=350, bd=5, bg = "black" )
 		separator.grid(row = 8, pady = 5)
 		
-		##########  Delay  ##############
-def delayvalset(event):
-	delay_time = float(entry_delayt.get())
-	entry_delayt.delete(0, END)		
-	if delay_time < 0 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 1")
-		
-	elif delay_time> 1 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 1")
-		
-	else :
-		outp(str(delay_time), 9)
-	
-def delayvalset1(event):
-	delay_feedb = float(entry_delayf.get())
-	entry_delayf.delete(0, END)
-	if delay_feedb < 0 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 100")
-	
-	elif delay_feedb > 100 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 100")
-	
-	else : 
-		outp(str(delay_feedb), 10)
-	
-def delayvalset2(event):
-	delay_dw = float(entry_delaydw.get())
-	entry_delaydw.delete(0, END)
-	if delay_dw < 0 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 100")
-	
-	elif delay_dw > 100 :
-		tkMessageBox.showinfo( "Error", "The value must be between 0 and 100")
-	
-	else :
-		outp(str(delay_dw), 11)
-	
-def Delay():
-	Label(interFrame, text= "Delay ", font = ('TkDefaultFont',24)).grid(row=9, column=0, padx=10, pady=2)
-	
-	Label(interFrame, text="Time \n (0-1s):").grid(row=10, column=0)
-	entry_delayt.bind("<Return>", delayvalset)
-	entry_delayt.grid(row=10, column=1)
-	
-	Label(interFrame, text="Feedback \n(0-100 %):").grid(row=11, column=0)
-	entry_delayf.bind("<Return>", delayvalset1)
-	entry_delayf.grid(row=11, column=1)
 
-	Label(interFrame, text="Dry/Wet \n(0-100 %):").grid(row=12, column=0)
-	entry_delaydw.bind("<Return>", delayvalset2)
-	entry_delaydw.grid(row=12, column=1)
-	
-
-##Radiobuttons for the effects
-def radiobuttons():
-	eq = Radiobutton(effectsFrame, text="EQ", variable=v, value=2,anchor=W, command = EQ).grid(row=0,column=1,sticky = W)
-	delay = Radiobutton(effectsFrame, text="Delay", variable=v, value=1, command = Delay).grid(row=0,column=0,sticky = W)
-	tremolo = Radiobutton(effectsFrame, text="tremolo", variable=v, value=3,anchor=W).grid(row=1,column=0, sticky = W)
-	dist = Radiobutton(effectsFrame, text="distortion", variable=v, value=4,anchor=W).grid(row=1,column=1, sticky = W)
-
-
-def main():
-	if v==2:
-		EQ()
-	elif v==1:
-		Delay()
-
-	
-main()
-radiobuttons()
-master.mainloop()
+#master.mainlopp()

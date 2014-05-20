@@ -66,11 +66,11 @@ gainFrame = Frame(interFrame, width=500, height=600)
 gainFrame.grid(row=0, column=0, padx=10, pady=12)
 
 ############Frame for showing current prio ordering##########
-prioFrame = Frame(master, width=100, height=600, bg = "grey")
+prioFrame = Frame(master, width=100, height=600)
 prioFrame.grid(row=1, column=2, padx=10, pady=2)
 
 ############Frame for setting prio of effects###############
-setprioFrame = Frame(master, width=600, height=100, bg = "blue")
+setprioFrame = Frame(master, width=600, height=100)
 setprioFrame.grid(row=2, column=0, padx=10, pady=2)
 ####################################################################################
 
@@ -90,13 +90,17 @@ peakCutoff = DoubleVar() #for cutoff frequency (Peak)
 q = DoubleVar()
 
 entry_eqbq = Entry(eqFrame, width=6)
+show_eqbq = Label(eqFrame)
 
 entry_eqtq = Entry(eqFrame, width=6)
+show_eqtq = Label(eqFrame)
 
 entry_eqpq = Entry(eqFrame, width=6)
+show_eqpq = Label(eqFrame)
 
 ######### Delay ########
 entry_delayt = Entry(delayFrame, width=6)
+show_delayt = Label(delayFrame)
 
 delayFeedback = DoubleVar()
 delayDryWet = DoubleVar()
@@ -179,10 +183,38 @@ noisegateThreshold = DoubleVar()
 Gain1 = DoubleVar()
 Gain2 = DoubleVar()
 
+######## Priority ######
+
+prio_var1=IntVar()
+prio_var2=IntVar()
+prio_var3=IntVar()
+prio_var4=IntVar()
+prio_var5=IntVar()
+prio_var6=IntVar()
+prio_var7=IntVar()
+prio_var8=IntVar()
+prio_var9=IntVar()
+prio_var10=IntVar()
+prio_var11=IntVar()
+
+priotextvar1 = StringVar()
+priotextvar2 = StringVar()
+priotextvar3 = StringVar()
+priotextvar4 = StringVar()
+priotextvar5 = StringVar()
+priotextvar6 = StringVar()
+priotextvar7 = StringVar()
+priotextvar8 = StringVar()
+priotextvar9 = StringVar()
+priotextvar9 = StringVar()
+priotextvar10 = StringVar()
+priotextvar11 = StringVar()
+
+global Label_List
+Label_List= [' ']*11
 
 ######### Output #######
 PriorityList = ['0','0','0','0','0','0','0','0','0','0','0','#',]
-strout1 = []
 strout2 = ["0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","0","#",
 		   "0","0","0","0","#","0","0","0","0","#","0","0","0","#","0","0","0","0","#","0","0","0","#",
 		   "0","0","0","0","0","#","0","#","0","#","0",]
@@ -225,7 +257,6 @@ def outp(strprint, position):
 	x=''
 	strout2[position]= strprint
 	x = ','.join(strout2)
-
 #	print x
 
 ########### Save File
@@ -282,6 +313,7 @@ def eqvalsetb1(event):
 		
 	else :
 		outp(str(eq_bassq), 2)
+		show_eqbq.config(text = str(eq_bassq))
 	
 def eqvalsett1(event):
 	eq_trebbq = float(entry_eqtq.get())
@@ -294,6 +326,7 @@ def eqvalsett1(event):
 	
 	else : 
 		outp(str(eq_trebbq), 6)
+		show_eqtq.config(text = str(eq_trebbq))
 	
 def eqvalsetp1(event):
 	eq_peakq = float(entry_eqpq.get())
@@ -306,6 +339,8 @@ def eqvalsetp1(event):
 		
 	else : 
 		outp(str(eq_peakq), 10)
+		show_eqpq.config(text = str(eq_peakq))
+		
 def EQ():
 	eqFrame.grid()
 	delayFrame.grid_forget()
@@ -354,15 +389,18 @@ def EQ():
 	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=3, column=5)
 	entry_eqbq.bind("<Return>", eqvalsetb1)
 	entry_eqbq.grid(row=3, column=6)
-	
+	show_eqbq.grid(row=3, column=7)
+
 	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=5, column=5)
 	entry_eqtq.bind("<Return>", eqvalsett1)
 	entry_eqtq.grid(row=5, column=6)
+	show_eqtq.grid(row=5, column=7)
 	
 	Label(eqFrame, text="Q \n (0.1 - 6):").grid(row=7, column=5)
 	entry_eqpq.bind("<Return>", eqvalsetp1)
 	entry_eqpq.grid(row=7, column=6)
-
+	show_eqpq.grid(row=7, column=7)
+	
 ######################  Delay  ###########################
 def delayvalset(event):
 	delay_time = float(entry_delayt.get())
@@ -375,6 +413,7 @@ def delayvalset(event):
 		
 	else :
 		outp(str(delay_time), 12)
+		show_delayt.config(text = str(delay_time))		
 
 def set_delayFeedback():
 	delay_feedback = str(delayFeedback.get())
@@ -402,6 +441,7 @@ def Delay():
 	Label(delayFrame, text="Time \n (0-1s):").grid(row=1, column=0)
 	entry_delayt.bind("<Return>", delayvalset)
 	entry_delayt.grid(row=1, column=2)
+	show_delayt.grid(row=1, column=3)
 	
 	de_feedbackscale = Scale(delayFrame, length=200, from_=0.0, to= 100.0, resolution = 0.1, label = "Feedback", orient = HORIZONTAL, variable=delayFeedback)
 	de_feedbackscale.grid(row=3, column=0)
@@ -1010,6 +1050,133 @@ def Gains():
 	gain2scale.grid(row = 4, column=0, padx=10, pady=20)
 	label = Label(gainFrame, padx =10)
 	label.grid(row=3, column=0)	
+	
+####################################################################################	
+################################# Priorities #######################################
+def Create_labels():
+	prio1 = Label (prioFrame, textvariable=priotextvar1)
+	prio1.grid(row=0, column=0)
+	prio2 = Label (prioFrame, textvariable=priotextvar2)
+	prio2.grid(row=1, column=0)
+	prio3 = Label (prioFrame, textvariable=priotextvar3)
+	prio3.grid(row=2, column=0)
+	prio4 = Label (prioFrame, textvariable=priotextvar4)
+	prio4.grid(row=3, column=0)
+	prio5 = Label (prioFrame, textvariable=priotextvar5)
+	prio5.grid(row=4, column=0)
+	prio6 = Label (prioFrame, textvariable=priotextvar6)
+	prio6.grid(row=5, column=0)
+	prio7 = Label (prioFrame, textvariable=priotextvar7)
+	prio7.grid(row=6, column=0)
+	prio8 = Label (prioFrame, textvariable=priotextvar8)
+	prio8.grid(row=7, column=0)
+	prio9 = Label (prioFrame, textvariable=priotextvar9)
+	prio9.grid(row=8, column=0)
+	prio10 = Label (prioFrame, textvariable=priotextvar10)
+	prio10.grid(row=9, column=0)
+	prio11 = Label (prioFrame, textvariable=priotextvar11)
+	prio11.grid(row=10, column=0)
+
+
+def resetbtn():
+	global count
+	global Outputpriorities
+	global Label_List
+	Label_List=[' ']*11
+	count=0
+	vardict={1:prio_var1,2:prio_var2,3:prio_var3,4:prio_var4,5:prio_var5,6:prio_var6,7:prio_var7,8:prio_var8,9:prio_var9,10:prio_var10,11:prio_var11}
+	Outputpriorities=['0','0','0','0','0','0','0','0','0','0','0',]
+	print Outputpriorities
+	for n in range(1,12):
+		x=vardict[n]
+		x.set(0)
+	set_labels()
+	return
+
+def set_labels():
+	priotextvar1.set(Label_List[0])
+	priotextvar2.set(Label_List[1])
+	priotextvar3.set(Label_List[2])
+	priotextvar4.set(Label_List[3])
+	priotextvar5.set(Label_List[4])
+	priotextvar6.set(Label_List[5])
+	priotextvar7.set(Label_List[6])
+	priotextvar8.set(Label_List[7])
+	priotextvar9.set(Label_List[8])
+	priotextvar10.set(Label_List[9])
+	priotextvar11.set(Label_List[10])
+	
+	
+def labellistset(): #<=======================================================================
+	global Label_List
+	global Outputpriorities
+	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2',0:' '}
+	print "Outputpriorities Internal: ", Outputpriorities 
+	newlist=['']*11
+	for n in range(len(Outputpriorities)):
+		if Outputpriorities[n]=='0' or Outputpriorities[n]==0:
+			pass
+		else:
+			newlist[int(Outputpriorities[n])-1]=dictionary[int(n+1)]
+		Label_List=newlist   #<=======================================================================
+	set_labels()
+	return
+		
+def checkClicked(number):
+	global count
+	global Outputpriorities
+	global dictionary
+
+	
+	vardict={1:prio_var1,2:prio_var2,3:prio_var3,4:prio_var4,5:prio_var5,6:prio_var6,7:prio_var7,8:prio_var8,9:prio_var9,10:prio_var10,11:prio_var11}
+
+	# value = vardict[number]
+	print 'number', number
+	checkValue = number
+        
+        
+	if checkValue==0 or checkValue=='0' or checkValue>20:
+                resetValue=Outputpriorities[checkValue-21]		
+                for ind in range(len(Outputpriorities)):
+                   
+                    if int(Outputpriorities[ind]) > int(resetValue):    
+                        Outputpriorities[ind]=str(int(Outputpriorities[ind])-1)
+                        
+                Outputpriorities[checkValue-21]='0'
+                count= count -1
+	else:
+		count= count+1
+		order=str(count)
+		Outputpriorities[checkValue-1]=str(order)
+	labellistset()
+	return
+	
+def SetPriority():
+	global count
+	count=0
+	global Outputpriorities
+	Outputpriorities=['0','0','0','0','0','0','0','0','0','0','0',]
+	global dictionary
+	dictionary={1:'delay',2:'chorus',3:'flanger',4:'tremolo',5:'vibrato',6:'wah wah',7:'phaser',8:'distortion',9:'noise gate',10:'gain1',11:'gain2'}
+	Label(priorityFrame, text= "Order of effects ", font = ('TkDefaultFont',24)).grid(row=0, column=0, padx=10, pady=2)
+
+	button2 = Button(setprioFrame, text='RESET', width=10,command=resetbtn)
+	button2.grid(sticky=W ,row=0,column=12)
+
+	c1 = Checkbutton(setprioFrame, text=dictionary[1],onvalue=1, offvalue=21,variable=prio_var1,command= lambda: checkClicked(prio_var1.get()), indicatoron=0).grid(row=0, column=1, pady=15)
+	c2 = Checkbutton(setprioFrame, text=dictionary[2],onvalue=2, offvalue=22 ,variable=prio_var2,command= lambda: checkClicked(prio_var2.get()), indicatoron=0).grid(row=0, column=2, pady=15)
+	c3 = Checkbutton(setprioFrame, text=dictionary[3],onvalue=3, offvalue=23 ,variable=prio_var3,command= lambda: checkClicked(prio_var3.get()), indicatoron=0).grid(row=0, column=3,pady=15)
+	c4 = Checkbutton(setprioFrame, text=dictionary[4],onvalue=4, offvalue=24 ,variable=prio_var4,command= lambda: checkClicked(prio_var4.get()), indicatoron=0).grid(row=0, column=4,pady=15)
+	c5 = Checkbutton(setprioFrame, text=dictionary[5],onvalue=5, offvalue=25 ,variable=prio_var5,command= lambda: checkClicked(prio_var5.get()), indicatoron=0).grid(row=0, column=5,pady=15)
+	c6 = Checkbutton(setprioFrame, text=dictionary[6],onvalue=6, offvalue=26 ,variable=prio_var6,command= lambda: checkClicked(prio_var6.get()), indicatoron=0).grid(row=0, column=6,pady=15)
+	c7 = Checkbutton(setprioFrame, text=dictionary[7],onvalue=7, offvalue=27 ,variable=prio_var7,command= lambda: checkClicked(prio_var7.get()), indicatoron=0).grid(row=0, column=7,pady=15)
+	c8 = Checkbutton(setprioFrame, text=dictionary[8],onvalue=8, offvalue=28 ,variable=prio_var8,command= lambda: checkClicked(prio_var8.get()), indicatoron=0).grid(row=0, column=8,pady=15)
+	c9 = Checkbutton(setprioFrame, text=dictionary[9],onvalue=9, offvalue=29 ,variable=prio_var9,command= lambda: checkClicked(prio_var9.get()), indicatoron=0).grid(row=0, column=9,pady=15)
+	c10 = Checkbutton(setprioFrame, text=dictionary[10],onvalue=10, offvalue=30 ,variable=prio_var10,command= lambda: checkClicked(prio_var10.get()), indicatoron=0).grid(row=0, column=10,pady=15)
+	c11 = Checkbutton(setprioFrame, text=dictionary[11],onvalue=11, offvalue=31 ,variable=prio_var11,command= lambda: checkClicked(prio_var11.get()), indicatoron=0).grid(row=0, column=11,pady=15)
+	
+	Create_labels()
+	set_labels()
 
 ######### Output #######
 def update_send():
@@ -1047,13 +1214,13 @@ def update_send():
 	set_noisegateThreshold()
 	set_gain1()
 	set_gain2()
-	print x
-	OUTPUTSTRING=','.join(PriorityList)+x
+	OUTPUTSTRING = ','.join(Outputpriorities) +',#,'+ x
+	
+	if Debug == 1:
+		print OUTPUTSTRING
+	
 	DataStrLeon2.main(OUTPUTSTRING)
-
-
-Button(master, text='PROGRAM', command=update_send).grid(row=0, column=3, padx=10, pady=20)
-
+	
 ####################################################################################
 ########################## Radiobuttons for effects ################################
 
@@ -1093,8 +1260,11 @@ def main():
 		NoiseGate()
 	elif v==11:
 		Gains
+
+Button(master, text='PROGRAM', command=update_send).grid(row=0, column=3, padx=10, pady=20)
 	
 main()
 radiobuttons()
 makeMenu()
+SetPriority()
 master.mainloop()
