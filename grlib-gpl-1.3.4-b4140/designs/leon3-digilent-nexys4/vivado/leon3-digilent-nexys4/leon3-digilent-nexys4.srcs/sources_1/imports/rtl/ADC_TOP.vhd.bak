@@ -27,12 +27,13 @@ library IEEE;
 -- ! Use of standard logic arguments
 use IEEE.STD_LOGIC_1164.ALL;
 
--- ! This component handles the ADC and the components needed to complete the decimation.
+-- ! This component handles the ADC, a buffer and the components needed to complete the decimation.
 
 entity ADC_TOP is
-    Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 100 MHz.
+    Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 50 MHz.
+		   CLK100 : in STD_LOGIC; 								-- ! A clock on 100MHz to let the filter have more taps
            RST : in STD_LOGIC;									-- ! Global reset active low.
-           sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.						-- ! To be removed.
+           sampleclk : in STD_LOGIC;							-- ! Sample enable running at ~44100 Hz.
            vauxp3 : in STD_LOGIC;								-- ! Positive analogue signal.
            vauxn3 : IN STD_LOGIC;								-- ! Negative analogue signal.
            
@@ -46,6 +47,17 @@ end ADC_TOP;
 -- ! @details The architecture containing the main body of the component.
 architecture Behavioral of ADC_TOP is
 
+COMPONENT ila_1
+  PORT (
+    clk : IN STD_LOGIC;
+    probe0 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    probe1 : IN STD_LOGIC_VECTOR(15 DOWNTO 0)
+  );
+END COMPONENT;
+ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
+ATTRIBUTE SYN_BLACK_BOX OF ila_1 : COMPONENT IS TRUE;
+ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
+ATTRIBUTE BLACK_BOX_PAD_PIN OF ila_1 : COMPONENT IS "clk,probe0[15:0],probe1[15:0]";
 
    component digitalfilter
       GENERIC(WIDTH:INTEGER:=8;
@@ -85,10 +97,10 @@ COMPONENT ADC
     busy_out : OUT STD_LOGIC						-- ! Signalling the ADC is busy sampling
   );
 END COMPONENT;
-ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
-ATTRIBUTE SYN_BLACK_BOX OF ADC : COMPONENT IS TRUE;
-ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,convst_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
+ATTRIBUTE SYN_BLACK_BOX_ADC : BOOLEAN;
+ATTRIBUTE SYN_BLACK_BOX_ADC OF ADC : COMPONENT IS TRUE;
+ATTRIBUTE BLACK_BOX_PAD_PIN_ADC : STRING;
+ATTRIBUTE BLACK_BOX_PAD_PIN_ADC OF ADC : COMPONENT IS "di_in[15:0],daddr_in[6:0],den_in,dwe_in,drdy_out,do_out[15:0],dclk_in,reset_in,convst_in,vp_in,vn_in,vauxp3,vauxn3,user_temp_alarm_out,vccint_alarm_out,vccaux_alarm_out,ot_out,channel_out[4:0],eoc_out,alarm_out,eos_out,busy_out";
 
 component ADC_buffer--_const --for the constant buffer and test of APB
 	generic (
@@ -125,11 +137,19 @@ signal filterout : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
+ILA_ADC : ila_1
+  PORT MAP (
+    clk => sampleclk,
+    probe0 => sampledvalue,
+    probe1 => filterout(31 downto 16)
+  );
+
+
 process(clk,rst)
 begin
     if rst = '0' then
 		den_in <= '0';
-    elsif rising_edge(clk) then 
+    elsif rising_edge(clk100) then 
 			lastsampleclk <= sampleclk;
       if (sampleclk = '1') and (lastsampleclk = '0') then
 				den_in <= '1';
@@ -146,11 +166,11 @@ filterin(31 downto 16) <= (others => sampledvalue(15));
 
   isnt_filter : digitalfilter
       GENERIC map (WIDTH => 32,
-              N=>69)
+              N=> 129)
       PORT map (
 					reset => rst,
            start => den_in,
-           clk => clk,
+           clk => clk100,
            x => filterin,
            y => filterout,
            finished => open);
@@ -171,7 +191,7 @@ inst_ADC : ADC
     dwe_in => dwe_in,
     drdy_out => open,
     do_out => sampledvalue,
-    dclk_in => clk,
+    dclk_in => clk100,
     reset_in => inv_rst,
     convstclk_in => sampleclk,
     vp_in => '0',
@@ -195,7 +215,7 @@ inst_ADC : ADC
  		clk                 => clk,
  		rst                 => rst,
  		buff_write			=> ADC_buff_write,
- 		Buffin 				=> filterout(32 downto 16),
+ 		Buffin 				=> filterout(31 downto 16),
  		Buffout 			=> ADC_buff_out,
  		Bufferfull 		    => Buff_full,
  		Addr 				=> addr);

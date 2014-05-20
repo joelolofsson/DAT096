@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------
-| Tool Version : Vivado v.2014.1 (lin64) Build 881834 Fri Apr  4 14:00:25 MDT 2014
-| Date         : Mon May 12 20:38:54 2014
-| Host         : joel-MacBookPro running 64-bit unknown
+| Tool Version : Vivado v.2014.1 (win32) Build 881834 Fri Apr  4 14:09:24 MDT 2014
+| Date         : Tue May 20 10:36:56 2014
+| Host         : MININT-VV401LP running 32-bit Service Pack 1  (build 7601)
 | Command      : report_io -file leon3mp_io_placed.rpt
 | Design       : leon3mp
 | Device       : xc7a100tcsg324-1
@@ -42,7 +42,7 @@ Table of Contents
 | A8         | PhyTxd[1]        | High Range | IO_L12N_T1_MRCC_16           | OUTPUT      | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | A9         | PhyMdio          | High Range | IO_L14N_T2_SRCC_16           | BIDIR       | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | A10        | PhyTxd[0]        | High Range | IO_L14P_T2_SRCC_16           | OUTPUT      | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
-| A11        | ampPWM           | High Range | IO_L4N_T0_15                 | TRISTATE    | LVCMOS33    |      15 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| A11        | ampPWM           | High Range | IO_L4N_T0_15                 | OUTPUT      | LVCMOS33    |      15 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | A12        |                  |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | A13        | vauxp3           | High Range | IO_L9P_T1_DQS_AD3P_15        | INPUT       | LVCMOS33    |      15 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
 | A14        | vauxn3           | High Range | IO_L9N_T1_DQS_AD3N_15        | INPUT       | LVCMOS33    |      15 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |

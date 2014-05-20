@@ -100,15 +100,15 @@ END COMPONENT;
     signal nsyncbuf,dinbuf : STD_LOGIC;
 begin
  -- ! To be removed
-your_instance_name : ila_0
-  PORT MAP (
-    clk => clk,
-    trig_in => clk25MHZ,
-    trig_in_ack => open,
-    probe0 => dacin,
-    probe1 => clk25Mhz & dinbuf & nSyncbuf & readbuffer & "000",
-    probe2(0) => trig
-  );
+--your_instance_name : ila_0
+--  PORT MAP (
+--    clk => clk,
+--    trig_in => clk25MHZ,
+--    trig_in_ack => open,
+--    probe0 => dacin,
+----    probe1 => clk25Mhz & dinbuf & nSyncbuf & readbuffer & "000",
+--    probe2(0) => trig
+--  );
 
 sampleclk44kHz <= readbuffer;
 sclk <= clk25MHz;

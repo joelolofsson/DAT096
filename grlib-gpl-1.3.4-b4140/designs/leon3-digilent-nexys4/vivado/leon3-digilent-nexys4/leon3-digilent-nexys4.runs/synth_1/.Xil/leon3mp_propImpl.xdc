@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc rfile:../../../leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/CHALMERS/DAT096/softcore/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc rfile:../../../leon3-digilent-nexys4.srcs/constrs_1/imports/joel/leon3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:722 export:INPUT save:INPUT read:READ} [current_design]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property src_info {type:XDC file:1 line:723 export:INPUT save:INPUT read:READ} [current_design]

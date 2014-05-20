@@ -1,130 +1,4 @@
 
-m
-Command: %s
-1870*	planAhead2A
--open_checkpoint leon3mp_postroute_physopt.dcp2default:defaultZ12-2866
-^
--Analyzing %s Unisim elements for replacement
-17*netlist2
-5792default:defaultZ29-17
-a
-2Unisim Transformation completed in %s CPU seconds
-28*netlist2
-02default:defaultZ29-28
-o
-Netlist was created with %s %s291*project2
-Vivado2default:default2
-2014.12default:defaultZ1-479
-
-Loading clock regions from %s
-13*device2f
-R/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml2default:defaultZ21-13
-ž
-Loading clock buffers from %s
-11*device2g
-S/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml2default:defaultZ21-11
-›
-&Loading clock placement rules from %s
-318*place2[
-G/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ClockPlacerRules.xml2default:defaultZ30-318
-™
-)Loading package pin functions from %s...
-17*device2W
-C/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/PinFunctions.xml2default:defaultZ21-17
-š
-Loading package from %s
-16*device2i
-U/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml2default:defaultZ21-16
-Ž
-Loading io standards from %s
-15*device2X
-D/opt/Xilinx/Vivado/2014.1/data/./parts/xilinx/artix7/IOStandards.xml2default:defaultZ21-15
-š
-+Loading device configuration modes from %s
-14*device2V
-B/opt/Xilinx/Vivado/2014.1/data/parts/xilinx/artix7/ConfigModes.xml2default:defaultZ21-14
-’
-Parsing XDC File [%s]
-179*designutils2Û
-Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10154-joel-MacBookPro/dcp/leon3mp_early.xdc2default:defaultZ20-179
-›
-Finished Parsing XDC File [%s]
-178*designutils2Û
-Æ/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10154-joel-MacBookPro/dcp/leon3mp_early.xdc2default:defaultZ20-178
-Œ
-Parsing XDC File [%s]
-179*designutils2Õ
-À/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10154-joel-MacBookPro/dcp/leon3mp.xdc2default:defaultZ20-179
-¢
-%Done setting XDC timing constraints.
-35*timing2Å
-®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/64359f89/labtools_xsdb_master_lib.xdc2default:default2
-132default:default8@Z38-35
-•
-Deriving generated clocks
-2*timing2Å
-®/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.cache/64359f89/labtools_xsdb_master_lib.xdc2default:default2
-132default:default8@Z38-2
-û
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2 
-get_clocks: 2default:default2
-00:00:222default:default2
-00:00:272default:default2
-1556.4342default:default2
-416.3362default:defaultZ17-268
-•
-Finished Parsing XDC File [%s]
-178*designutils2Õ
-À/home/joel/Documents/DAT096/grlib-gpl-1.3.4-b4140/designs/leon3-digilent-nexys4/vivado/leon3-digilent-nexys4/leon3-digilent-nexys4.runs/impl_1/.Xil/Vivado-10154-joel-MacBookPro/dcp/leon3mp.xdc2default:defaultZ20-178
-6
-Reading XDEF placement.
-206*designutilsZ20-206
-4
-Reading XDEF routing.
-207*designutilsZ20-207
-þ
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2$
-Read XDEF File: 2default:default2
-00:00:032default:default2
-00:00:042default:default2
-1582.4342default:default2
-25.9962default:defaultZ17-268
-3
-Restoring placement.
-754*designutilsZ20-754
-Þ
-ORestored %s out of %s XDEF sites from archive | CPU: %s secs | Memory: %s MB |
-403*designutils2
-80952default:default2
-80952default:default2
-9.8600002default:default2
-	66.9668122default:defaultZ20-403
-C
-Pushed %s inverter(s).
-98*opt2
-02default:defaultZ31-138
-Š
-!Unisim Transformation Summary:
-%s111*project2Í
-¸  A total of 449 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 388 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
-  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
-2default:defaultZ1-111
-Y
-$Checkpoint was created with build %s293*project2
-8818342default:defaultZ1-484
-€
-I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
-268*common2%
-open_checkpoint: 2default:default2
-00:01:502default:default2
-00:02:102default:default2
-1613.5042default:default2
-870.5942default:defaultZ17-268
 ›
 @Attempting to get a license for feature '%s' and/or device '%s'
 308*common2"
@@ -146,7 +20,7 @@ G
 l
 DRC finished with %s
 1905*	planAhead27
-#0 Errors, 50 Warnings, 1 Advisories2default:defaultZ12-3199
+#0 Errors, 48 Warnings, 1 Advisories2default:defaultZ12-3199
 `
 BPlease refer to the DRC report (report_drc) for more information.
 1906*	planAheadZ12-3200
@@ -185,14 +59,14 @@ Q
 Releasing license: %s
 83*common2"
 Implementation2default:defaultZ17-83
-€
+þ
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2%
 write_bitstream: 2default:default2
-00:01:332default:default2
-00:01:462default:default2
-2013.2502default:default2
-399.7462default:defaultZ17-268
+00:01:432default:default2
+00:02:032default:default2
+1215.6452default:default2
+6.0902default:defaultZ17-268
 
 
 End Record

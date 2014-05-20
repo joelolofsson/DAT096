@@ -39,7 +39,7 @@ BPlease refer to the DRC report (report_drc) for more information.
 
 %s
 *constraints2n
-ZTime (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 474.121 ; gain = 0.0002default:default
+ZTime (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 448.121 ; gain = 0.0002default:default
 X
 
 Starting %s Task
@@ -75,26 +75,26 @@ dbg_hub_CV2default:defaultZ19-3806
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2 
 get_clocks: 2default:default2
-00:00:272default:default2
-00:00:292default:default2
-772.4222default:default2
-285.5002default:defaultZ17-268
+00:00:282default:default2
+00:00:282default:default2
+745.4572default:default2
+282.1762default:defaultZ17-268
 Š
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2.
 Netlist sorting complete. 2default:default2
 00:00:002default:default2 
-00:00:00.1422default:default2
-772.4222default:default2
+00:00:00.1492default:default2
+745.4572default:default2
 0.0002default:defaultZ17-268
 N
-BPhase 1 Generate And Synthesize Debug Cores | Checksum: 1c04702e6
+BPhase 1 Generate And Synthesize Debug Cores | Checksum: 183b5226b
 *common
 ‡
 
 %s
 *constraints2p
-\Time (s): cpu = 00:00:33 ; elapsed = 00:03:04 . Memory (MB): peak = 772.422 ; gain = 298.3012default:default
+\Time (s): cpu = 00:00:35 ; elapsed = 00:03:50 . Memory (MB): peak = 745.457 ; gain = 297.3362default:default
 `
 
 Phase %s%s
@@ -110,75 +110,75 @@ B
 49*opt2
 02default:defaultZ31-49
 3
-'Phase 2 Retarget | Checksum: 12277041e
+'Phase 2 Retarget | Checksum: 146172bb0
 *common
 ‡
 
 %s
 *constraints2p
-\Time (s): cpu = 00:00:36 ; elapsed = 00:03:06 . Memory (MB): peak = 774.051 ; gain = 299.9302default:default
+\Time (s): cpu = 00:00:38 ; elapsed = 00:03:53 . Memory (MB): peak = 746.496 ; gain = 298.3752default:default
 l
 
 Phase %s%s
 101*constraints2
 3 2default:default2(
 Constant Propagation2default:defaultZ18-101
-C
+D
 Pushed %s inverter(s).
-98*opt2
-32default:defaultZ31-138
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+98*opt2
+102default:defaultZ31-138
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
-Ï
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2º
-Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Ðio0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
+Õ
+2Failed to create SRL placer macro for cell %s. %s.598*constraints2À
+Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S1	Óselector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB/S12default:default2>
 *Routing contention at pips element DOUTMUX2default:default8Z18-838
 B
 Eliminated %s cells.
 10*opt2
-7222default:defaultZ31-10
+6782default:defaultZ31-10
 ?
-3Phase 3 Constant Propagation | Checksum: 186049c63
+3Phase 3 Constant Propagation | Checksum: 2357b7fb0
 *common
 ‡
 
 %s
 *constraints2p
-\Time (s): cpu = 00:00:42 ; elapsed = 00:03:12 . Memory (MB): peak = 774.051 ; gain = 299.9302default:default
+\Time (s): cpu = 00:00:43 ; elapsed = 00:03:58 . Memory (MB): peak = 746.496 ; gain = 298.3752default:default
 ]
 
 Phase %s%s
@@ -188,32 +188,32 @@ Phase %s%s
 N
  Eliminated %s unconnected nets.
 12*opt2
-27772default:defaultZ31-12
+24622default:defaultZ31-12
 N
 !Eliminated %s unconnected cells.
 11*opt2
-2182default:defaultZ31-11
+1172default:defaultZ31-11
 0
-$Phase 4 Sweep | Checksum: 1ee563fc2
+$Phase 4 Sweep | Checksum: 236ff027d
 *common
 ‡
 
 %s
 *constraints2p
-\Time (s): cpu = 00:00:45 ; elapsed = 00:03:16 . Memory (MB): peak = 774.051 ; gain = 299.9302default:default
+\Time (s): cpu = 00:00:47 ; elapsed = 00:04:01 . Memory (MB): peak = 746.496 ; gain = 298.3752default:default
 A
-5Ending Logic Optimization Task | Checksum: 1ee563fc2
+5Ending Logic Optimization Task | Checksum: 236ff027d
 *common
 ‡
 
 %s
 *constraints2p
-\Time (s): cpu = 00:00:00 ; elapsed = 00:03:16 . Memory (MB): peak = 774.051 ; gain = 299.9302default:default
+\Time (s): cpu = 00:00:00 ; elapsed = 00:04:02 . Memory (MB): peak = 746.496 ; gain = 298.3752default:default
 8
-,Implement Debug Cores | Checksum: 1c04702e6
+,Implement Debug Cores | Checksum: 183b5226b
 *common
 5
-)Logic Optimization | Checksum: 113e2795b
+)Logic Optimization | Checksum: 151bea58d
 *common
 X
 
@@ -229,13 +229,13 @@ Starting %s Task
 %Done setting XDC timing constraints.
 35*timingZ38-35
 D
-8Ending PowerOpt TimerUpdates Task | Checksum: 1ee563fc2
+8Ending PowerOpt TimerUpdates Task | Checksum: 236ff027d
 *common
 …
 
 %s
 *constraints2n
-ZTime (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 777.281 ; gain = 3.2302default:default
+ZTime (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 749.844 ; gain = 3.3482default:default
 4
 Applying IDT optimizations ...
 9*pwroptZ34-9
@@ -249,20 +249,17 @@ ZTime (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 777.281 ; g
 ¡WRITE_MODE attribute of %s BRAM(s) out of a total of %s has been updated to save power.
     Run report_power_opt to get a complete listing of the BRAMs updated.
 129*pwropt2
-612default:default2
+602default:default2
 862default:defaultZ34-162
-<
-%Done setting XDC timing constraints.
-35*timingZ38-35
 [
 +Structural ODC has moved %s WE to EN ports
 155*pwropt2
-22default:defaultZ34-201
+02default:defaultZ34-201
 ¢
 CNumber of BRAM Ports augmented: %s newly gated: %s Total Ports: %s
 65*pwropt2
 782default:default2
-22default:default2
+02default:default2
 1722default:defaultZ34-65
 _
 1Number of Flops added for Enable Generation: %s
@@ -270,13 +267,13 @@ _
 23*pwropt2
 12default:defaultZ34-23
 A
-5Ending Power Optimization Task | Checksum: 1e8ef942a
+5Ending Power Optimization Task | Checksum: 138eaa6d0
 *common
 ‡
 
 %s
 *constraints2p
-\Time (s): cpu = 00:00:00 ; elapsed = 00:00:49 . Memory (MB): peak = 992.672 ; gain = 218.6212default:default
+\Time (s): cpu = 00:00:00 ; elapsed = 00:00:51 . Memory (MB): peak = 963.992 ; gain = 217.4962default:default
 Q
 Releasing license: %s
 83*common2"
@@ -284,7 +281,7 @@ Q
 ¾
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-322default:default2
+332default:default2
 142default:default2
 02default:default2
 02default:defaultZ4-41
@@ -297,10 +294,10 @@ opt_design2default:defaultZ4-42
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2 
 opt_design: 2default:default2
-00:01:362default:default2
-00:04:072default:default2
-992.6722default:default2
-518.5512default:defaultZ17-268
+00:01:382default:default2
+00:04:552default:default2
+963.9922default:default2
+515.8712default:defaultZ17-268
 4
 Writing XDEF routing.
 211*designutilsZ20-211
@@ -315,16 +312,16 @@ I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2)
 Write XDEF Complete: 2default:default2
 00:00:012default:default2 
-00:00:00.8692default:default2
-992.6722default:default2
+00:00:00.8982default:default2
+963.9922default:default2
 0.0002default:defaultZ17-268
 þ
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2&
 write_checkpoint: 2default:default2
 00:00:072default:default2
-00:00:072default:default2
-992.6722default:default2
+00:00:082default:default2
+963.9922default:default2
 0.0002default:defaultZ17-268
 
 

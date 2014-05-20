@@ -80,70 +80,6 @@ LBel does not match with the valid locations at which this inst can be placed2d
 2Failed to create SRL placer macro for cell %s. %s.598*constraints2∫
 –io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	–io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
 LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
 ˜
 2Failed to create SRL placer macro for cell %s. %s.598*constraints2¿
 ”selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	”selector/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
@@ -251,50 +187,6 @@ LBel does not match with the valid locations at which this inst can be placed2d
 Ò
 2Failed to create SRL placer macro for cell %s. %s.598*constraints2∫
 –io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	–io0/inst_ADC_TOP/ILA_ADC/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
-LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
-ˇ
-2Failed to create SRL placer macro for cell %s. %s.598*constraints2»
-◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S1	◊io0/inst_top/your_instance_name/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.cs_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlA/S12default:default2`
 LBel does not match with the valid locations at which this inst can be placed2default:default8Z18-838
 ˜
 2Failed to create SRL placer macro for cell %s. %s.598*constraints2¿
@@ -355,21 +247,21 @@ Phase %s%s
 %s*constraints2
  2default:default
 s
-gPhase 1 Physical Synthesis Initialization | Checksum: 1af24b44c
------ Checksum: : ee4ef7b3 : c0d5bc99 
+gPhase 1 Physical Synthesis Initialization | Checksum: 13ef63c78
+----- Checksum: : df87ebed : 5f6e508b 
 *common
-Ü
+á
 
 %s
-*constraints2o
-[Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2157.984 ; gain = 0.0002default:default
-ç
+*constraints2p
+\Time (s): cpu = 00:00:30 ; elapsed = 00:00:19 . Memory (MB): peak = 1182.117 ; gain = 10.7932default:default
+ã
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2.
-Netlist sorting complete. 2default:default2
-00:00:00.082default:default2
-00:00:00.082default:default2
-2157.9842default:default2
+Netlist sorting complete. 2default:default2
+00:00:002default:default2 
+00:00:00.1132default:default2
+1182.1172default:default2
 0.0002default:defaultZ17-268
 r
 
@@ -377,20 +269,20 @@ Phase %s%s
 101*constraints2
 2 2default:default2.
 Critical Path Optimization2default:defaultZ18-101
-˙
+¯
 :%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
 Current2default:default2
  2default:default2
--6.3802default:default2
--430.6322default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
+-5.0272default:default2
+-263.7022default:default2
+0.0522default:default2
+0.0002default:defaultZ32-668
 À
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2j
 )io0/inst_ADC_TOP/isnt_filter/p_0_in_0[15])io0/inst_ADC_TOP/isnt_filter/p_0_in_0[15]2default:default8Z32-702
-‚
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2Ä
-4io0/inst_ADC_TOP/isnt_filter/x_array_reg[123]_123[8]4io0/inst_ADC_TOP/isnt_filter/x_array_reg[123]_123[8]2default:default8Z32-702
+√
+BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2b
+%io0/inst_ADC_TOP/isnt_filter/O81_repN%io0/inst_ADC_TOP/isnt_filter/O81_repN2default:default8Z32-702
 À
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2j
 )io0/inst_ADC_TOP/isnt_filter/y_array0[63])io0/inst_ADC_TOP/isnt_filter/y_array0[63]2default:default8Z32-702
@@ -399,7 +291,7 @@ BPorcessed net %s. Optimizations did not improve timing on the net.366*phys
 4io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[59]_i_24io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[59]_i_22default:default8Z32-702
 ‚
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2Ä
-4io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[55]_i_34io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[55]_i_32default:default8Z32-702
+4io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[55]_i_24io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[55]_i_22default:default8Z32-702
 ‚
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2Ä
 4io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[51]_i_24io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[51]_i_22default:default8Z32-702
@@ -427,236 +319,100 @@ BPorcessed net %s. Optimizations did not improve timing on the net.366*phys
 ‚
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2Ä
 4io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[19]_i_24io0/inst_ADC_TOP/isnt_filter/n_0_y_array_reg[19]_i_22default:default8Z32-702
+¯
+:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
+Current2default:default2
+ 2default:default2
+-4.9542default:default2
+-260.4932default:default2
+0.0522default:default2
+0.0002default:defaultZ32-668
 Ÿ
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2x
-0io0/inst_ADC_TOP/isnt_filter/n_0_y_array[19]_i_40io0/inst_ADC_TOP/isnt_filter/n_0_y_array[19]_i_42default:default8Z32-702
+0io0/inst_ADC_TOP/isnt_filter/n_0_y_array[19]_i_80io0/inst_ADC_TOP/isnt_filter/n_0_y_array[19]_i_82default:default8Z32-702
 £
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2B
-io0/n_104_y_array1__2io0/n_104_y_array1__22default:default8Z32-702
+io0/n_105_y_array1__2io0/n_105_y_array1__22default:default8Z32-702
 £
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2B
 io0/n_106_y_array1__1io0/n_106_y_array1__12default:default8Z32-702
-Ω
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2\
-"io0/inst_ADC_TOP/isnt_filter/O7[8]"io0/inst_ADC_TOP/isnt_filter/O7[8]2default:default8Z32-702
-€
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2z
-1io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_281io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_282default:default8Z32-702
-€
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2z
-1io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_711io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_712default:default8Z32-702
+ª
+BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2Z
+!io0/inst_ADC_TOP/isnt_filter/A[3]!io0/inst_ADC_TOP/isnt_filter/A[3]2default:default8Z32-702
+—
+BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2p
+,io0/inst_ADC_TOP/isnt_filter/xlnx_opt_A[3]_1,io0/inst_ADC_TOP/isnt_filter/xlnx_opt_A[3]_12default:default8Z32-702
 ›
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2|
-2io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_1572io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_1572default:default8Z32-702
+2io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_1362io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_1362default:default8Z32-702
+ß
+(Processed net %s.  Re-placed instance %s337*physynth2f
+'io0/inst_ADC_TOP/isnt_filter/O78_repN_2'io0/inst_ADC_TOP/isnt_filter/O78_repN_22default:default2x
+0io0/inst_ADC_TOP/isnt_filter/g0_b0_i_3_replica_2	0io0/inst_ADC_TOP/isnt_filter/g0_b0_i_3_replica_22default:default8Z32-663
+¯
+:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
+Current2default:default2
+ 2default:default2
+-4.8472default:default2
+-254.4492default:default2
+0.0522default:default2
+0.0002default:defaultZ32-668
+Ÿ
+BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2x
+0io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[0]_rep__10io0/inst_ADC_TOP/isnt_filter/n_0_i_reg[0]_rep__12default:default8Z32-702
+ª
+BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2Z
+!io0/inst_ADC_TOP/isnt_filter/A[9]!io0/inst_ADC_TOP/isnt_filter/A[9]2default:default8Z32-702
+Õ
+BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2l
+*io0/inst_ADC_TOP/isnt_filter/xlnx_opt_A[9]*io0/inst_ADC_TOP/isnt_filter/xlnx_opt_A[9]2default:default8Z32-702
+€
+BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2z
+1io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_911io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_912default:default8Z32-702
 ›
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2|
-2io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_4312io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_4312default:default8Z32-702
+2io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_2572io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_2572default:default8Z32-702
+›
+BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2|
+2io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_6022io0/inst_ADC_TOP/isnt_filter/n_0_y_array1__1_i_6022default:default8Z32-702
 Ÿ
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2x
 0io0/inst_ADC_TOP/isnt_filter/n_0_y_array[63]_i_20io0/inst_ADC_TOP/isnt_filter/n_0_y_array[63]_i_22default:default8Z32-702
 
 BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2
 clkclk2default:default8Z32-702
-œ
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2n
-+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data2[0]+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data2[0]2default:default8Z32-702
-°
-(Processed net %s.  Re-placed instance %s337*physynth2p
-,eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][8],eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][8]2default:default2h
-(eth0.e1/m100.u0/ethc0/r_reg[txlength][8]	(eth0.e1/m100.u0/ethc0/r_reg[txlength][8]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--422.6682default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-°
-(Processed net %s.  Re-placed instance %s337*physynth2p
-,eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][4],eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][4]2default:default2h
-(eth0.e1/m100.u0/ethc0/r_reg[txlength][4]	(eth0.e1/m100.u0/ethc0/r_reg[txlength][4]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--421.6912default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-•
-(Processed net %s.  Re-placed instance %s337*physynth2r
--eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][10]-eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][10]2default:default2j
-)eth0.e1/m100.u0/ethc0/r_reg[txlength][10]	)eth0.e1/m100.u0/ethc0/r_reg[txlength][10]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--419.3882default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-°
-(Processed net %s.  Re-placed instance %s337*physynth2p
-,eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][6],eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][6]2default:default2h
-(eth0.e1/m100.u0/ethc0/r_reg[txlength][6]	(eth0.e1/m100.u0/ethc0/r_reg[txlength][6]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--414.8282default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-°
-(Processed net %s.  Re-placed instance %s337*physynth2p
-,eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][8],eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][8]2default:default2h
-(eth0.e1/m100.u0/ethc0/r_reg[txlength][8]	(eth0.e1/m100.u0/ethc0/r_reg[txlength][8]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--412.9142default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-—
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2p
-,eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][8],eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][8]2default:default8Z32-702
-◊
-(Processed net %s.  Re-placed instance %s337*physynth2ä
-9eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_2__09eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_2__02default:default2Ç
-5eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r[data][31]_i_2__0	5eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r[data][31]_i_2__02default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--407.7612default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-Ï
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2ä
-9eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_2__09eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_2__02default:default8Z32-702
-é
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2¨
-Jeth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r_reg[main_state][9]_i_5Jeth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r_reg[main_state][9]_i_52default:default8Z32-702
-Ü
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2§
-Feth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_7Feth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_72default:default8Z32-702
-è
-(Processed net %s.  Re-placed instance %s337*physynth2¶
-Geth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_13Geth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_132default:default2û
-Ceth0.e1/m100.u0/ethc0/tx_rmii1.tx0/FSM_onehot_r[main_state][9]_i_13	Ceth0.e1/m100.u0/ethc0/tx_rmii1.tx0/FSM_onehot_r[main_state][9]_i_132default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--406.0962default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-—
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2p
-,eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][2],eth0.e1/m100.u0/ethc0/n_0_r_reg[txlength][2]2default:default8Z32-702
-Ü
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2§
-Feth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_9Feth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_FSM_onehot_r[main_state][9]_i_92default:default8Z32-702
-◊
-(Processed net %s.  Re-placed instance %s337*physynth2ä
-9eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_1__19eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_1__12default:default2Ç
-5eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r[data][31]_i_1__1	5eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r[data][31]_i_1__12default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--399.6292default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-≥
-(Processed net %s.  Re-placed instance %s337*physynth2n
-+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data1[2]+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data1[2]2default:default2|
-2eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][22]	2eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][22]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--399.3422default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-≥
-(Processed net %s.  Re-placed instance %s337*physynth2n
-+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data0[2]+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data0[2]2default:default2|
-2eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][30]	2eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][30]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--399.0232default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-±
-(Processed net %s.  Re-placed instance %s337*physynth2n
-+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data3[2]+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data3[2]2default:default2z
-1eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][6]	1eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][6]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--398.7042default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-±
-(Processed net %s.  Re-placed instance %s337*physynth2n
-+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data3[3]+eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/data3[3]2default:default2z
-1eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][7]	1eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/r_reg[data][7]2default:default8Z32-663
-˙
-:%s %s Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |342*physynth2
-Current2default:default2
- 2default:default2
--6.3802default:default2
--398.3552default:default2
--0.5702default:default2
--3.2652default:defaultZ32-668
-Ï
-BPorcessed net %s. Optimizations did not improve timing on the net.366*physynth2ä
-9eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_1__19eth0.e1/m100.u0/ethc0/tx_rmii1.tx0/n_0_r[data][31]_i_1__12default:default8Z32-702
-l
-`Phase 2 Critical Path Optimization | Checksum: 10925f389
------ Checksum: : 797ea4b7 : 8fa74ed2 
+m
+aPhase 2 Critical Path Optimization | Checksum: 1dcddfea8
+----- Checksum: : 1a345f58b : 3998091d 
 *common
-à
+á
 
 %s
-*constraints2q
-]Time (s): cpu = 00:04:41 ; elapsed = 00:05:07 . Memory (MB): peak = 2263.066 ; gain = 105.0822default:default
-ç
+*constraints2p
+\Time (s): cpu = 00:01:28 ; elapsed = 00:01:12 . Memory (MB): peak = 1209.555 ; gain = 38.2302default:default
+ã
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2.
-Netlist sorting complete. 2default:default2
-00:00:00.072default:default2
-00:00:00.092default:default2
-2263.0662default:default2
+Netlist sorting complete. 2default:default2
+00:00:002default:default2 
+00:00:00.1062default:default2
+1209.5552default:default2
 0.0002default:defaultZ17-268
-‹
+⁄
 OPost Physical Optimization Timing Summary | WNS=%s | TNS=%s | WHS=%s | THS=%s |343*physynth2
--6.3802default:default2
--398.3552default:default2
--0.5702default:default2
--3.2652default:defaultZ32-669
-h
-\Ending Physical Synthesis Task | Checksum: 10925f389
------ Checksum: : 797ea4b7 : 8fa74ed2 
+-4.8472default:default2
+-254.4492default:default2
+0.0522default:default2
+0.0002default:defaultZ32-669
+i
+]Ending Physical Synthesis Task | Checksum: 1dcddfea8
+----- Checksum: : 1a345f58b : 3998091d 
 *common
-à
+á
 
 %s
-*constraints2q
-]Time (s): cpu = 00:04:42 ; elapsed = 00:05:08 . Memory (MB): peak = 2263.066 ; gain = 105.0822default:default
+*constraints2p
+\Time (s): cpu = 00:00:00 ; elapsed = 00:01:12 . Memory (MB): peak = 1209.555 ; gain = 38.2302default:default
 Q
 Releasing license: %s
 83*common2"
@@ -664,22 +420,22 @@ Q
 ¿
 G%s Infos, %s Warnings, %s Critical Warnings and %s Errors encountered.
 28*	vivadotcl2
-3512default:default2
-1642default:default2
+5422default:default2
+1262default:default2
 02default:default2
 02default:defaultZ4-41
 X
 %s completed successfully
 29*	vivadotcl2#
 phys_opt_design2default:defaultZ4-42
-Ä
+ˇ
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2%
 phys_opt_design: 2default:default2
-00:04:502default:default2
-00:05:182default:default2
-2263.0662default:default2
-105.0822default:defaultZ17-268
+00:01:362default:default2
+00:01:182default:default2
+1209.5552default:default2
+39.6022default:defaultZ17-268
 4
 Writing XDEF routing.
 211*designutilsZ20-211
@@ -693,18 +449,18 @@ A
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2)
 Write XDEF Complete: 2default:default2
-00:00:072default:default2
-00:00:092default:default2
-2263.0702default:default2
+00:00:132default:default2
+00:00:132default:default2
+1209.5552default:default2
 0.0002default:defaultZ17-268
 ˇ
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2&
 write_checkpoint: 2default:default2
-00:00:112default:default2
-00:00:142default:default2
-2263.0702default:default2
-0.0042default:defaultZ17-268
+00:00:202default:default2
+00:00:222default:default2
+1209.5552default:default2
+0.0002default:defaultZ17-268
 Ä
 UpdateTimingParams:%s.
 91*timing2P
@@ -720,9 +476,9 @@ rThe design failed to meet the timing requirements. Please see the %s report for
 I%sTime (s): cpu = %s ; elapsed = %s . Memory (MB): peak = %s ; gain = %s
 268*common2+
 report_timing_summary: 2default:default2
-00:00:432default:default2
-00:00:382default:default2
-2263.0702default:default2
+00:00:392default:default2
+00:00:252default:default2
+1209.5552default:default2
 0.0002default:defaultZ17-268
 
 

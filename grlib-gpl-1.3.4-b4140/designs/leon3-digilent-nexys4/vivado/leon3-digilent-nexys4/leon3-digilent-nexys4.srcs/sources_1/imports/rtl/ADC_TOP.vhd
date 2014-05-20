@@ -145,7 +145,7 @@ ILA_ADC : ila_1
   );
 
 
-process(clk,rst)
+process(clk100,rst)
 begin
     if rst = '0' then
 		den_in <= '0';
@@ -166,7 +166,7 @@ filterin(31 downto 16) <= (others => sampledvalue(15));
 
   isnt_filter : digitalfilter
       GENERIC map (WIDTH => 32,
-              N=> 130)
+              N=> 129)
       PORT map (
 					reset => rst,
            start => den_in,

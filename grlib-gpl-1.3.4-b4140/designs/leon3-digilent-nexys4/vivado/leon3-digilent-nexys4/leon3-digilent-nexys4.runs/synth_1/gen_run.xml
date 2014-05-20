@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1399918086">
-  <File Type="VDS-TIMING-PB" Name="leon3mp_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="leon3mp_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="leon3mp.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1400573490">
   <File Type="RDS-UTIL-PB" Name="leon3mp_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="leon3mp_utilization_synth.rpt"/>
-  <File Type="RDS-RDS" Name="leon3mp.vds"/>
-  <File Type="PA-TCL" Name="leon3mp.tcl"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="VDS-HWDEF" Name="$PSDKDIR/SDK/SDK_Export/hw/leon3mp.hwdef"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL" Name="leon3mp_utilization_synth.rpt"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="leon3mp_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="leon3mp.tcl"/>
+  <File Type="RDS-RDS" Name="leon3mp.vds"/>
+  <File Type="RDS-DCP" Name="leon3mp.dcp"/>
+  <File Type="VDS-TIMING-PB" Name="leon3mp_timing_summary_synth.pb"/>
+  <File Type="VDS-HWDEF" Name="$PSDKDIR/SDK/SDK_Export/hw/leon3mp.hwdef"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../../../lib/grlib/stdlib/version.vhd">
@@ -590,13 +590,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/ila_0_0/ila_0.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/rtl/DAC_SPI.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -969,6 +962,13 @@
     <File Path="$PPRDIR/../../leon3mp.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ila_0_0/ila_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -1764,7 +1764,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ila_2"/>
   <BlockFileSet Type="BlockSrcs" Name="ila_1"/>
   <BlockFileSet Type="BlockSrcs" Name="ADC"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_2"/>
 </GenRun>
