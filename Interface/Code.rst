@@ -35,7 +35,7 @@ Data handling
 Graphic User Interface
 ----------------------
 	
-.. automodule:: GUI11
+.. automodule:: finishedGUI2
     :members:
     :undoc-members:
     :show-inheritance:

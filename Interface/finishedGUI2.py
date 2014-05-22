@@ -1516,7 +1516,7 @@ def update_send():
 	if Debug == 1:
 		print OUTPUTSTRING
 	
-#	DataStrLeon2.main(OUTPUTSTRING)
+	DataStrLeon2.main(OUTPUTSTRING)
 	
 def exitGUI():
 	"""When the EXIT button is clicked the master frame is closed, thus closing the entire GUI.
