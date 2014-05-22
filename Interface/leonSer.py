@@ -20,26 +20,36 @@ def leonstart():
 	'''
 	import serial  #used for serial communication
 	import time		#used for waiting functions
-	import platform	
+	import platform	 #used for checking the os
+	
+	#Checking the os
 	oscheck=platform.system()
 	if oscheck=="Windows":				
 		portname='COM5'				#<==========================================================================
-	else:							#-------------------CHECK IF THE USB PORT IS CORRECT------------------------
+	else:							#---------------CHECK IF THE USB PORT IS CORRECT DEPENDING ON OS------------
 		portname='/dev/ttyUSB1'		#<==========================================================================
 	try:
 		serport = serial.Serial(port=portname, baudrate=38343, timeout=2) # ,timeout=2 initializing and opening the port
 	except serial.serialutil.SerialException:
+		#Print diagnostic message about failure to initialize port
 		print "leonstart/Unable to Initialize port"
 		return -1
-	if Debug=='1':
+	#-----------------------------------------
+	if Debug=='1':	#Print diagnostic message
 		print 'Opened port...\n'
+	#-----------------------------------------
+	
+	#Synchronize the baudrate with the Leon3 UART.
 	i=0
 	while i<10:		#USED IN ORDER FOR THE LEON TO SYNCHRONIZE ON OUR BAUDRATE
 		serport.write(chr(0x55))
 		i=i+1
-	if Debug=='1':
+		#-----------------------------------------
+	if Debug=='1': #Print diagnostic message
 		print 'Done synching..\n'
-	return serport  # return the opened port
+	#-----------------------------------------
+	# return the opened port
+	return serport  
 	
 	
 def leonsend(serport, strinp):	
@@ -56,16 +66,21 @@ def leonsend(serport, strinp):
 	'''
 	import serial
 	import time
-
+	#Write data on USB, with implementing a small delay to allow for the communication relay to be established
 	serport.write(strinp)  
 	time.sleep(0.02)
 	
+	#Check for a responce from the device
 	x=1
 	while x==1:
 		s=serport.read(serport.inWaiting())
-		if Debug=='1':
+	#------------------------------------------	
+		if Debug=='1': #Debug message printing
 			print 'Leon response: ', s
+	#------------------------------------------	
+	
 		x=0
+	#Return the response of the device (if any).
 	return s
 	
 def leonTx(serport, strinp):	
@@ -81,7 +96,7 @@ def leonTx(serport, strinp):
 	'''
 	import serial
 	import time
-	
+	#Write data on USB
 	serport.write(strinp)  
 	
 	
@@ -94,9 +109,13 @@ def  leonstop(serport):
 	:param serport: Receives an open serial port object as an input.
 	'''
 	import serial
-	if Debug=='1':
+	#--------------------------------------
+	if Debug=='1': #Debug message Printing
 		print 'closing port'
+	#--------------------------------------
+	#Close the selected port
 	serport.close()
 
+#If the leonSer module is called by the terminal, leonstart will be initialized by default.
 if __name__ == '__main__':
     leonstart()
