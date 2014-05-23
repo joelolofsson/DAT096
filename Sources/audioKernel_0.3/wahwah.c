@@ -12,7 +12,7 @@
  * @param rate defines the rate of the effect in oscillating mode.
  * @param depth is the depth of the effect when in oscillating mode i.e. the rate of the LFO.
  * @param res is the resonance of the filter i.e. the resonance of the SVF connected to the wah wah.
- * @param typ defines the type of wah wah that is to be initialized.
+ * @param type defines the type of wah wah that is to be initialized.
  */
 
 void initWahwah(wahwah *self, uint8_t rate, uint8_t depth, uint8_t res, wahType type){
@@ -49,9 +49,8 @@ void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
             for( i=0; i< (framesPerBuffer); i++ )
             {
                 getLFOValue(&tempLFO, &self->wahLFO);
-                tempLFO = 0;
                 tempOut = *audioBuffer;
-                tempFreqValue = (2000 + (self->depth*(tempLFO * 500 >> 15)>>8));
+                tempFreqValue = (2500 + (self->depth*(tempLFO * 500 >> 15)>>8));
                 
                 
                 if (tempFreqValue >= 4095) {
@@ -95,7 +94,7 @@ void applyWahwah(int16_t framesPerBuffer, wahwah *self, int16_t *audioBuffer){
                 
     
                 tempOut = *audioBuffer;
-                tempFreqValue = 1250 + (int16_t)(runningSum >> 10);
+                tempFreqValue = 500 + (int16_t)(runningSum >> 10);
                 
                 if (tempFreqValue >= 3100) {
                     tempFreqValue = 3100;

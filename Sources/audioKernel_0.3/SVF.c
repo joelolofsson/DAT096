@@ -60,9 +60,14 @@ void applySVF(SVF *self, uint16_t cutoff, uint16_t q, int16_t *audioBuffer){
     }
     
     self->highOutput = (int32_t)*audioBuffer - self->lowOutput_n_1 - (self->q * self->bandOutput_n_1 >> 15);
+    
     self->bandOutput = (self->highOutput * self->f >> 11) + self->bandOutput_n_1;
+    
     self->lowOutput = (self->f * self->bandOutput >> 11) + self->lowOutput;
+    
     self->bandOutput_n_1 = self->bandOutput;
+    
+    
     self->lowOutput_n_1 = self->lowOutput;
     
     switch (self->type) {

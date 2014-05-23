@@ -30,6 +30,8 @@ typedef enum {
  */
 extern const uint16_t kDistortionTable[];
 
+
+
 /**
  * This struct describes the distortion object.
  */
@@ -51,12 +53,13 @@ typedef struct{
      */
     uint8_t tone;
     /**
-     * These state variable filters are used after each stage of distortion in the effect.
+     * These SVF filters are used in order to shape the sound of the distortion before the amp simulator.
      */
-    
-    SVF toneControl, metal;
-    
-    biquad low,mid,high, pre; // For the amp simulator
+    SVF toneControl, pre;
+    /**
+     * These biquad filters are used in order to create the amp simulator.
+     */
+    biquad low,mid,high; // For the amp simulator
     /**
      * Specifies the type of distortion-model that will be used in the effect.
      */

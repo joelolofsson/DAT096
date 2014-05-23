@@ -1,9 +1,8 @@
-/*
- * flex.c
- *
- *  Created on: Apr 17, 2014
- *      Author: xploited
+/** @file flex.c
+ * @brief Flex contains all parameters that makes the design flexible.
+ * @author Daniel
  */
+
 #include "flex.h"
 #include "c-irq.h"
 #include "delay.h"
@@ -21,10 +20,16 @@
 
 int16_t i,j;
 
+
+/**This method calls the delay function. Details in the function call are hidden from the caller.
+ */
 void dummyDelay(){
 	delay(samples, buffSize, feedback_d, time_d,level_d);
 }
 
+
+/**This method calls the three filter bands in order. Details in the function calls are hidden from the caller.
+ */
 void dummyEQ(){
 
 	filter(&lows,samples,buffSize);
@@ -32,102 +37,124 @@ void dummyEQ(){
 	filter(&highs,samples,buffSize);
 }
 
+
+/**This method calls the delay function. Details in the function call are hidden to the caller.
+ */
 void dummyDummy(){
 	//nothing is done here
 }
 
+
+
+/**This method calls the chorus function. Details in the function call are hidden from the caller.
+ */
 void dummyChorus(){
 	applyChorus(buffSize, &chorusInst, samples);
 }
 
+
+/**This method calls the flanger function. Details in the function call are hidden from the caller.
+ */
 void dummyFlanger(){
 	applyFlanger(buffSize, &flangerInst, samples);
 }
 
+
+/**This method calls the Tremolo function. Details in the function call are hidden from the caller.
+ */
 void dummyTremolo(){
 	applyTremolo(buffSize, &tremoloInst, samples);
 }
 
+/**This method calls the Vibrato function. Details in the function call are hidden from the caller.
+ */
 void dummyVibrato(){
 	applyVibrato(buffSize, &vibratoInst, samples);
 }
 
+/**This method calls the wahwah function. Details in the function call are hidden from the caller.
+ */
 void dummyWahwah(){
 	applyWahwah(buffSize,&wahwahInst,samples);
 }
 
+/**This method calls the Phaser function. Details in the function call are hidden from the caller.
+ */
 void dummyPhaser(){
     applyPhaser(buffSize, &phaserInst, samples);
 }
 
+
+/**This method calls the distortion function. Details in the function call are hidden from the caller.
+ */
 void dummyDistortion(){
     applyDistortion(buffSize, &distortionInst, samples);
  }
 
+/**This method calls the NoiseGate function. Details in the function call are hidden from the caller.
+ */
 void dummyNoiseGate(){
 	 applyNoiseGate(buffSize,&noiseGateInst, samples);
 }
 
+/**This method calls the Gain function. Details in the function call are hidden from the caller.
+ */
 void dummyPreGain(){
 	applyGain(buffSize, gain_p, samples);
 }
 
+/**This method calls the Gain function. Details in the function call are hidden from the caller.
+ */
 void dummyOutGain(){
 	applyGain(buffSize, gain_o, samples);
 }
 
 
+/**The extractParams function is used to extract and parse effect parameters from main memory.
+ * It also extracts and parses in which order the effects are suppose to be called.
+ * It follows a strict protocol defined in the GUI section.
+ *
+ * @param *input is a pointer to the address space on main memory
+ */
 void extractParams(int32_t* input){
-	//start of loop
 	i = 0;
-	//if new data has been written
+	//Check if new data available
 	if(input[i] == 1){
+
+	//Disable all the IRQs to avoid corrupting effect parameters
 	disable_irq(10);
 	disable_irq(12);
 	disable_irq(13);
 
 	i++;
 
-	while(i<12){
+	//Extract the order of the effects
+	while(i<(NO_effects -1)){
 		order[i-1] = getByte(input[i],0);
 		i++;
 	}
 	i++;
-	//Bass
+	//Extract bass parameters
 	gainL = (getByte(input[i],3)-120)/10.0f;
 	fcL = (float)mergeByte(getByte(input[i],2),getByte(input[i],1)); //should be a float....
 	QL =  getByte(input[i],0)/10.0f;
 	i++;
 
-	*(volatile float*)(0x40f00400) = gainL;
-	*(volatile float*)(0x40f00400+4) = fcL ;
-	*(volatile float*)(0x40f00400+8) = QL;
-
-	//mids
+	//Extract mids parameters
 	gainM = (getByte(input[i],3)-120)/10.0f;
 	fcM = (float)mergeByte(getByte(input[i],2),getByte(input[i],1)); //should be a float....
 	QM =  getByte(input[i],0)/10.0f;
 	i++;
 
-	*(volatile float*)(0x40f00400+12) = gainM;
-		*(volatile float*)(0x40f00400+16) = fcM ;
-		*(volatile float*)(0x40f00400+20) = QM;
-
-	//Highs
+	//Extract highs parameters
 	gainH = (getByte(input[i],3)-120)/10.0f;
 	fcH = (float)mergeByte(getByte(input[i],2),getByte(input[i],1)); //should be a float....
 	QH =  getByte(input[i],0)/10.0f;
 	i++;
 
-	*(volatile float*)(0x40f00400+24) = gainH;
-		*(volatile float*)(0x40f00400+28) = fcH ;
-		*(volatile float*)(0x40f00400+32) = QH;
-
 	filterCoefficients(&lows,gainL, 44100, fcL, QL, BASS);
 	filterCoefficients(&mids, gainM, 44100, fcM, QM, PEAK);
 	filterCoefficients(&highs, gainH, 44100, fcH, QH , TREBLE);
-
-	//EQ not WORKING look at that...
 
 	//extracting delay
 	time_d = getByte(input[i],2);
@@ -135,21 +162,33 @@ void extractParams(int32_t* input){
 	level_d = getByte(input[i], 0);
 	i++;
 
-
-
 	//extracting Chorus
 	chorusInst.chorusLFO.stepSize = getByte(input[i],3) << 4;
 	chorusInst.rate = getByte(input[i],3);
 	chorusInst.depth = getByte(input[i],2);
 	chorusInst.level = getByte(input[i],1);
-	//type_c to be added ?
+	if(getByte(input[i],0) == 1){
+		chorusInst.chorusLFO.waveTablePtr = LFOSineWaveTable;
+	}
+	else if(getByte(input[i],0) == 2){
+		chorusInst.chorusLFO.waveTablePtr = LFOSquareWaveTable;
+	}
+	else if(getByte(input[i],0) == 3){
+		chorusInst.chorusLFO.waveTablePtr = LFOTriangleWaveTable;
+	}
+	else if(getByte(input[i],0) == 4){
+		chorusInst.chorusLFO.waveTablePtr = LFOSawWaveTable;
+	}
+	else{
+		chorusInst.chorusLFO.waveTablePtr = LFORandomWaveTable;
+	}
+
 	i++;
 
 	//extracting flanger
 	flangerInst.flangerLFO.stepSize = getByte(input[i],3) << 1;
-	flangerInst. depth = (getByte(input[i],2)*12) >> 8 ;
+	flangerInst.depth = (getByte(input[i],2)*12) >> 8 ;
 	flangerInst.level = getByte(input[i],0);
-	//type_f;
 	i++;
 
 	//extracting tremolo
@@ -157,13 +196,43 @@ void extractParams(int32_t* input){
 	tremoloInst.rate = getByte(input[i],3);
 	tremoloInst.depth = getByte(input[i],2);
 	tremoloInst.level = getByte(input[i],1);
-	//type_t;
+
+	if(getByte(input[i],0) == 1){
+		tremoloInst.tremoloLFO.waveTablePtr = LFOSineWaveTable;
+	}
+	else if(getByte(input[i],0) == 2){
+		tremoloInst.tremoloLFO.waveTablePtr = LFOSquareWaveTable;
+	}
+	else if(getByte(input[i],0) == 3){
+		tremoloInst.tremoloLFO.waveTablePtr = LFOTriangleWaveTable;
+	}
+	else if(getByte(input[i],0) == 4){
+		tremoloInst.tremoloLFO.waveTablePtr = LFOSawWaveTable;
+	}
+	else{
+		tremoloInst.tremoloLFO.waveTablePtr = LFORandomWaveTable;
+	}
 	i++;
 
 	//extracting Vibarto
 	vibratoInst.vibratoLFO.stepSize = getByte(input[i],2) << 4;
 	vibratoInst.depth = (getByte(input[i],1)*8) >> 8;
-	//type_v;
+
+	if(getByte(input[i],0) == 1){
+		vibratoInst.vibratoLFO.waveTablePtr = LFOSineWaveTable;
+	}
+	else if(getByte(input[i],0) == 2){
+		vibratoInst.vibratoLFO.waveTablePtr = LFOSquareWaveTable;
+	}
+	else if(getByte(input[i],0) == 3){
+		vibratoInst.vibratoLFO.waveTablePtr = LFOTriangleWaveTable;
+	}
+	else if(getByte(input[i],0) == 4){
+		vibratoInst.vibratoLFO.waveTablePtr = LFOSawWaveTable;
+	}
+	else{
+		vibratoInst.vibratoLFO.waveTablePtr = LFORandomWaveTable;
+	}
 	i++;
 
 	//extracting wahwah
@@ -193,10 +262,10 @@ void extractParams(int32_t* input){
 	i++;
 	if (input[i] == 3)
 		distortionInst.type = BLUES;
-	else if(input[i] == 1)
-		distortionInst.type = ROCK;
-	else
+	else if(input[i] == 2)
 		distortionInst.type = METAL;
+	else
+		distortionInst.type = ROCK;
 	i++;
 
 	//extracting noiesgate
@@ -204,12 +273,11 @@ void extractParams(int32_t* input){
 	 i++;
 
 	//extracting gain1
-	gain_p = getByte(input[i], 0);
-	i++;
+	 gain_p = getByte(input[i], 0);
+	 i++;
 
 	//extracting gain2
-	gain_o = getByte(input[i], 0);
-
+	 gain_o = getByte(input[i], 0);
 
 }
 	//Communication serviced
@@ -222,25 +290,22 @@ void extractParams(int32_t* input){
 
 }
 
-/*
- * To be expanded as more effects are added to the audiokernel
- *
+/**
+ * This method initializes all the effects provided with the design using reasonable values.
+ * It also initializes a fnk_Array which allows for flexible function calls.
+ * Lastly, it sets no effects to be called at startup
  */
-
-
-//Will install all effects, called from main
 void initialize(){
 
-	//all of these values will be read from memory allocated for communications these are for debug purposes
 	/////////////EQ///////////////
-	gainL = 0.00f;
-	gainM = 0.00f;
-	gainH = 0.00f;
-	fcL = 300.0f;
-	fcM = 800.0f;
-	fcH = 5000.0f;
+	gainL = 3.00f;
+	gainM = 3.00f;
+	gainH = -3.00f;
+	fcL = 200.0f;
+	fcM = 300.0f;
+	fcH = 8000.0f;
 	QL = 0.7f;
-	QM =0.3f;
+	QM =1.7f;
 	QH =0.7f;
 	/////////////////////////////
 
@@ -249,63 +314,6 @@ void initialize(){
 	time_d= 80;
 	level_d = 100;
 	/////////////////////////////
-
-	///////////Chorus///////////
-	rate_c= 200;
-	depth_c = 180;
-	level_c = 255;
-	type_c = LFO_SINE;
-	delayLineSize_c = 10000;
-	////////////////////////////
-
-	/////////Flanger///////////
-	rate_f = 32;
-	depth_f = 127;
-	delay_f = 255;
-	level_f = 255;
-	type_f = LFO_SINE;
-	delayLineSize_f = 1000;
-	//////////////////////////
-
-	//////Tremolo////////////
-	rate_t = 255;
-	depth_t = 255;
-	level_t = 127;
-	type_t = LFO_SINE;
-
-	////////////////////////
-
-	//////////Vibrato///////
-	rate_v = 64;
-	depth_v = 64;
-	type_v = LFO_SINE;
-	delayLineSize_v = 200;
-	///////////////////
-
-	//////// WAH WAH ///////
-	type_w = automatic;
-	rate_w = 127;
-	depth_w = 255;
-	res_w = 127;
-	///////////////////////
-
-	/////// Phaser ////////
-	rate_p = 32;
-	depth_p = 127;
-	res_p = 255;
-	//////////////////////
-
-	/////// Distortion ///////
-	pre_amp_d = 220;
-	master_d = 150;
-	tone_d = 130;
-	level_d = 150;
-	type_d = METAL;
-	//////////////////////////
-
-	////// NoiseGate////////
-	threshold_t = 140;
-	///////////////////////
 
 	////////Gains/////////
 	gain_p = 160;
@@ -329,39 +337,39 @@ void initialize(){
 
 	/////////Installing chorus//////////////////
 	chorusArrayPtr = chorusArray;
-	initChorus(&chorusInst, rate_c, depth_c, level_c, type_c, delayLineSize_c, chorusArrayPtr);
+	initChorus(&chorusInst, 32, 127, 255, LFO_SINE, 10000, chorusArrayPtr);
 	///////////////////////////////////////////
 
 	////////Installing flanger/////////////////
 	flangerArrayPtr = flangerArray;
-	initFlanger(&flangerInst, rate_f, depth_f, delay_f, level_f, type_f, delayLineSize_f, flangerArrayPtr);
+	initFlanger(&flangerInst, 32, 255, 255, 255, LFO_SINE, 1000, flangerArrayPtr);
 	///////////////////////////////////////////
 
 	//////Installing tremolo//////////////////
-	initTremolo(&tremoloInst, rate_t, depth_t, level_t, type_t);
+	initTremolo(&tremoloInst, 64, 255, 255, LFO_SINE);
 	//////////////////////////////////////////
 
 	/////Installing vibrato//////////////////
 	vibratoArrayPtr = vibratoArray;
-	initVibrato(&vibratoInst, rate_v, depth_v, type_v ,delayLineSize_v, vibratoArrayPtr);
+	initVibrato(&vibratoInst, 32, 255, LFO_SINE ,10001, vibratoArrayPtr);
 	////////////////////////////////////////
 
 	//////////////////Wahwah/////////////////
-	initWahwah(&wahwahInst, rate_w, depth_w, res_w, type_w);
+	initWahwah(&wahwahInst,127, 127, 127, oscilating);
 	////////////////////////////////////////
     
     //////////////////Phaser/////////////////
-	initPhaser(&phaserInst, rate_p, depth_p, res_p);
+	initPhaser(&phaserInst, 127, 127, 127);
 	////////////////////////////////////////
     
     /////// Distortion //////
-    initDistortion(&distortionInst, master_d, pre_amp_d, level_d, tone_d, type_d);
+    initDistortion(&distortionInst, 230, 230, 127, 150, BLUES);
     /////////////////////////
 
     /////Noise gate////////
-    initNoiseGate(&noiseGateInst, threshold_t);
+    initNoiseGate(&noiseGateInst, 0,80);
 
-	/////////Function array pointer/////////////
+	/////////Function pointer array /////////////
     fnk_Array[0] = dummyDummy;
     fnk_Array[1] = dummyDelay;
 	fnk_Array[2] = dummyChorus;
@@ -377,14 +385,12 @@ void initialize(){
     fnk_Array[12] = dummyEQ;
 
 
-    for(i=0; i< NO_effects-2;i++){
+    //Sets no effects to be called as defaut
+    for(i=0; i< NO_effects-1;i++){
     	order[i] = 0xff;
     }
 
-    //order[0] = 2;//testing chorus
-    //to be expanded as more effects are added
 
-	////////////////////////////////////////////
 
 }
 
