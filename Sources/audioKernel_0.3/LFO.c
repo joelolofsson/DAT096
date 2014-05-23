@@ -39,6 +39,18 @@ void initLFO(uint16_t rate, LFOwaveTable type, LFO *self){
         case LFO_SINE:
             self->waveTablePtr = LFOSineWaveTable;
             break;
+        case LFO_SAW:
+            self->waveTablePtr = LFOSawWaveTable;
+            break;
+        case LFO_SQUARE:
+            self->waveTablePtr = LFOSquareWaveTable;
+            break;
+        case LFO_TRIANGLE:
+            self->waveTablePtr = LFOTriangleWaveTable;
+            break;
+        case LFO_RANDOM:
+            self->waveTablePtr = LFORandomWaveTable;
+            break;
         default:
             break;
     }

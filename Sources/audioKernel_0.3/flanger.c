@@ -55,7 +55,7 @@ void applyFlanger(int16_t framesPerBuffer, flanger *self, int16_t *audioBuffer){
     
     for( i=0; i<framesPerBuffer; i++ )
     {
-        temp = *audioBuffer + (self->feedback*220 >> 8);
+        temp = *audioBuffer + (self->feedback*200 >> 8);
         cbWrite(&self->delayLine, &temp);
         getLFOValue(&LFOtempValue, &self->flangerLFO);
         

@@ -40,7 +40,7 @@ typedef struct{
  * @param sens correspons the sensitivity of the noise gate
  * @param threshold correponds the the threshold value of the noise gate.
  */
-void initNoiseGate(noiseGate *self, uint8_t threshold);
+void initNoiseGate(noiseGate *self, uint8_t sens, uint8_t threshold);
 
 /**
  * This method applies the noise gate to an audio buffer. 

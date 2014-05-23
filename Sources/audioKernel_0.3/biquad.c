@@ -1,6 +1,7 @@
 #include "biquad.h"
 #include <math.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "circularBuffer.h"
 #define _USE_MATH_DEFINES
 
@@ -38,14 +39,14 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
         
         tempRes = (int32_t)FMUL(self->b0,temp,15) + (int32_t)FMUL(self->b1,self->x_n_1,15) + (int32_t)FMUL((self->b2),self->x_n_2,15) - (int32_t)FMUL(self->a1,self->y_n_1,15) - (int32_t)FMUL(self->a2,self->y_n_2,15);
         
-        if(tempRes >= 32767){
-                   tempRes = 32767;
+        if (tempRes > 32767) {
+            tempRes = 32767;
         }
-               else if(tempRes <= -32767){
-                   tempRes = -32767;
-         }
-
-
+        
+        else if (tempRes < -32767){
+            tempRes = -32767;
+        }
+        
         self->x_n_2 = self->x_n_1;
         self->x_n_1 = temp;
         
@@ -55,11 +56,12 @@ void filter(biquad *self, SAMPLE *audioBuffer, int16_t framesPerBuffer){
         tempRes = (tempRes*self->level) >> 8;
 
 
+        //Twice because of stereo
         *audioBuffer++ = (int16_t)tempRes;
+        //printf("Audio Buffer %i", tempRes);
 
       }
     audioBuffer = audioBuffer - framesPerBuffer;
-    
 }
 
 
@@ -257,5 +259,5 @@ switch(self->type) {
             }
         break;
     }
-
+    
 }

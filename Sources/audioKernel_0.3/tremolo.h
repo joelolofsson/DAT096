@@ -29,7 +29,7 @@ typedef struct {
      */
     uint8_t depth;
     /**
-     * This is the level of the effect i.e. the dry/wet mix.
+     * This is the level of the effect i.e. the dry/wet mix. (Not used in the current version of the SoundBox)
      */
     uint8_t level;
     /**
@@ -42,7 +42,7 @@ typedef struct {
  * @param *self is the tremolo object that is to be initialized.
  * @param rate corresponds to the rate of the effect i.e. the rate of the LFO connected to the tremolo.
  * @param depth corresponds to the depth of the effect i.e. the magnitude of the LFO waveform.
- * @param level corresponds to the dry/wet mix of the effect.
+ * @param level corresponds to the dry/wet mix of the effect. (Not used in the current version of the SoundBox)
  * @param type specifies the waveform of the LFO connected to the effect.
  */
 void initTremolo(tremolo *self, uint8_t rate, uint8_t depth, uint8_t level, LFOwaveTable type);

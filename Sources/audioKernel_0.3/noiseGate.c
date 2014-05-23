@@ -16,8 +16,8 @@
  * @param threshold correponds the the threshold value of the noise gate.
  */
 
-void initNoiseGate(noiseGate *self, uint8_t threshold){
-    self->threshold = (15000 * threshold >> 8); 
+void initNoiseGate(noiseGate *self, uint8_t sens, uint8_t threshold){
+    self->threshold = threshold;
     self->noiseBufPtr = self->noiseBuffer;
     
     int16_t zero = 0;

@@ -11,13 +11,17 @@
  * This type describes the different waveforms availible for the LFO objects.
  */
 
-typedef enum {LFO_SINE, LFO_SQUARE, LFO_SAW} LFOwaveTable;
+typedef enum {LFO_SINE, LFO_SQUARE, LFO_SAW, LFO_TRIANGLE, LFO_RANDOM} LFOwaveTable;
 
 /**
- * This is the reference to the sine LFO wavetable.
+ * This is the references to the LFO wavetables.
  */
 
 extern const int16_t LFOSineWaveTable[];
+extern const int16_t LFOSquareWaveTable[];
+extern const int16_t LFOSawWaveTable[];
+extern const int16_t LFOTriangleWaveTable[];
+extern const int16_t LFORandomWaveTable[];
 
 /**
  * This struct describes the LFO object.
