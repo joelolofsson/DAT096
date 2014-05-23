@@ -28,6 +28,8 @@ use grlib.stdlib.all;
 --! use of GRLIB devices signals and constants
 use grlib.devices.all;
 
+--! This component gathers all the sub-modules needed for communication with ADC and DAC. It also supplies an interface to the APB bus
+
 entity dummyapb is
   generic (
     pindex 	: integer := 0;
@@ -51,9 +53,7 @@ entity dummyapb is
 end entity dummyapb;
 
 --! @brief Architecture of the Dummy_apb
---! @details The architecture containing the main body of the component.
-
-architecture rtl of dummyapb is
+--! @details The Dummy APB creates an inteface between the APB and the ADC/DAC. This is done in the simplest way possible. The adress to the ADC and DAC buffer is part of the APB adress to this component. 
 
 component ADC_TOP
     Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 100 MHz.
