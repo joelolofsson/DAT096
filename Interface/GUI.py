@@ -17,8 +17,9 @@ master.wm_title(u"SoundBox") # the u is so that it wont read the text as ASCII s
 
 ####################################################################################
 ############################# Frames ###############################################
-""" Here the setup of the frames is created. The frames sizes and placement is decided.
-"""
+
+# Here the setup of the frames is created. The frames sizes and placement is decided.
+
 #############Frame for selecting settings for specified effect############
 effectsFrame = Frame(master, width=600, height=200)
 effectsFrame.grid(row=0, column=0, padx=10, pady=2)
@@ -90,15 +91,16 @@ fillerFrame.grid(row=1, column=4, padx=10, pady=2)
 ############################# Declarations #########################################
 
 ######## Variable used for debugging #######
-"""
-If debug is set to 1 certain variables & lists will be printed for easier debugging of the code.
-"""
+
 Debug=1
 
+# If debug is set to 1 certain variables & lists will be printed for easier debugging of the code.
+
+
 ######## EQ ########
-"""
-All the global variables required for the Equalizer are declared here.
-"""
+
+# All the global variables required for the Equalizer are declared here.
+ 
 
 bassGain = DoubleVar() #for band 1
 trebbleGain = DoubleVar() #for band 2
@@ -113,18 +115,18 @@ peakQ = DoubleVar()
 q = DoubleVar()
 
 ######### Delay ########
-"""
-All the global variables required for the Delay are declared here.
-"""
+
+# All the global variables required for the Delay are declared here.
+
 
 delayTime = DoubleVar()
 delayFeedback = DoubleVar()
 delayDryWet = DoubleVar()
 
 ######### Chorus ########
-"""
-All the global variables required for the Chorus are declared here.
-"""
+
+# All the global variables required for the Chorus are declared here.
+
 chorusRate = DoubleVar()
 chorusDepth = DoubleVar()
 chorusLevel = DoubleVar()
@@ -138,9 +140,9 @@ ch_Sawtooth = IntVar()
 ch_Random = IntVar()
 
 ######### Flanger ########
-"""
-All the global variables required for the Flanger are declared here.
-"""
+
+# All the global variables required for the Flanger are declared here.
+
 
 flangerRate = DoubleVar()
 flangerDepth = DoubleVar()
@@ -148,9 +150,9 @@ flangerDelay = DoubleVar()
 flangerLevel = DoubleVar()
 
 ######### Tremolo ########
-"""
-All the global variables required for the Tremolo are declared here.
-"""
+
+# All the global variables required for the Tremolo are declared here.
+
 tremoloRate = DoubleVar()
 tremoloDepth = DoubleVar()
 tremoloLevel = DoubleVar()
@@ -164,9 +166,9 @@ tr_Sawtooth = IntVar()
 tr_Random = IntVar()
 
 ######### Vibrato ########
-"""
-All the global variables required for the Vibrato are declared here.
-"""
+
+# All the global variables required for the Vibrato are declared here.
+
 vibratoRate = DoubleVar()
 vibratoDepth = DoubleVar()
 
@@ -179,9 +181,9 @@ vi_Sawtooth = IntVar()
 vi_Random = IntVar()
 
 ######### Wah Wah ########
-"""
-All the global variables required for the Wah Wah are declared here.
-"""
+
+# All the global variables required for the Wah Wah are declared here.
+
 wahwahRate = DoubleVar()
 wahwahDepth = DoubleVar()
 wahwahRes = DoubleVar()
@@ -192,17 +194,17 @@ wa_Modulating  = IntVar()
 wa_Auto = IntVar()
 
 ######### Phaser ########
-"""
-All the global variables required for the Phaser are declared here.
-"""
+
+# All the global variables required for the Phaser are declared here.
+
 phaserRate = DoubleVar()
 phaserDepth = DoubleVar()
 phaserRes = DoubleVar()
 
 ######### Distortion ########
-"""
-All the global variables required for the Distortion are declared here.
-"""
+
+# All the global variables required for the Distortion are declared here.
+
 distortionPregain = DoubleVar()
 distortionMastergain = DoubleVar()
 distortionTone = DoubleVar()
@@ -215,22 +217,22 @@ di_Metal = IntVar()
 di_Blues = IntVar()
 
 ######### Noise Gate ########
-"""
-The global variable required for the noisegate is declared here.
-"""
+
+# The global variable required for the noisegate is declared here.
+
 noisegateThreshold = DoubleVar()
 
 ######### Gains ########
-"""
-The global variables required for the gains are declared here.
-"""
+
+#The global variable required for the gain scales are declared here.
+
 Gain1 = DoubleVar()
 Gain2 = DoubleVar()
 
 ######## Priority ######
-"""
-The global variables required for setting up the priority list are declared here.
-"""
+
+# The global variables required for setting up the priority list are declared here.
+
 
 prio_var1=IntVar()
 prio_var2=IntVar()
@@ -264,6 +266,13 @@ global Label_List
 Label_List= [' ']*12
 
 ######### Output #######
+
+PriorityList = ['0','0','0','0','0','0','0','0','0','0','0','0','#',]
+
+strout2 = ["0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","0","#",
+		   "0","0","0","0","#","0","0","0","0","#","0","0","0","#","0","0","0","0","#","0","0","0","#",
+		   "0","0","0","0","0","#","0","#","0","#","0",]
+		   
 """
 This is the strings that are outputted from the GUI. The PriorityList keeps track of the order of the effects. The strout2 string 
 keeps track of all the values set for the different effects. The '#' is used to separate the effects from each other.
@@ -284,16 +293,15 @@ Noise Gate threshold and then a '#'.
 Gain 1 and then a '#'.
 Gain 2 and then a '#'.
 """
-PriorityList = ['0','0','0','0','0','0','0','0','0','0','0','0','#',]
-strout2 = ["0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","#","0","0","0","0","#",
-		   "0","0","0","0","#","0","0","0","0","#","0","0","0","#","0","0","0","0","#","0","0","0","#",
-		   "0","0","0","0","0","#","0","#","0","#","0",]
 ####################################################################################
 
 ####################################################################################
 ############################# Settings & output ####################################
 
-def hello():       ########## 
+def hello(): 
+	""" This function is called from the choosable options from the File, Edit and Help menu that has yet to be configured.
+	This function just prints the word hello.
+	"""
     print "hello!"
     
 
@@ -364,14 +372,6 @@ def openFile():
 
 ################### Equalizer ######################
 
-"""
-The eqvalsetXX functions is used to get the value written in the entry slots for the Q. When the "Enter" keyboard is pressed,
-the written value is displayed next to the entry slot. An error message is received if a value that is outside the allowed interval
-is used.
-
-The EQ function makes sure that the only thing displayed on the screen is the settings related to the Equalizer
-i.e sliders, entries.
-"""	
 def set_bv():
 	"""This function is called when the PROGRAM button is pressed and calls in turn the output function where it stores the chosen 
 	value for the Bass gain.
@@ -1409,9 +1409,6 @@ def checkClicked(number):
 
 	
 	vardict={1:prio_var1,2:prio_var2,3:prio_var3,4:prio_var4,5:prio_var5,6:prio_var6,7:prio_var7,8:prio_var8,9:prio_var9,10:prio_var10,11:prio_var11,12:prio_var12}
-
-	if Debug == 1:
-		print 'number', number
 	
 	checkValue = number
 	
@@ -1472,7 +1469,7 @@ def SetPriority():
 ######### Output #######
 def update_send():
 	"""
-	When the Program button is clicked, this function stores the values for all the sliders and outputs them.
+	When the Program button is clicked, this function stores the values for all the sliders in the string and outputs them.
 	"""
 	global x
 	set_bv()
@@ -1541,7 +1538,7 @@ def radiobuttons():
 	gains = Radiobutton(effectsFrame, text="Gains", variable=v, value=11,anchor=W, command = Gains).grid(row=1,column=4, sticky = W)
 	
 def main():
-	""" Depending on the value of v, a function of an effect is called and can be modified.
+	""" Depending on the value of the global variable v, a function of an effect is called and can be modified.
 	"""
 	if v==1:
 		EQ()
@@ -1566,9 +1563,7 @@ def main():
 	elif v==11:
 		Gains
 		
-""" The PROGRAM button makes sure that all the sliders value are updated as well as the string is outputted. The EXIT
-button closes the GUI.
-"""
+
 Button(master, text='PROGRAM', command=update_send).grid(row=0, column=3, padx=10, pady=20)
 Button(master, text='EXIT', command=exitGUI).grid(row=1, column=3, padx=10, pady=20)
 
