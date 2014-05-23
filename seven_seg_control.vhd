@@ -7,7 +7,7 @@
 -- Engineer (Modifier) : -
 --
 -- Design Name: Seven segment control
--- Module Name: sevel_seg_control - Behavioral
+-- Module Name: seven_seg_control - Behavioral
 -- Project Name: SoundBox
 -- Target Devices: Artix 7 
 -- 
@@ -20,7 +20,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --! Use of standard numerical arguments
 use IEEE.NUMERIC_STD.ALL;
 
---! The seven segment dispay takes two 8 bit integers in and outputs these on an 8 digit seven segment display.
+--! The seven segment display takes two 8 bit integers in and outputs these on an 8 digit seven segment display.
 
 entity seven_seg_control is
     Port (
@@ -28,15 +28,15 @@ entity seven_seg_control is
 			rstn : IN STD_LOGIC;					--! Global reset, active low
 			current_preset : IN STD_LOGIC_VECTOR(7 downto 0);	--! Current_preset marks the preset to be selected
 			selected_preset : IN STD_LOGIC_VECTOR(7 downto 0);	--! Selected_preset marks the current selected preset
-			seven_seg_out : OUT STD_LOGIC_VECTOR(6 downto 0);	--! Seven_sel_out marks the seven segment display of the current selected seven segment display segment.
-			seven_seg_sel : OUT STD_LOGIC_VECTOR(7 downto 0)	--! Seven_seg_sel marks the current selected seven segment display.
+			seven_seg_out : OUT STD_LOGIC_VECTOR(6 downto 0);	--! Seven_sel_out marks the seven segment display of the current selected seven segment display segment
+			seven_seg_sel : OUT STD_LOGIC_VECTOR(7 downto 0)	--! Seven_seg_sel marks the current selected seven segment display
 			);
 end seven_seg_control;
 
 --! @brief Architecture of the seven_seg_control
---! @details The seven_seg_control controls the output of the seven segment displays. To do this the modules uses clk_div_seven_seg to divide the clock to a suitable speed to the sevel_seg_sel to switch. This module also uses bin2bcd to convert the numbers from binary to BCD. The BCD is then converted to seven segment numbers and outputted on the seven_seg_out.
+--! @details The seven_seg_control controls the output of the seven segment displays. To do this the modules uses clk_div_seven_seg to divide the clock to a suitable speed to the seven_seg_sel to switch. This module also uses bin2bcd to convert the numbers from binary to BCD. The BCD is then converted to seven segment numbers and outputted on the seven_seg_out.
 
-architecture RTL of seven_seg_control is
+architecture seven_crtl of seven_seg_control is
 
 component clk_div_seven_seg 
     Port ( clk : in STD_LOGIC;
@@ -50,14 +50,11 @@ component bin2bcd
            BCD : out STD_LOGIC_VECTOR (bits * 2 -1 downto 0));
 end component;
 
-type number_matrix_type is array (0 to 7) of STD_LOGIC_VECTOR(6 downto 0);
-type value_array is array (0 to 7) of STD_LOGIC_VECTOR(3 downto 0);
-signal cnt_hex_display : integer range 0 to 7;
-signal slow_clk : STD_LOGIC;
-signal value_vector : STD_LOGIC_VECTOR(31 downto 0);
+signal cnt_hex_display : integer range 0 to 7;		--! A counter to decide what seven segment to be active
+signal slow_clk : STD_LOGIC;				--! A clock for toggling between the seven segment displays
+signal value_vector : STD_LOGIC_VECTOR(31 downto 0);	--! This vector concatenates the current and selected value
 
-signal current_number : integer range 0 to 9;
-signal test2 : STD_LOGIC_VECTOR(3 downto 0);
+signal current_number : integer range 0 to 9;		--! This signal indicated the current number to be outputted on the seven segment selected
 begin
 
 
@@ -80,9 +77,8 @@ begin
 			slow_clk => slow_clk
 			);
 			
-	current_number<= to_integer(unsigned(value_vector(4*(cnt_hex_display)+4-1 downto 4*(cnt_hex_display))));
-	
---	test2 <= value_vector(4*(cnt_hex_display)+4-1 downto 4*(cnt_hex_display));
+current_number<= to_integer(unsigned(value_vector(4*(cnt_hex_display)+4-1 downto 4*(cnt_hex_display))));
+
 process(rstn,clk)
 
 begin
@@ -92,7 +88,6 @@ begin
 		seven_seg_sel <= (others => '1');
 	elsif rising_Edge(clk) then
 		if slow_clk = '1' then 
---			seven_seg_out  <= number_matrix;
 			seven_seg_sel <= (others => '1');
 			seven_seg_sel(cnt_hex_display) <= '0';
 			
@@ -101,8 +96,6 @@ begin
 			else
 				cnt_hex_display <= cnt_hex_display + 1;
 			end if;
-			
---			assert false report STD_LOGIC_VECTOR'image(value_vector(4*(cnt_hex_display)-1 downto 4*(cnt_hex_display)))  severity warning;
 			
 			
 			
@@ -147,4 +140,4 @@ end process;
 
 
 
-end RTL;
+end seven_crtl;

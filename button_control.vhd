@@ -27,15 +27,15 @@ entity button_control is
 			buttons_in : IN STD_LOGIC_VECTOR(4 downto 0);		--! Buttons in 
 			current_preset : OUT STD_LOGIC_VECTOR(7 downto 0);	--! Current value out
 			selected_preset : OUT STD_LOGIC_VECTOR(7 downto 0);	--! Selected value out
-			read_interupt : OUT STD_LOGIC;				--! Interupt indicating a read from flash is to be done
-			write_interupt : OUT STD_LOGIC				--! Interupt indicating a write to flash is to be done
+			read_interupt : OUT STD_LOGIC;				--! Interrupt indicating a read from flash is to be done
+			write_interupt : OUT STD_LOGIC				--! Interrupt indicating a write to flash is to be done
 			
 			);
 end button_control;
 
 --! @brief Architecture of the button_control
---! @details The button control takes the inputs from the buttons and stabilizes them with the bounce_filter. Then, depending on what button differnt commands are done. If the left or right button is pushed the current counter is incremented or decremented by one. If the middle button is pushed the current value is copied to the selected value and a read interupt is sent. If the down button is pushed the current value is copied to the selected value and write interupt is sent. If the up button is pressed nothing happens.
-architecture RTL of button_control is
+--! @details The button control takes the inputs from the buttons and stabilizes them with the bounce_filter. Then, depending on what button different commands are done. If the left or right button is pushed the current counter is incremented or decremented by one. If the middle button is pushed the current value is copied to the selected value and a read interrupt is sent. If the down button is pushed the current value is copied to the selected value and write interrupt is sent. If the up button is pressed nothing happens.
+architecture control_button of button_control is
 
 component bounce_filter
 	generic(
@@ -48,9 +48,9 @@ component bounce_filter
 			);
 end component;
 
-signal current_counter : unsigned (7 downto 0);
-signal selected_counter : unsigned (7 downto 0);
-signal stable_buttons : STD_LOGIC_VECTOR(4 downto 0);
+signal current_counter : unsigned (7 downto 0);		--! This signal stores the current value of the counter
+signal selected_counter : unsigned (7 downto 0);	--! This signal stores the selected value
+signal stable_buttons : STD_LOGIC_VECTOR(4 downto 0);	--! This vector holds the stabilized values of the buttons
 
 begin
 
@@ -92,4 +92,4 @@ end process;
 selected_preset <= STD_LOGIC_VECTOR(selected_counter);
 current_preset <= STD_LOGIC_VECTOR(current_counter);
 
-end RTL;
+end control_button;

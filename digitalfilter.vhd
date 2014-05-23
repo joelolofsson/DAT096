@@ -19,34 +19,34 @@ use IEEE.STD_LOGIC_1164.ALL;
 --! Use of standard numerical arguments
 use IEEE.NUMERIC_STD.ALL;
 
---! This module implements a digital FIR filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once evety clock cycle until the calculations are done. When this happenes the calculated value is outputted and the finished port will be set.
+--! This module implements a digital FIR filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once every clock cycle until the calculations are done. When this happened the calculated value is outputted and the finished port will be set.
 
 
    ENTITY digitalfilter IS
       GENERIC(
-	      WIDTH	:INTEGER:=8;					--! Width decides the bitwidth of the filter
-              N		:INTEGER:=4);					--! N descides the number of taps of the filter
+	      WIDTH	:INTEGER:=8;					--! Width decides the bit width of the filter
+              N		:INTEGER:=4);					--! N decides the number of taps of the filter
       PORT(
 	   reset	: in STD_LOGIC;					--! reset, active low
            start	: in STD_LOGIC;					--! start indicates a new value is available, starting the calculations in the filter
            clk		: in STD_LOGIC;					--! clock for the filter operations
            x		: IN STD_LOGIC_VECTOR(WIDTH-1 DOWNTO 0);	--! x is the input of the filter
-           y		: OUT STD_LOGIC_VECTOR(31 DOWNTO 0);		--! y is the outpu of the filter
+           y		: OUT STD_LOGIC_VECTOR(31 DOWNTO 0);		--! y is the output of the filter
            finished	: OUT STD_LOGIC);				--! finished indicates the filter calculations are done
    END  digitalfilter;
 
---! @brief Architecture of the digitalfilter
+--! @brief digitalfilter
 --! @details The architecture containing the main body of the component.
    
-architecture Behavioral of digitalfilter is
-  signal i: natural RANGE 0 TO N ;
-  signal last_start : std_logic;
+architecture FIR_filter of digitalfilter is
+  signal i: natural RANGE 0 TO N ;							--! This signals indicates where in the calculation we are.
+  signal last_start : std_logic;							--! This signal indicates the state of start one clock cycle ago
   
-  type signal_array_type  is array (0 to N-1) of std_logic_vector(width -1 downto 0);
-  signal x_array: signal_array_type; 
+  type signal_array_type  is array (0 to N-1) of std_logic_vector(width -1 downto 0);	--! An array type for storing the latest values of the input
+  signal x_array: signal_array_type; 							--! A signal storing previous values of the input
   
-  type multi_out          is array (0 to n-1) of std_logic_vector(2*width-1 downto 0);
-  signal y_array : std_logic_vector(2*width-1 downto 0);
+  type multi_out          is array (0 to n-1) of std_logic_vector(2*width-1 downto 0);	--! An array type for storing the values during calculation
+  signal y_array : std_logic_vector(2*width-1 downto 0);				--! A signal for storing the values during calculation
   
   
   type parameter_array_type is array (0 to N-1) of signed(width -1 downto 0);
@@ -181,7 +181,7 @@ x"00cbd646",
 x"00958f2e",
 x"00693e0c",
 x"00462ce8",
-x"0041b1f5");
+x"0041b1f5"); --! The filter parameters
   
   
 
@@ -236,4 +236,4 @@ BEGIN
 
   end process;
 
-end behavioral;
+end FIR_filter;

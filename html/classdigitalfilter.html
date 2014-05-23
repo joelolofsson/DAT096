@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This module implements a digital FIR filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once evety clock cycle until the calculations are done. When this happenes the calculated value is outputted and the finished port will be set.  
+<p>This module implements a digital FIR filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once every clock cycle until the calculations are done. When this happened the calculated value is outputted and the finished port will be set.  
  <a href="classdigitalfilter.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for digitalfilter:</div>
@@ -100,14 +100,15 @@ Inheritance diagram for digitalfilter:</div>
  <div class="center">
   <img src="classdigitalfilter.png" usemap="#digitalfilter_map" alt=""/>
   <map id="digitalfilter_map" name="digitalfilter_map">
-<area href="classADC__TOP.html" title="Use of standard logic arguments. " alt="ADC_TOP" shape="rect" coords="0,56,71,80"/>
+<area href="classADC__TOP.html" title="Use of standard logic arguments. " alt="ADC_TOP" shape="rect" coords="0,56,72,80"/>
+<area href="classdummyapb.html" title="This component gathers all the sub-modules needed for communication with ADC and DAC. It also supplies an interface to the APB bus. " alt="dummyapb" shape="rect" coords="0,112,72,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Entities</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdigitalfilter_1_1Behavioral.html">Behavioral</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture of the digitalfilter.  <a href="classdigitalfilter_1_1Behavioral.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdigitalfilter_1_1FIR__filter.html">FIR_filter</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">digitalfilter  <a href="classdigitalfilter_1_1FIR__filter.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Libraries"></a>
@@ -129,10 +130,10 @@ Use Clauses</h2></td></tr>
 Generics</h2></td></tr>
  <tr class="memitem:a91fcbc2cb8dd91f914c30526e23794a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91fcbc2cb8dd91f914c30526e23794a9"></a>
 <a class="el" href="classdigitalfilter.html#a91fcbc2cb8dd91f914c30526e23794a9">WIDTH</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">INTEGER</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">8</span> <span class="vhdlchar"> </span></b></b></td></tr>
-<tr class="memdesc:a91fcbc2cb8dd91f914c30526e23794a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width decides the bitwidth of the filter. <br/></td></tr>
+<tr class="memdesc:a91fcbc2cb8dd91f914c30526e23794a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width decides the bit width of the filter. <br/></td></tr>
 <tr class="memitem:a61de7093f96d3bc9f246d1d7744f9dc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61de7093f96d3bc9f246d1d7744f9dc6"></a>
 <a class="el" href="classdigitalfilter.html#a61de7093f96d3bc9f246d1d7744f9dc6">N</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">INTEGER</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">4</span> <span class="vhdlchar"> </span></b></b></td></tr>
-<tr class="memdesc:a61de7093f96d3bc9f246d1d7744f9dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">N descides the number of taps of the filter. <br/></td></tr>
+<tr class="memdesc:a61de7093f96d3bc9f246d1d7744f9dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">N decides the number of taps of the filter. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Ports"></a>
 Ports</h2></td></tr>
@@ -150,20 +151,20 @@ Ports</h2></td></tr>
 <tr class="memdesc:a8c5602ac7769fa0806595aa864d2134b"><td class="mdescLeft">&#160;</td><td class="mdescRight">x is the input of the filter <br/></td></tr>
 <tr class="memitem:af668726c6bb16ef4d276739c4c161217"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af668726c6bb16ef4d276739c4c161217"></a>
 <a class="el" href="classdigitalfilter.html#af668726c6bb16ef4d276739c4c161217">y</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:af668726c6bb16ef4d276739c4c161217"><td class="mdescLeft">&#160;</td><td class="mdescRight">y is the outpu of the filter <br/></td></tr>
+<tr class="memdesc:af668726c6bb16ef4d276739c4c161217"><td class="mdescLeft">&#160;</td><td class="mdescRight">y is the output of the filter <br/></td></tr>
 <tr class="memitem:ad2b5eab2bb63ad6b267ff2523ac34898"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2b5eab2bb63ad6b267ff2523ac34898"></a>
 <a class="el" href="classdigitalfilter.html#ad2b5eab2bb63ad6b267ff2523ac34898">finished</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
 <tr class="memdesc:ad2b5eab2bb63ad6b267ff2523ac34898"><td class="mdescLeft">&#160;</td><td class="mdescRight">finished indicates the filter calculations are done <br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This module implements a digital FIR filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once evety clock cycle until the calculations are done. When this happenes the calculated value is outputted and the finished port will be set. </p>
+<div class="textblock"><p>This module implements a digital FIR filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once every clock cycle until the calculations are done. When this happened the calculated value is outputted and the finished port will be set. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="digitalfilter_8vhd.html">digitalfilter.vhd</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:09 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:36:48 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

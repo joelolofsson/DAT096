@@ -88,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#Components">Components</a> &#124;
-<a href="#Types">Types</a> &#124;
 <a href="#Signals">Signals</a> &#124;
 <a href="#Processes">Processes</a> &#124;
 <a href="#Instantiations">Instantiations</a>  </div>
@@ -97,13 +96,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Architecture of the <a class="el" href="classseven__seg__control.html" title="The seven segment dispay takes two 8 bit integers in and outputs these on an 8 digit seven segment di...">seven_seg_control</a>.  
+<p>Architecture of the <a class="el" href="classseven__seg__control.html" title="The seven segment display takes two 8 bit integers in and outputs these on an 8 digit seven segment d...">seven_seg_control</a>.  
  <a href="classseven__seg__control_1_1RTL.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Processes"></a>
 Processes</h2></td></tr>
- <tr class="memitem:aac7714a16c91b177124f8e63d31d1234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac7714a16c91b177124f8e63d31d1234"></a>
-<a class="el" href="classseven__seg__control_1_1RTL.html#aac7714a16c91b177124f8e63d31d1234">PROCESS_11</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="classseven__seg__control.html#aba021aec4b477b89079bb58ccadcc67e">rstn</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span></b> , <b><b><a class="el" href="classseven__seg__control.html#a8120037e0ee47c35ba2d79242209c72e">clk</a></b> <span class="vhdlchar"> </span></b> )</b></td></tr>
+ <tr class="memitem:a284632d205b54f8f9124b30aee6b1887"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a284632d205b54f8f9124b30aee6b1887"></a>
+<a class="el" href="classseven__seg__control_1_1RTL.html#a284632d205b54f8f9124b30aee6b1887">PROCESS_9</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="classseven__seg__control.html#aba021aec4b477b89079bb58ccadcc67e">rstn</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span></b> , <b><b><a class="el" href="classseven__seg__control.html#a8120037e0ee47c35ba2d79242209c72e">clk</a></b> <span class="vhdlchar"> </span></b> )</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Components"></a>
 Components</h2></td></tr>
@@ -112,25 +111,20 @@ Components</h2></td></tr>
 <tr class="memitem:aa2d5bf6e4dc6ef99dbc13d369781e56f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2d5bf6e4dc6ef99dbc13d369781e56f"></a>
 <a class="el" href="classseven__seg__control_1_1RTL.html#aa2d5bf6e4dc6ef99dbc13d369781e56f">bin2bcd</a>&#160;</td><td class="memItemRight" valign="bottom">  <b></b>  <em><a class="el" href="classbin2bcd.html">&lt;Entity bin2bcd&gt; </a></em></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Types"></a>
-Types</h2></td></tr>
- <tr class="memitem:a4c91cafabaf9c4d824fa90351860c509"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c91cafabaf9c4d824fa90351860c509"></a>
-<b><a class="el" href="classseven__seg__control_1_1RTL.html#a4c91cafabaf9c4d824fa90351860c509">number_matrix_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b><span class="vhdlkeyword">is</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">array</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">to</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">7</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">of</span><span class="vhdlchar"> </span><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">6</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></b></td></tr>
-<tr class="memitem:afdd5d1e7653b4ea9725db04cd69c99d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdd5d1e7653b4ea9725db04cd69c99d7"></a>
-<b><a class="el" href="classseven__seg__control_1_1RTL.html#afdd5d1e7653b4ea9725db04cd69c99d7">value_array</a>&#160;</td><td class="memItemRight" valign="bottom"><b><span class="vhdlkeyword">is</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">array</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">to</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">7</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">of</span><span class="vhdlchar"> </span><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">3</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></b></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Signals"></a>
 Signals</h2></td></tr>
  <tr class="memitem:a2b1cdd550105424013f7f1d5ecf590fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b1cdd550105424013f7f1d5ecf590fd"></a>
 <a class="el" href="classseven__seg__control_1_1RTL.html#a2b1cdd550105424013f7f1d5ecf590fd">cnt_hex_display</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlkeyword">range</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">to</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">7</span> <span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a2b1cdd550105424013f7f1d5ecf590fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A counter to decide what seven segment to be active. <br/></td></tr>
 <tr class="memitem:a5ba77dbe5578e704c37c2dde55e1033a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ba77dbe5578e704c37c2dde55e1033a"></a>
 <a class="el" href="classseven__seg__control_1_1RTL.html#a5ba77dbe5578e704c37c2dde55e1033a">slow_clk</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a5ba77dbe5578e704c37c2dde55e1033a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A clock for toggling between the seven segment displays. <br/></td></tr>
 <tr class="memitem:a5324433dce7401c1649a674673338373"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5324433dce7401c1649a674673338373"></a>
 <a class="el" href="classseven__seg__control_1_1RTL.html#a5324433dce7401c1649a674673338373">value_vector</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">31</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a5324433dce7401c1649a674673338373"><td class="mdescLeft">&#160;</td><td class="mdescRight">This vector concatenates the current and selected value. <br/></td></tr>
 <tr class="memitem:ae3191418b7808fc159102056426355ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3191418b7808fc159102056426355ad"></a>
 <a class="el" href="classseven__seg__control_1_1RTL.html#ae3191418b7808fc159102056426355ad">current_number</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlkeyword">range</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">to</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">9</span> <span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:aed106e0cd4d13f1b738db8833654822f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed106e0cd4d13f1b738db8833654822f"></a>
-<a class="el" href="classseven__seg__control_1_1RTL.html#aed106e0cd4d13f1b738db8833654822f">test2</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">3</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:ae3191418b7808fc159102056426355ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal indicated the current number to be outputted on the seven segment selected. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Instantiations"></a>
 Instantiations</h2></td></tr>
@@ -142,15 +136,15 @@ Instantiations</h2></td></tr>
 <a class="el" href="classseven__seg__control_1_1RTL.html#a39b27375c53f9cfc5759f4a53877ba0b">clk_div</a>&#160;</td><td class="memItemRight" valign="bottom">  <b>clk_div_seven_seg</b>  <em><a class="el" href="classclk__div__seven__seg.html">&lt;Entity clk_div_seven_seg&gt;</a></em></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Architecture of the <a class="el" href="classseven__seg__control.html" title="The seven segment dispay takes two 8 bit integers in and outputs these on an 8 digit seven segment di...">seven_seg_control</a>. </p>
-<p>The <a class="el" href="classseven__seg__control.html" title="The seven segment dispay takes two 8 bit integers in and outputs these on an 8 digit seven segment di...">seven_seg_control</a> controls the output of the seven segment displays. To do this the modules uses <a class="el" href="classclk__div__seven__seg.html" title="This component takes the system clock divides it for Seven segment displays. This is done by implemen...">clk_div_seven_seg</a> to divide the clock to a suitable speed to the sevel_seg_sel to switch. This module also uses <a class="el" href="classbin2bcd.html" title="This component calculates the binary coded decimal equivelent of a binary number. This module is not ...">bin2bcd</a> to convert the numbers from binary to BCD. The BCD is then converted to seven segment numbers and outputted on the seven_seg_out. </p>
+<div class="textblock"><p>Architecture of the <a class="el" href="classseven__seg__control.html" title="The seven segment display takes two 8 bit integers in and outputs these on an 8 digit seven segment d...">seven_seg_control</a>. </p>
+<p>The <a class="el" href="classseven__seg__control.html" title="The seven segment display takes two 8 bit integers in and outputs these on an 8 digit seven segment d...">seven_seg_control</a> controls the output of the seven segment displays. To do this the modules uses <a class="el" href="classclk__div__seven__seg.html" title="This component takes the system clock divides it for Seven segment displays. This is done by implemen...">clk_div_seven_seg</a> to divide the clock to a suitable speed to the seven_seg_sel to switch. This module also uses <a class="el" href="classbin2bcd.html" title="This component calculates the binary coded decimal equivalent of a binary number. This module is not ...">bin2bcd</a> to convert the numbers from binary to BCD. The BCD is then converted to seven segment numbers and outputted on the seven_seg_out. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="seven__seg__control_8vhd.html">seven_seg_control.vhd</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:09 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:04:41 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

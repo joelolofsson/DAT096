@@ -106,21 +106,24 @@ Processes</h2></td></tr>
 Signals</h2></td></tr>
  <tr class="memitem:a91ed0cb5ab66576a11c5a2a0de9a88af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91ed0cb5ab66576a11c5a2a0de9a88af"></a>
 <a class="el" href="classbounce__filter_1_1Behavioral.html#a91ed0cb5ab66576a11c5a2a0de9a88af">cnt</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">unsigned</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><b><a class="el" href="classbounce__filter.html#a5df2a2aceb759129bf8abccdc30aec13">counterbits</a></b> <span class="vhdlchar"> </span><span class="vhdlchar">-</span><span class="vhdlchar"> </span> <span class="vhdldigit">1</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a91ed0cb5ab66576a11c5a2a0de9a88af"><td class="mdescLeft">&#160;</td><td class="mdescRight">A counter signal, the size is defined by the generic. <br/></td></tr>
 <tr class="memitem:af1b9cebedbee1076cdea82a2084c53d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1b9cebedbee1076cdea82a2084c53d7"></a>
 <a class="el" href="classbounce__filter_1_1Behavioral.html#af1b9cebedbee1076cdea82a2084c53d7">last_button_in</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:af1b9cebedbee1076cdea82a2084c53d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A signal to indicate the last state of the button in. <br/></td></tr>
 <tr class="memitem:a42b551e04fcfc5a7c7ec2b57a2879dc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42b551e04fcfc5a7c7ec2b57a2879dc0"></a>
 <a class="el" href="classbounce__filter_1_1Behavioral.html#a42b551e04fcfc5a7c7ec2b57a2879dc0">button_out_buff</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a42b551e04fcfc5a7c7ec2b57a2879dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered value of the output to determine if the output changes from low to high or high to low. <br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Architecture of the <a class="el" href="classbounce__filter.html" title="This component stabilized signals by waiting until a signal have been high or low for a set about of ...">bounce_filter</a>. </p>
-<p>This component stabilizes an input signal using a counter. This counter can be set with the generic. </p>
+<p>This component stabilizes an input signal using a counter. This counter can be set with the generic. If the signal changed during the counting the counter resets to 0. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="bounce__filter_8vhd.html">bounce_filter.vhd</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:08 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:04:39 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

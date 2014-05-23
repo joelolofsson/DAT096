@@ -1,0 +1,81 @@
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper}{\section{H\-I\-D\-\_\-wrapper Architecture Reference}
+\label{classbutton__and__hex__wrapper_1_1HID__wrapper}\index{H\-I\-D\-\_\-wrapper@{H\-I\-D\-\_\-wrapper}}
+}
+
+
+Architecture of the Dummy\-\_\-apb.  
+
+
+\subsection*{Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a7b544993da64c8f112760250ae38b7cd}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a7b544993da64c8f112760250ae38b7cd}{regs}{\bfseries  ( {\bfseries {\bfseries \hyperlink{classbutton__and__hex__wrapper_af1c59ef8e5ba3edeeb313b4be18d7d8a}{clk}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \hyperlink{classbutton__and__hex__wrapper_a8fb8388e1e2f3ac69332573f5909b4e8}{rstn}} \textcolor{vhdlchar}{ }} )}}\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a7b544993da64c8f112760250ae38b7cd}
+
+\end{DoxyCompactItemize}
+\subsection*{Components}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a2f192fc88cf30c3a81528c3bec449d7c}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a2f192fc88cf30c3a81528c3bec449d7c}{button\-\_\-control}  {\bfseries }  }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a2f192fc88cf30c3a81528c3bec449d7c}
+
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_ab9483222d3cb1f8d2e2d5b9f7b050991}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_ab9483222d3cb1f8d2e2d5b9f7b050991}{seven\-\_\-seg\-\_\-control}  {\bfseries }  }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_ab9483222d3cb1f8d2e2d5b9f7b050991}
+
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a4bd7f19e51dcb73ce4329b7ea3129132}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a4bd7f19e51dcb73ce4329b7ea3129132}{R\-G\-B\-\_\-diode\-\_\-controller}  {\bfseries }  }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a4bd7f19e51dcb73ce4329b7ea3129132}
+
+\end{DoxyCompactItemize}
+\subsection*{Constants}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a39c99eca4a794d92692e46e809698a89}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a39c99eca4a794d92692e46e809698a89}{pconfig} {\bfseries \textcolor{vhdlchar}{apb\-\_\-config\-\_\-type}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{$>$}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ahb\-\_\-device\-\_\-reg}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{V\-E\-N\-D\-O\-R\-\_\-\-G\-R\-O\-U\-P}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{,}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{O\-W\-N\-\_\-\-B\-T\-N}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{,}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{,}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{,}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{,}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{$>$}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{apb\-\_\-iobar}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classbutton__and__hex__wrapper_a1c4c90775fe1a0af1ff79546ceb2f9c2}{paddr}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{,}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classbutton__and__hex__wrapper_a89dd0de36f24702f322479db69e5ff78}{pmask}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a39c99eca4a794d92692e46e809698a89}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a9d70c602cd7cfaaacb19e0b973d25975}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a9d70c602cd7cfaaacb19e0b973d25975}{current\-\_\-preset} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a9d70c602cd7cfaaacb19e0b973d25975}
+
+\begin{DoxyCompactList}\small\item\em The current and selected preset hold the value of these signals. \end{DoxyCompactList}\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a5b4eace278d3b4412be9df0e9003f187}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a5b4eace278d3b4412be9df0e9003f187}{selected\-\_\-preset} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a5b4eace278d3b4412be9df0e9003f187}
+
+\begin{DoxyCompactList}\small\item\em The current and selected preset hold the value of these signals. \end{DoxyCompactList}\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a385557936f89a8c52dc6acba32ff9b1d}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a385557936f89a8c52dc6acba32ff9b1d}{irq\-\_\-read} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a385557936f89a8c52dc6acba32ff9b1d}
+
+\begin{DoxyCompactList}\small\item\em The irq\-\_\-read and irq\-\_\-write is the generated interrupt for read and write respectively. This signal comes from the \hyperlink{classbutton__control}{button\-\_\-control}. \end{DoxyCompactList}\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a8ab8f71af5c81e96d6f46be958e84653}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a8ab8f71af5c81e96d6f46be958e84653}{irq\-\_\-write} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a8ab8f71af5c81e96d6f46be958e84653}
+
+\begin{DoxyCompactList}\small\item\em The irq\-\_\-read and irq\-\_\-write is the generated interrupt for read and write respectively. This signal comes from the \hyperlink{classbutton__control}{button\-\_\-control}. \end{DoxyCompactList}\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_ac97404cefc3f94e594280342f6ac292f}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_ac97404cefc3f94e594280342f6ac292f}{read\-\_\-interupt} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_ac97404cefc3f94e594280342f6ac292f}
+
+\begin{DoxyCompactList}\small\item\em Buffered interrupts to prevent the interrupts from being high for more than one clock cycle. \end{DoxyCompactList}\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a7edc05ba8a892041bd5c97a689fdf48d}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a7edc05ba8a892041bd5c97a689fdf48d}{write\-\_\-interupt} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a7edc05ba8a892041bd5c97a689fdf48d}
+
+\begin{DoxyCompactList}\small\item\em Buffered interrupts to prevent the interrupts from being high for more than one clock cycle. \end{DoxyCompactList}\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a1920c119e2d5288312f2a3d85de0cdc0}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a1920c119e2d5288312f2a3d85de0cdc0}{is\-\_\-working} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a1920c119e2d5288312f2a3d85de0cdc0}
+
+\begin{DoxyCompactList}\small\item\em Bit indicating if the diode should be red or green. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Instantiations}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a065108a7c5c7c769b154fb69388d1a54}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a065108a7c5c7c769b154fb69388d1a54}{inst\-\_\-button}  {\bfseries button\-\_\-control}   }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a065108a7c5c7c769b154fb69388d1a54}
+
+\begin{DoxyCompactList}\small\item\em This vector configs the address ranging and start address. \end{DoxyCompactList}\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a3241459a5ccd9bec9843d574e36baba6}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a3241459a5ccd9bec9843d574e36baba6}{inst\-\_\-seven\-\_\-seg}  {\bfseries seven\-\_\-seg\-\_\-control}   }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a3241459a5ccd9bec9843d574e36baba6}
+
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_a29c5d24baf8a0a823850fde077cda9f0}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_a29c5d24baf8a0a823850fde077cda9f0}{inst\-\_\-rgb\-\_\-diode\-\_\-controller}  {\bfseries R\-G\-B\-\_\-diode\-\_\-controller}   }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_a29c5d24baf8a0a823850fde077cda9f0}
+
+\item 
+\hypertarget{classbutton__and__hex__wrapper_1_1HID__wrapper_acc6b2c6c9f85f90e08b01fb364af1a87}{\hyperlink{classbutton__and__hex__wrapper_1_1HID__wrapper_acc6b2c6c9f85f90e08b01fb364af1a87}{bootmsg}  {\bfseries report\-\_\-version}   }\label{classbutton__and__hex__wrapper_1_1HID__wrapper_acc6b2c6c9f85f90e08b01fb364af1a87}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Architecture of the Dummy\-\_\-apb. 
+
+The Dummy A\-P\-B creates an interface between the A\-P\-B and the H\-I\-D. This is done in the simplest way possible. A read from any address to this module will result in the 8 L\-S\-B being the selected preset. A write to any address will result in the R\-G\-B diode getting a command to either show green or red depending on the value of the L\-S\-B. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Button__and__hex__wrapper_8vhd}{Button\-\_\-and\-\_\-hex\-\_\-wrapper.\-vhd}\end{DoxyCompactItemize}

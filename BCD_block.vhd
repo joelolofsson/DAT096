@@ -1,5 +1,5 @@
 --! @file
---! @brief A 4bit BIN to BCD lookuptable
+--! @brief A 4bit BIN to BCD lookup table
 
 ----------------------------------------------------------------------------------
 -- Engineer (Creator): Jacob Rosén 
@@ -18,7 +18,7 @@ library IEEE;
 --! Use of standard logic arguments
 use IEEE.STD_LOGIC_1164.ALL;
 
---! This module is used in the coversion of binary to binary coded decimals.
+--! This module is used in the conversion of binary to binary coded decimals.
 
 
 
@@ -28,8 +28,8 @@ entity BCD_block is
 end BCD_block;
 
 --! @brief Architecture of the BCD_block
---! @details This component uses a lookup used in the conversion of binary to binary coded decimal. An input value above 9 is invalid and returns dont care.
-architecture Behavioral of BCD_block is
+--! @details This component uses a lookup used in the conversion of binary to binary coded decimal. An input value above 9 is invalid and returns don't care.
+architecture LUT of BCD_block is
 
 begin
 
@@ -48,4 +48,4 @@ out_vector <=
 			"----" when others;
 
 
-end Behavioral;
+end LUT;

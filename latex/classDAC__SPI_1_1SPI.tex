@@ -1,0 +1,39 @@
+\hypertarget{classDAC__SPI_1_1SPI}{\section{S\-P\-I Architecture Reference}
+\label{classDAC__SPI_1_1SPI}\index{S\-P\-I@{S\-P\-I}}
+}
+
+
+Architecture of the \hyperlink{classDAC__SPI}{D\-A\-C\-\_\-\-S\-P\-I}.  
+
+
+\subsection*{Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDAC__SPI_1_1SPI_a242d986315a0356a0eab33f27aaf9ee0}{\hyperlink{classDAC__SPI_1_1SPI_a242d986315a0356a0eab33f27aaf9ee0}{data\-Out}{\bfseries  ( {\bfseries {\bfseries \hyperlink{classDAC__SPI_aba021aec4b477b89079bb58ccadcc67e}{rstn}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \hyperlink{classDAC__SPI_a8120037e0ee47c35ba2d79242209c72e}{clk}} \textcolor{vhdlchar}{ }} )}}\label{classDAC__SPI_1_1SPI_a242d986315a0356a0eab33f27aaf9ee0}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDAC__SPI_1_1SPI_a59fba5ee7156ef44b2afe3d3d4d71a85}{\hyperlink{classDAC__SPI_1_1SPI_a59fba5ee7156ef44b2afe3d3d4d71a85}{data\-Counter} {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{range}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{to}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{25} \textcolor{vhdlchar}{ }} }\label{classDAC__SPI_1_1SPI_a59fba5ee7156ef44b2afe3d3d4d71a85}
+
+\begin{DoxyCompactList}\small\item\em This signal keeps track on what bit to send over the \hyperlink{classDAC__SPI_1_1SPI}{S\-P\-I}. \end{DoxyCompactList}\item 
+\hypertarget{classDAC__SPI_1_1SPI_aa1fedcfa30798eabcce4a1b1cdd6fa7a}{\hyperlink{classDAC__SPI_1_1SPI_aa1fedcfa30798eabcce4a1b1cdd6fa7a}{config\-Bits} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_1_1SPI_aa1fedcfa30798eabcce4a1b1cdd6fa7a}
+
+\begin{DoxyCompactList}\small\item\em Bits containing configuration information for the D\-A\-C. \end{DoxyCompactList}\item 
+\hypertarget{classDAC__SPI_1_1SPI_afda8ab14219d5cf291d97fd808265f14}{\hyperlink{classDAC__SPI_1_1SPI_afda8ab14219d5cf291d97fd808265f14}{lastsampleclk} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_1_1SPI_afda8ab14219d5cf291d97fd808265f14}
+
+\begin{DoxyCompactList}\small\item\em Bit storing the last value of the sampleclk. \end{DoxyCompactList}\item 
+\hypertarget{classDAC__SPI_1_1SPI_a3ba18b13dd42cfbe57a176e0793f0e15}{\hyperlink{classDAC__SPI_1_1SPI_a3ba18b13dd42cfbe57a176e0793f0e15}{databuff} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_1_1SPI_a3ba18b13dd42cfbe57a176e0793f0e15}
+
+\begin{DoxyCompactList}\small\item\em Bit sampling the input data to make sure it is not changed during transmission. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Architecture of the \hyperlink{classDAC__SPI}{D\-A\-C\-\_\-\-S\-P\-I}. 
+
+The architecture containing the main body of the component. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DAC__SPI_8vhd}{D\-A\-C\-\_\-\-S\-P\-I.\-vhd}\end{DoxyCompactItemize}

@@ -3,20 +3,20 @@
 }
 
 
-This component buffers samples when buff\-\_\-write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by chaning the adress. The buffer will then instantly output the value on this address on the buffout port.  
+This component buffers samples when buff\-\_\-write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by changing the address. The buffer will then instantly output the value on this address on the buffout port.  
 
 
 Inheritance diagram for A\-D\-C\-\_\-buffer\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classADC__buffer}
+\includegraphics[height=3.000000cm]{classADC__buffer}
 \end{center}
 \end{figure}
 \subsection*{Entities}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classADC__buffer_1_1Behavioral}{Behavioral} architecture
-\begin{DoxyCompactList}\small\item\em Achitechture of the A\-D\-C buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classADC__buffer_1_1Buffer__ADC}{Buffer\-\_\-\-A\-D\-C} architecture
+\begin{DoxyCompactList}\small\item\em Architecture of the A\-D\-C buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Libraries}
  \begin{DoxyCompactItemize}
 \item 
@@ -58,14 +58,14 @@ Inheritance diagram for A\-D\-C\-\_\-buffer\-:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Output value from the current address slot. \end{DoxyCompactList}\item 
 \hypertarget{classADC__buffer_a4f849708d4274223b88930c2568f405c}{\hyperlink{classADC__buffer_a4f849708d4274223b88930c2568f405c}{Bufferfull}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_a4f849708d4274223b88930c2568f405c}
 
-\begin{DoxyCompactList}\small\item\em high for one clockcycle when the buffer is full, low otherwise. This is due to leon 3 only accepting interupts being high for one clockcycle. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em high for one clock cycle when the buffer is full, low otherwise. This is due to Leon 3 only accepting interrupts being high for one clock cycle. \end{DoxyCompactList}\item 
 \hypertarget{classADC__buffer_ab93f1c6757ecccdcea2252108bb7caff}{\hyperlink{classADC__buffer_ab93f1c6757ecccdcea2252108bb7caff}{Addr}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classADC__buffer_a2f94b7b31a8914ee23be5e000f89e921}{bufferwidth}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{-\/}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_ab93f1c6757ecccdcea2252108bb7caff}
 
 \begin{DoxyCompactList}\small\item\em Address currently asked for. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-This component buffers samples when buff\-\_\-write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by chaning the adress. The buffer will then instantly output the value on this address on the buffout port. 
+This component buffers samples when buff\-\_\-write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by changing the address. The buffer will then instantly output the value on this address on the buffout port. 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 

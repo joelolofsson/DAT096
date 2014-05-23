@@ -28,30 +28,30 @@ entity clk_divide is
 	generic(
 		systemclock : integer:=100000000;		--! Generic setting the system clock speed
 		sampleclock : integer:=44100;			--! Generic describing the intended sampling frequency
-		OSR : integer:=16);				--! Generic describing the Over Samplig Ratio
+		OSR : integer:=16);				--! Generic describing the Over Sampling Ratio
 	port(
 		rst		: in STD_LOGIC;	 		--! Global reset, active low
-		clk		: in STD_LOGIC;			--! Clock in, in our case the 100MHz clock to improve the accuracy of the sampleclock
-		clk50MHz 	: out STD_LOGIC;		--! Clock out at half of the imput clock fequency.
-		clk25MHz 	: out STD_LOGIC;		--! Clock out at a fourth of the imput clock frequency.
+		clk		: in STD_LOGIC;			--! Clock in, in our case the 100MHz clock to improve the accuracy of the sample clock
+		clk50MHz 	: out STD_LOGIC;		--! Clock out at half of the input clock frequency.
+		clk25MHz 	: out STD_LOGIC;		--! Clock out at a fourth of the input clock frequency.
 		clk705kHz 	: out STD_LOGIC;		--! Clock out at the over sampling rate (sampling rate * OSR)
 		clk44kHz	: out STD_LOGIC			--! Clock out at the sampling frequency
 	);
 end entity clk_divide;
 
---! @brief Achitechture of the clk_divider
+--! @brief Architecture of the clk_divider
 --! @details The architecture containing the main body of the component.
 
-architecture behavioral of clk_divide is 
+architecture clk_div_DAC of clk_divide is 
 
 
 constant cnt44kHz_max : integer := integer(round(real(systemclock)/real((sampleclock*OSR))))*OSR-1; --! The cnt44kHz max calculates the number the counter has to reach to reset. The calculation is as follows: $round(\dfrac{systemclock}{sampleclock*OSR})*ORS-1. The OSR is in the equation to make sure the rate between sample clock and OSR will be correct.
 
 signal cnt44kHz : integer RANGE 0 to cnt44kHz_max;	--! Counter signal with the required range.
-signal clk50MHzbuf : STD_LOGIC;				
-signal clk25MHzbuf : STD_LOGIC;
-signal clk44kHzbuf : STD_LOGIC;
-signal clk705kHzbuf : STD_LOGIC;			--! Buffered values of the clocks to be able to use their states for calculation.
+signal clk50MHzbuf : STD_LOGIC;				--! Buffered value for the 50 MHz clock to be able to use their states for calculation.
+signal clk25MHzbuf : STD_LOGIC;				--! Buffered value for the 25 MHz clock to be able to use their states for calculation.
+signal clk44kHzbuf : STD_LOGIC;				--! Buffered value for the 44 kHz clock to be able to use their states for calculation.
+signal clk705kHzbuf : STD_LOGIC;			--! Buffered value for the 705 kHz clock to be able to use their states for calculation.
 begin
 
 process(clk,rst)
@@ -77,7 +77,7 @@ begin
 		clk50MHzbuf <= not (clk50MHzbuf);		--! each system clock cycle the half speed clock is changed
 
 		if clk50MHzbuf = '1' then			
-			clk25MHzbuf <= not(clk25MHzbuf);	--! every other halfclock the fourth speed clock is changed
+			clk25MHzbuf <= not(clk25MHzbuf);	--! every other half clock the fourth speed clock is changed
 		end if;
 
 		if cnt44kHz = cnt44kHz_max then			
@@ -95,4 +95,4 @@ begin
 end process;
 
 
-end behavioral;
+end CLK_DIV_DAC;

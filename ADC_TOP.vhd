@@ -1,5 +1,5 @@
 --! @file
---! @brief A top file to instantiate the XADC, an lowpass-filter and a buffer.
+--! @brief A top file to instantiate the XADC, an low pass-filter and a buffer.
 
 
 ----------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ library IEEE;
 --! Use of standard logic arguments
 use IEEE.STD_LOGIC_1164.ALL;
 
---! This component is a wrapper for the ADC, a buffer and the components needed to complete the decimation. Its main functionality is to provide for internal connections between the compontnets. 
+--! This component is a wrapper for the ADC, a buffer and the components needed to complete the decimation. Its main functionality is to provide for internal connections between the components. 
 
 entity ADC_TOP is
     Port ( CLK : in STD_LOGIC;  								--! Global clock running at 50 MHz.
@@ -28,26 +28,26 @@ entity ADC_TOP is
            vauxp3 : in STD_LOGIC;								--! Positive analogue signal.
            vauxn3 : IN STD_LOGIC;								--! Negative analogue signal.
            
-           addr : in STD_LOGIC_vector(6 downto 0);						--! Adress from the softcore
+           addr : in STD_LOGIC_vector(6 downto 0);						--! Address from the softcore
            buff_full : out STD_LOGIC;								--! Signal indicating the buffer is full
-           ADC_buff_write : in STD_LOGIC;     							--! Signal indicatig the buffer should be written
+           ADC_buff_write : in STD_LOGIC;     							--! Signal indicating the buffer should be written
            ADC_buff_out : out STD_LOGIC_VECTOR (15 downto 0));					--! Sampled value after decimation.
 end ADC_TOP;
 
---! @brief Architecture of the ADC_TOP
+--! @brief ADC_TOP
 --! @details The architecture containing the main body of the component.
-architecture Behavioral of ADC_TOP is
+architecture TOP_ADC of ADC_TOP is
 
 --! Digital FIR filter
    component digitalfilter
-      GENERIC(WIDTH:INTEGER:=8;				--! Width decides the bitwidth of the filter
-              N:INTEGER:=4);				--! N descides the number of taps of the filter
+      GENERIC(WIDTH:INTEGER:=8;				--! Width decides the bit width of the filter
+              N:INTEGER:=4);				--! N decides the number of taps of the filter
       PORT(
 	   reset:STD_LOGIC;				--! reset, active low
            start:STD_LOGIC;				--! start indicates a new value is available, starting the calculations in the filter
            clk:STD_LOGIC;				--! clock for the filter operations
            x:IN STD_LOGIC_VECTOR(WIDTH-1 DOWNTO 0);	--! x is the input of the filter
-           y:OUT STD_LOGIC_VECTOR(31 DOWNTO 0);		--! y is the outpu of the filter
+           y:OUT STD_LOGIC_VECTOR(31 DOWNTO 0);		--! y is the output of the filter
            finished:OUT STD_LOGIC);			--! finished indicates the filter calculations are done
    END  component;
 
@@ -57,8 +57,8 @@ COMPONENT ADC
     di_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);				--! Input for registers, not used
     daddr_in : IN STD_LOGIC_VECTOR(6 DOWNTO 0);				--! Input Address, set to 0x13
     den_in : IN STD_LOGIC;						--! Enable to signal a value is to be read.
-    dwe_in : IN STD_LOGIC;						--! Write enable for writing to congure registers, set to 0
-    drdy_out : OUT STD_LOGIC;						--! Signalling the output is ready to be read
+    dwe_in : IN STD_LOGIC;						--! Write enable for writing to configure registers, set to 0
+    drdy_out : OUT STD_LOGIC;						--! Signaling the output is ready to be read
     do_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);				--! Output from the registers
     dclk_in : IN STD_LOGIC;						--! Clocking for the registers
     reset_in : IN STD_LOGIC;						--! Reset, active high
@@ -72,10 +72,10 @@ COMPONENT ADC
     vccaux_alarm_out : OUT STD_LOGIC;					--! VCC auxiliary alarm out, unused
     ot_out : OUT STD_LOGIC;						--! Over-temperature alarm out, unused
     channel_out : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);			--! Signal to en external mux, unused
-    eoc_out : OUT STD_LOGIC;						--! Signalling end of conversion, unused
-    alarm_out : OUT STD_LOGIC;						--! Signalling any alarm, unused
-    eos_out : OUT STD_LOGIC;						--! Signalling end of sequence, unused
-    busy_out : OUT STD_LOGIC						--! Signalling the ADC is busy sampling
+    eoc_out : OUT STD_LOGIC;						--! Signaling end of conversion, unused
+    alarm_out : OUT STD_LOGIC;						--! Signaling any alarm, unused
+    eos_out : OUT STD_LOGIC;						--! Signaling end of sequence, unused
+    busy_out : OUT STD_LOGIC						--! Signaling the ADC is busy sampling
   );
 END COMPONENT;
 ATTRIBUTE SYN_BLACK_BOX_ADC : BOOLEAN;
@@ -89,7 +89,7 @@ component ADC_buffer
     Port ( 
 		clk 				: in STD_LOGIC;					--! Clock for buffer operation
 		rst 				: in STD_LOGIC;					--! reset, active low
-		buff_write			: in STD_LOGIC;					--! buffwrite indicates a new value will be stores
+		buff_write			: in STD_LOGIC;					--! buff_write indicates a new value will be stores
 		Buffin 				: in STD_LOGIC_VECTOR (15 downto 0);		--! buffin is the input value to the buffer
 		Buffout 			: out STD_LOGIC_VECTOR (15 downto 0);		--! buffout is the output value from the buffer
 		Bufferfull 			: out STD_LOGIC;				--! buffer full indicates the buffer is full.
@@ -103,7 +103,7 @@ signal daddr_in : std_LOGIC_vector(6 downto 0);						--! Address in registers
 signal inv_rst : std_logic;								--! Inversed reset for XADC
 signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);					--! Sampled value from XADC
 signal busy : STD_LOGIC;								--! Busy signal from XADC
-signal lastsampleclk : STD_LOGIC;							--! The sampleclokc delayed one CLK
+signal lastsampleclk : STD_LOGIC;							--! The sample clock delayed one CLK
 signal filterin : STD_LOGIC_VECTOR(31 downto 0);					--! The sampled value extended to 32 bits as input to the digital filter
 signal filterout : STD_LOGIC_VECTOR(31 downto 0);					--! The output of the digital filter and input of the buffer
 
@@ -190,4 +190,4 @@ inst_ADC : ADC
  		Buffout 			=> ADC_buff_out,
  		Bufferfull 		    => Buff_full,
  		Addr 				=> addr);
-end Behavioral;
+end TOP_ADC;

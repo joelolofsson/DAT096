@@ -1,5 +1,5 @@
 --! @file
---! @brief A wrapper to solve the inferfacing between the APB bus and the ADC_TOP and DACTOP.
+--! @brief A wrapper to solve the interfacing between the APB bus and the ADC_TOP and DACTOP.
 
 
 ----------------------------------------------------------------------------------
@@ -32,28 +32,27 @@ use grlib.devices.all;
 
 entity dummyapb is
   generic (
-    pindex 	: integer := 0;
-    paddr 	: integer := 0; 
-    pmask 	: integer := 16#fff#);
-  port (
-    rstn 	: in std_ulogic;
-    clk 	: in std_ulogic;
-    clk100 	: in std_ulogic;
-    vauxp3 	: in STD_LOGIC;
-    vauxn3 	: IN STD_LOGIC;
-    apbi 	: in apb_slv_in_type;
-    apbo 	: out apb_slv_out_type;
-    pwmout 	: out std_logic;
-    Debugvector : out STD_LOGIC_VECTOR(7 downto 0);
-    led 	: out std_logic_vector (15 downto 4);
-    spiSclk 	: out std_logic;
-    spiDin  	: out std_logic;
-    spiNsync    : out std_logic    
+    pindex 	: integer := 0;				--! Slave index
+    paddr 	: integer := 0; 			--! Address of the APB bank
+    pmask 	: integer := 16#fff#); 			--! Address range
+  port (	
+    rstn 	: in std_ulogic;			--! Global reset, active low
+    clk 	: in std_ulogic;			--! Clock at the bus speed of 50 MHz
+    clk100 	: in std_ulogic;			--! Clock at 100 MHz for certain speed dependent modules
+    vauxp3 	: in STD_LOGIC;				--! XADC related signal
+    vauxn3 	: IN STD_LOGIC;				--! XADC related signal
+    apbi 	: in apb_slv_in_type; 			--! APB slave inputs
+    apbo 	: out apb_slv_out_type; 		--! APB slave outputs
+    spiSclk 	: out std_logic;			--! Serial clock for DAC SPI
+    spiDin  	: out std_logic;	 		--! Data signal for DAC SPI
+    spiNsync    : out std_logic 			--! Sync signal for DAC SPI
     );
 end entity dummyapb;
 
 --! @brief Architecture of the Dummy_apb
---! @details The Dummy APB creates an inteface between the APB and the ADC/DAC. This is done in the simplest way possible. The adress to the ADC and DAC buffer is part of the APB adress to this component. 
+--! @details The Dummy APB creates an interface between the APB and the ADC/DAC. This is done in the simplest way possible. The address to the ADC and DAC buffer is part of the APB address to this component. 
+
+architecture APB_interface of dummyapb is
 
 component ADC_TOP
     Port ( CLK : in STD_LOGIC;  								-- ! Global clock running at 100 MHz.
@@ -88,20 +87,18 @@ component DacTop
 	);
 end component;
 -- APB related signals
-signal sLED    : std_logic_vector(31 downto 0);
-signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);
-signal sampleclk : std_logic;
-Signal ADDR : STD_LOGIC_VECTOR(6 downto 0);
-signal buffer_interupt : STD_LOGIC;
-signal sampleena44kHz : STD_LOGIC;
-signal dac_buff_write : STD_LOGIC;
-signal irq            : STD_LOGIC;
-signal Dac_buff_write_temp : STD_LOGIC;
+signal sLED    : std_logic_vector(31 downto 0);		--! Buffered signals from the APB bus
+signal sampledvalue : STD_LOGIC_VECTOR(15 downto 0);	--! Sampled value from the ADC_buffer
+signal sampleclk : std_logic;				--! Sample clock for the ADC
+Signal ADDR : STD_LOGIC_VECTOR(6 downto 0);		--! Address for the ADC_buffer and DAC_buffers
+signal buffer_interupt : STD_LOGIC;			--! Interrupt from the ADC_buffer
+signal sampleena44kHz : STD_LOGIC;			--! Sample clock for the ADC buffer
+signal dac_buff_write : STD_LOGIC;			--! This signal comes from the right address combination indicating the DAC_buffer is to read
+signal irq            : STD_LOGIC;			--! Buffered interrupt to prevent the interrupt if being high for more than one clock cycle
 
---constant REVISION       : amba_version_type := 0; 
 constant pconfig        : apb_config_type := (
                       0 => ahb_device_reg ( VENDOR_GROUP, OWN_ADC, 0, 0, 0),
-                      1 => apb_iobar(paddr, pmask));
+                      1 => apb_iobar(paddr, pmask));	--! This vector configs the address ranging and start address.
 
 begin
 
@@ -130,18 +127,12 @@ port map (
     sampleclk => sampleclk,
     vauxp3 => vauxp3,
     vauxn3 => vauxn3,
- --   ADC_buff_out => sampledvalue,
     ADDR => ADDR,
     buff_full => buffer_interupt,
     ADC_buff_write => sampleena44kHz ,
     ADC_buff_out => sampledvalue
     
  );
-debugvector(0) <= buffer_interupt;
-debugvector(1) <= sampleclk;
-debugvector(2) <= sampleena44kHz;
-debugvector(3) <= dac_buff_write;
-debugvector(7 downto 4) <= addr(6 downto 3);
 
 
 -- APB process, handling everything with the APB-bus and setting select signals to peripherals
@@ -154,8 +145,7 @@ debugvector(7 downto 4) <= addr(6 downto 3);
             dac_buff_write <= '0';
             
         elsif rising_edge(clk) then        
---           Dac_buff_write <= Dac_buff_write_temp;
-            --connceted to both DAC and ADC, used to select elements in both components
+            --connected to both DAC and ADC, used to select elements in both components
             Addr <= apbi.paddr(8 downto 2);
             --select signal to DAC
             
@@ -210,4 +200,4 @@ debugvector(7 downto 4) <= addr(6 downto 3);
     generic map ("apbvgreport_versiona" & tost(pindex) & ": LED Control rev 0");
  -- pragma translate_on
 
-end rtl;
+end APB_interface;

@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The DAC SPI interface converts parallel data from the data port and transforms it to a SPI to be sent to the external DAC chip on the din port. The module also adds flag bits to this signal, aswell as a chip select signal called n_sync. The interface listens to the sample clock and only transmits a new message when this clock goes from low to high.  
+<p>The DAC <a class="el" href="classDAC__SPI_1_1SPI.html" title="Architecture of the DAC_SPI. ">SPI</a> interface converts parallel data from the data port and transforms it to a <a class="el" href="classDAC__SPI_1_1SPI.html" title="Architecture of the DAC_SPI. ">SPI</a> to be sent to the external DAC chip on the din port. The module also adds flag bits to this signal, as well as a chip select signal called n_sync. The interface listens to the sample clock and only transmits a new message when this clock goes from low to high.  
  <a href="classDAC__SPI.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for DAC_SPI:</div>
@@ -99,13 +99,14 @@ Inheritance diagram for DAC_SPI:</div>
  <div class="center">
   <img src="classDAC__SPI.png" usemap="#DAC_SPI_map" alt=""/>
   <map id="DAC_SPI_map" name="DAC_SPI_map">
-<area href="classdacTop.html" title="This component is a wrapper for the parts needed for the digital to analog converter. Its main functionality is to provide for internal connections between the compontnets and to throughput any signals to the next level in the hierarchy. " alt="dacTop" shape="rect" coords="0,56,65,80"/>
+<area href="classdac__Top.html" title="This component is a wrapper for the parts needed for the digital to analog converter. Its main functionality is to provide for internal connections between the components and to throughput any signals to the next level in the hierarchy. " alt="dac_Top" shape="rect" coords="0,56,65,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Entities</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDAC__SPI_1_1behavioral.html">behavioral</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDAC__SPI_1_1SPI.html">SPI</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture of the <a class="el" href="classDAC__SPI.html" title="The DAC SPI interface converts parallel data from the data port and transforms it to a SPI to be sent...">DAC_SPI</a>.  <a href="classDAC__SPI_1_1SPI.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Libraries"></a>
@@ -127,13 +128,13 @@ Ports</h2></td></tr>
 <tr class="memdesc:aba021aec4b477b89079bb58ccadcc67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global reset active low. <br/></td></tr>
 <tr class="memitem:a8120037e0ee47c35ba2d79242209c72e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8120037e0ee47c35ba2d79242209c72e"></a>
 <a class="el" href="classDAC__SPI.html#a8120037e0ee47c35ba2d79242209c72e">clk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a8120037e0ee47c35ba2d79242209c72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock in, in this case the 25 MHz SPI clock. <br/></td></tr>
+<tr class="memdesc:a8120037e0ee47c35ba2d79242209c72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock in, in this case the 25 MHz <a class="el" href="classDAC__SPI_1_1SPI.html" title="Architecture of the DAC_SPI. ">SPI</a> clock. <br/></td></tr>
 <tr class="memitem:a2cc65ad6f0f6d24cd3ebac8757953224"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cc65ad6f0f6d24cd3ebac8757953224"></a>
 <a class="el" href="classDAC__SPI.html#a2cc65ad6f0f6d24cd3ebac8757953224">data</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">15</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a2cc65ad6f0f6d24cd3ebac8757953224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data vector containing the paralell sample. <br/></td></tr>
+<tr class="memdesc:a2cc65ad6f0f6d24cd3ebac8757953224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data vector containing the parallel sample. <br/></td></tr>
 <tr class="memitem:a4696bc4e06c727fae1b8ce3ba8cf08d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4696bc4e06c727fae1b8ce3ba8cf08d4"></a>
 <a class="el" href="classDAC__SPI.html#a4696bc4e06c727fae1b8ce3ba8cf08d4">sampleclk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a4696bc4e06c727fae1b8ce3ba8cf08d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sampleclock indicating a new sample is avaiable, this triggers a new transmission. <br/></td></tr>
+<tr class="memdesc:a4696bc4e06c727fae1b8ce3ba8cf08d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sampleclock indicating a new sample is available, this triggers a new transmission. <br/></td></tr>
 <tr class="memitem:a85ffcdebe13d1f5ddc75d9dc2718accd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85ffcdebe13d1f5ddc75d9dc2718accd"></a>
 <a class="el" href="classDAC__SPI.html#a85ffcdebe13d1f5ddc75d9dc2718accd">din</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
 <tr class="memdesc:a85ffcdebe13d1f5ddc75d9dc2718accd"><td class="mdescLeft">&#160;</td><td class="mdescRight">din is the serial connected to the DAC IC <br/></td></tr>
@@ -142,14 +143,14 @@ Ports</h2></td></tr>
 <tr class="memdesc:acb508fc1279abe4c1bc2be47e4dd526b"><td class="mdescLeft">&#160;</td><td class="mdescRight">nsync is the chip select for the DAC IC <br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The DAC SPI interface converts parallel data from the data port and transforms it to a SPI to be sent to the external DAC chip on the din port. The module also adds flag bits to this signal, aswell as a chip select signal called n_sync. The interface listens to the sample clock and only transmits a new message when this clock goes from low to high. </p>
+<div class="textblock"><p>The DAC <a class="el" href="classDAC__SPI_1_1SPI.html" title="Architecture of the DAC_SPI. ">SPI</a> interface converts parallel data from the data port and transforms it to a <a class="el" href="classDAC__SPI_1_1SPI.html" title="Architecture of the DAC_SPI. ">SPI</a> to be sent to the external DAC chip on the din port. The module also adds flag bits to this signal, as well as a chip select signal called n_sync. The interface listens to the sample clock and only transmits a new message when this clock goes from low to high. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="DAC__SPI_8vhd.html">DAC_SPI.vhd</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:09 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:36:47 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -1,0 +1,105 @@
+\hypertarget{classADC__TOP_1_1TOP__ADC}{\section{T\-O\-P\-\_\-\-A\-D\-C Architecture Reference}
+\label{classADC__TOP_1_1TOP__ADC}\index{T\-O\-P\-\_\-\-A\-D\-C@{T\-O\-P\-\_\-\-A\-D\-C}}
+}
+
+
+\hyperlink{classADC__TOP}{A\-D\-C\-\_\-\-T\-O\-P}.  
+
+
+\subsection*{Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_af7530dff761625dab17b84e8c5926692}{\hyperlink{classADC__TOP_1_1TOP__ADC_af7530dff761625dab17b84e8c5926692}{P\-R\-O\-C\-E\-S\-S\-\_\-1}{\bfseries  ( {\bfseries {\bfseries \hyperlink{classADC__TOP_ab1f7becce7cb29d94bb2f2ec187f72a4}{C\-L\-K100}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \hyperlink{classADC__TOP_a91cf794d165cc0a740042335a6062940}{R\-S\-T}} \textcolor{vhdlchar}{ }} )}}\label{classADC__TOP_1_1TOP__ADC_af7530dff761625dab17b84e8c5926692}
+
+\end{DoxyCompactItemize}
+\subsection*{Components}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_ae43da35f6da7738b69d6245cc2ca3b49}{\hyperlink{classADC__TOP_1_1TOP__ADC_ae43da35f6da7738b69d6245cc2ca3b49}{digitalfilter}  {\bfseries }  }\label{classADC__TOP_1_1TOP__ADC_ae43da35f6da7738b69d6245cc2ca3b49}
+
+\begin{DoxyCompactList}\small\item\em Digital F\-I\-R filter. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_ad251174263b28388454816799ffd91ae}{\hyperlink{classADC__TOP_1_1TOP__ADC_ad251174263b28388454816799ffd91ae}{A\-D\-C}  {\bfseries }  }\label{classADC__TOP_1_1TOP__ADC_ad251174263b28388454816799ffd91ae}
+
+\begin{DoxyCompactList}\small\item\em finished indicates the filter calculations are done \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_a76d32257e982d92a96905d3f9b3babc8}{\hyperlink{classADC__TOP_1_1TOP__ADC_a76d32257e982d92a96905d3f9b3babc8}{A\-D\-C\-\_\-buffer}  {\bfseries }  }\label{classADC__TOP_1_1TOP__ADC_a76d32257e982d92a96905d3f9b3babc8}
+
+\begin{DoxyCompactList}\small\item\em Buffer for samples. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_ab48f33ef761b1b52e2b08c1d8ef76334}{\hyperlink{classADC__TOP_1_1TOP__ADC_ab48f33ef761b1b52e2b08c1d8ef76334}{den\-\_\-in} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_ab48f33ef761b1b52e2b08c1d8ef76334}
+
+\begin{DoxyCompactList}\small\item\em Address indicates what address bufferout should be read from Signal for den\-\_\-in in the X\-A\-D\-C. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_afeaa67943e27d8c3ee9651159bd9193d}{\hyperlink{classADC__TOP_1_1TOP__ADC_afeaa67943e27d8c3ee9651159bd9193d}{dwe\-\_\-in} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_afeaa67943e27d8c3ee9651159bd9193d}
+
+\begin{DoxyCompactList}\small\item\em Signal for the write enable in for the X\-A\-D\-C. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_a6116bc00f8788e5cc6bc5deb069fdc53}{\hyperlink{classADC__TOP_1_1TOP__ADC_a6116bc00f8788e5cc6bc5deb069fdc53}{di\-\_\-in} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_a6116bc00f8788e5cc6bc5deb069fdc53}
+
+\begin{DoxyCompactList}\small\item\em Signal for the input vector for the X\-A\-D\-C. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_a72126e522b97fa2b659a65d687081a41}{\hyperlink{classADC__TOP_1_1TOP__ADC_a72126e522b97fa2b659a65d687081a41}{daddr\-\_\-in} {\bfseries \textcolor{comment}{std\-\_\-\-L\-O\-G\-I\-C\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{6} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_a72126e522b97fa2b659a65d687081a41}
+
+\begin{DoxyCompactList}\small\item\em Address in registers. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_ac58565a65b10392b2476534d234c8871}{\hyperlink{classADC__TOP_1_1TOP__ADC_ac58565a65b10392b2476534d234c8871}{inv\-\_\-rst} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_ac58565a65b10392b2476534d234c8871}
+
+\begin{DoxyCompactList}\small\item\em Inversed reset for X\-A\-D\-C. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_ad5797d4ae2d654477e555700f8c3e43f}{\hyperlink{classADC__TOP_1_1TOP__ADC_ad5797d4ae2d654477e555700f8c3e43f}{sampledvalue} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_ad5797d4ae2d654477e555700f8c3e43f}
+
+\begin{DoxyCompactList}\small\item\em Sampled value from X\-A\-D\-C. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_a765e6fd5e52807fd480f8e8477f35144}{\hyperlink{classADC__TOP_1_1TOP__ADC_a765e6fd5e52807fd480f8e8477f35144}{busy} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_a765e6fd5e52807fd480f8e8477f35144}
+
+\begin{DoxyCompactList}\small\item\em Busy signal from X\-A\-D\-C. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_afda8ab14219d5cf291d97fd808265f14}{\hyperlink{classADC__TOP_1_1TOP__ADC_afda8ab14219d5cf291d97fd808265f14}{lastsampleclk} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_afda8ab14219d5cf291d97fd808265f14}
+
+\begin{DoxyCompactList}\small\item\em The sample clock delayed one C\-L\-K. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_ac455bd1063158947568362bdce5e54c2}{\hyperlink{classADC__TOP_1_1TOP__ADC_ac455bd1063158947568362bdce5e54c2}{filterin} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_ac455bd1063158947568362bdce5e54c2}
+
+\begin{DoxyCompactList}\small\item\em The sampled value extended to 32 bits as input to the digital filter. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_ac6146f465208802b4d06d2f701308cf4}{\hyperlink{classADC__TOP_1_1TOP__ADC_ac6146f465208802b4d06d2f701308cf4}{filterout} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_ac6146f465208802b4d06d2f701308cf4}
+
+\begin{DoxyCompactList}\small\item\em The output of the digital filter and input of the buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributes}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_a32f4997bcfad751ba77794903af40d92}{\hyperlink{classADC__TOP_1_1TOP__ADC_a32f4997bcfad751ba77794903af40d92}{S\-Y\-N\-\_\-\-B\-L\-A\-C\-K\-\_\-\-B\-O\-X\-\_\-\-A\-D\-C} {\bfseries \textcolor{comment}{B\-O\-O\-L\-E\-A\-N}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_a32f4997bcfad751ba77794903af40d92}
+
+\begin{DoxyCompactList}\small\item\em Signaling the A\-D\-C is busy sampling. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_a737609c62913b04be3bb776fbce18464}{\hyperlink{classADC__TOP_1_1TOP__ADC_a737609c62913b04be3bb776fbce18464}{S\-Y\-N\-\_\-\-B\-L\-A\-C\-K\-\_\-\-B\-O\-X\-\_\-\-A\-D\-C} {\bfseries {\bfseries \hyperlink{classADC__TOP_1_1TOP__ADC_ad251174263b28388454816799ffd91ae}{A\-D\-C}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{component}\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{is}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{T\-R\-U\-E}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_a737609c62913b04be3bb776fbce18464}
+
+\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_a05f1935151676cf5c0d14df52f28c3b1}{\hyperlink{classADC__TOP_1_1TOP__ADC_a05f1935151676cf5c0d14df52f28c3b1}{B\-L\-A\-C\-K\-\_\-\-B\-O\-X\-\_\-\-P\-A\-D\-\_\-\-P\-I\-N\-\_\-\-A\-D\-C} {\bfseries \textcolor{comment}{S\-T\-R\-I\-N\-G}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_a05f1935151676cf5c0d14df52f28c3b1}
+
+\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_a731a305d96f244bae6982ef51e5298be}{\hyperlink{classADC__TOP_1_1TOP__ADC_a731a305d96f244bae6982ef51e5298be}{B\-L\-A\-C\-K\-\_\-\-B\-O\-X\-\_\-\-P\-A\-D\-\_\-\-P\-I\-N\-\_\-\-A\-D\-C} {\bfseries {\bfseries \hyperlink{classADC__TOP_1_1TOP__ADC_ad251174263b28388454816799ffd91ae}{A\-D\-C}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{component}\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{is}\textcolor{vhdlchar}{ }\textcolor{keyword}{\char`\"{} di\-\_\-in \mbox{[} 15 \-: 0 \mbox{]} , daddr\-\_\-in \mbox{[} 6 \-: 0 \mbox{]} , den\-\_\-in , dwe\-\_\-in , drdy\-\_\-out , do\-\_\-out \mbox{[} 15 \-: 0 \mbox{]} , dclk\-\_\-in , reset\-\_\-in , convst\-\_\-in , vp\-\_\-in , vn\-\_\-in , vauxp3 , vauxn3 , user\-\_\-temp\-\_\-alarm\-\_\-out , vccint\-\_\-alarm\-\_\-out , vccaux\-\_\-alarm\-\_\-out , ot\-\_\-out , channel\-\_\-out \mbox{[} 4 \-: 0 \mbox{]} , eoc\-\_\-out , alarm\-\_\-out , eos\-\_\-out , busy\-\_\-out \char`\"{}}\textcolor{vhdlchar}{ }} }\label{classADC__TOP_1_1TOP__ADC_a731a305d96f244bae6982ef51e5298be}
+
+\end{DoxyCompactItemize}
+\subsection*{Instantiations}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classADC__TOP_1_1TOP__ADC_a81c79629e96df5c724d8c3a91688a867}{isnt\-\_\-filter}  {\bfseries digitalfilter}   
+\begin{DoxyCompactList}\small\item\em Address for the X\-A\-D\-C register is set to 0x13. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_ad035aeedbb36bd6303acc72526b48022}{\hyperlink{classADC__TOP_1_1TOP__ADC_ad035aeedbb36bd6303acc72526b48022}{inst\-\_\-adc}  {\bfseries adc}   }\label{classADC__TOP_1_1TOP__ADC_ad035aeedbb36bd6303acc72526b48022}
+
+\begin{DoxyCompactList}\small\item\em Instantiation of the X\-A\-D\-C. \end{DoxyCompactList}\item 
+\hypertarget{classADC__TOP_1_1TOP__ADC_adf88e6da5f53b3204a0fd1ba0ced2982}{\hyperlink{classADC__TOP_1_1TOP__ADC_adf88e6da5f53b3204a0fd1ba0ced2982}{inst\-\_\-buffer}  {\bfseries A\-D\-C\-\_\-buffer}   }\label{classADC__TOP_1_1TOP__ADC_adf88e6da5f53b3204a0fd1ba0ced2982}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classADC__TOP}{A\-D\-C\-\_\-\-T\-O\-P}. 
+
+The architecture containing the main body of the component. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classADC__TOP_1_1TOP__ADC_a81c79629e96df5c724d8c3a91688a867}{\index{A\-D\-C\-\_\-\-T\-O\-P\-::\-T\-O\-P\-\_\-\-A\-D\-C@{A\-D\-C\-\_\-\-T\-O\-P\-::\-T\-O\-P\-\_\-\-A\-D\-C}!isnt\-\_\-filter@{isnt\-\_\-filter}}
+\index{isnt\-\_\-filter@{isnt\-\_\-filter}!ADC_TOP::TOP_ADC@{A\-D\-C\-\_\-\-T\-O\-P\-::\-T\-O\-P\-\_\-\-A\-D\-C}}
+\subsubsection[{isnt\-\_\-filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf isnt\-\_\-filter} {\bfseries \textcolor{vhdlchar}{digitalfilter}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Instantiation]}}}\label{classADC__TOP_1_1TOP__ADC_a81c79629e96df5c724d8c3a91688a867}
+
+
+Address for the X\-A\-D\-C register is set to 0x13. 
+
+Input vector is set to 0 as we will never write to the X\-A\-D\-C. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+A\-D\-C\-\_\-\-T\-O\-P.\-vhd\end{DoxyCompactItemize}

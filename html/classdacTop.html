@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This component is a wrapper for the parts needed for the digital to analog converter. Its main functionality is to provide for internal connections between the compontnets and to throughput any signals to the next level in the hierarchy.  
+<p>This component is a wrapper for the parts needed for the digital to analog converter. Its main functionality is to provide for internal connections between the components and to throughput any signals to the next level in the hierarchy.  
  <a href="classdacTop.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for dacTop:</div>
@@ -102,6 +102,7 @@ Inheritance diagram for dacTop:</div>
 <area href="classclk__divide.html" title="This component takes the system clock divides it for ADC/DAC components using lower clocks..." alt="clk_divide" shape="rect" coords="0,0,80,24"/>
 <area href="classDAC__SPI.html" title="The DAC SPI interface converts parallel data from the data port and transforms it to a SPI to be sent..." alt="DAC_SPI" shape="rect" coords="90,0,170,24"/>
 <area href="classDAC__buffer.html" title="This component buffers samples from the softcore at the current address when buffwrite is high..." alt="DAC_buffer" shape="rect" coords="180,0,260,24"/>
+<area href="classdummyapb.html" title="This component gathers all the sub-modules needed for communication with ADC and DAC. It also supplies an interface to the APB bus. " alt="dummyapb" shape="rect" coords="90,112,170,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -148,29 +149,29 @@ Ports</h2></td></tr>
 <tr class="memdesc:aae112fd9041e6fcce9483ea8550d54f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sampleclock running at 705.6 kHz, used by ADC for oversampling. <br/></td></tr>
 <tr class="memitem:a70a8575229cff595728858aea9bd6a65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70a8575229cff595728858aea9bd6a65"></a>
 <a class="el" href="classdacTop.html#a70a8575229cff595728858aea9bd6a65">sampleclk44khz</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a70a8575229cff595728858aea9bd6a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sampleclock indicating a new samle were to be read to/from buffers. <br/></td></tr>
+<tr class="memdesc:a70a8575229cff595728858aea9bd6a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sampleclock indicating a new sample were to be read to/from buffers. <br/></td></tr>
 <tr class="memitem:a6d01fe70bfcd66f305c9c962331782cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d01fe70bfcd66f305c9c962331782cd"></a>
 <a class="el" href="classdacTop.html#a6d01fe70bfcd66f305c9c962331782cd">sclk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a6d01fe70bfcd66f305c9c962331782cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A clock for the offchip DAC chip. <br/></td></tr>
+<tr class="memdesc:a6d01fe70bfcd66f305c9c962331782cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A clock for the off chip DAC chip. <br/></td></tr>
 <tr class="memitem:a85ffcdebe13d1f5ddc75d9dc2718accd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85ffcdebe13d1f5ddc75d9dc2718accd"></a>
 <a class="el" href="classdacTop.html#a85ffcdebe13d1f5ddc75d9dc2718accd">din</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a85ffcdebe13d1f5ddc75d9dc2718accd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output sample in serial to the offchip DAC. <br/></td></tr>
+<tr class="memdesc:a85ffcdebe13d1f5ddc75d9dc2718accd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output sample in serial to the off chip DAC. <br/></td></tr>
 <tr class="memitem:acb508fc1279abe4c1bc2be47e4dd526b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb508fc1279abe4c1bc2be47e4dd526b"></a>
 <a class="el" href="classdacTop.html#acb508fc1279abe4c1bc2be47e4dd526b">nSync</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:acb508fc1279abe4c1bc2be47e4dd526b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output sync to the offchip DAC. <br/></td></tr>
+<tr class="memdesc:acb508fc1279abe4c1bc2be47e4dd526b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output sync to the off chip DAC. <br/></td></tr>
 <tr class="memitem:a5a1c2c67d9bb87333434aa5bbc7217ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a1c2c67d9bb87333434aa5bbc7217ac"></a>
 <a class="el" href="classdacTop.html#a5a1c2c67d9bb87333434aa5bbc7217ac">index_reset</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_logic</span><span class="vhdlchar"> </span></b></td></tr>
 <tr class="memdesc:a5a1c2c67d9bb87333434aa5bbc7217ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">A signal to reset the memory counter. <br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This component is a wrapper for the parts needed for the digital to analog converter. Its main functionality is to provide for internal connections between the compontnets and to throughput any signals to the next level in the hierarchy. </p>
+<div class="textblock"><p>This component is a wrapper for the parts needed for the digital to analog converter. Its main functionality is to provide for internal connections between the components and to throughput any signals to the next level in the hierarchy. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="DACTOP_8vhd.html">DACTOP.vhd</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:09 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:04:41 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

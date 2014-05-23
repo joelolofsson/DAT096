@@ -1,12 +1,12 @@
 --! @file
---! @brief A wrapper to solve the inferfacing between the APB bus and HID.
+--! @brief A wrapper to solve the interfacing between the APB bus and HID.
 
 
 ----------------------------------------------------------------------------------
 -- Engineer (Creator): Jacob Rosén
 -- Engineer (Modifier) : -
 --
--- Design Name: Button and hax wrapper
+-- Design Name: Button and hex wrapper
 -- Module Name: button_and_hex_wrapper - Behavioral
 -- Project Name: SoundBox
 -- Target Devices: Artix 7 
@@ -32,37 +32,25 @@ use grlib.devices.all;
 
 entity button_and_hex_wrapper is
   generic (
-    pindex : integer := 0;
-    paddr : integer := 0; 
-    pmask : integer := 16#002#);
+    pindex 	: integer := 0;				--! Slave index
+    paddr 	: integer := 0; 			--! Address of the APB bank
+    pmask 	: integer := 16#002#); 			--! Address range
   port (
-    rstn : in std_ulogic;
-    clk : in std_ulogic;
-    apbi : in apb_slv_in_type;
-    apbo : out apb_slv_out_type;
-	Buttons_in : IN STD_LOGIC_VECTOR(4 downto 0);
-	seven_seg_out : OUT STD_LOGIC_VECTOR(6 downto 0);
-	seven_seg_sel : OUT STD_LOGIC_VECTOR(7 downto 0);
-	diode_out : OUT STD_LOGIC_vector
+    	rstn	 	: in std_ulogic;			--! global reset, active low
+    	clk 		: in std_ulogic;			--! Clock at the bus speed of 50 MHz
+    	apbi 		: in apb_slv_in_type;			--! APB slave inputs
+   	apbo 		: out apb_slv_out_type;			--! APB slave outputs
+	Buttons_in 	: IN STD_LOGIC_VECTOR(4 downto 0);	--! Buttons in from the board
+	seven_seg_out 	: OUT STD_LOGIC_VECTOR(6 downto 0);	--! Seven_sel_out marks the seven segment display of the current selected seven segment display segment
+	seven_seg_sel 	: OUT STD_LOGIC_VECTOR(7 downto 0);	--! Seven_seg_sel marks the current selected seven segment display
+	diode_out 	: OUT STD_LOGIC_vector(2 downto 0)	--! diode_out is a vector containing the state of the red, green and blue diode
     );
 end entity button_and_hex_wrapper;
 
 --! @brief Architecture of the Dummy_apb
---! @details The Dummy APB creates an inteface between the APB and the HID. This is done in the simplest way possible. A read from any adress to this module will result in the 8 LSB beeing the selected preset. A write to any adress will result in the RGB diode getting a command to either show green or red depending on the value of the LSB.
+--! @details The Dummy APB creates an interface between the APB and the HID. This is done in the simplest way possible. A read from any address to this module will result in the 8 LSB being the selected preset. A write to any address will result in the RGB diode getting a command to either show green or red depending on the value of the LSB.
 
-architecture rtl of button_and_hex_wrapper is
-
-COMPONENT ila_2
-  PORT (
-    clk : IN STD_LOGIC;
-    probe0 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    probe1 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
-  );
-END COMPONENT;
-ATTRIBUTE SYN_BLACK_BOX : BOOLEAN;
-ATTRIBUTE SYN_BLACK_BOX OF ila_2 : COMPONENT IS TRUE;
-ATTRIBUTE BLACK_BOX_PAD_PIN : STRING;
-ATTRIBUTE BLACK_BOX_PAD_PIN OF ila_2 : COMPONENT IS "clk,probe0[0:0],probe1[0:0]";
+architecture HID_wrapper of button_and_hex_wrapper is
 
 component button_control
     Port ( 	clk  : IN STD_LOGIC;
@@ -97,26 +85,19 @@ COMPONENT RGB_diode_controller
 		);
 	END COMPONENT;
 
-signal current_preset, selected_preset : STD_LOGIC_VECTOR(7 downto 0);
+signal current_preset, selected_preset : STD_LOGIC_VECTOR(7 downto 0);	--! The current and selected preset hold the value of these signals.
 
-signal irq_read,irq_write : STD_LOGIC;
+signal irq_read,irq_write : STD_LOGIC;					--! The irq_read and irq_write is the generated interrupt for read and write respectively. This signal comes from the button_control
 
-signal read_interupt,write_interupt : STD_LOGIC;
+signal read_interupt,write_interupt : STD_LOGIC;			--! Buffered interrupts to prevent the interrupts from being high for more than one clock cycle
 
-signal is_working : STD_LOGIC;
+signal is_working : STD_LOGIC;						--! Bit indicating if the diode should be red or green.
 
 constant pconfig        : apb_config_type := (
                       0 => ahb_device_reg ( VENDOR_GROUP, OWN_BTN, 0, 0, 0),
-                      1 => apb_iobar(paddr, pmask));
+                      1 => apb_iobar(paddr, pmask));			--! This vector configs the address ranging and start address.
 
 begin
-
-your_instance_name : ila_2
-  PORT MAP (
-    clk => clk,
-    probe0(0) => irq_read,
-    probe1(0) => irq_write
-  );
    
 inst_button : button_control
 	port map(
@@ -197,4 +178,4 @@ inst_RGB_diode_controller: RGB_diode_controller
     generic map ("apbvgreport_versiona" & tost(pindex) & ": LED Control rev 0");
  -- pragma translate_on
 
-end rtl;
+end HID_wrapper;

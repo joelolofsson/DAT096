@@ -1,4 +1,12 @@
 cd latex
 rm *
 cd ..
-rmdir
+doxygen *.vhd*
+doxygen *.vhd*
+doxygen *.vhd*
+doxygen *.vhd*
+doxygen *.vhd*
+doxygen Doxyfile
+cd latex
+make
+cd ..

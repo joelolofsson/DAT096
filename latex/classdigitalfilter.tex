@@ -3,20 +3,20 @@
 }
 
 
-This module implements a digital F\-I\-R filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once evety clock cycle until the calculations are done. When this happenes the calculated value is outputted and the finished port will be set.  
+This module implements a digital F\-I\-R filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once every clock cycle until the calculations are done. When this happened the calculated value is outputted and the finished port will be set.  
 
 
 Inheritance diagram for digitalfilter\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classdigitalfilter}
+\includegraphics[height=3.000000cm]{classdigitalfilter}
 \end{center}
 \end{figure}
 \subsection*{Entities}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classdigitalfilter_1_1Behavioral}{Behavioral} architecture
-\begin{DoxyCompactList}\small\item\em Architecture of the digitalfilter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classdigitalfilter_1_1FIR__filter}{F\-I\-R\-\_\-filter} architecture
+\begin{DoxyCompactList}\small\item\em digitalfilter \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Libraries}
  \begin{DoxyCompactItemize}
 \item 
@@ -37,10 +37,10 @@ Inheritance diagram for digitalfilter\-:\begin{figure}[H]
 \item 
 \hypertarget{classdigitalfilter_a91fcbc2cb8dd91f914c30526e23794a9}{\hyperlink{classdigitalfilter_a91fcbc2cb8dd91f914c30526e23794a9}{W\-I\-D\-T\-H} {\bfseries {\bfseries \textcolor{comment}{I\-N\-T\-E\-G\-E\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{8} \textcolor{vhdlchar}{ }}}}\label{classdigitalfilter_a91fcbc2cb8dd91f914c30526e23794a9}
 
-\begin{DoxyCompactList}\small\item\em Width decides the bitwidth of the filter. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Width decides the bit width of the filter. \end{DoxyCompactList}\item 
 \hypertarget{classdigitalfilter_a61de7093f96d3bc9f246d1d7744f9dc6}{\hyperlink{classdigitalfilter_a61de7093f96d3bc9f246d1d7744f9dc6}{N} {\bfseries {\bfseries \textcolor{comment}{I\-N\-T\-E\-G\-E\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{4} \textcolor{vhdlchar}{ }}}}\label{classdigitalfilter_a61de7093f96d3bc9f246d1d7744f9dc6}
 
-\begin{DoxyCompactList}\small\item\em N descides the number of taps of the filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em N decides the number of taps of the filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Ports}
  \begin{DoxyCompactItemize}
 \item 
@@ -58,14 +58,14 @@ Inheritance diagram for digitalfilter\-:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em x is the input of the filter \end{DoxyCompactList}\item 
 \hypertarget{classdigitalfilter_af668726c6bb16ef4d276739c4c161217}{\hyperlink{classdigitalfilter_af668726c6bb16ef4d276739c4c161217}{y}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{31} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classdigitalfilter_af668726c6bb16ef4d276739c4c161217}
 
-\begin{DoxyCompactList}\small\item\em y is the outpu of the filter \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em y is the output of the filter \end{DoxyCompactList}\item 
 \hypertarget{classdigitalfilter_ad2b5eab2bb63ad6b267ff2523ac34898}{\hyperlink{classdigitalfilter_ad2b5eab2bb63ad6b267ff2523ac34898}{finished}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classdigitalfilter_ad2b5eab2bb63ad6b267ff2523ac34898}
 
 \begin{DoxyCompactList}\small\item\em finished indicates the filter calculations are done \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-This module implements a digital F\-I\-R filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once evety clock cycle until the calculations are done. When this happenes the calculated value is outputted and the finished port will be set. 
+This module implements a digital F\-I\-R filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once every clock cycle until the calculations are done. When this happened the calculated value is outputted and the finished port will be set. 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 

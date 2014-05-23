@@ -94,7 +94,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This component gathers all the sub-modules needed for communication with ADC and DAC. It also supplies an interface to the APB bus.  
  <a href="classdummyapb.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for dummyapb:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classdummyapb.png" usemap="#dummyapb_map" alt=""/>
+  <map id="dummyapb_map" name="dummyapb_map">
+<area href="classADC__TOP.html" title="Use of standard logic arguments. " alt="ADC_TOP" shape="rect" coords="45,56,125,80"/>
+<area href="classdigitalfilter.html" title="This module implements a digital FIR filter. When the start port goes from low to high the filter wil..." alt="digitalfilter" shape="rect" coords="0,0,80,24"/>
+<area href="classADC__buffer.html" title="This component buffers samples when buff_write goes from low to high, until the buffer is full..." alt="ADC_buffer" shape="rect" coords="90,0,170,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Entities</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdummyapb_1_1APB__interface.html">APB_interface</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture of the Dummy_apb.  <a href="classdummyapb_1_1APB__interface.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Libraries"></a>
 Libraries</h2></td></tr>
  <tr class="memitem:ae4f03c286607f3181e16b9aa12d0c6d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4f03c286607f3181e16b9aa12d0c6d4"></a>
@@ -123,39 +140,46 @@ Use Clauses</h2></td></tr>
 Generics</h2></td></tr>
  <tr class="memitem:a5e1fd38c08cf4405b26bf887c5010e2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e1fd38c08cf4405b26bf887c5010e2b"></a>
 <a class="el" href="classdummyapb.html#a5e1fd38c08cf4405b26bf887c5010e2b">pindex</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span></b></b></td></tr>
+<tr class="memdesc:a5e1fd38c08cf4405b26bf887c5010e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slave index. <br/></td></tr>
 <tr class="memitem:a1c4c90775fe1a0af1ff79546ceb2f9c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c4c90775fe1a0af1ff79546ceb2f9c2"></a>
 <a class="el" href="classdummyapb.html#a1c4c90775fe1a0af1ff79546ceb2f9c2">paddr</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span></b></b></td></tr>
+<tr class="memdesc:a1c4c90775fe1a0af1ff79546ceb2f9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address of the APB bank. <br/></td></tr>
 <tr class="memitem:ae4b21043dd0ec623e5b8ed1cbe9db7b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4b21043dd0ec623e5b8ed1cbe9db7b5"></a>
 <a class="el" href="classdummyapb.html#ae4b21043dd0ec623e5b8ed1cbe9db7b5">pmask</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">16#fff#</span> <span class="vhdlchar"> </span></b></b></td></tr>
+<tr class="memdesc:ae4b21043dd0ec623e5b8ed1cbe9db7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address range. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Ports"></a>
 Ports</h2></td></tr>
  <tr class="memitem:a8fb8388e1e2f3ac69332573f5909b4e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fb8388e1e2f3ac69332573f5909b4e8"></a>
 <a class="el" href="classdummyapb.html#a8fb8388e1e2f3ac69332573f5909b4e8">rstn</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_ulogic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a8fb8388e1e2f3ac69332573f5909b4e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global reset, active low. <br/></td></tr>
 <tr class="memitem:af1c59ef8e5ba3edeeb313b4be18d7d8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1c59ef8e5ba3edeeb313b4be18d7d8a"></a>
 <a class="el" href="classdummyapb.html#af1c59ef8e5ba3edeeb313b4be18d7d8a">clk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_ulogic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:af1c59ef8e5ba3edeeb313b4be18d7d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock at the bus speed of 50 MHz. <br/></td></tr>
 <tr class="memitem:acfb2eee7a14b6192c7945bbb7ba640fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfb2eee7a14b6192c7945bbb7ba640fa"></a>
 <a class="el" href="classdummyapb.html#acfb2eee7a14b6192c7945bbb7ba640fa">clk100</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_ulogic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:acfb2eee7a14b6192c7945bbb7ba640fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock at 100 MHz for certain speed dependent modules. <br/></td></tr>
 <tr class="memitem:af2205ffee98e5aeaa144186159740393"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2205ffee98e5aeaa144186159740393"></a>
 <a class="el" href="classdummyapb.html#af2205ffee98e5aeaa144186159740393">vauxp3</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:af2205ffee98e5aeaa144186159740393"><td class="mdescLeft">&#160;</td><td class="mdescRight">XADC related signal. <br/></td></tr>
 <tr class="memitem:a3d034bd2912bb721a5bd221c185c5c99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d034bd2912bb721a5bd221c185c5c99"></a>
 <a class="el" href="classdummyapb.html#a3d034bd2912bb721a5bd221c185c5c99">vauxn3</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a3d034bd2912bb721a5bd221c185c5c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">XADC related signal. <br/></td></tr>
 <tr class="memitem:abd7039100e504d8f92a35144147f07d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd7039100e504d8f92a35144147f07d7"></a>
 <a class="el" href="classdummyapb.html#abd7039100e504d8f92a35144147f07d7">apbi</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="vhdlchar">apb_slv_in_type</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:abd7039100e504d8f92a35144147f07d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">APB slave inputs. <br/></td></tr>
 <tr class="memitem:a7e895c34eed119599f289452433acbf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e895c34eed119599f289452433acbf2"></a>
 <a class="el" href="classdummyapb.html#a7e895c34eed119599f289452433acbf2">apbo</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="vhdlchar">apb_slv_out_type</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:a5aaf0ce0a90ea3f023dd024cbfe732c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5aaf0ce0a90ea3f023dd024cbfe732c0"></a>
-<a class="el" href="classdummyapb.html#a5aaf0ce0a90ea3f023dd024cbfe732c0">pwmout</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:a9f5d81e05d854bebe7bc2cf2435dd131"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f5d81e05d854bebe7bc2cf2435dd131"></a>
-<a class="el" href="classdummyapb.html#a9f5d81e05d854bebe7bc2cf2435dd131">Debugvector</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">7</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:a03d7cad7dbbc8a7549b6065d9a9ba788"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03d7cad7dbbc8a7549b6065d9a9ba788"></a>
-<a class="el" href="classdummyapb.html#a03d7cad7dbbc8a7549b6065d9a9ba788">led</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">15</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">4</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a7e895c34eed119599f289452433acbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">APB slave outputs. <br/></td></tr>
 <tr class="memitem:ad82a959b5a4a639e7c0a09e6b1e31705"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad82a959b5a4a639e7c0a09e6b1e31705"></a>
 <a class="el" href="classdummyapb.html#ad82a959b5a4a639e7c0a09e6b1e31705">spiSclk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:ad82a959b5a4a639e7c0a09e6b1e31705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serial clock for DAC SPI. <br/></td></tr>
 <tr class="memitem:a77f854eda2e8d157ccc5d2d08e8ecfb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77f854eda2e8d157ccc5d2d08e8ecfb7"></a>
 <a class="el" href="classdummyapb.html#a77f854eda2e8d157ccc5d2d08e8ecfb7">spiDin</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a77f854eda2e8d157ccc5d2d08e8ecfb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data signal for DAC SPI. <br/></td></tr>
 <tr class="memitem:ae9d5788ea215a9d9dd1b8b43e977d582"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9d5788ea215a9d9dd1b8b43e977d582"></a>
 <a class="el" href="classdummyapb.html#ae9d5788ea215a9d9dd1b8b43e977d582">spiNsync</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:ae9d5788ea215a9d9dd1b8b43e977d582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync signal for DAC SPI. <br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This component gathers all the sub-modules needed for communication with ADC and DAC. It also supplies an interface to the APB bus. </p>
@@ -165,7 +189,7 @@ Ports</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:09 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:36:48 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

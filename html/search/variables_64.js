@@ -1,11 +1,19 @@
 var searchData=
 [
-  ['daddr_5fin',['daddr_in',['../classADC__TOP_1_1Behavioral.html#a72126e522b97fa2b659a65d687081a41',1,'ADC_TOP::Behavioral']]],
-  ['data',['data',['../classDAC__SPI.html#a2cc65ad6f0f6d24cd3ebac8757953224',1,'DAC_SPI.data()'],['../classdacTop.html#a2cc65ad6f0f6d24cd3ebac8757953224',1,'dacTop.data()']]],
-  ['den_5fin',['den_in',['../classADC__TOP_1_1Behavioral.html#ab48f33ef761b1b52e2b08c1d8ef76334',1,'ADC_TOP::Behavioral']]],
-  ['di_5fin',['di_in',['../classADC__TOP_1_1Behavioral.html#a6116bc00f8788e5cc6bc5deb069fdc53',1,'ADC_TOP::Behavioral']]],
-  ['digitalfilter',['digitalfilter',['../classADC__TOP_1_1Behavioral.html#ae43da35f6da7738b69d6245cc2ca3b49',1,'ADC_TOP::Behavioral']]],
-  ['din',['din',['../classDAC__SPI.html#a85ffcdebe13d1f5ddc75d9dc2718accd',1,'DAC_SPI.din()'],['../classdacTop.html#a85ffcdebe13d1f5ddc75d9dc2718accd',1,'dacTop.din()']]],
-  ['diode_5fout',['diode_out',['../classRGB__diode__controller.html#a0ee3d978fb8b47588b62e4a768c780fe',1,'RGB_diode_controller']]],
-  ['dwe_5fin',['dwe_in',['../classADC__TOP_1_1Behavioral.html#afeaa67943e27d8c3ee9651159bd9193d',1,'ADC_TOP::Behavioral']]]
+  ['dac_5fbuff_5fwrite',['dac_buff_write',['../classdummyapb_1_1APB__interface.html#a5b75e0ed5e3882a01953fb69419c92ae',1,'dummyapb::APB_interface']]],
+  ['dac_5fbuffer',['DAC_buffer',['../classdac__Top_1_1TOP__DAC.html#aee2b4aec5b20245f5b186d9084b7570a',1,'dac_Top::TOP_DAC']]],
+  ['dac_5fspi',['DAC_SPI',['../classdac__Top_1_1TOP__DAC.html#affa2663bbacf97f6ebd5b4e226f94f9f',1,'dac_Top::TOP_DAC']]],
+  ['dacin',['DACin',['../classdac__Top_1_1TOP__DAC.html#a13e59a7366652c9343f29ec5b5f18499',1,'dac_Top::TOP_DAC']]],
+  ['daddr_5fin',['daddr_in',['../classADC__TOP_1_1TOP__ADC.html#a72126e522b97fa2b659a65d687081a41',1,'ADC_TOP::TOP_ADC']]],
+  ['data',['data',['../classDAC__SPI.html#a2cc65ad6f0f6d24cd3ebac8757953224',1,'DAC_SPI.data()'],['../classdac__Top.html#a2cc65ad6f0f6d24cd3ebac8757953224',1,'dac_Top.data()']]],
+  ['databuff',['databuff',['../classDAC__SPI_1_1SPI.html#a3ba18b13dd42cfbe57a176e0793f0e15',1,'DAC_SPI::SPI']]],
+  ['datacounter',['dataCounter',['../classDAC__SPI_1_1SPI.html#a59fba5ee7156ef44b2afe3d3d4d71a85',1,'DAC_SPI::SPI']]],
+  ['den_5fin',['den_in',['../classADC__TOP_1_1TOP__ADC.html#ab48f33ef761b1b52e2b08c1d8ef76334',1,'ADC_TOP::TOP_ADC']]],
+  ['di_5fin',['di_in',['../classADC__TOP_1_1TOP__ADC.html#a6116bc00f8788e5cc6bc5deb069fdc53',1,'ADC_TOP::TOP_ADC']]],
+  ['digitalfilter',['digitalfilter',['../classADC__TOP_1_1TOP__ADC.html#ae43da35f6da7738b69d6245cc2ca3b49',1,'ADC_TOP::TOP_ADC']]],
+  ['din',['din',['../classDAC__SPI.html#a85ffcdebe13d1f5ddc75d9dc2718accd',1,'DAC_SPI.din()'],['../classdac__Top.html#a85ffcdebe13d1f5ddc75d9dc2718accd',1,'dac_Top.din()']]],
+  ['diode_5fduty_5fcounter',['diode_duty_counter',['../classRGB__diode__controller_1_1diode.html#a36d6c358f271c34f9fba99138b3bddf2',1,'RGB_diode_controller::diode']]],
+  ['diode_5fenable',['diode_enable',['../classRGB__diode__controller_1_1diode.html#a471ca34f0f3e1757f74b6c21eb6c97ed',1,'RGB_diode_controller::diode']]],
+  ['diode_5fout',['diode_out',['../classbutton__and__hex__wrapper.html#a7691db71e3330cb4b875bb27e8fbb8c7',1,'button_and_hex_wrapper.diode_out()'],['../classRGB__diode__controller.html#a0ee3d978fb8b47588b62e4a768c780fe',1,'RGB_diode_controller.diode_out()']]],
+  ['dwe_5fin',['dwe_in',['../classADC__TOP_1_1TOP__ADC.html#afeaa67943e27d8c3ee9651159bd9193d',1,'ADC_TOP::TOP_ADC']]]
 ];

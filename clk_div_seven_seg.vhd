@@ -31,9 +31,9 @@ entity clk_div_seven_seg is
 end clk_div_seven_seg;
 
 --! @brief Architecture of the clk_div_seven_seg
---! @details This clock divider is need to make sure seven segments of the seven segment displays in the correct speed. To fast and numbers will "float" to its neighbours due to slow trancients, to slow and the numbers will appear as flashing instead of solid.
-architecture Behavioral of clk_div_seven_seg is
-signal cnt : integer range 0 to 2**counterbits-1;
+--! @details This clock divider is need to make sure seven segments of the seven segment displays in the correct speed. To fast and numbers will "float" to its neighbors due to slow transients, to slow and the numbers will appear as flashing instead of solid.
+architecture clk_div_seven of clk_div_seven_seg is
+signal cnt : integer range 0 to 2**counterbits-1;	--! The counter
 begin
 
 process(rstn,clk)
@@ -52,4 +52,4 @@ begin
 	end if;
 end process;
 
-end Behavioral;
+end clk_div_seven;

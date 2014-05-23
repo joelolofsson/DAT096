@@ -89,7 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#Components">Components</a> &#124;
 <a href="#Signals">Signals</a> &#124;
-<a href="#Processes">Processes</a> &#124;
 <a href="#Instantiations">Instantiations</a>  </div>
   <div class="headertitle">
 <div class="title">behavioral Architecture Reference</div>  </div>
@@ -99,37 +98,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Architecture of the DACTOP.  
  <a href="classdacTop_1_1behavioral.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Processes"></a>
-Processes</h2></td></tr>
- <tr class="memitem:a6cc276b9a3076e40ac68b8ac3f1828a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cc276b9a3076e40ac68b8ac3f1828a7"></a>
-<a class="el" href="classdacTop_1_1behavioral.html#a6cc276b9a3076e40ac68b8ac3f1828a7">PROCESS_7</a>&#160;</td><td class="memItemRight" valign="bottom"><b> ( <b><b><a class="el" href="classdacTop.html#a8120037e0ee47c35ba2d79242209c72e">clk</a></b> <span class="vhdlchar"> </span><span class="vhdlchar"> </span></b> )</b></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Components"></a>
 Components</h2></td></tr>
  <tr class="memitem:a904d954c80fa4089ba9eeeb9497214f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdacTop_1_1behavioral.html#a904d954c80fa4089ba9eeeb9497214f2">clk_divide</a>&#160;</td><td class="memItemRight" valign="bottom">  <b></b>  <em><a class="el" href="classclk__divide.html">&lt;Entity clk_divide&gt; </a></em></td></tr>
 <tr class="memitem:affa2663bbacf97f6ebd5b4e226f94f9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affa2663bbacf97f6ebd5b4e226f94f9f"></a>
 <a class="el" href="classdacTop_1_1behavioral.html#affa2663bbacf97f6ebd5b4e226f94f9f">DAC_SPI</a>&#160;</td><td class="memItemRight" valign="bottom">  <b></b>  <em><a class="el" href="classDAC__SPI.html">&lt;Entity DAC_SPI&gt; </a></em></td></tr>
+<tr class="memdesc:affa2663bbacf97f6ebd5b4e226f94f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The DAC SPI interface takes parallel data and a clock and converts it to serial according to the DAC. <br/></td></tr>
 <tr class="memitem:aee2b4aec5b20245f5b186d9084b7570a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee2b4aec5b20245f5b186d9084b7570a"></a>
 <a class="el" href="classdacTop_1_1behavioral.html#aee2b4aec5b20245f5b186d9084b7570a">DAC_buffer</a>&#160;</td><td class="memItemRight" valign="bottom">  <b></b>  <em><a class="el" href="classDAC__buffer.html">&lt;Entity DAC_buffer&gt; </a></em></td></tr>
+<tr class="memdesc:aee2b4aec5b20245f5b186d9084b7570a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The DAC buffer is a buffer to store the current processed window. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Signals"></a>
 Signals</h2></td></tr>
  <tr class="memitem:a13e59a7366652c9343f29ec5b5f18499"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13e59a7366652c9343f29ec5b5f18499"></a>
 <a class="el" href="classdacTop_1_1behavioral.html#a13e59a7366652c9343f29ec5b5f18499">DACin</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">15</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a13e59a7366652c9343f29ec5b5f18499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal for the unsigned sample used by the <a class="el" href="classDAC__SPI.html" title="The DAC SPI interface converts parallel data from the data port and transforms it to a SPI to be sent...">DAC_SPI</a>. <br/></td></tr>
 <tr class="memitem:a217a8ee994c01c29b460c2ff2b7903c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a217a8ee994c01c29b460c2ff2b7903c2"></a>
 <a class="el" href="classdacTop_1_1behavioral.html#a217a8ee994c01c29b460c2ff2b7903c2">sBuffOut</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">std_logic_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">15</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a217a8ee994c01c29b460c2ff2b7903c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal for the signed sample outputted by the buffer. <br/></td></tr>
 <tr class="memitem:a0aa113df948e61da5ddd2dba6e7a5016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aa113df948e61da5ddd2dba6e7a5016"></a>
 <a class="el" href="classdacTop_1_1behavioral.html#a0aa113df948e61da5ddd2dba6e7a5016">readBuffer</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">std_logic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a0aa113df948e61da5ddd2dba6e7a5016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal indicating the next sample is to be read. <br/></td></tr>
 <tr class="memitem:a37a3bd4d2924357034d5991abe8dc60b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37a3bd4d2924357034d5991abe8dc60b"></a>
 <a class="el" href="classdacTop_1_1behavioral.html#a37a3bd4d2924357034d5991abe8dc60b">clk25MHz</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:a9f0a1cd59d97ab0aab2034e6b4dcc281"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f0a1cd59d97ab0aab2034e6b4dcc281"></a>
-<a class="el" href="classdacTop_1_1behavioral.html#a9f0a1cd59d97ab0aab2034e6b4dcc281">lastreadbuffer</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:aba2e919226c5a09e81261bf07de49f30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba2e919226c5a09e81261bf07de49f30"></a>
-<a class="el" href="classdacTop_1_1behavioral.html#aba2e919226c5a09e81261bf07de49f30">trig</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:a4f441e29ede108bf2268dce07314680b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f441e29ede108bf2268dce07314680b"></a>
-<a class="el" href="classdacTop_1_1behavioral.html#a4f441e29ede108bf2268dce07314680b">nsyncbuf</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:a2482949380468d4265a71aaac418410d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2482949380468d4265a71aaac418410d"></a>
-<a class="el" href="classdacTop_1_1behavioral.html#a2482949380468d4265a71aaac418410d">dinbuf</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a37a3bd4d2924357034d5991abe8dc60b"><td class="mdescLeft">&#160;</td><td class="mdescRight">clock running at 25 MHz used as input for the <a class="el" href="classDAC__SPI.html" title="The DAC SPI interface converts parallel data from the data port and transforms it to a SPI to be sent...">DAC_SPI</a>; <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Instantiations"></a>
 Instantiations</h2></td></tr>
@@ -165,13 +157,13 @@ Instantiations</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="DACTOP_8vhd.html">DACTOP.vhd</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:09 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:04:41 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

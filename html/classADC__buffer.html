@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This component buffers samples when buff_write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by chaning the adress. The buffer will then instantly output the value on this address on the buffout port.  
+<p>This component buffers samples when buff_write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by changing the address. The buffer will then instantly output the value on this address on the buffout port.  
  <a href="classADC__buffer.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ADC_buffer:</div>
@@ -101,13 +101,14 @@ Inheritance diagram for ADC_buffer:</div>
   <img src="classADC__buffer.png" usemap="#ADC_buffer_map" alt=""/>
   <map id="ADC_buffer_map" name="ADC_buffer_map">
 <area href="classADC__TOP.html" title="Use of standard logic arguments. " alt="ADC_TOP" shape="rect" coords="0,56,80,80"/>
+<area href="classdummyapb.html" title="This component gathers all the sub-modules needed for communication with ADC and DAC. It also supplies an interface to the APB bus. " alt="dummyapb" shape="rect" coords="0,112,80,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Entities</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classADC__buffer_1_1Behavioral.html">Behavioral</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Achitechture of the ADC buffer.  <a href="classADC__buffer_1_1Behavioral.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classADC__buffer_1_1Buffer__ADC.html">Buffer_ADC</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture of the ADC buffer.  <a href="classADC__buffer_1_1Buffer__ADC.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Libraries"></a>
@@ -150,20 +151,20 @@ Ports</h2></td></tr>
 <tr class="memdesc:ae32ca2a63fbe2fd9bbe609ba799ce989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output value from the current address slot. <br/></td></tr>
 <tr class="memitem:a4f849708d4274223b88930c2568f405c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f849708d4274223b88930c2568f405c"></a>
 <a class="el" href="classADC__buffer.html#a4f849708d4274223b88930c2568f405c">Bufferfull</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a4f849708d4274223b88930c2568f405c"><td class="mdescLeft">&#160;</td><td class="mdescRight">high for one clockcycle when the buffer is full, low otherwise. This is due to leon 3 only accepting interupts being high for one clockcycle. <br/></td></tr>
+<tr class="memdesc:a4f849708d4274223b88930c2568f405c"><td class="mdescLeft">&#160;</td><td class="mdescRight">high for one clock cycle when the buffer is full, low otherwise. This is due to Leon 3 only accepting interrupts being high for one clock cycle. <br/></td></tr>
 <tr class="memitem:ab93f1c6757ecccdcea2252108bb7caff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab93f1c6757ecccdcea2252108bb7caff"></a>
 <a class="el" href="classADC__buffer.html#ab93f1c6757ecccdcea2252108bb7caff">Addr</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><b><a class="el" href="classADC__buffer.html#a2f94b7b31a8914ee23be5e000f89e921">bufferwidth</a></b> <span class="vhdlchar"> </span><span class="vhdlchar">-</span><span class="vhdlchar"> </span> <span class="vhdldigit">1</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
 <tr class="memdesc:ab93f1c6757ecccdcea2252108bb7caff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address currently asked for. <br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This component buffers samples when buff_write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by chaning the adress. The buffer will then instantly output the value on this address on the buffout port. </p>
+<div class="textblock"><p>This component buffers samples when buff_write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by changing the address. The buffer will then instantly output the value on this address on the buffout port. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="ADC__buffer_8vhd.html">ADC_buffer.vhd</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:07 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:36:45 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

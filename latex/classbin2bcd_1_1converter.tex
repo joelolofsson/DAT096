@@ -1,0 +1,52 @@
+\hypertarget{classbin2bcd_1_1converter}{\section{converter Architecture Reference}
+\label{classbin2bcd_1_1converter}\index{converter@{converter}}
+}
+
+
+bin2\-B\-C\-D  component is a generic binary to binary coded decimal. It does this by using the \hyperlink{classBCD__block}{B\-C\-D\-\_\-block} according to the method used in \href{http://www.johnloomis.org/ece314/notes/devices/binary_to_BCD/bin_to_bcd.html}{\tt http\-://www.\-johnloomis.\-org/ece314/notes/devices/binary\-\_\-to\-\_\-\-B\-C\-D/bin\-\_\-to\-\_\-bcd.\-html}. This module is not completely generic yet but it is verified to work at the size used in the implementation. For updates check \href{https://github.com/Jaxc/bin2bcd}{\tt https\-://github.\-com/\-Jaxc/bin2bcd}  
+
+
+\subsection*{Components}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_1_1converter_a357931df7e16eeffe2988c1e4f48a75f}{\hyperlink{classbin2bcd_1_1converter_a357931df7e16eeffe2988c1e4f48a75f}{B\-C\-D\-\_\-block}  {\bfseries }  }\label{classbin2bcd_1_1converter_a357931df7e16eeffe2988c1e4f48a75f}
+
+\begin{DoxyCompactList}\small\item\em Input binary vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Constants}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_1_1converter_a0cc376987d43bd9d544cbaede089b0cf}{\hyperlink{classbin2bcd_1_1converter_a0cc376987d43bd9d544cbaede089b0cf}{array\-\_\-length} {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classbin2bcd_a03ce448558c2218cb8d7efccef340e15}{bits}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{+}\textcolor{vhdlchar}{ }\textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{floor}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{comment}{real}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classbin2bcd_a03ce448558c2218cb8d7efccef340e15}{bits}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{/}\textcolor{vhdlchar}{ }\textcolor{comment}{real}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{4} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classbin2bcd_1_1converter_a0cc376987d43bd9d544cbaede089b0cf}
+
+\begin{DoxyCompactList}\small\item\em output B\-C\-D vector Constant calculating the needed length of the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Types}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_1_1converter_a30db87baa00a17c4425999fa5f359bb3}{{\bfseries \hyperlink{classbin2bcd_1_1converter_a30db87baa00a17c4425999fa5f359bb3}{array\-\_\-type}{\bfseries \textcolor{vhdlkeyword}{is}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{array}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{to}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{5} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{of}\textcolor{vhdlchar}{ }\textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classbin2bcd_1_1converter_a0cc376987d43bd9d544cbaede089b0cf}{array\-\_\-length}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{-\/}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }}} }\label{classbin2bcd_1_1converter_a30db87baa00a17c4425999fa5f359bb3}
+
+\begin{DoxyCompactList}\small\item\em An array at the size of array\-\_\-length and length of 6. The length is not get generic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_1_1converter_aa35c068917536e24186e420d790f1c2f}{\hyperlink{classbin2bcd_1_1converter_aa35c068917536e24186e420d790f1c2f}{temp\-\_\-vector} {\bfseries {\bfseries \hyperlink{classbin2bcd_1_1converter_a30db87baa00a17c4425999fa5f359bb3}{array\-\_\-type}} \textcolor{vhdlchar}{ }} }\label{classbin2bcd_1_1converter_aa35c068917536e24186e420d790f1c2f}
+
+\begin{DoxyCompactList}\small\item\em A signal of the array\-\_\-type for storing temporary values in the converter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Instantiations}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}{\hyperlink{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}{inst\-\_\-bcd}  {\bfseries B\-C\-D\-\_\-block}   }\label{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}
+
+\item 
+\hypertarget{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}{\hyperlink{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}{inst\-\_\-bcd}  {\bfseries B\-C\-D\-\_\-block}   }\label{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}
+
+\item 
+\hypertarget{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}{\hyperlink{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}{inst\-\_\-bcd}  {\bfseries B\-C\-D\-\_\-block}   }\label{classbin2bcd_1_1converter_ab5107bcdc41f27ec9b85d6915d2b5aa4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+bin2\-B\-C\-D  component is a generic binary to binary coded decimal. It does this by using the \hyperlink{classBCD__block}{B\-C\-D\-\_\-block} according to the method used in \href{http://www.johnloomis.org/ece314/notes/devices/binary_to_BCD/bin_to_bcd.html}{\tt http\-://www.\-johnloomis.\-org/ece314/notes/devices/binary\-\_\-to\-\_\-\-B\-C\-D/bin\-\_\-to\-\_\-bcd.\-html}. This module is not completely generic yet but it is verified to work at the size used in the implementation. For updates check \href{https://github.com/Jaxc/bin2bcd}{\tt https\-://github.\-com/\-Jaxc/bin2bcd} 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bin2bcd_8vhd}{bin2bcd.\-vhd}\end{DoxyCompactItemize}

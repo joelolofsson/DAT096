@@ -101,20 +101,21 @@ Inheritance diagram for ADC_TOP:</div>
   <map id="ADC_TOP_map" name="ADC_TOP_map">
 <area href="classdigitalfilter.html" title="This module implements a digital FIR filter. When the start port goes from low to high the filter wil..." alt="digitalfilter" shape="rect" coords="0,0,80,24"/>
 <area href="classADC__buffer.html" title="This component buffers samples when buff_write goes from low to high, until the buffer is full..." alt="ADC_buffer" shape="rect" coords="90,0,170,24"/>
+<area href="classdummyapb.html" title="This component gathers all the sub-modules needed for communication with ADC and DAC. It also supplies an interface to the APB bus. " alt="dummyapb" shape="rect" coords="45,112,125,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Entities</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classADC__TOP_1_1Behavioral.html">Behavioral</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture of the <a class="el" href="classADC__TOP.html" title="Use of standard logic arguments. ">ADC_TOP</a>.  <a href="classADC__TOP_1_1Behavioral.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classADC__TOP_1_1TOP__ADC.html">TOP_ADC</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classADC__TOP.html" title="Use of standard logic arguments. ">ADC_TOP</a>.  <a href="classADC__TOP_1_1TOP__ADC.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Libraries"></a>
 Libraries</h2></td></tr>
  <tr class="memitem:ae4f03c286607f3181e16b9aa12d0c6d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4f03c286607f3181e16b9aa12d0c6d4"></a>
 <a class="el" href="classADC__TOP.html#ae4f03c286607f3181e16b9aa12d0c6d4">IEEE</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:ae4f03c286607f3181e16b9aa12d0c6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This line outputs the value of the buffer of the current adress to the out port. <br/></td></tr>
+<tr class="memdesc:ae4f03c286607f3181e16b9aa12d0c6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This line outputs the value of the buffer of the current address to the out port. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Use Clauses"></a>
 Use Clauses</h2></td></tr>
@@ -126,7 +127,7 @@ Use Clauses</h2></td></tr>
 Ports</h2></td></tr>
  <tr class="memitem:a9a17c21e2258ab6c61274f510b7ec756"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a17c21e2258ab6c61274f510b7ec756"></a>
 <a class="el" href="classADC__TOP.html#a9a17c21e2258ab6c61274f510b7ec756">CLK</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a9a17c21e2258ab6c61274f510b7ec756"><td class="mdescLeft">&#160;</td><td class="mdescRight">This component is a wrapper for the ADC, a buffer and the components needed to complete the decimation. Its main functionality is to provide for internal connections between the compontnets. Global clock running at 50 MHz. <br/></td></tr>
+<tr class="memdesc:a9a17c21e2258ab6c61274f510b7ec756"><td class="mdescLeft">&#160;</td><td class="mdescRight">This component is a wrapper for the ADC, a buffer and the components needed to complete the decimation. Its main functionality is to provide for internal connections between the components. Global clock running at 50 MHz. <br/></td></tr>
 <tr class="memitem:ab1f7becce7cb29d94bb2f2ec187f72a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1f7becce7cb29d94bb2f2ec187f72a4"></a>
 <a class="el" href="classADC__TOP.html#ab1f7becce7cb29d94bb2f2ec187f72a4">CLK100</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
 <tr class="memdesc:ab1f7becce7cb29d94bb2f2ec187f72a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A clock on 100MHz to let the filter have more taps. <br/></td></tr>
@@ -144,13 +145,13 @@ Ports</h2></td></tr>
 <tr class="memdesc:a3d034bd2912bb721a5bd221c185c5c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negative analogue signal. <br/></td></tr>
 <tr class="memitem:a57ff14de06cd6f4e021faa435aae362b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57ff14de06cd6f4e021faa435aae362b"></a>
 <a class="el" href="classADC__TOP.html#a57ff14de06cd6f4e021faa435aae362b">addr</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">6</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a57ff14de06cd6f4e021faa435aae362b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adress from the softcore. <br/></td></tr>
+<tr class="memdesc:a57ff14de06cd6f4e021faa435aae362b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address from the softcore. <br/></td></tr>
 <tr class="memitem:a1db73b91cf59fc8a5c0e360bbc004989"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1db73b91cf59fc8a5c0e360bbc004989"></a>
 <a class="el" href="classADC__TOP.html#a1db73b91cf59fc8a5c0e360bbc004989">buff_full</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
 <tr class="memdesc:a1db73b91cf59fc8a5c0e360bbc004989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal indicating the buffer is full. <br/></td></tr>
 <tr class="memitem:a854e269333aa7d7b4c2241ff9e71aaf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a854e269333aa7d7b4c2241ff9e71aaf2"></a>
 <a class="el" href="classADC__TOP.html#a854e269333aa7d7b4c2241ff9e71aaf2">ADC_buff_write</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a854e269333aa7d7b4c2241ff9e71aaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal indicatig the buffer should be written. <br/></td></tr>
+<tr class="memdesc:a854e269333aa7d7b4c2241ff9e71aaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal indicating the buffer should be written. <br/></td></tr>
 <tr class="memitem:a227e2ba1cceb52f292ef5768f933ba98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a227e2ba1cceb52f292ef5768f933ba98"></a>
 <a class="el" href="classADC__TOP.html#a227e2ba1cceb52f292ef5768f933ba98">ADC_buff_out</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">15</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
 <tr class="memdesc:a227e2ba1cceb52f292ef5768f933ba98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampled value after decimation. <br/></td></tr>
@@ -163,7 +164,7 @@ Ports</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:07 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:36:45 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -37,18 +37,18 @@ entity DAC_buffer is
         addr		:	in STD_LOGIC_VECTOR(bufferwidth-1 downto 0));	--! Address currently written to
 end DAC_buffer;
 
---! @brief Achitechture of the DAC buffer
+--! @brief Architecture of the DAC buffer
 --! @details The architecture containing the main body of the component.
 
-architecture Behavioral of DAC_buffer is
+architecture Buffer_dac of DAC_buffer is
 
-type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(15 downto 0);
+type Memory_array_type is array (0 to 2**bufferwidth-1) of STD_LOGIC_VECTOR(15 downto 0);	--! the type for the memory array, the length changes size due to a generic
 
-signal Memory_array : Memory_array_type;
+signal Memory_array : Memory_array_type;			--! This signal is containing the buffered values
 
-signal lastread : STD_LOGIC;
+signal lastread : STD_LOGIC;					--! stored value of the last read
 
-signal read_index : integer range 0 to 2**bufferwidth-1;
+signal read_index : integer range 0 to 2**bufferwidth-1;	--! this signal keeps track of where to write the next value in the memory.
 begin
 process(clk,rst)
 begin
@@ -59,7 +59,7 @@ begin
     elsif rising_edge(clk) then
 				lastread <= buffread;
         if (buffRead = '1') and (lastread = '0') then
-            buffout <= Memory_array(read_index); --idea, always outpul like ADC
+            buffout <= Memory_array(read_index); --idea, always output like ADC
 
             if read_index = 2**bufferwidth -1 then
                 read_index <= 0;
@@ -78,4 +78,4 @@ begin
     end if;
 end process;
 
-end Behavioral;
+end Buffer_dac;

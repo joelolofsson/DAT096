@@ -100,14 +100,14 @@ Inheritance diagram for clk_divide:</div>
  <div class="center">
   <img src="classclk__divide.png" usemap="#clk_divide_map" alt=""/>
   <map id="clk_divide_map" name="clk_divide_map">
-<area href="classdacTop.html" title="This component is a wrapper for the parts needed for the digital to analog converter. Its main functionality is to provide for internal connections between the compontnets and to throughput any signals to the next level in the hierarchy. " alt="dacTop" shape="rect" coords="0,56,69,80"/>
+<area href="classdac__Top.html" title="This component is a wrapper for the parts needed for the digital to analog converter. Its main functionality is to provide for internal connections between the components and to throughput any signals to the next level in the hierarchy. " alt="dac_Top" shape="rect" coords="0,56,69,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Entities</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classclk__divide_1_1behavioral.html">behavioral</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Achitechture of the clk_divider.  <a href="classclk__divide_1_1behavioral.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classclk__divide_1_1clk__div__DAC.html">clk_div_DAC</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture of the clk_divider.  <a href="classclk__divide_1_1clk__div__DAC.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Libraries"></a>
@@ -138,7 +138,7 @@ Generics</h2></td></tr>
 <tr class="memdesc:a046b87df8ce0a99f5bacf19e5027cccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic describing the intended sampling frequency. <br/></td></tr>
 <tr class="memitem:aeab4f828c7bc0927792f6a9c6bf1b63f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeab4f828c7bc0927792f6a9c6bf1b63f"></a>
 <a class="el" href="classclk__divide.html#aeab4f828c7bc0927792f6a9c6bf1b63f">OSR</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">16</span> <span class="vhdlchar"> </span></b></b></td></tr>
-<tr class="memdesc:aeab4f828c7bc0927792f6a9c6bf1b63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic describing the Over Samplig Ratio. <br/></td></tr>
+<tr class="memdesc:aeab4f828c7bc0927792f6a9c6bf1b63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic describing the Over Sampling Ratio. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Ports"></a>
 Ports</h2></td></tr>
@@ -147,13 +147,13 @@ Ports</h2></td></tr>
 <tr class="memdesc:aa7b7040844189161771c36cf6bbf172c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global reset, active low. <br/></td></tr>
 <tr class="memitem:a8120037e0ee47c35ba2d79242209c72e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8120037e0ee47c35ba2d79242209c72e"></a>
 <a class="el" href="classclk__divide.html#a8120037e0ee47c35ba2d79242209c72e">clk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:a8120037e0ee47c35ba2d79242209c72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock in, in our case the 100MHz clock to improve the accuracy of the sampleclock. <br/></td></tr>
+<tr class="memdesc:a8120037e0ee47c35ba2d79242209c72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock in, in our case the 100MHz clock to improve the accuracy of the sample clock. <br/></td></tr>
 <tr class="memitem:ab1f1a3ab1ab8a22adc572d22c78e6370"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1f1a3ab1ab8a22adc572d22c78e6370"></a>
 <a class="el" href="classclk__divide.html#ab1f1a3ab1ab8a22adc572d22c78e6370">clk50MHz</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:ab1f1a3ab1ab8a22adc572d22c78e6370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock out at half of the imput clock fequency. <br/></td></tr>
+<tr class="memdesc:ab1f1a3ab1ab8a22adc572d22c78e6370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock out at half of the input clock frequency. <br/></td></tr>
 <tr class="memitem:af312c161ed7113c4b513d173c2d4d010"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af312c161ed7113c4b513d173c2d4d010"></a>
 <a class="el" href="classclk__divide.html#af312c161ed7113c4b513d173c2d4d010">clk25MHz</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memdesc:af312c161ed7113c4b513d173c2d4d010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock out at a fourth of the imput clock frequency. <br/></td></tr>
+<tr class="memdesc:af312c161ed7113c4b513d173c2d4d010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock out at a fourth of the input clock frequency. <br/></td></tr>
 <tr class="memitem:aff53844dd015a736d734149d187ffa1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff53844dd015a736d734149d187ffa1d"></a>
 <a class="el" href="classclk__divide.html#aff53844dd015a736d734149d187ffa1d">clk705kHz</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
 <tr class="memdesc:aff53844dd015a736d734149d187ffa1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock out at the over sampling rate (sampling rate * OSR) <br/></td></tr>
@@ -169,7 +169,7 @@ Ports</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:08 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:36:47 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

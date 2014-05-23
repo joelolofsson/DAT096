@@ -6,6 +6,17 @@
 This component gathers all the sub-\/modules needed for communication with A\-D\-C and D\-A\-C. It also supplies an interface to the A\-P\-B bus.  
 
 
+Inheritance diagram for dummyapb\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classdummyapb}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdummyapb_1_1APB__interface}{A\-P\-B\-\_\-interface} architecture
+\begin{DoxyCompactList}\small\item\em Architecture of the Dummy\-\_\-apb. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Libraries}
  \begin{DoxyCompactItemize}
 \item 
@@ -35,55 +46,46 @@ This component gathers all the sub-\/modules needed for communication with A\-D\
 \item 
 \hypertarget{classdummyapb_a5e1fd38c08cf4405b26bf887c5010e2b}{\hyperlink{classdummyapb_a5e1fd38c08cf4405b26bf887c5010e2b}{pindex} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }}}}\label{classdummyapb_a5e1fd38c08cf4405b26bf887c5010e2b}
 
-\item 
+\begin{DoxyCompactList}\small\item\em Slave index. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_a1c4c90775fe1a0af1ff79546ceb2f9c2}{\hyperlink{classdummyapb_a1c4c90775fe1a0af1ff79546ceb2f9c2}{paddr} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }}}}\label{classdummyapb_a1c4c90775fe1a0af1ff79546ceb2f9c2}
 
-\item 
+\begin{DoxyCompactList}\small\item\em Address of the A\-P\-B bank. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_ae4b21043dd0ec623e5b8ed1cbe9db7b5}{\hyperlink{classdummyapb_ae4b21043dd0ec623e5b8ed1cbe9db7b5}{pmask} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{16\#fff\#} \textcolor{vhdlchar}{ }}}}\label{classdummyapb_ae4b21043dd0ec623e5b8ed1cbe9db7b5}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Address range. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Ports}
  \begin{DoxyCompactItemize}
 \item 
 \hypertarget{classdummyapb_a8fb8388e1e2f3ac69332573f5909b4e8}{\hyperlink{classdummyapb_a8fb8388e1e2f3ac69332573f5909b4e8}{rstn}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-ulogic}\textcolor{vhdlchar}{ }} }\label{classdummyapb_a8fb8388e1e2f3ac69332573f5909b4e8}
 
-\item 
+\begin{DoxyCompactList}\small\item\em Global reset, active low. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_af1c59ef8e5ba3edeeb313b4be18d7d8a}{\hyperlink{classdummyapb_af1c59ef8e5ba3edeeb313b4be18d7d8a}{clk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-ulogic}\textcolor{vhdlchar}{ }} }\label{classdummyapb_af1c59ef8e5ba3edeeb313b4be18d7d8a}
 
-\item 
+\begin{DoxyCompactList}\small\item\em Clock at the bus speed of 50 M\-Hz. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_acfb2eee7a14b6192c7945bbb7ba640fa}{\hyperlink{classdummyapb_acfb2eee7a14b6192c7945bbb7ba640fa}{clk100}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-ulogic}\textcolor{vhdlchar}{ }} }\label{classdummyapb_acfb2eee7a14b6192c7945bbb7ba640fa}
 
-\item 
+\begin{DoxyCompactList}\small\item\em Clock at 100 M\-Hz for certain speed dependent modules. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_af2205ffee98e5aeaa144186159740393}{\hyperlink{classdummyapb_af2205ffee98e5aeaa144186159740393}{vauxp3}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classdummyapb_af2205ffee98e5aeaa144186159740393}
 
-\item 
+\begin{DoxyCompactList}\small\item\em X\-A\-D\-C related signal. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_a3d034bd2912bb721a5bd221c185c5c99}{\hyperlink{classdummyapb_a3d034bd2912bb721a5bd221c185c5c99}{vauxn3}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classdummyapb_a3d034bd2912bb721a5bd221c185c5c99}
 
-\item 
+\begin{DoxyCompactList}\small\item\em X\-A\-D\-C related signal. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_abd7039100e504d8f92a35144147f07d7}{\hyperlink{classdummyapb_abd7039100e504d8f92a35144147f07d7}{apbi}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{vhdlchar}{apb\-\_\-slv\-\_\-in\-\_\-type}\textcolor{vhdlchar}{ }} }\label{classdummyapb_abd7039100e504d8f92a35144147f07d7}
 
-\item 
+\begin{DoxyCompactList}\small\item\em A\-P\-B slave inputs. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_a7e895c34eed119599f289452433acbf2}{\hyperlink{classdummyapb_a7e895c34eed119599f289452433acbf2}{apbo}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{vhdlchar}{apb\-\_\-slv\-\_\-out\-\_\-type}\textcolor{vhdlchar}{ }} }\label{classdummyapb_a7e895c34eed119599f289452433acbf2}
 
-\item 
-\hypertarget{classdummyapb_a5aaf0ce0a90ea3f023dd024cbfe732c0}{\hyperlink{classdummyapb_a5aaf0ce0a90ea3f023dd024cbfe732c0}{pwmout}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{classdummyapb_a5aaf0ce0a90ea3f023dd024cbfe732c0}
-
-\item 
-\hypertarget{classdummyapb_a9f5d81e05d854bebe7bc2cf2435dd131}{\hyperlink{classdummyapb_a9f5d81e05d854bebe7bc2cf2435dd131}{Debugvector}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classdummyapb_a9f5d81e05d854bebe7bc2cf2435dd131}
-
-\item 
-\hypertarget{classdummyapb_a03d7cad7dbbc8a7549b6065d9a9ba788}{\hyperlink{classdummyapb_a03d7cad7dbbc8a7549b6065d9a9ba788}{led}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{4} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classdummyapb_a03d7cad7dbbc8a7549b6065d9a9ba788}
-
-\item 
+\begin{DoxyCompactList}\small\item\em A\-P\-B slave outputs. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_ad82a959b5a4a639e7c0a09e6b1e31705}{\hyperlink{classdummyapb_ad82a959b5a4a639e7c0a09e6b1e31705}{spi\-Sclk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{classdummyapb_ad82a959b5a4a639e7c0a09e6b1e31705}
 
-\item 
+\begin{DoxyCompactList}\small\item\em Serial clock for D\-A\-C S\-P\-I. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_a77f854eda2e8d157ccc5d2d08e8ecfb7}{\hyperlink{classdummyapb_a77f854eda2e8d157ccc5d2d08e8ecfb7}{spi\-Din}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{classdummyapb_a77f854eda2e8d157ccc5d2d08e8ecfb7}
 
-\item 
+\begin{DoxyCompactList}\small\item\em Data signal for D\-A\-C S\-P\-I. \end{DoxyCompactList}\item 
 \hypertarget{classdummyapb_ae9d5788ea215a9d9dd1b8b43e977d582}{\hyperlink{classdummyapb_ae9d5788ea215a9d9dd1b8b43e977d582}{spi\-Nsync}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{classdummyapb_ae9d5788ea215a9d9dd1b8b43e977d582}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sync signal for D\-A\-C S\-P\-I. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}

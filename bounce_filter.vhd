@@ -27,20 +27,20 @@ entity bounce_filter is
 	generic(
 			counterbits : integer := 8);	--! Counter bits controls how many bits the counter will count before it changes value
     Port ( 
-			Button_in : in STD_LOGIC;	--! Button_in is the input to the fitler
+			Button_in : in STD_LOGIC;	--! Button_in is the input to the filter
 			clk : in STD_LOGIC;		--! Clock for counter and registers
 			rstn : in STD_LOGIC;		--! Global reset, active low
 			Button_out : out STD_LOGIC);	--! Stabilized signal out
 end bounce_filter;
 
 --! @brief Architecture of the bounce_filter
---! @details This component stabilizes an input signal using a counter. This counter can be set with the generic.
+--! @details This component stabilizes an input signal using a counter. This counter can be set with the generic. If the signal changed during the counting the counter resets to 0.
 
-architecture Behavioral of bounce_filter is
+architecture filter_bounce of bounce_filter is
 
-signal cnt : unsigned(counterbits-1 downto 0);
-signal last_button_in : std_logic;
-signal button_out_buff : STD_LOGIC;
+signal cnt : unsigned(counterbits-1 downto 0);	--! A counter signal, the size is defined by the generic.
+signal last_button_in : std_logic;		--! A signal to indicate the last state of the button in.
+signal button_out_buff : STD_LOGIC;		--! A buffered value of the output to determine if the output changes from low to high or high to low.
 
 begin
 
@@ -71,4 +71,4 @@ begin
 	end if;
 end process;
 
-end Behavioral;
+end bounce_filter;

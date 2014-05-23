@@ -6,8 +6,8 @@
 -- Engineer (Creator): Jacob Rosén 
 -- Engineer (Modifier) : -
 --
--- Design Name: binary to BCD coverter
--- Module Name: bin2bcd - Behavioral
+-- Design Name: binary to BCD converter
+-- Module Name: bin2BCD - Behavioral
 -- Project Name: SoundBox
 -- Target Devices: Artix 7 
 -- 
@@ -23,7 +23,7 @@ use IEEE.NUMERIC_STD.ALL;
 --! Use of real math arguments to calculate generics.
 use IEEE.MATH_REAL.ALL;
 
---! This component calculates the binary coded decimal equivelent of a binary number. This module is not completely generec yet but it is verified to work at the size used in the implementation. For updates check https://github.com/Jaxc/bin2bcd
+--! This component calculates the binary coded decimal equivalent of a binary number. This module is not completely generic yet but it is verified to work at the size used in the implementation. For updates check https://github.com/Jaxc/bin2bcd
 
 entity bin2bcd is
 	generic(bits :integer:= 8);				--! binary bit width
@@ -31,20 +31,20 @@ entity bin2bcd is
            BCD : out STD_LOGIC_VECTOR (bits*2-1 downto 0));	--! BCD output
 end bin2bcd;
 
---! @brief Achitechture of the bin2bcd
---! @This component is a generic binary to binary coded decimal. It does this by using the BCD_block according to the method used in http://www.johnloomis.org/ece314/notes/devices/binary_to_BCD/bin_to_bcd.html. 
+--! @brief bin2BCD
+--! @This component is a generic binary to binary coded decimal. It does this by using the BCD_block according to the method used in http://www.johnloomis.org/ece314/notes/devices/binary_to_BCD/bin_to_bcd.html. This module is not completely generic yet but it is verified to work at the size used in the implementation. For updates check https://github.com/Jaxc/bin2bcd
 
-architecture Behavioral of bin2bcd is
+architecture converter of bin2bcd is
 
 component BCD_block
-    Port ( in_vector : in STD_LOGIC_VECTOR (3 downto 0);
-           out_vector : out STD_LOGIC_VECTOR (3 downto 0));
+    Port ( in_vector : in STD_LOGIC_VECTOR (3 downto 0);	--! Input binary vector
+           out_vector : out STD_LOGIC_VECTOR (3 downto 0));	--! output BCD vector
 end component;
 
-constant array_length : integer := bits + integer(floor(real(bits)/real(4)));
+constant array_length : integer := bits + integer(floor(real(bits)/real(4)));		--! Constant calculating the needed length of the array.
 
-type array_type is array (0 to 5 ) of STD_LOGIC_VECTOR(array_length -1 downto 0);
-signal temp_vector : array_Type;
+type array_type is array (0 to 5 ) of STD_LOGIC_VECTOR(array_length -1 downto 0);	--! An array at the size of array_length and length of 6. The length is not get generic
+signal temp_vector : array_Type;							--! A signal of the array_type for storing temporary values in the converter.
 
 
 
@@ -154,4 +154,4 @@ BCD(bits+ integer(floor(real(bits)/real(4)))-1 downto 0) <= temp_vector(5);
 	-- if i mod 4 = 0 generate
 		
 
-end Behavioral;
+end converter;

@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Achitechture of the DAC buffer.  
+<p>Architecture of the DAC buffer.  
  <a href="classDAC__buffer_1_1Behavioral.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Processes"></a>
@@ -107,18 +107,22 @@ Processes</h2></td></tr>
 Types</h2></td></tr>
  <tr class="memitem:a658e2166090ca64ce974029de2840027"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a658e2166090ca64ce974029de2840027"></a>
 <b><a class="el" href="classDAC__buffer_1_1Behavioral.html#a658e2166090ca64ce974029de2840027">Memory_array_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b><span class="vhdlkeyword">is</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">array</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">to</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">2</span> <span class="vhdlchar"> </span><span class="vhdlchar">*</span><span class="vhdlchar">*</span><span class="vhdlchar"> </span><b><a class="el" href="classDAC__buffer.html#a2f94b7b31a8914ee23be5e000f89e921">bufferwidth</a></b> <span class="vhdlchar"> </span><span class="vhdlchar">-</span><span class="vhdlchar"> </span> <span class="vhdldigit">1</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">of</span><span class="vhdlchar"> </span><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">15</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span></b></b></td></tr>
+<tr class="memdesc:a658e2166090ca64ce974029de2840027"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type for the memory array, the length changes size due to a generic <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Signals"></a>
 Signals</h2></td></tr>
  <tr class="memitem:aa3242fe5cbe81a6710bd0ed34005d4ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3242fe5cbe81a6710bd0ed34005d4ef"></a>
-<a class="el" href="classDAC__buffer_1_1Behavioral.html#aa3242fe5cbe81a6710bd0ed34005d4ef">Memory_array</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="vhdlchar">Memory_array_type</span><span class="vhdlchar"> </span></b></td></tr>
+<a class="el" href="classDAC__buffer_1_1Behavioral.html#aa3242fe5cbe81a6710bd0ed34005d4ef">Memory_array</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><a class="el" href="classDAC__buffer_1_1Behavioral.html#a658e2166090ca64ce974029de2840027">Memory_array_type</a></b> <span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:aa3242fe5cbe81a6710bd0ed34005d4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal is containing the buffered values. <br/></td></tr>
 <tr class="memitem:a112659537d3ba8eb606d42ca2df463ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a112659537d3ba8eb606d42ca2df463ba"></a>
 <a class="el" href="classDAC__buffer_1_1Behavioral.html#a112659537d3ba8eb606d42ca2df463ba">lastread</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">STD_LOGIC</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a112659537d3ba8eb606d42ca2df463ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">stored value of the last read <br/></td></tr>
 <tr class="memitem:a902704851875fe125eaa6f1b125dfd0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a902704851875fe125eaa6f1b125dfd0f"></a>
 <a class="el" href="classDAC__buffer_1_1Behavioral.html#a902704851875fe125eaa6f1b125dfd0f">read_index</a> &#160;</td><td class="memItemRight" valign="bottom"><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlkeyword">range</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">to</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">2</span> <span class="vhdlchar"> </span><span class="vhdlchar">*</span><span class="vhdlchar">*</span><span class="vhdlchar"> </span><b><a class="el" href="classDAC__buffer.html#a2f94b7b31a8914ee23be5e000f89e921">bufferwidth</a></b> <span class="vhdlchar"> </span><span class="vhdlchar">-</span><span class="vhdlchar"> </span> <span class="vhdldigit">1</span> <span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a902704851875fe125eaa6f1b125dfd0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">this signal keeps track of where to write the next value in the memory. <br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Achitechture of the DAC buffer. </p>
+<div class="textblock"><p>Architecture of the DAC buffer. </p>
 <p>The architecture containing the main body of the component. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="DAC__BUFFER_8vhd.html">DAC_BUFFER.vhd</a></li>
@@ -126,7 +130,7 @@ Signals</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:09 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:04:40 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

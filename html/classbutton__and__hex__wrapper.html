@@ -101,19 +101,19 @@ Inheritance diagram for button_and_hex_wrapper:</div>
   <img src="classbutton__and__hex__wrapper.png" usemap="#button_and_hex_wrapper_map" alt=""/>
   <map id="button_and_hex_wrapper_map" name="button_and_hex_wrapper_map">
 <area href="classbutton__control.html" alt="button_control" shape="rect" coords="0,112,155,136"/>
-<area href="classseven__seg__control.html" title="The seven segment dispay takes two 8 bit integers in and outputs these on an 8 digit seven segment di..." alt="seven_seg_control" shape="rect" coords="247,112,402,136"/>
+<area href="classseven__seg__control.html" title="The seven segment display takes two 8 bit integers in and outputs these on an 8 digit seven segment d..." alt="seven_seg_control" shape="rect" coords="247,112,402,136"/>
 <area href="classRGB__diode__controller.html" title="The RGB_control controls on of the onboard diodes. Depending on the input of the is_working the diode..." alt="RGB_diode_controller" shape="rect" coords="412,112,567,136"/>
 <area href="classbounce__filter.html" title="This component stabilized signals by waiting until a signal have been high or low for a set about of ..." alt="bounce_filter" shape="rect" coords="0,56,155,80"/>
-<area href="classbin2bcd.html" title="This component calculates the binary coded decimal equivelent of a binary number. This module is not ..." alt="bin2bcd" shape="rect" coords="165,56,320,80"/>
+<area href="classbin2bcd.html" title="This component calculates the binary coded decimal equivalent of a binary number. This module is not ..." alt="bin2bcd" shape="rect" coords="165,56,320,80"/>
 <area href="classclk__div__seven__seg.html" title="This component takes the system clock divides it for Seven segment displays. This is done by implemen..." alt="clk_div_seven_seg" shape="rect" coords="330,56,485,80"/>
-<area href="classBCD__block.html" title="This module is used in the coversion of binary to binary coded decimals. " alt="BCD_block" shape="rect" coords="165,0,320,24"/>
+<area href="classBCD__block.html" title="This module is used in the conversion of binary to binary coded decimals. " alt="BCD_block" shape="rect" coords="165,0,320,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Entities</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbutton__and__hex__wrapper_1_1rtl.html">rtl</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture of the Dummy_apb.  <a href="classbutton__and__hex__wrapper_1_1rtl.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbutton__and__hex__wrapper_1_1HID__wrapper.html">HID_wrapper</a> &#160;</td><td class="memItemRight" valign="bottom">architecture</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture of the Dummy_apb.  <a href="classbutton__and__hex__wrapper_1_1HID__wrapper.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Libraries"></a>
@@ -144,29 +144,40 @@ Use Clauses</h2></td></tr>
 Generics</h2></td></tr>
  <tr class="memitem:a5e1fd38c08cf4405b26bf887c5010e2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e1fd38c08cf4405b26bf887c5010e2b"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#a5e1fd38c08cf4405b26bf887c5010e2b">pindex</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span></b></b></td></tr>
+<tr class="memdesc:a5e1fd38c08cf4405b26bf887c5010e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slave index. <br/></td></tr>
 <tr class="memitem:a1c4c90775fe1a0af1ff79546ceb2f9c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c4c90775fe1a0af1ff79546ceb2f9c2"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#a1c4c90775fe1a0af1ff79546ceb2f9c2">paddr</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span></b></b></td></tr>
+<tr class="memdesc:a1c4c90775fe1a0af1ff79546ceb2f9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address of the APB bank. <br/></td></tr>
 <tr class="memitem:a89dd0de36f24702f322479db69e5ff78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89dd0de36f24702f322479db69e5ff78"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#a89dd0de36f24702f322479db69e5ff78">pmask</a> &#160;</td><td class="memItemRight" valign="bottom"><b><b><span class="comment">integer</span><span class="vhdlchar"> </span><span class="vhdlchar">:</span><span class="vhdlchar">=</span><span class="vhdlchar"> </span> <span class="vhdldigit">16#002#</span> <span class="vhdlchar"> </span></b></b></td></tr>
+<tr class="memdesc:a89dd0de36f24702f322479db69e5ff78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address range. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="Ports"></a>
 Ports</h2></td></tr>
  <tr class="memitem:a8fb8388e1e2f3ac69332573f5909b4e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fb8388e1e2f3ac69332573f5909b4e8"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#a8fb8388e1e2f3ac69332573f5909b4e8">rstn</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_ulogic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a8fb8388e1e2f3ac69332573f5909b4e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">global reset, active low <br/></td></tr>
 <tr class="memitem:af1c59ef8e5ba3edeeb313b4be18d7d8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1c59ef8e5ba3edeeb313b4be18d7d8a"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#af1c59ef8e5ba3edeeb313b4be18d7d8a">clk</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">std_ulogic</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:af1c59ef8e5ba3edeeb313b4be18d7d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock at the bus speed of 50 MHz. <br/></td></tr>
 <tr class="memitem:abd7039100e504d8f92a35144147f07d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd7039100e504d8f92a35144147f07d7"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#abd7039100e504d8f92a35144147f07d7">apbi</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="vhdlchar">apb_slv_in_type</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:abd7039100e504d8f92a35144147f07d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">APB slave inputs. <br/></td></tr>
 <tr class="memitem:a7e895c34eed119599f289452433acbf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e895c34eed119599f289452433acbf2"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#a7e895c34eed119599f289452433acbf2">apbo</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="vhdlchar">apb_slv_out_type</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a7e895c34eed119599f289452433acbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">APB slave outputs. <br/></td></tr>
 <tr class="memitem:a72206c9efda7c958cf55b0a88cb0f12c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72206c9efda7c958cf55b0a88cb0f12c"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#a72206c9efda7c958cf55b0a88cb0f12c">Buttons_in</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">in</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">4</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a72206c9efda7c958cf55b0a88cb0f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buttons in from the board. <br/></td></tr>
 <tr class="memitem:a45655c10fcad02d37d83f5279ebb199b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45655c10fcad02d37d83f5279ebb199b"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#a45655c10fcad02d37d83f5279ebb199b">seven_seg_out</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">6</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a45655c10fcad02d37d83f5279ebb199b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seven_sel_out marks the seven segment display of the current selected seven segment display segment. <br/></td></tr>
 <tr class="memitem:ae1646bd2ce2b0e1d1bb85bf2a88d1b5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1646bd2ce2b0e1d1bb85bf2a88d1b5f"></a>
 <a class="el" href="classbutton__and__hex__wrapper.html#ae1646bd2ce2b0e1d1bb85bf2a88d1b5f">seven_seg_sel</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_VECTOR</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">7</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
-<tr class="memitem:abe22c2d332237c0f84af43e5e835747c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe22c2d332237c0f84af43e5e835747c"></a>
-<a class="el" href="classbutton__and__hex__wrapper.html#abe22c2d332237c0f84af43e5e835747c">diode_out</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_vector</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:ae1646bd2ce2b0e1d1bb85bf2a88d1b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seven_seg_sel marks the current selected seven segment display. <br/></td></tr>
+<tr class="memitem:a7691db71e3330cb4b875bb27e8fbb8c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7691db71e3330cb4b875bb27e8fbb8c7"></a>
+<a class="el" href="classbutton__and__hex__wrapper.html#a7691db71e3330cb4b875bb27e8fbb8c7">diode_out</a> &#160;</td><td class="memItemRight" valign="bottom"> <b><b><span class="vhdlkeyword">out</span><span class="vhdlchar"> </span></b></b> <b><span class="comment">STD_LOGIC_vector</span><span class="vhdlchar"> </span><span class="vhdlchar">(</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">2</span> <span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlkeyword">downto</span><span class="vhdlchar"> </span><span class="vhdlchar"> </span><span class="vhdlchar"> </span> <span class="vhdldigit">0</span> <span class="vhdlchar"> </span><span class="vhdlchar">)</span><span class="vhdlchar"> </span></b></td></tr>
+<tr class="memdesc:a7691db71e3330cb4b875bb27e8fbb8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">diode_out is a vector containing the state of the red, green and blue diode <br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This component gathers all the sub-modules needed for HID. It also supplies an interface to the APB bus. </p>
@@ -176,7 +187,7 @@ Ports</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 23 2014 14:27:08 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 23 2014 19:36:46 for SoundBox by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

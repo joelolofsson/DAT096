@@ -1,0 +1,62 @@
+\hypertarget{classdac__Top_1_1TOP__DAC}{\section{T\-O\-P\-\_\-\-D\-A\-C Architecture Reference}
+\label{classdac__Top_1_1TOP__DAC}\index{T\-O\-P\-\_\-\-D\-A\-C@{T\-O\-P\-\_\-\-D\-A\-C}}
+}
+
+
+Architecture of the D\-A\-C\-T\-O\-P.  
+
+
+\subsection*{Components}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdac__Top_1_1TOP__DAC_a904d954c80fa4089ba9eeeb9497214f2}{clk\-\_\-divide}  {\bfseries }  
+\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_affa2663bbacf97f6ebd5b4e226f94f9f}{\hyperlink{classdac__Top_1_1TOP__DAC_affa2663bbacf97f6ebd5b4e226f94f9f}{D\-A\-C\-\_\-\-S\-P\-I}  {\bfseries }  }\label{classdac__Top_1_1TOP__DAC_affa2663bbacf97f6ebd5b4e226f94f9f}
+
+\begin{DoxyCompactList}\small\item\em The D\-A\-C S\-P\-I interface takes parallel data and a clock and converts it to serial according to the D\-A\-C. \end{DoxyCompactList}\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_aee2b4aec5b20245f5b186d9084b7570a}{\hyperlink{classdac__Top_1_1TOP__DAC_aee2b4aec5b20245f5b186d9084b7570a}{D\-A\-C\-\_\-buffer}  {\bfseries }  }\label{classdac__Top_1_1TOP__DAC_aee2b4aec5b20245f5b186d9084b7570a}
+
+\begin{DoxyCompactList}\small\item\em The D\-A\-C buffer is a buffer to store the current processed window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_a13e59a7366652c9343f29ec5b5f18499}{\hyperlink{classdac__Top_1_1TOP__DAC_a13e59a7366652c9343f29ec5b5f18499}{D\-A\-Cin} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classdac__Top_1_1TOP__DAC_a13e59a7366652c9343f29ec5b5f18499}
+
+\begin{DoxyCompactList}\small\item\em Signal for the unsigned sample used by the \hyperlink{classDAC__SPI}{D\-A\-C\-\_\-\-S\-P\-I}. \end{DoxyCompactList}\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_a217a8ee994c01c29b460c2ff2b7903c2}{\hyperlink{classdac__Top_1_1TOP__DAC_a217a8ee994c01c29b460c2ff2b7903c2}{s\-Buff\-Out} {\bfseries \textcolor{comment}{std\-\_\-logic\-\_\-vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classdac__Top_1_1TOP__DAC_a217a8ee994c01c29b460c2ff2b7903c2}
+
+\begin{DoxyCompactList}\small\item\em Signal for the signed sample outputted by the buffer. \end{DoxyCompactList}\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_a0aa113df948e61da5ddd2dba6e7a5016}{\hyperlink{classdac__Top_1_1TOP__DAC_a0aa113df948e61da5ddd2dba6e7a5016}{read\-Buffer} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{classdac__Top_1_1TOP__DAC_a0aa113df948e61da5ddd2dba6e7a5016}
+
+\begin{DoxyCompactList}\small\item\em Signal indicating the next sample is to be read. \end{DoxyCompactList}\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_a37a3bd4d2924357034d5991abe8dc60b}{\hyperlink{classdac__Top_1_1TOP__DAC_a37a3bd4d2924357034d5991abe8dc60b}{clk25\-M\-Hz} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classdac__Top_1_1TOP__DAC_a37a3bd4d2924357034d5991abe8dc60b}
+
+\begin{DoxyCompactList}\small\item\em clock running at 25 M\-Hz used as input for the \hyperlink{classDAC__SPI}{D\-A\-C\-\_\-\-S\-P\-I}; \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Instantiations}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_aea363b3d172cd6c1aee04b651b3107e7}{\hyperlink{classdac__Top_1_1TOP__DAC_aea363b3d172cd6c1aee04b651b3107e7}{inst\-\_\-clk\-\_\-divider}  {\bfseries clk\-\_\-divide}   }\label{classdac__Top_1_1TOP__DAC_aea363b3d172cd6c1aee04b651b3107e7}
+
+\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_af2e139b1e2920fab9b0ee7d6e1710518}{\hyperlink{classdac__Top_1_1TOP__DAC_af2e139b1e2920fab9b0ee7d6e1710518}{inst\-\_\-dac\-\_\-spi}  {\bfseries D\-A\-C\-\_\-\-S\-P\-I}   }\label{classdac__Top_1_1TOP__DAC_af2e139b1e2920fab9b0ee7d6e1710518}
+
+\item 
+\hypertarget{classdac__Top_1_1TOP__DAC_a4c9b0988369af8d5e2c29b1762ae41a2}{\hyperlink{classdac__Top_1_1TOP__DAC_a4c9b0988369af8d5e2c29b1762ae41a2}{inst\-\_\-dac\-\_\-buffer}  {\bfseries D\-A\-C\-\_\-buffer}   }\label{classdac__Top_1_1TOP__DAC_a4c9b0988369af8d5e2c29b1762ae41a2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Architecture of the D\-A\-C\-T\-O\-P. 
+
+The D\-A\-Ctops main purpose is to connect the different sub-\/blocks. It does also converts the samples from signed to unsigned during the transfer from the buffer. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classdac__Top_1_1TOP__DAC_a904d954c80fa4089ba9eeeb9497214f2}{\index{dac\-\_\-\-Top\-::\-T\-O\-P\-\_\-\-D\-A\-C@{dac\-\_\-\-Top\-::\-T\-O\-P\-\_\-\-D\-A\-C}!clk\-\_\-divide@{clk\-\_\-divide}}
+\index{clk\-\_\-divide@{clk\-\_\-divide}!dac_Top::TOP_DAC@{dac\-\_\-\-Top\-::\-T\-O\-P\-\_\-\-D\-A\-C}}
+\subsubsection[{clk\-\_\-divide}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clk\-\_\-divide} {\bfseries \textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Component]}}}\label{classdac__Top_1_1TOP__DAC_a904d954c80fa4089ba9eeeb9497214f2}
+The clock divide components takes a clock and divides it in to\-: clock/2 clock/4 sample clock sample clock $\ast$ Oversampling rate 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DAC__TOP_8vhd}{D\-A\-C\-\_\-\-T\-O\-P.\-vhd}\end{DoxyCompactItemize}

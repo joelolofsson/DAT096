@@ -15,8 +15,8 @@ Inheritance diagram for clk\-\_\-divide\-:\begin{figure}[H]
 \subsection*{Entities}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classclk__divide_1_1behavioral}{behavioral} architecture
-\begin{DoxyCompactList}\small\item\em Achitechture of the clk\-\_\-divider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classclk__divide_1_1clk__div__DAC}{clk\-\_\-div\-\_\-\-D\-A\-C} architecture
+\begin{DoxyCompactList}\small\item\em Architecture of the clk\-\_\-divider. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Libraries}
  \begin{DoxyCompactItemize}
 \item 
@@ -46,7 +46,7 @@ Inheritance diagram for clk\-\_\-divide\-:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Generic describing the intended sampling frequency. \end{DoxyCompactList}\item 
 \hypertarget{classclk__divide_aeab4f828c7bc0927792f6a9c6bf1b63f}{\hyperlink{classclk__divide_aeab4f828c7bc0927792f6a9c6bf1b63f}{O\-S\-R} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{16} \textcolor{vhdlchar}{ }}}}\label{classclk__divide_aeab4f828c7bc0927792f6a9c6bf1b63f}
 
-\begin{DoxyCompactList}\small\item\em Generic describing the Over Samplig Ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generic describing the Over Sampling Ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Ports}
  \begin{DoxyCompactItemize}
 \item 
@@ -55,13 +55,13 @@ Inheritance diagram for clk\-\_\-divide\-:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Global reset, active low. \end{DoxyCompactList}\item 
 \hypertarget{classclk__divide_a8120037e0ee47c35ba2d79242209c72e}{\hyperlink{classclk__divide_a8120037e0ee47c35ba2d79242209c72e}{clk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_a8120037e0ee47c35ba2d79242209c72e}
 
-\begin{DoxyCompactList}\small\item\em Clock in, in our case the 100\-M\-Hz clock to improve the accuracy of the sampleclock. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Clock in, in our case the 100\-M\-Hz clock to improve the accuracy of the sample clock. \end{DoxyCompactList}\item 
 \hypertarget{classclk__divide_ab1f1a3ab1ab8a22adc572d22c78e6370}{\hyperlink{classclk__divide_ab1f1a3ab1ab8a22adc572d22c78e6370}{clk50\-M\-Hz}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_ab1f1a3ab1ab8a22adc572d22c78e6370}
 
-\begin{DoxyCompactList}\small\item\em Clock out at half of the imput clock fequency. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Clock out at half of the input clock frequency. \end{DoxyCompactList}\item 
 \hypertarget{classclk__divide_af312c161ed7113c4b513d173c2d4d010}{\hyperlink{classclk__divide_af312c161ed7113c4b513d173c2d4d010}{clk25\-M\-Hz}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_af312c161ed7113c4b513d173c2d4d010}
 
-\begin{DoxyCompactList}\small\item\em Clock out at a fourth of the imput clock frequency. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Clock out at a fourth of the input clock frequency. \end{DoxyCompactList}\item 
 \hypertarget{classclk__divide_aff53844dd015a736d734149d187ffa1d}{\hyperlink{classclk__divide_aff53844dd015a736d734149d187ffa1d}{clk705k\-Hz}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_aff53844dd015a736d734149d187ffa1d}
 
 \begin{DoxyCompactList}\small\item\em Clock out at the over sampling rate (sampling rate $\ast$ O\-S\-R) \end{DoxyCompactList}\item 

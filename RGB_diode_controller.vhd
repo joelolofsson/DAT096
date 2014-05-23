@@ -1,5 +1,5 @@
 --! @file
---! @brief This unit controls the colour and strength of the RGB.
+--! @brief This unit controls the color and strength of the RGB.
 
 
 ----------------------------------------------------------------------------------
@@ -27,19 +27,19 @@ entity RGB_diode_controller is
 	generic( N : integer := 1);				--! Generic to decide the duty cycle of the diode. Duty cycle = 1/(N+1)
     Port ( clk : in STD_LOGIC;					--! Clock in for calculation of duty cycle	
            rstn : in STD_LOGIC;					--! Global reset, active low
-           diode_out : out STD_LOGIC_VECTOR (2 downto 0);	--! diode_out is a vector containing the state of the red, green and blue diode
-           is_working : in STD_LOGIC);				--! is_working decides if the diode is to be green or red.
+           diode_out : out STD_LOGIC_VECTOR (2 downto 0);	--! Diode_out is a vector containing the state of the red, green and blue diode
+           is_working : in STD_LOGIC);				--! Is_working decides if the diode is to be green or red
 end RGB_diode_controller;
 
 --! @brief Architecture of the RGB_diode
 --! @details The RGB_control changed the RGB diodes color depending on the state of the input is_working. Depending of the generic N the brightness of the diode can also be controlled as an N of 0 proved to bright
 
 
-architecture Behavioral of RGB_diode_controller is
+architecture diode of RGB_diode_controller is
 
-	signal diode_duty_counter : integer range 0 to N;
+	signal diode_duty_counter : integer range 0 to N;	--! A counter for the duty cycle
 	
-	signal diode_enable : STD_LOGIC_vector(2 downto 0);
+	signal diode_enable : STD_LOGIC_vector(2 downto 0);	--! A enable to indicate if a diode should be lit
 
 begin
 
@@ -69,4 +69,4 @@ begin
 	end if;
 end process;
 
-end Behavioral;
+end diode;
