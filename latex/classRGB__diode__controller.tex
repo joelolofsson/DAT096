@@ -1,0 +1,63 @@
+\hypertarget{classRGB__diode__controller}{\section{R\-G\-B\-\_\-diode\-\_\-controller Entity Reference}
+\label{classRGB__diode__controller}\index{R\-G\-B\-\_\-diode\-\_\-controller@{R\-G\-B\-\_\-diode\-\_\-controller}}
+}
+
+
+The R\-G\-B\-\_\-control controls on of the onboard diodes. Depending on the input of the is\-\_\-working the diode will either be green or red.  
+
+
+Inheritance diagram for R\-G\-B\-\_\-diode\-\_\-controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRGB__diode__controller}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRGB__diode__controller_1_1Behavioral}{Behavioral} architecture
+\begin{DoxyCompactList}\small\item\em Architecture of the R\-G\-B\-\_\-diode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Libraries}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRGB__diode__controller_ae4f03c286607f3181e16b9aa12d0c6d4}{\hyperlink{classRGB__diode__controller_ae4f03c286607f3181e16b9aa12d0c6d4}{I\-E\-E\-E} }\label{classRGB__diode__controller_ae4f03c286607f3181e16b9aa12d0c6d4}
+
+\begin{DoxyCompactList}\small\item\em Use of standard library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Use Clauses}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRGB__diode__controller_a68c233289eaf7d2601307bdd93b4c299}{\hyperlink{classRGB__diode__controller_a68c233289eaf7d2601307bdd93b4c299}{I\-E\-E\-E.\-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-1164.\-all}   }\label{classRGB__diode__controller_a68c233289eaf7d2601307bdd93b4c299}
+
+\begin{DoxyCompactList}\small\item\em Use of standard logic arguments. \end{DoxyCompactList}\item 
+\hypertarget{classRGB__diode__controller_a7c135c43c66ccd7f22abe5f6211788a5}{\hyperlink{classRGB__diode__controller_a7c135c43c66ccd7f22abe5f6211788a5}{I\-E\-E\-E.\-N\-U\-M\-E\-R\-I\-C\-\_\-\-S\-T\-D.\-all}   }\label{classRGB__diode__controller_a7c135c43c66ccd7f22abe5f6211788a5}
+
+\begin{DoxyCompactList}\small\item\em Use of standard numerical arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Generics}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRGB__diode__controller_ad3971b999c08c97da803416025fcebb0}{\hyperlink{classRGB__diode__controller_ad3971b999c08c97da803416025fcebb0}{N} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }}}}\label{classRGB__diode__controller_ad3971b999c08c97da803416025fcebb0}
+
+\begin{DoxyCompactList}\small\item\em Generic to decide the duty cycle of the diode. Duty cycle = 1/(N+1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRGB__diode__controller_a8120037e0ee47c35ba2d79242209c72e}{\hyperlink{classRGB__diode__controller_a8120037e0ee47c35ba2d79242209c72e}{clk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classRGB__diode__controller_a8120037e0ee47c35ba2d79242209c72e}
+
+\begin{DoxyCompactList}\small\item\em Clock in for calculation of duty cycle. \end{DoxyCompactList}\item 
+\hypertarget{classRGB__diode__controller_aba021aec4b477b89079bb58ccadcc67e}{\hyperlink{classRGB__diode__controller_aba021aec4b477b89079bb58ccadcc67e}{rstn}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classRGB__diode__controller_aba021aec4b477b89079bb58ccadcc67e}
+
+\begin{DoxyCompactList}\small\item\em Global reset, active low. \end{DoxyCompactList}\item 
+\hypertarget{classRGB__diode__controller_a0ee3d978fb8b47588b62e4a768c780fe}{\hyperlink{classRGB__diode__controller_a0ee3d978fb8b47588b62e4a768c780fe}{diode\-\_\-out}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{2} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classRGB__diode__controller_a0ee3d978fb8b47588b62e4a768c780fe}
+
+\begin{DoxyCompactList}\small\item\em diode\-\_\-out is a vector containing the state of the red, green and blue diode \end{DoxyCompactList}\item 
+\hypertarget{classRGB__diode__controller_a2027e6e92931979514fdb7cba1fa3b03}{\hyperlink{classRGB__diode__controller_a2027e6e92931979514fdb7cba1fa3b03}{is\-\_\-working}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classRGB__diode__controller_a2027e6e92931979514fdb7cba1fa3b03}
+
+\begin{DoxyCompactList}\small\item\em is\-\_\-working decides if the diode is to be green or red. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The R\-G\-B\-\_\-control controls on of the onboard diodes. Depending on the input of the is\-\_\-working the diode will either be green or red. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RGB__diode__controller_8vhd}{R\-G\-B\-\_\-diode\-\_\-controller.\-vhd}\end{DoxyCompactItemize}

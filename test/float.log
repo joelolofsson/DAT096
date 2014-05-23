@@ -1,0 +1,172 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.5.22)  22 MAY 2014 10:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**float.dtx
+(./float.dtx
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ltxdoc.cls
+Document Class: ltxdoc 2007/11/11 v2.0u Standard LaTeX documentation class
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/doc.sty
+Package: doc 2010/02/04 v2.1e Standard LaTeX documentation package (FMi)
+\c@StandardModuleDepth=\count87
+\guard@level=\count88
+\MacrocodeTopsep=\skip43
+\MacroIndent=\dimen103
+\macro@cnt=\count89
+\MacroTopsep=\skip44
+\index@excludelist=\toks14
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count90
+\mult@box=\box26
+\multicol@leftmargin=\dimen104
+\c@unbalance=\count91
+\c@collectmore=\count92
+\doublecol@number=\count93
+\multicoltolerance=\count94
+\multicolpretolerance=\count95
+\full@width=\dimen105
+\page@free=\dimen106
+\premulticols=\dimen107
+\postmulticols=\dimen108
+\multicolsep=\skip45
+\multicolbaselineskip=\skip46
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count96
+\c@finalcolumnbadness=\count97
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\multicol@sort@counter=\count98
+)
+\IndexMin=\dimen112
+\c@IndexColumns=\count99
+\GlossaryMin=\dimen113
+\c@GlossaryColumns=\count100
+\check@sum=\count101
+\bslash@cnt=\count102
+\wrong@table=\toks15
+\c@CodelineNo=\count103
+)) (./float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count104
+\float@exts=\toks16
+\float@box=\box52
+\@float@everytoks=\toks17
+\@floatcapt=\box53
+)
+\@glossaryfile=\write3
+\openout3 = `float.glo'.
+
+
+Writing glossary file float.glo 
+\@indexfile=\write4
+\openout4 = `float.idx'.
+
+Writing index file float.idx
+\@float@every@Program=\toks18
+\c@Program=\count105
+\@float@every@Example=\toks19
+\c@Example=\count106
+\@float@every@table=\toks20
+(./float.aux)
+\openout1 = `float.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+Package doc Info: Made | a short reference for \verb on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 38.
+ (./float.dtx
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 93.
+ [1
+
+] [2]
+Package doc Info: Deleted | as a short reference for \verb(*) on input line 226
+.
+Package doc Info: Made | a short reference for \verb on input line 242.
+ [3]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 255.
+ [4] [5] [6] [7] [8] [9] [10] [11]
+No file float.gls.
+No file float.ind.
+*******************
+* Checksum passed *
+*******************
+[12] [13] (./float.aux) ) ) 
+Here is how much of TeX's memory you used:
+ 705 strings out of 495032
+ 8459 string characters out of 6181557
+ 65500 words of memory out of 5000000
+ 3953 multiletter control sequences out of 15000+600000
+ 13697 words of font info for 49 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 30i,10n,21p,306b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on float.dvi (13 pages, 42984 bytes).

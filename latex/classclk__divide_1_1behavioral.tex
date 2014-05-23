@@ -1,0 +1,48 @@
+\hypertarget{classclk__divide_1_1behavioral}{\section{behavioral Architecture Reference}
+\label{classclk__divide_1_1behavioral}\index{behavioral@{behavioral}}
+}
+
+
+Achitechture of the clk\-\_\-divider.  
+
+
+\subsection*{Processes}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclk__divide_1_1behavioral_aae31a4dbedaf43cbd1619c642270813b}{\hyperlink{classclk__divide_1_1behavioral_aae31a4dbedaf43cbd1619c642270813b}{P\-R\-O\-C\-E\-S\-S\-\_\-5}{\bfseries  ( {\bfseries {\bfseries \hyperlink{classclk__divide_a8120037e0ee47c35ba2d79242209c72e}{clk}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }} , {\bfseries {\bfseries \hyperlink{classclk__divide_aa7b7040844189161771c36cf6bbf172c}{rst}} \textcolor{vhdlchar}{ }} )}}\label{classclk__divide_1_1behavioral_aae31a4dbedaf43cbd1619c642270813b}
+
+\begin{DoxyCompactList}\small\item\em When the system is reseted all values are set to 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Constants}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclk__divide_1_1behavioral_a8f64c0dba167ef17ec71f04787ff5a8a}{\hyperlink{classclk__divide_1_1behavioral_a8f64c0dba167ef17ec71f04787ff5a8a}{cnt44k\-Hz\-\_\-max} {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ }\textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{round}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{comment}{real}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classclk__divide_a81d31886de4b5afc05873543265dcf7c}{systemclock}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{/}\textcolor{vhdlchar}{ }\textcolor{comment}{real}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classclk__divide_a046b87df8ce0a99f5bacf19e5027cccf}{sampleclock}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{$\ast$}\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classclk__divide_aeab4f828c7bc0927792f6a9c6bf1b63f}{O\-S\-R}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{$\ast$}\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classclk__divide_aeab4f828c7bc0927792f6a9c6bf1b63f}{O\-S\-R}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{-\/}\textcolor{vhdlchar}{ }} }\label{classclk__divide_1_1behavioral_a8f64c0dba167ef17ec71f04787ff5a8a}
+
+\begin{DoxyCompactList}\small\item\em The cnt44k\-Hz max calculates the number the counter has to reach to reset. The calculation is as follows\-: \$round(\{systemclock\}\{sampleclock$\ast$\-O\-S\-R\})$\ast$\-O\-R\-S-\/1. The O\-S\-R is in the equation to make sure the rate between sample clock and O\-S\-R will be correct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclk__divide_1_1behavioral_a119377ea25e90c9e0302742fb8d75456}{\hyperlink{classclk__divide_1_1behavioral_a119377ea25e90c9e0302742fb8d75456}{cnt44k\-Hz} {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{range}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{to}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classclk__divide_1_1behavioral_a8f64c0dba167ef17ec71f04787ff5a8a}{cnt44k\-Hz\-\_\-max}} \textcolor{vhdlchar}{ }} }\label{classclk__divide_1_1behavioral_a119377ea25e90c9e0302742fb8d75456}
+
+\begin{DoxyCompactList}\small\item\em Counter signal with the required range. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_1_1behavioral_ab62cba3781d0056853b0d98ca65ea351}{\hyperlink{classclk__divide_1_1behavioral_ab62cba3781d0056853b0d98ca65ea351}{clk50\-M\-Hzbuf} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_1_1behavioral_ab62cba3781d0056853b0d98ca65ea351}
+
+\item 
+\hypertarget{classclk__divide_1_1behavioral_aaa88cd1782ca3c642feace13266e5f9f}{\hyperlink{classclk__divide_1_1behavioral_aaa88cd1782ca3c642feace13266e5f9f}{clk25\-M\-Hzbuf} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_1_1behavioral_aaa88cd1782ca3c642feace13266e5f9f}
+
+\item 
+\hypertarget{classclk__divide_1_1behavioral_a4b92d2406ba07f6283fa1d9ad64e472d}{\hyperlink{classclk__divide_1_1behavioral_a4b92d2406ba07f6283fa1d9ad64e472d}{clk44k\-Hzbuf} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_1_1behavioral_a4b92d2406ba07f6283fa1d9ad64e472d}
+
+\item 
+\hypertarget{classclk__divide_1_1behavioral_a7683c8432ba1dc0ce9ac4515e56c9d4f}{\hyperlink{classclk__divide_1_1behavioral_a7683c8432ba1dc0ce9ac4515e56c9d4f}{clk705k\-Hzbuf} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_1_1behavioral_a7683c8432ba1dc0ce9ac4515e56c9d4f}
+
+\begin{DoxyCompactList}\small\item\em Buffered values of the clocks to be able to use their states for calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Achitechture of the clk\-\_\-divider. 
+
+The architecture containing the main body of the component. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CLK__divide_8vhd}{C\-L\-K\-\_\-divide.\-vhd}\end{DoxyCompactItemize}

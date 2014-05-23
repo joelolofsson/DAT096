@@ -1,0 +1,19 @@
+\hypertarget{digitalfilter_8vhd}{\section{digitalfilter.\-vhd File Reference}
+\label{digitalfilter_8vhd}\index{digitalfilter.\-vhd@{digitalfilter.\-vhd}}
+}
+
+
+A buffer for storing samples before they are ready by the softcore.  
+
+
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdigitalfilter}{digitalfilter} entity
+\begin{DoxyCompactList}\small\item\em This module implements a digital F\-I\-R filter. When the start port goes from low to high the filter will shift a storage vector and sample the current input value. The filter than multiplies and accumulates once evety clock cycle until the calculations are done. When this happenes the calculated value is outputted and the finished port will be set. \end{DoxyCompactList}\item 
+\hyperlink{classdigitalfilter_1_1Behavioral}{Behavioral} architecture
+\begin{DoxyCompactList}\small\item\em Architecture of the digitalfilter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A buffer for storing samples before they are ready by the softcore. 

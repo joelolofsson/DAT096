@@ -1,0 +1,60 @@
+\hypertarget{classDAC__SPI}{\section{D\-A\-C\-\_\-\-S\-P\-I Entity Reference}
+\label{classDAC__SPI}\index{D\-A\-C\-\_\-\-S\-P\-I@{D\-A\-C\-\_\-\-S\-P\-I}}
+}
+
+
+The D\-A\-C S\-P\-I interface converts parallel data from the data port and transforms it to a S\-P\-I to be sent to the external D\-A\-C chip on the din port. The module also adds flag bits to this signal, aswell as a chip select signal called n\-\_\-sync. The interface listens to the sample clock and only transmits a new message when this clock goes from low to high.  
+
+
+Inheritance diagram for D\-A\-C\-\_\-\-S\-P\-I\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDAC__SPI}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDAC__SPI_1_1behavioral}{behavioral} architecture
+\end{DoxyCompactItemize}
+\subsection*{Libraries}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDAC__SPI_ae4f03c286607f3181e16b9aa12d0c6d4}{\hyperlink{classDAC__SPI_ae4f03c286607f3181e16b9aa12d0c6d4}{I\-E\-E\-E} }\label{classDAC__SPI_ae4f03c286607f3181e16b9aa12d0c6d4}
+
+\begin{DoxyCompactList}\small\item\em Use of standard library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Use Clauses}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDAC__SPI_a68c233289eaf7d2601307bdd93b4c299}{\hyperlink{classDAC__SPI_a68c233289eaf7d2601307bdd93b4c299}{I\-E\-E\-E.\-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-1164.\-all}   }\label{classDAC__SPI_a68c233289eaf7d2601307bdd93b4c299}
+
+\begin{DoxyCompactList}\small\item\em Use of standard logic arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDAC__SPI_aba021aec4b477b89079bb58ccadcc67e}{\hyperlink{classDAC__SPI_aba021aec4b477b89079bb58ccadcc67e}{rstn}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_aba021aec4b477b89079bb58ccadcc67e}
+
+\begin{DoxyCompactList}\small\item\em Global reset active low. \end{DoxyCompactList}\item 
+\hypertarget{classDAC__SPI_a8120037e0ee47c35ba2d79242209c72e}{\hyperlink{classDAC__SPI_a8120037e0ee47c35ba2d79242209c72e}{clk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_a8120037e0ee47c35ba2d79242209c72e}
+
+\begin{DoxyCompactList}\small\item\em Clock in, in this case the 25 M\-Hz S\-P\-I clock. \end{DoxyCompactList}\item 
+\hypertarget{classDAC__SPI_a2cc65ad6f0f6d24cd3ebac8757953224}{\hyperlink{classDAC__SPI_a2cc65ad6f0f6d24cd3ebac8757953224}{data}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_a2cc65ad6f0f6d24cd3ebac8757953224}
+
+\begin{DoxyCompactList}\small\item\em Data vector containing the paralell sample. \end{DoxyCompactList}\item 
+\hypertarget{classDAC__SPI_a4696bc4e06c727fae1b8ce3ba8cf08d4}{\hyperlink{classDAC__SPI_a4696bc4e06c727fae1b8ce3ba8cf08d4}{sampleclk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_a4696bc4e06c727fae1b8ce3ba8cf08d4}
+
+\begin{DoxyCompactList}\small\item\em The sampleclock indicating a new sample is avaiable, this triggers a new transmission. \end{DoxyCompactList}\item 
+\hypertarget{classDAC__SPI_a85ffcdebe13d1f5ddc75d9dc2718accd}{\hyperlink{classDAC__SPI_a85ffcdebe13d1f5ddc75d9dc2718accd}{din}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\-\_\-logic}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_a85ffcdebe13d1f5ddc75d9dc2718accd}
+
+\begin{DoxyCompactList}\small\item\em din is the serial connected to the D\-A\-C I\-C \end{DoxyCompactList}\item 
+\hypertarget{classDAC__SPI_acb508fc1279abe4c1bc2be47e4dd526b}{\hyperlink{classDAC__SPI_acb508fc1279abe4c1bc2be47e4dd526b}{n\-Sync}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classDAC__SPI_acb508fc1279abe4c1bc2be47e4dd526b}
+
+\begin{DoxyCompactList}\small\item\em nsync is the chip select for the D\-A\-C I\-C \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The D\-A\-C S\-P\-I interface converts parallel data from the data port and transforms it to a S\-P\-I to be sent to the external D\-A\-C chip on the din port. The module also adds flag bits to this signal, aswell as a chip select signal called n\-\_\-sync. The interface listens to the sample clock and only transmits a new message when this clock goes from low to high. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DAC__SPI_8vhd}{D\-A\-C\-\_\-\-S\-P\-I.\-vhd}\end{DoxyCompactItemize}

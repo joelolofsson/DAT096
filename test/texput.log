@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdftex 2014.5.22)  22 MAY 2014 11:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\empty Hello world!\bye
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]</usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on texput.pdf (1 page, 11929 bytes).
+PDF statistics:
+ 12 PDF objects out of 1000 (max. 8388607)
+ 7 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,60 @@
+\hypertarget{classbin2bcd}{\section{bin2bcd Entity Reference}
+\label{classbin2bcd}\index{bin2bcd@{bin2bcd}}
+}
+
+
+This component calculates the binary coded decimal equivelent of a binary number. This module is not completely generec yet but it is verified to work at the size used in the implementation. For updates check \href{https://github.com/Jaxc/bin2bcd}{\tt https\-://github.\-com/\-Jaxc/bin2bcd}.  
+
+
+Inheritance diagram for bin2bcd\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classbin2bcd}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbin2bcd_1_1Behavioral}{Behavioral} architecture
+\begin{DoxyCompactList}\small\item\em Achitechture of the \hyperlink{classbin2bcd}{bin2bcd}  component is a generic binary to binary coded decimal. It does this by using the \hyperlink{classBCD__block}{B\-C\-D\-\_\-block} according to the method used in \href{http://www.johnloomis.org/ece314/notes/devices/binary_to_BCD/bin_to_bcd.html}{\tt http\-://www.\-johnloomis.\-org/ece314/notes/devices/binary\-\_\-to\-\_\-\-B\-C\-D/bin\-\_\-to\-\_\-bcd.\-html}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Libraries}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_ae4f03c286607f3181e16b9aa12d0c6d4}{\hyperlink{classbin2bcd_ae4f03c286607f3181e16b9aa12d0c6d4}{I\-E\-E\-E} }\label{classbin2bcd_ae4f03c286607f3181e16b9aa12d0c6d4}
+
+\begin{DoxyCompactList}\small\item\em Use of standard library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Use Clauses}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_a68c233289eaf7d2601307bdd93b4c299}{\hyperlink{classbin2bcd_a68c233289eaf7d2601307bdd93b4c299}{I\-E\-E\-E.\-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-1164.\-all}   }\label{classbin2bcd_a68c233289eaf7d2601307bdd93b4c299}
+
+\begin{DoxyCompactList}\small\item\em Use of standard logic arguments. \end{DoxyCompactList}\item 
+\hypertarget{classbin2bcd_a7c135c43c66ccd7f22abe5f6211788a5}{\hyperlink{classbin2bcd_a7c135c43c66ccd7f22abe5f6211788a5}{I\-E\-E\-E.\-N\-U\-M\-E\-R\-I\-C\-\_\-\-S\-T\-D.\-all}   }\label{classbin2bcd_a7c135c43c66ccd7f22abe5f6211788a5}
+
+\begin{DoxyCompactList}\small\item\em Use of standard numerical arguments. \end{DoxyCompactList}\item 
+\hypertarget{classbin2bcd_a8284ebf76bf629c58adbf8d637e8328b}{\hyperlink{classbin2bcd_a8284ebf76bf629c58adbf8d637e8328b}{I\-E\-E\-E.\-M\-A\-T\-H\-\_\-\-R\-E\-A\-L.\-all}   }\label{classbin2bcd_a8284ebf76bf629c58adbf8d637e8328b}
+
+\begin{DoxyCompactList}\small\item\em Use of real math arguments to calculate generics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Generics}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_a03ce448558c2218cb8d7efccef340e15}{\hyperlink{classbin2bcd_a03ce448558c2218cb8d7efccef340e15}{bits} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{8} \textcolor{vhdlchar}{ }}}}\label{classbin2bcd_a03ce448558c2218cb8d7efccef340e15}
+
+\begin{DoxyCompactList}\small\item\em binary bit width \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbin2bcd_ae61be7d0c2a4029f72fa99ab83ad96d2}{\hyperlink{classbin2bcd_ae61be7d0c2a4029f72fa99ab83ad96d2}{bin}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classbin2bcd_a03ce448558c2218cb8d7efccef340e15}{bits}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{-\/}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classbin2bcd_ae61be7d0c2a4029f72fa99ab83ad96d2}
+
+\begin{DoxyCompactList}\small\item\em Binary input. \end{DoxyCompactList}\item 
+\hypertarget{classbin2bcd_ac691a88cf4b7f8ed22a51c1b682e84aa}{\hyperlink{classbin2bcd_ac691a88cf4b7f8ed22a51c1b682e84aa}{B\-C\-D}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classbin2bcd_a03ce448558c2218cb8d7efccef340e15}{bits}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{$\ast$}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{2} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{-\/}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classbin2bcd_ac691a88cf4b7f8ed22a51c1b682e84aa}
+
+\begin{DoxyCompactList}\small\item\em B\-C\-D output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This component calculates the binary coded decimal equivelent of a binary number. This module is not completely generec yet but it is verified to work at the size used in the implementation. For updates check \href{https://github.com/Jaxc/bin2bcd}{\tt https\-://github.\-com/\-Jaxc/bin2bcd}. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bin2bcd_8vhd}{bin2bcd.\-vhd}\end{DoxyCompactItemize}

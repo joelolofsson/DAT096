@@ -1,0 +1,19 @@
+\hypertarget{DAC__SPI_8vhd}{\section{D\-A\-C\-\_\-\-S\-P\-I.\-vhd File Reference}
+\label{DAC__SPI_8vhd}\index{D\-A\-C\-\_\-\-S\-P\-I.\-vhd@{D\-A\-C\-\_\-\-S\-P\-I.\-vhd}}
+}
+
+
+A buffer for storing samples from the softcore before they are sent to the D\-A\-C.  
+
+
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDAC__SPI}{D\-A\-C\-\_\-\-S\-P\-I} entity
+\begin{DoxyCompactList}\small\item\em The D\-A\-C S\-P\-I interface converts parallel data from the data port and transforms it to a S\-P\-I to be sent to the external D\-A\-C chip on the din port. The module also adds flag bits to this signal, aswell as a chip select signal called n\-\_\-sync. The interface listens to the sample clock and only transmits a new message when this clock goes from low to high. \end{DoxyCompactList}\item 
+\hyperlink{classDAC__SPI_1_1behavioral}{behavioral} architecture
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A buffer for storing samples from the softcore before they are sent to the D\-A\-C. 

@@ -1,43 +1,37 @@
+--! @file
+--! @brief A clock divider for the seven segment display.
+
+
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 08.05.2014 11:49:02
--- Design Name: 
+-- Engineer (Creator): Jacob Rosén
+-- Engineer (Modifier) : -
+--
+-- Design Name: clock division for seven segment displays
 -- Module Name: clk_div_seven_seg - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
+-- Project Name: SoundBox
+-- Target Devices: Artix 7 
 -- 
 ----------------------------------------------------------------------------------
 
 
+--! Use of standard library
 library IEEE;
+--! Use of standard logic arguments
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
+--! Use of standard numerical arguments
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+--! This component takes the system clock divides it for Seven segment displays. This is done by implementing counters. 
 
 entity clk_div_seven_seg is
-	generic ( counterbits : integer := 17);
-    Port ( clk : in STD_LOGIC;
-           rstn : in STD_LOGIC;
-           slow_clk : out STD_LOGIC);
+	generic ( counterbits : integer := 17);			--! A generic for setting the bits of the counter
+    Port ( clk : in STD_LOGIC;					--! Clock for counter and registers
+           rstn : in STD_LOGIC;					--! Global reset, active low
+           slow_clk : out STD_LOGIC);				--! The output slower clock
 end clk_div_seven_seg;
 
+--! @brief Architecture of the clk_div_seven_seg
+--! @details This clock divider is need to make sure seven segments of the seven segment displays in the correct speed. To fast and numbers will "float" to its neighbours due to slow trancients, to slow and the numbers will appear as flashing instead of solid.
 architecture Behavioral of clk_div_seven_seg is
 signal cnt : integer range 0 to 2**counterbits-1;
 begin

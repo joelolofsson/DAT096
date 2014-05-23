@@ -1,0 +1,4 @@
+cd latex
+rm *
+cd ..
+rmdir

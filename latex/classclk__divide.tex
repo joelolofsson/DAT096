@@ -1,0 +1,78 @@
+\hypertarget{classclk__divide}{\section{clk\-\_\-divide Entity Reference}
+\label{classclk__divide}\index{clk\-\_\-divide@{clk\-\_\-divide}}
+}
+
+
+This component takes the system clock divides it for A\-D\-C/\-D\-A\-C components using lower clocks. This is done by implementing counters. When a certain counter reached a set number it will change the output and reset the counter.  
+
+
+Inheritance diagram for clk\-\_\-divide\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclk__divide}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classclk__divide_1_1behavioral}{behavioral} architecture
+\begin{DoxyCompactList}\small\item\em Achitechture of the clk\-\_\-divider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Libraries}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclk__divide_ae4f03c286607f3181e16b9aa12d0c6d4}{\hyperlink{classclk__divide_ae4f03c286607f3181e16b9aa12d0c6d4}{I\-E\-E\-E} }\label{classclk__divide_ae4f03c286607f3181e16b9aa12d0c6d4}
+
+\begin{DoxyCompactList}\small\item\em Use of standard library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Use Clauses}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclk__divide_a68c233289eaf7d2601307bdd93b4c299}{\hyperlink{classclk__divide_a68c233289eaf7d2601307bdd93b4c299}{I\-E\-E\-E.\-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-1164.\-all}   }\label{classclk__divide_a68c233289eaf7d2601307bdd93b4c299}
+
+\begin{DoxyCompactList}\small\item\em Use of standard logic arguments. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_a7c135c43c66ccd7f22abe5f6211788a5}{\hyperlink{classclk__divide_a7c135c43c66ccd7f22abe5f6211788a5}{I\-E\-E\-E.\-N\-U\-M\-E\-R\-I\-C\-\_\-\-S\-T\-D.\-all}   }\label{classclk__divide_a7c135c43c66ccd7f22abe5f6211788a5}
+
+\begin{DoxyCompactList}\small\item\em Use of standard numerical arguments. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_a8284ebf76bf629c58adbf8d637e8328b}{\hyperlink{classclk__divide_a8284ebf76bf629c58adbf8d637e8328b}{I\-E\-E\-E.\-M\-A\-T\-H\-\_\-\-R\-E\-A\-L.\-all}   }\label{classclk__divide_a8284ebf76bf629c58adbf8d637e8328b}
+
+\begin{DoxyCompactList}\small\item\em Use of real math arguments to calculate generic divisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Generics}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclk__divide_a81d31886de4b5afc05873543265dcf7c}{\hyperlink{classclk__divide_a81d31886de4b5afc05873543265dcf7c}{systemclock} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{100000000} \textcolor{vhdlchar}{ }}}}\label{classclk__divide_a81d31886de4b5afc05873543265dcf7c}
+
+\begin{DoxyCompactList}\small\item\em Generic setting the system clock speed. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_a046b87df8ce0a99f5bacf19e5027cccf}{\hyperlink{classclk__divide_a046b87df8ce0a99f5bacf19e5027cccf}{sampleclock} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{44100} \textcolor{vhdlchar}{ }}}}\label{classclk__divide_a046b87df8ce0a99f5bacf19e5027cccf}
+
+\begin{DoxyCompactList}\small\item\em Generic describing the intended sampling frequency. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_aeab4f828c7bc0927792f6a9c6bf1b63f}{\hyperlink{classclk__divide_aeab4f828c7bc0927792f6a9c6bf1b63f}{O\-S\-R} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{16} \textcolor{vhdlchar}{ }}}}\label{classclk__divide_aeab4f828c7bc0927792f6a9c6bf1b63f}
+
+\begin{DoxyCompactList}\small\item\em Generic describing the Over Samplig Ratio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classclk__divide_aa7b7040844189161771c36cf6bbf172c}{\hyperlink{classclk__divide_aa7b7040844189161771c36cf6bbf172c}{rst}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_aa7b7040844189161771c36cf6bbf172c}
+
+\begin{DoxyCompactList}\small\item\em Global reset, active low. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_a8120037e0ee47c35ba2d79242209c72e}{\hyperlink{classclk__divide_a8120037e0ee47c35ba2d79242209c72e}{clk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_a8120037e0ee47c35ba2d79242209c72e}
+
+\begin{DoxyCompactList}\small\item\em Clock in, in our case the 100\-M\-Hz clock to improve the accuracy of the sampleclock. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_ab1f1a3ab1ab8a22adc572d22c78e6370}{\hyperlink{classclk__divide_ab1f1a3ab1ab8a22adc572d22c78e6370}{clk50\-M\-Hz}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_ab1f1a3ab1ab8a22adc572d22c78e6370}
+
+\begin{DoxyCompactList}\small\item\em Clock out at half of the imput clock fequency. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_af312c161ed7113c4b513d173c2d4d010}{\hyperlink{classclk__divide_af312c161ed7113c4b513d173c2d4d010}{clk25\-M\-Hz}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_af312c161ed7113c4b513d173c2d4d010}
+
+\begin{DoxyCompactList}\small\item\em Clock out at a fourth of the imput clock frequency. \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_aff53844dd015a736d734149d187ffa1d}{\hyperlink{classclk__divide_aff53844dd015a736d734149d187ffa1d}{clk705k\-Hz}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_aff53844dd015a736d734149d187ffa1d}
+
+\begin{DoxyCompactList}\small\item\em Clock out at the over sampling rate (sampling rate $\ast$ O\-S\-R) \end{DoxyCompactList}\item 
+\hypertarget{classclk__divide_ab41cd6e2d38ae8f4a3b6bc0891225629}{\hyperlink{classclk__divide_ab41cd6e2d38ae8f4a3b6bc0891225629}{clk44k\-Hz}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classclk__divide_ab41cd6e2d38ae8f4a3b6bc0891225629}
+
+\begin{DoxyCompactList}\small\item\em Clock out at the sampling frequency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This component takes the system clock divides it for A\-D\-C/\-D\-A\-C components using lower clocks. This is done by implementing counters. When a certain counter reached a set number it will change the output and reset the counter. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CLK__divide_8vhd}{C\-L\-K\-\_\-divide.\-vhd}\end{DoxyCompactItemize}

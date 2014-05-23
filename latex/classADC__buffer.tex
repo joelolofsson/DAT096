@@ -1,0 +1,72 @@
+\hypertarget{classADC__buffer}{\section{A\-D\-C\-\_\-buffer Entity Reference}
+\label{classADC__buffer}\index{A\-D\-C\-\_\-buffer@{A\-D\-C\-\_\-buffer}}
+}
+
+
+This component buffers samples when buff\-\_\-write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by chaning the adress. The buffer will then instantly output the value on this address on the buffout port.  
+
+
+Inheritance diagram for A\-D\-C\-\_\-buffer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classADC__buffer}
+\end{center}
+\end{figure}
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classADC__buffer_1_1Behavioral}{Behavioral} architecture
+\begin{DoxyCompactList}\small\item\em Achitechture of the A\-D\-C buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Libraries}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADC__buffer_ae4f03c286607f3181e16b9aa12d0c6d4}{\hyperlink{classADC__buffer_ae4f03c286607f3181e16b9aa12d0c6d4}{I\-E\-E\-E} }\label{classADC__buffer_ae4f03c286607f3181e16b9aa12d0c6d4}
+
+\begin{DoxyCompactList}\small\item\em Use of standard library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Use Clauses}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADC__buffer_a68c233289eaf7d2601307bdd93b4c299}{\hyperlink{classADC__buffer_a68c233289eaf7d2601307bdd93b4c299}{I\-E\-E\-E.\-S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-1164.\-all}   }\label{classADC__buffer_a68c233289eaf7d2601307bdd93b4c299}
+
+\begin{DoxyCompactList}\small\item\em Use of standard logic arguments. \end{DoxyCompactList}\item 
+\hypertarget{classADC__buffer_a7c135c43c66ccd7f22abe5f6211788a5}{\hyperlink{classADC__buffer_a7c135c43c66ccd7f22abe5f6211788a5}{I\-E\-E\-E.\-N\-U\-M\-E\-R\-I\-C\-\_\-\-S\-T\-D.\-all}   }\label{classADC__buffer_a7c135c43c66ccd7f22abe5f6211788a5}
+
+\begin{DoxyCompactList}\small\item\em Use of standard numerical arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Generics}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADC__buffer_a2f94b7b31a8914ee23be5e000f89e921}{\hyperlink{classADC__buffer_a2f94b7b31a8914ee23be5e000f89e921}{bufferwidth} {\bfseries {\bfseries \textcolor{comment}{integer}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{\-:}\textcolor{vhdlchar}{=}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{7} \textcolor{vhdlchar}{ }}}}\label{classADC__buffer_a2f94b7b31a8914ee23be5e000f89e921}
+
+\begin{DoxyCompactList}\small\item\em Generic indicating the width of the buffer address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classADC__buffer_a8120037e0ee47c35ba2d79242209c72e}{\hyperlink{classADC__buffer_a8120037e0ee47c35ba2d79242209c72e}{clk}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_a8120037e0ee47c35ba2d79242209c72e}
+
+\begin{DoxyCompactList}\small\item\em clock for buffer registers. \end{DoxyCompactList}\item 
+\hypertarget{classADC__buffer_aa7b7040844189161771c36cf6bbf172c}{\hyperlink{classADC__buffer_aa7b7040844189161771c36cf6bbf172c}{rst}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_aa7b7040844189161771c36cf6bbf172c}
+
+\begin{DoxyCompactList}\small\item\em Global reset, active low. \end{DoxyCompactList}\item 
+\hypertarget{classADC__buffer_a06ea925ba19422158afb079d09e4a231}{\hyperlink{classADC__buffer_a06ea925ba19422158afb079d09e4a231}{buff\-\_\-write}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_a06ea925ba19422158afb079d09e4a231}
+
+\begin{DoxyCompactList}\small\item\em Controls when values are to be stored, also changes the buffer memory pointer. \end{DoxyCompactList}\item 
+\hypertarget{classADC__buffer_a0edd6254bf58107fb2411cc4cab05201}{\hyperlink{classADC__buffer_a0edd6254bf58107fb2411cc4cab05201}{Buffin}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_a0edd6254bf58107fb2411cc4cab05201}
+
+\begin{DoxyCompactList}\small\item\em Input value to be stored. \end{DoxyCompactList}\item 
+\hypertarget{classADC__buffer_ae32ca2a63fbe2fd9bbe609ba799ce989}{\hyperlink{classADC__buffer_ae32ca2a63fbe2fd9bbe609ba799ce989}{Buffout}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{15} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_ae32ca2a63fbe2fd9bbe609ba799ce989}
+
+\begin{DoxyCompactList}\small\item\em Output value from the current address slot. \end{DoxyCompactList}\item 
+\hypertarget{classADC__buffer_a4f849708d4274223b88930c2568f405c}{\hyperlink{classADC__buffer_a4f849708d4274223b88930c2568f405c}{Bufferfull}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_a4f849708d4274223b88930c2568f405c}
+
+\begin{DoxyCompactList}\small\item\em high for one clockcycle when the buffer is full, low otherwise. This is due to leon 3 only accepting interupts being high for one clockcycle. \end{DoxyCompactList}\item 
+\hypertarget{classADC__buffer_ab93f1c6757ecccdcea2252108bb7caff}{\hyperlink{classADC__buffer_ab93f1c6757ecccdcea2252108bb7caff}{Addr}  {\bfseries {\bfseries \textcolor{vhdlkeyword}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{S\-T\-D\-\_\-\-L\-O\-G\-I\-C\-\_\-\-V\-E\-C\-T\-O\-R}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }{\bfseries \hyperlink{classADC__buffer_a2f94b7b31a8914ee23be5e000f89e921}{bufferwidth}} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{-\/}\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{1} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlkeyword}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} }\label{classADC__buffer_ab93f1c6757ecccdcea2252108bb7caff}
+
+\begin{DoxyCompactList}\small\item\em Address currently asked for. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This component buffers samples when buff\-\_\-write goes from low to high, until the buffer is full. When this happens Buffer full is driven high for one clock cycle. The softcore will the read the values from the buffer by chaning the adress. The buffer will then instantly output the value on this address on the buffout port. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ADC__buffer_8vhd}{A\-D\-C\-\_\-buffer.\-vhd}\end{DoxyCompactItemize}
