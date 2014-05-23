@@ -92,7 +92,7 @@ fillerFrame.grid(row=1, column=4, padx=10, pady=2)
 
 ######## Variable used for debugging #######
 
-Debug=1
+Debug=0
 
 # If debug is set to 1 certain variables & lists will be printed for easier debugging of the code.
 
@@ -302,7 +302,7 @@ def hello():
 	""" This function is called from the choosable options from the File, Edit and Help menu that has yet to be configured.
 	This function just prints the word hello.
 	"""
-    print "hello!"
+	print "hello!"
     
 
 def makeMenu():
