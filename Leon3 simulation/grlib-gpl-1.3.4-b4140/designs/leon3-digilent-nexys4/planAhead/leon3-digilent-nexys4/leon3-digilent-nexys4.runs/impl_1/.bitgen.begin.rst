@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="bitgen" Owner="joel" Host="" Pid="27983">
-    </Process>
-</ProcessHandle>
